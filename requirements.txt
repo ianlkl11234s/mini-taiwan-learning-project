@@ -1,0 +1,9 @@
+# Data Processing
+shapely>=2.0.0
+geojson>=3.0.0
+
+# HTTP Requests (for TDX API)
+requests>=2.31.0
+
+# Utilities
+python-dotenv>=1.0.0

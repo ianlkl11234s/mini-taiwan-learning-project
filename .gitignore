@@ -66,3 +66,4 @@ logs/
 tmp/
 temp/
 *.tmp
+data_collector/cache/

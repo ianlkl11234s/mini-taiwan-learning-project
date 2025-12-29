@@ -23,9 +23,13 @@ export interface Train {
   segmentProgress?: number; // 當前區段進度 0-1
 }
 
+// 車站在軌道上的實際進度 (0-1)
+export type StationProgressMap = Record<string, Record<string, number>>;
+
 export interface TrainEngineOptions {
   schedules: Map<string, TrackSchedule>;
   tracks: Map<string, Track>;
+  stationProgress?: StationProgressMap;
 }
 
 /**
@@ -88,26 +92,22 @@ function interpolateOnLineString(
 }
 
 /**
- * 找到車站在軌道座標中的位置索引
- * 假設車站均勻分布在軌道上
+ * 找到車站在軌道座標中的位置 (使用實際進度或均勻分布)
  */
-function getStationProgress(stationIndex: number, totalStations: number): number {
+function getStationProgressFallback(stationIndex: number, totalStations: number): number {
   if (totalStations <= 1) return 0;
   return stationIndex / (totalStations - 1);
 }
 
 /**
- * 在兩站之間進行插值
+ * 在兩站之間進行插值 (使用實際進度)
  */
-function interpolateBetweenStations(
+function interpolateBetweenStationsWithProgress(
   coords: [number, number][],
-  fromStationIndex: number,
-  toStationIndex: number,
-  totalStations: number,
+  fromProgress: number,
+  toProgress: number,
   segmentProgress: number
 ): [number, number] {
-  const fromProgress = getStationProgress(fromStationIndex, totalStations);
-  const toProgress = getStationProgress(toStationIndex, totalStations);
   const actualProgress = fromProgress + (toProgress - fromProgress) * segmentProgress;
   return interpolateOnLineString(coords, actualProgress);
 }
@@ -115,11 +115,25 @@ function interpolateBetweenStations(
 export class TrainEngine {
   private schedules: Map<string, TrackSchedule>;
   private tracks: Map<string, Track>;
+  private stationProgress: StationProgressMap;
   private activeTrains: Map<string, Train> = new Map();
 
   constructor(options: TrainEngineOptions) {
     this.schedules = options.schedules;
     this.tracks = options.tracks;
+    this.stationProgress = options.stationProgress || {};
+  }
+
+  /**
+   * 取得車站在軌道上的實際進度
+   */
+  private getStationProgress(trackId: string, stationId: string, fallbackIndex: number, totalStations: number): number {
+    const trackProgress = this.stationProgress[trackId];
+    if (trackProgress && typeof trackProgress[stationId] === 'number') {
+      return trackProgress[stationId];
+    }
+    // 回退到均勻分布
+    return getStationProgressFallback(fallbackIndex, totalStations);
   }
 
   /**
@@ -234,19 +248,29 @@ export class TrainEngine {
           continue;
         }
 
-        // 計算位置
+        // 計算位置 (使用實際車站進度)
         let position: [number, number];
+        const currentStationId = departure.stations[segment.stationIndex]?.station_id;
+        const nextStationId = departure.stations[segment.nextStationIndex]?.station_id;
+
         if (segment.status === 'stopped') {
-          // 停站中：位置固定在車站
-          const stationProgress = getStationProgress(segment.stationIndex, totalStations);
-          position = interpolateOnLineString(coords, stationProgress);
+          // 停站中：位置固定在車站 (使用實際進度)
+          const stationProg = currentStationId
+            ? this.getStationProgress(trackId, currentStationId, segment.stationIndex, totalStations)
+            : getStationProgressFallback(segment.stationIndex, totalStations);
+          position = interpolateOnLineString(coords, stationProg);
         } else {
-          // 行駛中：在兩站間插值
-          position = interpolateBetweenStations(
+          // 行駛中：在兩站間插值 (使用實際進度)
+          const fromProgress = currentStationId
+            ? this.getStationProgress(trackId, currentStationId, segment.stationIndex, totalStations)
+            : getStationProgressFallback(segment.stationIndex, totalStations);
+          const toProgress = nextStationId
+            ? this.getStationProgress(trackId, nextStationId, segment.nextStationIndex, totalStations)
+            : getStationProgressFallback(segment.nextStationIndex, totalStations);
+          position = interpolateBetweenStationsWithProgress(
             coords,
-            segment.stationIndex,
-            segment.nextStationIndex,
-            totalStations,
+            fromProgress,
+            toProgress,
             segment.segmentProgress
           );
         }

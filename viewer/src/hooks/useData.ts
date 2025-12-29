@@ -5,11 +5,15 @@ import type { TrackSchedule } from '../types/schedule';
 // 軌道 ID 列表
 const TRACK_IDS = ['R-1-0', 'R-1-1', 'R-2-0', 'R-2-1', 'R-3-0', 'R-3-1'];
 
+// 車站在軌道上的實際進度 (0-1)
+export type StationProgressMap = Record<string, Record<string, number>>;
+
 export interface DataState {
   tracks: TrackCollection | null;
   stations: StationCollection | null;
   schedules: Map<string, TrackSchedule>;
   trackMap: Map<string, Track>;
+  stationProgress: StationProgressMap | null;
   loading: boolean;
   error: string | null;
 }
@@ -19,6 +23,7 @@ export function useData(): DataState {
   const [stations, setStations] = useState<StationCollection | null>(null);
   const [schedules, setSchedules] = useState<Map<string, TrackSchedule>>(new Map());
   const [trackMap, setTrackMap] = useState<Map<string, Track>>(new Map());
+  const [stationProgress, setStationProgress] = useState<StationProgressMap | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
@@ -67,6 +72,12 @@ export function useData(): DataState {
         }
         setSchedules(scheduleMap);
 
+        // 載入車站進度映射
+        const progressRes = await fetch('/data/station_progress.json');
+        if (!progressRes.ok) throw new Error('Failed to load station progress');
+        const progressData = await progressRes.json();
+        setStationProgress(progressData);
+
         setLoading(false);
       } catch (err) {
         setError(err instanceof Error ? err.message : 'Unknown error');
@@ -77,5 +88,5 @@ export function useData(): DataState {
     loadData();
   }, []);
 
-  return { tracks, stations, schedules, trackMap, loading, error };
+  return { tracks, stations, schedules, trackMap, stationProgress, loading, error };
 }

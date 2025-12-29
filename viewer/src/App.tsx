@@ -21,7 +21,7 @@ const TRACK_COLORS: Record<string, string> = {
 
 function App() {
   // 資料載入
-  const { tracks, stations, schedules, trackMap, loading, error } = useData();
+  const { tracks, stations, schedules, trackMap, stationProgress, loading, error } = useData();
 
   // 地圖狀態
   const mapContainer = useRef<HTMLDivElement>(null);
@@ -163,13 +163,14 @@ function App() {
 
   // 初始化列車引擎
   useEffect(() => {
-    if (schedules.size === 0 || trackMap.size === 0) return;
+    if (schedules.size === 0 || trackMap.size === 0 || !stationProgress) return;
 
     trainEngineRef.current = new TrainEngine({
       schedules,
       tracks: trackMap,
+      stationProgress,
     });
-  }, [schedules, trackMap]);
+  }, [schedules, trackMap, stationProgress]);
 
   // 更新列車位置
   useEffect(() => {

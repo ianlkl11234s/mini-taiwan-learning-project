@@ -214,7 +214,10 @@ function App() {
         el.className = 'train-marker';
         el.dataset.trainId = train.trainId;
 
-        marker = new mapboxgl.Marker({ element: el })
+        marker = new mapboxgl.Marker({
+          element: el,
+          anchor: 'center',  // 確保 marker 以中心點對齊座標
+        })
           .setLngLat(train.position)
           .addTo(map.current!);
 
@@ -226,27 +229,32 @@ function App() {
 
       // 更新樣式 (停站 vs 運行)
       const el = marker.getElement();
+      // 基礎樣式：pointer-events: none 防止 hover 干擾定位
+      const baseStyles = `
+        pointer-events: none;
+        border-radius: 50%;
+        transition: width 0.3s ease, height 0.3s ease, box-shadow 0.3s ease;
+      `;
+
       if (isStopped) {
         // 停站中：較大、有脈動效果
         el.style.cssText = `
+          ${baseStyles}
           width: 14px;
           height: 14px;
           background-color: ${baseColor};
           border: 3px solid #ffffff;
-          border-radius: 50%;
           box-shadow: 0 0 8px ${baseColor}, 0 0 12px rgba(255,255,255,0.5);
-          transition: all 0.3s ease;
         `;
       } else {
         // 運行中：正常大小
         el.style.cssText = `
+          ${baseStyles}
           width: 12px;
           height: 12px;
           background-color: ${baseColor};
           border: 2px solid #ffffff;
-          border-radius: 50%;
           box-shadow: 0 0 4px rgba(0,0,0,0.5);
-          transition: all 0.3s ease;
         `;
       }
     }

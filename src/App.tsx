@@ -123,10 +123,10 @@ function App() {
       type: 'circle',
       source: 'stations',
       paint: {
-        'circle-radius': 6.5,  // 原 5 * 1.3
-        'circle-color': '#ffffff',
-        'circle-stroke-color': TRACK_COLOR,
-        'circle-stroke-width': 2.5,  // 原 2 * 1.3
+        'circle-radius': 5,
+        'circle-color': '#000000',  // 黑色填充
+        'circle-stroke-color': TRACK_COLOR,  // 紅色邊線
+        'circle-stroke-width': 1.8,
       },
     });
 

@@ -51,8 +51,8 @@ function App() {
     map.current = new mapboxgl.Map({
       container: mapContainer.current,
       style: 'mapbox://styles/mapbox/dark-v11',
-      center: [121.52, 25.08],
-      zoom: 11.5,
+      center: [121.515, 25.09],
+      zoom: 11,
     });
 
     map.current.on('load', () => {

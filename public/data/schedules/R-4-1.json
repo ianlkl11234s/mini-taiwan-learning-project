@@ -1,0 +1,21 @@
+{
+  "track_id": "R-4-1",
+  "route_id": "R-4",
+  "name": "淡水 → 北投",
+  "origin": "R28",
+  "destination": "R22",
+  "stations": [
+    "R28",
+    "R27",
+    "R26",
+    "R25",
+    "R24",
+    "R23",
+    "R22"
+  ],
+  "travel_time_minutes": 54,
+  "dwell_time_seconds": 40,
+  "is_weekday": true,
+  "departure_count": 0,
+  "departures": []
+}

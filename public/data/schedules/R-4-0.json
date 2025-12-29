@@ -1,0 +1,469 @@
+{
+  "track_id": "R-4-0",
+  "route_id": "R-4",
+  "name": "北投 → 淡水",
+  "origin": "R22",
+  "destination": "R28",
+  "stations": [
+    "R22",
+    "R23",
+    "R24",
+    "R25",
+    "R26",
+    "R27",
+    "R28"
+  ],
+  "travel_time_minutes": 10,
+  "dwell_time_seconds": 40,
+  "is_weekday": true,
+  "departure_count": 14,
+  "departures": [
+    {
+      "departure_time": "06:00:00",
+      "train_id": "R-4-0-014",
+      "origin_station": "R27",
+      "total_travel_time": 220,
+      "stations": [
+        {
+          "station_id": "R27",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "R28",
+          "arrival": 180,
+          "departure": 220
+        }
+      ]
+    },
+    {
+      "departure_time": "06:02:00",
+      "train_id": "R-4-0-001",
+      "origin_station": "R24",
+      "total_travel_time": 640,
+      "stations": [
+        {
+          "station_id": "R24",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "R25",
+          "arrival": 120,
+          "departure": 160
+        },
+        {
+          "station_id": "R26",
+          "arrival": 300,
+          "departure": 340
+        },
+        {
+          "station_id": "R27",
+          "arrival": 420,
+          "departure": 460
+        },
+        {
+          "station_id": "R28",
+          "arrival": 600,
+          "departure": 640
+        }
+      ]
+    },
+    {
+      "departure_time": "06:05:00",
+      "train_id": "R-4-0-002",
+      "origin_station": "R24",
+      "total_travel_time": 700,
+      "stations": [
+        {
+          "station_id": "R24",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "R25",
+          "arrival": 120,
+          "departure": 160
+        },
+        {
+          "station_id": "R26",
+          "arrival": 300,
+          "departure": 340
+        },
+        {
+          "station_id": "R27",
+          "arrival": 480,
+          "departure": 520
+        },
+        {
+          "station_id": "R28",
+          "arrival": 660,
+          "departure": 700
+        }
+      ]
+    },
+    {
+      "departure_time": "06:21:00",
+      "train_id": "R-4-0-003",
+      "origin_station": "R24",
+      "total_travel_time": 640,
+      "stations": [
+        {
+          "station_id": "R24",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "R25",
+          "arrival": 100,
+          "departure": 140
+        },
+        {
+          "station_id": "R26",
+          "arrival": 240,
+          "departure": 280
+        },
+        {
+          "station_id": "R27",
+          "arrival": 420,
+          "departure": 460
+        },
+        {
+          "station_id": "R28",
+          "arrival": 600,
+          "departure": 640
+        }
+      ]
+    },
+    {
+      "departure_time": "06:52:00",
+      "train_id": "R-4-0-004",
+      "origin_station": "R24",
+      "total_travel_time": 700,
+      "stations": [
+        {
+          "station_id": "R24",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "R25",
+          "arrival": 120,
+          "departure": 160
+        },
+        {
+          "station_id": "R26",
+          "arrival": 300,
+          "departure": 340
+        },
+        {
+          "station_id": "R27",
+          "arrival": 480,
+          "departure": 520
+        },
+        {
+          "station_id": "R28",
+          "arrival": 660,
+          "departure": 700
+        }
+      ]
+    },
+    {
+      "departure_time": "07:00:00",
+      "train_id": "R-4-0-005",
+      "origin_station": "R24",
+      "total_travel_time": 700,
+      "stations": [
+        {
+          "station_id": "R24",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "R25",
+          "arrival": 120,
+          "departure": 160
+        },
+        {
+          "station_id": "R26",
+          "arrival": 300,
+          "departure": 340
+        },
+        {
+          "station_id": "R27",
+          "arrival": 480,
+          "departure": 520
+        },
+        {
+          "station_id": "R28",
+          "arrival": 660,
+          "departure": 700
+        }
+      ]
+    },
+    {
+      "departure_time": "07:13:00",
+      "train_id": "R-4-0-006",
+      "origin_station": "R24",
+      "total_travel_time": 640,
+      "stations": [
+        {
+          "station_id": "R24",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "R25",
+          "arrival": 100,
+          "departure": 140
+        },
+        {
+          "station_id": "R26",
+          "arrival": 240,
+          "departure": 280
+        },
+        {
+          "station_id": "R27",
+          "arrival": 420,
+          "departure": 460
+        },
+        {
+          "station_id": "R28",
+          "arrival": 600,
+          "departure": 640
+        }
+      ]
+    },
+    {
+      "departure_time": "07:21:00",
+      "train_id": "R-4-0-007",
+      "origin_station": "R24",
+      "total_travel_time": 700,
+      "stations": [
+        {
+          "station_id": "R24",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "R25",
+          "arrival": 120,
+          "departure": 160
+        },
+        {
+          "station_id": "R26",
+          "arrival": 300,
+          "departure": 340
+        },
+        {
+          "station_id": "R27",
+          "arrival": 480,
+          "departure": 520
+        },
+        {
+          "station_id": "R28",
+          "arrival": 660,
+          "departure": 700
+        }
+      ]
+    },
+    {
+      "departure_time": "15:56:00",
+      "train_id": "R-4-0-008",
+      "origin_station": "R24",
+      "total_travel_time": 700,
+      "stations": [
+        {
+          "station_id": "R24",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "R25",
+          "arrival": 120,
+          "departure": 160
+        },
+        {
+          "station_id": "R26",
+          "arrival": 300,
+          "departure": 340
+        },
+        {
+          "station_id": "R27",
+          "arrival": 480,
+          "departure": 520
+        },
+        {
+          "station_id": "R28",
+          "arrival": 660,
+          "departure": 700
+        }
+      ]
+    },
+    {
+      "departure_time": "16:12:00",
+      "train_id": "R-4-0-009",
+      "origin_station": "R24",
+      "total_travel_time": 760,
+      "stations": [
+        {
+          "station_id": "R24",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "R25",
+          "arrival": 120,
+          "departure": 160
+        },
+        {
+          "station_id": "R26",
+          "arrival": 300,
+          "departure": 340
+        },
+        {
+          "station_id": "R27",
+          "arrival": 540,
+          "departure": 580
+        },
+        {
+          "station_id": "R28",
+          "arrival": 720,
+          "departure": 760
+        }
+      ]
+    },
+    {
+      "departure_time": "16:34:00",
+      "train_id": "R-4-0-010",
+      "origin_station": "R24",
+      "total_travel_time": 640,
+      "stations": [
+        {
+          "station_id": "R24",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "R25",
+          "arrival": 100,
+          "departure": 140
+        },
+        {
+          "station_id": "R26",
+          "arrival": 240,
+          "departure": 280
+        },
+        {
+          "station_id": "R27",
+          "arrival": 420,
+          "departure": 460
+        },
+        {
+          "station_id": "R28",
+          "arrival": 600,
+          "departure": 640
+        }
+      ]
+    },
+    {
+      "departure_time": "16:53:00",
+      "train_id": "R-4-0-011",
+      "origin_station": "R24",
+      "total_travel_time": 700,
+      "stations": [
+        {
+          "station_id": "R24",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "R25",
+          "arrival": 120,
+          "departure": 160
+        },
+        {
+          "station_id": "R26",
+          "arrival": 300,
+          "departure": 340
+        },
+        {
+          "station_id": "R27",
+          "arrival": 480,
+          "departure": 520
+        },
+        {
+          "station_id": "R28",
+          "arrival": 660,
+          "departure": 700
+        }
+      ]
+    },
+    {
+      "departure_time": "17:12:00",
+      "train_id": "R-4-0-012",
+      "origin_station": "R24",
+      "total_travel_time": 640,
+      "stations": [
+        {
+          "station_id": "R24",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "R25",
+          "arrival": 100,
+          "departure": 140
+        },
+        {
+          "station_id": "R26",
+          "arrival": 240,
+          "departure": 280
+        },
+        {
+          "station_id": "R27",
+          "arrival": 420,
+          "departure": 460
+        },
+        {
+          "station_id": "R28",
+          "arrival": 600,
+          "departure": 640
+        }
+      ]
+    },
+    {
+      "departure_time": "17:31:00",
+      "train_id": "R-4-0-013",
+      "origin_station": "R24",
+      "total_travel_time": 700,
+      "stations": [
+        {
+          "station_id": "R24",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "R25",
+          "arrival": 120,
+          "departure": 160
+        },
+        {
+          "station_id": "R26",
+          "arrival": 300,
+          "departure": 340
+        },
+        {
+          "station_id": "R27",
+          "arrival": 480,
+          "departure": 520
+        },
+        {
+          "station_id": "R28",
+          "arrival": 660,
+          "departure": 700
+        }
+      ]
+    }
+  ]
+}

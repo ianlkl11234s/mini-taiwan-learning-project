@@ -17,6 +17,8 @@ const TRACK_COLORS: Record<string, string> = {
   'R-2-1': '#e63946',
   'R-3-0': '#ff6b6b',
   'R-3-1': '#ff6b6b',
+  'R-4-0': '#e63946',
+  'R-4-1': '#e63946',
 };
 
 function App() {
@@ -88,12 +90,12 @@ function App() {
       paint: {
         'line-color': ['get', 'color'],
         'line-width': 4,
-        // R-1 主線顯示, R-3 新北投支線顯示, R-2 共用區段隱藏 (與 R-1 重疊)
+        // R-1 主線顯示, R-3 新北投支線顯示, R-2/R-4 共用區段隱藏 (與 R-1 重疊)
         'line-opacity': [
           'case',
           ['in', 'R-1', ['get', 'track_id']], 0.8, // R-1-0, R-1-1 可見 (主線)
           ['in', 'R-3', ['get', 'track_id']], 0.8, // R-3-0, R-3-1 可見 (新北投支線)
-          0.0 // R-2 透明 (與 R-1 共用區段，避免重複顯示)
+          0.0 // R-2, R-4 透明 (與 R-1 共用區段，避免重複顯示)
         ],
       },
     });

@@ -59,24 +59,51 @@ def seconds_to_time(seconds: int) -> str:
 
 def classify_train(schedule: List[Dict], direction: str) -> str:
     """
-    分類列車為 R-1 (全程) 或 R-2 (區間)
+    分類列車為 R-1 (全程), R-2 (南段區間), 或 R-4 (北段區間)
 
     direction: "淡水" (北上) 或 "象山" (南下)
+
+    路線定義：
+    - R-1: 全程車 (象山 R02 ↔ 淡水 R28)
+    - R-2: 南段區間車 (象山/大安 R02/R05 ↔ 北投 R22)
+    - R-4: 北段區間車 (北投 R22 ↔ 淡水 R28)
     """
     start_station = schedule[0]["StationCode"]
     end_station = schedule[-1]["StationCode"]
 
+    # 取得站號數字
+    def station_num(s):
+        return int(s[1:]) if s.startswith('R') and s[1:].isdigit() else 0
+
+    start_num = station_num(start_station)
+    end_num = station_num(end_station)
+
     if direction == "淡水":
-        # 北上: R02/R05 → R28
-        # 全程車: 從 R02 發車且到 R28
+        # 北上方向
         if start_station == "R02" and end_station == "R28":
+            # 全程車：從象山到淡水
+            return "R-1"
+        elif end_station == "R22" or end_num <= 22:
+            # 終點在北投或以南：南段區間車
+            return "R-2"
+        elif end_station == "R28" and start_num >= 22:
+            # 終點淡水，起點在北投或以北：北段區間車
+            return "R-4"
+        elif end_station == "R28":
+            # 終點淡水，起點在北投以南：使用全程車軌道
             return "R-1"
         else:
             return "R-2"
     else:
-        # 南下: R28 → R02
-        # 全程車: 從 R28 發車且到 R02
+        # 南下方向 (象山)
         if start_station == "R28" and end_station == "R02":
+            # 全程車：從淡水到象山
+            return "R-1"
+        elif start_station == "R22" or start_num <= 22:
+            # 起點在北投或以南：南段區間車
+            return "R-2"
+        elif start_num > 22 and end_num <= 22:
+            # 起點在北投以北，終點在北投以南：使用全程車軌道
             return "R-1"
         else:
             return "R-2"
@@ -207,7 +234,12 @@ def main():
         "R-1-1": [],  # 淡水→象山 全程
         "R-2-0": [],  # 象山/大安→北投 區間 (往北投方向)
         "R-2-1": [],  # 北投→象山/大安 區間 (往象山方向)
+        "R-4-0": [],  # 北投→淡水 北段區間 (往淡水方向)
+        "R-4-1": [],  # 淡水→北投 北段區間 (往北投方向)
     }
+
+    # 統計各路線班次 (全域)
+    route_counts = {"R-1": 0, "R-2": 0, "R-4": 0}
 
     # 處理各方向資料
     for direction_data in data:
@@ -226,19 +258,14 @@ def main():
 
             trains = timetable["Trains"]
 
-            # 統計各路線班次
-            r1_count = 0
-            r2_count = 0
+            # 統計各路線班次 (此方向)
+            dir_counts = {"R-1": 0, "R-2": 0, "R-4": 0}
 
             for train in trains:
                 route_type = classify_train(train["Schedule"], direction)
-
-                if route_type == "R-1":
-                    r1_count += 1
-                    train_idx = r1_count
-                else:
-                    r2_count += 1
-                    train_idx = r2_count
+                dir_counts[route_type] += 1
+                route_counts[route_type] += 1
+                train_idx = route_counts[route_type]
 
                 converted = convert_train(train, direction, train_idx, route_type)
 
@@ -250,8 +277,9 @@ def main():
 
                 schedules[track_id].append(converted)
 
-            print(f"    R-1 (全程): {r1_count} 班")
-            print(f"    R-2 (區間): {r2_count} 班")
+            print(f"    R-1 (全程): {dir_counts['R-1']} 班")
+            print(f"    R-2 (南段區間): {dir_counts['R-2']} 班")
+            print(f"    R-4 (北段區間): {dir_counts['R-4']} 班")
 
     # 排序並輸出
     print(f"\n輸出目錄: {OUTPUT_DIR}")
@@ -307,12 +335,41 @@ def main():
         departures=r2_1_deps
     )
 
+    # R-4 北段區間 (北投 R22 ↔ 淡水 R28)
+    r4_stations = STATION_ORDER[STATION_ORDER.index("R22"):]  # R22~R28
+
+    # R-4-0: 往淡水方向的北段區間車
+    r4_0_deps = sort_departures(schedules["R-4-0"])
+    r4_0 = create_schedule_file(
+        track_id="R-4-0",
+        route_id="R-4",
+        name="北投 → 淡水",
+        origin="R22",
+        destination="R28",
+        stations=r4_stations,
+        departures=r4_0_deps
+    )
+
+    # R-4-1: 往北投方向的北段區間車 (通常很少或沒有)
+    r4_1_deps = sort_departures(schedules["R-4-1"])
+    r4_1 = create_schedule_file(
+        track_id="R-4-1",
+        route_id="R-4",
+        name="淡水 → 北投",
+        origin="R28",
+        destination="R22",
+        stations=list(reversed(r4_stations)),
+        departures=r4_1_deps
+    )
+
     # 寫入檔案
     output_files = [
         ("R-1-0.json", r1_0),
         ("R-1-1.json", r1_1),
         ("R-2-0.json", r2_0),
         ("R-2-1.json", r2_1),
+        ("R-4-0.json", r4_0),
+        ("R-4-1.json", r4_1),
     ]
 
     for filename, data in output_files:

@@ -3,7 +3,7 @@ import type { TrackCollection, StationCollection, Track } from '../types/track';
 import type { TrackSchedule } from '../types/schedule';
 
 // 軌道 ID 列表
-const TRACK_IDS = ['R-1-0', 'R-1-1', 'R-2-0', 'R-2-1', 'R-3-0', 'R-3-1'];
+const TRACK_IDS = ['R-1-0', 'R-1-1', 'R-2-0', 'R-2-1', 'R-3-0', 'R-3-1', 'R-4-0', 'R-4-1'];
 
 // 車站在軌道上的實際進度 (0-1)
 export type StationProgressMap = Record<string, Record<string, number>>;

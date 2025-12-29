@@ -55,12 +55,12 @@ export function TimeControl({
     <div
       style={{
         position: 'absolute',
-        bottom: 20,
+        bottom: 12,
         left: 20,
         right: 20,
         background: 'rgba(0, 0, 0, 0.85)',
-        borderRadius: 12,
-        padding: '16px 20px',
+        borderRadius: 8,
+        padding: '8px 16px',
         color: 'white',
         fontFamily: 'system-ui, -apple-system, sans-serif',
         boxShadow: '0 4px 20px rgba(0,0,0,0.3)',
@@ -72,11 +72,11 @@ export function TimeControl({
           display: 'flex',
           justifyContent: 'space-between',
           alignItems: 'center',
-          marginBottom: 12,
+          marginBottom: 6,
         }}
       >
         {/* 時間顯示 */}
-        <div style={{ fontSize: 32, fontWeight: 600, fontVariantNumeric: 'tabular-nums' }}>
+        <div style={{ fontSize: 24, fontWeight: 600, fontVariantNumeric: 'tabular-nums' }}>
           {currentTime}
         </div>
 
@@ -104,7 +104,7 @@ export function TimeControl({
       </div>
 
       {/* 時間滑桿 */}
-      <div style={{ marginBottom: 12 }}>
+      <div style={{ marginBottom: 6 }}>
         <input
           type="range"
           min={minTime}
@@ -153,13 +153,13 @@ export function TimeControl({
         <button
           onClick={onTogglePlay}
           style={{
-            width: 48,
-            height: 48,
+            width: 36,
+            height: 36,
             borderRadius: '50%',
             border: 'none',
             background: '#d90023',
             color: 'white',
-            fontSize: 20,
+            fontSize: 16,
             cursor: 'pointer',
             display: 'flex',
             alignItems: 'center',
@@ -173,25 +173,22 @@ export function TimeControl({
           {isPlaying ? '⏸' : '▶'}
         </button>
 
-        {/* 速度滑桿 (對數刻度) */}
+        {/* 速度滑桿 (線性刻度) */}
         <div style={{ display: 'flex', alignItems: 'center', gap: 12, flex: 1, maxWidth: 320 }}>
           <span style={{ fontSize: 12, color: '#888', minWidth: 24 }}>1x</span>
           <input
             type="range"
-            min={0}
-            max={100}
-            value={Math.log(speed) / Math.log(300) * 100}
+            min={1}
+            max={300}
+            value={speed}
             onChange={(e) => {
-              // 對數刻度: 0-100 → 1-300x
-              const logValue = Number(e.target.value) / 100;
-              const newSpeed = Math.round(Math.pow(300, logValue));
-              onSpeedChange(Math.max(1, newSpeed));
+              onSpeedChange(Number(e.target.value));
             }}
             style={{
               flex: 1,
               height: 6,
               appearance: 'none',
-              background: `linear-gradient(to right, #d90023 0%, #d90023 ${Math.log(speed) / Math.log(300) * 100}%, #333 ${Math.log(speed) / Math.log(300) * 100}%, #333 100%)`,
+              background: `linear-gradient(to right, #d90023 0%, #d90023 ${(speed - 1) / 299 * 100}%, #333 ${(speed - 1) / 299 * 100}%, #333 100%)`,
               borderRadius: 3,
               cursor: 'pointer',
             }}
@@ -212,18 +209,18 @@ export function TimeControl({
         </div>
 
         {/* 快速跳轉按鈕 */}
-        <div style={{ display: 'flex', gap: 8 }}>
+        <div style={{ display: 'flex', gap: 6 }}>
           {['06:00', '08:00', '12:00', '18:00', '22:00', '00:00'].map((time) => (
             <button
               key={time}
               onClick={() => timeEngine.jumpTo(time)}
               style={{
-                padding: '6px 10px',
+                padding: '4px 8px',
                 borderRadius: 4,
                 border: '1px solid #444',
                 background: 'transparent',
                 color: '#888',
-                fontSize: 12,
+                fontSize: 11,
                 cursor: 'pointer',
               }}
             >

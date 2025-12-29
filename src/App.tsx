@@ -9,30 +9,19 @@ import { TimeControl } from './components/TimeControl';
 // 設定 Mapbox Token
 mapboxgl.accessToken = import.meta.env.VITE_MAPBOX_TOKEN || '';
 
-// 軌道顏色
-const TRACK_COLORS: Record<string, string> = {
-  'R-1-0': '#d90023',
-  'R-1-1': '#d90023',
-  'R-2-0': '#e63946',
-  'R-2-1': '#e63946',
-  'R-3-0': '#ff6b6b',
-  'R-3-1': '#ff6b6b',
-  'R-4-0': '#e63946',
-  'R-4-1': '#e63946',
-  // 首班車專用軌道 - 北上 (與主線同色)
-  'R-5-0': '#d90023',
-  'R-6-0': '#d90023',
-  'R-7-0': '#d90023',
-  'R-8-0': '#d90023',
-  // 首班車專用軌道 - 南下 (與主線同色)
-  'R-9-1': '#d90023',
-  'R-10-1': '#d90023',
-  'R-11-1': '#d90023',
-  'R-12-1': '#d90023',
-  'R-13-1': '#d90023',
-  'R-14-1': '#d90023',
-  'R-15-1': '#d90023',
+// 軌道顏色（統一使用深紅色）
+const TRACK_COLOR = '#d90023';
+
+// 列車顏色（依方向區分）
+const TRAIN_COLORS = {
+  northbound: '#d90023',  // 往淡水（北上）- 深紅色
+  southbound: '#ff8a8a',  // 往象山（南下）- 淡紅色
 };
+
+// 判斷列車方向：track_id 以 -0 結尾為北上，-1 結尾為南下
+function getTrainColor(trackId: string): string {
+  return trackId.endsWith('-0') ? TRAIN_COLORS.northbound : TRAIN_COLORS.southbound;
+}
 
 function App() {
   // 資料載入
@@ -49,7 +38,7 @@ function App() {
   const [timeEngineReady, setTimeEngineReady] = useState(false);
   const [currentTime, setCurrentTime] = useState('06:00:00');
   const [isPlaying, setIsPlaying] = useState(false);
-  const [speed, setSpeed] = useState(160);
+  const [speed, setSpeed] = useState(90);
 
   // 列車引擎
   const trainEngineRef = useRef<TrainEngine | null>(null);
@@ -101,7 +90,7 @@ function App() {
         'line-cap': 'round',
       },
       paint: {
-        'line-color': ['get', 'color'],
+        'line-color': TRACK_COLOR,  // 統一使用深紅色
         'line-width': 4,
         // R-1 主線顯示, R-3 新北投支線顯示, 其他軌道隱藏 (與 R-1 重疊)
         'line-opacity': [
@@ -134,10 +123,10 @@ function App() {
       type: 'circle',
       source: 'stations',
       paint: {
-        'circle-radius': 5,
+        'circle-radius': 6.5,  // 原 5 * 1.3
         'circle-color': '#ffffff',
-        'circle-stroke-color': '#d90023',
-        'circle-stroke-width': 2,
+        'circle-stroke-color': TRACK_COLOR,
+        'circle-stroke-width': 2.5,  // 原 2 * 1.3
       },
     });
 
@@ -162,7 +151,7 @@ function App() {
   // 初始化時間引擎
   useEffect(() => {
     const engine = new TimeEngine({
-      speed: 160, // 初始速度與 UI 同步
+      speed: 90, // 初始速度與 UI 同步
       onTick: (time) => {
         setCurrentTime(
           `${time.getHours().toString().padStart(2, '0')}:${time
@@ -231,7 +220,7 @@ function App() {
       let marker = trainMarkers.current.get(train.trainId);
       const isStopped = train.status === 'stopped';
       const isColliding = train.isColliding;
-      const baseColor = TRACK_COLORS[train.trackId] || '#d90023';
+      const baseColor = getTrainColor(train.trackId);  // 依方向區分顏色
       // 碰撞時使用不同顏色區分 R-1 和 R-2
       const displayColor = isColliding
         ? (train.trackId.startsWith('R-1') ? '#ff4444' : '#ff8800')
@@ -384,6 +373,55 @@ function App() {
         <p style={{ margin: '4px 0 0', fontSize: 14, color: '#888' }}>
           淡水信義線 模擬
         </p>
+      </div>
+
+      {/* 圖例 */}
+      <div
+        style={{
+          position: 'absolute',
+          top: 90,
+          left: 20,
+          zIndex: 10,
+          background: 'rgba(0, 0, 0, 0.75)',
+          borderRadius: 8,
+          padding: '10px 14px',
+          color: 'white',
+          fontFamily: 'system-ui',
+          fontSize: 12,
+        }}
+      >
+        <div style={{ marginBottom: 8, fontWeight: 600, color: '#aaa' }}>圖例</div>
+        {/* 軌道 */}
+        <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 6 }}>
+          <div style={{ width: 20, height: 3, background: TRACK_COLOR, borderRadius: 2 }} />
+          <span>淡水信義線</span>
+        </div>
+        {/* 北上列車 */}
+        <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 6 }}>
+          <div
+            style={{
+              width: 10,
+              height: 10,
+              background: TRAIN_COLORS.northbound,
+              borderRadius: '50%',
+              border: '2px solid white',
+            }}
+          />
+          <span>往淡水（北上）</span>
+        </div>
+        {/* 南下列車 */}
+        <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+          <div
+            style={{
+              width: 10,
+              height: 10,
+              background: TRAIN_COLORS.southbound,
+              borderRadius: '50%',
+              border: '2px solid white',
+            }}
+          />
+          <span>往象山（南下）</span>
+        </div>
       </div>
 
       {/* 社群連結與提示 */}

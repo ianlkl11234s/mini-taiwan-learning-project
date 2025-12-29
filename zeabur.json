@@ -1,6 +1,0 @@
-{
-  "$schema": "https://schema.zeabur.app/zbpack.json",
-  "build_command": "cd viewer && npm install && npm run build",
-  "output_dir": "viewer/dist",
-  "start_command": "npx serve viewer/dist -s"
-}

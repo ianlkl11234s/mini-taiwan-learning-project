@@ -5,7 +5,7 @@
       "type": "Feature",
       "properties": {
         "track_id": "R-3-1",
-        "color": "#264653",
+        "color": "#ff6b6b",
         "route_id": "R-3",
         "direction": 1,
         "name": "新北投 → 北投",

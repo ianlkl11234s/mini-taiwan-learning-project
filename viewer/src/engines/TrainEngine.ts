@@ -1,13 +1,13 @@
 /**
- * TrainEngine - 列車引擎
+ * TrainEngine - 列車引擎 (精確版)
  *
- * 根據時刻表管理列車：
- * - 產生列車實例
- * - 計算列車即時位置
- * - 管理列車生命週期（出發→行駛→抵達消失）
+ * 使用分段插值計算列車位置：
+ * - 停站時列車靜止在車站
+ * - 行駛時在兩站間平滑移動
+ * - 使用時刻表中的精確站間時間
  */
 
-import type { Schedule, TrackSchedule, Departure } from '../types/schedule';
+import type { Schedule, TrackSchedule, Departure, StationTime } from '../types/schedule';
 import type { Track } from '../types/track';
 
 export interface Train {
@@ -15,9 +15,12 @@ export interface Train {
   trackId: string;
   departureTime: number; // 當天秒數
   totalTravelTime: number; // 秒
-  status: 'waiting' | 'running' | 'arrived';
-  progress: number; // 0-1
+  status: 'waiting' | 'running' | 'stopped' | 'arrived';
+  progress: number; // 0-1 (整體進度)
   position: [number, number]; // [lng, lat]
+  currentStation?: string; // 停靠中的車站 ID
+  nextStation?: string; // 下一站 ID
+  segmentProgress?: number; // 當前區段進度 0-1
 }
 
 export interface TrainEngineOptions {
@@ -45,12 +48,11 @@ function calculateTotalLength(coords: [number, number][]): number {
 }
 
 /**
- * 計算兩點間距離（使用 Haversine 公式簡化版）
+ * 計算兩點間距離
  */
 function distance(p1: [number, number], p2: [number, number]): number {
   const dx = p2[0] - p1[0];
   const dy = p2[1] - p1[1];
-  // 簡化計算，對於短距離足夠精確
   return Math.sqrt(dx * dx + dy * dy);
 }
 
@@ -85,6 +87,31 @@ function interpolateOnLineString(
   return coords[coords.length - 1];
 }
 
+/**
+ * 找到車站在軌道座標中的位置索引
+ * 假設車站均勻分布在軌道上
+ */
+function getStationProgress(stationIndex: number, totalStations: number): number {
+  if (totalStations <= 1) return 0;
+  return stationIndex / (totalStations - 1);
+}
+
+/**
+ * 在兩站之間進行插值
+ */
+function interpolateBetweenStations(
+  coords: [number, number][],
+  fromStationIndex: number,
+  toStationIndex: number,
+  totalStations: number,
+  segmentProgress: number
+): [number, number] {
+  const fromProgress = getStationProgress(fromStationIndex, totalStations);
+  const toProgress = getStationProgress(toStationIndex, totalStations);
+  const actualProgress = fromProgress + (toProgress - fromProgress) * segmentProgress;
+  return interpolateOnLineString(coords, actualProgress);
+}
+
 export class TrainEngine {
   private schedules: Map<string, TrackSchedule>;
   private tracks: Map<string, Track>;
@@ -96,7 +123,82 @@ export class TrainEngine {
   }
 
   /**
-   * 更新所有列車狀態
+   * 根據已過時間找到當前所在的區段
+   */
+  private findCurrentSegment(
+    stations: StationTime[],
+    elapsedTime: number
+  ): {
+    status: 'waiting' | 'running' | 'stopped' | 'arrived';
+    stationIndex: number;
+    nextStationIndex: number;
+    segmentProgress: number;
+    currentStation?: string;
+    nextStation?: string;
+  } {
+    // 尚未發車
+    if (elapsedTime < 0) {
+      return {
+        status: 'waiting',
+        stationIndex: 0,
+        nextStationIndex: 0,
+        segmentProgress: 0,
+        currentStation: stations[0]?.station_id,
+      };
+    }
+
+    // 遍歷所有站點
+    for (let i = 0; i < stations.length; i++) {
+      const station = stations[i];
+      const arrival = station.arrival;
+      const departure = station.departure;
+
+      // 檢查是否在這個站停靠
+      if (elapsedTime >= arrival && elapsedTime < departure) {
+        return {
+          status: 'stopped',
+          stationIndex: i,
+          nextStationIndex: i < stations.length - 1 ? i + 1 : i,
+          segmentProgress: 0,
+          currentStation: station.station_id,
+          nextStation: i < stations.length - 1 ? stations[i + 1].station_id : undefined,
+        };
+      }
+
+      // 檢查是否在這個站和下一站之間行駛
+      if (i < stations.length - 1) {
+        const nextStation = stations[i + 1];
+        const nextArrival = nextStation.arrival;
+
+        if (elapsedTime >= departure && elapsedTime < nextArrival) {
+          const travelTime = nextArrival - departure;
+          const travelElapsed = elapsedTime - departure;
+          const segmentProgress = travelTime > 0 ? travelElapsed / travelTime : 0;
+
+          return {
+            status: 'running',
+            stationIndex: i,
+            nextStationIndex: i + 1,
+            segmentProgress: Math.min(1, Math.max(0, segmentProgress)),
+            currentStation: undefined,
+            nextStation: nextStation.station_id,
+          };
+        }
+      }
+    }
+
+    // 已抵達終點
+    return {
+      status: 'arrived',
+      stationIndex: stations.length - 1,
+      nextStationIndex: stations.length - 1,
+      segmentProgress: 1,
+      currentStation: stations[stations.length - 1]?.station_id,
+    };
+  }
+
+  /**
+   * 更新所有列車狀態 (精確版)
    * @param currentTimeSeconds 當天秒數 (0-86399)
    */
   update(currentTimeSeconds: number): Train[] {
@@ -107,47 +209,64 @@ export class TrainEngine {
       const track = this.tracks.get(trackId);
       if (!track) continue;
 
+      const coords = track.geometry.coordinates as [number, number][];
+      const totalStations = schedule.stations.length;
+
       // 遍歷該軌道的所有發車班次
       for (const departure of schedule.departures) {
         const departureSeconds = timeToSeconds(departure.departure_time);
         const totalTravelTime = departure.total_travel_time;
         const arrivalSeconds = departureSeconds + totalTravelTime;
 
-        // 判斷列車狀態
-        let status: Train['status'];
-        let progress: number;
+        // 計算已過時間
+        const elapsedTime = currentTimeSeconds - departureSeconds;
 
-        if (currentTimeSeconds < departureSeconds) {
-          // 尚未發車
-          status = 'waiting';
-          progress = 0;
-        } else if (currentTimeSeconds >= arrivalSeconds) {
-          // 已抵達終點
-          status = 'arrived';
-          progress = 1;
-        } else {
-          // 行駛中
-          status = 'running';
-          progress = (currentTimeSeconds - departureSeconds) / totalTravelTime;
+        // 快速檢查：跳過尚未發車或已抵達的列車
+        if (elapsedTime < -60 || elapsedTime > totalTravelTime + 60) {
+          continue;
         }
 
-        // 只顯示行駛中的列車
-        if (status !== 'running') continue;
+        // 使用分段插值找到當前狀態
+        const segment = this.findCurrentSegment(departure.stations, elapsedTime);
+
+        // 只顯示運行中或停站中的列車
+        if (segment.status === 'waiting' || segment.status === 'arrived') {
+          continue;
+        }
 
         // 計算位置
-        const position = interpolateOnLineString(
-          track.geometry.coordinates as [number, number][],
-          progress
-        );
+        let position: [number, number];
+        if (segment.status === 'stopped') {
+          // 停站中：位置固定在車站
+          const stationProgress = getStationProgress(segment.stationIndex, totalStations);
+          position = interpolateOnLineString(coords, stationProgress);
+        } else {
+          // 行駛中：在兩站間插值
+          position = interpolateBetweenStations(
+            coords,
+            segment.stationIndex,
+            segment.nextStationIndex,
+            totalStations,
+            segment.segmentProgress
+          );
+        }
+
+        // 計算整體進度
+        const overallProgress = totalTravelTime > 0
+          ? Math.max(0, Math.min(1, elapsedTime / totalTravelTime))
+          : 0;
 
         const train: Train = {
           trainId: departure.train_id,
           trackId,
           departureTime: departureSeconds,
           totalTravelTime,
-          status,
-          progress,
+          status: segment.status,
+          progress: overallProgress,
           position,
+          currentStation: segment.currentStation,
+          nextStation: segment.nextStation,
+          segmentProgress: segment.segmentProgress,
         };
 
         this.activeTrains.set(train.trainId, train);
@@ -174,13 +293,26 @@ export class TrainEngine {
   /**
    * 取得列車數量統計
    */
-  getStats(): { total: number; byTrack: Record<string, number> } {
+  getStats(): {
+    total: number;
+    running: number;
+    stopped: number;
+    byTrack: Record<string, number>
+  } {
     const byTrack: Record<string, number> = {};
+    let running = 0;
+    let stopped = 0;
+
     for (const train of this.activeTrains.values()) {
       byTrack[train.trackId] = (byTrack[train.trackId] || 0) + 1;
+      if (train.status === 'running') running++;
+      if (train.status === 'stopped') stopped++;
     }
+
     return {
       total: this.activeTrains.size,
+      running,
+      stopped,
       byTrack,
     };
   }

@@ -144,27 +144,42 @@ export function TimeControl({
           {isPlaying ? '⏸' : '▶'}
         </button>
 
-        {/* 速度選擇 */}
-        <div style={{ display: 'flex', gap: 8 }}>
-          {TimeEngine.SPEED_OPTIONS.map((s) => (
-            <button
-              key={s}
-              onClick={() => onSpeedChange(s)}
-              style={{
-                padding: '8px 14px',
-                borderRadius: 6,
-                border: 'none',
-                background: speed === s ? '#d90023' : '#333',
-                color: 'white',
-                fontSize: 14,
-                fontWeight: speed === s ? 600 : 400,
-                cursor: 'pointer',
-                transition: 'all 0.15s',
-              }}
-            >
-              {s}x
-            </button>
-          ))}
+        {/* 速度滑桿 (對數刻度) */}
+        <div style={{ display: 'flex', alignItems: 'center', gap: 12, flex: 1, maxWidth: 320 }}>
+          <span style={{ fontSize: 12, color: '#888', minWidth: 24 }}>1x</span>
+          <input
+            type="range"
+            min={0}
+            max={100}
+            value={Math.log(speed) / Math.log(300) * 100}
+            onChange={(e) => {
+              // 對數刻度: 0-100 → 1-300x
+              const logValue = Number(e.target.value) / 100;
+              const newSpeed = Math.round(Math.pow(300, logValue));
+              onSpeedChange(Math.max(1, newSpeed));
+            }}
+            style={{
+              flex: 1,
+              height: 6,
+              appearance: 'none',
+              background: `linear-gradient(to right, #d90023 0%, #d90023 ${Math.log(speed) / Math.log(300) * 100}%, #333 ${Math.log(speed) / Math.log(300) * 100}%, #333 100%)`,
+              borderRadius: 3,
+              cursor: 'pointer',
+            }}
+          />
+          <span style={{ fontSize: 12, color: '#888', minWidth: 32 }}>300x</span>
+          <span
+            style={{
+              fontSize: 16,
+              fontWeight: 600,
+              color: '#d90023',
+              minWidth: 50,
+              textAlign: 'right',
+              fontVariantNumeric: 'tabular-nums',
+            }}
+          >
+            {speed}x
+          </span>
         </div>
 
         {/* 快速跳轉按鈕 */}

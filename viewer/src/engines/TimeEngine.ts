@@ -95,10 +95,10 @@ export class TimeEngine {
   }
 
   /**
-   * 設定播放速度
+   * 設定播放速度 (1x - 300x)
    */
   setSpeed(speed: number): void {
-    this.speed = Math.max(0.1, Math.min(100, speed));
+    this.speed = Math.max(1, Math.min(300, speed));
   }
 
   /**

@@ -7,7 +7,7 @@
  * - 使用時刻表中的精確站間時間
  */
 
-import type { Schedule, TrackSchedule, Departure, StationTime } from '../types/schedule';
+import type { TrackSchedule, StationTime } from '../types/schedule';
 import type { Track } from '../types/track';
 
 export interface Train {
@@ -173,7 +173,7 @@ export class TrainEngine {
    * @param progress 軌道進度
    */
   private calculatePerpendicularOffset(
-    position: [number, number],
+    _position: [number, number],
     trackId: string,
     progress: number,
     offsetDirection: number
@@ -404,7 +404,6 @@ export class TrainEngine {
       for (const departure of schedule.departures) {
         const departureSeconds = timeToSeconds(departure.departure_time);
         const totalTravelTime = departure.total_travel_time;
-        const arrivalSeconds = departureSeconds + totalTravelTime;
 
         // 計算已過時間
         const elapsedTime = currentTimeSeconds - departureSeconds;

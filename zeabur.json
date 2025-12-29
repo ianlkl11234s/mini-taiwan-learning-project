@@ -1,0 +1,10 @@
+{
+  "$schema": "https://schema.zeabur.com/deploy.json",
+  "project": {
+    "root": "viewer"
+  },
+  "build": {
+    "type": "node",
+    "framework": "vite"
+  }
+}

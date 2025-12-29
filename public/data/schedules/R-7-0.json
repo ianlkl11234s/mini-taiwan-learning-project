@@ -1,0 +1,107 @@
+{
+  "track_id": "R-7-0",
+  "route_id": "R-7",
+  "name": "圓山 → 淡水",
+  "origin": "R15",
+  "destination": "R28",
+  "stations": [
+    "R15",
+    "R16",
+    "R17",
+    "R18",
+    "R19",
+    "R20",
+    "R21",
+    "R22",
+    "R23",
+    "R24",
+    "R25",
+    "R26",
+    "R27",
+    "R28"
+  ],
+  "travel_time_minutes": 27,
+  "dwell_time_seconds": 40,
+  "is_weekday": true,
+  "departure_count": 1,
+  "departures": [
+    {
+      "departure_time": "06:00:00",
+      "train_id": "R-7-0-001",
+      "origin_station": "R15",
+      "total_travel_time": 1660,
+      "stations": [
+        {
+          "station_id": "R15",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "R16",
+          "arrival": 120,
+          "departure": 160
+        },
+        {
+          "station_id": "R17",
+          "arrival": 240,
+          "departure": 280
+        },
+        {
+          "station_id": "R18",
+          "arrival": 340,
+          "departure": 380
+        },
+        {
+          "station_id": "R19",
+          "arrival": 440,
+          "departure": 480
+        },
+        {
+          "station_id": "R20",
+          "arrival": 540,
+          "departure": 580
+        },
+        {
+          "station_id": "R21",
+          "arrival": 640,
+          "departure": 680
+        },
+        {
+          "station_id": "R22",
+          "arrival": 740,
+          "departure": 780
+        },
+        {
+          "station_id": "R23",
+          "arrival": 900,
+          "departure": 940
+        },
+        {
+          "station_id": "R24",
+          "arrival": 1020,
+          "departure": 1060
+        },
+        {
+          "station_id": "R25",
+          "arrival": 1140,
+          "departure": 1180
+        },
+        {
+          "station_id": "R26",
+          "arrival": 1320,
+          "departure": 1360
+        },
+        {
+          "station_id": "R27",
+          "arrival": 1440,
+          "departure": 1480
+        },
+        {
+          "station_id": "R28",
+          "arrival": 1620,
+          "departure": 1660
+        }
+      ]
+    }
+  ]
+}

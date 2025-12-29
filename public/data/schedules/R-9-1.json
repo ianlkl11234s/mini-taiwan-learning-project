@@ -1,0 +1,161 @@
+{
+  "track_id": "R-9-1",
+  "route_id": "R-9",
+  "name": "紅樹林 → 象山",
+  "origin": "R24",
+  "destination": "R02",
+  "stations": [
+    "R24",
+    "R23",
+    "R22",
+    "R21",
+    "R20",
+    "R19",
+    "R18",
+    "R17",
+    "R16",
+    "R15",
+    "R14",
+    "R13",
+    "R12",
+    "R11",
+    "R10",
+    "R09",
+    "R08",
+    "R07",
+    "R06",
+    "R05",
+    "R04",
+    "R03",
+    "R02"
+  ],
+  "travel_time_minutes": 43,
+  "dwell_time_seconds": 40,
+  "is_weekday": true,
+  "departure_count": 1,
+  "departures": [
+    {
+      "departure_time": "06:00:00",
+      "train_id": "R-9-1-001",
+      "origin_station": "R24",
+      "total_travel_time": 2620,
+      "stations": [
+        {
+          "station_id": "R24",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "R23",
+          "arrival": 120,
+          "departure": 160
+        },
+        {
+          "station_id": "R22",
+          "arrival": 300,
+          "departure": 340
+        },
+        {
+          "station_id": "R21",
+          "arrival": 420,
+          "departure": 460
+        },
+        {
+          "station_id": "R20",
+          "arrival": 540,
+          "departure": 580
+        },
+        {
+          "station_id": "R19",
+          "arrival": 660,
+          "departure": 700
+        },
+        {
+          "station_id": "R18",
+          "arrival": 760,
+          "departure": 800
+        },
+        {
+          "station_id": "R17",
+          "arrival": 860,
+          "departure": 900
+        },
+        {
+          "station_id": "R16",
+          "arrival": 960,
+          "departure": 1000
+        },
+        {
+          "station_id": "R15",
+          "arrival": 1080,
+          "departure": 1120
+        },
+        {
+          "station_id": "R14",
+          "arrival": 1260,
+          "departure": 1300
+        },
+        {
+          "station_id": "R13",
+          "arrival": 1380,
+          "departure": 1420
+        },
+        {
+          "station_id": "R12",
+          "arrival": 1480,
+          "departure": 1520
+        },
+        {
+          "station_id": "R11",
+          "arrival": 1580,
+          "departure": 1620
+        },
+        {
+          "station_id": "R10",
+          "arrival": 1680,
+          "departure": 1720
+        },
+        {
+          "station_id": "R09",
+          "arrival": 1780,
+          "departure": 1820
+        },
+        {
+          "station_id": "R08",
+          "arrival": 1880,
+          "departure": 1920
+        },
+        {
+          "station_id": "R07",
+          "arrival": 2040,
+          "departure": 2080
+        },
+        {
+          "station_id": "R06",
+          "arrival": 2140,
+          "departure": 2180
+        },
+        {
+          "station_id": "R05",
+          "arrival": 2240,
+          "departure": 2280
+        },
+        {
+          "station_id": "R04",
+          "arrival": 2340,
+          "departure": 2380
+        },
+        {
+          "station_id": "R03",
+          "arrival": 2460,
+          "departure": 2500
+        },
+        {
+          "station_id": "R02",
+          "arrival": 2580,
+          "departure": 2620
+        }
+      ]
+    }
+  ]
+}

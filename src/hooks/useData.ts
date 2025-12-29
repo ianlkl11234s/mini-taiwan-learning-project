@@ -3,7 +3,17 @@ import type { TrackCollection, StationCollection, Track } from '../types/track';
 import type { TrackSchedule } from '../types/schedule';
 
 // 軌道 ID 列表
-const TRACK_IDS = ['R-1-0', 'R-1-1', 'R-2-0', 'R-2-1', 'R-3-0', 'R-3-1', 'R-4-0', 'R-4-1'];
+const TRACK_IDS = [
+  'R-1-0', 'R-1-1',  // 全程車
+  'R-2-0', 'R-2-1',  // 南段區間車
+  'R-3-0', 'R-3-1',  // 新北投支線
+  'R-4-0', 'R-4-1',  // 北段區間車
+  'R-5-0',           // 首班車：大安→淡水
+  'R-6-0',           // 首班車：雙連→淡水
+  'R-7-0',           // 首班車：圓山→淡水
+  'R-8-0',           // 首班車：芝山→淡水
+  'R-9-1',           // 首班車：紅樹林→象山
+];
 
 // 車站在軌道上的實際進度 (0-1)
 export type StationProgressMap = Record<string, Record<string, number>>;

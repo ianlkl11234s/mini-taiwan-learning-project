@@ -1,0 +1,137 @@
+{
+  "track_id": "R-6-0",
+  "route_id": "R-6",
+  "name": "雙連 → 淡水",
+  "origin": "R10",
+  "destination": "R28",
+  "stations": [
+    "R10",
+    "R11",
+    "R12",
+    "R13",
+    "R14",
+    "R15",
+    "R16",
+    "R17",
+    "R18",
+    "R19",
+    "R20",
+    "R21",
+    "R22",
+    "R23",
+    "R24",
+    "R25",
+    "R26",
+    "R27",
+    "R28"
+  ],
+  "travel_time_minutes": 37,
+  "dwell_time_seconds": 40,
+  "is_weekday": true,
+  "departure_count": 1,
+  "departures": [
+    {
+      "departure_time": "06:00:00",
+      "train_id": "R-6-0-001",
+      "origin_station": "R10",
+      "total_travel_time": 2260,
+      "stations": [
+        {
+          "station_id": "R10",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "R11",
+          "arrival": 120,
+          "departure": 160
+        },
+        {
+          "station_id": "R12",
+          "arrival": 220,
+          "departure": 260
+        },
+        {
+          "station_id": "R13",
+          "arrival": 320,
+          "departure": 360
+        },
+        {
+          "station_id": "R14",
+          "arrival": 420,
+          "departure": 460
+        },
+        {
+          "station_id": "R15",
+          "arrival": 600,
+          "departure": 640
+        },
+        {
+          "station_id": "R16",
+          "arrival": 720,
+          "departure": 760
+        },
+        {
+          "station_id": "R17",
+          "arrival": 820,
+          "departure": 860
+        },
+        {
+          "station_id": "R18",
+          "arrival": 920,
+          "departure": 960
+        },
+        {
+          "station_id": "R19",
+          "arrival": 1020,
+          "departure": 1060
+        },
+        {
+          "station_id": "R20",
+          "arrival": 1140,
+          "departure": 1180
+        },
+        {
+          "station_id": "R21",
+          "arrival": 1240,
+          "departure": 1280
+        },
+        {
+          "station_id": "R22",
+          "arrival": 1340,
+          "departure": 1380
+        },
+        {
+          "station_id": "R23",
+          "arrival": 1440,
+          "departure": 1480
+        },
+        {
+          "station_id": "R24",
+          "arrival": 1620,
+          "departure": 1660
+        },
+        {
+          "station_id": "R25",
+          "arrival": 1740,
+          "departure": 1780
+        },
+        {
+          "station_id": "R26",
+          "arrival": 1920,
+          "departure": 1960
+        },
+        {
+          "station_id": "R27",
+          "arrival": 2040,
+          "departure": 2080
+        },
+        {
+          "station_id": "R28",
+          "arrival": 2220,
+          "departure": 2260
+        }
+      ]
+    }
+  ]
+}

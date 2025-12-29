@@ -36,11 +36,11 @@
   "travel_time_minutes": 55,
   "dwell_time_seconds": 40,
   "is_weekday": true,
-  "departure_count": 134,
+  "departure_count": 133,
   "departures": [
     {
       "departure_time": "06:00:00",
-      "train_id": "R-1-1-141",
+      "train_id": "R-1-1-134",
       "origin_station": "R28",
       "total_travel_time": 3220,
       "stations": [
@@ -182,131 +182,8 @@
       ]
     },
     {
-      "departure_time": "06:00:00",
-      "train_id": "R-1-1-274",
-      "origin_station": "R24",
-      "total_travel_time": 2620,
-      "stations": [
-        {
-          "station_id": "R24",
-          "arrival": 0,
-          "departure": 40
-        },
-        {
-          "station_id": "R23",
-          "arrival": 120,
-          "departure": 160
-        },
-        {
-          "station_id": "R22",
-          "arrival": 300,
-          "departure": 340
-        },
-        {
-          "station_id": "R21",
-          "arrival": 420,
-          "departure": 460
-        },
-        {
-          "station_id": "R20",
-          "arrival": 540,
-          "departure": 580
-        },
-        {
-          "station_id": "R19",
-          "arrival": 660,
-          "departure": 700
-        },
-        {
-          "station_id": "R18",
-          "arrival": 760,
-          "departure": 800
-        },
-        {
-          "station_id": "R17",
-          "arrival": 860,
-          "departure": 900
-        },
-        {
-          "station_id": "R16",
-          "arrival": 960,
-          "departure": 1000
-        },
-        {
-          "station_id": "R15",
-          "arrival": 1080,
-          "departure": 1120
-        },
-        {
-          "station_id": "R14",
-          "arrival": 1260,
-          "departure": 1300
-        },
-        {
-          "station_id": "R13",
-          "arrival": 1380,
-          "departure": 1420
-        },
-        {
-          "station_id": "R12",
-          "arrival": 1480,
-          "departure": 1520
-        },
-        {
-          "station_id": "R11",
-          "arrival": 1580,
-          "departure": 1620
-        },
-        {
-          "station_id": "R10",
-          "arrival": 1680,
-          "departure": 1720
-        },
-        {
-          "station_id": "R09",
-          "arrival": 1780,
-          "departure": 1820
-        },
-        {
-          "station_id": "R08",
-          "arrival": 1880,
-          "departure": 1920
-        },
-        {
-          "station_id": "R07",
-          "arrival": 2040,
-          "departure": 2080
-        },
-        {
-          "station_id": "R06",
-          "arrival": 2140,
-          "departure": 2180
-        },
-        {
-          "station_id": "R05",
-          "arrival": 2240,
-          "departure": 2280
-        },
-        {
-          "station_id": "R04",
-          "arrival": 2340,
-          "departure": 2380
-        },
-        {
-          "station_id": "R03",
-          "arrival": 2460,
-          "departure": 2500
-        },
-        {
-          "station_id": "R02",
-          "arrival": 2580,
-          "departure": 2620
-        }
-      ]
-    },
-    {
       "departure_time": "06:08:00",
-      "train_id": "R-1-1-142",
+      "train_id": "R-1-1-135",
       "origin_station": "R28",
       "total_travel_time": 3220,
       "stations": [
@@ -449,7 +326,7 @@
     },
     {
       "departure_time": "06:16:00",
-      "train_id": "R-1-1-143",
+      "train_id": "R-1-1-136",
       "origin_station": "R28",
       "total_travel_time": 3280,
       "stations": [
@@ -592,7 +469,7 @@
     },
     {
       "departure_time": "06:22:00",
-      "train_id": "R-1-1-144",
+      "train_id": "R-1-1-137",
       "origin_station": "R28",
       "total_travel_time": 3340,
       "stations": [
@@ -735,7 +612,7 @@
     },
     {
       "departure_time": "06:28:00",
-      "train_id": "R-1-1-145",
+      "train_id": "R-1-1-138",
       "origin_station": "R28",
       "total_travel_time": 3280,
       "stations": [
@@ -878,7 +755,7 @@
     },
     {
       "departure_time": "06:32:00",
-      "train_id": "R-1-1-146",
+      "train_id": "R-1-1-139",
       "origin_station": "R28",
       "total_travel_time": 3400,
       "stations": [
@@ -1021,7 +898,7 @@
     },
     {
       "departure_time": "06:39:00",
-      "train_id": "R-1-1-147",
+      "train_id": "R-1-1-140",
       "origin_station": "R28",
       "total_travel_time": 3400,
       "stations": [
@@ -1164,7 +1041,7 @@
     },
     {
       "departure_time": "06:46:00",
-      "train_id": "R-1-1-148",
+      "train_id": "R-1-1-141",
       "origin_station": "R28",
       "total_travel_time": 3400,
       "stations": [
@@ -1307,7 +1184,7 @@
     },
     {
       "departure_time": "06:53:00",
-      "train_id": "R-1-1-149",
+      "train_id": "R-1-1-142",
       "origin_station": "R28",
       "total_travel_time": 3400,
       "stations": [
@@ -1450,7 +1327,7 @@
     },
     {
       "departure_time": "06:59:00",
-      "train_id": "R-1-1-150",
+      "train_id": "R-1-1-143",
       "origin_station": "R28",
       "total_travel_time": 3400,
       "stations": [
@@ -1593,7 +1470,7 @@
     },
     {
       "departure_time": "07:04:00",
-      "train_id": "R-1-1-151",
+      "train_id": "R-1-1-144",
       "origin_station": "R28",
       "total_travel_time": 3460,
       "stations": [
@@ -1736,7 +1613,7 @@
     },
     {
       "departure_time": "07:08:00",
-      "train_id": "R-1-1-152",
+      "train_id": "R-1-1-145",
       "origin_station": "R28",
       "total_travel_time": 3340,
       "stations": [
@@ -1879,7 +1756,7 @@
     },
     {
       "departure_time": "07:12:00",
-      "train_id": "R-1-1-153",
+      "train_id": "R-1-1-146",
       "origin_station": "R28",
       "total_travel_time": 3340,
       "stations": [
@@ -2022,7 +1899,7 @@
     },
     {
       "departure_time": "07:16:00",
-      "train_id": "R-1-1-154",
+      "train_id": "R-1-1-147",
       "origin_station": "R28",
       "total_travel_time": 3460,
       "stations": [
@@ -2165,7 +2042,7 @@
     },
     {
       "departure_time": "07:20:00",
-      "train_id": "R-1-1-155",
+      "train_id": "R-1-1-148",
       "origin_station": "R28",
       "total_travel_time": 3340,
       "stations": [
@@ -2308,7 +2185,7 @@
     },
     {
       "departure_time": "07:24:00",
-      "train_id": "R-1-1-156",
+      "train_id": "R-1-1-149",
       "origin_station": "R28",
       "total_travel_time": 3340,
       "stations": [
@@ -2451,7 +2328,7 @@
     },
     {
       "departure_time": "07:29:00",
-      "train_id": "R-1-1-157",
+      "train_id": "R-1-1-150",
       "origin_station": "R28",
       "total_travel_time": 3400,
       "stations": [
@@ -2594,7 +2471,7 @@
     },
     {
       "departure_time": "07:35:00",
-      "train_id": "R-1-1-158",
+      "train_id": "R-1-1-151",
       "origin_station": "R28",
       "total_travel_time": 3400,
       "stations": [
@@ -2737,7 +2614,7 @@
     },
     {
       "departure_time": "07:40:00",
-      "train_id": "R-1-1-159",
+      "train_id": "R-1-1-152",
       "origin_station": "R28",
       "total_travel_time": 3460,
       "stations": [
@@ -2880,7 +2757,7 @@
     },
     {
       "departure_time": "07:46:00",
-      "train_id": "R-1-1-160",
+      "train_id": "R-1-1-153",
       "origin_station": "R28",
       "total_travel_time": 3460,
       "stations": [
@@ -3023,7 +2900,7 @@
     },
     {
       "departure_time": "07:50:00",
-      "train_id": "R-1-1-161",
+      "train_id": "R-1-1-154",
       "origin_station": "R28",
       "total_travel_time": 3340,
       "stations": [
@@ -3166,7 +3043,7 @@
     },
     {
       "departure_time": "07:54:00",
-      "train_id": "R-1-1-162",
+      "train_id": "R-1-1-155",
       "origin_station": "R28",
       "total_travel_time": 3340,
       "stations": [
@@ -3309,7 +3186,7 @@
     },
     {
       "departure_time": "08:00:00",
-      "train_id": "R-1-1-163",
+      "train_id": "R-1-1-156",
       "origin_station": "R28",
       "total_travel_time": 3340,
       "stations": [
@@ -3452,7 +3329,7 @@
     },
     {
       "departure_time": "08:06:00",
-      "train_id": "R-1-1-164",
+      "train_id": "R-1-1-157",
       "origin_station": "R28",
       "total_travel_time": 3340,
       "stations": [
@@ -3595,7 +3472,7 @@
     },
     {
       "departure_time": "08:12:00",
-      "train_id": "R-1-1-165",
+      "train_id": "R-1-1-158",
       "origin_station": "R28",
       "total_travel_time": 3340,
       "stations": [
@@ -3738,7 +3615,7 @@
     },
     {
       "departure_time": "08:18:00",
-      "train_id": "R-1-1-166",
+      "train_id": "R-1-1-159",
       "origin_station": "R28",
       "total_travel_time": 3340,
       "stations": [
@@ -3881,7 +3758,7 @@
     },
     {
       "departure_time": "08:25:00",
-      "train_id": "R-1-1-167",
+      "train_id": "R-1-1-160",
       "origin_station": "R28",
       "total_travel_time": 3340,
       "stations": [
@@ -4024,7 +3901,7 @@
     },
     {
       "departure_time": "08:31:00",
-      "train_id": "R-1-1-168",
+      "train_id": "R-1-1-161",
       "origin_station": "R28",
       "total_travel_time": 3400,
       "stations": [
@@ -4167,7 +4044,7 @@
     },
     {
       "departure_time": "08:38:00",
-      "train_id": "R-1-1-169",
+      "train_id": "R-1-1-162",
       "origin_station": "R28",
       "total_travel_time": 3340,
       "stations": [
@@ -4310,7 +4187,7 @@
     },
     {
       "departure_time": "08:44:00",
-      "train_id": "R-1-1-170",
+      "train_id": "R-1-1-163",
       "origin_station": "R28",
       "total_travel_time": 3360,
       "stations": [
@@ -4453,7 +4330,7 @@
     },
     {
       "departure_time": "08:50:00",
-      "train_id": "R-1-1-171",
+      "train_id": "R-1-1-164",
       "origin_station": "R28",
       "total_travel_time": 3400,
       "stations": [
@@ -4596,7 +4473,7 @@
     },
     {
       "departure_time": "08:58:00",
-      "train_id": "R-1-1-172",
+      "train_id": "R-1-1-165",
       "origin_station": "R28",
       "total_travel_time": 3400,
       "stations": [
@@ -4739,7 +4616,7 @@
     },
     {
       "departure_time": "09:08:00",
-      "train_id": "R-1-1-173",
+      "train_id": "R-1-1-166",
       "origin_station": "R28",
       "total_travel_time": 3280,
       "stations": [
@@ -4882,7 +4759,7 @@
     },
     {
       "departure_time": "09:17:00",
-      "train_id": "R-1-1-174",
+      "train_id": "R-1-1-167",
       "origin_station": "R28",
       "total_travel_time": 3280,
       "stations": [
@@ -5025,7 +4902,7 @@
     },
     {
       "departure_time": "09:27:00",
-      "train_id": "R-1-1-175",
+      "train_id": "R-1-1-168",
       "origin_station": "R28",
       "total_travel_time": 3280,
       "stations": [
@@ -5168,7 +5045,7 @@
     },
     {
       "departure_time": "09:37:00",
-      "train_id": "R-1-1-176",
+      "train_id": "R-1-1-169",
       "origin_station": "R28",
       "total_travel_time": 3280,
       "stations": [
@@ -5311,7 +5188,7 @@
     },
     {
       "departure_time": "09:46:00",
-      "train_id": "R-1-1-177",
+      "train_id": "R-1-1-170",
       "origin_station": "R28",
       "total_travel_time": 3280,
       "stations": [
@@ -5454,7 +5331,7 @@
     },
     {
       "departure_time": "09:56:00",
-      "train_id": "R-1-1-178",
+      "train_id": "R-1-1-171",
       "origin_station": "R28",
       "total_travel_time": 3280,
       "stations": [
@@ -5597,7 +5474,7 @@
     },
     {
       "departure_time": "10:06:00",
-      "train_id": "R-1-1-179",
+      "train_id": "R-1-1-172",
       "origin_station": "R28",
       "total_travel_time": 3280,
       "stations": [
@@ -5740,7 +5617,7 @@
     },
     {
       "departure_time": "10:15:00",
-      "train_id": "R-1-1-180",
+      "train_id": "R-1-1-173",
       "origin_station": "R28",
       "total_travel_time": 3280,
       "stations": [
@@ -5883,7 +5760,7 @@
     },
     {
       "departure_time": "10:25:00",
-      "train_id": "R-1-1-181",
+      "train_id": "R-1-1-174",
       "origin_station": "R28",
       "total_travel_time": 3280,
       "stations": [
@@ -6026,7 +5903,7 @@
     },
     {
       "departure_time": "10:35:00",
-      "train_id": "R-1-1-182",
+      "train_id": "R-1-1-175",
       "origin_station": "R28",
       "total_travel_time": 3280,
       "stations": [
@@ -6169,7 +6046,7 @@
     },
     {
       "departure_time": "10:44:00",
-      "train_id": "R-1-1-183",
+      "train_id": "R-1-1-176",
       "origin_station": "R28",
       "total_travel_time": 3280,
       "stations": [
@@ -6312,7 +6189,7 @@
     },
     {
       "departure_time": "10:54:00",
-      "train_id": "R-1-1-184",
+      "train_id": "R-1-1-177",
       "origin_station": "R28",
       "total_travel_time": 3280,
       "stations": [
@@ -6455,7 +6332,7 @@
     },
     {
       "departure_time": "11:04:00",
-      "train_id": "R-1-1-185",
+      "train_id": "R-1-1-178",
       "origin_station": "R28",
       "total_travel_time": 3280,
       "stations": [
@@ -6598,7 +6475,7 @@
     },
     {
       "departure_time": "11:13:00",
-      "train_id": "R-1-1-186",
+      "train_id": "R-1-1-179",
       "origin_station": "R28",
       "total_travel_time": 3280,
       "stations": [
@@ -6741,7 +6618,7 @@
     },
     {
       "departure_time": "11:23:00",
-      "train_id": "R-1-1-187",
+      "train_id": "R-1-1-180",
       "origin_station": "R28",
       "total_travel_time": 3280,
       "stations": [
@@ -6884,7 +6761,7 @@
     },
     {
       "departure_time": "11:33:00",
-      "train_id": "R-1-1-188",
+      "train_id": "R-1-1-181",
       "origin_station": "R28",
       "total_travel_time": 3280,
       "stations": [
@@ -7027,7 +6904,7 @@
     },
     {
       "departure_time": "11:42:00",
-      "train_id": "R-1-1-189",
+      "train_id": "R-1-1-182",
       "origin_station": "R28",
       "total_travel_time": 3280,
       "stations": [
@@ -7170,7 +7047,7 @@
     },
     {
       "departure_time": "11:52:00",
-      "train_id": "R-1-1-190",
+      "train_id": "R-1-1-183",
       "origin_station": "R28",
       "total_travel_time": 3280,
       "stations": [
@@ -7313,7 +7190,7 @@
     },
     {
       "departure_time": "12:02:00",
-      "train_id": "R-1-1-191",
+      "train_id": "R-1-1-184",
       "origin_station": "R28",
       "total_travel_time": 3280,
       "stations": [
@@ -7456,7 +7333,7 @@
     },
     {
       "departure_time": "12:11:00",
-      "train_id": "R-1-1-192",
+      "train_id": "R-1-1-185",
       "origin_station": "R28",
       "total_travel_time": 3280,
       "stations": [
@@ -7599,7 +7476,7 @@
     },
     {
       "departure_time": "12:21:00",
-      "train_id": "R-1-1-193",
+      "train_id": "R-1-1-186",
       "origin_station": "R28",
       "total_travel_time": 3280,
       "stations": [
@@ -7742,7 +7619,7 @@
     },
     {
       "departure_time": "12:31:00",
-      "train_id": "R-1-1-194",
+      "train_id": "R-1-1-187",
       "origin_station": "R28",
       "total_travel_time": 3280,
       "stations": [
@@ -7885,7 +7762,7 @@
     },
     {
       "departure_time": "12:40:00",
-      "train_id": "R-1-1-195",
+      "train_id": "R-1-1-188",
       "origin_station": "R28",
       "total_travel_time": 3280,
       "stations": [
@@ -8028,7 +7905,7 @@
     },
     {
       "departure_time": "12:50:00",
-      "train_id": "R-1-1-196",
+      "train_id": "R-1-1-189",
       "origin_station": "R28",
       "total_travel_time": 3280,
       "stations": [
@@ -8171,7 +8048,7 @@
     },
     {
       "departure_time": "13:00:00",
-      "train_id": "R-1-1-197",
+      "train_id": "R-1-1-190",
       "origin_station": "R28",
       "total_travel_time": 3280,
       "stations": [
@@ -8314,7 +8191,7 @@
     },
     {
       "departure_time": "13:09:00",
-      "train_id": "R-1-1-198",
+      "train_id": "R-1-1-191",
       "origin_station": "R28",
       "total_travel_time": 3280,
       "stations": [
@@ -8457,7 +8334,7 @@
     },
     {
       "departure_time": "13:19:00",
-      "train_id": "R-1-1-199",
+      "train_id": "R-1-1-192",
       "origin_station": "R28",
       "total_travel_time": 3280,
       "stations": [
@@ -8600,7 +8477,7 @@
     },
     {
       "departure_time": "13:29:00",
-      "train_id": "R-1-1-200",
+      "train_id": "R-1-1-193",
       "origin_station": "R28",
       "total_travel_time": 3280,
       "stations": [
@@ -8743,7 +8620,7 @@
     },
     {
       "departure_time": "13:38:00",
-      "train_id": "R-1-1-201",
+      "train_id": "R-1-1-194",
       "origin_station": "R28",
       "total_travel_time": 3280,
       "stations": [
@@ -8886,7 +8763,7 @@
     },
     {
       "departure_time": "13:48:00",
-      "train_id": "R-1-1-202",
+      "train_id": "R-1-1-195",
       "origin_station": "R28",
       "total_travel_time": 3280,
       "stations": [
@@ -9029,7 +8906,7 @@
     },
     {
       "departure_time": "13:58:00",
-      "train_id": "R-1-1-203",
+      "train_id": "R-1-1-196",
       "origin_station": "R28",
       "total_travel_time": 3280,
       "stations": [
@@ -9172,7 +9049,7 @@
     },
     {
       "departure_time": "14:07:00",
-      "train_id": "R-1-1-204",
+      "train_id": "R-1-1-197",
       "origin_station": "R28",
       "total_travel_time": 3280,
       "stations": [
@@ -9315,7 +9192,7 @@
     },
     {
       "departure_time": "14:17:00",
-      "train_id": "R-1-1-205",
+      "train_id": "R-1-1-198",
       "origin_station": "R28",
       "total_travel_time": 3280,
       "stations": [
@@ -9458,7 +9335,7 @@
     },
     {
       "departure_time": "14:27:00",
-      "train_id": "R-1-1-206",
+      "train_id": "R-1-1-199",
       "origin_station": "R28",
       "total_travel_time": 3280,
       "stations": [
@@ -9601,7 +9478,7 @@
     },
     {
       "departure_time": "14:36:00",
-      "train_id": "R-1-1-207",
+      "train_id": "R-1-1-200",
       "origin_station": "R28",
       "total_travel_time": 3280,
       "stations": [
@@ -9744,7 +9621,7 @@
     },
     {
       "departure_time": "14:46:00",
-      "train_id": "R-1-1-208",
+      "train_id": "R-1-1-201",
       "origin_station": "R28",
       "total_travel_time": 3280,
       "stations": [
@@ -9887,7 +9764,7 @@
     },
     {
       "departure_time": "14:56:00",
-      "train_id": "R-1-1-209",
+      "train_id": "R-1-1-202",
       "origin_station": "R28",
       "total_travel_time": 3280,
       "stations": [
@@ -10030,7 +9907,7 @@
     },
     {
       "departure_time": "15:05:00",
-      "train_id": "R-1-1-210",
+      "train_id": "R-1-1-203",
       "origin_station": "R28",
       "total_travel_time": 3280,
       "stations": [
@@ -10173,7 +10050,7 @@
     },
     {
       "departure_time": "15:15:00",
-      "train_id": "R-1-1-211",
+      "train_id": "R-1-1-204",
       "origin_station": "R28",
       "total_travel_time": 3280,
       "stations": [
@@ -10316,7 +10193,7 @@
     },
     {
       "departure_time": "15:25:00",
-      "train_id": "R-1-1-212",
+      "train_id": "R-1-1-205",
       "origin_station": "R28",
       "total_travel_time": 3280,
       "stations": [
@@ -10459,7 +10336,7 @@
     },
     {
       "departure_time": "15:34:00",
-      "train_id": "R-1-1-213",
+      "train_id": "R-1-1-206",
       "origin_station": "R28",
       "total_travel_time": 3280,
       "stations": [
@@ -10602,7 +10479,7 @@
     },
     {
       "departure_time": "15:44:00",
-      "train_id": "R-1-1-214",
+      "train_id": "R-1-1-207",
       "origin_station": "R28",
       "total_travel_time": 3280,
       "stations": [
@@ -10745,7 +10622,7 @@
     },
     {
       "departure_time": "15:54:00",
-      "train_id": "R-1-1-215",
+      "train_id": "R-1-1-208",
       "origin_station": "R28",
       "total_travel_time": 3280,
       "stations": [
@@ -10888,7 +10765,7 @@
     },
     {
       "departure_time": "16:03:00",
-      "train_id": "R-1-1-216",
+      "train_id": "R-1-1-209",
       "origin_station": "R28",
       "total_travel_time": 3280,
       "stations": [
@@ -11031,7 +10908,7 @@
     },
     {
       "departure_time": "16:08:00",
-      "train_id": "R-1-1-217",
+      "train_id": "R-1-1-210",
       "origin_station": "R28",
       "total_travel_time": 3400,
       "stations": [
@@ -11174,7 +11051,7 @@
     },
     {
       "departure_time": "16:15:00",
-      "train_id": "R-1-1-218",
+      "train_id": "R-1-1-211",
       "origin_station": "R28",
       "total_travel_time": 3340,
       "stations": [
@@ -11317,7 +11194,7 @@
     },
     {
       "departure_time": "16:21:00",
-      "train_id": "R-1-1-219",
+      "train_id": "R-1-1-212",
       "origin_station": "R28",
       "total_travel_time": 3340,
       "stations": [
@@ -11460,7 +11337,7 @@
     },
     {
       "departure_time": "16:27:00",
-      "train_id": "R-1-1-220",
+      "train_id": "R-1-1-213",
       "origin_station": "R28",
       "total_travel_time": 3400,
       "stations": [
@@ -11603,7 +11480,7 @@
     },
     {
       "departure_time": "16:34:00",
-      "train_id": "R-1-1-221",
+      "train_id": "R-1-1-214",
       "origin_station": "R28",
       "total_travel_time": 3340,
       "stations": [
@@ -11746,7 +11623,7 @@
     },
     {
       "departure_time": "16:40:00",
-      "train_id": "R-1-1-222",
+      "train_id": "R-1-1-215",
       "origin_station": "R28",
       "total_travel_time": 3340,
       "stations": [
@@ -11889,7 +11766,7 @@
     },
     {
       "departure_time": "16:46:00",
-      "train_id": "R-1-1-223",
+      "train_id": "R-1-1-216",
       "origin_station": "R28",
       "total_travel_time": 3400,
       "stations": [
@@ -12032,7 +11909,7 @@
     },
     {
       "departure_time": "16:53:00",
-      "train_id": "R-1-1-224",
+      "train_id": "R-1-1-217",
       "origin_station": "R28",
       "total_travel_time": 3340,
       "stations": [
@@ -12175,7 +12052,7 @@
     },
     {
       "departure_time": "16:59:00",
-      "train_id": "R-1-1-225",
+      "train_id": "R-1-1-218",
       "origin_station": "R28",
       "total_travel_time": 3340,
       "stations": [
@@ -12318,7 +12195,7 @@
     },
     {
       "departure_time": "17:05:00",
-      "train_id": "R-1-1-226",
+      "train_id": "R-1-1-219",
       "origin_station": "R28",
       "total_travel_time": 3400,
       "stations": [
@@ -12461,7 +12338,7 @@
     },
     {
       "departure_time": "17:12:00",
-      "train_id": "R-1-1-227",
+      "train_id": "R-1-1-220",
       "origin_station": "R28",
       "total_travel_time": 3340,
       "stations": [
@@ -12604,7 +12481,7 @@
     },
     {
       "departure_time": "17:18:00",
-      "train_id": "R-1-1-228",
+      "train_id": "R-1-1-221",
       "origin_station": "R28",
       "total_travel_time": 3340,
       "stations": [
@@ -12747,7 +12624,7 @@
     },
     {
       "departure_time": "17:24:00",
-      "train_id": "R-1-1-229",
+      "train_id": "R-1-1-222",
       "origin_station": "R28",
       "total_travel_time": 3400,
       "stations": [
@@ -12890,7 +12767,7 @@
     },
     {
       "departure_time": "17:31:00",
-      "train_id": "R-1-1-230",
+      "train_id": "R-1-1-223",
       "origin_station": "R28",
       "total_travel_time": 3340,
       "stations": [
@@ -13033,7 +12910,7 @@
     },
     {
       "departure_time": "17:37:00",
-      "train_id": "R-1-1-231",
+      "train_id": "R-1-1-224",
       "origin_station": "R28",
       "total_travel_time": 3340,
       "stations": [
@@ -13176,7 +13053,7 @@
     },
     {
       "departure_time": "17:43:00",
-      "train_id": "R-1-1-232",
+      "train_id": "R-1-1-225",
       "origin_station": "R28",
       "total_travel_time": 3400,
       "stations": [
@@ -13319,7 +13196,7 @@
     },
     {
       "departure_time": "17:50:00",
-      "train_id": "R-1-1-233",
+      "train_id": "R-1-1-226",
       "origin_station": "R28",
       "total_travel_time": 3340,
       "stations": [
@@ -13462,7 +13339,7 @@
     },
     {
       "departure_time": "17:56:00",
-      "train_id": "R-1-1-234",
+      "train_id": "R-1-1-227",
       "origin_station": "R28",
       "total_travel_time": 3340,
       "stations": [
@@ -13605,7 +13482,7 @@
     },
     {
       "departure_time": "18:02:00",
-      "train_id": "R-1-1-235",
+      "train_id": "R-1-1-228",
       "origin_station": "R28",
       "total_travel_time": 3400,
       "stations": [
@@ -13748,7 +13625,7 @@
     },
     {
       "departure_time": "18:09:00",
-      "train_id": "R-1-1-236",
+      "train_id": "R-1-1-229",
       "origin_station": "R28",
       "total_travel_time": 3340,
       "stations": [
@@ -13891,7 +13768,7 @@
     },
     {
       "departure_time": "18:15:00",
-      "train_id": "R-1-1-237",
+      "train_id": "R-1-1-230",
       "origin_station": "R28",
       "total_travel_time": 3340,
       "stations": [
@@ -14034,7 +13911,7 @@
     },
     {
       "departure_time": "18:21:00",
-      "train_id": "R-1-1-238",
+      "train_id": "R-1-1-231",
       "origin_station": "R28",
       "total_travel_time": 3400,
       "stations": [
@@ -14177,7 +14054,7 @@
     },
     {
       "departure_time": "18:28:00",
-      "train_id": "R-1-1-239",
+      "train_id": "R-1-1-232",
       "origin_station": "R28",
       "total_travel_time": 3340,
       "stations": [
@@ -14320,7 +14197,7 @@
     },
     {
       "departure_time": "18:34:00",
-      "train_id": "R-1-1-240",
+      "train_id": "R-1-1-233",
       "origin_station": "R28",
       "total_travel_time": 3340,
       "stations": [
@@ -14463,7 +14340,7 @@
     },
     {
       "departure_time": "18:40:00",
-      "train_id": "R-1-1-241",
+      "train_id": "R-1-1-234",
       "origin_station": "R28",
       "total_travel_time": 3400,
       "stations": [
@@ -14606,7 +14483,7 @@
     },
     {
       "departure_time": "18:47:00",
-      "train_id": "R-1-1-242",
+      "train_id": "R-1-1-235",
       "origin_station": "R28",
       "total_travel_time": 3340,
       "stations": [
@@ -14749,7 +14626,7 @@
     },
     {
       "departure_time": "18:55:00",
-      "train_id": "R-1-1-243",
+      "train_id": "R-1-1-236",
       "origin_station": "R28",
       "total_travel_time": 3340,
       "stations": [
@@ -14892,7 +14769,7 @@
     },
     {
       "departure_time": "19:04:00",
-      "train_id": "R-1-1-244",
+      "train_id": "R-1-1-237",
       "origin_station": "R28",
       "total_travel_time": 3400,
       "stations": [
@@ -15035,7 +14912,7 @@
     },
     {
       "departure_time": "19:14:00",
-      "train_id": "R-1-1-245",
+      "train_id": "R-1-1-238",
       "origin_station": "R28",
       "total_travel_time": 3340,
       "stations": [
@@ -15178,7 +15055,7 @@
     },
     {
       "departure_time": "19:24:00",
-      "train_id": "R-1-1-246",
+      "train_id": "R-1-1-239",
       "origin_station": "R28",
       "total_travel_time": 3340,
       "stations": [
@@ -15321,7 +15198,7 @@
     },
     {
       "departure_time": "19:33:00",
-      "train_id": "R-1-1-247",
+      "train_id": "R-1-1-240",
       "origin_station": "R28",
       "total_travel_time": 3400,
       "stations": [
@@ -15464,7 +15341,7 @@
     },
     {
       "departure_time": "19:43:00",
-      "train_id": "R-1-1-248",
+      "train_id": "R-1-1-241",
       "origin_station": "R28",
       "total_travel_time": 3340,
       "stations": [
@@ -15607,7 +15484,7 @@
     },
     {
       "departure_time": "19:53:00",
-      "train_id": "R-1-1-249",
+      "train_id": "R-1-1-242",
       "origin_station": "R28",
       "total_travel_time": 3340,
       "stations": [
@@ -15750,7 +15627,7 @@
     },
     {
       "departure_time": "20:01:00",
-      "train_id": "R-1-1-250",
+      "train_id": "R-1-1-243",
       "origin_station": "R28",
       "total_travel_time": 3460,
       "stations": [
@@ -15893,7 +15770,7 @@
     },
     {
       "departure_time": "20:11:00",
-      "train_id": "R-1-1-251",
+      "train_id": "R-1-1-244",
       "origin_station": "R28",
       "total_travel_time": 3400,
       "stations": [
@@ -16036,7 +15913,7 @@
     },
     {
       "departure_time": "20:21:00",
-      "train_id": "R-1-1-252",
+      "train_id": "R-1-1-245",
       "origin_station": "R28",
       "total_travel_time": 3400,
       "stations": [
@@ -16179,7 +16056,7 @@
     },
     {
       "departure_time": "20:30:00",
-      "train_id": "R-1-1-253",
+      "train_id": "R-1-1-246",
       "origin_station": "R28",
       "total_travel_time": 3460,
       "stations": [
@@ -16322,7 +16199,7 @@
     },
     {
       "departure_time": "20:40:00",
-      "train_id": "R-1-1-254",
+      "train_id": "R-1-1-247",
       "origin_station": "R28",
       "total_travel_time": 3400,
       "stations": [
@@ -16465,7 +16342,7 @@
     },
     {
       "departure_time": "20:50:00",
-      "train_id": "R-1-1-255",
+      "train_id": "R-1-1-248",
       "origin_station": "R28",
       "total_travel_time": 3400,
       "stations": [
@@ -16608,7 +16485,7 @@
     },
     {
       "departure_time": "20:59:00",
-      "train_id": "R-1-1-256",
+      "train_id": "R-1-1-249",
       "origin_station": "R28",
       "total_travel_time": 3460,
       "stations": [
@@ -16751,7 +16628,7 @@
     },
     {
       "departure_time": "21:09:00",
-      "train_id": "R-1-1-257",
+      "train_id": "R-1-1-250",
       "origin_station": "R28",
       "total_travel_time": 3400,
       "stations": [
@@ -16894,7 +16771,7 @@
     },
     {
       "departure_time": "21:19:00",
-      "train_id": "R-1-1-258",
+      "train_id": "R-1-1-251",
       "origin_station": "R28",
       "total_travel_time": 3400,
       "stations": [
@@ -17037,7 +16914,7 @@
     },
     {
       "departure_time": "21:28:00",
-      "train_id": "R-1-1-259",
+      "train_id": "R-1-1-252",
       "origin_station": "R28",
       "total_travel_time": 3460,
       "stations": [
@@ -17180,7 +17057,7 @@
     },
     {
       "departure_time": "21:36:00",
-      "train_id": "R-1-1-260",
+      "train_id": "R-1-1-253",
       "origin_station": "R28",
       "total_travel_time": 3520,
       "stations": [
@@ -17323,7 +17200,7 @@
     },
     {
       "departure_time": "21:46:00",
-      "train_id": "R-1-1-261",
+      "train_id": "R-1-1-254",
       "origin_station": "R28",
       "total_travel_time": 3520,
       "stations": [
@@ -17466,7 +17343,7 @@
     },
     {
       "departure_time": "21:56:00",
-      "train_id": "R-1-1-262",
+      "train_id": "R-1-1-255",
       "origin_station": "R28",
       "total_travel_time": 3520,
       "stations": [
@@ -17609,7 +17486,7 @@
     },
     {
       "departure_time": "22:06:00",
-      "train_id": "R-1-1-263",
+      "train_id": "R-1-1-256",
       "origin_station": "R28",
       "total_travel_time": 3520,
       "stations": [
@@ -17752,7 +17629,7 @@
     },
     {
       "departure_time": "22:16:00",
-      "train_id": "R-1-1-264",
+      "train_id": "R-1-1-257",
       "origin_station": "R28",
       "total_travel_time": 3580,
       "stations": [
@@ -17895,7 +17772,7 @@
     },
     {
       "departure_time": "22:27:00",
-      "train_id": "R-1-1-265",
+      "train_id": "R-1-1-258",
       "origin_station": "R28",
       "total_travel_time": 3520,
       "stations": [
@@ -18038,7 +17915,7 @@
     },
     {
       "departure_time": "22:37:00",
-      "train_id": "R-1-1-266",
+      "train_id": "R-1-1-259",
       "origin_station": "R28",
       "total_travel_time": 3580,
       "stations": [
@@ -18181,7 +18058,7 @@
     },
     {
       "departure_time": "22:48:00",
-      "train_id": "R-1-1-267",
+      "train_id": "R-1-1-260",
       "origin_station": "R28",
       "total_travel_time": 3520,
       "stations": [
@@ -18324,7 +18201,7 @@
     },
     {
       "departure_time": "22:59:00",
-      "train_id": "R-1-1-268",
+      "train_id": "R-1-1-261",
       "origin_station": "R28",
       "total_travel_time": 3520,
       "stations": [
@@ -18467,7 +18344,7 @@
     },
     {
       "departure_time": "23:11:00",
-      "train_id": "R-1-1-269",
+      "train_id": "R-1-1-262",
       "origin_station": "R28",
       "total_travel_time": 3400,
       "stations": [
@@ -18610,7 +18487,7 @@
     },
     {
       "departure_time": "23:23:00",
-      "train_id": "R-1-1-270",
+      "train_id": "R-1-1-263",
       "origin_station": "R28",
       "total_travel_time": 3400,
       "stations": [
@@ -18753,7 +18630,7 @@
     },
     {
       "departure_time": "23:36:00",
-      "train_id": "R-1-1-271",
+      "train_id": "R-1-1-264",
       "origin_station": "R28",
       "total_travel_time": 3520,
       "stations": [
@@ -18896,7 +18773,7 @@
     },
     {
       "departure_time": "23:48:00",
-      "train_id": "R-1-1-272",
+      "train_id": "R-1-1-265",
       "origin_station": "R28",
       "total_travel_time": 3580,
       "stations": [
@@ -19039,7 +18916,7 @@
     },
     {
       "departure_time": "00:00:00",
-      "train_id": "R-1-1-273",
+      "train_id": "R-1-1-266",
       "origin_station": "R28",
       "total_travel_time": 3520,
       "stations": [

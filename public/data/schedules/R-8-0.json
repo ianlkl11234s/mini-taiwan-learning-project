@@ -1,0 +1,77 @@
+{
+  "track_id": "R-8-0",
+  "route_id": "R-8",
+  "name": "芝山 → 淡水",
+  "origin": "R20",
+  "destination": "R28",
+  "stations": [
+    "R20",
+    "R21",
+    "R22",
+    "R23",
+    "R24",
+    "R25",
+    "R26",
+    "R27",
+    "R28"
+  ],
+  "travel_time_minutes": 19,
+  "dwell_time_seconds": 40,
+  "is_weekday": true,
+  "departure_count": 1,
+  "departures": [
+    {
+      "departure_time": "06:00:00",
+      "train_id": "R-8-0-001",
+      "origin_station": "R20",
+      "total_travel_time": 1180,
+      "stations": [
+        {
+          "station_id": "R20",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "R21",
+          "arrival": 120,
+          "departure": 160
+        },
+        {
+          "station_id": "R22",
+          "arrival": 220,
+          "departure": 260
+        },
+        {
+          "station_id": "R23",
+          "arrival": 360,
+          "departure": 400
+        },
+        {
+          "station_id": "R24",
+          "arrival": 480,
+          "departure": 520
+        },
+        {
+          "station_id": "R25",
+          "arrival": 600,
+          "departure": 640
+        },
+        {
+          "station_id": "R26",
+          "arrival": 780,
+          "departure": 820
+        },
+        {
+          "station_id": "R27",
+          "arrival": 960,
+          "departure": 1000
+        },
+        {
+          "station_id": "R28",
+          "arrival": 1140,
+          "departure": 1180
+        }
+      ]
+    }
+  ]
+}

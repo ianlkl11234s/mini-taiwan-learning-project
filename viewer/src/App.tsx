@@ -31,6 +31,7 @@ function App() {
 
   // 時間引擎
   const timeEngineRef = useRef<TimeEngine | null>(null);
+  const [timeEngineReady, setTimeEngineReady] = useState(false);
   const [currentTime, setCurrentTime] = useState('06:00:00');
   const [isPlaying, setIsPlaying] = useState(false);
   const [speed, setSpeed] = useState(1);
@@ -155,43 +156,47 @@ function App() {
       },
     });
     timeEngineRef.current = engine;
+    setTimeEngineReady(true);
 
     return () => {
       engine.destroy();
+      setTimeEngineReady(false);
     };
   }, []);
 
-  // 初始化列車引擎
+  // 初始化列車引擎並訂閱時間更新
+  // 注意：將兩個 effect 合併以避免競態條件，使用 timeEngineReady 狀態確保順序
   useEffect(() => {
+    // 確保所有必要資料都已載入，且時間引擎已準備好
+    if (!timeEngineReady || !timeEngineRef.current) return;
     if (schedules.size === 0 || trackMap.size === 0 || !stationProgress) return;
 
-    trainEngineRef.current = new TrainEngine({
+    // 建立列車引擎
+    const trainEngine = new TrainEngine({
       schedules,
       tracks: trackMap,
       stationProgress,
     });
-  }, [schedules, trackMap, stationProgress]);
+    trainEngineRef.current = trainEngine;
 
-  // 更新列車位置
-  useEffect(() => {
-    if (!timeEngineRef.current || !trainEngineRef.current) return;
-
+    // 訂閱時間更新
     const unsubscribe = timeEngineRef.current.onTick(() => {
-      if (trainEngineRef.current && timeEngineRef.current) {
+      if (timeEngineRef.current) {
         const timeSeconds = timeEngineRef.current.getTimeOfDaySeconds();
-        const activeTrains = trainEngineRef.current.update(timeSeconds);
+        const activeTrains = trainEngine.update(timeSeconds);
         setTrains(activeTrains);
       }
     });
 
-    // 初始更新
+    // 初始更新 - 確保立即顯示列車
     const timeSeconds = timeEngineRef.current.getTimeOfDaySeconds();
-    if (trainEngineRef.current) {
-      setTrains(trainEngineRef.current.update(timeSeconds));
-    }
+    setTrains(trainEngine.update(timeSeconds));
 
-    return unsubscribe;
-  }, [schedules, trackMap]);
+    return () => {
+      unsubscribe();
+      trainEngineRef.current = null;
+    };
+  }, [timeEngineReady, schedules, trackMap, stationProgress]);
 
   // 更新列車標記
   useEffect(() => {
@@ -208,7 +213,12 @@ function App() {
     for (const train of trains) {
       let marker = trainMarkers.current.get(train.trainId);
       const isStopped = train.status === 'stopped';
+      const isColliding = train.isColliding;
       const baseColor = TRACK_COLORS[train.trackId] || '#d90023';
+      // 碰撞時使用不同顏色區分 R-1 和 R-2
+      const displayColor = isColliding
+        ? (train.trackId.startsWith('R-1') ? '#ff4444' : '#ff8800')
+        : baseColor;
 
       if (!marker) {
         const el = document.createElement('div');
@@ -228,7 +238,7 @@ function App() {
       // 更新位置
       marker.setLngLat(train.position);
 
-      // 更新樣式 (停站 vs 運行)
+      // 更新樣式 (停站 vs 運行 vs 碰撞)
       const el = marker.getElement();
       // 基礎樣式：pointer-events: none 防止 hover 干擾定位
       const baseStyles = `
@@ -237,15 +247,25 @@ function App() {
         transition: width 0.3s ease, height 0.3s ease, box-shadow 0.3s ease;
       `;
 
-      if (isStopped) {
+      if (isColliding) {
+        // 碰撞中：較大、有警示效果
+        el.style.cssText = `
+          ${baseStyles}
+          width: 16px;
+          height: 16px;
+          background-color: ${displayColor};
+          border: 3px solid #ffff00;
+          box-shadow: 0 0 12px ${displayColor}, 0 0 20px rgba(255,255,0,0.7);
+        `;
+      } else if (isStopped) {
         // 停站中：較大、有脈動效果
         el.style.cssText = `
           ${baseStyles}
           width: 14px;
           height: 14px;
-          background-color: ${baseColor};
+          background-color: ${displayColor};
           border: 3px solid #ffffff;
-          box-shadow: 0 0 8px ${baseColor}, 0 0 12px rgba(255,255,255,0.5);
+          box-shadow: 0 0 8px ${displayColor}, 0 0 12px rgba(255,255,255,0.5);
         `;
       } else {
         // 運行中：正常大小
@@ -253,7 +273,7 @@ function App() {
           ${baseStyles}
           width: 12px;
           height: 12px;
-          background-color: ${baseColor};
+          background-color: ${displayColor};
           border: 2px solid #ffffff;
           box-shadow: 0 0 4px rgba(0,0,0,0.5);
         `;

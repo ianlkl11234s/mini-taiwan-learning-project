@@ -21,6 +21,8 @@ export interface Train {
   currentStation?: string; // 停靠中的車站 ID
   nextStation?: string; // 下一站 ID
   segmentProgress?: number; // 當前區段進度 0-1
+  isColliding?: boolean; // 是否與其他列車碰撞
+  collisionOffset?: [number, number]; // 碰撞時的視覺偏移
 }
 
 // 車站在軌道上的實際進度 (0-1)
@@ -30,7 +32,23 @@ export interface TrainEngineOptions {
   schedules: Map<string, TrackSchedule>;
   tracks: Map<string, Track>;
   stationProgress?: StationProgressMap;
+  enableCollisionDetection?: boolean; // 是否啟用碰撞檢測
 }
+
+// 共用軌道區段定義 (方向 0 共用同一物理軌道)
+const SHARED_TRACK_SEGMENTS: Record<string, string[]> = {
+  // R-1-0 和 R-2-0 在 R05-R22 共用軌道
+  'R-1-0': ['R05', 'R06', 'R07', 'R08', 'R09', 'R10', 'R11', 'R12', 'R13', 'R14', 'R15', 'R16', 'R17', 'R18', 'R19', 'R20', 'R21', 'R22'],
+  'R-2-0': ['R05', 'R06', 'R07', 'R08', 'R09', 'R10', 'R11', 'R12', 'R13', 'R14', 'R15', 'R16', 'R17', 'R18', 'R19', 'R20', 'R21', 'R22'],
+  // R-1-1 和 R-2-1 在 R22-R05 共用軌道 (反方向)
+  'R-1-1': ['R22', 'R21', 'R20', 'R19', 'R18', 'R17', 'R16', 'R15', 'R14', 'R13', 'R12', 'R11', 'R10', 'R09', 'R08', 'R07', 'R06', 'R05'],
+  'R-2-1': ['R22', 'R21', 'R20', 'R19', 'R18', 'R17', 'R16', 'R15', 'R14', 'R13', 'R12', 'R11', 'R10', 'R09', 'R08', 'R07', 'R06', 'R05'],
+};
+
+// 碰撞檢測閾值 (經緯度距離，約 50 公尺)
+const COLLISION_THRESHOLD = 0.0005;
+// 視覺偏移量 (經緯度，約 30 公尺垂直於軌道)
+const COLLISION_OFFSET = 0.0003;
 
 /**
  * 將時間字串轉換為當天秒數
@@ -117,11 +135,167 @@ export class TrainEngine {
   private tracks: Map<string, Track>;
   private stationProgress: StationProgressMap;
   private activeTrains: Map<string, Train> = new Map();
+  private enableCollisionDetection: boolean;
 
   constructor(options: TrainEngineOptions) {
     this.schedules = options.schedules;
     this.tracks = options.tracks;
     this.stationProgress = options.stationProgress || {};
+    this.enableCollisionDetection = options.enableCollisionDetection ?? true;
+  }
+
+  /**
+   * 檢查列車是否在共用軌道區段
+   */
+  private isOnSharedSegment(trackId: string, currentStation?: string, nextStation?: string): boolean {
+    const sharedStations = SHARED_TRACK_SEGMENTS[trackId];
+    if (!sharedStations) return false;
+
+    // 檢查當前站或下一站是否在共用區段
+    if (currentStation && sharedStations.includes(currentStation)) return true;
+    if (nextStation && sharedStations.includes(nextStation)) return true;
+    return false;
+  }
+
+  /**
+   * 計算兩列車的物理距離
+   */
+  private calculateDistance(pos1: [number, number], pos2: [number, number]): number {
+    const dx = pos1[0] - pos2[0];
+    const dy = pos1[1] - pos2[1];
+    return Math.sqrt(dx * dx + dy * dy);
+  }
+
+  /**
+   * 計算垂直於行進方向的偏移向量
+   * @param position 當前位置
+   * @param trackId 軌道 ID
+   * @param progress 軌道進度
+   */
+  private calculatePerpendicularOffset(
+    position: [number, number],
+    trackId: string,
+    progress: number,
+    offsetDirection: number
+  ): [number, number] {
+    const track = this.tracks.get(trackId);
+    if (!track) return [0, 0];
+
+    const coords = track.geometry.coordinates as [number, number][];
+    if (coords.length < 2) return [0, 0];
+
+    // 找到當前位置附近的軌道方向
+    const totalLength = calculateTotalLength(coords);
+    const targetDistance = totalLength * Math.min(0.99, Math.max(0.01, progress));
+
+    let accumulated = 0;
+    for (let i = 0; i < coords.length - 1; i++) {
+      const segmentLength = distance(coords[i], coords[i + 1]);
+      if (accumulated + segmentLength >= targetDistance) {
+        // 計算此段的方向向量
+        const dx = coords[i + 1][0] - coords[i][0];
+        const dy = coords[i + 1][1] - coords[i][1];
+        const length = Math.sqrt(dx * dx + dy * dy);
+
+        if (length > 0) {
+          // 垂直向量 (旋轉 90 度)
+          const perpX = -dy / length;
+          const perpY = dx / length;
+          return [perpX * COLLISION_OFFSET * offsetDirection, perpY * COLLISION_OFFSET * offsetDirection];
+        }
+        break;
+      }
+      accumulated += segmentLength;
+    }
+
+    return [0, 0];
+  }
+
+  /**
+   * 處理碰撞檢測和視覺分離
+   */
+  private handleCollisions(): void {
+    if (!this.enableCollisionDetection) return;
+
+    const trains = Array.from(this.activeTrains.values());
+
+    // 將列車按共用軌道方向分組
+    const direction0Trains: Train[] = []; // R-1-0, R-2-0
+    const direction1Trains: Train[] = []; // R-1-1, R-2-1
+
+    for (const train of trains) {
+      if (train.trackId.endsWith('-0')) {
+        if (this.isOnSharedSegment(train.trackId, train.currentStation, train.nextStation)) {
+          direction0Trains.push(train);
+        }
+      } else if (train.trackId.endsWith('-1')) {
+        if (this.isOnSharedSegment(train.trackId, train.currentStation, train.nextStation)) {
+          direction1Trains.push(train);
+        }
+      }
+    }
+
+    // 檢測方向 0 的碰撞
+    this.detectAndResolveCollisions(direction0Trains);
+    // 檢測方向 1 的碰撞
+    this.detectAndResolveCollisions(direction1Trains);
+  }
+
+  /**
+   * 檢測並解決一組列車的碰撞
+   * 注意：只檢測真正的軌道碰撞，排除車站同時停靠的情況
+   * (現實中車站有多個月台，不同列車可同時停靠)
+   */
+  private detectAndResolveCollisions(trains: Train[]): void {
+    // 按位置排序，使偏移一致
+    trains.sort((a, b) => a.position[0] - b.position[0] || a.position[1] - b.position[1]);
+
+    for (let i = 0; i < trains.length; i++) {
+      for (let j = i + 1; j < trains.length; j++) {
+        const trainA = trains[i];
+        const trainB = trains[j];
+
+        // 跳過雙方都在停站的情況 (車站有多月台，不算碰撞)
+        if (trainA.status === 'stopped' && trainB.status === 'stopped') {
+          continue;
+        }
+
+        const dist = this.calculateDistance(trainA.position, trainB.position);
+
+        if (dist < COLLISION_THRESHOLD) {
+          // 標記碰撞
+          trainA.isColliding = true;
+          trainB.isColliding = true;
+
+          // 計算偏移 (A 向一側偏移，B 向另一側)
+          const offsetA = this.calculatePerpendicularOffset(
+            trainA.position,
+            trainA.trackId,
+            trainA.progress,
+            1 // 正方向
+          );
+          const offsetB = this.calculatePerpendicularOffset(
+            trainB.position,
+            trainB.trackId,
+            trainB.progress,
+            -1 // 負方向
+          );
+
+          trainA.collisionOffset = offsetA;
+          trainB.collisionOffset = offsetB;
+
+          // 應用偏移到位置
+          trainA.position = [
+            trainA.position[0] + offsetA[0],
+            trainA.position[1] + offsetA[1],
+          ];
+          trainB.position = [
+            trainB.position[0] + offsetB[0],
+            trainB.position[1] + offsetB[1],
+          ];
+        }
+      }
+    }
   }
 
   /**
@@ -296,6 +470,9 @@ export class TrainEngine {
         this.activeTrains.set(train.trainId, train);
       }
     }
+
+    // 處理碰撞檢測和視覺分離
+    this.handleCollisions();
 
     return Array.from(this.activeTrains.values());
   }

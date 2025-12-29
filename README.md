@@ -2,15 +2,15 @@
 
 台北捷運即時列車模擬系統 - 在 3D 地圖上視覺化呈現列車運行狀態
 
-> 🙏 **致敬** - 本專案啟發自 [Mini Tokyo 3D](https://github.com/nagix/mini-tokyo-3d)，一個令人驚艷的東京地鐵即時 3D 視覺化專案。感謝 [@nagix](https://github.com/nagix) 的開源貢獻，讓我們能夠學習並打造台北版本。
+> 本專案啟發自 [Mini Tokyo 3D](https://github.com/nagix/mini-tokyo-3d)，一個超讚的的東京交通即時 3D 視覺化專案。感謝 [@nagix](https://github.com/nagix) 的開源貢獻，讓我能夠學習！
 
 ## 專案結構
 
 ```
 mini-taipei-v3/
-├── viewer/           # 🖥️ React 前端應用 (主要專案)
-├── data_collector/   # 📊 資料收集腳本 (TDX API)
-└── docs/             # 📚 內部開發文件 (不包含在 git 中)
+├── viewer/           # React 前端應用 (主要專案)
+├── data_collector/   # 資料收集腳本 (TDX API)
+└── docs/             # 內部開發文件 (不包含在 git 中)
 ```
 
 ## 快速開始
@@ -48,10 +48,10 @@ TDX_APP_KEY=your_tdx_app_key
 
 ## 功能特色
 
-- 🚇 即時列車位置模擬
-- 🗺️ Mapbox GL 3D 地圖
-- ⏱️ 時間控制 (1x-60x 加速)
-- 🔄 多路線支援 (淡水信義線)
+- 即時列車位置模擬
+- Mapbox GL 3D 地圖
+- 時間控制 (1x-60x 加速)
+- 多路線支援 (淡水信義線)
 
 ## 技術棧
 

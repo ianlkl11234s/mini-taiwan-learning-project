@@ -72,3 +72,6 @@ data_collector/cache/
 viewer/node_modules/
 viewer/.env
 viewer/dist/
+
+# Documentation (local only)
+docs/

@@ -55,12 +55,15 @@ export function TimeControl({
     <div
       style={{
         position: 'absolute',
-        bottom: 12,
-        left: 20,
-        right: 20,
+        bottom: 20,
+        left: '50%',
+        transform: 'translateX(-50%)',
+        width: '60%',
+        maxWidth: 800,
+        minWidth: 500,
         background: 'rgba(0, 0, 0, 0.85)',
-        borderRadius: 8,
-        padding: '8px 16px',
+        borderRadius: 12,
+        padding: '16px 20px',
         color: 'white',
         fontFamily: 'system-ui, -apple-system, sans-serif',
         boxShadow: '0 4px 20px rgba(0,0,0,0.3)',
@@ -72,11 +75,11 @@ export function TimeControl({
           display: 'flex',
           justifyContent: 'space-between',
           alignItems: 'center',
-          marginBottom: 6,
+          marginBottom: 12,
         }}
       >
         {/* 時間顯示 */}
-        <div style={{ fontSize: 24, fontWeight: 600, fontVariantNumeric: 'tabular-nums' }}>
+        <div style={{ fontSize: 32, fontWeight: 600, fontVariantNumeric: 'tabular-nums' }}>
           {currentTime}
         </div>
 
@@ -104,7 +107,7 @@ export function TimeControl({
       </div>
 
       {/* 時間滑桿 */}
-      <div style={{ marginBottom: 6 }}>
+      <div style={{ marginBottom: 12 }}>
         <input
           type="range"
           min={minTime}
@@ -153,13 +156,13 @@ export function TimeControl({
         <button
           onClick={onTogglePlay}
           style={{
-            width: 36,
-            height: 36,
+            width: 48,
+            height: 48,
             borderRadius: '50%',
             border: 'none',
             background: '#d90023',
             color: 'white',
-            fontSize: 16,
+            fontSize: 20,
             cursor: 'pointer',
             display: 'flex',
             alignItems: 'center',
@@ -209,18 +212,18 @@ export function TimeControl({
         </div>
 
         {/* 快速跳轉按鈕 */}
-        <div style={{ display: 'flex', gap: 6 }}>
+        <div style={{ display: 'flex', gap: 8 }}>
           {['06:00', '08:00', '12:00', '18:00', '22:00', '00:00'].map((time) => (
             <button
               key={time}
               onClick={() => timeEngine.jumpTo(time)}
               style={{
-                padding: '4px 8px',
+                padding: '6px 10px',
                 borderRadius: 4,
                 border: '1px solid #444',
                 background: 'transparent',
                 color: '#888',
-                fontSize: 11,
+                fontSize: 12,
                 cursor: 'pointer',
               }}
             >

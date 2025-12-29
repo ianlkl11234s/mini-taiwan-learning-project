@@ -52,7 +52,7 @@ function App() {
       container: mapContainer.current,
       style: 'mapbox://styles/mapbox/dark-v11',
       center: [121.515, 25.09],
-      zoom: 11,
+      zoom: 11.3,
     });
 
     map.current.on('load', () => {

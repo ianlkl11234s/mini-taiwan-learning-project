@@ -201,26 +201,48 @@ function App() {
 
     for (const train of trains) {
       let marker = trainMarkers.current.get(train.trainId);
+      const isStopped = train.status === 'stopped';
+      const baseColor = TRACK_COLORS[train.trackId] || '#d90023';
 
       if (!marker) {
         const el = document.createElement('div');
         el.className = 'train-marker';
-        el.style.cssText = `
-          width: 12px;
-          height: 12px;
-          background-color: ${TRACK_COLORS[train.trackId] || '#d90023'};
-          border: 2px solid #ffffff;
-          border-radius: 50%;
-          box-shadow: 0 0 4px rgba(0,0,0,0.5);
-        `;
+        el.dataset.trainId = train.trainId;
 
         marker = new mapboxgl.Marker({ element: el })
           .setLngLat(train.position)
           .addTo(map.current!);
 
         trainMarkers.current.set(train.trainId, marker);
+      }
+
+      // 更新位置
+      marker.setLngLat(train.position);
+
+      // 更新樣式 (停站 vs 運行)
+      const el = marker.getElement();
+      if (isStopped) {
+        // 停站中：較大、有脈動效果
+        el.style.cssText = `
+          width: 14px;
+          height: 14px;
+          background-color: ${baseColor};
+          border: 3px solid #ffffff;
+          border-radius: 50%;
+          box-shadow: 0 0 8px ${baseColor}, 0 0 12px rgba(255,255,255,0.5);
+          transition: all 0.3s ease;
+        `;
       } else {
-        marker.setLngLat(train.position);
+        // 運行中：正常大小
+        el.style.cssText = `
+          width: 12px;
+          height: 12px;
+          background-color: ${baseColor};
+          border: 2px solid #ffffff;
+          border-radius: 50%;
+          box-shadow: 0 0 4px rgba(0,0,0,0.5);
+          transition: all 0.3s ease;
+        `;
       }
     }
   }, [mapLoaded, trains]);

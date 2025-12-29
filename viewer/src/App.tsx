@@ -87,7 +87,12 @@ function App() {
       paint: {
         'line-color': ['get', 'color'],
         'line-width': 4,
-        'line-opacity': 0.8,
+        // R-1 軌道顯示 (主線), R-2/R-3 軌道透明 (共用區段)
+        'line-opacity': [
+          'case',
+          ['in', 'R-1', ['get', 'track_id']], 0.8, // R-1-0, R-1-1 可見
+          0.0 // R-2, R-3 完全透明
+        ],
       },
     });
   }, [mapLoaded, tracks]);

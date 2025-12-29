@@ -1,10 +1,6 @@
 {
-  "$schema": "https://schema.zeabur.com/deploy.json",
-  "project": {
-    "root": "viewer"
-  },
-  "build": {
-    "type": "node",
-    "framework": "vite"
-  }
+  "$schema": "https://schema.zeabur.app/zbpack.json",
+  "build_command": "cd viewer && npm install && npm run build",
+  "output_dir": "viewer/dist",
+  "start_command": "npx serve viewer/dist -s"
 }

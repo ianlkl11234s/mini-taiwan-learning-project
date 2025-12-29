@@ -88,6 +88,89 @@ def calculate_progress(coords, station_indices, station_ids):
 
     return progress
 
+def find_insertion_point(coords, station_pos):
+    """找到車站座標應該插入的位置
+
+    透過計算車站到每個線段的投影距離，找到最近的線段，
+    然後在該線段的終點處插入。
+    """
+    min_dist = float('inf')
+    best_idx = 0
+
+    for i in range(len(coords) - 1):
+        p1 = coords[i]
+        p2 = coords[i + 1]
+
+        # 計算點到線段的距離
+        # 使用向量投影來判斷點是否在線段範圍內
+        dx = p2[0] - p1[0]
+        dy = p2[1] - p1[1]
+        seg_len_sq = dx * dx + dy * dy
+
+        if seg_len_sq == 0:
+            # 線段長度為 0，直接計算點距離
+            d = distance(p1, station_pos)
+        else:
+            # 計算投影參數 t (0 <= t <= 1 表示在線段上)
+            t = max(0, min(1, ((station_pos[0] - p1[0]) * dx + (station_pos[1] - p1[1]) * dy) / seg_len_sq))
+
+            # 投影點
+            proj_x = p1[0] + t * dx
+            proj_y = p1[1] + t * dy
+
+            d = distance([proj_x, proj_y], station_pos)
+
+            # 如果點在線段範圍內 (0 < t < 1)，這是理想的插入位置
+            if 0 < t < 1 and d < min_dist:
+                min_dist = d
+                best_idx = i + 1  # 插入在 p2 的位置 (p1 之後)
+
+        # 也檢查到端點的距離
+        d1 = distance(p1, station_pos)
+        d2 = distance(p2, station_pos)
+
+        if d1 < min_dist:
+            min_dist = d1
+            best_idx = i
+        if d2 < min_dist:
+            min_dist = d2
+            best_idx = i + 1
+
+    return best_idx, min_dist
+
+def insert_station_coords(coords, station_coords, stations_data):
+    """在軌道中插入精確的車站座標
+
+    確保軌道通過每個車站的精確位置，而不是只用最近的軌道點。
+    車站會按照沿軌道的順序插入。
+    """
+    result = list(coords)
+
+    # 跳過首尾站（已經在 create_track 中設定）
+    middle_stations = station_coords[1:-1] if len(station_coords) > 2 else []
+
+    for station_id in middle_stations:
+        if station_id not in stations_data:
+            continue
+
+        station_pos = stations_data[station_id]['coords']
+
+        # 找到最佳插入位置
+        insert_idx, min_dist = find_insertion_point(result, station_pos)
+
+        # 檢查該位置是否已經很接近車站座標
+        if insert_idx < len(result) and distance(result[insert_idx], station_pos) < 0.00005:
+            # 距離已經很近，直接替換
+            result[insert_idx] = station_pos
+        elif insert_idx > 0 and distance(result[insert_idx - 1], station_pos) < 0.00005:
+            # 前一個點很近，替換前一個點
+            result[insert_idx - 1] = station_pos
+        else:
+            # 插入新座標
+            result.insert(insert_idx, station_pos)
+
+    return result
+
 def create_track(track_id, source_track_id, start_station, end_station, name, stations_data):
     """建立新軌道"""
     source_coords = load_track(source_track_id)
@@ -107,36 +190,12 @@ def create_track(track_id, source_track_id, start_station, end_station, name, st
     else:
         new_coords = source_coords[start_idx:end_idx + 1]
 
+    # 確保起點和終點是精確的車站座標
+    new_coords[0] = start_coords
+    new_coords[-1] = end_coords
+
     print(f"  {track_id}: 從索引 {start_idx} 到 {end_idx}, 共 {len(new_coords)} 點")
 
-    # 建立 GeoJSON
-    route_id = track_id.rsplit('-', 1)[0]  # R-5-0 -> R-5
-    geojson = {
-        "type": "FeatureCollection",
-        "features": [{
-            "type": "Feature",
-            "properties": {
-                "track_id": track_id,
-                "route_id": route_id,
-                "name": name,
-                "color": "#d90023"
-            },
-            "geometry": {
-                "type": "LineString",
-                "coordinates": new_coords
-            }
-        }]
-    }
-
-    # 儲存軌道
-    output_file = TRACKS_DIR / f"{track_id}.geojson"
-    with open(output_file, 'w', encoding='utf-8') as f:
-        json.dump(geojson, f, ensure_ascii=False, indent=2)
-
-    print(f"  ✅ 已建立 {output_file}")
-
-    # 計算此軌道的車站進度
-    # 需要找出這段軌道上所有車站的索引
     return new_coords
 
 def get_stations_on_track(start_station, end_station, direction):
@@ -179,12 +238,38 @@ def main():
     for track_id, source_track, start_station, end_station, name, direction in TRACKS_TO_CREATE:
         print(f"\n建立 {track_id} ({name})...")
 
+        # 取得此軌道上的車站（先取得，用於插入座標）
+        track_stations = get_stations_on_track(start_station, end_station, direction)
+        print(f"  車站: {track_stations[0]} ~ {track_stations[-1]} ({len(track_stations)} 站)")
+
         # 建立軌道並取得座標
         new_coords = create_track(track_id, source_track, start_station, end_station, name, stations_data)
 
-        # 取得此軌道上的車站
-        track_stations = get_stations_on_track(start_station, end_station, direction)
-        print(f"  車站: {track_stations[0]} ~ {track_stations[-1]} ({len(track_stations)} 站)")
+        # 插入所有中間站的精確座標
+        new_coords = insert_station_coords(new_coords, track_stations, stations_data)
+        print(f"  插入車站座標後: {len(new_coords)} 點")
+
+        # 重新儲存包含精確車站座標的軌道
+        route_id = track_id.rsplit('-', 1)[0]
+        geojson = {
+            "type": "FeatureCollection",
+            "features": [{
+                "type": "Feature",
+                "properties": {
+                    "track_id": track_id,
+                    "route_id": route_id,
+                    "name": name,
+                    "color": "#d90023"
+                },
+                "geometry": {
+                    "type": "LineString",
+                    "coordinates": new_coords
+                }
+            }]
+        }
+        output_file = TRACKS_DIR / f"{track_id}.geojson"
+        with open(output_file, 'w', encoding='utf-8') as f:
+            json.dump(geojson, f, ensure_ascii=False, indent=2)
 
         # 計算各站在新軌道上的索引
         station_indices = []

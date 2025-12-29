@@ -67,3 +67,8 @@ tmp/
 temp/
 *.tmp
 data_collector/cache/
+
+# Viewer
+viewer/node_modules/
+viewer/.env
+viewer/dist/

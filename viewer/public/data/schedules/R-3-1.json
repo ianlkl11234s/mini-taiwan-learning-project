@@ -1,0 +1,2023 @@
+{
+  "track_id": "R-3-1",
+  "route_id": "R-3",
+  "name": "新北投 → 北投",
+  "origin": "R22A",
+  "destination": "R22",
+  "stations": [
+    "R22A",
+    "R22"
+  ],
+  "travel_time_minutes": 4,
+  "dwell_time_seconds": 40,
+  "is_weekday": true,
+  "departure_count": 118,
+  "departures": [
+    {
+      "departure_time": "06:00:00",
+      "train_id": "R-3-1-001",
+      "stations": [
+        {
+          "station_id": "R22A",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "R22",
+          "arrival": 280,
+          "departure": 280
+        }
+      ],
+      "total_travel_time": 280
+    },
+    {
+      "departure_time": "06:13:30",
+      "train_id": "R-3-1-002",
+      "stations": [
+        {
+          "station_id": "R22A",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "R22",
+          "arrival": 280,
+          "departure": 280
+        }
+      ],
+      "total_travel_time": 280
+    },
+    {
+      "departure_time": "06:27:00",
+      "train_id": "R-3-1-003",
+      "stations": [
+        {
+          "station_id": "R22A",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "R22",
+          "arrival": 280,
+          "departure": 280
+        }
+      ],
+      "total_travel_time": 280
+    },
+    {
+      "departure_time": "06:40:30",
+      "train_id": "R-3-1-004",
+      "stations": [
+        {
+          "station_id": "R22A",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "R22",
+          "arrival": 280,
+          "departure": 280
+        }
+      ],
+      "total_travel_time": 280
+    },
+    {
+      "departure_time": "06:48:00",
+      "train_id": "R-3-1-005",
+      "stations": [
+        {
+          "station_id": "R22A",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "R22",
+          "arrival": 280,
+          "departure": 280
+        }
+      ],
+      "total_travel_time": 280
+    },
+    {
+      "departure_time": "06:55:30",
+      "train_id": "R-3-1-006",
+      "stations": [
+        {
+          "station_id": "R22A",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "R22",
+          "arrival": 280,
+          "departure": 280
+        }
+      ],
+      "total_travel_time": 280
+    },
+    {
+      "departure_time": "07:03:00",
+      "train_id": "R-3-1-007",
+      "stations": [
+        {
+          "station_id": "R22A",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "R22",
+          "arrival": 280,
+          "departure": 280
+        }
+      ],
+      "total_travel_time": 280
+    },
+    {
+      "departure_time": "07:10:30",
+      "train_id": "R-3-1-008",
+      "stations": [
+        {
+          "station_id": "R22A",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "R22",
+          "arrival": 280,
+          "departure": 280
+        }
+      ],
+      "total_travel_time": 280
+    },
+    {
+      "departure_time": "07:18:00",
+      "train_id": "R-3-1-009",
+      "stations": [
+        {
+          "station_id": "R22A",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "R22",
+          "arrival": 280,
+          "departure": 280
+        }
+      ],
+      "total_travel_time": 280
+    },
+    {
+      "departure_time": "07:25:30",
+      "train_id": "R-3-1-010",
+      "stations": [
+        {
+          "station_id": "R22A",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "R22",
+          "arrival": 280,
+          "departure": 280
+        }
+      ],
+      "total_travel_time": 280
+    },
+    {
+      "departure_time": "07:33:00",
+      "train_id": "R-3-1-011",
+      "stations": [
+        {
+          "station_id": "R22A",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "R22",
+          "arrival": 280,
+          "departure": 280
+        }
+      ],
+      "total_travel_time": 280
+    },
+    {
+      "departure_time": "07:40:30",
+      "train_id": "R-3-1-012",
+      "stations": [
+        {
+          "station_id": "R22A",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "R22",
+          "arrival": 280,
+          "departure": 280
+        }
+      ],
+      "total_travel_time": 280
+    },
+    {
+      "departure_time": "07:48:00",
+      "train_id": "R-3-1-013",
+      "stations": [
+        {
+          "station_id": "R22A",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "R22",
+          "arrival": 280,
+          "departure": 280
+        }
+      ],
+      "total_travel_time": 280
+    },
+    {
+      "departure_time": "07:55:30",
+      "train_id": "R-3-1-014",
+      "stations": [
+        {
+          "station_id": "R22A",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "R22",
+          "arrival": 280,
+          "departure": 280
+        }
+      ],
+      "total_travel_time": 280
+    },
+    {
+      "departure_time": "08:03:00",
+      "train_id": "R-3-1-015",
+      "stations": [
+        {
+          "station_id": "R22A",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "R22",
+          "arrival": 280,
+          "departure": 280
+        }
+      ],
+      "total_travel_time": 280
+    },
+    {
+      "departure_time": "08:10:30",
+      "train_id": "R-3-1-016",
+      "stations": [
+        {
+          "station_id": "R22A",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "R22",
+          "arrival": 280,
+          "departure": 280
+        }
+      ],
+      "total_travel_time": 280
+    },
+    {
+      "departure_time": "08:18:00",
+      "train_id": "R-3-1-017",
+      "stations": [
+        {
+          "station_id": "R22A",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "R22",
+          "arrival": 280,
+          "departure": 280
+        }
+      ],
+      "total_travel_time": 280
+    },
+    {
+      "departure_time": "08:25:30",
+      "train_id": "R-3-1-018",
+      "stations": [
+        {
+          "station_id": "R22A",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "R22",
+          "arrival": 280,
+          "departure": 280
+        }
+      ],
+      "total_travel_time": 280
+    },
+    {
+      "departure_time": "08:33:00",
+      "train_id": "R-3-1-019",
+      "stations": [
+        {
+          "station_id": "R22A",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "R22",
+          "arrival": 280,
+          "departure": 280
+        }
+      ],
+      "total_travel_time": 280
+    },
+    {
+      "departure_time": "08:40:30",
+      "train_id": "R-3-1-020",
+      "stations": [
+        {
+          "station_id": "R22A",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "R22",
+          "arrival": 280,
+          "departure": 280
+        }
+      ],
+      "total_travel_time": 280
+    },
+    {
+      "departure_time": "08:48:00",
+      "train_id": "R-3-1-021",
+      "stations": [
+        {
+          "station_id": "R22A",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "R22",
+          "arrival": 280,
+          "departure": 280
+        }
+      ],
+      "total_travel_time": 280
+    },
+    {
+      "departure_time": "08:55:30",
+      "train_id": "R-3-1-022",
+      "stations": [
+        {
+          "station_id": "R22A",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "R22",
+          "arrival": 280,
+          "departure": 280
+        }
+      ],
+      "total_travel_time": 280
+    },
+    {
+      "departure_time": "09:03:00",
+      "train_id": "R-3-1-023",
+      "stations": [
+        {
+          "station_id": "R22A",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "R22",
+          "arrival": 280,
+          "departure": 280
+        }
+      ],
+      "total_travel_time": 280
+    },
+    {
+      "departure_time": "09:13:00",
+      "train_id": "R-3-1-024",
+      "stations": [
+        {
+          "station_id": "R22A",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "R22",
+          "arrival": 280,
+          "departure": 280
+        }
+      ],
+      "total_travel_time": 280
+    },
+    {
+      "departure_time": "09:23:00",
+      "train_id": "R-3-1-025",
+      "stations": [
+        {
+          "station_id": "R22A",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "R22",
+          "arrival": 280,
+          "departure": 280
+        }
+      ],
+      "total_travel_time": 280
+    },
+    {
+      "departure_time": "09:33:00",
+      "train_id": "R-3-1-026",
+      "stations": [
+        {
+          "station_id": "R22A",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "R22",
+          "arrival": 280,
+          "departure": 280
+        }
+      ],
+      "total_travel_time": 280
+    },
+    {
+      "departure_time": "09:43:00",
+      "train_id": "R-3-1-027",
+      "stations": [
+        {
+          "station_id": "R22A",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "R22",
+          "arrival": 280,
+          "departure": 280
+        }
+      ],
+      "total_travel_time": 280
+    },
+    {
+      "departure_time": "09:53:00",
+      "train_id": "R-3-1-028",
+      "stations": [
+        {
+          "station_id": "R22A",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "R22",
+          "arrival": 280,
+          "departure": 280
+        }
+      ],
+      "total_travel_time": 280
+    },
+    {
+      "departure_time": "10:03:00",
+      "train_id": "R-3-1-029",
+      "stations": [
+        {
+          "station_id": "R22A",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "R22",
+          "arrival": 280,
+          "departure": 280
+        }
+      ],
+      "total_travel_time": 280
+    },
+    {
+      "departure_time": "10:13:00",
+      "train_id": "R-3-1-030",
+      "stations": [
+        {
+          "station_id": "R22A",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "R22",
+          "arrival": 280,
+          "departure": 280
+        }
+      ],
+      "total_travel_time": 280
+    },
+    {
+      "departure_time": "10:23:00",
+      "train_id": "R-3-1-031",
+      "stations": [
+        {
+          "station_id": "R22A",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "R22",
+          "arrival": 280,
+          "departure": 280
+        }
+      ],
+      "total_travel_time": 280
+    },
+    {
+      "departure_time": "10:33:00",
+      "train_id": "R-3-1-032",
+      "stations": [
+        {
+          "station_id": "R22A",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "R22",
+          "arrival": 280,
+          "departure": 280
+        }
+      ],
+      "total_travel_time": 280
+    },
+    {
+      "departure_time": "10:43:00",
+      "train_id": "R-3-1-033",
+      "stations": [
+        {
+          "station_id": "R22A",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "R22",
+          "arrival": 280,
+          "departure": 280
+        }
+      ],
+      "total_travel_time": 280
+    },
+    {
+      "departure_time": "10:53:00",
+      "train_id": "R-3-1-034",
+      "stations": [
+        {
+          "station_id": "R22A",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "R22",
+          "arrival": 280,
+          "departure": 280
+        }
+      ],
+      "total_travel_time": 280
+    },
+    {
+      "departure_time": "11:03:00",
+      "train_id": "R-3-1-035",
+      "stations": [
+        {
+          "station_id": "R22A",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "R22",
+          "arrival": 280,
+          "departure": 280
+        }
+      ],
+      "total_travel_time": 280
+    },
+    {
+      "departure_time": "11:13:00",
+      "train_id": "R-3-1-036",
+      "stations": [
+        {
+          "station_id": "R22A",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "R22",
+          "arrival": 280,
+          "departure": 280
+        }
+      ],
+      "total_travel_time": 280
+    },
+    {
+      "departure_time": "11:23:00",
+      "train_id": "R-3-1-037",
+      "stations": [
+        {
+          "station_id": "R22A",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "R22",
+          "arrival": 280,
+          "departure": 280
+        }
+      ],
+      "total_travel_time": 280
+    },
+    {
+      "departure_time": "11:33:00",
+      "train_id": "R-3-1-038",
+      "stations": [
+        {
+          "station_id": "R22A",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "R22",
+          "arrival": 280,
+          "departure": 280
+        }
+      ],
+      "total_travel_time": 280
+    },
+    {
+      "departure_time": "11:43:00",
+      "train_id": "R-3-1-039",
+      "stations": [
+        {
+          "station_id": "R22A",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "R22",
+          "arrival": 280,
+          "departure": 280
+        }
+      ],
+      "total_travel_time": 280
+    },
+    {
+      "departure_time": "11:53:00",
+      "train_id": "R-3-1-040",
+      "stations": [
+        {
+          "station_id": "R22A",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "R22",
+          "arrival": 280,
+          "departure": 280
+        }
+      ],
+      "total_travel_time": 280
+    },
+    {
+      "departure_time": "12:03:00",
+      "train_id": "R-3-1-041",
+      "stations": [
+        {
+          "station_id": "R22A",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "R22",
+          "arrival": 280,
+          "departure": 280
+        }
+      ],
+      "total_travel_time": 280
+    },
+    {
+      "departure_time": "12:13:00",
+      "train_id": "R-3-1-042",
+      "stations": [
+        {
+          "station_id": "R22A",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "R22",
+          "arrival": 280,
+          "departure": 280
+        }
+      ],
+      "total_travel_time": 280
+    },
+    {
+      "departure_time": "12:23:00",
+      "train_id": "R-3-1-043",
+      "stations": [
+        {
+          "station_id": "R22A",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "R22",
+          "arrival": 280,
+          "departure": 280
+        }
+      ],
+      "total_travel_time": 280
+    },
+    {
+      "departure_time": "12:33:00",
+      "train_id": "R-3-1-044",
+      "stations": [
+        {
+          "station_id": "R22A",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "R22",
+          "arrival": 280,
+          "departure": 280
+        }
+      ],
+      "total_travel_time": 280
+    },
+    {
+      "departure_time": "12:43:00",
+      "train_id": "R-3-1-045",
+      "stations": [
+        {
+          "station_id": "R22A",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "R22",
+          "arrival": 280,
+          "departure": 280
+        }
+      ],
+      "total_travel_time": 280
+    },
+    {
+      "departure_time": "12:53:00",
+      "train_id": "R-3-1-046",
+      "stations": [
+        {
+          "station_id": "R22A",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "R22",
+          "arrival": 280,
+          "departure": 280
+        }
+      ],
+      "total_travel_time": 280
+    },
+    {
+      "departure_time": "13:03:00",
+      "train_id": "R-3-1-047",
+      "stations": [
+        {
+          "station_id": "R22A",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "R22",
+          "arrival": 280,
+          "departure": 280
+        }
+      ],
+      "total_travel_time": 280
+    },
+    {
+      "departure_time": "13:13:00",
+      "train_id": "R-3-1-048",
+      "stations": [
+        {
+          "station_id": "R22A",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "R22",
+          "arrival": 280,
+          "departure": 280
+        }
+      ],
+      "total_travel_time": 280
+    },
+    {
+      "departure_time": "13:23:00",
+      "train_id": "R-3-1-049",
+      "stations": [
+        {
+          "station_id": "R22A",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "R22",
+          "arrival": 280,
+          "departure": 280
+        }
+      ],
+      "total_travel_time": 280
+    },
+    {
+      "departure_time": "13:33:00",
+      "train_id": "R-3-1-050",
+      "stations": [
+        {
+          "station_id": "R22A",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "R22",
+          "arrival": 280,
+          "departure": 280
+        }
+      ],
+      "total_travel_time": 280
+    },
+    {
+      "departure_time": "13:43:00",
+      "train_id": "R-3-1-051",
+      "stations": [
+        {
+          "station_id": "R22A",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "R22",
+          "arrival": 280,
+          "departure": 280
+        }
+      ],
+      "total_travel_time": 280
+    },
+    {
+      "departure_time": "13:53:00",
+      "train_id": "R-3-1-052",
+      "stations": [
+        {
+          "station_id": "R22A",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "R22",
+          "arrival": 280,
+          "departure": 280
+        }
+      ],
+      "total_travel_time": 280
+    },
+    {
+      "departure_time": "14:03:00",
+      "train_id": "R-3-1-053",
+      "stations": [
+        {
+          "station_id": "R22A",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "R22",
+          "arrival": 280,
+          "departure": 280
+        }
+      ],
+      "total_travel_time": 280
+    },
+    {
+      "departure_time": "14:13:00",
+      "train_id": "R-3-1-054",
+      "stations": [
+        {
+          "station_id": "R22A",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "R22",
+          "arrival": 280,
+          "departure": 280
+        }
+      ],
+      "total_travel_time": 280
+    },
+    {
+      "departure_time": "14:23:00",
+      "train_id": "R-3-1-055",
+      "stations": [
+        {
+          "station_id": "R22A",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "R22",
+          "arrival": 280,
+          "departure": 280
+        }
+      ],
+      "total_travel_time": 280
+    },
+    {
+      "departure_time": "14:33:00",
+      "train_id": "R-3-1-056",
+      "stations": [
+        {
+          "station_id": "R22A",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "R22",
+          "arrival": 280,
+          "departure": 280
+        }
+      ],
+      "total_travel_time": 280
+    },
+    {
+      "departure_time": "14:43:00",
+      "train_id": "R-3-1-057",
+      "stations": [
+        {
+          "station_id": "R22A",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "R22",
+          "arrival": 280,
+          "departure": 280
+        }
+      ],
+      "total_travel_time": 280
+    },
+    {
+      "departure_time": "14:53:00",
+      "train_id": "R-3-1-058",
+      "stations": [
+        {
+          "station_id": "R22A",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "R22",
+          "arrival": 280,
+          "departure": 280
+        }
+      ],
+      "total_travel_time": 280
+    },
+    {
+      "departure_time": "15:03:00",
+      "train_id": "R-3-1-059",
+      "stations": [
+        {
+          "station_id": "R22A",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "R22",
+          "arrival": 280,
+          "departure": 280
+        }
+      ],
+      "total_travel_time": 280
+    },
+    {
+      "departure_time": "15:13:00",
+      "train_id": "R-3-1-060",
+      "stations": [
+        {
+          "station_id": "R22A",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "R22",
+          "arrival": 280,
+          "departure": 280
+        }
+      ],
+      "total_travel_time": 280
+    },
+    {
+      "departure_time": "15:23:00",
+      "train_id": "R-3-1-061",
+      "stations": [
+        {
+          "station_id": "R22A",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "R22",
+          "arrival": 280,
+          "departure": 280
+        }
+      ],
+      "total_travel_time": 280
+    },
+    {
+      "departure_time": "15:33:00",
+      "train_id": "R-3-1-062",
+      "stations": [
+        {
+          "station_id": "R22A",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "R22",
+          "arrival": 280,
+          "departure": 280
+        }
+      ],
+      "total_travel_time": 280
+    },
+    {
+      "departure_time": "15:43:00",
+      "train_id": "R-3-1-063",
+      "stations": [
+        {
+          "station_id": "R22A",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "R22",
+          "arrival": 280,
+          "departure": 280
+        }
+      ],
+      "total_travel_time": 280
+    },
+    {
+      "departure_time": "15:53:00",
+      "train_id": "R-3-1-064",
+      "stations": [
+        {
+          "station_id": "R22A",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "R22",
+          "arrival": 280,
+          "departure": 280
+        }
+      ],
+      "total_travel_time": 280
+    },
+    {
+      "departure_time": "16:03:00",
+      "train_id": "R-3-1-065",
+      "stations": [
+        {
+          "station_id": "R22A",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "R22",
+          "arrival": 280,
+          "departure": 280
+        }
+      ],
+      "total_travel_time": 280
+    },
+    {
+      "departure_time": "16:13:00",
+      "train_id": "R-3-1-066",
+      "stations": [
+        {
+          "station_id": "R22A",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "R22",
+          "arrival": 280,
+          "departure": 280
+        }
+      ],
+      "total_travel_time": 280
+    },
+    {
+      "departure_time": "16:23:00",
+      "train_id": "R-3-1-067",
+      "stations": [
+        {
+          "station_id": "R22A",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "R22",
+          "arrival": 280,
+          "departure": 280
+        }
+      ],
+      "total_travel_time": 280
+    },
+    {
+      "departure_time": "16:33:00",
+      "train_id": "R-3-1-068",
+      "stations": [
+        {
+          "station_id": "R22A",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "R22",
+          "arrival": 280,
+          "departure": 280
+        }
+      ],
+      "total_travel_time": 280
+    },
+    {
+      "departure_time": "16:43:00",
+      "train_id": "R-3-1-069",
+      "stations": [
+        {
+          "station_id": "R22A",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "R22",
+          "arrival": 280,
+          "departure": 280
+        }
+      ],
+      "total_travel_time": 280
+    },
+    {
+      "departure_time": "16:53:00",
+      "train_id": "R-3-1-070",
+      "stations": [
+        {
+          "station_id": "R22A",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "R22",
+          "arrival": 280,
+          "departure": 280
+        }
+      ],
+      "total_travel_time": 280
+    },
+    {
+      "departure_time": "17:03:00",
+      "train_id": "R-3-1-071",
+      "stations": [
+        {
+          "station_id": "R22A",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "R22",
+          "arrival": 280,
+          "departure": 280
+        }
+      ],
+      "total_travel_time": 280
+    },
+    {
+      "departure_time": "17:10:30",
+      "train_id": "R-3-1-072",
+      "stations": [
+        {
+          "station_id": "R22A",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "R22",
+          "arrival": 280,
+          "departure": 280
+        }
+      ],
+      "total_travel_time": 280
+    },
+    {
+      "departure_time": "17:18:00",
+      "train_id": "R-3-1-073",
+      "stations": [
+        {
+          "station_id": "R22A",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "R22",
+          "arrival": 280,
+          "departure": 280
+        }
+      ],
+      "total_travel_time": 280
+    },
+    {
+      "departure_time": "17:25:30",
+      "train_id": "R-3-1-074",
+      "stations": [
+        {
+          "station_id": "R22A",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "R22",
+          "arrival": 280,
+          "departure": 280
+        }
+      ],
+      "total_travel_time": 280
+    },
+    {
+      "departure_time": "17:33:00",
+      "train_id": "R-3-1-075",
+      "stations": [
+        {
+          "station_id": "R22A",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "R22",
+          "arrival": 280,
+          "departure": 280
+        }
+      ],
+      "total_travel_time": 280
+    },
+    {
+      "departure_time": "17:40:30",
+      "train_id": "R-3-1-076",
+      "stations": [
+        {
+          "station_id": "R22A",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "R22",
+          "arrival": 280,
+          "departure": 280
+        }
+      ],
+      "total_travel_time": 280
+    },
+    {
+      "departure_time": "17:48:00",
+      "train_id": "R-3-1-077",
+      "stations": [
+        {
+          "station_id": "R22A",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "R22",
+          "arrival": 280,
+          "departure": 280
+        }
+      ],
+      "total_travel_time": 280
+    },
+    {
+      "departure_time": "17:55:30",
+      "train_id": "R-3-1-078",
+      "stations": [
+        {
+          "station_id": "R22A",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "R22",
+          "arrival": 280,
+          "departure": 280
+        }
+      ],
+      "total_travel_time": 280
+    },
+    {
+      "departure_time": "18:03:00",
+      "train_id": "R-3-1-079",
+      "stations": [
+        {
+          "station_id": "R22A",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "R22",
+          "arrival": 280,
+          "departure": 280
+        }
+      ],
+      "total_travel_time": 280
+    },
+    {
+      "departure_time": "18:10:30",
+      "train_id": "R-3-1-080",
+      "stations": [
+        {
+          "station_id": "R22A",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "R22",
+          "arrival": 280,
+          "departure": 280
+        }
+      ],
+      "total_travel_time": 280
+    },
+    {
+      "departure_time": "18:18:00",
+      "train_id": "R-3-1-081",
+      "stations": [
+        {
+          "station_id": "R22A",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "R22",
+          "arrival": 280,
+          "departure": 280
+        }
+      ],
+      "total_travel_time": 280
+    },
+    {
+      "departure_time": "18:25:30",
+      "train_id": "R-3-1-082",
+      "stations": [
+        {
+          "station_id": "R22A",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "R22",
+          "arrival": 280,
+          "departure": 280
+        }
+      ],
+      "total_travel_time": 280
+    },
+    {
+      "departure_time": "18:33:00",
+      "train_id": "R-3-1-083",
+      "stations": [
+        {
+          "station_id": "R22A",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "R22",
+          "arrival": 280,
+          "departure": 280
+        }
+      ],
+      "total_travel_time": 280
+    },
+    {
+      "departure_time": "18:40:30",
+      "train_id": "R-3-1-084",
+      "stations": [
+        {
+          "station_id": "R22A",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "R22",
+          "arrival": 280,
+          "departure": 280
+        }
+      ],
+      "total_travel_time": 280
+    },
+    {
+      "departure_time": "18:48:00",
+      "train_id": "R-3-1-085",
+      "stations": [
+        {
+          "station_id": "R22A",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "R22",
+          "arrival": 280,
+          "departure": 280
+        }
+      ],
+      "total_travel_time": 280
+    },
+    {
+      "departure_time": "18:55:30",
+      "train_id": "R-3-1-086",
+      "stations": [
+        {
+          "station_id": "R22A",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "R22",
+          "arrival": 280,
+          "departure": 280
+        }
+      ],
+      "total_travel_time": 280
+    },
+    {
+      "departure_time": "19:03:00",
+      "train_id": "R-3-1-087",
+      "stations": [
+        {
+          "station_id": "R22A",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "R22",
+          "arrival": 280,
+          "departure": 280
+        }
+      ],
+      "total_travel_time": 280
+    },
+    {
+      "departure_time": "19:10:30",
+      "train_id": "R-3-1-088",
+      "stations": [
+        {
+          "station_id": "R22A",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "R22",
+          "arrival": 280,
+          "departure": 280
+        }
+      ],
+      "total_travel_time": 280
+    },
+    {
+      "departure_time": "19:18:00",
+      "train_id": "R-3-1-089",
+      "stations": [
+        {
+          "station_id": "R22A",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "R22",
+          "arrival": 280,
+          "departure": 280
+        }
+      ],
+      "total_travel_time": 280
+    },
+    {
+      "departure_time": "19:25:30",
+      "train_id": "R-3-1-090",
+      "stations": [
+        {
+          "station_id": "R22A",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "R22",
+          "arrival": 280,
+          "departure": 280
+        }
+      ],
+      "total_travel_time": 280
+    },
+    {
+      "departure_time": "19:33:00",
+      "train_id": "R-3-1-091",
+      "stations": [
+        {
+          "station_id": "R22A",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "R22",
+          "arrival": 280,
+          "departure": 280
+        }
+      ],
+      "total_travel_time": 280
+    },
+    {
+      "departure_time": "19:42:00",
+      "train_id": "R-3-1-092",
+      "stations": [
+        {
+          "station_id": "R22A",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "R22",
+          "arrival": 280,
+          "departure": 280
+        }
+      ],
+      "total_travel_time": 280
+    },
+    {
+      "departure_time": "19:51:00",
+      "train_id": "R-3-1-093",
+      "stations": [
+        {
+          "station_id": "R22A",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "R22",
+          "arrival": 280,
+          "departure": 280
+        }
+      ],
+      "total_travel_time": 280
+    },
+    {
+      "departure_time": "20:00:00",
+      "train_id": "R-3-1-094",
+      "stations": [
+        {
+          "station_id": "R22A",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "R22",
+          "arrival": 280,
+          "departure": 280
+        }
+      ],
+      "total_travel_time": 280
+    },
+    {
+      "departure_time": "20:09:00",
+      "train_id": "R-3-1-095",
+      "stations": [
+        {
+          "station_id": "R22A",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "R22",
+          "arrival": 280,
+          "departure": 280
+        }
+      ],
+      "total_travel_time": 280
+    },
+    {
+      "departure_time": "20:18:00",
+      "train_id": "R-3-1-096",
+      "stations": [
+        {
+          "station_id": "R22A",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "R22",
+          "arrival": 280,
+          "departure": 280
+        }
+      ],
+      "total_travel_time": 280
+    },
+    {
+      "departure_time": "20:27:00",
+      "train_id": "R-3-1-097",
+      "stations": [
+        {
+          "station_id": "R22A",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "R22",
+          "arrival": 280,
+          "departure": 280
+        }
+      ],
+      "total_travel_time": 280
+    },
+    {
+      "departure_time": "20:36:00",
+      "train_id": "R-3-1-098",
+      "stations": [
+        {
+          "station_id": "R22A",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "R22",
+          "arrival": 280,
+          "departure": 280
+        }
+      ],
+      "total_travel_time": 280
+    },
+    {
+      "departure_time": "20:45:00",
+      "train_id": "R-3-1-099",
+      "stations": [
+        {
+          "station_id": "R22A",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "R22",
+          "arrival": 280,
+          "departure": 280
+        }
+      ],
+      "total_travel_time": 280
+    },
+    {
+      "departure_time": "20:54:00",
+      "train_id": "R-3-1-100",
+      "stations": [
+        {
+          "station_id": "R22A",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "R22",
+          "arrival": 280,
+          "departure": 280
+        }
+      ],
+      "total_travel_time": 280
+    },
+    {
+      "departure_time": "21:03:00",
+      "train_id": "R-3-1-101",
+      "stations": [
+        {
+          "station_id": "R22A",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "R22",
+          "arrival": 280,
+          "departure": 280
+        }
+      ],
+      "total_travel_time": 280
+    },
+    {
+      "departure_time": "21:12:00",
+      "train_id": "R-3-1-102",
+      "stations": [
+        {
+          "station_id": "R22A",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "R22",
+          "arrival": 280,
+          "departure": 280
+        }
+      ],
+      "total_travel_time": 280
+    },
+    {
+      "departure_time": "21:21:00",
+      "train_id": "R-3-1-103",
+      "stations": [
+        {
+          "station_id": "R22A",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "R22",
+          "arrival": 280,
+          "departure": 280
+        }
+      ],
+      "total_travel_time": 280
+    },
+    {
+      "departure_time": "21:30:00",
+      "train_id": "R-3-1-104",
+      "stations": [
+        {
+          "station_id": "R22A",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "R22",
+          "arrival": 280,
+          "departure": 280
+        }
+      ],
+      "total_travel_time": 280
+    },
+    {
+      "departure_time": "21:39:00",
+      "train_id": "R-3-1-105",
+      "stations": [
+        {
+          "station_id": "R22A",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "R22",
+          "arrival": 280,
+          "departure": 280
+        }
+      ],
+      "total_travel_time": 280
+    },
+    {
+      "departure_time": "21:48:00",
+      "train_id": "R-3-1-106",
+      "stations": [
+        {
+          "station_id": "R22A",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "R22",
+          "arrival": 280,
+          "departure": 280
+        }
+      ],
+      "total_travel_time": 280
+    },
+    {
+      "departure_time": "21:57:00",
+      "train_id": "R-3-1-107",
+      "stations": [
+        {
+          "station_id": "R22A",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "R22",
+          "arrival": 280,
+          "departure": 280
+        }
+      ],
+      "total_travel_time": 280
+    },
+    {
+      "departure_time": "22:06:00",
+      "train_id": "R-3-1-108",
+      "stations": [
+        {
+          "station_id": "R22A",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "R22",
+          "arrival": 280,
+          "departure": 280
+        }
+      ],
+      "total_travel_time": 280
+    },
+    {
+      "departure_time": "22:15:00",
+      "train_id": "R-3-1-109",
+      "stations": [
+        {
+          "station_id": "R22A",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "R22",
+          "arrival": 280,
+          "departure": 280
+        }
+      ],
+      "total_travel_time": 280
+    },
+    {
+      "departure_time": "22:24:00",
+      "train_id": "R-3-1-110",
+      "stations": [
+        {
+          "station_id": "R22A",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "R22",
+          "arrival": 280,
+          "departure": 280
+        }
+      ],
+      "total_travel_time": 280
+    },
+    {
+      "departure_time": "22:33:00",
+      "train_id": "R-3-1-111",
+      "stations": [
+        {
+          "station_id": "R22A",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "R22",
+          "arrival": 280,
+          "departure": 280
+        }
+      ],
+      "total_travel_time": 280
+    },
+    {
+      "departure_time": "22:42:00",
+      "train_id": "R-3-1-112",
+      "stations": [
+        {
+          "station_id": "R22A",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "R22",
+          "arrival": 280,
+          "departure": 280
+        }
+      ],
+      "total_travel_time": 280
+    },
+    {
+      "departure_time": "22:51:00",
+      "train_id": "R-3-1-113",
+      "stations": [
+        {
+          "station_id": "R22A",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "R22",
+          "arrival": 280,
+          "departure": 280
+        }
+      ],
+      "total_travel_time": 280
+    },
+    {
+      "departure_time": "23:00:00",
+      "train_id": "R-3-1-114",
+      "stations": [
+        {
+          "station_id": "R22A",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "R22",
+          "arrival": 280,
+          "departure": 280
+        }
+      ],
+      "total_travel_time": 280
+    },
+    {
+      "departure_time": "23:13:30",
+      "train_id": "R-3-1-115",
+      "stations": [
+        {
+          "station_id": "R22A",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "R22",
+          "arrival": 280,
+          "departure": 280
+        }
+      ],
+      "total_travel_time": 280
+    },
+    {
+      "departure_time": "23:27:00",
+      "train_id": "R-3-1-116",
+      "stations": [
+        {
+          "station_id": "R22A",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "R22",
+          "arrival": 280,
+          "departure": 280
+        }
+      ],
+      "total_travel_time": 280
+    },
+    {
+      "departure_time": "23:40:30",
+      "train_id": "R-3-1-117",
+      "stations": [
+        {
+          "station_id": "R22A",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "R22",
+          "arrival": 280,
+          "departure": 280
+        }
+      ],
+      "total_travel_time": 280
+    },
+    {
+      "departure_time": "23:54:00",
+      "train_id": "R-3-1-118",
+      "stations": [
+        {
+          "station_id": "R22A",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "R22",
+          "arrival": 280,
+          "departure": 280
+        }
+      ],
+      "total_travel_time": 280
+    }
+  ]
+}

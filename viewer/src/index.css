@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background-color: #1a1a1a;
+  color: white;
+}
+
+/* Mapbox GL 地圖容器 */
+.mapboxgl-map {
+  font: inherit;
+}
+
+/* 列車標記動畫 */
+.train-marker {
+  transition: transform 0.1s ease-out;
+}
+
+/* 隱藏 Mapbox logo (如需要) */
+.mapboxgl-ctrl-logo {
+  display: none !important;
+}

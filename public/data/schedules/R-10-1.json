@@ -1,0 +1,47 @@
+{
+  "track_id": "R-10-1",
+  "route_id": "R-10",
+  "name": "大安 → 象山",
+  "origin": "R05",
+  "destination": "R02",
+  "stations": [
+    "R05",
+    "R04",
+    "R03",
+    "R02"
+  ],
+  "travel_time_minutes": 6,
+  "dwell_time_seconds": 40,
+  "is_weekday": true,
+  "departure_count": 1,
+  "departures": [
+    {
+      "departure_time": "06:00:00",
+      "train_id": "R-10-1-001",
+      "origin_station": "R05",
+      "total_travel_time": 400,
+      "stations": [
+        {
+          "station_id": "R05",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "R04",
+          "arrival": 120,
+          "departure": 160
+        },
+        {
+          "station_id": "R03",
+          "arrival": 240,
+          "departure": 280
+        },
+        {
+          "station_id": "R02",
+          "arrival": 360,
+          "departure": 400
+        }
+      ]
+    }
+  ]
+}

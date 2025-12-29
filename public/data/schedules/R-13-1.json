@@ -1,0 +1,107 @@
+{
+  "track_id": "R-13-1",
+  "route_id": "R-13",
+  "name": "圓山 → 象山",
+  "origin": "R15",
+  "destination": "R02",
+  "stations": [
+    "R15",
+    "R14",
+    "R13",
+    "R12",
+    "R11",
+    "R10",
+    "R09",
+    "R08",
+    "R07",
+    "R06",
+    "R05",
+    "R04",
+    "R03",
+    "R02"
+  ],
+  "travel_time_minutes": 25,
+  "dwell_time_seconds": 40,
+  "is_weekday": true,
+  "departure_count": 1,
+  "departures": [
+    {
+      "departure_time": "06:00:00",
+      "train_id": "R-13-1-001",
+      "origin_station": "R15",
+      "total_travel_time": 1540,
+      "stations": [
+        {
+          "station_id": "R15",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "R14",
+          "arrival": 180,
+          "departure": 220
+        },
+        {
+          "station_id": "R13",
+          "arrival": 300,
+          "departure": 340
+        },
+        {
+          "station_id": "R12",
+          "arrival": 400,
+          "departure": 440
+        },
+        {
+          "station_id": "R11",
+          "arrival": 500,
+          "departure": 540
+        },
+        {
+          "station_id": "R10",
+          "arrival": 600,
+          "departure": 640
+        },
+        {
+          "station_id": "R09",
+          "arrival": 700,
+          "departure": 740
+        },
+        {
+          "station_id": "R08",
+          "arrival": 800,
+          "departure": 840
+        },
+        {
+          "station_id": "R07",
+          "arrival": 960,
+          "departure": 1000
+        },
+        {
+          "station_id": "R06",
+          "arrival": 1060,
+          "departure": 1100
+        },
+        {
+          "station_id": "R05",
+          "arrival": 1160,
+          "departure": 1200
+        },
+        {
+          "station_id": "R04",
+          "arrival": 1260,
+          "departure": 1300
+        },
+        {
+          "station_id": "R03",
+          "arrival": 1380,
+          "departure": 1420
+        },
+        {
+          "station_id": "R02",
+          "arrival": 1500,
+          "departure": 1540
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,131 @@
+{
+  "track_id": "R-14-1",
+  "route_id": "R-14",
+  "name": "石牌 → 象山",
+  "origin": "R19",
+  "destination": "R02",
+  "stations": [
+    "R19",
+    "R18",
+    "R17",
+    "R16",
+    "R15",
+    "R14",
+    "R13",
+    "R12",
+    "R11",
+    "R10",
+    "R09",
+    "R08",
+    "R07",
+    "R06",
+    "R05",
+    "R04",
+    "R03",
+    "R02"
+  ],
+  "travel_time_minutes": 31,
+  "dwell_time_seconds": 40,
+  "is_weekday": true,
+  "departure_count": 1,
+  "departures": [
+    {
+      "departure_time": "06:00:00",
+      "train_id": "R-14-1-001",
+      "origin_station": "R19",
+      "total_travel_time": 1920,
+      "stations": [
+        {
+          "station_id": "R19",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "R18",
+          "arrival": 100,
+          "departure": 140
+        },
+        {
+          "station_id": "R17",
+          "arrival": 200,
+          "departure": 240
+        },
+        {
+          "station_id": "R16",
+          "arrival": 300,
+          "departure": 340
+        },
+        {
+          "station_id": "R15",
+          "arrival": 420,
+          "departure": 460
+        },
+        {
+          "station_id": "R14",
+          "arrival": 600,
+          "departure": 640
+        },
+        {
+          "station_id": "R13",
+          "arrival": 720,
+          "departure": 760
+        },
+        {
+          "station_id": "R12",
+          "arrival": 820,
+          "departure": 860
+        },
+        {
+          "station_id": "R11",
+          "arrival": 920,
+          "departure": 960
+        },
+        {
+          "station_id": "R10",
+          "arrival": 1020,
+          "departure": 1060
+        },
+        {
+          "station_id": "R09",
+          "arrival": 1120,
+          "departure": 1160
+        },
+        {
+          "station_id": "R08",
+          "arrival": 1220,
+          "departure": 1260
+        },
+        {
+          "station_id": "R07",
+          "arrival": 1380,
+          "departure": 1420
+        },
+        {
+          "station_id": "R06",
+          "arrival": 1480,
+          "departure": 1520
+        },
+        {
+          "station_id": "R05",
+          "arrival": 1580,
+          "departure": 1620
+        },
+        {
+          "station_id": "R04",
+          "arrival": 1680,
+          "departure": 1720
+        },
+        {
+          "station_id": "R03",
+          "arrival": 1780,
+          "departure": 1820
+        },
+        {
+          "station_id": "R02",
+          "arrival": 1880,
+          "departure": 1920
+        }
+      ]
+    }
+  ]
+}

@@ -11,6 +11,29 @@ interface TimeControlProps {
   onTimeChange: (seconds: number) => void;
 }
 
+/**
+ * 將標準時間秒數 (0-86399) 轉換為延長日秒數
+ * 延長日：06:00 開始，凌晨 00:00-05:59 被視為前一天的延續 (86400-108000)
+ */
+function toExtendedSeconds(standardSeconds: number): number {
+  // 凌晨 00:00-05:59 (0-21599) → 視為 24:00-29:59 (86400-108000)
+  if (standardSeconds < 6 * 3600) {
+    return standardSeconds + 24 * 3600;
+  }
+  return standardSeconds;
+}
+
+/**
+ * 將延長日秒數轉換為標準時間秒數 (0-86399)
+ */
+function toStandardSeconds(extendedSeconds: number): number {
+  // 24:00+ (86400+) → 轉回 00:00+ (0+)
+  if (extendedSeconds >= 24 * 3600) {
+    return extendedSeconds - 24 * 3600;
+  }
+  return extendedSeconds;
+}
+
 export function TimeControl({
   timeEngine,
   currentTime,
@@ -21,11 +44,12 @@ export function TimeControl({
   onSpeedChange,
   onTimeChange,
 }: TimeControlProps) {
-  const timeSeconds = timeEngine.getTimeOfDaySeconds();
+  const standardSeconds = timeEngine.getTimeOfDaySeconds();
+  const timeSeconds = toExtendedSeconds(standardSeconds);
 
-  // 時間滑桿: 6:00 - 24:00 (21600 - 86400 秒)
+  // 時間滑桿: 6:00 - 01:30 (延長日: 21600 - 91800 秒)
   const minTime = 6 * 3600; // 06:00
-  const maxTime = 24 * 3600; // 24:00
+  const maxTime = 25.5 * 3600; // 01:30 (延長日表示為 25:30)
 
   return (
     <div
@@ -86,7 +110,11 @@ export function TimeControl({
           min={minTime}
           max={maxTime}
           value={Math.max(minTime, Math.min(maxTime, timeSeconds))}
-          onChange={(e) => onTimeChange(Number(e.target.value))}
+          onChange={(e) => {
+            const extendedValue = Number(e.target.value);
+            // 轉換為標準秒數後傳給 TimeEngine
+            onTimeChange(toStandardSeconds(extendedValue));
+          }}
           style={{
             width: '100%',
             height: 6,
@@ -109,6 +137,7 @@ export function TimeControl({
           <span>12:00</span>
           <span>18:00</span>
           <span>24:00</span>
+          <span>01:30</span>
         </div>
       </div>
 
@@ -184,7 +213,7 @@ export function TimeControl({
 
         {/* 快速跳轉按鈕 */}
         <div style={{ display: 'flex', gap: 8 }}>
-          {['06:00', '08:00', '12:00', '18:00', '22:00'].map((time) => (
+          {['06:00', '08:00', '12:00', '18:00', '22:00', '00:00'].map((time) => (
             <button
               key={time}
               onClick={() => timeEngine.jumpTo(time)}

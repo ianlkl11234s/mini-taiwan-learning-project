@@ -15,6 +15,12 @@
 - R-7: 首班車專用 (圓山 R15 → 淡水 R28)
 - R-8: 首班車專用 (芝山 R20 → 淡水 R28)
 - R-9: 首班車專用 (紅樹林 R24 → 象山 R02)
+- R-10: 首班車專用 (大安 R05 → 象山 R02)
+- R-11: 首班車專用 (雙連 R10 → 象山 R02)
+- R-12: 首班車專用 (民權西路 R13 → 象山 R02)
+- R-13: 首班車專用 (圓山 R15 → 象山 R02)
+- R-14: 首班車專用 (石牌 R19 → 象山 R02)
+- R-15: 首班車專用 (唭哩岸 R20 → 象山 R02)
 """
 
 import json
@@ -121,8 +127,21 @@ def classify_train(schedule: List[Dict], direction: str) -> str:
         # 南下方向 (往象山)
 
         # 首班車專用軌道 (從中途站出發到象山)
-        if start_station == "R24" and end_station == "R02":
-            return "R-9"
+        if end_station == "R02":
+            if start_station == "R24":
+                return "R-9"
+            elif start_station == "R05":
+                return "R-10"
+            elif start_station == "R10":
+                return "R-11"
+            elif start_station == "R13":
+                return "R-12"
+            elif start_station == "R15":
+                return "R-13"
+            elif start_station == "R19":
+                return "R-14"
+            elif start_station == "R20":
+                return "R-15"
 
         # 標準軌道
         if start_station == "R28" and end_station == "R02":
@@ -265,15 +284,27 @@ def main():
         "R-2-1": [],  # 北投→象山/大安 區間 (往象山方向)
         "R-4-0": [],  # 北投→淡水 北段區間 (往淡水方向)
         "R-4-1": [],  # 淡水→北投 北段區間 (往北投方向)
+        # === 往淡水方向首班車專用 ===
         "R-5-0": [],  # 大安→淡水 (首班車專用)
         "R-6-0": [],  # 雙連→淡水 (首班車專用)
         "R-7-0": [],  # 圓山→淡水 (首班車專用)
         "R-8-0": [],  # 芝山→淡水 (首班車專用)
+        # === 往象山方向首班車專用 ===
         "R-9-1": [],  # 紅樹林→象山 (首班車專用)
+        "R-10-1": [],  # 大安→象山 (首班車專用)
+        "R-11-1": [],  # 雙連→象山 (首班車專用)
+        "R-12-1": [],  # 民權西路→象山 (首班車專用)
+        "R-13-1": [],  # 圓山→象山 (首班車專用)
+        "R-14-1": [],  # 石牌→象山 (首班車專用)
+        "R-15-1": [],  # 唭哩岸→象山 (首班車專用)
     }
 
     # 統計各路線班次 (全域)
-    route_counts = {"R-1": 0, "R-2": 0, "R-4": 0, "R-5": 0, "R-6": 0, "R-7": 0, "R-8": 0, "R-9": 0}
+    route_counts = {
+        "R-1": 0, "R-2": 0, "R-4": 0,
+        "R-5": 0, "R-6": 0, "R-7": 0, "R-8": 0,  # 北上首班車
+        "R-9": 0, "R-10": 0, "R-11": 0, "R-12": 0, "R-13": 0, "R-14": 0, "R-15": 0  # 南下首班車
+    }
 
     # 處理各方向資料
     for direction_data in data:
@@ -293,7 +324,11 @@ def main():
             trains = timetable["Trains"]
 
             # 統計各路線班次 (此方向)
-            dir_counts = {"R-1": 0, "R-2": 0, "R-4": 0, "R-5": 0, "R-6": 0, "R-7": 0, "R-8": 0, "R-9": 0}
+            dir_counts = {
+                "R-1": 0, "R-2": 0, "R-4": 0,
+                "R-5": 0, "R-6": 0, "R-7": 0, "R-8": 0,  # 北上首班車
+                "R-9": 0, "R-10": 0, "R-11": 0, "R-12": 0, "R-13": 0, "R-14": 0, "R-15": 0  # 南下首班車
+            }
 
             for train in trains:
                 route_type = classify_train(train["Schedule"], direction)
@@ -304,9 +339,9 @@ def main():
                 converted = convert_train(train, direction, train_idx, route_type)
 
                 # 決定 track_id
-                if route_type == "R-9":
-                    # R-9 是南下方向專用
-                    track_id = "R-9-1"
+                if route_type in ["R-9", "R-10", "R-11", "R-12", "R-13", "R-14", "R-15"]:
+                    # R-9 到 R-15 都是南下方向專用
+                    track_id = f"{route_type}-1"
                 elif direction == "淡水":
                     track_id = f"{route_type}-0"
                 else:
@@ -317,9 +352,16 @@ def main():
             print(f"    R-1 (全程): {dir_counts['R-1']} 班")
             print(f"    R-2 (南段區間): {dir_counts['R-2']} 班")
             print(f"    R-4 (北段區間): {dir_counts['R-4']} 班")
-            intermediate_count = dir_counts['R-5'] + dir_counts['R-6'] + dir_counts['R-7'] + dir_counts['R-8'] + dir_counts['R-9']
-            if intermediate_count > 0:
-                print(f"    首班車專用: {intermediate_count} 班 (R-5:{dir_counts['R-5']}, R-6:{dir_counts['R-6']}, R-7:{dir_counts['R-7']}, R-8:{dir_counts['R-8']}, R-9:{dir_counts['R-9']})")
+            # 北上首班車 (往淡水)
+            north_count = sum(dir_counts[f'R-{i}'] for i in range(5, 9))
+            if north_count > 0:
+                north_details = ", ".join([f"R-{i}:{dir_counts[f'R-{i}']}" for i in range(5, 9) if dir_counts[f'R-{i}'] > 0])
+                print(f"    首班車專用(北上): {north_count} 班 ({north_details})")
+            # 南下首班車 (往象山)
+            south_count = sum(dir_counts[f'R-{i}'] for i in range(9, 16))
+            if south_count > 0:
+                south_details = ", ".join([f"R-{i}:{dir_counts[f'R-{i}']}" for i in range(9, 16) if dir_counts[f'R-{i}'] > 0])
+                print(f"    首班車專用(南下): {south_count} 班 ({south_details})")
 
     # 排序並輸出
     print(f"\n輸出目錄: {OUTPUT_DIR}")
@@ -469,6 +511,84 @@ def main():
         departures=r9_1_deps
     )
 
+    # R-10-1: 大安→象山
+    r10_1_deps = sort_departures(schedules["R-10-1"])
+    r10_1_stations = list(reversed(STATION_ORDER[:STATION_ORDER.index("R05")+1]))  # R05~R02 (reversed)
+    r10_1 = create_schedule_file(
+        track_id="R-10-1",
+        route_id="R-10",
+        name="大安 → 象山",
+        origin="R05",
+        destination="R02",
+        stations=r10_1_stations,
+        departures=r10_1_deps
+    )
+
+    # R-11-1: 雙連→象山
+    r11_1_deps = sort_departures(schedules["R-11-1"])
+    r11_1_stations = list(reversed(STATION_ORDER[:STATION_ORDER.index("R10")+1]))  # R10~R02 (reversed)
+    r11_1 = create_schedule_file(
+        track_id="R-11-1",
+        route_id="R-11",
+        name="雙連 → 象山",
+        origin="R10",
+        destination="R02",
+        stations=r11_1_stations,
+        departures=r11_1_deps
+    )
+
+    # R-12-1: 民權西路→象山
+    r12_1_deps = sort_departures(schedules["R-12-1"])
+    r12_1_stations = list(reversed(STATION_ORDER[:STATION_ORDER.index("R13")+1]))  # R13~R02 (reversed)
+    r12_1 = create_schedule_file(
+        track_id="R-12-1",
+        route_id="R-12",
+        name="民權西路 → 象山",
+        origin="R13",
+        destination="R02",
+        stations=r12_1_stations,
+        departures=r12_1_deps
+    )
+
+    # R-13-1: 圓山→象山
+    r13_1_deps = sort_departures(schedules["R-13-1"])
+    r13_1_stations = list(reversed(STATION_ORDER[:STATION_ORDER.index("R15")+1]))  # R15~R02 (reversed)
+    r13_1 = create_schedule_file(
+        track_id="R-13-1",
+        route_id="R-13",
+        name="圓山 → 象山",
+        origin="R15",
+        destination="R02",
+        stations=r13_1_stations,
+        departures=r13_1_deps
+    )
+
+    # R-14-1: 石牌→象山
+    r14_1_deps = sort_departures(schedules["R-14-1"])
+    r14_1_stations = list(reversed(STATION_ORDER[:STATION_ORDER.index("R19")+1]))  # R19~R02 (reversed)
+    r14_1 = create_schedule_file(
+        track_id="R-14-1",
+        route_id="R-14",
+        name="石牌 → 象山",
+        origin="R19",
+        destination="R02",
+        stations=r14_1_stations,
+        departures=r14_1_deps
+    )
+
+    # R-15-1: 唭哩岸→象山
+    r15_1_deps = sort_departures(schedules["R-15-1"])
+    r15_1_stations = list(reversed(STATION_ORDER[:STATION_ORDER.index("R20")+1]))  # R20~R02 (reversed)
+    r15_1 = create_schedule_file(
+        track_id="R-15-1",
+        route_id="R-15",
+        name="唭哩岸 → 象山",
+        origin="R20",
+        destination="R02",
+        stations=r15_1_stations,
+        departures=r15_1_deps
+    )
+
     # 寫入檔案
     output_files = [
         ("R-1-0.json", r1_0),
@@ -477,11 +597,19 @@ def main():
         ("R-2-1.json", r2_1),
         ("R-4-0.json", r4_0),
         ("R-4-1.json", r4_1),
+        # 北上首班車專用軌道
         ("R-5-0.json", r5_0),
         ("R-6-0.json", r6_0),
         ("R-7-0.json", r7_0),
         ("R-8-0.json", r8_0),
+        # 南下首班車專用軌道
         ("R-9-1.json", r9_1),
+        ("R-10-1.json", r10_1),
+        ("R-11-1.json", r11_1),
+        ("R-12-1.json", r12_1),
+        ("R-13-1.json", r13_1),
+        ("R-14-1.json", r14_1),
+        ("R-15-1.json", r15_1),
     ]
 
     for filename, data in output_files:
@@ -501,12 +629,19 @@ def main():
     print(f"    - R-2-0 往北投: {r2_0['departure_count']} 班")
     print(f"    - R-2-1 往象山: {r2_1['departure_count']} 班")
     print(f"  R-4 (北段區間): {r4_0['departure_count'] + r4_1['departure_count']} 班")
-    print(f"  首班車專用軌道:")
+    print(f"  首班車專用軌道 (北上):")
     print(f"    - R-5-0 大安→淡水: {r5_0['departure_count']} 班")
     print(f"    - R-6-0 雙連→淡水: {r6_0['departure_count']} 班")
     print(f"    - R-7-0 圓山→淡水: {r7_0['departure_count']} 班")
     print(f"    - R-8-0 芝山→淡水: {r8_0['departure_count']} 班")
+    print(f"  首班車專用軌道 (南下):")
     print(f"    - R-9-1 紅樹林→象山: {r9_1['departure_count']} 班")
+    print(f"    - R-10-1 大安→象山: {r10_1['departure_count']} 班")
+    print(f"    - R-11-1 雙連→象山: {r11_1['departure_count']} 班")
+    print(f"    - R-12-1 民權西路→象山: {r12_1['departure_count']} 班")
+    print(f"    - R-13-1 圓山→象山: {r13_1['departure_count']} 班")
+    print(f"    - R-14-1 石牌→象山: {r14_1['departure_count']} 班")
+    print(f"    - R-15-1 唭哩岸→象山: {r15_1['departure_count']} 班")
 
     # 顯示首班車資訊
     print("\n首班車資訊:")

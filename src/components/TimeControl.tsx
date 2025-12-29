@@ -56,11 +56,8 @@ export function TimeControl({
       style={{
         position: 'absolute',
         bottom: 20,
-        left: '50%',
-        transform: 'translateX(-50%)',
-        width: '60%',
-        maxWidth: 800,
-        minWidth: 500,
+        left: 20,
+        right: 20,
         background: 'rgba(0, 0, 0, 0.85)',
         borderRadius: 12,
         padding: '16px 20px',

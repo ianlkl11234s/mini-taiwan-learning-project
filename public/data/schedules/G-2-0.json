@@ -1,0 +1,2611 @@
+{
+  "track_id": "G-2-0",
+  "route_id": "G-2",
+  "name": "松山 → 台電大樓",
+  "origin": "G19",
+  "destination": "G08",
+  "stations": [
+    "G19",
+    "G18",
+    "G17",
+    "G16",
+    "G15",
+    "G14",
+    "G13",
+    "G12",
+    "G11",
+    "G10",
+    "G09",
+    "G08"
+  ],
+  "travel_time_minutes": 23,
+  "dwell_time_seconds": 40,
+  "is_weekday": true,
+  "departure_count": 38,
+  "departures": [
+    {
+      "departure_time": "06:49:00",
+      "train_id": "G-2-0-001",
+      "origin_station": "G19",
+      "total_travel_time": 1360,
+      "stations": [
+        {
+          "station_id": "G19",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "G18",
+          "arrival": 120,
+          "departure": 160
+        },
+        {
+          "station_id": "G17",
+          "arrival": 240,
+          "departure": 280
+        },
+        {
+          "station_id": "G16",
+          "arrival": 360,
+          "departure": 400
+        },
+        {
+          "station_id": "G15",
+          "arrival": 480,
+          "departure": 520
+        },
+        {
+          "station_id": "G14",
+          "arrival": 600,
+          "departure": 640
+        },
+        {
+          "station_id": "G13",
+          "arrival": 780,
+          "departure": 820
+        },
+        {
+          "station_id": "G12",
+          "arrival": 900,
+          "departure": 940
+        },
+        {
+          "station_id": "G11",
+          "arrival": 1000,
+          "departure": 1040
+        },
+        {
+          "station_id": "G10",
+          "arrival": 1100,
+          "departure": 1140
+        },
+        {
+          "station_id": "G09",
+          "arrival": 1200,
+          "departure": 1240
+        },
+        {
+          "station_id": "G08",
+          "arrival": 1320,
+          "departure": 1360
+        }
+      ]
+    },
+    {
+      "departure_time": "07:01:00",
+      "train_id": "G-2-0-002",
+      "origin_station": "G19",
+      "total_travel_time": 1380,
+      "stations": [
+        {
+          "station_id": "G19",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "G18",
+          "arrival": 180,
+          "departure": 220
+        },
+        {
+          "station_id": "G17",
+          "arrival": 300,
+          "departure": 340
+        },
+        {
+          "station_id": "G16",
+          "arrival": 420,
+          "departure": 460
+        },
+        {
+          "station_id": "G15",
+          "arrival": 540,
+          "departure": 580
+        },
+        {
+          "station_id": "G14",
+          "arrival": 660,
+          "departure": 700
+        },
+        {
+          "station_id": "G13",
+          "arrival": 780,
+          "departure": 820
+        },
+        {
+          "station_id": "G12",
+          "arrival": 900,
+          "departure": 940
+        },
+        {
+          "station_id": "G11",
+          "arrival": 1020,
+          "departure": 1060
+        },
+        {
+          "station_id": "G10",
+          "arrival": 1140,
+          "departure": 1180
+        },
+        {
+          "station_id": "G09",
+          "arrival": 1240,
+          "departure": 1280
+        },
+        {
+          "station_id": "G08",
+          "arrival": 1340,
+          "departure": 1380
+        }
+      ]
+    },
+    {
+      "departure_time": "07:13:00",
+      "train_id": "G-2-0-003",
+      "origin_station": "G19",
+      "total_travel_time": 1360,
+      "stations": [
+        {
+          "station_id": "G19",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "G18",
+          "arrival": 120,
+          "departure": 160
+        },
+        {
+          "station_id": "G17",
+          "arrival": 240,
+          "departure": 280
+        },
+        {
+          "station_id": "G16",
+          "arrival": 360,
+          "departure": 400
+        },
+        {
+          "station_id": "G15",
+          "arrival": 480,
+          "departure": 520
+        },
+        {
+          "station_id": "G14",
+          "arrival": 600,
+          "departure": 640
+        },
+        {
+          "station_id": "G13",
+          "arrival": 780,
+          "departure": 820
+        },
+        {
+          "station_id": "G12",
+          "arrival": 900,
+          "departure": 940
+        },
+        {
+          "station_id": "G11",
+          "arrival": 1000,
+          "departure": 1040
+        },
+        {
+          "station_id": "G10",
+          "arrival": 1100,
+          "departure": 1140
+        },
+        {
+          "station_id": "G09",
+          "arrival": 1200,
+          "departure": 1240
+        },
+        {
+          "station_id": "G08",
+          "arrival": 1320,
+          "departure": 1360
+        }
+      ]
+    },
+    {
+      "departure_time": "07:25:00",
+      "train_id": "G-2-0-004",
+      "origin_station": "G19",
+      "total_travel_time": 1420,
+      "stations": [
+        {
+          "station_id": "G19",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "G18",
+          "arrival": 180,
+          "departure": 220
+        },
+        {
+          "station_id": "G17",
+          "arrival": 300,
+          "departure": 340
+        },
+        {
+          "station_id": "G16",
+          "arrival": 420,
+          "departure": 460
+        },
+        {
+          "station_id": "G15",
+          "arrival": 540,
+          "departure": 580
+        },
+        {
+          "station_id": "G14",
+          "arrival": 660,
+          "departure": 700
+        },
+        {
+          "station_id": "G13",
+          "arrival": 780,
+          "departure": 820
+        },
+        {
+          "station_id": "G12",
+          "arrival": 900,
+          "departure": 940
+        },
+        {
+          "station_id": "G11",
+          "arrival": 1020,
+          "departure": 1060
+        },
+        {
+          "station_id": "G10",
+          "arrival": 1140,
+          "departure": 1180
+        },
+        {
+          "station_id": "G09",
+          "arrival": 1260,
+          "departure": 1300
+        },
+        {
+          "station_id": "G08",
+          "arrival": 1380,
+          "departure": 1420
+        }
+      ]
+    },
+    {
+      "departure_time": "07:37:00",
+      "train_id": "G-2-0-005",
+      "origin_station": "G19",
+      "total_travel_time": 1420,
+      "stations": [
+        {
+          "station_id": "G19",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "G18",
+          "arrival": 180,
+          "departure": 220
+        },
+        {
+          "station_id": "G17",
+          "arrival": 300,
+          "departure": 340
+        },
+        {
+          "station_id": "G16",
+          "arrival": 420,
+          "departure": 460
+        },
+        {
+          "station_id": "G15",
+          "arrival": 540,
+          "departure": 580
+        },
+        {
+          "station_id": "G14",
+          "arrival": 660,
+          "departure": 700
+        },
+        {
+          "station_id": "G13",
+          "arrival": 780,
+          "departure": 820
+        },
+        {
+          "station_id": "G12",
+          "arrival": 900,
+          "departure": 940
+        },
+        {
+          "station_id": "G11",
+          "arrival": 1020,
+          "departure": 1060
+        },
+        {
+          "station_id": "G10",
+          "arrival": 1140,
+          "departure": 1180
+        },
+        {
+          "station_id": "G09",
+          "arrival": 1260,
+          "departure": 1300
+        },
+        {
+          "station_id": "G08",
+          "arrival": 1380,
+          "departure": 1420
+        }
+      ]
+    },
+    {
+      "departure_time": "07:49:00",
+      "train_id": "G-2-0-006",
+      "origin_station": "G19",
+      "total_travel_time": 1420,
+      "stations": [
+        {
+          "station_id": "G19",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "G18",
+          "arrival": 180,
+          "departure": 220
+        },
+        {
+          "station_id": "G17",
+          "arrival": 300,
+          "departure": 340
+        },
+        {
+          "station_id": "G16",
+          "arrival": 420,
+          "departure": 460
+        },
+        {
+          "station_id": "G15",
+          "arrival": 540,
+          "departure": 580
+        },
+        {
+          "station_id": "G14",
+          "arrival": 660,
+          "departure": 700
+        },
+        {
+          "station_id": "G13",
+          "arrival": 780,
+          "departure": 820
+        },
+        {
+          "station_id": "G12",
+          "arrival": 900,
+          "departure": 940
+        },
+        {
+          "station_id": "G11",
+          "arrival": 1020,
+          "departure": 1060
+        },
+        {
+          "station_id": "G10",
+          "arrival": 1140,
+          "departure": 1180
+        },
+        {
+          "station_id": "G09",
+          "arrival": 1260,
+          "departure": 1300
+        },
+        {
+          "station_id": "G08",
+          "arrival": 1380,
+          "departure": 1420
+        }
+      ]
+    },
+    {
+      "departure_time": "08:01:00",
+      "train_id": "G-2-0-007",
+      "origin_station": "G19",
+      "total_travel_time": 1420,
+      "stations": [
+        {
+          "station_id": "G19",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "G18",
+          "arrival": 180,
+          "departure": 220
+        },
+        {
+          "station_id": "G17",
+          "arrival": 300,
+          "departure": 340
+        },
+        {
+          "station_id": "G16",
+          "arrival": 420,
+          "departure": 460
+        },
+        {
+          "station_id": "G15",
+          "arrival": 540,
+          "departure": 580
+        },
+        {
+          "station_id": "G14",
+          "arrival": 660,
+          "departure": 700
+        },
+        {
+          "station_id": "G13",
+          "arrival": 780,
+          "departure": 820
+        },
+        {
+          "station_id": "G12",
+          "arrival": 900,
+          "departure": 940
+        },
+        {
+          "station_id": "G11",
+          "arrival": 1020,
+          "departure": 1060
+        },
+        {
+          "station_id": "G10",
+          "arrival": 1140,
+          "departure": 1180
+        },
+        {
+          "station_id": "G09",
+          "arrival": 1260,
+          "departure": 1300
+        },
+        {
+          "station_id": "G08",
+          "arrival": 1380,
+          "departure": 1420
+        }
+      ]
+    },
+    {
+      "departure_time": "08:13:00",
+      "train_id": "G-2-0-008",
+      "origin_station": "G19",
+      "total_travel_time": 1420,
+      "stations": [
+        {
+          "station_id": "G19",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "G18",
+          "arrival": 180,
+          "departure": 220
+        },
+        {
+          "station_id": "G17",
+          "arrival": 300,
+          "departure": 340
+        },
+        {
+          "station_id": "G16",
+          "arrival": 420,
+          "departure": 460
+        },
+        {
+          "station_id": "G15",
+          "arrival": 540,
+          "departure": 580
+        },
+        {
+          "station_id": "G14",
+          "arrival": 660,
+          "departure": 700
+        },
+        {
+          "station_id": "G13",
+          "arrival": 780,
+          "departure": 820
+        },
+        {
+          "station_id": "G12",
+          "arrival": 900,
+          "departure": 940
+        },
+        {
+          "station_id": "G11",
+          "arrival": 1020,
+          "departure": 1060
+        },
+        {
+          "station_id": "G10",
+          "arrival": 1140,
+          "departure": 1180
+        },
+        {
+          "station_id": "G09",
+          "arrival": 1260,
+          "departure": 1300
+        },
+        {
+          "station_id": "G08",
+          "arrival": 1380,
+          "departure": 1420
+        }
+      ]
+    },
+    {
+      "departure_time": "08:25:00",
+      "train_id": "G-2-0-009",
+      "origin_station": "G19",
+      "total_travel_time": 1420,
+      "stations": [
+        {
+          "station_id": "G19",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "G18",
+          "arrival": 180,
+          "departure": 220
+        },
+        {
+          "station_id": "G17",
+          "arrival": 300,
+          "departure": 340
+        },
+        {
+          "station_id": "G16",
+          "arrival": 420,
+          "departure": 460
+        },
+        {
+          "station_id": "G15",
+          "arrival": 540,
+          "departure": 580
+        },
+        {
+          "station_id": "G14",
+          "arrival": 660,
+          "departure": 700
+        },
+        {
+          "station_id": "G13",
+          "arrival": 780,
+          "departure": 820
+        },
+        {
+          "station_id": "G12",
+          "arrival": 900,
+          "departure": 940
+        },
+        {
+          "station_id": "G11",
+          "arrival": 1020,
+          "departure": 1060
+        },
+        {
+          "station_id": "G10",
+          "arrival": 1140,
+          "departure": 1180
+        },
+        {
+          "station_id": "G09",
+          "arrival": 1260,
+          "departure": 1300
+        },
+        {
+          "station_id": "G08",
+          "arrival": 1380,
+          "departure": 1420
+        }
+      ]
+    },
+    {
+      "departure_time": "08:37:00",
+      "train_id": "G-2-0-010",
+      "origin_station": "G19",
+      "total_travel_time": 1420,
+      "stations": [
+        {
+          "station_id": "G19",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "G18",
+          "arrival": 180,
+          "departure": 220
+        },
+        {
+          "station_id": "G17",
+          "arrival": 300,
+          "departure": 340
+        },
+        {
+          "station_id": "G16",
+          "arrival": 420,
+          "departure": 460
+        },
+        {
+          "station_id": "G15",
+          "arrival": 540,
+          "departure": 580
+        },
+        {
+          "station_id": "G14",
+          "arrival": 660,
+          "departure": 700
+        },
+        {
+          "station_id": "G13",
+          "arrival": 780,
+          "departure": 820
+        },
+        {
+          "station_id": "G12",
+          "arrival": 900,
+          "departure": 940
+        },
+        {
+          "station_id": "G11",
+          "arrival": 1020,
+          "departure": 1060
+        },
+        {
+          "station_id": "G10",
+          "arrival": 1140,
+          "departure": 1180
+        },
+        {
+          "station_id": "G09",
+          "arrival": 1260,
+          "departure": 1300
+        },
+        {
+          "station_id": "G08",
+          "arrival": 1380,
+          "departure": 1420
+        }
+      ]
+    },
+    {
+      "departure_time": "08:46:00",
+      "train_id": "G-2-0-011",
+      "origin_station": "G19",
+      "total_travel_time": 1420,
+      "stations": [
+        {
+          "station_id": "G19",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "G18",
+          "arrival": 180,
+          "departure": 220
+        },
+        {
+          "station_id": "G17",
+          "arrival": 300,
+          "departure": 340
+        },
+        {
+          "station_id": "G16",
+          "arrival": 420,
+          "departure": 460
+        },
+        {
+          "station_id": "G15",
+          "arrival": 540,
+          "departure": 580
+        },
+        {
+          "station_id": "G14",
+          "arrival": 660,
+          "departure": 700
+        },
+        {
+          "station_id": "G13",
+          "arrival": 780,
+          "departure": 820
+        },
+        {
+          "station_id": "G12",
+          "arrival": 900,
+          "departure": 940
+        },
+        {
+          "station_id": "G11",
+          "arrival": 1020,
+          "departure": 1060
+        },
+        {
+          "station_id": "G10",
+          "arrival": 1140,
+          "departure": 1180
+        },
+        {
+          "station_id": "G09",
+          "arrival": 1260,
+          "departure": 1300
+        },
+        {
+          "station_id": "G08",
+          "arrival": 1380,
+          "departure": 1420
+        }
+      ]
+    },
+    {
+      "departure_time": "08:55:00",
+      "train_id": "G-2-0-012",
+      "origin_station": "G19",
+      "total_travel_time": 1480,
+      "stations": [
+        {
+          "station_id": "G19",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "G18",
+          "arrival": 180,
+          "departure": 220
+        },
+        {
+          "station_id": "G17",
+          "arrival": 300,
+          "departure": 340
+        },
+        {
+          "station_id": "G16",
+          "arrival": 480,
+          "departure": 520
+        },
+        {
+          "station_id": "G15",
+          "arrival": 600,
+          "departure": 640
+        },
+        {
+          "station_id": "G14",
+          "arrival": 720,
+          "departure": 760
+        },
+        {
+          "station_id": "G13",
+          "arrival": 900,
+          "departure": 940
+        },
+        {
+          "station_id": "G12",
+          "arrival": 1000,
+          "departure": 1040
+        },
+        {
+          "station_id": "G11",
+          "arrival": 1100,
+          "departure": 1140
+        },
+        {
+          "station_id": "G10",
+          "arrival": 1200,
+          "departure": 1240
+        },
+        {
+          "station_id": "G09",
+          "arrival": 1320,
+          "departure": 1360
+        },
+        {
+          "station_id": "G08",
+          "arrival": 1440,
+          "departure": 1480
+        }
+      ]
+    },
+    {
+      "departure_time": "09:07:00",
+      "train_id": "G-2-0-013",
+      "origin_station": "G19",
+      "total_travel_time": 1360,
+      "stations": [
+        {
+          "station_id": "G19",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "G18",
+          "arrival": 180,
+          "departure": 220
+        },
+        {
+          "station_id": "G17",
+          "arrival": 300,
+          "departure": 340
+        },
+        {
+          "station_id": "G16",
+          "arrival": 420,
+          "departure": 460
+        },
+        {
+          "station_id": "G15",
+          "arrival": 540,
+          "departure": 580
+        },
+        {
+          "station_id": "G14",
+          "arrival": 660,
+          "departure": 700
+        },
+        {
+          "station_id": "G13",
+          "arrival": 780,
+          "departure": 820
+        },
+        {
+          "station_id": "G12",
+          "arrival": 900,
+          "departure": 940
+        },
+        {
+          "station_id": "G11",
+          "arrival": 1020,
+          "departure": 1060
+        },
+        {
+          "station_id": "G10",
+          "arrival": 1120,
+          "departure": 1160
+        },
+        {
+          "station_id": "G09",
+          "arrival": 1220,
+          "departure": 1260
+        },
+        {
+          "station_id": "G08",
+          "arrival": 1320,
+          "departure": 1360
+        }
+      ]
+    },
+    {
+      "departure_time": "09:16:00",
+      "train_id": "G-2-0-014",
+      "origin_station": "G19",
+      "total_travel_time": 1360,
+      "stations": [
+        {
+          "station_id": "G19",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "G18",
+          "arrival": 120,
+          "departure": 160
+        },
+        {
+          "station_id": "G17",
+          "arrival": 300,
+          "departure": 340
+        },
+        {
+          "station_id": "G16",
+          "arrival": 400,
+          "departure": 440
+        },
+        {
+          "station_id": "G15",
+          "arrival": 500,
+          "departure": 540
+        },
+        {
+          "station_id": "G14",
+          "arrival": 660,
+          "departure": 700
+        },
+        {
+          "station_id": "G13",
+          "arrival": 780,
+          "departure": 820
+        },
+        {
+          "station_id": "G12",
+          "arrival": 900,
+          "departure": 940
+        },
+        {
+          "station_id": "G11",
+          "arrival": 1000,
+          "departure": 1040
+        },
+        {
+          "station_id": "G10",
+          "arrival": 1100,
+          "departure": 1140
+        },
+        {
+          "station_id": "G09",
+          "arrival": 1200,
+          "departure": 1240
+        },
+        {
+          "station_id": "G08",
+          "arrival": 1320,
+          "departure": 1360
+        }
+      ]
+    },
+    {
+      "departure_time": "09:27:00",
+      "train_id": "G-2-0-015",
+      "origin_station": "G19",
+      "total_travel_time": 1420,
+      "stations": [
+        {
+          "station_id": "G19",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "G18",
+          "arrival": 180,
+          "departure": 220
+        },
+        {
+          "station_id": "G17",
+          "arrival": 300,
+          "departure": 340
+        },
+        {
+          "station_id": "G16",
+          "arrival": 420,
+          "departure": 460
+        },
+        {
+          "station_id": "G15",
+          "arrival": 540,
+          "departure": 580
+        },
+        {
+          "station_id": "G14",
+          "arrival": 660,
+          "departure": 700
+        },
+        {
+          "station_id": "G13",
+          "arrival": 840,
+          "departure": 880
+        },
+        {
+          "station_id": "G12",
+          "arrival": 940,
+          "departure": 980
+        },
+        {
+          "station_id": "G11",
+          "arrival": 1040,
+          "departure": 1080
+        },
+        {
+          "station_id": "G10",
+          "arrival": 1140,
+          "departure": 1180
+        },
+        {
+          "station_id": "G09",
+          "arrival": 1260,
+          "departure": 1300
+        },
+        {
+          "station_id": "G08",
+          "arrival": 1380,
+          "departure": 1420
+        }
+      ]
+    },
+    {
+      "departure_time": "09:35:00",
+      "train_id": "G-2-0-016",
+      "origin_station": "G19",
+      "total_travel_time": 1420,
+      "stations": [
+        {
+          "station_id": "G19",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "G18",
+          "arrival": 180,
+          "departure": 220
+        },
+        {
+          "station_id": "G17",
+          "arrival": 300,
+          "departure": 340
+        },
+        {
+          "station_id": "G16",
+          "arrival": 420,
+          "departure": 460
+        },
+        {
+          "station_id": "G15",
+          "arrival": 540,
+          "departure": 580
+        },
+        {
+          "station_id": "G14",
+          "arrival": 660,
+          "departure": 700
+        },
+        {
+          "station_id": "G13",
+          "arrival": 780,
+          "departure": 820
+        },
+        {
+          "station_id": "G12",
+          "arrival": 900,
+          "departure": 940
+        },
+        {
+          "station_id": "G11",
+          "arrival": 1020,
+          "departure": 1060
+        },
+        {
+          "station_id": "G10",
+          "arrival": 1140,
+          "departure": 1180
+        },
+        {
+          "station_id": "G09",
+          "arrival": 1260,
+          "departure": 1300
+        },
+        {
+          "station_id": "G08",
+          "arrival": 1380,
+          "departure": 1420
+        }
+      ]
+    },
+    {
+      "departure_time": "09:56:00",
+      "train_id": "G-2-0-017",
+      "origin_station": "G19",
+      "total_travel_time": 1420,
+      "stations": [
+        {
+          "station_id": "G19",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "G18",
+          "arrival": 180,
+          "departure": 220
+        },
+        {
+          "station_id": "G17",
+          "arrival": 300,
+          "departure": 340
+        },
+        {
+          "station_id": "G16",
+          "arrival": 420,
+          "departure": 460
+        },
+        {
+          "station_id": "G15",
+          "arrival": 540,
+          "departure": 580
+        },
+        {
+          "station_id": "G14",
+          "arrival": 660,
+          "departure": 700
+        },
+        {
+          "station_id": "G13",
+          "arrival": 840,
+          "departure": 880
+        },
+        {
+          "station_id": "G12",
+          "arrival": 960,
+          "departure": 1000
+        },
+        {
+          "station_id": "G11",
+          "arrival": 1060,
+          "departure": 1100
+        },
+        {
+          "station_id": "G10",
+          "arrival": 1160,
+          "departure": 1200
+        },
+        {
+          "station_id": "G09",
+          "arrival": 1260,
+          "departure": 1300
+        },
+        {
+          "station_id": "G08",
+          "arrival": 1380,
+          "departure": 1420
+        }
+      ]
+    },
+    {
+      "departure_time": "10:04:00",
+      "train_id": "G-2-0-018",
+      "origin_station": "G19",
+      "total_travel_time": 1420,
+      "stations": [
+        {
+          "station_id": "G19",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "G18",
+          "arrival": 180,
+          "departure": 220
+        },
+        {
+          "station_id": "G17",
+          "arrival": 300,
+          "departure": 340
+        },
+        {
+          "station_id": "G16",
+          "arrival": 420,
+          "departure": 460
+        },
+        {
+          "station_id": "G15",
+          "arrival": 540,
+          "departure": 580
+        },
+        {
+          "station_id": "G14",
+          "arrival": 660,
+          "departure": 700
+        },
+        {
+          "station_id": "G13",
+          "arrival": 840,
+          "departure": 880
+        },
+        {
+          "station_id": "G12",
+          "arrival": 960,
+          "departure": 1000
+        },
+        {
+          "station_id": "G11",
+          "arrival": 1060,
+          "departure": 1100
+        },
+        {
+          "station_id": "G10",
+          "arrival": 1160,
+          "departure": 1200
+        },
+        {
+          "station_id": "G09",
+          "arrival": 1260,
+          "departure": 1300
+        },
+        {
+          "station_id": "G08",
+          "arrival": 1380,
+          "departure": 1420
+        }
+      ]
+    },
+    {
+      "departure_time": "10:12:00",
+      "train_id": "G-2-0-019",
+      "origin_station": "G19",
+      "total_travel_time": 1420,
+      "stations": [
+        {
+          "station_id": "G19",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "G18",
+          "arrival": 180,
+          "departure": 220
+        },
+        {
+          "station_id": "G17",
+          "arrival": 300,
+          "departure": 340
+        },
+        {
+          "station_id": "G16",
+          "arrival": 420,
+          "departure": 460
+        },
+        {
+          "station_id": "G15",
+          "arrival": 540,
+          "departure": 580
+        },
+        {
+          "station_id": "G14",
+          "arrival": 660,
+          "departure": 700
+        },
+        {
+          "station_id": "G13",
+          "arrival": 840,
+          "departure": 880
+        },
+        {
+          "station_id": "G12",
+          "arrival": 960,
+          "departure": 1000
+        },
+        {
+          "station_id": "G11",
+          "arrival": 1060,
+          "departure": 1100
+        },
+        {
+          "station_id": "G10",
+          "arrival": 1160,
+          "departure": 1200
+        },
+        {
+          "station_id": "G09",
+          "arrival": 1260,
+          "departure": 1300
+        },
+        {
+          "station_id": "G08",
+          "arrival": 1380,
+          "departure": 1420
+        }
+      ]
+    },
+    {
+      "departure_time": "16:31:00",
+      "train_id": "G-2-0-020",
+      "origin_station": "G19",
+      "total_travel_time": 1420,
+      "stations": [
+        {
+          "station_id": "G19",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "G18",
+          "arrival": 120,
+          "departure": 160
+        },
+        {
+          "station_id": "G17",
+          "arrival": 300,
+          "departure": 340
+        },
+        {
+          "station_id": "G16",
+          "arrival": 400,
+          "departure": 440
+        },
+        {
+          "station_id": "G15",
+          "arrival": 540,
+          "departure": 580
+        },
+        {
+          "station_id": "G14",
+          "arrival": 660,
+          "departure": 700
+        },
+        {
+          "station_id": "G13",
+          "arrival": 780,
+          "departure": 820
+        },
+        {
+          "station_id": "G12",
+          "arrival": 900,
+          "departure": 940
+        },
+        {
+          "station_id": "G11",
+          "arrival": 1020,
+          "departure": 1060
+        },
+        {
+          "station_id": "G10",
+          "arrival": 1140,
+          "departure": 1180
+        },
+        {
+          "station_id": "G09",
+          "arrival": 1260,
+          "departure": 1300
+        },
+        {
+          "station_id": "G08",
+          "arrival": 1380,
+          "departure": 1420
+        }
+      ]
+    },
+    {
+      "departure_time": "16:47:00",
+      "train_id": "G-2-0-021",
+      "origin_station": "G19",
+      "total_travel_time": 1420,
+      "stations": [
+        {
+          "station_id": "G19",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "G18",
+          "arrival": 180,
+          "departure": 220
+        },
+        {
+          "station_id": "G17",
+          "arrival": 300,
+          "departure": 340
+        },
+        {
+          "station_id": "G16",
+          "arrival": 420,
+          "departure": 460
+        },
+        {
+          "station_id": "G15",
+          "arrival": 540,
+          "departure": 580
+        },
+        {
+          "station_id": "G14",
+          "arrival": 660,
+          "departure": 700
+        },
+        {
+          "station_id": "G13",
+          "arrival": 840,
+          "departure": 880
+        },
+        {
+          "station_id": "G12",
+          "arrival": 940,
+          "departure": 980
+        },
+        {
+          "station_id": "G11",
+          "arrival": 1040,
+          "departure": 1080
+        },
+        {
+          "station_id": "G10",
+          "arrival": 1140,
+          "departure": 1180
+        },
+        {
+          "station_id": "G09",
+          "arrival": 1260,
+          "departure": 1300
+        },
+        {
+          "station_id": "G08",
+          "arrival": 1380,
+          "departure": 1420
+        }
+      ]
+    },
+    {
+      "departure_time": "17:01:00",
+      "train_id": "G-2-0-022",
+      "origin_station": "G19",
+      "total_travel_time": 1420,
+      "stations": [
+        {
+          "station_id": "G19",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "G18",
+          "arrival": 180,
+          "departure": 220
+        },
+        {
+          "station_id": "G17",
+          "arrival": 300,
+          "departure": 340
+        },
+        {
+          "station_id": "G16",
+          "arrival": 420,
+          "departure": 460
+        },
+        {
+          "station_id": "G15",
+          "arrival": 540,
+          "departure": 580
+        },
+        {
+          "station_id": "G14",
+          "arrival": 660,
+          "departure": 700
+        },
+        {
+          "station_id": "G13",
+          "arrival": 840,
+          "departure": 880
+        },
+        {
+          "station_id": "G12",
+          "arrival": 940,
+          "departure": 980
+        },
+        {
+          "station_id": "G11",
+          "arrival": 1040,
+          "departure": 1080
+        },
+        {
+          "station_id": "G10",
+          "arrival": 1140,
+          "departure": 1180
+        },
+        {
+          "station_id": "G09",
+          "arrival": 1260,
+          "departure": 1300
+        },
+        {
+          "station_id": "G08",
+          "arrival": 1380,
+          "departure": 1420
+        }
+      ]
+    },
+    {
+      "departure_time": "17:14:00",
+      "train_id": "G-2-0-023",
+      "origin_station": "G19",
+      "total_travel_time": 1420,
+      "stations": [
+        {
+          "station_id": "G19",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "G18",
+          "arrival": 180,
+          "departure": 220
+        },
+        {
+          "station_id": "G17",
+          "arrival": 300,
+          "departure": 340
+        },
+        {
+          "station_id": "G16",
+          "arrival": 420,
+          "departure": 460
+        },
+        {
+          "station_id": "G15",
+          "arrival": 540,
+          "departure": 580
+        },
+        {
+          "station_id": "G14",
+          "arrival": 660,
+          "departure": 700
+        },
+        {
+          "station_id": "G13",
+          "arrival": 840,
+          "departure": 880
+        },
+        {
+          "station_id": "G12",
+          "arrival": 960,
+          "departure": 1000
+        },
+        {
+          "station_id": "G11",
+          "arrival": 1060,
+          "departure": 1100
+        },
+        {
+          "station_id": "G10",
+          "arrival": 1160,
+          "departure": 1200
+        },
+        {
+          "station_id": "G09",
+          "arrival": 1260,
+          "departure": 1300
+        },
+        {
+          "station_id": "G08",
+          "arrival": 1380,
+          "departure": 1420
+        }
+      ]
+    },
+    {
+      "departure_time": "17:27:00",
+      "train_id": "G-2-0-024",
+      "origin_station": "G19",
+      "total_travel_time": 1420,
+      "stations": [
+        {
+          "station_id": "G19",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "G18",
+          "arrival": 180,
+          "departure": 220
+        },
+        {
+          "station_id": "G17",
+          "arrival": 280,
+          "departure": 320
+        },
+        {
+          "station_id": "G16",
+          "arrival": 420,
+          "departure": 460
+        },
+        {
+          "station_id": "G15",
+          "arrival": 540,
+          "departure": 580
+        },
+        {
+          "station_id": "G14",
+          "arrival": 660,
+          "departure": 700
+        },
+        {
+          "station_id": "G13",
+          "arrival": 780,
+          "departure": 820
+        },
+        {
+          "station_id": "G12",
+          "arrival": 900,
+          "departure": 940
+        },
+        {
+          "station_id": "G11",
+          "arrival": 1020,
+          "departure": 1060
+        },
+        {
+          "station_id": "G10",
+          "arrival": 1140,
+          "departure": 1180
+        },
+        {
+          "station_id": "G09",
+          "arrival": 1260,
+          "departure": 1300
+        },
+        {
+          "station_id": "G08",
+          "arrival": 1380,
+          "departure": 1420
+        }
+      ]
+    },
+    {
+      "departure_time": "17:39:00",
+      "train_id": "G-2-0-025",
+      "origin_station": "G19",
+      "total_travel_time": 1480,
+      "stations": [
+        {
+          "station_id": "G19",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "G18",
+          "arrival": 180,
+          "departure": 220
+        },
+        {
+          "station_id": "G17",
+          "arrival": 300,
+          "departure": 340
+        },
+        {
+          "station_id": "G16",
+          "arrival": 420,
+          "departure": 460
+        },
+        {
+          "station_id": "G15",
+          "arrival": 540,
+          "departure": 580
+        },
+        {
+          "station_id": "G14",
+          "arrival": 720,
+          "departure": 760
+        },
+        {
+          "station_id": "G13",
+          "arrival": 840,
+          "departure": 880
+        },
+        {
+          "station_id": "G12",
+          "arrival": 960,
+          "departure": 1000
+        },
+        {
+          "station_id": "G11",
+          "arrival": 1080,
+          "departure": 1120
+        },
+        {
+          "station_id": "G10",
+          "arrival": 1200,
+          "departure": 1240
+        },
+        {
+          "station_id": "G09",
+          "arrival": 1320,
+          "departure": 1360
+        },
+        {
+          "station_id": "G08",
+          "arrival": 1440,
+          "departure": 1480
+        }
+      ]
+    },
+    {
+      "departure_time": "17:52:00",
+      "train_id": "G-2-0-026",
+      "origin_station": "G19",
+      "total_travel_time": 1420,
+      "stations": [
+        {
+          "station_id": "G19",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "G18",
+          "arrival": 180,
+          "departure": 220
+        },
+        {
+          "station_id": "G17",
+          "arrival": 300,
+          "departure": 340
+        },
+        {
+          "station_id": "G16",
+          "arrival": 420,
+          "departure": 460
+        },
+        {
+          "station_id": "G15",
+          "arrival": 540,
+          "departure": 580
+        },
+        {
+          "station_id": "G14",
+          "arrival": 660,
+          "departure": 700
+        },
+        {
+          "station_id": "G13",
+          "arrival": 840,
+          "departure": 880
+        },
+        {
+          "station_id": "G12",
+          "arrival": 960,
+          "departure": 1000
+        },
+        {
+          "station_id": "G11",
+          "arrival": 1060,
+          "departure": 1100
+        },
+        {
+          "station_id": "G10",
+          "arrival": 1160,
+          "departure": 1200
+        },
+        {
+          "station_id": "G09",
+          "arrival": 1260,
+          "departure": 1300
+        },
+        {
+          "station_id": "G08",
+          "arrival": 1380,
+          "departure": 1420
+        }
+      ]
+    },
+    {
+      "departure_time": "18:05:00",
+      "train_id": "G-2-0-027",
+      "origin_station": "G19",
+      "total_travel_time": 1420,
+      "stations": [
+        {
+          "station_id": "G19",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "G18",
+          "arrival": 180,
+          "departure": 220
+        },
+        {
+          "station_id": "G17",
+          "arrival": 280,
+          "departure": 320
+        },
+        {
+          "station_id": "G16",
+          "arrival": 420,
+          "departure": 460
+        },
+        {
+          "station_id": "G15",
+          "arrival": 540,
+          "departure": 580
+        },
+        {
+          "station_id": "G14",
+          "arrival": 660,
+          "departure": 700
+        },
+        {
+          "station_id": "G13",
+          "arrival": 780,
+          "departure": 820
+        },
+        {
+          "station_id": "G12",
+          "arrival": 900,
+          "departure": 940
+        },
+        {
+          "station_id": "G11",
+          "arrival": 1020,
+          "departure": 1060
+        },
+        {
+          "station_id": "G10",
+          "arrival": 1140,
+          "departure": 1180
+        },
+        {
+          "station_id": "G09",
+          "arrival": 1260,
+          "departure": 1300
+        },
+        {
+          "station_id": "G08",
+          "arrival": 1380,
+          "departure": 1420
+        }
+      ]
+    },
+    {
+      "departure_time": "18:17:00",
+      "train_id": "G-2-0-028",
+      "origin_station": "G19",
+      "total_travel_time": 1480,
+      "stations": [
+        {
+          "station_id": "G19",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "G18",
+          "arrival": 180,
+          "departure": 220
+        },
+        {
+          "station_id": "G17",
+          "arrival": 300,
+          "departure": 340
+        },
+        {
+          "station_id": "G16",
+          "arrival": 420,
+          "departure": 460
+        },
+        {
+          "station_id": "G15",
+          "arrival": 540,
+          "departure": 580
+        },
+        {
+          "station_id": "G14",
+          "arrival": 720,
+          "departure": 760
+        },
+        {
+          "station_id": "G13",
+          "arrival": 840,
+          "departure": 880
+        },
+        {
+          "station_id": "G12",
+          "arrival": 960,
+          "departure": 1000
+        },
+        {
+          "station_id": "G11",
+          "arrival": 1080,
+          "departure": 1120
+        },
+        {
+          "station_id": "G10",
+          "arrival": 1200,
+          "departure": 1240
+        },
+        {
+          "station_id": "G09",
+          "arrival": 1320,
+          "departure": 1360
+        },
+        {
+          "station_id": "G08",
+          "arrival": 1440,
+          "departure": 1480
+        }
+      ]
+    },
+    {
+      "departure_time": "18:30:00",
+      "train_id": "G-2-0-029",
+      "origin_station": "G19",
+      "total_travel_time": 1420,
+      "stations": [
+        {
+          "station_id": "G19",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "G18",
+          "arrival": 180,
+          "departure": 220
+        },
+        {
+          "station_id": "G17",
+          "arrival": 300,
+          "departure": 340
+        },
+        {
+          "station_id": "G16",
+          "arrival": 420,
+          "departure": 460
+        },
+        {
+          "station_id": "G15",
+          "arrival": 540,
+          "departure": 580
+        },
+        {
+          "station_id": "G14",
+          "arrival": 660,
+          "departure": 700
+        },
+        {
+          "station_id": "G13",
+          "arrival": 840,
+          "departure": 880
+        },
+        {
+          "station_id": "G12",
+          "arrival": 960,
+          "departure": 1000
+        },
+        {
+          "station_id": "G11",
+          "arrival": 1060,
+          "departure": 1100
+        },
+        {
+          "station_id": "G10",
+          "arrival": 1160,
+          "departure": 1200
+        },
+        {
+          "station_id": "G09",
+          "arrival": 1260,
+          "departure": 1300
+        },
+        {
+          "station_id": "G08",
+          "arrival": 1380,
+          "departure": 1420
+        }
+      ]
+    },
+    {
+      "departure_time": "18:43:00",
+      "train_id": "G-2-0-030",
+      "origin_station": "G19",
+      "total_travel_time": 1420,
+      "stations": [
+        {
+          "station_id": "G19",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "G18",
+          "arrival": 180,
+          "departure": 220
+        },
+        {
+          "station_id": "G17",
+          "arrival": 280,
+          "departure": 320
+        },
+        {
+          "station_id": "G16",
+          "arrival": 420,
+          "departure": 460
+        },
+        {
+          "station_id": "G15",
+          "arrival": 540,
+          "departure": 580
+        },
+        {
+          "station_id": "G14",
+          "arrival": 660,
+          "departure": 700
+        },
+        {
+          "station_id": "G13",
+          "arrival": 780,
+          "departure": 820
+        },
+        {
+          "station_id": "G12",
+          "arrival": 900,
+          "departure": 940
+        },
+        {
+          "station_id": "G11",
+          "arrival": 1020,
+          "departure": 1060
+        },
+        {
+          "station_id": "G10",
+          "arrival": 1140,
+          "departure": 1180
+        },
+        {
+          "station_id": "G09",
+          "arrival": 1260,
+          "departure": 1300
+        },
+        {
+          "station_id": "G08",
+          "arrival": 1380,
+          "departure": 1420
+        }
+      ]
+    },
+    {
+      "departure_time": "18:55:00",
+      "train_id": "G-2-0-031",
+      "origin_station": "G19",
+      "total_travel_time": 1480,
+      "stations": [
+        {
+          "station_id": "G19",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "G18",
+          "arrival": 180,
+          "departure": 220
+        },
+        {
+          "station_id": "G17",
+          "arrival": 300,
+          "departure": 340
+        },
+        {
+          "station_id": "G16",
+          "arrival": 420,
+          "departure": 460
+        },
+        {
+          "station_id": "G15",
+          "arrival": 540,
+          "departure": 580
+        },
+        {
+          "station_id": "G14",
+          "arrival": 720,
+          "departure": 760
+        },
+        {
+          "station_id": "G13",
+          "arrival": 840,
+          "departure": 880
+        },
+        {
+          "station_id": "G12",
+          "arrival": 960,
+          "departure": 1000
+        },
+        {
+          "station_id": "G11",
+          "arrival": 1080,
+          "departure": 1120
+        },
+        {
+          "station_id": "G10",
+          "arrival": 1200,
+          "departure": 1240
+        },
+        {
+          "station_id": "G09",
+          "arrival": 1320,
+          "departure": 1360
+        },
+        {
+          "station_id": "G08",
+          "arrival": 1440,
+          "departure": 1480
+        }
+      ]
+    },
+    {
+      "departure_time": "19:08:00",
+      "train_id": "G-2-0-032",
+      "origin_station": "G19",
+      "total_travel_time": 1440,
+      "stations": [
+        {
+          "station_id": "G19",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "G18",
+          "arrival": 180,
+          "departure": 220
+        },
+        {
+          "station_id": "G17",
+          "arrival": 300,
+          "departure": 340
+        },
+        {
+          "station_id": "G16",
+          "arrival": 420,
+          "departure": 460
+        },
+        {
+          "station_id": "G15",
+          "arrival": 540,
+          "departure": 580
+        },
+        {
+          "station_id": "G14",
+          "arrival": 660,
+          "departure": 700
+        },
+        {
+          "station_id": "G13",
+          "arrival": 840,
+          "departure": 880
+        },
+        {
+          "station_id": "G12",
+          "arrival": 960,
+          "departure": 1000
+        },
+        {
+          "station_id": "G11",
+          "arrival": 1080,
+          "departure": 1120
+        },
+        {
+          "station_id": "G10",
+          "arrival": 1200,
+          "departure": 1240
+        },
+        {
+          "station_id": "G09",
+          "arrival": 1300,
+          "departure": 1340
+        },
+        {
+          "station_id": "G08",
+          "arrival": 1400,
+          "departure": 1440
+        }
+      ]
+    },
+    {
+      "departure_time": "19:21:00",
+      "train_id": "G-2-0-033",
+      "origin_station": "G19",
+      "total_travel_time": 1420,
+      "stations": [
+        {
+          "station_id": "G19",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "G18",
+          "arrival": 180,
+          "departure": 220
+        },
+        {
+          "station_id": "G17",
+          "arrival": 300,
+          "departure": 340
+        },
+        {
+          "station_id": "G16",
+          "arrival": 420,
+          "departure": 460
+        },
+        {
+          "station_id": "G15",
+          "arrival": 540,
+          "departure": 580
+        },
+        {
+          "station_id": "G14",
+          "arrival": 660,
+          "departure": 700
+        },
+        {
+          "station_id": "G13",
+          "arrival": 840,
+          "departure": 880
+        },
+        {
+          "station_id": "G12",
+          "arrival": 940,
+          "departure": 980
+        },
+        {
+          "station_id": "G11",
+          "arrival": 1040,
+          "departure": 1080
+        },
+        {
+          "station_id": "G10",
+          "arrival": 1140,
+          "departure": 1180
+        },
+        {
+          "station_id": "G09",
+          "arrival": 1260,
+          "departure": 1300
+        },
+        {
+          "station_id": "G08",
+          "arrival": 1380,
+          "departure": 1420
+        }
+      ]
+    },
+    {
+      "departure_time": "19:33:00",
+      "train_id": "G-2-0-034",
+      "origin_station": "G19",
+      "total_travel_time": 1480,
+      "stations": [
+        {
+          "station_id": "G19",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "G18",
+          "arrival": 180,
+          "departure": 220
+        },
+        {
+          "station_id": "G17",
+          "arrival": 300,
+          "departure": 340
+        },
+        {
+          "station_id": "G16",
+          "arrival": 420,
+          "departure": 460
+        },
+        {
+          "station_id": "G15",
+          "arrival": 540,
+          "departure": 580
+        },
+        {
+          "station_id": "G14",
+          "arrival": 720,
+          "departure": 760
+        },
+        {
+          "station_id": "G13",
+          "arrival": 840,
+          "departure": 880
+        },
+        {
+          "station_id": "G12",
+          "arrival": 960,
+          "departure": 1000
+        },
+        {
+          "station_id": "G11",
+          "arrival": 1080,
+          "departure": 1120
+        },
+        {
+          "station_id": "G10",
+          "arrival": 1200,
+          "departure": 1240
+        },
+        {
+          "station_id": "G09",
+          "arrival": 1320,
+          "departure": 1360
+        },
+        {
+          "station_id": "G08",
+          "arrival": 1440,
+          "departure": 1480
+        }
+      ]
+    },
+    {
+      "departure_time": "20:18:00",
+      "train_id": "G-2-0-035",
+      "origin_station": "G19",
+      "total_travel_time": 1440,
+      "stations": [
+        {
+          "station_id": "G19",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "G18",
+          "arrival": 180,
+          "departure": 220
+        },
+        {
+          "station_id": "G17",
+          "arrival": 300,
+          "departure": 340
+        },
+        {
+          "station_id": "G16",
+          "arrival": 420,
+          "departure": 460
+        },
+        {
+          "station_id": "G15",
+          "arrival": 540,
+          "departure": 580
+        },
+        {
+          "station_id": "G14",
+          "arrival": 720,
+          "departure": 760
+        },
+        {
+          "station_id": "G13",
+          "arrival": 840,
+          "departure": 880
+        },
+        {
+          "station_id": "G12",
+          "arrival": 960,
+          "departure": 1000
+        },
+        {
+          "station_id": "G11",
+          "arrival": 1080,
+          "departure": 1120
+        },
+        {
+          "station_id": "G10",
+          "arrival": 1200,
+          "departure": 1240
+        },
+        {
+          "station_id": "G09",
+          "arrival": 1300,
+          "departure": 1340
+        },
+        {
+          "station_id": "G08",
+          "arrival": 1400,
+          "departure": 1440
+        }
+      ]
+    },
+    {
+      "departure_time": "20:38:00",
+      "train_id": "G-2-0-036",
+      "origin_station": "G19",
+      "total_travel_time": 1420,
+      "stations": [
+        {
+          "station_id": "G19",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "G18",
+          "arrival": 120,
+          "departure": 160
+        },
+        {
+          "station_id": "G17",
+          "arrival": 300,
+          "departure": 340
+        },
+        {
+          "station_id": "G16",
+          "arrival": 420,
+          "departure": 460
+        },
+        {
+          "station_id": "G15",
+          "arrival": 540,
+          "departure": 580
+        },
+        {
+          "station_id": "G14",
+          "arrival": 660,
+          "departure": 700
+        },
+        {
+          "station_id": "G13",
+          "arrival": 780,
+          "departure": 820
+        },
+        {
+          "station_id": "G12",
+          "arrival": 900,
+          "departure": 940
+        },
+        {
+          "station_id": "G11",
+          "arrival": 1020,
+          "departure": 1060
+        },
+        {
+          "station_id": "G10",
+          "arrival": 1140,
+          "departure": 1180
+        },
+        {
+          "station_id": "G09",
+          "arrival": 1260,
+          "departure": 1300
+        },
+        {
+          "station_id": "G08",
+          "arrival": 1380,
+          "departure": 1420
+        }
+      ]
+    },
+    {
+      "departure_time": "20:56:00",
+      "train_id": "G-2-0-037",
+      "origin_station": "G19",
+      "total_travel_time": 1420,
+      "stations": [
+        {
+          "station_id": "G19",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "G18",
+          "arrival": 120,
+          "departure": 160
+        },
+        {
+          "station_id": "G17",
+          "arrival": 300,
+          "departure": 340
+        },
+        {
+          "station_id": "G16",
+          "arrival": 420,
+          "departure": 460
+        },
+        {
+          "station_id": "G15",
+          "arrival": 540,
+          "departure": 580
+        },
+        {
+          "station_id": "G14",
+          "arrival": 660,
+          "departure": 700
+        },
+        {
+          "station_id": "G13",
+          "arrival": 780,
+          "departure": 820
+        },
+        {
+          "station_id": "G12",
+          "arrival": 900,
+          "departure": 940
+        },
+        {
+          "station_id": "G11",
+          "arrival": 1020,
+          "departure": 1060
+        },
+        {
+          "station_id": "G10",
+          "arrival": 1140,
+          "departure": 1180
+        },
+        {
+          "station_id": "G09",
+          "arrival": 1260,
+          "departure": 1300
+        },
+        {
+          "station_id": "G08",
+          "arrival": 1380,
+          "departure": 1420
+        }
+      ]
+    },
+    {
+      "departure_time": "21:16:00",
+      "train_id": "G-2-0-038",
+      "origin_station": "G19",
+      "total_travel_time": 1440,
+      "stations": [
+        {
+          "station_id": "G19",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "G18",
+          "arrival": 180,
+          "departure": 220
+        },
+        {
+          "station_id": "G17",
+          "arrival": 300,
+          "departure": 340
+        },
+        {
+          "station_id": "G16",
+          "arrival": 420,
+          "departure": 460
+        },
+        {
+          "station_id": "G15",
+          "arrival": 540,
+          "departure": 580
+        },
+        {
+          "station_id": "G14",
+          "arrival": 720,
+          "departure": 760
+        },
+        {
+          "station_id": "G13",
+          "arrival": 840,
+          "departure": 880
+        },
+        {
+          "station_id": "G12",
+          "arrival": 960,
+          "departure": 1000
+        },
+        {
+          "station_id": "G11",
+          "arrival": 1080,
+          "departure": 1120
+        },
+        {
+          "station_id": "G10",
+          "arrival": 1200,
+          "departure": 1240
+        },
+        {
+          "station_id": "G09",
+          "arrival": 1300,
+          "departure": 1340
+        },
+        {
+          "station_id": "G08",
+          "arrival": 1400,
+          "departure": 1440
+        }
+      ]
+    }
+  ]
+}

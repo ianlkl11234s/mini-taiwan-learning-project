@@ -25,6 +25,9 @@ const TRACK_IDS = [
   // === 藍線 (BL) ===
   'BL-1-0', 'BL-1-1',  // 全程車（頂埔↔南港展覽館）
   'BL-2-0', 'BL-2-1',  // 區間車（亞東醫院↔南港展覽館）
+  // === 綠線 (G) ===
+  'G-1-0', 'G-1-1',    // 全程車（新店↔松山）
+  'G-2-0', 'G-2-1',    // 區間車（台電大樓↔松山）
 ];
 
 // 車站在軌道上的實際進度 (0-1)
@@ -78,7 +81,7 @@ export function useData(): DataState {
         }
         setTrackMap(tMap);
 
-        // 載入車站（紅線 + 藍線）
+        // 載入車站（紅線 + 藍線 + 綠線）
         const redStationsRes = await fetch('/data/red_line_stations.geojson');
         if (!redStationsRes.ok) throw new Error('Failed to load red line stations');
         const redStationsData = await redStationsRes.json();
@@ -87,12 +90,17 @@ export function useData(): DataState {
         if (!blueStationsRes.ok) throw new Error('Failed to load blue line stations');
         const blueStationsData = await blueStationsRes.json();
 
+        const greenStationsRes = await fetch('/data/green_line_stations.geojson');
+        if (!greenStationsRes.ok) throw new Error('Failed to load green line stations');
+        const greenStationsData = await greenStationsRes.json();
+
         // 合併車站資料
         const allStations: StationCollection = {
           type: 'FeatureCollection',
           features: [
             ...redStationsData.features,
             ...blueStationsData.features,
+            ...greenStationsData.features,
           ],
         };
         setStations(allStations);

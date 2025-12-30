@@ -1,0 +1,309 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "G01",
+        "name_zh": "新店",
+        "name_en": "Xindian",
+        "line_id": "G"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5377,
+          24.958181
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "G02",
+        "name_zh": "新店區公所",
+        "name_en": "Xindian District Office",
+        "line_id": "G"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5413,
+          24.96744
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "G03",
+        "name_zh": "七張",
+        "name_en": "Qizhang",
+        "line_id": "G"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.543129,
+          24.975036
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "G04",
+        "name_zh": "大坪林",
+        "name_en": "Dapinglin",
+        "line_id": "G"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.54134,
+          24.98272
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "G05",
+        "name_zh": "景美",
+        "name_en": "Jingmei",
+        "line_id": "G"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.540697,
+          24.992824
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "G06",
+        "name_zh": "萬隆",
+        "name_en": "Wanlong",
+        "line_id": "G"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.539008,
+          25.001978
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "G07",
+        "name_zh": "公館",
+        "name_en": "Gongguan",
+        "line_id": "G"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.534358,
+          25.014781
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "G08",
+        "name_zh": "台電大樓",
+        "name_en": "Taipower Building",
+        "line_id": "G"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.528143,
+          25.020733
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "G09",
+        "name_zh": "古亭",
+        "name_en": "Guting",
+        "line_id": "G"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.522868,
+          25.026373
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "G10",
+        "name_zh": "中正紀念堂",
+        "name_en": "Chiang Kai-Shek Memorial Hall",
+        "line_id": "G"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.518273,
+          25.032767
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "G11",
+        "name_zh": "小南門",
+        "name_en": "Xiaonanmen",
+        "line_id": "G"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.510798,
+          25.035619
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "G12",
+        "name_zh": "西門",
+        "name_en": "Ximen",
+        "line_id": "G"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.508511,
+          25.042274
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "G13",
+        "name_zh": "北門",
+        "name_en": "Beimen",
+        "line_id": "G"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.510184,
+          25.049554
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "G14",
+        "name_zh": "中山",
+        "name_en": "Zhongshan",
+        "line_id": "G"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.520364,
+          25.052621
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "G15",
+        "name_zh": "松江南京",
+        "name_en": "Songjiang Nanjing",
+        "line_id": "G"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.53285,
+          25.052693
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "G16",
+        "name_zh": "南京復興",
+        "name_en": "Nanjing Fuxing",
+        "line_id": "G"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.544303,
+          25.052044
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "G17",
+        "name_zh": "台北小巨蛋",
+        "name_en": "Taipei Arena",
+        "line_id": "G"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.552549,
+          25.05152
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "G18",
+        "name_zh": "南京三民",
+        "name_en": "Nanjing Sanmin",
+        "line_id": "G"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.56471,
+          25.051588
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "G19",
+        "name_zh": "松山",
+        "name_en": "Songshan",
+        "line_id": "G"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.577706,
+          25.050118
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "track_id": "G-7-0",
+  "route_id": "G-7",
+  "name": "中山 → 新店",
+  "origin": "G14",
+  "destination": "G01",
+  "stations": [
+    "G14",
+    "G13",
+    "G12",
+    "G11",
+    "G10",
+    "G09",
+    "G08",
+    "G07",
+    "G06",
+    "G05",
+    "G04",
+    "G03",
+    "G02",
+    "G01"
+  ],
+  "travel_time_minutes": 25,
+  "dwell_time_seconds": 40,
+  "is_weekday": true,
+  "departure_count": 1,
+  "departures": [
+    {
+      "departure_time": "06:00:00",
+      "train_id": "G-7-0-001",
+      "origin_station": "G14",
+      "total_travel_time": 1540,
+      "stations": [
+        {
+          "station_id": "G14",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "G13",
+          "arrival": 120,
+          "departure": 160
+        },
+        {
+          "station_id": "G12",
+          "arrival": 240,
+          "departure": 280
+        },
+        {
+          "station_id": "G11",
+          "arrival": 360,
+          "departure": 400
+        },
+        {
+          "station_id": "G10",
+          "arrival": 480,
+          "departure": 520
+        },
+        {
+          "station_id": "G09",
+          "arrival": 600,
+          "departure": 640
+        },
+        {
+          "station_id": "G08",
+          "arrival": 720,
+          "departure": 760
+        },
+        {
+          "station_id": "G07",
+          "arrival": 820,
+          "departure": 860
+        },
+        {
+          "station_id": "G06",
+          "arrival": 960,
+          "departure": 1000
+        },
+        {
+          "station_id": "G05",
+          "arrival": 1080,
+          "departure": 1120
+        },
+        {
+          "station_id": "G04",
+          "arrival": 1200,
+          "departure": 1240
+        },
+        {
+          "station_id": "G03",
+          "arrival": 1300,
+          "departure": 1340
+        },
+        {
+          "station_id": "G02",
+          "arrival": 1400,
+          "departure": 1440
+        },
+        {
+          "station_id": "G01",
+          "arrival": 1500,
+          "departure": 1540
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "track_id": "BL-10-1",
+  "route_id": "BL-10",
+  "name": "江子翠 → 頂埔",
+  "origin": "BL09",
+  "destination": "BL01",
+  "stations": [
+    "BL09",
+    "BL08",
+    "BL07",
+    "BL06",
+    "BL05",
+    "BL04",
+    "BL03",
+    "BL02",
+    "BL01"
+  ],
+  "travel_time_minutes": 18,
+  "dwell_time_seconds": 40,
+  "is_weekday": true,
+  "departure_count": 1,
+  "departures": [
+    {
+      "departure_time": "06:00:00",
+      "train_id": "BL-10-1-001",
+      "origin_station": "BL09",
+      "total_travel_time": 1120,
+      "stations": [
+        {
+          "station_id": "BL09",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "BL08",
+          "arrival": 120,
+          "departure": 160
+        },
+        {
+          "station_id": "BL07",
+          "arrival": 240,
+          "departure": 280
+        },
+        {
+          "station_id": "BL06",
+          "arrival": 340,
+          "departure": 380
+        },
+        {
+          "station_id": "BL05",
+          "arrival": 480,
+          "departure": 520
+        },
+        {
+          "station_id": "BL04",
+          "arrival": 600,
+          "departure": 640
+        },
+        {
+          "station_id": "BL03",
+          "arrival": 780,
+          "departure": 820
+        },
+        {
+          "station_id": "BL02",
+          "arrival": 900,
+          "departure": 940
+        },
+        {
+          "station_id": "BL01",
+          "arrival": 1080,
+          "departure": 1120
+        }
+      ]
+    }
+  ]
+}

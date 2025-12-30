@@ -1,0 +1,39 @@
+{
+  "track_id": "O-11-0",
+  "route_id": "O-11",
+  "name": "永安市場 → 南勢角",
+  "origin": "O03",
+  "destination": "O01",
+  "stations": [
+    "O03",
+    "O02",
+    "O01"
+  ],
+  "dwell_time_seconds": 30,
+  "departure_count": 1,
+  "departures": [
+    {
+      "departure_time": "06:00:00",
+      "train_id": "O-11-0-001",
+      "origin_station": "O03",
+      "stations": [
+        {
+          "station_id": "O03",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "O02",
+          "arrival": 60,
+          "departure": 90
+        },
+        {
+          "station_id": "O01",
+          "arrival": 180,
+          "departure": 180
+        }
+      ],
+      "total_travel_time": 180
+    }
+  ]
+}

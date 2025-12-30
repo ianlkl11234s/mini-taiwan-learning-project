@@ -1,0 +1,87 @@
+{
+  "track_id": "O-21-1",
+  "route_id": "O-21",
+  "name": "忠孝新生 → 蘆洲",
+  "origin": "O07",
+  "destination": "O54",
+  "stations": [
+    "O07",
+    "O08",
+    "O09",
+    "O10",
+    "O11",
+    "O12",
+    "O50",
+    "O51",
+    "O52",
+    "O53",
+    "O54"
+  ],
+  "dwell_time_seconds": 30,
+  "departure_count": 1,
+  "departures": [
+    {
+      "departure_time": "06:00:00",
+      "train_id": "O-21-1-001",
+      "origin_station": "O07",
+      "stations": [
+        {
+          "station_id": "O07",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "O08",
+          "arrival": 120,
+          "departure": 150
+        },
+        {
+          "station_id": "O09",
+          "arrival": 240,
+          "departure": 270
+        },
+        {
+          "station_id": "O10",
+          "arrival": 360,
+          "departure": 390
+        },
+        {
+          "station_id": "O11",
+          "arrival": 480,
+          "departure": 510
+        },
+        {
+          "station_id": "O12",
+          "arrival": 540,
+          "departure": 570
+        },
+        {
+          "station_id": "O50",
+          "arrival": 720,
+          "departure": 750
+        },
+        {
+          "station_id": "O51",
+          "arrival": 840,
+          "departure": 870
+        },
+        {
+          "station_id": "O52",
+          "arrival": 960,
+          "departure": 990
+        },
+        {
+          "station_id": "O53",
+          "arrival": 1080,
+          "departure": 1110
+        },
+        {
+          "station_id": "O54",
+          "arrival": 1200,
+          "departure": 1200
+        }
+      ],
+      "total_travel_time": 1200
+    }
+  ]
+}

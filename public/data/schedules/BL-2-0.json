@@ -25,10 +25,10 @@
     "BL22",
     "BL23"
   ],
-  "travel_time_minutes": 36,
+  "travel_time_minutes": 37,
   "dwell_time_seconds": 40,
   "is_weekday": true,
-  "departure_count": 137,
+  "departure_count": 132,
   "departures": [
     {
       "departure_time": "06:00:00",
@@ -130,271 +130,6 @@
           "station_id": "BL23",
           "arrival": 2160,
           "departure": 2200
-        }
-      ]
-    },
-    {
-      "departure_time": "06:00:00",
-      "train_id": "BL-2-0-131",
-      "origin_station": "BL08",
-      "total_travel_time": 1840,
-      "stations": [
-        {
-          "station_id": "BL08",
-          "arrival": 0,
-          "departure": 40
-        },
-        {
-          "station_id": "BL09",
-          "arrival": 120,
-          "departure": 160
-        },
-        {
-          "station_id": "BL10",
-          "arrival": 300,
-          "departure": 340
-        },
-        {
-          "station_id": "BL11",
-          "arrival": 480,
-          "departure": 520
-        },
-        {
-          "station_id": "BL12",
-          "arrival": 600,
-          "departure": 640
-        },
-        {
-          "station_id": "BL13",
-          "arrival": 720,
-          "departure": 760
-        },
-        {
-          "station_id": "BL14",
-          "arrival": 840,
-          "departure": 880
-        },
-        {
-          "station_id": "BL15",
-          "arrival": 960,
-          "departure": 1000
-        },
-        {
-          "station_id": "BL16",
-          "arrival": 1060,
-          "departure": 1100
-        },
-        {
-          "station_id": "BL17",
-          "arrival": 1160,
-          "departure": 1200
-        },
-        {
-          "station_id": "BL18",
-          "arrival": 1260,
-          "departure": 1300
-        },
-        {
-          "station_id": "BL19",
-          "arrival": 1360,
-          "departure": 1400
-        },
-        {
-          "station_id": "BL20",
-          "arrival": 1460,
-          "departure": 1500
-        },
-        {
-          "station_id": "BL21",
-          "arrival": 1560,
-          "departure": 1600
-        },
-        {
-          "station_id": "BL22",
-          "arrival": 1680,
-          "departure": 1720
-        },
-        {
-          "station_id": "BL23",
-          "arrival": 1800,
-          "departure": 1840
-        }
-      ]
-    },
-    {
-      "departure_time": "06:00:00",
-      "train_id": "BL-2-0-134",
-      "origin_station": "BL12",
-      "total_travel_time": 1240,
-      "stations": [
-        {
-          "station_id": "BL12",
-          "arrival": 0,
-          "departure": 40
-        },
-        {
-          "station_id": "BL13",
-          "arrival": 120,
-          "departure": 160
-        },
-        {
-          "station_id": "BL14",
-          "arrival": 240,
-          "departure": 280
-        },
-        {
-          "station_id": "BL15",
-          "arrival": 360,
-          "departure": 400
-        },
-        {
-          "station_id": "BL16",
-          "arrival": 460,
-          "departure": 500
-        },
-        {
-          "station_id": "BL17",
-          "arrival": 560,
-          "departure": 600
-        },
-        {
-          "station_id": "BL18",
-          "arrival": 660,
-          "departure": 700
-        },
-        {
-          "station_id": "BL19",
-          "arrival": 760,
-          "departure": 800
-        },
-        {
-          "station_id": "BL20",
-          "arrival": 860,
-          "departure": 900
-        },
-        {
-          "station_id": "BL21",
-          "arrival": 960,
-          "departure": 1000
-        },
-        {
-          "station_id": "BL22",
-          "arrival": 1080,
-          "departure": 1120
-        },
-        {
-          "station_id": "BL23",
-          "arrival": 1200,
-          "departure": 1240
-        }
-      ]
-    },
-    {
-      "departure_time": "06:00:00",
-      "train_id": "BL-2-0-135",
-      "origin_station": "BL15",
-      "total_travel_time": 880,
-      "stations": [
-        {
-          "station_id": "BL15",
-          "arrival": 0,
-          "departure": 40
-        },
-        {
-          "station_id": "BL16",
-          "arrival": 100,
-          "departure": 140
-        },
-        {
-          "station_id": "BL17",
-          "arrival": 200,
-          "departure": 240
-        },
-        {
-          "station_id": "BL18",
-          "arrival": 300,
-          "departure": 340
-        },
-        {
-          "station_id": "BL19",
-          "arrival": 420,
-          "departure": 460
-        },
-        {
-          "station_id": "BL20",
-          "arrival": 520,
-          "departure": 560
-        },
-        {
-          "station_id": "BL21",
-          "arrival": 620,
-          "departure": 660
-        },
-        {
-          "station_id": "BL22",
-          "arrival": 720,
-          "departure": 760
-        },
-        {
-          "station_id": "BL23",
-          "arrival": 840,
-          "departure": 880
-        }
-      ]
-    },
-    {
-      "departure_time": "06:00:00",
-      "train_id": "BL-2-0-136",
-      "origin_station": "BL18",
-      "total_travel_time": 640,
-      "stations": [
-        {
-          "station_id": "BL18",
-          "arrival": 0,
-          "departure": 40
-        },
-        {
-          "station_id": "BL19",
-          "arrival": 120,
-          "departure": 160
-        },
-        {
-          "station_id": "BL20",
-          "arrival": 240,
-          "departure": 280
-        },
-        {
-          "station_id": "BL21",
-          "arrival": 360,
-          "departure": 400
-        },
-        {
-          "station_id": "BL22",
-          "arrival": 480,
-          "departure": 520
-        },
-        {
-          "station_id": "BL23",
-          "arrival": 600,
-          "departure": 640
-        }
-      ]
-    },
-    {
-      "departure_time": "06:00:00",
-      "train_id": "BL-2-0-137",
-      "origin_station": "BL22",
-      "total_travel_time": 160,
-      "stations": [
-        {
-          "station_id": "BL22",
-          "arrival": 0,
-          "departure": 40
-        },
-        {
-          "station_id": "BL23",
-          "arrival": 120,
-          "departure": 160
         }
       ]
     },
@@ -2131,7 +1866,7 @@
     },
     {
       "departure_time": "08:07:00",
-      "train_id": "BL-2-0-132",
+      "train_id": "BL-2-0-131",
       "origin_station": "BL09",
       "total_travel_time": 1600,
       "stations": [
@@ -2307,7 +2042,7 @@
     },
     {
       "departure_time": "08:16:00",
-      "train_id": "BL-2-0-133",
+      "train_id": "BL-2-0-132",
       "origin_station": "BL09",
       "total_travel_time": 1600,
       "stations": [

@@ -1,0 +1,47 @@
+{
+  "track_id": "G-12-1",
+  "route_id": "G-12",
+  "name": "南京復興 → 松山",
+  "origin": "G16",
+  "destination": "G19",
+  "stations": [
+    "G16",
+    "G17",
+    "G18",
+    "G19"
+  ],
+  "travel_time_minutes": 8,
+  "dwell_time_seconds": 40,
+  "is_weekday": true,
+  "departure_count": 1,
+  "departures": [
+    {
+      "departure_time": "06:00:00",
+      "train_id": "G-12-1-001",
+      "origin_station": "G16",
+      "total_travel_time": 520,
+      "stations": [
+        {
+          "station_id": "G16",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "G17",
+          "arrival": 120,
+          "departure": 160
+        },
+        {
+          "station_id": "G18",
+          "arrival": 300,
+          "departure": 340
+        },
+        {
+          "station_id": "G19",
+          "arrival": 480,
+          "departure": 520
+        }
+      ]
+    }
+  ]
+}

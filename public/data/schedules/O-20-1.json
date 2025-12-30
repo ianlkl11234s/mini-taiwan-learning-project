@@ -1,0 +1,99 @@
+{
+  "track_id": "O-20-1",
+  "route_id": "O-20",
+  "name": "古亭 → 蘆洲",
+  "origin": "O05",
+  "destination": "O54",
+  "stations": [
+    "O05",
+    "O06",
+    "O07",
+    "O08",
+    "O09",
+    "O10",
+    "O11",
+    "O12",
+    "O50",
+    "O51",
+    "O52",
+    "O53",
+    "O54"
+  ],
+  "dwell_time_seconds": 30,
+  "departure_count": 1,
+  "departures": [
+    {
+      "departure_time": "00:29:00",
+      "train_id": "O-20-1-001",
+      "origin_station": "O05",
+      "stations": [
+        {
+          "station_id": "O05",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "O06",
+          "arrival": 180,
+          "departure": 210
+        },
+        {
+          "station_id": "O07",
+          "arrival": 360,
+          "departure": 390
+        },
+        {
+          "station_id": "O08",
+          "arrival": 540,
+          "departure": 570
+        },
+        {
+          "station_id": "O09",
+          "arrival": 660,
+          "departure": 690
+        },
+        {
+          "station_id": "O10",
+          "arrival": 780,
+          "departure": 810
+        },
+        {
+          "station_id": "O11",
+          "arrival": 900,
+          "departure": 930
+        },
+        {
+          "station_id": "O12",
+          "arrival": 960,
+          "departure": 990
+        },
+        {
+          "station_id": "O50",
+          "arrival": 1140,
+          "departure": 1170
+        },
+        {
+          "station_id": "O51",
+          "arrival": 1260,
+          "departure": 1290
+        },
+        {
+          "station_id": "O52",
+          "arrival": 1380,
+          "departure": 1410
+        },
+        {
+          "station_id": "O53",
+          "arrival": 1500,
+          "departure": 1530
+        },
+        {
+          "station_id": "O54",
+          "arrival": 1620,
+          "departure": 1620
+        }
+      ],
+      "total_travel_time": 1620
+    }
+  ]
+}

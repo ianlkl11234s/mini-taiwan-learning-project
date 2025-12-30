@@ -1,0 +1,95 @@
+{
+  "track_id": "BL-4-0",
+  "route_id": "BL-4",
+  "name": "台北車站 → 南港展覽館",
+  "origin": "BL12",
+  "destination": "BL23",
+  "stations": [
+    "BL12",
+    "BL13",
+    "BL14",
+    "BL15",
+    "BL16",
+    "BL17",
+    "BL18",
+    "BL19",
+    "BL20",
+    "BL21",
+    "BL22",
+    "BL23"
+  ],
+  "travel_time_minutes": 20,
+  "dwell_time_seconds": 40,
+  "is_weekday": true,
+  "departure_count": 1,
+  "departures": [
+    {
+      "departure_time": "06:00:00",
+      "train_id": "BL-4-0-001",
+      "origin_station": "BL12",
+      "total_travel_time": 1240,
+      "stations": [
+        {
+          "station_id": "BL12",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "BL13",
+          "arrival": 120,
+          "departure": 160
+        },
+        {
+          "station_id": "BL14",
+          "arrival": 240,
+          "departure": 280
+        },
+        {
+          "station_id": "BL15",
+          "arrival": 360,
+          "departure": 400
+        },
+        {
+          "station_id": "BL16",
+          "arrival": 460,
+          "departure": 500
+        },
+        {
+          "station_id": "BL17",
+          "arrival": 560,
+          "departure": 600
+        },
+        {
+          "station_id": "BL18",
+          "arrival": 660,
+          "departure": 700
+        },
+        {
+          "station_id": "BL19",
+          "arrival": 760,
+          "departure": 800
+        },
+        {
+          "station_id": "BL20",
+          "arrival": 860,
+          "departure": 900
+        },
+        {
+          "station_id": "BL21",
+          "arrival": 960,
+          "departure": 1000
+        },
+        {
+          "station_id": "BL22",
+          "arrival": 1080,
+          "departure": 1120
+        },
+        {
+          "station_id": "BL23",
+          "arrival": 1200,
+          "departure": 1240
+        }
+      ]
+    }
+  ]
+}

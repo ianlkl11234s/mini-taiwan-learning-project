@@ -1,0 +1,63 @@
+{
+  "track_id": "O-22-1",
+  "route_id": "O-22",
+  "name": "民權西路 → 蘆洲",
+  "origin": "O11",
+  "destination": "O54",
+  "stations": [
+    "O11",
+    "O12",
+    "O50",
+    "O51",
+    "O52",
+    "O53",
+    "O54"
+  ],
+  "dwell_time_seconds": 30,
+  "departure_count": 1,
+  "departures": [
+    {
+      "departure_time": "06:00:00",
+      "train_id": "O-22-1-001",
+      "origin_station": "O11",
+      "stations": [
+        {
+          "station_id": "O11",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "O12",
+          "arrival": 120,
+          "departure": 150
+        },
+        {
+          "station_id": "O50",
+          "arrival": 300,
+          "departure": 330
+        },
+        {
+          "station_id": "O51",
+          "arrival": 420,
+          "departure": 450
+        },
+        {
+          "station_id": "O52",
+          "arrival": 480,
+          "departure": 510
+        },
+        {
+          "station_id": "O53",
+          "arrival": 600,
+          "departure": 630
+        },
+        {
+          "station_id": "O54",
+          "arrival": 720,
+          "departure": 720
+        }
+      ],
+      "total_travel_time": 720
+    }
+  ]
+}

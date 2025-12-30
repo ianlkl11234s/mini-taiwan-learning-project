@@ -1,0 +1,216 @@
+{
+  "track_id": "O-14-1",
+  "route_id": "O-14",
+  "name": "古亭 → 迴龍",
+  "origin": "O05",
+  "destination": "O21",
+  "stations": [
+    "O05",
+    "O06",
+    "O07",
+    "O08",
+    "O09",
+    "O10",
+    "O11",
+    "O12",
+    "O13",
+    "O14",
+    "O15",
+    "O16",
+    "O17",
+    "O18",
+    "O19",
+    "O20",
+    "O21"
+  ],
+  "dwell_time_seconds": 30,
+  "departure_count": 2,
+  "departures": [
+    {
+      "departure_time": "06:00:00",
+      "train_id": "O-14-1-001",
+      "origin_station": "O05",
+      "stations": [
+        {
+          "station_id": "O05",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "O06",
+          "arrival": 180,
+          "departure": 210
+        },
+        {
+          "station_id": "O07",
+          "arrival": 360,
+          "departure": 390
+        },
+        {
+          "station_id": "O08",
+          "arrival": 480,
+          "departure": 510
+        },
+        {
+          "station_id": "O09",
+          "arrival": 540,
+          "departure": 570
+        },
+        {
+          "station_id": "O10",
+          "arrival": 720,
+          "departure": 750
+        },
+        {
+          "station_id": "O11",
+          "arrival": 780,
+          "departure": 810
+        },
+        {
+          "station_id": "O12",
+          "arrival": 900,
+          "departure": 930
+        },
+        {
+          "station_id": "O13",
+          "arrival": 1080,
+          "departure": 1110
+        },
+        {
+          "station_id": "O14",
+          "arrival": 1200,
+          "departure": 1230
+        },
+        {
+          "station_id": "O15",
+          "arrival": 1320,
+          "departure": 1350
+        },
+        {
+          "station_id": "O16",
+          "arrival": 1440,
+          "departure": 1470
+        },
+        {
+          "station_id": "O17",
+          "arrival": 1620,
+          "departure": 1650
+        },
+        {
+          "station_id": "O18",
+          "arrival": 1740,
+          "departure": 1770
+        },
+        {
+          "station_id": "O19",
+          "arrival": 1860,
+          "departure": 1890
+        },
+        {
+          "station_id": "O20",
+          "arrival": 2040,
+          "departure": 2070
+        },
+        {
+          "station_id": "O21",
+          "arrival": 2220,
+          "departure": 2220
+        }
+      ],
+      "total_travel_time": 2220
+    },
+    {
+      "departure_time": "00:33:00",
+      "train_id": "O-14-1-002",
+      "origin_station": "O05",
+      "stations": [
+        {
+          "station_id": "O05",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "O06",
+          "arrival": 180,
+          "departure": 210
+        },
+        {
+          "station_id": "O07",
+          "arrival": 360,
+          "departure": 390
+        },
+        {
+          "station_id": "O08",
+          "arrival": 480,
+          "departure": 510
+        },
+        {
+          "station_id": "O09",
+          "arrival": 600,
+          "departure": 630
+        },
+        {
+          "station_id": "O10",
+          "arrival": 720,
+          "departure": 750
+        },
+        {
+          "station_id": "O11",
+          "arrival": 840,
+          "departure": 870
+        },
+        {
+          "station_id": "O12",
+          "arrival": 900,
+          "departure": 930
+        },
+        {
+          "station_id": "O13",
+          "arrival": 1080,
+          "departure": 1110
+        },
+        {
+          "station_id": "O14",
+          "arrival": 1200,
+          "departure": 1230
+        },
+        {
+          "station_id": "O15",
+          "arrival": 1320,
+          "departure": 1350
+        },
+        {
+          "station_id": "O16",
+          "arrival": 1440,
+          "departure": 1470
+        },
+        {
+          "station_id": "O17",
+          "arrival": 1560,
+          "departure": 1590
+        },
+        {
+          "station_id": "O18",
+          "arrival": 1680,
+          "departure": 1710
+        },
+        {
+          "station_id": "O19",
+          "arrival": 1860,
+          "departure": 1890
+        },
+        {
+          "station_id": "O20",
+          "arrival": 1980,
+          "departure": 2010
+        },
+        {
+          "station_id": "O21",
+          "arrival": 2160,
+          "departure": 2160
+        }
+      ],
+      "total_travel_time": 2160
+    }
+  ]
+}

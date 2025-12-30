@@ -1,0 +1,108 @@
+{
+  "track_id": "G-11-1",
+  "route_id": "G-11",
+  "name": "北門 → 松山",
+  "origin": "G13",
+  "destination": "G19",
+  "stations": [
+    "G13",
+    "G14",
+    "G15",
+    "G16",
+    "G17",
+    "G18",
+    "G19"
+  ],
+  "travel_time_minutes": 13,
+  "dwell_time_seconds": 40,
+  "is_weekday": true,
+  "departure_count": 2,
+  "departures": [
+    {
+      "departure_time": "06:00:00",
+      "train_id": "G-11-1-001",
+      "origin_station": "G13",
+      "total_travel_time": 820,
+      "stations": [
+        {
+          "station_id": "G13",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "G14",
+          "arrival": 120,
+          "departure": 160
+        },
+        {
+          "station_id": "G15",
+          "arrival": 300,
+          "departure": 340
+        },
+        {
+          "station_id": "G16",
+          "arrival": 400,
+          "departure": 440
+        },
+        {
+          "station_id": "G17",
+          "arrival": 500,
+          "departure": 540
+        },
+        {
+          "station_id": "G18",
+          "arrival": 600,
+          "departure": 640
+        },
+        {
+          "station_id": "G19",
+          "arrival": 780,
+          "departure": 820
+        }
+      ]
+    },
+    {
+      "departure_time": "00:41:00",
+      "train_id": "G-11-1-002",
+      "origin_station": "G13",
+      "total_travel_time": 820,
+      "stations": [
+        {
+          "station_id": "G13",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "G14",
+          "arrival": 120,
+          "departure": 160
+        },
+        {
+          "station_id": "G15",
+          "arrival": 240,
+          "departure": 280
+        },
+        {
+          "station_id": "G16",
+          "arrival": 360,
+          "departure": 400
+        },
+        {
+          "station_id": "G17",
+          "arrival": 480,
+          "departure": 520
+        },
+        {
+          "station_id": "G18",
+          "arrival": 600,
+          "departure": 640
+        },
+        {
+          "station_id": "G19",
+          "arrival": 780,
+          "departure": 820
+        }
+      ]
+    }
+  ]
+}

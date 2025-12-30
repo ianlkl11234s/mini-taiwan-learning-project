@@ -1,0 +1,125 @@
+{
+  "track_id": "BL-12-1",
+  "route_id": "BL-12",
+  "name": "國父紀念館 → 頂埔",
+  "origin": "BL17",
+  "destination": "BL01",
+  "stations": [
+    "BL17",
+    "BL16",
+    "BL15",
+    "BL14",
+    "BL13",
+    "BL12",
+    "BL11",
+    "BL10",
+    "BL09",
+    "BL08",
+    "BL07",
+    "BL06",
+    "BL05",
+    "BL04",
+    "BL03",
+    "BL02",
+    "BL01"
+  ],
+  "travel_time_minutes": 34,
+  "dwell_time_seconds": 40,
+  "is_weekday": true,
+  "departure_count": 1,
+  "departures": [
+    {
+      "departure_time": "06:00:00",
+      "train_id": "BL-12-1-001",
+      "origin_station": "BL17",
+      "total_travel_time": 2080,
+      "stations": [
+        {
+          "station_id": "BL17",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "BL16",
+          "arrival": 120,
+          "departure": 160
+        },
+        {
+          "station_id": "BL15",
+          "arrival": 220,
+          "departure": 260
+        },
+        {
+          "station_id": "BL14",
+          "arrival": 320,
+          "departure": 360
+        },
+        {
+          "station_id": "BL13",
+          "arrival": 420,
+          "departure": 460
+        },
+        {
+          "station_id": "BL12",
+          "arrival": 520,
+          "departure": 560
+        },
+        {
+          "station_id": "BL11",
+          "arrival": 660,
+          "departure": 700
+        },
+        {
+          "station_id": "BL10",
+          "arrival": 780,
+          "departure": 820
+        },
+        {
+          "station_id": "BL09",
+          "arrival": 1020,
+          "departure": 1060
+        },
+        {
+          "station_id": "BL08",
+          "arrival": 1120,
+          "departure": 1160
+        },
+        {
+          "station_id": "BL07",
+          "arrival": 1220,
+          "departure": 1260
+        },
+        {
+          "station_id": "BL06",
+          "arrival": 1320,
+          "departure": 1360
+        },
+        {
+          "station_id": "BL05",
+          "arrival": 1440,
+          "departure": 1480
+        },
+        {
+          "station_id": "BL04",
+          "arrival": 1620,
+          "departure": 1660
+        },
+        {
+          "station_id": "BL03",
+          "arrival": 1740,
+          "departure": 1780
+        },
+        {
+          "station_id": "BL02",
+          "arrival": 1860,
+          "departure": 1900
+        },
+        {
+          "station_id": "BL01",
+          "arrival": 2040,
+          "departure": 2080
+        }
+      ]
+    }
+  ]
+}

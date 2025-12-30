@@ -1,0 +1,45 @@
+{
+  "track_id": "O-17-1",
+  "route_id": "O-17",
+  "name": "新莊 → 迴龍",
+  "origin": "O18",
+  "destination": "O21",
+  "stations": [
+    "O18",
+    "O19",
+    "O20",
+    "O21"
+  ],
+  "dwell_time_seconds": 30,
+  "departure_count": 1,
+  "departures": [
+    {
+      "departure_time": "06:00:00",
+      "train_id": "O-17-1-001",
+      "origin_station": "O18",
+      "stations": [
+        {
+          "station_id": "O18",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "O19",
+          "arrival": 180,
+          "departure": 210
+        },
+        {
+          "station_id": "O20",
+          "arrival": 300,
+          "departure": 330
+        },
+        {
+          "station_id": "O21",
+          "arrival": 480,
+          "departure": 480
+        }
+      ],
+      "total_travel_time": 480
+    }
+  ]
+}

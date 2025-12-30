@@ -1,0 +1,35 @@
+{
+  "track_id": "BL-8-1",
+  "route_id": "BL-8",
+  "name": "永寧 → 頂埔",
+  "origin": "BL02",
+  "destination": "BL01",
+  "stations": [
+    "BL02",
+    "BL01"
+  ],
+  "travel_time_minutes": 3,
+  "dwell_time_seconds": 40,
+  "is_weekday": true,
+  "departure_count": 1,
+  "departures": [
+    {
+      "departure_time": "06:00:00",
+      "train_id": "BL-8-1-001",
+      "origin_station": "BL02",
+      "total_travel_time": 220,
+      "stations": [
+        {
+          "station_id": "BL02",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "BL01",
+          "arrival": 180,
+          "departure": 220
+        }
+      ]
+    }
+  ]
+}

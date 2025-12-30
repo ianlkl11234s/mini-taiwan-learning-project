@@ -1,0 +1,39 @@
+{
+  "track_id": "O-23-1",
+  "route_id": "O-23",
+  "name": "徐匯中學 → 蘆洲",
+  "origin": "O52",
+  "destination": "O54",
+  "stations": [
+    "O52",
+    "O53",
+    "O54"
+  ],
+  "dwell_time_seconds": 30,
+  "departure_count": 1,
+  "departures": [
+    {
+      "departure_time": "06:00:00",
+      "train_id": "O-23-1-001",
+      "origin_station": "O52",
+      "stations": [
+        {
+          "station_id": "O52",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "O53",
+          "arrival": 120,
+          "departure": 150
+        },
+        {
+          "station_id": "O54",
+          "arrival": 240,
+          "departure": 240
+        }
+      ],
+      "total_travel_time": 240
+    }
+  ]
+}

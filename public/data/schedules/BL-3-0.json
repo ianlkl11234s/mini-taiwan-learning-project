@@ -1,0 +1,119 @@
+{
+  "track_id": "BL-3-0",
+  "route_id": "BL-3",
+  "name": "新埔 → 南港展覽館",
+  "origin": "BL08",
+  "destination": "BL23",
+  "stations": [
+    "BL08",
+    "BL09",
+    "BL10",
+    "BL11",
+    "BL12",
+    "BL13",
+    "BL14",
+    "BL15",
+    "BL16",
+    "BL17",
+    "BL18",
+    "BL19",
+    "BL20",
+    "BL21",
+    "BL22",
+    "BL23"
+  ],
+  "travel_time_minutes": 30,
+  "dwell_time_seconds": 40,
+  "is_weekday": true,
+  "departure_count": 1,
+  "departures": [
+    {
+      "departure_time": "06:00:00",
+      "train_id": "BL-3-0-001",
+      "origin_station": "BL08",
+      "total_travel_time": 1840,
+      "stations": [
+        {
+          "station_id": "BL08",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "BL09",
+          "arrival": 120,
+          "departure": 160
+        },
+        {
+          "station_id": "BL10",
+          "arrival": 300,
+          "departure": 340
+        },
+        {
+          "station_id": "BL11",
+          "arrival": 480,
+          "departure": 520
+        },
+        {
+          "station_id": "BL12",
+          "arrival": 600,
+          "departure": 640
+        },
+        {
+          "station_id": "BL13",
+          "arrival": 720,
+          "departure": 760
+        },
+        {
+          "station_id": "BL14",
+          "arrival": 840,
+          "departure": 880
+        },
+        {
+          "station_id": "BL15",
+          "arrival": 960,
+          "departure": 1000
+        },
+        {
+          "station_id": "BL16",
+          "arrival": 1060,
+          "departure": 1100
+        },
+        {
+          "station_id": "BL17",
+          "arrival": 1160,
+          "departure": 1200
+        },
+        {
+          "station_id": "BL18",
+          "arrival": 1260,
+          "departure": 1300
+        },
+        {
+          "station_id": "BL19",
+          "arrival": 1360,
+          "departure": 1400
+        },
+        {
+          "station_id": "BL20",
+          "arrival": 1460,
+          "departure": 1500
+        },
+        {
+          "station_id": "BL21",
+          "arrival": 1560,
+          "departure": 1600
+        },
+        {
+          "station_id": "BL22",
+          "arrival": 1680,
+          "departure": 1720
+        },
+        {
+          "station_id": "BL23",
+          "arrival": 1800,
+          "departure": 1840
+        }
+      ]
+    }
+  ]
+}

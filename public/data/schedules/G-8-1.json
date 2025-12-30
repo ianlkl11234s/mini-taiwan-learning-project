@@ -1,0 +1,207 @@
+{
+  "track_id": "G-8-1",
+  "route_id": "G-8",
+  "name": "大坪林 → 松山",
+  "origin": "G04",
+  "destination": "G19",
+  "stations": [
+    "G04",
+    "G05",
+    "G06",
+    "G07",
+    "G08",
+    "G09",
+    "G10",
+    "G11",
+    "G12",
+    "G13",
+    "G14",
+    "G15",
+    "G16",
+    "G17",
+    "G18",
+    "G19"
+  ],
+  "travel_time_minutes": 31,
+  "dwell_time_seconds": 40,
+  "is_weekday": true,
+  "departure_count": 2,
+  "departures": [
+    {
+      "departure_time": "06:00:00",
+      "train_id": "G-8-1-001",
+      "origin_station": "G04",
+      "total_travel_time": 1900,
+      "stations": [
+        {
+          "station_id": "G04",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "G05",
+          "arrival": 120,
+          "departure": 160
+        },
+        {
+          "station_id": "G06",
+          "arrival": 240,
+          "departure": 280
+        },
+        {
+          "station_id": "G07",
+          "arrival": 420,
+          "departure": 460
+        },
+        {
+          "station_id": "G08",
+          "arrival": 540,
+          "departure": 580
+        },
+        {
+          "station_id": "G09",
+          "arrival": 640,
+          "departure": 680
+        },
+        {
+          "station_id": "G10",
+          "arrival": 740,
+          "departure": 780
+        },
+        {
+          "station_id": "G11",
+          "arrival": 840,
+          "departure": 880
+        },
+        {
+          "station_id": "G12",
+          "arrival": 960,
+          "departure": 1000
+        },
+        {
+          "station_id": "G13",
+          "arrival": 1080,
+          "departure": 1120
+        },
+        {
+          "station_id": "G14",
+          "arrival": 1200,
+          "departure": 1240
+        },
+        {
+          "station_id": "G15",
+          "arrival": 1320,
+          "departure": 1360
+        },
+        {
+          "station_id": "G16",
+          "arrival": 1440,
+          "departure": 1480
+        },
+        {
+          "station_id": "G17",
+          "arrival": 1560,
+          "departure": 1600
+        },
+        {
+          "station_id": "G18",
+          "arrival": 1680,
+          "departure": 1720
+        },
+        {
+          "station_id": "G19",
+          "arrival": 1860,
+          "departure": 1900
+        }
+      ]
+    },
+    {
+      "departure_time": "00:11:00",
+      "train_id": "G-8-1-002",
+      "origin_station": "G04",
+      "total_travel_time": 1900,
+      "stations": [
+        {
+          "station_id": "G04",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "G05",
+          "arrival": 120,
+          "departure": 160
+        },
+        {
+          "station_id": "G06",
+          "arrival": 240,
+          "departure": 280
+        },
+        {
+          "station_id": "G07",
+          "arrival": 420,
+          "departure": 460
+        },
+        {
+          "station_id": "G08",
+          "arrival": 540,
+          "departure": 580
+        },
+        {
+          "station_id": "G09",
+          "arrival": 640,
+          "departure": 680
+        },
+        {
+          "station_id": "G10",
+          "arrival": 740,
+          "departure": 780
+        },
+        {
+          "station_id": "G11",
+          "arrival": 840,
+          "departure": 880
+        },
+        {
+          "station_id": "G12",
+          "arrival": 960,
+          "departure": 1000
+        },
+        {
+          "station_id": "G13",
+          "arrival": 1080,
+          "departure": 1120
+        },
+        {
+          "station_id": "G14",
+          "arrival": 1200,
+          "departure": 1240
+        },
+        {
+          "station_id": "G15",
+          "arrival": 1320,
+          "departure": 1360
+        },
+        {
+          "station_id": "G16",
+          "arrival": 1440,
+          "departure": 1480
+        },
+        {
+          "station_id": "G17",
+          "arrival": 1560,
+          "departure": 1600
+        },
+        {
+          "station_id": "G18",
+          "arrival": 1680,
+          "departure": 1720
+        },
+        {
+          "station_id": "G19",
+          "arrival": 1860,
+          "departure": 1900
+        }
+      ]
+    }
+  ]
+}

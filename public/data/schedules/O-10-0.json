@@ -1,0 +1,51 @@
+{
+  "track_id": "O-10-0",
+  "route_id": "O-10",
+  "name": "古亭 → 南勢角",
+  "origin": "O05",
+  "destination": "O01",
+  "stations": [
+    "O05",
+    "O04",
+    "O03",
+    "O02",
+    "O01"
+  ],
+  "dwell_time_seconds": 30,
+  "departure_count": 1,
+  "departures": [
+    {
+      "departure_time": "06:00:00",
+      "train_id": "O-10-0-001",
+      "origin_station": "O05",
+      "stations": [
+        {
+          "station_id": "O05",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "O04",
+          "arrival": 180,
+          "departure": 210
+        },
+        {
+          "station_id": "O03",
+          "arrival": 300,
+          "departure": 330
+        },
+        {
+          "station_id": "O02",
+          "arrival": 420,
+          "departure": 450
+        },
+        {
+          "station_id": "O01",
+          "arrival": 540,
+          "departure": 540
+        }
+      ],
+      "total_travel_time": 540
+    }
+  ]
+}

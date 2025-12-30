@@ -1,0 +1,95 @@
+{
+  "track_id": "G-6-0",
+  "route_id": "G-6",
+  "name": "西門 → 新店",
+  "origin": "G12",
+  "destination": "G01",
+  "stations": [
+    "G12",
+    "G11",
+    "G10",
+    "G09",
+    "G08",
+    "G07",
+    "G06",
+    "G05",
+    "G04",
+    "G03",
+    "G02",
+    "G01"
+  ],
+  "travel_time_minutes": 20,
+  "dwell_time_seconds": 40,
+  "is_weekday": true,
+  "departure_count": 1,
+  "departures": [
+    {
+      "departure_time": "06:00:00",
+      "train_id": "G-6-0-001",
+      "origin_station": "G12",
+      "total_travel_time": 1260,
+      "stations": [
+        {
+          "station_id": "G12",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "G11",
+          "arrival": 120,
+          "departure": 160
+        },
+        {
+          "station_id": "G10",
+          "arrival": 220,
+          "departure": 260
+        },
+        {
+          "station_id": "G09",
+          "arrival": 320,
+          "departure": 360
+        },
+        {
+          "station_id": "G08",
+          "arrival": 420,
+          "departure": 460
+        },
+        {
+          "station_id": "G07",
+          "arrival": 540,
+          "departure": 580
+        },
+        {
+          "station_id": "G06",
+          "arrival": 660,
+          "departure": 700
+        },
+        {
+          "station_id": "G05",
+          "arrival": 780,
+          "departure": 820
+        },
+        {
+          "station_id": "G04",
+          "arrival": 900,
+          "departure": 940
+        },
+        {
+          "station_id": "G03",
+          "arrival": 1020,
+          "departure": 1060
+        },
+        {
+          "station_id": "G02",
+          "arrival": 1120,
+          "departure": 1160
+        },
+        {
+          "station_id": "G01",
+          "arrival": 1220,
+          "departure": 1260
+        }
+      ]
+    }
+  ]
+}

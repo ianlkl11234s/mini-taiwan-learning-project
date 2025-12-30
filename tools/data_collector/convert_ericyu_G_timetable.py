@@ -8,6 +8,9 @@
 綠線路線分類規則:
 - G-1: 全程車 (新店 G01 ↔ 松山 G19)
 - G-2: 區間車 (台電大樓 G08 ↔ 松山 G19)
+- G-3: 小碧潭支線 (七張 G03 ↔ 小碧潭 G03A)
+- G-4 ~ G-7: 首班車往新店 (從中途站出發)
+- G-8 ~ G-12: 首班車往松山 (從中途站出發)
 
 注意：小碧潭支線 (G03A) 沒有在 ericyu 時刻表中
 
@@ -18,7 +21,8 @@
 
 import json
 from pathlib import Path
-from typing import List, Dict, Any
+from typing import List, Dict, Any, Optional, Tuple
+from collections import defaultdict
 
 # 路徑設定
 SCRIPT_DIR = Path(__file__).parent
@@ -42,6 +46,24 @@ STATION_NAMES = {
 
 # 停站時間 (秒)
 DWELL_TIME = 40
+
+# 首班車路線定義
+# 格式: (起站, 終站): (route_id, direction)
+# direction: 0=往新店, 1=往松山
+FIRST_TRAIN_ROUTES = {
+    # === 往新店 (direction=0) ===
+    ("G03", "G01"): ("G-4", 0),   # 七張→新店
+    ("G08", "G01"): ("G-5", 0),   # 台電大樓→新店
+    ("G12", "G01"): ("G-6", 0),   # 西門→新店
+    ("G14", "G01"): ("G-7", 0),   # 中山→新店
+
+    # === 往松山 (direction=1) ===
+    ("G04", "G19"): ("G-8", 1),   # 大坪林→松山
+    ("G07", "G19"): ("G-9", 1),   # 公館→松山
+    ("G10", "G19"): ("G-10", 1),  # 中正紀念堂→松山
+    ("G13", "G19"): ("G-11", 1),  # 北門→松山
+    ("G16", "G19"): ("G-12", 1),  # 南京復興→松山
+}
 
 
 def time_to_seconds(time_str: str) -> int:
@@ -69,46 +91,63 @@ def station_num(station_id: str) -> int:
     return 0
 
 
-def classify_train(schedule: List[Dict], direction: str) -> str:
+def get_stations_between(start_station: str, end_station: str) -> List[str]:
+    """取得兩站之間的站點列表（含起終站）"""
+    start_idx = STATION_ORDER.index(start_station)
+    end_idx = STATION_ORDER.index(end_station)
+
+    if start_idx <= end_idx:
+        # 往松山（北上）
+        return STATION_ORDER[start_idx:end_idx + 1]
+    else:
+        # 往新店（南下）
+        return list(reversed(STATION_ORDER[end_idx:start_idx + 1]))
+
+
+def classify_train(schedule: List[Dict], direction: str) -> Tuple[str, Optional[Tuple[str, str]]]:
     """
     分類列車到適當的軌道
 
-    direction: "新店" (往南) 或 "松山" (往北)
-
-    路線定義：
-    - G-1: 全程車 (新店 G01 ↔ 松山 G19)
-    - G-2: 區間車 (台電大樓 G08 ↔ 松山 G19)
+    返回: (route_id, first_train_key 或 None)
+    - first_train_key: 如果是首班車，返回 (起站, 終站) 元組
     """
     start_station = schedule[0]["StationCode"]
     end_station = schedule[-1]["StationCode"]
     start_num = station_num(start_station)
     end_num = station_num(end_station)
 
+    # 檢查是否為首班車
+    first_train_key = (start_station, end_station)
+    if first_train_key in FIRST_TRAIN_ROUTES:
+        route_id = FIRST_TRAIN_ROUTES[first_train_key][0]
+        return route_id, first_train_key
+
     if direction == "新店":
         # 往新店方向（南下）
         if end_station == "G01":
             # 終點新店 = 全程車
-            return "G-1"
+            return "G-1", None
         elif end_num >= 8:  # G08 台電大樓
             # 終點台電大樓或更北 = 區間車
-            return "G-2"
+            return "G-2", None
         else:
             # 其他視為全程車軌道
-            return "G-1"
+            return "G-1", None
     else:
         # 往松山方向（北上）
         if start_station == "G01":
             # 從新店出發 = 全程車
-            return "G-1"
+            return "G-1", None
         elif start_num >= 8:  # G08 台電大樓
             # 從台電大樓或更北出發 = 區間車
-            return "G-2"
+            return "G-2", None
         else:
             # 其他視為全程車軌道
-            return "G-1"
+            return "G-1", None
 
 
-def convert_train(train: Dict, direction: str, train_idx: int, route_type: str) -> Dict:
+def convert_train(train: Dict, direction: str, train_idx: int, route_type: str,
+                  first_train_key: Optional[Tuple[str, str]] = None) -> Dict:
     """轉換單一列車資料"""
     schedule = train["Schedule"]
     start_station = schedule[0]["StationCode"]
@@ -116,10 +155,15 @@ def convert_train(train: Dict, direction: str, train_idx: int, route_type: str) 
     first_dep_seconds = time_to_seconds(first_dep_time)
 
     # 決定 track_id
-    if direction == "新店":
-        track_suffix = "0"  # G-1-0 或 G-2-0 (往新店)
+    if first_train_key:
+        # 首班車使用預定義的 direction
+        direction_num = FIRST_TRAIN_ROUTES[first_train_key][1]
+        track_suffix = str(direction_num)
     else:
-        track_suffix = "1"  # G-1-1 或 G-2-1 (往松山)
+        if direction == "新店":
+            track_suffix = "0"  # 往新店
+        else:
+            track_suffix = "1"  # 往松山
 
     track_id = f"{route_type}-{track_suffix}"
     train_id = f"{track_id}-{train_idx:03d}"
@@ -140,9 +184,8 @@ def convert_train(train: Dict, direction: str, train_idx: int, route_type: str) 
             arrival_seconds += 24 * 3600
 
         # 修正：確保站間至少有合理的行駛時間 (最小 60 秒)
-        # Eric Yu 資料只有分鐘精度，可能導致相鄰站時間相同
         if i > 0:
-            min_travel_time = 60  # 最小行駛時間 60 秒
+            min_travel_time = 60
             min_arrival = prev_arrival + DWELL_TIME + min_travel_time
             if arrival_seconds < min_arrival:
                 arrival_seconds = min_arrival
@@ -154,7 +197,6 @@ def convert_train(train: Dict, direction: str, train_idx: int, route_type: str) 
         })
         prev_arrival = arrival_seconds
 
-    # 計算總行程時間 (最後一站的 departure)
     total_travel_time = stations[-1]["departure"] if stations else 0
 
     return {
@@ -177,8 +219,6 @@ def create_schedule_file(
     is_weekday: bool = True
 ) -> Dict:
     """建立完整的時刻表檔案結構"""
-
-    # 計算平均行車時間
     if departures:
         travel_times = []
         for dep in departures:
@@ -219,7 +259,7 @@ def sort_departures(departures: List[Dict]) -> List[Dict]:
 
 def main():
     print("=" * 60)
-    print("Eric Yu 綠線時刻表轉換工具")
+    print("Eric Yu 綠線時刻表轉換工具 (含首班車支援)")
     print("=" * 60)
 
     # 讀取來源資料
@@ -228,15 +268,11 @@ def main():
         data = json.load(f)
 
     # 準備輸出資料結構
-    schedules = {
-        "G-1-0": [],  # 松山→新店 全程
-        "G-1-1": [],  # 新店→松山 全程
-        "G-2-0": [],  # 松山→台電大樓 區間
-        "G-2-1": [],  # 台電大樓→松山 區間
-    }
+    schedules = defaultdict(list)
 
-    # 統計各路線班次 (全域)
-    route_counts = {"G-1": 0, "G-2": 0}
+    # 統計各路線班次
+    route_counts = defaultdict(int)
+    first_train_counts = defaultdict(int)
 
     # 處理各方向資料
     for direction_data in data:
@@ -255,31 +291,33 @@ def main():
 
             trains = timetable["Trains"]
 
-            # 統計各路線班次 (此方向)
-            dir_counts = {"G-1": 0, "G-2": 0}
-
             for train in trains:
-                route_type = classify_train(train["Schedule"], direction)
-                dir_counts[route_type] += 1
-                route_counts[route_type] += 1
-                train_idx = route_counts[route_type]
+                route_type, first_train_key = classify_train(train["Schedule"], direction)
 
-                converted = convert_train(train, direction, train_idx, route_type)
-
-                # 決定 track_id
-                if direction == "新店":
-                    track_id = f"{route_type}-0"
+                if first_train_key:
+                    # 首班車
+                    first_train_counts[route_type] += 1
+                    train_idx = first_train_counts[route_type]
+                    converted = convert_train(train, direction, train_idx, route_type, first_train_key)
+                    dir_num = FIRST_TRAIN_ROUTES[first_train_key][1]
+                    track_id = f"{route_type}-{dir_num}"
                 else:
-                    track_id = f"{route_type}-1"
+                    # 一般車
+                    route_counts[route_type] += 1
+                    train_idx = route_counts[route_type]
+                    converted = convert_train(train, direction, train_idx, route_type)
+                    if direction == "新店":
+                        track_id = f"{route_type}-0"
+                    else:
+                        track_id = f"{route_type}-1"
 
                 schedules[track_id].append(converted)
-
-            print(f"    G-1 (全程): {dir_counts['G-1']} 班")
-            print(f"    G-2 (區間): {dir_counts['G-2']} 班")
 
     # 排序並輸出
     print(f"\n輸出目錄: {OUTPUT_DIR}")
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+
+    output_files = []
 
     # G-1-0: 松山→新店 全程
     g1_0_deps = sort_departures(schedules["G-1-0"])
@@ -292,6 +330,7 @@ def main():
         stations=list(reversed(STATION_ORDER)),
         departures=g1_0_deps
     )
+    output_files.append(("G-1-0.json", g1_0))
 
     # G-1-1: 新店→松山 全程
     g1_1_deps = sort_departures(schedules["G-1-1"])
@@ -304,6 +343,7 @@ def main():
         stations=STATION_ORDER.copy(),
         departures=g1_1_deps
     )
+    output_files.append(("G-1-1.json", g1_1))
 
     # G-2 區間車站 (G08-G19)
     g2_stations_north = ["G08", "G09", "G10", "G11", "G12", "G13", "G14", "G15", "G16", "G17", "G18", "G19"]
@@ -319,6 +359,7 @@ def main():
         stations=list(reversed(g2_stations_north)),
         departures=g2_0_deps
     )
+    output_files.append(("G-2-0.json", g2_0))
 
     # G-2-1: 台電大樓→松山 區間
     g2_1_deps = sort_departures(schedules["G-2-1"])
@@ -331,15 +372,32 @@ def main():
         stations=g2_stations_north,
         departures=g2_1_deps
     )
+    output_files.append(("G-2-1.json", g2_1))
+
+    # 處理首班車軌道
+    for (start, end), (route_id, direction) in FIRST_TRAIN_ROUTES.items():
+        track_id = f"{route_id}-{direction}"
+        deps = sort_departures(schedules.get(track_id, []))
+
+        if not deps:
+            continue
+
+        stations = get_stations_between(start, end)
+        start_name = STATION_NAMES.get(start, start)
+        end_name = STATION_NAMES.get(end, end)
+
+        schedule_file = create_schedule_file(
+            track_id=track_id,
+            route_id=route_id,
+            name=f"{start_name} → {end_name}",
+            origin=start,
+            destination=end,
+            stations=stations,
+            departures=deps
+        )
+        output_files.append((f"{track_id}.json", schedule_file))
 
     # 寫入檔案
-    output_files = [
-        ("G-1-0.json", g1_0),
-        ("G-1-1.json", g1_1),
-        ("G-2-0.json", g2_0),
-        ("G-2-1.json", g2_1),
-    ]
-
     for filename, data_obj in output_files:
         output_path = OUTPUT_DIR / filename
         with open(output_path, "w", encoding="utf-8") as f:
@@ -350,6 +408,8 @@ def main():
     print("\n" + "=" * 60)
     print("轉換完成！")
     print("=" * 60)
+
+    print("\n全程車/區間車:")
     print(f"  G-1 (全程車): {g1_0['departure_count'] + g1_1['departure_count']} 班")
     print(f"    - G-1-0 松山→新店: {g1_0['departure_count']} 班")
     print(f"    - G-1-1 新店→松山: {g1_1['departure_count']} 班")
@@ -357,16 +417,19 @@ def main():
     print(f"    - G-2-0 松山→台電大樓: {g2_0['departure_count']} 班")
     print(f"    - G-2-1 台電大樓→松山: {g2_1['departure_count']} 班")
 
-    # 顯示首班車資訊
-    print("\n首班車資訊:")
-    for filename, data_obj in output_files:
-        early_trains = [d for d in data_obj['departures'] if d['departure_time'] < '06:15:00']
-        if early_trains:
-            print(f"\n  {data_obj['name']}:")
-            for train in early_trains[:3]:
-                origin = train.get('origin_station', data_obj['origin'])
-                origin_name = STATION_NAMES.get(origin, origin)
-                print(f"    {origin_name}({origin}) {train['departure_time'][:5]}")
+    # 首班車統計
+    first_train_total = 0
+    print("\n首班車:")
+    for (start, end), (route_id, direction) in sorted(FIRST_TRAIN_ROUTES.items(), key=lambda x: x[1][0]):
+        track_id = f"{route_id}-{direction}"
+        count = len(schedules.get(track_id, []))
+        if count > 0:
+            first_train_total += count
+            start_name = STATION_NAMES.get(start, start)
+            end_name = STATION_NAMES.get(end, end)
+            print(f"  {track_id} ({start_name}→{end_name}): {count} 班")
+
+    print(f"\n總計: {g1_0['departure_count'] + g1_1['departure_count'] + g2_0['departure_count'] + g2_1['departure_count']} 班 (全程+區間) + {first_train_total} 班 (首班車)")
 
 
 if __name__ == "__main__":

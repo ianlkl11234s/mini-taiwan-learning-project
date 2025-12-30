@@ -1,0 +1,41 @@
+{
+  "track_id": "G-4-0",
+  "route_id": "G-4",
+  "name": "七張 → 新店",
+  "origin": "G03",
+  "destination": "G01",
+  "stations": [
+    "G03",
+    "G02",
+    "G01"
+  ],
+  "travel_time_minutes": 4,
+  "dwell_time_seconds": 40,
+  "is_weekday": true,
+  "departure_count": 1,
+  "departures": [
+    {
+      "departure_time": "06:00:00",
+      "train_id": "G-4-0-001",
+      "origin_station": "G03",
+      "total_travel_time": 280,
+      "stations": [
+        {
+          "station_id": "G03",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "G02",
+          "arrival": 120,
+          "departure": 160
+        },
+        {
+          "station_id": "G01",
+          "arrival": 240,
+          "departure": 280
+        }
+      ]
+    }
+  ]
+}

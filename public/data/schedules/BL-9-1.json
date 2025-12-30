@@ -1,0 +1,53 @@
+{
+  "track_id": "BL-9-1",
+  "route_id": "BL-9",
+  "name": "亞東醫院 → 頂埔",
+  "origin": "BL05",
+  "destination": "BL01",
+  "stations": [
+    "BL05",
+    "BL04",
+    "BL03",
+    "BL02",
+    "BL01"
+  ],
+  "travel_time_minutes": 10,
+  "dwell_time_seconds": 40,
+  "is_weekday": true,
+  "departure_count": 1,
+  "departures": [
+    {
+      "departure_time": "06:00:00",
+      "train_id": "BL-9-1-001",
+      "origin_station": "BL05",
+      "total_travel_time": 640,
+      "stations": [
+        {
+          "station_id": "BL05",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "BL04",
+          "arrival": 180,
+          "departure": 220
+        },
+        {
+          "station_id": "BL03",
+          "arrival": 300,
+          "departure": 340
+        },
+        {
+          "station_id": "BL02",
+          "arrival": 420,
+          "departure": 460
+        },
+        {
+          "station_id": "BL01",
+          "arrival": 600,
+          "departure": 640
+        }
+      ]
+    }
+  ]
+}

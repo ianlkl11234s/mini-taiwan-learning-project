@@ -1,0 +1,95 @@
+{
+  "track_id": "BL-11-1",
+  "route_id": "BL-11",
+  "name": "台北車站 → 頂埔",
+  "origin": "BL12",
+  "destination": "BL01",
+  "stations": [
+    "BL12",
+    "BL11",
+    "BL10",
+    "BL09",
+    "BL08",
+    "BL07",
+    "BL06",
+    "BL05",
+    "BL04",
+    "BL03",
+    "BL02",
+    "BL01"
+  ],
+  "travel_time_minutes": 26,
+  "dwell_time_seconds": 40,
+  "is_weekday": true,
+  "departure_count": 1,
+  "departures": [
+    {
+      "departure_time": "06:00:00",
+      "train_id": "BL-11-1-001",
+      "origin_station": "BL12",
+      "total_travel_time": 1600,
+      "stations": [
+        {
+          "station_id": "BL12",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "BL11",
+          "arrival": 180,
+          "departure": 220
+        },
+        {
+          "station_id": "BL10",
+          "arrival": 300,
+          "departure": 340
+        },
+        {
+          "station_id": "BL09",
+          "arrival": 480,
+          "departure": 520
+        },
+        {
+          "station_id": "BL08",
+          "arrival": 600,
+          "departure": 640
+        },
+        {
+          "station_id": "BL07",
+          "arrival": 720,
+          "departure": 760
+        },
+        {
+          "station_id": "BL06",
+          "arrival": 840,
+          "departure": 880
+        },
+        {
+          "station_id": "BL05",
+          "arrival": 960,
+          "departure": 1000
+        },
+        {
+          "station_id": "BL04",
+          "arrival": 1140,
+          "departure": 1180
+        },
+        {
+          "station_id": "BL03",
+          "arrival": 1260,
+          "departure": 1300
+        },
+        {
+          "station_id": "BL02",
+          "arrival": 1380,
+          "departure": 1420
+        },
+        {
+          "station_id": "BL01",
+          "arrival": 1560,
+          "departure": 1600
+        }
+      ]
+    }
+  ]
+}

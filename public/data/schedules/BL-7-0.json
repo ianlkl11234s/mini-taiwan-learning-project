@@ -1,0 +1,35 @@
+{
+  "track_id": "BL-7-0",
+  "route_id": "BL-7",
+  "name": "南港 → 南港展覽館",
+  "origin": "BL22",
+  "destination": "BL23",
+  "stations": [
+    "BL22",
+    "BL23"
+  ],
+  "travel_time_minutes": 2,
+  "dwell_time_seconds": 40,
+  "is_weekday": true,
+  "departure_count": 1,
+  "departures": [
+    {
+      "departure_time": "06:00:00",
+      "train_id": "BL-7-0-001",
+      "origin_station": "BL22",
+      "total_travel_time": 160,
+      "stations": [
+        {
+          "station_id": "BL22",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "BL23",
+          "arrival": 120,
+          "departure": 160
+        }
+      ]
+    }
+  ]
+}

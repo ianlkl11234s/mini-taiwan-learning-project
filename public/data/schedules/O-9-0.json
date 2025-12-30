@@ -1,0 +1,63 @@
+{
+  "track_id": "O-9-0",
+  "route_id": "O-9",
+  "name": "忠孝新生 → 南勢角",
+  "origin": "O07",
+  "destination": "O01",
+  "stations": [
+    "O07",
+    "O06",
+    "O05",
+    "O04",
+    "O03",
+    "O02",
+    "O01"
+  ],
+  "dwell_time_seconds": 30,
+  "departure_count": 1,
+  "departures": [
+    {
+      "departure_time": "06:00:00",
+      "train_id": "O-9-0-001",
+      "origin_station": "O07",
+      "stations": [
+        {
+          "station_id": "O07",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "O06",
+          "arrival": 180,
+          "departure": 210
+        },
+        {
+          "station_id": "O05",
+          "arrival": 420,
+          "departure": 450
+        },
+        {
+          "station_id": "O04",
+          "arrival": 600,
+          "departure": 630
+        },
+        {
+          "station_id": "O03",
+          "arrival": 720,
+          "departure": 750
+        },
+        {
+          "station_id": "O02",
+          "arrival": 840,
+          "departure": 870
+        },
+        {
+          "station_id": "O01",
+          "arrival": 960,
+          "departure": 960
+        }
+      ],
+      "total_travel_time": 960
+    }
+  ]
+}

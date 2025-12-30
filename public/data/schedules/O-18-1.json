@@ -1,0 +1,33 @@
+{
+  "track_id": "O-18-1",
+  "route_id": "O-18",
+  "name": "丹鳳 → 迴龍",
+  "origin": "O20",
+  "destination": "O21",
+  "stations": [
+    "O20",
+    "O21"
+  ],
+  "dwell_time_seconds": 30,
+  "departure_count": 1,
+  "departures": [
+    {
+      "departure_time": "06:00:00",
+      "train_id": "O-18-1-001",
+      "origin_station": "O20",
+      "stations": [
+        {
+          "station_id": "O20",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "O21",
+          "arrival": 180,
+          "departure": 180
+        }
+      ],
+      "total_travel_time": 180
+    }
+  ]
+}

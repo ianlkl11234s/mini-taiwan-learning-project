@@ -1,0 +1,69 @@
+{
+  "track_id": "O-16-1",
+  "route_id": "O-16",
+  "name": "菜寮 → 迴龍",
+  "origin": "O14",
+  "destination": "O21",
+  "stations": [
+    "O14",
+    "O15",
+    "O16",
+    "O17",
+    "O18",
+    "O19",
+    "O20",
+    "O21"
+  ],
+  "dwell_time_seconds": 30,
+  "departure_count": 1,
+  "departures": [
+    {
+      "departure_time": "06:00:00",
+      "train_id": "O-16-1-001",
+      "origin_station": "O14",
+      "stations": [
+        {
+          "station_id": "O14",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "O15",
+          "arrival": 120,
+          "departure": 150
+        },
+        {
+          "station_id": "O16",
+          "arrival": 240,
+          "departure": 270
+        },
+        {
+          "station_id": "O17",
+          "arrival": 420,
+          "departure": 450
+        },
+        {
+          "station_id": "O18",
+          "arrival": 540,
+          "departure": 570
+        },
+        {
+          "station_id": "O19",
+          "arrival": 720,
+          "departure": 750
+        },
+        {
+          "station_id": "O20",
+          "arrival": 840,
+          "departure": 870
+        },
+        {
+          "station_id": "O21",
+          "arrival": 1020,
+          "departure": 1020
+        }
+      ],
+      "total_travel_time": 1020
+    }
+  ]
+}

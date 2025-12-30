@@ -1,0 +1,71 @@
+{
+  "track_id": "G-5-0",
+  "route_id": "G-5",
+  "name": "台電大樓 → 新店",
+  "origin": "G08",
+  "destination": "G01",
+  "stations": [
+    "G08",
+    "G07",
+    "G06",
+    "G05",
+    "G04",
+    "G03",
+    "G02",
+    "G01"
+  ],
+  "travel_time_minutes": 13,
+  "dwell_time_seconds": 40,
+  "is_weekday": true,
+  "departure_count": 1,
+  "departures": [
+    {
+      "departure_time": "06:00:00",
+      "train_id": "G-5-0-001",
+      "origin_station": "G08",
+      "total_travel_time": 820,
+      "stations": [
+        {
+          "station_id": "G08",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "G07",
+          "arrival": 120,
+          "departure": 160
+        },
+        {
+          "station_id": "G06",
+          "arrival": 240,
+          "departure": 280
+        },
+        {
+          "station_id": "G05",
+          "arrival": 360,
+          "departure": 400
+        },
+        {
+          "station_id": "G04",
+          "arrival": 480,
+          "departure": 520
+        },
+        {
+          "station_id": "G03",
+          "arrival": 580,
+          "departure": 620
+        },
+        {
+          "station_id": "G02",
+          "arrival": 680,
+          "departure": 720
+        },
+        {
+          "station_id": "G01",
+          "arrival": 780,
+          "departure": 820
+        }
+      ]
+    }
+  ]
+}

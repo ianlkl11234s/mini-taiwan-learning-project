@@ -4,16 +4,17 @@ import type { TrackSchedule } from '../types/schedule';
 
 // 軌道 ID 列表
 const TRACK_IDS = [
+  // === 紅線 (R) ===
   'R-1-0', 'R-1-1',  // 全程車
   'R-2-0', 'R-2-1',  // 南段區間車
   'R-3-0', 'R-3-1',  // 新北投支線
   'R-4-0', 'R-4-1',  // 北段區間車
-  // === 首班車專用軌道 (北上) ===
+  // 首班車專用軌道 (北上)
   'R-5-0',           // 首班車：大安→淡水
   'R-6-0',           // 首班車：雙連→淡水
   'R-7-0',           // 首班車：圓山→淡水
   'R-8-0',           // 首班車：芝山→淡水
-  // === 首班車專用軌道 (南下) ===
+  // 首班車專用軌道 (南下)
   'R-9-1',           // 首班車：紅樹林→象山
   'R-10-1',          // 首班車：大安→象山
   'R-11-1',          // 首班車：雙連→象山
@@ -21,6 +22,9 @@ const TRACK_IDS = [
   'R-13-1',          // 首班車：圓山→象山
   'R-14-1',          // 首班車：石牌→象山
   'R-15-1',          // 首班車：唭哩岸→象山
+  // === 藍線 (BL) ===
+  'BL-1-0', 'BL-1-1',  // 全程車（頂埔↔南港展覽館）
+  'BL-2-0', 'BL-2-1',  // 區間車（亞東醫院↔南港展覽館）
 ];
 
 // 車站在軌道上的實際進度 (0-1)
@@ -74,11 +78,24 @@ export function useData(): DataState {
         }
         setTrackMap(tMap);
 
-        // 載入車站
-        const stationsRes = await fetch('/data/red_line_stations.geojson');
-        if (!stationsRes.ok) throw new Error('Failed to load stations');
-        const stationsData = await stationsRes.json();
-        setStations(stationsData);
+        // 載入車站（紅線 + 藍線）
+        const redStationsRes = await fetch('/data/red_line_stations.geojson');
+        if (!redStationsRes.ok) throw new Error('Failed to load red line stations');
+        const redStationsData = await redStationsRes.json();
+
+        const blueStationsRes = await fetch('/data/blue_line_stations.geojson');
+        if (!blueStationsRes.ok) throw new Error('Failed to load blue line stations');
+        const blueStationsData = await blueStationsRes.json();
+
+        // 合併車站資料
+        const allStations: StationCollection = {
+          type: 'FeatureCollection',
+          features: [
+            ...redStationsData.features,
+            ...blueStationsData.features,
+          ],
+        };
+        setStations(allStations);
 
         // 載入時刻表
         const scheduleMap = new Map<string, TrackSchedule>();

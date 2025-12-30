@@ -46,3 +46,4 @@ tools/data_collector/cache/
 tmp/
 temp/
 *.tmp
+tools/data_collector/output/

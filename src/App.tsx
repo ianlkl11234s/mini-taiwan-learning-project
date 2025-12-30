@@ -15,6 +15,7 @@ const TRACK_COLORS = {
   BL: '#0070c0',  // 藍線
   G: '#008659',   // 綠線
   G3: '#66c4a0',  // 小碧潭支線（淺綠色）
+  O: '#f8b61c',   // 橘線
 };
 
 // 列車顏色（依路線與方向區分）
@@ -28,6 +29,9 @@ const TRAIN_COLORS = {
   // 綠線
   G_0: '#008659',   // 往新店（南下/direction 0）- 深綠色
   G_1: '#66c4a0',   // 往松山（北上/direction 1）- 淡綠色
+  // 橘線
+  O_0: '#f8b61c',   // 往南勢角（direction 0）- 深橘色
+  O_1: '#ffd966',   // 往迴龍/蘆洲（direction 1）- 淡橘色
 };
 
 // 判斷列車顏色：根據路線和方向
@@ -37,6 +41,8 @@ function getTrainColor(trackId: string): string {
     lineId = 'BL';
   } else if (trackId.startsWith('G')) {
     lineId = 'G';
+  } else if (trackId.startsWith('O')) {
+    lineId = 'O';
   } else {
     lineId = 'R';
   }
@@ -120,12 +126,13 @@ function App() {
         'line-cap': 'round',
       },
       paint: {
-        // 依路線設定顏色：G-3 小碧潭支線（淺綠）, G 綠線, BL 藍線, R 紅線
+        // 依路線設定顏色：G-3 小碧潭支線（淺綠）, G 綠線, BL 藍線, O 橘線, R 紅線
         'line-color': [
           'case',
           ['in', 'G-3', ['get', 'track_id']], TRACK_COLORS.G3,  // 小碧潭支線（淺綠色）
           ['==', ['get', 'line_id'], 'G'], TRACK_COLORS.G,
           ['==', ['get', 'line_id'], 'BL'], TRACK_COLORS.BL,
+          ['==', ['get', 'line_id'], 'O'], TRACK_COLORS.O,
           TRACK_COLORS.R
         ],
         'line-width': 4,
@@ -133,6 +140,7 @@ function App() {
         // - R-1 主線顯示, R-3 新北投支線顯示, 其他 R 軌道隱藏 (與 R-1 重疊)
         // - BL-1 主線顯示, BL-2 隱藏 (與 BL-1 重疊)
         // - G-1 主線顯示, G-2 隱藏 (與 G-1 重疊), G-3 小碧潭支線顯示
+        // - O-1 新莊線顯示, O-2 蘆洲線顯示 (Y 形結構，兩條都需要顯示)
         'line-opacity': [
           'case',
           ['in', 'R-1', ['get', 'track_id']], 0.8,   // R-1-0, R-1-1 可見 (紅線主線)
@@ -140,6 +148,8 @@ function App() {
           ['in', 'BL-1', ['get', 'track_id']], 0.8,  // BL-1-0, BL-1-1 可見 (藍線主線)
           ['in', 'G-1', ['get', 'track_id']], 0.8,   // G-1-0, G-1-1 可見 (綠線主線)
           ['in', 'G-3', ['get', 'track_id']], 0.8,   // G-3-0, G-3-1 可見 (小碧潭支線)
+          ['in', 'O-1', ['get', 'track_id']], 0.8,   // O-1-0, O-1-1 可見 (新莊線)
+          ['in', 'O-2', ['get', 'track_id']], 0.8,   // O-2-0, O-2-1 可見 (蘆洲線)
           0.0 // 其他軌道透明 (與主線共用區段)
         ],
       },
@@ -168,11 +178,12 @@ function App() {
       paint: {
         'circle-radius': 5,
         'circle-color': '#000000',  // 黑色填充
-        // 依路線設定邊線顏色：G 開頭 → 綠線, BL 開頭 → 藍線, 其餘 → 紅線
+        // 依路線設定邊線顏色：G 開頭 → 綠線, BL 開頭 → 藍線, O 開頭 → 橘線, 其餘 → 紅線
         'circle-stroke-color': [
           'case',
           ['==', ['slice', ['get', 'station_id'], 0, 1], 'G'], TRACK_COLORS.G,
           ['==', ['slice', ['get', 'station_id'], 0, 2], 'BL'], TRACK_COLORS.BL,
+          ['==', ['slice', ['get', 'station_id'], 0, 1], 'O'], TRACK_COLORS.O,
           TRACK_COLORS.R
         ],
         'circle-stroke-width': 1.8,
@@ -418,7 +429,7 @@ function App() {
           Mini Taipei V3
         </h1>
         <p style={{ margin: '4px 0 0', fontSize: 14, color: '#888' }}>
-          淡水信義線 + 板南線 + 松山新店線 模擬
+          淡水信義線 + 板南線 + 松山新店線 + 中和新蘆線 模擬
         </p>
       </div>
 
@@ -488,7 +499,7 @@ function App() {
         </div>
 
         {/* 小碧潭支線區塊 */}
-        <div>
+        <div style={{ marginBottom: 10 }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 4 }}>
             <div style={{ width: 20, height: 3, background: TRACK_COLORS.G3, borderRadius: 2 }} />
             <span style={{ fontWeight: 500 }}>小碧潭支線</span>
@@ -496,6 +507,22 @@ function App() {
           <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginLeft: 8 }}>
             <div style={{ width: 8, height: 8, background: TRACK_COLORS.G3, borderRadius: '50%', border: '1px solid white' }} />
             <span style={{ color: '#ccc' }}>七張↔小碧潭</span>
+          </div>
+        </div>
+
+        {/* 橘線區塊 */}
+        <div>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 4 }}>
+            <div style={{ width: 20, height: 3, background: TRACK_COLORS.O, borderRadius: 2 }} />
+            <span style={{ fontWeight: 500 }}>中和新蘆線</span>
+          </div>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 2, marginLeft: 8 }}>
+            <div style={{ width: 8, height: 8, background: TRAIN_COLORS.O_0, borderRadius: '50%', border: '1px solid white' }} />
+            <span style={{ color: '#ccc' }}>往南勢角</span>
+          </div>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginLeft: 8 }}>
+            <div style={{ width: 8, height: 8, background: TRAIN_COLORS.O_1, borderRadius: '50%', border: '1px solid white' }} />
+            <span style={{ color: '#ccc' }}>往迴龍/蘆洲</span>
           </div>
         </div>
       </div>

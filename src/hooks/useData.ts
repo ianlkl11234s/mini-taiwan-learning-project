@@ -29,6 +29,9 @@ const TRACK_IDS = [
   'G-1-0', 'G-1-1',    // 全程車（新店↔松山）
   'G-2-0', 'G-2-1',    // 區間車（台電大樓↔松山）
   'G-3-0', 'G-3-1',    // 小碧潭支線（七張↔小碧潭）
+  // === 橘線 (O) ===
+  'O-1-0', 'O-1-1',    // 新莊線（迴龍↔南勢角）
+  'O-2-0', 'O-2-1',    // 蘆洲線（蘆洲↔南勢角）
 ];
 
 // 車站在軌道上的實際進度 (0-1)
@@ -95,6 +98,10 @@ export function useData(): DataState {
         if (!greenStationsRes.ok) throw new Error('Failed to load green line stations');
         const greenStationsData = await greenStationsRes.json();
 
+        const orangeStationsRes = await fetch('/data/orange_line_stations.geojson');
+        if (!orangeStationsRes.ok) throw new Error('Failed to load orange line stations');
+        const orangeStationsData = await orangeStationsRes.json();
+
         // 合併車站資料
         const allStations: StationCollection = {
           type: 'FeatureCollection',
@@ -102,6 +109,7 @@ export function useData(): DataState {
             ...redStationsData.features,
             ...blueStationsData.features,
             ...greenStationsData.features,
+            ...orangeStationsData.features,
           ],
         };
         setStations(allStations);

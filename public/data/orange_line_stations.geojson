@@ -1,0 +1,421 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "O01",
+        "name_zh": "南勢角",
+        "name_en": "Nanshijiao",
+        "line_id": "O"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.509237,
+          24.990065
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "O02",
+        "name_zh": "景安",
+        "name_en": "Jingan",
+        "line_id": "O"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.505114,
+          24.99392
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "O03",
+        "name_zh": "永安市場",
+        "name_en": "Yongan Market",
+        "line_id": "O"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.511225,
+          25.002895
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "O04",
+        "name_zh": "頂溪",
+        "name_en": "Dingxi",
+        "line_id": "O"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.515398,
+          25.01308
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "O05",
+        "name_zh": "古亭",
+        "name_en": "Guting",
+        "line_id": "O"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.522868,
+          25.026373
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "O06",
+        "name_zh": "東門",
+        "name_en": "Dongmen",
+        "line_id": "O"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.528766,
+          25.033894
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "O07",
+        "name_zh": "忠孝新生",
+        "name_en": "Zhongxiao Xinsheng",
+        "line_id": "O"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.532856,
+          25.041797
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "O08",
+        "name_zh": "松江南京",
+        "name_en": "Songjiang Nanjing",
+        "line_id": "O"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.53285,
+          25.052693
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "O09",
+        "name_zh": "行天宮",
+        "name_en": "Xingtian Temple",
+        "line_id": "O"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.53315,
+          25.05924
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "O10",
+        "name_zh": "中山國小",
+        "name_en": "Zhongshan Elementary School",
+        "line_id": "O"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.526609,
+          25.062665
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "O11",
+        "name_zh": "民權西路",
+        "name_en": "Minquan W. Rd.",
+        "line_id": "O"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.519585,
+          25.06235
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "O12",
+        "name_zh": "大橋頭",
+        "name_en": "Daqiaotou",
+        "line_id": "O"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.513003,
+          25.06322
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "O13",
+        "name_zh": "台北橋",
+        "name_en": "Taipei Bridge",
+        "line_id": "O"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.500575,
+          25.063075
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "O14",
+        "name_zh": "菜寮",
+        "name_en": "Cailiao",
+        "line_id": "O"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.491451,
+          25.059808
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "O15",
+        "name_zh": "三重",
+        "name_en": "Sanchong",
+        "line_id": "O"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.48422,
+          25.05571
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "O16",
+        "name_zh": "先嗇宮",
+        "name_en": "Xianse Temple",
+        "line_id": "O"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.47165,
+          25.04632
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "O17",
+        "name_zh": "頭前庄",
+        "name_en": "Touqianzhuang",
+        "line_id": "O"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.460479,
+          25.039862
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "O18",
+        "name_zh": "新莊",
+        "name_en": "Xinzhuang",
+        "line_id": "O"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.45218,
+          25.03608
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "O19",
+        "name_zh": "輔大",
+        "name_en": "Fu Jen University",
+        "line_id": "O"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.435735,
+          25.03279
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "O20",
+        "name_zh": "丹鳳",
+        "name_en": "Danfeng",
+        "line_id": "O"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.422422,
+          25.029073
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "O21",
+        "name_zh": "迴龍",
+        "name_en": "Huilong",
+        "line_id": "O"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.411757,
+          25.022107
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "O50",
+        "name_zh": "三重國小",
+        "name_en": "Sanchong Elementary School",
+        "line_id": "O"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.49701,
+          25.070275
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "O51",
+        "name_zh": "三和國中",
+        "name_en": "Sanhe Junior High School",
+        "line_id": "O"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.486455,
+          25.076794
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "O52",
+        "name_zh": "徐匯中學",
+        "name_en": "St. Ignatius High School",
+        "line_id": "O"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.479945,
+          25.080485
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "O53",
+        "name_zh": "三民高中",
+        "name_en": "Sanmin Senior High School",
+        "line_id": "O"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.473365,
+          25.085425
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "O54",
+        "name_zh": "蘆洲",
+        "name_en": "Luzhou",
+        "line_id": "O"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.46471,
+          25.09152
+        ]
+      }
+    }
+  ]
+}

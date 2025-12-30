@@ -108,8 +108,32 @@ export function TimeControl({
 
       {/* 時間滑桿 */}
       <div style={{ marginBottom: 12 }}>
+        <style>
+          {`
+            .time-slider::-webkit-slider-thumb {
+              -webkit-appearance: none;
+              appearance: none;
+              width: 14px;
+              height: 14px;
+              border-radius: 50%;
+              background: white;
+              cursor: pointer;
+              box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+            }
+            .time-slider::-moz-range-thumb {
+              width: 14px;
+              height: 14px;
+              border-radius: 50%;
+              background: white;
+              cursor: pointer;
+              border: none;
+              box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+            }
+          `}
+        </style>
         <input
           type="range"
+          className="time-slider"
           min={minTime}
           max={maxTime}
           value={Math.max(minTime, Math.min(maxTime, timeSeconds))}
@@ -127,20 +151,30 @@ export function TimeControl({
             cursor: 'pointer',
           }}
         />
+        {/* 時間標籤 - 按照實際時間比例定位 */}
         <div
           style={{
-            display: 'flex',
-            justifyContent: 'space-between',
+            position: 'relative',
+            height: 16,
             fontSize: 11,
             color: '#666',
             marginTop: 4,
           }}
         >
-          <span>06:00</span>
-          <span>12:00</span>
-          <span>18:00</span>
-          <span>24:00</span>
-          <span>01:30</span>
+          {/*
+            時間範圍: 06:00 (21600s) - 01:30 (91800s) = 70200s
+            各時間點位置:
+            - 06:00 = 0%
+            - 12:00 = (43200-21600)/70200 = 30.77%
+            - 18:00 = (64800-21600)/70200 = 61.54%
+            - 24:00 = (86400-21600)/70200 = 92.31%
+            - 01:30 = 100%
+          */}
+          <span style={{ position: 'absolute', left: '0%', transform: 'translateX(0)' }}>06:00</span>
+          <span style={{ position: 'absolute', left: '30.77%', transform: 'translateX(-50%)' }}>12:00</span>
+          <span style={{ position: 'absolute', left: '61.54%', transform: 'translateX(-50%)' }}>18:00</span>
+          <span style={{ position: 'absolute', left: '92.31%', transform: 'translateX(-50%)' }}>24:00</span>
+          <span style={{ position: 'absolute', right: '0%', transform: 'translateX(0)' }}>01:30</span>
         </div>
       </div>
 

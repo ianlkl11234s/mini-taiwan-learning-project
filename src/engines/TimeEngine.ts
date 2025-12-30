@@ -184,6 +184,18 @@ export class TimeEngine {
     const simulatedDelta = realDelta * this.speed;
     this.currentTime = new Date(this.currentTime.getTime() + simulatedDelta);
 
+    // 檢查是否超過 01:30 (凌晨 1:30)，如果是則跳回 06:00
+    const hours = this.currentTime.getHours();
+    const minutes = this.currentTime.getMinutes();
+
+    // 01:30 ~ 05:59 範圍應該跳回 06:00
+    if (hours >= 1 && hours < 6) {
+      // 只有超過 01:30 才跳回
+      if (hours > 1 || (hours === 1 && minutes >= 30)) {
+        this.currentTime.setHours(6, 0, 0, 0);
+      }
+    }
+
     // 通知所有回調
     this.notifyCallbacks();
 

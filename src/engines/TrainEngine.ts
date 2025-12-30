@@ -292,6 +292,14 @@ export class TrainEngine {
           continue;
         }
 
+        // 跳過不同線路的列車 (不同月台，不需碰撞檢測)
+        // 例如：中正紀念堂站 R線和G線雖然座標相同，但實際是不同月台
+        const lineA = trainA.trackId.startsWith('BL') ? 'BL' : trainA.trackId[0];
+        const lineB = trainB.trackId.startsWith('BL') ? 'BL' : trainB.trackId[0];
+        if (lineA !== lineB) {
+          continue;
+        }
+
         const dist = this.calculateDistance(trainA.position, trainB.position);
 
         if (dist < COLLISION_THRESHOLD) {

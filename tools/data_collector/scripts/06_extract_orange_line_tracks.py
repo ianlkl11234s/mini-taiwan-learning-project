@@ -21,6 +21,7 @@ import json
 from pathlib import Path
 from typing import List, Dict, Any, Tuple
 from shapely.geometry import LineString, Point
+from shapely.ops import substring
 import math
 
 # 路徑設定
@@ -198,6 +199,39 @@ def calculate_station_progress(coords: List, stations: Dict, station_ids: List[s
     return progress
 
 
+def trim_track_to_stations(coords: List, stations: Dict, start_station: str, end_station: str) -> List:
+    """
+    裁剪軌道至起訖站位置
+
+    Args:
+        coords: 原始軌道座標
+        stations: 車站座標字典
+        start_station: 起點站 ID
+        end_station: 終點站 ID
+
+    Returns:
+        裁剪後的座標列表
+    """
+    line = LineString(coords)
+
+    # 計算起訖站在軌道上的投影位置
+    start_point = Point(stations[start_station])
+    end_point = Point(stations[end_station])
+
+    start_dist = line.project(start_point)
+    end_dist = line.project(end_point)
+
+    # 確保 start_dist < end_dist
+    if start_dist > end_dist:
+        start_dist, end_dist = end_dist, start_dist
+
+    # 使用 substring 裁剪軌道
+    trimmed_line = substring(line, start_dist, end_dist)
+
+    # 轉換為座標列表
+    return list(trimmed_line.coords)
+
+
 def main():
     print("=" * 70)
     print("O 線（中和新蘆線）軌道提取工具")
@@ -312,14 +346,25 @@ def main():
 
     # O-1: 新莊線全程 (O01→O21)
     # 共用段 + 新莊支線
-    o1_coords = shared_coords + xinzhuang_branch_coords[1:]  # 跳過支線第一點避免重複
+    o1_coords_raw = shared_coords + xinzhuang_branch_coords[1:]  # 跳過支線第一點避免重複
 
     # O-2: 蘆洲線全程 (O01→O54)
     # 共用段 + 蘆洲支線
-    o2_coords = shared_coords + luzhou_branch_coords[1:]  # 跳過支線第一點避免重複
+    o2_coords_raw = shared_coords + luzhou_branch_coords[1:]  # 跳過支線第一點避免重複
 
-    print(f"\n  O-1 (新莊線) 總座標點數: {len(o1_coords)}")
-    print(f"  O-2 (蘆洲線) 總座標點數: {len(o2_coords)}")
+    print(f"\n  O-1 (新莊線) 原始座標點數: {len(o1_coords_raw)}")
+    print(f"  O-2 (蘆洲線) 原始座標點數: {len(o2_coords_raw)}")
+
+    # === 裁剪軌道至終點站 ===
+    print("\n裁剪軌道至終點站...")
+
+    # 裁剪 O-1 (O01↔O21)
+    o1_coords = trim_track_to_stations(o1_coords_raw, station_coords, 'O01', 'O21')
+    print(f"  O-1 裁剪後座標點數: {len(o1_coords)}")
+
+    # 裁剪 O-2 (O01↔O54)
+    o2_coords = trim_track_to_stations(o2_coords_raw, station_coords, 'O01', 'O54')
+    print(f"  O-2 裁剪後座標點數: {len(o2_coords)}")
 
     # === 驗證軌道 ===
     print("\n驗證軌道...")

@@ -98,13 +98,14 @@ def time_to_seconds(time_str: str) -> int:
 
 def classify_train(schedule: List[Dict]) -> tuple:
     """
-    分類列車
+    分類列車（只保留全程車，過濾首班車/區間車）
 
     Returns:
         (route_id, direction, stations_list)
         - route_id: "O-1" (新莊線) 或 "O-2" (蘆洲線)
         - direction: 0 (往南勢角) 或 1 (往迴龍/蘆洲)
         - stations_list: 標準站點順序
+        - 如果不是全程車，返回 (None, None, None)
     """
     if not schedule:
         return None, None, None
@@ -112,32 +113,28 @@ def classify_train(schedule: List[Dict]) -> tuple:
     first_station = schedule[0]['StationCode']
     last_station = schedule[-1]['StationCode']
 
-    # 判斷是新莊線還是蘆洲線
-    stations_in_train = [s['StationCode'] for s in schedule]
+    # 只保留全程車（從終點站發車到終點站）
+    # 有效的全程車模式：
+    # - O21 → O01 (新莊線往南勢角)
+    # - O01 → O21 (新莊線往迴龍)
+    # - O54 → O01 (蘆洲線往南勢角)
+    # - O01 → O54 (蘆洲線往蘆洲)
 
-    # 檢查是否包含蘆洲線特有站點 (O50-O54)
-    has_luzhou = any(s.startswith('O5') for s in stations_in_train)
-
-    if has_luzhou:
-        route_id = "O-2"
-        # 判斷方向
-        if first_station in ['O54', 'O53', 'O52', 'O51', 'O50']:
-            direction = 0  # 往南勢角
-            stations_list = LUZHOU_STATIONS
-        else:
-            direction = 1  # 往蘆洲
-            stations_list = list(reversed(LUZHOU_STATIONS))
+    if first_station == 'O21' and last_station == 'O01':
+        # 新莊線往南勢角
+        return "O-1", 0, XINZHUANG_STATIONS
+    elif first_station == 'O01' and last_station == 'O21':
+        # 新莊線往迴龍
+        return "O-1", 1, list(reversed(XINZHUANG_STATIONS))
+    elif first_station == 'O54' and last_station == 'O01':
+        # 蘆洲線往南勢角
+        return "O-2", 0, LUZHOU_STATIONS
+    elif first_station == 'O01' and last_station == 'O54':
+        # 蘆洲線往蘆洲
+        return "O-2", 1, list(reversed(LUZHOU_STATIONS))
     else:
-        route_id = "O-1"
-        # 判斷方向
-        if first_station in ['O21', 'O20', 'O19', 'O18', 'O17']:
-            direction = 0  # 往南勢角
-            stations_list = XINZHUANG_STATIONS
-        else:
-            direction = 1  # 往迴龍
-            stations_list = list(reversed(XINZHUANG_STATIONS))
-
-    return route_id, direction, stations_list
+        # 首班車或區間車，忽略
+        return None, None, None
 
 
 def convert_train(train: Dict, route_id: str, direction: int, stations_list: List[str], train_num: int) -> Dict:
@@ -198,14 +195,19 @@ def main():
     ericyu_data = load_json(source_file)
     print(f"\n載入 ericyu_O.json")
 
-    # 收集所有班次
+    # 收集平日班次 (Days="1,2,3,4,5")
+    # 注意：原始資料包含平日和假日時刻表，我們只使用平日的
     all_trains = []
     for direction_data in ericyu_data:
         for timetable in direction_data.get('Timetables', []):
-            for train in timetable.get('Trains', []):
-                all_trains.append(train)
+            days = timetable.get('Days', '')
+            # 只取平日時刻表
+            if '1,2,3,4,5' in days:
+                for train in timetable.get('Trains', []):
+                    all_trains.append(train)
+                print(f"  使用 {direction_data.get('Direction', '')} 方向平日時刻表: {len(timetable.get('Trains', []))} 班次")
 
-    print(f"  總班次數: {len(all_trains)}")
+    print(f"  平日總班次數: {len(all_trains)}")
 
     # 分類班次
     classified = defaultdict(list)

@@ -80,26 +80,29 @@ export function TimeControl({
           {currentTime}
         </div>
 
-        {/* 列車數量 */}
-        <div
-          style={{
-            display: 'flex',
-            alignItems: 'center',
-            gap: 8,
-            fontSize: 14,
-            color: '#aaa',
-          }}
-        >
-          <span
+        {/* 右側：列車數量 */}
+        <div style={{ display: 'flex', alignItems: 'center', gap: 16 }}>
+          {/* 列車數量 */}
+          <div
             style={{
-              display: 'inline-block',
-              width: 10,
-              height: 10,
-              background: '#d90023',
-              borderRadius: '50%',
+              display: 'flex',
+              alignItems: 'center',
+              gap: 8,
+              fontSize: 14,
+              color: '#aaa',
             }}
-          />
-          <span>運行中列車: {trainCount}</span>
+          >
+            <span
+              style={{
+                display: 'inline-block',
+                width: 10,
+                height: 10,
+                background: '#d90023',
+                borderRadius: '50%',
+              }}
+            />
+            <span>運行中列車: {trainCount}</span>
+          </div>
         </div>
       </div>
 

@@ -1,10 +1,13 @@
-import { useEffect, useRef, useState, useCallback } from 'react';
+import { useEffect, useRef, useState, useCallback, useMemo } from 'react';
 import mapboxgl from 'mapbox-gl';
 import 'mapbox-gl/dist/mapbox-gl.css';
 import { useData } from './hooks/useData';
 import { TimeEngine } from './engines/TimeEngine';
 import { TrainEngine, type Train } from './engines/TrainEngine';
 import { TimeControl } from './components/TimeControl';
+import { LineFilter } from './components/LineFilter';
+import { TrainHistogram } from './components/TrainHistogram';
+import { useTrainCountHistogram } from './hooks/useTrainCountHistogram';
 
 // 設定 Mapbox Token
 mapboxgl.accessToken = import.meta.env.VITE_MAPBOX_TOKEN || '';
@@ -54,6 +57,9 @@ function App() {
   // 資料載入
   const { tracks, stations, schedules, trackMap, stationProgress, loading, error } = useData();
 
+  // 預計算直方圖資料
+  const histogramData = useTrainCountHistogram(schedules);
+
   // 地圖狀態
   const mapContainer = useRef<HTMLDivElement>(null);
   const map = useRef<mapboxgl.Map | null>(null);
@@ -70,6 +76,45 @@ function App() {
   // 列車引擎
   const trainEngineRef = useRef<TrainEngine | null>(null);
   const [trains, setTrains] = useState<Train[]>([]);
+
+  // 圖例收合狀態（預設收合）
+  const [legendCollapsed, setLegendCollapsed] = useState(true);
+
+  // 路線篩選狀態
+  const [visibleLines, setVisibleLines] = useState<Set<string>>(
+    new Set(['R', 'BL', 'G', 'O'])
+  );
+
+  // 切換路線可見性
+  const handleToggleLine = useCallback((lineId: string) => {
+    setVisibleLines(prev => {
+      const next = new Set(prev);
+      if (next.has(lineId)) {
+        next.delete(lineId);
+      } else {
+        next.add(lineId);
+      }
+      return next;
+    });
+  }, []);
+
+  // 根據可見路線過濾列車
+  const filteredTrains = useMemo(() => {
+    return trains.filter(train => {
+      // 從 trackId 判斷路線
+      let lineId: string;
+      if (train.trackId.startsWith('BL')) {
+        lineId = 'BL';
+      } else if (train.trackId.startsWith('G')) {
+        lineId = 'G';
+      } else if (train.trackId.startsWith('O')) {
+        lineId = 'O';
+      } else {
+        lineId = 'R';
+      }
+      return visibleLines.has(lineId);
+    });
+  }, [trains, visibleLines]);
 
   // 初始化地圖 - 當 loading 完成後才初始化
   useEffect(() => {
@@ -149,6 +194,34 @@ function App() {
     });
   }, [mapLoaded, tracks]);
 
+  // 更新軌道可見性（當 visibleLines 變化時）
+  useEffect(() => {
+    if (!map.current || !mapLoaded) return;
+    if (!map.current.getLayer('tracks-line')) return;
+
+    // 根據 visibleLines 動態設定 opacity
+    map.current.setPaintProperty('tracks-line', 'line-opacity', [
+      'case',
+      ['all',
+        ['==', ['slice', ['get', 'track_id'], 0, 2], 'R-'],
+        visibleLines.has('R')
+      ], 0.8,
+      ['all',
+        ['==', ['slice', ['get', 'track_id'], 0, 3], 'BL-'],
+        visibleLines.has('BL')
+      ], 0.8,
+      ['all',
+        ['==', ['slice', ['get', 'track_id'], 0, 2], 'G-'],
+        visibleLines.has('G')
+      ], 0.8,
+      ['all',
+        ['==', ['slice', ['get', 'track_id'], 0, 2], 'O-'],
+        visibleLines.has('O')
+      ], 0.8,
+      0.0
+    ]);
+  }, [mapLoaded, visibleLines]);
+
   // 載入車站圖層
   useEffect(() => {
     if (!map.current || !mapLoaded || !stations) return;
@@ -200,6 +273,42 @@ function App() {
       },
     });
   }, [mapLoaded, stations]);
+
+  // 更新車站可見性（當 visibleLines 變化時）
+  useEffect(() => {
+    if (!map.current || !mapLoaded) return;
+    if (!map.current.getLayer('stations-circle')) return;
+
+    // 根據 visibleLines 動態設定車站 opacity
+    const stationOpacityExpr: mapboxgl.Expression = [
+      'case',
+      ['all',
+        ['==', ['slice', ['get', 'station_id'], 0, 1], 'R'],
+        visibleLines.has('R')
+      ], 1,
+      ['all',
+        ['==', ['slice', ['get', 'station_id'], 0, 2], 'BL'],
+        visibleLines.has('BL')
+      ], 1,
+      ['all',
+        ['==', ['slice', ['get', 'station_id'], 0, 1], 'G'],
+        visibleLines.has('G')
+      ], 1,
+      ['all',
+        ['==', ['slice', ['get', 'station_id'], 0, 1], 'O'],
+        visibleLines.has('O')
+      ], 1,
+      0
+    ];
+
+    map.current.setPaintProperty('stations-circle', 'circle-opacity', stationOpacityExpr);
+    map.current.setPaintProperty('stations-circle', 'circle-stroke-opacity', stationOpacityExpr);
+    map.current.setLayoutProperty('stations-label', 'visibility',
+      visibleLines.size > 0 ? 'visible' : 'none'
+    );
+    // 標籤使用相同的 opacity 邏輯
+    map.current.setPaintProperty('stations-label', 'text-opacity', stationOpacityExpr);
+  }, [mapLoaded, visibleLines]);
 
   // 初始化時間引擎
   useEffect(() => {
@@ -261,7 +370,7 @@ function App() {
   useEffect(() => {
     if (!map.current || !mapLoaded) return;
 
-    const activeTrainIds = new Set(trains.map((t) => t.trainId));
+    const activeTrainIds = new Set(filteredTrains.map((t) => t.trainId));
     for (const [trainId, marker] of trainMarkers.current) {
       if (!activeTrainIds.has(trainId)) {
         marker.remove();
@@ -269,7 +378,7 @@ function App() {
       }
     }
 
-    for (const train of trains) {
+    for (const train of filteredTrains) {
       let marker = trainMarkers.current.get(train.trainId);
       const isStopped = train.status === 'stopped';
       const isColliding = train.isColliding;
@@ -336,7 +445,7 @@ function App() {
         `;
       }
     }
-  }, [mapLoaded, trains]);
+  }, [mapLoaded, filteredTrains]);
 
   // 控制處理器
   const handleTogglePlay = useCallback(() => {
@@ -422,7 +531,7 @@ function App() {
           Mini Taipei V3
         </h1>
         <p style={{ margin: '4px 0 0', fontSize: 14, color: '#888' }}>
-          淡水信義線 + 板南線 + 松山新店線 + 中和新蘆線 模擬
+          台北交通運輸模擬
         </p>
       </div>
 
@@ -441,81 +550,112 @@ function App() {
           fontSize: 12,
         }}
       >
-        <div style={{ marginBottom: 8, fontWeight: 600, color: '#aaa' }}>圖例</div>
-
-        {/* 紅線區塊 */}
-        <div style={{ marginBottom: 10 }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 4 }}>
-            <div style={{ width: 20, height: 3, background: TRACK_COLORS.R, borderRadius: 2 }} />
-            <span style={{ fontWeight: 500 }}>淡水信義線</span>
-          </div>
-          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 2, marginLeft: 8 }}>
-            <div style={{ width: 8, height: 8, background: TRAIN_COLORS.R_0, borderRadius: '50%', border: '1px solid white' }} />
-            <span style={{ color: '#ccc' }}>往淡水</span>
-          </div>
-          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginLeft: 8 }}>
-            <div style={{ width: 8, height: 8, background: TRAIN_COLORS.R_1, borderRadius: '50%', border: '1px solid white' }} />
-            <span style={{ color: '#ccc' }}>往象山</span>
-          </div>
+        {/* 可點擊的標題 */}
+        <div
+          onClick={() => setLegendCollapsed(!legendCollapsed)}
+          style={{
+            display: 'flex',
+            alignItems: 'center',
+            gap: 6,
+            cursor: 'pointer',
+            userSelect: 'none',
+            marginBottom: legendCollapsed ? 0 : 8,
+          }}
+        >
+          <span style={{
+            fontSize: 10,
+            transition: 'transform 0.3s ease',
+            transform: legendCollapsed ? 'rotate(-90deg)' : 'rotate(0deg)',
+            display: 'inline-block',
+          }}>
+            ▼
+          </span>
+          <span style={{ fontWeight: 600, color: '#aaa' }}>圖例</span>
         </div>
 
-        {/* 藍線區塊 */}
-        <div style={{ marginBottom: 10 }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 4 }}>
-            <div style={{ width: 20, height: 3, background: TRACK_COLORS.BL, borderRadius: 2 }} />
-            <span style={{ fontWeight: 500 }}>板南線</span>
+        {/* 可收合內容區 */}
+        <div
+          style={{
+            maxHeight: legendCollapsed ? 0 : 400,
+            overflow: 'hidden',
+            transition: 'max-height 0.3s ease-out, opacity 0.3s ease-out',
+            opacity: legendCollapsed ? 0 : 1,
+          }}
+        >
+          {/* 紅線區塊 */}
+          <div style={{ marginBottom: 10 }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 4 }}>
+              <div style={{ width: 20, height: 3, background: TRACK_COLORS.R, borderRadius: 2 }} />
+              <span style={{ fontWeight: 500 }}>淡水信義線</span>
+            </div>
+            <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 2, marginLeft: 8 }}>
+              <div style={{ width: 8, height: 8, background: TRAIN_COLORS.R_0, borderRadius: '50%', border: '1px solid white' }} />
+              <span style={{ color: '#ccc' }}>往淡水</span>
+            </div>
+            <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginLeft: 8 }}>
+              <div style={{ width: 8, height: 8, background: TRAIN_COLORS.R_1, borderRadius: '50%', border: '1px solid white' }} />
+              <span style={{ color: '#ccc' }}>往象山</span>
+            </div>
           </div>
-          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 2, marginLeft: 8 }}>
-            <div style={{ width: 8, height: 8, background: TRAIN_COLORS.BL_0, borderRadius: '50%', border: '1px solid white' }} />
-            <span style={{ color: '#ccc' }}>往南港展覽館</span>
-          </div>
-          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginLeft: 8 }}>
-            <div style={{ width: 8, height: 8, background: TRAIN_COLORS.BL_1, borderRadius: '50%', border: '1px solid white' }} />
-            <span style={{ color: '#ccc' }}>往頂埔</span>
-          </div>
-        </div>
 
-        {/* 綠線區塊 */}
-        <div style={{ marginBottom: 10 }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 4 }}>
-            <div style={{ width: 20, height: 3, background: TRACK_COLORS.G, borderRadius: 2 }} />
-            <span style={{ fontWeight: 500 }}>松山新店線</span>
+          {/* 藍線區塊 */}
+          <div style={{ marginBottom: 10 }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 4 }}>
+              <div style={{ width: 20, height: 3, background: TRACK_COLORS.BL, borderRadius: 2 }} />
+              <span style={{ fontWeight: 500 }}>板南線</span>
+            </div>
+            <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 2, marginLeft: 8 }}>
+              <div style={{ width: 8, height: 8, background: TRAIN_COLORS.BL_0, borderRadius: '50%', border: '1px solid white' }} />
+              <span style={{ color: '#ccc' }}>往南港展覽館</span>
+            </div>
+            <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginLeft: 8 }}>
+              <div style={{ width: 8, height: 8, background: TRAIN_COLORS.BL_1, borderRadius: '50%', border: '1px solid white' }} />
+              <span style={{ color: '#ccc' }}>往頂埔</span>
+            </div>
           </div>
-          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 2, marginLeft: 8 }}>
-            <div style={{ width: 8, height: 8, background: TRAIN_COLORS.G_0, borderRadius: '50%', border: '1px solid white' }} />
-            <span style={{ color: '#ccc' }}>往新店</span>
-          </div>
-          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginLeft: 8 }}>
-            <div style={{ width: 8, height: 8, background: TRAIN_COLORS.G_1, borderRadius: '50%', border: '1px solid white' }} />
-            <span style={{ color: '#ccc' }}>往松山</span>
-          </div>
-        </div>
 
-        {/* 小碧潭支線區塊 */}
-        <div style={{ marginBottom: 10 }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 4 }}>
-            <div style={{ width: 20, height: 3, background: TRACK_COLORS.G3, borderRadius: 2 }} />
-            <span style={{ fontWeight: 500 }}>小碧潭支線</span>
+          {/* 綠線區塊 */}
+          <div style={{ marginBottom: 10 }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 4 }}>
+              <div style={{ width: 20, height: 3, background: TRACK_COLORS.G, borderRadius: 2 }} />
+              <span style={{ fontWeight: 500 }}>松山新店線</span>
+            </div>
+            <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 2, marginLeft: 8 }}>
+              <div style={{ width: 8, height: 8, background: TRAIN_COLORS.G_0, borderRadius: '50%', border: '1px solid white' }} />
+              <span style={{ color: '#ccc' }}>往新店</span>
+            </div>
+            <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginLeft: 8 }}>
+              <div style={{ width: 8, height: 8, background: TRAIN_COLORS.G_1, borderRadius: '50%', border: '1px solid white' }} />
+              <span style={{ color: '#ccc' }}>往松山</span>
+            </div>
           </div>
-          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginLeft: 8 }}>
-            <div style={{ width: 8, height: 8, background: TRACK_COLORS.G3, borderRadius: '50%', border: '1px solid white' }} />
-            <span style={{ color: '#ccc' }}>七張↔小碧潭</span>
-          </div>
-        </div>
 
-        {/* 橘線區塊 */}
-        <div>
-          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 4 }}>
-            <div style={{ width: 20, height: 3, background: TRACK_COLORS.O, borderRadius: 2 }} />
-            <span style={{ fontWeight: 500 }}>中和新蘆線</span>
+          {/* 小碧潭支線區塊 */}
+          <div style={{ marginBottom: 10 }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 4 }}>
+              <div style={{ width: 20, height: 3, background: TRACK_COLORS.G3, borderRadius: 2 }} />
+              <span style={{ fontWeight: 500 }}>小碧潭支線</span>
+            </div>
+            <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginLeft: 8 }}>
+              <div style={{ width: 8, height: 8, background: TRACK_COLORS.G3, borderRadius: '50%', border: '1px solid white' }} />
+              <span style={{ color: '#ccc' }}>七張↔小碧潭</span>
+            </div>
           </div>
-          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 2, marginLeft: 8 }}>
-            <div style={{ width: 8, height: 8, background: TRAIN_COLORS.O_0, borderRadius: '50%', border: '1px solid white' }} />
-            <span style={{ color: '#ccc' }}>往南勢角</span>
-          </div>
-          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginLeft: 8 }}>
-            <div style={{ width: 8, height: 8, background: TRAIN_COLORS.O_1, borderRadius: '50%', border: '1px solid white' }} />
-            <span style={{ color: '#ccc' }}>往迴龍/蘆洲</span>
+
+          {/* 橘線區塊 */}
+          <div>
+            <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 4 }}>
+              <div style={{ width: 20, height: 3, background: TRACK_COLORS.O, borderRadius: 2 }} />
+              <span style={{ fontWeight: 500 }}>中和新蘆線</span>
+            </div>
+            <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 2, marginLeft: 8 }}>
+              <div style={{ width: 8, height: 8, background: TRAIN_COLORS.O_0, borderRadius: '50%', border: '1px solid white' }} />
+              <span style={{ color: '#ccc' }}>往南勢角</span>
+            </div>
+            <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginLeft: 8 }}>
+              <div style={{ width: 8, height: 8, background: TRAIN_COLORS.O_1, borderRadius: '50%', border: '1px solid white' }} />
+              <span style={{ color: '#ccc' }}>往迴龍/蘆洲</span>
+            </div>
           </div>
         </div>
       </div>
@@ -574,12 +714,37 @@ function App() {
         }}
       />
 
+      {/* 路線篩選器 - 控制面板左上方漂浮 */}
+      <LineFilter
+        visibleLines={visibleLines}
+        onToggleLine={handleToggleLine}
+      />
+
+      {/* 列車數量直方圖 - 控制面板右上方漂浮 */}
+      {timeEngineRef.current && (
+        <div
+          style={{
+            position: 'absolute',
+            bottom: 205,
+            right: 20,
+            zIndex: 10,
+          }}
+        >
+          <TrainHistogram
+            data={histogramData}
+            currentTimeSeconds={timeEngineRef.current.getTimeOfDaySeconds()}
+            width={200}
+            height={50}
+          />
+        </div>
+      )}
+
       {/* 時間控制 */}
       {timeEngineRef.current && (
         <TimeControl
           timeEngine={timeEngineRef.current}
           currentTime={currentTime}
-          trainCount={trains.length}
+          trainCount={filteredTrains.length}
           isPlaying={isPlaying}
           speed={speed}
           onTogglePlay={handleTogglePlay}

@@ -304,6 +304,22 @@
           25.050118
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "G03A",
+        "name_zh": "小碧潭",
+        "name_en": "Xiaobitan",
+        "line_id": "G"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.529776,
+          24.972208
+        ]
+      }
     }
   ]
 }

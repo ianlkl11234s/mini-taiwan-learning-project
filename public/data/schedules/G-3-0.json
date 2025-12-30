@@ -1,0 +1,1938 @@
+{
+  "track_id": "G-3-0",
+  "route_id": "G-3",
+  "name": "七張 → 小碧潭",
+  "origin": "G03",
+  "destination": "G03A",
+  "stations": [
+    "G03",
+    "G03A"
+  ],
+  "travel_time_minutes": 4,
+  "dwell_time_seconds": 30,
+  "is_weekday": true,
+  "departure_count": 113,
+  "departures": [
+    {
+      "departure_time": "06:00:00",
+      "train_id": "G-3-0-001",
+      "stations": [
+        {
+          "station_id": "G03",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "G03A",
+          "arrival": 210,
+          "departure": 210
+        }
+      ],
+      "total_travel_time": 210
+    },
+    {
+      "departure_time": "06:13:30",
+      "train_id": "G-3-0-002",
+      "stations": [
+        {
+          "station_id": "G03",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "G03A",
+          "arrival": 210,
+          "departure": 210
+        }
+      ],
+      "total_travel_time": 210
+    },
+    {
+      "departure_time": "06:27:00",
+      "train_id": "G-3-0-003",
+      "stations": [
+        {
+          "station_id": "G03",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "G03A",
+          "arrival": 210,
+          "departure": 210
+        }
+      ],
+      "total_travel_time": 210
+    },
+    {
+      "departure_time": "06:40:30",
+      "train_id": "G-3-0-004",
+      "stations": [
+        {
+          "station_id": "G03",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "G03A",
+          "arrival": 210,
+          "departure": 210
+        }
+      ],
+      "total_travel_time": 210
+    },
+    {
+      "departure_time": "06:54:00",
+      "train_id": "G-3-0-005",
+      "stations": [
+        {
+          "station_id": "G03",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "G03A",
+          "arrival": 210,
+          "departure": 210
+        }
+      ],
+      "total_travel_time": 210
+    },
+    {
+      "departure_time": "07:07:30",
+      "train_id": "G-3-0-006",
+      "stations": [
+        {
+          "station_id": "G03",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "G03A",
+          "arrival": 210,
+          "departure": 210
+        }
+      ],
+      "total_travel_time": 210
+    },
+    {
+      "departure_time": "07:15:00",
+      "train_id": "G-3-0-007",
+      "stations": [
+        {
+          "station_id": "G03",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "G03A",
+          "arrival": 210,
+          "departure": 210
+        }
+      ],
+      "total_travel_time": 210
+    },
+    {
+      "departure_time": "07:22:30",
+      "train_id": "G-3-0-008",
+      "stations": [
+        {
+          "station_id": "G03",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "G03A",
+          "arrival": 210,
+          "departure": 210
+        }
+      ],
+      "total_travel_time": 210
+    },
+    {
+      "departure_time": "07:30:00",
+      "train_id": "G-3-0-009",
+      "stations": [
+        {
+          "station_id": "G03",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "G03A",
+          "arrival": 210,
+          "departure": 210
+        }
+      ],
+      "total_travel_time": 210
+    },
+    {
+      "departure_time": "07:37:30",
+      "train_id": "G-3-0-010",
+      "stations": [
+        {
+          "station_id": "G03",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "G03A",
+          "arrival": 210,
+          "departure": 210
+        }
+      ],
+      "total_travel_time": 210
+    },
+    {
+      "departure_time": "07:45:00",
+      "train_id": "G-3-0-011",
+      "stations": [
+        {
+          "station_id": "G03",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "G03A",
+          "arrival": 210,
+          "departure": 210
+        }
+      ],
+      "total_travel_time": 210
+    },
+    {
+      "departure_time": "07:52:30",
+      "train_id": "G-3-0-012",
+      "stations": [
+        {
+          "station_id": "G03",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "G03A",
+          "arrival": 210,
+          "departure": 210
+        }
+      ],
+      "total_travel_time": 210
+    },
+    {
+      "departure_time": "08:00:00",
+      "train_id": "G-3-0-013",
+      "stations": [
+        {
+          "station_id": "G03",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "G03A",
+          "arrival": 210,
+          "departure": 210
+        }
+      ],
+      "total_travel_time": 210
+    },
+    {
+      "departure_time": "08:07:30",
+      "train_id": "G-3-0-014",
+      "stations": [
+        {
+          "station_id": "G03",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "G03A",
+          "arrival": 210,
+          "departure": 210
+        }
+      ],
+      "total_travel_time": 210
+    },
+    {
+      "departure_time": "08:15:00",
+      "train_id": "G-3-0-015",
+      "stations": [
+        {
+          "station_id": "G03",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "G03A",
+          "arrival": 210,
+          "departure": 210
+        }
+      ],
+      "total_travel_time": 210
+    },
+    {
+      "departure_time": "08:22:30",
+      "train_id": "G-3-0-016",
+      "stations": [
+        {
+          "station_id": "G03",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "G03A",
+          "arrival": 210,
+          "departure": 210
+        }
+      ],
+      "total_travel_time": 210
+    },
+    {
+      "departure_time": "08:30:00",
+      "train_id": "G-3-0-017",
+      "stations": [
+        {
+          "station_id": "G03",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "G03A",
+          "arrival": 210,
+          "departure": 210
+        }
+      ],
+      "total_travel_time": 210
+    },
+    {
+      "departure_time": "08:37:30",
+      "train_id": "G-3-0-018",
+      "stations": [
+        {
+          "station_id": "G03",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "G03A",
+          "arrival": 210,
+          "departure": 210
+        }
+      ],
+      "total_travel_time": 210
+    },
+    {
+      "departure_time": "08:45:00",
+      "train_id": "G-3-0-019",
+      "stations": [
+        {
+          "station_id": "G03",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "G03A",
+          "arrival": 210,
+          "departure": 210
+        }
+      ],
+      "total_travel_time": 210
+    },
+    {
+      "departure_time": "08:52:30",
+      "train_id": "G-3-0-020",
+      "stations": [
+        {
+          "station_id": "G03",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "G03A",
+          "arrival": 210,
+          "departure": 210
+        }
+      ],
+      "total_travel_time": 210
+    },
+    {
+      "departure_time": "09:00:00",
+      "train_id": "G-3-0-021",
+      "stations": [
+        {
+          "station_id": "G03",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "G03A",
+          "arrival": 210,
+          "departure": 210
+        }
+      ],
+      "total_travel_time": 210
+    },
+    {
+      "departure_time": "09:10:00",
+      "train_id": "G-3-0-022",
+      "stations": [
+        {
+          "station_id": "G03",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "G03A",
+          "arrival": 210,
+          "departure": 210
+        }
+      ],
+      "total_travel_time": 210
+    },
+    {
+      "departure_time": "09:20:00",
+      "train_id": "G-3-0-023",
+      "stations": [
+        {
+          "station_id": "G03",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "G03A",
+          "arrival": 210,
+          "departure": 210
+        }
+      ],
+      "total_travel_time": 210
+    },
+    {
+      "departure_time": "09:30:00",
+      "train_id": "G-3-0-024",
+      "stations": [
+        {
+          "station_id": "G03",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "G03A",
+          "arrival": 210,
+          "departure": 210
+        }
+      ],
+      "total_travel_time": 210
+    },
+    {
+      "departure_time": "09:40:00",
+      "train_id": "G-3-0-025",
+      "stations": [
+        {
+          "station_id": "G03",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "G03A",
+          "arrival": 210,
+          "departure": 210
+        }
+      ],
+      "total_travel_time": 210
+    },
+    {
+      "departure_time": "09:50:00",
+      "train_id": "G-3-0-026",
+      "stations": [
+        {
+          "station_id": "G03",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "G03A",
+          "arrival": 210,
+          "departure": 210
+        }
+      ],
+      "total_travel_time": 210
+    },
+    {
+      "departure_time": "10:00:00",
+      "train_id": "G-3-0-027",
+      "stations": [
+        {
+          "station_id": "G03",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "G03A",
+          "arrival": 210,
+          "departure": 210
+        }
+      ],
+      "total_travel_time": 210
+    },
+    {
+      "departure_time": "10:10:00",
+      "train_id": "G-3-0-028",
+      "stations": [
+        {
+          "station_id": "G03",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "G03A",
+          "arrival": 210,
+          "departure": 210
+        }
+      ],
+      "total_travel_time": 210
+    },
+    {
+      "departure_time": "10:20:00",
+      "train_id": "G-3-0-029",
+      "stations": [
+        {
+          "station_id": "G03",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "G03A",
+          "arrival": 210,
+          "departure": 210
+        }
+      ],
+      "total_travel_time": 210
+    },
+    {
+      "departure_time": "10:30:00",
+      "train_id": "G-3-0-030",
+      "stations": [
+        {
+          "station_id": "G03",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "G03A",
+          "arrival": 210,
+          "departure": 210
+        }
+      ],
+      "total_travel_time": 210
+    },
+    {
+      "departure_time": "10:40:00",
+      "train_id": "G-3-0-031",
+      "stations": [
+        {
+          "station_id": "G03",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "G03A",
+          "arrival": 210,
+          "departure": 210
+        }
+      ],
+      "total_travel_time": 210
+    },
+    {
+      "departure_time": "10:50:00",
+      "train_id": "G-3-0-032",
+      "stations": [
+        {
+          "station_id": "G03",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "G03A",
+          "arrival": 210,
+          "departure": 210
+        }
+      ],
+      "total_travel_time": 210
+    },
+    {
+      "departure_time": "11:00:00",
+      "train_id": "G-3-0-033",
+      "stations": [
+        {
+          "station_id": "G03",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "G03A",
+          "arrival": 210,
+          "departure": 210
+        }
+      ],
+      "total_travel_time": 210
+    },
+    {
+      "departure_time": "11:10:00",
+      "train_id": "G-3-0-034",
+      "stations": [
+        {
+          "station_id": "G03",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "G03A",
+          "arrival": 210,
+          "departure": 210
+        }
+      ],
+      "total_travel_time": 210
+    },
+    {
+      "departure_time": "11:20:00",
+      "train_id": "G-3-0-035",
+      "stations": [
+        {
+          "station_id": "G03",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "G03A",
+          "arrival": 210,
+          "departure": 210
+        }
+      ],
+      "total_travel_time": 210
+    },
+    {
+      "departure_time": "11:30:00",
+      "train_id": "G-3-0-036",
+      "stations": [
+        {
+          "station_id": "G03",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "G03A",
+          "arrival": 210,
+          "departure": 210
+        }
+      ],
+      "total_travel_time": 210
+    },
+    {
+      "departure_time": "11:40:00",
+      "train_id": "G-3-0-037",
+      "stations": [
+        {
+          "station_id": "G03",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "G03A",
+          "arrival": 210,
+          "departure": 210
+        }
+      ],
+      "total_travel_time": 210
+    },
+    {
+      "departure_time": "11:50:00",
+      "train_id": "G-3-0-038",
+      "stations": [
+        {
+          "station_id": "G03",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "G03A",
+          "arrival": 210,
+          "departure": 210
+        }
+      ],
+      "total_travel_time": 210
+    },
+    {
+      "departure_time": "12:00:00",
+      "train_id": "G-3-0-039",
+      "stations": [
+        {
+          "station_id": "G03",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "G03A",
+          "arrival": 210,
+          "departure": 210
+        }
+      ],
+      "total_travel_time": 210
+    },
+    {
+      "departure_time": "12:10:00",
+      "train_id": "G-3-0-040",
+      "stations": [
+        {
+          "station_id": "G03",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "G03A",
+          "arrival": 210,
+          "departure": 210
+        }
+      ],
+      "total_travel_time": 210
+    },
+    {
+      "departure_time": "12:20:00",
+      "train_id": "G-3-0-041",
+      "stations": [
+        {
+          "station_id": "G03",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "G03A",
+          "arrival": 210,
+          "departure": 210
+        }
+      ],
+      "total_travel_time": 210
+    },
+    {
+      "departure_time": "12:30:00",
+      "train_id": "G-3-0-042",
+      "stations": [
+        {
+          "station_id": "G03",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "G03A",
+          "arrival": 210,
+          "departure": 210
+        }
+      ],
+      "total_travel_time": 210
+    },
+    {
+      "departure_time": "12:40:00",
+      "train_id": "G-3-0-043",
+      "stations": [
+        {
+          "station_id": "G03",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "G03A",
+          "arrival": 210,
+          "departure": 210
+        }
+      ],
+      "total_travel_time": 210
+    },
+    {
+      "departure_time": "12:50:00",
+      "train_id": "G-3-0-044",
+      "stations": [
+        {
+          "station_id": "G03",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "G03A",
+          "arrival": 210,
+          "departure": 210
+        }
+      ],
+      "total_travel_time": 210
+    },
+    {
+      "departure_time": "13:00:00",
+      "train_id": "G-3-0-045",
+      "stations": [
+        {
+          "station_id": "G03",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "G03A",
+          "arrival": 210,
+          "departure": 210
+        }
+      ],
+      "total_travel_time": 210
+    },
+    {
+      "departure_time": "13:10:00",
+      "train_id": "G-3-0-046",
+      "stations": [
+        {
+          "station_id": "G03",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "G03A",
+          "arrival": 210,
+          "departure": 210
+        }
+      ],
+      "total_travel_time": 210
+    },
+    {
+      "departure_time": "13:20:00",
+      "train_id": "G-3-0-047",
+      "stations": [
+        {
+          "station_id": "G03",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "G03A",
+          "arrival": 210,
+          "departure": 210
+        }
+      ],
+      "total_travel_time": 210
+    },
+    {
+      "departure_time": "13:30:00",
+      "train_id": "G-3-0-048",
+      "stations": [
+        {
+          "station_id": "G03",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "G03A",
+          "arrival": 210,
+          "departure": 210
+        }
+      ],
+      "total_travel_time": 210
+    },
+    {
+      "departure_time": "13:40:00",
+      "train_id": "G-3-0-049",
+      "stations": [
+        {
+          "station_id": "G03",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "G03A",
+          "arrival": 210,
+          "departure": 210
+        }
+      ],
+      "total_travel_time": 210
+    },
+    {
+      "departure_time": "13:50:00",
+      "train_id": "G-3-0-050",
+      "stations": [
+        {
+          "station_id": "G03",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "G03A",
+          "arrival": 210,
+          "departure": 210
+        }
+      ],
+      "total_travel_time": 210
+    },
+    {
+      "departure_time": "14:00:00",
+      "train_id": "G-3-0-051",
+      "stations": [
+        {
+          "station_id": "G03",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "G03A",
+          "arrival": 210,
+          "departure": 210
+        }
+      ],
+      "total_travel_time": 210
+    },
+    {
+      "departure_time": "14:10:00",
+      "train_id": "G-3-0-052",
+      "stations": [
+        {
+          "station_id": "G03",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "G03A",
+          "arrival": 210,
+          "departure": 210
+        }
+      ],
+      "total_travel_time": 210
+    },
+    {
+      "departure_time": "14:20:00",
+      "train_id": "G-3-0-053",
+      "stations": [
+        {
+          "station_id": "G03",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "G03A",
+          "arrival": 210,
+          "departure": 210
+        }
+      ],
+      "total_travel_time": 210
+    },
+    {
+      "departure_time": "14:30:00",
+      "train_id": "G-3-0-054",
+      "stations": [
+        {
+          "station_id": "G03",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "G03A",
+          "arrival": 210,
+          "departure": 210
+        }
+      ],
+      "total_travel_time": 210
+    },
+    {
+      "departure_time": "14:40:00",
+      "train_id": "G-3-0-055",
+      "stations": [
+        {
+          "station_id": "G03",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "G03A",
+          "arrival": 210,
+          "departure": 210
+        }
+      ],
+      "total_travel_time": 210
+    },
+    {
+      "departure_time": "14:50:00",
+      "train_id": "G-3-0-056",
+      "stations": [
+        {
+          "station_id": "G03",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "G03A",
+          "arrival": 210,
+          "departure": 210
+        }
+      ],
+      "total_travel_time": 210
+    },
+    {
+      "departure_time": "15:00:00",
+      "train_id": "G-3-0-057",
+      "stations": [
+        {
+          "station_id": "G03",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "G03A",
+          "arrival": 210,
+          "departure": 210
+        }
+      ],
+      "total_travel_time": 210
+    },
+    {
+      "departure_time": "15:10:00",
+      "train_id": "G-3-0-058",
+      "stations": [
+        {
+          "station_id": "G03",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "G03A",
+          "arrival": 210,
+          "departure": 210
+        }
+      ],
+      "total_travel_time": 210
+    },
+    {
+      "departure_time": "15:20:00",
+      "train_id": "G-3-0-059",
+      "stations": [
+        {
+          "station_id": "G03",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "G03A",
+          "arrival": 210,
+          "departure": 210
+        }
+      ],
+      "total_travel_time": 210
+    },
+    {
+      "departure_time": "15:30:00",
+      "train_id": "G-3-0-060",
+      "stations": [
+        {
+          "station_id": "G03",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "G03A",
+          "arrival": 210,
+          "departure": 210
+        }
+      ],
+      "total_travel_time": 210
+    },
+    {
+      "departure_time": "15:40:00",
+      "train_id": "G-3-0-061",
+      "stations": [
+        {
+          "station_id": "G03",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "G03A",
+          "arrival": 210,
+          "departure": 210
+        }
+      ],
+      "total_travel_time": 210
+    },
+    {
+      "departure_time": "15:50:00",
+      "train_id": "G-3-0-062",
+      "stations": [
+        {
+          "station_id": "G03",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "G03A",
+          "arrival": 210,
+          "departure": 210
+        }
+      ],
+      "total_travel_time": 210
+    },
+    {
+      "departure_time": "16:00:00",
+      "train_id": "G-3-0-063",
+      "stations": [
+        {
+          "station_id": "G03",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "G03A",
+          "arrival": 210,
+          "departure": 210
+        }
+      ],
+      "total_travel_time": 210
+    },
+    {
+      "departure_time": "16:10:00",
+      "train_id": "G-3-0-064",
+      "stations": [
+        {
+          "station_id": "G03",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "G03A",
+          "arrival": 210,
+          "departure": 210
+        }
+      ],
+      "total_travel_time": 210
+    },
+    {
+      "departure_time": "16:20:00",
+      "train_id": "G-3-0-065",
+      "stations": [
+        {
+          "station_id": "G03",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "G03A",
+          "arrival": 210,
+          "departure": 210
+        }
+      ],
+      "total_travel_time": 210
+    },
+    {
+      "departure_time": "16:30:00",
+      "train_id": "G-3-0-066",
+      "stations": [
+        {
+          "station_id": "G03",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "G03A",
+          "arrival": 210,
+          "departure": 210
+        }
+      ],
+      "total_travel_time": 210
+    },
+    {
+      "departure_time": "16:40:00",
+      "train_id": "G-3-0-067",
+      "stations": [
+        {
+          "station_id": "G03",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "G03A",
+          "arrival": 210,
+          "departure": 210
+        }
+      ],
+      "total_travel_time": 210
+    },
+    {
+      "departure_time": "16:50:00",
+      "train_id": "G-3-0-068",
+      "stations": [
+        {
+          "station_id": "G03",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "G03A",
+          "arrival": 210,
+          "departure": 210
+        }
+      ],
+      "total_travel_time": 210
+    },
+    {
+      "departure_time": "17:00:00",
+      "train_id": "G-3-0-069",
+      "stations": [
+        {
+          "station_id": "G03",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "G03A",
+          "arrival": 210,
+          "departure": 210
+        }
+      ],
+      "total_travel_time": 210
+    },
+    {
+      "departure_time": "17:07:30",
+      "train_id": "G-3-0-070",
+      "stations": [
+        {
+          "station_id": "G03",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "G03A",
+          "arrival": 210,
+          "departure": 210
+        }
+      ],
+      "total_travel_time": 210
+    },
+    {
+      "departure_time": "17:15:00",
+      "train_id": "G-3-0-071",
+      "stations": [
+        {
+          "station_id": "G03",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "G03A",
+          "arrival": 210,
+          "departure": 210
+        }
+      ],
+      "total_travel_time": 210
+    },
+    {
+      "departure_time": "17:22:30",
+      "train_id": "G-3-0-072",
+      "stations": [
+        {
+          "station_id": "G03",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "G03A",
+          "arrival": 210,
+          "departure": 210
+        }
+      ],
+      "total_travel_time": 210
+    },
+    {
+      "departure_time": "17:30:00",
+      "train_id": "G-3-0-073",
+      "stations": [
+        {
+          "station_id": "G03",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "G03A",
+          "arrival": 210,
+          "departure": 210
+        }
+      ],
+      "total_travel_time": 210
+    },
+    {
+      "departure_time": "17:37:30",
+      "train_id": "G-3-0-074",
+      "stations": [
+        {
+          "station_id": "G03",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "G03A",
+          "arrival": 210,
+          "departure": 210
+        }
+      ],
+      "total_travel_time": 210
+    },
+    {
+      "departure_time": "17:45:00",
+      "train_id": "G-3-0-075",
+      "stations": [
+        {
+          "station_id": "G03",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "G03A",
+          "arrival": 210,
+          "departure": 210
+        }
+      ],
+      "total_travel_time": 210
+    },
+    {
+      "departure_time": "17:52:30",
+      "train_id": "G-3-0-076",
+      "stations": [
+        {
+          "station_id": "G03",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "G03A",
+          "arrival": 210,
+          "departure": 210
+        }
+      ],
+      "total_travel_time": 210
+    },
+    {
+      "departure_time": "18:00:00",
+      "train_id": "G-3-0-077",
+      "stations": [
+        {
+          "station_id": "G03",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "G03A",
+          "arrival": 210,
+          "departure": 210
+        }
+      ],
+      "total_travel_time": 210
+    },
+    {
+      "departure_time": "18:07:30",
+      "train_id": "G-3-0-078",
+      "stations": [
+        {
+          "station_id": "G03",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "G03A",
+          "arrival": 210,
+          "departure": 210
+        }
+      ],
+      "total_travel_time": 210
+    },
+    {
+      "departure_time": "18:15:00",
+      "train_id": "G-3-0-079",
+      "stations": [
+        {
+          "station_id": "G03",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "G03A",
+          "arrival": 210,
+          "departure": 210
+        }
+      ],
+      "total_travel_time": 210
+    },
+    {
+      "departure_time": "18:22:30",
+      "train_id": "G-3-0-080",
+      "stations": [
+        {
+          "station_id": "G03",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "G03A",
+          "arrival": 210,
+          "departure": 210
+        }
+      ],
+      "total_travel_time": 210
+    },
+    {
+      "departure_time": "18:30:00",
+      "train_id": "G-3-0-081",
+      "stations": [
+        {
+          "station_id": "G03",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "G03A",
+          "arrival": 210,
+          "departure": 210
+        }
+      ],
+      "total_travel_time": 210
+    },
+    {
+      "departure_time": "18:37:30",
+      "train_id": "G-3-0-082",
+      "stations": [
+        {
+          "station_id": "G03",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "G03A",
+          "arrival": 210,
+          "departure": 210
+        }
+      ],
+      "total_travel_time": 210
+    },
+    {
+      "departure_time": "18:45:00",
+      "train_id": "G-3-0-083",
+      "stations": [
+        {
+          "station_id": "G03",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "G03A",
+          "arrival": 210,
+          "departure": 210
+        }
+      ],
+      "total_travel_time": 210
+    },
+    {
+      "departure_time": "18:52:30",
+      "train_id": "G-3-0-084",
+      "stations": [
+        {
+          "station_id": "G03",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "G03A",
+          "arrival": 210,
+          "departure": 210
+        }
+      ],
+      "total_travel_time": 210
+    },
+    {
+      "departure_time": "19:00:00",
+      "train_id": "G-3-0-085",
+      "stations": [
+        {
+          "station_id": "G03",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "G03A",
+          "arrival": 210,
+          "departure": 210
+        }
+      ],
+      "total_travel_time": 210
+    },
+    {
+      "departure_time": "19:09:00",
+      "train_id": "G-3-0-086",
+      "stations": [
+        {
+          "station_id": "G03",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "G03A",
+          "arrival": 210,
+          "departure": 210
+        }
+      ],
+      "total_travel_time": 210
+    },
+    {
+      "departure_time": "19:18:00",
+      "train_id": "G-3-0-087",
+      "stations": [
+        {
+          "station_id": "G03",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "G03A",
+          "arrival": 210,
+          "departure": 210
+        }
+      ],
+      "total_travel_time": 210
+    },
+    {
+      "departure_time": "19:27:00",
+      "train_id": "G-3-0-088",
+      "stations": [
+        {
+          "station_id": "G03",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "G03A",
+          "arrival": 210,
+          "departure": 210
+        }
+      ],
+      "total_travel_time": 210
+    },
+    {
+      "departure_time": "19:36:00",
+      "train_id": "G-3-0-089",
+      "stations": [
+        {
+          "station_id": "G03",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "G03A",
+          "arrival": 210,
+          "departure": 210
+        }
+      ],
+      "total_travel_time": 210
+    },
+    {
+      "departure_time": "19:45:00",
+      "train_id": "G-3-0-090",
+      "stations": [
+        {
+          "station_id": "G03",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "G03A",
+          "arrival": 210,
+          "departure": 210
+        }
+      ],
+      "total_travel_time": 210
+    },
+    {
+      "departure_time": "19:54:00",
+      "train_id": "G-3-0-091",
+      "stations": [
+        {
+          "station_id": "G03",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "G03A",
+          "arrival": 210,
+          "departure": 210
+        }
+      ],
+      "total_travel_time": 210
+    },
+    {
+      "departure_time": "20:03:00",
+      "train_id": "G-3-0-092",
+      "stations": [
+        {
+          "station_id": "G03",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "G03A",
+          "arrival": 210,
+          "departure": 210
+        }
+      ],
+      "total_travel_time": 210
+    },
+    {
+      "departure_time": "20:12:00",
+      "train_id": "G-3-0-093",
+      "stations": [
+        {
+          "station_id": "G03",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "G03A",
+          "arrival": 210,
+          "departure": 210
+        }
+      ],
+      "total_travel_time": 210
+    },
+    {
+      "departure_time": "20:21:00",
+      "train_id": "G-3-0-094",
+      "stations": [
+        {
+          "station_id": "G03",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "G03A",
+          "arrival": 210,
+          "departure": 210
+        }
+      ],
+      "total_travel_time": 210
+    },
+    {
+      "departure_time": "20:30:00",
+      "train_id": "G-3-0-095",
+      "stations": [
+        {
+          "station_id": "G03",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "G03A",
+          "arrival": 210,
+          "departure": 210
+        }
+      ],
+      "total_travel_time": 210
+    },
+    {
+      "departure_time": "20:39:00",
+      "train_id": "G-3-0-096",
+      "stations": [
+        {
+          "station_id": "G03",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "G03A",
+          "arrival": 210,
+          "departure": 210
+        }
+      ],
+      "total_travel_time": 210
+    },
+    {
+      "departure_time": "20:48:00",
+      "train_id": "G-3-0-097",
+      "stations": [
+        {
+          "station_id": "G03",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "G03A",
+          "arrival": 210,
+          "departure": 210
+        }
+      ],
+      "total_travel_time": 210
+    },
+    {
+      "departure_time": "20:57:00",
+      "train_id": "G-3-0-098",
+      "stations": [
+        {
+          "station_id": "G03",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "G03A",
+          "arrival": 210,
+          "departure": 210
+        }
+      ],
+      "total_travel_time": 210
+    },
+    {
+      "departure_time": "21:06:00",
+      "train_id": "G-3-0-099",
+      "stations": [
+        {
+          "station_id": "G03",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "G03A",
+          "arrival": 210,
+          "departure": 210
+        }
+      ],
+      "total_travel_time": 210
+    },
+    {
+      "departure_time": "21:18:00",
+      "train_id": "G-3-0-100",
+      "stations": [
+        {
+          "station_id": "G03",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "G03A",
+          "arrival": 210,
+          "departure": 210
+        }
+      ],
+      "total_travel_time": 210
+    },
+    {
+      "departure_time": "21:30:00",
+      "train_id": "G-3-0-101",
+      "stations": [
+        {
+          "station_id": "G03",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "G03A",
+          "arrival": 210,
+          "departure": 210
+        }
+      ],
+      "total_travel_time": 210
+    },
+    {
+      "departure_time": "21:42:00",
+      "train_id": "G-3-0-102",
+      "stations": [
+        {
+          "station_id": "G03",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "G03A",
+          "arrival": 210,
+          "departure": 210
+        }
+      ],
+      "total_travel_time": 210
+    },
+    {
+      "departure_time": "21:54:00",
+      "train_id": "G-3-0-103",
+      "stations": [
+        {
+          "station_id": "G03",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "G03A",
+          "arrival": 210,
+          "departure": 210
+        }
+      ],
+      "total_travel_time": 210
+    },
+    {
+      "departure_time": "22:06:00",
+      "train_id": "G-3-0-104",
+      "stations": [
+        {
+          "station_id": "G03",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "G03A",
+          "arrival": 210,
+          "departure": 210
+        }
+      ],
+      "total_travel_time": 210
+    },
+    {
+      "departure_time": "22:18:00",
+      "train_id": "G-3-0-105",
+      "stations": [
+        {
+          "station_id": "G03",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "G03A",
+          "arrival": 210,
+          "departure": 210
+        }
+      ],
+      "total_travel_time": 210
+    },
+    {
+      "departure_time": "22:30:00",
+      "train_id": "G-3-0-106",
+      "stations": [
+        {
+          "station_id": "G03",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "G03A",
+          "arrival": 210,
+          "departure": 210
+        }
+      ],
+      "total_travel_time": 210
+    },
+    {
+      "departure_time": "22:42:00",
+      "train_id": "G-3-0-107",
+      "stations": [
+        {
+          "station_id": "G03",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "G03A",
+          "arrival": 210,
+          "departure": 210
+        }
+      ],
+      "total_travel_time": 210
+    },
+    {
+      "departure_time": "22:54:00",
+      "train_id": "G-3-0-108",
+      "stations": [
+        {
+          "station_id": "G03",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "G03A",
+          "arrival": 210,
+          "departure": 210
+        }
+      ],
+      "total_travel_time": 210
+    },
+    {
+      "departure_time": "23:06:00",
+      "train_id": "G-3-0-109",
+      "stations": [
+        {
+          "station_id": "G03",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "G03A",
+          "arrival": 210,
+          "departure": 210
+        }
+      ],
+      "total_travel_time": 210
+    },
+    {
+      "departure_time": "23:18:00",
+      "train_id": "G-3-0-110",
+      "stations": [
+        {
+          "station_id": "G03",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "G03A",
+          "arrival": 210,
+          "departure": 210
+        }
+      ],
+      "total_travel_time": 210
+    },
+    {
+      "departure_time": "23:30:00",
+      "train_id": "G-3-0-111",
+      "stations": [
+        {
+          "station_id": "G03",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "G03A",
+          "arrival": 210,
+          "departure": 210
+        }
+      ],
+      "total_travel_time": 210
+    },
+    {
+      "departure_time": "23:42:00",
+      "train_id": "G-3-0-112",
+      "stations": [
+        {
+          "station_id": "G03",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "G03A",
+          "arrival": 210,
+          "departure": 210
+        }
+      ],
+      "total_travel_time": 210
+    },
+    {
+      "departure_time": "23:54:00",
+      "train_id": "G-3-0-113",
+      "stations": [
+        {
+          "station_id": "G03",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "G03A",
+          "arrival": 210,
+          "departure": 210
+        }
+      ],
+      "total_travel_time": 210
+    }
+  ]
+}

@@ -22,6 +22,7 @@ const TRACK_COLORS = {
   V: '#a4ce4e',   // 淡海輕軌
   BR: '#c48c31',  // 文湖線（棕色）
   K: '#8cc540',   // 安坑輕軌（草綠色）
+  A: '#8246af',   // 機場捷運（紫色）
 };
 
 // 列車顏色（依路線與方向區分）
@@ -47,6 +48,9 @@ const TRAIN_COLORS = {
   // 淡海輕軌
   V_0: '#a4ce4e',   // 綠山線/藍海線 往崁頂/台北海洋大學（direction 0）- 深黃綠色
   V_1: '#c8e588',   // 綠山線/藍海線 往紅樹林/淡水漁人碼頭（direction 1）- 淡黃綠色
+  // 機場捷運
+  A_0: '#67378b',   // 去程（往機場/老街溪）- 深紫色
+  A_1: '#a778c9',   // 回程（往台北）- 淡紫色
 };
 
 // 判斷列車顏色：根據路線和方向
@@ -64,6 +68,8 @@ function getTrainColor(trackId: string): string {
     lineId = 'G';
   } else if (trackId.startsWith('O')) {
     lineId = 'O';
+  } else if (trackId.startsWith('A')) {
+    lineId = 'A';
   } else {
     lineId = 'R';
   }
@@ -207,6 +213,7 @@ function App() {
           ['==', ['get', 'line_id'], 'BL'], TRACK_COLORS.BL,
           ['==', ['get', 'line_id'], 'BR'], TRACK_COLORS.BR,
           ['==', ['get', 'line_id'], 'O'], TRACK_COLORS.O,
+          ['==', ['get', 'line_id'], 'A'], TRACK_COLORS.A,      // 機場捷運
           TRACK_COLORS.R
         ],
         'line-width': 4,
@@ -220,6 +227,7 @@ function App() {
           ['==', ['slice', ['get', 'track_id'], 0, 3], 'BR-'], 0.8,  // 所有 BR 線軌道可見 (文湖線)
           ['==', ['slice', ['get', 'track_id'], 0, 2], 'G-'], 0.8,   // 所有 G 線軌道可見 (含首班車)
           ['==', ['slice', ['get', 'track_id'], 0, 2], 'O-'], 0.8,   // 所有 O 線軌道可見 (含首班車)
+          ['==', ['slice', ['get', 'track_id'], 0, 2], 'A-'], 0.8,   // 所有 A 線軌道可見 (機場捷運)
           0.0 // 其他軌道透明
         ],
       },
@@ -301,6 +309,7 @@ function App() {
           ['==', ['slice', ['get', 'station_id'], 0, 2], 'BL'], TRACK_COLORS.BL,
           ['==', ['slice', ['get', 'station_id'], 0, 2], 'BR'], TRACK_COLORS.BR,
           ['==', ['slice', ['get', 'station_id'], 0, 1], 'O'], TRACK_COLORS.O,
+          ['==', ['slice', ['get', 'station_id'], 0, 1], 'A'], TRACK_COLORS.A,  // 機場捷運
           TRACK_COLORS.R
         ],
         'circle-stroke-width': 1.8,

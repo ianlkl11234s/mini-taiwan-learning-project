@@ -4,17 +4,19 @@
 
 路線結構：
 - 普通車 (A-1): A1-A22 全線 22 站
-- 直達車 (A-2): A1-A3-A8-A12-A13-A18-A21 跳站 7 站
+- 直達車 (A-2): A1-A3-A8-A12-A13 基本直達車 5 站（全程 39 分鐘）
 - 區間車 (A-3): A13-A22 深夜區間 10 站
+- 加班直達車 (A-4): A12-A13-A18-A21 尖峰延伸 4 站（全程 27-28 分鐘）
 
 TDX 系統代碼: TYMC (Taoyuan Metro Corporation)
 
 輸出：
 - tymc_stations.geojson
 - tracks/A-1-0.geojson, A-1-1.geojson (普通車)
-- tracks/A-2-0.geojson, A-2-1.geojson (直達車)
+- tracks/A-2-0.geojson, A-2-1.geojson (基本直達車)
 - tracks/A-3-0.geojson, A-3-1.geojson (區間車)
-- schedules/A-1-0.json, A-1-1.json, A-2-0.json, A-2-1.json, A-3-1.json
+- tracks/A-4-0.geojson, A-4-1.geojson (加班直達車)
+- schedules/*.json
 - station_progress.json (更新)
 """
 
@@ -50,10 +52,12 @@ TRACK_COLOR = "#8246af"
 TRAIN_COLORS = {
     "A-1-0": "#9b66c2",  # 普通車去程
     "A-1-1": "#a778c9",  # 普通車回程
-    "A-2-0": "#67378b",  # 直達車去程
-    "A-2-1": "#8246af",  # 直達車回程
+    "A-2-0": "#67378b",  # 基本直達車去程 (深紫)
+    "A-2-1": "#8246af",  # 基本直達車回程
     "A-3-0": "#9b66c2",  # 區間車去程 (同普通車)
     "A-3-1": "#a778c9",  # 區間車回程 (同普通車)
+    "A-4-0": "#5c2d82",  # 加班直達車去程 (更深紫)
+    "A-4-1": "#7a3da8",  # 加班直達車回程
 }
 
 # 車站順序 (A14 不存在，使用 A14a)
@@ -63,8 +67,11 @@ ALL_STATIONS = [
     "A18", "A19", "A20", "A21", "A22"
 ]
 
-# 直達車停靠站 (7 站)
-EXPRESS_STATIONS = ["A1", "A3", "A8", "A12", "A13", "A18", "A21"]
+# 基本直達車停靠站 (5 站: A1-A13)
+EXPRESS_STATIONS = ["A1", "A3", "A8", "A12", "A13"]
+
+# 加班直達車停靠站 (4 站: A12-A21，尖峰時段延伸)
+EXPRESS_EXT_STATIONS = ["A12", "A13", "A18", "A21"]
 
 # 區間車停靠站 (10 站: A13-A22)
 LIMITED_STATIONS = ["A13", "A14a", "A15", "A16", "A17", "A18", "A19", "A20", "A21", "A22"]
@@ -93,6 +100,48 @@ DEFAULT_TRAVEL_TIMES = {
     "A19-A20": 210,  # 3.5 分鐘
     "A20-A21": 180,  # 3 分鐘
     "A21-A22": 150,  # 2.5 分鐘
+}
+
+# 直達車專用站間時間（秒）- 根據官方時刻表
+# 直達車因為跳過中間站，行駛速度較快，不能用普通車時間乘係數
+# 資料來源：桃園機場捷運官網時刻表
+#
+# 基本直達車 (A-2): A1↔A13，全程 39 分鐘
+# 加班直達車 (A-4): A12↔A21，全程 27-28 分鐘
+EXPRESS_TRAVEL_TIMES = {
+    # === 基本直達車 A-2 (A1↔A13) ===
+    # A1→A13 方向（往機場）- 官方時刻表
+    "A1-A3": 540,     # 9 分鐘
+    "A3-A8": 720,     # 12 分鐘 (21-9=12)
+    "A8-A12": 840,    # 14 分鐘 (35-21=14)
+    "A12-A13": 240,   # 4 分鐘 (39-35=4)
+    # A13→A1 方向（往台北）- 官方時刻表
+    "A13-A12": 120,   # 2 分鐘
+    "A12-A8": 840,    # 14 分鐘 (16-2=14)
+    "A8-A3": 780,     # 13 分鐘 (29-16=13)
+    "A3-A1": 600,     # 10 分鐘 (39-29=10)
+
+    # === 加班直達車 A-4 (A12↔A21) ===
+    # A12→A21 方向（往環北）- 官方時刻表
+    "A12-A13-ext": 120,   # 2 分鐘
+    "A13-A18": 900,       # 15 分鐘 (17-2=15)
+    "A18-A21": 600,       # 10 分鐘 (27-17=10)
+    # A21→A12 方向（往機場）- 官方時刻表
+    "A21-A18": 660,       # 11 分鐘
+    "A18-A13": 780,       # 13 分鐘 (24-11=13)
+    "A13-A12-ext": 240,   # 4 分鐘 (28-24=4)
+}
+
+# 加班直達車專用時間表（與基本直達車分開，避免 key 衝突）
+EXPRESS_EXT_TRAVEL_TIMES = {
+    # A12→A21 方向（往環北）
+    "A12-A13": 120,   # 2 分鐘
+    "A13-A18": 900,   # 15 分鐘
+    "A18-A21": 600,   # 10 分鐘
+    # A21→A12 方向（往機場）
+    "A21-A18": 660,   # 11 分鐘
+    "A18-A13": 780,   # 13 分鐘
+    "A13-A12": 240,   # 4 分鐘
 }
 
 
@@ -402,31 +451,42 @@ def create_track_geojson(track_id: str, coords: List[List[float]], direction: in
     }
 
 
-def get_travel_time(from_station: str, to_station: str, is_express: bool = False) -> int:
+def get_travel_time(from_station: str, to_station: str, express_type: str = None) -> int:
     """取得站間行駛時間（秒）
 
     Args:
         from_station: 起站
         to_station: 迄站
-        is_express: 是否為直達車（直達車速度較快）
+        express_type: 直達車類型 ('basic'=基本直達車, 'ext'=加班直達車, None=普通車)
 
-    若為非連續站（跳站），會累加中間站的行駛時間。
-    直達車速度約為普通車的 1.9 倍 (官方: 普通車 73min vs 直達車 36min)
+    基本直達車使用 EXPRESS_TRAVEL_TIMES（A1↔A13）
+    加班直達車使用 EXPRESS_EXT_TRAVEL_TIMES（A12↔A21）
+    普通車使用 DEFAULT_TRAVEL_TIMES（若為跳站則累加中間站時間）
     """
-    # 直達車速度係數 (33min / 62.5min ≈ 0.53)
-    EXPRESS_SPEED_FACTOR = 0.53
-
     key = f"{from_station}-{to_station}"
-    if key in DEFAULT_TRAVEL_TIMES:
-        base_time = DEFAULT_TRAVEL_TIMES[key]
-        return int(base_time * EXPRESS_SPEED_FACTOR) if is_express else base_time
-
     reverse_key = f"{to_station}-{from_station}"
-    if reverse_key in DEFAULT_TRAVEL_TIMES:
-        base_time = DEFAULT_TRAVEL_TIMES[reverse_key]
-        return int(base_time * EXPRESS_SPEED_FACTOR) if is_express else base_time
 
-    # 處理跳站：累加中間站時間
+    # 加班直達車 (A-4) 優先使用專用時間表
+    if express_type == 'ext':
+        if key in EXPRESS_EXT_TRAVEL_TIMES:
+            return EXPRESS_EXT_TRAVEL_TIMES[key]
+        if reverse_key in EXPRESS_EXT_TRAVEL_TIMES:
+            return EXPRESS_EXT_TRAVEL_TIMES[reverse_key]
+
+    # 基本直達車 (A-2) 使用專用時間表
+    if express_type == 'basic':
+        if key in EXPRESS_TRAVEL_TIMES:
+            return EXPRESS_TRAVEL_TIMES[key]
+        if reverse_key in EXPRESS_TRAVEL_TIMES:
+            return EXPRESS_TRAVEL_TIMES[reverse_key]
+
+    # 普通車使用預設時間表
+    if key in DEFAULT_TRAVEL_TIMES:
+        return DEFAULT_TRAVEL_TIMES[key]
+    if reverse_key in DEFAULT_TRAVEL_TIMES:
+        return DEFAULT_TRAVEL_TIMES[reverse_key]
+
+    # 處理跳站：累加中間站時間（僅用於普通車或找不到直達車時間時）
     try:
         from_idx = ALL_STATIONS.index(from_station)
         to_idx = ALL_STATIONS.index(to_station)
@@ -442,19 +502,21 @@ def get_travel_time(from_station: str, to_station: str, is_express: bool = False
             else:
                 total_time += 180  # 預設 3 分鐘
 
-        # 直達車速度較快
-        if is_express:
-            return int(total_time * EXPRESS_SPEED_FACTOR)
         return total_time
     except ValueError:
         return 180  # 預設 3 分鐘
 
 
-def get_travel_times_for_route(station_order: List[str], is_express: bool = False) -> List[int]:
-    """取得路線的站間行駛時間列表"""
+def get_travel_times_for_route(station_order: List[str], express_type: str = None) -> List[int]:
+    """取得路線的站間行駛時間列表
+
+    Args:
+        station_order: 車站順序
+        express_type: 直達車類型 ('basic', 'ext', None)
+    """
     times = []
     for i in range(len(station_order) - 1):
-        times.append(get_travel_time(station_order[i], station_order[i + 1], is_express))
+        times.append(get_travel_time(station_order[i], station_order[i + 1], express_type))
     return times
 
 
@@ -464,14 +526,17 @@ def parse_timetable_by_traintype(timetable_data: List[Dict],
                                   stopping_patterns: List[str],
                                   direction: int,
                                   dwell_time: int = 30,
-                                  is_express: bool = False) -> Tuple[List[Dict], int]:
+                                  express_type: str = None) -> Tuple[List[Dict], int]:
     """
     根據 TrainType 和 StoppingPattern 解析時刻表
+
+    Args:
+        express_type: 直達車類型 ('basic'=基本直達車, 'ext'=加班直達車, None=普通車)
 
     回傳: (departures, total_travel_time_seconds)
     """
     start_station = station_order[0]
-    travel_times = get_travel_times_for_route(station_order, is_express)
+    travel_times = get_travel_times_for_route(station_order, express_type)
     total_travel_time = sum(travel_times) + dwell_time * (len(station_order) - 1)
 
     # 收集起始站的發車時間
@@ -652,11 +717,56 @@ def main():
         json.dump(geojson_1, f, ensure_ascii=False, indent=2)
     print(f"  ✅ A-1-1.geojson")
 
-    # ===== 建立直達車軌道 (A-2) =====
-    print("\n🚄 建立直達車軌道 (A-2)...")
+    # ===== 建立基本直達車軌道 (A-2): A1↔A13 =====
+    print("\n🚄 建立基本直達車軌道 (A-2)...")
 
-    # 直達車使用普通車軌道，但只到 A21
-    # 找到 A21 在軌道上的位置
+    # 找到 A13 在軌道上的位置
+    a13_coord = station_coords_map.get("A13")
+    a13_idx = 0
+    min_dist = float('inf')
+    for i, pt in enumerate(commuter_track):
+        d = euclidean_distance(pt, a13_coord)
+        if d < min_dist:
+            min_dist = d
+            a13_idx = i
+
+    # A-2 軌道：A1 到 A13（基本直達車）
+    express_track = commuter_track[:a13_idx + 1]
+    print(f"  軌道點數: {len(express_track)}")
+
+    # A-2-0: 台北 → 機場T2 (基本直達車)
+    geojson_0 = create_track_geojson(
+        'A-2-0', express_track[:], 0,
+        '台北車站 → 機場第二航廈站 (直達車)', "A1", "A13",
+        39
+    )
+    with open(os.path.join(TRACK_DIR, 'A-2-0.geojson'), 'w', encoding='utf-8') as f:
+        json.dump(geojson_0, f, ensure_ascii=False, indent=2)
+    print(f"  ✅ A-2-0.geojson")
+
+    # A-2-1: 機場T2 → 台北 (基本直達車)
+    geojson_1 = create_track_geojson(
+        'A-2-1', list(reversed(express_track)), 1,
+        '機場第二航廈站 → 台北車站 (直達車)', "A13", "A1",
+        39
+    )
+    with open(os.path.join(TRACK_DIR, 'A-2-1.geojson'), 'w', encoding='utf-8') as f:
+        json.dump(geojson_1, f, ensure_ascii=False, indent=2)
+    print(f"  ✅ A-2-1.geojson")
+
+    # ===== 建立加班直達車軌道 (A-4): A12↔A21 =====
+    print("\n🚄 建立加班直達車軌道 (A-4)...")
+
+    # 找到 A12 和 A21 在軌道上的位置
+    a12_coord = station_coords_map.get("A12")
+    a12_idx = 0
+    min_dist = float('inf')
+    for i, pt in enumerate(commuter_track):
+        d = euclidean_distance(pt, a12_coord)
+        if d < min_dist:
+            min_dist = d
+            a12_idx = i
+
     a21_coord = station_coords_map.get("A21")
     a21_idx = 0
     min_dist = float('inf')
@@ -666,29 +776,29 @@ def main():
             min_dist = d
             a21_idx = i
 
-    # A-2 軌道：A1 到 A21
-    express_track = commuter_track[:a21_idx + 1]
-    print(f"  軌道點數: {len(express_track)}")
+    # A-4 軌道：A12 到 A21（加班直達車）
+    express_ext_track = commuter_track[a12_idx:a21_idx + 1]
+    print(f"  軌道點數: {len(express_ext_track)}")
 
-    # A-2-0: 台北 → 環北 (直達車)
+    # A-4-0: 機場T1 → 環北 (加班直達車)
     geojson_0 = create_track_geojson(
-        'A-2-0', express_track[:], 0,
-        '台北車站 → 環北站 (直達車)', "A1", "A21",
-        36
+        'A-4-0', express_ext_track[:], 0,
+        '機場第一航廈站 → 環北站 (加班直達車)', "A12", "A21",
+        27
     )
-    with open(os.path.join(TRACK_DIR, 'A-2-0.geojson'), 'w', encoding='utf-8') as f:
+    with open(os.path.join(TRACK_DIR, 'A-4-0.geojson'), 'w', encoding='utf-8') as f:
         json.dump(geojson_0, f, ensure_ascii=False, indent=2)
-    print(f"  ✅ A-2-0.geojson")
+    print(f"  ✅ A-4-0.geojson")
 
-    # A-2-1: 環北 → 台北 (直達車)
+    # A-4-1: 環北 → 機場T1 (加班直達車)
     geojson_1 = create_track_geojson(
-        'A-2-1', list(reversed(express_track)), 1,
-        '環北站 → 台北車站 (直達車)', "A21", "A1",
-        36
+        'A-4-1', list(reversed(express_ext_track)), 1,
+        '環北站 → 機場第一航廈站 (加班直達車)', "A21", "A12",
+        28
     )
-    with open(os.path.join(TRACK_DIR, 'A-2-1.geojson'), 'w', encoding='utf-8') as f:
+    with open(os.path.join(TRACK_DIR, 'A-4-1.geojson'), 'w', encoding='utf-8') as f:
         json.dump(geojson_1, f, ensure_ascii=False, indent=2)
-    print(f"  ✅ A-2-1.geojson")
+    print(f"  ✅ A-4-1.geojson")
 
     # ===== 建立區間車軌道 (A-3) =====
     print("\n🚃 建立區間車軌道 (A-3)...")
@@ -779,22 +889,21 @@ def main():
         json.dump(schedule_1, f, ensure_ascii=False, indent=2)
     print(f"  ✅ A-1-1.json ({len(departures_1)} 班次)")
 
-    # 直達車時刻表 (A-2)
-    # A-2-0: 台北 → 機場 (TrainType=2, SP2/SP5, Direction=0)
-    # 注意：直達車時刻表從 A1 出發，停靠 EXPRESS_STATIONS
+    # ===== 基本直達車時刻表 (A-2): A1↔A13 =====
+    # A-2-0: 台北 → 機場T2 (TrainType=2, SP2/SP5, Direction=0)
     departures_0, travel_time_0 = parse_timetable_by_traintype(
-        timetable_data, EXPRESS_STATIONS, 2, ['SP2', 'SP5'], 0, is_express=True
+        timetable_data, EXPRESS_STATIONS, 2, ['SP2', 'SP5'], 0, express_type='basic'
     )
     schedule_0 = {
         "track_id": "A-2-0",
         "route_id": "A-2",
-        "name": "台北車站 → 環北站 (直達車)",
+        "name": "台北車站 → 機場第二航廈站 (直達車)",
         "train_type": "express",
         "train_color": TRAIN_COLORS["A-2-0"],
         "origin": EXPRESS_STATIONS[0],
         "destination": EXPRESS_STATIONS[-1],
         "stations": EXPRESS_STATIONS,
-        "travel_time_minutes": 36,
+        "travel_time_minutes": 39,
         "dwell_time_seconds": 30,
         "is_weekday": True,
         "departure_count": len(departures_0),
@@ -804,73 +913,21 @@ def main():
         json.dump(schedule_0, f, ensure_ascii=False, indent=2)
     print(f"  ✅ A-2-0.json ({len(departures_0)} 班次)")
 
-    # A-2-1: 機場 → 台北 (TrainType=2, SP2, Direction=1, 從 A13 出發)
-    # 直達車回程從 A13 出發
+    # A-2-1: 機場T2 → 台北 (TrainType=2, SP2/SP5, Direction=1)
     reversed_express = list(reversed(EXPRESS_STATIONS))
-
-    # 特殊處理：回程從 A13 開始統計
-    express_return_departures = set()
-    for entry in timetable_data:
-        if entry.get('StationID') != 'A13':
-            continue
-        if entry.get('Direction') != 1:
-            continue
-
-        for tt in entry.get('Timetables', []):
-            if tt.get('TrainType') != 2:
-                continue
-            if tt.get('StoppingPatternID') not in ['SP2', 'SP5']:
-                continue
-
-            dep_time = tt.get('DepartureTime', '')
-            if dep_time:
-                express_return_departures.add(dep_time)
-
-    express_return_departures = sorted(express_return_departures)
-    travel_times = get_travel_times_for_route(reversed_express, is_express=True)
-    total_travel = sum(travel_times) + 30 * (len(reversed_express) - 1)
-
-    departures_1 = []
-    for idx, dep_time in enumerate(express_return_departures):
-        train_id = f"{LINE_ID}-2-1-{idx+1:03d}"
-
-        stations_info = []
-        cumulative_time = 0
-
-        for i, station_id in enumerate(reversed_express):
-            arrival = cumulative_time
-            departure = cumulative_time + 30
-
-            stations_info.append({
-                "station_id": station_id,
-                "arrival": arrival,
-                "departure": departure
-            })
-
-            if i < len(travel_times):
-                cumulative_time = departure + travel_times[i]
-
-        formatted_dep_time = dep_time if len(dep_time) > 5 else f"{dep_time}:00"
-
-        departures_1.append({
-            "departure_time": formatted_dep_time,
-            "train_id": train_id,
-            "origin_station": reversed_express[0],
-            "destination_station": reversed_express[-1],
-            "total_travel_time": total_travel,
-            "stations": stations_info
-        })
-
+    departures_1, travel_time_1 = parse_timetable_by_traintype(
+        timetable_data, reversed_express, 2, ['SP2', 'SP5'], 1, express_type='basic'
+    )
     schedule_1 = {
         "track_id": "A-2-1",
         "route_id": "A-2",
-        "name": "環北站 → 台北車站 (直達車)",
+        "name": "機場第二航廈站 → 台北車站 (直達車)",
         "train_type": "express",
         "train_color": TRAIN_COLORS["A-2-1"],
         "origin": reversed_express[0],
         "destination": reversed_express[-1],
         "stations": reversed_express,
-        "travel_time_minutes": 36,
+        "travel_time_minutes": 39,
         "dwell_time_seconds": 30,
         "is_weekday": True,
         "departure_count": len(departures_1),
@@ -879,6 +936,117 @@ def main():
     with open(os.path.join(SCHEDULE_DIR, 'A-2-1.json'), 'w', encoding='utf-8') as f:
         json.dump(schedule_1, f, ensure_ascii=False, indent=2)
     print(f"  ✅ A-2-1.json ({len(departures_1)} 班次)")
+
+    # ===== 加班直達車時刻表 (A-4): A12↔A21 =====
+    # 注意：加班直達車是尖峰時段延伸，TDX 可能沒有完整資料
+    # 這裡使用模擬班次（每 15 分鐘一班，尖峰時段）
+    peak_hours = [
+        "06:00", "06:15", "06:30", "06:45",
+        "07:00", "07:15", "07:30", "07:45",
+        "08:00", "08:15", "08:30", "08:45",
+        "17:00", "17:15", "17:30", "17:45",
+        "18:00", "18:15", "18:30", "18:45",
+        "19:00", "19:15", "19:30", "19:45",
+    ]
+
+    # A-4-0: 機場T1 → 環北 (加班直達車)
+    travel_times_ext_0 = get_travel_times_for_route(EXPRESS_EXT_STATIONS, 'ext')
+    total_travel_ext_0 = sum(travel_times_ext_0) + 30 * (len(EXPRESS_EXT_STATIONS) - 1)
+
+    departures_ext_0 = []
+    for idx, dep_time in enumerate(peak_hours):
+        train_id = f"{LINE_ID}-4-0-{idx+1:03d}"
+        stations_info = []
+        cumulative_time = 0
+
+        for i, station_id in enumerate(EXPRESS_EXT_STATIONS):
+            arrival = cumulative_time
+            departure = cumulative_time + 30
+            stations_info.append({
+                "station_id": station_id,
+                "arrival": arrival,
+                "departure": departure
+            })
+            if i < len(travel_times_ext_0):
+                cumulative_time = departure + travel_times_ext_0[i]
+
+        departures_ext_0.append({
+            "departure_time": f"{dep_time}:00",
+            "train_id": train_id,
+            "origin_station": EXPRESS_EXT_STATIONS[0],
+            "destination_station": EXPRESS_EXT_STATIONS[-1],
+            "total_travel_time": total_travel_ext_0,
+            "stations": stations_info
+        })
+
+    schedule_ext_0 = {
+        "track_id": "A-4-0",
+        "route_id": "A-4",
+        "name": "機場第一航廈站 → 環北站 (加班直達車)",
+        "train_type": "express_ext",
+        "train_color": TRAIN_COLORS["A-4-0"],
+        "origin": EXPRESS_EXT_STATIONS[0],
+        "destination": EXPRESS_EXT_STATIONS[-1],
+        "stations": EXPRESS_EXT_STATIONS,
+        "travel_time_minutes": 27,
+        "dwell_time_seconds": 30,
+        "is_weekday": True,
+        "departure_count": len(departures_ext_0),
+        "departures": departures_ext_0
+    }
+    with open(os.path.join(SCHEDULE_DIR, 'A-4-0.json'), 'w', encoding='utf-8') as f:
+        json.dump(schedule_ext_0, f, ensure_ascii=False, indent=2)
+    print(f"  ✅ A-4-0.json ({len(departures_ext_0)} 班次)")
+
+    # A-4-1: 環北 → 機場T1 (加班直達車)
+    reversed_express_ext = list(reversed(EXPRESS_EXT_STATIONS))
+    travel_times_ext_1 = get_travel_times_for_route(reversed_express_ext, 'ext')
+    total_travel_ext_1 = sum(travel_times_ext_1) + 30 * (len(reversed_express_ext) - 1)
+
+    departures_ext_1 = []
+    for idx, dep_time in enumerate(peak_hours):
+        train_id = f"{LINE_ID}-4-1-{idx+1:03d}"
+        stations_info = []
+        cumulative_time = 0
+
+        for i, station_id in enumerate(reversed_express_ext):
+            arrival = cumulative_time
+            departure = cumulative_time + 30
+            stations_info.append({
+                "station_id": station_id,
+                "arrival": arrival,
+                "departure": departure
+            })
+            if i < len(travel_times_ext_1):
+                cumulative_time = departure + travel_times_ext_1[i]
+
+        departures_ext_1.append({
+            "departure_time": f"{dep_time}:00",
+            "train_id": train_id,
+            "origin_station": reversed_express_ext[0],
+            "destination_station": reversed_express_ext[-1],
+            "total_travel_time": total_travel_ext_1,
+            "stations": stations_info
+        })
+
+    schedule_ext_1 = {
+        "track_id": "A-4-1",
+        "route_id": "A-4",
+        "name": "環北站 → 機場第一航廈站 (加班直達車)",
+        "train_type": "express_ext",
+        "train_color": TRAIN_COLORS["A-4-1"],
+        "origin": reversed_express_ext[0],
+        "destination": reversed_express_ext[-1],
+        "stations": reversed_express_ext,
+        "travel_time_minutes": 28,
+        "dwell_time_seconds": 30,
+        "is_weekday": True,
+        "departure_count": len(departures_ext_1),
+        "departures": departures_ext_1
+    }
+    with open(os.path.join(SCHEDULE_DIR, 'A-4-1.json'), 'w', encoding='utf-8') as f:
+        json.dump(schedule_ext_1, f, ensure_ascii=False, indent=2)
+    print(f"  ✅ A-4-1.json ({len(departures_ext_1)} 班次)")
 
     # 區間車時刻表 (A-3)
     # A-3-1: 老街溪 → 機場T2 (TrainType=1, SP4, Direction=1)
@@ -916,10 +1084,15 @@ def main():
     progress_data['A-1-1'] = calculate_progress(list(reversed(commuter_track)), stations, list(reversed(ALL_STATIONS)))
     print(f"  ✅ A-1-0, A-1-1 (22 站)")
 
-    # 直達車進度
+    # 基本直達車進度 (A-2: A1↔A13)
     progress_data['A-2-0'] = calculate_progress(express_track, stations, EXPRESS_STATIONS)
     progress_data['A-2-1'] = calculate_progress(list(reversed(express_track)), stations, list(reversed(EXPRESS_STATIONS)))
-    print(f"  ✅ A-2-0, A-2-1 (7 站)")
+    print(f"  ✅ A-2-0, A-2-1 (5 站)")
+
+    # 加班直達車進度 (A-4: A12↔A21)
+    progress_data['A-4-0'] = calculate_progress(express_ext_track, stations, EXPRESS_EXT_STATIONS)
+    progress_data['A-4-1'] = calculate_progress(list(reversed(express_ext_track)), stations, list(reversed(EXPRESS_EXT_STATIONS)))
+    print(f"  ✅ A-4-0, A-4-1 (4 站)")
 
     # 區間車進度
     progress_data['A-3-0'] = calculate_progress(limited_track, stations, LIMITED_STATIONS)
@@ -934,9 +1107,12 @@ def main():
     print("=" * 60)
     print("\n📊 統計:")
     print(f"  車站: 22 站")
-    print(f"  軌道: 6 條 (A-1-0/1, A-2-0/1, A-3-0/1)")
-    print(f"  時刻表: 5 個檔案")
-    print("\n下一步：更新前端程式碼 (useData.ts, App.tsx, LineFilter.tsx)")
+    print(f"  軌道: 8 條")
+    print(f"    - A-1-0/1: 普通車 (A1↔A22, 84 分鐘)")
+    print(f"    - A-2-0/1: 基本直達車 (A1↔A13, 39 分鐘)")
+    print(f"    - A-3-0/1: 區間車 (A13↔A22, 33 分鐘)")
+    print(f"    - A-4-0/1: 加班直達車 (A12↔A21, 27-28 分鐘)")
+    print(f"  時刻表: 7 個檔案")
 
 
 if __name__ == '__main__':

@@ -1,0 +1,7535 @@
+[
+  {
+    "LineNo": "BL",
+    "LineID": "BL",
+    "StationID": "BL01",
+    "StationName": {
+      "Zh_tw": "頂埔",
+      "En": "Dingpu"
+    },
+    "TripHeadSign": "往南港展覽館",
+    "DestinationStaionID": "BL23",
+    "DestinationStationName": {
+      "Zh_tw": "南港展覽館",
+      "En": "Taipei Nangang Exhibition Center"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:00",
+    "LastTrainTime": "00:00",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "BL",
+    "LineID": "BL",
+    "StationID": "BL02",
+    "StationName": {
+      "Zh_tw": "永寧",
+      "En": "Yongning"
+    },
+    "TripHeadSign": "往頂埔",
+    "DestinationStaionID": "BL01",
+    "DestinationStationName": {
+      "Zh_tw": "頂埔",
+      "En": "Dingpu"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:00",
+    "LastTrainTime": "01:08",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "BL",
+    "LineID": "BL",
+    "StationID": "BL02",
+    "StationName": {
+      "Zh_tw": "永寧",
+      "En": "Yongning"
+    },
+    "TripHeadSign": "往南港展覽館",
+    "DestinationStaionID": "BL23",
+    "DestinationStationName": {
+      "Zh_tw": "南港展覽館",
+      "En": "Taipei Nangang Exhibition Center"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:03",
+    "LastTrainTime": "00:03",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "BL",
+    "LineID": "BL",
+    "StationID": "BL03",
+    "StationName": {
+      "Zh_tw": "土城",
+      "En": "Tucheng"
+    },
+    "TripHeadSign": "往頂埔",
+    "DestinationStaionID": "BL01",
+    "DestinationStationName": {
+      "Zh_tw": "頂埔",
+      "En": "Dingpu"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:05",
+    "LastTrainTime": "01:06",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "BL",
+    "LineID": "BL",
+    "StationID": "BL03",
+    "StationName": {
+      "Zh_tw": "土城",
+      "En": "Tucheng"
+    },
+    "TripHeadSign": "往南港展覽館",
+    "DestinationStaionID": "BL23",
+    "DestinationStationName": {
+      "Zh_tw": "南港展覽館",
+      "En": "Taipei Nangang Exhibition Center"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:05",
+    "LastTrainTime": "00:05",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "BL",
+    "LineID": "BL",
+    "StationID": "BL04",
+    "StationName": {
+      "Zh_tw": "海山",
+      "En": "Haishan"
+    },
+    "TripHeadSign": "往頂埔",
+    "DestinationStaionID": "BL01",
+    "DestinationStationName": {
+      "Zh_tw": "頂埔",
+      "En": "Dingpu"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:03",
+    "LastTrainTime": "01:04",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "BL",
+    "LineID": "BL",
+    "StationID": "BL04",
+    "StationName": {
+      "Zh_tw": "海山",
+      "En": "Haishan"
+    },
+    "TripHeadSign": "往南港展覽館",
+    "DestinationStaionID": "BL23",
+    "DestinationStationName": {
+      "Zh_tw": "南港展覽館",
+      "En": "Taipei Nangang Exhibition Center"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:07",
+    "LastTrainTime": "00:07",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "BL",
+    "LineID": "BL",
+    "StationID": "BL05",
+    "StationName": {
+      "Zh_tw": "亞東醫院",
+      "En": "Far Eastern Hospital"
+    },
+    "TripHeadSign": "往頂埔",
+    "DestinationStaionID": "BL01",
+    "DestinationStationName": {
+      "Zh_tw": "頂埔",
+      "En": "Dingpu"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:00",
+    "LastTrainTime": "01:01",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "BL",
+    "LineID": "BL",
+    "StationID": "BL05",
+    "StationName": {
+      "Zh_tw": "亞東醫院",
+      "En": "Far Eastern Hospital"
+    },
+    "TripHeadSign": "往南港展覽館",
+    "DestinationStaionID": "BL23",
+    "DestinationStationName": {
+      "Zh_tw": "南港展覽館",
+      "En": "Taipei Nangang Exhibition Center"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:00",
+    "LastTrainTime": "00:10",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "BL",
+    "LineID": "BL",
+    "StationID": "BL06",
+    "StationName": {
+      "Zh_tw": "府中",
+      "En": "Fuzhong"
+    },
+    "TripHeadSign": "往頂埔",
+    "DestinationStaionID": "BL01",
+    "DestinationStationName": {
+      "Zh_tw": "頂埔",
+      "En": "Dingpu"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:05",
+    "LastTrainTime": "00:59",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "BL",
+    "LineID": "BL",
+    "StationID": "BL06",
+    "StationName": {
+      "Zh_tw": "府中",
+      "En": "Fuzhong"
+    },
+    "TripHeadSign": "往南港展覽館",
+    "DestinationStaionID": "BL23",
+    "DestinationStationName": {
+      "Zh_tw": "南港展覽館",
+      "En": "Taipei Nangang Exhibition Center"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:02",
+    "LastTrainTime": "00:12",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "BL",
+    "LineID": "BL",
+    "StationID": "BL07",
+    "StationName": {
+      "Zh_tw": "板橋",
+      "En": "Banqiao"
+    },
+    "TripHeadSign": "往頂埔",
+    "DestinationStaionID": "BL01",
+    "DestinationStationName": {
+      "Zh_tw": "頂埔",
+      "En": "Dingpu"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:04",
+    "LastTrainTime": "00:57",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "BL",
+    "LineID": "BL",
+    "StationID": "BL07",
+    "StationName": {
+      "Zh_tw": "板橋",
+      "En": "Banqiao"
+    },
+    "TripHeadSign": "往南港展覽館",
+    "DestinationStaionID": "BL23",
+    "DestinationStationName": {
+      "Zh_tw": "南港展覽館",
+      "En": "Taipei Nangang Exhibition Center"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:03",
+    "LastTrainTime": "00:32",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "BL",
+    "LineID": "BL",
+    "StationID": "BL08",
+    "StationName": {
+      "Zh_tw": "新埔",
+      "En": "Xinpu"
+    },
+    "TripHeadSign": "往頂埔",
+    "DestinationStaionID": "BL01",
+    "DestinationStationName": {
+      "Zh_tw": "頂埔",
+      "En": "Dingpu"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:02",
+    "LastTrainTime": "00:55",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "BL",
+    "LineID": "BL",
+    "StationID": "BL08",
+    "StationName": {
+      "Zh_tw": "新埔",
+      "En": "Xinpu"
+    },
+    "TripHeadSign": "往南港展覽館",
+    "DestinationStaionID": "BL23",
+    "DestinationStationName": {
+      "Zh_tw": "南港展覽館",
+      "En": "Taipei Nangang Exhibition Center"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:00",
+    "LastTrainTime": "00:35",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "BL",
+    "LineID": "BL",
+    "StationID": "BL09",
+    "StationName": {
+      "Zh_tw": "江子翠",
+      "En": "Jiangzicui"
+    },
+    "TripHeadSign": "往頂埔",
+    "DestinationStaionID": "BL01",
+    "DestinationStationName": {
+      "Zh_tw": "頂埔",
+      "En": "Dingpu"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:00",
+    "LastTrainTime": "00:54",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "BL",
+    "LineID": "BL",
+    "StationID": "BL09",
+    "StationName": {
+      "Zh_tw": "江子翠",
+      "En": "Jiangzicui"
+    },
+    "TripHeadSign": "往南港展覽館",
+    "DestinationStaionID": "BL23",
+    "DestinationStationName": {
+      "Zh_tw": "南港展覽館",
+      "En": "Taipei Nangang Exhibition Center"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:02",
+    "LastTrainTime": "00:36",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "BL",
+    "LineID": "BL",
+    "StationID": "BL10",
+    "StationName": {
+      "Zh_tw": "龍山寺",
+      "En": "Longshan Temple"
+    },
+    "TripHeadSign": "往頂埔",
+    "DestinationStaionID": "BL01",
+    "DestinationStationName": {
+      "Zh_tw": "頂埔",
+      "En": "Dingpu"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:05",
+    "LastTrainTime": "00:50",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "BL",
+    "LineID": "BL",
+    "StationID": "BL10",
+    "StationName": {
+      "Zh_tw": "龍山寺",
+      "En": "Longshan Temple"
+    },
+    "TripHeadSign": "往南港展覽館",
+    "DestinationStaionID": "BL23",
+    "DestinationStationName": {
+      "Zh_tw": "南港展覽館",
+      "En": "Taipei Nangang Exhibition Center"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:05",
+    "LastTrainTime": "00:40",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "BL",
+    "LineID": "BL",
+    "StationID": "BL11",
+    "StationName": {
+      "Zh_tw": "西門",
+      "En": "Ximen"
+    },
+    "TripHeadSign": "往頂埔",
+    "DestinationStaionID": "BL01",
+    "DestinationStationName": {
+      "Zh_tw": "頂埔",
+      "En": "Dingpu"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:03",
+    "LastTrainTime": "00:48",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "BL",
+    "LineID": "BL",
+    "StationID": "BL11",
+    "StationName": {
+      "Zh_tw": "西門",
+      "En": "Ximen"
+    },
+    "TripHeadSign": "往南港展覽館",
+    "DestinationStaionID": "BL23",
+    "DestinationStationName": {
+      "Zh_tw": "南港展覽館",
+      "En": "Taipei Nangang Exhibition Center"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:08",
+    "LastTrainTime": "00:42",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "BL",
+    "LineID": "BL",
+    "StationID": "BL12",
+    "StationName": {
+      "Zh_tw": "台北車站",
+      "En": "Taipei Main Station"
+    },
+    "TripHeadSign": "往頂埔",
+    "DestinationStaionID": "BL01",
+    "DestinationStationName": {
+      "Zh_tw": "頂埔",
+      "En": "Dingpu"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:00",
+    "LastTrainTime": "00:45",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "BL",
+    "LineID": "BL",
+    "StationID": "BL12",
+    "StationName": {
+      "Zh_tw": "台北車站",
+      "En": "Taipei Main Station"
+    },
+    "TripHeadSign": "往南港展覽館",
+    "DestinationStaionID": "BL23",
+    "DestinationStationName": {
+      "Zh_tw": "南港展覽館",
+      "En": "Taipei Nangang Exhibition Center"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:00",
+    "LastTrainTime": "00:45",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "BL",
+    "LineID": "BL",
+    "StationID": "BL13",
+    "StationName": {
+      "Zh_tw": "善導寺",
+      "En": "Shandao Temple"
+    },
+    "TripHeadSign": "往頂埔",
+    "DestinationStaionID": "BL01",
+    "DestinationStationName": {
+      "Zh_tw": "頂埔",
+      "En": "Dingpu"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:07",
+    "LastTrainTime": "00:44",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "BL",
+    "LineID": "BL",
+    "StationID": "BL13",
+    "StationName": {
+      "Zh_tw": "善導寺",
+      "En": "Shandao Temple"
+    },
+    "TripHeadSign": "往南港展覽館",
+    "DestinationStaionID": "BL23",
+    "DestinationStationName": {
+      "Zh_tw": "南港展覽館",
+      "En": "Taipei Nangang Exhibition Center"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:02",
+    "LastTrainTime": "00:46",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "BL",
+    "LineID": "BL",
+    "StationID": "BL14",
+    "StationName": {
+      "Zh_tw": "忠孝新生",
+      "En": "Zhongxiao Xinsheng"
+    },
+    "TripHeadSign": "往頂埔",
+    "DestinationStaionID": "BL01",
+    "DestinationStationName": {
+      "Zh_tw": "頂埔",
+      "En": "Dingpu"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:05",
+    "LastTrainTime": "00:42",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "BL",
+    "LineID": "BL",
+    "StationID": "BL14",
+    "StationName": {
+      "Zh_tw": "忠孝新生",
+      "En": "Zhongxiao Xinsheng"
+    },
+    "TripHeadSign": "往南港展覽館",
+    "DestinationStaionID": "BL23",
+    "DestinationStationName": {
+      "Zh_tw": "南港展覽館",
+      "En": "Taipei Nangang Exhibition Center"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:04",
+    "LastTrainTime": "00:48",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "BL",
+    "LineID": "BL",
+    "StationID": "BL15",
+    "StationName": {
+      "Zh_tw": "忠孝復興",
+      "En": "Zhongxiao Fuxing"
+    },
+    "TripHeadSign": "往頂埔",
+    "DestinationStaionID": "BL01",
+    "DestinationStationName": {
+      "Zh_tw": "頂埔",
+      "En": "Dingpu"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:03",
+    "LastTrainTime": "00:40",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "BL",
+    "LineID": "BL",
+    "StationID": "BL15",
+    "StationName": {
+      "Zh_tw": "忠孝復興",
+      "En": "Zhongxiao Fuxing"
+    },
+    "TripHeadSign": "往南港展覽館",
+    "DestinationStaionID": "BL23",
+    "DestinationStationName": {
+      "Zh_tw": "南港展覽館",
+      "En": "Taipei Nangang Exhibition Center"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:00",
+    "LastTrainTime": "00:50",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "BL",
+    "LineID": "BL",
+    "StationID": "BL16",
+    "StationName": {
+      "Zh_tw": "忠孝敦化",
+      "En": "Zhongxiao Dunhua"
+    },
+    "TripHeadSign": "往頂埔",
+    "DestinationStaionID": "BL01",
+    "DestinationStationName": {
+      "Zh_tw": "頂埔",
+      "En": "Dingpu"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:02",
+    "LastTrainTime": "00:24",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "BL",
+    "LineID": "BL",
+    "StationID": "BL16",
+    "StationName": {
+      "Zh_tw": "忠孝敦化",
+      "En": "Zhongxiao Dunhua"
+    },
+    "TripHeadSign": "往南港展覽館",
+    "DestinationStaionID": "BL23",
+    "DestinationStationName": {
+      "Zh_tw": "南港展覽館",
+      "En": "Taipei Nangang Exhibition Center"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:01",
+    "LastTrainTime": "00:52",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "BL",
+    "LineID": "BL",
+    "StationID": "BL17",
+    "StationName": {
+      "Zh_tw": "國父紀念館",
+      "En": "Sun Yat-Sen Memorial Hall"
+    },
+    "TripHeadSign": "往頂埔",
+    "DestinationStaionID": "BL01",
+    "DestinationStationName": {
+      "Zh_tw": "頂埔",
+      "En": "Dingpu"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:00",
+    "LastTrainTime": "00:22",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "BL",
+    "LineID": "BL",
+    "StationID": "BL17",
+    "StationName": {
+      "Zh_tw": "國父紀念館",
+      "En": "Sun Yat-Sen Memorial Hall"
+    },
+    "TripHeadSign": "往南港展覽館",
+    "DestinationStaionID": "BL23",
+    "DestinationStationName": {
+      "Zh_tw": "南港展覽館",
+      "En": "Taipei Nangang Exhibition Center"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:03",
+    "LastTrainTime": "00:53",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "BL",
+    "LineID": "BL",
+    "StationID": "BL18",
+    "StationName": {
+      "Zh_tw": "市政府",
+      "En": "Taipei City Hall"
+    },
+    "TripHeadSign": "往頂埔",
+    "DestinationStaionID": "BL01",
+    "DestinationStationName": {
+      "Zh_tw": "頂埔",
+      "En": "Dingpu"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:03",
+    "LastTrainTime": "00:21",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "BL",
+    "LineID": "BL",
+    "StationID": "BL18",
+    "StationName": {
+      "Zh_tw": "市政府",
+      "En": "Taipei City Hall"
+    },
+    "TripHeadSign": "往南港展覽館",
+    "DestinationStaionID": "BL23",
+    "DestinationStationName": {
+      "Zh_tw": "南港展覽館",
+      "En": "Taipei Nangang Exhibition Center"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:00",
+    "LastTrainTime": "00:55",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "BL",
+    "LineID": "BL",
+    "StationID": "BL19",
+    "StationName": {
+      "Zh_tw": "永春",
+      "En": "Yongchun"
+    },
+    "TripHeadSign": "往頂埔",
+    "DestinationStaionID": "BL01",
+    "DestinationStationName": {
+      "Zh_tw": "頂埔",
+      "En": "Dingpu"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:02",
+    "LastTrainTime": "00:19",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "BL",
+    "LineID": "BL",
+    "StationID": "BL19",
+    "StationName": {
+      "Zh_tw": "永春",
+      "En": "Yongchun"
+    },
+    "TripHeadSign": "往南港展覽館",
+    "DestinationStaionID": "BL23",
+    "DestinationStationName": {
+      "Zh_tw": "南港展覽館",
+      "En": "Taipei Nangang Exhibition Center"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:02",
+    "LastTrainTime": "00:57",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "BL",
+    "LineID": "BL",
+    "StationID": "BL20",
+    "StationName": {
+      "Zh_tw": "後山埤",
+      "En": "Houshanpi"
+    },
+    "TripHeadSign": "往頂埔",
+    "DestinationStaionID": "BL01",
+    "DestinationStationName": {
+      "Zh_tw": "頂埔",
+      "En": "Dingpu"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:00",
+    "LastTrainTime": "00:17",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "BL",
+    "LineID": "BL",
+    "StationID": "BL20",
+    "StationName": {
+      "Zh_tw": "後山埤",
+      "En": "Houshanpi"
+    },
+    "TripHeadSign": "往南港展覽館",
+    "DestinationStaionID": "BL23",
+    "DestinationStationName": {
+      "Zh_tw": "南港展覽館",
+      "En": "Taipei Nangang Exhibition Center"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:04",
+    "LastTrainTime": "00:59",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "BL",
+    "LineID": "BL",
+    "StationID": "BL21",
+    "StationName": {
+      "Zh_tw": "昆陽",
+      "En": "Kunyang"
+    },
+    "TripHeadSign": "往頂埔",
+    "DestinationStaionID": "BL01",
+    "DestinationStationName": {
+      "Zh_tw": "頂埔",
+      "En": "Dingpu"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:04",
+    "LastTrainTime": "00:15",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "BL",
+    "LineID": "BL",
+    "StationID": "BL21",
+    "StationName": {
+      "Zh_tw": "昆陽",
+      "En": "Kunyang"
+    },
+    "TripHeadSign": "往南港展覽館",
+    "DestinationStaionID": "BL23",
+    "DestinationStationName": {
+      "Zh_tw": "南港展覽館",
+      "En": "Taipei Nangang Exhibition Center"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:06",
+    "LastTrainTime": "01:01",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "BL",
+    "LineID": "BL",
+    "StationID": "BL22",
+    "StationName": {
+      "Zh_tw": "南港",
+      "En": "Nangang"
+    },
+    "TripHeadSign": "往頂埔",
+    "DestinationStaionID": "BL01",
+    "DestinationStationName": {
+      "Zh_tw": "頂埔",
+      "En": "Dingpu"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:02",
+    "LastTrainTime": "00:12",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "BL",
+    "LineID": "BL",
+    "StationID": "BL22",
+    "StationName": {
+      "Zh_tw": "南港",
+      "En": "Nangang"
+    },
+    "TripHeadSign": "往南港展覽館",
+    "DestinationStaionID": "BL23",
+    "DestinationStationName": {
+      "Zh_tw": "南港展覽館",
+      "En": "Taipei Nangang Exhibition Center"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:00",
+    "LastTrainTime": "01:03",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "BL",
+    "LineID": "BL",
+    "StationID": "BL23",
+    "StationName": {
+      "Zh_tw": "南港展覽館",
+      "En": "Taipei Nangang Exhibition Center"
+    },
+    "TripHeadSign": "往頂埔",
+    "DestinationStaionID": "BL01",
+    "DestinationStationName": {
+      "Zh_tw": "頂埔",
+      "En": "Dingpu"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:00",
+    "LastTrainTime": "00:00",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "BR",
+    "LineID": "BR",
+    "StationID": "BR01",
+    "StationName": {
+      "Zh_tw": "動物園",
+      "En": "Taipei Zoo"
+    },
+    "TripHeadSign": "往南港展覽館",
+    "DestinationStaionID": "BR24",
+    "DestinationStationName": {
+      "Zh_tw": "南港展覽館",
+      "En": "Taipei Nangang Exhibition Center"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:00",
+    "LastTrainTime": "00:00",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "BR",
+    "LineID": "BR",
+    "StationID": "BR02",
+    "StationName": {
+      "Zh_tw": "木柵",
+      "En": "Muzha"
+    },
+    "TripHeadSign": "往動物園",
+    "DestinationStaionID": "BR01",
+    "DestinationStationName": {
+      "Zh_tw": "動物園",
+      "En": "Taipei Zoo"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:04",
+    "LastTrainTime": "00:53",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "BR",
+    "LineID": "BR",
+    "StationID": "BR02",
+    "StationName": {
+      "Zh_tw": "木柵",
+      "En": "Muzha"
+    },
+    "TripHeadSign": "往南港展覽館",
+    "DestinationStaionID": "BR24",
+    "DestinationStationName": {
+      "Zh_tw": "南港展覽館",
+      "En": "Taipei Nangang Exhibition Center"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:01",
+    "LastTrainTime": "00:01",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "BR",
+    "LineID": "BR",
+    "StationID": "BR03",
+    "StationName": {
+      "Zh_tw": "萬芳社區",
+      "En": "Wanfang Community"
+    },
+    "TripHeadSign": "往動物園",
+    "DestinationStaionID": "BR01",
+    "DestinationStationName": {
+      "Zh_tw": "動物園",
+      "En": "Taipei Zoo"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:03",
+    "LastTrainTime": "00:52",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "BR",
+    "LineID": "BR",
+    "StationID": "BR03",
+    "StationName": {
+      "Zh_tw": "萬芳社區",
+      "En": "Wanfang Community"
+    },
+    "TripHeadSign": "往南港展覽館",
+    "DestinationStaionID": "BR24",
+    "DestinationStationName": {
+      "Zh_tw": "南港展覽館",
+      "En": "Taipei Nangang Exhibition Center"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:02",
+    "LastTrainTime": "00:02",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "BR",
+    "LineID": "BR",
+    "StationID": "BR04",
+    "StationName": {
+      "Zh_tw": "萬芳醫院",
+      "En": "Wanfang Hospital"
+    },
+    "TripHeadSign": "往動物園",
+    "DestinationStaionID": "BR01",
+    "DestinationStationName": {
+      "Zh_tw": "動物園",
+      "En": "Taipei Zoo"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:01",
+    "LastTrainTime": "00:49",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "BR",
+    "LineID": "BR",
+    "StationID": "BR04",
+    "StationName": {
+      "Zh_tw": "萬芳醫院",
+      "En": "Wanfang Hospital"
+    },
+    "TripHeadSign": "往南港展覽館",
+    "DestinationStaionID": "BR24",
+    "DestinationStationName": {
+      "Zh_tw": "南港展覽館",
+      "En": "Taipei Nangang Exhibition Center"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:04",
+    "LastTrainTime": "00:05",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "BR",
+    "LineID": "BR",
+    "StationID": "BR05",
+    "StationName": {
+      "Zh_tw": "辛亥",
+      "En": "Xinhai"
+    },
+    "TripHeadSign": "往動物園",
+    "DestinationStaionID": "BR01",
+    "DestinationStationName": {
+      "Zh_tw": "動物園",
+      "En": "Taipei Zoo"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:00",
+    "LastTrainTime": "00:47",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "BR",
+    "LineID": "BR",
+    "StationID": "BR05",
+    "StationName": {
+      "Zh_tw": "辛亥",
+      "En": "Xinhai"
+    },
+    "TripHeadSign": "往南港展覽館",
+    "DestinationStaionID": "BR24",
+    "DestinationStationName": {
+      "Zh_tw": "南港展覽館",
+      "En": "Taipei Nangang Exhibition Center"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:00",
+    "LastTrainTime": "00:07",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "BR",
+    "LineID": "BR",
+    "StationID": "BR06",
+    "StationName": {
+      "Zh_tw": "麟光",
+      "En": "Linguang"
+    },
+    "TripHeadSign": "往動物園",
+    "DestinationStaionID": "BR01",
+    "DestinationStationName": {
+      "Zh_tw": "動物園",
+      "En": "Taipei Zoo"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:03",
+    "LastTrainTime": "00:44",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "BR",
+    "LineID": "BR",
+    "StationID": "BR06",
+    "StationName": {
+      "Zh_tw": "麟光",
+      "En": "Linguang"
+    },
+    "TripHeadSign": "往南港展覽館",
+    "DestinationStaionID": "BR24",
+    "DestinationStationName": {
+      "Zh_tw": "南港展覽館",
+      "En": "Taipei Nangang Exhibition Center"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:01",
+    "LastTrainTime": "00:10",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "BR",
+    "LineID": "BR",
+    "StationID": "BR07",
+    "StationName": {
+      "Zh_tw": "六張犁",
+      "En": "Liuzhangli"
+    },
+    "TripHeadSign": "往動物園",
+    "DestinationStaionID": "BR01",
+    "DestinationStationName": {
+      "Zh_tw": "動物園",
+      "En": "Taipei Zoo"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:01",
+    "LastTrainTime": "00:42",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "BR",
+    "LineID": "BR",
+    "StationID": "BR07",
+    "StationName": {
+      "Zh_tw": "六張犁",
+      "En": "Liuzhangli"
+    },
+    "TripHeadSign": "往南港展覽館",
+    "DestinationStaionID": "BR24",
+    "DestinationStationName": {
+      "Zh_tw": "南港展覽館",
+      "En": "Taipei Nangang Exhibition Center"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:03",
+    "LastTrainTime": "00:12",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "BR",
+    "LineID": "BR",
+    "StationID": "BR08",
+    "StationName": {
+      "Zh_tw": "科技大樓",
+      "En": "Technology Building"
+    },
+    "TripHeadSign": "往動物園",
+    "DestinationStaionID": "BR01",
+    "DestinationStationName": {
+      "Zh_tw": "動物園",
+      "En": "Taipei Zoo"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:00",
+    "LastTrainTime": "00:39",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "BR",
+    "LineID": "BR",
+    "StationID": "BR08",
+    "StationName": {
+      "Zh_tw": "科技大樓",
+      "En": "Technology Building"
+    },
+    "TripHeadSign": "往南港展覽館",
+    "DestinationStaionID": "BR24",
+    "DestinationStationName": {
+      "Zh_tw": "南港展覽館",
+      "En": "Taipei Nangang Exhibition Center"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:00",
+    "LastTrainTime": "00:15",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "BR",
+    "LineID": "BR",
+    "StationID": "BR09",
+    "StationName": {
+      "Zh_tw": "大安",
+      "En": "Daan"
+    },
+    "TripHeadSign": "往動物園",
+    "DestinationStaionID": "BR01",
+    "DestinationStationName": {
+      "Zh_tw": "動物園",
+      "En": "Taipei Zoo"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:05",
+    "LastTrainTime": "00:37",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "BR",
+    "LineID": "BR",
+    "StationID": "BR09",
+    "StationName": {
+      "Zh_tw": "大安",
+      "En": "Daan"
+    },
+    "TripHeadSign": "往南港展覽館",
+    "DestinationStaionID": "BR24",
+    "DestinationStationName": {
+      "Zh_tw": "南港展覽館",
+      "En": "Taipei Nangang Exhibition Center"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:01",
+    "LastTrainTime": "00:33",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "BR",
+    "LineID": "BR",
+    "StationID": "BR10",
+    "StationName": {
+      "Zh_tw": "忠孝復興",
+      "En": "Zhongxiao Fuxing"
+    },
+    "TripHeadSign": "往動物園",
+    "DestinationStaionID": "BR01",
+    "DestinationStationName": {
+      "Zh_tw": "動物園",
+      "En": "Taipei Zoo"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:03",
+    "LastTrainTime": "00:35",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "BR",
+    "LineID": "BR",
+    "StationID": "BR10",
+    "StationName": {
+      "Zh_tw": "忠孝復興",
+      "En": "Zhongxiao Fuxing"
+    },
+    "TripHeadSign": "往南港展覽館",
+    "DestinationStaionID": "BR24",
+    "DestinationStationName": {
+      "Zh_tw": "南港展覽館",
+      "En": "Taipei Nangang Exhibition Center"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:03",
+    "LastTrainTime": "00:35",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "BR",
+    "LineID": "BR",
+    "StationID": "BR11",
+    "StationName": {
+      "Zh_tw": "南京復興",
+      "En": "Nanjing Fuxing"
+    },
+    "TripHeadSign": "往動物園",
+    "DestinationStaionID": "BR01",
+    "DestinationStationName": {
+      "Zh_tw": "動物園",
+      "En": "Taipei Zoo"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:01",
+    "LastTrainTime": "00:32",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "BR",
+    "LineID": "BR",
+    "StationID": "BR11",
+    "StationName": {
+      "Zh_tw": "南京復興",
+      "En": "Nanjing Fuxing"
+    },
+    "TripHeadSign": "往南港展覽館",
+    "DestinationStaionID": "BR24",
+    "DestinationStationName": {
+      "Zh_tw": "南港展覽館",
+      "En": "Taipei Nangang Exhibition Center"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:05",
+    "LastTrainTime": "00:38",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "BR",
+    "LineID": "BR",
+    "StationID": "BR12",
+    "StationName": {
+      "Zh_tw": "中山國中",
+      "En": "Zhongshan Junior High School"
+    },
+    "TripHeadSign": "往動物園",
+    "DestinationStaionID": "BR01",
+    "DestinationStationName": {
+      "Zh_tw": "動物園",
+      "En": "Taipei Zoo"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:00",
+    "LastTrainTime": "00:30",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "BR",
+    "LineID": "BR",
+    "StationID": "BR12",
+    "StationName": {
+      "Zh_tw": "中山國中",
+      "En": "Zhongshan Junior High School"
+    },
+    "TripHeadSign": "往南港展覽館",
+    "DestinationStaionID": "BR24",
+    "DestinationStationName": {
+      "Zh_tw": "南港展覽館",
+      "En": "Taipei Nangang Exhibition Center"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:00",
+    "LastTrainTime": "00:40",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "BR",
+    "LineID": "BR",
+    "StationID": "BR13",
+    "StationName": {
+      "Zh_tw": "松山機場",
+      "En": "Songshan Airport"
+    },
+    "TripHeadSign": "往動物園",
+    "DestinationStaionID": "BR01",
+    "DestinationStationName": {
+      "Zh_tw": "動物園",
+      "En": "Taipei Zoo"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:02",
+    "LastTrainTime": "00:27",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "BR",
+    "LineID": "BR",
+    "StationID": "BR13",
+    "StationName": {
+      "Zh_tw": "松山機場",
+      "En": "Songshan Airport"
+    },
+    "TripHeadSign": "往南港展覽館",
+    "DestinationStaionID": "BR24",
+    "DestinationStationName": {
+      "Zh_tw": "南港展覽館",
+      "En": "Taipei Nangang Exhibition Center"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:02",
+    "LastTrainTime": "00:43",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "BR",
+    "LineID": "BR",
+    "StationID": "BR14",
+    "StationName": {
+      "Zh_tw": "大直",
+      "En": "Dazhi"
+    },
+    "TripHeadSign": "往動物園",
+    "DestinationStaionID": "BR01",
+    "DestinationStationName": {
+      "Zh_tw": "動物園",
+      "En": "Taipei Zoo"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:00",
+    "LastTrainTime": "00:23",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "BR",
+    "LineID": "BR",
+    "StationID": "BR14",
+    "StationName": {
+      "Zh_tw": "大直",
+      "En": "Dazhi"
+    },
+    "TripHeadSign": "往南港展覽館",
+    "DestinationStaionID": "BR24",
+    "DestinationStationName": {
+      "Zh_tw": "南港展覽館",
+      "En": "Taipei Nangang Exhibition Center"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:00",
+    "LastTrainTime": "00:46",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "BR",
+    "LineID": "BR",
+    "StationID": "BR15",
+    "StationName": {
+      "Zh_tw": "劍南路",
+      "En": "Jiannan Rd."
+    },
+    "TripHeadSign": "往動物園",
+    "DestinationStaionID": "BR01",
+    "DestinationStationName": {
+      "Zh_tw": "動物園",
+      "En": "Taipei Zoo"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:03",
+    "LastTrainTime": "00:20",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "BR",
+    "LineID": "BR",
+    "StationID": "BR15",
+    "StationName": {
+      "Zh_tw": "劍南路",
+      "En": "Jiannan Rd."
+    },
+    "TripHeadSign": "往南港展覽館",
+    "DestinationStaionID": "BR24",
+    "DestinationStationName": {
+      "Zh_tw": "南港展覽館",
+      "En": "Taipei Nangang Exhibition Center"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:01",
+    "LastTrainTime": "00:49",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "BR",
+    "LineID": "BR",
+    "StationID": "BR16",
+    "StationName": {
+      "Zh_tw": "西湖",
+      "En": "Xihu"
+    },
+    "TripHeadSign": "往動物園",
+    "DestinationStaionID": "BR01",
+    "DestinationStationName": {
+      "Zh_tw": "動物園",
+      "En": "Taipei Zoo"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:01",
+    "LastTrainTime": "00:18",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "BR",
+    "LineID": "BR",
+    "StationID": "BR16",
+    "StationName": {
+      "Zh_tw": "西湖",
+      "En": "Xihu"
+    },
+    "TripHeadSign": "往南港展覽館",
+    "DestinationStaionID": "BR24",
+    "DestinationStationName": {
+      "Zh_tw": "南港展覽館",
+      "En": "Taipei Nangang Exhibition Center"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:03",
+    "LastTrainTime": "00:52",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "BR",
+    "LineID": "BR",
+    "StationID": "BR17",
+    "StationName": {
+      "Zh_tw": "港墘",
+      "En": "Gangqian"
+    },
+    "TripHeadSign": "往動物園",
+    "DestinationStaionID": "BR01",
+    "DestinationStationName": {
+      "Zh_tw": "動物園",
+      "En": "Taipei Zoo"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:00",
+    "LastTrainTime": "00:15",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "BR",
+    "LineID": "BR",
+    "StationID": "BR17",
+    "StationName": {
+      "Zh_tw": "港墘",
+      "En": "Gangqian"
+    },
+    "TripHeadSign": "往南港展覽館",
+    "DestinationStaionID": "BR24",
+    "DestinationStationName": {
+      "Zh_tw": "南港展覽館",
+      "En": "Taipei Nangang Exhibition Center"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:00",
+    "LastTrainTime": "00:54",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "BR",
+    "LineID": "BR",
+    "StationID": "BR18",
+    "StationName": {
+      "Zh_tw": "文德",
+      "En": "Wende"
+    },
+    "TripHeadSign": "往動物園",
+    "DestinationStaionID": "BR01",
+    "DestinationStationName": {
+      "Zh_tw": "動物園",
+      "En": "Taipei Zoo"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:05",
+    "LastTrainTime": "00:13",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "BR",
+    "LineID": "BR",
+    "StationID": "BR18",
+    "StationName": {
+      "Zh_tw": "文德",
+      "En": "Wende"
+    },
+    "TripHeadSign": "往南港展覽館",
+    "DestinationStaionID": "BR24",
+    "DestinationStationName": {
+      "Zh_tw": "南港展覽館",
+      "En": "Taipei Nangang Exhibition Center"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:01",
+    "LastTrainTime": "00:56",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "BR",
+    "LineID": "BR",
+    "StationID": "BR19",
+    "StationName": {
+      "Zh_tw": "內湖",
+      "En": "Neihu"
+    },
+    "TripHeadSign": "往動物園",
+    "DestinationStaionID": "BR01",
+    "DestinationStationName": {
+      "Zh_tw": "動物園",
+      "En": "Taipei Zoo"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:03",
+    "LastTrainTime": "00:11",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "BR",
+    "LineID": "BR",
+    "StationID": "BR19",
+    "StationName": {
+      "Zh_tw": "內湖",
+      "En": "Neihu"
+    },
+    "TripHeadSign": "往南港展覽館",
+    "DestinationStaionID": "BR24",
+    "DestinationStationName": {
+      "Zh_tw": "南港展覽館",
+      "En": "Taipei Nangang Exhibition Center"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:02",
+    "LastTrainTime": "00:58",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "BR",
+    "LineID": "BR",
+    "StationID": "BR20",
+    "StationName": {
+      "Zh_tw": "大湖公園",
+      "En": "Dahu Park"
+    },
+    "TripHeadSign": "往動物園",
+    "DestinationStaionID": "BR01",
+    "DestinationStationName": {
+      "Zh_tw": "動物園",
+      "En": "Taipei Zoo"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:01",
+    "LastTrainTime": "00:09",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "BR",
+    "LineID": "BR",
+    "StationID": "BR20",
+    "StationName": {
+      "Zh_tw": "大湖公園",
+      "En": "Dahu Park"
+    },
+    "TripHeadSign": "往南港展覽館",
+    "DestinationStaionID": "BR24",
+    "DestinationStationName": {
+      "Zh_tw": "南港展覽館",
+      "En": "Taipei Nangang Exhibition Center"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:04",
+    "LastTrainTime": "01:00",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "BR",
+    "LineID": "BR",
+    "StationID": "BR21",
+    "StationName": {
+      "Zh_tw": "葫洲",
+      "En": "Huzhou"
+    },
+    "TripHeadSign": "往動物園",
+    "DestinationStaionID": "BR01",
+    "DestinationStationName": {
+      "Zh_tw": "動物園",
+      "En": "Taipei Zoo"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:00",
+    "LastTrainTime": "00:05",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "BR",
+    "LineID": "BR",
+    "StationID": "BR21",
+    "StationName": {
+      "Zh_tw": "葫洲",
+      "En": "Huzhou"
+    },
+    "TripHeadSign": "往南港展覽館",
+    "DestinationStaionID": "BR24",
+    "DestinationStationName": {
+      "Zh_tw": "南港展覽館",
+      "En": "Taipei Nangang Exhibition Center"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:00",
+    "LastTrainTime": "01:03",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "BR",
+    "LineID": "BR",
+    "StationID": "BR22",
+    "StationName": {
+      "Zh_tw": "東湖",
+      "En": "Donghu"
+    },
+    "TripHeadSign": "往動物園",
+    "DestinationStaionID": "BR01",
+    "DestinationStationName": {
+      "Zh_tw": "動物園",
+      "En": "Taipei Zoo"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:03",
+    "LastTrainTime": "00:03",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "BR",
+    "LineID": "BR",
+    "StationID": "BR22",
+    "StationName": {
+      "Zh_tw": "東湖",
+      "En": "Donghu"
+    },
+    "TripHeadSign": "往南港展覽館",
+    "DestinationStaionID": "BR24",
+    "DestinationStationName": {
+      "Zh_tw": "南港展覽館",
+      "En": "Taipei Nangang Exhibition Center"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:01",
+    "LastTrainTime": "01:05",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "BR",
+    "LineID": "BR",
+    "StationID": "BR23",
+    "StationName": {
+      "Zh_tw": "南港軟體園區",
+      "En": "Nangang Software Park"
+    },
+    "TripHeadSign": "往動物園",
+    "DestinationStaionID": "BR01",
+    "DestinationStationName": {
+      "Zh_tw": "動物園",
+      "En": "Taipei Zoo"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:01",
+    "LastTrainTime": "00:01",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "BR",
+    "LineID": "BR",
+    "StationID": "BR23",
+    "StationName": {
+      "Zh_tw": "南港軟體園區",
+      "En": "Nangang Software Park"
+    },
+    "TripHeadSign": "往南港展覽館",
+    "DestinationStaionID": "BR24",
+    "DestinationStationName": {
+      "Zh_tw": "南港展覽館",
+      "En": "Taipei Nangang Exhibition Center"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:03",
+    "LastTrainTime": "01:07",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "BR",
+    "LineID": "BR",
+    "StationID": "BR24",
+    "StationName": {
+      "Zh_tw": "南港展覽館",
+      "En": "Taipei Nangang Exhibition Center"
+    },
+    "TripHeadSign": "往動物園",
+    "DestinationStaionID": "BR01",
+    "DestinationStationName": {
+      "Zh_tw": "動物園",
+      "En": "Taipei Zoo"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:00",
+    "LastTrainTime": "00:00",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "G",
+    "LineID": "G",
+    "StationID": "G01",
+    "StationName": {
+      "Zh_tw": "新店",
+      "En": "Xindian"
+    },
+    "TripHeadSign": "往松山",
+    "DestinationStaionID": "G19",
+    "DestinationStationName": {
+      "Zh_tw": "松山",
+      "En": "Songshan"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:00",
+    "LastTrainTime": "00:00",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "G",
+    "LineID": "G",
+    "StationID": "G02",
+    "StationName": {
+      "Zh_tw": "新店區公所",
+      "En": "Xindian District Office"
+    },
+    "TripHeadSign": "往新店",
+    "DestinationStaionID": "G01",
+    "DestinationStationName": {
+      "Zh_tw": "新店",
+      "En": "Xindian"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:02",
+    "LastTrainTime": "01:05",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "G",
+    "LineID": "G",
+    "StationID": "G02",
+    "StationName": {
+      "Zh_tw": "新店區公所",
+      "En": "Xindian District Office"
+    },
+    "TripHeadSign": "往松山",
+    "DestinationStaionID": "G19",
+    "DestinationStationName": {
+      "Zh_tw": "松山",
+      "En": "Songshan"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:02",
+    "LastTrainTime": "00:02",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "G",
+    "LineID": "G",
+    "StationID": "G03",
+    "StationName": {
+      "Zh_tw": "七張",
+      "En": "Qizhang"
+    },
+    "TripHeadSign": "往新店",
+    "DestinationStaionID": "G01",
+    "DestinationStationName": {
+      "Zh_tw": "新店",
+      "En": "Xindian"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:00",
+    "LastTrainTime": "01:03",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "G",
+    "LineID": "G",
+    "StationID": "G03",
+    "StationName": {
+      "Zh_tw": "七張",
+      "En": "Qizhang"
+    },
+    "TripHeadSign": "往七張",
+    "DestinationStaionID": "G03",
+    "DestinationStationName": {
+      "Zh_tw": "七張",
+      "En": "Qizhang"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:03",
+    "LastTrainTime": "23:57",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "G",
+    "LineID": "G",
+    "StationID": "G03",
+    "StationName": {
+      "Zh_tw": "七張",
+      "En": "Qizhang"
+    },
+    "TripHeadSign": "往松山",
+    "DestinationStaionID": "G19",
+    "DestinationStationName": {
+      "Zh_tw": "松山",
+      "En": "Songshan"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:03",
+    "LastTrainTime": "00:03",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "G",
+    "LineID": "G",
+    "StationID": "G04",
+    "StationName": {
+      "Zh_tw": "大坪林",
+      "En": "Dapinglin"
+    },
+    "TripHeadSign": "往新店",
+    "DestinationStaionID": "G01",
+    "DestinationStationName": {
+      "Zh_tw": "新店",
+      "En": "Xindian"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:08",
+    "LastTrainTime": "01:02",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "G",
+    "LineID": "G",
+    "StationID": "G04",
+    "StationName": {
+      "Zh_tw": "大坪林",
+      "En": "Dapinglin"
+    },
+    "TripHeadSign": "往松山",
+    "DestinationStaionID": "G19",
+    "DestinationStationName": {
+      "Zh_tw": "松山",
+      "En": "Songshan"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:00",
+    "LastTrainTime": "00:11",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "G",
+    "LineID": "G",
+    "StationID": "G05",
+    "StationName": {
+      "Zh_tw": "景美",
+      "En": "Jingmei"
+    },
+    "TripHeadSign": "往新店",
+    "DestinationStaionID": "G01",
+    "DestinationStationName": {
+      "Zh_tw": "新店",
+      "En": "Xindian"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:06",
+    "LastTrainTime": "01:00",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "G",
+    "LineID": "G",
+    "StationID": "G05",
+    "StationName": {
+      "Zh_tw": "景美",
+      "En": "Jingmei"
+    },
+    "TripHeadSign": "往松山",
+    "DestinationStaionID": "G19",
+    "DestinationStationName": {
+      "Zh_tw": "松山",
+      "En": "Songshan"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:02",
+    "LastTrainTime": "00:13",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "G",
+    "LineID": "G",
+    "StationID": "G06",
+    "StationName": {
+      "Zh_tw": "萬隆",
+      "En": "Wanlong"
+    },
+    "TripHeadSign": "往新店",
+    "DestinationStaionID": "G01",
+    "DestinationStationName": {
+      "Zh_tw": "新店",
+      "En": "Xindian"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:04",
+    "LastTrainTime": "00:58",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "G",
+    "LineID": "G",
+    "StationID": "G06",
+    "StationName": {
+      "Zh_tw": "萬隆",
+      "En": "Wanlong"
+    },
+    "TripHeadSign": "往松山",
+    "DestinationStaionID": "G19",
+    "DestinationStationName": {
+      "Zh_tw": "松山",
+      "En": "Songshan"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:04",
+    "LastTrainTime": "00:15",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "G",
+    "LineID": "G",
+    "StationID": "G07",
+    "StationName": {
+      "Zh_tw": "公館",
+      "En": "Gongguan"
+    },
+    "TripHeadSign": "往新店",
+    "DestinationStaionID": "G01",
+    "DestinationStationName": {
+      "Zh_tw": "新店",
+      "En": "Xindian"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:02",
+    "LastTrainTime": "00:55",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "G",
+    "LineID": "G",
+    "StationID": "G07",
+    "StationName": {
+      "Zh_tw": "公館",
+      "En": "Gongguan"
+    },
+    "TripHeadSign": "往松山",
+    "DestinationStaionID": "G19",
+    "DestinationStationName": {
+      "Zh_tw": "松山",
+      "En": "Songshan"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:00",
+    "LastTrainTime": "00:18",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "G",
+    "LineID": "G",
+    "StationID": "G08",
+    "StationName": {
+      "Zh_tw": "台電大樓",
+      "En": "Taipower Building"
+    },
+    "TripHeadSign": "往新店",
+    "DestinationStaionID": "G01",
+    "DestinationStationName": {
+      "Zh_tw": "新店",
+      "En": "Xindian"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:00",
+    "LastTrainTime": "00:54",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "G",
+    "LineID": "G",
+    "StationID": "G08",
+    "StationName": {
+      "Zh_tw": "台電大樓",
+      "En": "Taipower Building"
+    },
+    "TripHeadSign": "往松山",
+    "DestinationStaionID": "G19",
+    "DestinationStationName": {
+      "Zh_tw": "松山",
+      "En": "Songshan"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:02",
+    "LastTrainTime": "00:20",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "G",
+    "LineID": "G",
+    "StationID": "G09",
+    "StationName": {
+      "Zh_tw": "古亭",
+      "En": "Guting"
+    },
+    "TripHeadSign": "往新店",
+    "DestinationStaionID": "G01",
+    "DestinationStationName": {
+      "Zh_tw": "新店",
+      "En": "Xindian"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:05",
+    "LastTrainTime": "00:52",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "G",
+    "LineID": "G",
+    "StationID": "G09",
+    "StationName": {
+      "Zh_tw": "古亭",
+      "En": "Guting"
+    },
+    "TripHeadSign": "往松山",
+    "DestinationStaionID": "G19",
+    "DestinationStationName": {
+      "Zh_tw": "松山",
+      "En": "Songshan"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:04",
+    "LastTrainTime": "00:21",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "G",
+    "LineID": "G",
+    "StationID": "G10",
+    "StationName": {
+      "Zh_tw": "中正紀念堂",
+      "En": "Chiang Kai-Shek Memorial Hall"
+    },
+    "TripHeadSign": "往新店",
+    "DestinationStaionID": "G01",
+    "DestinationStationName": {
+      "Zh_tw": "新店",
+      "En": "Xindian"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:03",
+    "LastTrainTime": "00:50",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "G",
+    "LineID": "G",
+    "StationID": "G10",
+    "StationName": {
+      "Zh_tw": "中正紀念堂",
+      "En": "Chiang Kai-Shek Memorial Hall"
+    },
+    "TripHeadSign": "往松山",
+    "DestinationStaionID": "G19",
+    "DestinationStationName": {
+      "Zh_tw": "松山",
+      "En": "Songshan"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:00",
+    "LastTrainTime": "00:23",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "G",
+    "LineID": "G",
+    "StationID": "G11",
+    "StationName": {
+      "Zh_tw": "小南門",
+      "En": "Xiaonanmen"
+    },
+    "TripHeadSign": "往新店",
+    "DestinationStaionID": "G01",
+    "DestinationStationName": {
+      "Zh_tw": "新店",
+      "En": "Xindian"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:02",
+    "LastTrainTime": "00:48",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "G",
+    "LineID": "G",
+    "StationID": "G11",
+    "StationName": {
+      "Zh_tw": "小南門",
+      "En": "Xiaonanmen"
+    },
+    "TripHeadSign": "往松山",
+    "DestinationStaionID": "G19",
+    "DestinationStationName": {
+      "Zh_tw": "松山",
+      "En": "Songshan"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:02",
+    "LastTrainTime": "00:25",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "G",
+    "LineID": "G",
+    "StationID": "G12",
+    "StationName": {
+      "Zh_tw": "西門",
+      "En": "Ximen"
+    },
+    "TripHeadSign": "往新店",
+    "DestinationStaionID": "G01",
+    "DestinationStationName": {
+      "Zh_tw": "新店",
+      "En": "Xindian"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:00",
+    "LastTrainTime": "00:46",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "G",
+    "LineID": "G",
+    "StationID": "G12",
+    "StationName": {
+      "Zh_tw": "西門",
+      "En": "Ximen"
+    },
+    "TripHeadSign": "往松山",
+    "DestinationStaionID": "G19",
+    "DestinationStationName": {
+      "Zh_tw": "松山",
+      "En": "Songshan"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:04",
+    "LastTrainTime": "00:27",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "G",
+    "LineID": "G",
+    "StationID": "G13",
+    "StationName": {
+      "Zh_tw": "北門",
+      "En": "Beimen"
+    },
+    "TripHeadSign": "往新店",
+    "DestinationStaionID": "G01",
+    "DestinationStationName": {
+      "Zh_tw": "新店",
+      "En": "Xindian"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:02",
+    "LastTrainTime": "00:44",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "G",
+    "LineID": "G",
+    "StationID": "G13",
+    "StationName": {
+      "Zh_tw": "北門",
+      "En": "Beimen"
+    },
+    "TripHeadSign": "往松山",
+    "DestinationStaionID": "G19",
+    "DestinationStationName": {
+      "Zh_tw": "松山",
+      "En": "Songshan"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:00",
+    "LastTrainTime": "00:41",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "G",
+    "LineID": "G",
+    "StationID": "G14",
+    "StationName": {
+      "Zh_tw": "中山",
+      "En": "Zhongshan"
+    },
+    "TripHeadSign": "往新店",
+    "DestinationStaionID": "G01",
+    "DestinationStationName": {
+      "Zh_tw": "新店",
+      "En": "Xindian"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:00",
+    "LastTrainTime": "00:42",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "G",
+    "LineID": "G",
+    "StationID": "G14",
+    "StationName": {
+      "Zh_tw": "中山",
+      "En": "Zhongshan"
+    },
+    "TripHeadSign": "往松山",
+    "DestinationStaionID": "G19",
+    "DestinationStationName": {
+      "Zh_tw": "松山",
+      "En": "Songshan"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:02",
+    "LastTrainTime": "00:43",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "G",
+    "LineID": "G",
+    "StationID": "G15",
+    "StationName": {
+      "Zh_tw": "松江南京",
+      "En": "Songjiang Nanjing"
+    },
+    "TripHeadSign": "往新店",
+    "DestinationStaionID": "G01",
+    "DestinationStationName": {
+      "Zh_tw": "新店",
+      "En": "Xindian"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:02",
+    "LastTrainTime": "00:40",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "G",
+    "LineID": "G",
+    "StationID": "G15",
+    "StationName": {
+      "Zh_tw": "松江南京",
+      "En": "Songjiang Nanjing"
+    },
+    "TripHeadSign": "往松山",
+    "DestinationStaionID": "G19",
+    "DestinationStationName": {
+      "Zh_tw": "松山",
+      "En": "Songshan"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:05",
+    "LastTrainTime": "00:45",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "G",
+    "LineID": "G",
+    "StationID": "G16",
+    "StationName": {
+      "Zh_tw": "南京復興",
+      "En": "Nanjing Fuxing"
+    },
+    "TripHeadSign": "往新店",
+    "DestinationStaionID": "G01",
+    "DestinationStationName": {
+      "Zh_tw": "新店",
+      "En": "Xindian"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:00",
+    "LastTrainTime": "00:38",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "G",
+    "LineID": "G",
+    "StationID": "G16",
+    "StationName": {
+      "Zh_tw": "南京復興",
+      "En": "Nanjing Fuxing"
+    },
+    "TripHeadSign": "往松山",
+    "DestinationStaionID": "G19",
+    "DestinationStationName": {
+      "Zh_tw": "松山",
+      "En": "Songshan"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:00",
+    "LastTrainTime": "00:47",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "G",
+    "LineID": "G",
+    "StationID": "G17",
+    "StationName": {
+      "Zh_tw": "台北小巨蛋",
+      "En": "Taipei Arena"
+    },
+    "TripHeadSign": "往新店",
+    "DestinationStaionID": "G01",
+    "DestinationStationName": {
+      "Zh_tw": "新店",
+      "En": "Xindian"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:05",
+    "LastTrainTime": "00:05",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "G",
+    "LineID": "G",
+    "StationID": "G17",
+    "StationName": {
+      "Zh_tw": "台北小巨蛋",
+      "En": "Taipei Arena"
+    },
+    "TripHeadSign": "往松山",
+    "DestinationStaionID": "G19",
+    "DestinationStationName": {
+      "Zh_tw": "松山",
+      "En": "Songshan"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:02",
+    "LastTrainTime": "00:49",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "G",
+    "LineID": "G",
+    "StationID": "G18",
+    "StationName": {
+      "Zh_tw": "南京三民",
+      "En": "Nanjing Sanmin"
+    },
+    "TripHeadSign": "往新店",
+    "DestinationStaionID": "G01",
+    "DestinationStationName": {
+      "Zh_tw": "新店",
+      "En": "Xindian"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:03",
+    "LastTrainTime": "00:03",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "G",
+    "LineID": "G",
+    "StationID": "G18",
+    "StationName": {
+      "Zh_tw": "南京三民",
+      "En": "Nanjing Sanmin"
+    },
+    "TripHeadSign": "往松山",
+    "DestinationStaionID": "G19",
+    "DestinationStationName": {
+      "Zh_tw": "松山",
+      "En": "Songshan"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:05",
+    "LastTrainTime": "00:51",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "G",
+    "LineID": "G",
+    "StationID": "G19",
+    "StationName": {
+      "Zh_tw": "松山",
+      "En": "Songshan"
+    },
+    "TripHeadSign": "往新店",
+    "DestinationStaionID": "G01",
+    "DestinationStationName": {
+      "Zh_tw": "新店",
+      "En": "Xindian"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:00",
+    "LastTrainTime": "00:00",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "G",
+    "LineID": "G",
+    "StationID": "G03A",
+    "StationName": {
+      "Zh_tw": "小碧潭",
+      "En": "Xiaobitan"
+    },
+    "TripHeadSign": "往小碧潭",
+    "DestinationStaionID": "G03A",
+    "DestinationStationName": {
+      "Zh_tw": "小碧潭",
+      "En": "Xiaobitan"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:11",
+    "LastTrainTime": "00:09",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "O",
+    "LineID": "O",
+    "StationID": "O01",
+    "StationName": {
+      "Zh_tw": "南勢角",
+      "En": "Nanshijiao"
+    },
+    "TripHeadSign": "往迴龍",
+    "DestinationStaionID": "O21",
+    "DestinationStationName": {
+      "Zh_tw": "迴龍",
+      "En": "Huilong"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:00",
+    "LastTrainTime": "00:00",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "O",
+    "LineID": "O",
+    "StationID": "O01",
+    "StationName": {
+      "Zh_tw": "南勢角",
+      "En": "Nanshijiao"
+    },
+    "TripHeadSign": "往蘆洲",
+    "DestinationStaionID": "O54",
+    "DestinationStationName": {
+      "Zh_tw": "蘆洲",
+      "En": "Luzhou"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:04",
+    "LastTrainTime": "00:03",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "O",
+    "LineID": "O",
+    "StationID": "O02",
+    "StationName": {
+      "Zh_tw": "景安",
+      "En": "Jingan"
+    },
+    "TripHeadSign": "往南勢角",
+    "DestinationStaionID": "O01",
+    "DestinationStationName": {
+      "Zh_tw": "南勢角",
+      "En": "Nanshijiao"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:01",
+    "LastTrainTime": "01:01",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "O",
+    "LineID": "O",
+    "StationID": "O02",
+    "StationName": {
+      "Zh_tw": "景安",
+      "En": "Jingan"
+    },
+    "TripHeadSign": "往迴龍",
+    "DestinationStaionID": "O21",
+    "DestinationStationName": {
+      "Zh_tw": "迴龍",
+      "En": "Huilong"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:01",
+    "LastTrainTime": "00:08",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "O",
+    "LineID": "O",
+    "StationID": "O02",
+    "StationName": {
+      "Zh_tw": "景安",
+      "En": "Jingan"
+    },
+    "TripHeadSign": "往蘆洲",
+    "DestinationStaionID": "O54",
+    "DestinationStationName": {
+      "Zh_tw": "蘆洲",
+      "En": "Luzhou"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:05",
+    "LastTrainTime": "00:05",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "O",
+    "LineID": "O",
+    "StationID": "O03",
+    "StationName": {
+      "Zh_tw": "永安市場",
+      "En": "Yongan Market"
+    },
+    "TripHeadSign": "往南勢角",
+    "DestinationStaionID": "O01",
+    "DestinationStationName": {
+      "Zh_tw": "南勢角",
+      "En": "Nanshijiao"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:00",
+    "LastTrainTime": "01:00",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "O",
+    "LineID": "O",
+    "StationID": "O03",
+    "StationName": {
+      "Zh_tw": "永安市場",
+      "En": "Yongan Market"
+    },
+    "TripHeadSign": "往迴龍",
+    "DestinationStaionID": "O21",
+    "DestinationStationName": {
+      "Zh_tw": "迴龍",
+      "En": "Huilong"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:03",
+    "LastTrainTime": "00:10",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "O",
+    "LineID": "O",
+    "StationID": "O03",
+    "StationName": {
+      "Zh_tw": "永安市場",
+      "En": "Yongan Market"
+    },
+    "TripHeadSign": "往蘆洲",
+    "DestinationStaionID": "O54",
+    "DestinationStationName": {
+      "Zh_tw": "蘆洲",
+      "En": "Luzhou"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:00",
+    "LastTrainTime": "00:07",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "O",
+    "LineID": "O",
+    "StationID": "O04",
+    "StationName": {
+      "Zh_tw": "頂溪",
+      "En": "Dingxi"
+    },
+    "TripHeadSign": "往南勢角",
+    "DestinationStaionID": "O01",
+    "DestinationStationName": {
+      "Zh_tw": "南勢角",
+      "En": "Nanshijiao"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:03",
+    "LastTrainTime": "00:58",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "O",
+    "LineID": "O",
+    "StationID": "O04",
+    "StationName": {
+      "Zh_tw": "頂溪",
+      "En": "Dingxi"
+    },
+    "TripHeadSign": "往迴龍",
+    "DestinationStaionID": "O21",
+    "DestinationStationName": {
+      "Zh_tw": "迴龍",
+      "En": "Huilong"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:05",
+    "LastTrainTime": "00:13",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "O",
+    "LineID": "O",
+    "StationID": "O04",
+    "StationName": {
+      "Zh_tw": "頂溪",
+      "En": "Dingxi"
+    },
+    "TripHeadSign": "往蘆洲",
+    "DestinationStaionID": "O54",
+    "DestinationStationName": {
+      "Zh_tw": "蘆洲",
+      "En": "Luzhou"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:02",
+    "LastTrainTime": "00:09",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "O",
+    "LineID": "O",
+    "StationID": "O05",
+    "StationName": {
+      "Zh_tw": "古亭",
+      "En": "Guting"
+    },
+    "TripHeadSign": "往南勢角",
+    "DestinationStaionID": "O01",
+    "DestinationStationName": {
+      "Zh_tw": "南勢角",
+      "En": "Nanshijiao"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:00",
+    "LastTrainTime": "00:54",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "O",
+    "LineID": "O",
+    "StationID": "O05",
+    "StationName": {
+      "Zh_tw": "古亭",
+      "En": "Guting"
+    },
+    "TripHeadSign": "往迴龍",
+    "DestinationStaionID": "O21",
+    "DestinationStationName": {
+      "Zh_tw": "迴龍",
+      "En": "Huilong"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:00",
+    "LastTrainTime": "00:33",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "O",
+    "LineID": "O",
+    "StationID": "O05",
+    "StationName": {
+      "Zh_tw": "古亭",
+      "En": "Guting"
+    },
+    "TripHeadSign": "往蘆洲",
+    "DestinationStaionID": "O54",
+    "DestinationStationName": {
+      "Zh_tw": "蘆洲",
+      "En": "Luzhou"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:06",
+    "LastTrainTime": "00:29",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "O",
+    "LineID": "O",
+    "StationID": "O06",
+    "StationName": {
+      "Zh_tw": "東門",
+      "En": "Dongmen"
+    },
+    "TripHeadSign": "往南勢角",
+    "DestinationStaionID": "O01",
+    "DestinationStationName": {
+      "Zh_tw": "南勢角",
+      "En": "Nanshijiao"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:03",
+    "LastTrainTime": "00:50",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "O",
+    "LineID": "O",
+    "StationID": "O06",
+    "StationName": {
+      "Zh_tw": "東門",
+      "En": "Dongmen"
+    },
+    "TripHeadSign": "往迴龍",
+    "DestinationStaionID": "O21",
+    "DestinationStationName": {
+      "Zh_tw": "迴龍",
+      "En": "Huilong"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:03",
+    "LastTrainTime": "00:36",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "O",
+    "LineID": "O",
+    "StationID": "O06",
+    "StationName": {
+      "Zh_tw": "東門",
+      "En": "Dongmen"
+    },
+    "TripHeadSign": "往蘆洲",
+    "DestinationStaionID": "O54",
+    "DestinationStationName": {
+      "Zh_tw": "蘆洲",
+      "En": "Luzhou"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:09",
+    "LastTrainTime": "00:32",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "O",
+    "LineID": "O",
+    "StationID": "O07",
+    "StationName": {
+      "Zh_tw": "忠孝新生",
+      "En": "Zhongxiao Xinsheng"
+    },
+    "TripHeadSign": "往南勢角",
+    "DestinationStaionID": "O01",
+    "DestinationStationName": {
+      "Zh_tw": "南勢角",
+      "En": "Nanshijiao"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:00",
+    "LastTrainTime": "00:48",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "O",
+    "LineID": "O",
+    "StationID": "O07",
+    "StationName": {
+      "Zh_tw": "忠孝新生",
+      "En": "Zhongxiao Xinsheng"
+    },
+    "TripHeadSign": "往迴龍",
+    "DestinationStaionID": "O21",
+    "DestinationStationName": {
+      "Zh_tw": "迴龍",
+      "En": "Huilong"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:06",
+    "LastTrainTime": "00:39",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "O",
+    "LineID": "O",
+    "StationID": "O07",
+    "StationName": {
+      "Zh_tw": "忠孝新生",
+      "En": "Zhongxiao Xinsheng"
+    },
+    "TripHeadSign": "往蘆洲",
+    "DestinationStaionID": "O54",
+    "DestinationStationName": {
+      "Zh_tw": "蘆洲",
+      "En": "Luzhou"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:00",
+    "LastTrainTime": "00:35",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "O",
+    "LineID": "O",
+    "StationID": "O08",
+    "StationName": {
+      "Zh_tw": "松江南京",
+      "En": "Songjiang Nanjing"
+    },
+    "TripHeadSign": "往南勢角",
+    "DestinationStaionID": "O01",
+    "DestinationStationName": {
+      "Zh_tw": "南勢角",
+      "En": "Nanshijiao"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:03",
+    "LastTrainTime": "00:46",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "O",
+    "LineID": "O",
+    "StationID": "O08",
+    "StationName": {
+      "Zh_tw": "松江南京",
+      "En": "Songjiang Nanjing"
+    },
+    "TripHeadSign": "往迴龍",
+    "DestinationStaionID": "O21",
+    "DestinationStationName": {
+      "Zh_tw": "迴龍",
+      "En": "Huilong"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:08",
+    "LastTrainTime": "00:41",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "O",
+    "LineID": "O",
+    "StationID": "O08",
+    "StationName": {
+      "Zh_tw": "松江南京",
+      "En": "Songjiang Nanjing"
+    },
+    "TripHeadSign": "往蘆洲",
+    "DestinationStaionID": "O54",
+    "DestinationStationName": {
+      "Zh_tw": "蘆洲",
+      "En": "Luzhou"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:02",
+    "LastTrainTime": "00:38",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "O",
+    "LineID": "O",
+    "StationID": "O09",
+    "StationName": {
+      "Zh_tw": "行天宮",
+      "En": "Xingtian Temple"
+    },
+    "TripHeadSign": "往南勢角",
+    "DestinationStaionID": "O01",
+    "DestinationStationName": {
+      "Zh_tw": "南勢角",
+      "En": "Nanshijiao"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:01",
+    "LastTrainTime": "00:44",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "O",
+    "LineID": "O",
+    "StationID": "O09",
+    "StationName": {
+      "Zh_tw": "行天宮",
+      "En": "Xingtian Temple"
+    },
+    "TripHeadSign": "往迴龍",
+    "DestinationStaionID": "O21",
+    "DestinationStationName": {
+      "Zh_tw": "迴龍",
+      "En": "Huilong"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:00",
+    "LastTrainTime": "00:43",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "O",
+    "LineID": "O",
+    "StationID": "O09",
+    "StationName": {
+      "Zh_tw": "行天宮",
+      "En": "Xingtian Temple"
+    },
+    "TripHeadSign": "往蘆洲",
+    "DestinationStaionID": "O54",
+    "DestinationStationName": {
+      "Zh_tw": "蘆洲",
+      "En": "Luzhou"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:04",
+    "LastTrainTime": "00:40",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "O",
+    "LineID": "O",
+    "StationID": "O10",
+    "StationName": {
+      "Zh_tw": "中山國小",
+      "En": "Zhongshan Elementary School"
+    },
+    "TripHeadSign": "往南勢角",
+    "DestinationStaionID": "O01",
+    "DestinationStationName": {
+      "Zh_tw": "南勢角",
+      "En": "Nanshijiao"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:00",
+    "LastTrainTime": "00:42",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "O",
+    "LineID": "O",
+    "StationID": "O10",
+    "StationName": {
+      "Zh_tw": "中山國小",
+      "En": "Zhongshan Elementary School"
+    },
+    "TripHeadSign": "往迴龍",
+    "DestinationStaionID": "O21",
+    "DestinationStationName": {
+      "Zh_tw": "迴龍",
+      "En": "Huilong"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:02",
+    "LastTrainTime": "00:45",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "O",
+    "LineID": "O",
+    "StationID": "O10",
+    "StationName": {
+      "Zh_tw": "中山國小",
+      "En": "Zhongshan Elementary School"
+    },
+    "TripHeadSign": "往蘆洲",
+    "DestinationStaionID": "O54",
+    "DestinationStationName": {
+      "Zh_tw": "蘆洲",
+      "En": "Luzhou"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:06",
+    "LastTrainTime": "00:42",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "O",
+    "LineID": "O",
+    "StationID": "O11",
+    "StationName": {
+      "Zh_tw": "民權西路",
+      "En": "Minquan W. Rd."
+    },
+    "TripHeadSign": "往南勢角",
+    "DestinationStaionID": "O01",
+    "DestinationStationName": {
+      "Zh_tw": "南勢角",
+      "En": "Nanshijiao"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:01",
+    "LastTrainTime": "00:40",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "O",
+    "LineID": "O",
+    "StationID": "O11",
+    "StationName": {
+      "Zh_tw": "民權西路",
+      "En": "Minquan W. Rd."
+    },
+    "TripHeadSign": "往迴龍",
+    "DestinationStaionID": "O21",
+    "DestinationStationName": {
+      "Zh_tw": "迴龍",
+      "En": "Huilong"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:04",
+    "LastTrainTime": "00:47",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "O",
+    "LineID": "O",
+    "StationID": "O11",
+    "StationName": {
+      "Zh_tw": "民權西路",
+      "En": "Minquan W. Rd."
+    },
+    "TripHeadSign": "往蘆洲",
+    "DestinationStaionID": "O54",
+    "DestinationStationName": {
+      "Zh_tw": "蘆洲",
+      "En": "Luzhou"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:00",
+    "LastTrainTime": "00:44",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "O",
+    "LineID": "O",
+    "StationID": "O12",
+    "StationName": {
+      "Zh_tw": "大橋頭",
+      "En": "Daqiaotou"
+    },
+    "TripHeadSign": "往南勢角",
+    "DestinationStaionID": "O01",
+    "DestinationStationName": {
+      "Zh_tw": "南勢角",
+      "En": "Nanshijiao"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:00",
+    "LastTrainTime": "00:29",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "O",
+    "LineID": "O",
+    "StationID": "O12",
+    "StationName": {
+      "Zh_tw": "大橋頭",
+      "En": "Daqiaotou"
+    },
+    "TripHeadSign": "往迴龍",
+    "DestinationStaionID": "O21",
+    "DestinationStationName": {
+      "Zh_tw": "迴龍",
+      "En": "Huilong"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:06",
+    "LastTrainTime": "00:48",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "O",
+    "LineID": "O",
+    "StationID": "O12",
+    "StationName": {
+      "Zh_tw": "大橋頭",
+      "En": "Daqiaotou"
+    },
+    "TripHeadSign": "往蘆洲",
+    "DestinationStaionID": "O54",
+    "DestinationStationName": {
+      "Zh_tw": "蘆洲",
+      "En": "Luzhou"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:02",
+    "LastTrainTime": "00:45",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "O",
+    "LineID": "O",
+    "StationID": "O13",
+    "StationName": {
+      "Zh_tw": "台北橋",
+      "En": "Taipei Bridge"
+    },
+    "TripHeadSign": "往南勢角",
+    "DestinationStaionID": "O01",
+    "DestinationStationName": {
+      "Zh_tw": "南勢角",
+      "En": "Nanshijiao"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:06",
+    "LastTrainTime": "00:27",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "O",
+    "LineID": "O",
+    "StationID": "O13",
+    "StationName": {
+      "Zh_tw": "台北橋",
+      "En": "Taipei Bridge"
+    },
+    "TripHeadSign": "往迴龍",
+    "DestinationStaionID": "O21",
+    "DestinationStationName": {
+      "Zh_tw": "迴龍",
+      "En": "Huilong"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:08",
+    "LastTrainTime": "00:51",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "O",
+    "LineID": "O",
+    "StationID": "O14",
+    "StationName": {
+      "Zh_tw": "菜寮",
+      "En": "Cailiao"
+    },
+    "TripHeadSign": "往南勢角",
+    "DestinationStaionID": "O01",
+    "DestinationStationName": {
+      "Zh_tw": "南勢角",
+      "En": "Nanshijiao"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:04",
+    "LastTrainTime": "00:25",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "O",
+    "LineID": "O",
+    "StationID": "O14",
+    "StationName": {
+      "Zh_tw": "菜寮",
+      "En": "Cailiao"
+    },
+    "TripHeadSign": "往迴龍",
+    "DestinationStaionID": "O21",
+    "DestinationStationName": {
+      "Zh_tw": "迴龍",
+      "En": "Huilong"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:00",
+    "LastTrainTime": "00:53",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "O",
+    "LineID": "O",
+    "StationID": "O15",
+    "StationName": {
+      "Zh_tw": "三重",
+      "En": "Sanchong"
+    },
+    "TripHeadSign": "往南勢角",
+    "DestinationStaionID": "O01",
+    "DestinationStationName": {
+      "Zh_tw": "南勢角",
+      "En": "Nanshijiao"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:02",
+    "LastTrainTime": "00:23",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "O",
+    "LineID": "O",
+    "StationID": "O15",
+    "StationName": {
+      "Zh_tw": "三重",
+      "En": "Sanchong"
+    },
+    "TripHeadSign": "往迴龍",
+    "DestinationStaionID": "O21",
+    "DestinationStationName": {
+      "Zh_tw": "迴龍",
+      "En": "Huilong"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:02",
+    "LastTrainTime": "00:55",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "O",
+    "LineID": "O",
+    "StationID": "O16",
+    "StationName": {
+      "Zh_tw": "先嗇宮",
+      "En": "Xianse Temple"
+    },
+    "TripHeadSign": "往南勢角",
+    "DestinationStaionID": "O01",
+    "DestinationStationName": {
+      "Zh_tw": "南勢角",
+      "En": "Nanshijiao"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:00",
+    "LastTrainTime": "00:20",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "O",
+    "LineID": "O",
+    "StationID": "O16",
+    "StationName": {
+      "Zh_tw": "先嗇宮",
+      "En": "Xianse Temple"
+    },
+    "TripHeadSign": "往迴龍",
+    "DestinationStaionID": "O21",
+    "DestinationStationName": {
+      "Zh_tw": "迴龍",
+      "En": "Huilong"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:04",
+    "LastTrainTime": "00:57",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "O",
+    "LineID": "O",
+    "StationID": "O17",
+    "StationName": {
+      "Zh_tw": "頭前庄",
+      "En": "Touqianzhuang"
+    },
+    "TripHeadSign": "往南勢角",
+    "DestinationStaionID": "O01",
+    "DestinationStationName": {
+      "Zh_tw": "南勢角",
+      "En": "Nanshijiao"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:04",
+    "LastTrainTime": "00:17",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "O",
+    "LineID": "O",
+    "StationID": "O17",
+    "StationName": {
+      "Zh_tw": "頭前庄",
+      "En": "Touqianzhuang"
+    },
+    "TripHeadSign": "往迴龍",
+    "DestinationStaionID": "O21",
+    "DestinationStationName": {
+      "Zh_tw": "迴龍",
+      "En": "Huilong"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:07",
+    "LastTrainTime": "00:59",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "O",
+    "LineID": "O",
+    "StationID": "O18",
+    "StationName": {
+      "Zh_tw": "新莊",
+      "En": "Xinzhuang"
+    },
+    "TripHeadSign": "往南勢角",
+    "DestinationStaionID": "O01",
+    "DestinationStationName": {
+      "Zh_tw": "南勢角",
+      "En": "Nanshijiao"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:03",
+    "LastTrainTime": "00:08",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "O",
+    "LineID": "O",
+    "StationID": "O18",
+    "StationName": {
+      "Zh_tw": "新莊",
+      "En": "Xinzhuang"
+    },
+    "TripHeadSign": "往迴龍",
+    "DestinationStaionID": "O21",
+    "DestinationStationName": {
+      "Zh_tw": "迴龍",
+      "En": "Huilong"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:00",
+    "LastTrainTime": "01:01",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "O",
+    "LineID": "O",
+    "StationID": "O19",
+    "StationName": {
+      "Zh_tw": "輔大",
+      "En": "Fu Jen University"
+    },
+    "TripHeadSign": "往南勢角",
+    "DestinationStaionID": "O01",
+    "DestinationStationName": {
+      "Zh_tw": "南勢角",
+      "En": "Nanshijiao"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:00",
+    "LastTrainTime": "00:05",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "O",
+    "LineID": "O",
+    "StationID": "O19",
+    "StationName": {
+      "Zh_tw": "輔大",
+      "En": "Fu Jen University"
+    },
+    "TripHeadSign": "往迴龍",
+    "DestinationStaionID": "O21",
+    "DestinationStationName": {
+      "Zh_tw": "迴龍",
+      "En": "Huilong"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:03",
+    "LastTrainTime": "01:04",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "O",
+    "LineID": "O",
+    "StationID": "O20",
+    "StationName": {
+      "Zh_tw": "丹鳳",
+      "En": "Danfeng"
+    },
+    "TripHeadSign": "往南勢角",
+    "DestinationStaionID": "O01",
+    "DestinationStationName": {
+      "Zh_tw": "南勢角",
+      "En": "Nanshijiao"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:03",
+    "LastTrainTime": "00:03",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "O",
+    "LineID": "O",
+    "StationID": "O20",
+    "StationName": {
+      "Zh_tw": "丹鳳",
+      "En": "Danfeng"
+    },
+    "TripHeadSign": "往迴龍",
+    "DestinationStaionID": "O21",
+    "DestinationStationName": {
+      "Zh_tw": "迴龍",
+      "En": "Huilong"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:00",
+    "LastTrainTime": "01:06",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "O",
+    "LineID": "O",
+    "StationID": "O21",
+    "StationName": {
+      "Zh_tw": "迴龍",
+      "En": "Huilong"
+    },
+    "TripHeadSign": "往南勢角",
+    "DestinationStaionID": "O01",
+    "DestinationStationName": {
+      "Zh_tw": "南勢角",
+      "En": "Nanshijiao"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:00",
+    "LastTrainTime": "00:00",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "O",
+    "LineID": "O",
+    "StationID": "O50",
+    "StationName": {
+      "Zh_tw": "三重國小",
+      "En": "Sanchong Elementary School"
+    },
+    "TripHeadSign": "往南勢角",
+    "DestinationStaionID": "O01",
+    "DestinationStationName": {
+      "Zh_tw": "南勢角",
+      "En": "Nanshijiao"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:02",
+    "LastTrainTime": "00:09",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "O",
+    "LineID": "O",
+    "StationID": "O50",
+    "StationName": {
+      "Zh_tw": "三重國小",
+      "En": "Sanchong Elementary School"
+    },
+    "TripHeadSign": "往蘆洲",
+    "DestinationStaionID": "O54",
+    "DestinationStationName": {
+      "Zh_tw": "蘆洲",
+      "En": "Luzhou"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:05",
+    "LastTrainTime": "00:48",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "O",
+    "LineID": "O",
+    "StationID": "O51",
+    "StationName": {
+      "Zh_tw": "三和國中",
+      "En": "Sanhe Junior High School"
+    },
+    "TripHeadSign": "往南勢角",
+    "DestinationStaionID": "O01",
+    "DestinationStationName": {
+      "Zh_tw": "南勢角",
+      "En": "Nanshijiao"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:00",
+    "LastTrainTime": "00:07",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "O",
+    "LineID": "O",
+    "StationID": "O51",
+    "StationName": {
+      "Zh_tw": "三和國中",
+      "En": "Sanhe Junior High School"
+    },
+    "TripHeadSign": "往蘆洲",
+    "DestinationStaionID": "O54",
+    "DestinationStationName": {
+      "Zh_tw": "蘆洲",
+      "En": "Luzhou"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:07",
+    "LastTrainTime": "00:50",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "O",
+    "LineID": "O",
+    "StationID": "O52",
+    "StationName": {
+      "Zh_tw": "徐匯中學",
+      "En": "St.lgnatius High School"
+    },
+    "TripHeadSign": "往南勢角",
+    "DestinationStaionID": "O01",
+    "DestinationStationName": {
+      "Zh_tw": "南勢角",
+      "En": "Nanshijiao"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:04",
+    "LastTrainTime": "00:05",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "O",
+    "LineID": "O",
+    "StationID": "O52",
+    "StationName": {
+      "Zh_tw": "徐匯中學",
+      "En": "St.lgnatius High School"
+    },
+    "TripHeadSign": "往蘆洲",
+    "DestinationStaionID": "O54",
+    "DestinationStationName": {
+      "Zh_tw": "蘆洲",
+      "En": "Luzhou"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:00",
+    "LastTrainTime": "00:52",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "O",
+    "LineID": "O",
+    "StationID": "O53",
+    "StationName": {
+      "Zh_tw": "三民高中",
+      "En": "Sanmin Senior High School"
+    },
+    "TripHeadSign": "往南勢角",
+    "DestinationStaionID": "O01",
+    "DestinationStationName": {
+      "Zh_tw": "南勢角",
+      "En": "Nanshijiao"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:02",
+    "LastTrainTime": "00:03",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "O",
+    "LineID": "O",
+    "StationID": "O53",
+    "StationName": {
+      "Zh_tw": "三民高中",
+      "En": "Sanmin Senior High School"
+    },
+    "TripHeadSign": "往蘆洲",
+    "DestinationStaionID": "O54",
+    "DestinationStationName": {
+      "Zh_tw": "蘆洲",
+      "En": "Luzhou"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:02",
+    "LastTrainTime": "00:54",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "O",
+    "LineID": "O",
+    "StationID": "O54",
+    "StationName": {
+      "Zh_tw": "蘆洲",
+      "En": "Luzhou"
+    },
+    "TripHeadSign": "往南勢角",
+    "DestinationStaionID": "O01",
+    "DestinationStationName": {
+      "Zh_tw": "南勢角",
+      "En": "Nanshijiao"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:00",
+    "LastTrainTime": "00:00",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "R",
+    "LineID": "R",
+    "StationID": "R02",
+    "StationName": {
+      "Zh_tw": "象山",
+      "En": "Xiangshan"
+    },
+    "TripHeadSign": "往淡水",
+    "DestinationStaionID": "R28",
+    "DestinationStationName": {
+      "Zh_tw": "淡水",
+      "En": "Tamsui"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:00",
+    "LastTrainTime": "00:00",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "R",
+    "LineID": "R",
+    "StationID": "R03",
+    "StationName": {
+      "Zh_tw": "台北101/世貿",
+      "En": "Taipei 101/World Trade Center"
+    },
+    "TripHeadSign": "往象山",
+    "DestinationStaionID": "R02",
+    "DestinationStationName": {
+      "Zh_tw": "象山",
+      "En": "Xiangshan"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:04",
+    "LastTrainTime": "00:56",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "R",
+    "LineID": "R",
+    "StationID": "R03",
+    "StationName": {
+      "Zh_tw": "台北101/世貿",
+      "En": "Taipei 101/World Trade Center"
+    },
+    "TripHeadSign": "往淡水",
+    "DestinationStaionID": "R28",
+    "DestinationStationName": {
+      "Zh_tw": "淡水",
+      "En": "Tamsui"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:02",
+    "LastTrainTime": "00:02",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "R",
+    "LineID": "R",
+    "StationID": "R04",
+    "StationName": {
+      "Zh_tw": "信義安和",
+      "En": "Xinyi Anhe"
+    },
+    "TripHeadSign": "往象山",
+    "DestinationStaionID": "R02",
+    "DestinationStationName": {
+      "Zh_tw": "象山",
+      "En": "Xiangshan"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:02",
+    "LastTrainTime": "00:54",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "R",
+    "LineID": "R",
+    "StationID": "R04",
+    "StationName": {
+      "Zh_tw": "信義安和",
+      "En": "Xinyi Anhe"
+    },
+    "TripHeadSign": "往淡水",
+    "DestinationStaionID": "R28",
+    "DestinationStationName": {
+      "Zh_tw": "淡水",
+      "En": "Tamsui"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:04",
+    "LastTrainTime": "00:04",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "R",
+    "LineID": "R",
+    "StationID": "R05",
+    "StationName": {
+      "Zh_tw": "大安",
+      "En": "Daan"
+    },
+    "TripHeadSign": "往象山",
+    "DestinationStaionID": "R02",
+    "DestinationStationName": {
+      "Zh_tw": "象山",
+      "En": "Xiangshan"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:00",
+    "LastTrainTime": "00:52",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "R",
+    "LineID": "R",
+    "StationID": "R05",
+    "StationName": {
+      "Zh_tw": "大安",
+      "En": "Daan"
+    },
+    "TripHeadSign": "往淡水",
+    "DestinationStaionID": "R28",
+    "DestinationStationName": {
+      "Zh_tw": "淡水",
+      "En": "Tamsui"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:00",
+    "LastTrainTime": "00:25",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "R",
+    "LineID": "R",
+    "StationID": "R06",
+    "StationName": {
+      "Zh_tw": "大安森林公園",
+      "En": "Daan Park"
+    },
+    "TripHeadSign": "往象山",
+    "DestinationStaionID": "R02",
+    "DestinationStationName": {
+      "Zh_tw": "象山",
+      "En": "Xiangshan"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:08",
+    "LastTrainTime": "00:50",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "R",
+    "LineID": "R",
+    "StationID": "R06",
+    "StationName": {
+      "Zh_tw": "大安森林公園",
+      "En": "Daan Park"
+    },
+    "TripHeadSign": "往淡水",
+    "DestinationStaionID": "R28",
+    "DestinationStationName": {
+      "Zh_tw": "淡水",
+      "En": "Tamsui"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:01",
+    "LastTrainTime": "00:26",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "R",
+    "LineID": "R",
+    "StationID": "R07",
+    "StationName": {
+      "Zh_tw": "東門",
+      "En": "Dongmen"
+    },
+    "TripHeadSign": "往象山",
+    "DestinationStaionID": "R02",
+    "DestinationStationName": {
+      "Zh_tw": "象山",
+      "En": "Xiangshan"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:06",
+    "LastTrainTime": "00:49",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "R",
+    "LineID": "R",
+    "StationID": "R07",
+    "StationName": {
+      "Zh_tw": "東門",
+      "En": "Dongmen"
+    },
+    "TripHeadSign": "往淡水",
+    "DestinationStaionID": "R28",
+    "DestinationStationName": {
+      "Zh_tw": "淡水",
+      "En": "Tamsui"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:03",
+    "LastTrainTime": "00:28",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "R",
+    "LineID": "R",
+    "StationID": "R08",
+    "StationName": {
+      "Zh_tw": "中正紀念堂",
+      "En": "Chiang Kai-Shek Memorial Hall"
+    },
+    "TripHeadSign": "往象山",
+    "DestinationStaionID": "R02",
+    "DestinationStationName": {
+      "Zh_tw": "象山",
+      "En": "Xiangshan"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:03",
+    "LastTrainTime": "00:45",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "R",
+    "LineID": "R",
+    "StationID": "R08",
+    "StationName": {
+      "Zh_tw": "中正紀念堂",
+      "En": "Chiang Kai-Shek Memorial Hall"
+    },
+    "TripHeadSign": "往淡水",
+    "DestinationStaionID": "R28",
+    "DestinationStationName": {
+      "Zh_tw": "淡水",
+      "En": "Tamsui"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:06",
+    "LastTrainTime": "00:31",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "R",
+    "LineID": "R",
+    "StationID": "R09",
+    "StationName": {
+      "Zh_tw": "台大醫院",
+      "En": "NTU Hospital"
+    },
+    "TripHeadSign": "往象山",
+    "DestinationStaionID": "R02",
+    "DestinationStationName": {
+      "Zh_tw": "象山",
+      "En": "Xiangshan"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:01",
+    "LastTrainTime": "00:43",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "R",
+    "LineID": "R",
+    "StationID": "R09",
+    "StationName": {
+      "Zh_tw": "台大醫院",
+      "En": "NTU Hospital"
+    },
+    "TripHeadSign": "往淡水",
+    "DestinationStaionID": "R28",
+    "DestinationStationName": {
+      "Zh_tw": "淡水",
+      "En": "Tamsui"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:08",
+    "LastTrainTime": "00:33",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "R",
+    "LineID": "R",
+    "StationID": "R10",
+    "StationName": {
+      "Zh_tw": "台北車站",
+      "En": "Taipei Main Station"
+    },
+    "TripHeadSign": "往象山",
+    "DestinationStaionID": "R02",
+    "DestinationStationName": {
+      "Zh_tw": "象山",
+      "En": "Xiangshan"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:00",
+    "LastTrainTime": "00:41",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "R",
+    "LineID": "R",
+    "StationID": "R10",
+    "StationName": {
+      "Zh_tw": "台北車站",
+      "En": "Taipei Main Station"
+    },
+    "TripHeadSign": "往淡水",
+    "DestinationStaionID": "R28",
+    "DestinationStationName": {
+      "Zh_tw": "淡水",
+      "En": "Tamsui"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:00",
+    "LastTrainTime": "00:35",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "R",
+    "LineID": "R",
+    "StationID": "R11",
+    "StationName": {
+      "Zh_tw": "中山",
+      "En": "Zhongshan"
+    },
+    "TripHeadSign": "往象山",
+    "DestinationStaionID": "R02",
+    "DestinationStationName": {
+      "Zh_tw": "象山",
+      "En": "Xiangshan"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:03",
+    "LastTrainTime": "00:40",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "R",
+    "LineID": "R",
+    "StationID": "R11",
+    "StationName": {
+      "Zh_tw": "中山",
+      "En": "Zhongshan"
+    },
+    "TripHeadSign": "往淡水",
+    "DestinationStaionID": "R28",
+    "DestinationStationName": {
+      "Zh_tw": "淡水",
+      "En": "Tamsui"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:02",
+    "LastTrainTime": "00:37",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "R",
+    "LineID": "R",
+    "StationID": "R12",
+    "StationName": {
+      "Zh_tw": "雙連",
+      "En": "Shuanglian"
+    },
+    "TripHeadSign": "往象山",
+    "DestinationStaionID": "R02",
+    "DestinationStationName": {
+      "Zh_tw": "象山",
+      "En": "Xiangshan"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:01",
+    "LastTrainTime": "00:38",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "R",
+    "LineID": "R",
+    "StationID": "R12",
+    "StationName": {
+      "Zh_tw": "雙連",
+      "En": "Shuanglian"
+    },
+    "TripHeadSign": "往淡水",
+    "DestinationStaionID": "R28",
+    "DestinationStationName": {
+      "Zh_tw": "淡水",
+      "En": "Tamsui"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:03",
+    "LastTrainTime": "00:38",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "R",
+    "LineID": "R",
+    "StationID": "R13",
+    "StationName": {
+      "Zh_tw": "民權西路",
+      "En": "Minquan W. Rd."
+    },
+    "TripHeadSign": "往象山",
+    "DestinationStaionID": "R02",
+    "DestinationStationName": {
+      "Zh_tw": "象山",
+      "En": "Xiangshan"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:00",
+    "LastTrainTime": "00:37",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "R",
+    "LineID": "R",
+    "StationID": "R13",
+    "StationName": {
+      "Zh_tw": "民權西路",
+      "En": "Minquan W. Rd."
+    },
+    "TripHeadSign": "往淡水",
+    "DestinationStaionID": "R28",
+    "DestinationStationName": {
+      "Zh_tw": "淡水",
+      "En": "Tamsui"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:05",
+    "LastTrainTime": "00:39",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "R",
+    "LineID": "R",
+    "StationID": "R14",
+    "StationName": {
+      "Zh_tw": "圓山",
+      "En": "Yuanshan"
+    },
+    "TripHeadSign": "往象山",
+    "DestinationStaionID": "R02",
+    "DestinationStationName": {
+      "Zh_tw": "象山",
+      "En": "Xiangshan"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:02",
+    "LastTrainTime": "00:34",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "R",
+    "LineID": "R",
+    "StationID": "R14",
+    "StationName": {
+      "Zh_tw": "圓山",
+      "En": "Yuanshan"
+    },
+    "TripHeadSign": "往淡水",
+    "DestinationStaionID": "R28",
+    "DestinationStationName": {
+      "Zh_tw": "淡水",
+      "En": "Tamsui"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:07",
+    "LastTrainTime": "00:42",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "R",
+    "LineID": "R",
+    "StationID": "R15",
+    "StationName": {
+      "Zh_tw": "劍潭",
+      "En": "Jiantan"
+    },
+    "TripHeadSign": "往象山",
+    "DestinationStaionID": "R02",
+    "DestinationStationName": {
+      "Zh_tw": "象山",
+      "En": "Xiangshan"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:00",
+    "LastTrainTime": "00:31",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "R",
+    "LineID": "R",
+    "StationID": "R15",
+    "StationName": {
+      "Zh_tw": "劍潭",
+      "En": "Jiantan"
+    },
+    "TripHeadSign": "往淡水",
+    "DestinationStaionID": "R28",
+    "DestinationStationName": {
+      "Zh_tw": "淡水",
+      "En": "Tamsui"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:00",
+    "LastTrainTime": "00:45",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "R",
+    "LineID": "R",
+    "StationID": "R16",
+    "StationName": {
+      "Zh_tw": "士林",
+      "En": "Shilin"
+    },
+    "TripHeadSign": "往象山",
+    "DestinationStaionID": "R02",
+    "DestinationStationName": {
+      "Zh_tw": "象山",
+      "En": "Xiangshan"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:05",
+    "LastTrainTime": "00:28",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "R",
+    "LineID": "R",
+    "StationID": "R16",
+    "StationName": {
+      "Zh_tw": "士林",
+      "En": "Shilin"
+    },
+    "TripHeadSign": "往淡水",
+    "DestinationStaionID": "R28",
+    "DestinationStationName": {
+      "Zh_tw": "淡水",
+      "En": "Tamsui"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:02",
+    "LastTrainTime": "00:47",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "R",
+    "LineID": "R",
+    "StationID": "R17",
+    "StationName": {
+      "Zh_tw": "芝山",
+      "En": "Zhishan"
+    },
+    "TripHeadSign": "往象山",
+    "DestinationStaionID": "R02",
+    "DestinationStationName": {
+      "Zh_tw": "象山",
+      "En": "Xiangshan"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:03",
+    "LastTrainTime": "00:26",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "R",
+    "LineID": "R",
+    "StationID": "R17",
+    "StationName": {
+      "Zh_tw": "芝山",
+      "En": "Zhishan"
+    },
+    "TripHeadSign": "往淡水",
+    "DestinationStaionID": "R28",
+    "DestinationStationName": {
+      "Zh_tw": "淡水",
+      "En": "Tamsui"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:04",
+    "LastTrainTime": "00:50",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "R",
+    "LineID": "R",
+    "StationID": "R18",
+    "StationName": {
+      "Zh_tw": "明德",
+      "En": "Mingde"
+    },
+    "TripHeadSign": "往象山",
+    "DestinationStaionID": "R02",
+    "DestinationStationName": {
+      "Zh_tw": "象山",
+      "En": "Xiangshan"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:01",
+    "LastTrainTime": "00:24",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "R",
+    "LineID": "R",
+    "StationID": "R18",
+    "StationName": {
+      "Zh_tw": "明德",
+      "En": "Mingde"
+    },
+    "TripHeadSign": "往淡水",
+    "DestinationStaionID": "R28",
+    "DestinationStationName": {
+      "Zh_tw": "淡水",
+      "En": "Tamsui"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:05",
+    "LastTrainTime": "00:52",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "R",
+    "LineID": "R",
+    "StationID": "R19",
+    "StationName": {
+      "Zh_tw": "石牌",
+      "En": "Shipai"
+    },
+    "TripHeadSign": "往象山",
+    "DestinationStaionID": "R02",
+    "DestinationStationName": {
+      "Zh_tw": "象山",
+      "En": "Xiangshan"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:00",
+    "LastTrainTime": "00:23",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "R",
+    "LineID": "R",
+    "StationID": "R19",
+    "StationName": {
+      "Zh_tw": "石牌",
+      "En": "Shipai"
+    },
+    "TripHeadSign": "往淡水",
+    "DestinationStaionID": "R28",
+    "DestinationStationName": {
+      "Zh_tw": "淡水",
+      "En": "Tamsui"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:07",
+    "LastTrainTime": "00:53",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "R",
+    "LineID": "R",
+    "StationID": "R20",
+    "StationName": {
+      "Zh_tw": "唭哩岸",
+      "En": "Qilian"
+    },
+    "TripHeadSign": "往象山",
+    "DestinationStaionID": "R02",
+    "DestinationStationName": {
+      "Zh_tw": "象山",
+      "En": "Xiangshan"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:00",
+    "LastTrainTime": "00:19",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "R",
+    "LineID": "R",
+    "StationID": "R20",
+    "StationName": {
+      "Zh_tw": "唭哩岸",
+      "En": "Qilian"
+    },
+    "TripHeadSign": "往淡水",
+    "DestinationStaionID": "R28",
+    "DestinationStationName": {
+      "Zh_tw": "淡水",
+      "En": "Tamsui"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:00",
+    "LastTrainTime": "00:56",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "R",
+    "LineID": "R",
+    "StationID": "R21",
+    "StationName": {
+      "Zh_tw": "奇岩",
+      "En": "Qiyan"
+    },
+    "TripHeadSign": "往象山",
+    "DestinationStaionID": "R02",
+    "DestinationStationName": {
+      "Zh_tw": "象山",
+      "En": "Xiangshan"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:02",
+    "LastTrainTime": "00:18",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "R",
+    "LineID": "R",
+    "StationID": "R21",
+    "StationName": {
+      "Zh_tw": "奇岩",
+      "En": "Qiyan"
+    },
+    "TripHeadSign": "往淡水",
+    "DestinationStaionID": "R28",
+    "DestinationStationName": {
+      "Zh_tw": "淡水",
+      "En": "Tamsui"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:02",
+    "LastTrainTime": "00:58",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "R",
+    "LineID": "R",
+    "StationID": "R22",
+    "StationName": {
+      "Zh_tw": "北投",
+      "En": "Beitou"
+    },
+    "TripHeadSign": "往象山",
+    "DestinationStaionID": "R02",
+    "DestinationStationName": {
+      "Zh_tw": "象山",
+      "En": "Xiangshan"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:00",
+    "LastTrainTime": "00:16",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "R",
+    "LineID": "R",
+    "StationID": "R22",
+    "StationName": {
+      "Zh_tw": "北投",
+      "En": "Beitou"
+    },
+    "TripHeadSign": "往淡水",
+    "DestinationStaionID": "R28",
+    "DestinationStationName": {
+      "Zh_tw": "淡水",
+      "En": "Tamsui"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:03",
+    "LastTrainTime": "01:00",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "R",
+    "LineID": "R",
+    "StationID": "R22",
+    "StationName": {
+      "Zh_tw": "北投",
+      "En": "Beitou"
+    },
+    "TripHeadSign": "往新北投",
+    "DestinationStaionID": "R22A",
+    "DestinationStationName": {
+      "Zh_tw": "新北投",
+      "En": "Xinbeitou"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:00",
+    "LastTrainTime": "00:10",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "R",
+    "LineID": "R",
+    "StationID": "R23",
+    "StationName": {
+      "Zh_tw": "復興崗",
+      "En": "Fuxinggang"
+    },
+    "TripHeadSign": "往象山",
+    "DestinationStaionID": "R02",
+    "DestinationStationName": {
+      "Zh_tw": "象山",
+      "En": "Xiangshan"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:02",
+    "LastTrainTime": "00:12",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "R",
+    "LineID": "R",
+    "StationID": "R23",
+    "StationName": {
+      "Zh_tw": "復興崗",
+      "En": "Fuxinggang"
+    },
+    "TripHeadSign": "往淡水",
+    "DestinationStaionID": "R28",
+    "DestinationStationName": {
+      "Zh_tw": "淡水",
+      "En": "Tamsui"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:06",
+    "LastTrainTime": "01:03",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "R",
+    "LineID": "R",
+    "StationID": "R24",
+    "StationName": {
+      "Zh_tw": "忠義",
+      "En": "Zhongyi"
+    },
+    "TripHeadSign": "往象山",
+    "DestinationStaionID": "R02",
+    "DestinationStationName": {
+      "Zh_tw": "象山",
+      "En": "Xiangshan"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:00",
+    "LastTrainTime": "00:10",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "R",
+    "LineID": "R",
+    "StationID": "R24",
+    "StationName": {
+      "Zh_tw": "忠義",
+      "En": "Zhongyi"
+    },
+    "TripHeadSign": "往淡水",
+    "DestinationStaionID": "R28",
+    "DestinationStationName": {
+      "Zh_tw": "淡水",
+      "En": "Tamsui"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:02",
+    "LastTrainTime": "01:05",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "R",
+    "LineID": "R",
+    "StationID": "R25",
+    "StationName": {
+      "Zh_tw": "關渡",
+      "En": "Guandu"
+    },
+    "TripHeadSign": "往象山",
+    "DestinationStaionID": "R02",
+    "DestinationStationName": {
+      "Zh_tw": "象山",
+      "En": "Xiangshan"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:08",
+    "LastTrainTime": "00:08",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "R",
+    "LineID": "R",
+    "StationID": "R25",
+    "StationName": {
+      "Zh_tw": "關渡",
+      "En": "Guandu"
+    },
+    "TripHeadSign": "往淡水",
+    "DestinationStaionID": "R28",
+    "DestinationStationName": {
+      "Zh_tw": "淡水",
+      "En": "Tamsui"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:04",
+    "LastTrainTime": "01:07",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "R",
+    "LineID": "R",
+    "StationID": "R26",
+    "StationName": {
+      "Zh_tw": "竹圍",
+      "En": "Zhuwei"
+    },
+    "TripHeadSign": "往象山",
+    "DestinationStaionID": "R02",
+    "DestinationStationName": {
+      "Zh_tw": "象山",
+      "En": "Xiangshan"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:05",
+    "LastTrainTime": "00:06",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "R",
+    "LineID": "R",
+    "StationID": "R26",
+    "StationName": {
+      "Zh_tw": "竹圍",
+      "En": "Zhuwei"
+    },
+    "TripHeadSign": "往淡水",
+    "DestinationStaionID": "R28",
+    "DestinationStationName": {
+      "Zh_tw": "淡水",
+      "En": "Tamsui"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:07",
+    "LastTrainTime": "01:10",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "R",
+    "LineID": "R",
+    "StationID": "R27",
+    "StationName": {
+      "Zh_tw": "紅樹林",
+      "En": "Hongshulin"
+    },
+    "TripHeadSign": "往象山",
+    "DestinationStaionID": "R02",
+    "DestinationStationName": {
+      "Zh_tw": "象山",
+      "En": "Xiangshan"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:03",
+    "LastTrainTime": "00:03",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "R",
+    "LineID": "R",
+    "StationID": "R27",
+    "StationName": {
+      "Zh_tw": "紅樹林",
+      "En": "Hongshulin"
+    },
+    "TripHeadSign": "往淡水",
+    "DestinationStaionID": "R28",
+    "DestinationStationName": {
+      "Zh_tw": "淡水",
+      "En": "Tamsui"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:00",
+    "LastTrainTime": "01:13",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "R",
+    "LineID": "R",
+    "StationID": "R28",
+    "StationName": {
+      "Zh_tw": "淡水",
+      "En": "Tamsui"
+    },
+    "TripHeadSign": "往象山",
+    "DestinationStaionID": "R02",
+    "DestinationStationName": {
+      "Zh_tw": "象山",
+      "En": "Xiangshan"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:00",
+    "LastTrainTime": "00:00",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "R",
+    "LineID": "R",
+    "StationID": "R22A",
+    "StationName": {
+      "Zh_tw": "新北投",
+      "En": "Xinbeitou"
+    },
+    "TripHeadSign": "往北投",
+    "DestinationStaionID": "R22",
+    "DestinationStationName": {
+      "Zh_tw": "北投",
+      "En": "Beitou"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:05",
+    "LastTrainTime": "00:02",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  }
+]

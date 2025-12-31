@@ -1,0 +1,151 @@
+{
+  "test_time": "2025-12-31T09:23:50.964858",
+  "rail_system": "TRTC",
+  "target_line": "BR (文湖線)",
+  "summary": {
+    "total_apis": 8,
+    "successful": 6,
+    "failed": 2
+  },
+  "results": [
+    {
+      "api_key": "metro_shape",
+      "api_name": "Shape (軌道圖資)",
+      "status": "success",
+      "data_type": "list",
+      "record_count": 5,
+      "sample_fields": [
+        "LineNo",
+        "LineID",
+        "LineName",
+        "UpdateTime",
+        "Geometry",
+        "EncodedPolyline"
+      ],
+      "brown_line_records": 1,
+      "output_file": "/Users/migu/Desktop/資料庫/gen_ai_try/ichef_工作用/GIS/taipei-gis-analytics/../mini-taipei-v3/data/tdx_metro_test/metro_shape_TRTC_20251231.json",
+      "brown_line_file": "/Users/migu/Desktop/資料庫/gen_ai_try/ichef_工作用/GIS/taipei-gis-analytics/../mini-taipei-v3/data/tdx_metro_test/metro_shape_BR_20251231.json"
+    },
+    {
+      "api_key": "metro_frequency",
+      "api_name": "Frequency (班距頻率)",
+      "status": "success",
+      "data_type": "list",
+      "record_count": 22,
+      "sample_fields": [
+        "LineNo",
+        "LineID",
+        "RouteID",
+        "TrainType",
+        "ServiceDay",
+        "OperationTime",
+        "Headways",
+        "SrcUpdateTime",
+        "UpdateTime",
+        "VersionID"
+      ],
+      "brown_line_records": 2,
+      "output_file": "/Users/migu/Desktop/資料庫/gen_ai_try/ichef_工作用/GIS/taipei-gis-analytics/../mini-taipei-v3/data/tdx_metro_test/metro_frequency_TRTC_20251231.json",
+      "brown_line_file": "/Users/migu/Desktop/資料庫/gen_ai_try/ichef_工作用/GIS/taipei-gis-analytics/../mini-taipei-v3/data/tdx_metro_test/metro_frequency_BR_20251231.json"
+    },
+    {
+      "api_key": "metro_s2s_travel_time",
+      "api_name": "S2STravelTime (站間行駛時間)",
+      "status": "success",
+      "data_type": "list",
+      "record_count": 11,
+      "sample_fields": [
+        "LineNo",
+        "LineID",
+        "RouteID",
+        "TrainType",
+        "TravelTimes",
+        "SrcUpdateTime",
+        "UpdateTime",
+        "VersionID"
+      ],
+      "brown_line_records": 1,
+      "output_file": "/Users/migu/Desktop/資料庫/gen_ai_try/ichef_工作用/GIS/taipei-gis-analytics/../mini-taipei-v3/data/tdx_metro_test/metro_s2s_travel_time_TRTC_20251231.json",
+      "brown_line_file": "/Users/migu/Desktop/資料庫/gen_ai_try/ichef_工作用/GIS/taipei-gis-analytics/../mini-taipei-v3/data/tdx_metro_test/metro_s2s_travel_time_BR_20251231.json"
+    },
+    {
+      "api_key": "metro_first_last",
+      "api_name": "FirstLastTimetable (首末班車)",
+      "status": "success",
+      "data_type": "list",
+      "record_count": 243,
+      "sample_fields": [
+        "LineNo",
+        "LineID",
+        "StationID",
+        "StationName",
+        "TripHeadSign",
+        "DestinationStaionID",
+        "DestinationStationName",
+        "TrainType",
+        "FirstTrainTime",
+        "LastTrainTime",
+        "ServiceDay",
+        "SrcUpdateTime",
+        "UpdateTime",
+        "VersionID"
+      ],
+      "brown_line_records": 46,
+      "output_file": "/Users/migu/Desktop/資料庫/gen_ai_try/ichef_工作用/GIS/taipei-gis-analytics/../mini-taipei-v3/data/tdx_metro_test/metro_first_last_TRTC_20251231.json",
+      "brown_line_file": "/Users/migu/Desktop/資料庫/gen_ai_try/ichef_工作用/GIS/taipei-gis-analytics/../mini-taipei-v3/data/tdx_metro_test/metro_first_last_BR_20251231.json"
+    },
+    {
+      "api_key": "metro_station",
+      "api_name": "Station (車站資料)",
+      "status": "success",
+      "data_type": "list",
+      "record_count": 121,
+      "sample_fields": [
+        "StationUID",
+        "StationID",
+        "StationName",
+        "StationAddress",
+        "BikeAllowOnHoliday",
+        "SrcUpdateTime",
+        "StationPosition",
+        "LocationCity",
+        "LocationCityCode",
+        "LocationTown",
+        "LocationTownCode",
+        "UpdateTime",
+        "VersionID"
+      ],
+      "brown_line_records": 24,
+      "output_file": "/Users/migu/Desktop/資料庫/gen_ai_try/ichef_工作用/GIS/taipei-gis-analytics/../mini-taipei-v3/data/tdx_metro_test/metro_station_TRTC_20251231.json",
+      "brown_line_file": "/Users/migu/Desktop/資料庫/gen_ai_try/ichef_工作用/GIS/taipei-gis-analytics/../mini-taipei-v3/data/tdx_metro_test/metro_station_BR_20251231.json"
+    },
+    {
+      "api_key": "metro_line",
+      "api_name": "Line (路線資料)",
+      "status": "failed",
+      "error": "429 Client Error: Too Many Requests for url: https://tdx.transportdata.tw/api/basic/v2/Rail/Metro/Line/TRTC?%24format=JSON"
+    },
+    {
+      "api_key": "v3_rail_station",
+      "api_name": "V3 Rail Station (車站圖資)",
+      "status": "failed",
+      "error": "429 Client Error: Too Many Requests for url: https://tdx.transportdata.tw/api/basic/V3/Map/Rail/Network/Station/OperatorCode/TRTC?%24format=JSON"
+    },
+    {
+      "api_key": "v3_rail_line",
+      "api_name": "V3 Rail Line (路線圖資)",
+      "status": "success",
+      "data_type": "list",
+      "record_count": 5,
+      "sample_fields": [
+        "LineID",
+        "LineName",
+        "Geometry",
+        "CheckDate"
+      ],
+      "brown_line_records": 1,
+      "output_file": "/Users/migu/Desktop/資料庫/gen_ai_try/ichef_工作用/GIS/taipei-gis-analytics/../mini-taipei-v3/data/tdx_metro_test/v3_rail_line_TRTC_20251231.json",
+      "brown_line_file": "/Users/migu/Desktop/資料庫/gen_ai_try/ichef_工作用/GIS/taipei-gis-analytics/../mini-taipei-v3/data/tdx_metro_test/v3_rail_line_BR_20251231.json"
+    }
+  ]
+}

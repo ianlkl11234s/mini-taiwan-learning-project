@@ -1,0 +1,358 @@
+[
+  {
+    "LineNo": "BR",
+    "LineID": "BR",
+    "RouteID": "BR-1",
+    "TrainType": 1,
+    "TravelTimes": [
+      {
+        "Sequence": 1,
+        "FromStationID": "BR24",
+        "FromStationName": {
+          "Zh_tw": "南港展覽館",
+          "En": "Taipei Nangang Exhibition Center"
+        },
+        "ToStationID": "BR23",
+        "ToStationName": {
+          "Zh_tw": "南港軟體園區",
+          "En": "Nangang Software Park"
+        },
+        "RunTime": 78,
+        "StopTime": 0
+      },
+      {
+        "Sequence": 2,
+        "FromStationID": "BR23",
+        "FromStationName": {
+          "Zh_tw": "南港軟體園區",
+          "En": "Nangang Software Park"
+        },
+        "ToStationID": "BR22",
+        "ToStationName": {
+          "Zh_tw": "東湖",
+          "En": "Donghu"
+        },
+        "RunTime": 85,
+        "StopTime": 25
+      },
+      {
+        "Sequence": 3,
+        "FromStationID": "BR22",
+        "FromStationName": {
+          "Zh_tw": "東湖",
+          "En": "Donghu"
+        },
+        "ToStationID": "BR21",
+        "ToStationName": {
+          "Zh_tw": "葫洲",
+          "En": "Huzhou"
+        },
+        "RunTime": 78,
+        "StopTime": 25
+      },
+      {
+        "Sequence": 4,
+        "FromStationID": "BR21",
+        "FromStationName": {
+          "Zh_tw": "葫洲",
+          "En": "Huzhou"
+        },
+        "ToStationID": "BR20",
+        "ToStationName": {
+          "Zh_tw": "大湖公園",
+          "En": "Dahu Park"
+        },
+        "RunTime": 121,
+        "StopTime": 25
+      },
+      {
+        "Sequence": 5,
+        "FromStationID": "BR20",
+        "FromStationName": {
+          "Zh_tw": "大湖公園",
+          "En": "Dahu Park"
+        },
+        "ToStationID": "BR19",
+        "ToStationName": {
+          "Zh_tw": "內湖",
+          "En": "Neihu"
+        },
+        "RunTime": 71,
+        "StopTime": 25
+      },
+      {
+        "Sequence": 6,
+        "FromStationID": "BR19",
+        "FromStationName": {
+          "Zh_tw": "內湖",
+          "En": "Neihu"
+        },
+        "ToStationID": "BR18",
+        "ToStationName": {
+          "Zh_tw": "文德",
+          "En": "Wende"
+        },
+        "RunTime": 78,
+        "StopTime": 25
+      },
+      {
+        "Sequence": 7,
+        "FromStationID": "BR18",
+        "FromStationName": {
+          "Zh_tw": "文德",
+          "En": "Wende"
+        },
+        "ToStationID": "BR17",
+        "ToStationName": {
+          "Zh_tw": "港墘",
+          "En": "Gangqian"
+        },
+        "RunTime": 72,
+        "StopTime": 25
+      },
+      {
+        "Sequence": 8,
+        "FromStationID": "BR17",
+        "FromStationName": {
+          "Zh_tw": "港墘",
+          "En": "Gangqian"
+        },
+        "ToStationID": "BR16",
+        "ToStationName": {
+          "Zh_tw": "西湖",
+          "En": "Xihu"
+        },
+        "RunTime": 65,
+        "StopTime": 25
+      },
+      {
+        "Sequence": 9,
+        "FromStationID": "BR16",
+        "FromStationName": {
+          "Zh_tw": "西湖",
+          "En": "Xihu"
+        },
+        "ToStationID": "BR15",
+        "ToStationName": {
+          "Zh_tw": "劍南路",
+          "En": "Jiannan Rd."
+        },
+        "RunTime": 110,
+        "StopTime": 25
+      },
+      {
+        "Sequence": 10,
+        "FromStationID": "BR15",
+        "FromStationName": {
+          "Zh_tw": "劍南路",
+          "En": "Jiannan Rd."
+        },
+        "ToStationID": "BR14",
+        "ToStationName": {
+          "Zh_tw": "大直",
+          "En": "Dazhi"
+        },
+        "RunTime": 103,
+        "StopTime": 25
+      },
+      {
+        "Sequence": 11,
+        "FromStationID": "BR14",
+        "FromStationName": {
+          "Zh_tw": "大直",
+          "En": "Dazhi"
+        },
+        "ToStationID": "BR13",
+        "ToStationName": {
+          "Zh_tw": "松山機場",
+          "En": "Songshan Airport"
+        },
+        "RunTime": 172,
+        "StopTime": 25
+      },
+      {
+        "Sequence": 12,
+        "FromStationID": "BR13",
+        "FromStationName": {
+          "Zh_tw": "松山機場",
+          "En": "Songshan Airport"
+        },
+        "ToStationID": "BR12",
+        "ToStationName": {
+          "Zh_tw": "中山國中",
+          "En": "Zhongshan Junior High School"
+        },
+        "RunTime": 142,
+        "StopTime": 25
+      },
+      {
+        "Sequence": 13,
+        "FromStationID": "BR12",
+        "FromStationName": {
+          "Zh_tw": "中山國中",
+          "En": "Zhongshan Junior High School"
+        },
+        "ToStationID": "BR11",
+        "ToStationName": {
+          "Zh_tw": "南京復興",
+          "En": "Nanjing Fuxing"
+        },
+        "RunTime": 66,
+        "StopTime": 25
+      },
+      {
+        "Sequence": 14,
+        "FromStationID": "BR11",
+        "FromStationName": {
+          "Zh_tw": "南京復興",
+          "En": "Nanjing Fuxing"
+        },
+        "ToStationID": "BR10",
+        "ToStationName": {
+          "Zh_tw": "忠孝復興",
+          "En": "Zhongxiao Fuxing"
+        },
+        "RunTime": 86,
+        "StopTime": 30
+      },
+      {
+        "Sequence": 15,
+        "FromStationID": "BR10",
+        "FromStationName": {
+          "Zh_tw": "忠孝復興",
+          "En": "Zhongxiao Fuxing"
+        },
+        "ToStationID": "BR09",
+        "ToStationName": {
+          "Zh_tw": "大安",
+          "En": "Daan"
+        },
+        "RunTime": 67,
+        "StopTime": 45
+      },
+      {
+        "Sequence": 16,
+        "FromStationID": "BR09",
+        "FromStationName": {
+          "Zh_tw": "大安",
+          "En": "Daan"
+        },
+        "ToStationID": "BR08",
+        "ToStationName": {
+          "Zh_tw": "科技大樓",
+          "En": "Technology Building"
+        },
+        "RunTime": 69,
+        "StopTime": 30
+      },
+      {
+        "Sequence": 17,
+        "FromStationID": "BR08",
+        "FromStationName": {
+          "Zh_tw": "科技大樓",
+          "En": "Technology Building"
+        },
+        "ToStationID": "BR07",
+        "ToStationName": {
+          "Zh_tw": "六張犁",
+          "En": "Liuzhangli"
+        },
+        "RunTime": 122,
+        "StopTime": 25
+      },
+      {
+        "Sequence": 18,
+        "FromStationID": "BR07",
+        "FromStationName": {
+          "Zh_tw": "六張犁",
+          "En": "Liuzhangli"
+        },
+        "ToStationID": "BR06",
+        "ToStationName": {
+          "Zh_tw": "麟光",
+          "En": "Linguang"
+        },
+        "RunTime": 72,
+        "StopTime": 25
+      },
+      {
+        "Sequence": 19,
+        "FromStationID": "BR06",
+        "FromStationName": {
+          "Zh_tw": "麟光",
+          "En": "Linguang"
+        },
+        "ToStationID": "BR05",
+        "ToStationName": {
+          "Zh_tw": "辛亥",
+          "En": "Xinhai"
+        },
+        "RunTime": 124,
+        "StopTime": 25
+      },
+      {
+        "Sequence": 20,
+        "FromStationID": "BR05",
+        "FromStationName": {
+          "Zh_tw": "辛亥",
+          "En": "Xinhai"
+        },
+        "ToStationID": "BR04",
+        "ToStationName": {
+          "Zh_tw": "萬芳醫院",
+          "En": "Wanfang Hospital"
+        },
+        "RunTime": 106,
+        "StopTime": 25
+      },
+      {
+        "Sequence": 21,
+        "FromStationID": "BR04",
+        "FromStationName": {
+          "Zh_tw": "萬芳醫院",
+          "En": "Wanfang Hospital"
+        },
+        "ToStationID": "BR03",
+        "ToStationName": {
+          "Zh_tw": "萬芳社區",
+          "En": "Wanfang Community"
+        },
+        "RunTime": 99,
+        "StopTime": 25
+      },
+      {
+        "Sequence": 22,
+        "FromStationID": "BR03",
+        "FromStationName": {
+          "Zh_tw": "萬芳社區",
+          "En": "Wanfang Community"
+        },
+        "ToStationID": "BR02",
+        "ToStationName": {
+          "Zh_tw": "木柵",
+          "En": "Muzha"
+        },
+        "RunTime": 47,
+        "StopTime": 25
+      },
+      {
+        "Sequence": 23,
+        "FromStationID": "BR02",
+        "FromStationName": {
+          "Zh_tw": "木柵",
+          "En": "Muzha"
+        },
+        "ToStationID": "BR01",
+        "ToStationName": {
+          "Zh_tw": "動物園",
+          "En": "Taipei Zoo"
+        },
+        "RunTime": 67,
+        "StopTime": 25
+      }
+    ],
+    "SrcUpdateTime": "2020-01-31T14:00:00+08:00",
+    "UpdateTime": "2020-05-20T12:00:00+08:00",
+    "VersionID": 2
+  }
+]

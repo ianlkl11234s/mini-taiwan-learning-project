@@ -1,0 +1,1428 @@
+[
+  {
+    "LineNo": "BR",
+    "LineID": "BR",
+    "StationID": "BR01",
+    "StationName": {
+      "Zh_tw": "動物園",
+      "En": "Taipei Zoo"
+    },
+    "TripHeadSign": "往南港展覽館",
+    "DestinationStaionID": "BR24",
+    "DestinationStationName": {
+      "Zh_tw": "南港展覽館",
+      "En": "Taipei Nangang Exhibition Center"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:00",
+    "LastTrainTime": "00:00",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "BR",
+    "LineID": "BR",
+    "StationID": "BR02",
+    "StationName": {
+      "Zh_tw": "木柵",
+      "En": "Muzha"
+    },
+    "TripHeadSign": "往動物園",
+    "DestinationStaionID": "BR01",
+    "DestinationStationName": {
+      "Zh_tw": "動物園",
+      "En": "Taipei Zoo"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:04",
+    "LastTrainTime": "00:53",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "BR",
+    "LineID": "BR",
+    "StationID": "BR02",
+    "StationName": {
+      "Zh_tw": "木柵",
+      "En": "Muzha"
+    },
+    "TripHeadSign": "往南港展覽館",
+    "DestinationStaionID": "BR24",
+    "DestinationStationName": {
+      "Zh_tw": "南港展覽館",
+      "En": "Taipei Nangang Exhibition Center"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:01",
+    "LastTrainTime": "00:01",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "BR",
+    "LineID": "BR",
+    "StationID": "BR03",
+    "StationName": {
+      "Zh_tw": "萬芳社區",
+      "En": "Wanfang Community"
+    },
+    "TripHeadSign": "往動物園",
+    "DestinationStaionID": "BR01",
+    "DestinationStationName": {
+      "Zh_tw": "動物園",
+      "En": "Taipei Zoo"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:03",
+    "LastTrainTime": "00:52",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "BR",
+    "LineID": "BR",
+    "StationID": "BR03",
+    "StationName": {
+      "Zh_tw": "萬芳社區",
+      "En": "Wanfang Community"
+    },
+    "TripHeadSign": "往南港展覽館",
+    "DestinationStaionID": "BR24",
+    "DestinationStationName": {
+      "Zh_tw": "南港展覽館",
+      "En": "Taipei Nangang Exhibition Center"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:02",
+    "LastTrainTime": "00:02",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "BR",
+    "LineID": "BR",
+    "StationID": "BR04",
+    "StationName": {
+      "Zh_tw": "萬芳醫院",
+      "En": "Wanfang Hospital"
+    },
+    "TripHeadSign": "往動物園",
+    "DestinationStaionID": "BR01",
+    "DestinationStationName": {
+      "Zh_tw": "動物園",
+      "En": "Taipei Zoo"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:01",
+    "LastTrainTime": "00:49",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "BR",
+    "LineID": "BR",
+    "StationID": "BR04",
+    "StationName": {
+      "Zh_tw": "萬芳醫院",
+      "En": "Wanfang Hospital"
+    },
+    "TripHeadSign": "往南港展覽館",
+    "DestinationStaionID": "BR24",
+    "DestinationStationName": {
+      "Zh_tw": "南港展覽館",
+      "En": "Taipei Nangang Exhibition Center"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:04",
+    "LastTrainTime": "00:05",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "BR",
+    "LineID": "BR",
+    "StationID": "BR05",
+    "StationName": {
+      "Zh_tw": "辛亥",
+      "En": "Xinhai"
+    },
+    "TripHeadSign": "往動物園",
+    "DestinationStaionID": "BR01",
+    "DestinationStationName": {
+      "Zh_tw": "動物園",
+      "En": "Taipei Zoo"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:00",
+    "LastTrainTime": "00:47",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "BR",
+    "LineID": "BR",
+    "StationID": "BR05",
+    "StationName": {
+      "Zh_tw": "辛亥",
+      "En": "Xinhai"
+    },
+    "TripHeadSign": "往南港展覽館",
+    "DestinationStaionID": "BR24",
+    "DestinationStationName": {
+      "Zh_tw": "南港展覽館",
+      "En": "Taipei Nangang Exhibition Center"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:00",
+    "LastTrainTime": "00:07",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "BR",
+    "LineID": "BR",
+    "StationID": "BR06",
+    "StationName": {
+      "Zh_tw": "麟光",
+      "En": "Linguang"
+    },
+    "TripHeadSign": "往動物園",
+    "DestinationStaionID": "BR01",
+    "DestinationStationName": {
+      "Zh_tw": "動物園",
+      "En": "Taipei Zoo"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:03",
+    "LastTrainTime": "00:44",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "BR",
+    "LineID": "BR",
+    "StationID": "BR06",
+    "StationName": {
+      "Zh_tw": "麟光",
+      "En": "Linguang"
+    },
+    "TripHeadSign": "往南港展覽館",
+    "DestinationStaionID": "BR24",
+    "DestinationStationName": {
+      "Zh_tw": "南港展覽館",
+      "En": "Taipei Nangang Exhibition Center"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:01",
+    "LastTrainTime": "00:10",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "BR",
+    "LineID": "BR",
+    "StationID": "BR07",
+    "StationName": {
+      "Zh_tw": "六張犁",
+      "En": "Liuzhangli"
+    },
+    "TripHeadSign": "往動物園",
+    "DestinationStaionID": "BR01",
+    "DestinationStationName": {
+      "Zh_tw": "動物園",
+      "En": "Taipei Zoo"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:01",
+    "LastTrainTime": "00:42",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "BR",
+    "LineID": "BR",
+    "StationID": "BR07",
+    "StationName": {
+      "Zh_tw": "六張犁",
+      "En": "Liuzhangli"
+    },
+    "TripHeadSign": "往南港展覽館",
+    "DestinationStaionID": "BR24",
+    "DestinationStationName": {
+      "Zh_tw": "南港展覽館",
+      "En": "Taipei Nangang Exhibition Center"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:03",
+    "LastTrainTime": "00:12",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "BR",
+    "LineID": "BR",
+    "StationID": "BR08",
+    "StationName": {
+      "Zh_tw": "科技大樓",
+      "En": "Technology Building"
+    },
+    "TripHeadSign": "往動物園",
+    "DestinationStaionID": "BR01",
+    "DestinationStationName": {
+      "Zh_tw": "動物園",
+      "En": "Taipei Zoo"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:00",
+    "LastTrainTime": "00:39",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "BR",
+    "LineID": "BR",
+    "StationID": "BR08",
+    "StationName": {
+      "Zh_tw": "科技大樓",
+      "En": "Technology Building"
+    },
+    "TripHeadSign": "往南港展覽館",
+    "DestinationStaionID": "BR24",
+    "DestinationStationName": {
+      "Zh_tw": "南港展覽館",
+      "En": "Taipei Nangang Exhibition Center"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:00",
+    "LastTrainTime": "00:15",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "BR",
+    "LineID": "BR",
+    "StationID": "BR09",
+    "StationName": {
+      "Zh_tw": "大安",
+      "En": "Daan"
+    },
+    "TripHeadSign": "往動物園",
+    "DestinationStaionID": "BR01",
+    "DestinationStationName": {
+      "Zh_tw": "動物園",
+      "En": "Taipei Zoo"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:05",
+    "LastTrainTime": "00:37",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "BR",
+    "LineID": "BR",
+    "StationID": "BR09",
+    "StationName": {
+      "Zh_tw": "大安",
+      "En": "Daan"
+    },
+    "TripHeadSign": "往南港展覽館",
+    "DestinationStaionID": "BR24",
+    "DestinationStationName": {
+      "Zh_tw": "南港展覽館",
+      "En": "Taipei Nangang Exhibition Center"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:01",
+    "LastTrainTime": "00:33",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "BR",
+    "LineID": "BR",
+    "StationID": "BR10",
+    "StationName": {
+      "Zh_tw": "忠孝復興",
+      "En": "Zhongxiao Fuxing"
+    },
+    "TripHeadSign": "往動物園",
+    "DestinationStaionID": "BR01",
+    "DestinationStationName": {
+      "Zh_tw": "動物園",
+      "En": "Taipei Zoo"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:03",
+    "LastTrainTime": "00:35",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "BR",
+    "LineID": "BR",
+    "StationID": "BR10",
+    "StationName": {
+      "Zh_tw": "忠孝復興",
+      "En": "Zhongxiao Fuxing"
+    },
+    "TripHeadSign": "往南港展覽館",
+    "DestinationStaionID": "BR24",
+    "DestinationStationName": {
+      "Zh_tw": "南港展覽館",
+      "En": "Taipei Nangang Exhibition Center"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:03",
+    "LastTrainTime": "00:35",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "BR",
+    "LineID": "BR",
+    "StationID": "BR11",
+    "StationName": {
+      "Zh_tw": "南京復興",
+      "En": "Nanjing Fuxing"
+    },
+    "TripHeadSign": "往動物園",
+    "DestinationStaionID": "BR01",
+    "DestinationStationName": {
+      "Zh_tw": "動物園",
+      "En": "Taipei Zoo"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:01",
+    "LastTrainTime": "00:32",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "BR",
+    "LineID": "BR",
+    "StationID": "BR11",
+    "StationName": {
+      "Zh_tw": "南京復興",
+      "En": "Nanjing Fuxing"
+    },
+    "TripHeadSign": "往南港展覽館",
+    "DestinationStaionID": "BR24",
+    "DestinationStationName": {
+      "Zh_tw": "南港展覽館",
+      "En": "Taipei Nangang Exhibition Center"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:05",
+    "LastTrainTime": "00:38",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "BR",
+    "LineID": "BR",
+    "StationID": "BR12",
+    "StationName": {
+      "Zh_tw": "中山國中",
+      "En": "Zhongshan Junior High School"
+    },
+    "TripHeadSign": "往動物園",
+    "DestinationStaionID": "BR01",
+    "DestinationStationName": {
+      "Zh_tw": "動物園",
+      "En": "Taipei Zoo"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:00",
+    "LastTrainTime": "00:30",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "BR",
+    "LineID": "BR",
+    "StationID": "BR12",
+    "StationName": {
+      "Zh_tw": "中山國中",
+      "En": "Zhongshan Junior High School"
+    },
+    "TripHeadSign": "往南港展覽館",
+    "DestinationStaionID": "BR24",
+    "DestinationStationName": {
+      "Zh_tw": "南港展覽館",
+      "En": "Taipei Nangang Exhibition Center"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:00",
+    "LastTrainTime": "00:40",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "BR",
+    "LineID": "BR",
+    "StationID": "BR13",
+    "StationName": {
+      "Zh_tw": "松山機場",
+      "En": "Songshan Airport"
+    },
+    "TripHeadSign": "往動物園",
+    "DestinationStaionID": "BR01",
+    "DestinationStationName": {
+      "Zh_tw": "動物園",
+      "En": "Taipei Zoo"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:02",
+    "LastTrainTime": "00:27",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "BR",
+    "LineID": "BR",
+    "StationID": "BR13",
+    "StationName": {
+      "Zh_tw": "松山機場",
+      "En": "Songshan Airport"
+    },
+    "TripHeadSign": "往南港展覽館",
+    "DestinationStaionID": "BR24",
+    "DestinationStationName": {
+      "Zh_tw": "南港展覽館",
+      "En": "Taipei Nangang Exhibition Center"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:02",
+    "LastTrainTime": "00:43",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "BR",
+    "LineID": "BR",
+    "StationID": "BR14",
+    "StationName": {
+      "Zh_tw": "大直",
+      "En": "Dazhi"
+    },
+    "TripHeadSign": "往動物園",
+    "DestinationStaionID": "BR01",
+    "DestinationStationName": {
+      "Zh_tw": "動物園",
+      "En": "Taipei Zoo"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:00",
+    "LastTrainTime": "00:23",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "BR",
+    "LineID": "BR",
+    "StationID": "BR14",
+    "StationName": {
+      "Zh_tw": "大直",
+      "En": "Dazhi"
+    },
+    "TripHeadSign": "往南港展覽館",
+    "DestinationStaionID": "BR24",
+    "DestinationStationName": {
+      "Zh_tw": "南港展覽館",
+      "En": "Taipei Nangang Exhibition Center"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:00",
+    "LastTrainTime": "00:46",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "BR",
+    "LineID": "BR",
+    "StationID": "BR15",
+    "StationName": {
+      "Zh_tw": "劍南路",
+      "En": "Jiannan Rd."
+    },
+    "TripHeadSign": "往動物園",
+    "DestinationStaionID": "BR01",
+    "DestinationStationName": {
+      "Zh_tw": "動物園",
+      "En": "Taipei Zoo"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:03",
+    "LastTrainTime": "00:20",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "BR",
+    "LineID": "BR",
+    "StationID": "BR15",
+    "StationName": {
+      "Zh_tw": "劍南路",
+      "En": "Jiannan Rd."
+    },
+    "TripHeadSign": "往南港展覽館",
+    "DestinationStaionID": "BR24",
+    "DestinationStationName": {
+      "Zh_tw": "南港展覽館",
+      "En": "Taipei Nangang Exhibition Center"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:01",
+    "LastTrainTime": "00:49",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "BR",
+    "LineID": "BR",
+    "StationID": "BR16",
+    "StationName": {
+      "Zh_tw": "西湖",
+      "En": "Xihu"
+    },
+    "TripHeadSign": "往動物園",
+    "DestinationStaionID": "BR01",
+    "DestinationStationName": {
+      "Zh_tw": "動物園",
+      "En": "Taipei Zoo"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:01",
+    "LastTrainTime": "00:18",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "BR",
+    "LineID": "BR",
+    "StationID": "BR16",
+    "StationName": {
+      "Zh_tw": "西湖",
+      "En": "Xihu"
+    },
+    "TripHeadSign": "往南港展覽館",
+    "DestinationStaionID": "BR24",
+    "DestinationStationName": {
+      "Zh_tw": "南港展覽館",
+      "En": "Taipei Nangang Exhibition Center"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:03",
+    "LastTrainTime": "00:52",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "BR",
+    "LineID": "BR",
+    "StationID": "BR17",
+    "StationName": {
+      "Zh_tw": "港墘",
+      "En": "Gangqian"
+    },
+    "TripHeadSign": "往動物園",
+    "DestinationStaionID": "BR01",
+    "DestinationStationName": {
+      "Zh_tw": "動物園",
+      "En": "Taipei Zoo"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:00",
+    "LastTrainTime": "00:15",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "BR",
+    "LineID": "BR",
+    "StationID": "BR17",
+    "StationName": {
+      "Zh_tw": "港墘",
+      "En": "Gangqian"
+    },
+    "TripHeadSign": "往南港展覽館",
+    "DestinationStaionID": "BR24",
+    "DestinationStationName": {
+      "Zh_tw": "南港展覽館",
+      "En": "Taipei Nangang Exhibition Center"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:00",
+    "LastTrainTime": "00:54",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "BR",
+    "LineID": "BR",
+    "StationID": "BR18",
+    "StationName": {
+      "Zh_tw": "文德",
+      "En": "Wende"
+    },
+    "TripHeadSign": "往動物園",
+    "DestinationStaionID": "BR01",
+    "DestinationStationName": {
+      "Zh_tw": "動物園",
+      "En": "Taipei Zoo"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:05",
+    "LastTrainTime": "00:13",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "BR",
+    "LineID": "BR",
+    "StationID": "BR18",
+    "StationName": {
+      "Zh_tw": "文德",
+      "En": "Wende"
+    },
+    "TripHeadSign": "往南港展覽館",
+    "DestinationStaionID": "BR24",
+    "DestinationStationName": {
+      "Zh_tw": "南港展覽館",
+      "En": "Taipei Nangang Exhibition Center"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:01",
+    "LastTrainTime": "00:56",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "BR",
+    "LineID": "BR",
+    "StationID": "BR19",
+    "StationName": {
+      "Zh_tw": "內湖",
+      "En": "Neihu"
+    },
+    "TripHeadSign": "往動物園",
+    "DestinationStaionID": "BR01",
+    "DestinationStationName": {
+      "Zh_tw": "動物園",
+      "En": "Taipei Zoo"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:03",
+    "LastTrainTime": "00:11",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "BR",
+    "LineID": "BR",
+    "StationID": "BR19",
+    "StationName": {
+      "Zh_tw": "內湖",
+      "En": "Neihu"
+    },
+    "TripHeadSign": "往南港展覽館",
+    "DestinationStaionID": "BR24",
+    "DestinationStationName": {
+      "Zh_tw": "南港展覽館",
+      "En": "Taipei Nangang Exhibition Center"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:02",
+    "LastTrainTime": "00:58",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "BR",
+    "LineID": "BR",
+    "StationID": "BR20",
+    "StationName": {
+      "Zh_tw": "大湖公園",
+      "En": "Dahu Park"
+    },
+    "TripHeadSign": "往動物園",
+    "DestinationStaionID": "BR01",
+    "DestinationStationName": {
+      "Zh_tw": "動物園",
+      "En": "Taipei Zoo"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:01",
+    "LastTrainTime": "00:09",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "BR",
+    "LineID": "BR",
+    "StationID": "BR20",
+    "StationName": {
+      "Zh_tw": "大湖公園",
+      "En": "Dahu Park"
+    },
+    "TripHeadSign": "往南港展覽館",
+    "DestinationStaionID": "BR24",
+    "DestinationStationName": {
+      "Zh_tw": "南港展覽館",
+      "En": "Taipei Nangang Exhibition Center"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:04",
+    "LastTrainTime": "01:00",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "BR",
+    "LineID": "BR",
+    "StationID": "BR21",
+    "StationName": {
+      "Zh_tw": "葫洲",
+      "En": "Huzhou"
+    },
+    "TripHeadSign": "往動物園",
+    "DestinationStaionID": "BR01",
+    "DestinationStationName": {
+      "Zh_tw": "動物園",
+      "En": "Taipei Zoo"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:00",
+    "LastTrainTime": "00:05",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "BR",
+    "LineID": "BR",
+    "StationID": "BR21",
+    "StationName": {
+      "Zh_tw": "葫洲",
+      "En": "Huzhou"
+    },
+    "TripHeadSign": "往南港展覽館",
+    "DestinationStaionID": "BR24",
+    "DestinationStationName": {
+      "Zh_tw": "南港展覽館",
+      "En": "Taipei Nangang Exhibition Center"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:00",
+    "LastTrainTime": "01:03",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "BR",
+    "LineID": "BR",
+    "StationID": "BR22",
+    "StationName": {
+      "Zh_tw": "東湖",
+      "En": "Donghu"
+    },
+    "TripHeadSign": "往動物園",
+    "DestinationStaionID": "BR01",
+    "DestinationStationName": {
+      "Zh_tw": "動物園",
+      "En": "Taipei Zoo"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:03",
+    "LastTrainTime": "00:03",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "BR",
+    "LineID": "BR",
+    "StationID": "BR22",
+    "StationName": {
+      "Zh_tw": "東湖",
+      "En": "Donghu"
+    },
+    "TripHeadSign": "往南港展覽館",
+    "DestinationStaionID": "BR24",
+    "DestinationStationName": {
+      "Zh_tw": "南港展覽館",
+      "En": "Taipei Nangang Exhibition Center"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:01",
+    "LastTrainTime": "01:05",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "BR",
+    "LineID": "BR",
+    "StationID": "BR23",
+    "StationName": {
+      "Zh_tw": "南港軟體園區",
+      "En": "Nangang Software Park"
+    },
+    "TripHeadSign": "往動物園",
+    "DestinationStaionID": "BR01",
+    "DestinationStationName": {
+      "Zh_tw": "動物園",
+      "En": "Taipei Zoo"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:01",
+    "LastTrainTime": "00:01",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "BR",
+    "LineID": "BR",
+    "StationID": "BR23",
+    "StationName": {
+      "Zh_tw": "南港軟體園區",
+      "En": "Nangang Software Park"
+    },
+    "TripHeadSign": "往南港展覽館",
+    "DestinationStaionID": "BR24",
+    "DestinationStationName": {
+      "Zh_tw": "南港展覽館",
+      "En": "Taipei Nangang Exhibition Center"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:03",
+    "LastTrainTime": "01:07",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  },
+  {
+    "LineNo": "BR",
+    "LineID": "BR",
+    "StationID": "BR24",
+    "StationName": {
+      "Zh_tw": "南港展覽館",
+      "En": "Taipei Nangang Exhibition Center"
+    },
+    "TripHeadSign": "往動物園",
+    "DestinationStaionID": "BR01",
+    "DestinationStationName": {
+      "Zh_tw": "動物園",
+      "En": "Taipei Zoo"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "06:00",
+    "LastTrainTime": "00:00",
+    "ServiceDay": {
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-09-13T00:00:00+08:00",
+    "UpdateTime": "2024-10-21T11:02:08+08:00",
+    "VersionID": 3
+  }
+]

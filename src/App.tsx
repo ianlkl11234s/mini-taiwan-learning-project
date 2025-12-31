@@ -671,7 +671,7 @@ function App() {
         {/* 可收合內容區 */}
         <div
           style={{
-            maxHeight: legendCollapsed ? 0 : 'calc(100vh - 220px)',
+            maxHeight: legendCollapsed ? 0 : 320,
             overflow: legendCollapsed ? 'hidden' : 'auto',
             transition: 'max-height 0.3s ease-out, opacity 0.3s ease-out',
             opacity: legendCollapsed ? 0 : 1,

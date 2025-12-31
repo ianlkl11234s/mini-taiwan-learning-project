@@ -225,10 +225,9 @@ export class Train3DLayer implements mapboxgl.CustomLayerInterface {
       mesh.position.set(position.x, position.y, TRAIN_HEIGHT / 2);
 
       // 計算旋轉（繞 Z 軸，因為 Z 是高度/垂直方向）
-      // 因為 transform 的 Y 軸有負號縮放，旋轉方向會被鏡像
-      // 需要取負值來補償
-      const bearing = this.calculateBearing(train.trackId, train.progress);
-      mesh.rotation.z = -THREE.MathUtils.degToRad(bearing);
+      // 根據列車實際位置找到最近的軌道線段，使用該線段方向
+      const bearing = this.calculateBearing(train);
+      mesh.rotation.z = THREE.MathUtils.degToRad(bearing);
 
       // 停站時縮小
       const scale = train.status === 'stopped' ? 0.85 : 1.0;
@@ -255,47 +254,81 @@ export class Train3DLayer implements mapboxgl.CustomLayerInterface {
   }
 
   /**
-   * 根據軌道和進度計算行進方向
-   * 直接在 mesh 座標系中計算方向，避免座標轉換不一致的問題
+   * 計算點到線段的最短距離平方（用於找最近線段）
    */
-  private calculateBearing(trackId: string, progress: number): number {
-    const track = this.tracks.get(trackId);
+  private pointToSegmentDistSq(
+    p: [number, number],
+    a: [number, number],
+    b: [number, number]
+  ): number {
+    const dx = b[0] - a[0];
+    const dy = b[1] - a[1];
+    const lengthSq = dx * dx + dy * dy;
+
+    if (lengthSq === 0) {
+      // a 和 b 是同一點
+      const pdx = p[0] - a[0];
+      const pdy = p[1] - a[1];
+      return pdx * pdx + pdy * pdy;
+    }
+
+    // 計算投影參數 t
+    let t = ((p[0] - a[0]) * dx + (p[1] - a[1]) * dy) / lengthSq;
+    t = Math.max(0, Math.min(1, t));
+
+    // 最近點
+    const nearestX = a[0] + t * dx;
+    const nearestY = a[1] + t * dy;
+
+    const distX = p[0] - nearestX;
+    const distY = p[1] - nearestY;
+    return distX * distX + distY * distY;
+  }
+
+  /**
+   * 根據列車實際位置計算行進方向
+   *
+   * 核心想法：找到列車位置最接近的軌道線段，用該線段的方向
+   * 這樣避免 progress 和實際位置不一致的問題
+   */
+  private calculateBearing(train: Train): number {
+    const track = this.tracks.get(train.trackId);
     if (!track) return 0;
 
     const coords = track.geometry.coordinates as [number, number][];
     if (coords.length < 2) return 0;
 
-    // 計算軌道總長度（使用 mesh 座標）
-    const meshCoords = coords.map(c => this.lngLatToMeters(c[0], c[1]));
+    const trainPos = train.position;
 
-    let totalLength = 0;
-    for (let i = 0; i < meshCoords.length - 1; i++) {
-      const dx = meshCoords[i + 1].x - meshCoords[i].x;
-      const dy = meshCoords[i + 1].y - meshCoords[i].y;
-      totalLength += Math.sqrt(dx * dx + dy * dy);
-    }
+    // 找到最接近的軌道線段
+    let minDistSq = Infinity;
+    let closestSegment = 0;
 
-    // 找到當前位置對應的線段
-    const targetDistance = totalLength * Math.min(0.99, Math.max(0.01, progress));
-    let accumulated = 0;
-
-    for (let i = 0; i < meshCoords.length - 1; i++) {
-      const dx = meshCoords[i + 1].x - meshCoords[i].x;
-      const dy = meshCoords[i + 1].y - meshCoords[i].y;
-      const segmentLength = Math.sqrt(dx * dx + dy * dy);
-
-      if (accumulated + segmentLength >= targetDistance || i === meshCoords.length - 2) {
-        // 在 mesh 座標系中計算方向角
-        // dx, dy 已經是正確的 mesh 座標差值
-        // 列車前方是 +X 方向，atan2(dy, dx) 給出從 +X 到方向向量的角度
-        const angle = Math.atan2(dy, dx);
-        return THREE.MathUtils.radToDeg(angle);
+    for (let i = 0; i < coords.length - 1; i++) {
+      const distSq = this.pointToSegmentDistSq(trainPos, coords[i], coords[i + 1]);
+      if (distSq < minDistSq) {
+        minDistSq = distSq;
+        closestSegment = i;
       }
-
-      accumulated += segmentLength;
     }
 
-    return 0;
+    // 取得該線段的兩端點，轉換到 mesh 座標
+    const p1 = this.lngLatToMeters(coords[closestSegment][0], coords[closestSegment][1]);
+    const p2 = this.lngLatToMeters(coords[closestSegment + 1][0], coords[closestSegment + 1][1]);
+
+    // 計算線段方向
+    const dx = p2.x - p1.x;
+    const dy = p2.y - p1.y;
+
+    // 如果線段太短，返回 0
+    const dist = Math.sqrt(dx * dx + dy * dy);
+    if (dist < 0.001) {
+      return 0;
+    }
+
+    // 計算角度：列車前方是 +X 方向
+    const angle = Math.atan2(dy, dx);
+    return THREE.MathUtils.radToDeg(angle);
   }
 
   onRemove(): void {

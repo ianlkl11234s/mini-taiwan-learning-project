@@ -4,6 +4,11 @@ import type { TrackSchedule } from '../types/schedule';
 
 // 軌道 ID 列表
 const TRACK_IDS = [
+  // === 安坑輕軌 (K) ===
+  'K-1-0', 'K-1-1',    // 全程車（雙城↔十四張）
+  // === 淡海輕軌 (V) ===
+  'V-1-0', 'V-1-1',    // 綠山線（紅樹林↔崁頂）
+  'V-2-0', 'V-2-1',    // 藍海線（淡水漁人碼頭↔台北海洋大學）
   // === 文湖線 (BR) ===
   'BR-1-0', 'BR-1-1',  // 全程車（動物園↔南港展覽館）
   // === 紅線 (R) ===
@@ -156,6 +161,14 @@ export function useData(): DataState {
         if (!brownStationsRes.ok) throw new Error('Failed to load brown line stations');
         const brownStationsData = await brownStationsRes.json();
 
+        const ankengStationsRes = await fetch('/data/ankeng_lrt_stations.geojson');
+        if (!ankengStationsRes.ok) throw new Error('Failed to load ankeng LRT stations');
+        const ankengStationsData = await ankengStationsRes.json();
+
+        const danhaiStationsRes = await fetch('/data/danhai_lrt_stations.geojson');
+        if (!danhaiStationsRes.ok) throw new Error('Failed to load danhai LRT stations');
+        const danhaiStationsData = await danhaiStationsRes.json();
+
         // 合併車站資料
         const allStations: StationCollection = {
           type: 'FeatureCollection',
@@ -165,6 +178,8 @@ export function useData(): DataState {
             ...greenStationsData.features,
             ...orangeStationsData.features,
             ...brownStationsData.features,
+            ...ankengStationsData.features,
+            ...danhaiStationsData.features,
           ],
         };
         setStations(allStations);

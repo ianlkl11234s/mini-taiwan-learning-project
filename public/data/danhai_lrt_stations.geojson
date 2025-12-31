@@ -1,0 +1,229 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "V01",
+        "name_zh": "紅樹林",
+        "name_en": "Hongshulin",
+        "line_id": "V"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.458851,
+          25.155597
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "V02",
+        "name_zh": "竿蓁林",
+        "name_en": "Ganzhenlin",
+        "line_id": "V"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.456232,
+          25.162415
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "V03",
+        "name_zh": "淡金鄧公",
+        "name_en": "Danjin Denggong",
+        "line_id": "V"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.460813,
+          25.169363
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "V04",
+        "name_zh": "淡江大學",
+        "name_en": "Tamkang University",
+        "line_id": "V"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.456082,
+          25.176959
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "V05",
+        "name_zh": "淡金北新",
+        "name_en": "Danjin Beixin",
+        "line_id": "V"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.452366,
+          25.181131
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "V06",
+        "name_zh": "新市一路",
+        "name_en": "Xinshi 1st Rd.",
+        "line_id": "V"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.448258,
+          25.183817
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "V07",
+        "name_zh": "淡水行政中心",
+        "name_en": "Tamsui District Office",
+        "line_id": "V"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.444482,
+          25.189017
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "V08",
+        "name_zh": "濱海義山",
+        "name_en": "Binhai Yishan",
+        "line_id": "V"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.43738,
+          25.18977
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "V09",
+        "name_zh": "濱海沙崙",
+        "name_en": "Binhai Shalun",
+        "line_id": "V"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.431589,
+          25.190501
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "V10",
+        "name_zh": "淡海新市鎮",
+        "name_en": "Danhai New Town",
+        "line_id": "V"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.432471,
+          25.195691
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "V11",
+        "name_zh": "崁頂",
+        "name_en": "Kanding",
+        "line_id": "V"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.434651,
+          25.200994
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "V28",
+        "name_zh": "台北海洋大學",
+        "name_en": "Taipei University of Marine Technology",
+        "line_id": "V"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.426365,
+          25.191141
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "V27",
+        "name_zh": "沙崙",
+        "name_en": "Shalun",
+        "line_id": "V"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.417331,
+          25.187536
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "V26",
+        "name_zh": "淡水漁人碼頭",
+        "name_en": "Tamsui Fisherman's Wharf",
+        "line_id": "V"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.418605,
+          25.182005
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,192 @@
+[
+  {
+    "StationUID": "NTALRT-K01",
+    "StationID": "K01",
+    "StationName": {
+      "Zh_tw": "雙城",
+      "En": "Shuangcheng"
+    },
+    "BikeAllowOnHoliday": false,
+    "SrcUpdateTime": "2023-06-30T16:50:00+08:00",
+    "StationPosition": {
+      "PositionLon": 121.489645,
+      "PositionLat": 24.946321,
+      "GeoHash": "wsqmut64c"
+    },
+    "LocationCity": "新北市",
+    "LocationCityCode": "NWT",
+    "LocationTown": "新店區",
+    "LocationTownCode": "65000060",
+    "UpdateTime": "2023-08-03T00:00:00+08:00",
+    "VersionID": 1
+  },
+  {
+    "StationUID": "NTALRT-K02",
+    "StationID": "K02",
+    "StationName": {
+      "Zh_tw": "玫瑰中國城",
+      "En": "Rose China Town"
+    },
+    "BikeAllowOnHoliday": false,
+    "SrcUpdateTime": "2023-06-30T16:50:00+08:00",
+    "StationPosition": {
+      "PositionLon": 121.493861,
+      "PositionLat": 24.95076,
+      "GeoHash": "wsqmuwjhs"
+    },
+    "LocationCity": "新北市",
+    "LocationCityCode": "NWT",
+    "LocationTown": "新店區",
+    "LocationTownCode": "65000060",
+    "UpdateTime": "2023-08-03T00:00:00+08:00",
+    "VersionID": 1
+  },
+  {
+    "StationUID": "NTALRT-K03",
+    "StationID": "K03",
+    "StationName": {
+      "Zh_tw": "台北小城",
+      "En": "Taipei Xiaocheng"
+    },
+    "BikeAllowOnHoliday": false,
+    "SrcUpdateTime": "2023-06-30T16:50:00+08:00",
+    "StationPosition": {
+      "PositionLon": 121.504674,
+      "PositionLat": 24.954472,
+      "GeoHash": "wsqmuyv42"
+    },
+    "LocationCity": "新北市",
+    "LocationCityCode": "NWT",
+    "LocationTown": "新店區",
+    "LocationTownCode": "65000060",
+    "UpdateTime": "2023-08-03T00:00:00+08:00",
+    "VersionID": 1
+  },
+  {
+    "StationUID": "NTALRT-K04",
+    "StationID": "K04",
+    "StationName": {
+      "Zh_tw": "耕莘安康院區",
+      "En": "Cardinal Tien Hospital An Kang Branch"
+    },
+    "BikeAllowOnHoliday": false,
+    "SrcUpdateTime": "2023-06-30T16:50:00+08:00",
+    "StationPosition": {
+      "PositionLon": 121.504803,
+      "PositionLat": 24.954463,
+      "GeoHash": "wsqmuyv47"
+    },
+    "LocationCity": "新北市",
+    "LocationCityCode": "NWT",
+    "LocationTown": "新店區",
+    "LocationTownCode": "65000060",
+    "UpdateTime": "2023-08-03T00:00:00+08:00",
+    "VersionID": 1
+  },
+  {
+    "StationUID": "NTALRT-K05",
+    "StationID": "K05",
+    "StationName": {
+      "Zh_tw": "景文科大",
+      "En": "Jinwen University of Science and Technology"
+    },
+    "BikeAllowOnHoliday": false,
+    "SrcUpdateTime": "2023-06-30T16:50:00+08:00",
+    "StationPosition": {
+      "PositionLon": 121.510387,
+      "PositionLat": 24.955505,
+      "GeoHash": "wsqmvp10m"
+    },
+    "LocationCity": "新北市",
+    "LocationCityCode": "NWT",
+    "LocationTown": "新店區",
+    "LocationTownCode": "65000060",
+    "UpdateTime": "2023-08-03T00:00:00+08:00",
+    "VersionID": 1
+  },
+  {
+    "StationUID": "NTALRT-K06",
+    "StationID": "K06",
+    "StationName": {
+      "Zh_tw": "安康",
+      "En": "Ankang"
+    },
+    "BikeAllowOnHoliday": false,
+    "SrcUpdateTime": "2023-06-30T16:50:00+08:00",
+    "StationPosition": {
+      "PositionLon": 121.51729,
+      "PositionLat": 24.965213,
+      "GeoHash": "wsqqj0y0y"
+    },
+    "LocationCity": "新北市",
+    "LocationCityCode": "NWT",
+    "LocationTown": "新店區",
+    "LocationTownCode": "65000060",
+    "UpdateTime": "2023-08-03T00:00:00+08:00",
+    "VersionID": 1
+  },
+  {
+    "StationUID": "NTALRT-K07",
+    "StationID": "K07",
+    "StationName": {
+      "Zh_tw": "陽光運動公園",
+      "En": "Sunshine Sports Park"
+    },
+    "BikeAllowOnHoliday": false,
+    "SrcUpdateTime": "2023-06-30T16:50:00+08:00",
+    "StationPosition": {
+      "PositionLon": 121.519509,
+      "PositionLat": 24.972351,
+      "GeoHash": "wsqqj4pf3"
+    },
+    "LocationCity": "新北市",
+    "LocationCityCode": "NWT",
+    "LocationTown": "新店區",
+    "LocationTownCode": "65000060",
+    "UpdateTime": "2023-08-03T00:00:00+08:00",
+    "VersionID": 1
+  },
+  {
+    "StationUID": "NTALRT-K08",
+    "StationID": "K08",
+    "StationName": {
+      "Zh_tw": "新和國小",
+      "En": "Xinhe Elementary School"
+    },
+    "BikeAllowOnHoliday": false,
+    "SrcUpdateTime": "2023-06-30T16:50:00+08:00",
+    "StationPosition": {
+      "PositionLon": 121.518444,
+      "PositionLat": 24.983483,
+      "GeoHash": "wsqqjhp52"
+    },
+    "LocationCity": "新北市",
+    "LocationCityCode": "NWT",
+    "LocationTown": "新店區",
+    "LocationTownCode": "65000060",
+    "UpdateTime": "2023-08-03T00:00:00+08:00",
+    "VersionID": 1
+  },
+  {
+    "StationUID": "NTALRT-K09",
+    "StationID": "K09",
+    "StationName": {
+      "Zh_tw": "十四張",
+      "En": "Shisizhang"
+    },
+    "StationAddress": "新北市新店區民權路282號(輕軌十四張站)",
+    "BikeAllowOnHoliday": false,
+    "SrcUpdateTime": "2023-06-30T16:50:00+08:00",
+    "StationPosition": {
+      "PositionLon": 121.527247,
+      "PositionLat": 24.984328,
+      "GeoHash": "wsqqjkm2q"
+    },
+    "LocationCity": "新北市",
+    "LocationCityCode": "NWT",
+    "LocationTown": "新店區",
+    "LocationTownCode": "65000060",
+    "UpdateTime": "2023-08-03T00:00:00+08:00",
+    "VersionID": 1
+  }
+]

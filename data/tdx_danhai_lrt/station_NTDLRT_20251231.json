@@ -1,0 +1,298 @@
+[
+  {
+    "StationUID": "NTDLRT-V01",
+    "StationID": "V01",
+    "StationName": {
+      "Zh_tw": "紅樹林",
+      "En": "Hongshulin"
+    },
+    "StationAddress": "新北市淡水區中正東路二段68號(輕軌紅樹林站)",
+    "BikeAllowOnHoliday": false,
+    "SrcUpdateTime": "2023-10-12T00:00:00+08:00",
+    "StationPosition": {
+      "PositionLon": 121.458851,
+      "PositionLat": 25.155597,
+      "GeoHash": "wsqr5g7tu"
+    },
+    "LocationCity": "新北市",
+    "LocationCityCode": "NWT",
+    "LocationTown": "淡水區",
+    "LocationTownCode": "65000100",
+    "UpdateTime": "2023-10-17T00:00:00+08:00",
+    "VersionID": 4
+  },
+  {
+    "StationUID": "NTDLRT-V02",
+    "StationID": "V02",
+    "StationName": {
+      "Zh_tw": "竿蓁林",
+      "En": "Ganzhenlin"
+    },
+    "BikeAllowOnHoliday": false,
+    "SrcUpdateTime": "2023-10-12T00:00:00+08:00",
+    "StationPosition": {
+      "PositionLon": 121.456232,
+      "PositionLat": 25.162415,
+      "GeoHash": "wsqr5u9tx"
+    },
+    "LocationCity": "新北市",
+    "LocationCityCode": "NWT",
+    "LocationTown": "淡水區",
+    "LocationTownCode": "65000100",
+    "UpdateTime": "2023-10-17T00:00:00+08:00",
+    "VersionID": 4
+  },
+  {
+    "StationUID": "NTDLRT-V03",
+    "StationID": "V03",
+    "StationName": {
+      "Zh_tw": "淡金鄧公",
+      "En": "Danjin Denggong"
+    },
+    "BikeAllowOnHoliday": false,
+    "SrcUpdateTime": "2023-10-12T00:00:00+08:00",
+    "StationPosition": {
+      "PositionLon": 121.460813,
+      "PositionLat": 25.169363,
+      "GeoHash": "wsqr5vvn4"
+    },
+    "LocationCity": "新北市",
+    "LocationCityCode": "NWT",
+    "LocationTown": "淡水區",
+    "LocationTownCode": "65000100",
+    "UpdateTime": "2023-10-17T00:00:00+08:00",
+    "VersionID": 4
+  },
+  {
+    "StationUID": "NTDLRT-V04",
+    "StationID": "V04",
+    "StationName": {
+      "Zh_tw": "淡江大學",
+      "En": "Tamkang University"
+    },
+    "BikeAllowOnHoliday": false,
+    "SrcUpdateTime": "2023-10-12T00:00:00+08:00",
+    "StationPosition": {
+      "PositionLon": 121.456082,
+      "PositionLat": 25.176959,
+      "GeoHash": "wsqr5z3d7"
+    },
+    "LocationCity": "新北市",
+    "LocationCityCode": "NWT",
+    "LocationTown": "淡水區",
+    "LocationTownCode": "65000100",
+    "UpdateTime": "2023-10-17T00:00:00+08:00",
+    "VersionID": 4
+  },
+  {
+    "StationUID": "NTDLRT-V05",
+    "StationID": "V05",
+    "StationName": {
+      "Zh_tw": "淡金北新",
+      "En": "Danjin Beixin"
+    },
+    "BikeAllowOnHoliday": false,
+    "SrcUpdateTime": "2023-10-12T00:00:00+08:00",
+    "StationPosition": {
+      "PositionLon": 121.452366,
+      "PositionLat": 25.181131,
+      "GeoHash": "wsqr78nft"
+    },
+    "LocationCity": "新北市",
+    "LocationCityCode": "NWT",
+    "LocationTown": "淡水區",
+    "LocationTownCode": "65000100",
+    "UpdateTime": "2023-10-17T00:00:00+08:00",
+    "VersionID": 4
+  },
+  {
+    "StationUID": "NTDLRT-V06",
+    "StationID": "V06",
+    "StationName": {
+      "Zh_tw": "新市一路",
+      "En": "Xinshi 1st Rd."
+    },
+    "BikeAllowOnHoliday": false,
+    "SrcUpdateTime": "2023-10-12T00:00:00+08:00",
+    "StationPosition": {
+      "PositionLon": 121.448258,
+      "PositionLat": 25.183817,
+      "GeoHash": "wsqr78efm"
+    },
+    "LocationCity": "新北市",
+    "LocationCityCode": "NWT",
+    "LocationTown": "淡水區",
+    "LocationTownCode": "65000100",
+    "UpdateTime": "2023-10-17T00:00:00+08:00",
+    "VersionID": 4
+  },
+  {
+    "StationUID": "NTDLRT-V07",
+    "StationID": "V07",
+    "StationName": {
+      "Zh_tw": "淡水行政中心",
+      "En": "Tamsui District Office"
+    },
+    "BikeAllowOnHoliday": false,
+    "SrcUpdateTime": "2023-10-12T00:00:00+08:00",
+    "StationPosition": {
+      "PositionLon": 121.444482,
+      "PositionLat": 25.189017,
+      "GeoHash": "wsqr7990t"
+    },
+    "LocationCity": "新北市",
+    "LocationCityCode": "NWT",
+    "LocationTown": "淡水區",
+    "LocationTownCode": "65000100",
+    "UpdateTime": "2023-10-17T00:00:00+08:00",
+    "VersionID": 4
+  },
+  {
+    "StationUID": "NTDLRT-V08",
+    "StationID": "V08",
+    "StationName": {
+      "Zh_tw": "濱海義山",
+      "En": "Binhai Yishan"
+    },
+    "BikeAllowOnHoliday": false,
+    "SrcUpdateTime": "2023-10-12T00:00:00+08:00",
+    "StationPosition": {
+      "PositionLon": 121.43738,
+      "PositionLat": 25.18977,
+      "GeoHash": "wsqr73sj0"
+    },
+    "LocationCity": "新北市",
+    "LocationCityCode": "NWT",
+    "LocationTown": "淡水區",
+    "LocationTownCode": "65000100",
+    "UpdateTime": "2023-10-17T00:00:00+08:00",
+    "VersionID": 4
+  },
+  {
+    "StationUID": "NTDLRT-V09",
+    "StationID": "V09",
+    "StationName": {
+      "Zh_tw": "濱海沙崙",
+      "En": "Binhai Shalun"
+    },
+    "BikeAllowOnHoliday": false,
+    "SrcUpdateTime": "2023-10-12T00:00:00+08:00",
+    "StationPosition": {
+      "PositionLon": 121.431589,
+      "PositionLat": 25.190501,
+      "GeoHash": "wsqr71zc3"
+    },
+    "LocationCity": "新北市",
+    "LocationCityCode": "NWT",
+    "LocationTown": "淡水區",
+    "LocationTownCode": "65000100",
+    "UpdateTime": "2023-10-17T00:00:00+08:00",
+    "VersionID": 4
+  },
+  {
+    "StationUID": "NTDLRT-V10",
+    "StationID": "V10",
+    "StationName": {
+      "Zh_tw": "淡海新市鎮",
+      "En": "Danhai New Town"
+    },
+    "BikeAllowOnHoliday": false,
+    "SrcUpdateTime": "2023-10-12T00:00:00+08:00",
+    "StationPosition": {
+      "PositionLon": 121.432471,
+      "PositionLat": 25.195691,
+      "GeoHash": "wsqr768rt"
+    },
+    "LocationCity": "新北市",
+    "LocationCityCode": "NWT",
+    "LocationTown": "淡水區",
+    "LocationTownCode": "65000100",
+    "UpdateTime": "2023-10-17T00:00:00+08:00",
+    "VersionID": 4
+  },
+  {
+    "StationUID": "NTDLRT-V11",
+    "StationID": "V11",
+    "StationName": {
+      "Zh_tw": "崁頂",
+      "En": "Kanding"
+    },
+    "BikeAllowOnHoliday": false,
+    "SrcUpdateTime": "2023-10-12T00:00:00+08:00",
+    "StationPosition": {
+      "PositionLon": 121.434651,
+      "PositionLat": 25.200994,
+      "GeoHash": "wsqr77dn2"
+    },
+    "LocationCity": "新北市",
+    "LocationCityCode": "NWT",
+    "LocationTown": "淡水區",
+    "LocationTownCode": "65000100",
+    "UpdateTime": "2023-10-17T00:00:00+08:00",
+    "VersionID": 4
+  },
+  {
+    "StationUID": "NTDLRT-V28",
+    "StationID": "V28",
+    "StationName": {
+      "Zh_tw": "台北海洋大學",
+      "En": "Taipei University of Marine Technology"
+    },
+    "BikeAllowOnHoliday": false,
+    "SrcUpdateTime": "2023-10-12T00:00:00+08:00",
+    "StationPosition": {
+      "PositionLon": 121.426365,
+      "PositionLat": 25.191141,
+      "GeoHash": "wsqr71gvp"
+    },
+    "LocationCity": "新北市",
+    "LocationCityCode": "NWT",
+    "LocationTown": "淡水區",
+    "LocationTownCode": "65000100",
+    "UpdateTime": "2023-10-17T00:00:00+08:00",
+    "VersionID": 4
+  },
+  {
+    "StationUID": "NTDLRT-V27",
+    "StationID": "V27",
+    "StationName": {
+      "Zh_tw": "沙崙",
+      "En": "Shalun"
+    },
+    "BikeAllowOnHoliday": false,
+    "SrcUpdateTime": "2023-10-12T00:00:00+08:00",
+    "StationPosition": {
+      "PositionLon": 121.417331,
+      "PositionLat": 25.187536,
+      "GeoHash": "wsqr6cm2h"
+    },
+    "LocationCity": "新北市",
+    "LocationCityCode": "NWT",
+    "LocationTown": "淡水區",
+    "LocationTownCode": "65000100",
+    "UpdateTime": "2023-10-17T00:00:00+08:00",
+    "VersionID": 4
+  },
+  {
+    "StationUID": "NTDLRT-V26",
+    "StationID": "V26",
+    "StationName": {
+      "Zh_tw": "淡水漁人碼頭",
+      "En": "Tamsui Fisherman's Wharf"
+    },
+    "StationAddress": "新北市淡水區中正路二段51巷",
+    "BikeAllowOnHoliday": false,
+    "SrcUpdateTime": "2023-10-12T00:00:00+08:00",
+    "StationPosition": {
+      "PositionLon": 121.418605,
+      "PositionLat": 25.182005,
+      "GeoHash": "wsqr6bnrf"
+    },
+    "LocationCity": "新北市",
+    "LocationCityCode": "NWT",
+    "LocationTown": "淡水區",
+    "LocationTownCode": "65000100",
+    "UpdateTime": "2023-10-17T00:00:00+08:00",
+    "VersionID": 4
+  }
+]

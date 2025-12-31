@@ -1,0 +1,149 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "K01",
+        "name_zh": "雙城",
+        "name_en": "Shuangcheng",
+        "line_id": "K"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.489645,
+          24.946321
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "K02",
+        "name_zh": "玫瑰中國城",
+        "name_en": "Rose China Town",
+        "line_id": "K"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.493861,
+          24.95076
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "K03",
+        "name_zh": "台北小城",
+        "name_en": "Taipei Xiaocheng",
+        "line_id": "K"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.49888190357706,
+          24.95353096648097
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "K04",
+        "name_zh": "耕莘安康院區",
+        "name_en": "Cardinal Tien Hospital An Kang Branch",
+        "line_id": "K"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.504803,
+          24.954463
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "K05",
+        "name_zh": "景文科大",
+        "name_en": "Jinwen University of Science and Technology",
+        "line_id": "K"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.510387,
+          24.955505
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "K06",
+        "name_zh": "安康",
+        "name_en": "Ankang",
+        "line_id": "K"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.51729,
+          24.965213
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "K07",
+        "name_zh": "陽光運動公園",
+        "name_en": "Sunshine Sports Park",
+        "line_id": "K"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.519509,
+          24.972351
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "K08",
+        "name_zh": "新和國小",
+        "name_en": "Xinhe Elementary School",
+        "line_id": "K"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.518444,
+          24.983483
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "K09",
+        "name_zh": "十四張",
+        "name_en": "Shisizhang",
+        "line_id": "K"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.527247,
+          24.984328
+        ]
+      }
+    }
+  ]
+}

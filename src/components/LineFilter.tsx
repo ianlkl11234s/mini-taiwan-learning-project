@@ -7,6 +7,8 @@ const LINE_CONFIG = {
   G: { color: '#008659', label: 'G', name: '綠線' },
   BL: { color: '#0070c0', label: 'BL', name: '藍線' },
   BR: { color: '#c48c31', label: 'BR', name: '文湖線' },
+  K: { color: '#8cc540', label: 'K', name: '安坑輕軌' },
+  V: { color: '#a4ce4e', label: 'V', name: '淡海輕軌' },
 };
 
 interface LineFilterProps {
@@ -63,7 +65,7 @@ export function LineFilter({ visibleLines, onToggleLine }: LineFilterProps) {
         style={{
           display: 'flex',
           gap: 8,
-          maxWidth: expanded ? 300 : 0,
+          maxWidth: expanded ? 350 : 0,
           overflow: 'hidden',
           transition: 'max-width 0.3s ease-out, opacity 0.3s ease-out',
           opacity: expanded ? 1 : 0,

@@ -8,6 +8,7 @@ import { TimeControl } from './components/TimeControl';
 import { LineFilter } from './components/LineFilter';
 import { TrainHistogram } from './components/TrainHistogram';
 import { useTrainCountHistogram } from './hooks/useTrainCountHistogram';
+import { Train3DLayer } from './layers/Train3DLayer';
 
 // 設定 Mapbox Token
 mapboxgl.accessToken = import.meta.env.VITE_MAPBOX_TOKEN || '';
@@ -109,6 +110,13 @@ function App() {
 
   // 圖例收合狀態（預設收合）
   const [legendCollapsed, setLegendCollapsed] = useState(true);
+
+  // 說明/公告 Modal 狀態
+  const [showInfoModal, setShowInfoModal] = useState(false);
+
+  // 3D 模式狀態
+  const [use3DMode, setUse3DMode] = useState(true);
+  const train3DLayerRef = useRef<Train3DLayer | null>(null);
 
   // 路線篩選狀態
   const [visibleLines, setVisibleLines] = useState<Set<string>>(
@@ -243,6 +251,32 @@ function App() {
       },
     });
   }, [mapLoaded, tracks]);
+
+  // 初始化 3D 列車圖層
+  useEffect(() => {
+    if (!map.current || !mapLoaded || !use3DMode) return;
+    if (trackMap.size === 0) return;
+
+    // 建立 3D 圖層
+    const layer = new Train3DLayer(trackMap);
+    train3DLayerRef.current = layer;
+
+    // 加入地圖
+    map.current.addLayer(layer);
+
+    return () => {
+      if (map.current && map.current.getLayer('train-3d-layer')) {
+        map.current.removeLayer('train-3d-layer');
+      }
+      train3DLayerRef.current = null;
+    };
+  }, [mapLoaded, trackMap, use3DMode]);
+
+  // 更新 3D 圖層列車資料
+  useEffect(() => {
+    if (!train3DLayerRef.current || !use3DMode) return;
+    train3DLayerRef.current.updateTrains(filteredTrains);
+  }, [filteredTrains, use3DMode]);
 
   // 更新軌道可見性（當 visibleLines 變化時）
   useEffect(() => {
@@ -461,9 +495,18 @@ function App() {
     };
   }, [timeEngineReady, schedules, trackMap, stationProgress]);
 
-  // 更新列車標記
+  // 更新列車標記（2D 模式時使用）
   useEffect(() => {
     if (!map.current || !mapLoaded) return;
+
+    // 3D 模式時清除所有 2D 標記並跳過
+    if (use3DMode) {
+      for (const marker of trainMarkers.current.values()) {
+        marker.remove();
+      }
+      trainMarkers.current.clear();
+      return;
+    }
 
     const activeTrainIds = new Set(filteredTrains.map((t) => t.trainId));
     for (const [trainId, marker] of trainMarkers.current) {
@@ -540,7 +583,7 @@ function App() {
         `;
       }
     }
-  }, [mapLoaded, filteredTrains]);
+  }, [mapLoaded, filteredTrains, use3DMode]);
 
   // 控制處理器
   const handleTogglePlay = useCallback(() => {
@@ -843,6 +886,45 @@ function App() {
             <path d="M12.186 24h-.007c-3.581-.024-6.334-1.205-8.184-3.509C2.35 18.44 1.5 15.586 1.472 12.01v-.017c.03-3.579.879-6.43 2.525-8.482C5.845 1.205 8.6.024 12.18 0h.014c2.746.02 5.043.725 6.826 2.098 1.677 1.29 2.858 3.13 3.509 5.467l-2.04.569c-1.104-3.96-3.898-5.984-8.304-6.015-2.91.022-5.11.936-6.54 2.717C4.307 6.504 3.616 8.914 3.589 12c.027 3.086.718 5.496 2.057 7.164 1.43 1.783 3.631 2.698 6.54 2.717 2.623-.02 4.358-.631 5.8-2.045 1.647-1.613 1.618-3.593 1.09-4.798-.31-.71-.873-1.3-1.634-1.75-.192 1.352-.622 2.446-1.284 3.272-.886 1.102-2.14 1.704-3.73 1.79-1.202.065-2.361-.218-3.259-.801-1.063-.689-1.685-1.74-1.752-2.96-.065-1.182.408-2.256 1.332-3.025.88-.732 2.084-1.195 3.59-1.377.954-.115 1.963-.104 2.998.032-.06-1.289-.693-1.95-1.89-1.984-1.1-.033-1.921.564-2.214 1.013l-1.706-1.046c.655-1.07 1.916-1.828 3.534-2.127l.085-.015c.822-.14 1.67-.14 2.494 0 1.588.268 2.765.985 3.498 2.132.68 1.064.882 2.37.6 3.887l.007-.024.007.024c-.02.1-.043.198-.068.295.85.39 1.577.94 2.133 1.62.832 1.016 1.233 2.29 1.16 3.692-.094 1.77-.74 3.353-1.921 4.705C18.09 22.843 15.448 23.977 12.186 24zm.102-7.26c.775-.045 1.39-.315 1.828-.803.438-.487.728-1.164.863-2.012-.65-.078-1.307-.112-1.958-.102-.986.016-1.779.2-2.36.548-.59.355-.873.81-.84 1.354.034.538.345.967.876 1.209.53.24 1.122.307 1.59.306z"/>
           </svg>
         </a>
+        {/* 2D/3D 切換按鈕 */}
+        <button
+          onClick={() => setUse3DMode(!use3DMode)}
+          style={{
+            background: use3DMode ? 'rgba(102, 196, 160, 0.2)' : 'rgba(128, 191, 255, 0.2)',
+            border: `1px solid ${use3DMode ? '#66c4a0' : '#80bfff'}`,
+            borderRadius: 4,
+            color: use3DMode ? '#66c4a0' : '#80bfff',
+            cursor: 'pointer',
+            padding: '4px 8px',
+            fontSize: 12,
+            fontWeight: 600,
+            transition: 'all 0.2s',
+          }}
+          title={use3DMode ? '切換至 2D 模式' : '切換至 3D 模式'}
+        >
+          {use3DMode ? '3D' : '2D'}
+        </button>
+        {/* 說明/公告按鈕 */}
+        <button
+          onClick={() => setShowInfoModal(true)}
+          style={{
+            background: 'none',
+            border: 'none',
+            color: '#888',
+            cursor: 'pointer',
+            padding: 0,
+            display: 'flex',
+            alignItems: 'center',
+            transition: 'color 0.2s',
+          }}
+          onMouseEnter={(e) => (e.currentTarget.style.color = '#fff')}
+          onMouseLeave={(e) => (e.currentTarget.style.color = '#888')}
+          title="說明與公告"
+        >
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25z"/>
+          </svg>
+        </button>
       </div>
 
       {/* 地圖 */}
@@ -894,6 +976,124 @@ function App() {
           onSpeedChange={handleSpeedChange}
           onTimeChange={handleTimeChange}
         />
+      )}
+
+      {/* 說明/公告 Modal */}
+      {showInfoModal && (
+        <div
+          style={{
+            position: 'fixed',
+            top: 0,
+            left: 0,
+            right: 0,
+            bottom: 0,
+            background: 'rgba(0, 0, 0, 0.7)',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            zIndex: 1000,
+          }}
+          onClick={() => setShowInfoModal(false)}
+        >
+          <div
+            style={{
+              background: '#1a1a1a',
+              borderRadius: 12,
+              padding: '24px 28px',
+              maxWidth: 500,
+              width: '90%',
+              maxHeight: '80vh',
+              overflow: 'auto',
+              color: 'white',
+              fontFamily: 'system-ui',
+              boxShadow: '0 4px 24px rgba(0, 0, 0, 0.5)',
+              border: '1px solid #333',
+            }}
+            onClick={(e) => e.stopPropagation()}
+          >
+            {/* 標題與關閉按鈕 */}
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 20 }}>
+              <h2 style={{ margin: 0, fontSize: 20, fontWeight: 600 }}>說明與公告</h2>
+              <button
+                onClick={() => setShowInfoModal(false)}
+                style={{
+                  background: 'none',
+                  border: 'none',
+                  color: '#888',
+                  cursor: 'pointer',
+                  padding: 4,
+                  display: 'flex',
+                  alignItems: 'center',
+                  transition: 'color 0.2s',
+                }}
+                onMouseEnter={(e) => (e.currentTarget.style.color = '#fff')}
+                onMouseLeave={(e) => (e.currentTarget.style.color = '#888')}
+              >
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+                </svg>
+              </button>
+            </div>
+
+            {/* 公告區塊 */}
+            <div style={{ marginBottom: 24 }}>
+              <h3 style={{ margin: '0 0 12px', fontSize: 16, fontWeight: 600, color: '#f8b61c', display: 'flex', alignItems: 'center', gap: 8 }}>
+                <span style={{ fontSize: 18 }}>📢</span> 公告
+              </h3>
+              <div style={{ background: '#2a2a2a', borderRadius: 8, padding: '12px 16px', fontSize: 14, lineHeight: 1.6 }}>
+                <ul style={{ margin: 0, paddingLeft: 20 }}>
+                  <li style={{ color: '#ccc' }}>文湖線與環狀線，目前還未調整好首班車時刻表</li>
+                </ul>
+              </div>
+            </div>
+
+            {/* 使用說明區塊 */}
+            <div>
+              <h3 style={{ margin: '0 0 12px', fontSize: 16, fontWeight: 600, color: '#66c4a0', display: 'flex', alignItems: 'center', gap: 8 }}>
+                <span style={{ fontSize: 18 }}>📖</span> 使用說明
+              </h3>
+              <div style={{ background: '#2a2a2a', borderRadius: 8, padding: '12px 16px', fontSize: 14, lineHeight: 1.8 }}>
+                <div style={{ marginBottom: 12 }}>
+                  <strong style={{ color: '#80bfff' }}>時間控制</strong>
+                  <ul style={{ margin: '4px 0 0', paddingLeft: 20, color: '#ccc' }}>
+                    <li>點擊播放/暫停按鈕控制時間流動</li>
+                    <li>拖動時間軸可跳轉至任意時刻</li>
+                    <li>使用速度滑桿調整模擬速度（1x - 300x）</li>
+                  </ul>
+                </div>
+                <div style={{ marginBottom: 12 }}>
+                  <strong style={{ color: '#80bfff' }}>路線篩選</strong>
+                  <ul style={{ margin: '4px 0 0', paddingLeft: 20, color: '#ccc' }}>
+                    <li>點擊左下角路線按鈕可顯示/隱藏特定路線</li>
+                    <li>隱藏的路線其軌道、車站、列車都會消失</li>
+                  </ul>
+                </div>
+                <div style={{ marginBottom: 12 }}>
+                  <strong style={{ color: '#80bfff' }}>列車狀態</strong>
+                  <ul style={{ margin: '4px 0 0', paddingLeft: 20, color: '#ccc' }}>
+                    <li><span style={{ display: 'inline-block', width: 10, height: 10, borderRadius: '50%', background: '#d90023', marginRight: 6, verticalAlign: 'middle' }}></span>運行中：正常大小</li>
+                    <li><span style={{ display: 'inline-block', width: 12, height: 12, borderRadius: '50%', background: '#d90023', border: '2px solid white', marginRight: 6, verticalAlign: 'middle', boxShadow: '0 0 8px #d90023' }}></span>停站中：較大、有光暈</li>
+                  </ul>
+                </div>
+                <div style={{ marginBottom: 12 }}>
+                  <strong style={{ color: '#80bfff' }}>列車數量圖</strong>
+                  <ul style={{ margin: '4px 0 0', paddingLeft: 20, color: '#ccc' }}>
+                    <li>右下角顯示全天列車數量變化</li>
+                    <li>黃色線條表示目前時刻</li>
+                  </ul>
+                </div>
+                <div>
+                  <strong style={{ color: '#80bfff' }}>地圖操作</strong>
+                  <ul style={{ margin: '4px 0 0', paddingLeft: 20, color: '#ccc' }}>
+                    <li>滾輪縮放地圖</li>
+                    <li>拖曳平移地圖</li>
+                    <li>右上角有縮放控制按鈕</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       )}
     </div>
   );

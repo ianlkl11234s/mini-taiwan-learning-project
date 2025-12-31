@@ -83,11 +83,29 @@ const COLLISION_THRESHOLD = 0.0005;
 const COLLISION_OFFSET = 0.0003;
 
 /**
- * 將時間字串轉換為當天秒數
+ * 將標準時間秒數 (0-86399) 轉換為延長日秒數
+ * 延長日：06:00 開始，凌晨 00:00-05:59 被視為前一天的延續 (86400-108000)
+ *
+ * 這解決了午夜時列車消失的問題：
+ * - 23:45 發車的列車在 00:15 時應該還在運行
+ * - 標準秒數: currentTime=900, departure=85500 → elapsed=-84600 (錯誤，列車消失)
+ * - 延長日秒數: currentTime=87300, departure=85500 → elapsed=1800 (正確，30分鐘)
+ */
+function toExtendedSeconds(standardSeconds: number): number {
+  // 凌晨 00:00-05:59 (0-21599) → 視為 24:00-29:59 (86400-108000)
+  if (standardSeconds < 6 * 3600) {
+    return standardSeconds + 24 * 3600;
+  }
+  return standardSeconds;
+}
+
+/**
+ * 將時間字串轉換為延長日秒數
  */
 function timeToSeconds(timeStr: string): number {
   const parts = timeStr.split(':').map(Number);
-  return parts[0] * 3600 + parts[1] * 60 + (parts[2] || 0);
+  const standardSeconds = parts[0] * 3600 + parts[1] * 60 + (parts[2] || 0);
+  return toExtendedSeconds(standardSeconds);
 }
 
 /**
@@ -427,10 +445,13 @@ export class TrainEngine {
 
   /**
    * 更新所有列車狀態 (精確版)
-   * @param currentTimeSeconds 當天秒數 (0-86399)
+   * @param currentTimeSeconds 當天秒數 (0-86399)，內部會轉換為延長日秒數
    */
   update(currentTimeSeconds: number): Train[] {
     this.activeTrains.clear();
+
+    // 將當前時間轉換為延長日秒數 (00:00-05:59 → 24:00-29:59)
+    const extendedCurrentTime = toExtendedSeconds(currentTimeSeconds);
 
     // 遍歷所有軌道的時刻表
     for (const [trackId, schedule] of this.schedules) {
@@ -442,11 +463,12 @@ export class TrainEngine {
 
       // 遍歷該軌道的所有發車班次
       for (const departure of schedule.departures) {
+        // timeToSeconds 已經會轉換為延長日秒數
         const departureSeconds = timeToSeconds(departure.departure_time);
         const totalTravelTime = departure.total_travel_time;
 
-        // 計算已過時間
-        const elapsedTime = currentTimeSeconds - departureSeconds;
+        // 計算已過時間 (兩者都是延長日秒數，可以正確比較)
+        const elapsedTime = extendedCurrentTime - departureSeconds;
 
         // 快速檢查：跳過尚未發車或已抵達的列車
         if (elapsedTime < -60 || elapsedTime > totalTravelTime + 60) {

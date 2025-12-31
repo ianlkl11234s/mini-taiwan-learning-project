@@ -1,0 +1,229 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "Y07",
+        "name_zh": "大坪林",
+        "name_en": "Dapinglin",
+        "line_id": "Y"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.54134,
+          24.98272
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "Y08",
+        "name_zh": "十四張",
+        "name_en": "Shisizhang",
+        "line_id": "Y"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.527698,
+          24.984333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "Y09",
+        "name_zh": "秀朗橋",
+        "name_en": "Xiulang Bridge",
+        "line_id": "Y"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.525051,
+          24.990549
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "Y10",
+        "name_zh": "景平",
+        "name_en": "Jingping",
+        "line_id": "Y"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.516386,
+          24.992143
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "Y11",
+        "name_zh": "景安",
+        "name_en": "Jingan",
+        "line_id": "Y"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.505114,
+          24.99392
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "Y12",
+        "name_zh": "中和",
+        "name_en": "Zhonghe",
+        "line_id": "Y"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.495978,
+          25.002382
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "Y13",
+        "name_zh": "橋和",
+        "name_en": "Qiaohe",
+        "line_id": "Y"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.490461,
+          25.004413
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "Y14",
+        "name_zh": "中原",
+        "name_en": "Zhongyuan",
+        "line_id": "Y"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.484159,
+          25.00841
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "Y15",
+        "name_zh": "板新",
+        "name_en": "Banxin",
+        "line_id": "Y"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.472269,
+          25.014436
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "Y16",
+        "name_zh": "板橋",
+        "name_en": "Banqiao",
+        "line_id": "Y"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.464825,
+          25.015156
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "Y17",
+        "name_zh": "新埔民生",
+        "name_en": "Xinpu Minsheng",
+        "line_id": "Y"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.466831,
+          25.026282
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "Y18",
+        "name_zh": "頭前庄",
+        "name_en": "Touqianzhuang",
+        "line_id": "Y"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.460479,
+          25.039862
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "Y19",
+        "name_zh": "幸福",
+        "name_en": "Xingfu",
+        "line_id": "Y"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.45998,
+          25.049984
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "Y20",
+        "name_zh": "新北產業園區",
+        "name_en": "New Taipei Industrial Park",
+        "line_id": "Y"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.459926,
+          25.061548
+        ]
+      }
+    }
+  ]
+}

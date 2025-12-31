@@ -4,6 +4,7 @@ import { useState } from 'react';
 const LINE_CONFIG = {
   R: { color: '#d90023', label: 'R', name: '紅線' },
   O: { color: '#f8b61c', label: 'O', name: '橘線' },
+  Y: { color: '#fedb00', label: 'Y', name: '環狀線' },
   G: { color: '#008659', label: 'G', name: '綠線' },
   BL: { color: '#0070c0', label: 'BL', name: '藍線' },
   BR: { color: '#c48c31', label: 'BR', name: '文湖線' },
@@ -66,7 +67,7 @@ export function LineFilter({ visibleLines, onToggleLine }: LineFilterProps) {
         style={{
           display: 'flex',
           gap: 8,
-          maxWidth: expanded ? 350 : 0,
+          maxWidth: expanded ? 450 : 0,
           overflow: 'hidden',
           transition: 'max-width 0.3s ease-out, opacity 0.3s ease-out',
           opacity: expanded ? 1 : 0,

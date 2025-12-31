@@ -4,6 +4,8 @@ import type { TrackSchedule } from '../types/schedule';
 
 // 軌道 ID 列表
 const TRACK_IDS = [
+  // === 新北環狀線 (Y) ===
+  'Y-1-0', 'Y-1-1',    // 全程車（大坪林↔新北產業園區）
   // === 桃園機場捷運 (A) ===
   'A-1-0', 'A-1-1',    // 普通車（台北車站↔老街溪）
   'A-2-0', 'A-2-1',    // 直達車（台北車站↔環北，跳站）
@@ -177,6 +179,10 @@ export function useData(): DataState {
         if (!tymcStationsRes.ok) throw new Error('Failed to load TYMC stations');
         const tymcStationsData = await tymcStationsRes.json();
 
+        const ntmcStationsRes = await fetch('/data/ntmc_stations.geojson');
+        if (!ntmcStationsRes.ok) throw new Error('Failed to load NTMC stations');
+        const ntmcStationsData = await ntmcStationsRes.json();
+
         // 合併車站資料
         const allStations: StationCollection = {
           type: 'FeatureCollection',
@@ -189,6 +195,7 @@ export function useData(): DataState {
             ...ankengStationsData.features,
             ...danhaiStationsData.features,
             ...tymcStationsData.features,
+            ...ntmcStationsData.features,
           ],
         };
         setStations(allStations);

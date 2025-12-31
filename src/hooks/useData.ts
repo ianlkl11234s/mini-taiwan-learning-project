@@ -4,6 +4,10 @@ import type { TrackSchedule } from '../types/schedule';
 
 // 軌道 ID 列表
 const TRACK_IDS = [
+  // === 桃園機場捷運 (A) ===
+  'A-1-0', 'A-1-1',    // 普通車（台北車站↔老街溪）
+  'A-2-0', 'A-2-1',    // 直達車（台北車站↔環北，跳站）
+  'A-3-0', 'A-3-1',    // 區間車（機場第二航廈↔老街溪）
   // === 安坑輕軌 (K) ===
   'K-1-0', 'K-1-1',    // 全程車（雙城↔十四張）
   // === 淡海輕軌 (V) ===
@@ -169,6 +173,10 @@ export function useData(): DataState {
         if (!danhaiStationsRes.ok) throw new Error('Failed to load danhai LRT stations');
         const danhaiStationsData = await danhaiStationsRes.json();
 
+        const tymcStationsRes = await fetch('/data/tymc_stations.geojson');
+        if (!tymcStationsRes.ok) throw new Error('Failed to load TYMC stations');
+        const tymcStationsData = await tymcStationsRes.json();
+
         // 合併車站資料
         const allStations: StationCollection = {
           type: 'FeatureCollection',
@@ -180,6 +188,7 @@ export function useData(): DataState {
             ...brownStationsData.features,
             ...ankengStationsData.features,
             ...danhaiStationsData.features,
+            ...tymcStationsData.features,
           ],
         };
         setStations(allStations);

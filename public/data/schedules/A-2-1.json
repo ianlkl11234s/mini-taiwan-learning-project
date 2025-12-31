@@ -1,0 +1,3060 @@
+{
+  "track_id": "A-2-1",
+  "route_id": "A-2",
+  "name": "環北站 → 台北車站 (直達車)",
+  "train_type": "express",
+  "train_color": "#8246af",
+  "origin": "A21",
+  "destination": "A1",
+  "stations": [
+    "A21",
+    "A18",
+    "A13",
+    "A12",
+    "A8",
+    "A3",
+    "A1"
+  ],
+  "travel_time_minutes": 36,
+  "dwell_time_seconds": 30,
+  "is_weekday": true,
+  "departure_count": 69,
+  "departures": [
+    {
+      "departure_time": "05:55:00",
+      "train_id": "A-2-1-001",
+      "origin_station": "A21",
+      "destination_station": "A1",
+      "total_travel_time": 2340,
+      "stations": [
+        {
+          "station_id": "A21",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "A18",
+          "arrival": 316,
+          "departure": 346
+        },
+        {
+          "station_id": "A13",
+          "arrival": 791,
+          "departure": 821
+        },
+        {
+          "station_id": "A12",
+          "arrival": 900,
+          "departure": 930
+        },
+        {
+          "station_id": "A8",
+          "arrival": 1486,
+          "departure": 1516
+        },
+        {
+          "station_id": "A3",
+          "arrival": 2088,
+          "departure": 2118
+        },
+        {
+          "station_id": "A1",
+          "arrival": 2340,
+          "departure": 2370
+        }
+      ]
+    },
+    {
+      "departure_time": "06:10:00",
+      "train_id": "A-2-1-002",
+      "origin_station": "A21",
+      "destination_station": "A1",
+      "total_travel_time": 2340,
+      "stations": [
+        {
+          "station_id": "A21",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "A18",
+          "arrival": 316,
+          "departure": 346
+        },
+        {
+          "station_id": "A13",
+          "arrival": 791,
+          "departure": 821
+        },
+        {
+          "station_id": "A12",
+          "arrival": 900,
+          "departure": 930
+        },
+        {
+          "station_id": "A8",
+          "arrival": 1486,
+          "departure": 1516
+        },
+        {
+          "station_id": "A3",
+          "arrival": 2088,
+          "departure": 2118
+        },
+        {
+          "station_id": "A1",
+          "arrival": 2340,
+          "departure": 2370
+        }
+      ]
+    },
+    {
+      "departure_time": "06:25:00",
+      "train_id": "A-2-1-003",
+      "origin_station": "A21",
+      "destination_station": "A1",
+      "total_travel_time": 2340,
+      "stations": [
+        {
+          "station_id": "A21",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "A18",
+          "arrival": 316,
+          "departure": 346
+        },
+        {
+          "station_id": "A13",
+          "arrival": 791,
+          "departure": 821
+        },
+        {
+          "station_id": "A12",
+          "arrival": 900,
+          "departure": 930
+        },
+        {
+          "station_id": "A8",
+          "arrival": 1486,
+          "departure": 1516
+        },
+        {
+          "station_id": "A3",
+          "arrival": 2088,
+          "departure": 2118
+        },
+        {
+          "station_id": "A1",
+          "arrival": 2340,
+          "departure": 2370
+        }
+      ]
+    },
+    {
+      "departure_time": "06:40:00",
+      "train_id": "A-2-1-004",
+      "origin_station": "A21",
+      "destination_station": "A1",
+      "total_travel_time": 2340,
+      "stations": [
+        {
+          "station_id": "A21",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "A18",
+          "arrival": 316,
+          "departure": 346
+        },
+        {
+          "station_id": "A13",
+          "arrival": 791,
+          "departure": 821
+        },
+        {
+          "station_id": "A12",
+          "arrival": 900,
+          "departure": 930
+        },
+        {
+          "station_id": "A8",
+          "arrival": 1486,
+          "departure": 1516
+        },
+        {
+          "station_id": "A3",
+          "arrival": 2088,
+          "departure": 2118
+        },
+        {
+          "station_id": "A1",
+          "arrival": 2340,
+          "departure": 2370
+        }
+      ]
+    },
+    {
+      "departure_time": "06:55:00",
+      "train_id": "A-2-1-005",
+      "origin_station": "A21",
+      "destination_station": "A1",
+      "total_travel_time": 2340,
+      "stations": [
+        {
+          "station_id": "A21",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "A18",
+          "arrival": 316,
+          "departure": 346
+        },
+        {
+          "station_id": "A13",
+          "arrival": 791,
+          "departure": 821
+        },
+        {
+          "station_id": "A12",
+          "arrival": 900,
+          "departure": 930
+        },
+        {
+          "station_id": "A8",
+          "arrival": 1486,
+          "departure": 1516
+        },
+        {
+          "station_id": "A3",
+          "arrival": 2088,
+          "departure": 2118
+        },
+        {
+          "station_id": "A1",
+          "arrival": 2340,
+          "departure": 2370
+        }
+      ]
+    },
+    {
+      "departure_time": "07:10:00",
+      "train_id": "A-2-1-006",
+      "origin_station": "A21",
+      "destination_station": "A1",
+      "total_travel_time": 2340,
+      "stations": [
+        {
+          "station_id": "A21",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "A18",
+          "arrival": 316,
+          "departure": 346
+        },
+        {
+          "station_id": "A13",
+          "arrival": 791,
+          "departure": 821
+        },
+        {
+          "station_id": "A12",
+          "arrival": 900,
+          "departure": 930
+        },
+        {
+          "station_id": "A8",
+          "arrival": 1486,
+          "departure": 1516
+        },
+        {
+          "station_id": "A3",
+          "arrival": 2088,
+          "departure": 2118
+        },
+        {
+          "station_id": "A1",
+          "arrival": 2340,
+          "departure": 2370
+        }
+      ]
+    },
+    {
+      "departure_time": "07:25:00",
+      "train_id": "A-2-1-007",
+      "origin_station": "A21",
+      "destination_station": "A1",
+      "total_travel_time": 2340,
+      "stations": [
+        {
+          "station_id": "A21",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "A18",
+          "arrival": 316,
+          "departure": 346
+        },
+        {
+          "station_id": "A13",
+          "arrival": 791,
+          "departure": 821
+        },
+        {
+          "station_id": "A12",
+          "arrival": 900,
+          "departure": 930
+        },
+        {
+          "station_id": "A8",
+          "arrival": 1486,
+          "departure": 1516
+        },
+        {
+          "station_id": "A3",
+          "arrival": 2088,
+          "departure": 2118
+        },
+        {
+          "station_id": "A1",
+          "arrival": 2340,
+          "departure": 2370
+        }
+      ]
+    },
+    {
+      "departure_time": "07:40:00",
+      "train_id": "A-2-1-008",
+      "origin_station": "A21",
+      "destination_station": "A1",
+      "total_travel_time": 2340,
+      "stations": [
+        {
+          "station_id": "A21",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "A18",
+          "arrival": 316,
+          "departure": 346
+        },
+        {
+          "station_id": "A13",
+          "arrival": 791,
+          "departure": 821
+        },
+        {
+          "station_id": "A12",
+          "arrival": 900,
+          "departure": 930
+        },
+        {
+          "station_id": "A8",
+          "arrival": 1486,
+          "departure": 1516
+        },
+        {
+          "station_id": "A3",
+          "arrival": 2088,
+          "departure": 2118
+        },
+        {
+          "station_id": "A1",
+          "arrival": 2340,
+          "departure": 2370
+        }
+      ]
+    },
+    {
+      "departure_time": "07:55:00",
+      "train_id": "A-2-1-009",
+      "origin_station": "A21",
+      "destination_station": "A1",
+      "total_travel_time": 2340,
+      "stations": [
+        {
+          "station_id": "A21",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "A18",
+          "arrival": 316,
+          "departure": 346
+        },
+        {
+          "station_id": "A13",
+          "arrival": 791,
+          "departure": 821
+        },
+        {
+          "station_id": "A12",
+          "arrival": 900,
+          "departure": 930
+        },
+        {
+          "station_id": "A8",
+          "arrival": 1486,
+          "departure": 1516
+        },
+        {
+          "station_id": "A3",
+          "arrival": 2088,
+          "departure": 2118
+        },
+        {
+          "station_id": "A1",
+          "arrival": 2340,
+          "departure": 2370
+        }
+      ]
+    },
+    {
+      "departure_time": "08:10:00",
+      "train_id": "A-2-1-010",
+      "origin_station": "A21",
+      "destination_station": "A1",
+      "total_travel_time": 2340,
+      "stations": [
+        {
+          "station_id": "A21",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "A18",
+          "arrival": 316,
+          "departure": 346
+        },
+        {
+          "station_id": "A13",
+          "arrival": 791,
+          "departure": 821
+        },
+        {
+          "station_id": "A12",
+          "arrival": 900,
+          "departure": 930
+        },
+        {
+          "station_id": "A8",
+          "arrival": 1486,
+          "departure": 1516
+        },
+        {
+          "station_id": "A3",
+          "arrival": 2088,
+          "departure": 2118
+        },
+        {
+          "station_id": "A1",
+          "arrival": 2340,
+          "departure": 2370
+        }
+      ]
+    },
+    {
+      "departure_time": "08:25:00",
+      "train_id": "A-2-1-011",
+      "origin_station": "A21",
+      "destination_station": "A1",
+      "total_travel_time": 2340,
+      "stations": [
+        {
+          "station_id": "A21",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "A18",
+          "arrival": 316,
+          "departure": 346
+        },
+        {
+          "station_id": "A13",
+          "arrival": 791,
+          "departure": 821
+        },
+        {
+          "station_id": "A12",
+          "arrival": 900,
+          "departure": 930
+        },
+        {
+          "station_id": "A8",
+          "arrival": 1486,
+          "departure": 1516
+        },
+        {
+          "station_id": "A3",
+          "arrival": 2088,
+          "departure": 2118
+        },
+        {
+          "station_id": "A1",
+          "arrival": 2340,
+          "departure": 2370
+        }
+      ]
+    },
+    {
+      "departure_time": "08:40:00",
+      "train_id": "A-2-1-012",
+      "origin_station": "A21",
+      "destination_station": "A1",
+      "total_travel_time": 2340,
+      "stations": [
+        {
+          "station_id": "A21",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "A18",
+          "arrival": 316,
+          "departure": 346
+        },
+        {
+          "station_id": "A13",
+          "arrival": 791,
+          "departure": 821
+        },
+        {
+          "station_id": "A12",
+          "arrival": 900,
+          "departure": 930
+        },
+        {
+          "station_id": "A8",
+          "arrival": 1486,
+          "departure": 1516
+        },
+        {
+          "station_id": "A3",
+          "arrival": 2088,
+          "departure": 2118
+        },
+        {
+          "station_id": "A1",
+          "arrival": 2340,
+          "departure": 2370
+        }
+      ]
+    },
+    {
+      "departure_time": "08:55:00",
+      "train_id": "A-2-1-013",
+      "origin_station": "A21",
+      "destination_station": "A1",
+      "total_travel_time": 2340,
+      "stations": [
+        {
+          "station_id": "A21",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "A18",
+          "arrival": 316,
+          "departure": 346
+        },
+        {
+          "station_id": "A13",
+          "arrival": 791,
+          "departure": 821
+        },
+        {
+          "station_id": "A12",
+          "arrival": 900,
+          "departure": 930
+        },
+        {
+          "station_id": "A8",
+          "arrival": 1486,
+          "departure": 1516
+        },
+        {
+          "station_id": "A3",
+          "arrival": 2088,
+          "departure": 2118
+        },
+        {
+          "station_id": "A1",
+          "arrival": 2340,
+          "departure": 2370
+        }
+      ]
+    },
+    {
+      "departure_time": "09:10:00",
+      "train_id": "A-2-1-014",
+      "origin_station": "A21",
+      "destination_station": "A1",
+      "total_travel_time": 2340,
+      "stations": [
+        {
+          "station_id": "A21",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "A18",
+          "arrival": 316,
+          "departure": 346
+        },
+        {
+          "station_id": "A13",
+          "arrival": 791,
+          "departure": 821
+        },
+        {
+          "station_id": "A12",
+          "arrival": 900,
+          "departure": 930
+        },
+        {
+          "station_id": "A8",
+          "arrival": 1486,
+          "departure": 1516
+        },
+        {
+          "station_id": "A3",
+          "arrival": 2088,
+          "departure": 2118
+        },
+        {
+          "station_id": "A1",
+          "arrival": 2340,
+          "departure": 2370
+        }
+      ]
+    },
+    {
+      "departure_time": "09:25:00",
+      "train_id": "A-2-1-015",
+      "origin_station": "A21",
+      "destination_station": "A1",
+      "total_travel_time": 2340,
+      "stations": [
+        {
+          "station_id": "A21",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "A18",
+          "arrival": 316,
+          "departure": 346
+        },
+        {
+          "station_id": "A13",
+          "arrival": 791,
+          "departure": 821
+        },
+        {
+          "station_id": "A12",
+          "arrival": 900,
+          "departure": 930
+        },
+        {
+          "station_id": "A8",
+          "arrival": 1486,
+          "departure": 1516
+        },
+        {
+          "station_id": "A3",
+          "arrival": 2088,
+          "departure": 2118
+        },
+        {
+          "station_id": "A1",
+          "arrival": 2340,
+          "departure": 2370
+        }
+      ]
+    },
+    {
+      "departure_time": "09:40:00",
+      "train_id": "A-2-1-016",
+      "origin_station": "A21",
+      "destination_station": "A1",
+      "total_travel_time": 2340,
+      "stations": [
+        {
+          "station_id": "A21",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "A18",
+          "arrival": 316,
+          "departure": 346
+        },
+        {
+          "station_id": "A13",
+          "arrival": 791,
+          "departure": 821
+        },
+        {
+          "station_id": "A12",
+          "arrival": 900,
+          "departure": 930
+        },
+        {
+          "station_id": "A8",
+          "arrival": 1486,
+          "departure": 1516
+        },
+        {
+          "station_id": "A3",
+          "arrival": 2088,
+          "departure": 2118
+        },
+        {
+          "station_id": "A1",
+          "arrival": 2340,
+          "departure": 2370
+        }
+      ]
+    },
+    {
+      "departure_time": "09:55:00",
+      "train_id": "A-2-1-017",
+      "origin_station": "A21",
+      "destination_station": "A1",
+      "total_travel_time": 2340,
+      "stations": [
+        {
+          "station_id": "A21",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "A18",
+          "arrival": 316,
+          "departure": 346
+        },
+        {
+          "station_id": "A13",
+          "arrival": 791,
+          "departure": 821
+        },
+        {
+          "station_id": "A12",
+          "arrival": 900,
+          "departure": 930
+        },
+        {
+          "station_id": "A8",
+          "arrival": 1486,
+          "departure": 1516
+        },
+        {
+          "station_id": "A3",
+          "arrival": 2088,
+          "departure": 2118
+        },
+        {
+          "station_id": "A1",
+          "arrival": 2340,
+          "departure": 2370
+        }
+      ]
+    },
+    {
+      "departure_time": "10:10:00",
+      "train_id": "A-2-1-018",
+      "origin_station": "A21",
+      "destination_station": "A1",
+      "total_travel_time": 2340,
+      "stations": [
+        {
+          "station_id": "A21",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "A18",
+          "arrival": 316,
+          "departure": 346
+        },
+        {
+          "station_id": "A13",
+          "arrival": 791,
+          "departure": 821
+        },
+        {
+          "station_id": "A12",
+          "arrival": 900,
+          "departure": 930
+        },
+        {
+          "station_id": "A8",
+          "arrival": 1486,
+          "departure": 1516
+        },
+        {
+          "station_id": "A3",
+          "arrival": 2088,
+          "departure": 2118
+        },
+        {
+          "station_id": "A1",
+          "arrival": 2340,
+          "departure": 2370
+        }
+      ]
+    },
+    {
+      "departure_time": "10:25:00",
+      "train_id": "A-2-1-019",
+      "origin_station": "A21",
+      "destination_station": "A1",
+      "total_travel_time": 2340,
+      "stations": [
+        {
+          "station_id": "A21",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "A18",
+          "arrival": 316,
+          "departure": 346
+        },
+        {
+          "station_id": "A13",
+          "arrival": 791,
+          "departure": 821
+        },
+        {
+          "station_id": "A12",
+          "arrival": 900,
+          "departure": 930
+        },
+        {
+          "station_id": "A8",
+          "arrival": 1486,
+          "departure": 1516
+        },
+        {
+          "station_id": "A3",
+          "arrival": 2088,
+          "departure": 2118
+        },
+        {
+          "station_id": "A1",
+          "arrival": 2340,
+          "departure": 2370
+        }
+      ]
+    },
+    {
+      "departure_time": "10:40:00",
+      "train_id": "A-2-1-020",
+      "origin_station": "A21",
+      "destination_station": "A1",
+      "total_travel_time": 2340,
+      "stations": [
+        {
+          "station_id": "A21",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "A18",
+          "arrival": 316,
+          "departure": 346
+        },
+        {
+          "station_id": "A13",
+          "arrival": 791,
+          "departure": 821
+        },
+        {
+          "station_id": "A12",
+          "arrival": 900,
+          "departure": 930
+        },
+        {
+          "station_id": "A8",
+          "arrival": 1486,
+          "departure": 1516
+        },
+        {
+          "station_id": "A3",
+          "arrival": 2088,
+          "departure": 2118
+        },
+        {
+          "station_id": "A1",
+          "arrival": 2340,
+          "departure": 2370
+        }
+      ]
+    },
+    {
+      "departure_time": "10:55:00",
+      "train_id": "A-2-1-021",
+      "origin_station": "A21",
+      "destination_station": "A1",
+      "total_travel_time": 2340,
+      "stations": [
+        {
+          "station_id": "A21",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "A18",
+          "arrival": 316,
+          "departure": 346
+        },
+        {
+          "station_id": "A13",
+          "arrival": 791,
+          "departure": 821
+        },
+        {
+          "station_id": "A12",
+          "arrival": 900,
+          "departure": 930
+        },
+        {
+          "station_id": "A8",
+          "arrival": 1486,
+          "departure": 1516
+        },
+        {
+          "station_id": "A3",
+          "arrival": 2088,
+          "departure": 2118
+        },
+        {
+          "station_id": "A1",
+          "arrival": 2340,
+          "departure": 2370
+        }
+      ]
+    },
+    {
+      "departure_time": "11:10:00",
+      "train_id": "A-2-1-022",
+      "origin_station": "A21",
+      "destination_station": "A1",
+      "total_travel_time": 2340,
+      "stations": [
+        {
+          "station_id": "A21",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "A18",
+          "arrival": 316,
+          "departure": 346
+        },
+        {
+          "station_id": "A13",
+          "arrival": 791,
+          "departure": 821
+        },
+        {
+          "station_id": "A12",
+          "arrival": 900,
+          "departure": 930
+        },
+        {
+          "station_id": "A8",
+          "arrival": 1486,
+          "departure": 1516
+        },
+        {
+          "station_id": "A3",
+          "arrival": 2088,
+          "departure": 2118
+        },
+        {
+          "station_id": "A1",
+          "arrival": 2340,
+          "departure": 2370
+        }
+      ]
+    },
+    {
+      "departure_time": "11:25:00",
+      "train_id": "A-2-1-023",
+      "origin_station": "A21",
+      "destination_station": "A1",
+      "total_travel_time": 2340,
+      "stations": [
+        {
+          "station_id": "A21",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "A18",
+          "arrival": 316,
+          "departure": 346
+        },
+        {
+          "station_id": "A13",
+          "arrival": 791,
+          "departure": 821
+        },
+        {
+          "station_id": "A12",
+          "arrival": 900,
+          "departure": 930
+        },
+        {
+          "station_id": "A8",
+          "arrival": 1486,
+          "departure": 1516
+        },
+        {
+          "station_id": "A3",
+          "arrival": 2088,
+          "departure": 2118
+        },
+        {
+          "station_id": "A1",
+          "arrival": 2340,
+          "departure": 2370
+        }
+      ]
+    },
+    {
+      "departure_time": "11:40:00",
+      "train_id": "A-2-1-024",
+      "origin_station": "A21",
+      "destination_station": "A1",
+      "total_travel_time": 2340,
+      "stations": [
+        {
+          "station_id": "A21",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "A18",
+          "arrival": 316,
+          "departure": 346
+        },
+        {
+          "station_id": "A13",
+          "arrival": 791,
+          "departure": 821
+        },
+        {
+          "station_id": "A12",
+          "arrival": 900,
+          "departure": 930
+        },
+        {
+          "station_id": "A8",
+          "arrival": 1486,
+          "departure": 1516
+        },
+        {
+          "station_id": "A3",
+          "arrival": 2088,
+          "departure": 2118
+        },
+        {
+          "station_id": "A1",
+          "arrival": 2340,
+          "departure": 2370
+        }
+      ]
+    },
+    {
+      "departure_time": "11:55:00",
+      "train_id": "A-2-1-025",
+      "origin_station": "A21",
+      "destination_station": "A1",
+      "total_travel_time": 2340,
+      "stations": [
+        {
+          "station_id": "A21",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "A18",
+          "arrival": 316,
+          "departure": 346
+        },
+        {
+          "station_id": "A13",
+          "arrival": 791,
+          "departure": 821
+        },
+        {
+          "station_id": "A12",
+          "arrival": 900,
+          "departure": 930
+        },
+        {
+          "station_id": "A8",
+          "arrival": 1486,
+          "departure": 1516
+        },
+        {
+          "station_id": "A3",
+          "arrival": 2088,
+          "departure": 2118
+        },
+        {
+          "station_id": "A1",
+          "arrival": 2340,
+          "departure": 2370
+        }
+      ]
+    },
+    {
+      "departure_time": "12:10:00",
+      "train_id": "A-2-1-026",
+      "origin_station": "A21",
+      "destination_station": "A1",
+      "total_travel_time": 2340,
+      "stations": [
+        {
+          "station_id": "A21",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "A18",
+          "arrival": 316,
+          "departure": 346
+        },
+        {
+          "station_id": "A13",
+          "arrival": 791,
+          "departure": 821
+        },
+        {
+          "station_id": "A12",
+          "arrival": 900,
+          "departure": 930
+        },
+        {
+          "station_id": "A8",
+          "arrival": 1486,
+          "departure": 1516
+        },
+        {
+          "station_id": "A3",
+          "arrival": 2088,
+          "departure": 2118
+        },
+        {
+          "station_id": "A1",
+          "arrival": 2340,
+          "departure": 2370
+        }
+      ]
+    },
+    {
+      "departure_time": "12:25:00",
+      "train_id": "A-2-1-027",
+      "origin_station": "A21",
+      "destination_station": "A1",
+      "total_travel_time": 2340,
+      "stations": [
+        {
+          "station_id": "A21",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "A18",
+          "arrival": 316,
+          "departure": 346
+        },
+        {
+          "station_id": "A13",
+          "arrival": 791,
+          "departure": 821
+        },
+        {
+          "station_id": "A12",
+          "arrival": 900,
+          "departure": 930
+        },
+        {
+          "station_id": "A8",
+          "arrival": 1486,
+          "departure": 1516
+        },
+        {
+          "station_id": "A3",
+          "arrival": 2088,
+          "departure": 2118
+        },
+        {
+          "station_id": "A1",
+          "arrival": 2340,
+          "departure": 2370
+        }
+      ]
+    },
+    {
+      "departure_time": "12:40:00",
+      "train_id": "A-2-1-028",
+      "origin_station": "A21",
+      "destination_station": "A1",
+      "total_travel_time": 2340,
+      "stations": [
+        {
+          "station_id": "A21",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "A18",
+          "arrival": 316,
+          "departure": 346
+        },
+        {
+          "station_id": "A13",
+          "arrival": 791,
+          "departure": 821
+        },
+        {
+          "station_id": "A12",
+          "arrival": 900,
+          "departure": 930
+        },
+        {
+          "station_id": "A8",
+          "arrival": 1486,
+          "departure": 1516
+        },
+        {
+          "station_id": "A3",
+          "arrival": 2088,
+          "departure": 2118
+        },
+        {
+          "station_id": "A1",
+          "arrival": 2340,
+          "departure": 2370
+        }
+      ]
+    },
+    {
+      "departure_time": "12:55:00",
+      "train_id": "A-2-1-029",
+      "origin_station": "A21",
+      "destination_station": "A1",
+      "total_travel_time": 2340,
+      "stations": [
+        {
+          "station_id": "A21",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "A18",
+          "arrival": 316,
+          "departure": 346
+        },
+        {
+          "station_id": "A13",
+          "arrival": 791,
+          "departure": 821
+        },
+        {
+          "station_id": "A12",
+          "arrival": 900,
+          "departure": 930
+        },
+        {
+          "station_id": "A8",
+          "arrival": 1486,
+          "departure": 1516
+        },
+        {
+          "station_id": "A3",
+          "arrival": 2088,
+          "departure": 2118
+        },
+        {
+          "station_id": "A1",
+          "arrival": 2340,
+          "departure": 2370
+        }
+      ]
+    },
+    {
+      "departure_time": "13:10:00",
+      "train_id": "A-2-1-030",
+      "origin_station": "A21",
+      "destination_station": "A1",
+      "total_travel_time": 2340,
+      "stations": [
+        {
+          "station_id": "A21",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "A18",
+          "arrival": 316,
+          "departure": 346
+        },
+        {
+          "station_id": "A13",
+          "arrival": 791,
+          "departure": 821
+        },
+        {
+          "station_id": "A12",
+          "arrival": 900,
+          "departure": 930
+        },
+        {
+          "station_id": "A8",
+          "arrival": 1486,
+          "departure": 1516
+        },
+        {
+          "station_id": "A3",
+          "arrival": 2088,
+          "departure": 2118
+        },
+        {
+          "station_id": "A1",
+          "arrival": 2340,
+          "departure": 2370
+        }
+      ]
+    },
+    {
+      "departure_time": "13:25:00",
+      "train_id": "A-2-1-031",
+      "origin_station": "A21",
+      "destination_station": "A1",
+      "total_travel_time": 2340,
+      "stations": [
+        {
+          "station_id": "A21",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "A18",
+          "arrival": 316,
+          "departure": 346
+        },
+        {
+          "station_id": "A13",
+          "arrival": 791,
+          "departure": 821
+        },
+        {
+          "station_id": "A12",
+          "arrival": 900,
+          "departure": 930
+        },
+        {
+          "station_id": "A8",
+          "arrival": 1486,
+          "departure": 1516
+        },
+        {
+          "station_id": "A3",
+          "arrival": 2088,
+          "departure": 2118
+        },
+        {
+          "station_id": "A1",
+          "arrival": 2340,
+          "departure": 2370
+        }
+      ]
+    },
+    {
+      "departure_time": "13:40:00",
+      "train_id": "A-2-1-032",
+      "origin_station": "A21",
+      "destination_station": "A1",
+      "total_travel_time": 2340,
+      "stations": [
+        {
+          "station_id": "A21",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "A18",
+          "arrival": 316,
+          "departure": 346
+        },
+        {
+          "station_id": "A13",
+          "arrival": 791,
+          "departure": 821
+        },
+        {
+          "station_id": "A12",
+          "arrival": 900,
+          "departure": 930
+        },
+        {
+          "station_id": "A8",
+          "arrival": 1486,
+          "departure": 1516
+        },
+        {
+          "station_id": "A3",
+          "arrival": 2088,
+          "departure": 2118
+        },
+        {
+          "station_id": "A1",
+          "arrival": 2340,
+          "departure": 2370
+        }
+      ]
+    },
+    {
+      "departure_time": "13:55:00",
+      "train_id": "A-2-1-033",
+      "origin_station": "A21",
+      "destination_station": "A1",
+      "total_travel_time": 2340,
+      "stations": [
+        {
+          "station_id": "A21",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "A18",
+          "arrival": 316,
+          "departure": 346
+        },
+        {
+          "station_id": "A13",
+          "arrival": 791,
+          "departure": 821
+        },
+        {
+          "station_id": "A12",
+          "arrival": 900,
+          "departure": 930
+        },
+        {
+          "station_id": "A8",
+          "arrival": 1486,
+          "departure": 1516
+        },
+        {
+          "station_id": "A3",
+          "arrival": 2088,
+          "departure": 2118
+        },
+        {
+          "station_id": "A1",
+          "arrival": 2340,
+          "departure": 2370
+        }
+      ]
+    },
+    {
+      "departure_time": "14:10:00",
+      "train_id": "A-2-1-034",
+      "origin_station": "A21",
+      "destination_station": "A1",
+      "total_travel_time": 2340,
+      "stations": [
+        {
+          "station_id": "A21",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "A18",
+          "arrival": 316,
+          "departure": 346
+        },
+        {
+          "station_id": "A13",
+          "arrival": 791,
+          "departure": 821
+        },
+        {
+          "station_id": "A12",
+          "arrival": 900,
+          "departure": 930
+        },
+        {
+          "station_id": "A8",
+          "arrival": 1486,
+          "departure": 1516
+        },
+        {
+          "station_id": "A3",
+          "arrival": 2088,
+          "departure": 2118
+        },
+        {
+          "station_id": "A1",
+          "arrival": 2340,
+          "departure": 2370
+        }
+      ]
+    },
+    {
+      "departure_time": "14:25:00",
+      "train_id": "A-2-1-035",
+      "origin_station": "A21",
+      "destination_station": "A1",
+      "total_travel_time": 2340,
+      "stations": [
+        {
+          "station_id": "A21",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "A18",
+          "arrival": 316,
+          "departure": 346
+        },
+        {
+          "station_id": "A13",
+          "arrival": 791,
+          "departure": 821
+        },
+        {
+          "station_id": "A12",
+          "arrival": 900,
+          "departure": 930
+        },
+        {
+          "station_id": "A8",
+          "arrival": 1486,
+          "departure": 1516
+        },
+        {
+          "station_id": "A3",
+          "arrival": 2088,
+          "departure": 2118
+        },
+        {
+          "station_id": "A1",
+          "arrival": 2340,
+          "departure": 2370
+        }
+      ]
+    },
+    {
+      "departure_time": "14:40:00",
+      "train_id": "A-2-1-036",
+      "origin_station": "A21",
+      "destination_station": "A1",
+      "total_travel_time": 2340,
+      "stations": [
+        {
+          "station_id": "A21",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "A18",
+          "arrival": 316,
+          "departure": 346
+        },
+        {
+          "station_id": "A13",
+          "arrival": 791,
+          "departure": 821
+        },
+        {
+          "station_id": "A12",
+          "arrival": 900,
+          "departure": 930
+        },
+        {
+          "station_id": "A8",
+          "arrival": 1486,
+          "departure": 1516
+        },
+        {
+          "station_id": "A3",
+          "arrival": 2088,
+          "departure": 2118
+        },
+        {
+          "station_id": "A1",
+          "arrival": 2340,
+          "departure": 2370
+        }
+      ]
+    },
+    {
+      "departure_time": "14:55:00",
+      "train_id": "A-2-1-037",
+      "origin_station": "A21",
+      "destination_station": "A1",
+      "total_travel_time": 2340,
+      "stations": [
+        {
+          "station_id": "A21",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "A18",
+          "arrival": 316,
+          "departure": 346
+        },
+        {
+          "station_id": "A13",
+          "arrival": 791,
+          "departure": 821
+        },
+        {
+          "station_id": "A12",
+          "arrival": 900,
+          "departure": 930
+        },
+        {
+          "station_id": "A8",
+          "arrival": 1486,
+          "departure": 1516
+        },
+        {
+          "station_id": "A3",
+          "arrival": 2088,
+          "departure": 2118
+        },
+        {
+          "station_id": "A1",
+          "arrival": 2340,
+          "departure": 2370
+        }
+      ]
+    },
+    {
+      "departure_time": "15:10:00",
+      "train_id": "A-2-1-038",
+      "origin_station": "A21",
+      "destination_station": "A1",
+      "total_travel_time": 2340,
+      "stations": [
+        {
+          "station_id": "A21",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "A18",
+          "arrival": 316,
+          "departure": 346
+        },
+        {
+          "station_id": "A13",
+          "arrival": 791,
+          "departure": 821
+        },
+        {
+          "station_id": "A12",
+          "arrival": 900,
+          "departure": 930
+        },
+        {
+          "station_id": "A8",
+          "arrival": 1486,
+          "departure": 1516
+        },
+        {
+          "station_id": "A3",
+          "arrival": 2088,
+          "departure": 2118
+        },
+        {
+          "station_id": "A1",
+          "arrival": 2340,
+          "departure": 2370
+        }
+      ]
+    },
+    {
+      "departure_time": "15:25:00",
+      "train_id": "A-2-1-039",
+      "origin_station": "A21",
+      "destination_station": "A1",
+      "total_travel_time": 2340,
+      "stations": [
+        {
+          "station_id": "A21",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "A18",
+          "arrival": 316,
+          "departure": 346
+        },
+        {
+          "station_id": "A13",
+          "arrival": 791,
+          "departure": 821
+        },
+        {
+          "station_id": "A12",
+          "arrival": 900,
+          "departure": 930
+        },
+        {
+          "station_id": "A8",
+          "arrival": 1486,
+          "departure": 1516
+        },
+        {
+          "station_id": "A3",
+          "arrival": 2088,
+          "departure": 2118
+        },
+        {
+          "station_id": "A1",
+          "arrival": 2340,
+          "departure": 2370
+        }
+      ]
+    },
+    {
+      "departure_time": "15:40:00",
+      "train_id": "A-2-1-040",
+      "origin_station": "A21",
+      "destination_station": "A1",
+      "total_travel_time": 2340,
+      "stations": [
+        {
+          "station_id": "A21",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "A18",
+          "arrival": 316,
+          "departure": 346
+        },
+        {
+          "station_id": "A13",
+          "arrival": 791,
+          "departure": 821
+        },
+        {
+          "station_id": "A12",
+          "arrival": 900,
+          "departure": 930
+        },
+        {
+          "station_id": "A8",
+          "arrival": 1486,
+          "departure": 1516
+        },
+        {
+          "station_id": "A3",
+          "arrival": 2088,
+          "departure": 2118
+        },
+        {
+          "station_id": "A1",
+          "arrival": 2340,
+          "departure": 2370
+        }
+      ]
+    },
+    {
+      "departure_time": "15:55:00",
+      "train_id": "A-2-1-041",
+      "origin_station": "A21",
+      "destination_station": "A1",
+      "total_travel_time": 2340,
+      "stations": [
+        {
+          "station_id": "A21",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "A18",
+          "arrival": 316,
+          "departure": 346
+        },
+        {
+          "station_id": "A13",
+          "arrival": 791,
+          "departure": 821
+        },
+        {
+          "station_id": "A12",
+          "arrival": 900,
+          "departure": 930
+        },
+        {
+          "station_id": "A8",
+          "arrival": 1486,
+          "departure": 1516
+        },
+        {
+          "station_id": "A3",
+          "arrival": 2088,
+          "departure": 2118
+        },
+        {
+          "station_id": "A1",
+          "arrival": 2340,
+          "departure": 2370
+        }
+      ]
+    },
+    {
+      "departure_time": "16:10:00",
+      "train_id": "A-2-1-042",
+      "origin_station": "A21",
+      "destination_station": "A1",
+      "total_travel_time": 2340,
+      "stations": [
+        {
+          "station_id": "A21",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "A18",
+          "arrival": 316,
+          "departure": 346
+        },
+        {
+          "station_id": "A13",
+          "arrival": 791,
+          "departure": 821
+        },
+        {
+          "station_id": "A12",
+          "arrival": 900,
+          "departure": 930
+        },
+        {
+          "station_id": "A8",
+          "arrival": 1486,
+          "departure": 1516
+        },
+        {
+          "station_id": "A3",
+          "arrival": 2088,
+          "departure": 2118
+        },
+        {
+          "station_id": "A1",
+          "arrival": 2340,
+          "departure": 2370
+        }
+      ]
+    },
+    {
+      "departure_time": "16:25:00",
+      "train_id": "A-2-1-043",
+      "origin_station": "A21",
+      "destination_station": "A1",
+      "total_travel_time": 2340,
+      "stations": [
+        {
+          "station_id": "A21",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "A18",
+          "arrival": 316,
+          "departure": 346
+        },
+        {
+          "station_id": "A13",
+          "arrival": 791,
+          "departure": 821
+        },
+        {
+          "station_id": "A12",
+          "arrival": 900,
+          "departure": 930
+        },
+        {
+          "station_id": "A8",
+          "arrival": 1486,
+          "departure": 1516
+        },
+        {
+          "station_id": "A3",
+          "arrival": 2088,
+          "departure": 2118
+        },
+        {
+          "station_id": "A1",
+          "arrival": 2340,
+          "departure": 2370
+        }
+      ]
+    },
+    {
+      "departure_time": "16:40:00",
+      "train_id": "A-2-1-044",
+      "origin_station": "A21",
+      "destination_station": "A1",
+      "total_travel_time": 2340,
+      "stations": [
+        {
+          "station_id": "A21",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "A18",
+          "arrival": 316,
+          "departure": 346
+        },
+        {
+          "station_id": "A13",
+          "arrival": 791,
+          "departure": 821
+        },
+        {
+          "station_id": "A12",
+          "arrival": 900,
+          "departure": 930
+        },
+        {
+          "station_id": "A8",
+          "arrival": 1486,
+          "departure": 1516
+        },
+        {
+          "station_id": "A3",
+          "arrival": 2088,
+          "departure": 2118
+        },
+        {
+          "station_id": "A1",
+          "arrival": 2340,
+          "departure": 2370
+        }
+      ]
+    },
+    {
+      "departure_time": "16:55:00",
+      "train_id": "A-2-1-045",
+      "origin_station": "A21",
+      "destination_station": "A1",
+      "total_travel_time": 2340,
+      "stations": [
+        {
+          "station_id": "A21",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "A18",
+          "arrival": 316,
+          "departure": 346
+        },
+        {
+          "station_id": "A13",
+          "arrival": 791,
+          "departure": 821
+        },
+        {
+          "station_id": "A12",
+          "arrival": 900,
+          "departure": 930
+        },
+        {
+          "station_id": "A8",
+          "arrival": 1486,
+          "departure": 1516
+        },
+        {
+          "station_id": "A3",
+          "arrival": 2088,
+          "departure": 2118
+        },
+        {
+          "station_id": "A1",
+          "arrival": 2340,
+          "departure": 2370
+        }
+      ]
+    },
+    {
+      "departure_time": "17:10:00",
+      "train_id": "A-2-1-046",
+      "origin_station": "A21",
+      "destination_station": "A1",
+      "total_travel_time": 2340,
+      "stations": [
+        {
+          "station_id": "A21",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "A18",
+          "arrival": 316,
+          "departure": 346
+        },
+        {
+          "station_id": "A13",
+          "arrival": 791,
+          "departure": 821
+        },
+        {
+          "station_id": "A12",
+          "arrival": 900,
+          "departure": 930
+        },
+        {
+          "station_id": "A8",
+          "arrival": 1486,
+          "departure": 1516
+        },
+        {
+          "station_id": "A3",
+          "arrival": 2088,
+          "departure": 2118
+        },
+        {
+          "station_id": "A1",
+          "arrival": 2340,
+          "departure": 2370
+        }
+      ]
+    },
+    {
+      "departure_time": "17:25:00",
+      "train_id": "A-2-1-047",
+      "origin_station": "A21",
+      "destination_station": "A1",
+      "total_travel_time": 2340,
+      "stations": [
+        {
+          "station_id": "A21",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "A18",
+          "arrival": 316,
+          "departure": 346
+        },
+        {
+          "station_id": "A13",
+          "arrival": 791,
+          "departure": 821
+        },
+        {
+          "station_id": "A12",
+          "arrival": 900,
+          "departure": 930
+        },
+        {
+          "station_id": "A8",
+          "arrival": 1486,
+          "departure": 1516
+        },
+        {
+          "station_id": "A3",
+          "arrival": 2088,
+          "departure": 2118
+        },
+        {
+          "station_id": "A1",
+          "arrival": 2340,
+          "departure": 2370
+        }
+      ]
+    },
+    {
+      "departure_time": "17:40:00",
+      "train_id": "A-2-1-048",
+      "origin_station": "A21",
+      "destination_station": "A1",
+      "total_travel_time": 2340,
+      "stations": [
+        {
+          "station_id": "A21",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "A18",
+          "arrival": 316,
+          "departure": 346
+        },
+        {
+          "station_id": "A13",
+          "arrival": 791,
+          "departure": 821
+        },
+        {
+          "station_id": "A12",
+          "arrival": 900,
+          "departure": 930
+        },
+        {
+          "station_id": "A8",
+          "arrival": 1486,
+          "departure": 1516
+        },
+        {
+          "station_id": "A3",
+          "arrival": 2088,
+          "departure": 2118
+        },
+        {
+          "station_id": "A1",
+          "arrival": 2340,
+          "departure": 2370
+        }
+      ]
+    },
+    {
+      "departure_time": "17:55:00",
+      "train_id": "A-2-1-049",
+      "origin_station": "A21",
+      "destination_station": "A1",
+      "total_travel_time": 2340,
+      "stations": [
+        {
+          "station_id": "A21",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "A18",
+          "arrival": 316,
+          "departure": 346
+        },
+        {
+          "station_id": "A13",
+          "arrival": 791,
+          "departure": 821
+        },
+        {
+          "station_id": "A12",
+          "arrival": 900,
+          "departure": 930
+        },
+        {
+          "station_id": "A8",
+          "arrival": 1486,
+          "departure": 1516
+        },
+        {
+          "station_id": "A3",
+          "arrival": 2088,
+          "departure": 2118
+        },
+        {
+          "station_id": "A1",
+          "arrival": 2340,
+          "departure": 2370
+        }
+      ]
+    },
+    {
+      "departure_time": "18:10:00",
+      "train_id": "A-2-1-050",
+      "origin_station": "A21",
+      "destination_station": "A1",
+      "total_travel_time": 2340,
+      "stations": [
+        {
+          "station_id": "A21",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "A18",
+          "arrival": 316,
+          "departure": 346
+        },
+        {
+          "station_id": "A13",
+          "arrival": 791,
+          "departure": 821
+        },
+        {
+          "station_id": "A12",
+          "arrival": 900,
+          "departure": 930
+        },
+        {
+          "station_id": "A8",
+          "arrival": 1486,
+          "departure": 1516
+        },
+        {
+          "station_id": "A3",
+          "arrival": 2088,
+          "departure": 2118
+        },
+        {
+          "station_id": "A1",
+          "arrival": 2340,
+          "departure": 2370
+        }
+      ]
+    },
+    {
+      "departure_time": "18:25:00",
+      "train_id": "A-2-1-051",
+      "origin_station": "A21",
+      "destination_station": "A1",
+      "total_travel_time": 2340,
+      "stations": [
+        {
+          "station_id": "A21",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "A18",
+          "arrival": 316,
+          "departure": 346
+        },
+        {
+          "station_id": "A13",
+          "arrival": 791,
+          "departure": 821
+        },
+        {
+          "station_id": "A12",
+          "arrival": 900,
+          "departure": 930
+        },
+        {
+          "station_id": "A8",
+          "arrival": 1486,
+          "departure": 1516
+        },
+        {
+          "station_id": "A3",
+          "arrival": 2088,
+          "departure": 2118
+        },
+        {
+          "station_id": "A1",
+          "arrival": 2340,
+          "departure": 2370
+        }
+      ]
+    },
+    {
+      "departure_time": "18:40:00",
+      "train_id": "A-2-1-052",
+      "origin_station": "A21",
+      "destination_station": "A1",
+      "total_travel_time": 2340,
+      "stations": [
+        {
+          "station_id": "A21",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "A18",
+          "arrival": 316,
+          "departure": 346
+        },
+        {
+          "station_id": "A13",
+          "arrival": 791,
+          "departure": 821
+        },
+        {
+          "station_id": "A12",
+          "arrival": 900,
+          "departure": 930
+        },
+        {
+          "station_id": "A8",
+          "arrival": 1486,
+          "departure": 1516
+        },
+        {
+          "station_id": "A3",
+          "arrival": 2088,
+          "departure": 2118
+        },
+        {
+          "station_id": "A1",
+          "arrival": 2340,
+          "departure": 2370
+        }
+      ]
+    },
+    {
+      "departure_time": "18:55:00",
+      "train_id": "A-2-1-053",
+      "origin_station": "A21",
+      "destination_station": "A1",
+      "total_travel_time": 2340,
+      "stations": [
+        {
+          "station_id": "A21",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "A18",
+          "arrival": 316,
+          "departure": 346
+        },
+        {
+          "station_id": "A13",
+          "arrival": 791,
+          "departure": 821
+        },
+        {
+          "station_id": "A12",
+          "arrival": 900,
+          "departure": 930
+        },
+        {
+          "station_id": "A8",
+          "arrival": 1486,
+          "departure": 1516
+        },
+        {
+          "station_id": "A3",
+          "arrival": 2088,
+          "departure": 2118
+        },
+        {
+          "station_id": "A1",
+          "arrival": 2340,
+          "departure": 2370
+        }
+      ]
+    },
+    {
+      "departure_time": "19:10:00",
+      "train_id": "A-2-1-054",
+      "origin_station": "A21",
+      "destination_station": "A1",
+      "total_travel_time": 2340,
+      "stations": [
+        {
+          "station_id": "A21",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "A18",
+          "arrival": 316,
+          "departure": 346
+        },
+        {
+          "station_id": "A13",
+          "arrival": 791,
+          "departure": 821
+        },
+        {
+          "station_id": "A12",
+          "arrival": 900,
+          "departure": 930
+        },
+        {
+          "station_id": "A8",
+          "arrival": 1486,
+          "departure": 1516
+        },
+        {
+          "station_id": "A3",
+          "arrival": 2088,
+          "departure": 2118
+        },
+        {
+          "station_id": "A1",
+          "arrival": 2340,
+          "departure": 2370
+        }
+      ]
+    },
+    {
+      "departure_time": "19:25:00",
+      "train_id": "A-2-1-055",
+      "origin_station": "A21",
+      "destination_station": "A1",
+      "total_travel_time": 2340,
+      "stations": [
+        {
+          "station_id": "A21",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "A18",
+          "arrival": 316,
+          "departure": 346
+        },
+        {
+          "station_id": "A13",
+          "arrival": 791,
+          "departure": 821
+        },
+        {
+          "station_id": "A12",
+          "arrival": 900,
+          "departure": 930
+        },
+        {
+          "station_id": "A8",
+          "arrival": 1486,
+          "departure": 1516
+        },
+        {
+          "station_id": "A3",
+          "arrival": 2088,
+          "departure": 2118
+        },
+        {
+          "station_id": "A1",
+          "arrival": 2340,
+          "departure": 2370
+        }
+      ]
+    },
+    {
+      "departure_time": "19:40:00",
+      "train_id": "A-2-1-056",
+      "origin_station": "A21",
+      "destination_station": "A1",
+      "total_travel_time": 2340,
+      "stations": [
+        {
+          "station_id": "A21",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "A18",
+          "arrival": 316,
+          "departure": 346
+        },
+        {
+          "station_id": "A13",
+          "arrival": 791,
+          "departure": 821
+        },
+        {
+          "station_id": "A12",
+          "arrival": 900,
+          "departure": 930
+        },
+        {
+          "station_id": "A8",
+          "arrival": 1486,
+          "departure": 1516
+        },
+        {
+          "station_id": "A3",
+          "arrival": 2088,
+          "departure": 2118
+        },
+        {
+          "station_id": "A1",
+          "arrival": 2340,
+          "departure": 2370
+        }
+      ]
+    },
+    {
+      "departure_time": "19:55:00",
+      "train_id": "A-2-1-057",
+      "origin_station": "A21",
+      "destination_station": "A1",
+      "total_travel_time": 2340,
+      "stations": [
+        {
+          "station_id": "A21",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "A18",
+          "arrival": 316,
+          "departure": 346
+        },
+        {
+          "station_id": "A13",
+          "arrival": 791,
+          "departure": 821
+        },
+        {
+          "station_id": "A12",
+          "arrival": 900,
+          "departure": 930
+        },
+        {
+          "station_id": "A8",
+          "arrival": 1486,
+          "departure": 1516
+        },
+        {
+          "station_id": "A3",
+          "arrival": 2088,
+          "departure": 2118
+        },
+        {
+          "station_id": "A1",
+          "arrival": 2340,
+          "departure": 2370
+        }
+      ]
+    },
+    {
+      "departure_time": "20:10:00",
+      "train_id": "A-2-1-058",
+      "origin_station": "A21",
+      "destination_station": "A1",
+      "total_travel_time": 2340,
+      "stations": [
+        {
+          "station_id": "A21",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "A18",
+          "arrival": 316,
+          "departure": 346
+        },
+        {
+          "station_id": "A13",
+          "arrival": 791,
+          "departure": 821
+        },
+        {
+          "station_id": "A12",
+          "arrival": 900,
+          "departure": 930
+        },
+        {
+          "station_id": "A8",
+          "arrival": 1486,
+          "departure": 1516
+        },
+        {
+          "station_id": "A3",
+          "arrival": 2088,
+          "departure": 2118
+        },
+        {
+          "station_id": "A1",
+          "arrival": 2340,
+          "departure": 2370
+        }
+      ]
+    },
+    {
+      "departure_time": "20:25:00",
+      "train_id": "A-2-1-059",
+      "origin_station": "A21",
+      "destination_station": "A1",
+      "total_travel_time": 2340,
+      "stations": [
+        {
+          "station_id": "A21",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "A18",
+          "arrival": 316,
+          "departure": 346
+        },
+        {
+          "station_id": "A13",
+          "arrival": 791,
+          "departure": 821
+        },
+        {
+          "station_id": "A12",
+          "arrival": 900,
+          "departure": 930
+        },
+        {
+          "station_id": "A8",
+          "arrival": 1486,
+          "departure": 1516
+        },
+        {
+          "station_id": "A3",
+          "arrival": 2088,
+          "departure": 2118
+        },
+        {
+          "station_id": "A1",
+          "arrival": 2340,
+          "departure": 2370
+        }
+      ]
+    },
+    {
+      "departure_time": "20:40:00",
+      "train_id": "A-2-1-060",
+      "origin_station": "A21",
+      "destination_station": "A1",
+      "total_travel_time": 2340,
+      "stations": [
+        {
+          "station_id": "A21",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "A18",
+          "arrival": 316,
+          "departure": 346
+        },
+        {
+          "station_id": "A13",
+          "arrival": 791,
+          "departure": 821
+        },
+        {
+          "station_id": "A12",
+          "arrival": 900,
+          "departure": 930
+        },
+        {
+          "station_id": "A8",
+          "arrival": 1486,
+          "departure": 1516
+        },
+        {
+          "station_id": "A3",
+          "arrival": 2088,
+          "departure": 2118
+        },
+        {
+          "station_id": "A1",
+          "arrival": 2340,
+          "departure": 2370
+        }
+      ]
+    },
+    {
+      "departure_time": "20:55:00",
+      "train_id": "A-2-1-061",
+      "origin_station": "A21",
+      "destination_station": "A1",
+      "total_travel_time": 2340,
+      "stations": [
+        {
+          "station_id": "A21",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "A18",
+          "arrival": 316,
+          "departure": 346
+        },
+        {
+          "station_id": "A13",
+          "arrival": 791,
+          "departure": 821
+        },
+        {
+          "station_id": "A12",
+          "arrival": 900,
+          "departure": 930
+        },
+        {
+          "station_id": "A8",
+          "arrival": 1486,
+          "departure": 1516
+        },
+        {
+          "station_id": "A3",
+          "arrival": 2088,
+          "departure": 2118
+        },
+        {
+          "station_id": "A1",
+          "arrival": 2340,
+          "departure": 2370
+        }
+      ]
+    },
+    {
+      "departure_time": "21:10:00",
+      "train_id": "A-2-1-062",
+      "origin_station": "A21",
+      "destination_station": "A1",
+      "total_travel_time": 2340,
+      "stations": [
+        {
+          "station_id": "A21",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "A18",
+          "arrival": 316,
+          "departure": 346
+        },
+        {
+          "station_id": "A13",
+          "arrival": 791,
+          "departure": 821
+        },
+        {
+          "station_id": "A12",
+          "arrival": 900,
+          "departure": 930
+        },
+        {
+          "station_id": "A8",
+          "arrival": 1486,
+          "departure": 1516
+        },
+        {
+          "station_id": "A3",
+          "arrival": 2088,
+          "departure": 2118
+        },
+        {
+          "station_id": "A1",
+          "arrival": 2340,
+          "departure": 2370
+        }
+      ]
+    },
+    {
+      "departure_time": "21:25:00",
+      "train_id": "A-2-1-063",
+      "origin_station": "A21",
+      "destination_station": "A1",
+      "total_travel_time": 2340,
+      "stations": [
+        {
+          "station_id": "A21",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "A18",
+          "arrival": 316,
+          "departure": 346
+        },
+        {
+          "station_id": "A13",
+          "arrival": 791,
+          "departure": 821
+        },
+        {
+          "station_id": "A12",
+          "arrival": 900,
+          "departure": 930
+        },
+        {
+          "station_id": "A8",
+          "arrival": 1486,
+          "departure": 1516
+        },
+        {
+          "station_id": "A3",
+          "arrival": 2088,
+          "departure": 2118
+        },
+        {
+          "station_id": "A1",
+          "arrival": 2340,
+          "departure": 2370
+        }
+      ]
+    },
+    {
+      "departure_time": "21:40:00",
+      "train_id": "A-2-1-064",
+      "origin_station": "A21",
+      "destination_station": "A1",
+      "total_travel_time": 2340,
+      "stations": [
+        {
+          "station_id": "A21",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "A18",
+          "arrival": 316,
+          "departure": 346
+        },
+        {
+          "station_id": "A13",
+          "arrival": 791,
+          "departure": 821
+        },
+        {
+          "station_id": "A12",
+          "arrival": 900,
+          "departure": 930
+        },
+        {
+          "station_id": "A8",
+          "arrival": 1486,
+          "departure": 1516
+        },
+        {
+          "station_id": "A3",
+          "arrival": 2088,
+          "departure": 2118
+        },
+        {
+          "station_id": "A1",
+          "arrival": 2340,
+          "departure": 2370
+        }
+      ]
+    },
+    {
+      "departure_time": "21:55:00",
+      "train_id": "A-2-1-065",
+      "origin_station": "A21",
+      "destination_station": "A1",
+      "total_travel_time": 2340,
+      "stations": [
+        {
+          "station_id": "A21",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "A18",
+          "arrival": 316,
+          "departure": 346
+        },
+        {
+          "station_id": "A13",
+          "arrival": 791,
+          "departure": 821
+        },
+        {
+          "station_id": "A12",
+          "arrival": 900,
+          "departure": 930
+        },
+        {
+          "station_id": "A8",
+          "arrival": 1486,
+          "departure": 1516
+        },
+        {
+          "station_id": "A3",
+          "arrival": 2088,
+          "departure": 2118
+        },
+        {
+          "station_id": "A1",
+          "arrival": 2340,
+          "departure": 2370
+        }
+      ]
+    },
+    {
+      "departure_time": "22:10:00",
+      "train_id": "A-2-1-066",
+      "origin_station": "A21",
+      "destination_station": "A1",
+      "total_travel_time": 2340,
+      "stations": [
+        {
+          "station_id": "A21",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "A18",
+          "arrival": 316,
+          "departure": 346
+        },
+        {
+          "station_id": "A13",
+          "arrival": 791,
+          "departure": 821
+        },
+        {
+          "station_id": "A12",
+          "arrival": 900,
+          "departure": 930
+        },
+        {
+          "station_id": "A8",
+          "arrival": 1486,
+          "departure": 1516
+        },
+        {
+          "station_id": "A3",
+          "arrival": 2088,
+          "departure": 2118
+        },
+        {
+          "station_id": "A1",
+          "arrival": 2340,
+          "departure": 2370
+        }
+      ]
+    },
+    {
+      "departure_time": "22:25:00",
+      "train_id": "A-2-1-067",
+      "origin_station": "A21",
+      "destination_station": "A1",
+      "total_travel_time": 2340,
+      "stations": [
+        {
+          "station_id": "A21",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "A18",
+          "arrival": 316,
+          "departure": 346
+        },
+        {
+          "station_id": "A13",
+          "arrival": 791,
+          "departure": 821
+        },
+        {
+          "station_id": "A12",
+          "arrival": 900,
+          "departure": 930
+        },
+        {
+          "station_id": "A8",
+          "arrival": 1486,
+          "departure": 1516
+        },
+        {
+          "station_id": "A3",
+          "arrival": 2088,
+          "departure": 2118
+        },
+        {
+          "station_id": "A1",
+          "arrival": 2340,
+          "departure": 2370
+        }
+      ]
+    },
+    {
+      "departure_time": "22:40:00",
+      "train_id": "A-2-1-068",
+      "origin_station": "A21",
+      "destination_station": "A1",
+      "total_travel_time": 2340,
+      "stations": [
+        {
+          "station_id": "A21",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "A18",
+          "arrival": 316,
+          "departure": 346
+        },
+        {
+          "station_id": "A13",
+          "arrival": 791,
+          "departure": 821
+        },
+        {
+          "station_id": "A12",
+          "arrival": 900,
+          "departure": 930
+        },
+        {
+          "station_id": "A8",
+          "arrival": 1486,
+          "departure": 1516
+        },
+        {
+          "station_id": "A3",
+          "arrival": 2088,
+          "departure": 2118
+        },
+        {
+          "station_id": "A1",
+          "arrival": 2340,
+          "departure": 2370
+        }
+      ]
+    },
+    {
+      "departure_time": "22:55:00",
+      "train_id": "A-2-1-069",
+      "origin_station": "A21",
+      "destination_station": "A1",
+      "total_travel_time": 2340,
+      "stations": [
+        {
+          "station_id": "A21",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "A18",
+          "arrival": 316,
+          "departure": 346
+        },
+        {
+          "station_id": "A13",
+          "arrival": 791,
+          "departure": 821
+        },
+        {
+          "station_id": "A12",
+          "arrival": 900,
+          "departure": 930
+        },
+        {
+          "station_id": "A8",
+          "arrival": 1486,
+          "departure": 1516
+        },
+        {
+          "station_id": "A3",
+          "arrival": 2088,
+          "departure": 2118
+        },
+        {
+          "station_id": "A1",
+          "arrival": 2340,
+          "departure": 2370
+        }
+      ]
+    }
+  ]
+}

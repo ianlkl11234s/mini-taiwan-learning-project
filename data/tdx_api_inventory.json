@@ -1,0 +1,129 @@
+{
+  "NTALRT": {
+    "name": "安坑輕軌",
+    "prefix": "K",
+    "apis": {
+      "Station": {
+        "ok": true,
+        "count": 9
+      },
+      "Shape": {
+        "ok": true,
+        "count": 1
+      },
+      "S2STravelTime": {
+        "ok": false,
+        "count": 0,
+        "error": 400
+      },
+      "Frequency": {
+        "ok": false,
+        "count": 0,
+        "error": 400
+      },
+      "FirstLastTimetable": {
+        "ok": false,
+        "count": 0,
+        "error": 400
+      },
+      "StationTimeTable": {
+        "ok": true,
+        "count": 38
+      }
+    }
+  },
+  "NTDLRT": {
+    "name": "淡海輕軌",
+    "prefix": "V",
+    "apis": {
+      "Station": {
+        "ok": true,
+        "count": 14
+      },
+      "Shape": {
+        "ok": true,
+        "count": 1
+      },
+      "S2STravelTime": {
+        "ok": false,
+        "count": 0,
+        "error": 400
+      },
+      "Frequency": {
+        "ok": false,
+        "count": 0,
+        "error": 400
+      },
+      "FirstLastTimetable": {
+        "ok": false,
+        "count": 0,
+        "error": 400
+      },
+      "StationTimeTable": {
+        "ok": true,
+        "count": 84
+      }
+    }
+  },
+  "NTMC": {
+    "name": "環狀線",
+    "prefix": "Y",
+    "apis": {
+      "Station": {
+        "ok": true,
+        "count": 14
+      },
+      "Shape": {
+        "ok": true,
+        "count": 1
+      },
+      "S2STravelTime": {
+        "ok": true,
+        "count": 1
+      },
+      "Frequency": {
+        "ok": true,
+        "count": 2
+      },
+      "FirstLastTimetable": {
+        "ok": true,
+        "count": 26
+      },
+      "StationTimeTable": {
+        "ok": false,
+        "count": 0,
+        "error": 400
+      }
+    }
+  },
+  "TYMC": {
+    "name": "桃園捷運/機場線",
+    "prefix": "A",
+    "apis": {
+      "Station": {
+        "ok": true,
+        "count": 22
+      },
+      "Shape": {
+        "ok": true,
+        "count": 1
+      },
+      "S2STravelTime": {
+        "ok": true,
+        "count": 4
+      },
+      "Frequency": {
+        "ok": true,
+        "count": 1
+      },
+      "FirstLastTimetable": {
+        "ok": true,
+        "count": 160
+      },
+      "StationTimeTable": {
+        "ok": true,
+        "count": 128
+      }
+    }
+  }
+}

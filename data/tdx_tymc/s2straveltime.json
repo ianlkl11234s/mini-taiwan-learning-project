@@ -1,0 +1,7270 @@
+[
+  {
+    "LineNo": "A",
+    "LineID": "A",
+    "RouteID": "A-1",
+    "TrainType": 1,
+    "TravelTimes": [
+      {
+        "Sequence": 1,
+        "FromStationID": "A1",
+        "FromStationName": {
+          "Zh_tw": "台北車站",
+          "En": "Taipei Main Station"
+        },
+        "ToStationID": "A2",
+        "ToStationName": {
+          "Zh_tw": "三重站",
+          "En": "Sanchong Station"
+        },
+        "RunTime": 300
+      },
+      {
+        "Sequence": 2,
+        "FromStationID": "A1",
+        "FromStationName": {
+          "Zh_tw": "台北車站",
+          "En": "Taipei Main Station"
+        },
+        "ToStationID": "A3",
+        "ToStationName": {
+          "Zh_tw": "新北產業園區站",
+          "En": "New Taipei Industrial Park Station"
+        },
+        "RunTime": 540
+      },
+      {
+        "Sequence": 3,
+        "FromStationID": "A1",
+        "FromStationName": {
+          "Zh_tw": "台北車站",
+          "En": "Taipei Main Station"
+        },
+        "ToStationID": "A4",
+        "ToStationName": {
+          "Zh_tw": "新莊副都心站",
+          "En": "Xinzhuang Fuduxin Station"
+        },
+        "RunTime": 780
+      },
+      {
+        "Sequence": 4,
+        "FromStationID": "A1",
+        "FromStationName": {
+          "Zh_tw": "台北車站",
+          "En": "Taipei Main Station"
+        },
+        "ToStationID": "A5",
+        "ToStationName": {
+          "Zh_tw": "泰山站",
+          "En": "Taishan Station"
+        },
+        "RunTime": 840
+      },
+      {
+        "Sequence": 5,
+        "FromStationID": "A1",
+        "FromStationName": {
+          "Zh_tw": "台北車站",
+          "En": "Taipei Main Station"
+        },
+        "ToStationID": "A6",
+        "ToStationName": {
+          "Zh_tw": "泰山貴和站",
+          "En": "Taishan Guihe Station"
+        },
+        "RunTime": 1020
+      },
+      {
+        "Sequence": 6,
+        "FromStationID": "A1",
+        "FromStationName": {
+          "Zh_tw": "台北車站",
+          "En": "Taipei Main Station"
+        },
+        "ToStationID": "A7",
+        "ToStationName": {
+          "Zh_tw": "體育大學站",
+          "En": "National Taiwan Sport University Station"
+        },
+        "RunTime": 1380
+      },
+      {
+        "Sequence": 7,
+        "FromStationID": "A1",
+        "FromStationName": {
+          "Zh_tw": "台北車站",
+          "En": "Taipei Main Station"
+        },
+        "ToStationID": "A8",
+        "ToStationName": {
+          "Zh_tw": "長庚醫院站",
+          "En": "Chang Gung Memorial Hospital Station"
+        },
+        "RunTime": 1620
+      },
+      {
+        "Sequence": 8,
+        "FromStationID": "A1",
+        "FromStationName": {
+          "Zh_tw": "台北車站",
+          "En": "Taipei Main Station"
+        },
+        "ToStationID": "A9",
+        "ToStationName": {
+          "Zh_tw": "林口站",
+          "En": "Linkou Station"
+        },
+        "RunTime": 1980
+      },
+      {
+        "Sequence": 9,
+        "FromStationID": "A1",
+        "FromStationName": {
+          "Zh_tw": "台北車站",
+          "En": "Taipei Main Station"
+        },
+        "ToStationID": "A10",
+        "ToStationName": {
+          "Zh_tw": "山鼻站",
+          "En": "Shanbi Station"
+        },
+        "RunTime": 2580
+      },
+      {
+        "Sequence": 10,
+        "FromStationID": "A1",
+        "FromStationName": {
+          "Zh_tw": "台北車站",
+          "En": "Taipei Main Station"
+        },
+        "ToStationID": "A11",
+        "ToStationName": {
+          "Zh_tw": "坑口站",
+          "En": "Kengkou Station"
+        },
+        "RunTime": 2700
+      },
+      {
+        "Sequence": 11,
+        "FromStationID": "A1",
+        "FromStationName": {
+          "Zh_tw": "台北車站",
+          "En": "Taipei Main Station"
+        },
+        "ToStationID": "A12",
+        "ToStationName": {
+          "Zh_tw": "機場第一航廈站",
+          "En": "Airport Terminal 1 Station"
+        },
+        "RunTime": 2940
+      },
+      {
+        "Sequence": 12,
+        "FromStationID": "A1",
+        "FromStationName": {
+          "Zh_tw": "台北車站",
+          "En": "Taipei Main Station"
+        },
+        "ToStationID": "A13",
+        "ToStationName": {
+          "Zh_tw": "機場第二航廈站",
+          "En": "Airport Terminal 2 Station"
+        },
+        "RunTime": 3120
+      },
+      {
+        "Sequence": 13,
+        "FromStationID": "A1",
+        "FromStationName": {
+          "Zh_tw": "台北車站",
+          "En": "Taipei Main Station"
+        },
+        "ToStationID": "A14a",
+        "ToStationName": {
+          "Zh_tw": "機場旅館站",
+          "En": "Airport Hotel Station"
+        },
+        "RunTime": 3360
+      },
+      {
+        "Sequence": 14,
+        "FromStationID": "A1",
+        "FromStationName": {
+          "Zh_tw": "台北車站",
+          "En": "Taipei Main Station"
+        },
+        "ToStationID": "A15",
+        "ToStationName": {
+          "Zh_tw": "大園站",
+          "En": "Dayuan Station"
+        },
+        "RunTime": 3540
+      },
+      {
+        "Sequence": 15,
+        "FromStationID": "A1",
+        "FromStationName": {
+          "Zh_tw": "台北車站",
+          "En": "Taipei Main Station"
+        },
+        "ToStationID": "A16",
+        "ToStationName": {
+          "Zh_tw": "橫山站",
+          "En": "Hengshan Station"
+        },
+        "RunTime": 3720
+      },
+      {
+        "Sequence": 16,
+        "FromStationID": "A1",
+        "FromStationName": {
+          "Zh_tw": "台北車站",
+          "En": "Taipei Main Station"
+        },
+        "ToStationID": "A17",
+        "ToStationName": {
+          "Zh_tw": "領航站",
+          "En": "Linghang Station"
+        },
+        "RunTime": 3900
+      },
+      {
+        "Sequence": 17,
+        "FromStationID": "A1",
+        "FromStationName": {
+          "Zh_tw": "台北車站",
+          "En": "Taipei Main Station"
+        },
+        "ToStationID": "A18",
+        "ToStationName": {
+          "Zh_tw": "高鐵桃園站",
+          "En": "Taoyuan HSR Station"
+        },
+        "RunTime": 4200
+      },
+      {
+        "Sequence": 18,
+        "FromStationID": "A1",
+        "FromStationName": {
+          "Zh_tw": "台北車站",
+          "En": "Taipei Main Station"
+        },
+        "ToStationID": "A19",
+        "ToStationName": {
+          "Zh_tw": "桃園體育園區站",
+          "En": "Taoyuan Sports Park Station"
+        },
+        "RunTime": 4320
+      },
+      {
+        "Sequence": 19,
+        "FromStationID": "A1",
+        "FromStationName": {
+          "Zh_tw": "台北車站",
+          "En": "Taipei Main Station"
+        },
+        "ToStationID": "A20",
+        "ToStationName": {
+          "Zh_tw": "興南站",
+          "En": "Xingnan Station"
+        },
+        "RunTime": 4620
+      },
+      {
+        "Sequence": 20,
+        "FromStationID": "A1",
+        "FromStationName": {
+          "Zh_tw": "台北車站",
+          "En": "Taipei Main Station"
+        },
+        "ToStationID": "A21",
+        "ToStationName": {
+          "Zh_tw": "環北站",
+          "En": "Huanbei Station"
+        },
+        "RunTime": 4920
+      },
+      {
+        "Sequence": 21,
+        "FromStationID": "A1",
+        "FromStationName": {
+          "Zh_tw": "台北車站",
+          "En": "Taipei Main Station"
+        },
+        "ToStationID": "A22",
+        "ToStationName": {
+          "Zh_tw": "老街溪站",
+          "En": "Laojie River Station"
+        },
+        "RunTime": 5040
+      },
+      {
+        "Sequence": 23,
+        "FromStationID": "A2",
+        "FromStationName": {
+          "Zh_tw": "三重站",
+          "En": "Sanchong Station"
+        },
+        "ToStationID": "A3",
+        "ToStationName": {
+          "Zh_tw": "新北產業園區站",
+          "En": "New Taipei Industrial Park Station"
+        },
+        "RunTime": 180
+      },
+      {
+        "Sequence": 24,
+        "FromStationID": "A2",
+        "FromStationName": {
+          "Zh_tw": "三重站",
+          "En": "Sanchong Station"
+        },
+        "ToStationID": "A4",
+        "ToStationName": {
+          "Zh_tw": "新莊副都心站",
+          "En": "Xinzhuang Fuduxin Station"
+        },
+        "RunTime": 420
+      },
+      {
+        "Sequence": 25,
+        "FromStationID": "A2",
+        "FromStationName": {
+          "Zh_tw": "三重站",
+          "En": "Sanchong Station"
+        },
+        "ToStationID": "A5",
+        "ToStationName": {
+          "Zh_tw": "泰山站",
+          "En": "Taishan Station"
+        },
+        "RunTime": 480
+      },
+      {
+        "Sequence": 26,
+        "FromStationID": "A2",
+        "FromStationName": {
+          "Zh_tw": "三重站",
+          "En": "Sanchong Station"
+        },
+        "ToStationID": "A6",
+        "ToStationName": {
+          "Zh_tw": "泰山貴和站",
+          "En": "Taishan Guihe Station"
+        },
+        "RunTime": 660
+      },
+      {
+        "Sequence": 27,
+        "FromStationID": "A2",
+        "FromStationName": {
+          "Zh_tw": "三重站",
+          "En": "Sanchong Station"
+        },
+        "ToStationID": "A7",
+        "ToStationName": {
+          "Zh_tw": "體育大學站",
+          "En": "National Taiwan Sport University Station"
+        },
+        "RunTime": 1020
+      },
+      {
+        "Sequence": 28,
+        "FromStationID": "A2",
+        "FromStationName": {
+          "Zh_tw": "三重站",
+          "En": "Sanchong Station"
+        },
+        "ToStationID": "A8",
+        "ToStationName": {
+          "Zh_tw": "長庚醫院站",
+          "En": "Chang Gung Memorial Hospital Station"
+        },
+        "RunTime": 1260
+      },
+      {
+        "Sequence": 29,
+        "FromStationID": "A2",
+        "FromStationName": {
+          "Zh_tw": "三重站",
+          "En": "Sanchong Station"
+        },
+        "ToStationID": "A9",
+        "ToStationName": {
+          "Zh_tw": "林口站",
+          "En": "Linkou Station"
+        },
+        "RunTime": 1620
+      },
+      {
+        "Sequence": 30,
+        "FromStationID": "A2",
+        "FromStationName": {
+          "Zh_tw": "三重站",
+          "En": "Sanchong Station"
+        },
+        "ToStationID": "A10",
+        "ToStationName": {
+          "Zh_tw": "山鼻站",
+          "En": "Shanbi Station"
+        },
+        "RunTime": 2220
+      },
+      {
+        "Sequence": 31,
+        "FromStationID": "A2",
+        "FromStationName": {
+          "Zh_tw": "三重站",
+          "En": "Sanchong Station"
+        },
+        "ToStationID": "A11",
+        "ToStationName": {
+          "Zh_tw": "坑口站",
+          "En": "Kengkou Station"
+        },
+        "RunTime": 2340
+      },
+      {
+        "Sequence": 32,
+        "FromStationID": "A2",
+        "FromStationName": {
+          "Zh_tw": "三重站",
+          "En": "Sanchong Station"
+        },
+        "ToStationID": "A12",
+        "ToStationName": {
+          "Zh_tw": "機場第一航廈站",
+          "En": "Airport Terminal 1 Station"
+        },
+        "RunTime": 2580
+      },
+      {
+        "Sequence": 33,
+        "FromStationID": "A2",
+        "FromStationName": {
+          "Zh_tw": "三重站",
+          "En": "Sanchong Station"
+        },
+        "ToStationID": "A13",
+        "ToStationName": {
+          "Zh_tw": "機場第二航廈站",
+          "En": "Airport Terminal 2 Station"
+        },
+        "RunTime": 2760
+      },
+      {
+        "Sequence": 34,
+        "FromStationID": "A2",
+        "FromStationName": {
+          "Zh_tw": "三重站",
+          "En": "Sanchong Station"
+        },
+        "ToStationID": "A14a",
+        "ToStationName": {
+          "Zh_tw": "機場旅館站",
+          "En": "Airport Hotel Station"
+        },
+        "RunTime": 3000
+      },
+      {
+        "Sequence": 35,
+        "FromStationID": "A2",
+        "FromStationName": {
+          "Zh_tw": "三重站",
+          "En": "Sanchong Station"
+        },
+        "ToStationID": "A15",
+        "ToStationName": {
+          "Zh_tw": "大園站",
+          "En": "Dayuan Station"
+        },
+        "RunTime": 3180
+      },
+      {
+        "Sequence": 36,
+        "FromStationID": "A2",
+        "FromStationName": {
+          "Zh_tw": "三重站",
+          "En": "Sanchong Station"
+        },
+        "ToStationID": "A16",
+        "ToStationName": {
+          "Zh_tw": "橫山站",
+          "En": "Hengshan Station"
+        },
+        "RunTime": 3360
+      },
+      {
+        "Sequence": 37,
+        "FromStationID": "A2",
+        "FromStationName": {
+          "Zh_tw": "三重站",
+          "En": "Sanchong Station"
+        },
+        "ToStationID": "A17",
+        "ToStationName": {
+          "Zh_tw": "領航站",
+          "En": "Linghang Station"
+        },
+        "RunTime": 3540
+      },
+      {
+        "Sequence": 38,
+        "FromStationID": "A2",
+        "FromStationName": {
+          "Zh_tw": "三重站",
+          "En": "Sanchong Station"
+        },
+        "ToStationID": "A18",
+        "ToStationName": {
+          "Zh_tw": "高鐵桃園站",
+          "En": "Taoyuan HSR Station"
+        },
+        "RunTime": 3840
+      },
+      {
+        "Sequence": 39,
+        "FromStationID": "A2",
+        "FromStationName": {
+          "Zh_tw": "三重站",
+          "En": "Sanchong Station"
+        },
+        "ToStationID": "A19",
+        "ToStationName": {
+          "Zh_tw": "桃園體育園區站",
+          "En": "Taoyuan Sports Park Station"
+        },
+        "RunTime": 3960
+      },
+      {
+        "Sequence": 40,
+        "FromStationID": "A2",
+        "FromStationName": {
+          "Zh_tw": "三重站",
+          "En": "Sanchong Station"
+        },
+        "ToStationID": "A20",
+        "ToStationName": {
+          "Zh_tw": "興南站",
+          "En": "Xingnan Station"
+        },
+        "RunTime": 4260
+      },
+      {
+        "Sequence": 41,
+        "FromStationID": "A2",
+        "FromStationName": {
+          "Zh_tw": "三重站",
+          "En": "Sanchong Station"
+        },
+        "ToStationID": "A21",
+        "ToStationName": {
+          "Zh_tw": "環北站",
+          "En": "Huanbei Station"
+        },
+        "RunTime": 4560
+      },
+      {
+        "Sequence": 42,
+        "FromStationID": "A2",
+        "FromStationName": {
+          "Zh_tw": "三重站",
+          "En": "Sanchong Station"
+        },
+        "ToStationID": "A22",
+        "ToStationName": {
+          "Zh_tw": "老街溪站",
+          "En": "Laojie River Station"
+        },
+        "RunTime": 4680
+      },
+      {
+        "Sequence": 45,
+        "FromStationID": "A3",
+        "FromStationName": {
+          "Zh_tw": "新北產業園區站",
+          "En": "New Taipei Industrial Park Station"
+        },
+        "ToStationID": "A4",
+        "ToStationName": {
+          "Zh_tw": "新莊副都心站",
+          "En": "Xinzhuang Fuduxin Station"
+        },
+        "RunTime": 180
+      },
+      {
+        "Sequence": 46,
+        "FromStationID": "A3",
+        "FromStationName": {
+          "Zh_tw": "新北產業園區站",
+          "En": "New Taipei Industrial Park Station"
+        },
+        "ToStationID": "A5",
+        "ToStationName": {
+          "Zh_tw": "泰山站",
+          "En": "Taishan Station"
+        },
+        "RunTime": 240
+      },
+      {
+        "Sequence": 47,
+        "FromStationID": "A3",
+        "FromStationName": {
+          "Zh_tw": "新北產業園區站",
+          "En": "New Taipei Industrial Park Station"
+        },
+        "ToStationID": "A6",
+        "ToStationName": {
+          "Zh_tw": "泰山貴和站",
+          "En": "Taishan Guihe Station"
+        },
+        "RunTime": 420
+      },
+      {
+        "Sequence": 48,
+        "FromStationID": "A3",
+        "FromStationName": {
+          "Zh_tw": "新北產業園區站",
+          "En": "New Taipei Industrial Park Station"
+        },
+        "ToStationID": "A7",
+        "ToStationName": {
+          "Zh_tw": "體育大學站",
+          "En": "National Taiwan Sport University Station"
+        },
+        "RunTime": 780
+      },
+      {
+        "Sequence": 49,
+        "FromStationID": "A3",
+        "FromStationName": {
+          "Zh_tw": "新北產業園區站",
+          "En": "New Taipei Industrial Park Station"
+        },
+        "ToStationID": "A8",
+        "ToStationName": {
+          "Zh_tw": "長庚醫院站",
+          "En": "Chang Gung Memorial Hospital Station"
+        },
+        "RunTime": 1020
+      },
+      {
+        "Sequence": 50,
+        "FromStationID": "A3",
+        "FromStationName": {
+          "Zh_tw": "新北產業園區站",
+          "En": "New Taipei Industrial Park Station"
+        },
+        "ToStationID": "A9",
+        "ToStationName": {
+          "Zh_tw": "林口站",
+          "En": "Linkou Station"
+        },
+        "RunTime": 1380
+      },
+      {
+        "Sequence": 51,
+        "FromStationID": "A3",
+        "FromStationName": {
+          "Zh_tw": "新北產業園區站",
+          "En": "New Taipei Industrial Park Station"
+        },
+        "ToStationID": "A10",
+        "ToStationName": {
+          "Zh_tw": "山鼻站",
+          "En": "Shanbi Station"
+        },
+        "RunTime": 1980
+      },
+      {
+        "Sequence": 52,
+        "FromStationID": "A3",
+        "FromStationName": {
+          "Zh_tw": "新北產業園區站",
+          "En": "New Taipei Industrial Park Station"
+        },
+        "ToStationID": "A11",
+        "ToStationName": {
+          "Zh_tw": "坑口站",
+          "En": "Kengkou Station"
+        },
+        "RunTime": 2100
+      },
+      {
+        "Sequence": 53,
+        "FromStationID": "A3",
+        "FromStationName": {
+          "Zh_tw": "新北產業園區站",
+          "En": "New Taipei Industrial Park Station"
+        },
+        "ToStationID": "A12",
+        "ToStationName": {
+          "Zh_tw": "機場第一航廈站",
+          "En": "Airport Terminal 1 Station"
+        },
+        "RunTime": 2340
+      },
+      {
+        "Sequence": 54,
+        "FromStationID": "A3",
+        "FromStationName": {
+          "Zh_tw": "新北產業園區站",
+          "En": "New Taipei Industrial Park Station"
+        },
+        "ToStationID": "A13",
+        "ToStationName": {
+          "Zh_tw": "機場第二航廈站",
+          "En": "Airport Terminal 2 Station"
+        },
+        "RunTime": 2520
+      },
+      {
+        "Sequence": 55,
+        "FromStationID": "A3",
+        "FromStationName": {
+          "Zh_tw": "新北產業園區站",
+          "En": "New Taipei Industrial Park Station"
+        },
+        "ToStationID": "A14a",
+        "ToStationName": {
+          "Zh_tw": "機場旅館站",
+          "En": "Airport Hotel Station"
+        },
+        "RunTime": 2760
+      },
+      {
+        "Sequence": 56,
+        "FromStationID": "A3",
+        "FromStationName": {
+          "Zh_tw": "新北產業園區站",
+          "En": "New Taipei Industrial Park Station"
+        },
+        "ToStationID": "A15",
+        "ToStationName": {
+          "Zh_tw": "大園站",
+          "En": "Dayuan Station"
+        },
+        "RunTime": 2940
+      },
+      {
+        "Sequence": 57,
+        "FromStationID": "A3",
+        "FromStationName": {
+          "Zh_tw": "新北產業園區站",
+          "En": "New Taipei Industrial Park Station"
+        },
+        "ToStationID": "A16",
+        "ToStationName": {
+          "Zh_tw": "橫山站",
+          "En": "Hengshan Station"
+        },
+        "RunTime": 3120
+      },
+      {
+        "Sequence": 58,
+        "FromStationID": "A3",
+        "FromStationName": {
+          "Zh_tw": "新北產業園區站",
+          "En": "New Taipei Industrial Park Station"
+        },
+        "ToStationID": "A17",
+        "ToStationName": {
+          "Zh_tw": "領航站",
+          "En": "Linghang Station"
+        },
+        "RunTime": 3300
+      },
+      {
+        "Sequence": 59,
+        "FromStationID": "A3",
+        "FromStationName": {
+          "Zh_tw": "新北產業園區站",
+          "En": "New Taipei Industrial Park Station"
+        },
+        "ToStationID": "A18",
+        "ToStationName": {
+          "Zh_tw": "高鐵桃園站",
+          "En": "Taoyuan HSR Station"
+        },
+        "RunTime": 3600
+      },
+      {
+        "Sequence": 60,
+        "FromStationID": "A3",
+        "FromStationName": {
+          "Zh_tw": "新北產業園區站",
+          "En": "New Taipei Industrial Park Station"
+        },
+        "ToStationID": "A19",
+        "ToStationName": {
+          "Zh_tw": "桃園體育園區站",
+          "En": "Taoyuan Sports Park Station"
+        },
+        "RunTime": 3720
+      },
+      {
+        "Sequence": 61,
+        "FromStationID": "A3",
+        "FromStationName": {
+          "Zh_tw": "新北產業園區站",
+          "En": "New Taipei Industrial Park Station"
+        },
+        "ToStationID": "A20",
+        "ToStationName": {
+          "Zh_tw": "興南站",
+          "En": "Xingnan Station"
+        },
+        "RunTime": 4020
+      },
+      {
+        "Sequence": 62,
+        "FromStationID": "A3",
+        "FromStationName": {
+          "Zh_tw": "新北產業園區站",
+          "En": "New Taipei Industrial Park Station"
+        },
+        "ToStationID": "A21",
+        "ToStationName": {
+          "Zh_tw": "環北站",
+          "En": "Huanbei Station"
+        },
+        "RunTime": 4320
+      },
+      {
+        "Sequence": 63,
+        "FromStationID": "A3",
+        "FromStationName": {
+          "Zh_tw": "新北產業園區站",
+          "En": "New Taipei Industrial Park Station"
+        },
+        "ToStationID": "A22",
+        "ToStationName": {
+          "Zh_tw": "老街溪站",
+          "En": "Laojie River Station"
+        },
+        "RunTime": 4440
+      },
+      {
+        "Sequence": 67,
+        "FromStationID": "A4",
+        "FromStationName": {
+          "Zh_tw": "新莊副都心站",
+          "En": "Xinzhuang Fuduxin Station"
+        },
+        "ToStationID": "A5",
+        "ToStationName": {
+          "Zh_tw": "泰山站",
+          "En": "Taishan Station"
+        },
+        "RunTime": 60
+      },
+      {
+        "Sequence": 68,
+        "FromStationID": "A4",
+        "FromStationName": {
+          "Zh_tw": "新莊副都心站",
+          "En": "Xinzhuang Fuduxin Station"
+        },
+        "ToStationID": "A6",
+        "ToStationName": {
+          "Zh_tw": "泰山貴和站",
+          "En": "Taishan Guihe Station"
+        },
+        "RunTime": 240
+      },
+      {
+        "Sequence": 69,
+        "FromStationID": "A4",
+        "FromStationName": {
+          "Zh_tw": "新莊副都心站",
+          "En": "Xinzhuang Fuduxin Station"
+        },
+        "ToStationID": "A7",
+        "ToStationName": {
+          "Zh_tw": "體育大學站",
+          "En": "National Taiwan Sport University Station"
+        },
+        "RunTime": 600
+      },
+      {
+        "Sequence": 70,
+        "FromStationID": "A4",
+        "FromStationName": {
+          "Zh_tw": "新莊副都心站",
+          "En": "Xinzhuang Fuduxin Station"
+        },
+        "ToStationID": "A8",
+        "ToStationName": {
+          "Zh_tw": "長庚醫院站",
+          "En": "Chang Gung Memorial Hospital Station"
+        },
+        "RunTime": 840
+      },
+      {
+        "Sequence": 71,
+        "FromStationID": "A4",
+        "FromStationName": {
+          "Zh_tw": "新莊副都心站",
+          "En": "Xinzhuang Fuduxin Station"
+        },
+        "ToStationID": "A9",
+        "ToStationName": {
+          "Zh_tw": "林口站",
+          "En": "Linkou Station"
+        },
+        "RunTime": 1200
+      },
+      {
+        "Sequence": 72,
+        "FromStationID": "A4",
+        "FromStationName": {
+          "Zh_tw": "新莊副都心站",
+          "En": "Xinzhuang Fuduxin Station"
+        },
+        "ToStationID": "A10",
+        "ToStationName": {
+          "Zh_tw": "山鼻站",
+          "En": "Shanbi Station"
+        },
+        "RunTime": 1800
+      },
+      {
+        "Sequence": 73,
+        "FromStationID": "A4",
+        "FromStationName": {
+          "Zh_tw": "新莊副都心站",
+          "En": "Xinzhuang Fuduxin Station"
+        },
+        "ToStationID": "A11",
+        "ToStationName": {
+          "Zh_tw": "坑口站",
+          "En": "Kengkou Station"
+        },
+        "RunTime": 1920
+      },
+      {
+        "Sequence": 74,
+        "FromStationID": "A4",
+        "FromStationName": {
+          "Zh_tw": "新莊副都心站",
+          "En": "Xinzhuang Fuduxin Station"
+        },
+        "ToStationID": "A12",
+        "ToStationName": {
+          "Zh_tw": "機場第一航廈站",
+          "En": "Airport Terminal 1 Station"
+        },
+        "RunTime": 2160
+      },
+      {
+        "Sequence": 75,
+        "FromStationID": "A4",
+        "FromStationName": {
+          "Zh_tw": "新莊副都心站",
+          "En": "Xinzhuang Fuduxin Station"
+        },
+        "ToStationID": "A13",
+        "ToStationName": {
+          "Zh_tw": "機場第二航廈站",
+          "En": "Airport Terminal 2 Station"
+        },
+        "RunTime": 2340
+      },
+      {
+        "Sequence": 76,
+        "FromStationID": "A4",
+        "FromStationName": {
+          "Zh_tw": "新莊副都心站",
+          "En": "Xinzhuang Fuduxin Station"
+        },
+        "ToStationID": "A14a",
+        "ToStationName": {
+          "Zh_tw": "機場旅館站",
+          "En": "Airport Hotel Station"
+        },
+        "RunTime": 2580
+      },
+      {
+        "Sequence": 77,
+        "FromStationID": "A4",
+        "FromStationName": {
+          "Zh_tw": "新莊副都心站",
+          "En": "Xinzhuang Fuduxin Station"
+        },
+        "ToStationID": "A15",
+        "ToStationName": {
+          "Zh_tw": "大園站",
+          "En": "Dayuan Station"
+        },
+        "RunTime": 2760
+      },
+      {
+        "Sequence": 78,
+        "FromStationID": "A4",
+        "FromStationName": {
+          "Zh_tw": "新莊副都心站",
+          "En": "Xinzhuang Fuduxin Station"
+        },
+        "ToStationID": "A16",
+        "ToStationName": {
+          "Zh_tw": "橫山站",
+          "En": "Hengshan Station"
+        },
+        "RunTime": 2940
+      },
+      {
+        "Sequence": 79,
+        "FromStationID": "A4",
+        "FromStationName": {
+          "Zh_tw": "新莊副都心站",
+          "En": "Xinzhuang Fuduxin Station"
+        },
+        "ToStationID": "A17",
+        "ToStationName": {
+          "Zh_tw": "領航站",
+          "En": "Linghang Station"
+        },
+        "RunTime": 3120
+      },
+      {
+        "Sequence": 80,
+        "FromStationID": "A4",
+        "FromStationName": {
+          "Zh_tw": "新莊副都心站",
+          "En": "Xinzhuang Fuduxin Station"
+        },
+        "ToStationID": "A18",
+        "ToStationName": {
+          "Zh_tw": "高鐵桃園站",
+          "En": "Taoyuan HSR Station"
+        },
+        "RunTime": 3420
+      },
+      {
+        "Sequence": 81,
+        "FromStationID": "A4",
+        "FromStationName": {
+          "Zh_tw": "新莊副都心站",
+          "En": "Xinzhuang Fuduxin Station"
+        },
+        "ToStationID": "A19",
+        "ToStationName": {
+          "Zh_tw": "桃園體育園區站",
+          "En": "Taoyuan Sports Park Station"
+        },
+        "RunTime": 3540
+      },
+      {
+        "Sequence": 82,
+        "FromStationID": "A4",
+        "FromStationName": {
+          "Zh_tw": "新莊副都心站",
+          "En": "Xinzhuang Fuduxin Station"
+        },
+        "ToStationID": "A20",
+        "ToStationName": {
+          "Zh_tw": "興南站",
+          "En": "Xingnan Station"
+        },
+        "RunTime": 3840
+      },
+      {
+        "Sequence": 83,
+        "FromStationID": "A4",
+        "FromStationName": {
+          "Zh_tw": "新莊副都心站",
+          "En": "Xinzhuang Fuduxin Station"
+        },
+        "ToStationID": "A21",
+        "ToStationName": {
+          "Zh_tw": "環北站",
+          "En": "Huanbei Station"
+        },
+        "RunTime": 4140
+      },
+      {
+        "Sequence": 84,
+        "FromStationID": "A4",
+        "FromStationName": {
+          "Zh_tw": "新莊副都心站",
+          "En": "Xinzhuang Fuduxin Station"
+        },
+        "ToStationID": "A22",
+        "ToStationName": {
+          "Zh_tw": "老街溪站",
+          "En": "Laojie River Station"
+        },
+        "RunTime": 4260
+      },
+      {
+        "Sequence": 89,
+        "FromStationID": "A5",
+        "FromStationName": {
+          "Zh_tw": "泰山站",
+          "En": "Taishan Station"
+        },
+        "ToStationID": "A6",
+        "ToStationName": {
+          "Zh_tw": "泰山貴和站",
+          "En": "Taishan Guihe Station"
+        },
+        "RunTime": 120
+      },
+      {
+        "Sequence": 90,
+        "FromStationID": "A5",
+        "FromStationName": {
+          "Zh_tw": "泰山站",
+          "En": "Taishan Station"
+        },
+        "ToStationID": "A7",
+        "ToStationName": {
+          "Zh_tw": "體育大學站",
+          "En": "National Taiwan Sport University Station"
+        },
+        "RunTime": 480
+      },
+      {
+        "Sequence": 91,
+        "FromStationID": "A5",
+        "FromStationName": {
+          "Zh_tw": "泰山站",
+          "En": "Taishan Station"
+        },
+        "ToStationID": "A8",
+        "ToStationName": {
+          "Zh_tw": "長庚醫院站",
+          "En": "Chang Gung Memorial Hospital Station"
+        },
+        "RunTime": 720
+      },
+      {
+        "Sequence": 92,
+        "FromStationID": "A5",
+        "FromStationName": {
+          "Zh_tw": "泰山站",
+          "En": "Taishan Station"
+        },
+        "ToStationID": "A9",
+        "ToStationName": {
+          "Zh_tw": "林口站",
+          "En": "Linkou Station"
+        },
+        "RunTime": 1080
+      },
+      {
+        "Sequence": 93,
+        "FromStationID": "A5",
+        "FromStationName": {
+          "Zh_tw": "泰山站",
+          "En": "Taishan Station"
+        },
+        "ToStationID": "A10",
+        "ToStationName": {
+          "Zh_tw": "山鼻站",
+          "En": "Shanbi Station"
+        },
+        "RunTime": 1680
+      },
+      {
+        "Sequence": 94,
+        "FromStationID": "A5",
+        "FromStationName": {
+          "Zh_tw": "泰山站",
+          "En": "Taishan Station"
+        },
+        "ToStationID": "A11",
+        "ToStationName": {
+          "Zh_tw": "坑口站",
+          "En": "Kengkou Station"
+        },
+        "RunTime": 1800
+      },
+      {
+        "Sequence": 95,
+        "FromStationID": "A5",
+        "FromStationName": {
+          "Zh_tw": "泰山站",
+          "En": "Taishan Station"
+        },
+        "ToStationID": "A12",
+        "ToStationName": {
+          "Zh_tw": "機場第一航廈站",
+          "En": "Airport Terminal 1 Station"
+        },
+        "RunTime": 2040
+      },
+      {
+        "Sequence": 96,
+        "FromStationID": "A5",
+        "FromStationName": {
+          "Zh_tw": "泰山站",
+          "En": "Taishan Station"
+        },
+        "ToStationID": "A13",
+        "ToStationName": {
+          "Zh_tw": "機場第二航廈站",
+          "En": "Airport Terminal 2 Station"
+        },
+        "RunTime": 2220
+      },
+      {
+        "Sequence": 97,
+        "FromStationID": "A5",
+        "FromStationName": {
+          "Zh_tw": "泰山站",
+          "En": "Taishan Station"
+        },
+        "ToStationID": "A14a",
+        "ToStationName": {
+          "Zh_tw": "機場旅館站",
+          "En": "Airport Hotel Station"
+        },
+        "RunTime": 2460
+      },
+      {
+        "Sequence": 98,
+        "FromStationID": "A5",
+        "FromStationName": {
+          "Zh_tw": "泰山站",
+          "En": "Taishan Station"
+        },
+        "ToStationID": "A15",
+        "ToStationName": {
+          "Zh_tw": "大園站",
+          "En": "Dayuan Station"
+        },
+        "RunTime": 2640
+      },
+      {
+        "Sequence": 99,
+        "FromStationID": "A5",
+        "FromStationName": {
+          "Zh_tw": "泰山站",
+          "En": "Taishan Station"
+        },
+        "ToStationID": "A16",
+        "ToStationName": {
+          "Zh_tw": "橫山站",
+          "En": "Hengshan Station"
+        },
+        "RunTime": 2820
+      },
+      {
+        "Sequence": 100,
+        "FromStationID": "A5",
+        "FromStationName": {
+          "Zh_tw": "泰山站",
+          "En": "Taishan Station"
+        },
+        "ToStationID": "A17",
+        "ToStationName": {
+          "Zh_tw": "領航站",
+          "En": "Linghang Station"
+        },
+        "RunTime": 3000
+      },
+      {
+        "Sequence": 101,
+        "FromStationID": "A5",
+        "FromStationName": {
+          "Zh_tw": "泰山站",
+          "En": "Taishan Station"
+        },
+        "ToStationID": "A18",
+        "ToStationName": {
+          "Zh_tw": "高鐵桃園站",
+          "En": "Taoyuan HSR Station"
+        },
+        "RunTime": 3300
+      },
+      {
+        "Sequence": 102,
+        "FromStationID": "A5",
+        "FromStationName": {
+          "Zh_tw": "泰山站",
+          "En": "Taishan Station"
+        },
+        "ToStationID": "A19",
+        "ToStationName": {
+          "Zh_tw": "桃園體育園區站",
+          "En": "Taoyuan Sports Park Station"
+        },
+        "RunTime": 3420
+      },
+      {
+        "Sequence": 103,
+        "FromStationID": "A5",
+        "FromStationName": {
+          "Zh_tw": "泰山站",
+          "En": "Taishan Station"
+        },
+        "ToStationID": "A20",
+        "ToStationName": {
+          "Zh_tw": "興南站",
+          "En": "Xingnan Station"
+        },
+        "RunTime": 3720
+      },
+      {
+        "Sequence": 104,
+        "FromStationID": "A5",
+        "FromStationName": {
+          "Zh_tw": "泰山站",
+          "En": "Taishan Station"
+        },
+        "ToStationID": "A21",
+        "ToStationName": {
+          "Zh_tw": "環北站",
+          "En": "Huanbei Station"
+        },
+        "RunTime": 4020
+      },
+      {
+        "Sequence": 105,
+        "FromStationID": "A5",
+        "FromStationName": {
+          "Zh_tw": "泰山站",
+          "En": "Taishan Station"
+        },
+        "ToStationID": "A22",
+        "ToStationName": {
+          "Zh_tw": "老街溪站",
+          "En": "Laojie River Station"
+        },
+        "RunTime": 4140
+      },
+      {
+        "Sequence": 111,
+        "FromStationID": "A6",
+        "FromStationName": {
+          "Zh_tw": "泰山貴和站",
+          "En": "Taishan Guihe Station"
+        },
+        "ToStationID": "A7",
+        "ToStationName": {
+          "Zh_tw": "體育大學站",
+          "En": "National Taiwan Sport University Station"
+        },
+        "RunTime": 300
+      },
+      {
+        "Sequence": 112,
+        "FromStationID": "A6",
+        "FromStationName": {
+          "Zh_tw": "泰山貴和站",
+          "En": "Taishan Guihe Station"
+        },
+        "ToStationID": "A8",
+        "ToStationName": {
+          "Zh_tw": "長庚醫院站",
+          "En": "Chang Gung Memorial Hospital Station"
+        },
+        "RunTime": 540
+      },
+      {
+        "Sequence": 113,
+        "FromStationID": "A6",
+        "FromStationName": {
+          "Zh_tw": "泰山貴和站",
+          "En": "Taishan Guihe Station"
+        },
+        "ToStationID": "A9",
+        "ToStationName": {
+          "Zh_tw": "林口站",
+          "En": "Linkou Station"
+        },
+        "RunTime": 900
+      },
+      {
+        "Sequence": 114,
+        "FromStationID": "A6",
+        "FromStationName": {
+          "Zh_tw": "泰山貴和站",
+          "En": "Taishan Guihe Station"
+        },
+        "ToStationID": "A10",
+        "ToStationName": {
+          "Zh_tw": "山鼻站",
+          "En": "Shanbi Station"
+        },
+        "RunTime": 1500
+      },
+      {
+        "Sequence": 115,
+        "FromStationID": "A6",
+        "FromStationName": {
+          "Zh_tw": "泰山貴和站",
+          "En": "Taishan Guihe Station"
+        },
+        "ToStationID": "A11",
+        "ToStationName": {
+          "Zh_tw": "坑口站",
+          "En": "Kengkou Station"
+        },
+        "RunTime": 1620
+      },
+      {
+        "Sequence": 116,
+        "FromStationID": "A6",
+        "FromStationName": {
+          "Zh_tw": "泰山貴和站",
+          "En": "Taishan Guihe Station"
+        },
+        "ToStationID": "A12",
+        "ToStationName": {
+          "Zh_tw": "機場第一航廈站",
+          "En": "Airport Terminal 1 Station"
+        },
+        "RunTime": 1860
+      },
+      {
+        "Sequence": 117,
+        "FromStationID": "A6",
+        "FromStationName": {
+          "Zh_tw": "泰山貴和站",
+          "En": "Taishan Guihe Station"
+        },
+        "ToStationID": "A13",
+        "ToStationName": {
+          "Zh_tw": "機場第二航廈站",
+          "En": "Airport Terminal 2 Station"
+        },
+        "RunTime": 2040
+      },
+      {
+        "Sequence": 118,
+        "FromStationID": "A6",
+        "FromStationName": {
+          "Zh_tw": "泰山貴和站",
+          "En": "Taishan Guihe Station"
+        },
+        "ToStationID": "A14a",
+        "ToStationName": {
+          "Zh_tw": "機場旅館站",
+          "En": "Airport Hotel Station"
+        },
+        "RunTime": 2280
+      },
+      {
+        "Sequence": 119,
+        "FromStationID": "A6",
+        "FromStationName": {
+          "Zh_tw": "泰山貴和站",
+          "En": "Taishan Guihe Station"
+        },
+        "ToStationID": "A15",
+        "ToStationName": {
+          "Zh_tw": "大園站",
+          "En": "Dayuan Station"
+        },
+        "RunTime": 2460
+      },
+      {
+        "Sequence": 120,
+        "FromStationID": "A6",
+        "FromStationName": {
+          "Zh_tw": "泰山貴和站",
+          "En": "Taishan Guihe Station"
+        },
+        "ToStationID": "A16",
+        "ToStationName": {
+          "Zh_tw": "橫山站",
+          "En": "Hengshan Station"
+        },
+        "RunTime": 2640
+      },
+      {
+        "Sequence": 121,
+        "FromStationID": "A6",
+        "FromStationName": {
+          "Zh_tw": "泰山貴和站",
+          "En": "Taishan Guihe Station"
+        },
+        "ToStationID": "A17",
+        "ToStationName": {
+          "Zh_tw": "領航站",
+          "En": "Linghang Station"
+        },
+        "RunTime": 2820
+      },
+      {
+        "Sequence": 122,
+        "FromStationID": "A6",
+        "FromStationName": {
+          "Zh_tw": "泰山貴和站",
+          "En": "Taishan Guihe Station"
+        },
+        "ToStationID": "A18",
+        "ToStationName": {
+          "Zh_tw": "高鐵桃園站",
+          "En": "Taoyuan HSR Station"
+        },
+        "RunTime": 3120
+      },
+      {
+        "Sequence": 123,
+        "FromStationID": "A6",
+        "FromStationName": {
+          "Zh_tw": "泰山貴和站",
+          "En": "Taishan Guihe Station"
+        },
+        "ToStationID": "A19",
+        "ToStationName": {
+          "Zh_tw": "桃園體育園區站",
+          "En": "Taoyuan Sports Park Station"
+        },
+        "RunTime": 3240
+      },
+      {
+        "Sequence": 124,
+        "FromStationID": "A6",
+        "FromStationName": {
+          "Zh_tw": "泰山貴和站",
+          "En": "Taishan Guihe Station"
+        },
+        "ToStationID": "A20",
+        "ToStationName": {
+          "Zh_tw": "興南站",
+          "En": "Xingnan Station"
+        },
+        "RunTime": 3540
+      },
+      {
+        "Sequence": 125,
+        "FromStationID": "A6",
+        "FromStationName": {
+          "Zh_tw": "泰山貴和站",
+          "En": "Taishan Guihe Station"
+        },
+        "ToStationID": "A21",
+        "ToStationName": {
+          "Zh_tw": "環北站",
+          "En": "Huanbei Station"
+        },
+        "RunTime": 3840
+      },
+      {
+        "Sequence": 126,
+        "FromStationID": "A6",
+        "FromStationName": {
+          "Zh_tw": "泰山貴和站",
+          "En": "Taishan Guihe Station"
+        },
+        "ToStationID": "A22",
+        "ToStationName": {
+          "Zh_tw": "老街溪站",
+          "En": "Laojie River Station"
+        },
+        "RunTime": 3960
+      },
+      {
+        "Sequence": 133,
+        "FromStationID": "A7",
+        "FromStationName": {
+          "Zh_tw": "體育大學站",
+          "En": "National Taiwan Sport University Station"
+        },
+        "ToStationID": "A8",
+        "ToStationName": {
+          "Zh_tw": "長庚醫院站",
+          "En": "Chang Gung Memorial Hospital Station"
+        },
+        "RunTime": 240
+      },
+      {
+        "Sequence": 134,
+        "FromStationID": "A7",
+        "FromStationName": {
+          "Zh_tw": "體育大學站",
+          "En": "National Taiwan Sport University Station"
+        },
+        "ToStationID": "A9",
+        "ToStationName": {
+          "Zh_tw": "林口站",
+          "En": "Linkou Station"
+        },
+        "RunTime": 600
+      },
+      {
+        "Sequence": 135,
+        "FromStationID": "A7",
+        "FromStationName": {
+          "Zh_tw": "體育大學站",
+          "En": "National Taiwan Sport University Station"
+        },
+        "ToStationID": "A10",
+        "ToStationName": {
+          "Zh_tw": "山鼻站",
+          "En": "Shanbi Station"
+        },
+        "RunTime": 1200
+      },
+      {
+        "Sequence": 136,
+        "FromStationID": "A7",
+        "FromStationName": {
+          "Zh_tw": "體育大學站",
+          "En": "National Taiwan Sport University Station"
+        },
+        "ToStationID": "A11",
+        "ToStationName": {
+          "Zh_tw": "坑口站",
+          "En": "Kengkou Station"
+        },
+        "RunTime": 1320
+      },
+      {
+        "Sequence": 137,
+        "FromStationID": "A7",
+        "FromStationName": {
+          "Zh_tw": "體育大學站",
+          "En": "National Taiwan Sport University Station"
+        },
+        "ToStationID": "A12",
+        "ToStationName": {
+          "Zh_tw": "機場第一航廈站",
+          "En": "Airport Terminal 1 Station"
+        },
+        "RunTime": 1560
+      },
+      {
+        "Sequence": 138,
+        "FromStationID": "A7",
+        "FromStationName": {
+          "Zh_tw": "體育大學站",
+          "En": "National Taiwan Sport University Station"
+        },
+        "ToStationID": "A13",
+        "ToStationName": {
+          "Zh_tw": "機場第二航廈站",
+          "En": "Airport Terminal 2 Station"
+        },
+        "RunTime": 1740
+      },
+      {
+        "Sequence": 139,
+        "FromStationID": "A7",
+        "FromStationName": {
+          "Zh_tw": "體育大學站",
+          "En": "National Taiwan Sport University Station"
+        },
+        "ToStationID": "A14a",
+        "ToStationName": {
+          "Zh_tw": "機場旅館站",
+          "En": "Airport Hotel Station"
+        },
+        "RunTime": 1980
+      },
+      {
+        "Sequence": 140,
+        "FromStationID": "A7",
+        "FromStationName": {
+          "Zh_tw": "體育大學站",
+          "En": "National Taiwan Sport University Station"
+        },
+        "ToStationID": "A15",
+        "ToStationName": {
+          "Zh_tw": "大園站",
+          "En": "Dayuan Station"
+        },
+        "RunTime": 2160
+      },
+      {
+        "Sequence": 141,
+        "FromStationID": "A7",
+        "FromStationName": {
+          "Zh_tw": "體育大學站",
+          "En": "National Taiwan Sport University Station"
+        },
+        "ToStationID": "A16",
+        "ToStationName": {
+          "Zh_tw": "橫山站",
+          "En": "Hengshan Station"
+        },
+        "RunTime": 2340
+      },
+      {
+        "Sequence": 142,
+        "FromStationID": "A7",
+        "FromStationName": {
+          "Zh_tw": "體育大學站",
+          "En": "National Taiwan Sport University Station"
+        },
+        "ToStationID": "A17",
+        "ToStationName": {
+          "Zh_tw": "領航站",
+          "En": "Linghang Station"
+        },
+        "RunTime": 2520
+      },
+      {
+        "Sequence": 143,
+        "FromStationID": "A7",
+        "FromStationName": {
+          "Zh_tw": "體育大學站",
+          "En": "National Taiwan Sport University Station"
+        },
+        "ToStationID": "A18",
+        "ToStationName": {
+          "Zh_tw": "高鐵桃園站",
+          "En": "Taoyuan HSR Station"
+        },
+        "RunTime": 2820
+      },
+      {
+        "Sequence": 144,
+        "FromStationID": "A7",
+        "FromStationName": {
+          "Zh_tw": "體育大學站",
+          "En": "National Taiwan Sport University Station"
+        },
+        "ToStationID": "A19",
+        "ToStationName": {
+          "Zh_tw": "桃園體育園區站",
+          "En": "Taoyuan Sports Park Station"
+        },
+        "RunTime": 2940
+      },
+      {
+        "Sequence": 145,
+        "FromStationID": "A7",
+        "FromStationName": {
+          "Zh_tw": "體育大學站",
+          "En": "National Taiwan Sport University Station"
+        },
+        "ToStationID": "A20",
+        "ToStationName": {
+          "Zh_tw": "興南站",
+          "En": "Xingnan Station"
+        },
+        "RunTime": 3240
+      },
+      {
+        "Sequence": 146,
+        "FromStationID": "A7",
+        "FromStationName": {
+          "Zh_tw": "體育大學站",
+          "En": "National Taiwan Sport University Station"
+        },
+        "ToStationID": "A21",
+        "ToStationName": {
+          "Zh_tw": "環北站",
+          "En": "Huanbei Station"
+        },
+        "RunTime": 3540
+      },
+      {
+        "Sequence": 147,
+        "FromStationID": "A7",
+        "FromStationName": {
+          "Zh_tw": "體育大學站",
+          "En": "National Taiwan Sport University Station"
+        },
+        "ToStationID": "A22",
+        "ToStationName": {
+          "Zh_tw": "老街溪站",
+          "En": "Laojie River Station"
+        },
+        "RunTime": 3660
+      },
+      {
+        "Sequence": 155,
+        "FromStationID": "A8",
+        "FromStationName": {
+          "Zh_tw": "長庚醫院站",
+          "En": "Chang Gung Memorial Hospital Station"
+        },
+        "ToStationID": "A9",
+        "ToStationName": {
+          "Zh_tw": "林口站",
+          "En": "Linkou Station"
+        },
+        "RunTime": 120
+      },
+      {
+        "Sequence": 156,
+        "FromStationID": "A8",
+        "FromStationName": {
+          "Zh_tw": "長庚醫院站",
+          "En": "Chang Gung Memorial Hospital Station"
+        },
+        "ToStationID": "A10",
+        "ToStationName": {
+          "Zh_tw": "山鼻站",
+          "En": "Shanbi Station"
+        },
+        "RunTime": 720
+      },
+      {
+        "Sequence": 157,
+        "FromStationID": "A8",
+        "FromStationName": {
+          "Zh_tw": "長庚醫院站",
+          "En": "Chang Gung Memorial Hospital Station"
+        },
+        "ToStationID": "A11",
+        "ToStationName": {
+          "Zh_tw": "坑口站",
+          "En": "Kengkou Station"
+        },
+        "RunTime": 840
+      },
+      {
+        "Sequence": 158,
+        "FromStationID": "A8",
+        "FromStationName": {
+          "Zh_tw": "長庚醫院站",
+          "En": "Chang Gung Memorial Hospital Station"
+        },
+        "ToStationID": "A12",
+        "ToStationName": {
+          "Zh_tw": "機場第一航廈站",
+          "En": "Airport Terminal 1 Station"
+        },
+        "RunTime": 1080
+      },
+      {
+        "Sequence": 159,
+        "FromStationID": "A8",
+        "FromStationName": {
+          "Zh_tw": "長庚醫院站",
+          "En": "Chang Gung Memorial Hospital Station"
+        },
+        "ToStationID": "A13",
+        "ToStationName": {
+          "Zh_tw": "機場第二航廈站",
+          "En": "Airport Terminal 2 Station"
+        },
+        "RunTime": 1260
+      },
+      {
+        "Sequence": 160,
+        "FromStationID": "A8",
+        "FromStationName": {
+          "Zh_tw": "長庚醫院站",
+          "En": "Chang Gung Memorial Hospital Station"
+        },
+        "ToStationID": "A14a",
+        "ToStationName": {
+          "Zh_tw": "機場旅館站",
+          "En": "Airport Hotel Station"
+        },
+        "RunTime": 1500
+      },
+      {
+        "Sequence": 161,
+        "FromStationID": "A8",
+        "FromStationName": {
+          "Zh_tw": "長庚醫院站",
+          "En": "Chang Gung Memorial Hospital Station"
+        },
+        "ToStationID": "A15",
+        "ToStationName": {
+          "Zh_tw": "大園站",
+          "En": "Dayuan Station"
+        },
+        "RunTime": 1680
+      },
+      {
+        "Sequence": 162,
+        "FromStationID": "A8",
+        "FromStationName": {
+          "Zh_tw": "長庚醫院站",
+          "En": "Chang Gung Memorial Hospital Station"
+        },
+        "ToStationID": "A16",
+        "ToStationName": {
+          "Zh_tw": "橫山站",
+          "En": "Hengshan Station"
+        },
+        "RunTime": 1860
+      },
+      {
+        "Sequence": 163,
+        "FromStationID": "A8",
+        "FromStationName": {
+          "Zh_tw": "長庚醫院站",
+          "En": "Chang Gung Memorial Hospital Station"
+        },
+        "ToStationID": "A17",
+        "ToStationName": {
+          "Zh_tw": "領航站",
+          "En": "Linghang Station"
+        },
+        "RunTime": 2040
+      },
+      {
+        "Sequence": 164,
+        "FromStationID": "A8",
+        "FromStationName": {
+          "Zh_tw": "長庚醫院站",
+          "En": "Chang Gung Memorial Hospital Station"
+        },
+        "ToStationID": "A18",
+        "ToStationName": {
+          "Zh_tw": "高鐵桃園站",
+          "En": "Taoyuan HSR Station"
+        },
+        "RunTime": 2340
+      },
+      {
+        "Sequence": 165,
+        "FromStationID": "A8",
+        "FromStationName": {
+          "Zh_tw": "長庚醫院站",
+          "En": "Chang Gung Memorial Hospital Station"
+        },
+        "ToStationID": "A19",
+        "ToStationName": {
+          "Zh_tw": "桃園體育園區站",
+          "En": "Taoyuan Sports Park Station"
+        },
+        "RunTime": 2460
+      },
+      {
+        "Sequence": 166,
+        "FromStationID": "A8",
+        "FromStationName": {
+          "Zh_tw": "長庚醫院站",
+          "En": "Chang Gung Memorial Hospital Station"
+        },
+        "ToStationID": "A20",
+        "ToStationName": {
+          "Zh_tw": "興南站",
+          "En": "Xingnan Station"
+        },
+        "RunTime": 2760
+      },
+      {
+        "Sequence": 167,
+        "FromStationID": "A8",
+        "FromStationName": {
+          "Zh_tw": "長庚醫院站",
+          "En": "Chang Gung Memorial Hospital Station"
+        },
+        "ToStationID": "A21",
+        "ToStationName": {
+          "Zh_tw": "環北站",
+          "En": "Huanbei Station"
+        },
+        "RunTime": 3060
+      },
+      {
+        "Sequence": 168,
+        "FromStationID": "A8",
+        "FromStationName": {
+          "Zh_tw": "長庚醫院站",
+          "En": "Chang Gung Memorial Hospital Station"
+        },
+        "ToStationID": "A22",
+        "ToStationName": {
+          "Zh_tw": "老街溪站",
+          "En": "Laojie River Station"
+        },
+        "RunTime": 3180
+      },
+      {
+        "Sequence": 177,
+        "FromStationID": "A9",
+        "FromStationName": {
+          "Zh_tw": "林口站",
+          "En": "Linkou Station"
+        },
+        "ToStationID": "A10",
+        "ToStationName": {
+          "Zh_tw": "山鼻站",
+          "En": "Shanbi Station"
+        },
+        "RunTime": 540
+      },
+      {
+        "Sequence": 178,
+        "FromStationID": "A9",
+        "FromStationName": {
+          "Zh_tw": "林口站",
+          "En": "Linkou Station"
+        },
+        "ToStationID": "A11",
+        "ToStationName": {
+          "Zh_tw": "坑口站",
+          "En": "Kengkou Station"
+        },
+        "RunTime": 660
+      },
+      {
+        "Sequence": 179,
+        "FromStationID": "A9",
+        "FromStationName": {
+          "Zh_tw": "林口站",
+          "En": "Linkou Station"
+        },
+        "ToStationID": "A12",
+        "ToStationName": {
+          "Zh_tw": "機場第一航廈站",
+          "En": "Airport Terminal 1 Station"
+        },
+        "RunTime": 900
+      },
+      {
+        "Sequence": 180,
+        "FromStationID": "A9",
+        "FromStationName": {
+          "Zh_tw": "林口站",
+          "En": "Linkou Station"
+        },
+        "ToStationID": "A13",
+        "ToStationName": {
+          "Zh_tw": "機場第二航廈站",
+          "En": "Airport Terminal 2 Station"
+        },
+        "RunTime": 1080
+      },
+      {
+        "Sequence": 181,
+        "FromStationID": "A9",
+        "FromStationName": {
+          "Zh_tw": "林口站",
+          "En": "Linkou Station"
+        },
+        "ToStationID": "A14a",
+        "ToStationName": {
+          "Zh_tw": "機場旅館站",
+          "En": "Airport Hotel Station"
+        },
+        "RunTime": 1320
+      },
+      {
+        "Sequence": 182,
+        "FromStationID": "A9",
+        "FromStationName": {
+          "Zh_tw": "林口站",
+          "En": "Linkou Station"
+        },
+        "ToStationID": "A15",
+        "ToStationName": {
+          "Zh_tw": "大園站",
+          "En": "Dayuan Station"
+        },
+        "RunTime": 1500
+      },
+      {
+        "Sequence": 183,
+        "FromStationID": "A9",
+        "FromStationName": {
+          "Zh_tw": "林口站",
+          "En": "Linkou Station"
+        },
+        "ToStationID": "A16",
+        "ToStationName": {
+          "Zh_tw": "橫山站",
+          "En": "Hengshan Station"
+        },
+        "RunTime": 1680
+      },
+      {
+        "Sequence": 184,
+        "FromStationID": "A9",
+        "FromStationName": {
+          "Zh_tw": "林口站",
+          "En": "Linkou Station"
+        },
+        "ToStationID": "A17",
+        "ToStationName": {
+          "Zh_tw": "領航站",
+          "En": "Linghang Station"
+        },
+        "RunTime": 1860
+      },
+      {
+        "Sequence": 185,
+        "FromStationID": "A9",
+        "FromStationName": {
+          "Zh_tw": "林口站",
+          "En": "Linkou Station"
+        },
+        "ToStationID": "A18",
+        "ToStationName": {
+          "Zh_tw": "高鐵桃園站",
+          "En": "Taoyuan HSR Station"
+        },
+        "RunTime": 2160
+      },
+      {
+        "Sequence": 186,
+        "FromStationID": "A9",
+        "FromStationName": {
+          "Zh_tw": "林口站",
+          "En": "Linkou Station"
+        },
+        "ToStationID": "A19",
+        "ToStationName": {
+          "Zh_tw": "桃園體育園區站",
+          "En": "Taoyuan Sports Park Station"
+        },
+        "RunTime": 2280
+      },
+      {
+        "Sequence": 187,
+        "FromStationID": "A9",
+        "FromStationName": {
+          "Zh_tw": "林口站",
+          "En": "Linkou Station"
+        },
+        "ToStationID": "A20",
+        "ToStationName": {
+          "Zh_tw": "興南站",
+          "En": "Xingnan Station"
+        },
+        "RunTime": 2580
+      },
+      {
+        "Sequence": 188,
+        "FromStationID": "A9",
+        "FromStationName": {
+          "Zh_tw": "林口站",
+          "En": "Linkou Station"
+        },
+        "ToStationID": "A21",
+        "ToStationName": {
+          "Zh_tw": "環北站",
+          "En": "Huanbei Station"
+        },
+        "RunTime": 2880
+      },
+      {
+        "Sequence": 189,
+        "FromStationID": "A9",
+        "FromStationName": {
+          "Zh_tw": "林口站",
+          "En": "Linkou Station"
+        },
+        "ToStationID": "A22",
+        "ToStationName": {
+          "Zh_tw": "老街溪站",
+          "En": "Laojie River Station"
+        },
+        "RunTime": 3000
+      },
+      {
+        "Sequence": 199,
+        "FromStationID": "A10",
+        "FromStationName": {
+          "Zh_tw": "山鼻站",
+          "En": "Shanbi Station"
+        },
+        "ToStationID": "A11",
+        "ToStationName": {
+          "Zh_tw": "坑口站",
+          "En": "Kengkou Station"
+        },
+        "RunTime": 120
+      },
+      {
+        "Sequence": 200,
+        "FromStationID": "A10",
+        "FromStationName": {
+          "Zh_tw": "山鼻站",
+          "En": "Shanbi Station"
+        },
+        "ToStationID": "A12",
+        "ToStationName": {
+          "Zh_tw": "機場第一航廈站",
+          "En": "Airport Terminal 1 Station"
+        },
+        "RunTime": 360
+      },
+      {
+        "Sequence": 201,
+        "FromStationID": "A10",
+        "FromStationName": {
+          "Zh_tw": "山鼻站",
+          "En": "Shanbi Station"
+        },
+        "ToStationID": "A13",
+        "ToStationName": {
+          "Zh_tw": "機場第二航廈站",
+          "En": "Airport Terminal 2 Station"
+        },
+        "RunTime": 540
+      },
+      {
+        "Sequence": 202,
+        "FromStationID": "A10",
+        "FromStationName": {
+          "Zh_tw": "山鼻站",
+          "En": "Shanbi Station"
+        },
+        "ToStationID": "A14a",
+        "ToStationName": {
+          "Zh_tw": "機場旅館站",
+          "En": "Airport Hotel Station"
+        },
+        "RunTime": 780
+      },
+      {
+        "Sequence": 203,
+        "FromStationID": "A10",
+        "FromStationName": {
+          "Zh_tw": "山鼻站",
+          "En": "Shanbi Station"
+        },
+        "ToStationID": "A15",
+        "ToStationName": {
+          "Zh_tw": "大園站",
+          "En": "Dayuan Station"
+        },
+        "RunTime": 960
+      },
+      {
+        "Sequence": 204,
+        "FromStationID": "A10",
+        "FromStationName": {
+          "Zh_tw": "山鼻站",
+          "En": "Shanbi Station"
+        },
+        "ToStationID": "A16",
+        "ToStationName": {
+          "Zh_tw": "橫山站",
+          "En": "Hengshan Station"
+        },
+        "RunTime": 1140
+      },
+      {
+        "Sequence": 205,
+        "FromStationID": "A10",
+        "FromStationName": {
+          "Zh_tw": "山鼻站",
+          "En": "Shanbi Station"
+        },
+        "ToStationID": "A17",
+        "ToStationName": {
+          "Zh_tw": "領航站",
+          "En": "Linghang Station"
+        },
+        "RunTime": 1320
+      },
+      {
+        "Sequence": 206,
+        "FromStationID": "A10",
+        "FromStationName": {
+          "Zh_tw": "山鼻站",
+          "En": "Shanbi Station"
+        },
+        "ToStationID": "A18",
+        "ToStationName": {
+          "Zh_tw": "高鐵桃園站",
+          "En": "Taoyuan HSR Station"
+        },
+        "RunTime": 1620
+      },
+      {
+        "Sequence": 207,
+        "FromStationID": "A10",
+        "FromStationName": {
+          "Zh_tw": "山鼻站",
+          "En": "Shanbi Station"
+        },
+        "ToStationID": "A19",
+        "ToStationName": {
+          "Zh_tw": "桃園體育園區站",
+          "En": "Taoyuan Sports Park Station"
+        },
+        "RunTime": 1740
+      },
+      {
+        "Sequence": 208,
+        "FromStationID": "A10",
+        "FromStationName": {
+          "Zh_tw": "山鼻站",
+          "En": "Shanbi Station"
+        },
+        "ToStationID": "A20",
+        "ToStationName": {
+          "Zh_tw": "興南站",
+          "En": "Xingnan Station"
+        },
+        "RunTime": 2040
+      },
+      {
+        "Sequence": 209,
+        "FromStationID": "A10",
+        "FromStationName": {
+          "Zh_tw": "山鼻站",
+          "En": "Shanbi Station"
+        },
+        "ToStationID": "A21",
+        "ToStationName": {
+          "Zh_tw": "環北站",
+          "En": "Huanbei Station"
+        },
+        "RunTime": 2340
+      },
+      {
+        "Sequence": 210,
+        "FromStationID": "A10",
+        "FromStationName": {
+          "Zh_tw": "山鼻站",
+          "En": "Shanbi Station"
+        },
+        "ToStationID": "A22",
+        "ToStationName": {
+          "Zh_tw": "老街溪站",
+          "En": "Laojie River Station"
+        },
+        "RunTime": 2460
+      },
+      {
+        "Sequence": 221,
+        "FromStationID": "A11",
+        "FromStationName": {
+          "Zh_tw": "坑口站",
+          "En": "Kengkou Station"
+        },
+        "ToStationID": "A12",
+        "ToStationName": {
+          "Zh_tw": "機場第一航廈站",
+          "En": "Airport Terminal 1 Station"
+        },
+        "RunTime": 180
+      },
+      {
+        "Sequence": 222,
+        "FromStationID": "A11",
+        "FromStationName": {
+          "Zh_tw": "坑口站",
+          "En": "Kengkou Station"
+        },
+        "ToStationID": "A13",
+        "ToStationName": {
+          "Zh_tw": "機場第二航廈站",
+          "En": "Airport Terminal 2 Station"
+        },
+        "RunTime": 360
+      },
+      {
+        "Sequence": 223,
+        "FromStationID": "A11",
+        "FromStationName": {
+          "Zh_tw": "坑口站",
+          "En": "Kengkou Station"
+        },
+        "ToStationID": "A14a",
+        "ToStationName": {
+          "Zh_tw": "機場旅館站",
+          "En": "Airport Hotel Station"
+        },
+        "RunTime": 600
+      },
+      {
+        "Sequence": 224,
+        "FromStationID": "A11",
+        "FromStationName": {
+          "Zh_tw": "坑口站",
+          "En": "Kengkou Station"
+        },
+        "ToStationID": "A15",
+        "ToStationName": {
+          "Zh_tw": "大園站",
+          "En": "Dayuan Station"
+        },
+        "RunTime": 780
+      },
+      {
+        "Sequence": 225,
+        "FromStationID": "A11",
+        "FromStationName": {
+          "Zh_tw": "坑口站",
+          "En": "Kengkou Station"
+        },
+        "ToStationID": "A16",
+        "ToStationName": {
+          "Zh_tw": "橫山站",
+          "En": "Hengshan Station"
+        },
+        "RunTime": 960
+      },
+      {
+        "Sequence": 226,
+        "FromStationID": "A11",
+        "FromStationName": {
+          "Zh_tw": "坑口站",
+          "En": "Kengkou Station"
+        },
+        "ToStationID": "A17",
+        "ToStationName": {
+          "Zh_tw": "領航站",
+          "En": "Linghang Station"
+        },
+        "RunTime": 1140
+      },
+      {
+        "Sequence": 227,
+        "FromStationID": "A11",
+        "FromStationName": {
+          "Zh_tw": "坑口站",
+          "En": "Kengkou Station"
+        },
+        "ToStationID": "A18",
+        "ToStationName": {
+          "Zh_tw": "高鐵桃園站",
+          "En": "Taoyuan HSR Station"
+        },
+        "RunTime": 1440
+      },
+      {
+        "Sequence": 228,
+        "FromStationID": "A11",
+        "FromStationName": {
+          "Zh_tw": "坑口站",
+          "En": "Kengkou Station"
+        },
+        "ToStationID": "A19",
+        "ToStationName": {
+          "Zh_tw": "桃園體育園區站",
+          "En": "Taoyuan Sports Park Station"
+        },
+        "RunTime": 1560
+      },
+      {
+        "Sequence": 229,
+        "FromStationID": "A11",
+        "FromStationName": {
+          "Zh_tw": "坑口站",
+          "En": "Kengkou Station"
+        },
+        "ToStationID": "A20",
+        "ToStationName": {
+          "Zh_tw": "興南站",
+          "En": "Xingnan Station"
+        },
+        "RunTime": 1860
+      },
+      {
+        "Sequence": 230,
+        "FromStationID": "A11",
+        "FromStationName": {
+          "Zh_tw": "坑口站",
+          "En": "Kengkou Station"
+        },
+        "ToStationID": "A21",
+        "ToStationName": {
+          "Zh_tw": "環北站",
+          "En": "Huanbei Station"
+        },
+        "RunTime": 2160
+      },
+      {
+        "Sequence": 231,
+        "FromStationID": "A11",
+        "FromStationName": {
+          "Zh_tw": "坑口站",
+          "En": "Kengkou Station"
+        },
+        "ToStationID": "A22",
+        "ToStationName": {
+          "Zh_tw": "老街溪站",
+          "En": "Laojie River Station"
+        },
+        "RunTime": 2280
+      },
+      {
+        "Sequence": 243,
+        "FromStationID": "A12",
+        "FromStationName": {
+          "Zh_tw": "機場第一航廈站",
+          "En": "Airport Terminal 1 Station"
+        },
+        "ToStationID": "A13",
+        "ToStationName": {
+          "Zh_tw": "機場第二航廈站",
+          "En": "Airport Terminal 2 Station"
+        },
+        "RunTime": 120
+      },
+      {
+        "Sequence": 244,
+        "FromStationID": "A12",
+        "FromStationName": {
+          "Zh_tw": "機場第一航廈站",
+          "En": "Airport Terminal 1 Station"
+        },
+        "ToStationID": "A14a",
+        "ToStationName": {
+          "Zh_tw": "機場旅館站",
+          "En": "Airport Hotel Station"
+        },
+        "RunTime": 360
+      },
+      {
+        "Sequence": 245,
+        "FromStationID": "A12",
+        "FromStationName": {
+          "Zh_tw": "機場第一航廈站",
+          "En": "Airport Terminal 1 Station"
+        },
+        "ToStationID": "A15",
+        "ToStationName": {
+          "Zh_tw": "大園站",
+          "En": "Dayuan Station"
+        },
+        "RunTime": 540
+      },
+      {
+        "Sequence": 246,
+        "FromStationID": "A12",
+        "FromStationName": {
+          "Zh_tw": "機場第一航廈站",
+          "En": "Airport Terminal 1 Station"
+        },
+        "ToStationID": "A16",
+        "ToStationName": {
+          "Zh_tw": "橫山站",
+          "En": "Hengshan Station"
+        },
+        "RunTime": 720
+      },
+      {
+        "Sequence": 247,
+        "FromStationID": "A12",
+        "FromStationName": {
+          "Zh_tw": "機場第一航廈站",
+          "En": "Airport Terminal 1 Station"
+        },
+        "ToStationID": "A17",
+        "ToStationName": {
+          "Zh_tw": "領航站",
+          "En": "Linghang Station"
+        },
+        "RunTime": 900
+      },
+      {
+        "Sequence": 248,
+        "FromStationID": "A12",
+        "FromStationName": {
+          "Zh_tw": "機場第一航廈站",
+          "En": "Airport Terminal 1 Station"
+        },
+        "ToStationID": "A18",
+        "ToStationName": {
+          "Zh_tw": "高鐵桃園站",
+          "En": "Taoyuan HSR Station"
+        },
+        "RunTime": 1200
+      },
+      {
+        "Sequence": 249,
+        "FromStationID": "A12",
+        "FromStationName": {
+          "Zh_tw": "機場第一航廈站",
+          "En": "Airport Terminal 1 Station"
+        },
+        "ToStationID": "A19",
+        "ToStationName": {
+          "Zh_tw": "桃園體育園區站",
+          "En": "Taoyuan Sports Park Station"
+        },
+        "RunTime": 1320
+      },
+      {
+        "Sequence": 250,
+        "FromStationID": "A12",
+        "FromStationName": {
+          "Zh_tw": "機場第一航廈站",
+          "En": "Airport Terminal 1 Station"
+        },
+        "ToStationID": "A20",
+        "ToStationName": {
+          "Zh_tw": "興南站",
+          "En": "Xingnan Station"
+        },
+        "RunTime": 1620
+      },
+      {
+        "Sequence": 251,
+        "FromStationID": "A12",
+        "FromStationName": {
+          "Zh_tw": "機場第一航廈站",
+          "En": "Airport Terminal 1 Station"
+        },
+        "ToStationID": "A21",
+        "ToStationName": {
+          "Zh_tw": "環北站",
+          "En": "Huanbei Station"
+        },
+        "RunTime": 1920
+      },
+      {
+        "Sequence": 252,
+        "FromStationID": "A12",
+        "FromStationName": {
+          "Zh_tw": "機場第一航廈站",
+          "En": "Airport Terminal 1 Station"
+        },
+        "ToStationID": "A22",
+        "ToStationName": {
+          "Zh_tw": "老街溪站",
+          "En": "Laojie River Station"
+        },
+        "RunTime": 2040
+      },
+      {
+        "Sequence": 265,
+        "FromStationID": "A13",
+        "FromStationName": {
+          "Zh_tw": "機場第二航廈站",
+          "En": "Airport Terminal 2 Station"
+        },
+        "ToStationID": "A14a",
+        "ToStationName": {
+          "Zh_tw": "機場旅館站",
+          "En": "Airport Hotel Station"
+        },
+        "RunTime": 180
+      },
+      {
+        "Sequence": 266,
+        "FromStationID": "A13",
+        "FromStationName": {
+          "Zh_tw": "機場第二航廈站",
+          "En": "Airport Terminal 2 Station"
+        },
+        "ToStationID": "A15",
+        "ToStationName": {
+          "Zh_tw": "大園站",
+          "En": "Dayuan Station"
+        },
+        "RunTime": 360
+      },
+      {
+        "Sequence": 267,
+        "FromStationID": "A13",
+        "FromStationName": {
+          "Zh_tw": "機場第二航廈站",
+          "En": "Airport Terminal 2 Station"
+        },
+        "ToStationID": "A16",
+        "ToStationName": {
+          "Zh_tw": "橫山站",
+          "En": "Hengshan Station"
+        },
+        "RunTime": 540
+      },
+      {
+        "Sequence": 268,
+        "FromStationID": "A13",
+        "FromStationName": {
+          "Zh_tw": "機場第二航廈站",
+          "En": "Airport Terminal 2 Station"
+        },
+        "ToStationID": "A17",
+        "ToStationName": {
+          "Zh_tw": "領航站",
+          "En": "Linghang Station"
+        },
+        "RunTime": 720
+      },
+      {
+        "Sequence": 269,
+        "FromStationID": "A13",
+        "FromStationName": {
+          "Zh_tw": "機場第二航廈站",
+          "En": "Airport Terminal 2 Station"
+        },
+        "ToStationID": "A18",
+        "ToStationName": {
+          "Zh_tw": "高鐵桃園站",
+          "En": "Taoyuan HSR Station"
+        },
+        "RunTime": 1020
+      },
+      {
+        "Sequence": 270,
+        "FromStationID": "A13",
+        "FromStationName": {
+          "Zh_tw": "機場第二航廈站",
+          "En": "Airport Terminal 2 Station"
+        },
+        "ToStationID": "A19",
+        "ToStationName": {
+          "Zh_tw": "桃園體育園區站",
+          "En": "Taoyuan Sports Park Station"
+        },
+        "RunTime": 1140
+      },
+      {
+        "Sequence": 271,
+        "FromStationID": "A13",
+        "FromStationName": {
+          "Zh_tw": "機場第二航廈站",
+          "En": "Airport Terminal 2 Station"
+        },
+        "ToStationID": "A20",
+        "ToStationName": {
+          "Zh_tw": "興南站",
+          "En": "Xingnan Station"
+        },
+        "RunTime": 1440
+      },
+      {
+        "Sequence": 272,
+        "FromStationID": "A13",
+        "FromStationName": {
+          "Zh_tw": "機場第二航廈站",
+          "En": "Airport Terminal 2 Station"
+        },
+        "ToStationID": "A21",
+        "ToStationName": {
+          "Zh_tw": "環北站",
+          "En": "Huanbei Station"
+        },
+        "RunTime": 1740
+      },
+      {
+        "Sequence": 273,
+        "FromStationID": "A13",
+        "FromStationName": {
+          "Zh_tw": "機場第二航廈站",
+          "En": "Airport Terminal 2 Station"
+        },
+        "ToStationID": "A22",
+        "ToStationName": {
+          "Zh_tw": "老街溪站",
+          "En": "Laojie River Station"
+        },
+        "RunTime": 1860
+      },
+      {
+        "Sequence": 287,
+        "FromStationID": "A14a",
+        "FromStationName": {
+          "Zh_tw": "機場旅館站",
+          "En": "Airport Hotel Station"
+        },
+        "ToStationID": "A15",
+        "ToStationName": {
+          "Zh_tw": "大園站",
+          "En": "Dayuan Station"
+        },
+        "RunTime": 180
+      },
+      {
+        "Sequence": 288,
+        "FromStationID": "A14a",
+        "FromStationName": {
+          "Zh_tw": "機場旅館站",
+          "En": "Airport Hotel Station"
+        },
+        "ToStationID": "A16",
+        "ToStationName": {
+          "Zh_tw": "橫山站",
+          "En": "Hengshan Station"
+        },
+        "RunTime": 360
+      },
+      {
+        "Sequence": 289,
+        "FromStationID": "A14a",
+        "FromStationName": {
+          "Zh_tw": "機場旅館站",
+          "En": "Airport Hotel Station"
+        },
+        "ToStationID": "A17",
+        "ToStationName": {
+          "Zh_tw": "領航站",
+          "En": "Linghang Station"
+        },
+        "RunTime": 540
+      },
+      {
+        "Sequence": 290,
+        "FromStationID": "A14a",
+        "FromStationName": {
+          "Zh_tw": "機場旅館站",
+          "En": "Airport Hotel Station"
+        },
+        "ToStationID": "A18",
+        "ToStationName": {
+          "Zh_tw": "高鐵桃園站",
+          "En": "Taoyuan HSR Station"
+        },
+        "RunTime": 840
+      },
+      {
+        "Sequence": 291,
+        "FromStationID": "A14a",
+        "FromStationName": {
+          "Zh_tw": "機場旅館站",
+          "En": "Airport Hotel Station"
+        },
+        "ToStationID": "A19",
+        "ToStationName": {
+          "Zh_tw": "桃園體育園區站",
+          "En": "Taoyuan Sports Park Station"
+        },
+        "RunTime": 960
+      },
+      {
+        "Sequence": 292,
+        "FromStationID": "A14a",
+        "FromStationName": {
+          "Zh_tw": "機場旅館站",
+          "En": "Airport Hotel Station"
+        },
+        "ToStationID": "A20",
+        "ToStationName": {
+          "Zh_tw": "興南站",
+          "En": "Xingnan Station"
+        },
+        "RunTime": 1260
+      },
+      {
+        "Sequence": 293,
+        "FromStationID": "A14a",
+        "FromStationName": {
+          "Zh_tw": "機場旅館站",
+          "En": "Airport Hotel Station"
+        },
+        "ToStationID": "A21",
+        "ToStationName": {
+          "Zh_tw": "環北站",
+          "En": "Huanbei Station"
+        },
+        "RunTime": 1560
+      },
+      {
+        "Sequence": 294,
+        "FromStationID": "A14a",
+        "FromStationName": {
+          "Zh_tw": "機場旅館站",
+          "En": "Airport Hotel Station"
+        },
+        "ToStationID": "A22",
+        "ToStationName": {
+          "Zh_tw": "老街溪站",
+          "En": "Laojie River Station"
+        },
+        "RunTime": 1680
+      },
+      {
+        "Sequence": 309,
+        "FromStationID": "A15",
+        "FromStationName": {
+          "Zh_tw": "大園站",
+          "En": "Dayuan Station"
+        },
+        "ToStationID": "A16",
+        "ToStationName": {
+          "Zh_tw": "橫山站",
+          "En": "Hengshan Station"
+        },
+        "RunTime": 180
+      },
+      {
+        "Sequence": 310,
+        "FromStationID": "A15",
+        "FromStationName": {
+          "Zh_tw": "大園站",
+          "En": "Dayuan Station"
+        },
+        "ToStationID": "A17",
+        "ToStationName": {
+          "Zh_tw": "領航站",
+          "En": "Linghang Station"
+        },
+        "RunTime": 360
+      },
+      {
+        "Sequence": 311,
+        "FromStationID": "A15",
+        "FromStationName": {
+          "Zh_tw": "大園站",
+          "En": "Dayuan Station"
+        },
+        "ToStationID": "A18",
+        "ToStationName": {
+          "Zh_tw": "高鐵桃園站",
+          "En": "Taoyuan HSR Station"
+        },
+        "RunTime": 660
+      },
+      {
+        "Sequence": 312,
+        "FromStationID": "A15",
+        "FromStationName": {
+          "Zh_tw": "大園站",
+          "En": "Dayuan Station"
+        },
+        "ToStationID": "A19",
+        "ToStationName": {
+          "Zh_tw": "桃園體育園區站",
+          "En": "Taoyuan Sports Park Station"
+        },
+        "RunTime": 780
+      },
+      {
+        "Sequence": 313,
+        "FromStationID": "A15",
+        "FromStationName": {
+          "Zh_tw": "大園站",
+          "En": "Dayuan Station"
+        },
+        "ToStationID": "A20",
+        "ToStationName": {
+          "Zh_tw": "興南站",
+          "En": "Xingnan Station"
+        },
+        "RunTime": 1080
+      },
+      {
+        "Sequence": 314,
+        "FromStationID": "A15",
+        "FromStationName": {
+          "Zh_tw": "大園站",
+          "En": "Dayuan Station"
+        },
+        "ToStationID": "A21",
+        "ToStationName": {
+          "Zh_tw": "環北站",
+          "En": "Huanbei Station"
+        },
+        "RunTime": 1380
+      },
+      {
+        "Sequence": 315,
+        "FromStationID": "A15",
+        "FromStationName": {
+          "Zh_tw": "大園站",
+          "En": "Dayuan Station"
+        },
+        "ToStationID": "A22",
+        "ToStationName": {
+          "Zh_tw": "老街溪站",
+          "En": "Laojie River Station"
+        },
+        "RunTime": 1500
+      },
+      {
+        "Sequence": 331,
+        "FromStationID": "A16",
+        "FromStationName": {
+          "Zh_tw": "橫山站",
+          "En": "Hengshan Station"
+        },
+        "ToStationID": "A17",
+        "ToStationName": {
+          "Zh_tw": "領航站",
+          "En": "Linghang Station"
+        },
+        "RunTime": 180
+      },
+      {
+        "Sequence": 332,
+        "FromStationID": "A16",
+        "FromStationName": {
+          "Zh_tw": "橫山站",
+          "En": "Hengshan Station"
+        },
+        "ToStationID": "A18",
+        "ToStationName": {
+          "Zh_tw": "高鐵桃園站",
+          "En": "Taoyuan HSR Station"
+        },
+        "RunTime": 480
+      },
+      {
+        "Sequence": 333,
+        "FromStationID": "A16",
+        "FromStationName": {
+          "Zh_tw": "橫山站",
+          "En": "Hengshan Station"
+        },
+        "ToStationID": "A19",
+        "ToStationName": {
+          "Zh_tw": "桃園體育園區站",
+          "En": "Taoyuan Sports Park Station"
+        },
+        "RunTime": 600
+      },
+      {
+        "Sequence": 334,
+        "FromStationID": "A16",
+        "FromStationName": {
+          "Zh_tw": "橫山站",
+          "En": "Hengshan Station"
+        },
+        "ToStationID": "A20",
+        "ToStationName": {
+          "Zh_tw": "興南站",
+          "En": "Xingnan Station"
+        },
+        "RunTime": 900
+      },
+      {
+        "Sequence": 335,
+        "FromStationID": "A16",
+        "FromStationName": {
+          "Zh_tw": "橫山站",
+          "En": "Hengshan Station"
+        },
+        "ToStationID": "A21",
+        "ToStationName": {
+          "Zh_tw": "環北站",
+          "En": "Huanbei Station"
+        },
+        "RunTime": 1200
+      },
+      {
+        "Sequence": 336,
+        "FromStationID": "A16",
+        "FromStationName": {
+          "Zh_tw": "橫山站",
+          "En": "Hengshan Station"
+        },
+        "ToStationID": "A22",
+        "ToStationName": {
+          "Zh_tw": "老街溪站",
+          "En": "Laojie River Station"
+        },
+        "RunTime": 1320
+      },
+      {
+        "Sequence": 353,
+        "FromStationID": "A17",
+        "FromStationName": {
+          "Zh_tw": "領航站",
+          "En": "Linghang Station"
+        },
+        "ToStationID": "A18",
+        "ToStationName": {
+          "Zh_tw": "高鐵桃園站",
+          "En": "Taoyuan HSR Station"
+        },
+        "RunTime": 300
+      },
+      {
+        "Sequence": 354,
+        "FromStationID": "A17",
+        "FromStationName": {
+          "Zh_tw": "領航站",
+          "En": "Linghang Station"
+        },
+        "ToStationID": "A19",
+        "ToStationName": {
+          "Zh_tw": "桃園體育園區站",
+          "En": "Taoyuan Sports Park Station"
+        },
+        "RunTime": 420
+      },
+      {
+        "Sequence": 355,
+        "FromStationID": "A17",
+        "FromStationName": {
+          "Zh_tw": "領航站",
+          "En": "Linghang Station"
+        },
+        "ToStationID": "A20",
+        "ToStationName": {
+          "Zh_tw": "興南站",
+          "En": "Xingnan Station"
+        },
+        "RunTime": 720
+      },
+      {
+        "Sequence": 356,
+        "FromStationID": "A17",
+        "FromStationName": {
+          "Zh_tw": "領航站",
+          "En": "Linghang Station"
+        },
+        "ToStationID": "A21",
+        "ToStationName": {
+          "Zh_tw": "環北站",
+          "En": "Huanbei Station"
+        },
+        "RunTime": 1020
+      },
+      {
+        "Sequence": 357,
+        "FromStationID": "A17",
+        "FromStationName": {
+          "Zh_tw": "領航站",
+          "En": "Linghang Station"
+        },
+        "ToStationID": "A22",
+        "ToStationName": {
+          "Zh_tw": "老街溪站",
+          "En": "Laojie River Station"
+        },
+        "RunTime": 1140
+      },
+      {
+        "Sequence": 375,
+        "FromStationID": "A18",
+        "FromStationName": {
+          "Zh_tw": "高鐵桃園站",
+          "En": "Taoyuan HSR Station"
+        },
+        "ToStationID": "A19",
+        "ToStationName": {
+          "Zh_tw": "桃園體育園區站",
+          "En": "Taoyuan Sports Park Station"
+        },
+        "RunTime": 120
+      },
+      {
+        "Sequence": 376,
+        "FromStationID": "A18",
+        "FromStationName": {
+          "Zh_tw": "高鐵桃園站",
+          "En": "Taoyuan HSR Station"
+        },
+        "ToStationID": "A20",
+        "ToStationName": {
+          "Zh_tw": "興南站",
+          "En": "Xingnan Station"
+        },
+        "RunTime": 420
+      },
+      {
+        "Sequence": 377,
+        "FromStationID": "A18",
+        "FromStationName": {
+          "Zh_tw": "高鐵桃園站",
+          "En": "Taoyuan HSR Station"
+        },
+        "ToStationID": "A21",
+        "ToStationName": {
+          "Zh_tw": "環北站",
+          "En": "Huanbei Station"
+        },
+        "RunTime": 720
+      },
+      {
+        "Sequence": 378,
+        "FromStationID": "A18",
+        "FromStationName": {
+          "Zh_tw": "高鐵桃園站",
+          "En": "Taoyuan HSR Station"
+        },
+        "ToStationID": "A22",
+        "ToStationName": {
+          "Zh_tw": "老街溪站",
+          "En": "Laojie River Station"
+        },
+        "RunTime": 840
+      },
+      {
+        "Sequence": 397,
+        "FromStationID": "A19",
+        "FromStationName": {
+          "Zh_tw": "桃園體育園區站",
+          "En": "Taoyuan Sports Park Station"
+        },
+        "ToStationID": "A20",
+        "ToStationName": {
+          "Zh_tw": "興南站",
+          "En": "Xingnan Station"
+        },
+        "RunTime": 240
+      },
+      {
+        "Sequence": 398,
+        "FromStationID": "A19",
+        "FromStationName": {
+          "Zh_tw": "桃園體育園區站",
+          "En": "Taoyuan Sports Park Station"
+        },
+        "ToStationID": "A21",
+        "ToStationName": {
+          "Zh_tw": "環北站",
+          "En": "Huanbei Station"
+        },
+        "RunTime": 540
+      },
+      {
+        "Sequence": 399,
+        "FromStationID": "A19",
+        "FromStationName": {
+          "Zh_tw": "桃園體育園區站",
+          "En": "Taoyuan Sports Park Station"
+        },
+        "ToStationID": "A22",
+        "ToStationName": {
+          "Zh_tw": "老街溪站",
+          "En": "Laojie River Station"
+        },
+        "RunTime": 660
+      },
+      {
+        "Sequence": 419,
+        "FromStationID": "A20",
+        "FromStationName": {
+          "Zh_tw": "興南站",
+          "En": "Xingnan Station"
+        },
+        "ToStationID": "A21",
+        "ToStationName": {
+          "Zh_tw": "環北站",
+          "En": "Huanbei Station"
+        },
+        "RunTime": 240
+      },
+      {
+        "Sequence": 420,
+        "FromStationID": "A20",
+        "FromStationName": {
+          "Zh_tw": "興南站",
+          "En": "Xingnan Station"
+        },
+        "ToStationID": "A22",
+        "ToStationName": {
+          "Zh_tw": "老街溪站",
+          "En": "Laojie River Station"
+        },
+        "RunTime": 360
+      },
+      {
+        "Sequence": 441,
+        "FromStationID": "A21",
+        "FromStationName": {
+          "Zh_tw": "環北站",
+          "En": "Huanbei Station"
+        },
+        "ToStationID": "A22",
+        "ToStationName": {
+          "Zh_tw": "老街溪站",
+          "En": "Laojie River Station"
+        },
+        "RunTime": 120
+      }
+    ],
+    "SrcUpdateTime": "2023-07-31T00:00:00+08:00",
+    "UpdateTime": "2023-08-10T12:00:00+08:00",
+    "VersionID": 2
+  },
+  {
+    "LineNo": "A",
+    "LineID": "A",
+    "RouteID": "A-1",
+    "TrainType": 1,
+    "TravelTimes": [
+      {
+        "Sequence": 22,
+        "FromStationID": "A2",
+        "FromStationName": {
+          "Zh_tw": "三重站",
+          "En": "Sanchong Station"
+        },
+        "ToStationID": "A1",
+        "ToStationName": {
+          "Zh_tw": "台北車站",
+          "En": "Taipei Main Station"
+        },
+        "RunTime": 300
+      },
+      {
+        "Sequence": 43,
+        "FromStationID": "A3",
+        "FromStationName": {
+          "Zh_tw": "新北產業園區站",
+          "En": "New Taipei Industrial Park Station"
+        },
+        "ToStationID": "A1",
+        "ToStationName": {
+          "Zh_tw": "台北車站",
+          "En": "Taipei Main Station"
+        },
+        "RunTime": 600
+      },
+      {
+        "Sequence": 44,
+        "FromStationID": "A3",
+        "FromStationName": {
+          "Zh_tw": "新北產業園區站",
+          "En": "New Taipei Industrial Park Station"
+        },
+        "ToStationID": "A2",
+        "ToStationName": {
+          "Zh_tw": "三重站",
+          "En": "Sanchong Station"
+        },
+        "RunTime": 240
+      },
+      {
+        "Sequence": 64,
+        "FromStationID": "A4",
+        "FromStationName": {
+          "Zh_tw": "新莊副都心站",
+          "En": "Xinzhuang Fuduxin Station"
+        },
+        "ToStationID": "A1",
+        "ToStationName": {
+          "Zh_tw": "台北車站",
+          "En": "Taipei Main Station"
+        },
+        "RunTime": 780
+      },
+      {
+        "Sequence": 65,
+        "FromStationID": "A4",
+        "FromStationName": {
+          "Zh_tw": "新莊副都心站",
+          "En": "Xinzhuang Fuduxin Station"
+        },
+        "ToStationID": "A2",
+        "ToStationName": {
+          "Zh_tw": "三重站",
+          "En": "Sanchong Station"
+        },
+        "RunTime": 420
+      },
+      {
+        "Sequence": 66,
+        "FromStationID": "A4",
+        "FromStationName": {
+          "Zh_tw": "新莊副都心站",
+          "En": "Xinzhuang Fuduxin Station"
+        },
+        "ToStationID": "A3",
+        "ToStationName": {
+          "Zh_tw": "新北產業園區站",
+          "En": "New Taipei Industrial Park Station"
+        },
+        "RunTime": 120
+      },
+      {
+        "Sequence": 85,
+        "FromStationID": "A5",
+        "FromStationName": {
+          "Zh_tw": "泰山站",
+          "En": "Taishan Station"
+        },
+        "ToStationID": "A1",
+        "ToStationName": {
+          "Zh_tw": "台北車站",
+          "En": "Taipei Main Station"
+        },
+        "RunTime": 900
+      },
+      {
+        "Sequence": 86,
+        "FromStationID": "A5",
+        "FromStationName": {
+          "Zh_tw": "泰山站",
+          "En": "Taishan Station"
+        },
+        "ToStationID": "A2",
+        "ToStationName": {
+          "Zh_tw": "三重站",
+          "En": "Sanchong Station"
+        },
+        "RunTime": 540
+      },
+      {
+        "Sequence": 87,
+        "FromStationID": "A5",
+        "FromStationName": {
+          "Zh_tw": "泰山站",
+          "En": "Taishan Station"
+        },
+        "ToStationID": "A3",
+        "ToStationName": {
+          "Zh_tw": "新北產業園區站",
+          "En": "New Taipei Industrial Park Station"
+        },
+        "RunTime": 240
+      },
+      {
+        "Sequence": 88,
+        "FromStationID": "A5",
+        "FromStationName": {
+          "Zh_tw": "泰山站",
+          "En": "Taishan Station"
+        },
+        "ToStationID": "A4",
+        "ToStationName": {
+          "Zh_tw": "新莊副都心站",
+          "En": "Xinzhuang Fuduxin Station"
+        },
+        "RunTime": 120
+      },
+      {
+        "Sequence": 106,
+        "FromStationID": "A6",
+        "FromStationName": {
+          "Zh_tw": "泰山貴和站",
+          "En": "Taishan Guihe Station"
+        },
+        "ToStationID": "A1",
+        "ToStationName": {
+          "Zh_tw": "台北車站",
+          "En": "Taipei Main Station"
+        },
+        "RunTime": 1080
+      },
+      {
+        "Sequence": 107,
+        "FromStationID": "A6",
+        "FromStationName": {
+          "Zh_tw": "泰山貴和站",
+          "En": "Taishan Guihe Station"
+        },
+        "ToStationID": "A2",
+        "ToStationName": {
+          "Zh_tw": "三重站",
+          "En": "Sanchong Station"
+        },
+        "RunTime": 720
+      },
+      {
+        "Sequence": 108,
+        "FromStationID": "A6",
+        "FromStationName": {
+          "Zh_tw": "泰山貴和站",
+          "En": "Taishan Guihe Station"
+        },
+        "ToStationID": "A3",
+        "ToStationName": {
+          "Zh_tw": "新北產業園區站",
+          "En": "New Taipei Industrial Park Station"
+        },
+        "RunTime": 420
+      },
+      {
+        "Sequence": 109,
+        "FromStationID": "A6",
+        "FromStationName": {
+          "Zh_tw": "泰山貴和站",
+          "En": "Taishan Guihe Station"
+        },
+        "ToStationID": "A4",
+        "ToStationName": {
+          "Zh_tw": "新莊副都心站",
+          "En": "Xinzhuang Fuduxin Station"
+        },
+        "RunTime": 300
+      },
+      {
+        "Sequence": 110,
+        "FromStationID": "A6",
+        "FromStationName": {
+          "Zh_tw": "泰山貴和站",
+          "En": "Taishan Guihe Station"
+        },
+        "ToStationID": "A5",
+        "ToStationName": {
+          "Zh_tw": "泰山站",
+          "En": "Taishan Station"
+        },
+        "RunTime": 180
+      },
+      {
+        "Sequence": 127,
+        "FromStationID": "A7",
+        "FromStationName": {
+          "Zh_tw": "體育大學站",
+          "En": "National Taiwan Sport University Station"
+        },
+        "ToStationID": "A1",
+        "ToStationName": {
+          "Zh_tw": "台北車站",
+          "En": "Taipei Main Station"
+        },
+        "RunTime": 1500
+      },
+      {
+        "Sequence": 128,
+        "FromStationID": "A7",
+        "FromStationName": {
+          "Zh_tw": "體育大學站",
+          "En": "National Taiwan Sport University Station"
+        },
+        "ToStationID": "A2",
+        "ToStationName": {
+          "Zh_tw": "三重站",
+          "En": "Sanchong Station"
+        },
+        "RunTime": 1140
+      },
+      {
+        "Sequence": 129,
+        "FromStationID": "A7",
+        "FromStationName": {
+          "Zh_tw": "體育大學站",
+          "En": "National Taiwan Sport University Station"
+        },
+        "ToStationID": "A3",
+        "ToStationName": {
+          "Zh_tw": "新北產業園區站",
+          "En": "New Taipei Industrial Park Station"
+        },
+        "RunTime": 840
+      },
+      {
+        "Sequence": 130,
+        "FromStationID": "A7",
+        "FromStationName": {
+          "Zh_tw": "體育大學站",
+          "En": "National Taiwan Sport University Station"
+        },
+        "ToStationID": "A4",
+        "ToStationName": {
+          "Zh_tw": "新莊副都心站",
+          "En": "Xinzhuang Fuduxin Station"
+        },
+        "RunTime": 720
+      },
+      {
+        "Sequence": 131,
+        "FromStationID": "A7",
+        "FromStationName": {
+          "Zh_tw": "體育大學站",
+          "En": "National Taiwan Sport University Station"
+        },
+        "ToStationID": "A5",
+        "ToStationName": {
+          "Zh_tw": "泰山站",
+          "En": "Taishan Station"
+        },
+        "RunTime": 600
+      },
+      {
+        "Sequence": 132,
+        "FromStationID": "A7",
+        "FromStationName": {
+          "Zh_tw": "體育大學站",
+          "En": "National Taiwan Sport University Station"
+        },
+        "ToStationID": "A6",
+        "ToStationName": {
+          "Zh_tw": "泰山貴和站",
+          "En": "Taishan Guihe Station"
+        },
+        "RunTime": 420
+      },
+      {
+        "Sequence": 148,
+        "FromStationID": "A8",
+        "FromStationName": {
+          "Zh_tw": "長庚醫院站",
+          "En": "Chang Gung Memorial Hospital Station"
+        },
+        "ToStationID": "A1",
+        "ToStationName": {
+          "Zh_tw": "台北車站",
+          "En": "Taipei Main Station"
+        },
+        "RunTime": 1260
+      },
+      {
+        "Sequence": 149,
+        "FromStationID": "A8",
+        "FromStationName": {
+          "Zh_tw": "長庚醫院站",
+          "En": "Chang Gung Memorial Hospital Station"
+        },
+        "ToStationID": "A2",
+        "ToStationName": {
+          "Zh_tw": "三重站",
+          "En": "Sanchong Station"
+        },
+        "RunTime": 1380
+      },
+      {
+        "Sequence": 150,
+        "FromStationID": "A8",
+        "FromStationName": {
+          "Zh_tw": "長庚醫院站",
+          "En": "Chang Gung Memorial Hospital Station"
+        },
+        "ToStationID": "A3",
+        "ToStationName": {
+          "Zh_tw": "新北產業園區站",
+          "En": "New Taipei Industrial Park Station"
+        },
+        "RunTime": 780
+      },
+      {
+        "Sequence": 151,
+        "FromStationID": "A8",
+        "FromStationName": {
+          "Zh_tw": "長庚醫院站",
+          "En": "Chang Gung Memorial Hospital Station"
+        },
+        "ToStationID": "A4",
+        "ToStationName": {
+          "Zh_tw": "新莊副都心站",
+          "En": "Xinzhuang Fuduxin Station"
+        },
+        "RunTime": 960
+      },
+      {
+        "Sequence": 152,
+        "FromStationID": "A8",
+        "FromStationName": {
+          "Zh_tw": "長庚醫院站",
+          "En": "Chang Gung Memorial Hospital Station"
+        },
+        "ToStationID": "A5",
+        "ToStationName": {
+          "Zh_tw": "泰山站",
+          "En": "Taishan Station"
+        },
+        "RunTime": 840
+      },
+      {
+        "Sequence": 153,
+        "FromStationID": "A8",
+        "FromStationName": {
+          "Zh_tw": "長庚醫院站",
+          "En": "Chang Gung Memorial Hospital Station"
+        },
+        "ToStationID": "A6",
+        "ToStationName": {
+          "Zh_tw": "泰山貴和站",
+          "En": "Taishan Guihe Station"
+        },
+        "RunTime": 660
+      },
+      {
+        "Sequence": 154,
+        "FromStationID": "A8",
+        "FromStationName": {
+          "Zh_tw": "長庚醫院站",
+          "En": "Chang Gung Memorial Hospital Station"
+        },
+        "ToStationID": "A7",
+        "ToStationName": {
+          "Zh_tw": "體育大學站",
+          "En": "National Taiwan Sport University Station"
+        },
+        "RunTime": 240
+      },
+      {
+        "Sequence": 169,
+        "FromStationID": "A9",
+        "FromStationName": {
+          "Zh_tw": "林口站",
+          "En": "Linkou Station"
+        },
+        "ToStationID": "A1",
+        "ToStationName": {
+          "Zh_tw": "台北車站",
+          "En": "Taipei Main Station"
+        },
+        "RunTime": 2160
+      },
+      {
+        "Sequence": 170,
+        "FromStationID": "A9",
+        "FromStationName": {
+          "Zh_tw": "林口站",
+          "En": "Linkou Station"
+        },
+        "ToStationID": "A2",
+        "ToStationName": {
+          "Zh_tw": "三重站",
+          "En": "Sanchong Station"
+        },
+        "RunTime": 1800
+      },
+      {
+        "Sequence": 171,
+        "FromStationID": "A9",
+        "FromStationName": {
+          "Zh_tw": "林口站",
+          "En": "Linkou Station"
+        },
+        "ToStationID": "A3",
+        "ToStationName": {
+          "Zh_tw": "新北產業園區站",
+          "En": "New Taipei Industrial Park Station"
+        },
+        "RunTime": 1500
+      },
+      {
+        "Sequence": 172,
+        "FromStationID": "A9",
+        "FromStationName": {
+          "Zh_tw": "林口站",
+          "En": "Linkou Station"
+        },
+        "ToStationID": "A4",
+        "ToStationName": {
+          "Zh_tw": "新莊副都心站",
+          "En": "Xinzhuang Fuduxin Station"
+        },
+        "RunTime": 1380
+      },
+      {
+        "Sequence": 173,
+        "FromStationID": "A9",
+        "FromStationName": {
+          "Zh_tw": "林口站",
+          "En": "Linkou Station"
+        },
+        "ToStationID": "A5",
+        "ToStationName": {
+          "Zh_tw": "泰山站",
+          "En": "Taishan Station"
+        },
+        "RunTime": 1260
+      },
+      {
+        "Sequence": 174,
+        "FromStationID": "A9",
+        "FromStationName": {
+          "Zh_tw": "林口站",
+          "En": "Linkou Station"
+        },
+        "ToStationID": "A6",
+        "ToStationName": {
+          "Zh_tw": "泰山貴和站",
+          "En": "Taishan Guihe Station"
+        },
+        "RunTime": 1080
+      },
+      {
+        "Sequence": 175,
+        "FromStationID": "A9",
+        "FromStationName": {
+          "Zh_tw": "林口站",
+          "En": "Linkou Station"
+        },
+        "ToStationID": "A7",
+        "ToStationName": {
+          "Zh_tw": "體育大學站",
+          "En": "National Taiwan Sport University Station"
+        },
+        "RunTime": 660
+      },
+      {
+        "Sequence": 176,
+        "FromStationID": "A9",
+        "FromStationName": {
+          "Zh_tw": "林口站",
+          "En": "Linkou Station"
+        },
+        "ToStationID": "A8",
+        "ToStationName": {
+          "Zh_tw": "長庚醫院站",
+          "En": "Chang Gung Memorial Hospital Station"
+        },
+        "RunTime": 240
+      },
+      {
+        "Sequence": 190,
+        "FromStationID": "A10",
+        "FromStationName": {
+          "Zh_tw": "山鼻站",
+          "En": "Shanbi Station"
+        },
+        "ToStationID": "A1",
+        "ToStationName": {
+          "Zh_tw": "台北車站",
+          "En": "Taipei Main Station"
+        },
+        "RunTime": 2640
+      },
+      {
+        "Sequence": 191,
+        "FromStationID": "A10",
+        "FromStationName": {
+          "Zh_tw": "山鼻站",
+          "En": "Shanbi Station"
+        },
+        "ToStationID": "A2",
+        "ToStationName": {
+          "Zh_tw": "三重站",
+          "En": "Sanchong Station"
+        },
+        "RunTime": 2280
+      },
+      {
+        "Sequence": 192,
+        "FromStationID": "A10",
+        "FromStationName": {
+          "Zh_tw": "山鼻站",
+          "En": "Shanbi Station"
+        },
+        "ToStationID": "A3",
+        "ToStationName": {
+          "Zh_tw": "新北產業園區站",
+          "En": "New Taipei Industrial Park Station"
+        },
+        "RunTime": 1980
+      },
+      {
+        "Sequence": 193,
+        "FromStationID": "A10",
+        "FromStationName": {
+          "Zh_tw": "山鼻站",
+          "En": "Shanbi Station"
+        },
+        "ToStationID": "A4",
+        "ToStationName": {
+          "Zh_tw": "新莊副都心站",
+          "En": "Xinzhuang Fuduxin Station"
+        },
+        "RunTime": 1860
+      },
+      {
+        "Sequence": 194,
+        "FromStationID": "A10",
+        "FromStationName": {
+          "Zh_tw": "山鼻站",
+          "En": "Shanbi Station"
+        },
+        "ToStationID": "A5",
+        "ToStationName": {
+          "Zh_tw": "泰山站",
+          "En": "Taishan Station"
+        },
+        "RunTime": 1740
+      },
+      {
+        "Sequence": 195,
+        "FromStationID": "A10",
+        "FromStationName": {
+          "Zh_tw": "山鼻站",
+          "En": "Shanbi Station"
+        },
+        "ToStationID": "A6",
+        "ToStationName": {
+          "Zh_tw": "泰山貴和站",
+          "En": "Taishan Guihe Station"
+        },
+        "RunTime": 1560
+      },
+      {
+        "Sequence": 196,
+        "FromStationID": "A10",
+        "FromStationName": {
+          "Zh_tw": "山鼻站",
+          "En": "Shanbi Station"
+        },
+        "ToStationID": "A7",
+        "ToStationName": {
+          "Zh_tw": "體育大學站",
+          "En": "National Taiwan Sport University Station"
+        },
+        "RunTime": 1140
+      },
+      {
+        "Sequence": 197,
+        "FromStationID": "A10",
+        "FromStationName": {
+          "Zh_tw": "山鼻站",
+          "En": "Shanbi Station"
+        },
+        "ToStationID": "A8",
+        "ToStationName": {
+          "Zh_tw": "長庚醫院站",
+          "En": "Chang Gung Memorial Hospital Station"
+        },
+        "RunTime": 720
+      },
+      {
+        "Sequence": 198,
+        "FromStationID": "A10",
+        "FromStationName": {
+          "Zh_tw": "山鼻站",
+          "En": "Shanbi Station"
+        },
+        "ToStationID": "A9",
+        "ToStationName": {
+          "Zh_tw": "林口站",
+          "En": "Linkou Station"
+        },
+        "RunTime": 480
+      },
+      {
+        "Sequence": 211,
+        "FromStationID": "A11",
+        "FromStationName": {
+          "Zh_tw": "坑口站",
+          "En": "Kengkou Station"
+        },
+        "ToStationID": "A1",
+        "ToStationName": {
+          "Zh_tw": "台北車站",
+          "En": "Taipei Main Station"
+        },
+        "RunTime": 2760
+      },
+      {
+        "Sequence": 212,
+        "FromStationID": "A11",
+        "FromStationName": {
+          "Zh_tw": "坑口站",
+          "En": "Kengkou Station"
+        },
+        "ToStationID": "A2",
+        "ToStationName": {
+          "Zh_tw": "三重站",
+          "En": "Sanchong Station"
+        },
+        "RunTime": 2400
+      },
+      {
+        "Sequence": 213,
+        "FromStationID": "A11",
+        "FromStationName": {
+          "Zh_tw": "坑口站",
+          "En": "Kengkou Station"
+        },
+        "ToStationID": "A3",
+        "ToStationName": {
+          "Zh_tw": "新北產業園區站",
+          "En": "New Taipei Industrial Park Station"
+        },
+        "RunTime": 2100
+      },
+      {
+        "Sequence": 214,
+        "FromStationID": "A11",
+        "FromStationName": {
+          "Zh_tw": "坑口站",
+          "En": "Kengkou Station"
+        },
+        "ToStationID": "A4",
+        "ToStationName": {
+          "Zh_tw": "新莊副都心站",
+          "En": "Xinzhuang Fuduxin Station"
+        },
+        "RunTime": 1980
+      },
+      {
+        "Sequence": 215,
+        "FromStationID": "A11",
+        "FromStationName": {
+          "Zh_tw": "坑口站",
+          "En": "Kengkou Station"
+        },
+        "ToStationID": "A5",
+        "ToStationName": {
+          "Zh_tw": "泰山站",
+          "En": "Taishan Station"
+        },
+        "RunTime": 1860
+      },
+      {
+        "Sequence": 216,
+        "FromStationID": "A11",
+        "FromStationName": {
+          "Zh_tw": "坑口站",
+          "En": "Kengkou Station"
+        },
+        "ToStationID": "A6",
+        "ToStationName": {
+          "Zh_tw": "泰山貴和站",
+          "En": "Taishan Guihe Station"
+        },
+        "RunTime": 1680
+      },
+      {
+        "Sequence": 217,
+        "FromStationID": "A11",
+        "FromStationName": {
+          "Zh_tw": "坑口站",
+          "En": "Kengkou Station"
+        },
+        "ToStationID": "A7",
+        "ToStationName": {
+          "Zh_tw": "體育大學站",
+          "En": "National Taiwan Sport University Station"
+        },
+        "RunTime": 1260
+      },
+      {
+        "Sequence": 218,
+        "FromStationID": "A11",
+        "FromStationName": {
+          "Zh_tw": "坑口站",
+          "En": "Kengkou Station"
+        },
+        "ToStationID": "A8",
+        "ToStationName": {
+          "Zh_tw": "長庚醫院站",
+          "En": "Chang Gung Memorial Hospital Station"
+        },
+        "RunTime": 840
+      },
+      {
+        "Sequence": 219,
+        "FromStationID": "A11",
+        "FromStationName": {
+          "Zh_tw": "坑口站",
+          "En": "Kengkou Station"
+        },
+        "ToStationID": "A9",
+        "ToStationName": {
+          "Zh_tw": "林口站",
+          "En": "Linkou Station"
+        },
+        "RunTime": 600
+      },
+      {
+        "Sequence": 220,
+        "FromStationID": "A11",
+        "FromStationName": {
+          "Zh_tw": "坑口站",
+          "En": "Kengkou Station"
+        },
+        "ToStationID": "A10",
+        "ToStationName": {
+          "Zh_tw": "山鼻站",
+          "En": "Shanbi Station"
+        },
+        "RunTime": 120
+      },
+      {
+        "Sequence": 232,
+        "FromStationID": "A12",
+        "FromStationName": {
+          "Zh_tw": "機場第一航廈站",
+          "En": "Airport Terminal 1 Station"
+        },
+        "ToStationID": "A1",
+        "ToStationName": {
+          "Zh_tw": "台北車站",
+          "En": "Taipei Main Station"
+        },
+        "RunTime": 3000
+      },
+      {
+        "Sequence": 233,
+        "FromStationID": "A12",
+        "FromStationName": {
+          "Zh_tw": "機場第一航廈站",
+          "En": "Airport Terminal 1 Station"
+        },
+        "ToStationID": "A2",
+        "ToStationName": {
+          "Zh_tw": "三重站",
+          "En": "Sanchong Station"
+        },
+        "RunTime": 2640
+      },
+      {
+        "Sequence": 234,
+        "FromStationID": "A12",
+        "FromStationName": {
+          "Zh_tw": "機場第一航廈站",
+          "En": "Airport Terminal 1 Station"
+        },
+        "ToStationID": "A3",
+        "ToStationName": {
+          "Zh_tw": "新北產業園區站",
+          "En": "New Taipei Industrial Park Station"
+        },
+        "RunTime": 2340
+      },
+      {
+        "Sequence": 235,
+        "FromStationID": "A12",
+        "FromStationName": {
+          "Zh_tw": "機場第一航廈站",
+          "En": "Airport Terminal 1 Station"
+        },
+        "ToStationID": "A4",
+        "ToStationName": {
+          "Zh_tw": "新莊副都心站",
+          "En": "Xinzhuang Fuduxin Station"
+        },
+        "RunTime": 2220
+      },
+      {
+        "Sequence": 236,
+        "FromStationID": "A12",
+        "FromStationName": {
+          "Zh_tw": "機場第一航廈站",
+          "En": "Airport Terminal 1 Station"
+        },
+        "ToStationID": "A5",
+        "ToStationName": {
+          "Zh_tw": "泰山站",
+          "En": "Taishan Station"
+        },
+        "RunTime": 2100
+      },
+      {
+        "Sequence": 237,
+        "FromStationID": "A12",
+        "FromStationName": {
+          "Zh_tw": "機場第一航廈站",
+          "En": "Airport Terminal 1 Station"
+        },
+        "ToStationID": "A6",
+        "ToStationName": {
+          "Zh_tw": "泰山貴和站",
+          "En": "Taishan Guihe Station"
+        },
+        "RunTime": 1920
+      },
+      {
+        "Sequence": 238,
+        "FromStationID": "A12",
+        "FromStationName": {
+          "Zh_tw": "機場第一航廈站",
+          "En": "Airport Terminal 1 Station"
+        },
+        "ToStationID": "A7",
+        "ToStationName": {
+          "Zh_tw": "體育大學站",
+          "En": "National Taiwan Sport University Station"
+        },
+        "RunTime": 1500
+      },
+      {
+        "Sequence": 239,
+        "FromStationID": "A12",
+        "FromStationName": {
+          "Zh_tw": "機場第一航廈站",
+          "En": "Airport Terminal 1 Station"
+        },
+        "ToStationID": "A8",
+        "ToStationName": {
+          "Zh_tw": "長庚醫院站",
+          "En": "Chang Gung Memorial Hospital Station"
+        },
+        "RunTime": 1080
+      },
+      {
+        "Sequence": 240,
+        "FromStationID": "A12",
+        "FromStationName": {
+          "Zh_tw": "機場第一航廈站",
+          "En": "Airport Terminal 1 Station"
+        },
+        "ToStationID": "A9",
+        "ToStationName": {
+          "Zh_tw": "林口站",
+          "En": "Linkou Station"
+        },
+        "RunTime": 840
+      },
+      {
+        "Sequence": 241,
+        "FromStationID": "A12",
+        "FromStationName": {
+          "Zh_tw": "機場第一航廈站",
+          "En": "Airport Terminal 1 Station"
+        },
+        "ToStationID": "A10",
+        "ToStationName": {
+          "Zh_tw": "山鼻站",
+          "En": "Shanbi Station"
+        },
+        "RunTime": 360
+      },
+      {
+        "Sequence": 242,
+        "FromStationID": "A12",
+        "FromStationName": {
+          "Zh_tw": "機場第一航廈站",
+          "En": "Airport Terminal 1 Station"
+        },
+        "ToStationID": "A11",
+        "ToStationName": {
+          "Zh_tw": "坑口站",
+          "En": "Kengkou Station"
+        },
+        "RunTime": 180
+      },
+      {
+        "Sequence": 253,
+        "FromStationID": "A13",
+        "FromStationName": {
+          "Zh_tw": "機場第二航廈站",
+          "En": "Airport Terminal 2 Station"
+        },
+        "ToStationID": "A1",
+        "ToStationName": {
+          "Zh_tw": "台北車站",
+          "En": "Taipei Main Station"
+        },
+        "RunTime": 3180
+      },
+      {
+        "Sequence": 254,
+        "FromStationID": "A13",
+        "FromStationName": {
+          "Zh_tw": "機場第二航廈站",
+          "En": "Airport Terminal 2 Station"
+        },
+        "ToStationID": "A2",
+        "ToStationName": {
+          "Zh_tw": "三重站",
+          "En": "Sanchong Station"
+        },
+        "RunTime": 2820
+      },
+      {
+        "Sequence": 255,
+        "FromStationID": "A13",
+        "FromStationName": {
+          "Zh_tw": "機場第二航廈站",
+          "En": "Airport Terminal 2 Station"
+        },
+        "ToStationID": "A3",
+        "ToStationName": {
+          "Zh_tw": "新北產業園區站",
+          "En": "New Taipei Industrial Park Station"
+        },
+        "RunTime": 2520
+      },
+      {
+        "Sequence": 256,
+        "FromStationID": "A13",
+        "FromStationName": {
+          "Zh_tw": "機場第二航廈站",
+          "En": "Airport Terminal 2 Station"
+        },
+        "ToStationID": "A4",
+        "ToStationName": {
+          "Zh_tw": "新莊副都心站",
+          "En": "Xinzhuang Fuduxin Station"
+        },
+        "RunTime": 2400
+      },
+      {
+        "Sequence": 257,
+        "FromStationID": "A13",
+        "FromStationName": {
+          "Zh_tw": "機場第二航廈站",
+          "En": "Airport Terminal 2 Station"
+        },
+        "ToStationID": "A5",
+        "ToStationName": {
+          "Zh_tw": "泰山站",
+          "En": "Taishan Station"
+        },
+        "RunTime": 2280
+      },
+      {
+        "Sequence": 258,
+        "FromStationID": "A13",
+        "FromStationName": {
+          "Zh_tw": "機場第二航廈站",
+          "En": "Airport Terminal 2 Station"
+        },
+        "ToStationID": "A6",
+        "ToStationName": {
+          "Zh_tw": "泰山貴和站",
+          "En": "Taishan Guihe Station"
+        },
+        "RunTime": 2100
+      },
+      {
+        "Sequence": 259,
+        "FromStationID": "A13",
+        "FromStationName": {
+          "Zh_tw": "機場第二航廈站",
+          "En": "Airport Terminal 2 Station"
+        },
+        "ToStationID": "A7",
+        "ToStationName": {
+          "Zh_tw": "體育大學站",
+          "En": "National Taiwan Sport University Station"
+        },
+        "RunTime": 1680
+      },
+      {
+        "Sequence": 260,
+        "FromStationID": "A13",
+        "FromStationName": {
+          "Zh_tw": "機場第二航廈站",
+          "En": "Airport Terminal 2 Station"
+        },
+        "ToStationID": "A8",
+        "ToStationName": {
+          "Zh_tw": "長庚醫院站",
+          "En": "Chang Gung Memorial Hospital Station"
+        },
+        "RunTime": 1260
+      },
+      {
+        "Sequence": 261,
+        "FromStationID": "A13",
+        "FromStationName": {
+          "Zh_tw": "機場第二航廈站",
+          "En": "Airport Terminal 2 Station"
+        },
+        "ToStationID": "A9",
+        "ToStationName": {
+          "Zh_tw": "林口站",
+          "En": "Linkou Station"
+        },
+        "RunTime": 1020
+      },
+      {
+        "Sequence": 262,
+        "FromStationID": "A13",
+        "FromStationName": {
+          "Zh_tw": "機場第二航廈站",
+          "En": "Airport Terminal 2 Station"
+        },
+        "ToStationID": "A10",
+        "ToStationName": {
+          "Zh_tw": "山鼻站",
+          "En": "Shanbi Station"
+        },
+        "RunTime": 540
+      },
+      {
+        "Sequence": 263,
+        "FromStationID": "A13",
+        "FromStationName": {
+          "Zh_tw": "機場第二航廈站",
+          "En": "Airport Terminal 2 Station"
+        },
+        "ToStationID": "A11",
+        "ToStationName": {
+          "Zh_tw": "坑口站",
+          "En": "Kengkou Station"
+        },
+        "RunTime": 360
+      },
+      {
+        "Sequence": 264,
+        "FromStationID": "A13",
+        "FromStationName": {
+          "Zh_tw": "機場第二航廈站",
+          "En": "Airport Terminal 2 Station"
+        },
+        "ToStationID": "A12",
+        "ToStationName": {
+          "Zh_tw": "機場第一航廈站",
+          "En": "Airport Terminal 1 Station"
+        },
+        "RunTime": 120
+      },
+      {
+        "Sequence": 274,
+        "FromStationID": "A14a",
+        "FromStationName": {
+          "Zh_tw": "機場旅館站",
+          "En": "Airport Hotel Station"
+        },
+        "ToStationID": "A1",
+        "ToStationName": {
+          "Zh_tw": "台北車站",
+          "En": "Taipei Main Station"
+        },
+        "RunTime": 3420
+      },
+      {
+        "Sequence": 275,
+        "FromStationID": "A14a",
+        "FromStationName": {
+          "Zh_tw": "機場旅館站",
+          "En": "Airport Hotel Station"
+        },
+        "ToStationID": "A2",
+        "ToStationName": {
+          "Zh_tw": "三重站",
+          "En": "Sanchong Station"
+        },
+        "RunTime": 3060
+      },
+      {
+        "Sequence": 276,
+        "FromStationID": "A14a",
+        "FromStationName": {
+          "Zh_tw": "機場旅館站",
+          "En": "Airport Hotel Station"
+        },
+        "ToStationID": "A3",
+        "ToStationName": {
+          "Zh_tw": "新北產業園區站",
+          "En": "New Taipei Industrial Park Station"
+        },
+        "RunTime": 2760
+      },
+      {
+        "Sequence": 277,
+        "FromStationID": "A14a",
+        "FromStationName": {
+          "Zh_tw": "機場旅館站",
+          "En": "Airport Hotel Station"
+        },
+        "ToStationID": "A4",
+        "ToStationName": {
+          "Zh_tw": "新莊副都心站",
+          "En": "Xinzhuang Fuduxin Station"
+        },
+        "RunTime": 2640
+      },
+      {
+        "Sequence": 278,
+        "FromStationID": "A14a",
+        "FromStationName": {
+          "Zh_tw": "機場旅館站",
+          "En": "Airport Hotel Station"
+        },
+        "ToStationID": "A5",
+        "ToStationName": {
+          "Zh_tw": "泰山站",
+          "En": "Taishan Station"
+        },
+        "RunTime": 2520
+      },
+      {
+        "Sequence": 279,
+        "FromStationID": "A14a",
+        "FromStationName": {
+          "Zh_tw": "機場旅館站",
+          "En": "Airport Hotel Station"
+        },
+        "ToStationID": "A6",
+        "ToStationName": {
+          "Zh_tw": "泰山貴和站",
+          "En": "Taishan Guihe Station"
+        },
+        "RunTime": 2340
+      },
+      {
+        "Sequence": 280,
+        "FromStationID": "A14a",
+        "FromStationName": {
+          "Zh_tw": "機場旅館站",
+          "En": "Airport Hotel Station"
+        },
+        "ToStationID": "A7",
+        "ToStationName": {
+          "Zh_tw": "體育大學站",
+          "En": "National Taiwan Sport University Station"
+        },
+        "RunTime": 1920
+      },
+      {
+        "Sequence": 281,
+        "FromStationID": "A14a",
+        "FromStationName": {
+          "Zh_tw": "機場旅館站",
+          "En": "Airport Hotel Station"
+        },
+        "ToStationID": "A8",
+        "ToStationName": {
+          "Zh_tw": "長庚醫院站",
+          "En": "Chang Gung Memorial Hospital Station"
+        },
+        "RunTime": 1500
+      },
+      {
+        "Sequence": 282,
+        "FromStationID": "A14a",
+        "FromStationName": {
+          "Zh_tw": "機場旅館站",
+          "En": "Airport Hotel Station"
+        },
+        "ToStationID": "A9",
+        "ToStationName": {
+          "Zh_tw": "林口站",
+          "En": "Linkou Station"
+        },
+        "RunTime": 1260
+      },
+      {
+        "Sequence": 283,
+        "FromStationID": "A14a",
+        "FromStationName": {
+          "Zh_tw": "機場旅館站",
+          "En": "Airport Hotel Station"
+        },
+        "ToStationID": "A10",
+        "ToStationName": {
+          "Zh_tw": "山鼻站",
+          "En": "Shanbi Station"
+        },
+        "RunTime": 780
+      },
+      {
+        "Sequence": 284,
+        "FromStationID": "A14a",
+        "FromStationName": {
+          "Zh_tw": "機場旅館站",
+          "En": "Airport Hotel Station"
+        },
+        "ToStationID": "A11",
+        "ToStationName": {
+          "Zh_tw": "坑口站",
+          "En": "Kengkou Station"
+        },
+        "RunTime": 600
+      },
+      {
+        "Sequence": 285,
+        "FromStationID": "A14a",
+        "FromStationName": {
+          "Zh_tw": "機場旅館站",
+          "En": "Airport Hotel Station"
+        },
+        "ToStationID": "A12",
+        "ToStationName": {
+          "Zh_tw": "機場第一航廈站",
+          "En": "Airport Terminal 1 Station"
+        },
+        "RunTime": 360
+      },
+      {
+        "Sequence": 286,
+        "FromStationID": "A14a",
+        "FromStationName": {
+          "Zh_tw": "機場旅館站",
+          "En": "Airport Hotel Station"
+        },
+        "ToStationID": "A13",
+        "ToStationName": {
+          "Zh_tw": "機場第二航廈站",
+          "En": "Airport Terminal 2 Station"
+        },
+        "RunTime": 180
+      },
+      {
+        "Sequence": 295,
+        "FromStationID": "A15",
+        "FromStationName": {
+          "Zh_tw": "大園站",
+          "En": "Dayuan Station"
+        },
+        "ToStationID": "A1",
+        "ToStationName": {
+          "Zh_tw": "台北車站",
+          "En": "Taipei Main Station"
+        },
+        "RunTime": 3600
+      },
+      {
+        "Sequence": 296,
+        "FromStationID": "A15",
+        "FromStationName": {
+          "Zh_tw": "大園站",
+          "En": "Dayuan Station"
+        },
+        "ToStationID": "A2",
+        "ToStationName": {
+          "Zh_tw": "三重站",
+          "En": "Sanchong Station"
+        },
+        "RunTime": 3240
+      },
+      {
+        "Sequence": 297,
+        "FromStationID": "A15",
+        "FromStationName": {
+          "Zh_tw": "大園站",
+          "En": "Dayuan Station"
+        },
+        "ToStationID": "A3",
+        "ToStationName": {
+          "Zh_tw": "新北產業園區站",
+          "En": "New Taipei Industrial Park Station"
+        },
+        "RunTime": 2940
+      },
+      {
+        "Sequence": 298,
+        "FromStationID": "A15",
+        "FromStationName": {
+          "Zh_tw": "大園站",
+          "En": "Dayuan Station"
+        },
+        "ToStationID": "A4",
+        "ToStationName": {
+          "Zh_tw": "新莊副都心站",
+          "En": "Xinzhuang Fuduxin Station"
+        },
+        "RunTime": 2820
+      },
+      {
+        "Sequence": 299,
+        "FromStationID": "A15",
+        "FromStationName": {
+          "Zh_tw": "大園站",
+          "En": "Dayuan Station"
+        },
+        "ToStationID": "A5",
+        "ToStationName": {
+          "Zh_tw": "泰山站",
+          "En": "Taishan Station"
+        },
+        "RunTime": 2700
+      },
+      {
+        "Sequence": 300,
+        "FromStationID": "A15",
+        "FromStationName": {
+          "Zh_tw": "大園站",
+          "En": "Dayuan Station"
+        },
+        "ToStationID": "A6",
+        "ToStationName": {
+          "Zh_tw": "泰山貴和站",
+          "En": "Taishan Guihe Station"
+        },
+        "RunTime": 2520
+      },
+      {
+        "Sequence": 301,
+        "FromStationID": "A15",
+        "FromStationName": {
+          "Zh_tw": "大園站",
+          "En": "Dayuan Station"
+        },
+        "ToStationID": "A7",
+        "ToStationName": {
+          "Zh_tw": "體育大學站",
+          "En": "National Taiwan Sport University Station"
+        },
+        "RunTime": 2100
+      },
+      {
+        "Sequence": 302,
+        "FromStationID": "A15",
+        "FromStationName": {
+          "Zh_tw": "大園站",
+          "En": "Dayuan Station"
+        },
+        "ToStationID": "A8",
+        "ToStationName": {
+          "Zh_tw": "長庚醫院站",
+          "En": "Chang Gung Memorial Hospital Station"
+        },
+        "RunTime": 1680
+      },
+      {
+        "Sequence": 303,
+        "FromStationID": "A15",
+        "FromStationName": {
+          "Zh_tw": "大園站",
+          "En": "Dayuan Station"
+        },
+        "ToStationID": "A9",
+        "ToStationName": {
+          "Zh_tw": "林口站",
+          "En": "Linkou Station"
+        },
+        "RunTime": 1440
+      },
+      {
+        "Sequence": 304,
+        "FromStationID": "A15",
+        "FromStationName": {
+          "Zh_tw": "大園站",
+          "En": "Dayuan Station"
+        },
+        "ToStationID": "A10",
+        "ToStationName": {
+          "Zh_tw": "山鼻站",
+          "En": "Shanbi Station"
+        },
+        "RunTime": 960
+      },
+      {
+        "Sequence": 305,
+        "FromStationID": "A15",
+        "FromStationName": {
+          "Zh_tw": "大園站",
+          "En": "Dayuan Station"
+        },
+        "ToStationID": "A11",
+        "ToStationName": {
+          "Zh_tw": "坑口站",
+          "En": "Kengkou Station"
+        },
+        "RunTime": 780
+      },
+      {
+        "Sequence": 306,
+        "FromStationID": "A15",
+        "FromStationName": {
+          "Zh_tw": "大園站",
+          "En": "Dayuan Station"
+        },
+        "ToStationID": "A12",
+        "ToStationName": {
+          "Zh_tw": "機場第一航廈站",
+          "En": "Airport Terminal 1 Station"
+        },
+        "RunTime": 540
+      },
+      {
+        "Sequence": 307,
+        "FromStationID": "A15",
+        "FromStationName": {
+          "Zh_tw": "大園站",
+          "En": "Dayuan Station"
+        },
+        "ToStationID": "A13",
+        "ToStationName": {
+          "Zh_tw": "機場第二航廈站",
+          "En": "Airport Terminal 2 Station"
+        },
+        "RunTime": 360
+      },
+      {
+        "Sequence": 308,
+        "FromStationID": "A15",
+        "FromStationName": {
+          "Zh_tw": "大園站",
+          "En": "Dayuan Station"
+        },
+        "ToStationID": "A14a",
+        "ToStationName": {
+          "Zh_tw": "機場旅館站",
+          "En": "Airport Hotel Station"
+        },
+        "RunTime": 180
+      },
+      {
+        "Sequence": 316,
+        "FromStationID": "A16",
+        "FromStationName": {
+          "Zh_tw": "橫山站",
+          "En": "Hengshan Station"
+        },
+        "ToStationID": "A1",
+        "ToStationName": {
+          "Zh_tw": "台北車站",
+          "En": "Taipei Main Station"
+        },
+        "RunTime": 3780
+      },
+      {
+        "Sequence": 317,
+        "FromStationID": "A16",
+        "FromStationName": {
+          "Zh_tw": "橫山站",
+          "En": "Hengshan Station"
+        },
+        "ToStationID": "A2",
+        "ToStationName": {
+          "Zh_tw": "三重站",
+          "En": "Sanchong Station"
+        },
+        "RunTime": 3420
+      },
+      {
+        "Sequence": 318,
+        "FromStationID": "A16",
+        "FromStationName": {
+          "Zh_tw": "橫山站",
+          "En": "Hengshan Station"
+        },
+        "ToStationID": "A3",
+        "ToStationName": {
+          "Zh_tw": "新北產業園區站",
+          "En": "New Taipei Industrial Park Station"
+        },
+        "RunTime": 3120
+      },
+      {
+        "Sequence": 319,
+        "FromStationID": "A16",
+        "FromStationName": {
+          "Zh_tw": "橫山站",
+          "En": "Hengshan Station"
+        },
+        "ToStationID": "A4",
+        "ToStationName": {
+          "Zh_tw": "新莊副都心站",
+          "En": "Xinzhuang Fuduxin Station"
+        },
+        "RunTime": 3000
+      },
+      {
+        "Sequence": 320,
+        "FromStationID": "A16",
+        "FromStationName": {
+          "Zh_tw": "橫山站",
+          "En": "Hengshan Station"
+        },
+        "ToStationID": "A5",
+        "ToStationName": {
+          "Zh_tw": "泰山站",
+          "En": "Taishan Station"
+        },
+        "RunTime": 2880
+      },
+      {
+        "Sequence": 321,
+        "FromStationID": "A16",
+        "FromStationName": {
+          "Zh_tw": "橫山站",
+          "En": "Hengshan Station"
+        },
+        "ToStationID": "A6",
+        "ToStationName": {
+          "Zh_tw": "泰山貴和站",
+          "En": "Taishan Guihe Station"
+        },
+        "RunTime": 2700
+      },
+      {
+        "Sequence": 322,
+        "FromStationID": "A16",
+        "FromStationName": {
+          "Zh_tw": "橫山站",
+          "En": "Hengshan Station"
+        },
+        "ToStationID": "A7",
+        "ToStationName": {
+          "Zh_tw": "體育大學站",
+          "En": "National Taiwan Sport University Station"
+        },
+        "RunTime": 2280
+      },
+      {
+        "Sequence": 323,
+        "FromStationID": "A16",
+        "FromStationName": {
+          "Zh_tw": "橫山站",
+          "En": "Hengshan Station"
+        },
+        "ToStationID": "A8",
+        "ToStationName": {
+          "Zh_tw": "長庚醫院站",
+          "En": "Chang Gung Memorial Hospital Station"
+        },
+        "RunTime": 1860
+      },
+      {
+        "Sequence": 324,
+        "FromStationID": "A16",
+        "FromStationName": {
+          "Zh_tw": "橫山站",
+          "En": "Hengshan Station"
+        },
+        "ToStationID": "A9",
+        "ToStationName": {
+          "Zh_tw": "林口站",
+          "En": "Linkou Station"
+        },
+        "RunTime": 1620
+      },
+      {
+        "Sequence": 325,
+        "FromStationID": "A16",
+        "FromStationName": {
+          "Zh_tw": "橫山站",
+          "En": "Hengshan Station"
+        },
+        "ToStationID": "A10",
+        "ToStationName": {
+          "Zh_tw": "山鼻站",
+          "En": "Shanbi Station"
+        },
+        "RunTime": 1140
+      },
+      {
+        "Sequence": 326,
+        "FromStationID": "A16",
+        "FromStationName": {
+          "Zh_tw": "橫山站",
+          "En": "Hengshan Station"
+        },
+        "ToStationID": "A11",
+        "ToStationName": {
+          "Zh_tw": "坑口站",
+          "En": "Kengkou Station"
+        },
+        "RunTime": 960
+      },
+      {
+        "Sequence": 327,
+        "FromStationID": "A16",
+        "FromStationName": {
+          "Zh_tw": "橫山站",
+          "En": "Hengshan Station"
+        },
+        "ToStationID": "A12",
+        "ToStationName": {
+          "Zh_tw": "機場第一航廈站",
+          "En": "Airport Terminal 1 Station"
+        },
+        "RunTime": 720
+      },
+      {
+        "Sequence": 328,
+        "FromStationID": "A16",
+        "FromStationName": {
+          "Zh_tw": "橫山站",
+          "En": "Hengshan Station"
+        },
+        "ToStationID": "A13",
+        "ToStationName": {
+          "Zh_tw": "機場第二航廈站",
+          "En": "Airport Terminal 2 Station"
+        },
+        "RunTime": 540
+      },
+      {
+        "Sequence": 329,
+        "FromStationID": "A16",
+        "FromStationName": {
+          "Zh_tw": "橫山站",
+          "En": "Hengshan Station"
+        },
+        "ToStationID": "A14a",
+        "ToStationName": {
+          "Zh_tw": "機場旅館站",
+          "En": "Airport Hotel Station"
+        },
+        "RunTime": 360
+      },
+      {
+        "Sequence": 330,
+        "FromStationID": "A16",
+        "FromStationName": {
+          "Zh_tw": "橫山站",
+          "En": "Hengshan Station"
+        },
+        "ToStationID": "A15",
+        "ToStationName": {
+          "Zh_tw": "大園站",
+          "En": "Dayuan Station"
+        },
+        "RunTime": 180
+      },
+      {
+        "Sequence": 337,
+        "FromStationID": "A17",
+        "FromStationName": {
+          "Zh_tw": "領航站",
+          "En": "Linghang Station"
+        },
+        "ToStationID": "A1",
+        "ToStationName": {
+          "Zh_tw": "台北車站",
+          "En": "Taipei Main Station"
+        },
+        "RunTime": 3960
+      },
+      {
+        "Sequence": 338,
+        "FromStationID": "A17",
+        "FromStationName": {
+          "Zh_tw": "領航站",
+          "En": "Linghang Station"
+        },
+        "ToStationID": "A2",
+        "ToStationName": {
+          "Zh_tw": "三重站",
+          "En": "Sanchong Station"
+        },
+        "RunTime": 3600
+      },
+      {
+        "Sequence": 339,
+        "FromStationID": "A17",
+        "FromStationName": {
+          "Zh_tw": "領航站",
+          "En": "Linghang Station"
+        },
+        "ToStationID": "A3",
+        "ToStationName": {
+          "Zh_tw": "新北產業園區站",
+          "En": "New Taipei Industrial Park Station"
+        },
+        "RunTime": 3300
+      },
+      {
+        "Sequence": 340,
+        "FromStationID": "A17",
+        "FromStationName": {
+          "Zh_tw": "領航站",
+          "En": "Linghang Station"
+        },
+        "ToStationID": "A4",
+        "ToStationName": {
+          "Zh_tw": "新莊副都心站",
+          "En": "Xinzhuang Fuduxin Station"
+        },
+        "RunTime": 3180
+      },
+      {
+        "Sequence": 341,
+        "FromStationID": "A17",
+        "FromStationName": {
+          "Zh_tw": "領航站",
+          "En": "Linghang Station"
+        },
+        "ToStationID": "A5",
+        "ToStationName": {
+          "Zh_tw": "泰山站",
+          "En": "Taishan Station"
+        },
+        "RunTime": 3060
+      },
+      {
+        "Sequence": 342,
+        "FromStationID": "A17",
+        "FromStationName": {
+          "Zh_tw": "領航站",
+          "En": "Linghang Station"
+        },
+        "ToStationID": "A6",
+        "ToStationName": {
+          "Zh_tw": "泰山貴和站",
+          "En": "Taishan Guihe Station"
+        },
+        "RunTime": 2880
+      },
+      {
+        "Sequence": 343,
+        "FromStationID": "A17",
+        "FromStationName": {
+          "Zh_tw": "領航站",
+          "En": "Linghang Station"
+        },
+        "ToStationID": "A7",
+        "ToStationName": {
+          "Zh_tw": "體育大學站",
+          "En": "National Taiwan Sport University Station"
+        },
+        "RunTime": 2460
+      },
+      {
+        "Sequence": 344,
+        "FromStationID": "A17",
+        "FromStationName": {
+          "Zh_tw": "領航站",
+          "En": "Linghang Station"
+        },
+        "ToStationID": "A8",
+        "ToStationName": {
+          "Zh_tw": "長庚醫院站",
+          "En": "Chang Gung Memorial Hospital Station"
+        },
+        "RunTime": 2040
+      },
+      {
+        "Sequence": 345,
+        "FromStationID": "A17",
+        "FromStationName": {
+          "Zh_tw": "領航站",
+          "En": "Linghang Station"
+        },
+        "ToStationID": "A9",
+        "ToStationName": {
+          "Zh_tw": "林口站",
+          "En": "Linkou Station"
+        },
+        "RunTime": 1800
+      },
+      {
+        "Sequence": 346,
+        "FromStationID": "A17",
+        "FromStationName": {
+          "Zh_tw": "領航站",
+          "En": "Linghang Station"
+        },
+        "ToStationID": "A10",
+        "ToStationName": {
+          "Zh_tw": "山鼻站",
+          "En": "Shanbi Station"
+        },
+        "RunTime": 1320
+      },
+      {
+        "Sequence": 347,
+        "FromStationID": "A17",
+        "FromStationName": {
+          "Zh_tw": "領航站",
+          "En": "Linghang Station"
+        },
+        "ToStationID": "A11",
+        "ToStationName": {
+          "Zh_tw": "坑口站",
+          "En": "Kengkou Station"
+        },
+        "RunTime": 1140
+      },
+      {
+        "Sequence": 348,
+        "FromStationID": "A17",
+        "FromStationName": {
+          "Zh_tw": "領航站",
+          "En": "Linghang Station"
+        },
+        "ToStationID": "A12",
+        "ToStationName": {
+          "Zh_tw": "機場第一航廈站",
+          "En": "Airport Terminal 1 Station"
+        },
+        "RunTime": 900
+      },
+      {
+        "Sequence": 349,
+        "FromStationID": "A17",
+        "FromStationName": {
+          "Zh_tw": "領航站",
+          "En": "Linghang Station"
+        },
+        "ToStationID": "A13",
+        "ToStationName": {
+          "Zh_tw": "機場第二航廈站",
+          "En": "Airport Terminal 2 Station"
+        },
+        "RunTime": 720
+      },
+      {
+        "Sequence": 350,
+        "FromStationID": "A17",
+        "FromStationName": {
+          "Zh_tw": "領航站",
+          "En": "Linghang Station"
+        },
+        "ToStationID": "A14a",
+        "ToStationName": {
+          "Zh_tw": "機場旅館站",
+          "En": "Airport Hotel Station"
+        },
+        "RunTime": 540
+      },
+      {
+        "Sequence": 351,
+        "FromStationID": "A17",
+        "FromStationName": {
+          "Zh_tw": "領航站",
+          "En": "Linghang Station"
+        },
+        "ToStationID": "A15",
+        "ToStationName": {
+          "Zh_tw": "大園站",
+          "En": "Dayuan Station"
+        },
+        "RunTime": 360
+      },
+      {
+        "Sequence": 352,
+        "FromStationID": "A17",
+        "FromStationName": {
+          "Zh_tw": "領航站",
+          "En": "Linghang Station"
+        },
+        "ToStationID": "A16",
+        "ToStationName": {
+          "Zh_tw": "橫山站",
+          "En": "Hengshan Station"
+        },
+        "RunTime": 180
+      },
+      {
+        "Sequence": 358,
+        "FromStationID": "A18",
+        "FromStationName": {
+          "Zh_tw": "高鐵桃園站",
+          "En": "Taoyuan HSR Station"
+        },
+        "ToStationID": "A1",
+        "ToStationName": {
+          "Zh_tw": "台北車站",
+          "En": "Taipei Main Station"
+        },
+        "RunTime": 4200
+      },
+      {
+        "Sequence": 359,
+        "FromStationID": "A18",
+        "FromStationName": {
+          "Zh_tw": "高鐵桃園站",
+          "En": "Taoyuan HSR Station"
+        },
+        "ToStationID": "A2",
+        "ToStationName": {
+          "Zh_tw": "三重站",
+          "En": "Sanchong Station"
+        },
+        "RunTime": 3840
+      },
+      {
+        "Sequence": 360,
+        "FromStationID": "A18",
+        "FromStationName": {
+          "Zh_tw": "高鐵桃園站",
+          "En": "Taoyuan HSR Station"
+        },
+        "ToStationID": "A3",
+        "ToStationName": {
+          "Zh_tw": "新北產業園區站",
+          "En": "New Taipei Industrial Park Station"
+        },
+        "RunTime": 3540
+      },
+      {
+        "Sequence": 361,
+        "FromStationID": "A18",
+        "FromStationName": {
+          "Zh_tw": "高鐵桃園站",
+          "En": "Taoyuan HSR Station"
+        },
+        "ToStationID": "A4",
+        "ToStationName": {
+          "Zh_tw": "新莊副都心站",
+          "En": "Xinzhuang Fuduxin Station"
+        },
+        "RunTime": 3420
+      },
+      {
+        "Sequence": 362,
+        "FromStationID": "A18",
+        "FromStationName": {
+          "Zh_tw": "高鐵桃園站",
+          "En": "Taoyuan HSR Station"
+        },
+        "ToStationID": "A5",
+        "ToStationName": {
+          "Zh_tw": "泰山站",
+          "En": "Taishan Station"
+        },
+        "RunTime": 3300
+      },
+      {
+        "Sequence": 363,
+        "FromStationID": "A18",
+        "FromStationName": {
+          "Zh_tw": "高鐵桃園站",
+          "En": "Taoyuan HSR Station"
+        },
+        "ToStationID": "A6",
+        "ToStationName": {
+          "Zh_tw": "泰山貴和站",
+          "En": "Taishan Guihe Station"
+        },
+        "RunTime": 3120
+      },
+      {
+        "Sequence": 364,
+        "FromStationID": "A18",
+        "FromStationName": {
+          "Zh_tw": "高鐵桃園站",
+          "En": "Taoyuan HSR Station"
+        },
+        "ToStationID": "A7",
+        "ToStationName": {
+          "Zh_tw": "體育大學站",
+          "En": "National Taiwan Sport University Station"
+        },
+        "RunTime": 2700
+      },
+      {
+        "Sequence": 365,
+        "FromStationID": "A18",
+        "FromStationName": {
+          "Zh_tw": "高鐵桃園站",
+          "En": "Taoyuan HSR Station"
+        },
+        "ToStationID": "A8",
+        "ToStationName": {
+          "Zh_tw": "長庚醫院站",
+          "En": "Chang Gung Memorial Hospital Station"
+        },
+        "RunTime": 2280
+      },
+      {
+        "Sequence": 366,
+        "FromStationID": "A18",
+        "FromStationName": {
+          "Zh_tw": "高鐵桃園站",
+          "En": "Taoyuan HSR Station"
+        },
+        "ToStationID": "A9",
+        "ToStationName": {
+          "Zh_tw": "林口站",
+          "En": "Linkou Station"
+        },
+        "RunTime": 2040
+      },
+      {
+        "Sequence": 367,
+        "FromStationID": "A18",
+        "FromStationName": {
+          "Zh_tw": "高鐵桃園站",
+          "En": "Taoyuan HSR Station"
+        },
+        "ToStationID": "A10",
+        "ToStationName": {
+          "Zh_tw": "山鼻站",
+          "En": "Shanbi Station"
+        },
+        "RunTime": 1560
+      },
+      {
+        "Sequence": 368,
+        "FromStationID": "A18",
+        "FromStationName": {
+          "Zh_tw": "高鐵桃園站",
+          "En": "Taoyuan HSR Station"
+        },
+        "ToStationID": "A11",
+        "ToStationName": {
+          "Zh_tw": "坑口站",
+          "En": "Kengkou Station"
+        },
+        "RunTime": 1380
+      },
+      {
+        "Sequence": 369,
+        "FromStationID": "A18",
+        "FromStationName": {
+          "Zh_tw": "高鐵桃園站",
+          "En": "Taoyuan HSR Station"
+        },
+        "ToStationID": "A12",
+        "ToStationName": {
+          "Zh_tw": "機場第一航廈站",
+          "En": "Airport Terminal 1 Station"
+        },
+        "RunTime": 1140
+      },
+      {
+        "Sequence": 370,
+        "FromStationID": "A18",
+        "FromStationName": {
+          "Zh_tw": "高鐵桃園站",
+          "En": "Taoyuan HSR Station"
+        },
+        "ToStationID": "A13",
+        "ToStationName": {
+          "Zh_tw": "機場第二航廈站",
+          "En": "Airport Terminal 2 Station"
+        },
+        "RunTime": 960
+      },
+      {
+        "Sequence": 371,
+        "FromStationID": "A18",
+        "FromStationName": {
+          "Zh_tw": "高鐵桃園站",
+          "En": "Taoyuan HSR Station"
+        },
+        "ToStationID": "A14a",
+        "ToStationName": {
+          "Zh_tw": "機場旅館站",
+          "En": "Airport Hotel Station"
+        },
+        "RunTime": 780
+      },
+      {
+        "Sequence": 372,
+        "FromStationID": "A18",
+        "FromStationName": {
+          "Zh_tw": "高鐵桃園站",
+          "En": "Taoyuan HSR Station"
+        },
+        "ToStationID": "A15",
+        "ToStationName": {
+          "Zh_tw": "大園站",
+          "En": "Dayuan Station"
+        },
+        "RunTime": 600
+      },
+      {
+        "Sequence": 373,
+        "FromStationID": "A18",
+        "FromStationName": {
+          "Zh_tw": "高鐵桃園站",
+          "En": "Taoyuan HSR Station"
+        },
+        "ToStationID": "A16",
+        "ToStationName": {
+          "Zh_tw": "橫山站",
+          "En": "Hengshan Station"
+        },
+        "RunTime": 420
+      },
+      {
+        "Sequence": 374,
+        "FromStationID": "A18",
+        "FromStationName": {
+          "Zh_tw": "高鐵桃園站",
+          "En": "Taoyuan HSR Station"
+        },
+        "ToStationID": "A17",
+        "ToStationName": {
+          "Zh_tw": "領航站",
+          "En": "Linghang Station"
+        },
+        "RunTime": 240
+      },
+      {
+        "Sequence": 379,
+        "FromStationID": "A19",
+        "FromStationName": {
+          "Zh_tw": "桃園體育園區站",
+          "En": "Taoyuan Sports Park Station"
+        },
+        "ToStationID": "A1",
+        "ToStationName": {
+          "Zh_tw": "台北車站",
+          "En": "Taipei Main Station"
+        },
+        "RunTime": 4440
+      },
+      {
+        "Sequence": 380,
+        "FromStationID": "A19",
+        "FromStationName": {
+          "Zh_tw": "桃園體育園區站",
+          "En": "Taoyuan Sports Park Station"
+        },
+        "ToStationID": "A2",
+        "ToStationName": {
+          "Zh_tw": "三重站",
+          "En": "Sanchong Station"
+        },
+        "RunTime": 4080
+      },
+      {
+        "Sequence": 381,
+        "FromStationID": "A19",
+        "FromStationName": {
+          "Zh_tw": "桃園體育園區站",
+          "En": "Taoyuan Sports Park Station"
+        },
+        "ToStationID": "A3",
+        "ToStationName": {
+          "Zh_tw": "新北產業園區站",
+          "En": "New Taipei Industrial Park Station"
+        },
+        "RunTime": 3780
+      },
+      {
+        "Sequence": 382,
+        "FromStationID": "A19",
+        "FromStationName": {
+          "Zh_tw": "桃園體育園區站",
+          "En": "Taoyuan Sports Park Station"
+        },
+        "ToStationID": "A4",
+        "ToStationName": {
+          "Zh_tw": "新莊副都心站",
+          "En": "Xinzhuang Fuduxin Station"
+        },
+        "RunTime": 3660
+      },
+      {
+        "Sequence": 383,
+        "FromStationID": "A19",
+        "FromStationName": {
+          "Zh_tw": "桃園體育園區站",
+          "En": "Taoyuan Sports Park Station"
+        },
+        "ToStationID": "A5",
+        "ToStationName": {
+          "Zh_tw": "泰山站",
+          "En": "Taishan Station"
+        },
+        "RunTime": 3540
+      },
+      {
+        "Sequence": 384,
+        "FromStationID": "A19",
+        "FromStationName": {
+          "Zh_tw": "桃園體育園區站",
+          "En": "Taoyuan Sports Park Station"
+        },
+        "ToStationID": "A6",
+        "ToStationName": {
+          "Zh_tw": "泰山貴和站",
+          "En": "Taishan Guihe Station"
+        },
+        "RunTime": 3360
+      },
+      {
+        "Sequence": 385,
+        "FromStationID": "A19",
+        "FromStationName": {
+          "Zh_tw": "桃園體育園區站",
+          "En": "Taoyuan Sports Park Station"
+        },
+        "ToStationID": "A7",
+        "ToStationName": {
+          "Zh_tw": "體育大學站",
+          "En": "National Taiwan Sport University Station"
+        },
+        "RunTime": 2940
+      },
+      {
+        "Sequence": 386,
+        "FromStationID": "A19",
+        "FromStationName": {
+          "Zh_tw": "桃園體育園區站",
+          "En": "Taoyuan Sports Park Station"
+        },
+        "ToStationID": "A8",
+        "ToStationName": {
+          "Zh_tw": "長庚醫院站",
+          "En": "Chang Gung Memorial Hospital Station"
+        },
+        "RunTime": 2520
+      },
+      {
+        "Sequence": 387,
+        "FromStationID": "A19",
+        "FromStationName": {
+          "Zh_tw": "桃園體育園區站",
+          "En": "Taoyuan Sports Park Station"
+        },
+        "ToStationID": "A9",
+        "ToStationName": {
+          "Zh_tw": "林口站",
+          "En": "Linkou Station"
+        },
+        "RunTime": 2280
+      },
+      {
+        "Sequence": 388,
+        "FromStationID": "A19",
+        "FromStationName": {
+          "Zh_tw": "桃園體育園區站",
+          "En": "Taoyuan Sports Park Station"
+        },
+        "ToStationID": "A10",
+        "ToStationName": {
+          "Zh_tw": "山鼻站",
+          "En": "Shanbi Station"
+        },
+        "RunTime": 1800
+      },
+      {
+        "Sequence": 389,
+        "FromStationID": "A19",
+        "FromStationName": {
+          "Zh_tw": "桃園體育園區站",
+          "En": "Taoyuan Sports Park Station"
+        },
+        "ToStationID": "A11",
+        "ToStationName": {
+          "Zh_tw": "坑口站",
+          "En": "Kengkou Station"
+        },
+        "RunTime": 1620
+      },
+      {
+        "Sequence": 390,
+        "FromStationID": "A19",
+        "FromStationName": {
+          "Zh_tw": "桃園體育園區站",
+          "En": "Taoyuan Sports Park Station"
+        },
+        "ToStationID": "A12",
+        "ToStationName": {
+          "Zh_tw": "機場第一航廈站",
+          "En": "Airport Terminal 1 Station"
+        },
+        "RunTime": 1380
+      },
+      {
+        "Sequence": 391,
+        "FromStationID": "A19",
+        "FromStationName": {
+          "Zh_tw": "桃園體育園區站",
+          "En": "Taoyuan Sports Park Station"
+        },
+        "ToStationID": "A13",
+        "ToStationName": {
+          "Zh_tw": "機場第二航廈站",
+          "En": "Airport Terminal 2 Station"
+        },
+        "RunTime": 1200
+      },
+      {
+        "Sequence": 392,
+        "FromStationID": "A19",
+        "FromStationName": {
+          "Zh_tw": "桃園體育園區站",
+          "En": "Taoyuan Sports Park Station"
+        },
+        "ToStationID": "A14a",
+        "ToStationName": {
+          "Zh_tw": "機場旅館站",
+          "En": "Airport Hotel Station"
+        },
+        "RunTime": 1020
+      },
+      {
+        "Sequence": 393,
+        "FromStationID": "A19",
+        "FromStationName": {
+          "Zh_tw": "桃園體育園區站",
+          "En": "Taoyuan Sports Park Station"
+        },
+        "ToStationID": "A15",
+        "ToStationName": {
+          "Zh_tw": "大園站",
+          "En": "Dayuan Station"
+        },
+        "RunTime": 840
+      },
+      {
+        "Sequence": 394,
+        "FromStationID": "A19",
+        "FromStationName": {
+          "Zh_tw": "桃園體育園區站",
+          "En": "Taoyuan Sports Park Station"
+        },
+        "ToStationID": "A16",
+        "ToStationName": {
+          "Zh_tw": "橫山站",
+          "En": "Hengshan Station"
+        },
+        "RunTime": 660
+      },
+      {
+        "Sequence": 395,
+        "FromStationID": "A19",
+        "FromStationName": {
+          "Zh_tw": "桃園體育園區站",
+          "En": "Taoyuan Sports Park Station"
+        },
+        "ToStationID": "A17",
+        "ToStationName": {
+          "Zh_tw": "領航站",
+          "En": "Linghang Station"
+        },
+        "RunTime": 480
+      },
+      {
+        "Sequence": 396,
+        "FromStationID": "A19",
+        "FromStationName": {
+          "Zh_tw": "桃園體育園區站",
+          "En": "Taoyuan Sports Park Station"
+        },
+        "ToStationID": "A18",
+        "ToStationName": {
+          "Zh_tw": "高鐵桃園站",
+          "En": "Taoyuan HSR Station"
+        },
+        "RunTime": 180
+      },
+      {
+        "Sequence": 400,
+        "FromStationID": "A20",
+        "FromStationName": {
+          "Zh_tw": "興南站",
+          "En": "Xingnan Station"
+        },
+        "ToStationID": "A1",
+        "ToStationName": {
+          "Zh_tw": "台北車站",
+          "En": "Taipei Main Station"
+        },
+        "RunTime": 4740
+      },
+      {
+        "Sequence": 401,
+        "FromStationID": "A20",
+        "FromStationName": {
+          "Zh_tw": "興南站",
+          "En": "Xingnan Station"
+        },
+        "ToStationID": "A2",
+        "ToStationName": {
+          "Zh_tw": "三重站",
+          "En": "Sanchong Station"
+        },
+        "RunTime": 4380
+      },
+      {
+        "Sequence": 402,
+        "FromStationID": "A20",
+        "FromStationName": {
+          "Zh_tw": "興南站",
+          "En": "Xingnan Station"
+        },
+        "ToStationID": "A3",
+        "ToStationName": {
+          "Zh_tw": "新北產業園區站",
+          "En": "New Taipei Industrial Park Station"
+        },
+        "RunTime": 4080
+      },
+      {
+        "Sequence": 403,
+        "FromStationID": "A20",
+        "FromStationName": {
+          "Zh_tw": "興南站",
+          "En": "Xingnan Station"
+        },
+        "ToStationID": "A4",
+        "ToStationName": {
+          "Zh_tw": "新莊副都心站",
+          "En": "Xinzhuang Fuduxin Station"
+        },
+        "RunTime": 3960
+      },
+      {
+        "Sequence": 404,
+        "FromStationID": "A20",
+        "FromStationName": {
+          "Zh_tw": "興南站",
+          "En": "Xingnan Station"
+        },
+        "ToStationID": "A5",
+        "ToStationName": {
+          "Zh_tw": "泰山站",
+          "En": "Taishan Station"
+        },
+        "RunTime": 3840
+      },
+      {
+        "Sequence": 405,
+        "FromStationID": "A20",
+        "FromStationName": {
+          "Zh_tw": "興南站",
+          "En": "Xingnan Station"
+        },
+        "ToStationID": "A6",
+        "ToStationName": {
+          "Zh_tw": "泰山貴和站",
+          "En": "Taishan Guihe Station"
+        },
+        "RunTime": 3660
+      },
+      {
+        "Sequence": 406,
+        "FromStationID": "A20",
+        "FromStationName": {
+          "Zh_tw": "興南站",
+          "En": "Xingnan Station"
+        },
+        "ToStationID": "A7",
+        "ToStationName": {
+          "Zh_tw": "體育大學站",
+          "En": "National Taiwan Sport University Station"
+        },
+        "RunTime": 3240
+      },
+      {
+        "Sequence": 407,
+        "FromStationID": "A20",
+        "FromStationName": {
+          "Zh_tw": "興南站",
+          "En": "Xingnan Station"
+        },
+        "ToStationID": "A8",
+        "ToStationName": {
+          "Zh_tw": "長庚醫院站",
+          "En": "Chang Gung Memorial Hospital Station"
+        },
+        "RunTime": 2820
+      },
+      {
+        "Sequence": 408,
+        "FromStationID": "A20",
+        "FromStationName": {
+          "Zh_tw": "興南站",
+          "En": "Xingnan Station"
+        },
+        "ToStationID": "A9",
+        "ToStationName": {
+          "Zh_tw": "林口站",
+          "En": "Linkou Station"
+        },
+        "RunTime": 2580
+      },
+      {
+        "Sequence": 409,
+        "FromStationID": "A20",
+        "FromStationName": {
+          "Zh_tw": "興南站",
+          "En": "Xingnan Station"
+        },
+        "ToStationID": "A10",
+        "ToStationName": {
+          "Zh_tw": "山鼻站",
+          "En": "Shanbi Station"
+        },
+        "RunTime": 2100
+      },
+      {
+        "Sequence": 410,
+        "FromStationID": "A20",
+        "FromStationName": {
+          "Zh_tw": "興南站",
+          "En": "Xingnan Station"
+        },
+        "ToStationID": "A11",
+        "ToStationName": {
+          "Zh_tw": "坑口站",
+          "En": "Kengkou Station"
+        },
+        "RunTime": 1920
+      },
+      {
+        "Sequence": 411,
+        "FromStationID": "A20",
+        "FromStationName": {
+          "Zh_tw": "興南站",
+          "En": "Xingnan Station"
+        },
+        "ToStationID": "A12",
+        "ToStationName": {
+          "Zh_tw": "機場第一航廈站",
+          "En": "Airport Terminal 1 Station"
+        },
+        "RunTime": 1680
+      },
+      {
+        "Sequence": 412,
+        "FromStationID": "A20",
+        "FromStationName": {
+          "Zh_tw": "興南站",
+          "En": "Xingnan Station"
+        },
+        "ToStationID": "A13",
+        "ToStationName": {
+          "Zh_tw": "機場第二航廈站",
+          "En": "Airport Terminal 2 Station"
+        },
+        "RunTime": 1500
+      },
+      {
+        "Sequence": 413,
+        "FromStationID": "A20",
+        "FromStationName": {
+          "Zh_tw": "興南站",
+          "En": "Xingnan Station"
+        },
+        "ToStationID": "A14a",
+        "ToStationName": {
+          "Zh_tw": "機場旅館站",
+          "En": "Airport Hotel Station"
+        },
+        "RunTime": 1320
+      },
+      {
+        "Sequence": 414,
+        "FromStationID": "A20",
+        "FromStationName": {
+          "Zh_tw": "興南站",
+          "En": "Xingnan Station"
+        },
+        "ToStationID": "A15",
+        "ToStationName": {
+          "Zh_tw": "大園站",
+          "En": "Dayuan Station"
+        },
+        "RunTime": 1140
+      },
+      {
+        "Sequence": 415,
+        "FromStationID": "A20",
+        "FromStationName": {
+          "Zh_tw": "興南站",
+          "En": "Xingnan Station"
+        },
+        "ToStationID": "A16",
+        "ToStationName": {
+          "Zh_tw": "橫山站",
+          "En": "Hengshan Station"
+        },
+        "RunTime": 960
+      },
+      {
+        "Sequence": 416,
+        "FromStationID": "A20",
+        "FromStationName": {
+          "Zh_tw": "興南站",
+          "En": "Xingnan Station"
+        },
+        "ToStationID": "A17",
+        "ToStationName": {
+          "Zh_tw": "領航站",
+          "En": "Linghang Station"
+        },
+        "RunTime": 780
+      },
+      {
+        "Sequence": 417,
+        "FromStationID": "A20",
+        "FromStationName": {
+          "Zh_tw": "興南站",
+          "En": "Xingnan Station"
+        },
+        "ToStationID": "A18",
+        "ToStationName": {
+          "Zh_tw": "高鐵桃園站",
+          "En": "Taoyuan HSR Station"
+        },
+        "RunTime": 480
+      },
+      {
+        "Sequence": 418,
+        "FromStationID": "A20",
+        "FromStationName": {
+          "Zh_tw": "興南站",
+          "En": "Xingnan Station"
+        },
+        "ToStationID": "A19",
+        "ToStationName": {
+          "Zh_tw": "桃園體育園區站",
+          "En": "Taoyuan Sports Park Station"
+        },
+        "RunTime": 300
+      },
+      {
+        "Sequence": 421,
+        "FromStationID": "A21",
+        "FromStationName": {
+          "Zh_tw": "環北站",
+          "En": "Huanbei Station"
+        },
+        "ToStationID": "A1",
+        "ToStationName": {
+          "Zh_tw": "台北車站",
+          "En": "Taipei Main Station"
+        },
+        "RunTime": 4920
+      },
+      {
+        "Sequence": 422,
+        "FromStationID": "A21",
+        "FromStationName": {
+          "Zh_tw": "環北站",
+          "En": "Huanbei Station"
+        },
+        "ToStationID": "A2",
+        "ToStationName": {
+          "Zh_tw": "三重站",
+          "En": "Sanchong Station"
+        },
+        "RunTime": 4560
+      },
+      {
+        "Sequence": 423,
+        "FromStationID": "A21",
+        "FromStationName": {
+          "Zh_tw": "環北站",
+          "En": "Huanbei Station"
+        },
+        "ToStationID": "A3",
+        "ToStationName": {
+          "Zh_tw": "新北產業園區站",
+          "En": "New Taipei Industrial Park Station"
+        },
+        "RunTime": 4260
+      },
+      {
+        "Sequence": 424,
+        "FromStationID": "A21",
+        "FromStationName": {
+          "Zh_tw": "環北站",
+          "En": "Huanbei Station"
+        },
+        "ToStationID": "A4",
+        "ToStationName": {
+          "Zh_tw": "新莊副都心站",
+          "En": "Xinzhuang Fuduxin Station"
+        },
+        "RunTime": 4140
+      },
+      {
+        "Sequence": 425,
+        "FromStationID": "A21",
+        "FromStationName": {
+          "Zh_tw": "環北站",
+          "En": "Huanbei Station"
+        },
+        "ToStationID": "A5",
+        "ToStationName": {
+          "Zh_tw": "泰山站",
+          "En": "Taishan Station"
+        },
+        "RunTime": 4020
+      },
+      {
+        "Sequence": 426,
+        "FromStationID": "A21",
+        "FromStationName": {
+          "Zh_tw": "環北站",
+          "En": "Huanbei Station"
+        },
+        "ToStationID": "A6",
+        "ToStationName": {
+          "Zh_tw": "泰山貴和站",
+          "En": "Taishan Guihe Station"
+        },
+        "RunTime": 3840
+      },
+      {
+        "Sequence": 427,
+        "FromStationID": "A21",
+        "FromStationName": {
+          "Zh_tw": "環北站",
+          "En": "Huanbei Station"
+        },
+        "ToStationID": "A7",
+        "ToStationName": {
+          "Zh_tw": "體育大學站",
+          "En": "National Taiwan Sport University Station"
+        },
+        "RunTime": 3420
+      },
+      {
+        "Sequence": 428,
+        "FromStationID": "A21",
+        "FromStationName": {
+          "Zh_tw": "環北站",
+          "En": "Huanbei Station"
+        },
+        "ToStationID": "A8",
+        "ToStationName": {
+          "Zh_tw": "長庚醫院站",
+          "En": "Chang Gung Memorial Hospital Station"
+        },
+        "RunTime": 3000
+      },
+      {
+        "Sequence": 429,
+        "FromStationID": "A21",
+        "FromStationName": {
+          "Zh_tw": "環北站",
+          "En": "Huanbei Station"
+        },
+        "ToStationID": "A9",
+        "ToStationName": {
+          "Zh_tw": "林口站",
+          "En": "Linkou Station"
+        },
+        "RunTime": 2760
+      },
+      {
+        "Sequence": 430,
+        "FromStationID": "A21",
+        "FromStationName": {
+          "Zh_tw": "環北站",
+          "En": "Huanbei Station"
+        },
+        "ToStationID": "A10",
+        "ToStationName": {
+          "Zh_tw": "山鼻站",
+          "En": "Shanbi Station"
+        },
+        "RunTime": 2280
+      },
+      {
+        "Sequence": 431,
+        "FromStationID": "A21",
+        "FromStationName": {
+          "Zh_tw": "環北站",
+          "En": "Huanbei Station"
+        },
+        "ToStationID": "A11",
+        "ToStationName": {
+          "Zh_tw": "坑口站",
+          "En": "Kengkou Station"
+        },
+        "RunTime": 2100
+      },
+      {
+        "Sequence": 432,
+        "FromStationID": "A21",
+        "FromStationName": {
+          "Zh_tw": "環北站",
+          "En": "Huanbei Station"
+        },
+        "ToStationID": "A12",
+        "ToStationName": {
+          "Zh_tw": "機場第一航廈站",
+          "En": "Airport Terminal 1 Station"
+        },
+        "RunTime": 1860
+      },
+      {
+        "Sequence": 433,
+        "FromStationID": "A21",
+        "FromStationName": {
+          "Zh_tw": "環北站",
+          "En": "Huanbei Station"
+        },
+        "ToStationID": "A13",
+        "ToStationName": {
+          "Zh_tw": "機場第二航廈站",
+          "En": "Airport Terminal 2 Station"
+        },
+        "RunTime": 1680
+      },
+      {
+        "Sequence": 434,
+        "FromStationID": "A21",
+        "FromStationName": {
+          "Zh_tw": "環北站",
+          "En": "Huanbei Station"
+        },
+        "ToStationID": "A14a",
+        "ToStationName": {
+          "Zh_tw": "機場旅館站",
+          "En": "Airport Hotel Station"
+        },
+        "RunTime": 1500
+      },
+      {
+        "Sequence": 435,
+        "FromStationID": "A21",
+        "FromStationName": {
+          "Zh_tw": "環北站",
+          "En": "Huanbei Station"
+        },
+        "ToStationID": "A15",
+        "ToStationName": {
+          "Zh_tw": "大園站",
+          "En": "Dayuan Station"
+        },
+        "RunTime": 1320
+      },
+      {
+        "Sequence": 436,
+        "FromStationID": "A21",
+        "FromStationName": {
+          "Zh_tw": "環北站",
+          "En": "Huanbei Station"
+        },
+        "ToStationID": "A16",
+        "ToStationName": {
+          "Zh_tw": "橫山站",
+          "En": "Hengshan Station"
+        },
+        "RunTime": 1140
+      },
+      {
+        "Sequence": 437,
+        "FromStationID": "A21",
+        "FromStationName": {
+          "Zh_tw": "環北站",
+          "En": "Huanbei Station"
+        },
+        "ToStationID": "A17",
+        "ToStationName": {
+          "Zh_tw": "領航站",
+          "En": "Linghang Station"
+        },
+        "RunTime": 960
+      },
+      {
+        "Sequence": 438,
+        "FromStationID": "A21",
+        "FromStationName": {
+          "Zh_tw": "環北站",
+          "En": "Huanbei Station"
+        },
+        "ToStationID": "A18",
+        "ToStationName": {
+          "Zh_tw": "高鐵桃園站",
+          "En": "Taoyuan HSR Station"
+        },
+        "RunTime": 660
+      },
+      {
+        "Sequence": 439,
+        "FromStationID": "A21",
+        "FromStationName": {
+          "Zh_tw": "環北站",
+          "En": "Huanbei Station"
+        },
+        "ToStationID": "A19",
+        "ToStationName": {
+          "Zh_tw": "桃園體育園區站",
+          "En": "Taoyuan Sports Park Station"
+        },
+        "RunTime": 480
+      },
+      {
+        "Sequence": 440,
+        "FromStationID": "A21",
+        "FromStationName": {
+          "Zh_tw": "環北站",
+          "En": "Huanbei Station"
+        },
+        "ToStationID": "A20",
+        "ToStationName": {
+          "Zh_tw": "興南站",
+          "En": "Xingnan Station"
+        },
+        "RunTime": 180
+      },
+      {
+        "Sequence": 442,
+        "FromStationID": "A22",
+        "FromStationName": {
+          "Zh_tw": "老街溪站",
+          "En": "Laojie River Station"
+        },
+        "ToStationID": "A1",
+        "ToStationName": {
+          "Zh_tw": "台北車站",
+          "En": "Taipei Main Station"
+        },
+        "RunTime": 5040
+      },
+      {
+        "Sequence": 443,
+        "FromStationID": "A22",
+        "FromStationName": {
+          "Zh_tw": "老街溪站",
+          "En": "Laojie River Station"
+        },
+        "ToStationID": "A2",
+        "ToStationName": {
+          "Zh_tw": "三重站",
+          "En": "Sanchong Station"
+        },
+        "RunTime": 4680
+      },
+      {
+        "Sequence": 444,
+        "FromStationID": "A22",
+        "FromStationName": {
+          "Zh_tw": "老街溪站",
+          "En": "Laojie River Station"
+        },
+        "ToStationID": "A3",
+        "ToStationName": {
+          "Zh_tw": "新北產業園區站",
+          "En": "New Taipei Industrial Park Station"
+        },
+        "RunTime": 4380
+      },
+      {
+        "Sequence": 445,
+        "FromStationID": "A22",
+        "FromStationName": {
+          "Zh_tw": "老街溪站",
+          "En": "Laojie River Station"
+        },
+        "ToStationID": "A4",
+        "ToStationName": {
+          "Zh_tw": "新莊副都心站",
+          "En": "Xinzhuang Fuduxin Station"
+        },
+        "RunTime": 4260
+      },
+      {
+        "Sequence": 446,
+        "FromStationID": "A22",
+        "FromStationName": {
+          "Zh_tw": "老街溪站",
+          "En": "Laojie River Station"
+        },
+        "ToStationID": "A5",
+        "ToStationName": {
+          "Zh_tw": "泰山站",
+          "En": "Taishan Station"
+        },
+        "RunTime": 4140
+      },
+      {
+        "Sequence": 447,
+        "FromStationID": "A22",
+        "FromStationName": {
+          "Zh_tw": "老街溪站",
+          "En": "Laojie River Station"
+        },
+        "ToStationID": "A6",
+        "ToStationName": {
+          "Zh_tw": "泰山貴和站",
+          "En": "Taishan Guihe Station"
+        },
+        "RunTime": 3960
+      },
+      {
+        "Sequence": 448,
+        "FromStationID": "A22",
+        "FromStationName": {
+          "Zh_tw": "老街溪站",
+          "En": "Laojie River Station"
+        },
+        "ToStationID": "A7",
+        "ToStationName": {
+          "Zh_tw": "體育大學站",
+          "En": "National Taiwan Sport University Station"
+        },
+        "RunTime": 3540
+      },
+      {
+        "Sequence": 449,
+        "FromStationID": "A22",
+        "FromStationName": {
+          "Zh_tw": "老街溪站",
+          "En": "Laojie River Station"
+        },
+        "ToStationID": "A8",
+        "ToStationName": {
+          "Zh_tw": "長庚醫院站",
+          "En": "Chang Gung Memorial Hospital Station"
+        },
+        "RunTime": 3120
+      },
+      {
+        "Sequence": 450,
+        "FromStationID": "A22",
+        "FromStationName": {
+          "Zh_tw": "老街溪站",
+          "En": "Laojie River Station"
+        },
+        "ToStationID": "A9",
+        "ToStationName": {
+          "Zh_tw": "林口站",
+          "En": "Linkou Station"
+        },
+        "RunTime": 2880
+      },
+      {
+        "Sequence": 451,
+        "FromStationID": "A22",
+        "FromStationName": {
+          "Zh_tw": "老街溪站",
+          "En": "Laojie River Station"
+        },
+        "ToStationID": "A10",
+        "ToStationName": {
+          "Zh_tw": "山鼻站",
+          "En": "Shanbi Station"
+        },
+        "RunTime": 2400
+      },
+      {
+        "Sequence": 452,
+        "FromStationID": "A22",
+        "FromStationName": {
+          "Zh_tw": "老街溪站",
+          "En": "Laojie River Station"
+        },
+        "ToStationID": "A11",
+        "ToStationName": {
+          "Zh_tw": "坑口站",
+          "En": "Kengkou Station"
+        },
+        "RunTime": 2220
+      },
+      {
+        "Sequence": 453,
+        "FromStationID": "A22",
+        "FromStationName": {
+          "Zh_tw": "老街溪站",
+          "En": "Laojie River Station"
+        },
+        "ToStationID": "A12",
+        "ToStationName": {
+          "Zh_tw": "機場第一航廈站",
+          "En": "Airport Terminal 1 Station"
+        },
+        "RunTime": 1980
+      },
+      {
+        "Sequence": 454,
+        "FromStationID": "A22",
+        "FromStationName": {
+          "Zh_tw": "老街溪站",
+          "En": "Laojie River Station"
+        },
+        "ToStationID": "A13",
+        "ToStationName": {
+          "Zh_tw": "機場第二航廈站",
+          "En": "Airport Terminal 2 Station"
+        },
+        "RunTime": 1800
+      },
+      {
+        "Sequence": 455,
+        "FromStationID": "A22",
+        "FromStationName": {
+          "Zh_tw": "老街溪站",
+          "En": "Laojie River Station"
+        },
+        "ToStationID": "A14a",
+        "ToStationName": {
+          "Zh_tw": "機場旅館站",
+          "En": "Airport Hotel Station"
+        },
+        "RunTime": 1620
+      },
+      {
+        "Sequence": 456,
+        "FromStationID": "A22",
+        "FromStationName": {
+          "Zh_tw": "老街溪站",
+          "En": "Laojie River Station"
+        },
+        "ToStationID": "A15",
+        "ToStationName": {
+          "Zh_tw": "大園站",
+          "En": "Dayuan Station"
+        },
+        "RunTime": 1440
+      },
+      {
+        "Sequence": 457,
+        "FromStationID": "A22",
+        "FromStationName": {
+          "Zh_tw": "老街溪站",
+          "En": "Laojie River Station"
+        },
+        "ToStationID": "A16",
+        "ToStationName": {
+          "Zh_tw": "橫山站",
+          "En": "Hengshan Station"
+        },
+        "RunTime": 1260
+      },
+      {
+        "Sequence": 458,
+        "FromStationID": "A22",
+        "FromStationName": {
+          "Zh_tw": "老街溪站",
+          "En": "Laojie River Station"
+        },
+        "ToStationID": "A17",
+        "ToStationName": {
+          "Zh_tw": "領航站",
+          "En": "Linghang Station"
+        },
+        "RunTime": 1080
+      },
+      {
+        "Sequence": 459,
+        "FromStationID": "A22",
+        "FromStationName": {
+          "Zh_tw": "老街溪站",
+          "En": "Laojie River Station"
+        },
+        "ToStationID": "A18",
+        "ToStationName": {
+          "Zh_tw": "高鐵桃園站",
+          "En": "Taoyuan HSR Station"
+        },
+        "RunTime": 780
+      },
+      {
+        "Sequence": 460,
+        "FromStationID": "A22",
+        "FromStationName": {
+          "Zh_tw": "老街溪站",
+          "En": "Laojie River Station"
+        },
+        "ToStationID": "A19",
+        "ToStationName": {
+          "Zh_tw": "桃園體育園區站",
+          "En": "Taoyuan Sports Park Station"
+        },
+        "RunTime": 600
+      },
+      {
+        "Sequence": 461,
+        "FromStationID": "A22",
+        "FromStationName": {
+          "Zh_tw": "老街溪站",
+          "En": "Laojie River Station"
+        },
+        "ToStationID": "A20",
+        "ToStationName": {
+          "Zh_tw": "興南站",
+          "En": "Xingnan Station"
+        },
+        "RunTime": 300
+      },
+      {
+        "Sequence": 462,
+        "FromStationID": "A22",
+        "FromStationName": {
+          "Zh_tw": "老街溪站",
+          "En": "Laojie River Station"
+        },
+        "ToStationID": "A21",
+        "ToStationName": {
+          "Zh_tw": "環北站",
+          "En": "Huanbei Station"
+        },
+        "RunTime": 120
+      }
+    ],
+    "SrcUpdateTime": "2023-07-31T00:00:00+08:00",
+    "UpdateTime": "2023-08-10T12:00:00+08:00",
+    "VersionID": 2
+  },
+  {
+    "LineNo": "A",
+    "LineID": "A",
+    "RouteID": "A-1",
+    "TrainType": 2,
+    "TravelTimes": [
+      {
+        "Sequence": 1,
+        "FromStationID": "A1",
+        "FromStationName": {
+          "Zh_tw": "台北車站",
+          "En": "Taipei Main Station"
+        },
+        "ToStationID": "A3",
+        "ToStationName": {
+          "Zh_tw": "新北產業園區站",
+          "En": "New Taipei Industrial Park Station"
+        },
+        "RunTime": 480
+      },
+      {
+        "Sequence": 2,
+        "FromStationID": "A1",
+        "FromStationName": {
+          "Zh_tw": "台北車站",
+          "En": "Taipei Main Station"
+        },
+        "ToStationID": "A8",
+        "ToStationName": {
+          "Zh_tw": "長庚醫院站",
+          "En": "Chang Gung Memorial Hospital Station"
+        },
+        "RunTime": 1260
+      },
+      {
+        "Sequence": 3,
+        "FromStationID": "A1",
+        "FromStationName": {
+          "Zh_tw": "台北車站",
+          "En": "Taipei Main Station"
+        },
+        "ToStationID": "A12",
+        "ToStationName": {
+          "Zh_tw": "機場第一航廈站",
+          "En": "Airport Terminal 1 Station"
+        },
+        "RunTime": 2100
+      },
+      {
+        "Sequence": 4,
+        "FromStationID": "A1",
+        "FromStationName": {
+          "Zh_tw": "台北車站",
+          "En": "Taipei Main Station"
+        },
+        "ToStationID": "A13",
+        "ToStationName": {
+          "Zh_tw": "機場第二航廈站",
+          "En": "Airport Terminal 2 Station"
+        },
+        "RunTime": 2340
+      },
+      {
+        "Sequence": 5,
+        "FromStationID": "A1",
+        "FromStationName": {
+          "Zh_tw": "台北車站",
+          "En": "Taipei Main Station"
+        },
+        "ToStationID": "A18",
+        "ToStationName": {
+          "Zh_tw": "高鐵桃園站",
+          "En": "Taoyuan HSR Station"
+        },
+        "RunTime": 3240
+      },
+      {
+        "Sequence": 6,
+        "FromStationID": "A1",
+        "FromStationName": {
+          "Zh_tw": "台北車站",
+          "En": "Taipei Main Station"
+        },
+        "ToStationID": "A21",
+        "ToStationName": {
+          "Zh_tw": "環北站",
+          "En": "Huanbei Station"
+        },
+        "RunTime": 3840
+      },
+      {
+        "Sequence": 7,
+        "FromStationID": "A1",
+        "FromStationName": {
+          "Zh_tw": "台北車站",
+          "En": "Taipei Main Station"
+        },
+        "ToStationID": "A22",
+        "ToStationName": {
+          "Zh_tw": "老街溪站",
+          "En": "Laojie River Station"
+        },
+        "RunTime": 3960
+      },
+      {
+        "Sequence": 9,
+        "FromStationID": "A3",
+        "FromStationName": {
+          "Zh_tw": "新北產業園區站",
+          "En": "New Taipei Industrial Park Station"
+        },
+        "ToStationID": "A8",
+        "ToStationName": {
+          "Zh_tw": "長庚醫院站",
+          "En": "Chang Gung Memorial Hospital Station"
+        },
+        "RunTime": 720
+      },
+      {
+        "Sequence": 10,
+        "FromStationID": "A3",
+        "FromStationName": {
+          "Zh_tw": "新北產業園區站",
+          "En": "New Taipei Industrial Park Station"
+        },
+        "ToStationID": "A12",
+        "ToStationName": {
+          "Zh_tw": "機場第一航廈站",
+          "En": "Airport Terminal 1 Station"
+        },
+        "RunTime": 1560
+      },
+      {
+        "Sequence": 11,
+        "FromStationID": "A3",
+        "FromStationName": {
+          "Zh_tw": "新北產業園區站",
+          "En": "New Taipei Industrial Park Station"
+        },
+        "ToStationID": "A13",
+        "ToStationName": {
+          "Zh_tw": "機場第二航廈站",
+          "En": "Airport Terminal 2 Station"
+        },
+        "RunTime": 1800
+      },
+      {
+        "Sequence": 12,
+        "FromStationID": "A3",
+        "FromStationName": {
+          "Zh_tw": "新北產業園區站",
+          "En": "New Taipei Industrial Park Station"
+        },
+        "ToStationID": "A18",
+        "ToStationName": {
+          "Zh_tw": "高鐵桃園站",
+          "En": "Taoyuan HSR Station"
+        },
+        "RunTime": 2700
+      },
+      {
+        "Sequence": 13,
+        "FromStationID": "A3",
+        "FromStationName": {
+          "Zh_tw": "新北產業園區站",
+          "En": "New Taipei Industrial Park Station"
+        },
+        "ToStationID": "A21",
+        "ToStationName": {
+          "Zh_tw": "環北站",
+          "En": "Huanbei Station"
+        },
+        "RunTime": 3300
+      },
+      {
+        "Sequence": 14,
+        "FromStationID": "A3",
+        "FromStationName": {
+          "Zh_tw": "新北產業園區站",
+          "En": "New Taipei Industrial Park Station"
+        },
+        "ToStationID": "A22",
+        "ToStationName": {
+          "Zh_tw": "老街溪站",
+          "En": "Laojie River Station"
+        },
+        "RunTime": 3420
+      },
+      {
+        "Sequence": 17,
+        "FromStationID": "A8",
+        "FromStationName": {
+          "Zh_tw": "長庚醫院站",
+          "En": "Chang Gung Memorial Hospital Station"
+        },
+        "ToStationID": "A12",
+        "ToStationName": {
+          "Zh_tw": "機場第一航廈站",
+          "En": "Airport Terminal 1 Station"
+        },
+        "RunTime": 840
+      },
+      {
+        "Sequence": 18,
+        "FromStationID": "A8",
+        "FromStationName": {
+          "Zh_tw": "長庚醫院站",
+          "En": "Chang Gung Memorial Hospital Station"
+        },
+        "ToStationID": "A13",
+        "ToStationName": {
+          "Zh_tw": "機場第二航廈站",
+          "En": "Airport Terminal 2 Station"
+        },
+        "RunTime": 1080
+      },
+      {
+        "Sequence": 19,
+        "FromStationID": "A8",
+        "FromStationName": {
+          "Zh_tw": "長庚醫院站",
+          "En": "Chang Gung Memorial Hospital Station"
+        },
+        "ToStationID": "A18",
+        "ToStationName": {
+          "Zh_tw": "高鐵桃園站",
+          "En": "Taoyuan HSR Station"
+        },
+        "RunTime": 1980
+      },
+      {
+        "Sequence": 20,
+        "FromStationID": "A8",
+        "FromStationName": {
+          "Zh_tw": "長庚醫院站",
+          "En": "Chang Gung Memorial Hospital Station"
+        },
+        "ToStationID": "A21",
+        "ToStationName": {
+          "Zh_tw": "環北站",
+          "En": "Huanbei Station"
+        },
+        "RunTime": 2580
+      },
+      {
+        "Sequence": 21,
+        "FromStationID": "A8",
+        "FromStationName": {
+          "Zh_tw": "長庚醫院站",
+          "En": "Chang Gung Memorial Hospital Station"
+        },
+        "ToStationID": "A22",
+        "ToStationName": {
+          "Zh_tw": "老街溪站",
+          "En": "Laojie River Station"
+        },
+        "RunTime": 2700
+      },
+      {
+        "Sequence": 25,
+        "FromStationID": "A12",
+        "FromStationName": {
+          "Zh_tw": "機場第一航廈站",
+          "En": "Airport Terminal 1 Station"
+        },
+        "ToStationID": "A13",
+        "ToStationName": {
+          "Zh_tw": "機場第二航廈站",
+          "En": "Airport Terminal 2 Station"
+        },
+        "RunTime": 120
+      },
+      {
+        "Sequence": 26,
+        "FromStationID": "A12",
+        "FromStationName": {
+          "Zh_tw": "機場第一航廈站",
+          "En": "Airport Terminal 1 Station"
+        },
+        "ToStationID": "A18",
+        "ToStationName": {
+          "Zh_tw": "高鐵桃園站",
+          "En": "Taoyuan HSR Station"
+        },
+        "RunTime": 1020
+      },
+      {
+        "Sequence": 27,
+        "FromStationID": "A12",
+        "FromStationName": {
+          "Zh_tw": "機場第一航廈站",
+          "En": "Airport Terminal 1 Station"
+        },
+        "ToStationID": "A21",
+        "ToStationName": {
+          "Zh_tw": "環北站",
+          "En": "Huanbei Station"
+        },
+        "RunTime": 1620
+      },
+      {
+        "Sequence": 28,
+        "FromStationID": "A12",
+        "FromStationName": {
+          "Zh_tw": "機場第一航廈站",
+          "En": "Airport Terminal 1 Station"
+        },
+        "ToStationID": "A22",
+        "ToStationName": {
+          "Zh_tw": "老街溪站",
+          "En": "Laojie River Station"
+        },
+        "RunTime": 1740
+      },
+      {
+        "Sequence": 33,
+        "FromStationID": "A13",
+        "FromStationName": {
+          "Zh_tw": "機場第二航廈站",
+          "En": "Airport Terminal 2 Station"
+        },
+        "ToStationID": "A18",
+        "ToStationName": {
+          "Zh_tw": "高鐵桃園站",
+          "En": "Taoyuan HSR Station"
+        },
+        "RunTime": 780
+      },
+      {
+        "Sequence": 34,
+        "FromStationID": "A13",
+        "FromStationName": {
+          "Zh_tw": "機場第二航廈站",
+          "En": "Airport Terminal 2 Station"
+        },
+        "ToStationID": "A21",
+        "ToStationName": {
+          "Zh_tw": "環北站",
+          "En": "Huanbei Station"
+        },
+        "RunTime": 1380
+      },
+      {
+        "Sequence": 35,
+        "FromStationID": "A13",
+        "FromStationName": {
+          "Zh_tw": "機場第二航廈站",
+          "En": "Airport Terminal 2 Station"
+        },
+        "ToStationID": "A22",
+        "ToStationName": {
+          "Zh_tw": "老街溪站",
+          "En": "Laojie River Station"
+        },
+        "RunTime": 1500
+      },
+      {
+        "Sequence": 41,
+        "FromStationID": "A18",
+        "FromStationName": {
+          "Zh_tw": "高鐵桃園站",
+          "En": "Taoyuan HSR Station"
+        },
+        "ToStationID": "A21",
+        "ToStationName": {
+          "Zh_tw": "環北站",
+          "En": "Huanbei Station"
+        },
+        "RunTime": 540
+      },
+      {
+        "Sequence": 42,
+        "FromStationID": "A18",
+        "FromStationName": {
+          "Zh_tw": "高鐵桃園站",
+          "En": "Taoyuan HSR Station"
+        },
+        "ToStationID": "A22",
+        "ToStationName": {
+          "Zh_tw": "老街溪站",
+          "En": "Laojie River Station"
+        },
+        "RunTime": 660
+      }
+    ],
+    "SrcUpdateTime": "2023-07-31T00:00:00+08:00",
+    "UpdateTime": "2023-08-10T12:00:00+08:00",
+    "VersionID": 2
+  },
+  {
+    "LineNo": "A",
+    "LineID": "A",
+    "RouteID": "A-1",
+    "TrainType": 2,
+    "TravelTimes": [
+      {
+        "Sequence": 8,
+        "FromStationID": "A3",
+        "FromStationName": {
+          "Zh_tw": "新北產業園區站",
+          "En": "New Taipei Industrial Park Station"
+        },
+        "ToStationID": "A1",
+        "ToStationName": {
+          "Zh_tw": "台北車站",
+          "En": "Taipei Main Station"
+        },
+        "RunTime": 480
+      },
+      {
+        "Sequence": 15,
+        "FromStationID": "A8",
+        "FromStationName": {
+          "Zh_tw": "長庚醫院站",
+          "En": "Chang Gung Memorial Hospital Station"
+        },
+        "ToStationID": "A1",
+        "ToStationName": {
+          "Zh_tw": "台北車站",
+          "En": "Taipei Main Station"
+        },
+        "RunTime": 1260
+      },
+      {
+        "Sequence": 16,
+        "FromStationID": "A8",
+        "FromStationName": {
+          "Zh_tw": "長庚醫院站",
+          "En": "Chang Gung Memorial Hospital Station"
+        },
+        "ToStationID": "A3",
+        "ToStationName": {
+          "Zh_tw": "新北產業園區站",
+          "En": "New Taipei Industrial Park Station"
+        },
+        "RunTime": 780
+      },
+      {
+        "Sequence": 22,
+        "FromStationID": "A12",
+        "FromStationName": {
+          "Zh_tw": "機場第一航廈站",
+          "En": "Airport Terminal 1 Station"
+        },
+        "ToStationID": "A1",
+        "ToStationName": {
+          "Zh_tw": "台北車站",
+          "En": "Taipei Main Station"
+        },
+        "RunTime": 2160
+      },
+      {
+        "Sequence": 23,
+        "FromStationID": "A12",
+        "FromStationName": {
+          "Zh_tw": "機場第一航廈站",
+          "En": "Airport Terminal 1 Station"
+        },
+        "ToStationID": "A3",
+        "ToStationName": {
+          "Zh_tw": "新北產業園區站",
+          "En": "New Taipei Industrial Park Station"
+        },
+        "RunTime": 1620
+      },
+      {
+        "Sequence": 24,
+        "FromStationID": "A12",
+        "FromStationName": {
+          "Zh_tw": "機場第一航廈站",
+          "En": "Airport Terminal 1 Station"
+        },
+        "ToStationID": "A8",
+        "ToStationName": {
+          "Zh_tw": "長庚醫院站",
+          "En": "Chang Gung Memorial Hospital Station"
+        },
+        "RunTime": 780
+      },
+      {
+        "Sequence": 29,
+        "FromStationID": "A13",
+        "FromStationName": {
+          "Zh_tw": "機場第二航廈站",
+          "En": "Airport Terminal 2 Station"
+        },
+        "ToStationID": "A1",
+        "ToStationName": {
+          "Zh_tw": "台北車站",
+          "En": "Taipei Main Station"
+        },
+        "RunTime": 2340
+      },
+      {
+        "Sequence": 30,
+        "FromStationID": "A13",
+        "FromStationName": {
+          "Zh_tw": "機場第二航廈站",
+          "En": "Airport Terminal 2 Station"
+        },
+        "ToStationID": "A3",
+        "ToStationName": {
+          "Zh_tw": "新北產業園區站",
+          "En": "New Taipei Industrial Park Station"
+        },
+        "RunTime": 1800
+      },
+      {
+        "Sequence": 31,
+        "FromStationID": "A13",
+        "FromStationName": {
+          "Zh_tw": "機場第二航廈站",
+          "En": "Airport Terminal 2 Station"
+        },
+        "ToStationID": "A8",
+        "ToStationName": {
+          "Zh_tw": "長庚醫院站",
+          "En": "Chang Gung Memorial Hospital Station"
+        },
+        "RunTime": 960
+      },
+      {
+        "Sequence": 32,
+        "FromStationID": "A13",
+        "FromStationName": {
+          "Zh_tw": "機場第二航廈站",
+          "En": "Airport Terminal 2 Station"
+        },
+        "ToStationID": "A12",
+        "ToStationName": {
+          "Zh_tw": "機場第一航廈站",
+          "En": "Airport Terminal 1 Station"
+        },
+        "RunTime": 120
+      },
+      {
+        "Sequence": 36,
+        "FromStationID": "A18",
+        "FromStationName": {
+          "Zh_tw": "高鐵桃園站",
+          "En": "Taoyuan HSR Station"
+        },
+        "ToStationID": "A1",
+        "ToStationName": {
+          "Zh_tw": "台北車站",
+          "En": "Taipei Main Station"
+        },
+        "RunTime": 3180
+      },
+      {
+        "Sequence": 37,
+        "FromStationID": "A18",
+        "FromStationName": {
+          "Zh_tw": "高鐵桃園站",
+          "En": "Taoyuan HSR Station"
+        },
+        "ToStationID": "A3",
+        "ToStationName": {
+          "Zh_tw": "新北產業園區站",
+          "En": "New Taipei Industrial Park Station"
+        },
+        "RunTime": 2640
+      },
+      {
+        "Sequence": 38,
+        "FromStationID": "A18",
+        "FromStationName": {
+          "Zh_tw": "高鐵桃園站",
+          "En": "Taoyuan HSR Station"
+        },
+        "ToStationID": "A8",
+        "ToStationName": {
+          "Zh_tw": "長庚醫院站",
+          "En": "Chang Gung Memorial Hospital Station"
+        },
+        "RunTime": 1800
+      },
+      {
+        "Sequence": 39,
+        "FromStationID": "A18",
+        "FromStationName": {
+          "Zh_tw": "高鐵桃園站",
+          "En": "Taoyuan HSR Station"
+        },
+        "ToStationID": "A12",
+        "ToStationName": {
+          "Zh_tw": "機場第一航廈站",
+          "En": "Airport Terminal 1 Station"
+        },
+        "RunTime": 960
+      },
+      {
+        "Sequence": 40,
+        "FromStationID": "A18",
+        "FromStationName": {
+          "Zh_tw": "高鐵桃園站",
+          "En": "Taoyuan HSR Station"
+        },
+        "ToStationID": "A13",
+        "ToStationName": {
+          "Zh_tw": "機場第二航廈站",
+          "En": "Airport Terminal 2 Station"
+        },
+        "RunTime": 720
+      },
+      {
+        "Sequence": 43,
+        "FromStationID": "A21",
+        "FromStationName": {
+          "Zh_tw": "環北站",
+          "En": "Huanbei Station"
+        },
+        "ToStationID": "A1",
+        "ToStationName": {
+          "Zh_tw": "台北車站",
+          "En": "Taipei Main Station"
+        },
+        "RunTime": 3900
+      },
+      {
+        "Sequence": 44,
+        "FromStationID": "A21",
+        "FromStationName": {
+          "Zh_tw": "環北站",
+          "En": "Huanbei Station"
+        },
+        "ToStationID": "A3",
+        "ToStationName": {
+          "Zh_tw": "新北產業園區站",
+          "En": "New Taipei Industrial Park Station"
+        },
+        "RunTime": 3360
+      },
+      {
+        "Sequence": 45,
+        "FromStationID": "A21",
+        "FromStationName": {
+          "Zh_tw": "環北站",
+          "En": "Huanbei Station"
+        },
+        "ToStationID": "A8",
+        "ToStationName": {
+          "Zh_tw": "長庚醫院站",
+          "En": "Chang Gung Memorial Hospital Station"
+        },
+        "RunTime": 2520
+      },
+      {
+        "Sequence": 46,
+        "FromStationID": "A21",
+        "FromStationName": {
+          "Zh_tw": "環北站",
+          "En": "Huanbei Station"
+        },
+        "ToStationID": "A12",
+        "ToStationName": {
+          "Zh_tw": "機場第一航廈站",
+          "En": "Airport Terminal 1 Station"
+        },
+        "RunTime": 1680
+      },
+      {
+        "Sequence": 47,
+        "FromStationID": "A21",
+        "FromStationName": {
+          "Zh_tw": "環北站",
+          "En": "Huanbei Station"
+        },
+        "ToStationID": "A13",
+        "ToStationName": {
+          "Zh_tw": "機場第二航廈站",
+          "En": "Airport Terminal 2 Station"
+        },
+        "RunTime": 1440
+      },
+      {
+        "Sequence": 48,
+        "FromStationID": "A21",
+        "FromStationName": {
+          "Zh_tw": "環北站",
+          "En": "Huanbei Station"
+        },
+        "ToStationID": "A18",
+        "ToStationName": {
+          "Zh_tw": "高鐵桃園站",
+          "En": "Taoyuan HSR Station"
+        },
+        "RunTime": 660
+      },
+      {
+        "Sequence": 49,
+        "FromStationID": "A22",
+        "FromStationName": {
+          "Zh_tw": "老街溪站",
+          "En": "Laojie River Station"
+        },
+        "ToStationID": "A1",
+        "ToStationName": {
+          "Zh_tw": "台北車站",
+          "En": "Taipei Main Station"
+        },
+        "RunTime": 4020
+      },
+      {
+        "Sequence": 50,
+        "FromStationID": "A22",
+        "FromStationName": {
+          "Zh_tw": "老街溪站",
+          "En": "Laojie River Station"
+        },
+        "ToStationID": "A3",
+        "ToStationName": {
+          "Zh_tw": "新北產業園區站",
+          "En": "New Taipei Industrial Park Station"
+        },
+        "RunTime": 3480
+      },
+      {
+        "Sequence": 51,
+        "FromStationID": "A22",
+        "FromStationName": {
+          "Zh_tw": "老街溪站",
+          "En": "Laojie River Station"
+        },
+        "ToStationID": "A8",
+        "ToStationName": {
+          "Zh_tw": "長庚醫院站",
+          "En": "Chang Gung Memorial Hospital Station"
+        },
+        "RunTime": 2640
+      },
+      {
+        "Sequence": 52,
+        "FromStationID": "A22",
+        "FromStationName": {
+          "Zh_tw": "老街溪站",
+          "En": "Laojie River Station"
+        },
+        "ToStationID": "A12",
+        "ToStationName": {
+          "Zh_tw": "機場第一航廈站",
+          "En": "Airport Terminal 1 Station"
+        },
+        "RunTime": 1800
+      },
+      {
+        "Sequence": 53,
+        "FromStationID": "A22",
+        "FromStationName": {
+          "Zh_tw": "老街溪站",
+          "En": "Laojie River Station"
+        },
+        "ToStationID": "A13",
+        "ToStationName": {
+          "Zh_tw": "機場第二航廈站",
+          "En": "Airport Terminal 2 Station"
+        },
+        "RunTime": 1560
+      },
+      {
+        "Sequence": 54,
+        "FromStationID": "A22",
+        "FromStationName": {
+          "Zh_tw": "老街溪站",
+          "En": "Laojie River Station"
+        },
+        "ToStationID": "A18",
+        "ToStationName": {
+          "Zh_tw": "高鐵桃園站",
+          "En": "Taoyuan HSR Station"
+        },
+        "RunTime": 780
+      }
+    ],
+    "SrcUpdateTime": "2023-07-31T00:00:00+08:00",
+    "UpdateTime": "2023-08-10T12:00:00+08:00",
+    "VersionID": 2
+  }
+]

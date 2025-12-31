@@ -1,0 +1,26 @@
+{
+  "track_id": "A-3-0",
+  "route_id": "A-3",
+  "name": "機場第二航廈站 → 老街溪站 (區間車)",
+  "train_type": "limited",
+  "train_color": "#9b66c2",
+  "origin": "A13",
+  "destination": "A22",
+  "stations": [
+    "A13",
+    "A14a",
+    "A15",
+    "A16",
+    "A17",
+    "A18",
+    "A19",
+    "A20",
+    "A21",
+    "A22"
+  ],
+  "travel_time_minutes": 33,
+  "dwell_time_seconds": 30,
+  "is_weekday": true,
+  "departure_count": 0,
+  "departures": []
+}

@@ -100,7 +100,7 @@ function App() {
 
   // 路線篩選狀態
   const [visibleLines, setVisibleLines] = useState<Set<string>>(
-    new Set(['R', 'BL', 'G', 'O', 'BR', 'K', 'V'])
+    new Set(['R', 'BL', 'G', 'O', 'BR', 'K', 'V', 'A'])
   );
 
   // 切換路線可見性
@@ -133,6 +133,8 @@ function App() {
         lineId = 'G';
       } else if (train.trackId.startsWith('O')) {
         lineId = 'O';
+      } else if (train.trackId.startsWith('A')) {
+        lineId = 'A';
       } else {
         lineId = 'R';
       }
@@ -260,6 +262,10 @@ function App() {
         ['==', ['slice', ['get', 'track_id'], 0, 2], 'O-'],
         visibleLines.has('O')
       ], 0.8,
+      ['all',
+        ['==', ['slice', ['get', 'track_id'], 0, 2], 'A-'],
+        visibleLines.has('A')
+      ], 0.8,
       0.0
     ]);
   }, [mapLoaded, visibleLines]);
@@ -354,6 +360,10 @@ function App() {
       ['all',
         ['==', ['slice', ['get', 'station_id'], 0, 1], 'O'],
         visibleLines.has('O')
+      ], 1,
+      ['all',
+        ['==', ['slice', ['get', 'station_id'], 0, 1], 'A'],
+        visibleLines.has('A')
       ], 1,
       0
     ];

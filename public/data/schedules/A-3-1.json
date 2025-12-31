@@ -1,0 +1,204 @@
+{
+  "track_id": "A-3-1",
+  "route_id": "A-3",
+  "name": "老街溪站 → 機場第二航廈站 (區間車)",
+  "train_type": "limited",
+  "train_color": "#a778c9",
+  "origin": "A22",
+  "destination": "A13",
+  "stations": [
+    "A22",
+    "A21",
+    "A20",
+    "A19",
+    "A18",
+    "A17",
+    "A16",
+    "A15",
+    "A14a",
+    "A13"
+  ],
+  "travel_time_minutes": 30,
+  "dwell_time_seconds": 30,
+  "is_weekday": true,
+  "departure_count": 3,
+  "departures": [
+    {
+      "departure_time": "23:20:00",
+      "train_id": "A-1-1-001",
+      "origin_station": "A22",
+      "destination_station": "A13",
+      "total_travel_time": 1800,
+      "stations": [
+        {
+          "station_id": "A22",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "A21",
+          "arrival": 180,
+          "departure": 210
+        },
+        {
+          "station_id": "A20",
+          "arrival": 390,
+          "departure": 420
+        },
+        {
+          "station_id": "A19",
+          "arrival": 630,
+          "departure": 660
+        },
+        {
+          "station_id": "A18",
+          "arrival": 810,
+          "departure": 840
+        },
+        {
+          "station_id": "A17",
+          "arrival": 990,
+          "departure": 1020
+        },
+        {
+          "station_id": "A16",
+          "arrival": 1170,
+          "departure": 1200
+        },
+        {
+          "station_id": "A15",
+          "arrival": 1380,
+          "departure": 1410
+        },
+        {
+          "station_id": "A14a",
+          "arrival": 1590,
+          "departure": 1620
+        },
+        {
+          "station_id": "A13",
+          "arrival": 1800,
+          "departure": 1830
+        }
+      ]
+    },
+    {
+      "departure_time": "23:35:00",
+      "train_id": "A-1-1-002",
+      "origin_station": "A22",
+      "destination_station": "A13",
+      "total_travel_time": 1800,
+      "stations": [
+        {
+          "station_id": "A22",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "A21",
+          "arrival": 180,
+          "departure": 210
+        },
+        {
+          "station_id": "A20",
+          "arrival": 390,
+          "departure": 420
+        },
+        {
+          "station_id": "A19",
+          "arrival": 630,
+          "departure": 660
+        },
+        {
+          "station_id": "A18",
+          "arrival": 810,
+          "departure": 840
+        },
+        {
+          "station_id": "A17",
+          "arrival": 990,
+          "departure": 1020
+        },
+        {
+          "station_id": "A16",
+          "arrival": 1170,
+          "departure": 1200
+        },
+        {
+          "station_id": "A15",
+          "arrival": 1380,
+          "departure": 1410
+        },
+        {
+          "station_id": "A14a",
+          "arrival": 1590,
+          "departure": 1620
+        },
+        {
+          "station_id": "A13",
+          "arrival": 1800,
+          "departure": 1830
+        }
+      ]
+    },
+    {
+      "departure_time": "23:50:00",
+      "train_id": "A-1-1-003",
+      "origin_station": "A22",
+      "destination_station": "A13",
+      "total_travel_time": 1800,
+      "stations": [
+        {
+          "station_id": "A22",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "A21",
+          "arrival": 180,
+          "departure": 210
+        },
+        {
+          "station_id": "A20",
+          "arrival": 390,
+          "departure": 420
+        },
+        {
+          "station_id": "A19",
+          "arrival": 630,
+          "departure": 660
+        },
+        {
+          "station_id": "A18",
+          "arrival": 810,
+          "departure": 840
+        },
+        {
+          "station_id": "A17",
+          "arrival": 990,
+          "departure": 1020
+        },
+        {
+          "station_id": "A16",
+          "arrival": 1170,
+          "departure": 1200
+        },
+        {
+          "station_id": "A15",
+          "arrival": 1380,
+          "departure": 1410
+        },
+        {
+          "station_id": "A14a",
+          "arrival": 1590,
+          "departure": 1620
+        },
+        {
+          "station_id": "A13",
+          "arrival": 1800,
+          "departure": 1830
+        }
+      ]
+    }
+  ]
+}

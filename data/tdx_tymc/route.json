@@ -1,0 +1,137 @@
+[
+  {
+    "RouteID": "A-1",
+    "OperatorCode": "TYMC",
+    "RouteName": {
+      "Zh_tw": "台北車站 - 老街溪站",
+      "En": "Taipei Main Station - Laojie River Station"
+    },
+    "RailRouteType": 34,
+    "LineNo": "A",
+    "LineID": "A",
+    "Direction": 0,
+    "StartStationID": "A1",
+    "StartStationName": {
+      "Zh_tw": "台北車站",
+      "En": "Taipei Main Station"
+    },
+    "EndStationID": "A22",
+    "EndStationName": {
+      "Zh_tw": "老街溪站",
+      "En": "Laojie River Station"
+    },
+    "TravelTime": 84,
+    "RouteLength": 51.76,
+    "SrcUpdateTime": "2023-07-31T00:00:00+08:00",
+    "UpdateTime": "2023-08-10T12:00:00+08:00",
+    "VersionID": 3
+  },
+  {
+    "RouteID": "A-1",
+    "OperatorCode": "TYMC",
+    "RouteName": {
+      "Zh_tw": "老街溪站 - 台北車站",
+      "En": "Laojie River Station - Taipei Main Station"
+    },
+    "RailRouteType": 34,
+    "LineNo": "A",
+    "LineID": "A",
+    "Direction": 1,
+    "StartStationID": "A22",
+    "StartStationName": {
+      "Zh_tw": "老街溪站",
+      "En": "Laojie River Station"
+    },
+    "EndStationID": "A1",
+    "EndStationName": {
+      "Zh_tw": "台北車站",
+      "En": "Taipei Main Station"
+    },
+    "TravelTime": 84,
+    "RouteLength": 51.76,
+    "SrcUpdateTime": "2023-07-31T00:00:00+08:00",
+    "UpdateTime": "2023-08-10T12:00:00+08:00",
+    "VersionID": 3
+  },
+  {
+    "RouteID": "A-2",
+    "OperatorCode": "TYMC",
+    "RouteName": {
+      "Zh_tw": "台北車站 - 機場第二航廈站",
+      "En": "Taipei Main Station - Airport Terminal 2 Station"
+    },
+    "RailRouteType": 34,
+    "LineNo": "A",
+    "LineID": "A",
+    "Direction": 0,
+    "StartStationID": "A1",
+    "StartStationName": {
+      "Zh_tw": "台北車站",
+      "En": "Taipei Main Station"
+    },
+    "EndStationID": "A13",
+    "EndStationName": {
+      "Zh_tw": "機場第二航廈站",
+      "En": "Airport Terminal 2 Station"
+    },
+    "TravelTime": 52,
+    "RouteLength": 35.896,
+    "SrcUpdateTime": "2023-07-31T00:00:00+08:00",
+    "UpdateTime": "2023-08-10T12:00:00+08:00",
+    "VersionID": 3
+  },
+  {
+    "RouteID": "A-2",
+    "OperatorCode": "TYMC",
+    "RouteName": {
+      "Zh_tw": "機場第二航廈站 - 台北車站",
+      "En": "Airport Terminal 2 Station -Taipei Main Station"
+    },
+    "RailRouteType": 34,
+    "LineNo": "A",
+    "LineID": "A",
+    "Direction": 1,
+    "StartStationID": "A13",
+    "StartStationName": {
+      "Zh_tw": "機場第二航廈站",
+      "En": "Airport Terminal 2 Station"
+    },
+    "EndStationID": "A1",
+    "EndStationName": {
+      "Zh_tw": "台北車站",
+      "En": "Taipei Main Station"
+    },
+    "TravelTime": 52,
+    "RouteLength": 35.896,
+    "SrcUpdateTime": "2023-07-31T00:00:00+08:00",
+    "UpdateTime": "2023-08-10T12:00:00+08:00",
+    "VersionID": 3
+  },
+  {
+    "RouteID": "A-3",
+    "OperatorCode": "TYMC",
+    "RouteName": {
+      "Zh_tw": "老街溪站 - 機場第一航廈站",
+      "En": "Laojie River Station - Airport Terminal 1 Station"
+    },
+    "RailRouteType": 34,
+    "LineNo": "A",
+    "LineID": "A",
+    "Direction": 1,
+    "StartStationID": "A22",
+    "StartStationName": {
+      "Zh_tw": "老街溪站",
+      "En": "Laojie River Station"
+    },
+    "EndStationID": "A12",
+    "EndStationName": {
+      "Zh_tw": "機場第一航廈站",
+      "En": "Airport Terminal 1 Station"
+    },
+    "TravelTime": 33,
+    "RouteLength": 16.884,
+    "SrcUpdateTime": "2023-07-31T00:00:00+08:00",
+    "UpdateTime": "2023-08-10T12:00:00+08:00",
+    "VersionID": 3
+  }
+]

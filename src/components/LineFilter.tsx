@@ -7,6 +7,7 @@ const LINE_CONFIG = {
   G: { color: '#008659', label: 'G', name: '綠線' },
   BL: { color: '#0070c0', label: 'BL', name: '藍線' },
   BR: { color: '#c48c31', label: 'BR', name: '文湖線' },
+  A: { color: '#8246af', label: 'A', name: '機場捷運' },
   K: { color: '#8cc540', label: 'K', name: '安坑輕軌' },
   V: { color: '#a4ce4e', label: 'V', name: '淡海輕軌' },
 };

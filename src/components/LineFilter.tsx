@@ -6,6 +6,7 @@ const LINE_CONFIG = {
   O: { color: '#f8b61c', label: 'O', name: '橘線' },
   G: { color: '#008659', label: 'G', name: '綠線' },
   BL: { color: '#0070c0', label: 'BL', name: '藍線' },
+  BR: { color: '#c48c31', label: 'BR', name: '文湖線' },
 };
 
 interface LineFilterProps {

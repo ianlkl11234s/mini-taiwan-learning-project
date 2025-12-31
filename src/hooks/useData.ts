@@ -4,6 +4,8 @@ import type { TrackSchedule } from '../types/schedule';
 
 // 軌道 ID 列表
 const TRACK_IDS = [
+  // === 文湖線 (BR) ===
+  'BR-1-0', 'BR-1-1',  // 全程車（動物園↔南港展覽館）
   // === 紅線 (R) ===
   'R-1-0', 'R-1-1',  // 全程車
   'R-2-0', 'R-2-1',  // 南段區間車
@@ -150,6 +152,10 @@ export function useData(): DataState {
         if (!orangeStationsRes.ok) throw new Error('Failed to load orange line stations');
         const orangeStationsData = await orangeStationsRes.json();
 
+        const brownStationsRes = await fetch('/data/brown_line_stations.geojson');
+        if (!brownStationsRes.ok) throw new Error('Failed to load brown line stations');
+        const brownStationsData = await brownStationsRes.json();
+
         // 合併車站資料
         const allStations: StationCollection = {
           type: 'FeatureCollection',
@@ -158,6 +164,7 @@ export function useData(): DataState {
             ...blueStationsData.features,
             ...greenStationsData.features,
             ...orangeStationsData.features,
+            ...brownStationsData.features,
           ],
         };
         setStations(allStations);

@@ -19,6 +19,7 @@ const TRACK_COLORS = {
   G: '#008659',   // 綠線
   G3: '#66c4a0',  // 小碧潭支線（淺綠色）
   O: '#f8b61c',   // 橘線
+  BR: '#c48c31',  // 文湖線（棕色）
 };
 
 // 列車顏色（依路線與方向區分）
@@ -35,12 +36,17 @@ const TRAIN_COLORS = {
   // 橘線
   O_0: '#f8b61c',   // 往南勢角（direction 0）- 深橘色
   O_1: '#ffd966',   // 往迴龍/蘆洲（direction 1）- 淡橘色
+  // 文湖線
+  BR_0: '#c48c31',  // 往南港展覽館（direction 0）- 深棕色
+  BR_1: '#d4a65a',  // 往動物園（direction 1）- 淡棕色
 };
 
 // 判斷列車顏色：根據路線和方向
 function getTrainColor(trackId: string): string {
   let lineId: string;
-  if (trackId.startsWith('BL')) {
+  if (trackId.startsWith('BR')) {
+    lineId = 'BR';
+  } else if (trackId.startsWith('BL')) {
     lineId = 'BL';
   } else if (trackId.startsWith('G')) {
     lineId = 'G';
@@ -82,7 +88,7 @@ function App() {
 
   // 路線篩選狀態
   const [visibleLines, setVisibleLines] = useState<Set<string>>(
-    new Set(['R', 'BL', 'G', 'O'])
+    new Set(['R', 'BL', 'G', 'O', 'BR'])
   );
 
   // 切換路線可見性
@@ -103,7 +109,9 @@ function App() {
     return trains.filter(train => {
       // 從 trackId 判斷路線
       let lineId: string;
-      if (train.trackId.startsWith('BL')) {
+      if (train.trackId.startsWith('BR')) {
+        lineId = 'BR';
+      } else if (train.trackId.startsWith('BL')) {
         lineId = 'BL';
       } else if (train.trackId.startsWith('G')) {
         lineId = 'G';
@@ -171,12 +179,13 @@ function App() {
         'line-cap': 'round',
       },
       paint: {
-        // 依路線設定顏色：G-3 小碧潭支線（淺綠）, G 綠線, BL 藍線, O 橘線, R 紅線
+        // 依路線設定顏色：G-3 小碧潭支線（淺綠）, G 綠線, BL 藍線, BR 文湖線, O 橘線, R 紅線
         'line-color': [
           'case',
           ['in', 'G-3', ['get', 'track_id']], TRACK_COLORS.G3,  // 小碧潭支線（淺綠色）
           ['==', ['get', 'line_id'], 'G'], TRACK_COLORS.G,
           ['==', ['get', 'line_id'], 'BL'], TRACK_COLORS.BL,
+          ['==', ['get', 'line_id'], 'BR'], TRACK_COLORS.BR,
           ['==', ['get', 'line_id'], 'O'], TRACK_COLORS.O,
           TRACK_COLORS.R
         ],
@@ -186,6 +195,7 @@ function App() {
           'case',
           ['==', ['slice', ['get', 'track_id'], 0, 2], 'R-'], 0.8,   // 所有 R 線軌道可見 (含首班車)
           ['==', ['slice', ['get', 'track_id'], 0, 3], 'BL-'], 0.8,  // 所有 BL 線軌道可見 (含首班車)
+          ['==', ['slice', ['get', 'track_id'], 0, 3], 'BR-'], 0.8,  // 所有 BR 線軌道可見 (文湖線)
           ['==', ['slice', ['get', 'track_id'], 0, 2], 'G-'], 0.8,   // 所有 G 線軌道可見 (含首班車)
           ['==', ['slice', ['get', 'track_id'], 0, 2], 'O-'], 0.8,   // 所有 O 線軌道可見 (含首班車)
           0.0 // 其他軌道透明
@@ -209,6 +219,10 @@ function App() {
       ['all',
         ['==', ['slice', ['get', 'track_id'], 0, 3], 'BL-'],
         visibleLines.has('BL')
+      ], 0.8,
+      ['all',
+        ['==', ['slice', ['get', 'track_id'], 0, 3], 'BR-'],
+        visibleLines.has('BR')
       ], 0.8,
       ['all',
         ['==', ['slice', ['get', 'track_id'], 0, 2], 'G-'],
@@ -244,11 +258,12 @@ function App() {
       paint: {
         'circle-radius': 5,
         'circle-color': '#000000',  // 黑色填充
-        // 依路線設定邊線顏色：G 開頭 → 綠線, BL 開頭 → 藍線, O 開頭 → 橘線, 其餘 → 紅線
+        // 依路線設定邊線顏色：G 開頭 → 綠線, BL 開頭 → 藍線, BR 開頭 → 文湖線, O 開頭 → 橘線, 其餘 → 紅線
         'circle-stroke-color': [
           'case',
           ['==', ['slice', ['get', 'station_id'], 0, 1], 'G'], TRACK_COLORS.G,
           ['==', ['slice', ['get', 'station_id'], 0, 2], 'BL'], TRACK_COLORS.BL,
+          ['==', ['slice', ['get', 'station_id'], 0, 2], 'BR'], TRACK_COLORS.BR,
           ['==', ['slice', ['get', 'station_id'], 0, 1], 'O'], TRACK_COLORS.O,
           TRACK_COLORS.R
         ],
@@ -289,6 +304,10 @@ function App() {
       ['all',
         ['==', ['slice', ['get', 'station_id'], 0, 2], 'BL'],
         visibleLines.has('BL')
+      ], 1,
+      ['all',
+        ['==', ['slice', ['get', 'station_id'], 0, 2], 'BR'],
+        visibleLines.has('BR')
       ], 1,
       ['all',
         ['==', ['slice', ['get', 'station_id'], 0, 1], 'G'],
@@ -643,7 +662,7 @@ function App() {
           </div>
 
           {/* 橘線區塊 */}
-          <div>
+          <div style={{ marginBottom: 10 }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 4 }}>
               <div style={{ width: 20, height: 3, background: TRACK_COLORS.O, borderRadius: 2 }} />
               <span style={{ fontWeight: 500 }}>中和新蘆線</span>
@@ -655,6 +674,22 @@ function App() {
             <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginLeft: 8 }}>
               <div style={{ width: 8, height: 8, background: TRAIN_COLORS.O_1, borderRadius: '50%', border: '1px solid white' }} />
               <span style={{ color: '#ccc' }}>往迴龍/蘆洲</span>
+            </div>
+          </div>
+
+          {/* 文湖線區塊 */}
+          <div>
+            <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 4 }}>
+              <div style={{ width: 20, height: 3, background: TRACK_COLORS.BR, borderRadius: 2 }} />
+              <span style={{ fontWeight: 500 }}>文湖線</span>
+            </div>
+            <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 2, marginLeft: 8 }}>
+              <div style={{ width: 8, height: 8, background: TRAIN_COLORS.BR_0, borderRadius: '50%', border: '1px solid white' }} />
+              <span style={{ color: '#ccc' }}>往南港展覽館</span>
+            </div>
+            <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginLeft: 8 }}>
+              <div style={{ width: 8, height: 8, background: TRAIN_COLORS.BR_1, borderRadius: '50%', border: '1px solid white' }} />
+              <span style={{ color: '#ccc' }}>往動物園</span>
             </div>
           </div>
         </div>

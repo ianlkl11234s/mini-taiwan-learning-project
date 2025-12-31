@@ -1,0 +1,293 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "BR01",
+        "name_zh": "動物園",
+        "name_en": "Taipei Zoo"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [121.579501, 24.998205]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "BR02",
+        "name_zh": "木柵",
+        "name_en": "Muzha"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [121.573127, 24.99824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "BR03",
+        "name_zh": "萬芳社區",
+        "name_en": "Wanfang Community"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [121.568088, 24.99857]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "BR04",
+        "name_zh": "萬芳醫院",
+        "name_en": "Wanfang Hospital"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [121.558092, 24.99932]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "BR05",
+        "name_zh": "辛亥",
+        "name_en": "Xinhai"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [121.557046, 25.005455]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "BR06",
+        "name_zh": "麟光",
+        "name_en": "Linguang"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [121.558834, 25.018495]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "BR07",
+        "name_zh": "六張犁",
+        "name_en": "Liuzhangli"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [121.55302, 25.02381]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "BR08",
+        "name_zh": "科技大樓",
+        "name_en": "Technology Building"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [121.543462, 25.02612]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "BR09",
+        "name_zh": "大安",
+        "name_en": "Daan"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [121.54237, 25.033311]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "BR10",
+        "name_zh": "忠孝復興",
+        "name_en": "Zhongxiao Fuxing"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [121.543703, 25.041104]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "BR11",
+        "name_zh": "南京復興",
+        "name_en": "Nanjing Fuxing"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [121.544303, 25.052044]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "BR12",
+        "name_zh": "中山國中",
+        "name_en": "Zhongshan Junior High School"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [121.544215, 25.06085]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "BR13",
+        "name_zh": "松山機場",
+        "name_en": "Songshan Airport"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [121.55162, 25.063111]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "BR14",
+        "name_zh": "大直",
+        "name_en": "Dazhi"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [121.54679, 25.07943]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "BR15",
+        "name_zh": "劍南路",
+        "name_en": "Jiannan Rd."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [121.555582, 25.08483]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "BR16",
+        "name_zh": "西湖",
+        "name_en": "Xihu"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [121.567227, 25.08216]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "BR17",
+        "name_zh": "港墘",
+        "name_en": "Gangqian"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [121.57516, 25.08007]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "BR18",
+        "name_zh": "文德",
+        "name_en": "Wende"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [121.584973, 25.078567]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "BR19",
+        "name_zh": "內湖",
+        "name_en": "Neihu"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [121.594363, 25.083675]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "BR20",
+        "name_zh": "大湖公園",
+        "name_en": "Dahu Park"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [121.602214, 25.083805]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "BR21",
+        "name_zh": "葫洲",
+        "name_en": "Huzhou"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [121.607146, 25.07271]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "BR22",
+        "name_zh": "東湖",
+        "name_en": "Donghu"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [121.611535, 25.067455]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "BR23",
+        "name_zh": "南港軟體園區",
+        "name_en": "Nangang Software Park"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [121.61586, 25.059911]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "BR24",
+        "name_zh": "南港展覽館",
+        "name_en": "Taipei Nangang Exhibition Center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [121.616861, 25.054919]
+      }
+    }
+  ]
+}

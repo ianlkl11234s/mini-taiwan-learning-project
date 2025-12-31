@@ -225,8 +225,10 @@ export class Train3DLayer implements mapboxgl.CustomLayerInterface {
       mesh.position.set(position.x, position.y, TRAIN_HEIGHT / 2);
 
       // 計算旋轉（繞 Z 軸，因為 Z 是高度/垂直方向）
+      // 因為 transform 的 Y 軸有負號縮放，旋轉方向會被鏡像
+      // 需要取負值來補償
       const bearing = this.calculateBearing(train.trackId, train.progress);
-      mesh.rotation.z = THREE.MathUtils.degToRad(bearing);
+      mesh.rotation.z = -THREE.MathUtils.degToRad(bearing);
 
       // 停站時縮小
       const scale = train.status === 'stopped' ? 0.85 : 1.0;
@@ -254,6 +256,7 @@ export class Train3DLayer implements mapboxgl.CustomLayerInterface {
 
   /**
    * 根據軌道和進度計算行進方向
+   * 直接在 mesh 座標系中計算方向，避免座標轉換不一致的問題
    */
   private calculateBearing(trackId: string, progress: number): number {
     const track = this.tracks.get(trackId);
@@ -262,11 +265,13 @@ export class Train3DLayer implements mapboxgl.CustomLayerInterface {
     const coords = track.geometry.coordinates as [number, number][];
     if (coords.length < 2) return 0;
 
-    // 計算軌道總長度
+    // 計算軌道總長度（使用 mesh 座標）
+    const meshCoords = coords.map(c => this.lngLatToMeters(c[0], c[1]));
+
     let totalLength = 0;
-    for (let i = 0; i < coords.length - 1; i++) {
-      const dx = coords[i + 1][0] - coords[i][0];
-      const dy = coords[i + 1][1] - coords[i][1];
+    for (let i = 0; i < meshCoords.length - 1; i++) {
+      const dx = meshCoords[i + 1].x - meshCoords[i].x;
+      const dy = meshCoords[i + 1].y - meshCoords[i].y;
       totalLength += Math.sqrt(dx * dx + dy * dy);
     }
 
@@ -274,15 +279,17 @@ export class Train3DLayer implements mapboxgl.CustomLayerInterface {
     const targetDistance = totalLength * Math.min(0.99, Math.max(0.01, progress));
     let accumulated = 0;
 
-    for (let i = 0; i < coords.length - 1; i++) {
-      const dx = coords[i + 1][0] - coords[i][0];
-      const dy = coords[i + 1][1] - coords[i][1];
+    for (let i = 0; i < meshCoords.length - 1; i++) {
+      const dx = meshCoords[i + 1].x - meshCoords[i].x;
+      const dy = meshCoords[i + 1].y - meshCoords[i].y;
       const segmentLength = Math.sqrt(dx * dx + dy * dy);
 
-      if (accumulated + segmentLength >= targetDistance || i === coords.length - 2) {
-        // 計算方向角（經度是 X，緯度是 Y）
+      if (accumulated + segmentLength >= targetDistance || i === meshCoords.length - 2) {
+        // 在 mesh 座標系中計算方向角
+        // dx, dy 已經是正確的 mesh 座標差值
+        // 列車前方是 +X 方向，atan2(dy, dx) 給出從 +X 到方向向量的角度
         const angle = Math.atan2(dy, dx);
-        return THREE.MathUtils.radToDeg(angle) - 90;  // 調整為車頭朝向
+        return THREE.MathUtils.radToDeg(angle);
       }
 
       accumulated += segmentLength;

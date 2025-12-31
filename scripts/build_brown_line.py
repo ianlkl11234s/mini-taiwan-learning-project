@@ -34,9 +34,16 @@ PROGRESS_FILE = os.path.join(PROJECT_ROOT, "public/data/station_progress.json")
 # 線路設定
 LINE_COLOR = "#c48c31"
 
+# 轉乘站座標修正 - 使用軌道上的正確位置而非 TDX 共用座標
+# TDX 會將轉乘站設為同一座標，導致軌道彎曲至其他線路
+STATION_COORD_OVERRIDES = {
+    'BR09': [121.543596, 25.033311],  # 大安 - 軌道經度，避免彎向紅線
+    'BR11': [121.544034, 25.052044],  # 南京復興 - 軌道經度，避免彎向綠線
+}
 
-def parse_wkt_multilinestring(wkt: str) -> List[List[float]]:
-    """解析 WKT MULTILINESTRING 為座標陣列"""
+
+def parse_wkt_multilinestring(wkt: str) -> List[List[List[float]]]:
+    """解析 WKT MULTILINESTRING 為分段座標陣列（返回多個分段）"""
     # 移除 MULTILINESTRING(( 和 ))
     match = re.search(r'MULTILINESTRING\s*\(\s*\((.*)\)\s*\)', wkt, re.DOTALL)
     if not match:
@@ -45,20 +52,102 @@ def parse_wkt_multilinestring(wkt: str) -> List[List[float]]:
     content = match.group(1)
 
     # 分割多個線段 (以 ),( 分隔)
-    segments = re.split(r'\)\s*,\s*\(', content)
+    segment_strs = re.split(r'\)\s*,\s*\(', content)
 
-    all_coords = []
-    for segment in segments:
+    segments = []
+    for segment_str in segment_strs:
+        coords = []
         # 解析每個座標點
-        points = segment.strip().split(',')
+        points = segment_str.strip().split(',')
         for point in points:
             parts = point.strip().split()
             if len(parts) >= 2:
                 lon = float(parts[0])
                 lat = float(parts[1])
-                all_coords.append([lon, lat])
+                coords.append([lon, lat])
+        if coords:
+            segments.append(coords)
 
-    return all_coords
+    return segments
+
+
+def connect_segments_simple(segments: List[List[List[float]]]) -> List[List[float]]:
+    """
+    簡單連接所有分段（按端點連接）
+    """
+    if not segments:
+        return []
+
+    # 複製分段以避免修改原始資料
+    remaining = [seg[:] for seg in segments]
+
+    # 從第一個分段開始
+    result = remaining.pop(0)[:]
+
+    while remaining:
+        # 找到與當前結果最接近的分段
+        best_idx = -1
+        best_dist = float('inf')
+        should_reverse = False
+        connect_to_end = True  # True = 連接到 result 尾端, False = 連接到 result 開頭
+
+        current_start = result[0]
+        current_end = result[-1]
+
+        for i, seg in enumerate(remaining):
+            seg_start = seg[0]
+            seg_end = seg[-1]
+
+            # 檢查四種連接方式
+            # 1. result 尾端 -> seg 開頭
+            d1 = euclidean_distance(current_end, seg_start)
+            # 2. result 尾端 -> seg 尾端 (需反轉 seg)
+            d2 = euclidean_distance(current_end, seg_end)
+            # 3. result 開頭 -> seg 尾端
+            d3 = euclidean_distance(current_start, seg_end)
+            # 4. result 開頭 -> seg 開頭 (需反轉 seg)
+            d4 = euclidean_distance(current_start, seg_start)
+
+            min_d = min(d1, d2, d3, d4)
+
+            if min_d < best_dist:
+                best_dist = min_d
+                best_idx = i
+                if min_d == d1:
+                    should_reverse = False
+                    connect_to_end = True
+                elif min_d == d2:
+                    should_reverse = True
+                    connect_to_end = True
+                elif min_d == d3:
+                    should_reverse = False
+                    connect_to_end = False
+                else:  # d4
+                    should_reverse = True
+                    connect_to_end = False
+
+        if best_idx == -1:
+            break
+
+        seg = remaining.pop(best_idx)
+        if should_reverse:
+            seg = list(reversed(seg))
+
+        # 連接分段
+        if connect_to_end:
+            # 跳過重複的起點
+            if euclidean_distance(result[-1], seg[0]) < 0.0001:
+                result.extend(seg[1:])
+            else:
+                result.extend(seg)
+        else:
+            # 連接到開頭
+            if euclidean_distance(result[0], seg[-1]) < 0.0001:
+                result = seg[:-1] + result
+            else:
+                result = seg + result
+
+    return result
 
 
 def euclidean_distance(p1: List[float], p2: List[float]) -> float:
@@ -160,6 +249,12 @@ def calibrate_track(track_coords: List[List[float]], stations: List[Dict], stati
 
         coord = station_coords[station_id]
 
+        # 檢查是否需要覆蓋座標（轉乘站修正）
+        if station_id in STATION_COORD_OVERRIDES:
+            original = coord[:]
+            coord = STATION_COORD_OVERRIDES[station_id]
+            print(f"  {station_id} 座標覆蓋: {original} → {coord}")
+
         # 檢查是否已經存在
         found = False
         for tc in calibrated:
@@ -194,6 +289,10 @@ def calculate_progress(track_coords: List[List[float]], stations: List[Dict], st
             continue
 
         coord = station_coords[station_id]
+
+        # 檢查是否需要覆蓋座標（轉乘站修正）
+        if station_id in STATION_COORD_OVERRIDES:
+            coord = STATION_COORD_OVERRIDES[station_id]
 
         # 找到車站在軌道中的位置
         cumulative = 0
@@ -400,10 +499,10 @@ def main():
         shape_data = json.load(f)
 
     wkt = shape_data[0]['Geometry']
-    raw_coords = parse_wkt_multilinestring(wkt)
-    print(f"  原始座標點數: {len(raw_coords)}")
-    print(f"  起點座標: {raw_coords[0]}")
-    print(f"  終點座標: {raw_coords[-1]}")
+    segments = parse_wkt_multilinestring(wkt)
+    print(f"  WKT 分段數: {len(segments)}")
+    for i, seg in enumerate(segments):
+        print(f"    分段 {i}: {len(seg)} 點, 起點 {seg[0]}, 終點 {seg[-1]}")
 
     # ========== 載入車站資料 ==========
     print("\n[載入] 車站資料...")
@@ -426,24 +525,31 @@ def main():
     station_order_0 = [f"BR{i:02d}" for i in range(1, 25)]  # BR01→BR24 (往南港展覽館)
     station_order_1 = list(reversed(station_order_0))       # BR24→BR01 (往動物園)
 
-    # 判斷 WKT 方向
     # BR01 (動物園): 121.579501, 24.998205
     # BR24 (南港展覽館): 121.616861, 25.054919
     br01_coord = [121.579501, 24.998205]
     br24_coord = [121.616861, 25.054919]
 
+    # 簡單連接分段
+    print("\n[連接] 連接分段...")
+    raw_coords = connect_segments_simple(segments)
+    print(f"  連接後座標點數: {len(raw_coords)}")
+
+    # 判斷連接後的方向
     dist_start_to_br01 = euclidean_distance(raw_coords[0], br01_coord)
     dist_start_to_br24 = euclidean_distance(raw_coords[0], br24_coord)
 
-    print(f"\n  WKT 起點到 BR01 距離: {dist_start_to_br01:.6f}")
-    print(f"  WKT 起點到 BR24 距離: {dist_start_to_br24:.6f}")
+    print(f"  起點座標: {raw_coords[0]}")
+    print(f"  終點座標: {raw_coords[-1]}")
+    print(f"  起點到 BR01 距離: {dist_start_to_br01:.6f}")
+    print(f"  起點到 BR24 距離: {dist_start_to_br24:.6f}")
 
     if dist_start_to_br24 < dist_start_to_br01:
-        print("  WKT 方向: BR24→BR01 (需反轉給 BR-1-0)")
+        print("  連接後方向: BR24→BR01 (需反轉給 BR-1-0)")
         coords_for_dir0 = list(reversed(raw_coords))  # BR01→BR24
         coords_for_dir1 = raw_coords[:]                # BR24→BR01
     else:
-        print("  WKT 方向: BR01→BR24")
+        print("  連接後方向: BR01→BR24")
         coords_for_dir0 = raw_coords[:]
         coords_for_dir1 = list(reversed(raw_coords))
 

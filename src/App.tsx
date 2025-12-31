@@ -115,7 +115,7 @@ function App() {
   const [showInfoModal, setShowInfoModal] = useState(false);
 
   // 3D 模式狀態
-  const [use3DMode, setUse3DMode] = useState(true);
+  const [use3DMode, setUse3DMode] = useState(false);
   const train3DLayerRef = useRef<Train3DLayer | null>(null);
 
   // 路線篩選狀態

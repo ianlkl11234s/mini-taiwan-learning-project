@@ -32,10 +32,10 @@ function getLineId(trackId: string): string {
 // 參考點：台北市中心
 const MODEL_ORIGIN: [number, number] = [121.52, 25.02];
 
-// 列車尺寸（公尺）- 放大 3 倍以便在地圖上清楚可見
-const TRAIN_LENGTH = 120;  // 長度 (原 40 * 3)
-const TRAIN_WIDTH = 30;    // 寬度 (原 10 * 3)
-const TRAIN_HEIGHT = 45;   // 高度 (原 15 * 3)
+// 列車尺寸（公尺）- 放大以便在地圖上清楚可見
+const TRAIN_LENGTH = 140;  // 長度 (前後方向)
+const TRAIN_WIDTH = 60;    // 寬度 (左右方向)
+const TRAIN_HEIGHT = 60;   // 高度 (垂直方向)
 
 /**
  * Train3DLayer - Mapbox Custom Layer for 3D train rendering

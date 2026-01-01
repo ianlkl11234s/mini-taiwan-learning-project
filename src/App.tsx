@@ -7,6 +7,7 @@ import { TrainEngine, type Train } from './engines/TrainEngine';
 import { TimeControl } from './components/TimeControl';
 import { LineFilter } from './components/LineFilter';
 import { TrainHistogram } from './components/TrainHistogram';
+import { TrainInfoPanel } from './components/TrainInfoPanel';
 import { useTrainCountHistogram } from './hooks/useTrainCountHistogram';
 import { Train3DLayer } from './layers/Train3DLayer';
 
@@ -118,6 +119,10 @@ function App() {
   const [use3DMode, setUse3DMode] = useState(false);
   const train3DLayerRef = useRef<Train3DLayer | null>(null);
 
+  // 列車選擇狀態
+  const [selectedTrainId, setSelectedTrainId] = useState<string | null>(null);
+  const [isFollowing, setIsFollowing] = useState(false);
+
   // 路線篩選狀態
   const [visibleLines, setVisibleLines] = useState<Set<string>>(
     new Set(['R', 'BL', 'G', 'O', 'BR', 'K', 'V', 'A', 'Y'])
@@ -176,6 +181,78 @@ function App() {
     }
     return coords;
   }, [stations]);
+
+  // 建立車站名稱索引（用於資訊面板顯示）
+  const stationNames = useMemo(() => {
+    const names = new Map<string, string>();
+    if (stations) {
+      for (const feature of stations.features) {
+        const stationId = feature.properties.station_id;
+        const stationName = feature.properties.name_zh;
+        names.set(stationId, stationName);
+      }
+    }
+    return names;
+  }, [stations]);
+
+  // 取得選中的列車資料
+  const selectedTrain = useMemo(() => {
+    if (!selectedTrainId) return null;
+    return filteredTrains.find(t => t.trainId === selectedTrainId) || null;
+  }, [selectedTrainId, filteredTrains]);
+
+  // 選擇列車
+  const handleSelectTrain = useCallback((trainId: string) => {
+    setSelectedTrainId(trainId);
+    setIsFollowing(true); // 選中時自動開啟跟隨
+  }, []);
+
+  // 取消選擇
+  const handleDeselectTrain = useCallback(() => {
+    setSelectedTrainId(null);
+    setIsFollowing(false);
+  }, []);
+
+  // 當選中的列車消失時，自動取消選擇
+  useEffect(() => {
+    if (selectedTrainId && !selectedTrain) {
+      handleDeselectTrain();
+    }
+  }, [selectedTrainId, selectedTrain, handleDeselectTrain]);
+
+  // 視線跟隨：當 isFollowing 且有選中列車時，地圖中心跟隨列車
+  useEffect(() => {
+    if (!map.current || !mapLoaded) return;
+    if (!isFollowing || !selectedTrain) return;
+
+    // 平滑移動到列車位置
+    map.current.easeTo({
+      center: selectedTrain.position,
+      duration: 300,
+    });
+  }, [mapLoaded, isFollowing, selectedTrain]);
+
+  // 偵測使用者手動操作地圖時取消跟隨
+  useEffect(() => {
+    if (!map.current || !mapLoaded) return;
+
+    const handleUserInteraction = () => {
+      if (isFollowing) {
+        setIsFollowing(false);
+      }
+    };
+
+    // 監聽使用者拖曳或縮放操作
+    map.current.on('dragstart', handleUserInteraction);
+    map.current.on('zoomstart', handleUserInteraction);
+
+    return () => {
+      if (map.current) {
+        map.current.off('dragstart', handleUserInteraction);
+        map.current.off('zoomstart', handleUserInteraction);
+      }
+    };
+  }, [mapLoaded, isFollowing]);
 
   // 初始化地圖 - 當 loading 完成後才初始化
   useEffect(() => {
@@ -534,6 +611,7 @@ function App() {
       let marker = trainMarkers.current.get(train.trainId);
       const isStopped = train.status === 'stopped';
       const isColliding = train.isColliding;
+      const isSelected = train.trainId === selectedTrainId;
       const baseColor = getTrainColor(train.trackId);  // 依路線和方向區分顏色
       // 碰撞時使用警示色
       const displayColor = isColliding ? '#ffcc00' : baseColor;
@@ -542,6 +620,15 @@ function App() {
         const el = document.createElement('div');
         el.className = 'train-marker';
         el.dataset.trainId = train.trainId;
+
+        // 點擊事件：選取列車
+        el.addEventListener('click', (e) => {
+          e.stopPropagation();
+          const trainId = el.dataset.trainId;
+          if (trainId) {
+            handleSelectTrain(trainId);
+          }
+        });
 
         marker = new mapboxgl.Marker({
           element: el,
@@ -558,14 +645,26 @@ function App() {
 
       // 更新樣式 (停站 vs 運行 vs 碰撞)
       const el = marker.getElement();
-      // 基礎樣式：pointer-events: none 防止 hover 干擾定位
+      // 基礎樣式：啟用點擊、顯示指標手勢
       const baseStyles = `
-        pointer-events: none;
+        pointer-events: auto;
+        cursor: pointer;
         border-radius: 50%;
         transition: width 0.3s ease, height 0.3s ease, box-shadow 0.3s ease;
       `;
 
-      if (isColliding) {
+      if (isSelected) {
+        // 選中狀態：顯示粗白框
+        el.style.cssText = `
+          ${baseStyles}
+          width: 18px;
+          height: 18px;
+          background-color: ${displayColor};
+          border: 4px solid #ffffff;
+          box-shadow: 0 0 16px rgba(255,255,255,0.8), 0 0 24px ${displayColor};
+          z-index: 10;
+        `;
+      } else if (isColliding) {
         // 碰撞中：較大、有警示效果
         el.style.cssText = `
           ${baseStyles}
@@ -597,7 +696,7 @@ function App() {
         `;
       }
     }
-  }, [mapLoaded, filteredTrains, use3DMode]);
+  }, [mapLoaded, filteredTrains, use3DMode, handleSelectTrain, selectedTrainId]);
 
   // 控制處理器
   const handleTogglePlay = useCallback(() => {
@@ -958,6 +1057,15 @@ function App() {
         visibleLines={visibleLines}
         onToggleLine={handleToggleLine}
       />
+
+      {/* 列車資訊面板 */}
+      {selectedTrain && (
+        <TrainInfoPanel
+          train={selectedTrain}
+          stationNames={stationNames}
+          onClose={handleDeselectTrain}
+        />
+      )}
 
       {/* 列車數量直方圖 - 控制面板右上方漂浮 */}
       {timeEngineRef.current && (

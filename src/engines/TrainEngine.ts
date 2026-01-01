@@ -23,6 +23,13 @@ export interface Train {
   segmentProgress?: number; // 當前區段進度 0-1
   isColliding?: boolean; // 是否與其他列車碰撞
   collisionOffset?: [number, number]; // 碰撞時的視覺偏移
+
+  // === 列車資訊面板用欄位 ===
+  originStation: string; // 起點站 ID
+  destinationStation: string; // 終點站 ID
+  previousStation?: string; // 前一站 ID
+  previousDepartureTime?: string; // 前一站發車時間 "HH:MM"
+  nextArrivalTime?: string; // 下一站到達時間 "HH:MM"
 }
 
 // 車站在軌道上的實際進度 (0-1)
@@ -108,6 +115,20 @@ function timeToSeconds(timeStr: string): number {
   const parts = timeStr.split(':').map(Number);
   const standardSeconds = parts[0] * 3600 + parts[1] * 60 + (parts[2] || 0);
   return toExtendedSeconds(standardSeconds);
+}
+
+/**
+ * 將秒數轉換為 "HH:MM" 格式字串
+ */
+function secondsToTimeStr(seconds: number): string {
+  // 處理延長日秒數（超過 24 小時的部分）
+  let normalizedSeconds = seconds;
+  if (normalizedSeconds >= 24 * 3600) {
+    normalizedSeconds -= 24 * 3600;
+  }
+  const hours = Math.floor(normalizedSeconds / 3600);
+  const minutes = Math.floor((normalizedSeconds % 3600) / 60);
+  return `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}`;
 }
 
 /**
@@ -531,6 +552,33 @@ export class TrainEngine {
           ? Math.max(0, Math.min(1, elapsedTime / totalTravelTime))
           : 0;
 
+        // 計算列車資訊面板所需資料
+        const stationList = departure.stations;
+        const originStation = stationList[0]?.station_id || '';
+        const destinationStation = stationList[stationList.length - 1]?.station_id || '';
+
+        // 前一站資訊（如果有的話）
+        let previousStation: string | undefined;
+        let previousDepartureTime: string | undefined;
+        if (segment.stationIndex > 0) {
+          const prevIdx = segment.stationIndex - 1;
+          previousStation = stationList[prevIdx]?.station_id;
+          const prevDepartureSeconds = stationList[prevIdx]?.departure;
+          if (prevDepartureSeconds !== undefined) {
+            // 轉換為絕對時間
+            previousDepartureTime = secondsToTimeStr(departureSeconds + prevDepartureSeconds);
+          }
+        }
+
+        // 下一站到達時間
+        let nextArrivalTime: string | undefined;
+        if (segment.nextStation && segment.nextStationIndex < stationList.length) {
+          const nextArrivalSeconds = stationList[segment.nextStationIndex]?.arrival;
+          if (nextArrivalSeconds !== undefined) {
+            nextArrivalTime = secondsToTimeStr(departureSeconds + nextArrivalSeconds);
+          }
+        }
+
         const train: Train = {
           trainId: departure.train_id,
           trackId,
@@ -542,6 +590,12 @@ export class TrainEngine {
           currentStation: segment.currentStation,
           nextStation: segment.nextStation,
           segmentProgress: segment.segmentProgress,
+          // 列車資訊面板用欄位
+          originStation,
+          destinationStation,
+          previousStation,
+          previousDepartureTime,
+          nextArrivalTime,
         };
 
         this.activeTrains.set(train.trainId, train);

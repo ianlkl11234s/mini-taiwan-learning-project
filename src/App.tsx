@@ -128,6 +128,7 @@ function App() {
   // 列車選擇狀態
   const [selectedTrainId, setSelectedTrainId] = useState<string | null>(null);
   const [isFollowing, setIsFollowing] = useState(false);
+  const [interactionVersion, setInteractionVersion] = useState(0); // 用於觸發 effect 重新執行
   const isUserInteracting = useRef(false); // 追蹤使用者是否正在操作地圖
 
   // 路線篩選狀態（MRT 線路）
@@ -253,41 +254,31 @@ function App() {
     // 使用者正在操作時不更新位置，讓使用者可以自由旋轉視角
     if (isUserInteracting.current && use3DMode) return;
 
-    // 計算偏移後的中心點
-    // 3D 模式下，因為有傾斜角度，需要讓中心點往南偏移，讓列車顯示在畫面中央偏上
     const [lng, lat] = selectedTrain.position;
-    let targetCenter: [number, number] = [lng, lat];
 
     if (use3DMode) {
-      // 3D 模式：根據 zoom 和 pitch 計算合適的緯度偏移
-      // zoom 越大偏移越小，pitch 越大偏移越大
-      const currentZoom = map.current.getZoom();
       const currentPitch = map.current.getPitch();
       const currentBearing = map.current.getBearing();
 
-      // 基礎偏移量：在 zoom 14、pitch 45 時約偏移 0.008 度（約 900 公尺）
-      const baseOffset = 0.008;
-      const zoomFactor = Math.pow(2, 14 - currentZoom); // zoom 越大，偏移越小
-      const pitchFactor = currentPitch / 45; // pitch 越大，偏移越大
+      // 使用 padding 來補償 3D 視角的偏移（螢幕空間，不受 bearing 影響）
+      // pitch 越大，底部 padding 越大，讓列車顯示在畫面中央
+      const bottomPadding = Math.round(currentPitch * 3); // pitch 45 → padding 135
 
-      const latOffset = baseOffset * zoomFactor * pitchFactor;
-      targetCenter = [lng, lat - latOffset]; // 中心往南偏移，讓列車顯示在上方
-
-      // 3D 模式：使用 jumpTo 並明確保留當前的 bearing 和 pitch
-      // 這樣不會干擾使用者的旋轉操作
-      map.current.jumpTo({
-        center: targetCenter,
+      map.current.easeTo({
+        center: [lng, lat],
+        padding: { top: 0, bottom: bottomPadding, left: 0, right: 0 },
         bearing: currentBearing,
         pitch: currentPitch,
+        duration: 100, // 快速但平滑
       });
     } else {
       // 2D 模式：使用平滑動畫
       map.current.easeTo({
-        center: targetCenter,
+        center: [lng, lat],
         duration: 300,
       });
     }
-  }, [mapLoaded, isFollowing, selectedTrain, use3DMode]);
+  }, [mapLoaded, isFollowing, selectedTrain, use3DMode, interactionVersion]);
 
   // 偵測使用者地圖操作
   // 2D 模式：拖曳取消跟隨
@@ -306,6 +297,10 @@ function App() {
 
     const handleInteractionEnd = () => {
       isUserInteracting.current = false;
+      // 在 3D 跟隨模式下，操作結束後觸發重新置中
+      if (use3DMode && isFollowing) {
+        setInteractionVersion(v => v + 1);
+      }
     };
 
     // 監聽各種使用者操作事件

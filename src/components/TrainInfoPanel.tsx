@@ -35,7 +35,7 @@ export function TrainInfoPanel({ train, stationNames, onClose }: TrainInfoPanelP
     <div
       style={{
         position: 'absolute',
-        top: 100,
+        top: 420,
         left: 20,
         zIndex: 20,
         background: 'rgba(0, 0, 0, 0.85)',
@@ -113,14 +113,6 @@ export function TrainInfoPanel({ train, stationNames, onClose }: TrainInfoPanelP
         <span style={{ fontWeight: 500 }}>{originName}</span>
         <span style={{ color: '#888' }}>→</span>
         <span style={{ fontWeight: 500 }}>{destinationName}</span>
-      </div>
-
-      {/* 列車編號 */}
-      <div style={{ marginBottom: 10 }}>
-        <span style={{ color: '#888' }}>列車編號：</span>
-        <span style={{ fontWeight: 500, fontFamily: 'monospace' }}>
-          {train.trainId}
-        </span>
       </div>
 
       {/* 前一站 */}

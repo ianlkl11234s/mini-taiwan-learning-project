@@ -310,7 +310,8 @@ export class Train3DLayer implements mapboxgl.CustomLayerInterface {
         group.userData.trainId = train.trainId;
 
         // 建立列車本體
-        const mesh = new THREE.Mesh(this.geometry, material.clone());
+        // 效能優化：直接共用材質，不再為每個列車克隆材質
+        const mesh = new THREE.Mesh(this.geometry, material);
         mesh.name = 'body';
         group.add(mesh);
 
@@ -516,12 +517,7 @@ export class Train3DLayer implements mapboxgl.CustomLayerInterface {
     }
 
     for (const group of this.trainMeshes.values()) {
-      // 清理群組內的子材質
-      group.traverse((child) => {
-        if (child instanceof THREE.Mesh) {
-          (child.material as THREE.Material).dispose();
-        }
-      });
+      // 效能優化：材質已共用，不需要在此處 dispose（會在下方統一處理）
       this.scene.remove(group);
     }
     this.trainMeshes.clear();

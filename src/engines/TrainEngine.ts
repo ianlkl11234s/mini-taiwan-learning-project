@@ -81,6 +81,8 @@ const SHARED_TRACK_SEGMENTS: Record<string, string[]> = {
 const COLLISION_THRESHOLD = 0.0005;
 // 視覺偏移量 (經緯度，約 30 公尺垂直於軌道)
 const COLLISION_OFFSET = 0.0003;
+// 終站停留時間（秒）- 列車抵達終點後繼續顯示的時間
+const TERMINAL_DWELL_TIME = 30;
 
 /**
  * 將標準時間秒數 (0-86399) 轉換為延長日秒數
@@ -470,17 +472,31 @@ export class TrainEngine {
         // 計算已過時間 (兩者都是延長日秒數，可以正確比較)
         const elapsedTime = extendedCurrentTime - departureSeconds;
 
-        // 快速檢查：跳過尚未發車或已抵達的列車
-        if (elapsedTime < -60 || elapsedTime > totalTravelTime + 60) {
+        // 快速檢查：跳過尚未發車或已完全離開的列車
+        // 加入終站停留時間，讓列車在終點站多停留一段時間
+        if (elapsedTime < -60 || elapsedTime > totalTravelTime + TERMINAL_DWELL_TIME + 60) {
           continue;
         }
 
         // 使用分段插值找到當前狀態
         const segment = this.findCurrentSegment(departure.stations, elapsedTime);
 
-        // 只顯示運行中或停站中的列車
-        if (segment.status === 'waiting' || segment.status === 'arrived') {
+        // 跳過尚未發車的列車
+        if (segment.status === 'waiting') {
           continue;
+        }
+
+        // 處理已抵達終點的列車：在終站停留時間內顯示為停站狀態
+        let displayStatus = segment.status;
+        if (segment.status === 'arrived') {
+          // 計算抵達終點後經過的時間
+          const timeAfterArrival = elapsedTime - totalTravelTime;
+          if (timeAfterArrival > TERMINAL_DWELL_TIME) {
+            // 超過終站停留時間，不再顯示
+            continue;
+          }
+          // 在終站停留期間，顯示為停站狀態
+          displayStatus = 'stopped';
         }
 
         // 計算位置 (使用實際車站進度)
@@ -488,7 +504,7 @@ export class TrainEngine {
         const currentStationId = departure.stations[segment.stationIndex]?.station_id;
         const nextStationId = departure.stations[segment.nextStationIndex]?.station_id;
 
-        if (segment.status === 'stopped') {
+        if (displayStatus === 'stopped') {
           // 停站中：位置固定在車站 (使用實際進度)
           const stationProg = currentStationId
             ? this.getStationProgress(trackId, currentStationId, segment.stationIndex, totalStations)
@@ -520,7 +536,7 @@ export class TrainEngine {
           trackId,
           departureTime: departureSeconds,
           totalTravelTime,
-          status: segment.status,
+          status: displayStatus,
           progress: overallProgress,
           position,
           currentStation: segment.currentStation,

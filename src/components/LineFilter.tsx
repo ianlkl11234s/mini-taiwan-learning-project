@@ -36,7 +36,7 @@ export function LineFilter({
   mkState,
   onMKStateChange,
 }: LineFilterProps) {
-  const [expanded, setExpanded] = useState<ExpandedCategory>('mrt');
+  const [expanded, setExpanded] = useState<ExpandedCategory>(null);
 
   const handleCategoryClick = (category: ExpandedCategory) => {
     // 如果點擊已展開的分類，則收起；否則展開該分類

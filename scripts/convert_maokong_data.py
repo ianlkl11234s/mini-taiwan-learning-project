@@ -24,7 +24,7 @@ SCHEDULES_DIR = OUTPUT_DIR / "schedules"
 # Maokong Gondola configuration
 MK_CONFIG = {
     "line_id": "MK",
-    "color": "#6B8E23",  # Olive green (mountain theme)
+    "color": "#06b8e6",  # Maokong Gondola blue
     "route_id": "MK-1",
     "travel_time_minutes": 30,
     "dwell_time_seconds": 30,  # Gondola station time is shorter

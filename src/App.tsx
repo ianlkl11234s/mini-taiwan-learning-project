@@ -26,6 +26,7 @@ const TRACK_COLORS = {
   K: '#8cc540',   // 安坑輕軌（草綠色）
   A: '#8246af',   // 機場捷運（紫色）
   Y: '#fedb00',   // 環狀線（黃色）
+  MK: '#06b8e6',  // 貓空纜車（藍色）
 };
 
 // 列車顏色（依路線與方向區分）
@@ -341,6 +342,9 @@ function App() {
     if (!map.current || !mapLoaded || !tracks) return;
 
     if (map.current.getSource('tracks')) {
+      if (map.current.getLayer('tracks-line-mk')) {
+        map.current.removeLayer('tracks-line-mk');
+      }
       map.current.removeLayer('tracks-line');
       map.current.removeSource('tracks');
     }
@@ -354,6 +358,7 @@ function App() {
       id: 'tracks-line',
       type: 'line',
       source: 'tracks',
+      filter: ['!=', ['get', 'line_id'], 'MK'],  // 排除貓空纜車（使用虛線圖層）
       layout: {
         'line-join': 'round',
         'line-cap': 'round',
@@ -388,6 +393,24 @@ function App() {
           ['==', ['slice', ['get', 'track_id'], 0, 2], 'Y-'], 0.8,   // 所有 Y 線軌道可見 (環狀線)
           0.0 // 其他軌道透明
         ],
+      },
+    });
+
+    // 貓空纜車專用圖層（虛線樣式）
+    map.current.addLayer({
+      id: 'tracks-line-mk',
+      type: 'line',
+      source: 'tracks',
+      filter: ['==', ['get', 'line_id'], 'MK'],  // 只顯示貓空纜車
+      layout: {
+        'line-join': 'round',
+        'line-cap': 'round',
+      },
+      paint: {
+        'line-color': TRACK_COLORS.MK,
+        'line-width': 4,
+        'line-opacity': 0.8,
+        'line-dasharray': [2, 2],  // 虛線樣式
       },
     });
   }, [mapLoaded, tracks]);
@@ -470,12 +493,15 @@ function App() {
         ['==', ['slice', ['get', 'track_id'], 0, 2], 'Y-'],
         visibleLines.has('Y')
       ], 0.8,
-      ['all',
-        ['==', ['slice', ['get', 'track_id'], 0, 3], 'MK-'],
-        visibleLines.has('MK')
-      ], 0.8,
       0.0
     ]);
+
+    // 貓空纜車圖層可見性（獨立控制）
+    if (map.current.getLayer('tracks-line-mk')) {
+      map.current.setPaintProperty('tracks-line-mk', 'line-opacity',
+        visibleLines.has('MK') ? 0.8 : 0.0
+      );
+    }
   }, [mapLoaded, visibleLines]);
 
   // 載入車站圖層
@@ -503,6 +529,7 @@ function App() {
         // 依路線設定邊線顏色：K 開頭 → 安坑輕軌, V 開頭 → 淡海輕軌, G 開頭 → 綠線, BL 開頭 → 藍線, BR 開頭 → 文湖線, O 開頭 → 橘線, A 開頭 → 機場捷運, Y 開頭 → 環狀線, 其餘 → 紅線
         'circle-stroke-color': [
           'case',
+          ['==', ['slice', ['get', 'station_id'], 0, 2], 'MK'], TRACK_COLORS.MK, // 貓空纜車（須在 K 之前檢查）
           ['==', ['slice', ['get', 'station_id'], 0, 1], 'K'], TRACK_COLORS.K,
           ['==', ['slice', ['get', 'station_id'], 0, 1], 'V'], TRACK_COLORS.V,
           ['==', ['slice', ['get', 'station_id'], 0, 1], 'G'], TRACK_COLORS.G,

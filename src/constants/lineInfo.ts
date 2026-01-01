@@ -72,7 +72,7 @@ export const LINE_COLORS: Record<string, string> = {
   V: '#a4ce4e',
   A: '#8246af',
   Y: '#fedb00',
-  MK: '#6B8E23',  // 橄欖綠（山林主題）
+  MK: '#06b8e6',  // 貓空纜車藍
 };
 
 /**

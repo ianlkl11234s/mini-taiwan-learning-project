@@ -78,10 +78,34 @@ export class Train3DLayer implements mapboxgl.CustomLayerInterface {
   private geometry: THREE.BoxGeometry | null = null;
   private materials: Map<string, THREE.MeshStandardMaterial> = new Map();
 
+  // Raycasting 相關
+  private raycaster: THREE.Raycaster = new THREE.Raycaster();
+  private mouse: THREE.Vector2 = new THREE.Vector2();
+
+  // 選中的列車 ID
+  private selectedTrainId: string | null = null;
+
+  // 選中回呼函數
+  private onSelectCallback: ((trainId: string) => void) | null = null;
+
+  // 選中邊框材質
+  private outlineMaterial: THREE.LineBasicMaterial | null = null;
+  private outlineGeometry: THREE.EdgesGeometry | null = null;
+
   constructor(tracks?: Map<string, Track>) {
     if (tracks) {
       this.tracks = tracks;
     }
+  }
+
+  // 設定選中回呼
+  setOnSelect(callback: (trainId: string) => void): void {
+    this.onSelectCallback = callback;
+  }
+
+  // 設定選中的列車
+  setSelectedTrainId(trainId: string | null): void {
+    this.selectedTrainId = trainId;
   }
 
   setTracks(tracks: Map<string, Track>): void {
@@ -119,6 +143,13 @@ export class Train3DLayer implements mapboxgl.CustomLayerInterface {
     // 建立共用幾何體
     this.geometry = new THREE.BoxGeometry(TRAIN_LENGTH, TRAIN_WIDTH, TRAIN_HEIGHT);
 
+    // 建立選中邊框的幾何體和材質
+    this.outlineGeometry = new THREE.EdgesGeometry(this.geometry);
+    this.outlineMaterial = new THREE.LineBasicMaterial({
+      color: 0xffffff,
+      linewidth: 2,  // 注意：WebGL 只支援 linewidth=1，但保留設定
+    });
+
     // 建立各路線的材質（使用 Standard 材質，支援發光效果）
     for (const [lineId, color] of Object.entries(LINE_COLORS)) {
       const material = new THREE.MeshStandardMaterial({
@@ -130,6 +161,53 @@ export class Train3DLayer implements mapboxgl.CustomLayerInterface {
       });
       this.materials.set(lineId, material);
     }
+
+    // 點擊事件處理
+    const handleClick = (event: MouseEvent) => {
+      if (!this.map || !this.renderer) return;
+
+      const canvas = this.map.getCanvas();
+      const rect = canvas.getBoundingClientRect();
+
+      // 計算標準化設備座標 (-1 到 +1)
+      this.mouse.x = ((event.clientX - rect.left) / rect.width) * 2 - 1;
+      this.mouse.y = -((event.clientY - rect.top) / rect.height) * 2 + 1;
+
+      // 執行 raycasting
+      this.raycaster.setFromCamera(this.mouse, this.camera);
+
+      // 收集所有列車的 mesh
+      const meshes: THREE.Mesh[] = [];
+      for (const group of this.trainMeshes.values()) {
+        const body = group.getObjectByName('body') as THREE.Mesh;
+        if (body) {
+          meshes.push(body);
+        }
+      }
+
+      const intersects = this.raycaster.intersectObjects(meshes);
+
+      if (intersects.length > 0) {
+        // 找到被點擊的列車
+        const clickedMesh = intersects[0].object;
+        const clickedGroup = clickedMesh.parent as THREE.Group;
+
+        // 從 trainMeshes 找到對應的 trainId
+        for (const [trainId, group] of this.trainMeshes) {
+          if (group === clickedGroup) {
+            if (this.onSelectCallback) {
+              this.onSelectCallback(trainId);
+            }
+            break;
+          }
+        }
+      }
+    };
+
+    map.getCanvas().addEventListener('click', handleClick);
+
+    // 儲存 handler 以便移除
+    (this as unknown as { _clickHandler: (e: MouseEvent) => void })._clickHandler = handleClick;
 
     // 加入光源
     const ambientLight = new THREE.AmbientLight(0xffffff, 0.8);
@@ -222,6 +300,7 @@ export class Train3DLayer implements mapboxgl.CustomLayerInterface {
       if (!group) {
         // 建立新的列車群組
         group = new THREE.Group();
+        group.userData.trainId = train.trainId;
 
         // 建立列車本體
         const mesh = new THREE.Mesh(this.geometry, material.clone());
@@ -230,6 +309,21 @@ export class Train3DLayer implements mapboxgl.CustomLayerInterface {
 
         this.trainMeshes.set(train.trainId, group);
         this.scene.add(group);
+      }
+
+      // 處理選中狀態的邊框
+      const isSelected = train.trainId === this.selectedTrainId;
+      let outline = group.getObjectByName('outline') as THREE.LineSegments | undefined;
+
+      if (isSelected && !outline && this.outlineGeometry && this.outlineMaterial) {
+        // 新增白色邊框
+        outline = new THREE.LineSegments(this.outlineGeometry, this.outlineMaterial);
+        outline.name = 'outline';
+        outline.scale.set(1.1, 1.1, 1.1);  // 稍微放大以包覆本體
+        group.add(outline);
+      } else if (!isSelected && outline) {
+        // 移除邊框
+        group.remove(outline);
       }
 
       // 計算位置（相對於 MODEL_ORIGIN，單位為公尺）
@@ -406,6 +500,14 @@ export class Train3DLayer implements mapboxgl.CustomLayerInterface {
   }
 
   onRemove(): void {
+    // 移除點擊事件監聽
+    if (this.map) {
+      const handler = (this as unknown as { _clickHandler: (e: MouseEvent) => void })._clickHandler;
+      if (handler) {
+        this.map.getCanvas().removeEventListener('click', handler);
+      }
+    }
+
     for (const group of this.trainMeshes.values()) {
       // 清理群組內的子材質
       group.traverse((child) => {
@@ -418,6 +520,9 @@ export class Train3DLayer implements mapboxgl.CustomLayerInterface {
     this.trainMeshes.clear();
 
     if (this.geometry) this.geometry.dispose();
+    if (this.outlineGeometry) this.outlineGeometry.dispose();
+    if (this.outlineMaterial) this.outlineMaterial.dispose();
+
     for (const material of this.materials.values()) {
       material.dispose();
     }

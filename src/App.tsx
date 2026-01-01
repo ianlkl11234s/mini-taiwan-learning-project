@@ -348,6 +348,7 @@ function App() {
     // 建立 3D 圖層
     const layer = new Train3DLayer(trackMap);
     layer.setStations(stationCoordinates);
+    layer.setOnSelect(handleSelectTrain);
     train3DLayerRef.current = layer;
 
     // 加入地圖
@@ -359,13 +360,19 @@ function App() {
       }
       train3DLayerRef.current = null;
     };
-  }, [mapLoaded, trackMap, stationCoordinates, use3DMode]);
+  }, [mapLoaded, trackMap, stationCoordinates, use3DMode, handleSelectTrain]);
 
   // 更新 3D 圖層列車資料
   useEffect(() => {
     if (!train3DLayerRef.current || !use3DMode) return;
     train3DLayerRef.current.updateTrains(filteredTrains);
   }, [filteredTrains, use3DMode]);
+
+  // 更新 3D 圖層選中狀態
+  useEffect(() => {
+    if (!train3DLayerRef.current || !use3DMode) return;
+    train3DLayerRef.current.setSelectedTrainId(selectedTrainId);
+  }, [selectedTrainId, use3DMode]);
 
   // 更新軌道可見性（當 visibleLines 變化時）
   useEffect(() => {

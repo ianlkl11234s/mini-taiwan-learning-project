@@ -146,7 +146,7 @@ function App() {
   // 地圖主題模式（日夜切換）- 預設使用 dark 樣式
   const [mapTheme, setMapTheme] = useState<MapTheme>('dark');
   const currentLightPresetRef = useRef<LightPreset>('day');
-  const currentMapStyleRef = useRef<'standard' | 'dark'>('standard');
+  const currentMapStyleRef = useRef<'standard' | 'dark'>('dark'); // 與預設 mapTheme 一致
   const [styleVersion, setStyleVersion] = useState(0); // 樣式版本，用於觸發圖層重建
 
   // 視覺主題（用於面板顏色）
@@ -356,9 +356,12 @@ function App() {
   useEffect(() => {
     if (loading || !mapContainer.current || map.current) return;
 
+    // 根據預設主題選擇初始樣式，避免載入時閃爍
+    const initialStyle = MAP_STYLES[currentMapStyleRef.current];
+
     map.current = new mapboxgl.Map({
       container: mapContainer.current,
-      style: 'mapbox://styles/mapbox/standard',  // 使用 Standard 樣式以支援光線預設切換
+      style: initialStyle,
       center: [121.52, 25.02],  // 調整以顯示紅線+藍線
       zoom: 10.8,  // 稍微縮小以容納兩條線
     });

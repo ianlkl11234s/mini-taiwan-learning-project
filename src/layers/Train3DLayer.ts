@@ -60,6 +60,9 @@ export class Train3DLayer implements mapboxgl.CustomLayerInterface {
   // 軌道資料（用於計算行進方向）
   private tracks: Map<string, Track> = new Map();
 
+  // 車站座標（用於停站時精確定位）
+  private stationCoordinates: Map<string, [number, number]> = new Map();
+
   // 模型轉換參數
   private modelTransform: {
     translateX: number;
@@ -83,6 +86,10 @@ export class Train3DLayer implements mapboxgl.CustomLayerInterface {
 
   setTracks(tracks: Map<string, Track>): void {
     this.tracks = tracks;
+  }
+
+  setStations(stationCoordinates: Map<string, [number, number]>): void {
+    this.stationCoordinates = stationCoordinates;
   }
 
   updateTrains(trains: Train[]): void {
@@ -226,7 +233,15 @@ export class Train3DLayer implements mapboxgl.CustomLayerInterface {
       }
 
       // 計算位置（相對於 MODEL_ORIGIN，單位為公尺）
-      const position = this.lngLatToMeters(train.position[0], train.position[1]);
+      // 停站時使用車站座標，讓同站列車完全重疊
+      let displayPosition = train.position;
+      if (train.status === 'stopped' && train.currentStation) {
+        const stationCoord = this.stationCoordinates.get(train.currentStation);
+        if (stationCoord) {
+          displayPosition = stationCoord;
+        }
+      }
+      const position = this.lngLatToMeters(displayPosition[0], displayPosition[1]);
       // Three.js 座標系統（經過 transform 後）:
       // X = 東西向 (east-west)
       // Y = 南北向 (north-south, scale 會翻轉)
@@ -234,8 +249,15 @@ export class Train3DLayer implements mapboxgl.CustomLayerInterface {
       group.position.set(position.x, position.y, TRAIN_HEIGHT / 2);
 
       // 計算旋轉（繞 Z 軸，因為 Z 是高度/垂直方向）
-      // 根據列車實際位置找到最近的軌道線段，使用該線段方向
-      const bearing = this.calculateBearing(train);
+      let bearing: number;
+      if (train.status === 'stopped' && train.currentStation) {
+        // 停站時使用統一朝向：根據軌道方向計算但不區分正反向
+        // 這樣同站不同方向的列車會完美重疊
+        bearing = this.calculateStationBearing(train.currentStation, train.trackId);
+      } else {
+        // 行駛中：根據列車實際位置找到最近的軌道線段，使用該線段方向
+        bearing = this.calculateBearing(train);
+      }
       group.rotation.z = THREE.MathUtils.degToRad(bearing);
     }
   }
@@ -332,6 +354,53 @@ export class Train3DLayer implements mapboxgl.CustomLayerInterface {
     }
 
     // 計算角度：列車前方是 +X 方向
+    const angle = Math.atan2(dy, dx);
+    return THREE.MathUtils.radToDeg(angle);
+  }
+
+  /**
+   * 計算車站的統一朝向
+   *
+   * 停站時使用統一朝向，讓同站不同方向的列車完美重疊
+   * 策略：使用 direction-0 軌道在該站附近的方向
+   */
+  private calculateStationBearing(stationId: string, trackId: string): number {
+    // 嘗試取得該站的座標
+    const stationCoord = this.stationCoordinates.get(stationId);
+    if (!stationCoord) return 0;
+
+    // 取得基準軌道 ID（使用 direction-0 的軌道作為統一方向）
+    // 例如：R-1-0, R-1-1 都使用 R-1-0 的方向
+    const baseTrackId = trackId.replace(/-1$/, '-0');
+    const track = this.tracks.get(baseTrackId) || this.tracks.get(trackId);
+    if (!track) return 0;
+
+    const coords = track.geometry.coordinates as [number, number][];
+    if (coords.length < 2) return 0;
+
+    // 找到最接近車站的軌道線段
+    let minDistSq = Infinity;
+    let closestSegment = 0;
+
+    for (let i = 0; i < coords.length - 1; i++) {
+      const distSq = this.pointToSegmentDistSq(stationCoord, coords[i], coords[i + 1]);
+      if (distSq < minDistSq) {
+        minDistSq = distSq;
+        closestSegment = i;
+      }
+    }
+
+    // 取得該線段的兩端點，轉換到 mesh 座標
+    const p1 = this.lngLatToMeters(coords[closestSegment][0], coords[closestSegment][1]);
+    const p2 = this.lngLatToMeters(coords[closestSegment + 1][0], coords[closestSegment + 1][1]);
+
+    // 計算線段方向
+    const dx = p2.x - p1.x;
+    const dy = p2.y - p1.y;
+
+    const dist = Math.sqrt(dx * dx + dy * dy);
+    if (dist < 0.001) return 0;
+
     const angle = Math.atan2(dy, dx);
     return THREE.MathUtils.radToDeg(angle);
   }

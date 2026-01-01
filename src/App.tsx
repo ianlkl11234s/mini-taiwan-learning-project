@@ -164,6 +164,19 @@ function App() {
     });
   }, [trains, visibleLines]);
 
+  // 建立車站座標索引（用於 3D 圖層停站定位）
+  const stationCoordinates = useMemo(() => {
+    const coords = new Map<string, [number, number]>();
+    if (stations) {
+      for (const feature of stations.features) {
+        const stationId = feature.properties.station_id;
+        const geometry = feature.geometry as GeoJSON.Point;
+        coords.set(stationId, geometry.coordinates as [number, number]);
+      }
+    }
+    return coords;
+  }, [stations]);
+
   // 初始化地圖 - 當 loading 完成後才初始化
   useEffect(() => {
     if (loading || !mapContainer.current || map.current) return;
@@ -259,6 +272,7 @@ function App() {
 
     // 建立 3D 圖層
     const layer = new Train3DLayer(trackMap);
+    layer.setStations(stationCoordinates);
     train3DLayerRef.current = layer;
 
     // 加入地圖
@@ -270,7 +284,7 @@ function App() {
       }
       train3DLayerRef.current = null;
     };
-  }, [mapLoaded, trackMap, use3DMode]);
+  }, [mapLoaded, trackMap, stationCoordinates, use3DMode]);
 
   // 更新 3D 圖層列車資料
   useEffect(() => {

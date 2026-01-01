@@ -22,10 +22,14 @@
 ## 功能特色
 
 - **即時列車模擬** - 根據真實時刻表模擬列車運行
-- **Mapbox 地圖視覺化** - 使用 Mapbox GL JS 呈現精美的暗色地圖
-- **完整路網支援** - 支援大台北地區全部捷運與輕軌路線
+- **Mapbox 地圖視覺化** - 使用 Mapbox GL JS 呈現精美地圖
+- **完整路網支援** - 支援大台北地區全部捷運、輕軌與貓空纜車
+- **2D / 3D 模式切換** - 支援平面與立體視角，3D 模式下列車以方塊呈現
+- **列車跟隨模式** - 點擊列車可開啟跟隨，自動追蹤列車位置
+- **日夜主題切換** - 支援 Auto（隨時間自動切換）、Dawn、Day、Dusk、Night、Dark 六種主題
 - **時間控制** - 可調整模擬速度 (1x-300x) 與跳轉時間
 - **延長日時間軸** - 支援營運時間 06:00 至隔日 01:30
+- **路線篩選** - MRT / Cable 分類篩選，貓空纜車支援三段式控制
 - **碰撞偵測** - 自動偵測列車碰撞並視覺化標示
 - **停站動畫** - 列車到站時會有視覺狀態變化
 
@@ -42,6 +46,7 @@
 | 🟣 桃園機場捷運 | A | 22 站 | 普通車、直達車、加班直達車 |
 | 💚 安坑輕軌 | K | 9 站 | 輕軌 |
 | 🩵 淡海輕軌 | V | 11 站 | 綠山線 |
+| 🚡 貓空纜車 | MK | 4 站 | 纜車（三段式顯示控制） |
 
 ## 技術架構
 
@@ -65,8 +70,13 @@
 |------|------|------|
 | TimeEngine | `src/engines/TimeEngine.ts` | 模擬時間引擎，支援暫停、加速、跳轉 |
 | TrainEngine | `src/engines/TrainEngine.ts` | 列車狀態管理、位置插值、碰撞偵測 |
+| Train3DLayer | `src/layers/Train3DLayer.ts` | 3D 列車圖層，使用 Three.js 渲染 |
 | useData | `src/hooks/useData.ts` | 資料載入 Hook，處理 GeoJSON 與時刻表 |
 | TimeControl | `src/components/TimeControl.tsx` | 時間控制面板 UI 元件 |
+| ThemeToggle | `src/components/ThemeToggle.tsx` | 日夜主題切換元件 |
+| LineFilter | `src/components/LineFilter.tsx` | 路線篩選元件（MRT / Cable 分類） |
+| TrainInfoPanel | `src/components/TrainInfoPanel.tsx` | 列車跟隨資訊面板 |
+| TrainHistogram | `src/components/TrainHistogram.tsx` | 列車數量趨勢圖 |
 
 ## 快速開始
 
@@ -433,6 +443,20 @@ VITE_MAPBOX_TOKEN=your_mapbox_token_here
 | 時刻表資料 | Eric Yu 開源專案 + TDX API |
 
 ## 開發歷程
+
+### 2026-01-01
+- ✨ 新增 2D / 3D 模式切換功能，3D 模式使用 Three.js 渲染立體列車
+- ✨ 新增列車跟隨模式，點擊列車可自動追蹤位置並顯示詳細資訊
+- ✨ 新增日夜主題切換功能（Auto / Dawn / Day / Dusk / Night / Dark）
+- ✨ 新增貓空纜車 (MK) 支援，含三段式顯示控制
+- ✨ 新增 MRT / Cable 分類篩選器
+- ✨ 所有 UI 面板支援主題自動切換（明/暗色配合地圖主題）
+- ✨ 軌道圖層加入 emissive-strength，夜間模式保持明亮
+- 🎨 新增列車數量趨勢直方圖
+- 🎨 優化 3D 跟隨模式視角控制，允許自由旋轉
+- 🐛 修正地圖樣式切換後圖層消失問題
+- 🐛 修正啟動時地圖樣式閃爍問題
+- ⚡ 優化 3D 模式效能（材質共用、節流渲染）
 
 ### 2025-12-31
 - ✨ 新增新北環狀線 (Y) 完整實作

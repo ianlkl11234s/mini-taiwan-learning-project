@@ -58,12 +58,17 @@ const TRAIN_COLORS = {
   // 環狀線
   Y_0: '#fedb00',   // 去程（往新北產業園區）- 黃色
   Y_1: '#ffe566',   // 回程（往大坪林）- 淡黃色
+  // 貓空纜車
+  MK_0: '#06b8e6',  // 往貓空（direction 0）- 淡藍色
+  MK_1: '#7dd4f0',  // 往動物園（direction 1）- 更淡藍色
 };
 
 // 判斷列車顏色：根據路線和方向
 function getTrainColor(trackId: string): string {
   let lineId: string;
-  if (trackId.startsWith('K')) {
+  if (trackId.startsWith('MK')) {
+    lineId = 'MK';
+  } else if (trackId.startsWith('K')) {
     lineId = 'K';
   } else if (trackId.startsWith('V')) {
     lineId = 'V';
@@ -131,7 +136,7 @@ function App() {
   );
 
   // 貓空纜車三段式狀態：full | tracks-only | hidden
-  const [mkState, setMkState] = useState<MKFilterState>('full');
+  const [mkState, setMkState] = useState<MKFilterState>('tracks-only');
 
   // 切換路線可見性
   const handleToggleLine = useCallback((lineId: string) => {

@@ -126,7 +126,7 @@ function App() {
 
   // 路線篩選狀態
   const [visibleLines, setVisibleLines] = useState<Set<string>>(
-    new Set(['R', 'BL', 'G', 'O', 'BR', 'K', 'V', 'A', 'Y'])
+    new Set(['R', 'BL', 'G', 'O', 'BR', 'K', 'V', 'A', 'Y', 'MK'])
   );
 
   // 切換路線可見性
@@ -470,6 +470,10 @@ function App() {
         ['==', ['slice', ['get', 'track_id'], 0, 2], 'Y-'],
         visibleLines.has('Y')
       ], 0.8,
+      ['all',
+        ['==', ['slice', ['get', 'track_id'], 0, 3], 'MK-'],
+        visibleLines.has('MK')
+      ], 0.8,
       0.0
     ]);
   }, [mapLoaded, visibleLines]);
@@ -574,6 +578,10 @@ function App() {
       ['all',
         ['==', ['slice', ['get', 'station_id'], 0, 1], 'Y'],
         visibleLines.has('Y')
+      ], 1,
+      ['all',
+        ['==', ['slice', ['get', 'station_id'], 0, 2], 'MK'],
+        visibleLines.has('MK')
       ], 1,
       0
     ];

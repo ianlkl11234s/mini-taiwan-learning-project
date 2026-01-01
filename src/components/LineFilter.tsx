@@ -11,6 +11,7 @@ const LINE_CONFIG = {
   A: { color: '#8246af', label: 'A', name: '機場捷運' },
   K: { color: '#8cc540', label: 'K', name: '安坑輕軌' },
   V: { color: '#a4ce4e', label: 'V', name: '淡海輕軌' },
+  MK: { color: '#6B8E23', label: 'MK', name: '貓空纜車' },
 };
 
 interface LineFilterProps {

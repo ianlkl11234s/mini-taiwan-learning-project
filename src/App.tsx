@@ -7,7 +7,9 @@ import { TrainEngine, type Train } from './engines/TrainEngine';
 import { TimeControl } from './components/TimeControl';
 import { LineFilter } from './components/LineFilter';
 import { TrainHistogram } from './components/TrainHistogram';
+import { TrainInfoPanel } from './components/TrainInfoPanel';
 import { useTrainCountHistogram } from './hooks/useTrainCountHistogram';
+import { Train3DLayer } from './layers/Train3DLayer';
 
 // 設定 Mapbox Token
 mapboxgl.accessToken = import.meta.env.VITE_MAPBOX_TOKEN || '';
@@ -110,6 +112,18 @@ function App() {
   // 圖例收合狀態（預設收合）
   const [legendCollapsed, setLegendCollapsed] = useState(true);
 
+  // 說明/公告 Modal 狀態
+  const [showInfoModal, setShowInfoModal] = useState(false);
+
+  // 3D 模式狀態
+  const [use3DMode, setUse3DMode] = useState(false);
+  const train3DLayerRef = useRef<Train3DLayer | null>(null);
+
+  // 列車選擇狀態
+  const [selectedTrainId, setSelectedTrainId] = useState<string | null>(null);
+  const [isFollowing, setIsFollowing] = useState(false);
+  const isUserInteracting = useRef(false); // 追蹤使用者是否正在操作地圖
+
   // 路線篩選狀態
   const [visibleLines, setVisibleLines] = useState<Set<string>>(
     new Set(['R', 'BL', 'G', 'O', 'BR', 'K', 'V', 'A', 'Y'])
@@ -155,6 +169,140 @@ function App() {
       return visibleLines.has(lineId);
     });
   }, [trains, visibleLines]);
+
+  // 建立車站座標索引（用於 3D 圖層停站定位）
+  const stationCoordinates = useMemo(() => {
+    const coords = new Map<string, [number, number]>();
+    if (stations) {
+      for (const feature of stations.features) {
+        const stationId = feature.properties.station_id;
+        const geometry = feature.geometry as GeoJSON.Point;
+        coords.set(stationId, geometry.coordinates as [number, number]);
+      }
+    }
+    return coords;
+  }, [stations]);
+
+  // 建立車站名稱索引（用於資訊面板顯示）
+  const stationNames = useMemo(() => {
+    const names = new Map<string, string>();
+    if (stations) {
+      for (const feature of stations.features) {
+        const stationId = feature.properties.station_id;
+        const stationName = feature.properties.name_zh;
+        names.set(stationId, stationName);
+      }
+    }
+    return names;
+  }, [stations]);
+
+  // 取得選中的列車資料
+  const selectedTrain = useMemo(() => {
+    if (!selectedTrainId) return null;
+    return filteredTrains.find(t => t.trainId === selectedTrainId) || null;
+  }, [selectedTrainId, filteredTrains]);
+
+  // 選擇列車
+  const handleSelectTrain = useCallback((trainId: string) => {
+    setSelectedTrainId(trainId);
+    setIsFollowing(true); // 選中時自動開啟跟隨
+  }, []);
+
+  // 取消選擇
+  const handleDeselectTrain = useCallback(() => {
+    setSelectedTrainId(null);
+    setIsFollowing(false);
+  }, []);
+
+  // 當選中的列車消失時，自動取消選擇
+  useEffect(() => {
+    if (selectedTrainId && !selectedTrain) {
+      handleDeselectTrain();
+    }
+  }, [selectedTrainId, selectedTrain, handleDeselectTrain]);
+
+  // 視線跟隨：當 isFollowing 且有選中列車時，地圖中心跟隨列車
+  useEffect(() => {
+    if (!map.current || !mapLoaded) return;
+    if (!isFollowing || !selectedTrain) return;
+
+    // 使用者正在操作時不更新位置，讓使用者可以自由旋轉視角
+    if (isUserInteracting.current && use3DMode) return;
+
+    // 計算偏移後的中心點
+    // 3D 模式下，因為有傾斜角度，需要讓中心點往南偏移，讓列車顯示在畫面中央偏上
+    const [lng, lat] = selectedTrain.position;
+    let targetCenter: [number, number] = [lng, lat];
+
+    if (use3DMode) {
+      // 3D 模式：根據 zoom 和 pitch 計算合適的緯度偏移
+      // zoom 越大偏移越小，pitch 越大偏移越大
+      const currentZoom = map.current.getZoom();
+      const currentPitch = map.current.getPitch();
+      const currentBearing = map.current.getBearing();
+
+      // 基礎偏移量：在 zoom 14、pitch 45 時約偏移 0.008 度（約 900 公尺）
+      const baseOffset = 0.008;
+      const zoomFactor = Math.pow(2, 14 - currentZoom); // zoom 越大，偏移越小
+      const pitchFactor = currentPitch / 45; // pitch 越大，偏移越大
+
+      const latOffset = baseOffset * zoomFactor * pitchFactor;
+      targetCenter = [lng, lat - latOffset]; // 中心往南偏移，讓列車顯示在上方
+
+      // 3D 模式：使用 jumpTo 並明確保留當前的 bearing 和 pitch
+      // 這樣不會干擾使用者的旋轉操作
+      map.current.jumpTo({
+        center: targetCenter,
+        bearing: currentBearing,
+        pitch: currentPitch,
+      });
+    } else {
+      // 2D 模式：使用平滑動畫
+      map.current.easeTo({
+        center: targetCenter,
+        duration: 300,
+      });
+    }
+  }, [mapLoaded, isFollowing, selectedTrain, use3DMode]);
+
+  // 偵測使用者地圖操作
+  // 2D 模式：拖曳取消跟隨
+  // 3D 模式：允許自由旋轉視角，操作期間暫停跟隨更新，放開後繼續跟隨
+  useEffect(() => {
+    if (!map.current || !mapLoaded) return;
+
+    const handleInteractionStart = () => {
+      isUserInteracting.current = true;
+      // 只在 2D 模式下，拖曳時取消跟隨
+      // 3D 模式允許自由旋轉而不取消跟隨
+      if (isFollowing && !use3DMode) {
+        setIsFollowing(false);
+      }
+    };
+
+    const handleInteractionEnd = () => {
+      isUserInteracting.current = false;
+    };
+
+    // 監聽各種使用者操作事件
+    map.current.on('dragstart', handleInteractionStart);
+    map.current.on('rotatestart', handleInteractionStart);
+    map.current.on('pitchstart', handleInteractionStart);
+    map.current.on('dragend', handleInteractionEnd);
+    map.current.on('rotateend', handleInteractionEnd);
+    map.current.on('pitchend', handleInteractionEnd);
+
+    return () => {
+      if (map.current) {
+        map.current.off('dragstart', handleInteractionStart);
+        map.current.off('rotatestart', handleInteractionStart);
+        map.current.off('pitchstart', handleInteractionStart);
+        map.current.off('dragend', handleInteractionEnd);
+        map.current.off('rotateend', handleInteractionEnd);
+        map.current.off('pitchend', handleInteractionEnd);
+      }
+    };
+  }, [mapLoaded, isFollowing, use3DMode]);
 
   // 初始化地圖 - 當 loading 完成後才初始化
   useEffect(() => {
@@ -243,6 +391,40 @@ function App() {
       },
     });
   }, [mapLoaded, tracks]);
+
+  // 初始化 3D 列車圖層
+  useEffect(() => {
+    if (!map.current || !mapLoaded || !use3DMode) return;
+    if (trackMap.size === 0) return;
+
+    // 建立 3D 圖層
+    const layer = new Train3DLayer(trackMap);
+    layer.setStations(stationCoordinates);
+    layer.setOnSelect(handleSelectTrain);
+    train3DLayerRef.current = layer;
+
+    // 加入地圖
+    map.current.addLayer(layer);
+
+    return () => {
+      if (map.current && map.current.getLayer('train-3d-layer')) {
+        map.current.removeLayer('train-3d-layer');
+      }
+      train3DLayerRef.current = null;
+    };
+  }, [mapLoaded, trackMap, stationCoordinates, use3DMode, handleSelectTrain]);
+
+  // 更新 3D 圖層列車資料
+  useEffect(() => {
+    if (!train3DLayerRef.current || !use3DMode) return;
+    train3DLayerRef.current.updateTrains(filteredTrains);
+  }, [filteredTrains, use3DMode]);
+
+  // 更新 3D 圖層選中狀態
+  useEffect(() => {
+    if (!train3DLayerRef.current || !use3DMode) return;
+    train3DLayerRef.current.setSelectedTrainId(selectedTrainId);
+  }, [selectedTrainId, use3DMode]);
 
   // 更新軌道可見性（當 visibleLines 變化時）
   useEffect(() => {
@@ -461,9 +643,18 @@ function App() {
     };
   }, [timeEngineReady, schedules, trackMap, stationProgress]);
 
-  // 更新列車標記
+  // 更新列車標記（2D 模式時使用）
   useEffect(() => {
     if (!map.current || !mapLoaded) return;
+
+    // 3D 模式時清除所有 2D 標記並跳過
+    if (use3DMode) {
+      for (const marker of trainMarkers.current.values()) {
+        marker.remove();
+      }
+      trainMarkers.current.clear();
+      return;
+    }
 
     const activeTrainIds = new Set(filteredTrains.map((t) => t.trainId));
     for (const [trainId, marker] of trainMarkers.current) {
@@ -477,6 +668,7 @@ function App() {
       let marker = trainMarkers.current.get(train.trainId);
       const isStopped = train.status === 'stopped';
       const isColliding = train.isColliding;
+      const isSelected = train.trainId === selectedTrainId;
       const baseColor = getTrainColor(train.trackId);  // 依路線和方向區分顏色
       // 碰撞時使用警示色
       const displayColor = isColliding ? '#ffcc00' : baseColor;
@@ -485,6 +677,15 @@ function App() {
         const el = document.createElement('div');
         el.className = 'train-marker';
         el.dataset.trainId = train.trainId;
+
+        // 點擊事件：選取列車
+        el.addEventListener('click', (e) => {
+          e.stopPropagation();
+          const trainId = el.dataset.trainId;
+          if (trainId) {
+            handleSelectTrain(trainId);
+          }
+        });
 
         marker = new mapboxgl.Marker({
           element: el,
@@ -501,14 +702,26 @@ function App() {
 
       // 更新樣式 (停站 vs 運行 vs 碰撞)
       const el = marker.getElement();
-      // 基礎樣式：pointer-events: none 防止 hover 干擾定位
+      // 基礎樣式：啟用點擊、顯示指標手勢
       const baseStyles = `
-        pointer-events: none;
+        pointer-events: auto;
+        cursor: pointer;
         border-radius: 50%;
         transition: width 0.3s ease, height 0.3s ease, box-shadow 0.3s ease;
       `;
 
-      if (isColliding) {
+      if (isSelected) {
+        // 選中狀態：顯示粗白框
+        el.style.cssText = `
+          ${baseStyles}
+          width: 18px;
+          height: 18px;
+          background-color: ${displayColor};
+          border: 4px solid #ffffff;
+          box-shadow: 0 0 16px rgba(255,255,255,0.8), 0 0 24px ${displayColor};
+          z-index: 10;
+        `;
+      } else if (isColliding) {
         // 碰撞中：較大、有警示效果
         el.style.cssText = `
           ${baseStyles}
@@ -540,7 +753,7 @@ function App() {
         `;
       }
     }
-  }, [mapLoaded, filteredTrains]);
+  }, [mapLoaded, filteredTrains, use3DMode, handleSelectTrain, selectedTrainId]);
 
   // 控制處理器
   const handleTogglePlay = useCallback(() => {
@@ -564,6 +777,32 @@ function App() {
       setTrains(activeTrains);
     }
   }, []);
+
+  // 2D/3D 模式切換（含視角轉換）
+  const handleToggle3DMode = useCallback(() => {
+    if (!map.current) return;
+
+    const newMode = !use3DMode;
+    setUse3DMode(newMode);
+
+    if (newMode) {
+      // 切換到 3D 模式：拉近、傾斜 45 度
+      map.current.easeTo({
+        zoom: 14,
+        pitch: 45,
+        bearing: 0,
+        duration: 1000,
+      });
+    } else {
+      // 切換到 2D 模式：拉遠、回復平面
+      map.current.easeTo({
+        zoom: 10.8,
+        pitch: 0,
+        bearing: 0,
+        duration: 1000,
+      });
+    }
+  }, [use3DMode]);
 
   // 載入中畫面
   if (loading) {
@@ -628,6 +867,37 @@ function App() {
         <p style={{ margin: '4px 0 0', fontSize: 14, color: '#888' }}>
           台北交通運輸模擬
         </p>
+      </div>
+
+      {/* 跟隨模式狀態提示 */}
+      <div
+        style={{
+          position: 'absolute',
+          top: 20,
+          left: '50%',
+          transform: 'translateX(-50%)',
+          zIndex: 10,
+          background: 'rgba(0, 0, 0, 0.75)',
+          borderRadius: 20,
+          padding: '8px 16px',
+          color: 'white',
+          fontFamily: 'system-ui',
+          fontSize: 12,
+          whiteSpace: 'nowrap',
+          border: isFollowing ? '1px solid rgba(217, 0, 35, 0.6)' : '1px solid transparent',
+          boxShadow: isFollowing ? '0 0 12px rgba(217, 0, 35, 0.4), 0 0 24px rgba(217, 0, 35, 0.2)' : 'none',
+          transition: 'all 0.3s ease',
+        }}
+      >
+        {isFollowing ? (
+          <span style={{ color: '#ff8a8a' }}>
+            跟隨模式中，可縮放焦距，關閉右上面板可退出
+          </span>
+        ) : (
+          <span style={{ color: '#888' }}>
+            可暫停後點選列車開啟跟隨模式
+          </span>
+        )}
       </div>
 
       {/* 圖例 */}
@@ -843,6 +1113,45 @@ function App() {
             <path d="M12.186 24h-.007c-3.581-.024-6.334-1.205-8.184-3.509C2.35 18.44 1.5 15.586 1.472 12.01v-.017c.03-3.579.879-6.43 2.525-8.482C5.845 1.205 8.6.024 12.18 0h.014c2.746.02 5.043.725 6.826 2.098 1.677 1.29 2.858 3.13 3.509 5.467l-2.04.569c-1.104-3.96-3.898-5.984-8.304-6.015-2.91.022-5.11.936-6.54 2.717C4.307 6.504 3.616 8.914 3.589 12c.027 3.086.718 5.496 2.057 7.164 1.43 1.783 3.631 2.698 6.54 2.717 2.623-.02 4.358-.631 5.8-2.045 1.647-1.613 1.618-3.593 1.09-4.798-.31-.71-.873-1.3-1.634-1.75-.192 1.352-.622 2.446-1.284 3.272-.886 1.102-2.14 1.704-3.73 1.79-1.202.065-2.361-.218-3.259-.801-1.063-.689-1.685-1.74-1.752-2.96-.065-1.182.408-2.256 1.332-3.025.88-.732 2.084-1.195 3.59-1.377.954-.115 1.963-.104 2.998.032-.06-1.289-.693-1.95-1.89-1.984-1.1-.033-1.921.564-2.214 1.013l-1.706-1.046c.655-1.07 1.916-1.828 3.534-2.127l.085-.015c.822-.14 1.67-.14 2.494 0 1.588.268 2.765.985 3.498 2.132.68 1.064.882 2.37.6 3.887l.007-.024.007.024c-.02.1-.043.198-.068.295.85.39 1.577.94 2.133 1.62.832 1.016 1.233 2.29 1.16 3.692-.094 1.77-.74 3.353-1.921 4.705C18.09 22.843 15.448 23.977 12.186 24zm.102-7.26c.775-.045 1.39-.315 1.828-.803.438-.487.728-1.164.863-2.012-.65-.078-1.307-.112-1.958-.102-.986.016-1.779.2-2.36.548-.59.355-.873.81-.84 1.354.034.538.345.967.876 1.209.53.24 1.122.307 1.59.306z"/>
           </svg>
         </a>
+        {/* 2D/3D 切換按鈕 */}
+        <button
+          onClick={handleToggle3DMode}
+          style={{
+            background: use3DMode ? 'rgba(102, 196, 160, 0.2)' : 'rgba(128, 191, 255, 0.2)',
+            border: `1px solid ${use3DMode ? '#66c4a0' : '#80bfff'}`,
+            borderRadius: 4,
+            color: use3DMode ? '#66c4a0' : '#80bfff',
+            cursor: 'pointer',
+            padding: '4px 8px',
+            fontSize: 12,
+            fontWeight: 600,
+            transition: 'all 0.2s',
+          }}
+          title={use3DMode ? '切換至 2D 模式' : '切換至 3D 模式'}
+        >
+          {use3DMode ? '3D' : '2D'}
+        </button>
+        {/* 說明/公告按鈕 */}
+        <button
+          onClick={() => setShowInfoModal(true)}
+          style={{
+            background: 'none',
+            border: 'none',
+            color: '#888',
+            cursor: 'pointer',
+            padding: 0,
+            display: 'flex',
+            alignItems: 'center',
+            transition: 'color 0.2s',
+          }}
+          onMouseEnter={(e) => (e.currentTarget.style.color = '#fff')}
+          onMouseLeave={(e) => (e.currentTarget.style.color = '#888')}
+          title="說明與公告"
+        >
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25z"/>
+          </svg>
+        </button>
       </div>
 
       {/* 地圖 */}
@@ -862,6 +1171,15 @@ function App() {
         visibleLines={visibleLines}
         onToggleLine={handleToggleLine}
       />
+
+      {/* 列車資訊面板 */}
+      {selectedTrain && (
+        <TrainInfoPanel
+          train={selectedTrain}
+          stationNames={stationNames}
+          onClose={handleDeselectTrain}
+        />
+      )}
 
       {/* 列車數量直方圖 - 控制面板右上方漂浮 */}
       {timeEngineRef.current && (
@@ -894,6 +1212,124 @@ function App() {
           onSpeedChange={handleSpeedChange}
           onTimeChange={handleTimeChange}
         />
+      )}
+
+      {/* 說明/公告 Modal */}
+      {showInfoModal && (
+        <div
+          style={{
+            position: 'fixed',
+            top: 0,
+            left: 0,
+            right: 0,
+            bottom: 0,
+            background: 'rgba(0, 0, 0, 0.7)',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            zIndex: 1000,
+          }}
+          onClick={() => setShowInfoModal(false)}
+        >
+          <div
+            style={{
+              background: '#1a1a1a',
+              borderRadius: 12,
+              padding: '24px 28px',
+              maxWidth: 500,
+              width: '90%',
+              maxHeight: '80vh',
+              overflow: 'auto',
+              color: 'white',
+              fontFamily: 'system-ui',
+              boxShadow: '0 4px 24px rgba(0, 0, 0, 0.5)',
+              border: '1px solid #333',
+            }}
+            onClick={(e) => e.stopPropagation()}
+          >
+            {/* 標題與關閉按鈕 */}
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 20 }}>
+              <h2 style={{ margin: 0, fontSize: 20, fontWeight: 600 }}>說明與公告</h2>
+              <button
+                onClick={() => setShowInfoModal(false)}
+                style={{
+                  background: 'none',
+                  border: 'none',
+                  color: '#888',
+                  cursor: 'pointer',
+                  padding: 4,
+                  display: 'flex',
+                  alignItems: 'center',
+                  transition: 'color 0.2s',
+                }}
+                onMouseEnter={(e) => (e.currentTarget.style.color = '#fff')}
+                onMouseLeave={(e) => (e.currentTarget.style.color = '#888')}
+              >
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+                </svg>
+              </button>
+            </div>
+
+            {/* 公告區塊 */}
+            <div style={{ marginBottom: 24 }}>
+              <h3 style={{ margin: '0 0 12px', fontSize: 16, fontWeight: 600, color: '#f8b61c', display: 'flex', alignItems: 'center', gap: 8 }}>
+                <span style={{ fontSize: 18 }}>📢</span> 公告
+              </h3>
+              <div style={{ background: '#2a2a2a', borderRadius: 8, padding: '12px 16px', fontSize: 14, lineHeight: 1.6 }}>
+                <ul style={{ margin: 0, paddingLeft: 20 }}>
+                  <li style={{ color: '#ccc' }}>文湖線與環狀線，目前還未調整好首班車時刻表</li>
+                </ul>
+              </div>
+            </div>
+
+            {/* 使用說明區塊 */}
+            <div>
+              <h3 style={{ margin: '0 0 12px', fontSize: 16, fontWeight: 600, color: '#66c4a0', display: 'flex', alignItems: 'center', gap: 8 }}>
+                <span style={{ fontSize: 18 }}>📖</span> 使用說明
+              </h3>
+              <div style={{ background: '#2a2a2a', borderRadius: 8, padding: '12px 16px', fontSize: 14, lineHeight: 1.8 }}>
+                <div style={{ marginBottom: 12 }}>
+                  <strong style={{ color: '#80bfff' }}>時間控制</strong>
+                  <ul style={{ margin: '4px 0 0', paddingLeft: 20, color: '#ccc' }}>
+                    <li>點擊播放/暫停按鈕控制時間流動</li>
+                    <li>拖動時間軸可跳轉至任意時刻</li>
+                    <li>使用速度滑桿調整模擬速度（1x - 300x）</li>
+                  </ul>
+                </div>
+                <div style={{ marginBottom: 12 }}>
+                  <strong style={{ color: '#80bfff' }}>路線篩選</strong>
+                  <ul style={{ margin: '4px 0 0', paddingLeft: 20, color: '#ccc' }}>
+                    <li>點擊左下角路線按鈕可顯示/隱藏特定路線</li>
+                    <li>隱藏的路線其軌道、車站、列車都會消失</li>
+                  </ul>
+                </div>
+                <div style={{ marginBottom: 12 }}>
+                  <strong style={{ color: '#80bfff' }}>列車狀態</strong>
+                  <ul style={{ margin: '4px 0 0', paddingLeft: 20, color: '#ccc' }}>
+                    <li><span style={{ display: 'inline-block', width: 10, height: 10, borderRadius: '50%', background: '#d90023', marginRight: 6, verticalAlign: 'middle' }}></span>運行中：正常大小</li>
+                    <li><span style={{ display: 'inline-block', width: 12, height: 12, borderRadius: '50%', background: '#d90023', border: '2px solid white', marginRight: 6, verticalAlign: 'middle', boxShadow: '0 0 8px #d90023' }}></span>停站中：較大、有光暈</li>
+                  </ul>
+                </div>
+                <div style={{ marginBottom: 12 }}>
+                  <strong style={{ color: '#80bfff' }}>列車數量圖</strong>
+                  <ul style={{ margin: '4px 0 0', paddingLeft: 20, color: '#ccc' }}>
+                    <li>右下角顯示全天列車數量變化</li>
+                    <li>黃色線條表示目前時刻</li>
+                  </ul>
+                </div>
+                <div>
+                  <strong style={{ color: '#80bfff' }}>地圖操作</strong>
+                  <ul style={{ margin: '4px 0 0', paddingLeft: 20, color: '#ccc' }}>
+                    <li>滾輪縮放地圖</li>
+                    <li>拖曳平移地圖</li>
+                    <li>右上角有縮放控制按鈕</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       )}
     </div>
   );

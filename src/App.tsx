@@ -122,6 +122,7 @@ function App() {
   // 列車選擇狀態
   const [selectedTrainId, setSelectedTrainId] = useState<string | null>(null);
   const [isFollowing, setIsFollowing] = useState(false);
+  const isUserInteracting = useRef(false); // 追蹤使用者是否正在操作地圖
 
   // 路線篩選狀態
   const [visibleLines, setVisibleLines] = useState<Set<string>>(
@@ -225,6 +226,9 @@ function App() {
     if (!map.current || !mapLoaded) return;
     if (!isFollowing || !selectedTrain) return;
 
+    // 使用者正在操作時不更新位置，讓使用者可以自由旋轉視角
+    if (isUserInteracting.current && use3DMode) return;
+
     // 計算偏移後的中心點
     // 3D 模式下，因為有傾斜角度，需要讓中心點往南偏移，讓列車顯示在畫面中央偏上
     const [lng, lat] = selectedTrain.position;
@@ -244,7 +248,7 @@ function App() {
       const latOffset = baseOffset * zoomFactor * pitchFactor;
       targetCenter = [lng, lat - latOffset]; // 中心往南偏移，讓列車顯示在上方
 
-      // 3D 模式：使用 setCenter 直接更新，不干擾使用者的旋轉操作
+      // 3D 模式：使用 setCenter 直接更新
       map.current.setCenter(targetCenter);
     } else {
       // 2D 模式：使用平滑動畫
@@ -255,13 +259,14 @@ function App() {
     }
   }, [mapLoaded, isFollowing, selectedTrain, use3DMode]);
 
-  // 偵測使用者手動拖曳地圖時取消跟隨
+  // 偵測使用者地圖操作
   // 2D 模式：拖曳取消跟隨
-  // 3D 模式：允許自由旋轉視角，只有關閉面板才取消跟隨
+  // 3D 模式：允許自由旋轉視角，操作期間暫停跟隨更新，放開後繼續跟隨
   useEffect(() => {
     if (!map.current || !mapLoaded) return;
 
-    const handleDragStart = () => {
+    const handleInteractionStart = () => {
+      isUserInteracting.current = true;
       // 只在 2D 模式下，拖曳時取消跟隨
       // 3D 模式允許自由旋轉而不取消跟隨
       if (isFollowing && !use3DMode) {
@@ -269,11 +274,26 @@ function App() {
       }
     };
 
-    map.current.on('dragstart', handleDragStart);
+    const handleInteractionEnd = () => {
+      isUserInteracting.current = false;
+    };
+
+    // 監聽各種使用者操作事件
+    map.current.on('dragstart', handleInteractionStart);
+    map.current.on('rotatestart', handleInteractionStart);
+    map.current.on('pitchstart', handleInteractionStart);
+    map.current.on('dragend', handleInteractionEnd);
+    map.current.on('rotateend', handleInteractionEnd);
+    map.current.on('pitchend', handleInteractionEnd);
 
     return () => {
       if (map.current) {
-        map.current.off('dragstart', handleDragStart);
+        map.current.off('dragstart', handleInteractionStart);
+        map.current.off('rotatestart', handleInteractionStart);
+        map.current.off('pitchstart', handleInteractionStart);
+        map.current.off('dragend', handleInteractionEnd);
+        map.current.off('rotateend', handleInteractionEnd);
+        map.current.off('pitchend', handleInteractionEnd);
       }
     };
   }, [mapLoaded, isFollowing, use3DMode]);

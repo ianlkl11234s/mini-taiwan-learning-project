@@ -33,9 +33,9 @@ function getLineId(trackId: string): string {
 const MODEL_ORIGIN: [number, number] = [121.52, 25.02];
 
 // 列車尺寸（公尺）- 放大以便在地圖上清楚可見
-const TRAIN_LENGTH = 140;  // 長度 (前後方向)
-const TRAIN_WIDTH = 60;    // 寬度 (左右方向)
-const TRAIN_HEIGHT = 60;   // 高度 (垂直方向)
+const TRAIN_LENGTH = 160;  // 長度 (前後方向)
+const TRAIN_WIDTH = 90;    // 寬度 (左右方向)
+const TRAIN_HEIGHT = 90;   // 高度 (垂直方向)
 
 /**
  * Train3DLayer - Mapbox Custom Layer for 3D train rendering
@@ -51,8 +51,8 @@ export class Train3DLayer implements mapboxgl.CustomLayerInterface {
   private scene: THREE.Scene = new THREE.Scene();
   private renderer: THREE.WebGLRenderer | null = null;
 
-  // 列車 mesh 物件池
-  private trainMeshes: Map<string, THREE.Mesh> = new Map();
+  // 列車 mesh 物件池（每個列車是一個 Group，包含本體和邊框）
+  private trainMeshes: Map<string, THREE.Group> = new Map();
 
   // 目前顯示的列車資料
   private trains: Train[] = [];
@@ -73,7 +73,7 @@ export class Train3DLayer implements mapboxgl.CustomLayerInterface {
 
   // 幾何體與材質快取
   private geometry: THREE.BoxGeometry | null = null;
-  private materials: Map<string, THREE.MeshLambertMaterial> = new Map();
+  private materials: Map<string, THREE.MeshStandardMaterial> = new Map();
 
   constructor(tracks?: Map<string, Track>) {
     if (tracks) {
@@ -112,12 +112,14 @@ export class Train3DLayer implements mapboxgl.CustomLayerInterface {
     // 建立共用幾何體
     this.geometry = new THREE.BoxGeometry(TRAIN_LENGTH, TRAIN_WIDTH, TRAIN_HEIGHT);
 
-    // 建立各路線的材質（使用 Lambert 材質，需要光源但較輕量）
+    // 建立各路線的材質（使用 Standard 材質，支援發光效果）
     for (const [lineId, color] of Object.entries(LINE_COLORS)) {
-      const material = new THREE.MeshLambertMaterial({
+      const material = new THREE.MeshStandardMaterial({
         color: color,
         transparent: true,
         opacity: 0.9,
+        emissive: color,
+        emissiveIntensity: 0,  // 預設不發光，進站時增加
       });
       this.materials.set(lineId, material);
     }
@@ -197,23 +199,30 @@ export class Train3DLayer implements mapboxgl.CustomLayerInterface {
     const activeTrainIds = new Set(this.trains.map(t => t.trainId));
 
     // 移除不存在的列車
-    for (const [trainId, mesh] of this.trainMeshes) {
+    for (const [trainId, group] of this.trainMeshes) {
       if (!activeTrainIds.has(trainId)) {
-        this.scene.remove(mesh);
+        this.scene.remove(group);
         this.trainMeshes.delete(trainId);
       }
     }
 
     // 更新或建立列車 mesh
     for (const train of this.trains) {
-      let mesh = this.trainMeshes.get(train.trainId);
+      let group = this.trainMeshes.get(train.trainId);
+      const lineId = getLineId(train.trackId);
+      const material = this.materials.get(lineId) || this.materials.get('R')!;
 
-      if (!mesh) {
-        const lineId = getLineId(train.trackId);
-        const material = this.materials.get(lineId) || this.materials.get('R')!;
-        mesh = new THREE.Mesh(this.geometry, material);
-        this.trainMeshes.set(train.trainId, mesh);
-        this.scene.add(mesh);
+      if (!group) {
+        // 建立新的列車群組
+        group = new THREE.Group();
+
+        // 建立列車本體
+        const mesh = new THREE.Mesh(this.geometry, material.clone());
+        mesh.name = 'body';
+        group.add(mesh);
+
+        this.trainMeshes.set(train.trainId, group);
+        this.scene.add(group);
       }
 
       // 計算位置（相對於 MODEL_ORIGIN，單位為公尺）
@@ -222,16 +231,12 @@ export class Train3DLayer implements mapboxgl.CustomLayerInterface {
       // X = 東西向 (east-west)
       // Y = 南北向 (north-south, scale 會翻轉)
       // Z = 高度 (elevation)
-      mesh.position.set(position.x, position.y, TRAIN_HEIGHT / 2);
+      group.position.set(position.x, position.y, TRAIN_HEIGHT / 2);
 
       // 計算旋轉（繞 Z 軸，因為 Z 是高度/垂直方向）
       // 根據列車實際位置找到最近的軌道線段，使用該線段方向
       const bearing = this.calculateBearing(train);
-      mesh.rotation.z = THREE.MathUtils.degToRad(bearing);
-
-      // 停站時縮小
-      const scale = train.status === 'stopped' ? 0.85 : 1.0;
-      mesh.scale.set(scale, scale, scale);
+      group.rotation.z = THREE.MathUtils.degToRad(bearing);
     }
   }
 
@@ -332,8 +337,14 @@ export class Train3DLayer implements mapboxgl.CustomLayerInterface {
   }
 
   onRemove(): void {
-    for (const mesh of this.trainMeshes.values()) {
-      this.scene.remove(mesh);
+    for (const group of this.trainMeshes.values()) {
+      // 清理群組內的子材質
+      group.traverse((child) => {
+        if (child instanceof THREE.Mesh) {
+          (child.material as THREE.Material).dispose();
+        }
+      });
+      this.scene.remove(group);
     }
     this.trainMeshes.clear();
 

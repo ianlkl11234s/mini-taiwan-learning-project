@@ -1282,9 +1282,6 @@ function App() {
           transition: 'background 0.3s, border-color 0.3s',
         }}
       >
-        <span style={{ fontSize: 12, color: themeColors.panelTextSecondary }}>
-          網站為學習性質，仍需持續優化中！
-        </span>
         <a
           href="https://github.com/ianlkl11234s/mini-taiwan-learning-project"
           target="_blank"
@@ -1481,6 +1478,7 @@ function App() {
                 <span style={{ fontSize: 18 }}>📢</span> 公告
               </h3>
               <div style={{ background: '#2a2a2a', borderRadius: 8, padding: '12px 16px', fontSize: 14, lineHeight: 1.6 }}>
+                <p style={{ margin: '0 0 8px', color: '#fff' }}>網站為學習性質，仍需持續優化中！</p>
                 <ul style={{ margin: 0, paddingLeft: 20 }}>
                   <li style={{ color: '#ccc' }}>文湖線與環狀線，目前還未調整好首班車時刻表</li>
                 </ul>

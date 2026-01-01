@@ -148,7 +148,9 @@ function App() {
     return trains.filter(train => {
       // 從 trackId 判斷路線
       let lineId: string;
-      if (train.trackId.startsWith('K')) {
+      if (train.trackId.startsWith('MK')) {
+        lineId = 'MK';
+      } else if (train.trackId.startsWith('K')) {
         lineId = 'K';
       } else if (train.trackId.startsWith('V')) {
         lineId = 'V';
@@ -170,6 +172,16 @@ function App() {
       return visibleLines.has(lineId);
     });
   }, [trains, visibleLines]);
+
+  // 計算 MRT 列車數量（排除纜車）
+  const mrtCount = useMemo(() => {
+    return filteredTrains.filter(train => !train.trackId.startsWith('MK')).length;
+  }, [filteredTrains]);
+
+  // 計算纜車數量
+  const cableCount = useMemo(() => {
+    return filteredTrains.filter(train => train.trackId.startsWith('MK')).length;
+  }, [filteredTrains]);
 
   // 建立車站座標索引（用於 3D 圖層停站定位）
   const stationCoordinates = useMemo(() => {
@@ -1240,7 +1252,8 @@ function App() {
         <TimeControl
           timeEngine={timeEngineRef.current}
           currentTime={currentTime}
-          trainCount={filteredTrains.length}
+          trainCount={mrtCount}
+          cableCount={cableCount}
           isPlaying={isPlaying}
           speed={speed}
           onTogglePlay={handleTogglePlay}

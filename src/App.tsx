@@ -753,56 +753,64 @@ function App() {
       marker.setLngLat(train.position);
 
       // 更新樣式 (停站 vs 運行 vs 碰撞)
+      // 效能優化：追蹤狀態變化，只在狀態改變時才更新 cssText
       const el = marker.getElement();
-      // 基礎樣式：啟用點擊、顯示指標手勢
-      const baseStyles = `
-        pointer-events: auto;
-        cursor: pointer;
-        border-radius: 50%;
-        transition: width 0.3s ease, height 0.3s ease, box-shadow 0.3s ease;
-      `;
+      const newState = `${isSelected}-${isColliding}-${isStopped}-${displayColor}`;
+      const prevState = el.dataset.trainState;
 
-      if (isSelected) {
-        // 選中狀態：顯示粗白框
-        el.style.cssText = `
-          ${baseStyles}
-          width: 18px;
-          height: 18px;
-          background-color: ${displayColor};
-          border: 4px solid #ffffff;
-          box-shadow: 0 0 16px rgba(255,255,255,0.8), 0 0 24px ${displayColor};
-          z-index: 10;
+      if (prevState !== newState) {
+        el.dataset.trainState = newState;
+
+        // 基礎樣式：啟用點擊、顯示指標手勢
+        const baseStyles = `
+          pointer-events: auto;
+          cursor: pointer;
+          border-radius: 50%;
+          transition: width 0.3s ease, height 0.3s ease, box-shadow 0.3s ease;
         `;
-      } else if (isColliding) {
-        // 碰撞中：較大、有警示效果
-        el.style.cssText = `
-          ${baseStyles}
-          width: 16px;
-          height: 16px;
-          background-color: ${displayColor};
-          border: 3px solid #ffff00;
-          box-shadow: 0 0 12px ${displayColor}, 0 0 20px rgba(255,255,0,0.7);
-        `;
-      } else if (isStopped) {
-        // 停站中：較大、有脈動效果
-        el.style.cssText = `
-          ${baseStyles}
-          width: 14px;
-          height: 14px;
-          background-color: ${displayColor};
-          border: 3px solid #ffffff;
-          box-shadow: 0 0 8px ${displayColor}, 0 0 12px rgba(255,255,255,0.5);
-        `;
-      } else {
-        // 運行中：正常大小
-        el.style.cssText = `
-          ${baseStyles}
-          width: 12px;
-          height: 12px;
-          background-color: ${displayColor};
-          border: 2px solid #ffffff;
-          box-shadow: 0 0 4px rgba(0,0,0,0.5);
-        `;
+
+        if (isSelected) {
+          // 選中狀態：顯示粗白框
+          el.style.cssText = `
+            ${baseStyles}
+            width: 18px;
+            height: 18px;
+            background-color: ${displayColor};
+            border: 4px solid #ffffff;
+            box-shadow: 0 0 16px rgba(255,255,255,0.8), 0 0 24px ${displayColor};
+            z-index: 10;
+          `;
+        } else if (isColliding) {
+          // 碰撞中：較大、有警示效果
+          el.style.cssText = `
+            ${baseStyles}
+            width: 16px;
+            height: 16px;
+            background-color: ${displayColor};
+            border: 3px solid #ffff00;
+            box-shadow: 0 0 12px ${displayColor}, 0 0 20px rgba(255,255,0,0.7);
+          `;
+        } else if (isStopped) {
+          // 停站中：較大、有脈動效果
+          el.style.cssText = `
+            ${baseStyles}
+            width: 14px;
+            height: 14px;
+            background-color: ${displayColor};
+            border: 3px solid #ffffff;
+            box-shadow: 0 0 8px ${displayColor}, 0 0 12px rgba(255,255,255,0.5);
+          `;
+        } else {
+          // 運行中：正常大小
+          el.style.cssText = `
+            ${baseStyles}
+            width: 12px;
+            height: 12px;
+            background-color: ${displayColor};
+            border: 2px solid #ffffff;
+            box-shadow: 0 0 4px rgba(0,0,0,0.5);
+          `;
+        }
       }
     }
   }, [mapLoaded, filteredTrains, use3DMode, handleSelectTrain, selectedTrainId]);

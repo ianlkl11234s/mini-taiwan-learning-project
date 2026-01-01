@@ -35,8 +35,8 @@ export function TrainInfoPanel({ train, stationNames, onClose }: TrainInfoPanelP
     <div
       style={{
         position: 'absolute',
-        top: 420,
-        left: 20,
+        top: 60,
+        right: 20,
         zIndex: 20,
         background: 'rgba(0, 0, 0, 0.85)',
         borderRadius: 10,

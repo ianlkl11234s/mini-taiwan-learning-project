@@ -30,6 +30,7 @@ yarn-error.log*
 # Cache
 .cache/
 *.cache
+data/cache/
 
 # Documentation (local only)
 docs/

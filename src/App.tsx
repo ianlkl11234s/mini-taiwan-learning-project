@@ -260,16 +260,15 @@ function App() {
       const currentPitch = map.current.getPitch();
       const currentBearing = map.current.getBearing();
 
+      // 效能優化：3D 模式使用 jumpTo 替代 easeTo，避免每幀觸發動畫
       // 使用 padding 來補償 3D 視角的偏移（螢幕空間，不受 bearing 影響）
-      // pitch 越大，底部 padding 越大，讓列車顯示在畫面中央
       const bottomPadding = Math.round(currentPitch * 3); // pitch 45 → padding 135
 
-      map.current.easeTo({
+      map.current.jumpTo({
         center: [lng, lat],
         padding: { top: 0, bottom: bottomPadding, left: 0, right: 0 },
         bearing: currentBearing,
         pitch: currentPitch,
-        duration: 100, // 快速但平滑
       });
     } else {
       // 2D 模式：使用平滑動畫

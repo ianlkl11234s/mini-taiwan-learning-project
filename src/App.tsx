@@ -239,6 +239,7 @@ function App() {
       // zoom 越大偏移越小，pitch 越大偏移越大
       const currentZoom = map.current.getZoom();
       const currentPitch = map.current.getPitch();
+      const currentBearing = map.current.getBearing();
 
       // 基礎偏移量：在 zoom 14、pitch 45 時約偏移 0.008 度（約 900 公尺）
       const baseOffset = 0.008;
@@ -248,8 +249,13 @@ function App() {
       const latOffset = baseOffset * zoomFactor * pitchFactor;
       targetCenter = [lng, lat - latOffset]; // 中心往南偏移，讓列車顯示在上方
 
-      // 3D 模式：使用 setCenter 直接更新
-      map.current.setCenter(targetCenter);
+      // 3D 模式：使用 jumpTo 並明確保留當前的 bearing 和 pitch
+      // 這樣不會干擾使用者的旋轉操作
+      map.current.jumpTo({
+        center: targetCenter,
+        bearing: currentBearing,
+        pitch: currentPitch,
+      });
     } else {
       // 2D 模式：使用平滑動畫
       map.current.easeTo({

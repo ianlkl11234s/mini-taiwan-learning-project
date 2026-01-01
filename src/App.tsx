@@ -726,6 +726,32 @@ function App() {
     }
   }, []);
 
+  // 2D/3D 模式切換（含視角轉換）
+  const handleToggle3DMode = useCallback(() => {
+    if (!map.current) return;
+
+    const newMode = !use3DMode;
+    setUse3DMode(newMode);
+
+    if (newMode) {
+      // 切換到 3D 模式：拉近、傾斜 45 度
+      map.current.easeTo({
+        zoom: 14,
+        pitch: 45,
+        bearing: 0,
+        duration: 1000,
+      });
+    } else {
+      // 切換到 2D 模式：拉遠、回復平面
+      map.current.easeTo({
+        zoom: 10.8,
+        pitch: 0,
+        bearing: 0,
+        duration: 1000,
+      });
+    }
+  }, [use3DMode]);
+
   // 載入中畫面
   if (loading) {
     return (
@@ -1037,7 +1063,7 @@ function App() {
         </a>
         {/* 2D/3D 切換按鈕 */}
         <button
-          onClick={() => setUse3DMode(!use3DMode)}
+          onClick={handleToggle3DMode}
           style={{
             background: use3DMode ? 'rgba(102, 196, 160, 0.2)' : 'rgba(128, 191, 255, 0.2)',
             border: `1px solid ${use3DMode ? '#66c4a0' : '#80bfff'}`,

@@ -232,24 +232,22 @@ function App() {
     });
   }, [mapLoaded, isFollowing, selectedTrain]);
 
-  // 偵測使用者手動操作地圖時取消跟隨
+  // 偵測使用者手動拖曳地圖時取消跟隨（縮放不影響）
   useEffect(() => {
     if (!map.current || !mapLoaded) return;
 
-    const handleUserInteraction = () => {
+    const handleDragStart = () => {
       if (isFollowing) {
         setIsFollowing(false);
       }
     };
 
-    // 監聽使用者拖曳或縮放操作
-    map.current.on('dragstart', handleUserInteraction);
-    map.current.on('zoomstart', handleUserInteraction);
+    // 只監聽拖曳操作，縮放時保持跟隨
+    map.current.on('dragstart', handleDragStart);
 
     return () => {
       if (map.current) {
-        map.current.off('dragstart', handleUserInteraction);
-        map.current.off('zoomstart', handleUserInteraction);
+        map.current.off('dragstart', handleDragStart);
       }
     };
   }, [mapLoaded, isFollowing]);

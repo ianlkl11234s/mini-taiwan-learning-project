@@ -78,10 +78,6 @@ export class Train3DLayer implements mapboxgl.CustomLayerInterface {
   private geometry: THREE.BoxGeometry | null = null;
   private materials: Map<string, THREE.MeshStandardMaterial> = new Map();
 
-  // Raycasting 相關
-  private raycaster: THREE.Raycaster = new THREE.Raycaster();
-  private mouse: THREE.Vector2 = new THREE.Vector2();
-
   // 選中的列車 ID
   private selectedTrainId: string | null = null;
 
@@ -162,45 +158,40 @@ export class Train3DLayer implements mapboxgl.CustomLayerInterface {
       this.materials.set(lineId, material);
     }
 
-    // 點擊事件處理
+    // 點擊事件處理 - 使用 Mapbox unproject 找最近列車
     const handleClick = (event: MouseEvent) => {
-      if (!this.map || !this.renderer) return;
+      if (!this.map || !this.onSelectCallback) return;
+      if (this.trains.length === 0) return;
 
       const canvas = this.map.getCanvas();
       const rect = canvas.getBoundingClientRect();
 
-      // 計算標準化設備座標 (-1 到 +1)
-      this.mouse.x = ((event.clientX - rect.left) / rect.width) * 2 - 1;
-      this.mouse.y = -((event.clientY - rect.top) / rect.height) * 2 + 1;
+      // 取得點擊位置的螢幕座標
+      const point = new mapboxgl.Point(
+        event.clientX - rect.left,
+        event.clientY - rect.top
+      );
 
-      // 執行 raycasting
-      this.raycaster.setFromCamera(this.mouse, this.camera);
+      // 找最近的列車（以螢幕像素距離計算）
+      let closestTrain: Train | null = null;
+      let minDistSq = Infinity;
+      const clickThreshold = 30; // 點擊容差（像素）
 
-      // 收集所有列車的 mesh
-      const meshes: THREE.Mesh[] = [];
-      for (const group of this.trainMeshes.values()) {
-        const body = group.getObjectByName('body') as THREE.Mesh;
-        if (body) {
-          meshes.push(body);
+      for (const train of this.trains) {
+        // 將列車位置投影到螢幕座標
+        const trainPoint = this.map.project(train.position);
+        const dx = trainPoint.x - point.x;
+        const dy = trainPoint.y - point.y;
+        const distSq = dx * dx + dy * dy;
+
+        if (distSq < minDistSq && distSq < clickThreshold * clickThreshold) {
+          minDistSq = distSq;
+          closestTrain = train;
         }
       }
 
-      const intersects = this.raycaster.intersectObjects(meshes);
-
-      if (intersects.length > 0) {
-        // 找到被點擊的列車
-        const clickedMesh = intersects[0].object;
-        const clickedGroup = clickedMesh.parent as THREE.Group;
-
-        // 從 trainMeshes 找到對應的 trainId
-        for (const [trainId, group] of this.trainMeshes) {
-          if (group === clickedGroup) {
-            if (this.onSelectCallback) {
-              this.onSelectCallback(trainId);
-            }
-            break;
-          }
-        }
+      if (closestTrain) {
+        this.onSelectCallback(closestTrain.trainId);
       }
     };
 

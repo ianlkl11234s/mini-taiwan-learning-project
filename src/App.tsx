@@ -5,7 +5,7 @@ import { useData } from './hooks/useData';
 import { TimeEngine } from './engines/TimeEngine';
 import { TrainEngine, type Train } from './engines/TrainEngine';
 import { TimeControl } from './components/TimeControl';
-import { LineFilter } from './components/LineFilter';
+import { LineFilter, type MKFilterState } from './components/LineFilter';
 import { TrainHistogram } from './components/TrainHistogram';
 import { TrainInfoPanel } from './components/TrainInfoPanel';
 import { useTrainCountHistogram } from './hooks/useTrainCountHistogram';
@@ -125,10 +125,13 @@ function App() {
   const [isFollowing, setIsFollowing] = useState(false);
   const isUserInteracting = useRef(false); // 追蹤使用者是否正在操作地圖
 
-  // 路線篩選狀態
+  // 路線篩選狀態（MRT 線路）
   const [visibleLines, setVisibleLines] = useState<Set<string>>(
-    new Set(['R', 'BL', 'G', 'O', 'BR', 'K', 'V', 'A', 'Y', 'MK'])
+    new Set(['R', 'BL', 'G', 'O', 'BR', 'K', 'V', 'A', 'Y'])
   );
+
+  // 貓空纜車三段式狀態：full | tracks-only | hidden
+  const [mkState, setMkState] = useState<MKFilterState>('full');
 
   // 切換路線可見性
   const handleToggleLine = useCallback((lineId: string) => {
@@ -143,14 +146,22 @@ function App() {
     });
   }, []);
 
+  // 切換 MK 狀態
+  const handleMKStateChange = useCallback((state: MKFilterState) => {
+    setMkState(state);
+  }, []);
+
   // 根據可見路線過濾列車
   const filteredTrains = useMemo(() => {
     return trains.filter(train => {
-      // 從 trackId 判斷路線
-      let lineId: string;
+      // MK 線使用三段式狀態
       if (train.trackId.startsWith('MK')) {
-        lineId = 'MK';
-      } else if (train.trackId.startsWith('K')) {
+        return mkState === 'full'; // 只有 full 狀態才顯示纜車
+      }
+
+      // 其他線路從 trackId 判斷路線
+      let lineId: string;
+      if (train.trackId.startsWith('K')) {
         lineId = 'K';
       } else if (train.trackId.startsWith('V')) {
         lineId = 'V';
@@ -171,16 +182,11 @@ function App() {
       }
       return visibleLines.has(lineId);
     });
-  }, [trains, visibleLines]);
+  }, [trains, visibleLines, mkState]);
 
   // 計算 MRT 列車數量（排除纜車）
   const mrtCount = useMemo(() => {
     return filteredTrains.filter(train => !train.trackId.startsWith('MK')).length;
-  }, [filteredTrains]);
-
-  // 計算纜車數量
-  const cableCount = useMemo(() => {
-    return filteredTrains.filter(train => train.trackId.startsWith('MK')).length;
   }, [filteredTrains]);
 
   // 建立車站座標索引（用於 3D 圖層停站定位）
@@ -508,13 +514,13 @@ function App() {
       0.0
     ]);
 
-    // 貓空纜車圖層可見性（獨立控制）
+    // 貓空纜車圖層可見性（三段式控制：full/tracks-only 顯示，hidden 隱藏）
     if (map.current.getLayer('tracks-line-mk')) {
       map.current.setPaintProperty('tracks-line-mk', 'line-opacity',
-        visibleLines.has('MK') ? 0.8 : 0.0
+        mkState !== 'hidden' ? 0.8 : 0.0
       );
     }
-  }, [mapLoaded, visibleLines]);
+  }, [mapLoaded, visibleLines, mkState]);
 
   // 載入車站圖層
   useEffect(() => {
@@ -620,7 +626,7 @@ function App() {
       ], 1,
       ['all',
         ['==', ['slice', ['get', 'station_id'], 0, 2], 'MK'],
-        visibleLines.has('MK')
+        mkState !== 'hidden'  // MK 使用三段式：full/tracks-only 顯示，hidden 隱藏
       ], 1,
       0
     ];
@@ -628,11 +634,11 @@ function App() {
     map.current.setPaintProperty('stations-circle', 'circle-opacity', stationOpacityExpr);
     map.current.setPaintProperty('stations-circle', 'circle-stroke-opacity', stationOpacityExpr);
     map.current.setLayoutProperty('stations-label', 'visibility',
-      visibleLines.size > 0 ? 'visible' : 'none'
+      visibleLines.size > 0 || mkState !== 'hidden' ? 'visible' : 'none'
     );
     // 標籤使用相同的 opacity 邏輯
     map.current.setPaintProperty('stations-label', 'text-opacity', stationOpacityExpr);
-  }, [mapLoaded, visibleLines]);
+  }, [mapLoaded, visibleLines, mkState]);
 
   // 初始化時間引擎
   useEffect(() => {
@@ -1217,6 +1223,8 @@ function App() {
       <LineFilter
         visibleLines={visibleLines}
         onToggleLine={handleToggleLine}
+        mkState={mkState}
+        onMKStateChange={handleMKStateChange}
       />
 
       {/* 列車資訊面板 */}
@@ -1253,7 +1261,6 @@ function App() {
           timeEngine={timeEngineRef.current}
           currentTime={currentTime}
           trainCount={mrtCount}
-          cableCount={cableCount}
           isPlaying={isPlaying}
           speed={speed}
           onTogglePlay={handleTogglePlay}

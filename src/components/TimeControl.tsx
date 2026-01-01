@@ -4,7 +4,6 @@ interface TimeControlProps {
   timeEngine: TimeEngine;
   currentTime: string;
   trainCount: number;
-  cableCount: number;
   isPlaying: boolean;
   speed: number;
   onTogglePlay: () => void;
@@ -39,7 +38,6 @@ export function TimeControl({
   timeEngine,
   currentTime,
   trainCount,
-  cableCount,
   isPlaying,
   speed,
   onTogglePlay,
@@ -82,9 +80,9 @@ export function TimeControl({
           {currentTime}
         </div>
 
-        {/* 右側：列車/纜車數量 */}
-        <div style={{ display: 'flex', alignItems: 'center', gap: 20 }}>
-          {/* MRT 列車數量 */}
+        {/* 右側：列車數量 */}
+        <div style={{ display: 'flex', alignItems: 'center', gap: 16 }}>
+          {/* 列車數量 */}
           <div
             style={{
               display: 'flex',
@@ -103,28 +101,7 @@ export function TimeControl({
                 borderRadius: '50%',
               }}
             />
-            <span>MRT: {trainCount}</span>
-          </div>
-          {/* 纜車數量 */}
-          <div
-            style={{
-              display: 'flex',
-              alignItems: 'center',
-              gap: 8,
-              fontSize: 14,
-              color: '#aaa',
-            }}
-          >
-            <span
-              style={{
-                display: 'inline-block',
-                width: 10,
-                height: 10,
-                background: '#06b8e6',
-                borderRadius: '50%',
-              }}
-            />
-            <span>Cable: {cableCount}</span>
+            <span>運行中列車: {trainCount}</span>
           </div>
         </div>
       </div>

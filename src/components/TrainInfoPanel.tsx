@@ -46,7 +46,7 @@ export function TrainInfoPanel({ train, stationNames, onClose, visualTheme = 'da
     <div
       style={{
         position: 'absolute',
-        top: 60,
+        top: 75,
         right: 60,
         zIndex: 20,
         background: colors.bg,

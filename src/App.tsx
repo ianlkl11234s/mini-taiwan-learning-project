@@ -225,24 +225,47 @@ function App() {
     if (!map.current || !mapLoaded) return;
     if (!isFollowing || !selectedTrain) return;
 
-    // 平滑移動到列車位置
+    // 計算偏移後的中心點
+    // 3D 模式下，因為有傾斜角度，需要讓中心點往南偏移，讓列車顯示在畫面中央偏上
+    const [lng, lat] = selectedTrain.position;
+    let targetCenter: [number, number] = [lng, lat];
+
+    if (use3DMode) {
+      // 3D 模式：根據 zoom 和 pitch 計算合適的緯度偏移
+      // zoom 越大偏移越小，pitch 越大偏移越大
+      const currentZoom = map.current.getZoom();
+      const currentPitch = map.current.getPitch();
+
+      // 基礎偏移量：在 zoom 14、pitch 45 時約偏移 0.008 度（約 900 公尺）
+      const baseOffset = 0.008;
+      const zoomFactor = Math.pow(2, 14 - currentZoom); // zoom 越大，偏移越小
+      const pitchFactor = currentPitch / 45; // pitch 越大，偏移越大
+
+      const latOffset = baseOffset * zoomFactor * pitchFactor;
+      targetCenter = [lng, lat - latOffset]; // 中心往南偏移，讓列車顯示在上方
+    }
+
+    // 平滑移動到目標位置
     map.current.easeTo({
-      center: selectedTrain.position,
+      center: targetCenter,
       duration: 300,
     });
-  }, [mapLoaded, isFollowing, selectedTrain]);
+  }, [mapLoaded, isFollowing, selectedTrain, use3DMode]);
 
-  // 偵測使用者手動拖曳地圖時取消跟隨（縮放不影響）
+  // 偵測使用者手動拖曳地圖時取消跟隨
+  // 2D 模式：拖曳取消跟隨
+  // 3D 模式：允許自由旋轉視角，只有關閉面板才取消跟隨
   useEffect(() => {
     if (!map.current || !mapLoaded) return;
 
     const handleDragStart = () => {
-      if (isFollowing) {
+      // 只在 2D 模式下，拖曳時取消跟隨
+      // 3D 模式允許自由旋轉而不取消跟隨
+      if (isFollowing && !use3DMode) {
         setIsFollowing(false);
       }
     };
 
-    // 只監聽拖曳操作，縮放時保持跟隨
     map.current.on('dragstart', handleDragStart);
 
     return () => {
@@ -250,7 +273,7 @@ function App() {
         map.current.off('dragstart', handleDragStart);
       }
     };
-  }, [mapLoaded, isFollowing]);
+  }, [mapLoaded, isFollowing, use3DMode]);
 
   // 初始化地圖 - 當 loading 完成後才初始化
   useEffect(() => {

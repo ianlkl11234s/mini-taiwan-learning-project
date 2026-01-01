@@ -88,6 +88,11 @@ export class Train3DLayer implements mapboxgl.CustomLayerInterface {
   private outlineMaterial: THREE.LineBasicMaterial | null = null;
   private outlineGeometry: THREE.EdgesGeometry | null = null;
 
+  // 效能優化：追蹤資料變化，避免不必要的重繪
+  private lastTrainCount = 0;
+  private lastUpdateTime = 0;
+  private needsRepaint = true;
+
   constructor(tracks?: Map<string, Track>) {
     if (tracks) {
       this.tracks = tracks;
@@ -113,6 +118,11 @@ export class Train3DLayer implements mapboxgl.CustomLayerInterface {
   }
 
   updateTrains(trains: Train[]): void {
+    // 效能優化：只在列車數量變化時標記需要重繪
+    if (trains.length !== this.lastTrainCount) {
+      this.needsRepaint = true;
+      this.lastTrainCount = trains.length;
+    }
     this.trains = trains;
   }
 
@@ -265,8 +275,14 @@ export class Train3DLayer implements mapboxgl.CustomLayerInterface {
     this.renderer.resetState();
     this.renderer.render(this.scene, this.camera);
 
-    // 持續重繪
-    this.map.triggerRepaint();
+    // 效能優化：使用節流的重繪機制
+    // 列車持續移動，需要持續重繪，但使用 requestAnimationFrame 節奏
+    const now = performance.now();
+    if (this.needsRepaint || now - this.lastUpdateTime > 16) { // 約 60fps
+      this.lastUpdateTime = now;
+      this.needsRepaint = false;
+      this.map.triggerRepaint();
+    }
   }
 
   private updateTrainMeshes(): void {

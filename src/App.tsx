@@ -243,13 +243,16 @@ function App() {
 
       const latOffset = baseOffset * zoomFactor * pitchFactor;
       targetCenter = [lng, lat - latOffset]; // 中心往南偏移，讓列車顯示在上方
-    }
 
-    // 平滑移動到目標位置
-    map.current.easeTo({
-      center: targetCenter,
-      duration: 300,
-    });
+      // 3D 模式：使用 setCenter 直接更新，不干擾使用者的旋轉操作
+      map.current.setCenter(targetCenter);
+    } else {
+      // 2D 模式：使用平滑動畫
+      map.current.easeTo({
+        center: targetCenter,
+        duration: 300,
+      });
+    }
   }, [mapLoaded, isFollowing, selectedTrain, use3DMode]);
 
   // 偵測使用者手動拖曳地圖時取消跟隨

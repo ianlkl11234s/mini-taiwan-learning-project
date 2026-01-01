@@ -1,4 +1,5 @@
 import { TimeEngine } from '../engines/TimeEngine';
+import type { VisualTheme } from './ThemeToggle';
 
 interface TimeControlProps {
   timeEngine: TimeEngine;
@@ -9,6 +10,7 @@ interface TimeControlProps {
   onTogglePlay: () => void;
   onSpeedChange: (speed: number) => void;
   onTimeChange: (seconds: number) => void;
+  visualTheme?: VisualTheme;
 }
 
 /**
@@ -43,6 +45,7 @@ export function TimeControl({
   onTogglePlay,
   onSpeedChange,
   onTimeChange,
+  visualTheme = 'dark',
 }: TimeControlProps) {
   const standardSeconds = timeEngine.getTimeOfDaySeconds();
   const timeSeconds = toExtendedSeconds(standardSeconds);
@@ -51,6 +54,20 @@ export function TimeControl({
   const minTime = 6 * 3600; // 06:00
   const maxTime = 25.5 * 3600; // 01:30 (延長日表示為 25:30)
 
+  // 主題顏色
+  const isDark = visualTheme === 'dark';
+  const colors = {
+    bg: isDark ? 'rgba(0, 0, 0, 0.85)' : 'rgba(255, 255, 255, 0.95)',
+    text: isDark ? '#fff' : '#333',
+    textSecondary: isDark ? '#aaa' : '#666',
+    textMuted: isDark ? '#888' : '#999',
+    textDim: isDark ? '#666' : '#aaa',
+    border: isDark ? '#444' : '#ccc',
+    sliderTrack: isDark ? '#333' : '#ddd',
+    shadow: isDark ? '0 4px 20px rgba(0,0,0,0.3)' : '0 4px 20px rgba(0,0,0,0.15)',
+    thumbShadow: isDark ? '0 2px 4px rgba(0,0,0,0.3)' : '0 2px 4px rgba(0,0,0,0.2)',
+  };
+
   return (
     <div
       style={{
@@ -58,12 +75,15 @@ export function TimeControl({
         bottom: 20,
         left: 20,
         right: 20,
-        background: 'rgba(0, 0, 0, 0.85)',
+        background: colors.bg,
         borderRadius: 12,
         padding: '16px 20px',
-        color: 'white',
+        color: colors.text,
         fontFamily: 'system-ui, -apple-system, sans-serif',
-        boxShadow: '0 4px 20px rgba(0,0,0,0.3)',
+        boxShadow: colors.shadow,
+        backdropFilter: 'blur(8px)',
+        border: `1px solid ${isDark ? 'rgba(255,255,255,0.1)' : 'rgba(0,0,0,0.1)'}`,
+        transition: 'background 0.3s, color 0.3s, border-color 0.3s',
       }}
     >
       {/* 上方資訊列 */}
@@ -89,7 +109,7 @@ export function TimeControl({
               alignItems: 'center',
               gap: 8,
               fontSize: 14,
-              color: '#aaa',
+              color: colors.textSecondary,
             }}
           >
             <span
@@ -116,18 +136,18 @@ export function TimeControl({
               width: 14px;
               height: 14px;
               border-radius: 50%;
-              background: white;
+              background: ${isDark ? 'white' : '#333'};
               cursor: pointer;
-              box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+              box-shadow: ${colors.thumbShadow};
             }
             .time-slider::-moz-range-thumb {
               width: 14px;
               height: 14px;
               border-radius: 50%;
-              background: white;
+              background: ${isDark ? 'white' : '#333'};
               cursor: pointer;
               border: none;
-              box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+              box-shadow: ${colors.thumbShadow};
             }
           `}
         </style>
@@ -146,7 +166,7 @@ export function TimeControl({
             width: '100%',
             height: 6,
             appearance: 'none',
-            background: 'linear-gradient(to right, #333 0%, #d90023 50%, #333 100%)',
+            background: `linear-gradient(to right, ${colors.sliderTrack} 0%, #d90023 50%, ${colors.sliderTrack} 100%)`,
             borderRadius: 3,
             cursor: 'pointer',
           }}
@@ -157,7 +177,7 @@ export function TimeControl({
             position: 'relative',
             height: 16,
             fontSize: 11,
-            color: '#666',
+            color: colors.textDim,
             marginTop: 4,
           }}
         >
@@ -212,7 +232,7 @@ export function TimeControl({
 
         {/* 速度滑桿 (線性刻度) */}
         <div style={{ display: 'flex', alignItems: 'center', gap: 12, flex: 1, maxWidth: 320 }}>
-          <span style={{ fontSize: 12, color: '#888', minWidth: 24 }}>1x</span>
+          <span style={{ fontSize: 12, color: colors.textMuted, minWidth: 24 }}>1x</span>
           <input
             type="range"
             min={1}
@@ -225,12 +245,12 @@ export function TimeControl({
               flex: 1,
               height: 6,
               appearance: 'none',
-              background: `linear-gradient(to right, #d90023 0%, #d90023 ${(speed - 1) / 299 * 100}%, #333 ${(speed - 1) / 299 * 100}%, #333 100%)`,
+              background: `linear-gradient(to right, #d90023 0%, #d90023 ${(speed - 1) / 299 * 100}%, ${colors.sliderTrack} ${(speed - 1) / 299 * 100}%, ${colors.sliderTrack} 100%)`,
               borderRadius: 3,
               cursor: 'pointer',
             }}
           />
-          <span style={{ fontSize: 12, color: '#888', minWidth: 32 }}>300x</span>
+          <span style={{ fontSize: 12, color: colors.textMuted, minWidth: 32 }}>300x</span>
           <span
             style={{
               fontSize: 16,
@@ -254,11 +274,12 @@ export function TimeControl({
               style={{
                 padding: '6px 10px',
                 borderRadius: 4,
-                border: '1px solid #444',
+                border: `1px solid ${colors.border}`,
                 background: 'transparent',
-                color: '#888',
+                color: colors.textMuted,
                 fontSize: 12,
                 cursor: 'pointer',
+                transition: 'border-color 0.2s, color 0.2s',
               }}
             >
               {time}

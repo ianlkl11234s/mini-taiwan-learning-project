@@ -1,17 +1,31 @@
 import { useState } from 'react';
 import type { Train } from '../engines/TrainEngine';
 import { getLineName, getLineColor } from '../constants/lineInfo';
+import type { VisualTheme } from './ThemeToggle';
 
 interface TrainInfoPanelProps {
   train: Train;
   stationNames: Map<string, string>;
   onClose: () => void;
+  visualTheme?: VisualTheme;
 }
 
-export function TrainInfoPanel({ train, stationNames, onClose }: TrainInfoPanelProps) {
+export function TrainInfoPanel({ train, stationNames, onClose, visualTheme = 'dark' }: TrainInfoPanelProps) {
   const [collapsed, setCollapsed] = useState(false);
   const lineColor = getLineColor(train.trackId);
   const lineName = getLineName(train.trackId);
+
+  // 主題顏色
+  const isDark = visualTheme === 'dark';
+  const colors = {
+    bg: isDark ? 'rgba(0, 0, 0, 0.85)' : 'rgba(255, 255, 255, 0.95)',
+    text: isDark ? '#fff' : '#333',
+    textSecondary: isDark ? '#888' : '#666',
+    textMuted: isDark ? '#aaa' : '#777',
+    bgHighlight: isDark ? 'rgba(255, 255, 255, 0.1)' : 'rgba(0, 0, 0, 0.05)',
+    border: isDark ? 'rgba(255, 255, 255, 0.1)' : 'rgba(0, 0, 0, 0.1)',
+    shadow: isDark ? '0 4px 16px rgba(0, 0, 0, 0.5)' : '0 4px 16px rgba(0, 0, 0, 0.15)',
+  };
 
   // 取得站名（如果找不到則顯示 ID）
   const getStationName = (stationId: string | undefined) => {
@@ -35,16 +49,17 @@ export function TrainInfoPanel({ train, stationNames, onClose }: TrainInfoPanelP
         top: 60,
         right: 60,
         zIndex: 20,
-        background: 'rgba(0, 0, 0, 0.85)',
+        background: colors.bg,
         borderRadius: 10,
         padding: collapsed ? '10px 16px' : '16px 20px',
-        color: 'white',
+        color: colors.text,
         fontFamily: 'system-ui',
         fontSize: 14,
         minWidth: collapsed ? 160 : 220,
-        boxShadow: '0 4px 16px rgba(0, 0, 0, 0.5)',
+        boxShadow: colors.shadow,
         border: `2px solid ${lineColor}`,
         transition: 'all 0.2s ease',
+        backdropFilter: 'blur(8px)',
       }}
     >
       {/* 標題列：可點擊收合 */}
@@ -71,7 +86,7 @@ export function TrainInfoPanel({ train, stationNames, onClose }: TrainInfoPanelP
         <span
           style={{
             fontSize: 10,
-            color: '#888',
+            color: colors.textSecondary,
             marginLeft: 'auto',
             transition: 'transform 0.2s ease',
             transform: collapsed ? 'rotate(-90deg)' : 'rotate(0deg)',
@@ -88,7 +103,7 @@ export function TrainInfoPanel({ train, stationNames, onClose }: TrainInfoPanelP
           style={{
             background: 'none',
             border: 'none',
-            color: '#888',
+            color: colors.textSecondary,
             cursor: 'pointer',
             padding: 2,
             display: 'flex',
@@ -97,8 +112,8 @@ export function TrainInfoPanel({ train, stationNames, onClose }: TrainInfoPanelP
             transition: 'color 0.2s',
             marginLeft: 4,
           }}
-          onMouseEnter={(e) => (e.currentTarget.style.color = '#fff')}
-          onMouseLeave={(e) => (e.currentTarget.style.color = '#888')}
+          onMouseEnter={(e) => (e.currentTarget.style.color = colors.text)}
+          onMouseLeave={(e) => (e.currentTarget.style.color = colors.textSecondary)}
           title="關閉"
         >
           <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
@@ -125,19 +140,19 @@ export function TrainInfoPanel({ train, stationNames, onClose }: TrainInfoPanelP
             gap: 8,
             marginBottom: 10,
             padding: '6px 10px',
-            background: 'rgba(255, 255, 255, 0.1)',
+            background: colors.bgHighlight,
             borderRadius: 6,
             fontSize: 13,
           }}
         >
           <span style={{ fontWeight: 500 }}>{originName}</span>
-          <span style={{ color: '#888' }}>→</span>
+          <span style={{ color: colors.textSecondary }}>→</span>
           <span style={{ fontWeight: 500 }}>{destinationName}</span>
         </div>
 
         {/* 前一站 */}
         <div style={{ marginBottom: 4, fontSize: 13 }}>
-          <span style={{ color: '#888' }}>前一站：</span>
+          <span style={{ color: colors.textSecondary }}>前一站：</span>
           <span>{prevStationName}</span>
           {train.previousDepartureTime && (
             <span
@@ -154,7 +169,7 @@ export function TrainInfoPanel({ train, stationNames, onClose }: TrainInfoPanelP
 
         {/* 下一站 */}
         <div style={{ marginBottom: 4, fontSize: 13 }}>
-          <span style={{ color: '#888' }}>下一站：</span>
+          <span style={{ color: colors.textSecondary }}>下一站：</span>
           <span>{nextStationName}</span>
           {train.nextArrivalTime && (
             <span
@@ -174,7 +189,7 @@ export function TrainInfoPanel({ train, stationNames, onClose }: TrainInfoPanelP
           style={{
             marginTop: 8,
             paddingTop: 8,
-            borderTop: '1px solid rgba(255, 255, 255, 0.1)',
+            borderTop: `1px solid ${colors.border}`,
             display: 'flex',
             alignItems: 'center',
             gap: 6,
@@ -190,7 +205,7 @@ export function TrainInfoPanel({ train, stationNames, onClose }: TrainInfoPanelP
                   ? '#66c4a0'
                   : train.status === 'running'
                   ? '#80bfff'
-                  : '#888',
+                  : colors.textSecondary,
               boxShadow:
                 train.status === 'stopped'
                   ? '0 0 6px #66c4a0'
@@ -199,7 +214,7 @@ export function TrainInfoPanel({ train, stationNames, onClose }: TrainInfoPanelP
                   : 'none',
             }}
           />
-          <span style={{ color: '#aaa', fontSize: 11 }}>
+          <span style={{ color: colors.textMuted, fontSize: 11 }}>
             {train.status === 'stopped'
               ? '停站中'
               : train.status === 'running'

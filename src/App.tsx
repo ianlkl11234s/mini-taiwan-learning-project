@@ -10,10 +10,16 @@ import { TrainHistogram } from './components/TrainHistogram';
 import { TrainInfoPanel } from './components/TrainInfoPanel';
 import { useTrainCountHistogram } from './hooks/useTrainCountHistogram';
 import { Train3DLayer } from './layers/Train3DLayer';
-import { ThemeToggle, type MapTheme } from './components/ThemeToggle';
+import { ThemeToggle, type MapTheme, type VisualTheme, getVisualTheme } from './components/ThemeToggle';
 
-// 光線預設類型
+// 光線預設類型（用於 standard 樣式）
 type LightPreset = 'dawn' | 'day' | 'dusk' | 'night';
+
+// 地圖樣式
+const MAP_STYLES = {
+  standard: 'mapbox://styles/mapbox/standard',
+  dark: 'mapbox://styles/mapbox/dark-v11',
+} as const;
 
 // 根據小時取得光線預設
 const getPresetForHour = (hour: number): LightPreset => {
@@ -137,9 +143,17 @@ function App() {
   const [use3DMode, setUse3DMode] = useState(false);
   const train3DLayerRef = useRef<Train3DLayer | null>(null);
 
-  // 地圖主題模式（日夜切換）
-  const [mapTheme, setMapTheme] = useState<MapTheme>('auto');
+  // 地圖主題模式（日夜切換）- 預設使用 dark 樣式
+  const [mapTheme, setMapTheme] = useState<MapTheme>('dark');
   const currentLightPresetRef = useRef<LightPreset>('day');
+  const currentMapStyleRef = useRef<'standard' | 'dark'>('standard');
+  const [styleVersion, setStyleVersion] = useState(0); // 樣式版本，用於觸發圖層重建
+
+  // 視覺主題（用於面板顏色）
+  const [visualTheme, setVisualTheme] = useState<VisualTheme>('dark');
+
+  // 當前小時（用於自動模式判斷）
+  const [currentHour, setCurrentHour] = useState(6);
 
   // 列車選擇狀態
   const [selectedTrainId, setSelectedTrainId] = useState<string | null>(null);
@@ -426,6 +440,8 @@ function App() {
           ['==', ['slice', ['get', 'track_id'], 0, 2], 'Y-'], 0.8,   // 所有 Y 線軌道可見 (環狀線)
           0.0 // 其他軌道透明
         ],
+        // 發光強度：讓軌道在夜間模式也保持明亮
+        'line-emissive-strength': 1.0,
       },
     });
 
@@ -444,9 +460,11 @@ function App() {
         'line-width': 4,
         'line-opacity': 0.8,
         'line-dasharray': [2, 2],  // 虛線樣式
+        // 發光強度：讓軌道在夜間模式也保持明亮
+        'line-emissive-strength': 1.0,
       },
     });
-  }, [mapLoaded, tracks]);
+  }, [mapLoaded, tracks, styleVersion]);
 
   // 初始化 3D 列車圖層
   useEffect(() => {
@@ -468,7 +486,7 @@ function App() {
       }
       train3DLayerRef.current = null;
     };
-  }, [mapLoaded, trackMap, stationCoordinates, use3DMode, handleSelectTrain]);
+  }, [mapLoaded, trackMap, stationCoordinates, use3DMode, handleSelectTrain, styleVersion]);
 
   // 更新 3D 圖層列車資料
   useEffect(() => {
@@ -535,7 +553,7 @@ function App() {
         mkState !== 'hidden' ? 0.8 : 0.0
       );
     }
-  }, [mapLoaded, visibleLines, mkState]);
+  }, [mapLoaded, visibleLines, mkState, styleVersion]);
 
   // 載入車站圖層
   useEffect(() => {
@@ -574,6 +592,8 @@ function App() {
           TRACK_COLORS.R
         ],
         'circle-stroke-width': 1.8,
+        // 發光強度：讓車站在夜間模式也保持明亮
+        'circle-emissive-strength': 1.0,
       },
     });
 
@@ -591,9 +611,11 @@ function App() {
         'text-color': '#ffffff',
         'text-halo-color': '#000000',
         'text-halo-width': 1,
+        // 發光強度：讓標籤在夜間模式也保持明亮
+        'text-emissive-strength': 1.0,
       },
     });
-  }, [mapLoaded, stations]);
+  }, [mapLoaded, stations, styleVersion]);
 
   // 更新車站可見性（當 visibleLines 變化時）
   useEffect(() => {
@@ -653,7 +675,7 @@ function App() {
     );
     // 標籤使用相同的 opacity 邏輯
     map.current.setPaintProperty('stations-label', 'text-opacity', stationOpacityExpr);
-  }, [mapLoaded, visibleLines, mkState]);
+  }, [mapLoaded, visibleLines, mkState, styleVersion]);
 
   // 初始化時間引擎
   useEffect(() => {
@@ -880,24 +902,52 @@ function App() {
     }
   }, [use3DMode]);
 
-  // 切換光線預設
+  // 切換光線預設（僅用於 standard 樣式）
   const switchLightPreset = useCallback((preset: LightPreset) => {
-    if (!map.current || currentLightPresetRef.current === preset) return;
+    if (!map.current || currentMapStyleRef.current !== 'standard') return;
+    if (currentLightPresetRef.current === preset) return;
     currentLightPresetRef.current = preset;
     map.current.setConfigProperty('basemap', 'lightPreset', preset);
   }, []);
+
+  // 切換地圖樣式（standard 或 dark-v11）
+  const switchMapStyle = useCallback((targetStyle: 'standard' | 'dark') => {
+    if (!map.current || currentMapStyleRef.current === targetStyle) return;
+    currentMapStyleRef.current = targetStyle;
+
+    // 切換樣式會移除所有圖層
+    map.current.setStyle(MAP_STYLES[targetStyle]);
+
+    // 樣式載入完成後，遞增版本號觸發圖層重建
+    map.current.once('style.load', () => {
+      setStyleVersion(v => v + 1);
+    });
+  }, []);
+
+  // 更新視覺主題
+  useEffect(() => {
+    const newVisualTheme = getVisualTheme(mapTheme, currentHour);
+    setVisualTheme(newVisualTheme);
+  }, [mapTheme, currentHour]);
 
   // 自動模式：根據時間軸時間切換光線
   useEffect(() => {
     if (mapTheme !== 'auto' || !timeEngineRef.current || !mapLoaded) return;
 
+    // 確保使用 standard 樣式
+    if (currentMapStyleRef.current !== 'standard') {
+      switchMapStyle('standard');
+    }
+
     // 初始設定
     const initialHour = timeEngineRef.current.getTime().getHours();
+    setCurrentHour(initialHour);
     switchLightPreset(getPresetForHour(initialHour));
 
-    // 監聽時間變化
+    // 監聯時間變化
     const unsubscribe = timeEngineRef.current.onTick((time) => {
       const hour = time.getHours();
+      setCurrentHour(hour);
       const targetPreset = getPresetForHour(hour);
       if (currentLightPresetRef.current !== targetPreset) {
         switchLightPreset(targetPreset);
@@ -905,13 +955,28 @@ function App() {
     });
 
     return () => unsubscribe();
-  }, [mapTheme, mapLoaded, switchLightPreset]);
+  }, [mapTheme, mapLoaded, switchLightPreset, switchMapStyle]);
 
-  // 手動模式：直接切換到指定光線
+  // 手動模式：切換樣式或光線
   useEffect(() => {
     if (mapTheme === 'auto' || !mapLoaded) return;
-    switchLightPreset(mapTheme as LightPreset);
-  }, [mapTheme, mapLoaded, switchLightPreset]);
+
+    if (mapTheme === 'dark') {
+      // 使用 dark-v11 樣式
+      switchMapStyle('dark');
+    } else {
+      // 使用 standard 樣式 + lightPreset
+      if (currentMapStyleRef.current !== 'standard') {
+        switchMapStyle('standard');
+        // 樣式切換後需要等待 style.load 才能設定 lightPreset
+        map.current?.once('style.load', () => {
+          switchLightPreset(mapTheme as LightPreset);
+        });
+      } else {
+        switchLightPreset(mapTheme as LightPreset);
+      }
+    }
+  }, [mapTheme, mapLoaded, switchLightPreset, switchMapStyle]);
 
   // 載入中畫面
   if (loading) {
@@ -957,6 +1022,15 @@ function App() {
     );
   }
 
+  // 根據視覺主題設定的樣式
+  const isDarkTheme = visualTheme === 'dark';
+  const themeColors = {
+    panelBg: isDarkTheme ? 'rgba(0, 0, 0, 0.7)' : 'rgba(255, 255, 255, 0.9)',
+    panelText: isDarkTheme ? '#fff' : '#333',
+    panelTextSecondary: isDarkTheme ? '#888' : '#666',
+    panelBorder: isDarkTheme ? 'rgba(255, 255, 255, 0.1)' : 'rgba(0, 0, 0, 0.1)',
+  };
+
   return (
     <div style={{ width: '100vw', height: '100vh', position: 'relative' }}>
       {/* 標題 */}
@@ -966,14 +1040,14 @@ function App() {
           top: 20,
           left: 20,
           zIndex: 10,
-          color: 'white',
+          color: themeColors.panelText,
           fontFamily: 'system-ui',
         }}
       >
         <h1 style={{ margin: 0, fontSize: 24, fontWeight: 600 }}>
           Mini Taipei V3
         </h1>
-        <p style={{ margin: '4px 0 0', fontSize: 14, color: '#888' }}>
+        <p style={{ margin: '4px 0 0', fontSize: 14, color: themeColors.panelTextSecondary }}>
           台北交通運輸模擬
         </p>
       </div>
@@ -986,14 +1060,15 @@ function App() {
           left: '50%',
           transform: 'translateX(-50%)',
           zIndex: 10,
-          background: 'rgba(0, 0, 0, 0.75)',
+          background: themeColors.panelBg,
           borderRadius: 20,
           padding: '8px 16px',
-          color: 'white',
+          color: themeColors.panelText,
           fontFamily: 'system-ui',
           fontSize: 12,
           whiteSpace: 'nowrap',
-          border: isFollowing ? '1px solid rgba(217, 0, 35, 0.6)' : '1px solid transparent',
+          backdropFilter: 'blur(8px)',
+          border: isFollowing ? '1px solid rgba(217, 0, 35, 0.6)' : `1px solid ${themeColors.panelBorder}`,
           boxShadow: isFollowing ? '0 0 12px rgba(217, 0, 35, 0.4), 0 0 24px rgba(217, 0, 35, 0.2)' : 'none',
           transition: 'all 0.3s ease',
         }}
@@ -1003,7 +1078,7 @@ function App() {
             跟隨模式中，可縮放焦距，關閉右上面板可退出
           </span>
         ) : (
-          <span style={{ color: '#888' }}>
+          <span style={{ color: themeColors.panelTextSecondary }}>
             可暫停後點選列車開啟跟隨模式
           </span>
         )}
@@ -1016,12 +1091,15 @@ function App() {
           top: 90,
           left: 20,
           zIndex: 10,
-          background: 'rgba(0, 0, 0, 0.75)',
+          background: themeColors.panelBg,
           borderRadius: 8,
           padding: '10px 14px',
-          color: 'white',
+          color: themeColors.panelText,
           fontFamily: 'system-ui',
           fontSize: 12,
+          backdropFilter: 'blur(8px)',
+          border: `1px solid ${themeColors.panelBorder}`,
+          transition: 'background 0.3s, color 0.3s, border-color 0.3s',
         }}
       >
         {/* 可點擊的標題 */}
@@ -1044,7 +1122,7 @@ function App() {
           }}>
             ▼
           </span>
-          <span style={{ fontWeight: 600, color: '#aaa' }}>圖例</span>
+          <span style={{ fontWeight: 600, color: themeColors.panelTextSecondary }}>圖例</span>
         </div>
 
         {/* 可收合內容區 */}
@@ -1064,11 +1142,11 @@ function App() {
             </div>
             <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 2, marginLeft: 8 }}>
               <div style={{ width: 8, height: 8, background: TRAIN_COLORS.R_0, borderRadius: '50%', border: '1px solid white' }} />
-              <span style={{ color: '#ccc' }}>往淡水</span>
+              <span style={{ color: themeColors.panelTextSecondary }}>往淡水</span>
             </div>
             <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginLeft: 8 }}>
               <div style={{ width: 8, height: 8, background: TRAIN_COLORS.R_1, borderRadius: '50%', border: '1px solid white' }} />
-              <span style={{ color: '#ccc' }}>往象山</span>
+              <span style={{ color: themeColors.panelTextSecondary }}>往象山</span>
             </div>
           </div>
 
@@ -1080,11 +1158,11 @@ function App() {
             </div>
             <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 2, marginLeft: 8 }}>
               <div style={{ width: 8, height: 8, background: TRAIN_COLORS.BL_0, borderRadius: '50%', border: '1px solid white' }} />
-              <span style={{ color: '#ccc' }}>往南港展覽館</span>
+              <span style={{ color: themeColors.panelTextSecondary }}>往南港展覽館</span>
             </div>
             <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginLeft: 8 }}>
               <div style={{ width: 8, height: 8, background: TRAIN_COLORS.BL_1, borderRadius: '50%', border: '1px solid white' }} />
-              <span style={{ color: '#ccc' }}>往頂埔</span>
+              <span style={{ color: themeColors.panelTextSecondary }}>往頂埔</span>
             </div>
           </div>
 
@@ -1096,11 +1174,11 @@ function App() {
             </div>
             <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 2, marginLeft: 8 }}>
               <div style={{ width: 8, height: 8, background: TRAIN_COLORS.G_0, borderRadius: '50%', border: '1px solid white' }} />
-              <span style={{ color: '#ccc' }}>往新店</span>
+              <span style={{ color: themeColors.panelTextSecondary }}>往新店</span>
             </div>
             <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginLeft: 8 }}>
               <div style={{ width: 8, height: 8, background: TRAIN_COLORS.G_1, borderRadius: '50%', border: '1px solid white' }} />
-              <span style={{ color: '#ccc' }}>往松山</span>
+              <span style={{ color: themeColors.panelTextSecondary }}>往松山</span>
             </div>
           </div>
 
@@ -1112,7 +1190,7 @@ function App() {
             </div>
             <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginLeft: 8 }}>
               <div style={{ width: 8, height: 8, background: TRACK_COLORS.G3, borderRadius: '50%', border: '1px solid white' }} />
-              <span style={{ color: '#ccc' }}>七張↔小碧潭</span>
+              <span style={{ color: themeColors.panelTextSecondary }}>七張↔小碧潭</span>
             </div>
           </div>
 
@@ -1124,11 +1202,11 @@ function App() {
             </div>
             <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 2, marginLeft: 8 }}>
               <div style={{ width: 8, height: 8, background: TRAIN_COLORS.O_0, borderRadius: '50%', border: '1px solid white' }} />
-              <span style={{ color: '#ccc' }}>往南勢角</span>
+              <span style={{ color: themeColors.panelTextSecondary }}>往南勢角</span>
             </div>
             <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginLeft: 8 }}>
               <div style={{ width: 8, height: 8, background: TRAIN_COLORS.O_1, borderRadius: '50%', border: '1px solid white' }} />
-              <span style={{ color: '#ccc' }}>往迴龍/蘆洲</span>
+              <span style={{ color: themeColors.panelTextSecondary }}>往迴龍/蘆洲</span>
             </div>
           </div>
 
@@ -1140,11 +1218,11 @@ function App() {
             </div>
             <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 2, marginLeft: 8 }}>
               <div style={{ width: 8, height: 8, background: TRAIN_COLORS.BR_0, borderRadius: '50%', border: '1px solid white' }} />
-              <span style={{ color: '#ccc' }}>往南港展覽館</span>
+              <span style={{ color: themeColors.panelTextSecondary }}>往南港展覽館</span>
             </div>
             <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginLeft: 8 }}>
               <div style={{ width: 8, height: 8, background: TRAIN_COLORS.BR_1, borderRadius: '50%', border: '1px solid white' }} />
-              <span style={{ color: '#ccc' }}>往動物園</span>
+              <span style={{ color: themeColors.panelTextSecondary }}>往動物園</span>
             </div>
           </div>
 
@@ -1156,11 +1234,11 @@ function App() {
             </div>
             <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 2, marginLeft: 8 }}>
               <div style={{ width: 8, height: 8, background: TRAIN_COLORS.K_0, borderRadius: '50%', border: '1px solid white' }} />
-              <span style={{ color: '#ccc' }}>往十四張</span>
+              <span style={{ color: themeColors.panelTextSecondary }}>往十四張</span>
             </div>
             <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginLeft: 8 }}>
               <div style={{ width: 8, height: 8, background: TRAIN_COLORS.K_1, borderRadius: '50%', border: '1px solid white' }} />
-              <span style={{ color: '#ccc' }}>往雙城</span>
+              <span style={{ color: themeColors.panelTextSecondary }}>往雙城</span>
             </div>
           </div>
 
@@ -1172,11 +1250,11 @@ function App() {
             </div>
             <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 2, marginLeft: 8 }}>
               <div style={{ width: 8, height: 8, background: TRAIN_COLORS.V_0, borderRadius: '50%', border: '1px solid white' }} />
-              <span style={{ color: '#ccc' }}>往崁頂/台北海洋大學</span>
+              <span style={{ color: themeColors.panelTextSecondary }}>往崁頂/台北海洋大學</span>
             </div>
             <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginLeft: 8 }}>
               <div style={{ width: 8, height: 8, background: TRAIN_COLORS.V_1, borderRadius: '50%', border: '1px solid white' }} />
-              <span style={{ color: '#ccc' }}>往紅樹林/淡水漁人碼頭</span>
+              <span style={{ color: themeColors.panelTextSecondary }}>往紅樹林/淡水漁人碼頭</span>
             </div>
           </div>
         </div>
@@ -1193,18 +1271,24 @@ function App() {
           alignItems: 'center',
           gap: 12,
           fontFamily: 'system-ui',
+          background: themeColors.panelBg,
+          borderRadius: 20,
+          padding: '8px 16px',
+          backdropFilter: 'blur(8px)',
+          border: `1px solid ${themeColors.panelBorder}`,
+          transition: 'background 0.3s, border-color 0.3s',
         }}
       >
-        <span style={{ fontSize: 12, color: '#888' }}>
+        <span style={{ fontSize: 12, color: themeColors.panelTextSecondary }}>
           網站為學習性質，仍需持續優化中！
         </span>
         <a
           href="https://github.com/ianlkl11234s/mini-taiwan-learning-project"
           target="_blank"
           rel="noopener noreferrer"
-          style={{ color: '#888', transition: 'color 0.2s' }}
-          onMouseEnter={(e) => (e.currentTarget.style.color = '#fff')}
-          onMouseLeave={(e) => (e.currentTarget.style.color = '#888')}
+          style={{ color: themeColors.panelTextSecondary, transition: 'color 0.2s' }}
+          onMouseEnter={(e) => (e.currentTarget.style.color = themeColors.panelText)}
+          onMouseLeave={(e) => (e.currentTarget.style.color = themeColors.panelTextSecondary)}
         >
           <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
             <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
@@ -1214,16 +1298,16 @@ function App() {
           href="https://www.threads.com/@ianlkl1314"
           target="_blank"
           rel="noopener noreferrer"
-          style={{ color: '#888', transition: 'color 0.2s' }}
-          onMouseEnter={(e) => (e.currentTarget.style.color = '#fff')}
-          onMouseLeave={(e) => (e.currentTarget.style.color = '#888')}
+          style={{ color: themeColors.panelTextSecondary, transition: 'color 0.2s' }}
+          onMouseEnter={(e) => (e.currentTarget.style.color = themeColors.panelText)}
+          onMouseLeave={(e) => (e.currentTarget.style.color = themeColors.panelTextSecondary)}
         >
           <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
             <path d="M12.186 24h-.007c-3.581-.024-6.334-1.205-8.184-3.509C2.35 18.44 1.5 15.586 1.472 12.01v-.017c.03-3.579.879-6.43 2.525-8.482C5.845 1.205 8.6.024 12.18 0h.014c2.746.02 5.043.725 6.826 2.098 1.677 1.29 2.858 3.13 3.509 5.467l-2.04.569c-1.104-3.96-3.898-5.984-8.304-6.015-2.91.022-5.11.936-6.54 2.717C4.307 6.504 3.616 8.914 3.589 12c.027 3.086.718 5.496 2.057 7.164 1.43 1.783 3.631 2.698 6.54 2.717 2.623-.02 4.358-.631 5.8-2.045 1.647-1.613 1.618-3.593 1.09-4.798-.31-.71-.873-1.3-1.634-1.75-.192 1.352-.622 2.446-1.284 3.272-.886 1.102-2.14 1.704-3.73 1.79-1.202.065-2.361-.218-3.259-.801-1.063-.689-1.685-1.74-1.752-2.96-.065-1.182.408-2.256 1.332-3.025.88-.732 2.084-1.195 3.59-1.377.954-.115 1.963-.104 2.998.032-.06-1.289-.693-1.95-1.89-1.984-1.1-.033-1.921.564-2.214 1.013l-1.706-1.046c.655-1.07 1.916-1.828 3.534-2.127l.085-.015c.822-.14 1.67-.14 2.494 0 1.588.268 2.765.985 3.498 2.132.68 1.064.882 2.37.6 3.887l.007-.024.007.024c-.02.1-.043.198-.068.295.85.39 1.577.94 2.133 1.62.832 1.016 1.233 2.29 1.16 3.692-.094 1.77-.74 3.353-1.921 4.705C18.09 22.843 15.448 23.977 12.186 24zm.102-7.26c.775-.045 1.39-.315 1.828-.803.438-.487.728-1.164.863-2.012-.65-.078-1.307-.112-1.958-.102-.986.016-1.779.2-2.36.548-.59.355-.873.81-.84 1.354.034.538.345.967.876 1.209.53.24 1.122.307 1.59.306z"/>
           </svg>
         </a>
         {/* 日夜模式切換 */}
-        <ThemeToggle theme={mapTheme} onChange={setMapTheme} />
+        <ThemeToggle theme={mapTheme} onChange={setMapTheme} visualTheme={visualTheme} />
         {/* 2D/3D 切換按鈕 */}
         <button
           onClick={handleToggle3DMode}
@@ -1248,15 +1332,15 @@ function App() {
           style={{
             background: 'none',
             border: 'none',
-            color: '#888',
+            color: themeColors.panelTextSecondary,
             cursor: 'pointer',
             padding: 0,
             display: 'flex',
             alignItems: 'center',
             transition: 'color 0.2s',
           }}
-          onMouseEnter={(e) => (e.currentTarget.style.color = '#fff')}
-          onMouseLeave={(e) => (e.currentTarget.style.color = '#888')}
+          onMouseEnter={(e) => (e.currentTarget.style.color = themeColors.panelText)}
+          onMouseLeave={(e) => (e.currentTarget.style.color = themeColors.panelTextSecondary)}
           title="說明與公告"
         >
           <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
@@ -1283,6 +1367,7 @@ function App() {
         onToggleLine={handleToggleLine}
         mkState={mkState}
         onMKStateChange={handleMKStateChange}
+        visualTheme={visualTheme}
       />
 
       {/* 列車資訊面板 */}
@@ -1291,6 +1376,7 @@ function App() {
           train={selectedTrain}
           stationNames={stationNames}
           onClose={handleDeselectTrain}
+          visualTheme={visualTheme}
         />
       )}
 
@@ -1309,6 +1395,7 @@ function App() {
             currentTimeSeconds={timeEngineRef.current.getTimeOfDaySeconds()}
             width={200}
             height={50}
+            visualTheme={visualTheme}
           />
         </div>
       )}
@@ -1324,6 +1411,7 @@ function App() {
           onTogglePlay={handleTogglePlay}
           onSpeedChange={handleSpeedChange}
           onTimeChange={handleTimeChange}
+          visualTheme={visualTheme}
         />
       )}
 
@@ -1413,8 +1501,34 @@ function App() {
                 <div style={{ marginBottom: 12 }}>
                   <strong style={{ color: '#80bfff' }}>路線篩選</strong>
                   <ul style={{ margin: '4px 0 0', paddingLeft: 20, color: '#ccc' }}>
-                    <li>點擊左下角路線按鈕可顯示/隱藏特定路線</li>
-                    <li>隱藏的路線其軌道、車站、列車都會消失</li>
+                    <li>點擊左下角 MRT / Cable 按鈕展開路線選單</li>
+                    <li>點擊路線按鈕可顯示/隱藏特定路線</li>
+                    <li>貓空纜車支援三段式切換：全部顯示 → 僅軌道 → 隱藏</li>
+                  </ul>
+                </div>
+                <div style={{ marginBottom: 12 }}>
+                  <strong style={{ color: '#80bfff' }}>列車跟隨</strong>
+                  <ul style={{ margin: '4px 0 0', paddingLeft: 20, color: '#ccc' }}>
+                    <li>暫停後點擊任意列車可開啟跟隨模式</li>
+                    <li>跟隨時地圖會自動追蹤列車位置</li>
+                    <li>右上角會顯示列車詳細資訊（路線、前後站、狀態）</li>
+                    <li>關閉資訊面板即可退出跟隨模式</li>
+                  </ul>
+                </div>
+                <div style={{ marginBottom: 12 }}>
+                  <strong style={{ color: '#80bfff' }}>2D / 3D 模式</strong>
+                  <ul style={{ margin: '4px 0 0', paddingLeft: 20, color: '#ccc' }}>
+                    <li>點擊右上角 2D/3D 按鈕切換視角</li>
+                    <li>3D 模式下列車以立體方塊呈現</li>
+                    <li>3D 跟隨時可自由旋轉視角，放開後自動回到列車位置</li>
+                  </ul>
+                </div>
+                <div style={{ marginBottom: 12 }}>
+                  <strong style={{ color: '#80bfff' }}>日夜主題</strong>
+                  <ul style={{ margin: '4px 0 0', paddingLeft: 20, color: '#ccc' }}>
+                    <li>點擊右上角主題選單切換地圖外觀</li>
+                    <li>支援：Auto（隨時間自動切換）、Dawn、Day、Dusk、Night、Dark</li>
+                    <li>所有控制面板會自動配合主題調整顏色</li>
                   </ul>
                 </div>
                 <div style={{ marginBottom: 12 }}>
@@ -1428,7 +1542,7 @@ function App() {
                   <strong style={{ color: '#80bfff' }}>列車數量圖</strong>
                   <ul style={{ margin: '4px 0 0', paddingLeft: 20, color: '#ccc' }}>
                     <li>右下角顯示全天列車數量變化</li>
-                    <li>黃色線條表示目前時刻</li>
+                    <li>白色線條表示目前時刻</li>
                   </ul>
                 </div>
                 <div>
@@ -1436,6 +1550,7 @@ function App() {
                   <ul style={{ margin: '4px 0 0', paddingLeft: 20, color: '#ccc' }}>
                     <li>滾輪縮放地圖</li>
                     <li>拖曳平移地圖</li>
+                    <li>右鍵拖曳可旋轉視角（3D 模式）</li>
                     <li>右上角有縮放控制按鈕</li>
                   </ul>
                 </div>

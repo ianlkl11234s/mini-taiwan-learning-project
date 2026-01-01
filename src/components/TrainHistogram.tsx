@@ -1,10 +1,12 @@
 import type { TrainCountData } from '../hooks/useTrainCountHistogram';
+import type { VisualTheme } from './ThemeToggle';
 
 interface TrainHistogramProps {
   data: TrainCountData;
   currentTimeSeconds: number;  // 當前時間（秒，標準時間）
   width?: number;
   height?: number;
+  visualTheme?: VisualTheme;
 }
 
 /**
@@ -50,6 +52,7 @@ export function TrainHistogram({
   currentTimeSeconds,
   width = 200,
   height = 50,
+  visualTheme = 'dark',
 }: TrainHistogramProps) {
   const { intervals, maxCount, startHour, endHour } = data;
 
@@ -74,16 +77,29 @@ export function TrainHistogram({
   // 生成填充區域路徑（閉合曲線）
   const areaPath = `${linePath} L ${width} ${height} L 0 ${height} Z`;
 
+  // 主題顏色
+  const isDark = visualTheme === 'dark';
+  const colors = {
+    bg: isDark ? 'rgba(40, 40, 40, 0.6)' : 'rgba(255, 255, 255, 0.85)',
+    text: isDark ? '#888' : '#666',
+    textDim: isDark ? '#666' : '#999',
+    indicator: isDark ? '#fff' : '#333',
+    indicatorShadow: isDark ? 'rgba(255, 255, 255, 0.8)' : 'rgba(0, 0, 0, 0.3)',
+  };
+
   return (
     <div
       style={{
         width,
         height: height + 20, // 額外空間給時間標籤
         position: 'relative',
-        background: 'rgba(40, 40, 40, 0.6)',
+        background: colors.bg,
         borderRadius: 6,
         padding: '8px 10px',
         boxSizing: 'content-box',
+        backdropFilter: 'blur(8px)',
+        border: `1px solid ${isDark ? 'rgba(255,255,255,0.1)' : 'rgba(0,0,0,0.1)'}`,
+        transition: 'background 0.3s, border-color 0.3s',
       }}
     >
       {/* 標題 */}
@@ -93,7 +109,7 @@ export function TrainHistogram({
           top: 4,
           left: 10,
           fontSize: 9,
-          color: '#888',
+          color: colors.text,
           fontWeight: 500,
         }}
       >
@@ -139,9 +155,9 @@ export function TrainHistogram({
           top: 20,
           width: 2,
           height: height,
-          background: '#fff',
+          background: colors.indicator,
           borderRadius: 1,
-          boxShadow: '0 0 4px rgba(255, 255, 255, 0.8)',
+          boxShadow: `0 0 4px ${colors.indicatorShadow}`,
           transition: 'left 0.3s ease',
         }}
       />
@@ -153,7 +169,7 @@ export function TrainHistogram({
           justifyContent: 'space-between',
           marginTop: 4,
           fontSize: 8,
-          color: '#666',
+          color: colors.textDim,
         }}
       >
         <span>06:00</span>

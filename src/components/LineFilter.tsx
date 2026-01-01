@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import type { VisualTheme } from './ThemeToggle';
 
 // MRT 路線配置
 const MRT_LINES = {
@@ -26,6 +27,7 @@ interface LineFilterProps {
   onToggleLine: (lineId: string) => void;
   mkState: MKFilterState;
   onMKStateChange: (state: MKFilterState) => void;
+  visualTheme?: VisualTheme;
 }
 
 type ExpandedCategory = 'mrt' | 'cable' | null;
@@ -35,8 +37,21 @@ export function LineFilter({
   onToggleLine,
   mkState,
   onMKStateChange,
+  visualTheme = 'dark',
 }: LineFilterProps) {
   const [expanded, setExpanded] = useState<ExpandedCategory>(null);
+
+  // 主題顏色
+  const isDark = visualTheme === 'dark';
+  const colors = {
+    bgInactive: isDark ? 'rgba(0, 0, 0, 0.5)' : 'rgba(255, 255, 255, 0.7)',
+    bgActive: isDark ? 'rgba(0, 0, 0, 0.85)' : 'rgba(255, 255, 255, 0.95)',
+    textInactive: isDark ? '#999' : '#666',
+    textActive: isDark ? 'white' : '#333',
+    borderInactive: isDark ? '#666' : '#aaa',
+    borderActive: isDark ? 'white' : '#333',
+    disabledBg: isDark ? 'rgba(60, 60, 60, 0.8)' : 'rgba(200, 200, 200, 0.8)',
+  };
 
   const handleCategoryClick = (category: ExpandedCategory) => {
     // 如果點擊已展開的分類，則收起；否則展開該分類
@@ -60,21 +75,21 @@ export function LineFilter({
           background: config.color,
           opacity: 1,
           boxShadow: `0 0 8px ${config.color}`,
-          border: '2px solid white',
+          border: `2px solid ${colors.borderActive}`,
         };
       case 'tracks-only':
         return {
           background: config.color,
           opacity: 0.5,
           boxShadow: 'none',
-          border: '2px dashed white',
+          border: `2px dashed ${colors.borderActive}`,
         };
       case 'hidden':
         return {
-          background: 'rgba(60, 60, 60, 0.8)',
+          background: colors.disabledBg,
           opacity: 0.4,
           boxShadow: 'none',
-          border: '2px solid white',
+          border: `2px solid ${colors.borderActive}`,
         };
     }
   };
@@ -107,9 +122,9 @@ export function LineFilter({
         style={{
           padding: '8px 14px',
           borderRadius: 20,
-          border: expanded === 'mrt' ? '2px solid white' : '2px solid #666',
-          background: expanded === 'mrt' ? 'rgba(0, 0, 0, 0.85)' : 'rgba(0, 0, 0, 0.5)',
-          color: expanded === 'mrt' ? 'white' : '#999',
+          border: expanded === 'mrt' ? `2px solid ${colors.borderActive}` : `2px solid ${colors.borderInactive}`,
+          background: expanded === 'mrt' ? colors.bgActive : colors.bgInactive,
+          color: expanded === 'mrt' ? colors.textActive : colors.textInactive,
           fontSize: 13,
           fontWeight: 600,
           cursor: 'pointer',
@@ -117,6 +132,7 @@ export function LineFilter({
           alignItems: 'center',
           gap: 6,
           transition: 'all 0.2s ease',
+          backdropFilter: 'blur(8px)',
         }}
       >
         <span>MRT</span>
@@ -151,9 +167,9 @@ export function LineFilter({
                 width: 40,
                 height: 40,
                 borderRadius: '50%',
-                border: '2px solid white',
-                background: isVisible ? config.color : 'rgba(60, 60, 60, 0.8)',
-                color: 'white',
+                border: `2px solid ${colors.borderActive}`,
+                background: isVisible ? config.color : colors.disabledBg,
+                color: colors.textActive,
                 fontSize: 12,
                 fontWeight: 700,
                 cursor: 'pointer',
@@ -177,9 +193,9 @@ export function LineFilter({
         style={{
           padding: '8px 14px',
           borderRadius: 20,
-          border: expanded === 'cable' ? '2px solid white' : '2px solid #666',
-          background: expanded === 'cable' ? 'rgba(0, 0, 0, 0.85)' : 'rgba(0, 0, 0, 0.5)',
-          color: expanded === 'cable' ? 'white' : '#999',
+          border: expanded === 'cable' ? `2px solid ${colors.borderActive}` : `2px solid ${colors.borderInactive}`,
+          background: expanded === 'cable' ? colors.bgActive : colors.bgInactive,
+          color: expanded === 'cable' ? colors.textActive : colors.textInactive,
           fontSize: 13,
           fontWeight: 600,
           cursor: 'pointer',
@@ -187,6 +203,7 @@ export function LineFilter({
           alignItems: 'center',
           gap: 6,
           transition: 'all 0.2s ease',
+          backdropFilter: 'blur(8px)',
         }}
       >
         <span>Cable</span>
@@ -217,7 +234,7 @@ export function LineFilter({
             width: 40,
             height: 40,
             borderRadius: '50%',
-            color: 'white',
+            color: colors.textActive,
             fontSize: 12,
             fontWeight: 700,
             cursor: 'pointer',

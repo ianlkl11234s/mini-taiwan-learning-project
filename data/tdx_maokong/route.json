@@ -1,0 +1,56 @@
+[
+  {
+    "RouteID": "MK-1",
+    "OperatorCode": "TRTC",
+    "RouteName": {
+      "Zh_tw": "動物園－貓空",
+      "En": "Taipei Zoo - Maokong"
+    },
+    "RailRouteType": 33,
+    "LineNo": "MK",
+    "LineID": "MK",
+    "Direction": 0,
+    "StartStationID": "MK01",
+    "StartStationName": {
+      "Zh_tw": "動物園站",
+      "En": "Taipei Zoo Station"
+    },
+    "EndStationID": "MK04",
+    "EndStationName": {
+      "Zh_tw": "貓空站",
+      "En": "Maokong Station"
+    },
+    "TravelTime": 30,
+    "RouteLength": 0,
+    "SrcUpdateTime": "2024-01-23T12:00:00+08:00",
+    "UpdateTime": "2024-01-23T12:00:00+08:00",
+    "VersionID": 1
+  },
+  {
+    "RouteID": "MK-1",
+    "OperatorCode": "TRTC",
+    "RouteName": {
+      "Zh_tw": "貓空－動物園",
+      "En": "Maokong - Taipei Zoo"
+    },
+    "RailRouteType": 33,
+    "LineNo": "MK",
+    "LineID": "MK",
+    "Direction": 1,
+    "StartStationID": "MK04",
+    "StartStationName": {
+      "Zh_tw": "貓空站",
+      "En": "Maokong Station"
+    },
+    "EndStationID": "MK01",
+    "EndStationName": {
+      "Zh_tw": "動物園站",
+      "En": "Taipei Zoo Station"
+    },
+    "TravelTime": 30,
+    "RouteLength": 0,
+    "SrcUpdateTime": "2024-01-23T12:00:00+08:00",
+    "UpdateTime": "2024-01-23T12:00:00+08:00",
+    "VersionID": 1
+  }
+]

@@ -14,6 +14,7 @@ export const LINE_NAMES: Record<string, string> = {
   V: '淡海輕軌',
   A: '桃園機場捷運',
   Y: '環狀線',
+  MK: '貓空纜車',
 };
 
 // 路線 ID + 方向 → 方向名稱
@@ -54,6 +55,10 @@ export const DIRECTION_NAMES: Record<string, Record<string, string>> = {
     '0': '往新北產業園區',
     '1': '往大坪林',
   },
+  MK: {
+    '0': '往貓空',
+    '1': '往動物園',
+  },
 };
 
 // 路線顏色（用於資訊面板）
@@ -67,6 +72,7 @@ export const LINE_COLORS: Record<string, string> = {
   V: '#a4ce4e',
   A: '#8246af',
   Y: '#fedb00',
+  MK: '#6B8E23',  // 橄欖綠（山林主題）
 };
 
 /**
@@ -74,6 +80,7 @@ export const LINE_COLORS: Record<string, string> = {
  * 例如：R-1-0 → R, BL-2-1 → BL
  */
 export function getLineIdFromTrackId(trackId: string): string {
+  if (trackId.startsWith('MK')) return 'MK';
   if (trackId.startsWith('K')) return 'K';
   if (trackId.startsWith('V')) return 'V';
   if (trackId.startsWith('BR')) return 'BR';

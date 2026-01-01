@@ -1,0 +1,120 @@
+{
+  "test_time": "2026-01-01T14:37:01.664849",
+  "rail_system": "TRTCMG",
+  "results": [
+    {
+      "api_key": "station",
+      "api_name": "Station (車站資料)",
+      "status": "success",
+      "data_type": "list",
+      "record_count": 4,
+      "sample_fields": [
+        "StationUID",
+        "StationID",
+        "StationName",
+        "StationAddress",
+        "BikeAllowOnHoliday",
+        "SrcUpdateTime",
+        "StationPosition",
+        "LocationCity",
+        "LocationCityCode",
+        "LocationTown",
+        "LocationTownCode",
+        "UpdateTime",
+        "VersionID"
+      ]
+    },
+    {
+      "api_key": "shape",
+      "api_name": "Shape (軌道圖資)",
+      "status": "success",
+      "data_type": "list",
+      "record_count": 1,
+      "sample_fields": [
+        "LineNo",
+        "LineID",
+        "LineName",
+        "UpdateTime",
+        "Geometry",
+        "EncodedPolyline"
+      ]
+    },
+    {
+      "api_key": "line",
+      "api_name": "Line (路線資料)",
+      "status": "success",
+      "data_type": "list",
+      "record_count": 1,
+      "sample_fields": [
+        "LineNo",
+        "LineID",
+        "LineName",
+        "LineSectionName",
+        "IsBranch",
+        "SrcUpdateTime",
+        "UpdateTime",
+        "VersionID"
+      ]
+    },
+    {
+      "api_key": "route",
+      "api_name": "Route (營運路線)",
+      "status": "success",
+      "data_type": "list",
+      "record_count": 2,
+      "sample_fields": [
+        "RouteID",
+        "OperatorCode",
+        "RouteName",
+        "RailRouteType",
+        "LineNo",
+        "LineID",
+        "Direction",
+        "StartStationID",
+        "StartStationName",
+        "EndStationID",
+        "EndStationName",
+        "TravelTime",
+        "RouteLength",
+        "SrcUpdateTime",
+        "UpdateTime",
+        "VersionID"
+      ]
+    },
+    {
+      "api_key": "first_last",
+      "api_name": "FirstLastTimetable (首末班車)",
+      "status": "success",
+      "data_type": "list",
+      "record_count": 12,
+      "sample_fields": [
+        "LineNo",
+        "LineID",
+        "StationID",
+        "StationName",
+        "TripHeadSign",
+        "DestinationStaionID",
+        "DestinationStationName",
+        "TrainType",
+        "FirstTrainTime",
+        "LastTrainTime",
+        "ServiceDay",
+        "SrcUpdateTime",
+        "UpdateTime",
+        "VersionID"
+      ]
+    },
+    {
+      "api_key": "frequency",
+      "api_name": "Frequency (班距頻率)",
+      "status": "failed",
+      "error": "400 Client Error: Bad Request for url: https://tdx.transportdata.tw/api/basic/v2/Rail/Metro/Frequency/TRTCMG?%24format=JSON"
+    },
+    {
+      "api_key": "s2s_travel_time",
+      "api_name": "S2STravelTime (站間行駛時間)",
+      "status": "failed",
+      "error": "400 Client Error: Bad Request for url: https://tdx.transportdata.tw/api/basic/v2/Rail/Metro/S2STravelTime/TRTCMG?%24format=JSON"
+    }
+  ]
+}

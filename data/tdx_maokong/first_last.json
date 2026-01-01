@@ -1,0 +1,374 @@
+[
+  {
+    "LineNo": "MK",
+    "LineID": "MK",
+    "StationID": "MK01",
+    "StationName": {
+      "Zh_tw": "動物園站",
+      "En": "Taipei Zoo Station"
+    },
+    "TripHeadSign": "往貓空",
+    "DestinationStaionID": "MK04",
+    "DestinationStationName": {
+      "Zh_tw": "貓空站",
+      "En": "Maokong Station"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "09:00",
+    "LastTrainTime": "21:00",
+    "ServiceDay": {
+      "Monday": false,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": false,
+      "Sunday": false,
+      "NationalHolidays": false
+    },
+    "SrcUpdateTime": "2024-10-15T00:00:00+08:00",
+    "UpdateTime": "2024-12-16T12:19:30+08:00",
+    "VersionID": 2
+  },
+  {
+    "LineNo": "MK",
+    "LineID": "MK",
+    "StationID": "MK01",
+    "StationName": {
+      "Zh_tw": "動物園站",
+      "En": "Taipei Zoo Station"
+    },
+    "TripHeadSign": "往貓空",
+    "DestinationStaionID": "MK04",
+    "DestinationStationName": {
+      "Zh_tw": "貓空站",
+      "En": "Maokong Station"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "09:00",
+    "LastTrainTime": "22:00",
+    "ServiceDay": {
+      "Monday": false,
+      "Tuesday": false,
+      "Wednesday": false,
+      "Thursday": false,
+      "Friday": false,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-10-15T00:00:00+08:00",
+    "UpdateTime": "2024-12-16T12:19:30+08:00",
+    "VersionID": 2
+  },
+  {
+    "LineNo": "MK",
+    "LineID": "MK",
+    "StationID": "MK02",
+    "StationName": {
+      "Zh_tw": "動物園南站",
+      "En": "Taipei Zoo South Station"
+    },
+    "TripHeadSign": "往動物園",
+    "DestinationStaionID": "MK01",
+    "DestinationStationName": {
+      "Zh_tw": "動物園站",
+      "En": "Taipei Zoo Station"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "09:19",
+    "LastTrainTime": "21:19",
+    "ServiceDay": {
+      "Monday": false,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": false,
+      "Sunday": false,
+      "NationalHolidays": false
+    },
+    "SrcUpdateTime": "2024-10-15T00:00:00+08:00",
+    "UpdateTime": "2024-12-16T12:19:30+08:00",
+    "VersionID": 2
+  },
+  {
+    "LineNo": "MK",
+    "LineID": "MK",
+    "StationID": "MK02",
+    "StationName": {
+      "Zh_tw": "動物園南站",
+      "En": "Taipei Zoo South Station"
+    },
+    "TripHeadSign": "往動物園",
+    "DestinationStaionID": "MK01",
+    "DestinationStationName": {
+      "Zh_tw": "動物園站",
+      "En": "Taipei Zoo Station"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "09:19",
+    "LastTrainTime": "22:19",
+    "ServiceDay": {
+      "Monday": false,
+      "Tuesday": false,
+      "Wednesday": false,
+      "Thursday": false,
+      "Friday": false,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-10-15T00:00:00+08:00",
+    "UpdateTime": "2024-12-16T12:19:30+08:00",
+    "VersionID": 2
+  },
+  {
+    "LineNo": "MK",
+    "LineID": "MK",
+    "StationID": "MK02",
+    "StationName": {
+      "Zh_tw": "動物園南站",
+      "En": "Taipei Zoo South Station"
+    },
+    "TripHeadSign": "往貓空",
+    "DestinationStaionID": "MK04",
+    "DestinationStationName": {
+      "Zh_tw": "貓空站",
+      "En": "Maokong Station"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "09:10",
+    "LastTrainTime": "21:10",
+    "ServiceDay": {
+      "Monday": false,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": false,
+      "Sunday": false,
+      "NationalHolidays": false
+    },
+    "SrcUpdateTime": "2024-10-15T00:00:00+08:00",
+    "UpdateTime": "2024-12-16T12:19:30+08:00",
+    "VersionID": 2
+  },
+  {
+    "LineNo": "MK",
+    "LineID": "MK",
+    "StationID": "MK02",
+    "StationName": {
+      "Zh_tw": "動物園南站",
+      "En": "Taipei Zoo South Station"
+    },
+    "TripHeadSign": "往貓空",
+    "DestinationStaionID": "MK04",
+    "DestinationStationName": {
+      "Zh_tw": "貓空站",
+      "En": "Maokong Station"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "09:10",
+    "LastTrainTime": "22:10",
+    "ServiceDay": {
+      "Monday": false,
+      "Tuesday": false,
+      "Wednesday": false,
+      "Thursday": false,
+      "Friday": false,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-10-15T00:00:00+08:00",
+    "UpdateTime": "2024-12-16T12:19:30+08:00",
+    "VersionID": 2
+  },
+  {
+    "LineNo": "MK",
+    "LineID": "MK",
+    "StationID": "MK03",
+    "StationName": {
+      "Zh_tw": "指南宮站",
+      "En": "Zhinan Temple Station"
+    },
+    "TripHeadSign": "往動物園",
+    "DestinationStaionID": "MK01",
+    "DestinationStationName": {
+      "Zh_tw": "動物園站",
+      "En": "Taipei Zoo Station"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "09:07",
+    "LastTrainTime": "21:07",
+    "ServiceDay": {
+      "Monday": false,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": false,
+      "Sunday": false,
+      "NationalHolidays": false
+    },
+    "SrcUpdateTime": "2024-10-15T00:00:00+08:00",
+    "UpdateTime": "2024-12-16T12:19:30+08:00",
+    "VersionID": 2
+  },
+  {
+    "LineNo": "MK",
+    "LineID": "MK",
+    "StationID": "MK03",
+    "StationName": {
+      "Zh_tw": "指南宮站",
+      "En": "Zhinan Temple Station"
+    },
+    "TripHeadSign": "往動物園",
+    "DestinationStaionID": "MK01",
+    "DestinationStationName": {
+      "Zh_tw": "動物園站",
+      "En": "Taipei Zoo Station"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "09:07",
+    "LastTrainTime": "22:07",
+    "ServiceDay": {
+      "Monday": false,
+      "Tuesday": false,
+      "Wednesday": false,
+      "Thursday": false,
+      "Friday": false,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-10-15T00:00:00+08:00",
+    "UpdateTime": "2024-12-16T12:19:30+08:00",
+    "VersionID": 2
+  },
+  {
+    "LineNo": "MK",
+    "LineID": "MK",
+    "StationID": "MK03",
+    "StationName": {
+      "Zh_tw": "指南宮站",
+      "En": "Zhinan Temple Station"
+    },
+    "TripHeadSign": "往貓空",
+    "DestinationStaionID": "MK04",
+    "DestinationStationName": {
+      "Zh_tw": "貓空站",
+      "En": "Maokong Station"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "09:22",
+    "LastTrainTime": "21:22",
+    "ServiceDay": {
+      "Monday": false,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": false,
+      "Sunday": false,
+      "NationalHolidays": false
+    },
+    "SrcUpdateTime": "2024-10-15T00:00:00+08:00",
+    "UpdateTime": "2024-12-16T12:19:30+08:00",
+    "VersionID": 2
+  },
+  {
+    "LineNo": "MK",
+    "LineID": "MK",
+    "StationID": "MK03",
+    "StationName": {
+      "Zh_tw": "指南宮站",
+      "En": "Zhinan Temple Station"
+    },
+    "TripHeadSign": "往貓空",
+    "DestinationStaionID": "MK04",
+    "DestinationStationName": {
+      "Zh_tw": "貓空站",
+      "En": "Maokong Station"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "09:22",
+    "LastTrainTime": "22:22",
+    "ServiceDay": {
+      "Monday": false,
+      "Tuesday": false,
+      "Wednesday": false,
+      "Thursday": false,
+      "Friday": false,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-10-15T00:00:00+08:00",
+    "UpdateTime": "2024-12-16T12:19:30+08:00",
+    "VersionID": 2
+  },
+  {
+    "LineNo": "MK",
+    "LineID": "MK",
+    "StationID": "MK04",
+    "StationName": {
+      "Zh_tw": "貓空站",
+      "En": "Maokong Station"
+    },
+    "TripHeadSign": "往動物園",
+    "DestinationStaionID": "MK01",
+    "DestinationStationName": {
+      "Zh_tw": "動物園站",
+      "En": "Taipei Zoo Station"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "09:00",
+    "LastTrainTime": "21:00",
+    "ServiceDay": {
+      "Monday": false,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": true,
+      "Saturday": false,
+      "Sunday": false,
+      "NationalHolidays": false
+    },
+    "SrcUpdateTime": "2024-10-15T00:00:00+08:00",
+    "UpdateTime": "2024-12-16T12:19:30+08:00",
+    "VersionID": 2
+  },
+  {
+    "LineNo": "MK",
+    "LineID": "MK",
+    "StationID": "MK04",
+    "StationName": {
+      "Zh_tw": "貓空站",
+      "En": "Maokong Station"
+    },
+    "TripHeadSign": "往動物園",
+    "DestinationStaionID": "MK01",
+    "DestinationStationName": {
+      "Zh_tw": "動物園站",
+      "En": "Taipei Zoo Station"
+    },
+    "TrainType": 0,
+    "FirstTrainTime": "09:00",
+    "LastTrainTime": "22:00",
+    "ServiceDay": {
+      "Monday": false,
+      "Tuesday": false,
+      "Wednesday": false,
+      "Thursday": false,
+      "Friday": false,
+      "Saturday": true,
+      "Sunday": true,
+      "NationalHolidays": true
+    },
+    "SrcUpdateTime": "2024-10-15T00:00:00+08:00",
+    "UpdateTime": "2024-12-16T12:19:30+08:00",
+    "VersionID": 2
+  }
+]

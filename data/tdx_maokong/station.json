@@ -1,0 +1,90 @@
+[
+  {
+    "StationUID": "MG-MK01",
+    "StationID": "MK01",
+    "StationName": {
+      "Zh_tw": "動物園站",
+      "En": "Taipei Zoo Station"
+    },
+    "StationAddress": "116211臺北市文山區萬興里新光路2段8號",
+    "BikeAllowOnHoliday": false,
+    "SrcUpdateTime": "2023-10-12T00:00:00+08:00",
+    "StationPosition": {
+      "PositionLon": 121.576313,
+      "PositionLat": 24.996095,
+      "GeoHash": "wsqqnw3hv"
+    },
+    "LocationCity": "臺北市",
+    "LocationCityCode": "TPE",
+    "LocationTown": "文山區",
+    "LocationTownCode": "63000080",
+    "UpdateTime": "2023-10-17T00:00:00+08:00",
+    "VersionID": 2
+  },
+  {
+    "StationUID": "MG-MK02",
+    "StationID": "MK02",
+    "StationName": {
+      "Zh_tw": "動物園南站",
+      "En": "Taipei Zoo South Station"
+    },
+    "StationAddress": "116208臺北市文山區萬興里新光路2段30之2號",
+    "BikeAllowOnHoliday": false,
+    "SrcUpdateTime": "2023-10-12T00:00:00+08:00",
+    "StationPosition": {
+      "PositionLon": 121.587404,
+      "PositionLat": 24.990233,
+      "GeoHash": "wsqqnv34x"
+    },
+    "LocationCity": "臺北市",
+    "LocationCityCode": "TPE",
+    "LocationTown": "文山區",
+    "LocationTownCode": "63000080",
+    "UpdateTime": "2023-10-17T00:00:00+08:00",
+    "VersionID": 2
+  },
+  {
+    "StationUID": "MG-MK03",
+    "StationID": "MK03",
+    "StationName": {
+      "Zh_tw": "指南宮站",
+      "En": "Zhinan Temple Station"
+    },
+    "StationAddress": "116027臺北市指南路3段157巷200號",
+    "BikeAllowOnHoliday": false,
+    "SrcUpdateTime": "2023-10-12T00:00:00+08:00",
+    "StationPosition": {
+      "PositionLon": 121.589748,
+      "PositionLat": 24.979004,
+      "GeoHash": "wsqqng6cn"
+    },
+    "LocationCity": "臺北市",
+    "LocationCityCode": "TPE",
+    "LocationTown": "文山區",
+    "LocationTownCode": "63000080",
+    "UpdateTime": "2023-10-17T00:00:00+08:00",
+    "VersionID": 2
+  },
+  {
+    "StationUID": "MG-MK04",
+    "StationID": "MK04",
+    "StationName": {
+      "Zh_tw": "貓空站",
+      "En": "Maokong Station"
+    },
+    "StationAddress": "116026臺北市指南里7鄰指南路3段38巷35號",
+    "BikeAllowOnHoliday": false,
+    "SrcUpdateTime": "2023-10-12T00:00:00+08:00",
+    "StationPosition": {
+      "PositionLon": 121.58826,
+      "PositionLat": 24.968727,
+      "GeoHash": "wsqqnc3v7"
+    },
+    "LocationCity": "臺北市",
+    "LocationCityCode": "TPE",
+    "LocationTown": "文山區",
+    "LocationTownCode": "63000080",
+    "UpdateTime": "2023-10-17T00:00:00+08:00",
+    "VersionID": 2
+  }
+]

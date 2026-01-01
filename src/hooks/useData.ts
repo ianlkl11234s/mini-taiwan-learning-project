@@ -4,6 +4,8 @@ import type { TrackSchedule } from '../types/schedule';
 
 // 軌道 ID 列表
 const TRACK_IDS = [
+  // === 貓空纜車 (MK) ===
+  'MK-1-0', 'MK-1-1',  // 動物園↔貓空
   // === 新北環狀線 (Y) ===
   'Y-1-0', 'Y-1-1',    // 全程車（大坪林↔新北產業園區）
   // === 桃園機場捷運 (A) ===
@@ -183,6 +185,10 @@ export function useData(): DataState {
         if (!ntmcStationsRes.ok) throw new Error('Failed to load NTMC stations');
         const ntmcStationsData = await ntmcStationsRes.json();
 
+        const maokongStationsRes = await fetch('/data/maokong_stations.geojson');
+        if (!maokongStationsRes.ok) throw new Error('Failed to load Maokong Gondola stations');
+        const maokongStationsData = await maokongStationsRes.json();
+
         // 合併車站資料
         const allStations: StationCollection = {
           type: 'FeatureCollection',
@@ -196,6 +202,7 @@ export function useData(): DataState {
             ...danhaiStationsData.features,
             ...tymcStationsData.features,
             ...ntmcStationsData.features,
+            ...maokongStationsData.features,
           ],
         };
         setStations(allStations);

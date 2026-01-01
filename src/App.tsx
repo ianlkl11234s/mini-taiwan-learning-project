@@ -109,7 +109,7 @@ function App() {
   const [timeEngineReady, setTimeEngineReady] = useState(false);
   const [currentTime, setCurrentTime] = useState('06:00:00');
   const [isPlaying, setIsPlaying] = useState(false);
-  const [speed, setSpeed] = useState(90);
+  const [speed, setSpeed] = useState(60);
 
   // 列車引擎
   const trainEngineRef = useRef<TrainEngine | null>(null);
@@ -643,7 +643,7 @@ function App() {
   // 初始化時間引擎
   useEffect(() => {
     const engine = new TimeEngine({
-      speed: 90, // 初始速度與 UI 同步
+      speed: 60, // 初始速度與 UI 同步
       onTick: (time) => {
         setCurrentTime(
           `${time.getHours().toString().padStart(2, '0')}:${time

@@ -43,8 +43,8 @@ MK_CONFIG = {
     "weekend_last": "22:00",
 
     # Gondola intervals (seconds)
-    "peak_interval": 15,
-    "off_peak_interval": 25,
+    "peak_interval": 90,      # 1.5 分鐘
+    "off_peak_interval": 90,  # 1.5 分鐘
 }
 
 

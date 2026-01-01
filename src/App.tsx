@@ -10,6 +10,18 @@ import { TrainHistogram } from './components/TrainHistogram';
 import { TrainInfoPanel } from './components/TrainInfoPanel';
 import { useTrainCountHistogram } from './hooks/useTrainCountHistogram';
 import { Train3DLayer } from './layers/Train3DLayer';
+import { ThemeToggle, type MapTheme } from './components/ThemeToggle';
+
+// 光線預設類型
+type LightPreset = 'dawn' | 'day' | 'dusk' | 'night';
+
+// 根據小時取得光線預設
+const getPresetForHour = (hour: number): LightPreset => {
+  if (hour >= 5 && hour < 7) return 'dawn';    // 05:00 - 06:59
+  if (hour >= 7 && hour < 17) return 'day';    // 07:00 - 16:59
+  if (hour >= 17 && hour < 19) return 'dusk';  // 17:00 - 18:59
+  return 'night';                               // 19:00 - 04:59
+};
 
 // 設定 Mapbox Token
 mapboxgl.accessToken = import.meta.env.VITE_MAPBOX_TOKEN || '';
@@ -124,6 +136,10 @@ function App() {
   // 3D 模式狀態
   const [use3DMode, setUse3DMode] = useState(false);
   const train3DLayerRef = useRef<Train3DLayer | null>(null);
+
+  // 地圖主題模式（日夜切換）
+  const [mapTheme, setMapTheme] = useState<MapTheme>('auto');
+  const currentLightPresetRef = useRef<LightPreset>('day');
 
   // 列車選擇狀態
   const [selectedTrainId, setSelectedTrainId] = useState<string | null>(null);
@@ -328,7 +344,7 @@ function App() {
 
     map.current = new mapboxgl.Map({
       container: mapContainer.current,
-      style: 'mapbox://styles/mapbox/dark-v11',
+      style: 'mapbox://styles/mapbox/standard',  // 使用 Standard 樣式以支援光線預設切換
       center: [121.52, 25.02],  // 調整以顯示紅線+藍線
       zoom: 10.8,  // 稍微縮小以容納兩條線
     });
@@ -864,6 +880,39 @@ function App() {
     }
   }, [use3DMode]);
 
+  // 切換光線預設
+  const switchLightPreset = useCallback((preset: LightPreset) => {
+    if (!map.current || currentLightPresetRef.current === preset) return;
+    currentLightPresetRef.current = preset;
+    map.current.setConfigProperty('basemap', 'lightPreset', preset);
+  }, []);
+
+  // 自動模式：根據時間軸時間切換光線
+  useEffect(() => {
+    if (mapTheme !== 'auto' || !timeEngineRef.current || !mapLoaded) return;
+
+    // 初始設定
+    const initialHour = timeEngineRef.current.getTime().getHours();
+    switchLightPreset(getPresetForHour(initialHour));
+
+    // 監聽時間變化
+    const unsubscribe = timeEngineRef.current.onTick((time) => {
+      const hour = time.getHours();
+      const targetPreset = getPresetForHour(hour);
+      if (currentLightPresetRef.current !== targetPreset) {
+        switchLightPreset(targetPreset);
+      }
+    });
+
+    return () => unsubscribe();
+  }, [mapTheme, mapLoaded, switchLightPreset]);
+
+  // 手動模式：直接切換到指定光線
+  useEffect(() => {
+    if (mapTheme === 'auto' || !mapLoaded) return;
+    switchLightPreset(mapTheme as LightPreset);
+  }, [mapTheme, mapLoaded, switchLightPreset]);
+
   // 載入中畫面
   if (loading) {
     return (
@@ -1173,6 +1222,8 @@ function App() {
             <path d="M12.186 24h-.007c-3.581-.024-6.334-1.205-8.184-3.509C2.35 18.44 1.5 15.586 1.472 12.01v-.017c.03-3.579.879-6.43 2.525-8.482C5.845 1.205 8.6.024 12.18 0h.014c2.746.02 5.043.725 6.826 2.098 1.677 1.29 2.858 3.13 3.509 5.467l-2.04.569c-1.104-3.96-3.898-5.984-8.304-6.015-2.91.022-5.11.936-6.54 2.717C4.307 6.504 3.616 8.914 3.589 12c.027 3.086.718 5.496 2.057 7.164 1.43 1.783 3.631 2.698 6.54 2.717 2.623-.02 4.358-.631 5.8-2.045 1.647-1.613 1.618-3.593 1.09-4.798-.31-.71-.873-1.3-1.634-1.75-.192 1.352-.622 2.446-1.284 3.272-.886 1.102-2.14 1.704-3.73 1.79-1.202.065-2.361-.218-3.259-.801-1.063-.689-1.685-1.74-1.752-2.96-.065-1.182.408-2.256 1.332-3.025.88-.732 2.084-1.195 3.59-1.377.954-.115 1.963-.104 2.998.032-.06-1.289-.693-1.95-1.89-1.984-1.1-.033-1.921.564-2.214 1.013l-1.706-1.046c.655-1.07 1.916-1.828 3.534-2.127l.085-.015c.822-.14 1.67-.14 2.494 0 1.588.268 2.765.985 3.498 2.132.68 1.064.882 2.37.6 3.887l.007-.024.007.024c-.02.1-.043.198-.068.295.85.39 1.577.94 2.133 1.62.832 1.016 1.233 2.29 1.16 3.692-.094 1.77-.74 3.353-1.921 4.705C18.09 22.843 15.448 23.977 12.186 24zm.102-7.26c.775-.045 1.39-.315 1.828-.803.438-.487.728-1.164.863-2.012-.65-.078-1.307-.112-1.958-.102-.986.016-1.779.2-2.36.548-.59.355-.873.81-.84 1.354.034.538.345.967.876 1.209.53.24 1.122.307 1.59.306z"/>
           </svg>
         </a>
+        {/* 日夜模式切換 */}
+        <ThemeToggle theme={mapTheme} onChange={setMapTheme} />
         {/* 2D/3D 切換按鈕 */}
         <button
           onClick={handleToggle3DMode}

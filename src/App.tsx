@@ -784,6 +784,37 @@ function App() {
         </p>
       </div>
 
+      {/* 跟隨模式狀態提示 */}
+      <div
+        style={{
+          position: 'absolute',
+          top: 20,
+          left: '50%',
+          transform: 'translateX(-50%)',
+          zIndex: 10,
+          background: 'rgba(0, 0, 0, 0.75)',
+          borderRadius: 20,
+          padding: '8px 16px',
+          color: 'white',
+          fontFamily: 'system-ui',
+          fontSize: 12,
+          whiteSpace: 'nowrap',
+          border: isFollowing ? '1px solid rgba(217, 0, 35, 0.6)' : '1px solid transparent',
+          boxShadow: isFollowing ? '0 0 12px rgba(217, 0, 35, 0.4), 0 0 24px rgba(217, 0, 35, 0.2)' : 'none',
+          transition: 'all 0.3s ease',
+        }}
+      >
+        {isFollowing ? (
+          <span style={{ color: '#ff8a8a' }}>
+            跟隨模式中，可縮放焦距，關閉右上面板可退出
+          </span>
+        ) : (
+          <span style={{ color: '#888' }}>
+            可暫停後點選列車開啟跟隨模式
+          </span>
+        )}
+      </div>
+
       {/* 圖例 */}
       <div
         style={{

@@ -131,6 +131,20 @@ function App() {
     });
   }, []);
 
+  // 切換全部 MRT 路線可見性
+  const handleToggleAllMrt = useCallback((visible: boolean) => {
+    const mrtLines = ['R', 'O', 'Y', 'G', 'BL', 'BR', 'A', 'K', 'V'];
+    setVisibleLines(prev => {
+      const next = new Set(prev);
+      if (visible) {
+        mrtLines.forEach(lineId => next.add(lineId));
+      } else {
+        mrtLines.forEach(lineId => next.delete(lineId));
+      }
+      return next;
+    });
+  }, []);
+
   // 切換 MK 狀態
   const handleMKStateChange = useCallback((state: MKFilterState) => {
     setMkState(state);
@@ -1615,6 +1629,7 @@ function App() {
       <LineFilter
         visibleLines={visibleLines}
         onToggleLine={handleToggleLine}
+        onToggleAllMrt={handleToggleAllMrt}
         mkState={mkState}
         onMKStateChange={handleMKStateChange}
         thsrState={thsrState}

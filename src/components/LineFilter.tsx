@@ -33,6 +33,7 @@ export type ThsrFilterState = 'full' | 'tracks-only' | 'hidden';
 interface LineFilterProps {
   visibleLines: Set<string>;
   onToggleLine: (lineId: string) => void;
+  onToggleAllMrt: (visible: boolean) => void;
   mkState: MKFilterState;
   onMKStateChange: (state: MKFilterState) => void;
   thsrState: ThsrFilterState;
@@ -45,6 +46,7 @@ type ExpandedCategory = 'mrt' | 'cable' | 'hsr' | null;
 export function LineFilter({
   visibleLines,
   onToggleLine,
+  onToggleAllMrt,
   mkState,
   onMKStateChange,
   thsrState,
@@ -52,6 +54,12 @@ export function LineFilter({
   visualTheme = 'dark',
 }: LineFilterProps) {
   const [expanded, setExpanded] = useState<ExpandedCategory>(null);
+
+  // 計算 MRT 路線的顯示狀態
+  const mrtLineIds = Object.keys(MRT_LINES);
+  const visibleMrtCount = mrtLineIds.filter(id => visibleLines.has(id)).length;
+  const allMrtVisible = visibleMrtCount === mrtLineIds.length;
+  const noneMrtVisible = visibleMrtCount === 0;
 
   // 主題顏色
   const isDark = visualTheme === 'dark';
@@ -207,12 +215,40 @@ export function LineFilter({
         style={{
           display: 'flex',
           gap: 8,
-          maxWidth: expanded === 'mrt' ? 400 : 0,
+          maxWidth: expanded === 'mrt' ? 500 : 0,
           overflow: 'hidden',
           transition: 'max-width 0.3s ease-out, opacity 0.3s ease-out',
           opacity: expanded === 'mrt' ? 1 : 0,
         }}
       >
+        {/* All 切換按鈕 */}
+        <button
+          onClick={() => onToggleAllMrt(!allMrtVisible)}
+          title={allMrtVisible ? '隱藏全部 MRT' : '顯示全部 MRT'}
+          style={{
+            width: 40,
+            height: 40,
+            borderRadius: '50%',
+            border: `2px solid ${colors.borderActive}`,
+            background: allMrtVisible
+              ? 'linear-gradient(135deg, #d90023, #f8b61c, #008659, #0070c0)'
+              : noneMrtVisible
+              ? colors.disabledBg
+              : 'linear-gradient(135deg, rgba(217,0,35,0.5), rgba(248,182,28,0.5), rgba(0,134,89,0.5), rgba(0,112,192,0.5))',
+            color: colors.textActive,
+            fontSize: 10,
+            fontWeight: 700,
+            cursor: 'pointer',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            opacity: noneMrtVisible ? 0.4 : 1,
+            transition: 'all 0.2s ease',
+            boxShadow: allMrtVisible ? '0 0 8px rgba(255,255,255,0.5)' : 'none',
+          }}
+        >
+          All
+        </button>
         {Object.entries(MRT_LINES).map(([lineId, config]) => {
           const isVisible = visibleLines.has(lineId);
           return (

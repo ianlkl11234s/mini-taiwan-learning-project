@@ -17,7 +17,7 @@ const CITIES = {
   KHH: {
     label: 'KHH',
     name: '高雄',
-    center: [120.3017, 22.6274] as [number, number],
+    center: [120.31, 22.615] as [number, number],
     zoom: 12,
   },
 };

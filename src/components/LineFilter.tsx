@@ -24,10 +24,11 @@ const HSR_LINES = {
   THSR: { color: '#f47920', label: 'HSR', name: '台灣高鐵' },
 };
 
-// KRTC (高雄捷運) 路線配置
-const KRTC_LINES = {
+// KHH (高雄捷運 + 輕軌) 路線配置
+const KHH_LINES = {
   R: { color: '#e2211c', label: 'R', name: '紅線' },
   O: { color: '#f8981d', label: 'O', name: '橘線' },
+  C: { color: '#99cc00', label: 'C', name: '環狀線 (輕軌)' },
 };
 
 // MK 三段式狀態
@@ -74,8 +75,8 @@ export function LineFilter({
   const allMrtVisible = visibleMrtCount === mrtLineIds.length;
   const noneMrtVisible = visibleMrtCount === 0;
 
-  // 計算 KRTC 路線的顯示狀態
-  const krtcLineIds = Object.keys(KRTC_LINES);
+  // 計算 KHH 路線的顯示狀態
+  const krtcLineIds = Object.keys(KHH_LINES);
   const visibleKrtcCount = krtcLineIds.filter(id => visibleKrtcLines.has(id)).length;
   const allKrtcVisible = visibleKrtcCount === krtcLineIds.length;
   const noneKrtcVisible = visibleKrtcCount === 0;
@@ -335,7 +336,7 @@ export function LineFilter({
         style={{
           display: 'flex',
           gap: 8,
-          maxWidth: expanded === 'krtc' ? 200 : 0,
+          maxWidth: expanded === 'krtc' ? 250 : 0,
           overflow: 'hidden',
           transition: 'max-width 0.3s ease-out, opacity 0.3s ease-out',
           opacity: expanded === 'krtc' ? 1 : 0,
@@ -351,10 +352,10 @@ export function LineFilter({
             borderRadius: '50%',
             border: `2px solid ${colors.borderActive}`,
             background: allKrtcVisible
-              ? 'linear-gradient(135deg, #e2211c, #f8981d)'
+              ? 'linear-gradient(135deg, #e2211c, #f8981d, #99cc00)'
               : noneKrtcVisible
               ? colors.disabledBg
-              : 'linear-gradient(135deg, rgba(226,33,28,0.5), rgba(248,152,29,0.5))',
+              : 'linear-gradient(135deg, rgba(226,33,28,0.5), rgba(248,152,29,0.5), rgba(153,204,0,0.5))',
             color: colors.textActive,
             fontSize: 10,
             fontWeight: 700,
@@ -369,7 +370,7 @@ export function LineFilter({
         >
           All
         </button>
-        {Object.entries(KRTC_LINES).map(([lineId, config]) => {
+        {Object.entries(KHH_LINES).map(([lineId, config]) => {
           const isVisible = visibleKrtcLines.has(lineId);
           return (
             <button

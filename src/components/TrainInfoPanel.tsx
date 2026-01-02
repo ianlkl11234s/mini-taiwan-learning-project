@@ -5,6 +5,7 @@ import type { KrtcTrain } from '../engines/KrtcTrainEngine';
 import { getLineName, getLineColor } from '../constants/lineInfo';
 import { getThsrLineName, getThsrLineColor } from '../constants/thsrInfo';
 import { getKrtcLineName, getKrtcLineColor } from '../constants/krtcInfo';
+import { getKlrtLineName, getKlrtLineColor } from '../constants/klrtInfo';
 import type { VisualTheme } from './ThemeToggle';
 
 interface TrainInfoPanelProps {
@@ -20,17 +21,22 @@ export function TrainInfoPanel({ train, stationNames, onClose, visualTheme = 'da
   // 判斷列車類型
   const isThsr = train.trackId.startsWith('THSR');
   const isKrtc = train.trackId.startsWith('KRTC');
+  const isKlrt = train.trackId.startsWith('KLRT');
 
   // 根據類型取得線路資訊
   const lineColor = isThsr
     ? getThsrLineColor(train.trackId)
     : isKrtc
     ? getKrtcLineColor(train.trackId)
+    : isKlrt
+    ? getKlrtLineColor(train.trackId)
     : getLineColor(train.trackId);
   const lineName = isThsr
     ? getThsrLineName(train.trackId)
     : isKrtc
     ? getKrtcLineName(train.trackId)
+    : isKlrt
+    ? getKlrtLineName(train.trackId)
     : getLineName(train.trackId);
 
   // 主題顏色

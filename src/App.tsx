@@ -9,7 +9,7 @@ import { TrainEngine, type Train } from './engines/TrainEngine';
 import { ThsrTrainEngine, type ThsrTrain } from './engines/ThsrTrainEngine';
 import { KrtcTrainEngine, type KrtcTrain } from './engines/KrtcTrainEngine';
 import { TimeControl } from './components/TimeControl';
-import { LineFilter, type MKFilterState, type ThsrFilterState, type KrtcFilterState } from './components/LineFilter';
+import { LineFilter, type MKFilterState, type ThsrFilterState } from './components/LineFilter';
 import { TrainHistogram } from './components/TrainHistogram';
 import { TrainInfoPanel } from './components/TrainInfoPanel';
 import { useTrainCountHistogram } from './hooks/useTrainCountHistogram';
@@ -141,8 +141,10 @@ function App() {
   // 高鐵三段式狀態：full | tracks-only | hidden
   const [thsrState, setThsrState] = useState<ThsrFilterState>('full');
 
-  // 高雄捷運三段式狀態：full | tracks-only | hidden
-  const [krtcState, setKrtcState] = useState<KrtcFilterState>('full');
+  // 高雄捷運路線可見性狀態
+  const [visibleKrtcLines, setVisibleKrtcLines] = useState<Set<string>>(
+    new Set(['R', 'O'])
+  );
 
   // 城市選擇狀態
   const [selectedCity, setSelectedCity] = useState<CityId | null>('TPE');
@@ -184,9 +186,31 @@ function App() {
     setThsrState(state);
   }, []);
 
-  // 切換 KRTC 狀態
-  const handleKrtcStateChange = useCallback((state: KrtcFilterState) => {
-    setKrtcState(state);
+  // 切換 KRTC 路線可見性
+  const handleToggleKrtcLine = useCallback((lineId: string) => {
+    setVisibleKrtcLines(prev => {
+      const next = new Set(prev);
+      if (next.has(lineId)) {
+        next.delete(lineId);
+      } else {
+        next.add(lineId);
+      }
+      return next;
+    });
+  }, []);
+
+  // 切換全部 KRTC 路線可見性
+  const handleToggleAllKrtc = useCallback((visible: boolean) => {
+    const krtcLines = ['R', 'O'];
+    setVisibleKrtcLines(prev => {
+      const next = new Set(prev);
+      if (visible) {
+        krtcLines.forEach(lineId => next.add(lineId));
+      } else {
+        krtcLines.forEach(lineId => next.delete(lineId));
+      }
+      return next;
+    });
   }, []);
 
   // 城市選擇處理
@@ -229,12 +253,13 @@ function App() {
     return thsrTrains;
   }, [thsrTrains, thsrState]);
 
-  // 根據高雄捷運狀態過濾列車 (KRTC)
+  // 根據高雄捷運路線可見性過濾列車 (KRTC)
   const filteredKrtcTrains = useMemo(() => {
-    // 只有 full 狀態才顯示高雄捷運列車
-    if (krtcState !== 'full') return [];
-    return krtcTrains;
-  }, [krtcTrains, krtcState]);
+    return krtcTrains.filter(train => {
+      const lineId = getKrtcLineId(train.trackId);
+      return visibleKrtcLines.has(lineId);
+    });
+  }, [krtcTrains, visibleKrtcLines]);
 
   // 計算 MRT 列車數量（排除纜車）
   const mrtCount = useMemo(() => {
@@ -646,7 +671,7 @@ function App() {
       paint: {
         'line-color': KRTC_TRACK_COLORS.O,
         'line-width': 4,
-        'line-opacity': krtcState !== 'hidden' ? 0.8 : 0.0,
+        'line-opacity': visibleKrtcLines.has('O') ? 0.8 : 0.0,
         'line-emissive-strength': 1.0,
       },
     });
@@ -664,21 +689,20 @@ function App() {
       paint: {
         'line-color': KRTC_TRACK_COLORS.R,
         'line-width': 4,
-        'line-opacity': krtcState !== 'hidden' ? 0.8 : 0.0,
+        'line-opacity': visibleKrtcLines.has('R') ? 0.8 : 0.0,
         'line-emissive-strength': 1.0,
       },
     });
-  }, [mapLoaded, krtcTracks, krtcState, styleVersion]);
+  }, [mapLoaded, krtcTracks, visibleKrtcLines, styleVersion]);
 
   // 更新高雄捷運軌道可見性
   useEffect(() => {
     if (!map.current || !mapLoaded) return;
     if (!map.current.getLayer('krtc-tracks-line-O')) return;
 
-    const opacity = krtcState !== 'hidden' ? 0.8 : 0.0;
-    map.current.setPaintProperty('krtc-tracks-line-O', 'line-opacity', opacity);
-    map.current.setPaintProperty('krtc-tracks-line-R', 'line-opacity', opacity);
-  }, [mapLoaded, krtcState, styleVersion]);
+    map.current.setPaintProperty('krtc-tracks-line-O', 'line-opacity', visibleKrtcLines.has('O') ? 0.8 : 0.0);
+    map.current.setPaintProperty('krtc-tracks-line-R', 'line-opacity', visibleKrtcLines.has('R') ? 0.8 : 0.0);
+  }, [mapLoaded, visibleKrtcLines, styleVersion]);
 
   // 載入高雄捷運車站圖層
   useEffect(() => {
@@ -708,8 +732,8 @@ function App() {
           KRTC_TRACK_COLORS.R,
         ],
         'circle-stroke-width': 2,
-        'circle-opacity': krtcState !== 'hidden' ? 1 : 0,
-        'circle-stroke-opacity': krtcState !== 'hidden' ? 1 : 0,
+        'circle-opacity': visibleKrtcLines.size > 0 ? 1 : 0,
+        'circle-stroke-opacity': visibleKrtcLines.size > 0 ? 1 : 0,
         'circle-emissive-strength': 1.0,
       },
     });
@@ -728,22 +752,22 @@ function App() {
         'text-color': '#ffffff',
         'text-halo-color': '#000000',
         'text-halo-width': 1,
-        'text-opacity': krtcState !== 'hidden' ? 1 : 0,
+        'text-opacity': visibleKrtcLines.size > 0 ? 1 : 0,
         'text-emissive-strength': 1.0,
       },
     });
-  }, [mapLoaded, krtcStations, krtcState, styleVersion]);
+  }, [mapLoaded, krtcStations, visibleKrtcLines, styleVersion]);
 
   // 更新高雄捷運車站可見性
   useEffect(() => {
     if (!map.current || !mapLoaded) return;
     if (!map.current.getLayer('krtc-stations-circle')) return;
 
-    const opacity = krtcState !== 'hidden' ? 1 : 0;
+    const opacity = visibleKrtcLines.size > 0 ? 1 : 0;
     map.current.setPaintProperty('krtc-stations-circle', 'circle-opacity', opacity);
     map.current.setPaintProperty('krtc-stations-circle', 'circle-stroke-opacity', opacity);
     map.current.setPaintProperty('krtc-stations-label', 'text-opacity', opacity);
-  }, [mapLoaded, krtcState, styleVersion]);
+  }, [mapLoaded, visibleKrtcLines, styleVersion]);
 
   // 初始化 3D 列車圖層
   useEffect(() => {
@@ -844,7 +868,7 @@ function App() {
   useEffect(() => {
     if (!map.current || !mapLoaded || !use3DMode) return;
     if (krtcTrackMap.size === 0) return;
-    if (krtcState === 'hidden') return;  // 隱藏時不顯示 3D 圖層
+    if (visibleKrtcLines.size === 0) return;  // 全部隱藏時不顯示 3D 圖層
 
     // 建立高雄捷運 3D 圖層
     const layer = new Krtc3DLayer(krtcTrackMap);
@@ -861,7 +885,7 @@ function App() {
       }
       krtc3DLayerRef.current = null;
     };
-  }, [mapLoaded, krtcTrackMap, krtcStationCoordinates, use3DMode, krtcState, handleSelectTrain, styleVersion]);
+  }, [mapLoaded, krtcTrackMap, krtcStationCoordinates, use3DMode, visibleKrtcLines, handleSelectTrain, styleVersion]);
 
   // 更新高雄捷運 3D 圖層列車資料
   useEffect(() => {
@@ -2038,8 +2062,9 @@ function App() {
         onMKStateChange={handleMKStateChange}
         thsrState={thsrState}
         onThsrStateChange={handleThsrStateChange}
-        krtcState={krtcState}
-        onKrtcStateChange={handleKrtcStateChange}
+        visibleKrtcLines={visibleKrtcLines}
+        onToggleKrtcLine={handleToggleKrtcLine}
+        onToggleAllKrtc={handleToggleAllKrtc}
         visualTheme={visualTheme}
       />
 

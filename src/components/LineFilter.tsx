@@ -24,14 +24,17 @@ const HSR_LINES = {
   THSR: { color: '#f47920', label: 'HSR', name: '台灣高鐵' },
 };
 
+// KRTC (高雄捷運) 路線配置
+const KRTC_LINES = {
+  R: { color: '#e2211c', label: 'R', name: '紅線' },
+  O: { color: '#f8981d', label: 'O', name: '橘線' },
+};
+
 // MK 三段式狀態
 export type MKFilterState = 'full' | 'tracks-only' | 'hidden';
 
 // THSR 三段式狀態
 export type ThsrFilterState = 'full' | 'tracks-only' | 'hidden';
-
-// KRTC 三段式狀態
-export type KrtcFilterState = 'full' | 'tracks-only' | 'hidden';
 
 interface LineFilterProps {
   visibleLines: Set<string>;
@@ -41,8 +44,10 @@ interface LineFilterProps {
   onMKStateChange: (state: MKFilterState) => void;
   thsrState: ThsrFilterState;
   onThsrStateChange: (state: ThsrFilterState) => void;
-  krtcState: KrtcFilterState;
-  onKrtcStateChange: (state: KrtcFilterState) => void;
+  // KRTC 改為個別路線控制
+  visibleKrtcLines: Set<string>;
+  onToggleKrtcLine: (lineId: string) => void;
+  onToggleAllKrtc: (visible: boolean) => void;
   visualTheme?: VisualTheme;
 }
 
@@ -56,8 +61,9 @@ export function LineFilter({
   onMKStateChange,
   thsrState,
   onThsrStateChange,
-  krtcState,
-  onKrtcStateChange,
+  visibleKrtcLines,
+  onToggleKrtcLine,
+  onToggleAllKrtc,
   visualTheme = 'dark',
 }: LineFilterProps) {
   const [expanded, setExpanded] = useState<ExpandedCategory>(null);
@@ -67,6 +73,12 @@ export function LineFilter({
   const visibleMrtCount = mrtLineIds.filter(id => visibleLines.has(id)).length;
   const allMrtVisible = visibleMrtCount === mrtLineIds.length;
   const noneMrtVisible = visibleMrtCount === 0;
+
+  // 計算 KRTC 路線的顯示狀態
+  const krtcLineIds = Object.keys(KRTC_LINES);
+  const visibleKrtcCount = krtcLineIds.filter(id => visibleKrtcLines.has(id)).length;
+  const allKrtcVisible = visibleKrtcCount === krtcLineIds.length;
+  const noneKrtcVisible = visibleKrtcCount === 0;
 
   // 主題顏色
   const isDark = visualTheme === 'dark';
@@ -101,13 +113,6 @@ export function LineFilter({
     onThsrStateChange(nextState);
   };
 
-  // KRTC 三段式切換
-  const handleKrtcClick = () => {
-    const nextState: KrtcFilterState =
-      krtcState === 'full' ? 'tracks-only' :
-      krtcState === 'tracks-only' ? 'hidden' : 'full';
-    onKrtcStateChange(nextState);
-  };
 
   // MK 狀態對應的視覺效果
   const getMKStyle = () => {
@@ -183,41 +188,6 @@ export function LineFilter({
     }
   };
 
-  // KRTC 狀態對應的視覺效果
-  const getKrtcStyle = () => {
-    switch (krtcState) {
-      case 'full':
-        return {
-          background: 'linear-gradient(135deg, #f8981d, #e2211c)',
-          opacity: 1,
-          boxShadow: '0 0 8px rgba(248, 152, 29, 0.5)',
-          border: `2px solid ${colors.borderActive}`,
-        };
-      case 'tracks-only':
-        return {
-          background: 'linear-gradient(135deg, #f8981d, #e2211c)',
-          opacity: 0.5,
-          boxShadow: 'none',
-          border: `2px dashed ${colors.borderActive}`,
-        };
-      case 'hidden':
-        return {
-          background: colors.disabledBg,
-          opacity: 0.4,
-          boxShadow: 'none',
-          border: `2px solid ${colors.borderActive}`,
-        };
-    }
-  };
-
-  // KRTC 狀態 tooltip
-  const getKrtcTooltip = () => {
-    switch (krtcState) {
-      case 'full': return '高雄捷運 (全部顯示)';
-      case 'tracks-only': return '高雄捷運 (僅軌道與車站)';
-      case 'hidden': return '高雄捷運 (隱藏)';
-    }
-  };
 
   return (
     <div
@@ -365,19 +335,26 @@ export function LineFilter({
         style={{
           display: 'flex',
           gap: 8,
-          maxWidth: expanded === 'krtc' ? 60 : 0,
+          maxWidth: expanded === 'krtc' ? 200 : 0,
           overflow: 'hidden',
           transition: 'max-width 0.3s ease-out, opacity 0.3s ease-out',
           opacity: expanded === 'krtc' ? 1 : 0,
         }}
       >
+        {/* All 切換按鈕 */}
         <button
-          onClick={handleKrtcClick}
-          title={getKrtcTooltip()}
+          onClick={() => onToggleAllKrtc(!allKrtcVisible)}
+          title={allKrtcVisible ? '隱藏全部高捷' : '顯示全部高捷'}
           style={{
             width: 40,
             height: 40,
             borderRadius: '50%',
+            border: `2px solid ${colors.borderActive}`,
+            background: allKrtcVisible
+              ? 'linear-gradient(135deg, #e2211c, #f8981d)'
+              : noneKrtcVisible
+              ? colors.disabledBg
+              : 'linear-gradient(135deg, rgba(226,33,28,0.5), rgba(248,152,29,0.5))',
             color: colors.textActive,
             fontSize: 10,
             fontWeight: 700,
@@ -385,12 +362,42 @@ export function LineFilter({
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
+            opacity: noneKrtcVisible ? 0.4 : 1,
             transition: 'all 0.2s ease',
-            ...getKrtcStyle(),
+            boxShadow: allKrtcVisible ? '0 0 8px rgba(255,255,255,0.5)' : 'none',
           }}
         >
-          高捷
+          All
         </button>
+        {Object.entries(KRTC_LINES).map(([lineId, config]) => {
+          const isVisible = visibleKrtcLines.has(lineId);
+          return (
+            <button
+              key={lineId}
+              onClick={() => onToggleKrtcLine(lineId)}
+              title={config.name}
+              style={{
+                width: 40,
+                height: 40,
+                borderRadius: '50%',
+                border: `2px solid ${colors.borderActive}`,
+                background: isVisible ? config.color : colors.disabledBg,
+                color: colors.textActive,
+                fontSize: 12,
+                fontWeight: 700,
+                cursor: 'pointer',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                opacity: isVisible ? 1 : 0.4,
+                transition: 'all 0.2s ease',
+                boxShadow: isVisible ? `0 0 8px ${config.color}` : 'none',
+              }}
+            >
+              {config.label}
+            </button>
+          );
+        })}
       </div>
 
       {/* HSR 分類按鈕 */}

@@ -1,4 +1,5 @@
 import type { TrainCountData } from '../hooks/useTrainCountHistogram';
+import { toExtendedSeconds } from '../utils/timeUtils';
 import type { VisualTheme } from './ThemeToggle';
 
 interface TrainHistogramProps {
@@ -7,16 +8,6 @@ interface TrainHistogramProps {
   width?: number;
   height?: number;
   visualTheme?: VisualTheme;
-}
-
-/**
- * 將標準時間秒數轉換為延長日秒數
- */
-function toExtendedSeconds(standardSeconds: number): number {
-  if (standardSeconds < 6 * 3600) {
-    return standardSeconds + 24 * 3600;
-  }
-  return standardSeconds;
 }
 
 /**

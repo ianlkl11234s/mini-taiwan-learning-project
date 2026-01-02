@@ -11,6 +11,7 @@ import { TrainInfoPanel } from './components/TrainInfoPanel';
 import { useTrainCountHistogram } from './hooks/useTrainCountHistogram';
 import { Train3DLayer } from './layers/Train3DLayer';
 import { ThemeToggle, type MapTheme, type VisualTheme, getVisualTheme } from './components/ThemeToggle';
+import { TRACK_COLORS, TRAIN_COLORS, getTrainColor, getLineIdFromTrackId } from './constants/lineInfo';
 
 // 光線預設類型（用於 standard 樣式）
 type LightPreset = 'dawn' | 'day' | 'dusk' | 'night';
@@ -31,83 +32,6 @@ const getPresetForHour = (hour: number): LightPreset => {
 
 // 設定 Mapbox Token
 mapboxgl.accessToken = import.meta.env.VITE_MAPBOX_TOKEN || '';
-
-// 軌道顏色
-const TRACK_COLORS = {
-  R: '#d90023',   // 紅線
-  BL: '#0070c0',  // 藍線
-  G: '#008659',   // 綠線
-  G3: '#66c4a0',  // 小碧潭支線（淺綠色）
-  O: '#f8b61c',   // 橘線
-  V: '#a4ce4e',   // 淡海輕軌
-  BR: '#c48c31',  // 文湖線（棕色）
-  K: '#8cc540',   // 安坑輕軌（草綠色）
-  A: '#8246af',   // 機場捷運（紫色）
-  Y: '#fedb00',   // 環狀線（黃色）
-  MK: '#06b8e6',  // 貓空纜車（藍色）
-};
-
-// 列車顏色（依路線與方向區分）
-const TRAIN_COLORS = {
-  // 紅線
-  R_0: '#d90023',   // 往淡水（北上/direction 0）- 深紅色
-  R_1: '#ff8a8a',   // 往象山（南下/direction 1）- 淡紅色
-  // 藍線
-  BL_0: '#0070c0',  // 往南港展覽館（往東/direction 0）- 深藍色
-  BL_1: '#80bfff',  // 往頂埔（往西/direction 1）- 淡藍色
-  // 綠線
-  G_0: '#008659',   // 往新店（南下/direction 0）- 深綠色
-  G_1: '#66c4a0',   // 往松山（北上/direction 1）- 淡綠色
-  // 橘線
-  O_0: '#f8b61c',   // 往南勢角（direction 0）- 深橘色
-  O_1: '#ffd966',   // 往迴龍/蘆洲（direction 1）- 淡橘色
-  // 文湖線
-  BR_0: '#c48c31',  // 往南港展覽館（direction 0）- 深棕色
-  BR_1: '#d4a65a',  // 往動物園（direction 1）- 淡棕色
-  // 安坑輕軌
-  K_0: '#8cc540',   // 往十四張（direction 0）- 深草綠色
-  K_1: '#b8e080',   // 往雙城（direction 1）- 淡草綠色
-  // 淡海輕軌
-  V_0: '#a4ce4e',   // 綠山線/藍海線 往崁頂/台北海洋大學（direction 0）- 深黃綠色
-  V_1: '#c8e588',   // 綠山線/藍海線 往紅樹林/淡水漁人碼頭（direction 1）- 淡黃綠色
-  // 機場捷運
-  A_0: '#67378b',   // 去程（往機場/老街溪）- 深紫色
-  A_1: '#a778c9',   // 回程（往台北）- 淡紫色
-  // 環狀線
-  Y_0: '#fedb00',   // 去程（往新北產業園區）- 黃色
-  Y_1: '#ffe566',   // 回程（往大坪林）- 淡黃色
-  // 貓空纜車
-  MK_0: '#06b8e6',  // 往貓空（direction 0）- 淡藍色
-  MK_1: '#7dd4f0',  // 往動物園（direction 1）- 更淡藍色
-};
-
-// 判斷列車顏色：根據路線和方向
-function getTrainColor(trackId: string): string {
-  let lineId: string;
-  if (trackId.startsWith('MK')) {
-    lineId = 'MK';
-  } else if (trackId.startsWith('K')) {
-    lineId = 'K';
-  } else if (trackId.startsWith('V')) {
-    lineId = 'V';
-  } else if (trackId.startsWith('BR')) {
-    lineId = 'BR';
-  } else if (trackId.startsWith('BL')) {
-    lineId = 'BL';
-  } else if (trackId.startsWith('G')) {
-    lineId = 'G';
-  } else if (trackId.startsWith('O')) {
-    lineId = 'O';
-  } else if (trackId.startsWith('A')) {
-    lineId = 'A';
-  } else if (trackId.startsWith('Y')) {
-    lineId = 'Y';
-  } else {
-    lineId = 'R';
-  }
-  const direction = trackId.endsWith('-0') ? '0' : '1';
-  return TRAIN_COLORS[`${lineId}_${direction}` as keyof typeof TRAIN_COLORS];
-}
 
 function App() {
   // 資料載入
@@ -190,31 +114,10 @@ function App() {
   // 根據可見路線過濾列車
   const filteredTrains = useMemo(() => {
     return trains.filter(train => {
+      const lineId = getLineIdFromTrackId(train.trackId);
       // MK 線使用三段式狀態
-      if (train.trackId.startsWith('MK')) {
+      if (lineId === 'MK') {
         return mkState === 'full'; // 只有 full 狀態才顯示纜車
-      }
-
-      // 其他線路從 trackId 判斷路線
-      let lineId: string;
-      if (train.trackId.startsWith('K')) {
-        lineId = 'K';
-      } else if (train.trackId.startsWith('V')) {
-        lineId = 'V';
-      } else if (train.trackId.startsWith('BR')) {
-        lineId = 'BR';
-      } else if (train.trackId.startsWith('BL')) {
-        lineId = 'BL';
-      } else if (train.trackId.startsWith('G')) {
-        lineId = 'G';
-      } else if (train.trackId.startsWith('O')) {
-        lineId = 'O';
-      } else if (train.trackId.startsWith('A')) {
-        lineId = 'A';
-      } else if (train.trackId.startsWith('Y')) {
-        lineId = 'Y';
-      } else {
-        lineId = 'R';
       }
       return visibleLines.has(lineId);
     });

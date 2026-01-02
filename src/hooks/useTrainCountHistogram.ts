@@ -1,5 +1,6 @@
 import { useMemo } from 'react';
 import type { TrackSchedule } from '../types/schedule';
+import { timeToSeconds } from '../utils/timeUtils';
 
 export interface TrainCountData {
   intervals: number[];  // 各 15 分鐘區間的列車數
@@ -7,19 +8,6 @@ export interface TrainCountData {
   intervalMinutes: number;  // 區間長度（分鐘）
   startHour: number;    // 開始時間（小時）
   endHour: number;      // 結束時間（小時，延長日制）
-}
-
-/**
- * 將 HH:MM:SS 格式轉換為當天秒數（支援延長日制）
- */
-function parseTimeToSeconds(timeStr: string): number {
-  const [h, m, s] = timeStr.split(':').map(Number);
-  let seconds = h * 3600 + m * 60 + (s || 0);
-  // 凌晨 00:00-05:59 視為 24:00-29:59
-  if (h < 6) {
-    seconds += 24 * 3600;
-  }
-  return seconds;
 }
 
 /**
@@ -44,7 +32,7 @@ export function useTrainCountHistogram(
     for (const schedule of schedules.values()) {
       for (const departure of schedule.departures) {
         // 發車時間（秒）
-        const depSeconds = parseTimeToSeconds(departure.departure_time);
+        const depSeconds = timeToSeconds(departure.departure_time);
         // 到達終點時間（秒）
         const arrSeconds = depSeconds + departure.total_travel_time;
 

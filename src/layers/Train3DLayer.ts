@@ -2,32 +2,7 @@ import * as THREE from 'three';
 import mapboxgl from 'mapbox-gl';
 import type { Train } from '../engines/TrainEngine';
 import type { Track } from '../types/track';
-
-// 列車顏色（依路線區分）
-const LINE_COLORS: Record<string, number> = {
-  R: 0xd90023,   // 紅線
-  BL: 0x0070c0,  // 藍線
-  G: 0x008659,   // 綠線
-  O: 0xf8b61c,   // 橘線
-  BR: 0xc48c31,  // 文湖線
-  K: 0x8cc540,   // 安坑輕軌
-  V: 0xa4ce4e,   // 淡海輕軌
-  A: 0x8246af,   // 機場捷運
-  Y: 0xfedb00,   // 環狀線
-};
-
-// 從 trackId 取得路線 ID
-function getLineId(trackId: string): string {
-  if (trackId.startsWith('K')) return 'K';
-  if (trackId.startsWith('V')) return 'V';
-  if (trackId.startsWith('BR')) return 'BR';
-  if (trackId.startsWith('BL')) return 'BL';
-  if (trackId.startsWith('G')) return 'G';
-  if (trackId.startsWith('O')) return 'O';
-  if (trackId.startsWith('A')) return 'A';
-  if (trackId.startsWith('Y')) return 'Y';
-  return 'R';
-}
+import { getLineIdFromTrackId, LINE_COLORS_3D } from '../constants/lineInfo';
 
 // 參考點：台北市中心
 const MODEL_ORIGIN: [number, number] = [121.52, 25.02];
@@ -148,7 +123,7 @@ export class Train3DLayer implements mapboxgl.CustomLayerInterface {
     });
 
     // 建立各路線的材質（使用 Standard 材質，支援發光效果）
-    for (const [lineId, color] of Object.entries(LINE_COLORS)) {
+    for (const [lineId, color] of Object.entries(LINE_COLORS_3D)) {
       const material = new THREE.MeshStandardMaterial({
         color: color,
         transparent: true,
@@ -286,7 +261,7 @@ export class Train3DLayer implements mapboxgl.CustomLayerInterface {
     // 更新或建立列車 mesh
     for (const train of this.trains) {
       let group = this.trainMeshes.get(train.trainId);
-      const lineId = getLineId(train.trackId);
+      const lineId = getLineIdFromTrackId(train.trackId);
       const material = this.materials.get(lineId) || this.materials.get('R')!;
 
       if (!group) {

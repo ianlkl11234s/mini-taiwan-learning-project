@@ -9,6 +9,7 @@
 
 import type { TrackSchedule, StationTime } from '../types/schedule';
 import type { Track } from '../types/track';
+import { toExtendedSeconds, timeToSeconds, secondsToTimeStr } from '../utils/timeUtils';
 
 export interface Train {
   trainId: string;
@@ -91,45 +92,6 @@ const COLLISION_OFFSET = 0.0003;
 // 終站停留時間（秒）- 列車抵達終點後繼續顯示的時間
 const TERMINAL_DWELL_TIME = 30;
 
-/**
- * 將標準時間秒數 (0-86399) 轉換為延長日秒數
- * 延長日：06:00 開始，凌晨 00:00-05:59 被視為前一天的延續 (86400-108000)
- *
- * 這解決了午夜時列車消失的問題：
- * - 23:45 發車的列車在 00:15 時應該還在運行
- * - 標準秒數: currentTime=900, departure=85500 → elapsed=-84600 (錯誤，列車消失)
- * - 延長日秒數: currentTime=87300, departure=85500 → elapsed=1800 (正確，30分鐘)
- */
-function toExtendedSeconds(standardSeconds: number): number {
-  // 凌晨 00:00-05:59 (0-21599) → 視為 24:00-29:59 (86400-108000)
-  if (standardSeconds < 6 * 3600) {
-    return standardSeconds + 24 * 3600;
-  }
-  return standardSeconds;
-}
-
-/**
- * 將時間字串轉換為延長日秒數
- */
-function timeToSeconds(timeStr: string): number {
-  const parts = timeStr.split(':').map(Number);
-  const standardSeconds = parts[0] * 3600 + parts[1] * 60 + (parts[2] || 0);
-  return toExtendedSeconds(standardSeconds);
-}
-
-/**
- * 將秒數轉換為 "HH:MM" 格式字串
- */
-function secondsToTimeStr(seconds: number): string {
-  // 處理延長日秒數（超過 24 小時的部分）
-  let normalizedSeconds = seconds;
-  if (normalizedSeconds >= 24 * 3600) {
-    normalizedSeconds -= 24 * 3600;
-  }
-  const hours = Math.floor(normalizedSeconds / 3600);
-  const minutes = Math.floor((normalizedSeconds % 3600) / 60);
-  return `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}`;
-}
 
 /**
  * 計算線段總長度

@@ -1,4 +1,5 @@
 import { TimeEngine } from '../engines/TimeEngine';
+import { toExtendedSeconds, toStandardSeconds } from '../utils/timeUtils';
 import type { VisualTheme } from './ThemeToggle';
 
 interface TimeControlProps {
@@ -11,29 +12,6 @@ interface TimeControlProps {
   onSpeedChange: (speed: number) => void;
   onTimeChange: (seconds: number) => void;
   visualTheme?: VisualTheme;
-}
-
-/**
- * 將標準時間秒數 (0-86399) 轉換為延長日秒數
- * 延長日：06:00 開始，凌晨 00:00-05:59 被視為前一天的延續 (86400-108000)
- */
-function toExtendedSeconds(standardSeconds: number): number {
-  // 凌晨 00:00-05:59 (0-21599) → 視為 24:00-29:59 (86400-108000)
-  if (standardSeconds < 6 * 3600) {
-    return standardSeconds + 24 * 3600;
-  }
-  return standardSeconds;
-}
-
-/**
- * 將延長日秒數轉換為標準時間秒數 (0-86399)
- */
-function toStandardSeconds(extendedSeconds: number): number {
-  // 24:00+ (86400+) → 轉回 00:00+ (0+)
-  if (extendedSeconds >= 24 * 3600) {
-    return extendedSeconds - 24 * 3600;
-  }
-  return extendedSeconds;
 }
 
 export function TimeControl({

@@ -8,6 +8,14 @@ import type { TrackSchedule } from '../types/schedule';
 const THSR_TRACK_IDS = ['THSR-1-0', 'THSR-1-1'];
 
 /**
+ * 車站進度映射表類型
+ * 外層 key: track_id (THSR-1-0, THSR-1-1)
+ * 內層 key: station_id
+ * value: 0-1 之間的進度值
+ */
+export type StationProgressMap = Record<string, Record<string, number>>;
+
+/**
  * 高鐵資料狀態
  */
 export interface ThsrDataState {
@@ -15,7 +23,7 @@ export interface ThsrDataState {
   stations: StationCollection | null;
   schedules: Map<string, TrackSchedule>;
   trackMap: Map<string, Track>;
-  stationProgress: Map<string, number>; // 車站在軌道上的進度 (0-1)
+  stationProgress: StationProgressMap; // 車站在軌道上的進度 (0-1)
   loading: boolean;
   error: string | null;
 }
@@ -33,7 +41,7 @@ export function useThsrData(): ThsrDataState {
   const [stations, setStations] = useState<StationCollection | null>(null);
   const [schedules, setSchedules] = useState<Map<string, TrackSchedule>>(new Map());
   const [trackMap, setTrackMap] = useState<Map<string, Track>>(new Map());
-  const [stationProgress, setStationProgress] = useState<Map<string, number>>(new Map());
+  const [stationProgress, setStationProgress] = useState<StationProgressMap>({});
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
@@ -72,25 +80,11 @@ export function useThsrData(): ThsrDataState {
         const stationsData = await stationsRes.json();
         setStations(stationsData);
 
-        // 計算車站在軌道上的進度（基於累積距離）
-        const progressMap = new Map<string, number>();
-        const stationFeatures = stationsData.features || [];
-        if (stationFeatures.length > 0) {
-          // 找出最大累積距離（終點站）
-          const maxDistance = Math.max(
-            ...stationFeatures.map((f: { properties: { cumulative_distance?: number } }) =>
-              f.properties.cumulative_distance || 0
-            )
-          );
-          // 計算每站的進度 (0-1)
-          for (const feature of stationFeatures) {
-            const stationId = feature.properties.station_id;
-            const distance = feature.properties.cumulative_distance || 0;
-            const progress = maxDistance > 0 ? distance / maxDistance : 0;
-            progressMap.set(stationId, progress);
-          }
-        }
-        setStationProgress(progressMap);
+        // 載入車站進度映射表（由 calibrate_thsr_tracks.py 和 build_thsr_station_progress.py 產生）
+        const progressRes = await fetch('/data-thsr/station_progress.json');
+        if (!progressRes.ok) throw new Error('Failed to load THSR station progress');
+        const progressData = await progressRes.json();
+        setStationProgress(progressData);
 
         // 載入時刻表（單一合併檔案）
         const scheduleMap = new Map<string, TrackSchedule>();

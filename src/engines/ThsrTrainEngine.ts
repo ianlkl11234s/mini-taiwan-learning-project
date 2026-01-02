@@ -10,6 +10,7 @@
 
 import type { TrackSchedule, StationTime } from '../types/schedule';
 import type { Track } from '../types/track';
+import type { StationProgressMap } from '../hooks/useThsrData';
 
 export interface ThsrTrain {
   trainId: string;
@@ -107,7 +108,7 @@ export class ThsrTrainEngine {
   private schedules: Map<string, TrackSchedule>;
   private tracks: Map<string, Track>;
   private activeTrains: Map<string, ThsrTrain> = new Map();
-  private stationProgress: Map<string, number> = new Map(); // 車站在軌道上的進度 (0-1)
+  private stationProgress: StationProgressMap = {}; // 車站在軌道上的進度 (0-1)
 
   constructor(options: ThsrTrainEngineOptions) {
     this.schedules = options.schedules;
@@ -115,9 +116,10 @@ export class ThsrTrainEngine {
   }
 
   /**
-   * 設置車站在軌道上的進度（基於累積距離）
+   * 設置車站在軌道上的進度（由 station_progress.json 載入）
+   * @param progress 格式：{ "THSR-1-0": { "0990": 0.0, ... }, "THSR-1-1": { ... } }
    */
-  setStationProgress(progress: Map<string, number>): void {
+  setStationProgress(progress: StationProgressMap): void {
     this.stationProgress = progress;
   }
 
@@ -256,12 +258,13 @@ export class ThsrTrainEngine {
         const fromStationId = stations[segment.stationIndex]?.station_id;
         const toStationId = stations[segment.nextStationIndex]?.station_id;
 
-        // 取得車站在軌道上的進度（基於累積距離）
-        const fromProgress = fromStationId
-          ? this.stationProgress.get(fromStationId) ?? this.getStationProgress(segment.stationIndex, totalStations)
+        // 取得車站在軌道上的進度（由 station_progress.json 提供，使用 trackId + stationId 查詢）
+        const trackProgress = this.stationProgress[trackId];
+        const fromProgress = fromStationId && trackProgress?.[fromStationId] !== undefined
+          ? trackProgress[fromStationId]
           : this.getStationProgress(segment.stationIndex, totalStations);
-        const toProgress = toStationId
-          ? this.stationProgress.get(toStationId) ?? this.getStationProgress(segment.nextStationIndex, totalStations)
+        const toProgress = toStationId && trackProgress?.[toStationId] !== undefined
+          ? trackProgress[toStationId]
           : this.getStationProgress(segment.nextStationIndex, totalStations);
 
         let position: [number, number];

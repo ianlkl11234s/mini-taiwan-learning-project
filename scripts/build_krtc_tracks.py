@@ -470,10 +470,18 @@ def main():
         print(f"    ✅ 已儲存: {output_path_0.name}")
 
         # 建立 Direction 1 (反向)
+        # 重要：直接反轉已校準的 coords_0，而非對原始座標重新校準
+        # 這確保兩個方向的軌道有完全相同的站點座標
         track_id_1 = f"KRTC-{line_id}-1"
         print(f"\n  建立 {track_id_1} ({config['direction_1']})...")
 
-        coords_1, indices_1 = calibrate_track(original_coords, stations, reverse=True)
+        coords_1 = list(reversed(coords_0))
+        # 反轉車站索引
+        indices_1 = {}
+        total_coords = len(coords_1)
+        for station_id, idx in indices_0.items():
+            indices_1[station_id] = total_coords - 1 - idx
+
         print(f"    校準後座標點數: {len(coords_1)}")
         print(f"    車站索引: {len(indices_1)}")
 

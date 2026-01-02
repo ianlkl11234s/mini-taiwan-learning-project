@@ -1,0 +1,371 @@
+[
+  {
+    "LineNo": "O",
+    "LineID": "O",
+    "Stations": [
+      {
+        "Sequence": 1,
+        "StationID": "O1",
+        "StationName": {
+          "Zh_tw": "哈瑪星",
+          "En": "Hamasen"
+        },
+        "CumulativeDistance": 0
+      },
+      {
+        "Sequence": 2,
+        "StationID": "O2",
+        "StationName": {
+          "Zh_tw": "鹽埕埔",
+          "En": "Yanchengpu"
+        },
+        "CumulativeDistance": 1.32
+      },
+      {
+        "Sequence": 3,
+        "StationID": "O4",
+        "StationName": {
+          "Zh_tw": "前金",
+          "En": "Cianjin"
+        },
+        "CumulativeDistance": 2.63
+      },
+      {
+        "Sequence": 4,
+        "StationID": "O5",
+        "StationName": {
+          "Zh_tw": "美麗島",
+          "En": "Formosa Boulevard"
+        },
+        "CumulativeDistance": 3.55
+      },
+      {
+        "Sequence": 5,
+        "StationID": "O6",
+        "StationName": {
+          "Zh_tw": "信義國小",
+          "En": "Sinyi Elementary School"
+        },
+        "CumulativeDistance": 4.38
+      },
+      {
+        "Sequence": 6,
+        "StationID": "O7",
+        "StationName": {
+          "Zh_tw": "文化中心",
+          "En": "Cultural Center"
+        },
+        "CumulativeDistance": 5.02
+      },
+      {
+        "Sequence": 7,
+        "StationID": "O8",
+        "StationName": {
+          "Zh_tw": "五塊厝",
+          "En": "Wukuaicuo"
+        },
+        "CumulativeDistance": 6.06
+      },
+      {
+        "Sequence": 8,
+        "StationID": "O9",
+        "StationName": {
+          "Zh_tw": "苓雅運動園區",
+          "En": "Lingya Sports Park"
+        },
+        "CumulativeDistance": 6.81
+      },
+      {
+        "Sequence": 9,
+        "StationID": "O10",
+        "StationName": {
+          "Zh_tw": "衛武營",
+          "En": "Weiwuying"
+        },
+        "CumulativeDistance": 7.5
+      },
+      {
+        "Sequence": 10,
+        "StationID": "O11",
+        "StationName": {
+          "Zh_tw": "鳳山西站",
+          "En": "Fongshan West"
+        },
+        "CumulativeDistance": 8.23
+      },
+      {
+        "Sequence": 11,
+        "StationID": "O12",
+        "StationName": {
+          "Zh_tw": "鳳山",
+          "En": "Fongshan"
+        },
+        "CumulativeDistance": 8.95
+      },
+      {
+        "Sequence": 12,
+        "StationID": "O13",
+        "StationName": {
+          "Zh_tw": "大東",
+          "En": "Dadong"
+        },
+        "CumulativeDistance": 9.81
+      },
+      {
+        "Sequence": 13,
+        "StationID": "O14",
+        "StationName": {
+          "Zh_tw": "鳳山國中",
+          "En": "Fongshan Junior High School"
+        },
+        "CumulativeDistance": 10.84
+      },
+      {
+        "Sequence": 14,
+        "StationID": "OT1",
+        "StationName": {
+          "Zh_tw": "大寮",
+          "En": "Daliao"
+        },
+        "CumulativeDistance": 13.06
+      }
+    ],
+    "SrcUpdateTime": "2024-06-30T11:00:00+08:00",
+    "UpdateTime": "2026-01-02T11:38:05+08:00",
+    "VersionID": 297
+  },
+  {
+    "LineNo": "R",
+    "LineID": "R",
+    "Stations": [
+      {
+        "Sequence": 1,
+        "StationID": "R3",
+        "StationName": {
+          "Zh_tw": "小港",
+          "En": "Siaogang"
+        },
+        "CumulativeDistance": 0
+      },
+      {
+        "Sequence": 2,
+        "StationID": "R4",
+        "StationName": {
+          "Zh_tw": "高雄國際機場",
+          "En": "Kaohsiung International Airport"
+        },
+        "CumulativeDistance": 1.5
+      },
+      {
+        "Sequence": 3,
+        "StationID": "R4A",
+        "StationName": {
+          "Zh_tw": "草衙",
+          "En": "Caoya"
+        },
+        "CumulativeDistance": 3.34
+      },
+      {
+        "Sequence": 4,
+        "StationID": "R5",
+        "StationName": {
+          "Zh_tw": "前鎮高中",
+          "En": "Cianjhen Senior High School"
+        },
+        "CumulativeDistance": 4.48
+      },
+      {
+        "Sequence": 5,
+        "StationID": "R6",
+        "StationName": {
+          "Zh_tw": "凱旋",
+          "En": "Kaisyuan"
+        },
+        "CumulativeDistance": 5.61
+      },
+      {
+        "Sequence": 6,
+        "StationID": "R7",
+        "StationName": {
+          "Zh_tw": "獅甲",
+          "En": "Shihjia"
+        },
+        "CumulativeDistance": 6.89
+      },
+      {
+        "Sequence": 7,
+        "StationID": "R8",
+        "StationName": {
+          "Zh_tw": "三多商圈",
+          "En": "Sanduo Shopping District"
+        },
+        "CumulativeDistance": 7.82
+      },
+      {
+        "Sequence": 8,
+        "StationID": "R9",
+        "StationName": {
+          "Zh_tw": "中央公園",
+          "En": "Central Park"
+        },
+        "CumulativeDistance": 9.08
+      },
+      {
+        "Sequence": 9,
+        "StationID": "R10",
+        "StationName": {
+          "Zh_tw": "美麗島",
+          "En": "Formosa Boulevard"
+        },
+        "CumulativeDistance": 9.81
+      },
+      {
+        "Sequence": 10,
+        "StationID": "R11",
+        "StationName": {
+          "Zh_tw": "高雄車站",
+          "En": "Kaohsiung Main Station"
+        },
+        "CumulativeDistance": 10.73
+      },
+      {
+        "Sequence": 11,
+        "StationID": "R12",
+        "StationName": {
+          "Zh_tw": "後驛",
+          "En": "Houyi"
+        },
+        "CumulativeDistance": 11.71
+      },
+      {
+        "Sequence": 12,
+        "StationID": "R13",
+        "StationName": {
+          "Zh_tw": "凹子底",
+          "En": "Aozihdi"
+        },
+        "CumulativeDistance": 12.68
+      },
+      {
+        "Sequence": 13,
+        "StationID": "R14",
+        "StationName": {
+          "Zh_tw": "巨蛋",
+          "En": "Kaohsiung Arena"
+        },
+        "CumulativeDistance": 13.66
+      },
+      {
+        "Sequence": 14,
+        "StationID": "R15",
+        "StationName": {
+          "Zh_tw": "生態園區",
+          "En": "Ecological District"
+        },
+        "CumulativeDistance": 14.89
+      },
+      {
+        "Sequence": 15,
+        "StationID": "R16",
+        "StationName": {
+          "Zh_tw": "左營",
+          "En": "Zuoying"
+        },
+        "CumulativeDistance": 16.48
+      },
+      {
+        "Sequence": 16,
+        "StationID": "R17",
+        "StationName": {
+          "Zh_tw": "世運",
+          "En": "World Game"
+        },
+        "CumulativeDistance": 18.15
+      },
+      {
+        "Sequence": 17,
+        "StationID": "R18",
+        "StationName": {
+          "Zh_tw": "油廠國小",
+          "En": "Oil Refinery Elementary School"
+        },
+        "CumulativeDistance": 18.92
+      },
+      {
+        "Sequence": 18,
+        "StationID": "R19",
+        "StationName": {
+          "Zh_tw": "楠梓科技園區",
+          "En": "Nanzih Technology Industrial Park"
+        },
+        "CumulativeDistance": 20.21
+      },
+      {
+        "Sequence": 19,
+        "StationID": "R20",
+        "StationName": {
+          "Zh_tw": "後勁",
+          "En": "Houjing"
+        },
+        "CumulativeDistance": 21.23
+      },
+      {
+        "Sequence": 20,
+        "StationID": "R21",
+        "StationName": {
+          "Zh_tw": "都會公園",
+          "En": "Metropolitan Park"
+        },
+        "CumulativeDistance": 22.29
+      },
+      {
+        "Sequence": 21,
+        "StationID": "R22",
+        "StationName": {
+          "Zh_tw": "青埔",
+          "En": "Cingpu"
+        },
+        "CumulativeDistance": 23.97
+      },
+      {
+        "Sequence": 22,
+        "StationID": "R22A",
+        "StationName": {
+          "Zh_tw": "橋頭糖廠",
+          "En": "Ciaotou Sugar Refinery"
+        },
+        "CumulativeDistance": 25.06
+      },
+      {
+        "Sequence": 23,
+        "StationID": "R23",
+        "StationName": {
+          "Zh_tw": "橋頭火車站",
+          "En": "Ciaotou Station"
+        },
+        "CumulativeDistance": 25.94
+      },
+      {
+        "Sequence": 24,
+        "StationID": "R24",
+        "StationName": {
+          "Zh_tw": "岡山高醫",
+          "En": "Kaohsiung Medical University Gangshan Hospital"
+        },
+        "CumulativeDistance": 28.33
+      },
+      {
+        "Sequence": 25,
+        "StationID": "RK1",
+        "StationName": {
+          "Zh_tw": "岡山車站",
+          "En": "Gangshan Station"
+        },
+        "CumulativeDistance": 29.72
+      }
+    ],
+    "SrcUpdateTime": "2024-06-30T11:00:00+08:00",
+    "UpdateTime": "2026-01-02T11:38:05+08:00",
+    "VersionID": 297
+  }
+]

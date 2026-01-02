@@ -1,0 +1,824 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "O1",
+        "station_uid": "KRTC-O1",
+        "name_zh": "哈瑪星",
+        "name_en": "Hamasen",
+        "line_id": "O",
+        "sequence": 1,
+        "cumulative_distance": 0,
+        "city": "高雄市",
+        "address": "高雄市鼓山區臨海二路17-1號地下一層"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.274508,
+          22.621492
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "O2",
+        "station_uid": "KRTC-O2",
+        "name_zh": "鹽埕埔",
+        "name_en": "Yanchengpu",
+        "line_id": "O",
+        "sequence": 2,
+        "cumulative_distance": 1.32,
+        "city": "高雄市",
+        "address": "高雄市鹽埕區大勇路96號地下一層"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.283777,
+          22.623501
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "O4",
+        "station_uid": "KRTC-O4",
+        "name_zh": "前金",
+        "name_en": "Cianjin",
+        "line_id": "O",
+        "sequence": 3,
+        "cumulative_distance": 2.63,
+        "city": "高雄市",
+        "address": "高雄市前金區中正四路192-1號地下一層"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.294766,
+          22.628933
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "O5",
+        "station_uid": "KRTC-O5",
+        "name_zh": "美麗島",
+        "name_en": "Formosa Boulevard",
+        "line_id": "O",
+        "sequence": 4,
+        "cumulative_distance": 3.55,
+        "city": "高雄市",
+        "address": "高雄市新興區中山一路115號地下一樓"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.303254,
+          22.631278
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "O6",
+        "station_uid": "KRTC-O6",
+        "name_zh": "信義國小",
+        "name_en": "Sinyi Elementary School",
+        "line_id": "O",
+        "sequence": 5,
+        "cumulative_distance": 4.38,
+        "city": "高雄市",
+        "address": "高雄市新興區中正三路32-1號地下一樓"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.311391,
+          22.630675
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "O7",
+        "station_uid": "KRTC-O7",
+        "name_zh": "文化中心",
+        "name_en": "Cultural Center",
+        "line_id": "O",
+        "sequence": 6,
+        "cumulative_distance": 5.02,
+        "city": "高雄市",
+        "address": "高雄市苓雅區中正二路45號地下一層"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.317632,
+          22.630224
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "O8",
+        "station_uid": "KRTC-O8",
+        "name_zh": "五塊厝",
+        "name_en": "Wukuaicuo",
+        "line_id": "O",
+        "sequence": 7,
+        "cumulative_distance": 6.06,
+        "city": "高雄市",
+        "address": "高雄市苓雅區中正一路286號地下一層"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.327731,
+          22.629413
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "O9",
+        "station_uid": "KRTC-O9",
+        "name_zh": "苓雅運動園區",
+        "name_en": "Lingya Sports Park",
+        "line_id": "O",
+        "sequence": 8,
+        "cumulative_distance": 6.81,
+        "city": "高雄市",
+        "address": "高雄市苓雅區中正一路99號地下一層"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.334651,
+          22.6272
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "O10",
+        "station_uid": "KRTC-O10",
+        "name_zh": "衛武營",
+        "name_en": "Weiwuying",
+        "line_id": "O",
+        "sequence": 9,
+        "cumulative_distance": 7.5,
+        "city": "高雄市",
+        "address": "高雄市苓雅區中正一路2號地下一層"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.341045,
+          22.625055
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "O11",
+        "station_uid": "KRTC-O11",
+        "name_zh": "鳳山西站",
+        "name_en": "Fongshan West",
+        "line_id": "O",
+        "sequence": 10,
+        "cumulative_distance": 8.23,
+        "city": "高雄市",
+        "address": "高雄市鳳山區自由路281號地下層"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.348118,
+          22.625273
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "O12",
+        "station_uid": "KRTC-O12",
+        "name_zh": "鳳山",
+        "name_en": "Fongshan",
+        "line_id": "O",
+        "sequence": 11,
+        "cumulative_distance": 8.95,
+        "city": "高雄市",
+        "address": "高雄市鳳山區光遠路446號地下層"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.355166,
+          22.625953
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "O13",
+        "station_uid": "KRTC-O13",
+        "name_zh": "大東",
+        "name_en": "Dadong",
+        "line_id": "O",
+        "sequence": 12,
+        "cumulative_distance": 9.81,
+        "city": "高雄市",
+        "address": "高雄市鳳山區光遠路226號地下一層"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.363497,
+          22.625178
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "O14",
+        "station_uid": "KRTC-O14",
+        "name_zh": "鳳山國中",
+        "name_en": "Fongshan Junior High School",
+        "line_id": "O",
+        "sequence": 13,
+        "cumulative_distance": 10.84,
+        "city": "高雄市",
+        "address": "高雄市鳳山區中山東路225號地下一層"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.371331,
+          22.62466
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "OT1",
+        "station_uid": "KRTC-OT1",
+        "name_zh": "大寮",
+        "name_en": "Daliao",
+        "line_id": "O",
+        "sequence": 14,
+        "cumulative_distance": 13.06,
+        "city": "高雄市",
+        "address": "高雄市大寮區捷西路300號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.390528,
+          22.622122
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "R3",
+        "station_uid": "KRTC-R3",
+        "name_zh": "小港",
+        "name_en": "Siaogang",
+        "line_id": "R",
+        "sequence": 1,
+        "cumulative_distance": 0,
+        "city": "高雄市",
+        "address": "高雄市小港區沿海一路280號地下一樓"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.353808,
+          22.56478
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "R4",
+        "station_uid": "KRTC-R4",
+        "name_zh": "高雄國際機場",
+        "name_en": "Kaohsiung International Airport",
+        "line_id": "R",
+        "sequence": 2,
+        "cumulative_distance": 1.5,
+        "city": "高雄市",
+        "address": "高雄市小港區中山四路2之2號地下一樓"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.341772,
+          22.570166
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "R4A",
+        "station_uid": "KRTC-R4A",
+        "name_zh": "草衙",
+        "name_en": "Caoya",
+        "line_id": "R",
+        "sequence": 3,
+        "cumulative_distance": 3.34,
+        "city": "高雄市",
+        "address": "高雄市前鎮區翠亨南路555號地下一樓"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.328569,
+          22.580354
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "R5",
+        "station_uid": "KRTC-R5",
+        "name_zh": "前鎮高中",
+        "name_en": "Cianjhen Senior High School",
+        "line_id": "R",
+        "sequence": 4,
+        "cumulative_distance": 4.48,
+        "city": "高雄市",
+        "address": "高雄市前鎮區翠亨北路225號地下一樓"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.321686,
+          22.588482
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "R6",
+        "station_uid": "KRTC-R6",
+        "name_zh": "凱旋",
+        "name_en": "Kaisyuan",
+        "line_id": "R",
+        "sequence": 5,
+        "cumulative_distance": 5.61,
+        "city": "高雄市",
+        "address": "高雄市前鎮區中山三路1號地下一樓"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.315119,
+          22.596764
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "R7",
+        "station_uid": "KRTC-R7",
+        "name_zh": "獅甲",
+        "name_en": "Shihjia",
+        "line_id": "R",
+        "sequence": 6,
+        "cumulative_distance": 6.89,
+        "city": "高雄市",
+        "address": "高雄市前鎮區中山三路150號地下一層"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.308079,
+          22.606047
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "R8",
+        "station_uid": "KRTC-R8",
+        "name_zh": "三多商圈",
+        "name_en": "Sanduo Shopping District",
+        "line_id": "R",
+        "sequence": 7,
+        "cumulative_distance": 7.82,
+        "city": "高雄市",
+        "address": "高雄市前鎮區中山二路268號地下一層"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.304588,
+          22.61398
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "R9",
+        "station_uid": "KRTC-R9",
+        "name_zh": "中央公園",
+        "name_en": "Central Park",
+        "line_id": "R",
+        "sequence": 8,
+        "cumulative_distance": 9.08,
+        "city": "高雄市",
+        "address": "高雄市前金區中山一路11號地下一層"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.301212,
+          22.624839
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "R10",
+        "station_uid": "KRTC-R10",
+        "name_zh": "美麗島",
+        "name_en": "Formosa Boulevard",
+        "line_id": "R",
+        "sequence": 9,
+        "cumulative_distance": 9.81,
+        "city": "高雄市",
+        "address": "高雄市新興區中山一路115號地下一樓"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.301994,
+          22.631393
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "R11",
+        "station_uid": "KRTC-R11",
+        "name_zh": "高雄車站",
+        "name_en": "Kaohsiung Main Station",
+        "line_id": "R",
+        "sequence": 10,
+        "cumulative_distance": 10.73,
+        "city": "高雄市",
+        "address": "高雄市三民區建國二路320號地下一層"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.302703,
+          22.639694
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "R12",
+        "station_uid": "KRTC-R12",
+        "name_zh": "後驛",
+        "name_en": "Houyi",
+        "line_id": "R",
+        "sequence": 11,
+        "cumulative_distance": 11.71,
+        "city": "高雄市",
+        "address": "高雄市三民區博愛一路220號地下一層"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.303413,
+          22.648495
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "R13",
+        "station_uid": "KRTC-R13",
+        "name_zh": "凹子底",
+        "name_en": "Aozihdi",
+        "line_id": "R",
+        "sequence": 12,
+        "cumulative_distance": 12.68,
+        "city": "高雄市",
+        "address": "高雄市鼓山區博愛二路21號地下一層"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.303239,
+          22.657268
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "R14",
+        "station_uid": "KRTC-R14",
+        "name_zh": "巨蛋",
+        "name_en": "Kaohsiung Arena",
+        "line_id": "R",
+        "sequence": 13,
+        "cumulative_distance": 13.66,
+        "city": "高雄市",
+        "address": "高雄市左營區博愛二路485號地下一層"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.30336,
+          22.666158
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "R15",
+        "station_uid": "KRTC-R15",
+        "name_zh": "生態園區",
+        "name_en": "Ecological District",
+        "line_id": "R",
+        "sequence": 14,
+        "cumulative_distance": 14.89,
+        "city": "高雄市",
+        "address": "高雄市左營區博愛三路435號地下一層"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.306619,
+          22.676686
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "R16",
+        "station_uid": "KRTC-R16",
+        "name_zh": "左營",
+        "name_en": "Zuoying",
+        "line_id": "R",
+        "sequence": 15,
+        "cumulative_distance": 16.48,
+        "city": "高雄市",
+        "address": "高雄市左營區高鐵路107號地下一層"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.308887,
+          22.688376
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "R17",
+        "station_uid": "KRTC-R17",
+        "name_zh": "世運",
+        "name_en": "World Game",
+        "line_id": "R",
+        "sequence": 16,
+        "cumulative_distance": 18.15,
+        "city": "高雄市",
+        "address": "高雄市楠梓區左楠路1號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.302531,
+          22.701841
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "R18",
+        "station_uid": "KRTC-R18",
+        "name_zh": "油廠國小",
+        "name_en": "Oil Refinery Elementary School",
+        "line_id": "R",
+        "sequence": 17,
+        "cumulative_distance": 18.92,
+        "city": "高雄市",
+        "address": "高雄市楠梓區左楠路6號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.302323,
+          22.708872
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "R19",
+        "station_uid": "KRTC-R19",
+        "name_zh": "楠梓科技園區",
+        "name_en": "Nanzih Technology Industrial Park",
+        "line_id": "R",
+        "sequence": 18,
+        "cumulative_distance": 20.21,
+        "city": "高雄市",
+        "address": "高雄市楠梓區加昌路598號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.307242,
+          22.718651
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "R20",
+        "station_uid": "KRTC-R20",
+        "name_zh": "後勁",
+        "name_en": "Houjing",
+        "line_id": "R",
+        "sequence": 19,
+        "cumulative_distance": 21.23,
+        "city": "高雄市",
+        "address": "高雄市楠梓區加昌路178號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.31637,
+          22.722324
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "R21",
+        "station_uid": "KRTC-R21",
+        "name_zh": "都會公園",
+        "name_en": "Metropolitan Park",
+        "line_id": "R",
+        "sequence": 20,
+        "cumulative_distance": 22.29,
+        "city": "高雄市",
+        "address": "高雄市楠梓區高楠公路1835號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.321014,
+          22.729529
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "R22",
+        "station_uid": "KRTC-R22",
+        "name_zh": "青埔",
+        "name_en": "Cingpu",
+        "line_id": "R",
+        "sequence": 21,
+        "cumulative_distance": 23.97,
+        "city": "高雄市",
+        "address": "高雄市橋頭區經武路20號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.317795,
+          22.744345
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "R22A",
+        "station_uid": "KRTC-R22A",
+        "name_zh": "橋頭糖廠",
+        "name_en": "Ciaotou Sugar Refinery",
+        "line_id": "R",
+        "sequence": 22,
+        "cumulative_distance": 25.06,
+        "city": "高雄市",
+        "address": "高雄市橋頭區興糖路19號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.314698,
+          22.75316
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "R23",
+        "station_uid": "KRTC-R23",
+        "name_zh": "橋頭火車站",
+        "name_en": "Ciaotou Station",
+        "line_id": "R",
+        "sequence": 23,
+        "cumulative_distance": 25.94,
+        "city": "高雄市",
+        "address": "高雄市橋頭區站前街12之1號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.310976,
+          22.760249
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "R24",
+        "station_uid": "KRTC-R24",
+        "name_zh": "岡山高醫",
+        "name_en": "Kaohsiung Medical University Gangshan Hospital",
+        "line_id": "R",
+        "sequence": 24,
+        "cumulative_distance": 28.33,
+        "city": "高雄市",
+        "address": "高雄市岡山區大遼里9鄰中山南路2號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.30188,
+          22.780642
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "RK1",
+        "station_uid": "KRTC-RK1",
+        "name_zh": "岡山車站",
+        "name_en": "Gangshan Station",
+        "line_id": "R",
+        "sequence": 25,
+        "cumulative_distance": 29.72,
+        "city": "高雄市",
+        "address": "高雄市岡山區中山北路1號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.29923,
+          22.79245
+        ]
+      }
+    }
+  ]
+}

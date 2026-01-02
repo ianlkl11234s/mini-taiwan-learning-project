@@ -251,7 +251,7 @@ export function LineFilter({
           backdropFilter: 'blur(8px)',
         }}
       >
-        <span>MRT</span>
+        <span>TPE MRT</span>
         <span style={{
           fontSize: 10,
           transition: 'transform 0.3s ease',
@@ -331,15 +331,15 @@ export function LineFilter({
         })}
       </div>
 
-      {/* Cable 分類按鈕 */}
+      {/* KHH MRT 分類按鈕 */}
       <button
-        onClick={() => handleCategoryClick('cable')}
+        onClick={() => handleCategoryClick('krtc')}
         style={{
           padding: '8px 14px',
           borderRadius: 20,
-          border: expanded === 'cable' ? `2px solid ${colors.borderActive}` : `2px solid ${colors.borderInactive}`,
-          background: expanded === 'cable' ? colors.bgActive : colors.bgInactive,
-          color: expanded === 'cable' ? colors.textActive : colors.textInactive,
+          border: expanded === 'krtc' ? `2px solid ${colors.borderActive}` : `2px solid ${colors.borderInactive}`,
+          background: expanded === 'krtc' ? colors.bgActive : colors.bgInactive,
+          color: expanded === 'krtc' ? colors.textActive : colors.textInactive,
           fontSize: 13,
           fontWeight: 600,
           cursor: 'pointer',
@@ -350,46 +350,46 @@ export function LineFilter({
           backdropFilter: 'blur(8px)',
         }}
       >
-        <span>Cable</span>
+        <span>KHH MRT</span>
         <span style={{
           fontSize: 10,
           transition: 'transform 0.3s ease',
-          transform: expanded === 'cable' ? 'rotate(90deg)' : 'rotate(0deg)',
+          transform: expanded === 'krtc' ? 'rotate(90deg)' : 'rotate(0deg)',
         }}>
           ▶
         </span>
       </button>
 
-      {/* Cable 路線按鈕列表 */}
+      {/* KHH MRT 路線按鈕列表 */}
       <div
         style={{
           display: 'flex',
           gap: 8,
-          maxWidth: expanded === 'cable' ? 60 : 0,
+          maxWidth: expanded === 'krtc' ? 60 : 0,
           overflow: 'hidden',
           transition: 'max-width 0.3s ease-out, opacity 0.3s ease-out',
-          opacity: expanded === 'cable' ? 1 : 0,
+          opacity: expanded === 'krtc' ? 1 : 0,
         }}
       >
         <button
-          onClick={handleMKClick}
-          title={getMKTooltip()}
+          onClick={handleKrtcClick}
+          title={getKrtcTooltip()}
           style={{
             width: 40,
             height: 40,
             borderRadius: '50%',
             color: colors.textActive,
-            fontSize: 12,
+            fontSize: 10,
             fontWeight: 700,
             cursor: 'pointer',
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
             transition: 'all 0.2s ease',
-            ...getMKStyle(),
+            ...getKrtcStyle(),
           }}
         >
-          MK
+          高捷
         </button>
       </div>
 
@@ -455,15 +455,15 @@ export function LineFilter({
         </button>
       </div>
 
-      {/* KRTC 分類按鈕 */}
+      {/* Cable 分類按鈕 */}
       <button
-        onClick={() => handleCategoryClick('krtc')}
+        onClick={() => handleCategoryClick('cable')}
         style={{
           padding: '8px 14px',
           borderRadius: 20,
-          border: expanded === 'krtc' ? `2px solid ${colors.borderActive}` : `2px solid ${colors.borderInactive}`,
-          background: expanded === 'krtc' ? colors.bgActive : colors.bgInactive,
-          color: expanded === 'krtc' ? colors.textActive : colors.textInactive,
+          border: expanded === 'cable' ? `2px solid ${colors.borderActive}` : `2px solid ${colors.borderInactive}`,
+          background: expanded === 'cable' ? colors.bgActive : colors.bgInactive,
+          color: expanded === 'cable' ? colors.textActive : colors.textInactive,
           fontSize: 13,
           fontWeight: 600,
           cursor: 'pointer',
@@ -474,46 +474,46 @@ export function LineFilter({
           backdropFilter: 'blur(8px)',
         }}
       >
-        <span>KRTC</span>
+        <span>Cable</span>
         <span style={{
           fontSize: 10,
           transition: 'transform 0.3s ease',
-          transform: expanded === 'krtc' ? 'rotate(90deg)' : 'rotate(0deg)',
+          transform: expanded === 'cable' ? 'rotate(90deg)' : 'rotate(0deg)',
         }}>
           ▶
         </span>
       </button>
 
-      {/* KRTC 路線按鈕列表 */}
+      {/* Cable 路線按鈕列表 */}
       <div
         style={{
           display: 'flex',
           gap: 8,
-          maxWidth: expanded === 'krtc' ? 60 : 0,
+          maxWidth: expanded === 'cable' ? 60 : 0,
           overflow: 'hidden',
           transition: 'max-width 0.3s ease-out, opacity 0.3s ease-out',
-          opacity: expanded === 'krtc' ? 1 : 0,
+          opacity: expanded === 'cable' ? 1 : 0,
         }}
       >
         <button
-          onClick={handleKrtcClick}
-          title={getKrtcTooltip()}
+          onClick={handleMKClick}
+          title={getMKTooltip()}
           style={{
             width: 40,
             height: 40,
             borderRadius: '50%',
             color: colors.textActive,
-            fontSize: 10,
+            fontSize: 12,
             fontWeight: 700,
             cursor: 'pointer',
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
             transition: 'all 0.2s ease',
-            ...getKrtcStyle(),
+            ...getMKStyle(),
           }}
         >
-          高捷
+          MK
         </button>
       </div>
     </div>

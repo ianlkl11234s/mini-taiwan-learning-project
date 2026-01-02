@@ -52,7 +52,7 @@ export const TRANSPORT_CONFIGS: Record<TransportMode, TransportConfig> = {
   MRT: {
     id: 'MRT',
     name: '台北捷運',
-    dataPath: '/data',
+    dataPath: '/data/trtc',
     enable3D: true,
     enableFollow: true,
     defaultVisible: true,
@@ -60,7 +60,7 @@ export const TRANSPORT_CONFIGS: Record<TransportMode, TransportConfig> = {
   THSR: {
     id: 'THSR',
     name: '台灣高鐵',
-    dataPath: '/data-thsr',
+    dataPath: '/data/thsr',
     enable3D: true,
     enableFollow: true,
     defaultVisible: true,
@@ -68,7 +68,7 @@ export const TRANSPORT_CONFIGS: Record<TransportMode, TransportConfig> = {
   TRA: {
     id: 'TRA',
     name: '台灣鐵路',
-    dataPath: '/data-tra',
+    dataPath: '/data/tra',
     enable3D: true,
     enableFollow: true,
     defaultVisible: false,
@@ -76,7 +76,7 @@ export const TRANSPORT_CONFIGS: Record<TransportMode, TransportConfig> = {
   LRT: {
     id: 'LRT',
     name: '輕軌系統',
-    dataPath: '/data',
+    dataPath: '/data/trtc',
     enable3D: true,
     enableFollow: true,
     defaultVisible: true,

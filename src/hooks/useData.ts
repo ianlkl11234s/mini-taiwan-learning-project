@@ -127,7 +127,7 @@ export function useData(): DataState {
         // 載入所有軌道
         const trackFeatures: Track[] = [];
         for (const trackId of TRACK_IDS) {
-          const res = await fetch(`/data/tracks/${trackId}.geojson`);
+          const res = await fetch(`/data/trtc/tracks/${trackId}.geojson`);
           if (!res.ok) throw new Error(`Failed to load track ${trackId}`);
           const data = await res.json();
           if (data.features?.[0]) {
@@ -149,43 +149,43 @@ export function useData(): DataState {
         setTrackMap(tMap);
 
         // 載入車站（紅線 + 藍線 + 綠線）
-        const redStationsRes = await fetch('/data/red_line_stations.geojson');
+        const redStationsRes = await fetch('/data/trtc/red_line_stations.geojson');
         if (!redStationsRes.ok) throw new Error('Failed to load red line stations');
         const redStationsData = await redStationsRes.json();
 
-        const blueStationsRes = await fetch('/data/blue_line_stations.geojson');
+        const blueStationsRes = await fetch('/data/trtc/blue_line_stations.geojson');
         if (!blueStationsRes.ok) throw new Error('Failed to load blue line stations');
         const blueStationsData = await blueStationsRes.json();
 
-        const greenStationsRes = await fetch('/data/green_line_stations.geojson');
+        const greenStationsRes = await fetch('/data/trtc/green_line_stations.geojson');
         if (!greenStationsRes.ok) throw new Error('Failed to load green line stations');
         const greenStationsData = await greenStationsRes.json();
 
-        const orangeStationsRes = await fetch('/data/orange_line_stations.geojson');
+        const orangeStationsRes = await fetch('/data/trtc/orange_line_stations.geojson');
         if (!orangeStationsRes.ok) throw new Error('Failed to load orange line stations');
         const orangeStationsData = await orangeStationsRes.json();
 
-        const brownStationsRes = await fetch('/data/brown_line_stations.geojson');
+        const brownStationsRes = await fetch('/data/trtc/brown_line_stations.geojson');
         if (!brownStationsRes.ok) throw new Error('Failed to load brown line stations');
         const brownStationsData = await brownStationsRes.json();
 
-        const ankengStationsRes = await fetch('/data/ankeng_lrt_stations.geojson');
+        const ankengStationsRes = await fetch('/data/trtc/ankeng_lrt_stations.geojson');
         if (!ankengStationsRes.ok) throw new Error('Failed to load ankeng LRT stations');
         const ankengStationsData = await ankengStationsRes.json();
 
-        const danhaiStationsRes = await fetch('/data/danhai_lrt_stations.geojson');
+        const danhaiStationsRes = await fetch('/data/trtc/danhai_lrt_stations.geojson');
         if (!danhaiStationsRes.ok) throw new Error('Failed to load danhai LRT stations');
         const danhaiStationsData = await danhaiStationsRes.json();
 
-        const tymcStationsRes = await fetch('/data/tymc_stations.geojson');
+        const tymcStationsRes = await fetch('/data/trtc/tymc_stations.geojson');
         if (!tymcStationsRes.ok) throw new Error('Failed to load TYMC stations');
         const tymcStationsData = await tymcStationsRes.json();
 
-        const ntmcStationsRes = await fetch('/data/ntmc_stations.geojson');
+        const ntmcStationsRes = await fetch('/data/trtc/ntmc_stations.geojson');
         if (!ntmcStationsRes.ok) throw new Error('Failed to load NTMC stations');
         const ntmcStationsData = await ntmcStationsRes.json();
 
-        const maokongStationsRes = await fetch('/data/maokong_stations.geojson');
+        const maokongStationsRes = await fetch('/data/trtc/maokong_stations.geojson');
         if (!maokongStationsRes.ok) throw new Error('Failed to load Maokong Gondola stations');
         const maokongStationsData = await maokongStationsRes.json();
 
@@ -210,7 +210,7 @@ export function useData(): DataState {
         // 載入時刻表
         const scheduleMap = new Map<string, TrackSchedule>();
         for (const trackId of TRACK_IDS) {
-          const res = await fetch(`/data/schedules/${trackId}.json`);
+          const res = await fetch(`/data/trtc/schedules/${trackId}.json`);
           if (!res.ok) throw new Error(`Failed to load schedule ${trackId}`);
           const data = await res.json();
           scheduleMap.set(trackId, data);
@@ -218,7 +218,7 @@ export function useData(): DataState {
         setSchedules(scheduleMap);
 
         // 載入車站進度映射
-        const progressRes = await fetch('/data/station_progress.json');
+        const progressRes = await fetch('/data/trtc/station_progress.json');
         if (!progressRes.ok) throw new Error('Failed to load station progress');
         const progressData = await progressRes.json();
         setStationProgress(progressData);

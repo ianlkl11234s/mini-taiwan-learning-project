@@ -1,0 +1,352 @@
+[
+  {
+    "LineID": "C",
+    "Stations": [
+      {
+        "Sequence": 1,
+        "StationID": "C1",
+        "StationName": {
+          "Zh_tw": "籬仔內",
+          "En": "Lizihnei"
+        },
+        "CumulativeDistance": 0
+      },
+      {
+        "Sequence": 2,
+        "StationID": "C2",
+        "StationName": {
+          "Zh_tw": "凱旋瑞田",
+          "En": "Kaisyuan Rueitian"
+        },
+        "CumulativeDistance": 0.77
+      },
+      {
+        "Sequence": 3,
+        "StationID": "C3",
+        "StationName": {
+          "Zh_tw": "前鎮之星",
+          "En": "Cianjhen Star"
+        },
+        "CumulativeDistance": 1.4
+      },
+      {
+        "Sequence": 4,
+        "StationID": "C4",
+        "StationName": {
+          "Zh_tw": "凱旋中華",
+          "En": "Kaisyuan Jhonghua"
+        },
+        "CumulativeDistance": 1.94
+      },
+      {
+        "Sequence": 5,
+        "StationID": "C5",
+        "StationName": {
+          "Zh_tw": "夢時代",
+          "En": "Dream Mall"
+        },
+        "CumulativeDistance": 2.66
+      },
+      {
+        "Sequence": 6,
+        "StationID": "C6",
+        "StationName": {
+          "Zh_tw": "經貿園區",
+          "En": "Commerce and Trade Park"
+        },
+        "CumulativeDistance": 3.38
+      },
+      {
+        "Sequence": 7,
+        "StationID": "C7",
+        "StationName": {
+          "Zh_tw": "軟體園區",
+          "En": "Software Technology Park"
+        },
+        "CumulativeDistance": 3.93
+      },
+      {
+        "Sequence": 8,
+        "StationID": "C8",
+        "StationName": {
+          "Zh_tw": "高雄展覽館",
+          "En": "Kaohsiung Exhibition Center"
+        },
+        "CumulativeDistance": 4.58
+      },
+      {
+        "Sequence": 9,
+        "StationID": "C9",
+        "StationName": {
+          "Zh_tw": "旅運中心",
+          "En": "Cruise Terminal"
+        },
+        "CumulativeDistance": 5.1
+      },
+      {
+        "Sequence": 10,
+        "StationID": "C10",
+        "StationName": {
+          "Zh_tw": "光榮碼頭",
+          "En": "Glory Pier"
+        },
+        "CumulativeDistance": 5.8
+      },
+      {
+        "Sequence": 11,
+        "StationID": "C11",
+        "StationName": {
+          "Zh_tw": "真愛碼頭",
+          "En": "Love Pier"
+        },
+        "CumulativeDistance": 6.43
+      },
+      {
+        "Sequence": 12,
+        "StationID": "C12",
+        "StationName": {
+          "Zh_tw": "駁二大義",
+          "En": "Dayi Pier-2"
+        },
+        "CumulativeDistance": 7.07
+      },
+      {
+        "Sequence": 13,
+        "StationID": "C13",
+        "StationName": {
+          "Zh_tw": "駁二蓬萊",
+          "En": "Penglai Pier-2"
+        },
+        "CumulativeDistance": 7.56
+      },
+      {
+        "Sequence": 14,
+        "StationID": "C14",
+        "StationName": {
+          "Zh_tw": "哈瑪星",
+          "En": "Hamasen"
+        },
+        "CumulativeDistance": 8.17
+      },
+      {
+        "Sequence": 15,
+        "StationID": "C15",
+        "StationName": {
+          "Zh_tw": "壽山公園站",
+          "En": "Shoushan Park"
+        },
+        "CumulativeDistance": 8.74
+      },
+      {
+        "Sequence": 16,
+        "StationID": "C16",
+        "StationName": {
+          "Zh_tw": "文武聖殿站",
+          "En": "Wenwu Temple"
+        },
+        "CumulativeDistance": 9.14
+      },
+      {
+        "Sequence": 17,
+        "StationID": "C17",
+        "StationName": {
+          "Zh_tw": "鼓山區公所站",
+          "En": "Gushan District Office"
+        },
+        "CumulativeDistance": 9.92
+      },
+      {
+        "Sequence": 18,
+        "StationID": "C18",
+        "StationName": {
+          "Zh_tw": "鼓山",
+          "En": "Gushan"
+        },
+        "CumulativeDistance": 10.61
+      },
+      {
+        "Sequence": 19,
+        "StationID": "C19",
+        "StationName": {
+          "Zh_tw": "馬卡道",
+          "En": "Makadao"
+        },
+        "CumulativeDistance": 11.17
+      },
+      {
+        "Sequence": 20,
+        "StationID": "C20",
+        "StationName": {
+          "Zh_tw": "臺鐵美術館",
+          "En": "TRA Museum of Fine Arts"
+        },
+        "CumulativeDistance": 11.73
+      },
+      {
+        "Sequence": 21,
+        "StationID": "C21A",
+        "StationName": {
+          "Zh_tw": "內惟藝術中心",
+          "En": "Neiwei Arts Center"
+        },
+        "CumulativeDistance": 12.13
+      },
+      {
+        "Sequence": 22,
+        "StationID": "C21",
+        "StationName": {
+          "Zh_tw": "美術館",
+          "En": "Kaohsiung Museum of Fine Arts"
+        },
+        "CumulativeDistance": 12.57
+      },
+      {
+        "Sequence": 23,
+        "StationID": "C22",
+        "StationName": {
+          "Zh_tw": "聯合醫院",
+          "En": "Kaohsiung Municipal United Hospital"
+        },
+        "CumulativeDistance": 12.96
+      },
+      {
+        "Sequence": 24,
+        "StationID": "C23",
+        "StationName": {
+          "Zh_tw": "龍華國小",
+          "En": "Longhua Elementary School"
+        },
+        "CumulativeDistance": 13.39
+      },
+      {
+        "Sequence": 25,
+        "StationID": "C24",
+        "StationName": {
+          "Zh_tw": "愛河之心",
+          "En": "Heart of Love River"
+        },
+        "CumulativeDistance": 14.34
+      },
+      {
+        "Sequence": 26,
+        "StationID": "C25",
+        "StationName": {
+          "Zh_tw": "新上國小",
+          "En": "Sinshang Elementary School"
+        },
+        "CumulativeDistance": 14.92
+      },
+      {
+        "Sequence": 27,
+        "StationID": "C26",
+        "StationName": {
+          "Zh_tw": "大順民族",
+          "En": "Dashun Minzu"
+        },
+        "CumulativeDistance": 15.47
+      },
+      {
+        "Sequence": 28,
+        "StationID": "C27",
+        "StationName": {
+          "Zh_tw": "灣仔內(大順鼎山)",
+          "En": "Wanzihnei(Dashun Dingshan)"
+        },
+        "CumulativeDistance": 16.03
+      },
+      {
+        "Sequence": 29,
+        "StationID": "C28",
+        "StationName": {
+          "Zh_tw": "高雄高工",
+          "En": "Kaohsiung Industrial High School"
+        },
+        "CumulativeDistance": 16.71
+      },
+      {
+        "Sequence": 30,
+        "StationID": "C29",
+        "StationName": {
+          "Zh_tw": "樹德家商",
+          "En": "Shu-Te Home-Economics & Commercial High School"
+        },
+        "CumulativeDistance": 17.43
+      },
+      {
+        "Sequence": 31,
+        "StationID": "C30",
+        "StationName": {
+          "Zh_tw": "科工館",
+          "En": "Science and Technology Museum"
+        },
+        "CumulativeDistance": 18.23
+      },
+      {
+        "Sequence": 32,
+        "StationID": "C31",
+        "StationName": {
+          "Zh_tw": "聖功醫院",
+          "En": "St.Joseph Hospital"
+        },
+        "CumulativeDistance": 18.72
+      },
+      {
+        "Sequence": 33,
+        "StationID": "C32",
+        "StationName": {
+          "Zh_tw": "凱旋公園站",
+          "En": "Kaisyuan Park"
+        },
+        "CumulativeDistance": 19.17
+      },
+      {
+        "Sequence": 34,
+        "StationID": "C33",
+        "StationName": {
+          "Zh_tw": "衛生局站",
+          "En": "Department of Health"
+        },
+        "CumulativeDistance": 19.68
+      },
+      {
+        "Sequence": 35,
+        "StationID": "C34",
+        "StationName": {
+          "Zh_tw": "五權國小站",
+          "En": "Wucyuan Elementary School"
+        },
+        "CumulativeDistance": 20.15
+      },
+      {
+        "Sequence": 36,
+        "StationID": "C35",
+        "StationName": {
+          "Zh_tw": "凱旋武昌站",
+          "En": "Kaisyuan Wuchang"
+        },
+        "CumulativeDistance": 20.66
+      },
+      {
+        "Sequence": 37,
+        "StationID": "C36",
+        "StationName": {
+          "Zh_tw": "凱旋二聖站",
+          "En": "Kaisyuan Ersheng"
+        },
+        "CumulativeDistance": 21.16
+      },
+      {
+        "Sequence": 38,
+        "StationID": "C37",
+        "StationName": {
+          "Zh_tw": "輕軌機廠站",
+          "En": "LRT Depot"
+        },
+        "CumulativeDistance": 21.62
+      }
+    ],
+    "SrcUpdateTime": "2022-09-30T00:00:00+08:00",
+    "UpdateTime": "2022-10-11T00:00:00+08:00",
+    "VersionID": 4
+  }
+]

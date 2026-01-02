@@ -1,0 +1,838 @@
+[
+  {
+    "StationUID": "KLRT-C1",
+    "StationID": "C1",
+    "StationName": {
+      "Zh_tw": "籬仔內",
+      "En": "Lizihnei"
+    },
+    "StationAddress": "高雄市前鎮區瑞隆路與凱旋四路口;Intersection of Rueilong Road and Kaixuan Fourth Road, Qianzhen District, Kaohsiung City",
+    "BikeAllowOnHoliday": false,
+    "SrcUpdateTime": "2024-03-19T00:00:00+08:00",
+    "StationPosition": {
+      "PositionLon": 120.324651,
+      "PositionLat": 22.604625,
+      "GeoHash": "wsj8d519r"
+    },
+    "LocationCity": "高雄市",
+    "LocationCityCode": "KHH",
+    "LocationTown": "前鎮區",
+    "LocationTownCode": "64000090",
+    "UpdateTime": "2024-03-19T00:00:00+08:00",
+    "VersionID": 8
+  },
+  {
+    "StationUID": "KLRT-C2",
+    "StationID": "C2",
+    "StationName": {
+      "Zh_tw": "凱旋瑞田",
+      "En": "Kaisyuan Rueitian"
+    },
+    "StationAddress": "高雄市前鎮區凱旋四路與瑞田路口;Intersection of Kaixuan Fourth Road and Rueitian Road, Qianzhen District, Kaohsiung City",
+    "BikeAllowOnHoliday": false,
+    "SrcUpdateTime": "2024-03-19T00:00:00+08:00",
+    "StationPosition": {
+      "PositionLon": 120.319799,
+      "PositionLat": 22.599533,
+      "GeoHash": "wsj89fn5y"
+    },
+    "LocationCity": "高雄市",
+    "LocationCityCode": "KHH",
+    "LocationTown": "前鎮區",
+    "LocationTownCode": "64000090",
+    "UpdateTime": "2024-03-19T00:00:00+08:00",
+    "VersionID": 8
+  },
+  {
+    "StationUID": "KLRT-C3",
+    "StationID": "C3",
+    "StationName": {
+      "Zh_tw": "前鎮之星",
+      "En": "Cianjhen Star"
+    },
+    "StationAddress": "高雄市前鎮區中山三路與凱旋四路路口;Intersection of Zhongshan Third Road and Kaixuan Fourth Road, Qianzhen District, Kaohsiung City",
+    "BikeAllowOnHoliday": false,
+    "SrcUpdateTime": "2024-03-19T00:00:00+08:00",
+    "StationPosition": {
+      "PositionLon": 120.315368,
+      "PositionLat": 22.595503,
+      "GeoHash": "wsj89c6ur"
+    },
+    "LocationCity": "高雄市",
+    "LocationCityCode": "KHH",
+    "LocationTown": "前鎮區",
+    "LocationTownCode": "64000090",
+    "UpdateTime": "2024-03-19T00:00:00+08:00",
+    "VersionID": 8
+  },
+  {
+    "StationUID": "KLRT-C4",
+    "StationID": "C4",
+    "StationName": {
+      "Zh_tw": "凱旋中華",
+      "En": "Kaisyuan Jhonghua"
+    },
+    "StationAddress": "高雄市前鎮區中華五路與凱旋四路路口;Intersection of Zhonghua Fifth Road and Kaixuan Fourth Road, Qianzhen District, Kaohsiung City",
+    "BikeAllowOnHoliday": false,
+    "SrcUpdateTime": "2024-03-19T00:00:00+08:00",
+    "StationPosition": {
+      "PositionLon": 120.310517,
+      "PositionLat": 22.593656,
+      "GeoHash": "wsj899p3w"
+    },
+    "LocationCity": "高雄市",
+    "LocationCityCode": "KHH",
+    "LocationTown": "前鎮區",
+    "LocationTownCode": "64000090",
+    "UpdateTime": "2024-03-19T00:00:00+08:00",
+    "VersionID": 8
+  },
+  {
+    "StationUID": "KLRT-C5",
+    "StationID": "C5",
+    "StationName": {
+      "Zh_tw": "夢時代",
+      "En": "Dream Mall"
+    },
+    "StationAddress": "高雄市前鎮區成功二路與時代大道路口;Intersection of Chenggong Second Road and Shidai Boulevard, Qianzhen District, Kaohsiung City",
+    "BikeAllowOnHoliday": false,
+    "SrcUpdateTime": "2024-03-19T00:00:00+08:00",
+    "StationPosition": {
+      "PositionLon": 120.305004,
+      "PositionLat": 22.594886,
+      "GeoHash": "wsj89972v"
+    },
+    "LocationCity": "高雄市",
+    "LocationCityCode": "KHH",
+    "LocationTown": "前鎮區",
+    "LocationTownCode": "64000090",
+    "UpdateTime": "2024-03-19T00:00:00+08:00",
+    "VersionID": 8
+  },
+  {
+    "StationUID": "KLRT-C6",
+    "StationID": "C6",
+    "StationName": {
+      "Zh_tw": "經貿園區",
+      "En": "Commerce and Trade Park"
+    },
+    "StationAddress": "高雄市前鎮區成功二路與正勤路路口南側;South corner of the intersection of Chenggong Second Road and Zhengqin Road, Qianzhen District, Kaohsiung City",
+    "BikeAllowOnHoliday": false,
+    "SrcUpdateTime": "2024-03-19T00:00:00+08:00",
+    "StationPosition": {
+      "PositionLon": 120.30266,
+      "PositionLat": 22.600961,
+      "GeoHash": "wsj89d3sp"
+    },
+    "LocationCity": "高雄市",
+    "LocationCityCode": "KHH",
+    "LocationTown": "前鎮區",
+    "LocationTownCode": "64000090",
+    "UpdateTime": "2024-03-19T00:00:00+08:00",
+    "VersionID": 8
+  },
+  {
+    "StationUID": "KLRT-C7",
+    "StationID": "C7",
+    "StationName": {
+      "Zh_tw": "軟體園區",
+      "En": "Software Technology Park"
+    },
+    "StationAddress": "高雄市前鎮區成功二路與復興三路路口北側;North corner of the intersect of Chenggong Second Road and Fuxing Third Road, Qianzhen District, Kaohsiung City",
+    "BikeAllowOnHoliday": false,
+    "SrcUpdateTime": "2024-03-19T00:00:00+08:00",
+    "StationPosition": {
+      "PositionLon": 120.300832,
+      "PositionLat": 22.605684,
+      "GeoHash": "wsj89e0rs"
+    },
+    "LocationCity": "高雄市",
+    "LocationCityCode": "KHH",
+    "LocationTown": "前鎮區",
+    "LocationTownCode": "64000090",
+    "UpdateTime": "2024-03-19T00:00:00+08:00",
+    "VersionID": 8
+  },
+  {
+    "StationUID": "KLRT-C8",
+    "StationID": "C8",
+    "StationName": {
+      "Zh_tw": "高雄展覽館",
+      "En": "Kaohsiung Exhibition Center"
+    },
+    "StationAddress": "高雄市苓雅區成功二路與新光路路口;Intersection of Chenggong Second Road and Xinguang Road, Lingya District, Kaohsiung City",
+    "BikeAllowOnHoliday": false,
+    "SrcUpdateTime": "2024-03-19T00:00:00+08:00",
+    "StationPosition": {
+      "PositionLon": 120.298022,
+      "PositionLat": 22.610133,
+      "GeoHash": "wsj89kn3e"
+    },
+    "LocationCity": "高雄市",
+    "LocationCityCode": "KHH",
+    "LocationTown": "苓雅區",
+    "LocationTownCode": "64000080",
+    "UpdateTime": "2024-03-19T00:00:00+08:00",
+    "VersionID": 8
+  },
+  {
+    "StationUID": "KLRT-C9",
+    "StationID": "C9",
+    "StationName": {
+      "Zh_tw": "旅運中心",
+      "En": "Cruise Terminal"
+    },
+    "StationAddress": "高雄市苓雅區海邊路與苓南前路路口;Intersection of Haibian Road and Lingnanqian Road, Lingya District, Kaohsiung City",
+    "BikeAllowOnHoliday": false,
+    "SrcUpdateTime": "2024-03-19T00:00:00+08:00",
+    "StationPosition": {
+      "PositionLon": 120.293424,
+      "PositionLat": 22.611587,
+      "GeoHash": "wsj89k6fp"
+    },
+    "LocationCity": "高雄市",
+    "LocationCityCode": "KHH",
+    "LocationTown": "苓雅區",
+    "LocationTownCode": "64000080",
+    "UpdateTime": "2024-03-19T00:00:00+08:00",
+    "VersionID": 8
+  },
+  {
+    "StationUID": "KLRT-C10",
+    "StationID": "C10",
+    "StationName": {
+      "Zh_tw": "光榮碼頭",
+      "En": "Glory Pier"
+    },
+    "StationAddress": "高雄市苓雅區海邊路與青年二路路口;Intersection of Haibian Road and Qingnian Second Road, Lingya District, Kaohsiung City",
+    "BikeAllowOnHoliday": false,
+    "SrcUpdateTime": "2024-03-19T00:00:00+08:00",
+    "StationPosition": {
+      "PositionLon": 120.293234,
+      "PositionLat": 22.616805,
+      "GeoHash": "wsj89m6b7"
+    },
+    "LocationCity": "高雄市",
+    "LocationCityCode": "KHH",
+    "LocationTown": "苓雅區",
+    "LocationTownCode": "64000080",
+    "UpdateTime": "2024-03-19T00:00:00+08:00",
+    "VersionID": 8
+  },
+  {
+    "StationUID": "KLRT-C11",
+    "StationID": "C11",
+    "StationName": {
+      "Zh_tw": "真愛碼頭",
+      "En": "Love Pier"
+    },
+    "StationAddress": "高雄市鹽埕區公園二路與必忠街路口;Intersection of Gongyuan Second Road and Bizhong Street, Yancheng District, Kaohsiung City",
+    "BikeAllowOnHoliday": false,
+    "SrcUpdateTime": "2024-03-19T00:00:00+08:00",
+    "StationPosition": {
+      "PositionLon": 120.289466,
+      "PositionLat": 22.619315,
+      "GeoHash": "wsj89m8p5"
+    },
+    "LocationCity": "高雄市",
+    "LocationCityCode": "KHH",
+    "LocationTown": "鹽埕區",
+    "LocationTownCode": "64000010",
+    "UpdateTime": "2024-03-19T00:00:00+08:00",
+    "VersionID": 8
+  },
+  {
+    "StationUID": "KLRT-C12",
+    "StationID": "C12",
+    "StationName": {
+      "Zh_tw": "駁二大義",
+      "En": "Dayi Pier-2"
+    },
+    "StationAddress": "高雄市鹽埕區駁二特區，大義街路口;Intersection of Pier Two Art Center and Dayi Street, Yancheng District, Kaohsiung City",
+    "BikeAllowOnHoliday": false,
+    "SrcUpdateTime": "2024-03-19T00:00:00+08:00",
+    "StationPosition": {
+      "PositionLon": 120.284204,
+      "PositionLat": 22.618562,
+      "GeoHash": "wsj89js69"
+    },
+    "LocationCity": "高雄市",
+    "LocationCityCode": "KHH",
+    "LocationTown": "鹽埕區",
+    "LocationTownCode": "64000010",
+    "UpdateTime": "2024-03-19T00:00:00+08:00",
+    "VersionID": 8
+  },
+  {
+    "StationUID": "KLRT-C13",
+    "StationID": "C13",
+    "StationName": {
+      "Zh_tw": "駁二蓬萊",
+      "En": "Penglai Pier-2"
+    },
+    "StationAddress": "高雄市鹽埕區駁二特區，七賢三路路口;Intersection of Pier Two Art Center and Qixian Third Road, Yancheng District, Kaohsiung City",
+    "BikeAllowOnHoliday": false,
+    "SrcUpdateTime": "2024-03-19T00:00:00+08:00",
+    "StationPosition": {
+      "PositionLon": 120.279923,
+      "PositionLat": 22.6205,
+      "GeoHash": "wsj89jcjv"
+    },
+    "LocationCity": "高雄市",
+    "LocationCityCode": "KHH",
+    "LocationTown": "鹽埕區",
+    "LocationTownCode": "64000010",
+    "UpdateTime": "2024-03-19T00:00:00+08:00",
+    "VersionID": 8
+  },
+  {
+    "StationUID": "KLRT-C14",
+    "StationID": "C14",
+    "StationName": {
+      "Zh_tw": "哈瑪星",
+      "En": "Hamasen"
+    },
+    "StationAddress": "高雄市鼓山區鼓山一路與臨海新路路口;Intersection of Gushan First Road and Linhaixin Road, Gushan District, Kaohsiung City",
+    "BikeAllowOnHoliday": false,
+    "SrcUpdateTime": "2024-03-19T00:00:00+08:00",
+    "StationPosition": {
+      "PositionLon": 120.275849,
+      "PositionLat": 22.621617,
+      "GeoHash": "wsj88ynhq"
+    },
+    "LocationCity": "高雄市",
+    "LocationCityCode": "KHH",
+    "LocationTown": "鼓山區",
+    "LocationTownCode": "64000020",
+    "UpdateTime": "2024-03-19T00:00:00+08:00",
+    "VersionID": 8
+  },
+  {
+    "StationUID": "KLRT-C15",
+    "StationID": "C15",
+    "StationName": {
+      "Zh_tw": "壽山公園站",
+      "En": "Shoushan Park"
+    },
+    "StationAddress": "高雄市鼓山區五福四路與新樂街段;Intersection of Wufu Fourth Road and Xinle Street, Gushan District, Kaohsiung City",
+    "BikeAllowOnHoliday": false,
+    "SrcUpdateTime": "2024-03-19T00:00:00+08:00",
+    "StationPosition": {
+      "PositionLon": 120.278601,
+      "PositionLat": 22.626541,
+      "GeoHash": "wsj89p01n"
+    },
+    "LocationCity": "高雄市",
+    "LocationCityCode": "KHH",
+    "LocationTown": "鼓山區",
+    "LocationTownCode": "64000020",
+    "UpdateTime": "2024-03-19T00:00:00+08:00",
+    "VersionID": 8
+  },
+  {
+    "StationUID": "KLRT-C16",
+    "StationID": "C16",
+    "StationName": {
+      "Zh_tw": "文武聖殿站",
+      "En": "Wenwu Temple"
+    },
+    "StationAddress": "高雄市鼓山區大公路與鼓山一路口;Intersection of Dagong Road and Gushan First Road, Gushan District, Kaohsiung City",
+    "BikeAllowOnHoliday": false,
+    "SrcUpdateTime": "2024-03-19T00:00:00+08:00",
+    "StationPosition": {
+      "PositionLon": 120.2807,
+      "PositionLat": 22.62959,
+      "GeoHash": "wsj89p9dz"
+    },
+    "LocationCity": "高雄市",
+    "LocationCityCode": "KHH",
+    "LocationTown": "鼓山區",
+    "LocationTownCode": "64000020",
+    "UpdateTime": "2024-03-19T00:00:00+08:00",
+    "VersionID": 8
+  },
+  {
+    "StationUID": "KLRT-C17",
+    "StationID": "C17",
+    "StationName": {
+      "Zh_tw": "鼓山區公所站",
+      "En": "Gushan District Office"
+    },
+    "StationAddress": "高雄市鼓山區興隆路與河川街103巷;Intersection of Xinglong Road and Lane 103, Hechuan Street, Gushan District, Kaohsiung City",
+    "BikeAllowOnHoliday": false,
+    "SrcUpdateTime": "2024-03-19T00:00:00+08:00",
+    "StationPosition": {
+      "PositionLon": 120.282567,
+      "PositionLat": 22.635988,
+      "GeoHash": "wsj8c0g04"
+    },
+    "LocationCity": "高雄市",
+    "LocationCityCode": "KHH",
+    "LocationTown": "鼓山區",
+    "LocationTownCode": "64000020",
+    "UpdateTime": "2024-03-19T00:00:00+08:00",
+    "VersionID": 8
+  },
+  {
+    "StationUID": "KLRT-C18",
+    "StationID": "C18",
+    "StationName": {
+      "Zh_tw": "鼓山",
+      "En": "Gushan"
+    },
+    "StationAddress": "高雄市鼓山區鐵路街及鐵路街18巷;Intersection of Railway Street and Lane 18, Railway Street, Gushan District, Kaohsiung City",
+    "BikeAllowOnHoliday": false,
+    "SrcUpdateTime": "2024-03-19T00:00:00+08:00",
+    "StationPosition": {
+      "PositionLon": 120.281067,
+      "PositionLat": 22.642037,
+      "GeoHash": "wsj8c1f52"
+    },
+    "LocationCity": "高雄市",
+    "LocationCityCode": "KHH",
+    "LocationTown": "鼓山區",
+    "LocationTownCode": "64000020",
+    "UpdateTime": "2024-03-19T00:00:00+08:00",
+    "VersionID": 8
+  },
+  {
+    "StationUID": "KLRT-C19",
+    "StationID": "C19",
+    "StationName": {
+      "Zh_tw": "馬卡道",
+      "En": "Makadao"
+    },
+    "StationAddress": "高雄市鼓山區馬卡道路與華安街口;Intersection of Makadao Road and Hua'an Street, Gushan District, Kaohsiung City",
+    "BikeAllowOnHoliday": false,
+    "SrcUpdateTime": "2024-03-19T00:00:00+08:00",
+    "StationPosition": {
+      "PositionLon": 120.281415,
+      "PositionLat": 22.647089,
+      "GeoHash": "wsj8c4f2b"
+    },
+    "LocationCity": "高雄市",
+    "LocationCityCode": "KHH",
+    "LocationTown": "鼓山區",
+    "LocationTownCode": "64000020",
+    "UpdateTime": "2024-03-19T00:00:00+08:00",
+    "VersionID": 8
+  },
+  {
+    "StationUID": "KLRT-C20",
+    "StationID": "C20",
+    "StationName": {
+      "Zh_tw": "臺鐵美術館",
+      "En": "TRA Museum of Fine Arts"
+    },
+    "StationAddress": "高雄市鼓山區馬卡道路與青海路口;Intersection of Makadao Road and Qinghai Road, Gushan District, Kaohsiung City",
+    "BikeAllowOnHoliday": false,
+    "SrcUpdateTime": "2024-03-19T00:00:00+08:00",
+    "StationPosition": {
+      "PositionLon": 120.281669,
+      "PositionLat": 22.652074,
+      "GeoHash": "wsj8c5dmy"
+    },
+    "LocationCity": "高雄市",
+    "LocationCityCode": "KHH",
+    "LocationTown": "鼓山區",
+    "LocationTownCode": "64000020",
+    "UpdateTime": "2024-03-19T00:00:00+08:00",
+    "VersionID": 8
+  },
+  {
+    "StationUID": "KLRT-C21A",
+    "StationID": "C21A",
+    "StationName": {
+      "Zh_tw": "內惟藝術中心",
+      "En": "Neiwei Arts Center"
+    },
+    "StationAddress": "高雄市鼓山區馬卡道路與美術館路口;Intersection of Makadao Road and Meishuguan Road, Gushan District, Kaohsiung City",
+    "BikeAllowOnHoliday": false,
+    "SrcUpdateTime": "2024-03-19T00:00:00+08:00",
+    "StationPosition": {
+      "PositionLon": 120.282868,
+      "PositionLat": 22.65497,
+      "GeoHash": "wsj8ch5qc"
+    },
+    "LocationCity": "高雄市",
+    "LocationCityCode": "KHH",
+    "LocationTown": "鼓山區",
+    "LocationTownCode": "64000020",
+    "UpdateTime": "2024-03-19T00:00:00+08:00",
+    "VersionID": 8
+  },
+  {
+    "StationUID": "KLRT-C21",
+    "StationID": "C21",
+    "StationName": {
+      "Zh_tw": "美術館",
+      "En": "Kaohsiung Museum of Fine Arts"
+    },
+    "StationAddress": "高雄市鼓山區美術館路與美術東二路口;Intersection of Meishuguan Road and Meishu East Second Road, Gushan District, Kaohsiung City",
+    "BikeAllowOnHoliday": false,
+    "SrcUpdateTime": "2024-03-19T00:00:00+08:00",
+    "StationPosition": {
+      "PositionLon": 120.287437,
+      "PositionLat": 22.655026,
+      "GeoHash": "wsj8chnxh"
+    },
+    "LocationCity": "高雄市",
+    "LocationCityCode": "KHH",
+    "LocationTown": "鼓山區",
+    "LocationTownCode": "64000020",
+    "UpdateTime": "2024-03-19T00:00:00+08:00",
+    "VersionID": 8
+  },
+  {
+    "StationUID": "KLRT-C22",
+    "StationID": "C22",
+    "StationName": {
+      "Zh_tw": "聯合醫院",
+      "En": "Kaohsiung Municipal United Hospital"
+    },
+    "StationAddress": "高雄市鼓山區美術館路與中華一路;Intersection of Meishuguan Road and Zhonghua First Road, Gushan District, Kaohsiung City",
+    "BikeAllowOnHoliday": false,
+    "SrcUpdateTime": "2024-03-19T00:00:00+08:00",
+    "StationPosition": {
+      "PositionLon": 120.290918,
+      "PositionLat": 22.654827,
+      "GeoHash": "wsj8ck1jv"
+    },
+    "LocationCity": "高雄市",
+    "LocationCityCode": "KHH",
+    "LocationTown": "鼓山區",
+    "LocationTownCode": "64000020",
+    "UpdateTime": "2024-03-19T00:00:00+08:00",
+    "VersionID": 8
+  },
+  {
+    "StationUID": "KLRT-C23",
+    "StationID": "C23",
+    "StationName": {
+      "Zh_tw": "龍華國小",
+      "En": "Longhua Elementary School"
+    },
+    "StationAddress": "高雄市鼓山區大順一路與龍勝路口;Intersection of Dashun First Road and Longsheng Road, Gushan District, Kaohsiung City",
+    "BikeAllowOnHoliday": false,
+    "SrcUpdateTime": "2024-03-19T00:00:00+08:00",
+    "StationPosition": {
+      "PositionLon": 120.295042,
+      "PositionLat": 22.654493,
+      "GeoHash": "wsj8ckh5v"
+    },
+    "LocationCity": "高雄市",
+    "LocationCityCode": "KHH",
+    "LocationTown": "鼓山區",
+    "LocationTownCode": "64000020",
+    "UpdateTime": "2024-03-19T00:00:00+08:00",
+    "VersionID": 8
+  },
+  {
+    "StationUID": "KLRT-C24",
+    "StationID": "C24",
+    "StationName": {
+      "Zh_tw": "愛河之心",
+      "En": "Heart of Love River"
+    },
+    "StationAddress": "高雄市鼓山區大順一路與博愛一路口;Intersection of Dashun First Road and Bo'ai First Road, Gushan District, Kaohsiung City",
+    "BikeAllowOnHoliday": false,
+    "SrcUpdateTime": "2024-03-19T00:00:00+08:00",
+    "StationPosition": {
+      "PositionLon": 120.30282,
+      "PositionLat": 22.65604,
+      "GeoHash": "wsj8cs3uf"
+    },
+    "LocationCity": "高雄市",
+    "LocationCityCode": "KHH",
+    "LocationTown": "鼓山區",
+    "LocationTownCode": "64000020",
+    "UpdateTime": "2024-03-19T00:00:00+08:00",
+    "VersionID": 8
+  },
+  {
+    "StationUID": "KLRT-C25",
+    "StationID": "C25",
+    "StationName": {
+      "Zh_tw": "新上國小",
+      "En": "Sinshang Elementary School"
+    },
+    "StationAddress": "高雄市左營區大順一路與自由一路口;Intersection of Dashun First Road and Ziyou First Road, Zuoying District, Kaohsiung City",
+    "BikeAllowOnHoliday": false,
+    "SrcUpdateTime": "2024-03-19T00:00:00+08:00",
+    "StationPosition": {
+      "PositionLon": 120.3083,
+      "PositionLat": 22.6567,
+      "GeoHash": "wsj8cstbf"
+    },
+    "LocationCity": "高雄市",
+    "LocationCityCode": "KHH",
+    "LocationTown": "左營區",
+    "LocationTownCode": "64000030",
+    "UpdateTime": "2024-03-19T00:00:00+08:00",
+    "VersionID": 8
+  },
+  {
+    "StationUID": "KLRT-C26",
+    "StationID": "C26",
+    "StationName": {
+      "Zh_tw": "大順民族",
+      "En": "Dashun Minzu"
+    },
+    "StationAddress": "高雄市三民區大順一路與民族一路口;Intersection of Dashun First Road and Minzu First Road, Sanmin District, Kaohsiung City",
+    "BikeAllowOnHoliday": false,
+    "SrcUpdateTime": "2024-03-19T00:00:00+08:00",
+    "StationPosition": {
+      "PositionLon": 120.3149,
+      "PositionLat": 22.6556,
+      "GeoHash": "wsj8cu6dk"
+    },
+    "LocationCity": "高雄市",
+    "LocationCityCode": "KHH",
+    "LocationTown": "三民區",
+    "LocationTownCode": "64000050",
+    "UpdateTime": "2024-03-19T00:00:00+08:00",
+    "VersionID": 8
+  },
+  {
+    "StationUID": "KLRT-C27",
+    "StationID": "C27",
+    "StationName": {
+      "Zh_tw": "灣仔內(大順鼎山)",
+      "En": "Wanzihnei(Dashun Dingshan)"
+    },
+    "StationAddress": "高雄市三民區大順二路與鼎山街口;Intersection of Dashun Second Road and Dingshan Street, Sanmin District, Kaohsiung City",
+    "BikeAllowOnHoliday": false,
+    "SrcUpdateTime": "2024-03-19T00:00:00+08:00",
+    "StationPosition": {
+      "PositionLon": 120.3185,
+      "PositionLat": 22.6538,
+      "GeoHash": "wsj8cgvrb"
+    },
+    "LocationCity": "高雄市",
+    "LocationCityCode": "KHH",
+    "LocationTown": "三民區",
+    "LocationTownCode": "64000050",
+    "UpdateTime": "2024-03-19T00:00:00+08:00",
+    "VersionID": 8
+  },
+  {
+    "StationUID": "KLRT-C28",
+    "StationID": "C28",
+    "StationName": {
+      "Zh_tw": "高雄高工",
+      "En": "Kaohsiung Industrial High School"
+    },
+    "StationAddress": "高雄市三民區大順二路與建工路口;Intersection of Dashun Second Road and Jiangong Road, Sanmin District, Kaohsiung City",
+    "BikeAllowOnHoliday": false,
+    "SrcUpdateTime": "2024-03-19T00:00:00+08:00",
+    "StationPosition": {
+      "PositionLon": 120.32405,
+      "PositionLat": 22.64983,
+      "GeoHash": "wsj8f532c"
+    },
+    "LocationCity": "高雄市",
+    "LocationCityCode": "KHH",
+    "LocationTown": "三民區",
+    "LocationTownCode": "64000050",
+    "UpdateTime": "2024-03-19T00:00:00+08:00",
+    "VersionID": 8
+  },
+  {
+    "StationUID": "KLRT-C29",
+    "StationID": "C29",
+    "StationName": {
+      "Zh_tw": "樹德家商",
+      "En": "Shu-Te Home-Economics & Commercial High School"
+    },
+    "StationAddress": "高雄市三民區大順二路與建興路口;Intersection of Dashun Second Road and Jianxing Road, Sanmin District, Kaohsiung City",
+    "BikeAllowOnHoliday": false,
+    "SrcUpdateTime": "2024-03-19T00:00:00+08:00",
+    "StationPosition": {
+      "PositionLon": 120.3262,
+      "PositionLat": 22.6442,
+      "GeoHash": "wsj8f46b5"
+    },
+    "LocationCity": "高雄市",
+    "LocationCityCode": "KHH",
+    "LocationTown": "三民區",
+    "LocationTownCode": "64000050",
+    "UpdateTime": "2024-03-19T00:00:00+08:00",
+    "VersionID": 8
+  },
+  {
+    "StationUID": "KLRT-C30",
+    "StationID": "C30",
+    "StationName": {
+      "Zh_tw": "科工館",
+      "En": "Science and Technology Museum"
+    },
+    "StationAddress": "高雄市三民區大順三路與鐵道園區（大順三路309巷）;Intersection of Dashun Third Road and Railway Park (Lane 309, Dashun Third Road), Sanmin District, Kaohsiung City",
+    "BikeAllowOnHoliday": false,
+    "SrcUpdateTime": "2024-03-19T00:00:00+08:00",
+    "StationPosition": {
+      "PositionLon": 120.3274,
+      "PositionLat": 22.6375,
+      "GeoHash": "wsj8f158z"
+    },
+    "LocationCity": "高雄市",
+    "LocationCityCode": "KHH",
+    "LocationTown": "三民區",
+    "LocationTownCode": "64000050",
+    "UpdateTime": "2024-03-19T00:00:00+08:00",
+    "VersionID": 8
+  },
+  {
+    "StationUID": "KLRT-C31",
+    "StationID": "C31",
+    "StationName": {
+      "Zh_tw": "聖功醫院",
+      "En": "St.Joseph Hospital"
+    },
+    "StationAddress": "高雄市苓雅區大順三路與建國一路口;Intersection of Dashun Third Road and Jianguo First Road, Lingya District, Kaohsiung City",
+    "BikeAllowOnHoliday": false,
+    "SrcUpdateTime": "2024-03-19T00:00:00+08:00",
+    "StationPosition": {
+      "PositionLon": 120.325819,
+      "PositionLat": 22.633278,
+      "GeoHash": "wsj8f0686"
+    },
+    "LocationCity": "高雄市",
+    "LocationCityCode": "KHH",
+    "LocationTown": "苓雅區",
+    "LocationTownCode": "64000080",
+    "UpdateTime": "2024-03-19T00:00:00+08:00",
+    "VersionID": 8
+  },
+  {
+    "StationUID": "KLRT-C32",
+    "StationID": "C32",
+    "StationName": {
+      "Zh_tw": "凱旋公園站",
+      "En": "Kaisyuan Park"
+    },
+    "StationAddress": "高雄市苓雅區中正一路與河南路口;Intersection of Zhongzheng First Road and Henan Road, Lingya District, Kaohsiung City",
+    "BikeAllowOnHoliday": false,
+    "SrcUpdateTime": "2024-03-19T00:00:00+08:00",
+    "StationPosition": {
+      "PositionLon": 120.322785,
+      "PositionLat": 22.629433,
+      "GeoHash": "wsj8dp86h"
+    },
+    "LocationCity": "高雄市",
+    "LocationCityCode": "KHH",
+    "LocationTown": "苓雅區",
+    "LocationTownCode": "64000080",
+    "UpdateTime": "2024-03-19T00:00:00+08:00",
+    "VersionID": 8
+  },
+  {
+    "StationUID": "KLRT-C33",
+    "StationID": "C33",
+    "StationName": {
+      "Zh_tw": "衛生局站",
+      "En": "Department of Health"
+    },
+    "StationAddress": "高雄市苓雅區凱旋二路與凱旋二路81巷;Intersection of Kaixuan Second Road and Lane 81, Kaixuan Second Road, Lingya District, Kaohsiung City",
+    "BikeAllowOnHoliday": false,
+    "SrcUpdateTime": "2024-03-19T00:00:00+08:00",
+    "StationPosition": {
+      "PositionLon": 120.3237,
+      "PositionLat": 22.6252,
+      "GeoHash": "wsj8dnc13"
+    },
+    "LocationCity": "高雄市",
+    "LocationCityCode": "KHH",
+    "LocationTown": "苓雅區",
+    "LocationTownCode": "64000080",
+    "UpdateTime": "2024-03-19T00:00:00+08:00",
+    "VersionID": 8
+  },
+  {
+    "StationUID": "KLRT-C34",
+    "StationID": "C34",
+    "StationName": {
+      "Zh_tw": "五權國小站",
+      "En": "Wucyuan Elementary School"
+    },
+    "StationAddress": "高雄市苓雅區凱旋二路與三多二路口;Intersection of Kaixuan Second Road and Sanduo Second Road, Lingya District, Kaohsiung City",
+    "BikeAllowOnHoliday": false,
+    "SrcUpdateTime": "2024-03-19T00:00:00+08:00",
+    "StationPosition": {
+      "PositionLon": 120.3252,
+      "PositionLat": 22.62121,
+      "GeoHash": "wsj8dn44h"
+    },
+    "LocationCity": "高雄市",
+    "LocationCityCode": "KHH",
+    "LocationTown": "苓雅區",
+    "LocationTownCode": "64000080",
+    "UpdateTime": "2024-03-19T00:00:00+08:00",
+    "VersionID": 8
+  },
+  {
+    "StationUID": "KLRT-C35",
+    "StationID": "C35",
+    "StationName": {
+      "Zh_tw": "凱旋武昌站",
+      "En": "Kaisyuan Wuchang"
+    },
+    "StationAddress": "高雄市苓雅區凱旋三路與武昌路口;Intersection of Kaixuan Third Road and Wuchang Road, Lingya District, Kaohsiung City",
+    "BikeAllowOnHoliday": false,
+    "SrcUpdateTime": "2024-03-19T00:00:00+08:00",
+    "StationPosition": {
+      "PositionLon": 120.3269,
+      "PositionLat": 22.61693,
+      "GeoHash": "wsj8dj735"
+    },
+    "LocationCity": "高雄市",
+    "LocationCityCode": "KHH",
+    "LocationTown": "苓雅區",
+    "LocationTownCode": "64000080",
+    "UpdateTime": "2024-03-19T00:00:00+08:00",
+    "VersionID": 8
+  },
+  {
+    "StationUID": "KLRT-C36",
+    "StationID": "C36",
+    "StationName": {
+      "Zh_tw": "凱旋二聖站",
+      "En": "Kaisyuan Ersheng"
+    },
+    "StationAddress": "高雄市前鎮區凱旋三路與二聖路口;Intersection of Kaixuan Third Road and Ersheng Road, Qianzhen District, Kaohsiung City",
+    "BikeAllowOnHoliday": false,
+    "SrcUpdateTime": "2024-03-19T00:00:00+08:00",
+    "StationPosition": {
+      "PositionLon": 120.3272,
+      "PositionLat": 22.61253,
+      "GeoHash": "wsj8dh7xd"
+    },
+    "LocationCity": "高雄市",
+    "LocationCityCode": "KHH",
+    "LocationTown": "鳳山區",
+    "LocationTownCode": "64000120",
+    "UpdateTime": "2024-03-19T00:00:00+08:00",
+    "VersionID": 8
+  },
+  {
+    "StationUID": "KLRT-C37",
+    "StationID": "C37",
+    "StationName": {
+      "Zh_tw": "輕軌機廠站",
+      "En": "LRT Depot"
+    },
+    "StationAddress": "高雄市前鎮區瑞西街與瑞北路口;Intersection of Ruixi Street and Ruibei Road, Qianzhen District, Kaohsiung City",
+    "BikeAllowOnHoliday": false,
+    "SrcUpdateTime": "2024-03-19T00:00:00+08:00",
+    "StationPosition": {
+      "PositionLon": 120.3261,
+      "PositionLat": 22.6085,
+      "GeoHash": "wsj8d5fb1"
+    },
+    "LocationCity": "高雄市",
+    "LocationCityCode": "KHH",
+    "LocationTown": "前鎮區",
+    "LocationTownCode": "64000090",
+    "UpdateTime": "2024-03-19T00:00:00+08:00",
+    "VersionID": 8
+  }
+]

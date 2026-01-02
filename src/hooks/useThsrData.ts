@@ -53,7 +53,7 @@ export function useThsrData(): ThsrDataState {
         // 載入軌道
         const trackFeatures: Track[] = [];
         for (const trackId of THSR_TRACK_IDS) {
-          const res = await fetch(`/data-thsr/tracks/${trackId}.geojson`);
+          const res = await fetch(`/data/thsr/tracks/${trackId}.geojson`);
           if (!res.ok) throw new Error(`Failed to load THSR track ${trackId}`);
           const data = await res.json();
           if (data.features?.[0]) {
@@ -75,20 +75,20 @@ export function useThsrData(): ThsrDataState {
         setTrackMap(tMap);
 
         // 載入車站
-        const stationsRes = await fetch('/data-thsr/stations/thsr_stations.geojson');
+        const stationsRes = await fetch('/data/thsr/stations/thsr_stations.geojson');
         if (!stationsRes.ok) throw new Error('Failed to load THSR stations');
         const stationsData = await stationsRes.json();
         setStations(stationsData);
 
         // 載入車站進度映射表（由 calibrate_thsr_tracks.py 和 build_thsr_station_progress.py 產生）
-        const progressRes = await fetch('/data-thsr/station_progress.json');
+        const progressRes = await fetch('/data/thsr/station_progress.json');
         if (!progressRes.ok) throw new Error('Failed to load THSR station progress');
         const progressData = await progressRes.json();
         setStationProgress(progressData);
 
         // 載入時刻表（單一合併檔案）
         const scheduleMap = new Map<string, TrackSchedule>();
-        const schedulesRes = await fetch('/data-thsr/schedules/thsr_schedules.json');
+        const schedulesRes = await fetch('/data/thsr/schedules/thsr_schedules.json');
         if (!schedulesRes.ok) throw new Error('Failed to load THSR schedules');
         const schedulesData = await schedulesRes.json();
 

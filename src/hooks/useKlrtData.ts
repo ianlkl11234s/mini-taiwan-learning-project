@@ -60,7 +60,7 @@ export function useKlrtData(): KlrtDataState {
         // 載入軌道
         const trackFeatures: Track[] = [];
         for (const trackId of KLRT_TRACK_IDS) {
-          const res = await fetch(`/data-klrt/tracks/${trackId}.geojson${cacheBuster}`);
+          const res = await fetch(`/data/klrt/tracks/${trackId}.geojson${cacheBuster}`);
           if (!res.ok) throw new Error(`Failed to load KLRT track ${trackId}`);
           const data = await res.json();
           if (data.features?.[0]) {
@@ -82,20 +82,20 @@ export function useKlrtData(): KlrtDataState {
         setTrackMap(tMap);
 
         // 載入車站
-        const stationsRes = await fetch(`/data-klrt/stations/klrt_stations.geojson${cacheBuster}`);
+        const stationsRes = await fetch(`/data/klrt/stations/klrt_stations.geojson${cacheBuster}`);
         if (!stationsRes.ok) throw new Error('Failed to load KLRT stations');
         const stationsData = await stationsRes.json();
         setStations(stationsData);
 
         // 載入車站進度映射表
-        const progressRes = await fetch(`/data-klrt/station_progress.json${cacheBuster}`);
+        const progressRes = await fetch(`/data/klrt/station_progress.json${cacheBuster}`);
         if (!progressRes.ok) throw new Error('Failed to load KLRT station progress');
         const progressData = await progressRes.json();
         setStationProgress(progressData);
 
         // 載入時刻表（單一合併檔案）
         const scheduleMap = new Map<string, TrackSchedule>();
-        const schedulesRes = await fetch(`/data-klrt/schedules/klrt_schedules.json${cacheBuster}`);
+        const schedulesRes = await fetch(`/data/klrt/schedules/klrt_schedules.json${cacheBuster}`);
         if (!schedulesRes.ok) throw new Error('Failed to load KLRT schedules');
         const schedulesData = await schedulesRes.json();
 

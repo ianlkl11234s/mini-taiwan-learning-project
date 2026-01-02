@@ -178,9 +178,10 @@ function App() {
     return coords;
   }, [stations]);
 
-  // 建立車站名稱索引（用於資訊面板顯示）
+  // 建立車站名稱索引（用於資訊面板顯示，包含 MRT + THSR）
   const stationNames = useMemo(() => {
     const names = new Map<string, string>();
+    // MRT 車站
     if (stations) {
       for (const feature of stations.features) {
         const stationId = feature.properties.station_id;
@@ -188,14 +189,29 @@ function App() {
         names.set(stationId, stationName);
       }
     }
+    // THSR 車站
+    if (thsrStations) {
+      for (const feature of thsrStations.features) {
+        const stationId = feature.properties.station_id;
+        const stationName = feature.properties.name_zh;
+        names.set(stationId, stationName);
+      }
+    }
     return names;
-  }, [stations]);
+  }, [stations, thsrStations]);
 
-  // 取得選中的列車資料
+  // 取得選中的列車資料（同時支援 MRT 和 THSR）
   const selectedTrain = useMemo(() => {
     if (!selectedTrainId) return null;
-    return filteredTrains.find(t => t.trainId === selectedTrainId) || null;
-  }, [selectedTrainId, filteredTrains]);
+    // 先從 MRT 找
+    const mrtTrain = filteredTrains.find(t => t.trainId === selectedTrainId);
+    if (mrtTrain) return mrtTrain;
+    // 再從 THSR 找
+    const thsrTrain = filteredThsrTrains.find(t => t.trainId === selectedTrainId);
+    if (thsrTrain) return thsrTrain;
+    return null;
+  }, [selectedTrainId, filteredTrains, filteredThsrTrains]);
+
 
   // 選擇列車
   const handleSelectTrain = useCallback((trainId: string) => {
@@ -567,6 +583,7 @@ function App() {
     // 建立高鐵 3D 圖層
     const layer = new Thsr3DLayer(thsrTrackMap);
     layer.setStations(thsrStationCoordinates);
+    layer.setOnSelect(handleSelectTrain);  // 綁定點擊回調
     thsr3DLayerRef.current = layer;
 
     // 加入地圖
@@ -578,13 +595,19 @@ function App() {
       }
       thsr3DLayerRef.current = null;
     };
-  }, [mapLoaded, thsrTrackMap, thsrStationCoordinates, use3DMode, thsrState, styleVersion]);
+  }, [mapLoaded, thsrTrackMap, thsrStationCoordinates, use3DMode, thsrState, handleSelectTrain, styleVersion]);
 
   // 更新高鐵 3D 圖層列車資料
   useEffect(() => {
     if (!thsr3DLayerRef.current || !use3DMode) return;
     thsr3DLayerRef.current.updateTrains(filteredThsrTrains);
   }, [filteredThsrTrains, use3DMode]);
+
+  // 更新高鐵 3D 圖層選中狀態
+  useEffect(() => {
+    if (!thsr3DLayerRef.current || !use3DMode) return;
+    thsr3DLayerRef.current.setSelectedTrainId(selectedTrainId);
+  }, [selectedTrainId, use3DMode]);
 
   // 更新軌道可見性（當 visibleLines 變化時）
   useEffect(() => {
@@ -998,6 +1021,7 @@ function App() {
     for (const train of filteredThsrTrains) {
       let marker = thsrTrainMarkers.current.get(train.trainId);
       const isStopped = train.status === 'stopped';
+      const isSelected = train.trainId === selectedTrainId;
       const direction = getThsrDirection(train.trackId);
       const baseColor = THSR_TRAIN_COLORS[`THSR_${direction}`] || THSR_TRACK_COLOR;
 
@@ -1005,6 +1029,15 @@ function App() {
         const el = document.createElement('div');
         el.className = 'thsr-train-marker';
         el.dataset.trainId = train.trainId;
+
+        // 點擊事件：選取列車
+        el.addEventListener('click', (e) => {
+          e.stopPropagation();
+          const trainId = el.dataset.trainId;
+          if (trainId) {
+            handleSelectTrain(trainId);
+          }
+        });
 
         marker = new mapboxgl.Marker({
           element: el,
@@ -1019,9 +1052,9 @@ function App() {
       // 更新位置
       marker.setLngLat(train.position);
 
-      // 更新樣式
+      // 更新樣式（含選中狀態）
       const el = marker.getElement();
-      const newState = `${isStopped}-${baseColor}`;
+      const newState = `${isSelected}-${isStopped}-${baseColor}`;
       const prevState = el.dataset.trainState;
 
       if (prevState !== newState) {
@@ -1034,7 +1067,18 @@ function App() {
           transition: width 0.3s ease, height 0.3s ease, box-shadow 0.3s ease;
         `;
 
-        if (isStopped) {
+        if (isSelected) {
+          // 選中狀態：顯示粗白框
+          el.style.cssText = `
+            ${baseStyles}
+            width: 20px;
+            height: 12px;
+            background-color: ${baseColor};
+            border: 4px solid #ffffff;
+            box-shadow: 0 0 16px rgba(255,255,255,0.8), 0 0 24px ${baseColor};
+            z-index: 10;
+          `;
+        } else if (isStopped) {
           el.style.cssText = `
             ${baseStyles}
             width: 16px;
@@ -1055,7 +1099,7 @@ function App() {
         }
       }
     }
-  }, [mapLoaded, filteredThsrTrains, use3DMode]);
+  }, [mapLoaded, filteredThsrTrains, use3DMode, handleSelectTrain, selectedTrainId]);
 
   // 控制處理器
   const handleTogglePlay = useCallback(() => {

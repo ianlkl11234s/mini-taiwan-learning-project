@@ -1,10 +1,12 @@
 import { useState } from 'react';
 import type { Train } from '../engines/TrainEngine';
+import type { ThsrTrain } from '../engines/ThsrTrainEngine';
 import { getLineName, getLineColor } from '../constants/lineInfo';
+import { getThsrLineName, getThsrLineColor } from '../constants/thsrInfo';
 import type { VisualTheme } from './ThemeToggle';
 
 interface TrainInfoPanelProps {
-  train: Train;
+  train: Train | ThsrTrain;
   stationNames: Map<string, string>;
   onClose: () => void;
   visualTheme?: VisualTheme;
@@ -12,8 +14,13 @@ interface TrainInfoPanelProps {
 
 export function TrainInfoPanel({ train, stationNames, onClose, visualTheme = 'dark' }: TrainInfoPanelProps) {
   const [collapsed, setCollapsed] = useState(false);
-  const lineColor = getLineColor(train.trackId);
-  const lineName = getLineName(train.trackId);
+
+  // 判斷是否為高鐵列車
+  const isThsr = train.trackId.startsWith('THSR');
+
+  // 根據類型取得線路資訊
+  const lineColor = isThsr ? getThsrLineColor(train.trackId) : getLineColor(train.trackId);
+  const lineName = isThsr ? getThsrLineName(train.trackId) : getLineName(train.trackId);
 
   // 主題顏色
   const isDark = visualTheme === 'dark';

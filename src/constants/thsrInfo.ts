@@ -72,3 +72,19 @@ export function getThsrTrainColor(trackId: string): string {
 export function getThsrStationName(stationId: string): string {
   return THSR_STATION_NAMES[stationId] || stationId;
 }
+
+/**
+ * 取得線路名稱（含方向）
+ */
+export function getThsrLineName(trackId: string): string {
+  const direction = getThsrDirection(trackId);
+  const directionName = THSR_DIRECTION_NAMES[direction] || '';
+  return `${THSR_LINE_NAME}${directionName ? ` (${directionName})` : ''}`;
+}
+
+/**
+ * 取得線路顏色
+ */
+export function getThsrLineColor(trackId: string): string {
+  return getThsrTrainColor(trackId);
+}

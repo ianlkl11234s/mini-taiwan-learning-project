@@ -28,8 +28,8 @@ export function TimeControl({
   const standardSeconds = timeEngine.getTimeOfDaySeconds();
   const timeSeconds = toExtendedSeconds(standardSeconds);
 
-  // 時間滑桿: 6:00 - 01:30 (延長日: 21600 - 91800 秒)
-  const minTime = 6 * 3600; // 06:00
+  // 時間滑桿: 5:50 - 01:30 (延長日: 21000 - 91800 秒)
+  const minTime = 5 * 3600 + 50 * 60; // 05:50
   const maxTime = 25.5 * 3600; // 01:30 (延長日表示為 25:30)
 
   // 主題顏色
@@ -160,18 +160,19 @@ export function TimeControl({
           }}
         >
           {/*
-            時間範圍: 06:00 (21600s) - 01:30 (91800s) = 70200s
+            時間範圍: 05:50 (21000s) - 01:30 (91800s) = 70800s
             各時間點位置:
-            - 06:00 = 0%
-            - 12:00 = (43200-21600)/70200 = 30.77%
-            - 18:00 = (64800-21600)/70200 = 61.54%
-            - 24:00 = (86400-21600)/70200 = 92.31%
+            - 05:50 = 0%
+            - 06:00 = (21600-21000)/70800 = 0.85%
+            - 12:00 = (43200-21000)/70800 = 31.36%
+            - 18:00 = (64800-21000)/70800 = 61.86%
+            - 24:00 = (86400-21000)/70800 = 92.37%
             - 01:30 = 100%
           */}
-          <span style={{ position: 'absolute', left: '0%', transform: 'translateX(0)' }}>06:00</span>
-          <span style={{ position: 'absolute', left: '30.77%', transform: 'translateX(-50%)' }}>12:00</span>
-          <span style={{ position: 'absolute', left: '61.54%', transform: 'translateX(-50%)' }}>18:00</span>
-          <span style={{ position: 'absolute', left: '92.31%', transform: 'translateX(-50%)' }}>24:00</span>
+          <span style={{ position: 'absolute', left: '0%', transform: 'translateX(0)' }}>05:50</span>
+          <span style={{ position: 'absolute', left: '31.36%', transform: 'translateX(-50%)' }}>12:00</span>
+          <span style={{ position: 'absolute', left: '61.86%', transform: 'translateX(-50%)' }}>18:00</span>
+          <span style={{ position: 'absolute', left: '92.37%', transform: 'translateX(-50%)' }}>24:00</span>
           <span style={{ position: 'absolute', right: '0%', transform: 'translateX(0)' }}>01:30</span>
         </div>
       </div>
@@ -245,7 +246,7 @@ export function TimeControl({
 
         {/* 快速跳轉按鈕 */}
         <div style={{ display: 'flex', gap: 8 }}>
-          {['06:00', '08:00', '12:00', '18:00', '22:00', '00:00'].map((time) => (
+          {['05:50', '06:00', '08:00', '12:00', '18:00', '22:00'].map((time) => (
             <button
               key={time}
               onClick={() => timeEngine.jumpTo(time)}

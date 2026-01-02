@@ -1,0 +1,116 @@
+[
+  {
+    "LineID": "THSR",
+    "Stations": [
+      {
+        "Sequence": 1,
+        "StationID": "0990",
+        "StationName": {
+          "Zh_tw": "南港",
+          "En": "Nangang"
+        },
+        "CumulativeDistance": 0
+      },
+      {
+        "Sequence": 2,
+        "StationID": "1000",
+        "StationName": {
+          "Zh_tw": "台北",
+          "En": "Taipei"
+        },
+        "CumulativeDistance": 9.2
+      },
+      {
+        "Sequence": 3,
+        "StationID": "1010",
+        "StationName": {
+          "Zh_tw": "板橋",
+          "En": "Banqiao"
+        },
+        "CumulativeDistance": 16.42
+      },
+      {
+        "Sequence": 4,
+        "StationID": "1020",
+        "StationName": {
+          "Zh_tw": "桃園",
+          "En": "Taoyuan"
+        },
+        "CumulativeDistance": 45.58
+      },
+      {
+        "Sequence": 5,
+        "StationID": "1030",
+        "StationName": {
+          "Zh_tw": "新竹",
+          "En": "Hsinchu"
+        },
+        "CumulativeDistance": 75.48
+      },
+      {
+        "Sequence": 6,
+        "StationID": "1035",
+        "StationName": {
+          "Zh_tw": "苗栗",
+          "En": "Miaoli"
+        },
+        "CumulativeDistance": 108.16
+      },
+      {
+        "Sequence": 7,
+        "StationID": "1040",
+        "StationName": {
+          "Zh_tw": "台中",
+          "En": "Taichung"
+        },
+        "CumulativeDistance": 169.03
+      },
+      {
+        "Sequence": 8,
+        "StationID": "1043",
+        "StationName": {
+          "Zh_tw": "彰化",
+          "En": "Changhua"
+        },
+        "CumulativeDistance": 197.18
+      },
+      {
+        "Sequence": 9,
+        "StationID": "1047",
+        "StationName": {
+          "Zh_tw": "雲林",
+          "En": "Yunlin"
+        },
+        "CumulativeDistance": 221.78
+      },
+      {
+        "Sequence": 10,
+        "StationID": "1050",
+        "StationName": {
+          "Zh_tw": "嘉義",
+          "En": "Chiayi"
+        },
+        "CumulativeDistance": 218.88
+      },
+      {
+        "Sequence": 11,
+        "StationID": "1060",
+        "StationName": {
+          "Zh_tw": "台南",
+          "En": "Tainan"
+        },
+        "CumulativeDistance": 317.16
+      },
+      {
+        "Sequence": 12,
+        "StationID": "1070",
+        "StationName": {
+          "Zh_tw": "左營",
+          "En": "Zuoying"
+        },
+        "CumulativeDistance": 348.49
+      }
+    ],
+    "UpdateTime": "2023-10-17T00:00:00+08:00"
+  }
+]

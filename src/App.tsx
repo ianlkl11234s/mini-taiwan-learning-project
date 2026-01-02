@@ -2,16 +2,20 @@ import { useEffect, useRef, useState, useCallback, useMemo } from 'react';
 import mapboxgl from 'mapbox-gl';
 import 'mapbox-gl/dist/mapbox-gl.css';
 import { useData } from './hooks/useData';
+import { useThsrData } from './hooks/useThsrData';
 import { TimeEngine } from './engines/TimeEngine';
 import { TrainEngine, type Train } from './engines/TrainEngine';
+import { ThsrTrainEngine, type ThsrTrain } from './engines/ThsrTrainEngine';
 import { TimeControl } from './components/TimeControl';
-import { LineFilter, type MKFilterState } from './components/LineFilter';
+import { LineFilter, type MKFilterState, type ThsrFilterState } from './components/LineFilter';
 import { TrainHistogram } from './components/TrainHistogram';
 import { TrainInfoPanel } from './components/TrainInfoPanel';
 import { useTrainCountHistogram } from './hooks/useTrainCountHistogram';
 import { Train3DLayer } from './layers/Train3DLayer';
+import { Thsr3DLayer } from './layers/Thsr3DLayer';
 import { ThemeToggle, type MapTheme, type VisualTheme, getVisualTheme } from './components/ThemeToggle';
 import { TRACK_COLORS, TRAIN_COLORS, getTrainColor, getLineIdFromTrackId } from './constants/lineInfo';
+import { THSR_TRACK_COLOR, THSR_TRAIN_COLORS, getThsrDirection } from './constants/thsrInfo';
 
 // 光線預設類型（用於 standard 樣式）
 type LightPreset = 'dawn' | 'day' | 'dusk' | 'night';
@@ -34,8 +38,20 @@ const getPresetForHour = (hour: number): LightPreset => {
 mapboxgl.accessToken = import.meta.env.VITE_MAPBOX_TOKEN || '';
 
 function App() {
-  // 資料載入
+  // MRT 資料載入
   const { tracks, stations, schedules, trackMap, stationProgress, loading, error } = useData();
+
+  // THSR 資料載入（THSR 載入錯誤不阻止 MRT 顯示）
+  const {
+    tracks: thsrTracks,
+    stations: thsrStations,
+    schedules: thsrSchedules,
+    trackMap: thsrTrackMap,
+    stationProgress: thsrStationProgress,
+    loading: _thsrLoading,
+    error: _thsrError,
+  } = useThsrData();
+  void _thsrLoading; void _thsrError; // 抑制未使用變數警告
 
   // 預計算直方圖資料
   const histogramData = useTrainCountHistogram(schedules);
@@ -45,6 +61,7 @@ function App() {
   const map = useRef<mapboxgl.Map | null>(null);
   const [mapLoaded, setMapLoaded] = useState(false);
   const trainMarkers = useRef<Map<string, mapboxgl.Marker>>(new Map());
+  const thsrTrainMarkers = useRef<Map<string, mapboxgl.Marker>>(new Map());
 
   // 時間引擎
   const timeEngineRef = useRef<TimeEngine | null>(null);
@@ -53,9 +70,13 @@ function App() {
   const [isPlaying, setIsPlaying] = useState(false);
   const [speed, setSpeed] = useState(60);
 
-  // 列車引擎
+  // 列車引擎 (MRT)
   const trainEngineRef = useRef<TrainEngine | null>(null);
   const [trains, setTrains] = useState<Train[]>([]);
+
+  // 列車引擎 (THSR)
+  const thsrTrainEngineRef = useRef<ThsrTrainEngine | null>(null);
+  const [thsrTrains, setThsrTrains] = useState<ThsrTrain[]>([]);
 
   // 圖例收合狀態（預設收合）
   const [legendCollapsed, setLegendCollapsed] = useState(true);
@@ -66,6 +87,7 @@ function App() {
   // 3D 模式狀態
   const [use3DMode, setUse3DMode] = useState(false);
   const train3DLayerRef = useRef<Train3DLayer | null>(null);
+  const thsr3DLayerRef = useRef<Thsr3DLayer | null>(null);
 
   // 地圖主題模式（日夜切換）- 預設使用 dark 樣式
   const [mapTheme, setMapTheme] = useState<MapTheme>('dark');
@@ -93,6 +115,9 @@ function App() {
   // 貓空纜車三段式狀態：full | tracks-only | hidden
   const [mkState, setMkState] = useState<MKFilterState>('tracks-only');
 
+  // 高鐵三段式狀態：full | tracks-only | hidden
+  const [thsrState, setThsrState] = useState<ThsrFilterState>('full');
+
   // 切換路線可見性
   const handleToggleLine = useCallback((lineId: string) => {
     setVisibleLines(prev => {
@@ -111,7 +136,12 @@ function App() {
     setMkState(state);
   }, []);
 
-  // 根據可見路線過濾列車
+  // 切換 THSR 狀態
+  const handleThsrStateChange = useCallback((state: ThsrFilterState) => {
+    setThsrState(state);
+  }, []);
+
+  // 根據可見路線過濾列車 (MRT)
   const filteredTrains = useMemo(() => {
     return trains.filter(train => {
       const lineId = getLineIdFromTrackId(train.trackId);
@@ -122,6 +152,13 @@ function App() {
       return visibleLines.has(lineId);
     });
   }, [trains, visibleLines, mkState]);
+
+  // 根據高鐵狀態過濾列車 (THSR)
+  const filteredThsrTrains = useMemo(() => {
+    // 只有 full 狀態才顯示高鐵列車
+    if (thsrState !== 'full') return [];
+    return thsrTrains;
+  }, [thsrTrains, thsrState]);
 
   // 計算 MRT 列車數量（排除纜車）
   const mrtCount = useMemo(() => {
@@ -372,6 +409,108 @@ function App() {
     });
   }, [mapLoaded, tracks, styleVersion]);
 
+  // 載入高鐵軌道圖層
+  useEffect(() => {
+    if (!map.current || !mapLoaded || !thsrTracks) return;
+
+    if (map.current.getSource('thsr-tracks')) {
+      map.current.removeLayer('thsr-tracks-line');
+      map.current.removeSource('thsr-tracks');
+    }
+
+    map.current.addSource('thsr-tracks', {
+      type: 'geojson',
+      data: thsrTracks as GeoJSON.FeatureCollection,
+    });
+
+    map.current.addLayer({
+      id: 'thsr-tracks-line',
+      type: 'line',
+      source: 'thsr-tracks',
+      layout: {
+        'line-join': 'round',
+        'line-cap': 'round',
+      },
+      paint: {
+        'line-color': THSR_TRACK_COLOR,
+        'line-width': 4,
+        'line-opacity': thsrState !== 'hidden' ? 0.8 : 0.0,
+        'line-emissive-strength': 1.0,
+      },
+    });
+  }, [mapLoaded, thsrTracks, thsrState, styleVersion]);
+
+  // 更新高鐵軌道可見性
+  useEffect(() => {
+    if (!map.current || !mapLoaded) return;
+    if (!map.current.getLayer('thsr-tracks-line')) return;
+
+    map.current.setPaintProperty('thsr-tracks-line', 'line-opacity',
+      thsrState !== 'hidden' ? 0.8 : 0.0
+    );
+  }, [mapLoaded, thsrState, styleVersion]);
+
+  // 載入高鐵車站圖層
+  useEffect(() => {
+    if (!map.current || !mapLoaded || !thsrStations) return;
+
+    if (map.current.getSource('thsr-stations')) {
+      map.current.removeLayer('thsr-stations-circle');
+      map.current.removeLayer('thsr-stations-label');
+      map.current.removeSource('thsr-stations');
+    }
+
+    map.current.addSource('thsr-stations', {
+      type: 'geojson',
+      data: thsrStations as GeoJSON.FeatureCollection,
+    });
+
+    map.current.addLayer({
+      id: 'thsr-stations-circle',
+      type: 'circle',
+      source: 'thsr-stations',
+      paint: {
+        'circle-radius': 6,
+        'circle-color': '#000000',
+        'circle-stroke-color': THSR_TRACK_COLOR,
+        'circle-stroke-width': 2,
+        'circle-opacity': thsrState !== 'hidden' ? 1 : 0,
+        'circle-stroke-opacity': thsrState !== 'hidden' ? 1 : 0,
+        'circle-emissive-strength': 1.0,
+      },
+    });
+
+    map.current.addLayer({
+      id: 'thsr-stations-label',
+      type: 'symbol',
+      source: 'thsr-stations',
+      layout: {
+        'text-field': ['get', 'name_zh'],
+        'text-size': 11,
+        'text-offset': [0, 1.5],
+        'text-anchor': 'top',
+      },
+      paint: {
+        'text-color': '#ffffff',
+        'text-halo-color': '#000000',
+        'text-halo-width': 1,
+        'text-opacity': thsrState !== 'hidden' ? 1 : 0,
+        'text-emissive-strength': 1.0,
+      },
+    });
+  }, [mapLoaded, thsrStations, thsrState, styleVersion]);
+
+  // 更新高鐵車站可見性
+  useEffect(() => {
+    if (!map.current || !mapLoaded) return;
+    if (!map.current.getLayer('thsr-stations-circle')) return;
+
+    const opacity = thsrState !== 'hidden' ? 1 : 0;
+    map.current.setPaintProperty('thsr-stations-circle', 'circle-opacity', opacity);
+    map.current.setPaintProperty('thsr-stations-circle', 'circle-stroke-opacity', opacity);
+    map.current.setPaintProperty('thsr-stations-label', 'text-opacity', opacity);
+  }, [mapLoaded, thsrState, styleVersion]);
+
   // 初始化 3D 列車圖層
   useEffect(() => {
     if (!map.current || !mapLoaded || !use3DMode) return;
@@ -405,6 +544,47 @@ function App() {
     if (!train3DLayerRef.current || !use3DMode) return;
     train3DLayerRef.current.setSelectedTrainId(selectedTrainId);
   }, [selectedTrainId, use3DMode]);
+
+  // 建立高鐵車站座標索引
+  const thsrStationCoordinates = useMemo(() => {
+    const coords = new Map<string, [number, number]>();
+    if (thsrStations) {
+      for (const feature of thsrStations.features) {
+        const stationId = feature.properties.station_id;
+        const geometry = feature.geometry as GeoJSON.Point;
+        coords.set(stationId, geometry.coordinates as [number, number]);
+      }
+    }
+    return coords;
+  }, [thsrStations]);
+
+  // 初始化高鐵 3D 圖層
+  useEffect(() => {
+    if (!map.current || !mapLoaded || !use3DMode) return;
+    if (thsrTrackMap.size === 0) return;
+    if (thsrState === 'hidden') return;  // 隱藏時不顯示 3D 圖層
+
+    // 建立高鐵 3D 圖層
+    const layer = new Thsr3DLayer(thsrTrackMap);
+    layer.setStations(thsrStationCoordinates);
+    thsr3DLayerRef.current = layer;
+
+    // 加入地圖
+    map.current.addLayer(layer);
+
+    return () => {
+      if (map.current && map.current.getLayer('thsr-3d-layer')) {
+        map.current.removeLayer('thsr-3d-layer');
+      }
+      thsr3DLayerRef.current = null;
+    };
+  }, [mapLoaded, thsrTrackMap, thsrStationCoordinates, use3DMode, thsrState, styleVersion]);
+
+  // 更新高鐵 3D 圖層列車資料
+  useEffect(() => {
+    if (!thsr3DLayerRef.current || !use3DMode) return;
+    thsr3DLayerRef.current.updateTrains(filteredThsrTrains);
+  }, [filteredThsrTrains, use3DMode]);
 
   // 更新軌道可見性（當 visibleLines 變化時）
   useEffect(() => {
@@ -639,6 +819,41 @@ function App() {
     };
   }, [timeEngineReady, schedules, trackMap, stationProgress]);
 
+  // 初始化高鐵列車引擎並訂閱時間更新
+  useEffect(() => {
+    if (!timeEngineReady || !timeEngineRef.current) return;
+    if (thsrSchedules.size === 0 || thsrTrackMap.size === 0) return;
+
+    // 建立高鐵列車引擎
+    const thsrEngine = new ThsrTrainEngine({
+      schedules: thsrSchedules,
+      tracks: thsrTrackMap,
+    });
+
+    // 設置車站進度（用於軌道內插定位）
+    thsrEngine.setStationProgress(thsrStationProgress);
+
+    thsrTrainEngineRef.current = thsrEngine;
+
+    // 訂閱時間更新
+    const unsubscribe = timeEngineRef.current.onTick(() => {
+      if (timeEngineRef.current) {
+        const timeSeconds = timeEngineRef.current.getTimeOfDaySeconds();
+        const activeTrains = thsrEngine.update(timeSeconds);
+        setThsrTrains(activeTrains);
+      }
+    });
+
+    // 初始更新
+    const timeSeconds = timeEngineRef.current.getTimeOfDaySeconds();
+    setThsrTrains(thsrEngine.update(timeSeconds));
+
+    return () => {
+      unsubscribe();
+      thsrTrainEngineRef.current = null;
+    };
+  }, [timeEngineReady, thsrSchedules, thsrTrackMap, thsrStationProgress]);
+
   // 更新列車標記（2D 模式時使用）
   useEffect(() => {
     if (!map.current || !mapLoaded) return;
@@ -759,6 +974,89 @@ function App() {
     }
   }, [mapLoaded, filteredTrains, use3DMode, handleSelectTrain, selectedTrainId]);
 
+  // 更新高鐵列車標記（2D 模式時使用）
+  useEffect(() => {
+    if (!map.current || !mapLoaded) return;
+
+    // 3D 模式時清除所有 2D 標記並跳過
+    if (use3DMode) {
+      for (const marker of thsrTrainMarkers.current.values()) {
+        marker.remove();
+      }
+      thsrTrainMarkers.current.clear();
+      return;
+    }
+
+    const activeTrainIds = new Set(filteredThsrTrains.map((t) => t.trainId));
+    for (const [trainId, marker] of thsrTrainMarkers.current) {
+      if (!activeTrainIds.has(trainId)) {
+        marker.remove();
+        thsrTrainMarkers.current.delete(trainId);
+      }
+    }
+
+    for (const train of filteredThsrTrains) {
+      let marker = thsrTrainMarkers.current.get(train.trainId);
+      const isStopped = train.status === 'stopped';
+      const direction = getThsrDirection(train.trackId);
+      const baseColor = THSR_TRAIN_COLORS[`THSR_${direction}`] || THSR_TRACK_COLOR;
+
+      if (!marker) {
+        const el = document.createElement('div');
+        el.className = 'thsr-train-marker';
+        el.dataset.trainId = train.trainId;
+
+        marker = new mapboxgl.Marker({
+          element: el,
+          anchor: 'center',
+        })
+          .setLngLat(train.position)
+          .addTo(map.current!);
+
+        thsrTrainMarkers.current.set(train.trainId, marker);
+      }
+
+      // 更新位置
+      marker.setLngLat(train.position);
+
+      // 更新樣式
+      const el = marker.getElement();
+      const newState = `${isStopped}-${baseColor}`;
+      const prevState = el.dataset.trainState;
+
+      if (prevState !== newState) {
+        el.dataset.trainState = newState;
+
+        const baseStyles = `
+          pointer-events: auto;
+          cursor: pointer;
+          border-radius: 4px;
+          transition: width 0.3s ease, height 0.3s ease, box-shadow 0.3s ease;
+        `;
+
+        if (isStopped) {
+          el.style.cssText = `
+            ${baseStyles}
+            width: 16px;
+            height: 10px;
+            background-color: ${baseColor};
+            border: 2px solid #ffffff;
+            box-shadow: 0 0 8px ${baseColor}, 0 0 12px rgba(255,255,255,0.5);
+          `;
+        } else {
+          el.style.cssText = `
+            ${baseStyles}
+            width: 14px;
+            height: 8px;
+            background-color: ${baseColor};
+            border: 2px solid #ffffff;
+            box-shadow: 0 0 4px rgba(0,0,0,0.5);
+          `;
+        }
+      }
+    }
+  }, [mapLoaded, filteredThsrTrains, use3DMode]);
+
   // 控制處理器
   const handleTogglePlay = useCallback(() => {
     if (!timeEngineRef.current) return;
@@ -779,6 +1077,11 @@ function App() {
     if (trainEngineRef.current) {
       const activeTrains = trainEngineRef.current.update(seconds);
       setTrains(activeTrains);
+    }
+
+    if (thsrTrainEngineRef.current) {
+      const activeThsrTrains = thsrTrainEngineRef.current.update(seconds);
+      setThsrTrains(activeThsrTrains);
     }
   }, []);
 
@@ -1270,6 +1573,8 @@ function App() {
         onToggleLine={handleToggleLine}
         mkState={mkState}
         onMKStateChange={handleMKStateChange}
+        thsrState={thsrState}
+        onThsrStateChange={handleThsrStateChange}
         visualTheme={visualTheme}
       />
 

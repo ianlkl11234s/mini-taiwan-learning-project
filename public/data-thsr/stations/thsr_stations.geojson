@@ -1,0 +1,257 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "0990",
+        "station_uid": "THSR-0990",
+        "station_code": "NAK",
+        "name_zh": "南港",
+        "name_en": "Nangang",
+        "sequence": 1,
+        "cumulative_distance": 0,
+        "city": "臺北市",
+        "address": "台北市南港區南港路一段313號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.60709,
+          25.053704
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "1000",
+        "station_uid": "THSR-1000",
+        "station_code": "TPE",
+        "name_zh": "台北",
+        "name_en": "Taipei",
+        "sequence": 2,
+        "cumulative_distance": 9.2,
+        "city": "臺北市",
+        "address": "台北市北平西路3號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.516983,
+          25.04767
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "1010",
+        "station_uid": "THSR-1010",
+        "station_code": "BAC",
+        "name_zh": "板橋",
+        "name_en": "Banqiao",
+        "sequence": 3,
+        "cumulative_distance": 16.42,
+        "city": "新北市",
+        "address": "新北市板橋區縣民大道二段7號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.4638,
+          25.014214
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "1020",
+        "station_uid": "THSR-1020",
+        "station_code": "TAY",
+        "name_zh": "桃園",
+        "name_en": "Taoyuan",
+        "sequence": 4,
+        "cumulative_distance": 45.58,
+        "city": "桃園市",
+        "address": "桃園市中壢區高鐵北路一段6號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.214729,
+          25.012861
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "1030",
+        "station_uid": "THSR-1030",
+        "station_code": "HSC",
+        "name_zh": "新竹",
+        "name_en": "Hsinchu",
+        "sequence": 5,
+        "cumulative_distance": 75.48,
+        "city": "新竹縣",
+        "address": "新竹縣竹北市高鐵七路6號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.04026,
+          24.808441
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "1035",
+        "station_uid": "THSR-1035",
+        "station_code": "MIL",
+        "name_zh": "苗栗",
+        "name_en": "Miaoli",
+        "sequence": 6,
+        "cumulative_distance": 108.16,
+        "city": "苗栗縣",
+        "address": "苗栗縣後龍鎮高鐵三路268號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.825272,
+          24.605448
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "1040",
+        "station_uid": "THSR-1040",
+        "station_code": "TAC",
+        "name_zh": "台中",
+        "name_en": "Taichung",
+        "sequence": 7,
+        "cumulative_distance": 169.03,
+        "city": "臺中市",
+        "address": "台中市烏日區站區二路8號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.615967,
+          24.112484
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "1043",
+        "station_uid": "THSR-1043",
+        "station_code": "CHA",
+        "name_zh": "彰化",
+        "name_en": "Changhua",
+        "sequence": 8,
+        "cumulative_distance": 197.18,
+        "city": "彰化縣",
+        "address": "彰化縣田中鎮站區路二段99號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.574608,
+          23.874327
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "1047",
+        "station_uid": "THSR-1047",
+        "station_code": "YUL",
+        "name_zh": "雲林",
+        "name_en": "Yunlin",
+        "sequence": 9,
+        "cumulative_distance": 221.78,
+        "city": "雲林縣",
+        "address": "雲林縣虎尾鎮站前東路301號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.416512,
+          23.736231
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "1050",
+        "station_uid": "THSR-1050",
+        "station_code": "CHY",
+        "name_zh": "嘉義",
+        "name_en": "Chiayi",
+        "sequence": 10,
+        "cumulative_distance": 251.15,
+        "city": "嘉義縣",
+        "address": "嘉義縣太保市高鐵西路168號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.323257,
+          23.459507
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "1060",
+        "station_uid": "THSR-1060",
+        "station_code": "TNN",
+        "name_zh": "台南",
+        "name_en": "Tainan",
+        "sequence": 11,
+        "cumulative_distance": 317.16,
+        "city": "臺南市",
+        "address": "台南市歸仁區歸仁大道100號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.286201,
+          22.925077
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "1070",
+        "station_uid": "THSR-1070",
+        "station_code": "ZUY",
+        "name_zh": "左營",
+        "name_en": "Zuoying",
+        "sequence": 12,
+        "cumulative_distance": 348.49,
+        "city": "高雄市",
+        "address": "高雄市左營區高鐵路105號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.307487,
+          22.687391
+        ]
+      }
+    }
+  ]
+}

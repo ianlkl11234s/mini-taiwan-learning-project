@@ -19,24 +19,36 @@ const CABLE_LINES = {
   MK: { color: '#06b8e6', label: 'MK', name: '貓空纜車' },
 };
 
+// HSR 路線配置
+const HSR_LINES = {
+  THSR: { color: '#f47920', label: 'HSR', name: '台灣高鐵' },
+};
+
 // MK 三段式狀態
 export type MKFilterState = 'full' | 'tracks-only' | 'hidden';
+
+// THSR 三段式狀態
+export type ThsrFilterState = 'full' | 'tracks-only' | 'hidden';
 
 interface LineFilterProps {
   visibleLines: Set<string>;
   onToggleLine: (lineId: string) => void;
   mkState: MKFilterState;
   onMKStateChange: (state: MKFilterState) => void;
+  thsrState: ThsrFilterState;
+  onThsrStateChange: (state: ThsrFilterState) => void;
   visualTheme?: VisualTheme;
 }
 
-type ExpandedCategory = 'mrt' | 'cable' | null;
+type ExpandedCategory = 'mrt' | 'cable' | 'hsr' | null;
 
 export function LineFilter({
   visibleLines,
   onToggleLine,
   mkState,
   onMKStateChange,
+  thsrState,
+  onThsrStateChange,
   visualTheme = 'dark',
 }: LineFilterProps) {
   const [expanded, setExpanded] = useState<ExpandedCategory>(null);
@@ -64,6 +76,14 @@ export function LineFilter({
       mkState === 'full' ? 'tracks-only' :
       mkState === 'tracks-only' ? 'hidden' : 'full';
     onMKStateChange(nextState);
+  };
+
+  // THSR 三段式切換
+  const handleThsrClick = () => {
+    const nextState: ThsrFilterState =
+      thsrState === 'full' ? 'tracks-only' :
+      thsrState === 'tracks-only' ? 'hidden' : 'full';
+    onThsrStateChange(nextState);
   };
 
   // MK 狀態對應的視覺效果
@@ -100,6 +120,43 @@ export function LineFilter({
       case 'full': return '貓空纜車 (全部顯示)';
       case 'tracks-only': return '貓空纜車 (僅軌道與車站)';
       case 'hidden': return '貓空纜車 (隱藏)';
+    }
+  };
+
+  // THSR 狀態對應的視覺效果
+  const getThsrStyle = () => {
+    const config = HSR_LINES.THSR;
+    switch (thsrState) {
+      case 'full':
+        return {
+          background: config.color,
+          opacity: 1,
+          boxShadow: `0 0 8px ${config.color}`,
+          border: `2px solid ${colors.borderActive}`,
+        };
+      case 'tracks-only':
+        return {
+          background: config.color,
+          opacity: 0.5,
+          boxShadow: 'none',
+          border: `2px dashed ${colors.borderActive}`,
+        };
+      case 'hidden':
+        return {
+          background: colors.disabledBg,
+          opacity: 0.4,
+          boxShadow: 'none',
+          border: `2px solid ${colors.borderActive}`,
+        };
+    }
+  };
+
+  // THSR 狀態 tooltip
+  const getThsrTooltip = () => {
+    switch (thsrState) {
+      case 'full': return '台灣高鐵 (全部顯示)';
+      case 'tracks-only': return '台灣高鐵 (僅軌道與車站)';
+      case 'hidden': return '台灣高鐵 (隱藏)';
     }
   };
 
@@ -246,6 +303,68 @@ export function LineFilter({
           }}
         >
           MK
+        </button>
+      </div>
+
+      {/* HSR 分類按鈕 */}
+      <button
+        onClick={() => handleCategoryClick('hsr')}
+        style={{
+          padding: '8px 14px',
+          borderRadius: 20,
+          border: expanded === 'hsr' ? `2px solid ${colors.borderActive}` : `2px solid ${colors.borderInactive}`,
+          background: expanded === 'hsr' ? colors.bgActive : colors.bgInactive,
+          color: expanded === 'hsr' ? colors.textActive : colors.textInactive,
+          fontSize: 13,
+          fontWeight: 600,
+          cursor: 'pointer',
+          display: 'flex',
+          alignItems: 'center',
+          gap: 6,
+          transition: 'all 0.2s ease',
+          backdropFilter: 'blur(8px)',
+        }}
+      >
+        <span>HSR</span>
+        <span style={{
+          fontSize: 10,
+          transition: 'transform 0.3s ease',
+          transform: expanded === 'hsr' ? 'rotate(90deg)' : 'rotate(0deg)',
+        }}>
+          ▶
+        </span>
+      </button>
+
+      {/* HSR 路線按鈕列表 */}
+      <div
+        style={{
+          display: 'flex',
+          gap: 8,
+          maxWidth: expanded === 'hsr' ? 60 : 0,
+          overflow: 'hidden',
+          transition: 'max-width 0.3s ease-out, opacity 0.3s ease-out',
+          opacity: expanded === 'hsr' ? 1 : 0,
+        }}
+      >
+        <button
+          onClick={handleThsrClick}
+          title={getThsrTooltip()}
+          style={{
+            width: 40,
+            height: 40,
+            borderRadius: '50%',
+            color: colors.textActive,
+            fontSize: 10,
+            fontWeight: 700,
+            cursor: 'pointer',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            transition: 'all 0.2s ease',
+            ...getThsrStyle(),
+          }}
+        >
+          高鐵
         </button>
       </div>
     </div>

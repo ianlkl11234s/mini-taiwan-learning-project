@@ -30,6 +30,9 @@ export type MKFilterState = 'full' | 'tracks-only' | 'hidden';
 // THSR 三段式狀態
 export type ThsrFilterState = 'full' | 'tracks-only' | 'hidden';
 
+// KRTC 三段式狀態
+export type KrtcFilterState = 'full' | 'tracks-only' | 'hidden';
+
 interface LineFilterProps {
   visibleLines: Set<string>;
   onToggleLine: (lineId: string) => void;
@@ -38,10 +41,12 @@ interface LineFilterProps {
   onMKStateChange: (state: MKFilterState) => void;
   thsrState: ThsrFilterState;
   onThsrStateChange: (state: ThsrFilterState) => void;
+  krtcState: KrtcFilterState;
+  onKrtcStateChange: (state: KrtcFilterState) => void;
   visualTheme?: VisualTheme;
 }
 
-type ExpandedCategory = 'mrt' | 'cable' | 'hsr' | null;
+type ExpandedCategory = 'mrt' | 'cable' | 'hsr' | 'krtc' | null;
 
 export function LineFilter({
   visibleLines,
@@ -51,6 +56,8 @@ export function LineFilter({
   onMKStateChange,
   thsrState,
   onThsrStateChange,
+  krtcState,
+  onKrtcStateChange,
   visualTheme = 'dark',
 }: LineFilterProps) {
   const [expanded, setExpanded] = useState<ExpandedCategory>(null);
@@ -92,6 +99,14 @@ export function LineFilter({
       thsrState === 'full' ? 'tracks-only' :
       thsrState === 'tracks-only' ? 'hidden' : 'full';
     onThsrStateChange(nextState);
+  };
+
+  // KRTC 三段式切換
+  const handleKrtcClick = () => {
+    const nextState: KrtcFilterState =
+      krtcState === 'full' ? 'tracks-only' :
+      krtcState === 'tracks-only' ? 'hidden' : 'full';
+    onKrtcStateChange(nextState);
   };
 
   // MK 狀態對應的視覺效果
@@ -165,6 +180,42 @@ export function LineFilter({
       case 'full': return '台灣高鐵 (全部顯示)';
       case 'tracks-only': return '台灣高鐵 (僅軌道與車站)';
       case 'hidden': return '台灣高鐵 (隱藏)';
+    }
+  };
+
+  // KRTC 狀態對應的視覺效果
+  const getKrtcStyle = () => {
+    switch (krtcState) {
+      case 'full':
+        return {
+          background: 'linear-gradient(135deg, #f8981d, #e2211c)',
+          opacity: 1,
+          boxShadow: '0 0 8px rgba(248, 152, 29, 0.5)',
+          border: `2px solid ${colors.borderActive}`,
+        };
+      case 'tracks-only':
+        return {
+          background: 'linear-gradient(135deg, #f8981d, #e2211c)',
+          opacity: 0.5,
+          boxShadow: 'none',
+          border: `2px dashed ${colors.borderActive}`,
+        };
+      case 'hidden':
+        return {
+          background: colors.disabledBg,
+          opacity: 0.4,
+          boxShadow: 'none',
+          border: `2px solid ${colors.borderActive}`,
+        };
+    }
+  };
+
+  // KRTC 狀態 tooltip
+  const getKrtcTooltip = () => {
+    switch (krtcState) {
+      case 'full': return '高雄捷運 (全部顯示)';
+      case 'tracks-only': return '高雄捷運 (僅軌道與車站)';
+      case 'hidden': return '高雄捷運 (隱藏)';
     }
   };
 
@@ -401,6 +452,68 @@ export function LineFilter({
           }}
         >
           高鐵
+        </button>
+      </div>
+
+      {/* KRTC 分類按鈕 */}
+      <button
+        onClick={() => handleCategoryClick('krtc')}
+        style={{
+          padding: '8px 14px',
+          borderRadius: 20,
+          border: expanded === 'krtc' ? `2px solid ${colors.borderActive}` : `2px solid ${colors.borderInactive}`,
+          background: expanded === 'krtc' ? colors.bgActive : colors.bgInactive,
+          color: expanded === 'krtc' ? colors.textActive : colors.textInactive,
+          fontSize: 13,
+          fontWeight: 600,
+          cursor: 'pointer',
+          display: 'flex',
+          alignItems: 'center',
+          gap: 6,
+          transition: 'all 0.2s ease',
+          backdropFilter: 'blur(8px)',
+        }}
+      >
+        <span>KRTC</span>
+        <span style={{
+          fontSize: 10,
+          transition: 'transform 0.3s ease',
+          transform: expanded === 'krtc' ? 'rotate(90deg)' : 'rotate(0deg)',
+        }}>
+          ▶
+        </span>
+      </button>
+
+      {/* KRTC 路線按鈕列表 */}
+      <div
+        style={{
+          display: 'flex',
+          gap: 8,
+          maxWidth: expanded === 'krtc' ? 60 : 0,
+          overflow: 'hidden',
+          transition: 'max-width 0.3s ease-out, opacity 0.3s ease-out',
+          opacity: expanded === 'krtc' ? 1 : 0,
+        }}
+      >
+        <button
+          onClick={handleKrtcClick}
+          title={getKrtcTooltip()}
+          style={{
+            width: 40,
+            height: 40,
+            borderRadius: '50%',
+            color: colors.textActive,
+            fontSize: 10,
+            fontWeight: 700,
+            cursor: 'pointer',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            transition: 'all 0.2s ease',
+            ...getKrtcStyle(),
+          }}
+        >
+          高捷
         </button>
       </div>
     </div>

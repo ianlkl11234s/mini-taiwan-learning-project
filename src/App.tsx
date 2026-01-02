@@ -3,19 +3,23 @@ import mapboxgl from 'mapbox-gl';
 import 'mapbox-gl/dist/mapbox-gl.css';
 import { useData } from './hooks/useData';
 import { useThsrData } from './hooks/useThsrData';
+import { useKrtcData } from './hooks/useKrtcData';
 import { TimeEngine } from './engines/TimeEngine';
 import { TrainEngine, type Train } from './engines/TrainEngine';
 import { ThsrTrainEngine, type ThsrTrain } from './engines/ThsrTrainEngine';
+import { KrtcTrainEngine, type KrtcTrain } from './engines/KrtcTrainEngine';
 import { TimeControl } from './components/TimeControl';
-import { LineFilter, type MKFilterState, type ThsrFilterState } from './components/LineFilter';
+import { LineFilter, type MKFilterState, type ThsrFilterState, type KrtcFilterState } from './components/LineFilter';
 import { TrainHistogram } from './components/TrainHistogram';
 import { TrainInfoPanel } from './components/TrainInfoPanel';
 import { useTrainCountHistogram } from './hooks/useTrainCountHistogram';
 import { Train3DLayer } from './layers/Train3DLayer';
 import { Thsr3DLayer } from './layers/Thsr3DLayer';
+import { Krtc3DLayer } from './layers/Krtc3DLayer';
 import { ThemeToggle, type MapTheme, type VisualTheme, getVisualTheme } from './components/ThemeToggle';
 import { TRACK_COLORS, TRAIN_COLORS, getTrainColor, getLineIdFromTrackId } from './constants/lineInfo';
 import { THSR_TRACK_COLOR, THSR_TRAIN_COLORS, getThsrDirection } from './constants/thsrInfo';
+import { KRTC_TRACK_COLORS, KRTC_TRAIN_COLORS, getKrtcLineId, getKrtcDirection } from './constants/krtcInfo';
 
 // 光線預設類型（用於 standard 樣式）
 type LightPreset = 'dawn' | 'day' | 'dusk' | 'night';
@@ -53,6 +57,18 @@ function App() {
   } = useThsrData();
   void _thsrLoading; void _thsrError; // 抑制未使用變數警告
 
+  // KRTC 資料載入（KRTC 載入錯誤不阻止其他顯示）
+  const {
+    tracks: krtcTracks,
+    stations: krtcStations,
+    schedules: krtcSchedules,
+    trackMap: krtcTrackMap,
+    stationProgress: krtcStationProgress,
+    loading: _krtcLoading,
+    error: _krtcError,
+  } = useKrtcData();
+  void _krtcLoading; void _krtcError; // 抑制未使用變數警告
+
   // 預計算直方圖資料
   const histogramData = useTrainCountHistogram(schedules);
 
@@ -62,6 +78,7 @@ function App() {
   const [mapLoaded, setMapLoaded] = useState(false);
   const trainMarkers = useRef<Map<string, mapboxgl.Marker>>(new Map());
   const thsrTrainMarkers = useRef<Map<string, mapboxgl.Marker>>(new Map());
+  const krtcTrainMarkers = useRef<Map<string, mapboxgl.Marker>>(new Map());
 
   // 時間引擎
   const timeEngineRef = useRef<TimeEngine | null>(null);
@@ -78,6 +95,10 @@ function App() {
   const thsrTrainEngineRef = useRef<ThsrTrainEngine | null>(null);
   const [thsrTrains, setThsrTrains] = useState<ThsrTrain[]>([]);
 
+  // 列車引擎 (KRTC)
+  const krtcTrainEngineRef = useRef<KrtcTrainEngine | null>(null);
+  const [krtcTrains, setKrtcTrains] = useState<KrtcTrain[]>([]);
+
   // 圖例收合狀態（預設收合）
   const [legendCollapsed, setLegendCollapsed] = useState(true);
 
@@ -88,6 +109,7 @@ function App() {
   const [use3DMode, setUse3DMode] = useState(false);
   const train3DLayerRef = useRef<Train3DLayer | null>(null);
   const thsr3DLayerRef = useRef<Thsr3DLayer | null>(null);
+  const krtc3DLayerRef = useRef<Krtc3DLayer | null>(null);
 
   // 地圖主題模式（日夜切換）- 預設使用 dark 樣式
   const [mapTheme, setMapTheme] = useState<MapTheme>('dark');
@@ -117,6 +139,9 @@ function App() {
 
   // 高鐵三段式狀態：full | tracks-only | hidden
   const [thsrState, setThsrState] = useState<ThsrFilterState>('full');
+
+  // 高雄捷運三段式狀態：full | tracks-only | hidden
+  const [krtcState, setKrtcState] = useState<KrtcFilterState>('full');
 
   // 切換路線可見性
   const handleToggleLine = useCallback((lineId: string) => {
@@ -155,6 +180,11 @@ function App() {
     setThsrState(state);
   }, []);
 
+  // 切換 KRTC 狀態
+  const handleKrtcStateChange = useCallback((state: KrtcFilterState) => {
+    setKrtcState(state);
+  }, []);
+
   // 根據可見路線過濾列車 (MRT)
   const filteredTrains = useMemo(() => {
     return trains.filter(train => {
@@ -174,6 +204,13 @@ function App() {
     return thsrTrains;
   }, [thsrTrains, thsrState]);
 
+  // 根據高雄捷運狀態過濾列車 (KRTC)
+  const filteredKrtcTrains = useMemo(() => {
+    // 只有 full 狀態才顯示高雄捷運列車
+    if (krtcState !== 'full') return [];
+    return krtcTrains;
+  }, [krtcTrains, krtcState]);
+
   // 計算 MRT 列車數量（排除纜車）
   const mrtCount = useMemo(() => {
     return filteredTrains.filter(train => !train.trackId.startsWith('MK')).length;
@@ -192,7 +229,7 @@ function App() {
     return coords;
   }, [stations]);
 
-  // 建立車站名稱索引（用於資訊面板顯示，包含 MRT + THSR）
+  // 建立車站名稱索引（用於資訊面板顯示，包含 MRT + THSR + KRTC）
   const stationNames = useMemo(() => {
     const names = new Map<string, string>();
     // MRT 車站
@@ -211,10 +248,18 @@ function App() {
         names.set(stationId, stationName);
       }
     }
+    // KRTC 車站
+    if (krtcStations) {
+      for (const feature of krtcStations.features) {
+        const stationId = feature.properties.station_id;
+        const stationName = feature.properties.name_zh;
+        names.set(stationId, stationName);
+      }
+    }
     return names;
-  }, [stations, thsrStations]);
+  }, [stations, thsrStations, krtcStations]);
 
-  // 取得選中的列車資料（同時支援 MRT 和 THSR）
+  // 取得選中的列車資料（同時支援 MRT、THSR 和 KRTC）
   const selectedTrain = useMemo(() => {
     if (!selectedTrainId) return null;
     // 先從 MRT 找
@@ -223,8 +268,11 @@ function App() {
     // 再從 THSR 找
     const thsrTrain = filteredThsrTrains.find(t => t.trainId === selectedTrainId);
     if (thsrTrain) return thsrTrain;
+    // 最後從 KRTC 找
+    const krtcTrain = filteredKrtcTrains.find(t => t.trainId === selectedTrainId);
+    if (krtcTrain) return krtcTrain;
     return null;
-  }, [selectedTrainId, filteredTrains, filteredThsrTrains]);
+  }, [selectedTrainId, filteredTrains, filteredThsrTrains, filteredKrtcTrains]);
 
 
   // 選擇列車
@@ -541,6 +589,137 @@ function App() {
     map.current.setPaintProperty('thsr-stations-label', 'text-opacity', opacity);
   }, [mapLoaded, thsrState, styleVersion]);
 
+  // 載入高雄捷運軌道圖層
+  useEffect(() => {
+    if (!map.current || !mapLoaded || !krtcTracks) return;
+
+    if (map.current.getSource('krtc-tracks')) {
+      if (map.current.getLayer('krtc-tracks-line-O')) {
+        map.current.removeLayer('krtc-tracks-line-O');
+      }
+      if (map.current.getLayer('krtc-tracks-line-R')) {
+        map.current.removeLayer('krtc-tracks-line-R');
+      }
+      map.current.removeSource('krtc-tracks');
+    }
+
+    map.current.addSource('krtc-tracks', {
+      type: 'geojson',
+      data: krtcTracks as GeoJSON.FeatureCollection,
+    });
+
+    // 橘線
+    map.current.addLayer({
+      id: 'krtc-tracks-line-O',
+      type: 'line',
+      source: 'krtc-tracks',
+      filter: ['==', ['slice', ['get', 'track_id'], 5, 6], 'O'],
+      layout: {
+        'line-join': 'round',
+        'line-cap': 'round',
+      },
+      paint: {
+        'line-color': KRTC_TRACK_COLORS.O,
+        'line-width': 4,
+        'line-opacity': krtcState !== 'hidden' ? 0.8 : 0.0,
+        'line-emissive-strength': 1.0,
+      },
+    });
+
+    // 紅線
+    map.current.addLayer({
+      id: 'krtc-tracks-line-R',
+      type: 'line',
+      source: 'krtc-tracks',
+      filter: ['==', ['slice', ['get', 'track_id'], 5, 6], 'R'],
+      layout: {
+        'line-join': 'round',
+        'line-cap': 'round',
+      },
+      paint: {
+        'line-color': KRTC_TRACK_COLORS.R,
+        'line-width': 4,
+        'line-opacity': krtcState !== 'hidden' ? 0.8 : 0.0,
+        'line-emissive-strength': 1.0,
+      },
+    });
+  }, [mapLoaded, krtcTracks, krtcState, styleVersion]);
+
+  // 更新高雄捷運軌道可見性
+  useEffect(() => {
+    if (!map.current || !mapLoaded) return;
+    if (!map.current.getLayer('krtc-tracks-line-O')) return;
+
+    const opacity = krtcState !== 'hidden' ? 0.8 : 0.0;
+    map.current.setPaintProperty('krtc-tracks-line-O', 'line-opacity', opacity);
+    map.current.setPaintProperty('krtc-tracks-line-R', 'line-opacity', opacity);
+  }, [mapLoaded, krtcState, styleVersion]);
+
+  // 載入高雄捷運車站圖層
+  useEffect(() => {
+    if (!map.current || !mapLoaded || !krtcStations) return;
+
+    if (map.current.getSource('krtc-stations')) {
+      map.current.removeLayer('krtc-stations-circle');
+      map.current.removeLayer('krtc-stations-label');
+      map.current.removeSource('krtc-stations');
+    }
+
+    map.current.addSource('krtc-stations', {
+      type: 'geojson',
+      data: krtcStations as GeoJSON.FeatureCollection,
+    });
+
+    map.current.addLayer({
+      id: 'krtc-stations-circle',
+      type: 'circle',
+      source: 'krtc-stations',
+      paint: {
+        'circle-radius': 5,
+        'circle-color': '#000000',
+        'circle-stroke-color': [
+          'case',
+          ['==', ['slice', ['get', 'station_id'], 0, 1], 'O'], KRTC_TRACK_COLORS.O,
+          KRTC_TRACK_COLORS.R,
+        ],
+        'circle-stroke-width': 2,
+        'circle-opacity': krtcState !== 'hidden' ? 1 : 0,
+        'circle-stroke-opacity': krtcState !== 'hidden' ? 1 : 0,
+        'circle-emissive-strength': 1.0,
+      },
+    });
+
+    map.current.addLayer({
+      id: 'krtc-stations-label',
+      type: 'symbol',
+      source: 'krtc-stations',
+      layout: {
+        'text-field': ['get', 'name_zh'],
+        'text-size': 10,
+        'text-offset': [0, 1.3],
+        'text-anchor': 'top',
+      },
+      paint: {
+        'text-color': '#ffffff',
+        'text-halo-color': '#000000',
+        'text-halo-width': 1,
+        'text-opacity': krtcState !== 'hidden' ? 1 : 0,
+        'text-emissive-strength': 1.0,
+      },
+    });
+  }, [mapLoaded, krtcStations, krtcState, styleVersion]);
+
+  // 更新高雄捷運車站可見性
+  useEffect(() => {
+    if (!map.current || !mapLoaded) return;
+    if (!map.current.getLayer('krtc-stations-circle')) return;
+
+    const opacity = krtcState !== 'hidden' ? 1 : 0;
+    map.current.setPaintProperty('krtc-stations-circle', 'circle-opacity', opacity);
+    map.current.setPaintProperty('krtc-stations-circle', 'circle-stroke-opacity', opacity);
+    map.current.setPaintProperty('krtc-stations-label', 'text-opacity', opacity);
+  }, [mapLoaded, krtcState, styleVersion]);
+
   // 初始化 3D 列車圖層
   useEffect(() => {
     if (!map.current || !mapLoaded || !use3DMode) return;
@@ -621,6 +800,54 @@ function App() {
   useEffect(() => {
     if (!thsr3DLayerRef.current || !use3DMode) return;
     thsr3DLayerRef.current.setSelectedTrainId(selectedTrainId);
+  }, [selectedTrainId, use3DMode]);
+
+  // 建立高雄捷運車站座標索引
+  const krtcStationCoordinates = useMemo(() => {
+    const coords = new Map<string, [number, number]>();
+    if (krtcStations) {
+      for (const feature of krtcStations.features) {
+        const stationId = feature.properties.station_id;
+        const geometry = feature.geometry as GeoJSON.Point;
+        coords.set(stationId, geometry.coordinates as [number, number]);
+      }
+    }
+    return coords;
+  }, [krtcStations]);
+
+  // 初始化高雄捷運 3D 圖層
+  useEffect(() => {
+    if (!map.current || !mapLoaded || !use3DMode) return;
+    if (krtcTrackMap.size === 0) return;
+    if (krtcState === 'hidden') return;  // 隱藏時不顯示 3D 圖層
+
+    // 建立高雄捷運 3D 圖層
+    const layer = new Krtc3DLayer(krtcTrackMap);
+    layer.setStations(krtcStationCoordinates);
+    layer.setOnSelect(handleSelectTrain);  // 綁定點擊回調
+    krtc3DLayerRef.current = layer;
+
+    // 加入地圖
+    map.current.addLayer(layer);
+
+    return () => {
+      if (map.current && map.current.getLayer('krtc-3d-layer')) {
+        map.current.removeLayer('krtc-3d-layer');
+      }
+      krtc3DLayerRef.current = null;
+    };
+  }, [mapLoaded, krtcTrackMap, krtcStationCoordinates, use3DMode, krtcState, handleSelectTrain, styleVersion]);
+
+  // 更新高雄捷運 3D 圖層列車資料
+  useEffect(() => {
+    if (!krtc3DLayerRef.current || !use3DMode) return;
+    krtc3DLayerRef.current.updateTrains(filteredKrtcTrains);
+  }, [filteredKrtcTrains, use3DMode]);
+
+  // 更新高雄捷運 3D 圖層選中狀態
+  useEffect(() => {
+    if (!krtc3DLayerRef.current || !use3DMode) return;
+    krtc3DLayerRef.current.setSelectedTrainId(selectedTrainId);
   }, [selectedTrainId, use3DMode]);
 
   // 更新軌道可見性（當 visibleLines 變化時）
@@ -891,6 +1118,41 @@ function App() {
     };
   }, [timeEngineReady, thsrSchedules, thsrTrackMap, thsrStationProgress]);
 
+  // 初始化高雄捷運列車引擎並訂閱時間更新
+  useEffect(() => {
+    if (!timeEngineReady || !timeEngineRef.current) return;
+    if (krtcSchedules.size === 0 || krtcTrackMap.size === 0) return;
+
+    // 建立高雄捷運列車引擎
+    const krtcEngine = new KrtcTrainEngine({
+      schedules: krtcSchedules,
+      tracks: krtcTrackMap,
+    });
+
+    // 設置車站進度（用於軌道內插定位）
+    krtcEngine.setStationProgress(krtcStationProgress);
+
+    krtcTrainEngineRef.current = krtcEngine;
+
+    // 訂閱時間更新
+    const unsubscribe = timeEngineRef.current.onTick(() => {
+      if (timeEngineRef.current) {
+        const timeSeconds = timeEngineRef.current.getTimeOfDaySeconds();
+        const activeTrains = krtcEngine.update(timeSeconds);
+        setKrtcTrains(activeTrains);
+      }
+    });
+
+    // 初始更新
+    const timeSeconds = timeEngineRef.current.getTimeOfDaySeconds();
+    setKrtcTrains(krtcEngine.update(timeSeconds));
+
+    return () => {
+      unsubscribe();
+      krtcTrainEngineRef.current = null;
+    };
+  }, [timeEngineReady, krtcSchedules, krtcTrackMap, krtcStationProgress]);
+
   // 更新列車標記（2D 模式時使用）
   useEffect(() => {
     if (!map.current || !mapLoaded) return;
@@ -1115,6 +1377,111 @@ function App() {
     }
   }, [mapLoaded, filteredThsrTrains, use3DMode, handleSelectTrain, selectedTrainId]);
 
+  // 更新高雄捷運列車標記（2D 模式時使用）
+  useEffect(() => {
+    if (!map.current || !mapLoaded) return;
+
+    // 3D 模式時清除所有 2D 標記並跳過
+    if (use3DMode) {
+      for (const marker of krtcTrainMarkers.current.values()) {
+        marker.remove();
+      }
+      krtcTrainMarkers.current.clear();
+      return;
+    }
+
+    const activeTrainIds = new Set(filteredKrtcTrains.map((t) => t.trainId));
+    for (const [trainId, marker] of krtcTrainMarkers.current) {
+      if (!activeTrainIds.has(trainId)) {
+        marker.remove();
+        krtcTrainMarkers.current.delete(trainId);
+      }
+    }
+
+    for (const train of filteredKrtcTrains) {
+      let marker = krtcTrainMarkers.current.get(train.trainId);
+      const isStopped = train.status === 'stopped';
+      const isSelected = train.trainId === selectedTrainId;
+      const lineId = getKrtcLineId(train.trackId);
+      const direction = getKrtcDirection(train.trackId);
+      const baseColor = KRTC_TRAIN_COLORS[`${lineId}_${direction}`] || KRTC_TRACK_COLORS[lineId] || '#f8981d';
+
+      if (!marker) {
+        const el = document.createElement('div');
+        el.className = 'krtc-train-marker';
+        el.dataset.trainId = train.trainId;
+
+        // 點擊事件：選取列車
+        el.addEventListener('click', (e) => {
+          e.stopPropagation();
+          const trainId = el.dataset.trainId;
+          if (trainId) {
+            handleSelectTrain(trainId);
+          }
+        });
+
+        marker = new mapboxgl.Marker({
+          element: el,
+          anchor: 'center',
+        })
+          .setLngLat(train.position)
+          .addTo(map.current!);
+
+        krtcTrainMarkers.current.set(train.trainId, marker);
+      }
+
+      // 更新位置
+      marker.setLngLat(train.position);
+
+      // 更新樣式（含選中狀態）
+      const el = marker.getElement();
+      const newState = `${isSelected}-${isStopped}-${baseColor}`;
+      const prevState = el.dataset.trainState;
+
+      if (prevState !== newState) {
+        el.dataset.trainState = newState;
+
+        const baseStyles = `
+          pointer-events: auto;
+          cursor: pointer;
+          border-radius: 50%;
+          transition: width 0.3s ease, height 0.3s ease, box-shadow 0.3s ease;
+        `;
+
+        if (isSelected) {
+          // 選中狀態：顯示粗白框
+          el.style.cssText = `
+            ${baseStyles}
+            width: 18px;
+            height: 18px;
+            background-color: ${baseColor};
+            border: 4px solid #ffffff;
+            box-shadow: 0 0 16px rgba(255,255,255,0.8), 0 0 24px ${baseColor};
+            z-index: 10;
+          `;
+        } else if (isStopped) {
+          el.style.cssText = `
+            ${baseStyles}
+            width: 14px;
+            height: 14px;
+            background-color: ${baseColor};
+            border: 2px solid #ffffff;
+            box-shadow: 0 0 8px ${baseColor}, 0 0 12px rgba(255,255,255,0.5);
+          `;
+        } else {
+          el.style.cssText = `
+            ${baseStyles}
+            width: 12px;
+            height: 12px;
+            background-color: ${baseColor};
+            border: 2px solid #ffffff;
+            box-shadow: 0 0 4px rgba(0,0,0,0.5);
+          `;
+        }
+      }
+    }
+  }, [mapLoaded, filteredKrtcTrains, use3DMode, handleSelectTrain, selectedTrainId]);
+
   // 控制處理器
   const handleTogglePlay = useCallback(() => {
     if (!timeEngineRef.current) return;
@@ -1140,6 +1507,11 @@ function App() {
     if (thsrTrainEngineRef.current) {
       const activeThsrTrains = thsrTrainEngineRef.current.update(seconds);
       setThsrTrains(activeThsrTrains);
+    }
+
+    if (krtcTrainEngineRef.current) {
+      const activeKrtcTrains = krtcTrainEngineRef.current.update(seconds);
+      setKrtcTrains(activeKrtcTrains);
     }
   }, []);
 
@@ -1634,6 +2006,8 @@ function App() {
         onMKStateChange={handleMKStateChange}
         thsrState={thsrState}
         onThsrStateChange={handleThsrStateChange}
+        krtcState={krtcState}
+        onKrtcStateChange={handleKrtcStateChange}
         visualTheme={visualTheme}
       />
 

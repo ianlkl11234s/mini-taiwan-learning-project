@@ -111,37 +111,52 @@ def get_origin_departures(
     timetable_data: List[Dict],
     line_id: str,
     direction: int,
-    origin_station: str
+    origin_station: str,
+    service_tag: str = '平日'
 ) -> List[Dict]:
     """
     取得起點站的所有發車時間
+
+    參數：
+        service_tag: 營運日類型，可選值：
+            - '平日': 週一~四 (預設)
+            - '假日前一天': 週五
+            - '假日': 週六
+            - '周日': 週日
 
     返回：[{ 'sequence': 1, 'departure_time': '06:00' }, ...]
     """
     departures = []
 
     for entry in timetable_data:
-        if (entry.get('LineID') == line_id and
-            entry.get('Direction') == direction and
-            entry.get('StationID') == origin_station):
+        # 檢查線路、方向、站點
+        if (entry.get('LineID') != line_id or
+            entry.get('Direction') != direction or
+            entry.get('StationID') != origin_station):
+            continue
 
-            for timetable in entry.get('Timetables', []):
-                departures.append({
-                    'sequence': timetable['Sequence'],
-                    'departure_time': timetable['DepartureTime']
-                })
+        # 只取指定營運日的資料
+        entry_service_tag = entry.get('ServiceDay', {}).get('ServiceTag', '')
+        if entry_service_tag != service_tag:
+            continue
 
-    # 去重（多個 ServiceDay 可能有重複）
+        for timetable in entry.get('Timetables', []):
+            departures.append({
+                'sequence': timetable['Sequence'],
+                'departure_time': timetable['DepartureTime']
+            })
+
+    # 按發車時間排序（不再用序號，直接用時間）
+    departures.sort(key=lambda x: x['departure_time'])
+
+    # 去重（同一營運日應該不會有重複，但保險起見）
     seen = set()
     unique_departures = []
     for d in departures:
-        key = (d['sequence'], d['departure_time'])
-        if key not in seen:
-            seen.add(key)
+        if d['departure_time'] not in seen:
+            seen.add(d['departure_time'])
             unique_departures.append(d)
 
-    # 按序號排序
-    unique_departures.sort(key=lambda x: x['sequence'])
     return unique_departures
 
 
@@ -228,6 +243,10 @@ def main():
     print("高雄捷運時刻表建立腳本")
     print("=" * 50)
 
+    # 營運日設定
+    # 可選: '平日' (週一~四), '假日前一天' (週五), '假日' (週六), '周日'
+    SERVICE_TAG = '平日'
+
     # 確保輸出目錄存在
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
@@ -238,6 +257,7 @@ def main():
 
     print(f"  時刻表筆數: {len(timetable_data)}")
     print(f"  站間時間筆數: {len(s2s_data)}")
+    print(f"  使用營運日: {SERVICE_TAG}")
 
     # 建立站間時間映射
     travel_map = build_travel_time_map(s2s_data)
@@ -255,9 +275,10 @@ def main():
 
             print(f"\n  {track_id} ({dir_config['name']})...")
 
-            # 取得起點站發車時間
+            # 取得起點站發車時間（只取指定營運日）
             origin_departures = get_origin_departures(
-                timetable_data, line_id, direction, dir_config['origin']
+                timetable_data, line_id, direction, dir_config['origin'],
+                service_tag=SERVICE_TAG
             )
             print(f"    發車班次: {len(origin_departures)}")
 
@@ -292,7 +313,8 @@ def main():
                 'stations': dir_config['stations'],
                 'travel_time_minutes': total_minutes,
                 'dwell_time_seconds': 30,
-                'is_weekday': True,
+                'service_tag': SERVICE_TAG,
+                'is_weekday': SERVICE_TAG == '平日',
                 'departure_count': len(departures),
                 'departures': departures
             }

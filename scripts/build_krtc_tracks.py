@@ -45,47 +45,18 @@ LINES_CONFIG = {
 }
 
 
-def parse_wkt_multilinestring(wkt: str) -> List[List[float]]:
+def parse_single_linestring(coords_str: str) -> List[List[float]]:
     """
-    解析 WKT MULTILINESTRING 為座標陣列
+    解析單一 LineString 座標字串
 
-    輸入: MULTILINESTRING((lon lat, lon lat, ...))
+    輸入: "lon lat, lon lat, ..."
     輸出: [[lon, lat], [lon, lat], ...]
     """
-    # 移除 MULTILINESTRING 和外層括號
-    wkt = wkt.strip()
-
-    # 提取內部座標字串
-    if wkt.upper().startswith('MULTILINESTRING'):
-        # 找到最內層的座標部分
-        # MULTILINESTRING((coords)) -> coords
-        inner_start = wkt.find('((')
-        inner_end = wkt.rfind('))')
-        if inner_start != -1 and inner_end != -1:
-            coords_str = wkt[inner_start + 2:inner_end]
-        else:
-            raise ValueError(f"無法解析 MULTILINESTRING: {wkt[:100]}...")
-    elif wkt.upper().startswith('LINESTRING'):
-        inner_start = wkt.find('(')
-        inner_end = wkt.rfind(')')
-        if inner_start != -1 and inner_end != -1:
-            coords_str = wkt[inner_start + 1:inner_end]
-        else:
-            raise ValueError(f"無法解析 LINESTRING: {wkt[:100]}...")
-    else:
-        raise ValueError(f"無法解析 WKT: {wkt[:100]}...")
-
-    # 處理多個 LineString 的情況 (用 ),( 分隔)
-    # 只取第一個 LineString
-    if '),(' in coords_str:
-        coords_str = coords_str.split('),(')[0]
-
     coordinates = []
+    coords_str = coords_str.strip().replace('(', '').replace(')', '')
 
     for point in coords_str.split(','):
         point = point.strip()
-        # 移除可能的括號
-        point = point.replace('(', '').replace(')', '')
         parts = point.split()
         if len(parts) >= 2:
             lon = float(parts[0])
@@ -95,11 +66,169 @@ def parse_wkt_multilinestring(wkt: str) -> List[List[float]]:
     return coordinates
 
 
+def parse_wkt_to_segments(wkt: str) -> List[List[List[float]]]:
+    """
+    解析 WKT MULTILINESTRING 為多個線段
+
+    輸入: MULTILINESTRING((lon lat, lon lat, ...),(lon lat, ...))
+    輸出: [[[lon, lat], ...], [[lon, lat], ...], ...]  (每個子陣列是一個線段)
+    """
+    wkt = wkt.strip()
+    segments = []
+
+    if wkt.upper().startswith('MULTILINESTRING'):
+        inner_start = wkt.find('((')
+        inner_end = wkt.rfind('))')
+        if inner_start != -1 and inner_end != -1:
+            coords_str = wkt[inner_start + 2:inner_end]
+        else:
+            raise ValueError(f"無法解析 MULTILINESTRING: {wkt[:100]}...")
+
+        # 分割各線段
+        for segment_str in coords_str.split('),('):
+            segment = parse_single_linestring(segment_str)
+            if segment:
+                segments.append(segment)
+
+    elif wkt.upper().startswith('LINESTRING'):
+        inner_start = wkt.find('(')
+        inner_end = wkt.rfind(')')
+        if inner_start != -1 and inner_end != -1:
+            coords_str = wkt[inner_start + 1:inner_end]
+            segment = parse_single_linestring(coords_str)
+            if segment:
+                segments.append(segment)
+        else:
+            raise ValueError(f"無法解析 LINESTRING: {wkt[:100]}...")
+    else:
+        raise ValueError(f"無法解析 WKT: {wkt[:100]}...")
+
+    return segments
+
+
 def euclidean(p1: List[float], p2: List[float]) -> float:
     """計算 Euclidean 距離"""
     dx = p2[0] - p1[0]
     dy = p2[1] - p1[1]
     return math.sqrt(dx * dx + dy * dy)
+
+
+def connect_segments(segments: List[List[List[float]]], tolerance: float = 0.001) -> List[List[float]]:
+    """
+    將多個不連續的線段按空間順序連接成一條連續的線
+
+    使用貪婪演算法：從任意一個端點開始，不斷找到最近的下一個線段端點來連接
+
+    參數:
+        segments: 線段列表
+        tolerance: 端點匹配容差 (經緯度)
+
+    輸出:
+        連接後的座標陣列
+    """
+    if not segments:
+        return []
+
+    if len(segments) == 1:
+        return segments[0]
+
+    # 複製線段，避免修改原始資料
+    remaining = [seg[:] for seg in segments]
+
+    # 從第一個線段開始
+    result = remaining.pop(0)
+
+    while remaining:
+        # 取得當前路徑的起點和終點
+        path_start = result[0]
+        path_end = result[-1]
+
+        best_match = None
+        best_dist = float('inf')
+        best_idx = -1
+        best_reverse = False
+        best_at_start = False
+
+        # 嘗試找到最接近的線段端點
+        for i, seg in enumerate(remaining):
+            seg_start = seg[0]
+            seg_end = seg[-1]
+
+            # 情況 1: 線段起點接到路徑終點
+            dist = euclidean(path_end, seg_start)
+            if dist < best_dist:
+                best_dist = dist
+                best_idx = i
+                best_reverse = False
+                best_at_start = False
+
+            # 情況 2: 線段終點接到路徑終點 (需要反轉線段)
+            dist = euclidean(path_end, seg_end)
+            if dist < best_dist:
+                best_dist = dist
+                best_idx = i
+                best_reverse = True
+                best_at_start = False
+
+            # 情況 3: 線段終點接到路徑起點 (接在前面)
+            dist = euclidean(path_start, seg_end)
+            if dist < best_dist:
+                best_dist = dist
+                best_idx = i
+                best_reverse = False
+                best_at_start = True
+
+            # 情況 4: 線段起點接到路徑起點 (接在前面，需要反轉線段)
+            dist = euclidean(path_start, seg_start)
+            if dist < best_dist:
+                best_dist = dist
+                best_idx = i
+                best_reverse = True
+                best_at_start = True
+
+        if best_idx == -1:
+            print(f"  ⚠️ 警告: 無法找到匹配的線段，剩餘 {len(remaining)} 個線段未連接")
+            break
+
+        # 取出最佳匹配的線段
+        best_seg = remaining.pop(best_idx)
+
+        # 根據需要反轉
+        if best_reverse:
+            best_seg = list(reversed(best_seg))
+
+        # 連接到路徑
+        if best_at_start:
+            # 接到路徑前面，避免重複端點
+            if euclidean(best_seg[-1], result[0]) < tolerance:
+                result = best_seg[:-1] + result
+            else:
+                result = best_seg + result
+        else:
+            # 接到路徑後面，避免重複端點
+            if euclidean(result[-1], best_seg[0]) < tolerance:
+                result = result + best_seg[1:]
+            else:
+                result = result + best_seg
+
+    return result
+
+
+def parse_wkt_multilinestring(wkt: str) -> List[List[float]]:
+    """
+    解析 WKT MULTILINESTRING 為座標陣列
+
+    輸入: MULTILINESTRING((lon lat, lon lat, ...),(lon lat, ...))
+    輸出: [[lon, lat], [lon, lat], ...] (按空間順序連接所有線段)
+    """
+    segments = parse_wkt_to_segments(wkt)
+    print(f"  解析到 {len(segments)} 個線段")
+
+    # 連接所有線段
+    connected = connect_segments(segments)
+    print(f"  連接後總點數: {len(connected)}")
+
+    return connected
 
 
 def point_to_segment_distance(
@@ -205,13 +334,15 @@ def calibrate_track(
     insert_info.sort(key=lambda x: x['segment_idx'])
 
     # 第二階段：依序插入
+    # 關鍵：插入車站實際座標，而非投影點座標
+    # 這確保軌道「經過」車站標記點，實現對齊
     offset = 0
     for info in insert_info:
         station_id = info['station_id']
-        proj_coord = info['proj_coord']
+        station_coord = info['station_coord']  # 使用車站座標而非投影點
         seg_idx = info['segment_idx'] + offset
 
-        coords.insert(seg_idx + 1, proj_coord)
+        coords.insert(seg_idx + 1, station_coord)
         station_indices[station_id] = seg_idx + 1
         offset += 1
 

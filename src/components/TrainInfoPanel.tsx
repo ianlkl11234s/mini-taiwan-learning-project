@@ -1,12 +1,14 @@
 import { useState } from 'react';
 import type { Train } from '../engines/TrainEngine';
 import type { ThsrTrain } from '../engines/ThsrTrainEngine';
+import type { KrtcTrain } from '../engines/KrtcTrainEngine';
 import { getLineName, getLineColor } from '../constants/lineInfo';
 import { getThsrLineName, getThsrLineColor } from '../constants/thsrInfo';
+import { getKrtcLineName, getKrtcLineColor } from '../constants/krtcInfo';
 import type { VisualTheme } from './ThemeToggle';
 
 interface TrainInfoPanelProps {
-  train: Train | ThsrTrain;
+  train: Train | ThsrTrain | KrtcTrain;
   stationNames: Map<string, string>;
   onClose: () => void;
   visualTheme?: VisualTheme;
@@ -15,12 +17,21 @@ interface TrainInfoPanelProps {
 export function TrainInfoPanel({ train, stationNames, onClose, visualTheme = 'dark' }: TrainInfoPanelProps) {
   const [collapsed, setCollapsed] = useState(false);
 
-  // 判斷是否為高鐵列車
+  // 判斷列車類型
   const isThsr = train.trackId.startsWith('THSR');
+  const isKrtc = train.trackId.startsWith('KRTC');
 
   // 根據類型取得線路資訊
-  const lineColor = isThsr ? getThsrLineColor(train.trackId) : getLineColor(train.trackId);
-  const lineName = isThsr ? getThsrLineName(train.trackId) : getLineName(train.trackId);
+  const lineColor = isThsr
+    ? getThsrLineColor(train.trackId)
+    : isKrtc
+    ? getKrtcLineColor(train.trackId)
+    : getLineColor(train.trackId);
+  const lineName = isThsr
+    ? getThsrLineName(train.trackId)
+    : isKrtc
+    ? getKrtcLineName(train.trackId)
+    : getLineName(train.trackId);
 
   // 主題顏色
   const isDark = visualTheme === 'dark';

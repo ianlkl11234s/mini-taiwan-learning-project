@@ -27,7 +27,7 @@ import { TRACK_COLORS, TRAIN_COLORS, getTrainColor, getLineIdFromTrackId } from 
 import { THSR_TRACK_COLOR, THSR_TRAIN_COLORS, getThsrDirection } from './constants/thsrInfo';
 import { KRTC_TRACK_COLORS, KRTC_TRAIN_COLORS, getKrtcLineId, getKrtcDirection } from './constants/krtcInfo';
 import { KLRT_TRACK_COLORS, KLRT_TRAIN_COLORS, getKlrtLineId, getKlrtDirection } from './constants/klrtInfo';
-import { TMRT_TRACK_COLORS, getTmrtLineId } from './constants/tmrtInfo';
+import { TMRT_TRACK_COLORS, TMRT_TRAIN_COLORS, getTmrtLineId, getTmrtDirection } from './constants/tmrtInfo';
 import { CitySelector, type CityId, CITIES } from './components/CitySelector';
 
 // 光線預設類型（用於 standard 樣式）
@@ -114,7 +114,6 @@ function App() {
   const krtcTrainMarkers = useRef<Map<string, mapboxgl.Marker>>(new Map());
   const klrtTrainMarkers = useRef<Map<string, mapboxgl.Marker>>(new Map());
   const tmrtTrainMarkers = useRef<Map<string, mapboxgl.Marker>>(new Map());
-  void tmrtTrainMarkers; // 預留給 2D 模式使用
 
   // 時間引擎
   const timeEngineRef = useRef<TimeEngine | null>(null);
@@ -2127,6 +2126,111 @@ function App() {
     }
   }, [mapLoaded, filteredKlrtTrains, use3DMode, handleSelectTrain, selectedTrainId]);
 
+  // 更新台中捷運列車標記（2D 模式時使用）
+  useEffect(() => {
+    if (!map.current || !mapLoaded) return;
+
+    // 3D 模式時清除所有 2D 標記並跳過
+    if (use3DMode) {
+      for (const marker of tmrtTrainMarkers.current.values()) {
+        marker.remove();
+      }
+      tmrtTrainMarkers.current.clear();
+      return;
+    }
+
+    const activeTrainIds = new Set(filteredTmrtTrains.map((t) => t.trainId));
+    for (const [trainId, marker] of tmrtTrainMarkers.current) {
+      if (!activeTrainIds.has(trainId)) {
+        marker.remove();
+        tmrtTrainMarkers.current.delete(trainId);
+      }
+    }
+
+    for (const train of filteredTmrtTrains) {
+      let marker = tmrtTrainMarkers.current.get(train.trainId);
+      const isStopped = train.status === 'stopped';
+      const isSelected = train.trainId === selectedTrainId;
+      const lineId = getTmrtLineId(train.trackId);
+      const direction = getTmrtDirection(train.trackId);
+      const baseColor = TMRT_TRAIN_COLORS[`${lineId}_${direction}`] || TMRT_TRACK_COLORS[lineId] || '#0cab2c';
+
+      if (!marker) {
+        const el = document.createElement('div');
+        el.className = 'tmrt-train-marker';
+        el.dataset.trainId = train.trainId;
+
+        // 點擊事件：選取列車
+        el.addEventListener('click', (e) => {
+          e.stopPropagation();
+          const trainId = el.dataset.trainId;
+          if (trainId) {
+            handleSelectTrain(trainId);
+          }
+        });
+
+        marker = new mapboxgl.Marker({
+          element: el,
+          anchor: 'center',
+        })
+          .setLngLat(train.position)
+          .addTo(map.current!);
+
+        tmrtTrainMarkers.current.set(train.trainId, marker);
+      }
+
+      // 更新位置
+      marker.setLngLat(train.position);
+
+      // 更新樣式（含選中狀態）
+      const el = marker.getElement();
+      const newState = `${isSelected}-${isStopped}-${baseColor}`;
+      const prevState = el.dataset.trainState;
+
+      if (prevState !== newState) {
+        el.dataset.trainState = newState;
+
+        const baseStyles = `
+          pointer-events: auto;
+          cursor: pointer;
+          border-radius: 50%;
+          transition: width 0.3s ease, height 0.3s ease, box-shadow 0.3s ease;
+        `;
+
+        if (isSelected) {
+          // 選中狀態：顯示粗白框
+          el.style.cssText = `
+            ${baseStyles}
+            width: 18px;
+            height: 18px;
+            background-color: ${baseColor};
+            border: 4px solid #ffffff;
+            box-shadow: 0 0 16px rgba(255,255,255,0.8), 0 0 24px ${baseColor};
+            z-index: 10;
+          `;
+        } else if (isStopped) {
+          el.style.cssText = `
+            ${baseStyles}
+            width: 14px;
+            height: 14px;
+            background-color: ${baseColor};
+            border: 2px solid #ffffff;
+            box-shadow: 0 0 8px ${baseColor}, 0 0 12px rgba(255,255,255,0.5);
+          `;
+        } else {
+          el.style.cssText = `
+            ${baseStyles}
+            width: 12px;
+            height: 12px;
+            background-color: ${baseColor};
+            border: 2px solid #ffffff;
+            box-shadow: 0 0 4px rgba(0,0,0,0.5);
+          `;
+        }
+      }
+    }
+  }, [mapLoaded, filteredTmrtTrains, use3DMode, handleSelectTrain, selectedTrainId]);
+
   // 控制處理器
   const handleTogglePlay = useCallback(() => {
     if (!timeEngineRef.current) return;
@@ -2162,6 +2266,11 @@ function App() {
     if (klrtTrainEngineRef.current) {
       const activeKlrtTrains = klrtTrainEngineRef.current.update(seconds);
       setKlrtTrains(activeKlrtTrains);
+    }
+
+    if (tmrtTrainEngineRef.current) {
+      const activeTmrtTrains = tmrtTrainEngineRef.current.update(seconds);
+      setTmrtTrains(activeTmrtTrains);
     }
   }, []);
 

@@ -11,8 +11,8 @@ const CITIES = {
   TXG: {
     label: 'TXG',
     name: '台中',
-    center: [120.6847, 24.1472] as [number, number],
-    zoom: 12,
+    center: [120.66, 24.13] as [number, number],
+    zoom: 11.75,
   },
   KHH: {
     label: 'KHH',

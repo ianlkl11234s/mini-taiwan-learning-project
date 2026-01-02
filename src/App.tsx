@@ -20,6 +20,7 @@ import { ThemeToggle, type MapTheme, type VisualTheme, getVisualTheme } from './
 import { TRACK_COLORS, TRAIN_COLORS, getTrainColor, getLineIdFromTrackId } from './constants/lineInfo';
 import { THSR_TRACK_COLOR, THSR_TRAIN_COLORS, getThsrDirection } from './constants/thsrInfo';
 import { KRTC_TRACK_COLORS, KRTC_TRAIN_COLORS, getKrtcLineId, getKrtcDirection } from './constants/krtcInfo';
+import { CitySelector, type CityId, CITIES } from './components/CitySelector';
 
 // 光線預設類型（用於 standard 樣式）
 type LightPreset = 'dawn' | 'day' | 'dusk' | 'night';
@@ -143,6 +144,9 @@ function App() {
   // 高雄捷運三段式狀態：full | tracks-only | hidden
   const [krtcState, setKrtcState] = useState<KrtcFilterState>('full');
 
+  // 城市選擇狀態
+  const [selectedCity, setSelectedCity] = useState<CityId | null>('TPE');
+
   // 切換路線可見性
   const handleToggleLine = useCallback((lineId: string) => {
     setVisibleLines(prev => {
@@ -183,6 +187,27 @@ function App() {
   // 切換 KRTC 狀態
   const handleKrtcStateChange = useCallback((state: KrtcFilterState) => {
     setKrtcState(state);
+  }, []);
+
+  // 城市選擇處理
+  const handleCitySelect = useCallback((center: [number, number], zoom: number) => {
+    if (!map.current) return;
+
+    // 找出選擇的城市 ID
+    const cityEntry = Object.entries(CITIES).find(
+      ([, config]) => config.center[0] === center[0] && config.center[1] === center[1]
+    );
+    if (cityEntry) {
+      setSelectedCity(cityEntry[0] as CityId);
+    }
+
+    // 飛往該城市
+    map.current.flyTo({
+      center: center,
+      zoom: zoom,
+      duration: 1500,
+      essential: true,
+    });
   }, []);
 
   // 根據可見路線過濾列車 (MRT)
@@ -1995,6 +2020,13 @@ function App() {
           right: 0,
           bottom: 0,
         }}
+      />
+
+      {/* 城市選擇器 - 路線篩選器上方 */}
+      <CitySelector
+        onCitySelect={handleCitySelect}
+        selectedCity={selectedCity}
+        visualTheme={visualTheme}
       />
 
       {/* 路線篩選器 - 控制面板左上方漂浮 */}

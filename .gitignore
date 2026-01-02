@@ -48,3 +48,6 @@ tmp/
 temp/
 *.tmp
 tools/data_collector/output/
+scripts/backup_klrt/
+scripts/backup_krtc/
+scripts/backup_tmrt/

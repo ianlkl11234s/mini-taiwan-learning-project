@@ -6,12 +6,14 @@
  * - THSR: 台灣高鐵
  * - TRA: 台鐵（未來擴充）
  * - LRT: 輕軌系統（安坑、淡海）
+ * - KRTC: 高雄捷運
+ * - TMRT: 台中捷運
  */
 
 /**
  * 運具模式
  */
-export type TransportMode = 'MRT' | 'THSR' | 'TRA' | 'LRT';
+export type TransportMode = 'MRT' | 'THSR' | 'TRA' | 'LRT' | 'KRTC' | 'TMRT';
 
 /**
  * 運具設定
@@ -81,6 +83,22 @@ export const TRANSPORT_CONFIGS: Record<TransportMode, TransportConfig> = {
     enableFollow: true,
     defaultVisible: true,
   },
+  KRTC: {
+    id: 'KRTC',
+    name: '高雄捷運',
+    dataPath: '/data-krtc',
+    enable3D: true,
+    enableFollow: true,
+    defaultVisible: true,
+  },
+  TMRT: {
+    id: 'TMRT',
+    name: '台中捷運',
+    dataPath: '/data-tmrt',
+    enable3D: true,
+    enableFollow: true,
+    defaultVisible: true,
+  },
 };
 
 /**
@@ -89,6 +107,9 @@ export const TRANSPORT_CONFIGS: Record<TransportMode, TransportConfig> = {
 export function getTransportMode(trackId: string): TransportMode {
   if (trackId.startsWith('THSR')) return 'THSR';
   if (trackId.startsWith('TRA')) return 'TRA';
+  if (trackId.startsWith('KRTC')) return 'KRTC';
+  if (trackId.startsWith('KLRT')) return 'KRTC'; // 高雄輕軌歸屬於 KRTC
+  if (trackId.startsWith('TMRT')) return 'TMRT';
   if (trackId.startsWith('K') || trackId.startsWith('V')) return 'LRT';
   return 'MRT';
 }

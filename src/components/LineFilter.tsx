@@ -31,6 +31,11 @@ const KHH_LINES = {
   C: { color: '#99cc00', label: 'C', name: '環狀線 (輕軌)' },
 };
 
+// TXG (台中捷運) 路線配置
+const TXG_LINES = {
+  G: { color: '#0cab2c', label: 'G', name: '綠線' },
+};
+
 // MK 三段式狀態
 export type MKFilterState = 'full' | 'tracks-only' | 'hidden';
 
@@ -49,10 +54,14 @@ interface LineFilterProps {
   visibleKrtcLines: Set<string>;
   onToggleKrtcLine: (lineId: string) => void;
   onToggleAllKrtc: (visible: boolean) => void;
+  // TMRT 個別路線控制
+  visibleTmrtLines: Set<string>;
+  onToggleTmrtLine: (lineId: string) => void;
+  onToggleAllTmrt: (visible: boolean) => void;
   visualTheme?: VisualTheme;
 }
 
-type ExpandedCategory = 'mrt' | 'cable' | 'hsr' | 'krtc' | null;
+type ExpandedCategory = 'mrt' | 'cable' | 'hsr' | 'krtc' | 'tmrt' | null;
 
 export function LineFilter({
   visibleLines,
@@ -65,6 +74,9 @@ export function LineFilter({
   visibleKrtcLines,
   onToggleKrtcLine,
   onToggleAllKrtc,
+  visibleTmrtLines,
+  onToggleTmrtLine,
+  onToggleAllTmrt,
   visualTheme = 'dark',
 }: LineFilterProps) {
   const [expanded, setExpanded] = useState<ExpandedCategory>(null);
@@ -80,6 +92,12 @@ export function LineFilter({
   const visibleKrtcCount = krtcLineIds.filter(id => visibleKrtcLines.has(id)).length;
   const allKrtcVisible = visibleKrtcCount === krtcLineIds.length;
   const noneKrtcVisible = visibleKrtcCount === 0;
+
+  // 計算 TXG 路線的顯示狀態
+  const tmrtLineIds = Object.keys(TXG_LINES);
+  const visibleTmrtCount = tmrtLineIds.filter(id => visibleTmrtLines.has(id)).length;
+  const allTmrtVisible = visibleTmrtCount === tmrtLineIds.length;
+  const noneTmrtVisible = visibleTmrtCount === 0;
 
   // 主題顏色
   const isDark = visualTheme === 'dark';
@@ -376,6 +394,105 @@ export function LineFilter({
             <button
               key={lineId}
               onClick={() => onToggleKrtcLine(lineId)}
+              title={config.name}
+              style={{
+                width: 40,
+                height: 40,
+                borderRadius: '50%',
+                border: `2px solid ${colors.borderActive}`,
+                background: isVisible ? config.color : colors.disabledBg,
+                color: colors.textActive,
+                fontSize: 12,
+                fontWeight: 700,
+                cursor: 'pointer',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                opacity: isVisible ? 1 : 0.4,
+                transition: 'all 0.2s ease',
+                boxShadow: isVisible ? `0 0 8px ${config.color}` : 'none',
+              }}
+            >
+              {config.label}
+            </button>
+          );
+        })}
+      </div>
+
+      {/* TXG MRT 分類按鈕 */}
+      <button
+        onClick={() => handleCategoryClick('tmrt')}
+        style={{
+          padding: '8px 14px',
+          borderRadius: 20,
+          border: expanded === 'tmrt' ? `2px solid ${colors.borderActive}` : `2px solid ${colors.borderInactive}`,
+          background: expanded === 'tmrt' ? colors.bgActive : colors.bgInactive,
+          color: expanded === 'tmrt' ? colors.textActive : colors.textInactive,
+          fontSize: 13,
+          fontWeight: 600,
+          cursor: 'pointer',
+          display: 'flex',
+          alignItems: 'center',
+          gap: 6,
+          transition: 'all 0.2s ease',
+          backdropFilter: 'blur(8px)',
+        }}
+      >
+        <span>TXG MRT</span>
+        <span style={{
+          fontSize: 10,
+          transition: 'transform 0.3s ease',
+          transform: expanded === 'tmrt' ? 'rotate(90deg)' : 'rotate(0deg)',
+        }}>
+          ▶
+        </span>
+      </button>
+
+      {/* TXG MRT 路線按鈕列表 */}
+      <div
+        style={{
+          display: 'flex',
+          gap: 8,
+          maxWidth: expanded === 'tmrt' ? 150 : 0,
+          overflow: 'hidden',
+          transition: 'max-width 0.3s ease-out, opacity 0.3s ease-out',
+          opacity: expanded === 'tmrt' ? 1 : 0,
+        }}
+      >
+        {/* All 切換按鈕 */}
+        <button
+          onClick={() => onToggleAllTmrt(!allTmrtVisible)}
+          title={allTmrtVisible ? '隱藏全部台中捷運' : '顯示全部台中捷運'}
+          style={{
+            width: 40,
+            height: 40,
+            borderRadius: '50%',
+            border: `2px solid ${colors.borderActive}`,
+            background: allTmrtVisible
+              ? '#0cab2c'
+              : noneTmrtVisible
+              ? colors.disabledBg
+              : 'rgba(12, 171, 44, 0.5)',
+            color: colors.textActive,
+            fontSize: 10,
+            fontWeight: 700,
+            cursor: 'pointer',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            opacity: noneTmrtVisible ? 0.4 : 1,
+            transition: 'all 0.2s ease',
+            boxShadow: allTmrtVisible ? '0 0 8px rgba(12, 171, 44, 0.5)' : 'none',
+          }}
+        >
+          All
+        </button>
+        {Object.entries(TXG_LINES).map(([lineId, config]) => {
+          const isVisible = visibleTmrtLines.has(lineId);
+          return (
+            <button
+              key={lineId}
+              onClick={() => onToggleTmrtLine(lineId)}
               title={config.name}
               style={{
                 width: 40,

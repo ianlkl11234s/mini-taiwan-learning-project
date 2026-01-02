@@ -5,11 +5,13 @@ import { useData } from './hooks/useData';
 import { useThsrData } from './hooks/useThsrData';
 import { useKrtcData } from './hooks/useKrtcData';
 import { useKlrtData } from './hooks/useKlrtData';
+import { useTmrtData } from './hooks/useTmrtData';
 import { TimeEngine } from './engines/TimeEngine';
 import { TrainEngine, type Train } from './engines/TrainEngine';
 import { ThsrTrainEngine, type ThsrTrain } from './engines/ThsrTrainEngine';
 import { KrtcTrainEngine, type KrtcTrain } from './engines/KrtcTrainEngine';
 import { KlrtTrainEngine, type KlrtTrain } from './engines/KlrtTrainEngine';
+import { TmrtTrainEngine, type TmrtTrain } from './engines/TmrtTrainEngine';
 import { TimeControl } from './components/TimeControl';
 import { LineFilter, type MKFilterState, type ThsrFilterState } from './components/LineFilter';
 import { TrainHistogram } from './components/TrainHistogram';
@@ -19,11 +21,13 @@ import { Train3DLayer } from './layers/Train3DLayer';
 import { Thsr3DLayer } from './layers/Thsr3DLayer';
 import { Krtc3DLayer } from './layers/Krtc3DLayer';
 import { Klrt3DLayer } from './layers/Klrt3DLayer';
+import { Tmrt3DLayer } from './layers/Tmrt3DLayer';
 import { ThemeToggle, type MapTheme, type VisualTheme, getVisualTheme } from './components/ThemeToggle';
 import { TRACK_COLORS, TRAIN_COLORS, getTrainColor, getLineIdFromTrackId } from './constants/lineInfo';
 import { THSR_TRACK_COLOR, THSR_TRAIN_COLORS, getThsrDirection } from './constants/thsrInfo';
 import { KRTC_TRACK_COLORS, KRTC_TRAIN_COLORS, getKrtcLineId, getKrtcDirection } from './constants/krtcInfo';
 import { KLRT_TRACK_COLORS, KLRT_TRAIN_COLORS, getKlrtLineId, getKlrtDirection } from './constants/klrtInfo';
+import { TMRT_TRACK_COLORS, getTmrtLineId } from './constants/tmrtInfo';
 import { CitySelector, type CityId, CITIES } from './components/CitySelector';
 
 // 光線預設類型（用於 standard 樣式）
@@ -86,6 +90,18 @@ function App() {
   } = useKlrtData();
   void _klrtLoading; void _klrtError; // 抑制未使用變數警告
 
+  // TMRT 資料載入（TMRT 載入錯誤不阻止其他顯示）
+  const {
+    tracks: tmrtTracks,
+    stations: tmrtStations,
+    schedules: tmrtSchedules,
+    trackMap: tmrtTrackMap,
+    stationProgress: tmrtStationProgress,
+    loading: _tmrtLoading,
+    error: _tmrtError,
+  } = useTmrtData();
+  void _tmrtLoading; void _tmrtError; // 抑制未使用變數警告
+
   // 預計算直方圖資料
   const histogramData = useTrainCountHistogram(schedules);
 
@@ -97,6 +113,8 @@ function App() {
   const thsrTrainMarkers = useRef<Map<string, mapboxgl.Marker>>(new Map());
   const krtcTrainMarkers = useRef<Map<string, mapboxgl.Marker>>(new Map());
   const klrtTrainMarkers = useRef<Map<string, mapboxgl.Marker>>(new Map());
+  const tmrtTrainMarkers = useRef<Map<string, mapboxgl.Marker>>(new Map());
+  void tmrtTrainMarkers; // 預留給 2D 模式使用
 
   // 時間引擎
   const timeEngineRef = useRef<TimeEngine | null>(null);
@@ -121,6 +139,10 @@ function App() {
   const klrtTrainEngineRef = useRef<KlrtTrainEngine | null>(null);
   const [klrtTrains, setKlrtTrains] = useState<KlrtTrain[]>([]);
 
+  // 列車引擎 (TMRT)
+  const tmrtTrainEngineRef = useRef<TmrtTrainEngine | null>(null);
+  const [tmrtTrains, setTmrtTrains] = useState<TmrtTrain[]>([]);
+
   // 圖例收合狀態（預設收合）
   const [legendCollapsed, setLegendCollapsed] = useState(true);
 
@@ -133,6 +155,7 @@ function App() {
   const thsr3DLayerRef = useRef<Thsr3DLayer | null>(null);
   const krtc3DLayerRef = useRef<Krtc3DLayer | null>(null);
   const klrt3DLayerRef = useRef<Klrt3DLayer | null>(null);
+  const tmrt3DLayerRef = useRef<Tmrt3DLayer | null>(null);
 
   // 地圖主題模式（日夜切換）- 預設使用 dark 樣式
   const [mapTheme, setMapTheme] = useState<MapTheme>('dark');
@@ -166,6 +189,11 @@ function App() {
   // 高雄捷運 + 輕軌路線可見性狀態
   const [visibleKrtcLines, setVisibleKrtcLines] = useState<Set<string>>(
     new Set(['R', 'O', 'C'])
+  );
+
+  // 台中捷運路線可見性狀態
+  const [visibleTmrtLines, setVisibleTmrtLines] = useState<Set<string>>(
+    new Set(['G'])
   );
 
   // 城市選擇狀態
@@ -235,6 +263,33 @@ function App() {
     });
   }, []);
 
+  // 切換 TMRT 路線可見性
+  const handleToggleTmrtLine = useCallback((lineId: string) => {
+    setVisibleTmrtLines(prev => {
+      const next = new Set(prev);
+      if (next.has(lineId)) {
+        next.delete(lineId);
+      } else {
+        next.add(lineId);
+      }
+      return next;
+    });
+  }, []);
+
+  // 切換全部 TXG 路線可見性
+  const handleToggleAllTmrt = useCallback((visible: boolean) => {
+    const tmrtLines = ['G'];
+    setVisibleTmrtLines(prev => {
+      const next = new Set(prev);
+      if (visible) {
+        tmrtLines.forEach(lineId => next.add(lineId));
+      } else {
+        tmrtLines.forEach(lineId => next.delete(lineId));
+      }
+      return next;
+    });
+  }, []);
+
   // 城市選擇處理
   const handleCitySelect = useCallback((center: [number, number], zoom: number) => {
     if (!map.current) return;
@@ -291,6 +346,14 @@ function App() {
     });
   }, [klrtTrains, visibleKrtcLines]);
 
+  // 根據台中捷運路線可見性過濾列車 (TMRT)
+  const filteredTmrtTrains = useMemo(() => {
+    return tmrtTrains.filter(train => {
+      const lineId = getTmrtLineId(train.trackId);
+      return visibleTmrtLines.has(lineId);
+    });
+  }, [tmrtTrains, visibleTmrtLines]);
+
   // 計算 MRT 列車數量（排除纜車）
   const mrtCount = useMemo(() => {
     return filteredTrains.filter(train => !train.trackId.startsWith('MK')).length;
@@ -344,10 +407,18 @@ function App() {
         names.set(stationId, stationName);
       }
     }
+    // TMRT 車站
+    if (tmrtStations) {
+      for (const feature of tmrtStations.features) {
+        const stationId = feature.properties.station_id;
+        const stationName = feature.properties.name_zh;
+        names.set(stationId, stationName);
+      }
+    }
     return names;
-  }, [stations, thsrStations, krtcStations, klrtStations]);
+  }, [stations, thsrStations, krtcStations, klrtStations, tmrtStations]);
 
-  // 取得選中的列車資料（同時支援 MRT、THSR、KRTC 和 KLRT）
+  // 取得選中的列車資料（同時支援 MRT、THSR、KRTC、KLRT 和 TMRT）
   const selectedTrain = useMemo(() => {
     if (!selectedTrainId) return null;
     // 先從 MRT 找
@@ -359,11 +430,14 @@ function App() {
     // 再從 KRTC 找
     const krtcTrain = filteredKrtcTrains.find(t => t.trainId === selectedTrainId);
     if (krtcTrain) return krtcTrain;
-    // 最後從 KLRT 找
+    // 再從 KLRT 找
     const klrtTrain = filteredKlrtTrains.find(t => t.trainId === selectedTrainId);
     if (klrtTrain) return klrtTrain;
+    // 最後從 TMRT 找
+    const tmrtTrain = filteredTmrtTrains.find(t => t.trainId === selectedTrainId);
+    if (tmrtTrain) return tmrtTrain;
     return null;
-  }, [selectedTrainId, filteredTrains, filteredThsrTrains, filteredKrtcTrains, filteredKlrtTrains]);
+  }, [selectedTrainId, filteredTrains, filteredThsrTrains, filteredKrtcTrains, filteredKlrtTrains, filteredTmrtTrains]);
 
 
   // 選擇列車
@@ -913,6 +987,113 @@ function App() {
     map.current.setPaintProperty('klrt-stations-label', 'text-opacity', opacity);
   }, [mapLoaded, visibleKrtcLines, styleVersion]);
 
+  // 載入台中捷運軌道圖層
+  useEffect(() => {
+    if (!map.current || !mapLoaded || !tmrtTracks) return;
+
+    if (map.current.getSource('tmrt-tracks')) {
+      if (map.current.getLayer('tmrt-tracks-line-G')) {
+        map.current.removeLayer('tmrt-tracks-line-G');
+      }
+      map.current.removeSource('tmrt-tracks');
+    }
+
+    map.current.addSource('tmrt-tracks', {
+      type: 'geojson',
+      data: tmrtTracks as GeoJSON.FeatureCollection,
+    });
+
+    // 綠線
+    map.current.addLayer({
+      id: 'tmrt-tracks-line-G',
+      type: 'line',
+      source: 'tmrt-tracks',
+      layout: {
+        'line-join': 'round',
+        'line-cap': 'round',
+      },
+      paint: {
+        'line-color': TMRT_TRACK_COLORS.G,
+        'line-width': 4,
+        'line-opacity': visibleTmrtLines.has('G') ? 0.8 : 0.0,
+        'line-emissive-strength': 1.0,
+      },
+    });
+  }, [mapLoaded, tmrtTracks, visibleTmrtLines, styleVersion]);
+
+  // 更新台中捷運軌道可見性
+  useEffect(() => {
+    if (!map.current || !mapLoaded) return;
+    if (!map.current.getLayer('tmrt-tracks-line-G')) return;
+
+    map.current.setPaintProperty('tmrt-tracks-line-G', 'line-opacity', visibleTmrtLines.has('G') ? 0.8 : 0.0);
+  }, [mapLoaded, visibleTmrtLines, styleVersion]);
+
+  // 載入台中捷運車站圖層
+  useEffect(() => {
+    if (!map.current || !mapLoaded || !tmrtStations) return;
+
+    if (map.current.getSource('tmrt-stations')) {
+      if (map.current.getLayer('tmrt-stations-circle')) {
+        map.current.removeLayer('tmrt-stations-circle');
+      }
+      if (map.current.getLayer('tmrt-stations-label')) {
+        map.current.removeLayer('tmrt-stations-label');
+      }
+      map.current.removeSource('tmrt-stations');
+    }
+
+    map.current.addSource('tmrt-stations', {
+      type: 'geojson',
+      data: tmrtStations as GeoJSON.FeatureCollection,
+    });
+
+    map.current.addLayer({
+      id: 'tmrt-stations-circle',
+      type: 'circle',
+      source: 'tmrt-stations',
+      paint: {
+        'circle-radius': 5,
+        'circle-color': '#000000',
+        'circle-stroke-color': TMRT_TRACK_COLORS.G,
+        'circle-stroke-width': 2,
+        'circle-opacity': visibleTmrtLines.has('G') ? 1 : 0,
+        'circle-stroke-opacity': visibleTmrtLines.has('G') ? 1 : 0,
+        'circle-emissive-strength': 1.0,
+      },
+    });
+
+    map.current.addLayer({
+      id: 'tmrt-stations-label',
+      type: 'symbol',
+      source: 'tmrt-stations',
+      layout: {
+        'text-field': ['get', 'name_zh'],
+        'text-size': 10,
+        'text-offset': [0, 1.3],
+        'text-anchor': 'top',
+      },
+      paint: {
+        'text-color': '#ffffff',
+        'text-halo-color': '#000000',
+        'text-halo-width': 1,
+        'text-opacity': visibleTmrtLines.has('G') ? 1 : 0,
+        'text-emissive-strength': 1.0,
+      },
+    });
+  }, [mapLoaded, tmrtStations, visibleTmrtLines, styleVersion]);
+
+  // 更新台中捷運車站可見性
+  useEffect(() => {
+    if (!map.current || !mapLoaded) return;
+    if (!map.current.getLayer('tmrt-stations-circle')) return;
+
+    const opacity = visibleTmrtLines.has('G') ? 1 : 0;
+    map.current.setPaintProperty('tmrt-stations-circle', 'circle-opacity', opacity);
+    map.current.setPaintProperty('tmrt-stations-circle', 'circle-stroke-opacity', opacity);
+    map.current.setPaintProperty('tmrt-stations-label', 'text-opacity', opacity);
+  }, [mapLoaded, visibleTmrtLines, styleVersion]);
+
   // 初始化 3D 列車圖層
   useEffect(() => {
     if (!map.current || !mapLoaded || !use3DMode) return;
@@ -1089,6 +1270,54 @@ function App() {
   useEffect(() => {
     if (!klrt3DLayerRef.current || !use3DMode) return;
     klrt3DLayerRef.current.setSelectedTrainId(selectedTrainId);
+  }, [selectedTrainId, use3DMode]);
+
+  // 建立台中捷運車站座標索引
+  const tmrtStationCoordinates = useMemo(() => {
+    const coords = new Map<string, [number, number]>();
+    if (tmrtStations) {
+      for (const feature of tmrtStations.features) {
+        const stationId = feature.properties.station_id;
+        const geometry = feature.geometry as GeoJSON.Point;
+        coords.set(stationId, geometry.coordinates as [number, number]);
+      }
+    }
+    return coords;
+  }, [tmrtStations]);
+
+  // 初始化台中捷運 3D 圖層
+  useEffect(() => {
+    if (!map.current || !mapLoaded || !use3DMode) return;
+    if (tmrtTrackMap.size === 0) return;
+    if (visibleTmrtLines.size === 0) return;  // 全部隱藏時不顯示 3D 圖層
+
+    // 建立台中捷運 3D 圖層
+    const layer = new Tmrt3DLayer(tmrtTrackMap);
+    layer.setStations(tmrtStationCoordinates);
+    layer.setOnSelect(handleSelectTrain);  // 綁定點擊回調
+    tmrt3DLayerRef.current = layer;
+
+    // 加入地圖
+    map.current.addLayer(layer);
+
+    return () => {
+      if (map.current && map.current.getLayer('tmrt-3d-layer')) {
+        map.current.removeLayer('tmrt-3d-layer');
+      }
+      tmrt3DLayerRef.current = null;
+    };
+  }, [mapLoaded, tmrtTrackMap, tmrtStationCoordinates, use3DMode, visibleTmrtLines, handleSelectTrain, styleVersion]);
+
+  // 更新台中捷運 3D 圖層列車資料
+  useEffect(() => {
+    if (!tmrt3DLayerRef.current || !use3DMode) return;
+    tmrt3DLayerRef.current.updateTrains(filteredTmrtTrains);
+  }, [filteredTmrtTrains, use3DMode]);
+
+  // 更新台中捷運 3D 圖層選中狀態
+  useEffect(() => {
+    if (!tmrt3DLayerRef.current || !use3DMode) return;
+    tmrt3DLayerRef.current.setSelectedTrainId(selectedTrainId);
   }, [selectedTrainId, use3DMode]);
 
   // 更新軌道可見性（當 visibleLines 變化時）
@@ -1428,6 +1657,41 @@ function App() {
       klrtTrainEngineRef.current = null;
     };
   }, [timeEngineReady, klrtSchedules, klrtTrackMap, klrtStationProgress]);
+
+  // 初始化台中捷運列車引擎並訂閱時間更新
+  useEffect(() => {
+    if (!timeEngineReady || !timeEngineRef.current) return;
+    if (tmrtSchedules.size === 0 || tmrtTrackMap.size === 0) return;
+
+    // 建立台中捷運列車引擎
+    const tmrtEngine = new TmrtTrainEngine({
+      schedules: tmrtSchedules,
+      tracks: tmrtTrackMap,
+    });
+
+    // 設置車站進度（用於軌道內插定位）
+    tmrtEngine.setStationProgress(tmrtStationProgress);
+
+    tmrtTrainEngineRef.current = tmrtEngine;
+
+    // 訂閱時間更新
+    const unsubscribe = timeEngineRef.current.onTick(() => {
+      if (timeEngineRef.current) {
+        const timeSeconds = timeEngineRef.current.getTimeOfDaySeconds();
+        const activeTrains = tmrtEngine.update(timeSeconds);
+        setTmrtTrains(activeTrains);
+      }
+    });
+
+    // 初始更新
+    const timeSeconds = timeEngineRef.current.getTimeOfDaySeconds();
+    setTmrtTrains(tmrtEngine.update(timeSeconds));
+
+    return () => {
+      unsubscribe();
+      tmrtTrainEngineRef.current = null;
+    };
+  }, [timeEngineReady, tmrtSchedules, tmrtTrackMap, tmrtStationProgress]);
 
   // 更新列車標記（2D 模式時使用）
   useEffect(() => {
@@ -2402,6 +2666,9 @@ function App() {
         visibleKrtcLines={visibleKrtcLines}
         onToggleKrtcLine={handleToggleKrtcLine}
         onToggleAllKrtc={handleToggleAllKrtc}
+        visibleTmrtLines={visibleTmrtLines}
+        onToggleTmrtLine={handleToggleTmrtLine}
+        onToggleAllTmrt={handleToggleAllTmrt}
         visualTheme={visualTheme}
       />
 

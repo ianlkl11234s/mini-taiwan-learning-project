@@ -1,0 +1,383 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "G0",
+        "station_uid": "TMRT-G0",
+        "name_zh": "北屯總站",
+        "name_en": "Beitun Main Station",
+        "line_id": "G",
+        "sequence": 1,
+        "cumulative_distance": 0,
+        "city": "臺中市",
+        "address": "臺中市北屯區敦富東街100號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.70864,
+          24.18913
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "G3",
+        "station_uid": "TMRT-G3",
+        "name_zh": "舊社",
+        "name_en": "Jiushe",
+        "line_id": "G",
+        "sequence": 2,
+        "cumulative_distance": 0.99,
+        "city": "臺中市",
+        "address": "臺中市北屯區松竹路一段1250號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.70729,
+          24.18228
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "G4",
+        "station_uid": "TMRT-G4",
+        "name_zh": "松竹",
+        "name_en": "Songzhu",
+        "line_id": "G",
+        "sequence": 3,
+        "cumulative_distance": 1.67,
+        "city": "臺中市",
+        "address": "臺中市北屯區北屯路458號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.70145,
+          24.1808
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "G5",
+        "station_uid": "TMRT-G5",
+        "name_zh": "四維國小",
+        "name_en": "Sihwei Elementary School",
+        "line_id": "G",
+        "sequence": 4,
+        "cumulative_distance": 3.31,
+        "city": "臺中市",
+        "address": "臺中市北屯區文心路四段 898號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.69329,
+          24.17124
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "G6",
+        "station_uid": "TMRT-G6",
+        "name_zh": "文心崇德",
+        "name_en": "Wenxin Chongde",
+        "line_id": "G",
+        "sequence": 5,
+        "cumulative_distance": 4.17,
+        "city": "臺中市",
+        "address": "臺中市北屯區文心路四段 538 號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.68486,
+          24.17219
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "G7",
+        "station_uid": "TMRT-G7",
+        "name_zh": "文心中清",
+        "name_en": "Wenxin Zhongqing",
+        "line_id": "G",
+        "sequence": 6,
+        "cumulative_distance": 5.65,
+        "city": "臺中市",
+        "address": "臺中市北區文心路三段700號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.67059,
+          24.17368
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "G8",
+        "station_uid": "TMRT-G8",
+        "name_zh": "文華高中",
+        "name_en": "Wenhua Senior High School",
+        "line_id": "G",
+        "sequence": 7,
+        "cumulative_distance": 6.71,
+        "city": "臺中市",
+        "address": "臺中市西屯區文心路三段199號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.66045,
+          24.17141
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "G8a",
+        "station_uid": "TMRT-G8a",
+        "name_zh": "文心櫻花",
+        "name_en": "Wenxin Yinghua",
+        "line_id": "G",
+        "sequence": 8,
+        "cumulative_distance": 7.53,
+        "city": "臺中市",
+        "address": "臺中市西屯區文心路三段107之28號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.65367,
+          24.16763
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "G9",
+        "station_uid": "TMRT-G9",
+        "name_zh": "市政府",
+        "name_en": "Taichung City Hall",
+        "line_id": "G",
+        "sequence": 9,
+        "cumulative_distance": 8.33,
+        "city": "臺中市",
+        "address": "臺中市西屯區文心路二段688號、699號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.64903,
+          24.16199
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "G10",
+        "station_uid": "TMRT-G10",
+        "name_zh": "水安宮",
+        "name_en": "Shui-an Temple",
+        "line_id": "G",
+        "sequence": 10,
+        "cumulative_distance": 9.35,
+        "city": "臺中市",
+        "address": "臺中市南屯區文心路一段519號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.64668,
+          24.15311
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "G10a",
+        "station_uid": "TMRT-G10a",
+        "name_zh": "文心森林公園",
+        "name_en": "Wenxin Forest Park",
+        "line_id": "G",
+        "sequence": 11,
+        "cumulative_distance": 10.21,
+        "city": "臺中市",
+        "address": "臺中市南屯區文心路一段259號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.6466,
+          24.1454
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "G11",
+        "station_uid": "TMRT-G11",
+        "name_zh": "南屯",
+        "name_en": "Nantun",
+        "line_id": "G",
+        "sequence": 12,
+        "cumulative_distance": 10.75,
+        "city": "臺中市",
+        "address": "臺中市南屯區五權西路二段328號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.6466,
+          24.1405
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "G12",
+        "station_uid": "TMRT-G12",
+        "name_zh": "豐樂公園",
+        "name_en": "Feng-le Park",
+        "line_id": "G",
+        "sequence": 13,
+        "cumulative_distance": 11.62,
+        "city": "臺中市",
+        "address": "臺中市南屯區文心南路168號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.64635,
+          24.1326
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "G13",
+        "station_uid": "TMRT-G13",
+        "name_zh": "大慶",
+        "name_en": "Daqing",
+        "line_id": "G",
+        "sequence": 14,
+        "cumulative_distance": 13.23,
+        "city": "臺中市",
+        "address": "臺中市南區建國北路一段11號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.6476,
+          24.1191
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "G14",
+        "station_uid": "TMRT-G14",
+        "name_zh": "九張犁",
+        "name_en": "Jiuzhangli",
+        "line_id": "G",
+        "sequence": 15,
+        "cumulative_distance": 14.15,
+        "city": "臺中市",
+        "address": "臺中市烏日區建國路915號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.6401,
+          24.1145
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "G15",
+        "station_uid": "TMRT-G15",
+        "name_zh": "九德",
+        "name_en": "Jiude",
+        "line_id": "G",
+        "sequence": 16,
+        "cumulative_distance": 14.84,
+        "city": "臺中市",
+        "address": "臺中市烏日區建國路639號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.63448,
+          24.11104
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "G16",
+        "station_uid": "TMRT-G16",
+        "name_zh": "烏日",
+        "name_en": "Wuri",
+        "line_id": "G",
+        "sequence": 17,
+        "cumulative_distance": 15.87,
+        "city": "臺中市",
+        "address": "臺中市烏日區建國路295號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.6249,
+          24.1089
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "G17",
+        "station_uid": "TMRT-G17",
+        "name_zh": "高鐵臺中站",
+        "name_en": "HSR Taichung Station",
+        "line_id": "G",
+        "sequence": 18,
+        "cumulative_distance": 16.93,
+        "city": "臺中市",
+        "address": "臺中市烏日區高鐵東一路28號"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.61405,
+          24.11011
+        ]
+      }
+    }
+  ]
+}

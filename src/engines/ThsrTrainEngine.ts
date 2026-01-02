@@ -40,6 +40,9 @@ export interface ThsrTrainEngineOptions {
 // 終站停留時間（秒）
 const TERMINAL_DWELL_TIME = 60;
 
+// 起站提前出現時間（秒）- 列車在發車前多久出現在起站
+const ORIGIN_EARLY_APPEAR_TIME = 120; // 2 分鐘
+
 /**
  * 計算線段總長度
  */
@@ -230,21 +233,24 @@ export class ThsrTrainEngine {
         // 計算已過時間
         const elapsedTime = currentTimeSeconds - departureSeconds;
 
-        // 快速檢查：跳過尚未發車或已完全離開的列車
-        if (elapsedTime < -60 || elapsedTime > totalTravelTime + TERMINAL_DWELL_TIME + 60) {
+        // 快速檢查：跳過尚未出現或已完全離開的列車
+        // 列車在發車前 ORIGIN_EARLY_APPEAR_TIME 秒就會出現在起站
+        if (elapsedTime < -ORIGIN_EARLY_APPEAR_TIME || elapsedTime > totalTravelTime + TERMINAL_DWELL_TIME + 60) {
           continue;
         }
 
         // 使用分段插值找到當前狀態
         const segment = this.findCurrentSegment(departure.stations, elapsedTime);
 
-        // 跳過尚未發車的列車
+        // 處理尚未發車的列車：在起站等待
+        let displayStatus = segment.status;
+        let isWaitingAtOrigin = false;
         if (segment.status === 'waiting') {
-          continue;
+          displayStatus = 'stopped'; // 顯示為停站狀態
+          isWaitingAtOrigin = true;
         }
 
         // 處理已抵達終點的列車
-        let displayStatus = segment.status;
         if (segment.status === 'arrived') {
           const timeAfterArrival = elapsedTime - totalTravelTime;
           if (timeAfterArrival > TERMINAL_DWELL_TIME) {
@@ -269,7 +275,10 @@ export class ThsrTrainEngine {
 
         let position: [number, number];
 
-        if (displayStatus === 'stopped') {
+        if (isWaitingAtOrigin) {
+          // 等待發車中：固定在起站位置
+          position = interpolateOnLineString(coords, fromProgress);
+        } else if (displayStatus === 'stopped') {
           // 停站中：使用該站的進度在軌道上定位
           position = interpolateOnLineString(coords, fromProgress);
         } else {

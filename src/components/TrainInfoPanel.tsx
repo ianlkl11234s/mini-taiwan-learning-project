@@ -2,14 +2,16 @@ import { useState } from 'react';
 import type { Train } from '../engines/TrainEngine';
 import type { ThsrTrain } from '../engines/ThsrTrainEngine';
 import type { KrtcTrain } from '../engines/KrtcTrainEngine';
+import type { TmrtTrain } from '../engines/TmrtTrainEngine';
 import { getLineName, getLineColor } from '../constants/lineInfo';
 import { getThsrLineName, getThsrLineColor } from '../constants/thsrInfo';
 import { getKrtcLineName, getKrtcLineColor } from '../constants/krtcInfo';
 import { getKlrtLineName, getKlrtLineColor } from '../constants/klrtInfo';
+import { getTmrtLineName, getTmrtLineColor } from '../constants/tmrtInfo';
 import type { VisualTheme } from './ThemeToggle';
 
 interface TrainInfoPanelProps {
-  train: Train | ThsrTrain | KrtcTrain;
+  train: Train | ThsrTrain | KrtcTrain | TmrtTrain;
   stationNames: Map<string, string>;
   onClose: () => void;
   visualTheme?: VisualTheme;
@@ -22,6 +24,7 @@ export function TrainInfoPanel({ train, stationNames, onClose, visualTheme = 'da
   const isThsr = train.trackId.startsWith('THSR');
   const isKrtc = train.trackId.startsWith('KRTC');
   const isKlrt = train.trackId.startsWith('KLRT');
+  const isTmrt = train.trackId.startsWith('TMRT');
 
   // 根據類型取得線路資訊
   const lineColor = isThsr
@@ -30,6 +33,8 @@ export function TrainInfoPanel({ train, stationNames, onClose, visualTheme = 'da
     ? getKrtcLineColor(train.trackId)
     : isKlrt
     ? getKlrtLineColor(train.trackId)
+    : isTmrt
+    ? getTmrtLineColor(train.trackId)
     : getLineColor(train.trackId);
   const lineName = isThsr
     ? getThsrLineName(train.trackId)
@@ -37,6 +42,8 @@ export function TrainInfoPanel({ train, stationNames, onClose, visualTheme = 'da
     ? getKrtcLineName(train.trackId)
     : isKlrt
     ? getKlrtLineName(train.trackId)
+    : isTmrt
+    ? getTmrtLineName(train.trackId)
     : getLineName(train.trackId);
 
   // 主題顏色

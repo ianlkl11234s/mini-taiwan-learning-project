@@ -2,10 +2,18 @@ import { TimeEngine } from '../engines/TimeEngine';
 import { toExtendedSeconds, toStandardSeconds } from '../utils/timeUtils';
 import type { VisualTheme } from './ThemeToggle';
 
+export interface TransportCounts {
+  trtc: number;   // TPE MRT (台北捷運，不含貓纜)
+  krtc: number;   // KHH MRT (高雄捷運)
+  klrt: number;   // KHH LRT (高雄輕軌)
+  thsr: number;   // THSR (高鐵)
+  tmrt: number;   // TXG MRT (台中捷運)
+}
+
 interface TimeControlProps {
   timeEngine: TimeEngine;
   currentTime: string;
-  trainCount: number;
+  transportCounts: TransportCounts;
   isPlaying: boolean;
   speed: number;
   onTogglePlay: () => void;
@@ -17,7 +25,7 @@ interface TimeControlProps {
 export function TimeControl({
   timeEngine,
   currentTime,
-  trainCount,
+  transportCounts,
   isPlaying,
   speed,
   onTogglePlay,
@@ -78,29 +86,37 @@ export function TimeControl({
           {currentTime}
         </div>
 
-        {/* 右側：列車數量 */}
-        <div style={{ display: 'flex', alignItems: 'center', gap: 16 }}>
-          {/* 列車數量 */}
-          <div
+        {/* 右側：各系統列車數量 */}
+        <div
+          style={{
+            display: 'flex',
+            alignItems: 'center',
+            gap: 6,
+            fontSize: 13,
+            color: colors.textSecondary,
+          }}
+        >
+          <span
             style={{
-              display: 'flex',
-              alignItems: 'center',
-              gap: 8,
-              fontSize: 14,
-              color: colors.textSecondary,
+              display: 'inline-block',
+              width: 8,
+              height: 8,
+              background: '#d90023',
+              borderRadius: '50%',
             }}
-          >
-            <span
-              style={{
-                display: 'inline-block',
-                width: 10,
-                height: 10,
-                background: '#d90023',
-                borderRadius: '50%',
-              }}
-            />
-            <span>運行中列車: {trainCount}</span>
-          </div>
+          />
+          <span style={{ marginRight: 4 }}>運行中</span>
+          <span style={{ color: colors.textMuted }}>|</span>
+          <span style={{ color: '#d90023' }}>TPE</span>
+          <span style={{ fontVariantNumeric: 'tabular-nums', minWidth: 24 }}>{transportCounts.trtc}</span>
+          <span style={{ color: '#e2211c' }}>KHH</span>
+          <span style={{ fontVariantNumeric: 'tabular-nums', minWidth: 24 }}>{transportCounts.krtc}</span>
+          <span style={{ color: '#00ab4e' }}>LRT</span>
+          <span style={{ fontVariantNumeric: 'tabular-nums', minWidth: 24 }}>{transportCounts.klrt}</span>
+          <span style={{ color: '#0cab2c' }}>TXG</span>
+          <span style={{ fontVariantNumeric: 'tabular-nums', minWidth: 24 }}>{transportCounts.tmrt}</span>
+          <span style={{ color: '#f37421' }}>HSR</span>
+          <span style={{ fontVariantNumeric: 'tabular-nums', minWidth: 24 }}>{transportCounts.thsr}</span>
         </div>
       </div>
 

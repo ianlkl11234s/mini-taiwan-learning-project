@@ -17,6 +17,7 @@ import { LineFilter, type MKFilterState, type ThsrFilterState } from './componen
 import { TrainHistogram } from './components/TrainHistogram';
 import { TrainInfoPanel } from './components/TrainInfoPanel';
 import { useTrainCountHistogram } from './hooks/useTrainCountHistogram';
+import type { TrackSchedule } from './types/schedule';
 import { Train3DLayer } from './layers/Train3DLayer';
 import { Thsr3DLayer } from './layers/Thsr3DLayer';
 import { Krtc3DLayer } from './layers/Krtc3DLayer';
@@ -102,8 +103,18 @@ function App() {
   } = useTmrtData();
   void _tmrtLoading; void _tmrtError; // 抑制未使用變數警告
 
-  // 預計算直方圖資料
-  const histogramData = useTrainCountHistogram(schedules);
+  // 預計算直方圖資料（所有運輸系統合計，排除纜車）
+  const allSchedules = useMemo(() => {
+    // 過濾掉貓纜的時刻表
+    const trtcSchedulesNoMK = new Map<string, TrackSchedule>();
+    for (const [key, value] of schedules.entries()) {
+      if (!key.startsWith('MK')) {
+        trtcSchedulesNoMK.set(key, value);
+      }
+    }
+    return [trtcSchedulesNoMK, thsrSchedules, krtcSchedules, klrtSchedules, tmrtSchedules];
+  }, [schedules, thsrSchedules, krtcSchedules, klrtSchedules, tmrtSchedules]);
+  const histogramData = useTrainCountHistogram(allSchedules);
 
   // 地圖狀態
   const mapContainer = useRef<HTMLDivElement>(null);
@@ -353,10 +364,16 @@ function App() {
     });
   }, [tmrtTrains, visibleTmrtLines]);
 
-  // 計算 MRT 列車數量（排除纜車）
-  const mrtCount = useMemo(() => {
-    return filteredTrains.filter(train => !train.trackId.startsWith('MK')).length;
-  }, [filteredTrains]);
+  // 計算各系統運行中列車數量
+  const transportCounts = useMemo(() => {
+    return {
+      trtc: filteredTrains.filter(train => !train.trackId.startsWith('MK')).length,
+      krtc: filteredKrtcTrains.length,
+      klrt: filteredKlrtTrains.length,
+      thsr: filteredThsrTrains.length,
+      tmrt: filteredTmrtTrains.length,
+    };
+  }, [filteredTrains, filteredKrtcTrains, filteredKlrtTrains, filteredThsrTrains, filteredTmrtTrains]);
 
   // 建立車站座標索引（用於 3D 圖層停站定位）
   const stationCoordinates = useMemo(() => {
@@ -2443,10 +2460,10 @@ function App() {
         }}
       >
         <h1 style={{ margin: 0, fontSize: 24, fontWeight: 600 }}>
-          Mini Taipei V3
+          Mini Taiwan
         </h1>
         <p style={{ margin: '4px 0 0', fontSize: 14, color: themeColors.panelTextSecondary }}>
-          台北交通運輸模擬
+          台灣交通運輸模擬
         </p>
       </div>
 
@@ -2816,7 +2833,7 @@ function App() {
         <TimeControl
           timeEngine={timeEngineRef.current}
           currentTime={currentTime}
-          trainCount={mrtCount}
+          transportCounts={transportCounts}
           isPlaying={isPlaying}
           speed={speed}
           onTogglePlay={handleTogglePlay}
@@ -2891,7 +2908,8 @@ function App() {
               <div style={{ background: '#2a2a2a', borderRadius: 8, padding: '12px 16px', fontSize: 14, lineHeight: 1.6 }}>
                 <p style={{ margin: '0 0 8px', color: '#fff' }}>網站為學習性質，仍需持續優化中！</p>
                 <ul style={{ margin: 0, paddingLeft: 20 }}>
-                  <li style={{ color: '#ccc' }}>文湖線與環狀線，目前還未調整好首班車時刻表</li>
+                  <li style={{ color: '#ccc' }}>台北捷運文湖線與環狀線首班車時刻表尚未校正</li>
+                  <li style={{ color: '#ccc' }}>高鐵時刻表為平日班次</li>
                 </ul>
               </div>
             </div>
@@ -2913,7 +2931,8 @@ function App() {
                 <div style={{ marginBottom: 12 }}>
                   <strong style={{ color: '#80bfff' }}>路線篩選</strong>
                   <ul style={{ margin: '4px 0 0', paddingLeft: 20, color: '#ccc' }}>
-                    <li>點擊左下角 MRT / Cable 按鈕展開路線選單</li>
+                    <li>點擊左下角各城市按鈕展開路線選單</li>
+                    <li>支援系統：TPE MRT、KHH MRT/LRT、TXG MRT、THSR、Cable</li>
                     <li>點擊路線按鈕可顯示/隱藏特定路線</li>
                     <li>貓空纜車支援三段式切換：全部顯示 → 僅軌道 → 隱藏</li>
                   </ul>
@@ -2951,9 +2970,10 @@ function App() {
                   </ul>
                 </div>
                 <div style={{ marginBottom: 12 }}>
-                  <strong style={{ color: '#80bfff' }}>列車數量圖</strong>
+                  <strong style={{ color: '#80bfff' }}>列車統計</strong>
                   <ul style={{ margin: '4px 0 0', paddingLeft: 20, color: '#ccc' }}>
-                    <li>右下角顯示全天列車數量變化</li>
+                    <li>下方控制列顯示各系統運行中列車數</li>
+                    <li>右下角趨勢圖顯示全天列車數量變化（所有系統合計）</li>
                     <li>白色線條表示目前時刻</li>
                   </ul>
                 </div>

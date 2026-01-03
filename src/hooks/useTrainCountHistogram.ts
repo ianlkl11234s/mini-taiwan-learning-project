@@ -11,12 +11,12 @@ export interface TrainCountData {
 }
 
 /**
- * 預計算各時段的列車數量
- * @param schedules - 所有軌道的時刻表
+ * 預計算各時段的列車數量（所有運輸系統合計）
+ * @param allSchedules - 所有運輸系統的時刻表陣列
  * @returns 各 15 分鐘區間的列車數量統計
  */
 export function useTrainCountHistogram(
-  schedules: Map<string, TrackSchedule>
+  allSchedules: Map<string, TrackSchedule>[]
 ): TrainCountData {
   return useMemo(() => {
     const intervalMinutes = 15;
@@ -28,24 +28,26 @@ export function useTrainCountHistogram(
     // 初始化區間計數
     const intervals: number[] = new Array(intervalCount).fill(0);
 
-    // 遍歷所有時刻表
-    for (const schedule of schedules.values()) {
-      for (const departure of schedule.departures) {
-        // 發車時間（秒）
-        const depSeconds = timeToSeconds(departure.departure_time);
-        // 到達終點時間（秒）
-        const arrSeconds = depSeconds + departure.total_travel_time;
+    // 遍歷所有運輸系統的時刻表
+    for (const schedules of allSchedules) {
+      for (const schedule of schedules.values()) {
+        for (const departure of schedule.departures) {
+          // 發車時間（秒）
+          const depSeconds = timeToSeconds(departure.departure_time);
+          // 到達終點時間（秒）
+          const arrSeconds = depSeconds + departure.total_travel_time;
 
-        // 計算這班車在哪些區間運行中
-        const startSeconds = startHour * 3600;  // 06:00 = 21600
+          // 計算這班車在哪些區間運行中
+          const startSeconds = startHour * 3600;  // 06:00 = 21600
 
-        for (let i = 0; i < intervalCount; i++) {
-          const intervalStart = startSeconds + i * intervalMinutes * 60;
-          const intervalEnd = intervalStart + intervalMinutes * 60;
+          for (let i = 0; i < intervalCount; i++) {
+            const intervalStart = startSeconds + i * intervalMinutes * 60;
+            const intervalEnd = intervalStart + intervalMinutes * 60;
 
-          // 如果列車在這個區間內運行中
-          if (depSeconds < intervalEnd && arrSeconds > intervalStart) {
-            intervals[i]++;
+            // 如果列車在這個區間內運行中
+            if (depSeconds < intervalEnd && arrSeconds > intervalStart) {
+              intervals[i]++;
+            }
           }
         }
       }
@@ -60,5 +62,5 @@ export function useTrainCountHistogram(
       startHour,
       endHour,
     };
-  }, [schedules]);
+  }, [allSchedules]);
 }

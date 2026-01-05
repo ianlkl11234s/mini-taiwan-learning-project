@@ -1,0 +1,76 @@
+{
+  "track_id": "WL-0",
+  "line_id": "WL",
+  "direction": 0,
+  "travel_time": 300,
+  "trains": [
+    {
+      "train_id": "1060",
+      "departure_time": "06:00:00"
+    },
+    {
+      "train_id": "1070",
+      "departure_time": "07:00:00"
+    },
+    {
+      "train_id": "1080",
+      "departure_time": "08:00:00"
+    },
+    {
+      "train_id": "1090",
+      "departure_time": "09:00:00"
+    },
+    {
+      "train_id": "1100",
+      "departure_time": "10:00:00"
+    },
+    {
+      "train_id": "1110",
+      "departure_time": "11:00:00"
+    },
+    {
+      "train_id": "1120",
+      "departure_time": "12:00:00"
+    },
+    {
+      "train_id": "1130",
+      "departure_time": "13:00:00"
+    },
+    {
+      "train_id": "1140",
+      "departure_time": "14:00:00"
+    },
+    {
+      "train_id": "1150",
+      "departure_time": "15:00:00"
+    },
+    {
+      "train_id": "1160",
+      "departure_time": "16:00:00"
+    },
+    {
+      "train_id": "1170",
+      "departure_time": "17:00:00"
+    },
+    {
+      "train_id": "1180",
+      "departure_time": "18:00:00"
+    },
+    {
+      "train_id": "1190",
+      "departure_time": "19:00:00"
+    },
+    {
+      "train_id": "1200",
+      "departure_time": "20:00:00"
+    },
+    {
+      "train_id": "1210",
+      "departure_time": "21:00:00"
+    },
+    {
+      "train_id": "1220",
+      "departure_time": "22:00:00"
+    }
+  ]
+}

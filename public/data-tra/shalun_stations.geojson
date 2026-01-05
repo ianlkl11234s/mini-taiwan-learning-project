@@ -1,0 +1,107 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "4220",
+        "name_zh": "臺南",
+        "name_en": "Tainan",
+        "station_class": "1",
+        "line_id": "WL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.21295,
+          22.99681
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "4250",
+        "name_zh": "保安",
+        "name_en": "Bao'an",
+        "station_class": "3",
+        "line_id": "WL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.23158,
+          22.93296
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "4260",
+        "name_zh": "仁德",
+        "name_en": "Rende",
+        "station_class": "4",
+        "line_id": "WL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.24054,
+          22.92354
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "4270",
+        "name_zh": "中洲",
+        "name_en": "Zhongzhou",
+        "station_class": "2",
+        "line_id": "WL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.25284,
+          22.90446
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "4271",
+        "name_zh": "長榮大學",
+        "name_en": "Chang Jung Christian University",
+        "station_class": "4",
+        "line_id": "SH"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.27263,
+          22.90729
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "4272",
+        "name_zh": "沙崙",
+        "name_en": "Shalun",
+        "station_class": "4",
+        "line_id": "SH"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.28622,
+          22.92407
+        ]
+      }
+    }
+  ]
+}

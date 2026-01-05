@@ -6,12 +6,14 @@ import { useThsrData } from './hooks/useThsrData';
 import { useKrtcData } from './hooks/useKrtcData';
 import { useKlrtData } from './hooks/useKlrtData';
 import { useTmrtData } from './hooks/useTmrtData';
+import { useTraData } from './hooks/useTraData';
 import { TimeEngine } from './engines/TimeEngine';
 import { TrainEngine, type Train } from './engines/TrainEngine';
 import { ThsrTrainEngine, type ThsrTrain } from './engines/ThsrTrainEngine';
 import { KrtcTrainEngine, type KrtcTrain } from './engines/KrtcTrainEngine';
 import { KlrtTrainEngine, type KlrtTrain } from './engines/KlrtTrainEngine';
 import { TmrtTrainEngine, type TmrtTrain } from './engines/TmrtTrainEngine';
+import { TraTrainEngine, type TraTrain } from './engines/TraTrainEngine';
 import { TimeControl } from './components/TimeControl';
 import { LineFilter, type MKFilterState, type ThsrFilterState } from './components/LineFilter';
 import { TrainHistogram } from './components/TrainHistogram';
@@ -29,6 +31,7 @@ import { THSR_TRACK_COLOR, THSR_TRAIN_COLORS, getThsrDirection } from './constan
 import { KRTC_TRACK_COLORS, KRTC_TRAIN_COLORS, getKrtcLineId, getKrtcDirection } from './constants/krtcInfo';
 import { KLRT_TRACK_COLORS, KLRT_TRAIN_COLORS, getKlrtLineId, getKlrtDirection } from './constants/klrtInfo';
 import { TMRT_TRACK_COLORS, TMRT_TRAIN_COLORS, getTmrtLineId, getTmrtDirection } from './constants/tmrtInfo';
+import { TRA_TRACK_COLORS, getTraTrainColor } from './constants/traInfo';
 import { CitySelector, type CityId, CITIES } from './components/CitySelector';
 
 // 光線預設類型（用於 standard 樣式）
@@ -103,6 +106,18 @@ function App() {
   } = useTmrtData();
   void _tmrtLoading; void _tmrtError; // 抑制未使用變數警告
 
+  // TRA 資料載入（TRA 載入錯誤不阻止其他顯示）
+  const {
+    tracks: traTracks,
+    stations: traStations,
+    schedules: traSchedules,
+    trackMap: traTrackMap,
+    stationProgress: traStationProgress,
+    loading: _traLoading,
+    error: _traError,
+  } = useTraData();
+  void _traLoading; void _traError; // 抑制未使用變數警告
+
   // 預計算直方圖資料（所有運輸系統合計，排除纜車）
   const allSchedules = useMemo(() => {
     // 過濾掉貓纜的時刻表
@@ -125,6 +140,7 @@ function App() {
   const krtcTrainMarkers = useRef<Map<string, mapboxgl.Marker>>(new Map());
   const klrtTrainMarkers = useRef<Map<string, mapboxgl.Marker>>(new Map());
   const tmrtTrainMarkers = useRef<Map<string, mapboxgl.Marker>>(new Map());
+  const traTrainMarkers = useRef<Map<string, mapboxgl.Marker>>(new Map());
 
   // 時間引擎
   const timeEngineRef = useRef<TimeEngine | null>(null);
@@ -152,6 +168,10 @@ function App() {
   // 列車引擎 (TMRT)
   const tmrtTrainEngineRef = useRef<TmrtTrainEngine | null>(null);
   const [tmrtTrains, setTmrtTrains] = useState<TmrtTrain[]>([]);
+
+  // 列車引擎 (TRA - 台鐵)
+  const traTrainEngineRef = useRef<TraTrainEngine | null>(null);
+  const [traTrains, setTraTrains] = useState<TraTrain[]>([]);
 
   // 圖例收合狀態（預設收合）
   const [legendCollapsed, setLegendCollapsed] = useState(true);
@@ -364,6 +384,11 @@ function App() {
     });
   }, [tmrtTrains, visibleTmrtLines]);
 
+  // 台鐵列車（目前沙崙線 MVP，全部顯示）
+  const filteredTraTrains = useMemo(() => {
+    return traTrains;
+  }, [traTrains]);
+
   // 計算各系統運行中列車數量
   const transportCounts = useMemo(() => {
     return {
@@ -372,8 +397,9 @@ function App() {
       klrt: filteredKlrtTrains.length,
       thsr: filteredThsrTrains.length,
       tmrt: filteredTmrtTrains.length,
+      tra: filteredTraTrains.length,
     };
-  }, [filteredTrains, filteredKrtcTrains, filteredKlrtTrains, filteredThsrTrains, filteredTmrtTrains]);
+  }, [filteredTrains, filteredKrtcTrains, filteredKlrtTrains, filteredThsrTrains, filteredTmrtTrains, filteredTraTrains]);
 
   // 建立車站座標索引（用於 3D 圖層停站定位）
   const stationCoordinates = useMemo(() => {
@@ -1110,6 +1136,94 @@ function App() {
     map.current.setPaintProperty('tmrt-stations-label', 'text-opacity', opacity);
   }, [mapLoaded, visibleTmrtLines, styleVersion]);
 
+  // 載入台鐵軌道圖層（沙崙線 MVP）
+  useEffect(() => {
+    if (!map.current || !mapLoaded || !traTracks) return;
+
+    if (map.current.getSource('tra-tracks')) {
+      if (map.current.getLayer('tra-tracks-line-SH')) {
+        map.current.removeLayer('tra-tracks-line-SH');
+      }
+      map.current.removeSource('tra-tracks');
+    }
+
+    map.current.addSource('tra-tracks', {
+      type: 'geojson',
+      data: traTracks as GeoJSON.FeatureCollection,
+    });
+
+    // 沙崙線
+    map.current.addLayer({
+      id: 'tra-tracks-line-SH',
+      type: 'line',
+      source: 'tra-tracks',
+      layout: {
+        'line-join': 'round',
+        'line-cap': 'round',
+      },
+      paint: {
+        'line-color': TRA_TRACK_COLORS.SH,
+        'line-width': 4,
+        'line-opacity': 0.8,
+        'line-emissive-strength': 1.0,
+      },
+    });
+  }, [mapLoaded, traTracks, styleVersion]);
+
+  // 載入台鐵車站圖層（沙崙線 MVP）
+  useEffect(() => {
+    if (!map.current || !mapLoaded || !traStations) return;
+
+    if (map.current.getSource('tra-stations')) {
+      if (map.current.getLayer('tra-stations-circle')) {
+        map.current.removeLayer('tra-stations-circle');
+      }
+      if (map.current.getLayer('tra-stations-label')) {
+        map.current.removeLayer('tra-stations-label');
+      }
+      map.current.removeSource('tra-stations');
+    }
+
+    map.current.addSource('tra-stations', {
+      type: 'geojson',
+      data: traStations as GeoJSON.FeatureCollection,
+    });
+
+    map.current.addLayer({
+      id: 'tra-stations-circle',
+      type: 'circle',
+      source: 'tra-stations',
+      paint: {
+        'circle-radius': 5,
+        'circle-color': '#ffffff',
+        'circle-stroke-color': TRA_TRACK_COLORS.SH,
+        'circle-stroke-width': 2,
+        'circle-opacity': 1,
+        'circle-stroke-opacity': 1,
+        'circle-emissive-strength': 1.0,
+      },
+    });
+
+    map.current.addLayer({
+      id: 'tra-stations-label',
+      type: 'symbol',
+      source: 'tra-stations',
+      layout: {
+        'text-field': ['get', 'name_zh'],
+        'text-size': 10,
+        'text-offset': [0, 1.3],
+        'text-anchor': 'top',
+      },
+      paint: {
+        'text-color': '#ffffff',
+        'text-halo-color': '#000000',
+        'text-halo-width': 1,
+        'text-opacity': 1,
+        'text-emissive-strength': 1.0,
+      },
+    });
+  }, [mapLoaded, traStations, styleVersion]);
+
   // 初始化 3D 列車圖層
   useEffect(() => {
     if (!map.current || !mapLoaded || !use3DMode) return;
@@ -1709,6 +1823,39 @@ function App() {
     };
   }, [timeEngineReady, tmrtSchedules, tmrtTrackMap, tmrtStationProgress]);
 
+  // 初始化台鐵列車引擎並訂閱時間更新
+  useEffect(() => {
+    if (!timeEngineReady || !timeEngineRef.current) return;
+    if (traSchedules.size === 0 || traTrackMap.size === 0) return;
+
+    // 建立台鐵列車引擎
+    const traEngine = new TraTrainEngine({
+      schedules: traSchedules,
+      tracks: traTrackMap,
+      stationProgress: traStationProgress,
+    });
+
+    traTrainEngineRef.current = traEngine;
+
+    // 訂閱時間更新
+    const unsubscribe = timeEngineRef.current.onTick(() => {
+      if (timeEngineRef.current) {
+        const timeSeconds = timeEngineRef.current.getTimeOfDaySeconds();
+        const activeTrains = traEngine.update(timeSeconds);
+        setTraTrains(activeTrains);
+      }
+    });
+
+    // 初始更新
+    const timeSeconds = timeEngineRef.current.getTimeOfDaySeconds();
+    setTraTrains(traEngine.update(timeSeconds));
+
+    return () => {
+      unsubscribe();
+      traTrainEngineRef.current = null;
+    };
+  }, [timeEngineReady, traSchedules, traTrackMap, traStationProgress]);
+
   // 更新列車標記（2D 模式時使用）
   useEffect(() => {
     if (!map.current || !mapLoaded) return;
@@ -2248,6 +2395,109 @@ function App() {
     }
   }, [mapLoaded, filteredTmrtTrains, use3DMode, handleSelectTrain, selectedTrainId]);
 
+  // 更新台鐵列車標記（2D 模式時使用）
+  useEffect(() => {
+    if (!map.current || !mapLoaded) return;
+
+    // 3D 模式時清除所有 2D 標記並跳過
+    if (use3DMode) {
+      for (const marker of traTrainMarkers.current.values()) {
+        marker.remove();
+      }
+      traTrainMarkers.current.clear();
+      return;
+    }
+
+    const activeTrainIds = new Set(filteredTraTrains.map((t) => t.trainId));
+    for (const [trainId, marker] of traTrainMarkers.current) {
+      if (!activeTrainIds.has(trainId)) {
+        marker.remove();
+        traTrainMarkers.current.delete(trainId);
+      }
+    }
+
+    for (const train of filteredTraTrains) {
+      let marker = traTrainMarkers.current.get(train.trainId);
+      const isStopped = train.status === 'stopped';
+      const isSelected = train.trainId === selectedTrainId;
+      const baseColor = getTraTrainColor(train.trackId);
+
+      if (!marker) {
+        const el = document.createElement('div');
+        el.className = 'tra-train-marker';
+        el.dataset.trainId = train.trainId;
+
+        // 點擊事件：選取列車
+        el.addEventListener('click', (e) => {
+          e.stopPropagation();
+          const trainId = el.dataset.trainId;
+          if (trainId) {
+            handleSelectTrain(trainId);
+          }
+        });
+
+        marker = new mapboxgl.Marker({
+          element: el,
+          anchor: 'center',
+        })
+          .setLngLat(train.position)
+          .addTo(map.current!);
+
+        traTrainMarkers.current.set(train.trainId, marker);
+      }
+
+      // 更新位置
+      marker.setLngLat(train.position);
+
+      // 更新樣式（含選中狀態）
+      const el = marker.getElement();
+      const newState = `${isSelected}-${isStopped}-${baseColor}`;
+      const prevState = el.dataset.trainState;
+
+      if (prevState !== newState) {
+        el.dataset.trainState = newState;
+
+        const baseStyles = `
+          pointer-events: auto;
+          cursor: pointer;
+          border-radius: 50%;
+          transition: width 0.3s ease, height 0.3s ease, box-shadow 0.3s ease;
+        `;
+
+        if (isSelected) {
+          // 選中狀態：顯示粗白框
+          el.style.cssText = `
+            ${baseStyles}
+            width: 18px;
+            height: 18px;
+            background-color: ${baseColor};
+            border: 4px solid #ffffff;
+            box-shadow: 0 0 16px rgba(255,255,255,0.8), 0 0 24px ${baseColor};
+            z-index: 10;
+          `;
+        } else if (isStopped) {
+          el.style.cssText = `
+            ${baseStyles}
+            width: 14px;
+            height: 14px;
+            background-color: ${baseColor};
+            border: 2px solid #ffffff;
+            box-shadow: 0 0 8px ${baseColor}, 0 0 12px rgba(255,255,255,0.5);
+          `;
+        } else {
+          el.style.cssText = `
+            ${baseStyles}
+            width: 12px;
+            height: 12px;
+            background-color: ${baseColor};
+            border: 2px solid #ffffff;
+            box-shadow: 0 0 4px rgba(0,0,0,0.5);
+          `;
+        }
+      }
+    }
+  }, [mapLoaded, filteredTraTrains, use3DMode, handleSelectTrain, selectedTrainId]);
+
   // 控制處理器
   const handleTogglePlay = useCallback(() => {
     if (!timeEngineRef.current) return;
@@ -2288,6 +2538,11 @@ function App() {
     if (tmrtTrainEngineRef.current) {
       const activeTmrtTrains = tmrtTrainEngineRef.current.update(seconds);
       setTmrtTrains(activeTmrtTrains);
+    }
+
+    if (traTrainEngineRef.current) {
+      const activeTraTrains = traTrainEngineRef.current.update(seconds);
+      setTraTrains(activeTraTrains);
     }
   }, []);
 

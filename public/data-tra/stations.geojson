@@ -1,0 +1,1715 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "4220",
+        "name": "臺南",
+        "line_id": "SH"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.21295,
+          22.99681
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "4250",
+        "name": "保安",
+        "line_id": "SH"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.23158,
+          22.93296
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "4260",
+        "name": "仁德",
+        "line_id": "SH"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.24054,
+          22.92354
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "4270",
+        "name": "中洲",
+        "line_id": "SH"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.25284,
+          22.90446
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "4271",
+        "name": "長榮大學",
+        "line_id": "SH"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.27263,
+          22.90729
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "4272",
+        "name": "沙崙",
+        "line_id": "SH"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.28622,
+          22.92407
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "0900",
+        "name": "基隆",
+        "line_id": "WL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.73837,
+          25.13191
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "0910",
+        "name": "三坑",
+        "line_id": "WL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.74202,
+          25.12305
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "0920",
+        "name": "八堵",
+        "line_id": "WL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.72904,
+          25.10838
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "0930",
+        "name": "七堵",
+        "line_id": "WL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.71415,
+          25.09294
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "0940",
+        "name": "百福",
+        "line_id": "WL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.69379,
+          25.07795
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "0950",
+        "name": "五堵",
+        "line_id": "WL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.66758,
+          25.07799
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "0960",
+        "name": "汐止",
+        "line_id": "WL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.66113,
+          25.0679
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "0970",
+        "name": "汐科",
+        "line_id": "WL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.65057,
+          25.06358
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "0980",
+        "name": "南港",
+        "line_id": "WL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.60706,
+          25.05348
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "0990",
+        "name": "松山",
+        "line_id": "WL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.57906,
+          25.04927
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "1000",
+        "name": "臺北",
+        "line_id": "WL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.51711,
+          25.04775
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "1001",
+        "name": "臺北-環島",
+        "line_id": "WL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.51711,
+          25.04774
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "1010",
+        "name": "萬華",
+        "line_id": "WL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.50081,
+          25.03342
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "1020",
+        "name": "板橋",
+        "line_id": "WL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.46377,
+          25.01434
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "1030",
+        "name": "浮洲",
+        "line_id": "WL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.44477,
+          25.00419
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "1040",
+        "name": "樹林",
+        "line_id": "WL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.42442,
+          24.99123
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "1050",
+        "name": "南樹林",
+        "line_id": "WL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.40884,
+          24.98044
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "1060",
+        "name": "山佳",
+        "line_id": "WL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.39254,
+          24.97273
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "1070",
+        "name": "鶯歌",
+        "line_id": "WL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.35517,
+          24.95455
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "1075",
+        "name": "鳳鳴",
+        "line_id": "WL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.33658,
+          24.97268
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "1080",
+        "name": "桃園",
+        "line_id": "WL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.314,
+          24.98902
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "1090",
+        "name": "內壢",
+        "line_id": "WL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.25826,
+          24.97281
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "1100",
+        "name": "中壢",
+        "line_id": "WL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.22531,
+          24.95321
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "1110",
+        "name": "埔心",
+        "line_id": "WL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.18321,
+          24.9197
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "1120",
+        "name": "楊梅",
+        "line_id": "WL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.14637,
+          24.91427
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "1130",
+        "name": "富岡",
+        "line_id": "WL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.08308,
+          24.93445
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "1140",
+        "name": "新富",
+        "line_id": "WL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.06751,
+          24.93109
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "1150",
+        "name": "北湖",
+        "line_id": "WL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.05575,
+          24.92218
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "1160",
+        "name": "湖口",
+        "line_id": "WL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.04384,
+          24.90298
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "1170",
+        "name": "新豐",
+        "line_id": "WL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.99626,
+          24.86939
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "1180",
+        "name": "竹北",
+        "line_id": "WL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.00921,
+          24.83904
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "1190",
+        "name": "北新竹",
+        "line_id": "WL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.98381,
+          24.80875
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "1210",
+        "name": "新竹",
+        "line_id": "WL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.97157,
+          24.80157
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "1220",
+        "name": "三姓橋",
+        "line_id": "WL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.92844,
+          24.78731
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "1230",
+        "name": "香山",
+        "line_id": "WL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.91388,
+          24.76311
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "1240",
+        "name": "崎頂",
+        "line_id": "WL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.87183,
+          24.72291
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "1250",
+        "name": "竹南",
+        "line_id": "WL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.88091,
+          24.68647
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "3140",
+        "name": "造橋",
+        "line_id": "WL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.86721,
+          24.64186
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "3150",
+        "name": "豐富",
+        "line_id": "WL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.82637,
+          24.60429
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "3160",
+        "name": "苗栗",
+        "line_id": "WL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.82233,
+          24.57001
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "3170",
+        "name": "南勢",
+        "line_id": "WL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.79154,
+          24.52246
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "3180",
+        "name": "銅鑼",
+        "line_id": "WL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.78591,
+          24.48713
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "3190",
+        "name": "三義",
+        "line_id": "WL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.77393,
+          24.42066
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "3210",
+        "name": "泰安",
+        "line_id": "WL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.74181,
+          24.33146
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "3220",
+        "name": "后里",
+        "line_id": "WL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.73288,
+          24.30933
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "3230",
+        "name": "豐原",
+        "line_id": "WL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.72374,
+          24.25438
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "3240",
+        "name": "栗林",
+        "line_id": "WL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.7106,
+          24.23461
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "3250",
+        "name": "潭子",
+        "line_id": "WL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.70564,
+          24.21214
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "3260",
+        "name": "頭家厝",
+        "line_id": "WL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.70398,
+          24.19572
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "3270",
+        "name": "松竹",
+        "line_id": "WL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.70193,
+          24.18035
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "3280",
+        "name": "太原",
+        "line_id": "WL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.69988,
+          24.16449
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "3290",
+        "name": "精武",
+        "line_id": "WL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.69784,
+          24.14887
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "3300",
+        "name": "臺中",
+        "line_id": "WL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.68691,
+          24.13728
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "3310",
+        "name": "五權",
+        "line_id": "WL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.66654,
+          24.12877
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "3320",
+        "name": "大慶",
+        "line_id": "WL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.64795,
+          24.11911
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "3330",
+        "name": "烏日",
+        "line_id": "WL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.62244,
+          24.10867
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "3340",
+        "name": "新烏日",
+        "line_id": "WL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.61421,
+          24.10937
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "3350",
+        "name": "成功",
+        "line_id": "WL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.59021,
+          24.11424
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "3360",
+        "name": "彰化",
+        "line_id": "WL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.53854,
+          24.08177
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "3370",
+        "name": "花壇",
+        "line_id": "WL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.53742,
+          24.02502
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "3380",
+        "name": "大村",
+        "line_id": "WL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.56062,
+          23.99002
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "3390",
+        "name": "員林",
+        "line_id": "WL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.56977,
+          23.95947
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "3400",
+        "name": "永靖",
+        "line_id": "WL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.57173,
+          23.92808
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "3410",
+        "name": "社頭",
+        "line_id": "WL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.58077,
+          23.89573
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "3420",
+        "name": "田中",
+        "line_id": "WL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.59146,
+          23.85843
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "3430",
+        "name": "二水",
+        "line_id": "WL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.61805,
+          23.81321
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "3450",
+        "name": "林內",
+        "line_id": "WL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.61499,
+          23.75967
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "3460",
+        "name": "石榴",
+        "line_id": "WL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.57998,
+          23.73167
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "3470",
+        "name": "斗六",
+        "line_id": "WL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.54099,
+          23.71184
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "3480",
+        "name": "斗南",
+        "line_id": "WL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.48089,
+          23.67257
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "3490",
+        "name": "石龜",
+        "line_id": "WL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.47106,
+          23.63951
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "4050",
+        "name": "大林",
+        "line_id": "WL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.45597,
+          23.60089
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "4060",
+        "name": "民雄",
+        "line_id": "WL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.43165,
+          23.55522
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "4070",
+        "name": "嘉北",
+        "line_id": "WL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.44851,
+          23.49981
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "4080",
+        "name": "嘉義",
+        "line_id": "WL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.44061,
+          23.47927
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "4090",
+        "name": "水上",
+        "line_id": "WL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.39971,
+          23.43398
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "4100",
+        "name": "南靖",
+        "line_id": "WL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.38654,
+          23.41344
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "4110",
+        "name": "後壁",
+        "line_id": "WL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.36058,
+          23.36626
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "4120",
+        "name": "新營",
+        "line_id": "WL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.32307,
+          23.30673
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "4130",
+        "name": "柳營",
+        "line_id": "WL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.32252,
+          23.27762
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "4140",
+        "name": "林鳳營",
+        "line_id": "WL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.32107,
+          23.24259
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "4150",
+        "name": "隆田",
+        "line_id": "WL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.31917,
+          23.19271
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "4160",
+        "name": "拔林",
+        "line_id": "WL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.32125,
+          23.17284
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "4170",
+        "name": "善化",
+        "line_id": "WL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.30653,
+          23.13333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "4180",
+        "name": "南科",
+        "line_id": "WL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.30202,
+          23.10726
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "4190",
+        "name": "新市",
+        "line_id": "WL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.29004,
+          23.06823
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "4200",
+        "name": "永康",
+        "line_id": "WL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.25347,
+          23.03825
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "4210",
+        "name": "大橋",
+        "line_id": "WL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.22429,
+          23.01923
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "4290",
+        "name": "大湖",
+        "line_id": "WL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.25384,
+          22.87821
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "4300",
+        "name": "路竹",
+        "line_id": "WL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.26619,
+          22.85404
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "4310",
+        "name": "岡山",
+        "line_id": "WL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.30004,
+          22.79223
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "4320",
+        "name": "橋頭",
+        "line_id": "WL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.31011,
+          22.76098
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "4330",
+        "name": "楠梓",
+        "line_id": "WL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.32425,
+          22.72696
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "4340",
+        "name": "新左營",
+        "line_id": "WL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.30678,
+          22.68754
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "4350",
+        "name": "左營",
+        "line_id": "WL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.29401,
+          22.67445
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "4360",
+        "name": "內惟",
+        "line_id": "WL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.28701,
+          22.66589
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "4370",
+        "name": "美術館",
+        "line_id": "WL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.28148,
+          22.65185
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "4380",
+        "name": "鼓山",
+        "line_id": "WL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.28071,
+          22.64181
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "4390",
+        "name": "三塊厝",
+        "line_id": "WL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.29414,
+          22.63931
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "4400",
+        "name": "高雄",
+        "line_id": "WL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.30292,
+          22.63946
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "4410",
+        "name": "民族",
+        "line_id": "WL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.31494,
+          22.63879
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "4420",
+        "name": "科工館",
+        "line_id": "WL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.32603,
+          22.63709
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "4430",
+        "name": "正義",
+        "line_id": "WL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.34245,
+          22.63425
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "4440",
+        "name": "鳳山",
+        "line_id": "WL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.35745,
+          22.63145
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "4450",
+        "name": "後庄",
+        "line_id": "WL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.39131,
+          22.64016
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "4460",
+        "name": "九曲堂",
+        "line_id": "WL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.42089,
+          22.65641
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "4470",
+        "name": "六塊厝",
+        "line_id": "WL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.46497,
+          22.66597
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "5000",
+        "name": "屏東",
+        "line_id": "WL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.48617,
+          22.66905
+        ]
+      }
+    }
+  ]
+}

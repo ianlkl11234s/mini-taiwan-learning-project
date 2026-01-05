@@ -1,0 +1,2235 @@
+{
+  "track_id": "SH-1",
+  "line_id": "SH",
+  "name": "臺南 → 沙崙",
+  "origin": "4220",
+  "destination": "4272",
+  "stations": [
+    "4220",
+    "4250",
+    "4260",
+    "4270",
+    "4271",
+    "4272"
+  ],
+  "travel_time_minutes": 24,
+  "dwell_time_seconds": 30,
+  "is_weekday": true,
+  "departure_count": 36,
+  "departures": [
+    {
+      "departure_time": "05:21:00",
+      "train_id": "TRA-3705",
+      "train_no": "3705",
+      "train_type": "區間",
+      "origin_station": "4080",
+      "stations": [
+        {
+          "station_id": "4080",
+          "station_name": "嘉義",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "4090",
+          "station_name": "水上",
+          "arrival": 360,
+          "departure": 360
+        },
+        {
+          "station_id": "4100",
+          "station_name": "南靖",
+          "arrival": 540,
+          "departure": 540
+        },
+        {
+          "station_id": "4110",
+          "station_name": "後壁",
+          "arrival": 840,
+          "departure": 900
+        },
+        {
+          "station_id": "4120",
+          "station_name": "新營",
+          "arrival": 1260,
+          "departure": 1380
+        },
+        {
+          "station_id": "4130",
+          "station_name": "柳營",
+          "arrival": 1560,
+          "departure": 1560
+        },
+        {
+          "station_id": "4140",
+          "station_name": "林鳳營",
+          "arrival": 1800,
+          "departure": 1800
+        },
+        {
+          "station_id": "4150",
+          "station_name": "隆田",
+          "arrival": 2100,
+          "departure": 2160
+        },
+        {
+          "station_id": "4160",
+          "station_name": "拔林",
+          "arrival": 2280,
+          "departure": 2340
+        },
+        {
+          "station_id": "4170",
+          "station_name": "善化",
+          "arrival": 2580,
+          "departure": 2700
+        },
+        {
+          "station_id": "4180",
+          "station_name": "南科",
+          "arrival": 2880,
+          "departure": 2880
+        },
+        {
+          "station_id": "4190",
+          "station_name": "新市",
+          "arrival": 3120,
+          "departure": 3180
+        },
+        {
+          "station_id": "4200",
+          "station_name": "永康",
+          "arrival": 3480,
+          "departure": 3540
+        },
+        {
+          "station_id": "4210",
+          "station_name": "大橋",
+          "arrival": 3720,
+          "departure": 3780
+        },
+        {
+          "station_id": "4220",
+          "station_name": "臺南",
+          "arrival": 3960,
+          "departure": 4380
+        },
+        {
+          "station_id": "4250",
+          "station_name": "保安",
+          "arrival": 4740,
+          "departure": 4740
+        },
+        {
+          "station_id": "4260",
+          "station_name": "仁德",
+          "arrival": 4860,
+          "departure": 4920
+        },
+        {
+          "station_id": "4270",
+          "station_name": "中洲",
+          "arrival": 5100,
+          "departure": 5160
+        },
+        {
+          "station_id": "4271",
+          "station_name": "長榮大學",
+          "arrival": 5400,
+          "departure": 5460
+        },
+        {
+          "station_id": "4272",
+          "station_name": "沙崙",
+          "arrival": 5760,
+          "departure": 5760
+        }
+      ],
+      "total_travel_time": 5760
+    },
+    {
+      "departure_time": "05:29:00",
+      "train_id": "TRA-3701",
+      "train_no": "3701",
+      "train_type": "區間",
+      "origin_station": "4220",
+      "stations": [
+        {
+          "station_id": "4220",
+          "station_name": "臺南",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "4250",
+          "station_name": "保安",
+          "arrival": 420,
+          "departure": 420
+        },
+        {
+          "station_id": "4260",
+          "station_name": "仁德",
+          "arrival": 540,
+          "departure": 600
+        },
+        {
+          "station_id": "4270",
+          "station_name": "中洲",
+          "arrival": 780,
+          "departure": 840
+        },
+        {
+          "station_id": "4271",
+          "station_name": "長榮大學",
+          "arrival": 1080,
+          "departure": 1140
+        },
+        {
+          "station_id": "4272",
+          "station_name": "沙崙",
+          "arrival": 1440,
+          "departure": 1440
+        }
+      ],
+      "total_travel_time": 1440
+    },
+    {
+      "departure_time": "05:53:00",
+      "train_id": "TRA-3703",
+      "train_no": "3703",
+      "train_type": "區間",
+      "origin_station": "4220",
+      "stations": [
+        {
+          "station_id": "4220",
+          "station_name": "臺南",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "4250",
+          "station_name": "保安",
+          "arrival": 420,
+          "departure": 420
+        },
+        {
+          "station_id": "4260",
+          "station_name": "仁德",
+          "arrival": 540,
+          "departure": 600
+        },
+        {
+          "station_id": "4270",
+          "station_name": "中洲",
+          "arrival": 780,
+          "departure": 840
+        },
+        {
+          "station_id": "4271",
+          "station_name": "長榮大學",
+          "arrival": 1080,
+          "departure": 1140
+        },
+        {
+          "station_id": "4272",
+          "station_name": "沙崙",
+          "arrival": 1440,
+          "departure": 1440
+        }
+      ],
+      "total_travel_time": 1440
+    },
+    {
+      "departure_time": "06:32:00",
+      "train_id": "TRA-3709",
+      "train_no": "3709",
+      "train_type": "區間",
+      "origin_station": "4080",
+      "stations": [
+        {
+          "station_id": "4080",
+          "station_name": "嘉義",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "4090",
+          "station_name": "水上",
+          "arrival": 360,
+          "departure": 360
+        },
+        {
+          "station_id": "4100",
+          "station_name": "南靖",
+          "arrival": 540,
+          "departure": 540
+        },
+        {
+          "station_id": "4110",
+          "station_name": "後壁",
+          "arrival": 840,
+          "departure": 900
+        },
+        {
+          "station_id": "4120",
+          "station_name": "新營",
+          "arrival": 1260,
+          "departure": 1380
+        },
+        {
+          "station_id": "4130",
+          "station_name": "柳營",
+          "arrival": 1560,
+          "departure": 1560
+        },
+        {
+          "station_id": "4140",
+          "station_name": "林鳳營",
+          "arrival": 1800,
+          "departure": 1800
+        },
+        {
+          "station_id": "4150",
+          "station_name": "隆田",
+          "arrival": 2100,
+          "departure": 2160
+        },
+        {
+          "station_id": "4160",
+          "station_name": "拔林",
+          "arrival": 2280,
+          "departure": 2340
+        },
+        {
+          "station_id": "4170",
+          "station_name": "善化",
+          "arrival": 2580,
+          "departure": 2640
+        },
+        {
+          "station_id": "4180",
+          "station_name": "南科",
+          "arrival": 2820,
+          "departure": 2820
+        },
+        {
+          "station_id": "4190",
+          "station_name": "新市",
+          "arrival": 3060,
+          "departure": 3120
+        },
+        {
+          "station_id": "4200",
+          "station_name": "永康",
+          "arrival": 3420,
+          "departure": 3480
+        },
+        {
+          "station_id": "4210",
+          "station_name": "大橋",
+          "arrival": 3660,
+          "departure": 3720
+        },
+        {
+          "station_id": "4220",
+          "station_name": "臺南",
+          "arrival": 3900,
+          "departure": 4020
+        },
+        {
+          "station_id": "4250",
+          "station_name": "保安",
+          "arrival": 4380,
+          "departure": 4380
+        },
+        {
+          "station_id": "4260",
+          "station_name": "仁德",
+          "arrival": 4500,
+          "departure": 4560
+        },
+        {
+          "station_id": "4270",
+          "station_name": "中洲",
+          "arrival": 4740,
+          "departure": 4800
+        },
+        {
+          "station_id": "4271",
+          "station_name": "長榮大學",
+          "arrival": 5040,
+          "departure": 5100
+        },
+        {
+          "station_id": "4272",
+          "station_name": "沙崙",
+          "arrival": 5400,
+          "departure": 5400
+        }
+      ],
+      "total_travel_time": 5400
+    },
+    {
+      "departure_time": "06:57:00",
+      "train_id": "TRA-3707",
+      "train_no": "3707",
+      "train_type": "區間",
+      "origin_station": "4220",
+      "stations": [
+        {
+          "station_id": "4220",
+          "station_name": "臺南",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "4250",
+          "station_name": "保安",
+          "arrival": 420,
+          "departure": 420
+        },
+        {
+          "station_id": "4260",
+          "station_name": "仁德",
+          "arrival": 540,
+          "departure": 600
+        },
+        {
+          "station_id": "4270",
+          "station_name": "中洲",
+          "arrival": 780,
+          "departure": 840
+        },
+        {
+          "station_id": "4271",
+          "station_name": "長榮大學",
+          "arrival": 1080,
+          "departure": 1140
+        },
+        {
+          "station_id": "4272",
+          "station_name": "沙崙",
+          "arrival": 1440,
+          "departure": 1440
+        }
+      ],
+      "total_travel_time": 1440
+    },
+    {
+      "departure_time": "07:44:00",
+      "train_id": "TRA-3711",
+      "train_no": "3711",
+      "train_type": "區間",
+      "origin_station": "4170",
+      "stations": [
+        {
+          "station_id": "4170",
+          "station_name": "善化",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "4180",
+          "station_name": "南科",
+          "arrival": 240,
+          "departure": 240
+        },
+        {
+          "station_id": "4190",
+          "station_name": "新市",
+          "arrival": 480,
+          "departure": 540
+        },
+        {
+          "station_id": "4200",
+          "station_name": "永康",
+          "arrival": 840,
+          "departure": 900
+        },
+        {
+          "station_id": "4210",
+          "station_name": "大橋",
+          "arrival": 1080,
+          "departure": 1140
+        },
+        {
+          "station_id": "4220",
+          "station_name": "臺南",
+          "arrival": 1320,
+          "departure": 1440
+        },
+        {
+          "station_id": "4250",
+          "station_name": "保安",
+          "arrival": 1800,
+          "departure": 1800
+        },
+        {
+          "station_id": "4260",
+          "station_name": "仁德",
+          "arrival": 1920,
+          "departure": 1980
+        },
+        {
+          "station_id": "4270",
+          "station_name": "中洲",
+          "arrival": 2160,
+          "departure": 2280
+        },
+        {
+          "station_id": "4271",
+          "station_name": "長榮大學",
+          "arrival": 2520,
+          "departure": 2580
+        },
+        {
+          "station_id": "4272",
+          "station_name": "沙崙",
+          "arrival": 2880,
+          "departure": 2880
+        }
+      ],
+      "total_travel_time": 2880
+    },
+    {
+      "departure_time": "08:17:00",
+      "train_id": "TRA-3713",
+      "train_no": "3713",
+      "train_type": "區間",
+      "origin_station": "4170",
+      "stations": [
+        {
+          "station_id": "4170",
+          "station_name": "善化",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "4180",
+          "station_name": "南科",
+          "arrival": 240,
+          "departure": 240
+        },
+        {
+          "station_id": "4190",
+          "station_name": "新市",
+          "arrival": 480,
+          "departure": 540
+        },
+        {
+          "station_id": "4200",
+          "station_name": "永康",
+          "arrival": 840,
+          "departure": 900
+        },
+        {
+          "station_id": "4210",
+          "station_name": "大橋",
+          "arrival": 1080,
+          "departure": 1140
+        },
+        {
+          "station_id": "4220",
+          "station_name": "臺南",
+          "arrival": 1320,
+          "departure": 1440
+        },
+        {
+          "station_id": "4250",
+          "station_name": "保安",
+          "arrival": 1800,
+          "departure": 1800
+        },
+        {
+          "station_id": "4260",
+          "station_name": "仁德",
+          "arrival": 1920,
+          "departure": 1980
+        },
+        {
+          "station_id": "4270",
+          "station_name": "中洲",
+          "arrival": 2160,
+          "departure": 2220
+        },
+        {
+          "station_id": "4271",
+          "station_name": "長榮大學",
+          "arrival": 2460,
+          "departure": 2520
+        },
+        {
+          "station_id": "4272",
+          "station_name": "沙崙",
+          "arrival": 2820,
+          "departure": 2820
+        }
+      ],
+      "total_travel_time": 2820
+    },
+    {
+      "departure_time": "08:47:00",
+      "train_id": "TRA-3715",
+      "train_no": "3715",
+      "train_type": "區間",
+      "origin_station": "4170",
+      "stations": [
+        {
+          "station_id": "4170",
+          "station_name": "善化",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "4180",
+          "station_name": "南科",
+          "arrival": 240,
+          "departure": 240
+        },
+        {
+          "station_id": "4190",
+          "station_name": "新市",
+          "arrival": 480,
+          "departure": 540
+        },
+        {
+          "station_id": "4200",
+          "station_name": "永康",
+          "arrival": 840,
+          "departure": 900
+        },
+        {
+          "station_id": "4210",
+          "station_name": "大橋",
+          "arrival": 1080,
+          "departure": 1140
+        },
+        {
+          "station_id": "4220",
+          "station_name": "臺南",
+          "arrival": 1320,
+          "departure": 1440
+        },
+        {
+          "station_id": "4250",
+          "station_name": "保安",
+          "arrival": 1800,
+          "departure": 1800
+        },
+        {
+          "station_id": "4260",
+          "station_name": "仁德",
+          "arrival": 1920,
+          "departure": 1980
+        },
+        {
+          "station_id": "4270",
+          "station_name": "中洲",
+          "arrival": 2160,
+          "departure": 2220
+        },
+        {
+          "station_id": "4271",
+          "station_name": "長榮大學",
+          "arrival": 2460,
+          "departure": 2520
+        },
+        {
+          "station_id": "4272",
+          "station_name": "沙崙",
+          "arrival": 2820,
+          "departure": 2820
+        }
+      ],
+      "total_travel_time": 2820
+    },
+    {
+      "departure_time": "09:23:00",
+      "train_id": "TRA-3721",
+      "train_no": "3721",
+      "train_type": "區間",
+      "origin_station": "4170",
+      "stations": [
+        {
+          "station_id": "4170",
+          "station_name": "善化",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "4180",
+          "station_name": "南科",
+          "arrival": 240,
+          "departure": 240
+        },
+        {
+          "station_id": "4190",
+          "station_name": "新市",
+          "arrival": 480,
+          "departure": 540
+        },
+        {
+          "station_id": "4200",
+          "station_name": "永康",
+          "arrival": 840,
+          "departure": 900
+        },
+        {
+          "station_id": "4210",
+          "station_name": "大橋",
+          "arrival": 1080,
+          "departure": 1140
+        },
+        {
+          "station_id": "4220",
+          "station_name": "臺南",
+          "arrival": 1320,
+          "departure": 1380
+        },
+        {
+          "station_id": "4250",
+          "station_name": "保安",
+          "arrival": 1740,
+          "departure": 1740
+        },
+        {
+          "station_id": "4260",
+          "station_name": "仁德",
+          "arrival": 1860,
+          "departure": 1920
+        },
+        {
+          "station_id": "4270",
+          "station_name": "中洲",
+          "arrival": 2100,
+          "departure": 2160
+        },
+        {
+          "station_id": "4271",
+          "station_name": "長榮大學",
+          "arrival": 2400,
+          "departure": 2460
+        },
+        {
+          "station_id": "4272",
+          "station_name": "沙崙",
+          "arrival": 2760,
+          "departure": 2760
+        }
+      ],
+      "total_travel_time": 2760
+    },
+    {
+      "departure_time": "09:27:00",
+      "train_id": "TRA-3717",
+      "train_no": "3717",
+      "train_type": "區間",
+      "origin_station": "4220",
+      "stations": [
+        {
+          "station_id": "4220",
+          "station_name": "臺南",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "4250",
+          "station_name": "保安",
+          "arrival": 420,
+          "departure": 420
+        },
+        {
+          "station_id": "4260",
+          "station_name": "仁德",
+          "arrival": 540,
+          "departure": 600
+        },
+        {
+          "station_id": "4270",
+          "station_name": "中洲",
+          "arrival": 780,
+          "departure": 840
+        },
+        {
+          "station_id": "4271",
+          "station_name": "長榮大學",
+          "arrival": 1080,
+          "departure": 1140
+        },
+        {
+          "station_id": "4272",
+          "station_name": "沙崙",
+          "arrival": 1440,
+          "departure": 1440
+        }
+      ],
+      "total_travel_time": 1440
+    },
+    {
+      "departure_time": "10:25:00",
+      "train_id": "TRA-3725",
+      "train_no": "3725",
+      "train_type": "區間",
+      "origin_station": "4170",
+      "stations": [
+        {
+          "station_id": "4170",
+          "station_name": "善化",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "4180",
+          "station_name": "南科",
+          "arrival": 240,
+          "departure": 240
+        },
+        {
+          "station_id": "4190",
+          "station_name": "新市",
+          "arrival": 480,
+          "departure": 600
+        },
+        {
+          "station_id": "4200",
+          "station_name": "永康",
+          "arrival": 840,
+          "departure": 900
+        },
+        {
+          "station_id": "4210",
+          "station_name": "大橋",
+          "arrival": 1080,
+          "departure": 1140
+        },
+        {
+          "station_id": "4220",
+          "station_name": "臺南",
+          "arrival": 1380,
+          "departure": 2280
+        },
+        {
+          "station_id": "4250",
+          "station_name": "保安",
+          "arrival": 2700,
+          "departure": 2700
+        },
+        {
+          "station_id": "4260",
+          "station_name": "仁德",
+          "arrival": 2820,
+          "departure": 2880
+        },
+        {
+          "station_id": "4270",
+          "station_name": "中洲",
+          "arrival": 3060,
+          "departure": 3120
+        },
+        {
+          "station_id": "4271",
+          "station_name": "長榮大學",
+          "arrival": 3360,
+          "departure": 3420
+        },
+        {
+          "station_id": "4272",
+          "station_name": "沙崙",
+          "arrival": 3720,
+          "departure": 3720
+        }
+      ],
+      "total_travel_time": 3720
+    },
+    {
+      "departure_time": "10:26:00",
+      "train_id": "TRA-3723",
+      "train_no": "3723",
+      "train_type": "區間",
+      "origin_station": "4220",
+      "stations": [
+        {
+          "station_id": "4220",
+          "station_name": "臺南",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "4250",
+          "station_name": "保安",
+          "arrival": 420,
+          "departure": 420
+        },
+        {
+          "station_id": "4260",
+          "station_name": "仁德",
+          "arrival": 540,
+          "departure": 600
+        },
+        {
+          "station_id": "4270",
+          "station_name": "中洲",
+          "arrival": 780,
+          "departure": 840
+        },
+        {
+          "station_id": "4271",
+          "station_name": "長榮大學",
+          "arrival": 1080,
+          "departure": 1140
+        },
+        {
+          "station_id": "4272",
+          "station_name": "沙崙",
+          "arrival": 1440,
+          "departure": 1440
+        }
+      ],
+      "total_travel_time": 1440
+    },
+    {
+      "departure_time": "11:36:00",
+      "train_id": "TRA-3727",
+      "train_no": "3727",
+      "train_type": "區間",
+      "origin_station": "4220",
+      "stations": [
+        {
+          "station_id": "4220",
+          "station_name": "臺南",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "4250",
+          "station_name": "保安",
+          "arrival": 420,
+          "departure": 420
+        },
+        {
+          "station_id": "4260",
+          "station_name": "仁德",
+          "arrival": 540,
+          "departure": 600
+        },
+        {
+          "station_id": "4270",
+          "station_name": "中洲",
+          "arrival": 780,
+          "departure": 840
+        },
+        {
+          "station_id": "4271",
+          "station_name": "長榮大學",
+          "arrival": 1080,
+          "departure": 1140
+        },
+        {
+          "station_id": "4272",
+          "station_name": "沙崙",
+          "arrival": 1440,
+          "departure": 1440
+        }
+      ],
+      "total_travel_time": 1440
+    },
+    {
+      "departure_time": "11:53:00",
+      "train_id": "TRA-3731",
+      "train_no": "3731",
+      "train_type": "區間",
+      "origin_station": "4200",
+      "stations": [
+        {
+          "station_id": "4200",
+          "station_name": "永康",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "4210",
+          "station_name": "大橋",
+          "arrival": 240,
+          "departure": 300
+        },
+        {
+          "station_id": "4220",
+          "station_name": "臺南",
+          "arrival": 480,
+          "departure": 600
+        },
+        {
+          "station_id": "4250",
+          "station_name": "保安",
+          "arrival": 960,
+          "departure": 960
+        },
+        {
+          "station_id": "4260",
+          "station_name": "仁德",
+          "arrival": 1080,
+          "departure": 1140
+        },
+        {
+          "station_id": "4270",
+          "station_name": "中洲",
+          "arrival": 1320,
+          "departure": 1380
+        },
+        {
+          "station_id": "4271",
+          "station_name": "長榮大學",
+          "arrival": 1620,
+          "departure": 1680
+        },
+        {
+          "station_id": "4272",
+          "station_name": "沙崙",
+          "arrival": 1980,
+          "departure": 1980
+        }
+      ],
+      "total_travel_time": 1980
+    },
+    {
+      "departure_time": "12:31:00",
+      "train_id": "TRA-3733",
+      "train_no": "3733",
+      "train_type": "區間",
+      "origin_station": "4220",
+      "stations": [
+        {
+          "station_id": "4220",
+          "station_name": "臺南",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "4250",
+          "station_name": "保安",
+          "arrival": 420,
+          "departure": 420
+        },
+        {
+          "station_id": "4260",
+          "station_name": "仁德",
+          "arrival": 540,
+          "departure": 600
+        },
+        {
+          "station_id": "4270",
+          "station_name": "中洲",
+          "arrival": 780,
+          "departure": 840
+        },
+        {
+          "station_id": "4271",
+          "station_name": "長榮大學",
+          "arrival": 1080,
+          "departure": 1140
+        },
+        {
+          "station_id": "4272",
+          "station_name": "沙崙",
+          "arrival": 1440,
+          "departure": 1440
+        }
+      ],
+      "total_travel_time": 1440
+    },
+    {
+      "departure_time": "12:31:00",
+      "train_id": "TRA-3735",
+      "train_no": "3735",
+      "train_type": "區間",
+      "origin_station": "4170",
+      "stations": [
+        {
+          "station_id": "4170",
+          "station_name": "善化",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "4180",
+          "station_name": "南科",
+          "arrival": 240,
+          "departure": 240
+        },
+        {
+          "station_id": "4190",
+          "station_name": "新市",
+          "arrival": 480,
+          "departure": 540
+        },
+        {
+          "station_id": "4200",
+          "station_name": "永康",
+          "arrival": 840,
+          "departure": 900
+        },
+        {
+          "station_id": "4210",
+          "station_name": "大橋",
+          "arrival": 1080,
+          "departure": 1140
+        },
+        {
+          "station_id": "4220",
+          "station_name": "臺南",
+          "arrival": 1320,
+          "departure": 1440
+        },
+        {
+          "station_id": "4250",
+          "station_name": "保安",
+          "arrival": 1800,
+          "departure": 1800
+        },
+        {
+          "station_id": "4260",
+          "station_name": "仁德",
+          "arrival": 1920,
+          "departure": 1980
+        },
+        {
+          "station_id": "4270",
+          "station_name": "中洲",
+          "arrival": 2160,
+          "departure": 2220
+        },
+        {
+          "station_id": "4271",
+          "station_name": "長榮大學",
+          "arrival": 2460,
+          "departure": 2520
+        },
+        {
+          "station_id": "4272",
+          "station_name": "沙崙",
+          "arrival": 2820,
+          "departure": 2820
+        }
+      ],
+      "total_travel_time": 2820
+    },
+    {
+      "departure_time": "13:38:00",
+      "train_id": "TRA-3737",
+      "train_no": "3737",
+      "train_type": "區間",
+      "origin_station": "4220",
+      "stations": [
+        {
+          "station_id": "4220",
+          "station_name": "臺南",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "4250",
+          "station_name": "保安",
+          "arrival": 420,
+          "departure": 420
+        },
+        {
+          "station_id": "4260",
+          "station_name": "仁德",
+          "arrival": 540,
+          "departure": 600
+        },
+        {
+          "station_id": "4270",
+          "station_name": "中洲",
+          "arrival": 780,
+          "departure": 840
+        },
+        {
+          "station_id": "4271",
+          "station_name": "長榮大學",
+          "arrival": 1080,
+          "departure": 1140
+        },
+        {
+          "station_id": "4272",
+          "station_name": "沙崙",
+          "arrival": 1440,
+          "departure": 1440
+        }
+      ],
+      "total_travel_time": 1440
+    },
+    {
+      "departure_time": "14:04:00",
+      "train_id": "TRA-3741",
+      "train_no": "3741",
+      "train_type": "區間",
+      "origin_station": "4220",
+      "stations": [
+        {
+          "station_id": "4220",
+          "station_name": "臺南",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "4250",
+          "station_name": "保安",
+          "arrival": 420,
+          "departure": 420
+        },
+        {
+          "station_id": "4260",
+          "station_name": "仁德",
+          "arrival": 540,
+          "departure": 600
+        },
+        {
+          "station_id": "4270",
+          "station_name": "中洲",
+          "arrival": 780,
+          "departure": 840
+        },
+        {
+          "station_id": "4271",
+          "station_name": "長榮大學",
+          "arrival": 1080,
+          "departure": 1140
+        },
+        {
+          "station_id": "4272",
+          "station_name": "沙崙",
+          "arrival": 1440,
+          "departure": 1440
+        }
+      ],
+      "total_travel_time": 1440
+    },
+    {
+      "departure_time": "14:18:00",
+      "train_id": "TRA-3743",
+      "train_no": "3743",
+      "train_type": "區間",
+      "origin_station": "4170",
+      "stations": [
+        {
+          "station_id": "4170",
+          "station_name": "善化",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "4180",
+          "station_name": "南科",
+          "arrival": 240,
+          "departure": 240
+        },
+        {
+          "station_id": "4190",
+          "station_name": "新市",
+          "arrival": 480,
+          "departure": 540
+        },
+        {
+          "station_id": "4200",
+          "station_name": "永康",
+          "arrival": 840,
+          "departure": 900
+        },
+        {
+          "station_id": "4210",
+          "station_name": "大橋",
+          "arrival": 1080,
+          "departure": 1140
+        },
+        {
+          "station_id": "4220",
+          "station_name": "臺南",
+          "arrival": 1320,
+          "departure": 1440
+        },
+        {
+          "station_id": "4250",
+          "station_name": "保安",
+          "arrival": 1800,
+          "departure": 1800
+        },
+        {
+          "station_id": "4260",
+          "station_name": "仁德",
+          "arrival": 1920,
+          "departure": 1980
+        },
+        {
+          "station_id": "4270",
+          "station_name": "中洲",
+          "arrival": 2160,
+          "departure": 2220
+        },
+        {
+          "station_id": "4271",
+          "station_name": "長榮大學",
+          "arrival": 2460,
+          "departure": 2520
+        },
+        {
+          "station_id": "4272",
+          "station_name": "沙崙",
+          "arrival": 2820,
+          "departure": 2820
+        }
+      ],
+      "total_travel_time": 2820
+    },
+    {
+      "departure_time": "15:00:00",
+      "train_id": "TRA-3745",
+      "train_no": "3745",
+      "train_type": "區間",
+      "origin_station": "4200",
+      "stations": [
+        {
+          "station_id": "4200",
+          "station_name": "永康",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "4210",
+          "station_name": "大橋",
+          "arrival": 240,
+          "departure": 300
+        },
+        {
+          "station_id": "4220",
+          "station_name": "臺南",
+          "arrival": 480,
+          "departure": 600
+        },
+        {
+          "station_id": "4250",
+          "station_name": "保安",
+          "arrival": 960,
+          "departure": 960
+        },
+        {
+          "station_id": "4260",
+          "station_name": "仁德",
+          "arrival": 1080,
+          "departure": 1140
+        },
+        {
+          "station_id": "4270",
+          "station_name": "中洲",
+          "arrival": 1320,
+          "departure": 1380
+        },
+        {
+          "station_id": "4271",
+          "station_name": "長榮大學",
+          "arrival": 1620,
+          "departure": 1680
+        },
+        {
+          "station_id": "4272",
+          "station_name": "沙崙",
+          "arrival": 1980,
+          "departure": 1980
+        }
+      ],
+      "total_travel_time": 1980
+    },
+    {
+      "departure_time": "15:42:00",
+      "train_id": "TRA-3747",
+      "train_no": "3747",
+      "train_type": "區間",
+      "origin_station": "4220",
+      "stations": [
+        {
+          "station_id": "4220",
+          "station_name": "臺南",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "4250",
+          "station_name": "保安",
+          "arrival": 420,
+          "departure": 420
+        },
+        {
+          "station_id": "4260",
+          "station_name": "仁德",
+          "arrival": 540,
+          "departure": 600
+        },
+        {
+          "station_id": "4270",
+          "station_name": "中洲",
+          "arrival": 780,
+          "departure": 840
+        },
+        {
+          "station_id": "4271",
+          "station_name": "長榮大學",
+          "arrival": 1080,
+          "departure": 1140
+        },
+        {
+          "station_id": "4272",
+          "station_name": "沙崙",
+          "arrival": 1440,
+          "departure": 1440
+        }
+      ],
+      "total_travel_time": 1440
+    },
+    {
+      "departure_time": "15:42:00",
+      "train_id": "TRA-3751",
+      "train_no": "3751",
+      "train_type": "區間",
+      "origin_station": "4170",
+      "stations": [
+        {
+          "station_id": "4170",
+          "station_name": "善化",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "4180",
+          "station_name": "南科",
+          "arrival": 240,
+          "departure": 240
+        },
+        {
+          "station_id": "4190",
+          "station_name": "新市",
+          "arrival": 480,
+          "departure": 540
+        },
+        {
+          "station_id": "4200",
+          "station_name": "永康",
+          "arrival": 840,
+          "departure": 900
+        },
+        {
+          "station_id": "4210",
+          "station_name": "大橋",
+          "arrival": 1080,
+          "departure": 1140
+        },
+        {
+          "station_id": "4220",
+          "station_name": "臺南",
+          "arrival": 1320,
+          "departure": 1440
+        },
+        {
+          "station_id": "4250",
+          "station_name": "保安",
+          "arrival": 1800,
+          "departure": 1800
+        },
+        {
+          "station_id": "4260",
+          "station_name": "仁德",
+          "arrival": 1920,
+          "departure": 1980
+        },
+        {
+          "station_id": "4270",
+          "station_name": "中洲",
+          "arrival": 2160,
+          "departure": 2220
+        },
+        {
+          "station_id": "4271",
+          "station_name": "長榮大學",
+          "arrival": 2460,
+          "departure": 2520
+        },
+        {
+          "station_id": "4272",
+          "station_name": "沙崙",
+          "arrival": 2820,
+          "departure": 2820
+        }
+      ],
+      "total_travel_time": 2820
+    },
+    {
+      "departure_time": "16:20:00",
+      "train_id": "TRA-3753",
+      "train_no": "3753",
+      "train_type": "區間",
+      "origin_station": "4200",
+      "stations": [
+        {
+          "station_id": "4200",
+          "station_name": "永康",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "4210",
+          "station_name": "大橋",
+          "arrival": 240,
+          "departure": 300
+        },
+        {
+          "station_id": "4220",
+          "station_name": "臺南",
+          "arrival": 480,
+          "departure": 600
+        },
+        {
+          "station_id": "4250",
+          "station_name": "保安",
+          "arrival": 960,
+          "departure": 960
+        },
+        {
+          "station_id": "4260",
+          "station_name": "仁德",
+          "arrival": 1080,
+          "departure": 1140
+        },
+        {
+          "station_id": "4270",
+          "station_name": "中洲",
+          "arrival": 1320,
+          "departure": 1380
+        },
+        {
+          "station_id": "4271",
+          "station_name": "長榮大學",
+          "arrival": 1620,
+          "departure": 1680
+        },
+        {
+          "station_id": "4272",
+          "station_name": "沙崙",
+          "arrival": 1980,
+          "departure": 1980
+        }
+      ],
+      "total_travel_time": 1980
+    },
+    {
+      "departure_time": "16:57:00",
+      "train_id": "TRA-3755",
+      "train_no": "3755",
+      "train_type": "區間",
+      "origin_station": "4200",
+      "stations": [
+        {
+          "station_id": "4200",
+          "station_name": "永康",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "4210",
+          "station_name": "大橋",
+          "arrival": 240,
+          "departure": 300
+        },
+        {
+          "station_id": "4220",
+          "station_name": "臺南",
+          "arrival": 480,
+          "departure": 600
+        },
+        {
+          "station_id": "4250",
+          "station_name": "保安",
+          "arrival": 960,
+          "departure": 960
+        },
+        {
+          "station_id": "4260",
+          "station_name": "仁德",
+          "arrival": 1080,
+          "departure": 1140
+        },
+        {
+          "station_id": "4270",
+          "station_name": "中洲",
+          "arrival": 1320,
+          "departure": 1380
+        },
+        {
+          "station_id": "4271",
+          "station_name": "長榮大學",
+          "arrival": 1620,
+          "departure": 1680
+        },
+        {
+          "station_id": "4272",
+          "station_name": "沙崙",
+          "arrival": 1980,
+          "departure": 1980
+        }
+      ],
+      "total_travel_time": 1980
+    },
+    {
+      "departure_time": "17:06:00",
+      "train_id": "TRA-3757",
+      "train_no": "3757",
+      "train_type": "區間",
+      "origin_station": "4170",
+      "stations": [
+        {
+          "station_id": "4170",
+          "station_name": "善化",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "4180",
+          "station_name": "南科",
+          "arrival": 240,
+          "departure": 240
+        },
+        {
+          "station_id": "4190",
+          "station_name": "新市",
+          "arrival": 480,
+          "departure": 540
+        },
+        {
+          "station_id": "4200",
+          "station_name": "永康",
+          "arrival": 840,
+          "departure": 900
+        },
+        {
+          "station_id": "4210",
+          "station_name": "大橋",
+          "arrival": 1080,
+          "departure": 1140
+        },
+        {
+          "station_id": "4220",
+          "station_name": "臺南",
+          "arrival": 1320,
+          "departure": 1440
+        },
+        {
+          "station_id": "4250",
+          "station_name": "保安",
+          "arrival": 1800,
+          "departure": 1800
+        },
+        {
+          "station_id": "4260",
+          "station_name": "仁德",
+          "arrival": 1920,
+          "departure": 1980
+        },
+        {
+          "station_id": "4270",
+          "station_name": "中洲",
+          "arrival": 2160,
+          "departure": 2220
+        },
+        {
+          "station_id": "4271",
+          "station_name": "長榮大學",
+          "arrival": 2460,
+          "departure": 2520
+        },
+        {
+          "station_id": "4272",
+          "station_name": "沙崙",
+          "arrival": 2820,
+          "departure": 2820
+        }
+      ],
+      "total_travel_time": 2820
+    },
+    {
+      "departure_time": "17:28:00",
+      "train_id": "TRA-3861",
+      "train_no": "3861",
+      "train_type": "區間快",
+      "origin_station": "4170",
+      "stations": [
+        {
+          "station_id": "4170",
+          "station_name": "善化",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "4180",
+          "station_name": "南科",
+          "arrival": 180,
+          "departure": 240
+        },
+        {
+          "station_id": "4200",
+          "station_name": "永康",
+          "arrival": 660,
+          "departure": 720
+        },
+        {
+          "station_id": "4220",
+          "station_name": "臺南",
+          "arrival": 1080,
+          "departure": 1260
+        },
+        {
+          "station_id": "4270",
+          "station_name": "中洲",
+          "arrival": 1800,
+          "departure": 1860
+        },
+        {
+          "station_id": "4272",
+          "station_name": "沙崙",
+          "arrival": 2400,
+          "departure": 2400
+        }
+      ],
+      "total_travel_time": 2400
+    },
+    {
+      "departure_time": "18:06:00",
+      "train_id": "TRA-3761",
+      "train_no": "3761",
+      "train_type": "區間",
+      "origin_station": "4220",
+      "stations": [
+        {
+          "station_id": "4220",
+          "station_name": "臺南",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "4250",
+          "station_name": "保安",
+          "arrival": 480,
+          "departure": 780
+        },
+        {
+          "station_id": "4260",
+          "station_name": "仁德",
+          "arrival": 960,
+          "departure": 960
+        },
+        {
+          "station_id": "4270",
+          "station_name": "中洲",
+          "arrival": 1200,
+          "departure": 1260
+        },
+        {
+          "station_id": "4271",
+          "station_name": "長榮大學",
+          "arrival": 1500,
+          "departure": 1560
+        },
+        {
+          "station_id": "4272",
+          "station_name": "沙崙",
+          "arrival": 1860,
+          "departure": 1860
+        }
+      ],
+      "total_travel_time": 1860
+    },
+    {
+      "departure_time": "18:29:00",
+      "train_id": "TRA-3765",
+      "train_no": "3765",
+      "train_type": "區間",
+      "origin_station": "4200",
+      "stations": [
+        {
+          "station_id": "4200",
+          "station_name": "永康",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "4210",
+          "station_name": "大橋",
+          "arrival": 240,
+          "departure": 300
+        },
+        {
+          "station_id": "4220",
+          "station_name": "臺南",
+          "arrival": 540,
+          "departure": 600
+        },
+        {
+          "station_id": "4250",
+          "station_name": "保安",
+          "arrival": 1020,
+          "departure": 1020
+        },
+        {
+          "station_id": "4260",
+          "station_name": "仁德",
+          "arrival": 1140,
+          "departure": 1200
+        },
+        {
+          "station_id": "4270",
+          "station_name": "中洲",
+          "arrival": 1380,
+          "departure": 1440
+        },
+        {
+          "station_id": "4271",
+          "station_name": "長榮大學",
+          "arrival": 1680,
+          "departure": 1740
+        },
+        {
+          "station_id": "4272",
+          "station_name": "沙崙",
+          "arrival": 2040,
+          "departure": 2040
+        }
+      ],
+      "total_travel_time": 2040
+    },
+    {
+      "departure_time": "18:32:00",
+      "train_id": "TRA-3863",
+      "train_no": "3863",
+      "train_type": "區間快",
+      "origin_station": "4170",
+      "stations": [
+        {
+          "station_id": "4170",
+          "station_name": "善化",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "4180",
+          "station_name": "南科",
+          "arrival": 180,
+          "departure": 240
+        },
+        {
+          "station_id": "4200",
+          "station_name": "永康",
+          "arrival": 660,
+          "departure": 780
+        },
+        {
+          "station_id": "4220",
+          "station_name": "臺南",
+          "arrival": 1140,
+          "departure": 1200
+        },
+        {
+          "station_id": "4270",
+          "station_name": "中洲",
+          "arrival": 1740,
+          "departure": 1800
+        },
+        {
+          "station_id": "4272",
+          "station_name": "沙崙",
+          "arrival": 2340,
+          "departure": 2340
+        }
+      ],
+      "total_travel_time": 2340
+    },
+    {
+      "departure_time": "19:26:00",
+      "train_id": "TRA-3767",
+      "train_no": "3767",
+      "train_type": "區間",
+      "origin_station": "4220",
+      "stations": [
+        {
+          "station_id": "4220",
+          "station_name": "臺南",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "4250",
+          "station_name": "保安",
+          "arrival": 420,
+          "departure": 420
+        },
+        {
+          "station_id": "4260",
+          "station_name": "仁德",
+          "arrival": 540,
+          "departure": 600
+        },
+        {
+          "station_id": "4270",
+          "station_name": "中洲",
+          "arrival": 780,
+          "departure": 840
+        },
+        {
+          "station_id": "4271",
+          "station_name": "長榮大學",
+          "arrival": 1080,
+          "departure": 1140
+        },
+        {
+          "station_id": "4272",
+          "station_name": "沙崙",
+          "arrival": 1440,
+          "departure": 1440
+        }
+      ],
+      "total_travel_time": 1440
+    },
+    {
+      "departure_time": "19:41:00",
+      "train_id": "TRA-3771",
+      "train_no": "3771",
+      "train_type": "區間",
+      "origin_station": "4170",
+      "stations": [
+        {
+          "station_id": "4170",
+          "station_name": "善化",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "4180",
+          "station_name": "南科",
+          "arrival": 180,
+          "departure": 180
+        },
+        {
+          "station_id": "4190",
+          "station_name": "新市",
+          "arrival": 420,
+          "departure": 480
+        },
+        {
+          "station_id": "4200",
+          "station_name": "永康",
+          "arrival": 780,
+          "departure": 840
+        },
+        {
+          "station_id": "4210",
+          "station_name": "大橋",
+          "arrival": 1020,
+          "departure": 1080
+        },
+        {
+          "station_id": "4220",
+          "station_name": "臺南",
+          "arrival": 1260,
+          "departure": 1380
+        },
+        {
+          "station_id": "4250",
+          "station_name": "保安",
+          "arrival": 1740,
+          "departure": 1740
+        },
+        {
+          "station_id": "4260",
+          "station_name": "仁德",
+          "arrival": 1860,
+          "departure": 1920
+        },
+        {
+          "station_id": "4270",
+          "station_name": "中洲",
+          "arrival": 2100,
+          "departure": 2160
+        },
+        {
+          "station_id": "4271",
+          "station_name": "長榮大學",
+          "arrival": 2400,
+          "departure": 2460
+        },
+        {
+          "station_id": "4272",
+          "station_name": "沙崙",
+          "arrival": 2760,
+          "departure": 2760
+        }
+      ],
+      "total_travel_time": 2760
+    },
+    {
+      "departure_time": "20:25:00",
+      "train_id": "TRA-3773",
+      "train_no": "3773",
+      "train_type": "區間",
+      "origin_station": "4220",
+      "stations": [
+        {
+          "station_id": "4220",
+          "station_name": "臺南",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "4250",
+          "station_name": "保安",
+          "arrival": 420,
+          "departure": 420
+        },
+        {
+          "station_id": "4260",
+          "station_name": "仁德",
+          "arrival": 540,
+          "departure": 600
+        },
+        {
+          "station_id": "4270",
+          "station_name": "中洲",
+          "arrival": 780,
+          "departure": 840
+        },
+        {
+          "station_id": "4271",
+          "station_name": "長榮大學",
+          "arrival": 1080,
+          "departure": 1140
+        },
+        {
+          "station_id": "4272",
+          "station_name": "沙崙",
+          "arrival": 1440,
+          "departure": 1440
+        }
+      ],
+      "total_travel_time": 1440
+    },
+    {
+      "departure_time": "20:50:00",
+      "train_id": "TRA-3777",
+      "train_no": "3777",
+      "train_type": "區間",
+      "origin_station": "4170",
+      "stations": [
+        {
+          "station_id": "4170",
+          "station_name": "善化",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "4180",
+          "station_name": "南科",
+          "arrival": 240,
+          "departure": 240
+        },
+        {
+          "station_id": "4190",
+          "station_name": "新市",
+          "arrival": 480,
+          "departure": 540
+        },
+        {
+          "station_id": "4200",
+          "station_name": "永康",
+          "arrival": 840,
+          "departure": 1200
+        },
+        {
+          "station_id": "4210",
+          "station_name": "大橋",
+          "arrival": 1440,
+          "departure": 1500
+        },
+        {
+          "station_id": "4220",
+          "station_name": "臺南",
+          "arrival": 1680,
+          "departure": 1860
+        },
+        {
+          "station_id": "4250",
+          "station_name": "保安",
+          "arrival": 2220,
+          "departure": 2220
+        },
+        {
+          "station_id": "4260",
+          "station_name": "仁德",
+          "arrival": 2340,
+          "departure": 2400
+        },
+        {
+          "station_id": "4270",
+          "station_name": "中洲",
+          "arrival": 2580,
+          "departure": 2640
+        },
+        {
+          "station_id": "4271",
+          "station_name": "長榮大學",
+          "arrival": 2880,
+          "departure": 2940
+        },
+        {
+          "station_id": "4272",
+          "station_name": "沙崙",
+          "arrival": 3240,
+          "departure": 3240
+        }
+      ],
+      "total_travel_time": 3240
+    },
+    {
+      "departure_time": "21:04:00",
+      "train_id": "TRA-3775",
+      "train_no": "3775",
+      "train_type": "區間",
+      "origin_station": "4220",
+      "stations": [
+        {
+          "station_id": "4220",
+          "station_name": "臺南",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "4250",
+          "station_name": "保安",
+          "arrival": 420,
+          "departure": 420
+        },
+        {
+          "station_id": "4260",
+          "station_name": "仁德",
+          "arrival": 540,
+          "departure": 600
+        },
+        {
+          "station_id": "4270",
+          "station_name": "中洲",
+          "arrival": 780,
+          "departure": 840
+        },
+        {
+          "station_id": "4271",
+          "station_name": "長榮大學",
+          "arrival": 1080,
+          "departure": 1140
+        },
+        {
+          "station_id": "4272",
+          "station_name": "沙崙",
+          "arrival": 1440,
+          "departure": 1440
+        }
+      ],
+      "total_travel_time": 1440
+    },
+    {
+      "departure_time": "21:45:00",
+      "train_id": "TRA-3781",
+      "train_no": "3781",
+      "train_type": "區間",
+      "origin_station": "4220",
+      "stations": [
+        {
+          "station_id": "4220",
+          "station_name": "臺南",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "4250",
+          "station_name": "保安",
+          "arrival": 420,
+          "departure": 420
+        },
+        {
+          "station_id": "4260",
+          "station_name": "仁德",
+          "arrival": 540,
+          "departure": 600
+        },
+        {
+          "station_id": "4270",
+          "station_name": "中洲",
+          "arrival": 780,
+          "departure": 960
+        },
+        {
+          "station_id": "4271",
+          "station_name": "長榮大學",
+          "arrival": 1200,
+          "departure": 1260
+        },
+        {
+          "station_id": "4272",
+          "station_name": "沙崙",
+          "arrival": 1560,
+          "departure": 1560
+        }
+      ],
+      "total_travel_time": 1560
+    },
+    {
+      "departure_time": "22:30:00",
+      "train_id": "TRA-3783",
+      "train_no": "3783",
+      "train_type": "區間",
+      "origin_station": "4220",
+      "stations": [
+        {
+          "station_id": "4220",
+          "station_name": "臺南",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "4250",
+          "station_name": "保安",
+          "arrival": 420,
+          "departure": 420
+        },
+        {
+          "station_id": "4260",
+          "station_name": "仁德",
+          "arrival": 540,
+          "departure": 600
+        },
+        {
+          "station_id": "4270",
+          "station_name": "中洲",
+          "arrival": 780,
+          "departure": 840
+        },
+        {
+          "station_id": "4271",
+          "station_name": "長榮大學",
+          "arrival": 1080,
+          "departure": 1140
+        },
+        {
+          "station_id": "4272",
+          "station_name": "沙崙",
+          "arrival": 1440,
+          "departure": 1440
+        }
+      ],
+      "total_travel_time": 1440
+    }
+  ]
+}

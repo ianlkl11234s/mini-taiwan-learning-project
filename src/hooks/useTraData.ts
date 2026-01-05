@@ -6,10 +6,14 @@ import type { TrackSchedule } from '../types/schedule';
  * 台鐵軌道 ID 列表 (用於顯示軌道)
  * SH: 沙崙線
  * CZ: 成追線
- * WL: 西部幹線
+ * WL-TN-KH: 西部幹線 臺南-高雄段
  */
-const TRA_TRACK_IDS = ['SH-0', 'SH-1', 'CZ-0', 'CZ-1'];
-// WL 軌道太長，暫時不顯示：'WL-0', 'WL-1'
+const TRA_TRACK_IDS = [
+  'SH-0', 'SH-1',           // 沙崙線
+  'CZ-0', 'CZ-1',           // 成追線
+  'WL-TN-KH-0', 'WL-TN-KH-1', // 西部幹線 臺南-高雄段
+];
+// 完整 WL 軌道太長，改用分段：'WL-0', 'WL-1'
 
 /**
  * 有完整時刻表的軌道 ID (用於列車動畫)

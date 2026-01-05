@@ -9,9 +9,10 @@ import type { TrackSchedule } from '../types/schedule';
  * WL-TN-KH: 西部幹線 臺南-高雄段
  */
 const TRA_TRACK_IDS = [
-  'SH-0', 'SH-1',           // 沙崙線
-  'CZ-0', 'CZ-1',           // 成追線
+  'SH-0', 'SH-1',             // 沙崙線
+  'CZ-0', 'CZ-1',             // 成追線
   'WL-TN-KH-0', 'WL-TN-KH-1', // 西部幹線 臺南-高雄段
+  'PT-0', 'PT-1',             // 屏東線 (左營-屏東)
 ];
 // 完整 WL 軌道太長，改用分段：'WL-0', 'WL-1'
 

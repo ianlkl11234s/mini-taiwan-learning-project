@@ -70,7 +70,7 @@ export function useTraData(): TraDataState {
         // 載入軌道
         const trackFeatures: Track[] = [];
         for (const trackId of TRA_TRACK_IDS) {
-          const res = await fetch(`/data-tra/tracks/${trackId}.geojson`);
+          const res = await fetch(`/data/tra/tracks/${trackId}.geojson`);
           if (!res.ok) throw new Error(`Failed to load TRA track ${trackId}`);
           const data = await res.json();
           if (data.features?.[0]) {
@@ -92,13 +92,13 @@ export function useTraData(): TraDataState {
         setTrackMap(tMap);
 
         // 載入車站
-        const stationsRes = await fetch('/data-tra/stations.geojson');
+        const stationsRes = await fetch('/data/tra/stations.geojson');
         if (!stationsRes.ok) throw new Error('Failed to load TRA stations');
         const stationsData = await stationsRes.json();
         setStations(stationsData);
 
         // 載入車站進度映射表
-        const progressRes = await fetch('/data-tra/station_progress.json');
+        const progressRes = await fetch('/data/tra/station_progress.json');
         if (!progressRes.ok) throw new Error('Failed to load TRA station progress');
         const progressData = await progressRes.json();
         setStationProgress(progressData);
@@ -106,7 +106,7 @@ export function useTraData(): TraDataState {
         // 載入時刻表（只載入有完整時刻表的軌道）
         const scheduleMap = new Map<string, TrackSchedule>();
         for (const trackId of TRA_SCHEDULE_IDS) {
-          const scheduleRes = await fetch(`/data-tra/schedules/${trackId}.json`);
+          const scheduleRes = await fetch(`/data/tra/schedules/${trackId}.json`);
           if (!scheduleRes.ok) throw new Error(`Failed to load TRA schedule ${trackId}`);
           const scheduleData = await scheduleRes.json();
           scheduleMap.set(trackId, scheduleData);

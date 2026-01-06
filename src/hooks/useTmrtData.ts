@@ -60,7 +60,7 @@ export function useTmrtData(): TmrtDataState {
         // 載入軌道
         const trackFeatures: Track[] = [];
         for (const trackId of TMRT_TRACK_IDS) {
-          const res = await fetch(`/data-tmrt/tracks/${trackId}.geojson${cacheBuster}`);
+          const res = await fetch(`/data/tmrt/tracks/${trackId}.geojson${cacheBuster}`);
           if (!res.ok) throw new Error(`Failed to load TMRT track ${trackId}`);
           const data = await res.json();
           if (data.features?.[0]) {
@@ -82,20 +82,20 @@ export function useTmrtData(): TmrtDataState {
         setTrackMap(tMap);
 
         // 載入車站
-        const stationsRes = await fetch(`/data-tmrt/stations/tmrt_stations.geojson${cacheBuster}`);
+        const stationsRes = await fetch(`/data/tmrt/stations/tmrt_stations.geojson${cacheBuster}`);
         if (!stationsRes.ok) throw new Error('Failed to load TMRT stations');
         const stationsData = await stationsRes.json();
         setStations(stationsData);
 
         // 載入車站進度映射表
-        const progressRes = await fetch(`/data-tmrt/station_progress.json${cacheBuster}`);
+        const progressRes = await fetch(`/data/tmrt/station_progress.json${cacheBuster}`);
         if (!progressRes.ok) throw new Error('Failed to load TMRT station progress');
         const progressData = await progressRes.json();
         setStationProgress(progressData);
 
         // 載入時刻表（單一合併檔案）
         const scheduleMap = new Map<string, TrackSchedule>();
-        const schedulesRes = await fetch(`/data-tmrt/schedules/tmrt_schedules.json${cacheBuster}`);
+        const schedulesRes = await fetch(`/data/tmrt/schedules/tmrt_schedules.json${cacheBuster}`);
         if (!schedulesRes.ok) throw new Error('Failed to load TMRT schedules');
         const schedulesData = await schedulesRes.json();
 

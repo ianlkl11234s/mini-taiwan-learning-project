@@ -86,7 +86,7 @@ export const TRANSPORT_CONFIGS: Record<TransportMode, TransportConfig> = {
   KRTC: {
     id: 'KRTC',
     name: '高雄捷運',
-    dataPath: '/data-krtc',
+    dataPath: '/data/krtc',
     enable3D: true,
     enableFollow: true,
     defaultVisible: true,
@@ -94,7 +94,7 @@ export const TRANSPORT_CONFIGS: Record<TransportMode, TransportConfig> = {
   TMRT: {
     id: 'TMRT',
     name: '台中捷運',
-    dataPath: '/data-tmrt',
+    dataPath: '/data/tmrt',
     enable3D: true,
     enableFollow: true,
     defaultVisible: true,

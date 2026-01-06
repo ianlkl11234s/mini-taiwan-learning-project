@@ -25,6 +25,8 @@ import { Thsr3DLayer } from './layers/Thsr3DLayer';
 import { Krtc3DLayer } from './layers/Krtc3DLayer';
 import { Klrt3DLayer } from './layers/Klrt3DLayer';
 import { Tmrt3DLayer } from './layers/Tmrt3DLayer';
+import { TrainSymbolLayer } from './layers/TrainSymbolLayer';
+import { useAllTrains } from './hooks/useAllTrains';
 import { ThemeToggle, type MapTheme, type VisualTheme, getVisualTheme } from './components/ThemeToggle';
 import { TRACK_COLORS, TRAIN_COLORS, getTrainColor, getLineIdFromTrackId } from './constants/lineInfo';
 import { THSR_TRACK_COLOR, THSR_TRAIN_COLORS, getThsrDirection } from './constants/thsrInfo';
@@ -186,6 +188,12 @@ function App() {
   const krtc3DLayerRef = useRef<Krtc3DLayer | null>(null);
   const klrt3DLayerRef = useRef<Klrt3DLayer | null>(null);
   const tmrt3DLayerRef = useRef<Tmrt3DLayer | null>(null);
+
+  // WebGL Circle Layer（取代 DOM Markers，階段 1 基礎設施）
+  const trainSymbolLayerRef = useRef<TrainSymbolLayer | null>(null);
+  // Feature Flag：控制是否使用新的 WebGL 渲染模式（預設關閉，待階段 2 啟用）
+  const [useSymbolLayer, setUseSymbolLayer] = useState(false);
+  void setUseSymbolLayer; // 階段 2 將加入 UI 切換
 
   // 地圖主題模式（日夜切換）- 預設使用 dark 樣式
   const [mapTheme, setMapTheme] = useState<MapTheme>('dark');
@@ -400,6 +408,17 @@ function App() {
       tra: filteredTraTrains.length,
     };
   }, [filteredTrains, filteredKrtcTrains, filteredKlrtTrains, filteredThsrTrains, filteredTmrtTrains, filteredTraTrains]);
+
+  // 整合所有列車為 GeoJSON Features（用於 WebGL Circle Layer）
+  const allTrainFeatures = useAllTrains({
+    filteredTrains,
+    filteredThsrTrains,
+    filteredKrtcTrains,
+    filteredKlrtTrains,
+    filteredTmrtTrains,
+    filteredTraTrains,
+    selectedTrainId,
+  });
 
   // 建立車站座標索引（用於 3D 圖層停站定位）
   const stationCoordinates = useMemo(() => {
@@ -1449,6 +1468,37 @@ function App() {
     if (!tmrt3DLayerRef.current || !use3DMode) return;
     tmrt3DLayerRef.current.setSelectedTrainId(selectedTrainId);
   }, [selectedTrainId, use3DMode]);
+
+  // === WebGL Circle Layer（TrainSymbolLayer）===
+  // 初始化 TrainSymbolLayer（階段 1 基礎設施，僅建立 source 和 layers）
+  useEffect(() => {
+    if (!map.current || !mapLoaded) return;
+    // 目前 feature flag 預設關閉，待階段 2 啟用
+    if (!useSymbolLayer) return;
+    // 3D 模式使用 3D Layer，不需要 Symbol Layer
+    if (use3DMode) return;
+
+    const layer = new TrainSymbolLayer({
+      map: map.current,
+      onTrainClick: (trainId: string) => {
+        handleSelectTrain(trainId);
+      },
+    });
+    layer.initialize();
+    trainSymbolLayerRef.current = layer;
+
+    return () => {
+      trainSymbolLayerRef.current?.destroy();
+      trainSymbolLayerRef.current = null;
+    };
+  }, [mapLoaded, useSymbolLayer, use3DMode, handleSelectTrain, styleVersion]);
+
+  // 更新 TrainSymbolLayer 列車資料
+  useEffect(() => {
+    if (!trainSymbolLayerRef.current) return;
+    if (!useSymbolLayer || use3DMode) return;
+    trainSymbolLayerRef.current.updateTrains(allTrainFeatures);
+  }, [allTrainFeatures, useSymbolLayer, use3DMode]);
 
   // 更新軌道可見性（當 visibleLines 變化時）
   useEffect(() => {

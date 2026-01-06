@@ -192,8 +192,8 @@ function App() {
   // WebGL Circle Layer（取代 DOM Markers，階段 1 基礎設施）
   const trainSymbolLayerRef = useRef<TrainSymbolLayer | null>(null);
   // Feature Flag：控制是否使用新的 WebGL 渲染模式（預設關閉，待階段 2 啟用）
-  const [useSymbolLayer, setUseSymbolLayer] = useState(false);
-  void setUseSymbolLayer; // 階段 2 將加入 UI 切換
+  const [useSymbolLayer, setUseSymbolLayer] = useState(true);  // 階段 2: 啟用 WebGL Circle Layer
+  void setUseSymbolLayer; // 未來可加入 UI 切換
 
   // 地圖主題模式（日夜切換）- 預設使用 dark 樣式
   const [mapTheme, setMapTheme] = useState<MapTheme>('dark');
@@ -1470,35 +1470,40 @@ function App() {
   }, [selectedTrainId, use3DMode]);
 
   // === WebGL Circle Layer（TrainSymbolLayer）===
-  // 初始化 TrainSymbolLayer（階段 1 基礎設施，僅建立 source 和 layers）
+  // 初始化 + 更新 TrainSymbolLayer（合併為單一 effect 避免 ref 同步問題）
   useEffect(() => {
     if (!map.current || !mapLoaded) return;
-    // 目前 feature flag 預設關閉，待階段 2 啟用
     if (!useSymbolLayer) return;
-    // 3D 模式使用 3D Layer，不需要 Symbol Layer
     if (use3DMode) return;
 
-    const layer = new TrainSymbolLayer({
-      map: map.current,
-      onTrainClick: (trainId: string) => {
-        handleSelectTrain(trainId);
-      },
-    });
-    layer.initialize();
-    trainSymbolLayerRef.current = layer;
+    // 如果尚未初始化，則建立 layer
+    if (!trainSymbolLayerRef.current) {
+      const layer = new TrainSymbolLayer({
+        map: map.current,
+        onTrainClick: (trainId: string) => {
+          handleSelectTrain(trainId);
+        },
+      });
+      layer.initialize();
+      trainSymbolLayerRef.current = layer;
+    }
 
-    return () => {
-      trainSymbolLayerRef.current?.destroy();
-      trainSymbolLayerRef.current = null;
-    };
-  }, [mapLoaded, useSymbolLayer, use3DMode, handleSelectTrain, styleVersion]);
+    // 更新列車資料
+    if (trainSymbolLayerRef.current && allTrainFeatures.length > 0) {
+      console.log('[TrainSymbolLayer] updateTrains:', allTrainFeatures.length, 'features');
+      trainSymbolLayerRef.current.updateTrains(allTrainFeatures);
+    }
+  }, [mapLoaded, useSymbolLayer, use3DMode, handleSelectTrain, allTrainFeatures]);
 
-  // 更新 TrainSymbolLayer 列車資料
+  // 清理 TrainSymbolLayer（僅在 unmount 或切換模式時）
   useEffect(() => {
-    if (!trainSymbolLayerRef.current) return;
-    if (!useSymbolLayer || use3DMode) return;
-    trainSymbolLayerRef.current.updateTrains(allTrainFeatures);
-  }, [allTrainFeatures, useSymbolLayer, use3DMode]);
+    return () => {
+      if (trainSymbolLayerRef.current) {
+        trainSymbolLayerRef.current.destroy();
+        trainSymbolLayerRef.current = null;
+      }
+    };
+  }, [useSymbolLayer, use3DMode, styleVersion]);
 
   // 更新軌道可見性（當 visibleLines 變化時）
   useEffect(() => {
@@ -1910,8 +1915,8 @@ function App() {
   useEffect(() => {
     if (!map.current || !mapLoaded) return;
 
-    // 3D 模式時清除所有 2D 標記並跳過
-    if (use3DMode) {
+    // 3D 模式或 WebGL Symbol Layer 模式時清除所有 2D 標記並跳過
+    if (use3DMode || useSymbolLayer) {
       for (const marker of trainMarkers.current.values()) {
         marker.remove();
       }
@@ -2024,14 +2029,14 @@ function App() {
         }
       }
     }
-  }, [mapLoaded, filteredTrains, use3DMode, handleSelectTrain, selectedTrainId]);
+  }, [mapLoaded, filteredTrains, use3DMode, useSymbolLayer, handleSelectTrain, selectedTrainId]);
 
   // 更新高鐵列車標記（2D 模式時使用）
   useEffect(() => {
     if (!map.current || !mapLoaded) return;
 
-    // 3D 模式時清除所有 2D 標記並跳過
-    if (use3DMode) {
+    // 3D 模式或 WebGL Symbol Layer 模式時清除所有 2D 標記並跳過
+    if (use3DMode || useSymbolLayer) {
       for (const marker of thsrTrainMarkers.current.values()) {
         marker.remove();
       }
@@ -2128,14 +2133,14 @@ function App() {
         }
       }
     }
-  }, [mapLoaded, filteredThsrTrains, use3DMode, handleSelectTrain, selectedTrainId]);
+  }, [mapLoaded, filteredThsrTrains, use3DMode, useSymbolLayer, handleSelectTrain, selectedTrainId]);
 
   // 更新高雄捷運列車標記（2D 模式時使用）
   useEffect(() => {
     if (!map.current || !mapLoaded) return;
 
-    // 3D 模式時清除所有 2D 標記並跳過
-    if (use3DMode) {
+    // 3D 模式或 WebGL Symbol Layer 模式時清除所有 2D 標記並跳過
+    if (use3DMode || useSymbolLayer) {
       for (const marker of krtcTrainMarkers.current.values()) {
         marker.remove();
       }
@@ -2233,14 +2238,14 @@ function App() {
         }
       }
     }
-  }, [mapLoaded, filteredKrtcTrains, use3DMode, handleSelectTrain, selectedTrainId]);
+  }, [mapLoaded, filteredKrtcTrains, use3DMode, useSymbolLayer, handleSelectTrain, selectedTrainId]);
 
   // 更新高雄輕軌列車標記（2D 模式時使用）
   useEffect(() => {
     if (!map.current || !mapLoaded) return;
 
-    // 3D 模式時清除所有 2D 標記並跳過
-    if (use3DMode) {
+    // 3D 模式或 WebGL Symbol Layer 模式時清除所有 2D 標記並跳過
+    if (use3DMode || useSymbolLayer) {
       for (const marker of klrtTrainMarkers.current.values()) {
         marker.remove();
       }
@@ -2338,14 +2343,14 @@ function App() {
         }
       }
     }
-  }, [mapLoaded, filteredKlrtTrains, use3DMode, handleSelectTrain, selectedTrainId]);
+  }, [mapLoaded, filteredKlrtTrains, use3DMode, useSymbolLayer, handleSelectTrain, selectedTrainId]);
 
   // 更新台中捷運列車標記（2D 模式時使用）
   useEffect(() => {
     if (!map.current || !mapLoaded) return;
 
-    // 3D 模式時清除所有 2D 標記並跳過
-    if (use3DMode) {
+    // 3D 模式或 WebGL Symbol Layer 模式時清除所有 2D 標記並跳過
+    if (use3DMode || useSymbolLayer) {
       for (const marker of tmrtTrainMarkers.current.values()) {
         marker.remove();
       }
@@ -2443,14 +2448,14 @@ function App() {
         }
       }
     }
-  }, [mapLoaded, filteredTmrtTrains, use3DMode, handleSelectTrain, selectedTrainId]);
+  }, [mapLoaded, filteredTmrtTrains, use3DMode, useSymbolLayer, handleSelectTrain, selectedTrainId]);
 
   // 更新台鐵列車標記（2D 模式時使用）
   useEffect(() => {
     if (!map.current || !mapLoaded) return;
 
-    // 3D 模式時清除所有 2D 標記並跳過
-    if (use3DMode) {
+    // 3D 模式或 WebGL Symbol Layer 模式時清除所有 2D 標記並跳過
+    if (use3DMode || useSymbolLayer) {
       for (const marker of traTrainMarkers.current.values()) {
         marker.remove();
       }
@@ -2546,7 +2551,7 @@ function App() {
         }
       }
     }
-  }, [mapLoaded, filteredTraTrains, use3DMode, handleSelectTrain, selectedTrainId]);
+  }, [mapLoaded, filteredTraTrains, use3DMode, useSymbolLayer, handleSelectTrain, selectedTrainId]);
 
   // 控制處理器
   const handleTogglePlay = useCallback(() => {

@@ -114,6 +114,7 @@ export class TrainSymbolLayer {
     this.map.on('mouseleave', TrainSymbolLayer.LAYER_BASE, this.handleMouseLeave);
 
     this.initialized = true;
+    console.log('[TrainSymbolLayer] initialized successfully');
   }
 
   /**

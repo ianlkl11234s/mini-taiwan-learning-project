@@ -1,0 +1,398 @@
+[
+  {
+    "StationUID": "TMRT-G0",
+    "StationID": "G0",
+    "StationName": {
+      "Zh_tw": "北屯總站",
+      "En": "Beitun Main Station"
+    },
+    "StationAddress": "臺中市北屯區敦富東街100號",
+    "BikeAllowOnHoliday": false,
+    "SrcUpdateTime": "2025-11-11T00:00:00+08:00",
+    "StationPosition": {
+      "PositionLon": 120.70864,
+      "PositionLat": 24.18913,
+      "GeoHash": "wsmcdg3rg"
+    },
+    "LocationCity": "臺中市",
+    "LocationCityCode": "TXG",
+    "LocationTown": "北屯區",
+    "LocationTownCode": "66000080",
+    "UpdateTime": "2026-01-02T18:38:05+08:00",
+    "VersionID": 296
+  },
+  {
+    "StationUID": "TMRT-G3",
+    "StationID": "G3",
+    "StationName": {
+      "Zh_tw": "舊社",
+      "En": "Jiushe"
+    },
+    "StationAddress": "臺中市北屯區松竹路一段1250號",
+    "BikeAllowOnHoliday": false,
+    "SrcUpdateTime": "2025-11-11T00:00:00+08:00",
+    "StationPosition": {
+      "PositionLon": 120.70729,
+      "PositionLat": 24.18228,
+      "GeoHash": "wsmcdf0rg"
+    },
+    "LocationCity": "臺中市",
+    "LocationCityCode": "TXG",
+    "LocationTown": "北屯區",
+    "LocationTownCode": "66000080",
+    "UpdateTime": "2026-01-02T18:38:05+08:00",
+    "VersionID": 296
+  },
+  {
+    "StationUID": "TMRT-G4",
+    "StationID": "G4",
+    "StationName": {
+      "Zh_tw": "松竹",
+      "En": "Songzhu"
+    },
+    "StationAddress": "臺中市北屯區北屯路458號",
+    "BikeAllowOnHoliday": false,
+    "SrcUpdateTime": "2025-11-11T00:00:00+08:00",
+    "StationPosition": {
+      "PositionLon": 120.70145,
+      "PositionLat": 24.1808,
+      "GeoHash": "wsmcd9up7"
+    },
+    "LocationCity": "臺中市",
+    "LocationCityCode": "TXG",
+    "LocationTown": "北屯區",
+    "LocationTownCode": "66000080",
+    "UpdateTime": "2026-01-02T18:38:05+08:00",
+    "VersionID": 296
+  },
+  {
+    "StationUID": "TMRT-G5",
+    "StationID": "G5",
+    "StationName": {
+      "Zh_tw": "四維國小",
+      "En": "Sihwei Elementary School"
+    },
+    "StationAddress": "臺中市北屯區文心路四段 898號",
+    "BikeAllowOnHoliday": false,
+    "SrcUpdateTime": "2025-11-11T00:00:00+08:00",
+    "StationPosition": {
+      "PositionLon": 120.69329,
+      "PositionLat": 24.17124,
+      "GeoHash": "wsmcd2npt"
+    },
+    "LocationCity": "臺中市",
+    "LocationCityCode": "TXG",
+    "LocationTown": "北屯區",
+    "LocationTownCode": "66000080",
+    "UpdateTime": "2026-01-02T18:38:05+08:00",
+    "VersionID": 296
+  },
+  {
+    "StationUID": "TMRT-G6",
+    "StationID": "G6",
+    "StationName": {
+      "Zh_tw": "文心崇德",
+      "En": "Wenxin Chongde"
+    },
+    "StationAddress": "臺中市北屯區文心路四段 538 號",
+    "BikeAllowOnHoliday": false,
+    "SrcUpdateTime": "2025-11-11T00:00:00+08:00",
+    "StationPosition": {
+      "PositionLon": 120.68486,
+      "PositionLat": 24.17219,
+      "GeoHash": "wsmcd22j1"
+    },
+    "LocationCity": "臺中市",
+    "LocationCityCode": "TXG",
+    "LocationTown": "北屯區",
+    "LocationTownCode": "66000080",
+    "UpdateTime": "2026-01-02T18:38:05+08:00",
+    "VersionID": 296
+  },
+  {
+    "StationUID": "TMRT-G7",
+    "StationID": "G7",
+    "StationName": {
+      "Zh_tw": "文心中清",
+      "En": "Wenxin Zhongqing"
+    },
+    "StationAddress": "臺中市北區文心路三段700號",
+    "BikeAllowOnHoliday": false,
+    "SrcUpdateTime": "2025-11-11T00:00:00+08:00",
+    "StationPosition": {
+      "PositionLon": 120.67059,
+      "PositionLat": 24.17368,
+      "GeoHash": "wsmc9bttu"
+    },
+    "LocationCity": "臺中市",
+    "LocationCityCode": "TXG",
+    "LocationTown": "北區",
+    "LocationTownCode": "66000050",
+    "UpdateTime": "2026-01-02T18:38:05+08:00",
+    "VersionID": 296
+  },
+  {
+    "StationUID": "TMRT-G8",
+    "StationID": "G8",
+    "StationName": {
+      "Zh_tw": "文華高中",
+      "En": "Wenhua Senior High School"
+    },
+    "StationAddress": "臺中市西屯區文心路三段199號",
+    "BikeAllowOnHoliday": false,
+    "SrcUpdateTime": "2025-11-11T00:00:00+08:00",
+    "StationPosition": {
+      "PositionLon": 120.66045,
+      "PositionLat": 24.17141,
+      "GeoHash": "wsmc98q28"
+    },
+    "LocationCity": "臺中市",
+    "LocationCityCode": "TXG",
+    "LocationTown": "西屯區",
+    "LocationTownCode": "66000060",
+    "UpdateTime": "2026-01-02T18:38:05+08:00",
+    "VersionID": 296
+  },
+  {
+    "StationUID": "TMRT-G8a",
+    "StationID": "G8a",
+    "StationName": {
+      "Zh_tw": "文心櫻花",
+      "En": "Wenxin Yinghua"
+    },
+    "StationAddress": "臺中市西屯區文心路三段107之28號",
+    "BikeAllowOnHoliday": false,
+    "SrcUpdateTime": "2025-11-11T00:00:00+08:00",
+    "StationPosition": {
+      "PositionLon": 120.65367,
+      "PositionLat": 24.16763,
+      "GeoHash": "wsmc3x96d"
+    },
+    "LocationCity": "臺中市",
+    "LocationCityCode": "TXG",
+    "LocationTown": "西屯區",
+    "LocationTownCode": "66000060",
+    "UpdateTime": "2026-01-02T18:38:05+08:00",
+    "VersionID": 296
+  },
+  {
+    "StationUID": "TMRT-G9",
+    "StationID": "G9",
+    "StationName": {
+      "Zh_tw": "市政府",
+      "En": "Taichung City Hall"
+    },
+    "StationAddress": "臺中市西屯區文心路二段688號、699號",
+    "BikeAllowOnHoliday": false,
+    "SrcUpdateTime": "2025-11-11T00:00:00+08:00",
+    "StationPosition": {
+      "PositionLon": 120.64903,
+      "PositionLat": 24.16199,
+      "GeoHash": "wsmc3qtcy"
+    },
+    "LocationCity": "臺中市",
+    "LocationCityCode": "TXG",
+    "LocationTown": "西屯區",
+    "LocationTownCode": "66000060",
+    "UpdateTime": "2026-01-02T18:38:05+08:00",
+    "VersionID": 296
+  },
+  {
+    "StationUID": "TMRT-G10",
+    "StationID": "G10",
+    "StationName": {
+      "Zh_tw": "水安宮",
+      "En": "Shui-an Temple"
+    },
+    "StationAddress": "臺中市南屯區文心路一段519號",
+    "BikeAllowOnHoliday": false,
+    "SrcUpdateTime": "2025-11-11T00:00:00+08:00",
+    "StationPosition": {
+      "PositionLon": 120.64668,
+      "PositionLat": 24.15311,
+      "GeoHash": "wsmc3kunp"
+    },
+    "LocationCity": "臺中市",
+    "LocationCityCode": "TXG",
+    "LocationTown": "南屯區",
+    "LocationTownCode": "66000070",
+    "UpdateTime": "2026-01-02T18:38:05+08:00",
+    "VersionID": 296
+  },
+  {
+    "StationUID": "TMRT-G10a",
+    "StationID": "G10a",
+    "StationName": {
+      "Zh_tw": "文心森林公園",
+      "En": "Wenxin Forest Park"
+    },
+    "StationAddress": "臺中市南屯區文心路一段259號",
+    "BikeAllowOnHoliday": false,
+    "SrcUpdateTime": "2025-11-11T00:00:00+08:00",
+    "StationPosition": {
+      "PositionLon": 120.6466,
+      "PositionLat": 24.1454,
+      "GeoHash": "wsmc37s1j"
+    },
+    "LocationCity": "臺中市",
+    "LocationCityCode": "TXG",
+    "LocationTown": "南屯區",
+    "LocationTownCode": "66000070",
+    "UpdateTime": "2026-01-02T18:38:05+08:00",
+    "VersionID": 296
+  },
+  {
+    "StationUID": "TMRT-G11",
+    "StationID": "G11",
+    "StationName": {
+      "Zh_tw": "南屯",
+      "En": "Nantun"
+    },
+    "StationAddress": "臺中市南屯區五權西路二段328號",
+    "BikeAllowOnHoliday": false,
+    "SrcUpdateTime": "2025-11-11T00:00:00+08:00",
+    "StationPosition": {
+      "PositionLon": 120.6466,
+      "PositionLat": 24.1405,
+      "GeoHash": "wsmc36sht"
+    },
+    "LocationCity": "臺中市",
+    "LocationCityCode": "TXG",
+    "LocationTown": "南屯區",
+    "LocationTownCode": "66000070",
+    "UpdateTime": "2026-01-02T18:38:05+08:00",
+    "VersionID": 296
+  },
+  {
+    "StationUID": "TMRT-G12",
+    "StationID": "G12",
+    "StationName": {
+      "Zh_tw": "豐樂公園",
+      "En": "Feng-le Park"
+    },
+    "StationAddress": "臺中市南屯區文心南路168號",
+    "BikeAllowOnHoliday": false,
+    "SrcUpdateTime": "2025-11-11T00:00:00+08:00",
+    "StationPosition": {
+      "PositionLon": 120.64635,
+      "PositionLat": 24.1326,
+      "GeoHash": "wsmc335yx"
+    },
+    "LocationCity": "臺中市",
+    "LocationCityCode": "TXG",
+    "LocationTown": "南屯區",
+    "LocationTownCode": "66000070",
+    "UpdateTime": "2026-01-02T18:38:05+08:00",
+    "VersionID": 296
+  },
+  {
+    "StationUID": "TMRT-G13",
+    "StationID": "G13",
+    "StationName": {
+      "Zh_tw": "大慶",
+      "En": "Daqing"
+    },
+    "StationAddress": "臺中市南區建國北路一段11號",
+    "BikeAllowOnHoliday": false,
+    "SrcUpdateTime": "2025-11-11T00:00:00+08:00",
+    "StationPosition": {
+      "PositionLon": 120.6476,
+      "PositionLat": 24.1191,
+      "GeoHash": "wsmc1qszu"
+    },
+    "LocationCity": "臺中市",
+    "LocationCityCode": "TXG",
+    "LocationTown": "南區",
+    "LocationTownCode": "66000030",
+    "UpdateTime": "2026-01-02T18:38:05+08:00",
+    "VersionID": 296
+  },
+  {
+    "StationUID": "TMRT-G14",
+    "StationID": "G14",
+    "StationName": {
+      "Zh_tw": "九張犁",
+      "En": "Jiuzhangli"
+    },
+    "StationAddress": "臺中市烏日區建國路915號",
+    "BikeAllowOnHoliday": false,
+    "SrcUpdateTime": "2025-11-11T00:00:00+08:00",
+    "StationPosition": {
+      "PositionLon": 120.6401,
+      "PositionLat": 24.1145,
+      "GeoHash": "wsmc1jzmn"
+    },
+    "LocationCity": "臺中市",
+    "LocationCityCode": "TXG",
+    "LocationTown": "烏日區",
+    "LocationTownCode": "66000230",
+    "UpdateTime": "2026-01-02T18:38:05+08:00",
+    "VersionID": 296
+  },
+  {
+    "StationUID": "TMRT-G15",
+    "StationID": "G15",
+    "StationName": {
+      "Zh_tw": "九德",
+      "En": "Jiude"
+    },
+    "StationAddress": "臺中市烏日區建國路639號",
+    "BikeAllowOnHoliday": false,
+    "SrcUpdateTime": "2025-11-11T00:00:00+08:00",
+    "StationPosition": {
+      "PositionLon": 120.63448,
+      "PositionLat": 24.11104,
+      "GeoHash": "wsmc1j72g"
+    },
+    "LocationCity": "臺中市",
+    "LocationCityCode": "TXG",
+    "LocationTown": "烏日區",
+    "LocationTownCode": "66000230",
+    "UpdateTime": "2026-01-02T18:38:05+08:00",
+    "VersionID": 296
+  },
+  {
+    "StationUID": "TMRT-G16",
+    "StationID": "G16",
+    "StationName": {
+      "Zh_tw": "烏日",
+      "En": "Wuri"
+    },
+    "StationAddress": "臺中市烏日區建國路295號",
+    "BikeAllowOnHoliday": false,
+    "SrcUpdateTime": "2025-11-11T00:00:00+08:00",
+    "StationPosition": {
+      "PositionLon": 120.6249,
+      "PositionLat": 24.1089,
+      "GeoHash": "wsmc0uuke"
+    },
+    "LocationCity": "臺中市",
+    "LocationCityCode": "TXG",
+    "LocationTown": "烏日區",
+    "LocationTownCode": "66000230",
+    "UpdateTime": "2026-01-02T18:38:05+08:00",
+    "VersionID": 296
+  },
+  {
+    "StationUID": "TMRT-G17",
+    "StationID": "G17",
+    "StationName": {
+      "Zh_tw": "高鐵臺中站",
+      "En": "HSR Taichung Station"
+    },
+    "StationAddress": "臺中市烏日區高鐵東一路28號",
+    "BikeAllowOnHoliday": false,
+    "SrcUpdateTime": "2025-11-11T00:00:00+08:00",
+    "StationPosition": {
+      "PositionLon": 120.61405,
+      "PositionLat": 24.11011,
+      "GeoHash": "wsmc0th7x"
+    },
+    "LocationCity": "臺中市",
+    "LocationCityCode": "TXG",
+    "LocationTown": "烏日區",
+    "LocationTownCode": "66000230",
+    "UpdateTime": "2026-01-02T18:38:05+08:00",
+    "VersionID": 296
+  }
+]

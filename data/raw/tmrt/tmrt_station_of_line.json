@@ -1,0 +1,173 @@
+[
+  {
+    "LineNo": "1",
+    "LineID": "G",
+    "Stations": [
+      {
+        "Sequence": 1,
+        "StationID": "G0",
+        "StationName": {
+          "Zh_tw": "北屯總站",
+          "En": "Beitun Main Station"
+        },
+        "CumulativeDistance": 0
+      },
+      {
+        "Sequence": 2,
+        "StationID": "G3",
+        "StationName": {
+          "Zh_tw": "舊社",
+          "En": "Jiushe"
+        },
+        "CumulativeDistance": 0.99
+      },
+      {
+        "Sequence": 3,
+        "StationID": "G4",
+        "StationName": {
+          "Zh_tw": "松竹",
+          "En": "Songzhu"
+        },
+        "CumulativeDistance": 1.67
+      },
+      {
+        "Sequence": 4,
+        "StationID": "G5",
+        "StationName": {
+          "Zh_tw": "四維國小",
+          "En": "Sihwei Elementary School"
+        },
+        "CumulativeDistance": 3.31
+      },
+      {
+        "Sequence": 5,
+        "StationID": "G6",
+        "StationName": {
+          "Zh_tw": "文心崇德",
+          "En": "Wenxin Chongde"
+        },
+        "CumulativeDistance": 4.17
+      },
+      {
+        "Sequence": 6,
+        "StationID": "G7",
+        "StationName": {
+          "Zh_tw": "文心中清",
+          "En": "Wenxin Zhongqing"
+        },
+        "CumulativeDistance": 5.65
+      },
+      {
+        "Sequence": 7,
+        "StationID": "G8",
+        "StationName": {
+          "Zh_tw": "文華高中",
+          "En": "Wenhua Senior High School"
+        },
+        "CumulativeDistance": 6.71
+      },
+      {
+        "Sequence": 8,
+        "StationID": "G8a",
+        "StationName": {
+          "Zh_tw": "文心櫻花",
+          "En": "Wenxin Yinghua"
+        },
+        "CumulativeDistance": 7.53
+      },
+      {
+        "Sequence": 9,
+        "StationID": "G9",
+        "StationName": {
+          "Zh_tw": "市政府",
+          "En": "Taichung City Hall"
+        },
+        "CumulativeDistance": 8.33
+      },
+      {
+        "Sequence": 10,
+        "StationID": "G10",
+        "StationName": {
+          "Zh_tw": "水安宮",
+          "En": "Shui-an Temple"
+        },
+        "CumulativeDistance": 9.35
+      },
+      {
+        "Sequence": 11,
+        "StationID": "G10a",
+        "StationName": {
+          "Zh_tw": "文心森林公園",
+          "En": "Wenxin Forest Park"
+        },
+        "CumulativeDistance": 10.21
+      },
+      {
+        "Sequence": 12,
+        "StationID": "G11",
+        "StationName": {
+          "Zh_tw": "南屯",
+          "En": "Nantun"
+        },
+        "CumulativeDistance": 10.75
+      },
+      {
+        "Sequence": 13,
+        "StationID": "G12",
+        "StationName": {
+          "Zh_tw": "豐樂公園",
+          "En": "Feng-le Park"
+        },
+        "CumulativeDistance": 11.62
+      },
+      {
+        "Sequence": 14,
+        "StationID": "G13",
+        "StationName": {
+          "Zh_tw": "大慶",
+          "En": "Daqing"
+        },
+        "CumulativeDistance": 13.23
+      },
+      {
+        "Sequence": 15,
+        "StationID": "G14",
+        "StationName": {
+          "Zh_tw": "九張犁",
+          "En": "Jiuzhangli"
+        },
+        "CumulativeDistance": 14.15
+      },
+      {
+        "Sequence": 16,
+        "StationID": "G15",
+        "StationName": {
+          "Zh_tw": "九德",
+          "En": "Jiude"
+        },
+        "CumulativeDistance": 14.84
+      },
+      {
+        "Sequence": 17,
+        "StationID": "G16",
+        "StationName": {
+          "Zh_tw": "烏日",
+          "En": "Wuri"
+        },
+        "CumulativeDistance": 15.87
+      },
+      {
+        "Sequence": 18,
+        "StationID": "G17",
+        "StationName": {
+          "Zh_tw": "高鐵臺中站",
+          "En": "HSR Taichung Station"
+        },
+        "CumulativeDistance": 16.93
+      }
+    ],
+    "SrcUpdateTime": "2025-11-11T00:00:00+08:00",
+    "UpdateTime": "2026-01-02T20:38:04+08:00",
+    "VersionID": 294
+  }
+]

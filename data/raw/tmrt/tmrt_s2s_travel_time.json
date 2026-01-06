@@ -1,0 +1,534 @@
+[
+  {
+    "LineNo": "1",
+    "LineID": "G",
+    "RouteID": "G-1",
+    "TrainType": 0,
+    "TravelTimes": [
+      {
+        "Sequence": 1,
+        "FromStationID": "G0",
+        "FromStationName": {
+          "Zh_tw": "北屯總站",
+          "En": "Beitun Main Station"
+        },
+        "ToStationID": "G3",
+        "ToStationName": {
+          "Zh_tw": "舊社",
+          "En": "Jiushe"
+        },
+        "RunTime": 124,
+        "StopTime": 0
+      },
+      {
+        "Sequence": 2,
+        "FromStationID": "G3",
+        "FromStationName": {
+          "Zh_tw": "舊社",
+          "En": "Jiushe"
+        },
+        "ToStationID": "G4",
+        "ToStationName": {
+          "Zh_tw": "松竹",
+          "En": "Songzhu"
+        },
+        "RunTime": 80,
+        "StopTime": 0
+      },
+      {
+        "Sequence": 3,
+        "FromStationID": "G4",
+        "FromStationName": {
+          "Zh_tw": "松竹",
+          "En": "Songzhu"
+        },
+        "ToStationID": "G5",
+        "ToStationName": {
+          "Zh_tw": "四維國小",
+          "En": "Sihwei Elementary School"
+        },
+        "RunTime": 160,
+        "StopTime": 0
+      },
+      {
+        "Sequence": 4,
+        "FromStationID": "G5",
+        "FromStationName": {
+          "Zh_tw": "四維國小",
+          "En": "Sihwei Elementary School"
+        },
+        "ToStationID": "G6",
+        "ToStationName": {
+          "Zh_tw": "文心崇德",
+          "En": "Wenxin Chongde"
+        },
+        "RunTime": 82,
+        "StopTime": 0
+      },
+      {
+        "Sequence": 5,
+        "FromStationID": "G6",
+        "FromStationName": {
+          "Zh_tw": "文心崇德",
+          "En": "Wenxin Chongde"
+        },
+        "ToStationID": "G7",
+        "ToStationName": {
+          "Zh_tw": "文心中清",
+          "En": "Wenxin Zhongqing"
+        },
+        "RunTime": 114,
+        "StopTime": 0
+      },
+      {
+        "Sequence": 6,
+        "FromStationID": "G7",
+        "FromStationName": {
+          "Zh_tw": "文心中清",
+          "En": "Wenxin Zhongqing"
+        },
+        "ToStationID": "G8",
+        "ToStationName": {
+          "Zh_tw": "文華高中",
+          "En": "Wenhua Senior High School"
+        },
+        "RunTime": 92,
+        "StopTime": 0
+      },
+      {
+        "Sequence": 7,
+        "FromStationID": "G8",
+        "FromStationName": {
+          "Zh_tw": "文華高中",
+          "En": "Wenhua Senior High School"
+        },
+        "ToStationID": "G8a",
+        "ToStationName": {
+          "Zh_tw": "文心櫻花",
+          "En": "Wenxin Yinghua"
+        },
+        "RunTime": 79,
+        "StopTime": 0
+      },
+      {
+        "Sequence": 8,
+        "FromStationID": "G8a",
+        "FromStationName": {
+          "Zh_tw": "文心櫻花",
+          "En": "Wenxin Yinghua"
+        },
+        "ToStationID": "G9",
+        "ToStationName": {
+          "Zh_tw": "市政府",
+          "En": "Taichung City Hall"
+        },
+        "RunTime": 78,
+        "StopTime": 0
+      },
+      {
+        "Sequence": 9,
+        "FromStationID": "G9",
+        "FromStationName": {
+          "Zh_tw": "市政府",
+          "En": "Taichung City Hall"
+        },
+        "ToStationID": "G10",
+        "ToStationName": {
+          "Zh_tw": "水安宮",
+          "En": "Shui-an Temple"
+        },
+        "RunTime": 112,
+        "StopTime": 0
+      },
+      {
+        "Sequence": 10,
+        "FromStationID": "G10",
+        "FromStationName": {
+          "Zh_tw": "水安宮",
+          "En": "Shui-an Temple"
+        },
+        "ToStationID": "G10a",
+        "ToStationName": {
+          "Zh_tw": "文心森林公園",
+          "En": "Wenxin Forest Park"
+        },
+        "RunTime": 81,
+        "StopTime": 0
+      },
+      {
+        "Sequence": 11,
+        "FromStationID": "G10a",
+        "FromStationName": {
+          "Zh_tw": "文心森林公園",
+          "En": "Wenxin Forest Park"
+        },
+        "ToStationID": "G11",
+        "ToStationName": {
+          "Zh_tw": "南屯",
+          "En": "Nantun"
+        },
+        "RunTime": 64,
+        "StopTime": 0
+      },
+      {
+        "Sequence": 12,
+        "FromStationID": "G11",
+        "FromStationName": {
+          "Zh_tw": "南屯",
+          "En": "Nantun"
+        },
+        "ToStationID": "G12",
+        "ToStationName": {
+          "Zh_tw": "豐樂公園",
+          "En": "Feng-le Park"
+        },
+        "RunTime": 83,
+        "StopTime": 0
+      },
+      {
+        "Sequence": 13,
+        "FromStationID": "G12",
+        "FromStationName": {
+          "Zh_tw": "豐樂公園",
+          "En": "Feng-le Park"
+        },
+        "ToStationID": "G13",
+        "ToStationName": {
+          "Zh_tw": "大慶",
+          "En": "Daqing"
+        },
+        "RunTime": 157,
+        "StopTime": 0
+      },
+      {
+        "Sequence": 14,
+        "FromStationID": "G13",
+        "FromStationName": {
+          "Zh_tw": "大慶",
+          "En": "Daqing"
+        },
+        "ToStationID": "G14",
+        "ToStationName": {
+          "Zh_tw": "九張犁",
+          "En": "Jiuzhangli"
+        },
+        "RunTime": 86,
+        "StopTime": 0
+      },
+      {
+        "Sequence": 15,
+        "FromStationID": "G14",
+        "FromStationName": {
+          "Zh_tw": "九張犁",
+          "En": "Jiuzhangli"
+        },
+        "ToStationID": "G15",
+        "ToStationName": {
+          "Zh_tw": "九德",
+          "En": "Jiude"
+        },
+        "RunTime": 72,
+        "StopTime": 0
+      },
+      {
+        "Sequence": 16,
+        "FromStationID": "G15",
+        "FromStationName": {
+          "Zh_tw": "九德",
+          "En": "Jiude"
+        },
+        "ToStationID": "G16",
+        "ToStationName": {
+          "Zh_tw": "烏日",
+          "En": "Wuri"
+        },
+        "RunTime": 91,
+        "StopTime": 0
+      },
+      {
+        "Sequence": 17,
+        "FromStationID": "G16",
+        "FromStationName": {
+          "Zh_tw": "烏日",
+          "En": "Wuri"
+        },
+        "ToStationID": "G17",
+        "ToStationName": {
+          "Zh_tw": "高鐵臺中站",
+          "En": "HSR Taichung Station"
+        },
+        "RunTime": 128,
+        "StopTime": 0
+      }
+    ],
+    "SrcUpdateTime": "2026-01-02T00:39:01+08:00",
+    "UpdateTime": "2026-01-02T21:38:08+08:00",
+    "VersionID": 1307
+  },
+  {
+    "LineNo": "1",
+    "LineID": "G",
+    "RouteID": "G-1",
+    "TrainType": 0,
+    "TravelTimes": [
+      {
+        "Sequence": 18,
+        "FromStationID": "G17",
+        "FromStationName": {
+          "Zh_tw": "高鐵臺中站",
+          "En": "HSR Taichung Station"
+        },
+        "ToStationID": "G16",
+        "ToStationName": {
+          "Zh_tw": "烏日",
+          "En": "Wuri"
+        },
+        "RunTime": 109,
+        "StopTime": 0
+      },
+      {
+        "Sequence": 19,
+        "FromStationID": "G16",
+        "FromStationName": {
+          "Zh_tw": "烏日",
+          "En": "Wuri"
+        },
+        "ToStationID": "G15",
+        "ToStationName": {
+          "Zh_tw": "九德",
+          "En": "Jiude"
+        },
+        "RunTime": 90,
+        "StopTime": 0
+      },
+      {
+        "Sequence": 20,
+        "FromStationID": "G15",
+        "FromStationName": {
+          "Zh_tw": "九德",
+          "En": "Jiude"
+        },
+        "ToStationID": "G14",
+        "ToStationName": {
+          "Zh_tw": "九張犁",
+          "En": "Jiuzhangli"
+        },
+        "RunTime": 71,
+        "StopTime": 0
+      },
+      {
+        "Sequence": 21,
+        "FromStationID": "G14",
+        "FromStationName": {
+          "Zh_tw": "九張犁",
+          "En": "Jiuzhangli"
+        },
+        "ToStationID": "G13",
+        "ToStationName": {
+          "Zh_tw": "大慶",
+          "En": "Daqing"
+        },
+        "RunTime": 85,
+        "StopTime": 0
+      },
+      {
+        "Sequence": 22,
+        "FromStationID": "G13",
+        "FromStationName": {
+          "Zh_tw": "大慶",
+          "En": "Daqing"
+        },
+        "ToStationID": "G12",
+        "ToStationName": {
+          "Zh_tw": "豐樂公園",
+          "En": "Feng-le Park"
+        },
+        "RunTime": 155,
+        "StopTime": 0
+      },
+      {
+        "Sequence": 23,
+        "FromStationID": "G12",
+        "FromStationName": {
+          "Zh_tw": "豐樂公園",
+          "En": "Feng-le Park"
+        },
+        "ToStationID": "G11",
+        "ToStationName": {
+          "Zh_tw": "南屯",
+          "En": "Nantun"
+        },
+        "RunTime": 82,
+        "StopTime": 0
+      },
+      {
+        "Sequence": 24,
+        "FromStationID": "G11",
+        "FromStationName": {
+          "Zh_tw": "南屯",
+          "En": "Nantun"
+        },
+        "ToStationID": "G10a",
+        "ToStationName": {
+          "Zh_tw": "文心森林公園",
+          "En": "Wenxin Forest Park"
+        },
+        "RunTime": 63,
+        "StopTime": 0
+      },
+      {
+        "Sequence": 25,
+        "FromStationID": "G10a",
+        "FromStationName": {
+          "Zh_tw": "文心森林公園",
+          "En": "Wenxin Forest Park"
+        },
+        "ToStationID": "G10",
+        "ToStationName": {
+          "Zh_tw": "水安宮",
+          "En": "Shui-an Temple"
+        },
+        "RunTime": 80,
+        "StopTime": 0
+      },
+      {
+        "Sequence": 26,
+        "FromStationID": "G10",
+        "FromStationName": {
+          "Zh_tw": "水安宮",
+          "En": "Shui-an Temple"
+        },
+        "ToStationID": "G9",
+        "ToStationName": {
+          "Zh_tw": "市政府",
+          "En": "Taichung City Hall"
+        },
+        "RunTime": 108,
+        "StopTime": 0
+      },
+      {
+        "Sequence": 27,
+        "FromStationID": "G9",
+        "FromStationName": {
+          "Zh_tw": "市政府",
+          "En": "Taichung City Hall"
+        },
+        "ToStationID": "G8a",
+        "ToStationName": {
+          "Zh_tw": "文心櫻花",
+          "En": "Wenxin Yinghua"
+        },
+        "RunTime": 78,
+        "StopTime": 0
+      },
+      {
+        "Sequence": 28,
+        "FromStationID": "G8a",
+        "FromStationName": {
+          "Zh_tw": "文心櫻花",
+          "En": "Wenxin Yinghua"
+        },
+        "ToStationID": "G8",
+        "ToStationName": {
+          "Zh_tw": "文華高中",
+          "En": "Wenhua Senior High School"
+        },
+        "RunTime": 78,
+        "StopTime": 0
+      },
+      {
+        "Sequence": 29,
+        "FromStationID": "G8",
+        "FromStationName": {
+          "Zh_tw": "文華高中",
+          "En": "Wenhua Senior High School"
+        },
+        "ToStationID": "G7",
+        "ToStationName": {
+          "Zh_tw": "文心中清",
+          "En": "Wenxin Zhongqing"
+        },
+        "RunTime": 92,
+        "StopTime": 0
+      },
+      {
+        "Sequence": 30,
+        "FromStationID": "G7",
+        "FromStationName": {
+          "Zh_tw": "文心中清",
+          "En": "Wenxin Zhongqing"
+        },
+        "ToStationID": "G6",
+        "ToStationName": {
+          "Zh_tw": "文心崇德",
+          "En": "Wenxin Chongde"
+        },
+        "RunTime": 111,
+        "StopTime": 0
+      },
+      {
+        "Sequence": 31,
+        "FromStationID": "G6",
+        "FromStationName": {
+          "Zh_tw": "文心崇德",
+          "En": "Wenxin Chongde"
+        },
+        "ToStationID": "G5",
+        "ToStationName": {
+          "Zh_tw": "四維國小",
+          "En": "Sihwei Elementary School"
+        },
+        "RunTime": 81,
+        "StopTime": 0
+      },
+      {
+        "Sequence": 32,
+        "FromStationID": "G5",
+        "FromStationName": {
+          "Zh_tw": "四維國小",
+          "En": "Sihwei Elementary School"
+        },
+        "ToStationID": "G4",
+        "ToStationName": {
+          "Zh_tw": "松竹",
+          "En": "Songzhu"
+        },
+        "RunTime": 153,
+        "StopTime": 0
+      },
+      {
+        "Sequence": 33,
+        "FromStationID": "G4",
+        "FromStationName": {
+          "Zh_tw": "松竹",
+          "En": "Songzhu"
+        },
+        "ToStationID": "G3",
+        "ToStationName": {
+          "Zh_tw": "舊社",
+          "En": "Jiushe"
+        },
+        "RunTime": 80,
+        "StopTime": 0
+      },
+      {
+        "Sequence": 34,
+        "FromStationID": "G3",
+        "FromStationName": {
+          "Zh_tw": "舊社",
+          "En": "Jiushe"
+        },
+        "ToStationID": "G0",
+        "ToStationName": {
+          "Zh_tw": "北屯總站",
+          "En": "Beitun Main Station"
+        },
+        "RunTime": 132,
+        "StopTime": 0
+      }
+    ],
+    "SrcUpdateTime": "2026-01-02T00:39:01+08:00",
+    "UpdateTime": "2026-01-02T21:38:08+08:00",
+    "VersionID": 1307
+  }
+]

@@ -31,7 +31,7 @@ import { THSR_TRACK_COLOR, THSR_TRAIN_COLORS, getThsrDirection } from './constan
 import { KRTC_TRACK_COLORS, KRTC_TRAIN_COLORS, getKrtcLineId, getKrtcDirection } from './constants/krtcInfo';
 import { KLRT_TRACK_COLORS, KLRT_TRAIN_COLORS, getKlrtLineId, getKlrtDirection } from './constants/klrtInfo';
 import { TMRT_TRACK_COLORS, TMRT_TRAIN_COLORS, getTmrtLineId, getTmrtDirection } from './constants/tmrtInfo';
-import { TRA_TRACK_COLORS, getTraTrainColor } from './constants/traInfo';
+import { getTraTrainColor } from './constants/traInfo';
 import { CitySelector, type CityId, CITIES } from './components/CitySelector';
 
 // 光線預設類型（用於 standard 樣式）
@@ -1140,10 +1140,11 @@ function App() {
   useEffect(() => {
     if (!map.current || !mapLoaded || !traTracks) return;
 
+    // 清除舊圖層
+    if (map.current.getLayer('tra-tracks-line-base')) {
+      map.current.removeLayer('tra-tracks-line-base');
+    }
     if (map.current.getSource('tra-tracks')) {
-      if (map.current.getLayer('tra-tracks-line-SH')) {
-        map.current.removeLayer('tra-tracks-line-SH');
-      }
       map.current.removeSource('tra-tracks');
     }
 
@@ -1152,9 +1153,9 @@ function App() {
       data: traTracks as GeoJSON.FeatureCollection,
     });
 
-    // 沙崙線
+    // 台鐵軌道 - 純黑色
     map.current.addLayer({
-      id: 'tra-tracks-line-SH',
+      id: 'tra-tracks-line-base',
       type: 'line',
       source: 'tra-tracks',
       layout: {
@@ -1162,10 +1163,9 @@ function App() {
         'line-cap': 'round',
       },
       paint: {
-        'line-color': TRA_TRACK_COLORS.SH,
+        'line-color': '#000000',
         'line-width': 4,
-        'line-opacity': 0.8,
-        'line-emissive-strength': 1.0,
+        'line-opacity': 0.9,
       },
     });
   }, [mapLoaded, traTracks, styleVersion]);
@@ -1196,7 +1196,7 @@ function App() {
       paint: {
         'circle-radius': 5,
         'circle-color': '#ffffff',
-        'circle-stroke-color': TRA_TRACK_COLORS.SH,
+        'circle-stroke-color': '#000000',
         'circle-stroke-width': 2,
         'circle-opacity': 1,
         'circle-stroke-opacity': 1,

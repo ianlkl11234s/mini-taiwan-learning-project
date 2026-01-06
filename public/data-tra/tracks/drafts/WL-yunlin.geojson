@@ -1,0 +1,51 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "segment_id": "WL-yunlin",
+        "name": "雲林縣段",
+        "station_count": 6,
+        "stations": [
+          "二水",
+          "林內",
+          "石榴",
+          "斗六",
+          "斗南",
+          "石龜"
+        ],
+        "status": "draft"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            120.6185,
+            23.8095
+          ],
+          [
+            120.6125,
+            23.7585
+          ],
+          [
+            120.5675,
+            23.7245
+          ],
+          [
+            120.5385,
+            23.7115
+          ],
+          [
+            120.4795,
+            23.6755
+          ],
+          [
+            120.4505,
+            23.6415
+          ]
+        ]
+      }
+    }
+  ]
+}

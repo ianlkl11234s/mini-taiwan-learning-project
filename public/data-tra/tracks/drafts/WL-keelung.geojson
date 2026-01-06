@@ -1,0 +1,36 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "segment_id": "WL-keelung",
+        "name": "基隆市段",
+        "station_count": 3,
+        "stations": [
+          "基隆",
+          "三坑",
+          "八堵"
+        ],
+        "status": "draft"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            121.7395,
+            25.1315
+          ],
+          [
+            121.7307,
+            25.118
+          ],
+          [
+            121.717,
+            25.1095
+          ]
+        ]
+      }
+    }
+  ]
+}

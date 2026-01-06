@@ -1,0 +1,46 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "segment_id": "WL-chiayi",
+        "name": "嘉義縣市段",
+        "station_count": 5,
+        "stations": [
+          "石龜",
+          "大林",
+          "民雄",
+          "嘉北",
+          "嘉義"
+        ],
+        "status": "draft"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            120.4505,
+            23.6415
+          ],
+          [
+            120.4705,
+            23.6045
+          ],
+          [
+            120.4305,
+            23.5555
+          ],
+          [
+            120.4505,
+            23.4995
+          ],
+          [
+            120.441,
+            23.4792
+          ]
+        ]
+      }
+    }
+  ]
+}

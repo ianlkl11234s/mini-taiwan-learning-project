@@ -1,0 +1,56 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "segment_id": "WL-newtaipei-west",
+        "name": "新北市段（西部）",
+        "station_count": 7,
+        "stations": [
+          "萬華",
+          "板橋",
+          "浮洲",
+          "樹林",
+          "南樹林",
+          "山佳",
+          "鶯歌"
+        ],
+        "status": "draft"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            121.5,
+            25.0335
+          ],
+          [
+            121.463,
+            25.0145
+          ],
+          [
+            121.4475,
+            25.0105
+          ],
+          [
+            121.4205,
+            24.992
+          ],
+          [
+            121.41,
+            24.9825
+          ],
+          [
+            121.3955,
+            24.9735
+          ],
+          [
+            121.3545,
+            24.956
+          ]
+        ]
+      }
+    }
+  ]
+}

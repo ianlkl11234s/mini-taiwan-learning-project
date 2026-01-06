@@ -1,0 +1,46 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "segment_id": "WL-taipei",
+        "name": "台北市段",
+        "station_count": 5,
+        "stations": [
+          "汐科",
+          "南港",
+          "松山",
+          "臺北",
+          "萬華"
+        ],
+        "status": "draft"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            121.6485,
+            25.0595
+          ],
+          [
+            121.607,
+            25.053
+          ],
+          [
+            121.578,
+            25.0495
+          ],
+          [
+            121.517,
+            25.0475
+          ],
+          [
+            121.5,
+            25.0335
+          ]
+        ]
+      }
+    }
+  ]
+}

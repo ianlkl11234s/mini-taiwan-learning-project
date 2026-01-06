@@ -22,6 +22,7 @@ export class TrainSymbolLayer {
   static readonly SOURCE_ID = 'all-trains';
   static readonly LAYER_BASE = 'trains-circle-base';
   static readonly LAYER_GLOW = 'trains-circle-glow';
+  static readonly LAYER_STOPPED_GLOW = 'trains-circle-stopped-glow';
   static readonly LAYER_COLLISION = 'trains-circle-collision';
 
   constructor(options: TrainSymbolLayerOptions) {
@@ -64,6 +65,24 @@ export class TrainSymbolLayer {
         'circle-color': ['get', 'color'],
         'circle-opacity': 0.3,
         'circle-blur': 1,
+      },
+    });
+
+    // 建立停站發光圖層（僅 stopped 且非 selected 時顯示）
+    this.map.addLayer({
+      id: TrainSymbolLayer.LAYER_STOPPED_GLOW,
+      type: 'circle',
+      source: TrainSymbolLayer.SOURCE_ID,
+      filter: [
+        'all',
+        ['==', ['get', 'status'], 'stopped'],
+        ['!=', ['get', 'isSelected'], true],
+      ],
+      paint: {
+        'circle-radius': 12,
+        'circle-color': ['get', 'color'],
+        'circle-opacity': 0.25,
+        'circle-blur': 0.8,
       },
     });
 
@@ -182,6 +201,9 @@ export class TrainSymbolLayer {
     if (this.map.getLayer(TrainSymbolLayer.LAYER_GLOW)) {
       this.map.setLayoutProperty(TrainSymbolLayer.LAYER_GLOW, 'visibility', visibility);
     }
+    if (this.map.getLayer(TrainSymbolLayer.LAYER_STOPPED_GLOW)) {
+      this.map.setLayoutProperty(TrainSymbolLayer.LAYER_STOPPED_GLOW, 'visibility', visibility);
+    }
     if (this.map.getLayer(TrainSymbolLayer.LAYER_COLLISION)) {
       this.map.setLayoutProperty(TrainSymbolLayer.LAYER_COLLISION, 'visibility', visibility);
     }
@@ -241,6 +263,9 @@ export class TrainSymbolLayer {
     }
     if (this.map.getLayer(TrainSymbolLayer.LAYER_COLLISION)) {
       this.map.removeLayer(TrainSymbolLayer.LAYER_COLLISION);
+    }
+    if (this.map.getLayer(TrainSymbolLayer.LAYER_STOPPED_GLOW)) {
+      this.map.removeLayer(TrainSymbolLayer.LAYER_STOPPED_GLOW);
     }
     if (this.map.getLayer(TrainSymbolLayer.LAYER_GLOW)) {
       this.map.removeLayer(TrainSymbolLayer.LAYER_GLOW);

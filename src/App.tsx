@@ -15,7 +15,7 @@ import { KlrtTrainEngine, type KlrtTrain } from './engines/KlrtTrainEngine';
 import { TmrtTrainEngine, type TmrtTrain } from './engines/TmrtTrainEngine';
 import { TraTrainEngine, type TraTrain } from './engines/TraTrainEngine';
 import { TimeControl } from './components/TimeControl';
-import { LineFilter, type MKFilterState, type ThsrFilterState } from './components/LineFilter';
+import { LineFilter, type MKFilterState, type ThsrFilterState, type TraFilterState } from './components/LineFilter';
 import { TrainHistogram } from './components/TrainHistogram';
 import { TrainInfoPanel } from './components/TrainInfoPanel';
 import { useTrainCountHistogram } from './hooks/useTrainCountHistogram';
@@ -191,6 +191,7 @@ function App() {
 
   // WebGL Circle Layer（取代 DOM Markers，階段 1 基礎設施）
   const trainSymbolLayerRef = useRef<TrainSymbolLayer | null>(null);
+  const [symbolLayerReady, setSymbolLayerReady] = useState(false);  // 追蹤 layer 初始化狀態
   // Feature Flag：控制是否使用新的 WebGL 渲染模式（預設關閉，待階段 2 啟用）
   const [useSymbolLayer, setUseSymbolLayer] = useState(true);  // 階段 2: 啟用 WebGL Circle Layer
   void setUseSymbolLayer; // 未來可加入 UI 切換
@@ -223,6 +224,9 @@ function App() {
 
   // 高鐵三段式狀態：full | tracks-only | hidden
   const [thsrState, setThsrState] = useState<ThsrFilterState>('full');
+
+  // 台鐵三段式狀態：full | tracks-only | hidden
+  const [traState, setTraState] = useState<TraFilterState>('full');
 
   // 高雄捷運 + 輕軌路線可見性狀態
   const [visibleKrtcLines, setVisibleKrtcLines] = useState<Set<string>>(
@@ -272,6 +276,10 @@ function App() {
   // 切換 THSR 狀態
   const handleThsrStateChange = useCallback((state: ThsrFilterState) => {
     setThsrState(state);
+  }, []);
+
+  const handleTraStateChange = useCallback((state: TraFilterState) => {
+    setTraState(state);
   }, []);
 
   // 切換 KRTC 路線可見性
@@ -392,10 +400,14 @@ function App() {
     });
   }, [tmrtTrains, visibleTmrtLines]);
 
-  // 台鐵列車（目前沙崙線 MVP，全部顯示）
+  // 台鐵列車（根據 traState 篩選）
   const filteredTraTrains = useMemo(() => {
+    // 只有 'full' 模式顯示列車
+    if (traState !== 'full') {
+      return [];
+    }
     return traTrains;
-  }, [traTrains]);
+  }, [traTrains, traState]);
 
   // 計算各系統運行中列車數量
   const transportCounts = useMemo(() => {
@@ -1243,6 +1255,29 @@ function App() {
     });
   }, [mapLoaded, traStations, styleVersion]);
 
+  // 更新台鐵圖層可見性
+  useEffect(() => {
+    if (!map.current || !mapLoaded) return;
+
+    // 計算透明度：hidden = 0, 其他 = 可見
+    const opacity = traState === 'hidden' ? 0 : 0.9;
+    const stationOpacity = traState === 'hidden' ? 0 : 1;
+
+    // 更新軌道可見性
+    if (map.current.getLayer('tra-tracks-line-base')) {
+      map.current.setPaintProperty('tra-tracks-line-base', 'line-opacity', opacity);
+    }
+
+    // 更新車站可見性
+    if (map.current.getLayer('tra-stations-circle')) {
+      map.current.setPaintProperty('tra-stations-circle', 'circle-opacity', stationOpacity);
+      map.current.setPaintProperty('tra-stations-circle', 'circle-stroke-opacity', stationOpacity);
+    }
+    if (map.current.getLayer('tra-stations-label')) {
+      map.current.setPaintProperty('tra-stations-label', 'text-opacity', stationOpacity);
+    }
+  }, [mapLoaded, traState, styleVersion]);
+
   // 初始化 3D 列車圖層
   useEffect(() => {
     if (!map.current || !mapLoaded || !use3DMode) return;
@@ -1470,40 +1505,43 @@ function App() {
   }, [selectedTrainId, use3DMode]);
 
   // === WebGL Circle Layer（TrainSymbolLayer）===
-  // 初始化 + 更新 TrainSymbolLayer（合併為單一 effect 避免 ref 同步問題）
+  // 初始化 TrainSymbolLayer
   useEffect(() => {
     if (!map.current || !mapLoaded) return;
     if (!useSymbolLayer) return;
     if (use3DMode) return;
 
-    // 如果尚未初始化，則建立 layer
-    if (!trainSymbolLayerRef.current) {
-      const layer = new TrainSymbolLayer({
-        map: map.current,
-        onTrainClick: (trainId: string) => {
-          handleSelectTrain(trainId);
-        },
-      });
-      layer.initialize();
-      trainSymbolLayerRef.current = layer;
-    }
+    // 建立 layer，使用 onReady 回調處理異步初始化
+    const layer = new TrainSymbolLayer({
+      map: map.current,
+      onTrainClick: (trainId: string) => {
+        handleSelectTrain(trainId);
+      },
+      onReady: () => {
+        setSymbolLayerReady(true);
+      },
+    });
+    layer.initialize();
+    trainSymbolLayerRef.current = layer;
 
-    // 更新列車資料
-    if (trainSymbolLayerRef.current && allTrainFeatures.length > 0) {
-      console.log('[TrainSymbolLayer] updateTrains:', allTrainFeatures.length, 'features');
-      trainSymbolLayerRef.current.updateTrains(allTrainFeatures);
-    }
-  }, [mapLoaded, useSymbolLayer, use3DMode, handleSelectTrain, allTrainFeatures]);
+    // 如果樣式已載入，initialize() 會同步完成並觸發 onReady
+    // 如果樣式未載入，initialize() 會等待 style.load 事件後再初始化並觸發 onReady
 
-  // 清理 TrainSymbolLayer（僅在 unmount 或切換模式時）
-  useEffect(() => {
     return () => {
-      if (trainSymbolLayerRef.current) {
-        trainSymbolLayerRef.current.destroy();
-        trainSymbolLayerRef.current = null;
-      }
+      layer.destroy();
+      trainSymbolLayerRef.current = null;
+      setSymbolLayerReady(false);
     };
-  }, [useSymbolLayer, use3DMode, styleVersion]);
+  }, [mapLoaded, useSymbolLayer, use3DMode, handleSelectTrain, styleVersion]);
+
+  // 更新 TrainSymbolLayer 列車資料
+  useEffect(() => {
+    if (!symbolLayerReady || !trainSymbolLayerRef.current) return;
+    if (!useSymbolLayer || use3DMode) return;
+    if (allTrainFeatures.length === 0) return;
+
+    trainSymbolLayerRef.current.updateTrains(allTrainFeatures);
+  }, [allTrainFeatures, useSymbolLayer, use3DMode, symbolLayerReady]);
 
   // 更新軌道可見性（當 visibleLines 變化時）
   useEffect(() => {
@@ -3099,6 +3137,8 @@ function App() {
         onMKStateChange={handleMKStateChange}
         thsrState={thsrState}
         onThsrStateChange={handleThsrStateChange}
+        traState={traState}
+        onTraStateChange={handleTraStateChange}
         visibleKrtcLines={visibleKrtcLines}
         onToggleKrtcLine={handleToggleKrtcLine}
         onToggleAllKrtc={handleToggleAllKrtc}

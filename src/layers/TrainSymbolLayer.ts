@@ -9,11 +9,13 @@ import type { TrainFeature, TrainFeatureCollection } from '../types/trainFeature
 export interface TrainSymbolLayerOptions {
   map: MapboxMap;
   onTrainClick?: (trainId: string, system: string) => void;
+  onReady?: () => void;  // 初始化完成後的回調
 }
 
 export class TrainSymbolLayer {
   private map: MapboxMap;
   private onTrainClickCallback: ((trainId: string, system: string) => void) | null = null;
+  private onReadyCallback: (() => void) | null = null;
   private selectedTrainId: string | null = null;
   private currentFeatures: TrainFeature[] = [];
   private initialized = false;
@@ -30,6 +32,9 @@ export class TrainSymbolLayer {
     if (options.onTrainClick) {
       this.onTrainClickCallback = options.onTrainClick;
     }
+    if (options.onReady) {
+      this.onReadyCallback = options.onReady;
+    }
   }
 
   /**
@@ -41,7 +46,8 @@ export class TrainSymbolLayer {
 
     // 確認 map style 已載入
     if (!this.map.isStyleLoaded()) {
-      console.warn('TrainSymbolLayer: Map style not loaded yet');
+      // 使用輪詢重試，避免 style.load 事件不觸發的問題
+      setTimeout(() => this.initialize(), 50);
       return;
     }
 
@@ -133,7 +139,11 @@ export class TrainSymbolLayer {
     this.map.on('mouseleave', TrainSymbolLayer.LAYER_BASE, this.handleMouseLeave);
 
     this.initialized = true;
-    console.log('[TrainSymbolLayer] initialized successfully');
+
+    // 通知初始化完成
+    if (this.onReadyCallback) {
+      this.onReadyCallback();
+    }
   }
 
   /**

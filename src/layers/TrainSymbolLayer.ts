@@ -72,6 +72,7 @@ export class TrainSymbolLayer {
         'circle-color': ['get', 'color'],
         'circle-opacity': 0.3,
         'circle-blur': 1,
+        'circle-emissive-strength': 1.0,
       },
     });
 
@@ -91,6 +92,7 @@ export class TrainSymbolLayer {
         'circle-color': ['get', 'color'],
         'circle-opacity': 0.25,
         'circle-blur': 0.8,
+        'circle-emissive-strength': 1.0,
       },
     });
 
@@ -107,6 +109,7 @@ export class TrainSymbolLayer {
         'circle-stroke-width': 2,
         'circle-opacity': 0.6,
         'circle-blur': 0.5,
+        'circle-emissive-strength': 1.0,
       },
     });
 
@@ -132,6 +135,7 @@ export class TrainSymbolLayer {
           2,
         ],
         'circle-opacity': 0.95,
+        'circle-emissive-strength': 1.0,
       },
     });
 

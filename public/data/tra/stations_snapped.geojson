@@ -4481,7 +4481,7 @@
         ],
         "snapped_distance": 84.71,
         "matched_line_id": "TD",
-        "track_progress": 0.004355
+        "track_progress": 0.814834
       },
       "geometry": {
         "type": "Point",
@@ -4507,7 +4507,7 @@
         ],
         "snapped_distance": 19.75,
         "matched_line_id": "TD",
-        "track_progress": 0.058431
+        "track_progress": 0.863751
       },
       "geometry": {
         "type": "Point",
@@ -4533,7 +4533,7 @@
         ],
         "snapped_distance": 11.09,
         "matched_line_id": "TD",
-        "track_progress": 0.099504
+        "track_progress": 0.900906
       },
       "geometry": {
         "type": "Point",
@@ -4559,7 +4559,7 @@
         ],
         "snapped_distance": 20.7,
         "matched_line_id": "TD",
-        "track_progress": 0.136652
+        "track_progress": 0.93451
       },
       "geometry": {
         "type": "Point",
@@ -4585,7 +4585,7 @@
         ],
         "snapped_distance": 15.93,
         "matched_line_id": "TD",
-        "track_progress": 0.154615
+        "track_progress": 0.95076
       },
       "geometry": {
         "type": "Point",
@@ -4609,15 +4609,15 @@
           121.1643,
           23.04566
         ],
-        "snapped_distance": 34.77,
+        "snapped_distance": 24.94,
         "matched_line_id": "TD",
-        "track_progress": 0.204733
+        "track_progress": 0.810725
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.164599,
-          23.045565
+          121.164514,
+          23.045591
         ]
       }
     },
@@ -4637,7 +4637,7 @@
         ],
         "snapped_distance": 59.63,
         "matched_line_id": "TD",
-        "track_progress": 0.238471
+        "track_progress": 0.498454
       },
       "geometry": {
         "type": "Point",
@@ -4663,7 +4663,7 @@
         ],
         "snapped_distance": 21.55,
         "matched_line_id": "TD",
-        "track_progress": 0.276658
+        "track_progress": 0.532998
       },
       "geometry": {
         "type": "Point",
@@ -4689,7 +4689,7 @@
         ],
         "snapped_distance": 17.23,
         "matched_line_id": "TD",
-        "track_progress": 0.323361
+        "track_progress": 0.575246
       },
       "geometry": {
         "type": "Point",
@@ -4715,7 +4715,7 @@
         ],
         "snapped_distance": 11.43,
         "matched_line_id": "TD",
-        "track_progress": 0.365342
+        "track_progress": 0.613222
       },
       "geometry": {
         "type": "Point",
@@ -4741,7 +4741,7 @@
         ],
         "snapped_distance": 22.52,
         "matched_line_id": "TD",
-        "track_progress": 0.405261
+        "track_progress": 0.649334
       },
       "geometry": {
         "type": "Point",
@@ -4767,7 +4767,7 @@
         ],
         "snapped_distance": 28.11,
         "matched_line_id": "TD",
-        "track_progress": 0.449513
+        "track_progress": 0.689364
       },
       "geometry": {
         "type": "Point",
@@ -4791,15 +4791,15 @@
           121.34539,
           23.42458
         ],
-        "snapped_distance": 12.32,
+        "snapped_distance": 0.0,
         "matched_line_id": "TD",
-        "track_progress": 0.522745
+        "track_progress": 0.471838
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.345288,
-          23.424623
+          121.34539,
+          23.42458
         ]
       }
     },
@@ -4819,7 +4819,7 @@
         ],
         "snapped_distance": 0.44,
         "matched_line_id": "TD",
-        "track_progress": 0.574987
+        "track_progress": 0.037746
       },
       "geometry": {
         "type": "Point",
@@ -4845,7 +4845,7 @@
         ],
         "snapped_distance": 23.93,
         "matched_line_id": "TD",
-        "track_progress": 0.63569
+        "track_progress": 0.092658
       },
       "geometry": {
         "type": "Point",
@@ -4871,7 +4871,7 @@
         ],
         "snapped_distance": 18.88,
         "matched_line_id": "TD",
-        "track_progress": 0.655894
+        "track_progress": 0.110935
       },
       "geometry": {
         "type": "Point",
@@ -4897,7 +4897,7 @@
         ],
         "snapped_distance": 31.98,
         "matched_line_id": "TD",
-        "track_progress": 0.707433
+        "track_progress": 0.157558
       },
       "geometry": {
         "type": "Point",
@@ -4923,7 +4923,7 @@
         ],
         "snapped_distance": 22.71,
         "matched_line_id": "TD",
-        "track_progress": 0.744949
+        "track_progress": 0.191495
       },
       "geometry": {
         "type": "Point",
@@ -4949,7 +4949,7 @@
         ],
         "snapped_distance": 24.57,
         "matched_line_id": "TD",
-        "track_progress": 0.777864
+        "track_progress": 0.22127
       },
       "geometry": {
         "type": "Point",
@@ -4975,7 +4975,7 @@
         ],
         "snapped_distance": 17.93,
         "matched_line_id": "TD",
-        "track_progress": 0.805697
+        "track_progress": 0.246447
       },
       "geometry": {
         "type": "Point",
@@ -5001,7 +5001,7 @@
         ],
         "snapped_distance": 0.93,
         "matched_line_id": "TD",
-        "track_progress": 0.820164
+        "track_progress": 0.259535
       },
       "geometry": {
         "type": "Point",
@@ -5027,7 +5027,7 @@
         ],
         "snapped_distance": 15.42,
         "matched_line_id": "TD",
-        "track_progress": 0.862809
+        "track_progress": 0.298112
       },
       "geometry": {
         "type": "Point",
@@ -5053,7 +5053,7 @@
         ],
         "snapped_distance": 18.3,
         "matched_line_id": "TD",
-        "track_progress": 0.88121
+        "track_progress": 0.314757
       },
       "geometry": {
         "type": "Point",
@@ -5079,7 +5079,7 @@
         ],
         "snapped_distance": 28.81,
         "matched_line_id": "TD",
-        "track_progress": 0.893581
+        "track_progress": 0.325948
       },
       "geometry": {
         "type": "Point",
@@ -5105,7 +5105,7 @@
         ],
         "snapped_distance": 12.31,
         "matched_line_id": "TD",
-        "track_progress": 0.913112
+        "track_progress": 0.343616
       },
       "geometry": {
         "type": "Point",
@@ -5129,15 +5129,15 @@
           121.58266,
           23.96823
         ],
-        "snapped_distance": 51.59,
-        "matched_line_id": "TD",
-        "track_progress": 0.982163
+        "snapped_distance": 43.45,
+        "matched_line_id": "BH",
+        "track_progress": 0.698713
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.582951,
-          23.967868
+          121.582886,
+          23.967911
         ]
       }
     },
@@ -5157,7 +5157,7 @@
         ],
         "snapped_distance": 30.1,
         "matched_line_id": "TD",
-        "track_progress": 0.997406
+        "track_progress": 0.004321
       },
       "geometry": {
         "type": "Point",
@@ -5181,13 +5181,15 @@
           121.60166,
           24.03253
         ],
-        "snapped_distance": 4022.89
+        "snapped_distance": 31.93,
+        "matched_line_id": "BH",
+        "track_progress": 0.570753
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.602634,
-          23.996301
+          121.601373,
+          24.032515
         ]
       }
     },
@@ -5205,13 +5207,15 @@
           121.61078,
           24.09048
         ],
-        "snapped_distance": 10492.92
+        "snapped_distance": 15.64,
+        "matched_line_id": "BH",
+        "track_progress": 0.467347
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.602634,
-          23.996301
+          121.610646,
+          24.090522
         ]
       }
     },
@@ -5229,13 +5233,15 @@
           121.64086,
           24.12756
         ],
-        "snapped_distance": 14288.82
+        "snapped_distance": 52.81,
+        "matched_line_id": "BH",
+        "track_progress": 0.380836
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.70945,
-          24.236492
+          121.64044,
+          24.127783
         ]
       }
     },
@@ -5253,13 +5259,15 @@
           121.65536,
           24.17199
         ],
-        "snapped_distance": 9344.02
+        "snapped_distance": 46.32,
+        "matched_line_id": "BH",
+        "track_progress": 0.296341
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.70945,
-          24.236492
+          121.65577,
+          24.171914
         ]
       }
     },
@@ -5279,7 +5287,7 @@
         ],
         "snapped_distance": 107.93,
         "matched_line_id": "BH",
-        "track_progress": 0.014193
+        "track_progress": 0.710104
       },
       "geometry": {
         "type": "Point",
@@ -5305,7 +5313,7 @@
         ],
         "snapped_distance": 158.72,
         "matched_line_id": "BH",
-        "track_progress": 0.184359
+        "track_progress": 0.838248
       },
       "geometry": {
         "type": "Point",
@@ -5331,7 +5339,7 @@
         ],
         "snapped_distance": 22.55,
         "matched_line_id": "BH",
-        "track_progress": 0.322382
+        "track_progress": 0.942187
       },
       "geometry": {
         "type": "Point",
@@ -5381,15 +5389,15 @@
           121.80103,
           24.46342
         ],
-        "snapped_distance": 26.1,
-        "matched_line_id": "BH",
-        "track_progress": 0.640678
+        "snapped_distance": 38.07,
+        "matched_line_id": "YL",
+        "track_progress": 0.15764
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.800992,
-          24.463188
+          121.800974,
+          24.463082
         ]
       }
     },
@@ -5407,15 +5415,15 @@
           121.83072,
           24.51827
         ],
-        "snapped_distance": 14.32,
-        "matched_line_id": "BH",
-        "track_progress": 0.82745
+        "snapped_distance": 27.51,
+        "matched_line_id": "YL",
+        "track_progress": 0.220081
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.830603,
-          24.518216
+          121.83049,
+          24.518178
         ]
       }
     },

@@ -17,7 +17,7 @@
         ],
         "snapped_distance": 10.92,
         "matched_line_id": "WL-N",
-        "track_progress": 0.945532
+        "track_progress": 0.972981
       },
       "geometry": {
         "type": "Point",
@@ -43,7 +43,7 @@
         ],
         "snapped_distance": 0.0,
         "matched_line_id": "WL-N",
-        "track_progress": 0.953554
+        "track_progress": 0.981677
       },
       "geometry": {
         "type": "Point",
@@ -69,7 +69,7 @@
         ],
         "snapped_distance": 21.82,
         "matched_line_id": "YL",
-        "track_progress": 0.959171
+        "track_progress": 0.958925
       },
       "geometry": {
         "type": "Point",
@@ -95,7 +95,7 @@
         ],
         "snapped_distance": 14.16,
         "matched_line_id": "WL-N",
-        "track_progress": 0.886982
+        "track_progress": 0.954172
       },
       "geometry": {
         "type": "Point",
@@ -121,7 +121,7 @@
         ],
         "snapped_distance": 4.27,
         "matched_line_id": "WL-N",
-        "track_progress": 0.906817
+        "track_progress": 0.932673
       },
       "geometry": {
         "type": "Point",
@@ -147,7 +147,7 @@
         ],
         "snapped_distance": 0.0,
         "matched_line_id": "WL-N",
-        "track_progress": 0.92755
+        "track_progress": 0.9102
       },
       "geometry": {
         "type": "Point",
@@ -173,7 +173,7 @@
         ],
         "snapped_distance": 3.69,
         "matched_line_id": "WL-N",
-        "track_progress": 0.827999
+        "track_progress": 0.900154
       },
       "geometry": {
         "type": "Point",
@@ -199,7 +199,7 @@
         ],
         "snapped_distance": 37.46,
         "matched_line_id": "WL-N",
-        "track_progress": 0.836456
+        "track_progress": 0.890988
       },
       "geometry": {
         "type": "Point",
@@ -223,15 +223,15 @@
           121.60706,
           25.05348
         ],
-        "snapped_distance": 0.0,
+        "snapped_distance": 37.72,
         "matched_line_id": "WL-N",
-        "track_progress": 0.742793
+        "track_progress": 0.853872
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.60706,
-          25.05348
+          121.607112,
+          25.053144
         ]
       }
     },
@@ -251,7 +251,7 @@
         ],
         "snapped_distance": 0.0,
         "matched_line_id": "WL-N",
-        "track_progress": 1.0
+        "track_progress": 0.831301
       },
       "geometry": {
         "type": "Point",
@@ -275,15 +275,15 @@
           121.51711,
           25.04775
         ],
-        "snapped_distance": 0.0,
+        "snapped_distance": 15.66,
         "matched_line_id": "WL-N",
-        "track_progress": 0.818731
+        "track_progress": 0.780965
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.51711,
-          25.04775
+          121.517081,
+          25.047612
         ]
       }
     },
@@ -301,15 +301,15 @@
           121.51711,
           25.04774
         ],
-        "snapped_distance": 0.29,
+        "snapped_distance": 14.57,
         "matched_line_id": "WL-N",
-        "track_progress": 0.720506
+        "track_progress": 0.780967
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.51711,
-          25.047743
+          121.517083,
+          25.047612
         ]
       }
     },
@@ -329,7 +329,7 @@
         ],
         "snapped_distance": 6.03,
         "matched_line_id": "WL-N",
-        "track_progress": 0.701114
+        "track_progress": 0.759951
       },
       "geometry": {
         "type": "Point",
@@ -355,7 +355,7 @@
         ],
         "snapped_distance": 64.73,
         "matched_line_id": "WL-N",
-        "track_progress": 0.669819
+        "track_progress": 0.726029
       },
       "geometry": {
         "type": "Point",
@@ -381,7 +381,7 @@
         ],
         "snapped_distance": 2.47,
         "matched_line_id": "WL-N",
-        "track_progress": 0.647641
+        "track_progress": 0.701989
       },
       "geometry": {
         "type": "Point",
@@ -407,7 +407,7 @@
         ],
         "snapped_distance": 1.12,
         "matched_line_id": "WL-N",
-        "track_progress": 0.623485
+        "track_progress": 0.675806
       },
       "geometry": {
         "type": "Point",
@@ -433,7 +433,7 @@
         ],
         "snapped_distance": 1.88,
         "matched_line_id": "WL-N",
-        "track_progress": 0.598291
+        "track_progress": 0.648499
       },
       "geometry": {
         "type": "Point",
@@ -459,7 +459,7 @@
         ],
         "snapped_distance": 3.67,
         "matched_line_id": "WL-N",
-        "track_progress": 0.584855
+        "track_progress": 0.633935
       },
       "geometry": {
         "type": "Point",
@@ -485,7 +485,7 @@
         ],
         "snapped_distance": 8.35,
         "matched_line_id": "WL-N",
-        "track_progress": 0.553365
+        "track_progress": 0.599802
       },
       "geometry": {
         "type": "Point",
@@ -511,7 +511,7 @@
         ],
         "snapped_distance": 16.97,
         "matched_line_id": "WL-N",
-        "track_progress": 0.519549
+        "track_progress": 0.563149
       },
       "geometry": {
         "type": "Point",
@@ -537,7 +537,7 @@
         ],
         "snapped_distance": 28.78,
         "matched_line_id": "WL-N",
-        "track_progress": 0.497033
+        "track_progress": 0.538743
       },
       "geometry": {
         "type": "Point",
@@ -563,7 +563,7 @@
         ],
         "snapped_distance": 26.52,
         "matched_line_id": "WL-N",
-        "track_progress": 0.453827
+        "track_progress": 0.491911
       },
       "geometry": {
         "type": "Point",
@@ -589,7 +589,7 @@
         ],
         "snapped_distance": 0.18,
         "matched_line_id": "WL-N",
-        "track_progress": 0.425452
+        "track_progress": 0.461155
       },
       "geometry": {
         "type": "Point",
@@ -615,7 +615,7 @@
         ],
         "snapped_distance": 34.77,
         "matched_line_id": "WL-N",
-        "track_progress": 0.385215
+        "track_progress": 0.417542
       },
       "geometry": {
         "type": "Point",
@@ -641,7 +641,7 @@
         ],
         "snapped_distance": 1.5,
         "matched_line_id": "WL-N",
-        "track_progress": 0.356362
+        "track_progress": 0.386267
       },
       "geometry": {
         "type": "Point",
@@ -667,7 +667,7 @@
         ],
         "snapped_distance": 36.91,
         "matched_line_id": "WL-N",
-        "track_progress": 0.306986
+        "track_progress": 0.332748
       },
       "geometry": {
         "type": "Point",
@@ -693,7 +693,7 @@
         ],
         "snapped_distance": 0.33,
         "matched_line_id": "WL-N",
-        "track_progress": 0.295281
+        "track_progress": 0.32006
       },
       "geometry": {
         "type": "Point",
@@ -719,7 +719,7 @@
         ],
         "snapped_distance": 3.91,
         "matched_line_id": "WL-N",
-        "track_progress": 0.28395
+        "track_progress": 0.307778
       },
       "geometry": {
         "type": "Point",
@@ -745,7 +745,7 @@
         ],
         "snapped_distance": 4.85,
         "matched_line_id": "WL-N",
-        "track_progress": 0.267336
+        "track_progress": 0.28977
       },
       "geometry": {
         "type": "Point",
@@ -771,7 +771,7 @@
         ],
         "snapped_distance": 32.16,
         "matched_line_id": "WL-N",
-        "track_progress": 0.223714
+        "track_progress": 0.242488
       },
       "geometry": {
         "type": "Point",
@@ -797,7 +797,7 @@
         ],
         "snapped_distance": 4.47,
         "matched_line_id": "WL-N",
-        "track_progress": 0.190704
+        "track_progress": 0.206707
       },
       "geometry": {
         "type": "Point",
@@ -823,7 +823,7 @@
         ],
         "snapped_distance": 39.46,
         "matched_line_id": "WL-N",
-        "track_progress": 0.153599
+        "track_progress": 0.166489
       },
       "geometry": {
         "type": "Point",
@@ -1161,7 +1161,7 @@
         ],
         "snapped_distance": 22.83,
         "matched_line_id": "WL-N",
-        "track_progress": 0.143178
+        "track_progress": 0.155193
       },
       "geometry": {
         "type": "Point",
@@ -1187,7 +1187,7 @@
         ],
         "snapped_distance": 8.66,
         "matched_line_id": "WL-N",
-        "track_progress": 0.10915
+        "track_progress": 0.11831
       },
       "geometry": {
         "type": "Point",
@@ -1213,7 +1213,7 @@
         ],
         "snapped_distance": 28.25,
         "matched_line_id": "WL-N",
-        "track_progress": 0.08679
+        "track_progress": 0.094074
       },
       "geometry": {
         "type": "Point",
@@ -1239,7 +1239,7 @@
         ],
         "snapped_distance": 23.96,
         "matched_line_id": "WL-N",
-        "track_progress": 0.042229
+        "track_progress": 0.045773
       },
       "geometry": {
         "type": "Point",
@@ -1265,7 +1265,7 @@
         ],
         "snapped_distance": 16.79,
         "matched_line_id": "WL-N",
-        "track_progress": 0.004342
+        "track_progress": 0.004706
       },
       "geometry": {
         "type": "Point",
@@ -4169,7 +4169,7 @@
         ],
         "snapped_distance": 73.49,
         "matched_line_id": "NH",
-        "track_progress": 0.038169
+        "track_progress": 0.053423
       },
       "geometry": {
         "type": "Point",
@@ -4195,7 +4195,7 @@
         ],
         "snapped_distance": 34.17,
         "matched_line_id": "NH",
-        "track_progress": 0.062234
+        "track_progress": 0.087104
       },
       "geometry": {
         "type": "Point",
@@ -4221,7 +4221,7 @@
         ],
         "snapped_distance": 25.39,
         "matched_line_id": "NH",
-        "track_progress": 0.097031
+        "track_progress": 0.135807
       },
       "geometry": {
         "type": "Point",
@@ -4247,7 +4247,7 @@
         ],
         "snapped_distance": 2.95,
         "matched_line_id": "NH",
-        "track_progress": 1.0
+        "track_progress": 0.753663
       },
       "geometry": {
         "type": "Point",
@@ -4273,7 +4273,7 @@
         ],
         "snapped_distance": 39.48,
         "matched_line_id": "NH",
-        "track_progress": 0.83072
+        "track_progress": 0.516736
       },
       "geometry": {
         "type": "Point",
@@ -4297,15 +4297,15 @@
           120.94176,
           22.46102
         ],
-        "snapped_distance": 28.94,
+        "snapped_distance": 32.46,
         "matched_line_id": "NH",
-        "track_progress": 0.328747
+        "track_progress": 0.401139
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.941987,
-          22.460891
+          120.942014,
+          22.460875
         ]
       }
     },
@@ -4325,7 +4325,7 @@
         ],
         "snapped_distance": 38.32,
         "matched_line_id": "NH",
-        "track_progress": 0.689606
+        "track_progress": 0.31923
       },
       "geometry": {
         "type": "Point",
@@ -4351,7 +4351,7 @@
         ],
         "snapped_distance": 28.32,
         "matched_line_id": "NH",
-        "track_progress": 0.449516
+        "track_progress": 0.770441
       },
       "geometry": {
         "type": "Point",
@@ -4377,7 +4377,7 @@
         ],
         "snapped_distance": 48.58,
         "matched_line_id": "NH",
-        "track_progress": 0.533221
+        "track_progress": 0.887597
       },
       "geometry": {
         "type": "Point",
@@ -4403,7 +4403,7 @@
         ],
         "snapped_distance": 39.85,
         "matched_line_id": "NH",
-        "track_progress": 0.584838
+        "track_progress": 0.95984
       },
       "geometry": {
         "type": "Point",
@@ -4481,7 +4481,7 @@
         ],
         "snapped_distance": 84.71,
         "matched_line_id": "TD",
-        "track_progress": 0.814834
+        "track_progress": 0.806171
       },
       "geometry": {
         "type": "Point",
@@ -4507,7 +4507,7 @@
         ],
         "snapped_distance": 19.75,
         "matched_line_id": "TD",
-        "track_progress": 0.863751
+        "track_progress": 0.857377
       },
       "geometry": {
         "type": "Point",
@@ -4533,7 +4533,7 @@
         ],
         "snapped_distance": 11.09,
         "matched_line_id": "TD",
-        "track_progress": 0.900906
+        "track_progress": 0.89627
       },
       "geometry": {
         "type": "Point",
@@ -4559,7 +4559,7 @@
         ],
         "snapped_distance": 20.7,
         "matched_line_id": "TD",
-        "track_progress": 0.93451
+        "track_progress": 0.931446
       },
       "geometry": {
         "type": "Point",
@@ -4585,7 +4585,7 @@
         ],
         "snapped_distance": 15.93,
         "matched_line_id": "TD",
-        "track_progress": 0.95076
+        "track_progress": 0.948456
       },
       "geometry": {
         "type": "Point",
@@ -4611,7 +4611,7 @@
         ],
         "snapped_distance": 24.94,
         "matched_line_id": "TD",
-        "track_progress": 0.810725
+        "track_progress": 0.80187
       },
       "geometry": {
         "type": "Point",
@@ -4637,7 +4637,7 @@
         ],
         "snapped_distance": 59.63,
         "matched_line_id": "TD",
-        "track_progress": 0.498454
+        "track_progress": 0.490663
       },
       "geometry": {
         "type": "Point",
@@ -4663,7 +4663,7 @@
         ],
         "snapped_distance": 21.55,
         "matched_line_id": "TD",
-        "track_progress": 0.532998
+        "track_progress": 0.526823
       },
       "geometry": {
         "type": "Point",
@@ -4689,7 +4689,7 @@
         ],
         "snapped_distance": 17.23,
         "matched_line_id": "TD",
-        "track_progress": 0.575246
+        "track_progress": 0.571047
       },
       "geometry": {
         "type": "Point",
@@ -4715,7 +4715,7 @@
         ],
         "snapped_distance": 11.43,
         "matched_line_id": "TD",
-        "track_progress": 0.613222
+        "track_progress": 0.6108
       },
       "geometry": {
         "type": "Point",
@@ -4741,7 +4741,7 @@
         ],
         "snapped_distance": 22.52,
         "matched_line_id": "TD",
-        "track_progress": 0.649334
+        "track_progress": 0.648601
       },
       "geometry": {
         "type": "Point",
@@ -4767,7 +4767,7 @@
         ],
         "snapped_distance": 28.11,
         "matched_line_id": "TD",
-        "track_progress": 0.689364
+        "track_progress": 0.690504
       },
       "geometry": {
         "type": "Point",
@@ -4793,7 +4793,7 @@
         ],
         "snapped_distance": 0.0,
         "matched_line_id": "TD",
-        "track_progress": 0.471838
+        "track_progress": 0.462801
       },
       "geometry": {
         "type": "Point",
@@ -4819,7 +4819,7 @@
         ],
         "snapped_distance": 0.44,
         "matched_line_id": "TD",
-        "track_progress": 0.037746
+        "track_progress": 0.008401
       },
       "geometry": {
         "type": "Point",
@@ -4845,7 +4845,7 @@
         ],
         "snapped_distance": 23.93,
         "matched_line_id": "TD",
-        "track_progress": 0.092658
+        "track_progress": 0.065882
       },
       "geometry": {
         "type": "Point",
@@ -4871,7 +4871,7 @@
         ],
         "snapped_distance": 18.88,
         "matched_line_id": "TD",
-        "track_progress": 0.110935
+        "track_progress": 0.085014
       },
       "geometry": {
         "type": "Point",
@@ -4897,7 +4897,7 @@
         ],
         "snapped_distance": 31.98,
         "matched_line_id": "TD",
-        "track_progress": 0.157558
+        "track_progress": 0.133818
       },
       "geometry": {
         "type": "Point",
@@ -4923,7 +4923,7 @@
         ],
         "snapped_distance": 22.71,
         "matched_line_id": "TD",
-        "track_progress": 0.191495
+        "track_progress": 0.169343
       },
       "geometry": {
         "type": "Point",
@@ -4949,7 +4949,7 @@
         ],
         "snapped_distance": 24.57,
         "matched_line_id": "TD",
-        "track_progress": 0.22127
+        "track_progress": 0.200511
       },
       "geometry": {
         "type": "Point",
@@ -4975,7 +4975,7 @@
         ],
         "snapped_distance": 17.93,
         "matched_line_id": "TD",
-        "track_progress": 0.246447
+        "track_progress": 0.226866
       },
       "geometry": {
         "type": "Point",
@@ -5001,7 +5001,7 @@
         ],
         "snapped_distance": 0.93,
         "matched_line_id": "TD",
-        "track_progress": 0.259535
+        "track_progress": 0.240566
       },
       "geometry": {
         "type": "Point",
@@ -5027,7 +5027,7 @@
         ],
         "snapped_distance": 15.42,
         "matched_line_id": "TD",
-        "track_progress": 0.298112
+        "track_progress": 0.280948
       },
       "geometry": {
         "type": "Point",
@@ -5053,7 +5053,7 @@
         ],
         "snapped_distance": 18.3,
         "matched_line_id": "TD",
-        "track_progress": 0.314757
+        "track_progress": 0.298372
       },
       "geometry": {
         "type": "Point",
@@ -5079,7 +5079,7 @@
         ],
         "snapped_distance": 28.81,
         "matched_line_id": "TD",
-        "track_progress": 0.325948
+        "track_progress": 0.310086
       },
       "geometry": {
         "type": "Point",
@@ -5105,7 +5105,7 @@
         ],
         "snapped_distance": 12.31,
         "matched_line_id": "TD",
-        "track_progress": 0.343616
+        "track_progress": 0.328581
       },
       "geometry": {
         "type": "Point",
@@ -5131,7 +5131,7 @@
         ],
         "snapped_distance": 43.45,
         "matched_line_id": "BH",
-        "track_progress": 0.698713
+        "track_progress": 0.998997
       },
       "geometry": {
         "type": "Point",
@@ -5157,7 +5157,7 @@
         ],
         "snapped_distance": 30.1,
         "matched_line_id": "TD",
-        "track_progress": 0.004321
+        "track_progress": 0.004523
       },
       "geometry": {
         "type": "Point",
@@ -5183,7 +5183,7 @@
         ],
         "snapped_distance": 31.93,
         "matched_line_id": "BH",
-        "track_progress": 0.570753
+        "track_progress": 0.816043
       },
       "geometry": {
         "type": "Point",
@@ -5209,7 +5209,7 @@
         ],
         "snapped_distance": 15.64,
         "matched_line_id": "BH",
-        "track_progress": 0.467347
+        "track_progress": 0.668196
       },
       "geometry": {
         "type": "Point",
@@ -5235,7 +5235,7 @@
         ],
         "snapped_distance": 52.81,
         "matched_line_id": "BH",
-        "track_progress": 0.380836
+        "track_progress": 0.544507
       },
       "geometry": {
         "type": "Point",
@@ -5261,7 +5261,7 @@
         ],
         "snapped_distance": 46.32,
         "matched_line_id": "BH",
-        "track_progress": 0.296341
+        "track_progress": 0.423699
       },
       "geometry": {
         "type": "Point",
@@ -5285,15 +5285,15 @@
           121.71182,
           24.24225
         ],
-        "snapped_distance": 107.93,
+        "snapped_distance": 111.19,
         "matched_line_id": "BH",
-        "track_progress": 0.710104
+        "track_progress": 0.184321
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.712621,
-          24.241699
+          121.712634,
+          24.241667
         ]
       }
     },
@@ -5311,15 +5311,15 @@
           121.75344,
           24.29839
         ],
-        "snapped_distance": 158.72,
-        "matched_line_id": "BH",
-        "track_progress": 0.838248
+        "snapped_distance": 159.77,
+        "matched_line_id": "YL",
+        "track_progress": 0.000473
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.75479,
-          24.29792
+          121.754794,
+          24.297902
         ]
       }
     },
@@ -5337,15 +5337,15 @@
           121.76838,
           24.33543
         ],
-        "snapped_distance": 22.55,
-        "matched_line_id": "BH",
-        "track_progress": 0.942187
+        "snapped_distance": 34.79,
+        "matched_line_id": "YL",
+        "track_progress": 0.031419
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.768571,
-          24.335361
+          121.768674,
+          24.335321
         ]
       }
     },
@@ -5365,7 +5365,7 @@
         ],
         "snapped_distance": 22.28,
         "matched_line_id": "YL",
-        "track_progress": 0.124971
+        "track_progress": 0.125723
       },
       "geometry": {
         "type": "Point",
@@ -5391,7 +5391,7 @@
         ],
         "snapped_distance": 38.07,
         "matched_line_id": "YL",
-        "track_progress": 0.151613
+        "track_progress": 0.152525
       },
       "geometry": {
         "type": "Point",
@@ -5417,7 +5417,7 @@
         ],
         "snapped_distance": 27.51,
         "matched_line_id": "YL",
-        "track_progress": 0.211667
+        "track_progress": 0.212941
       },
       "geometry": {
         "type": "Point",
@@ -5443,7 +5443,7 @@
         ],
         "snapped_distance": 18.02,
         "matched_line_id": "YL",
-        "track_progress": 0.252563
+        "track_progress": 0.254082
       },
       "geometry": {
         "type": "Point",
@@ -5469,7 +5469,7 @@
         ],
         "snapped_distance": 1468.45,
         "matched_line_id": "YL",
-        "track_progress": 0.267168
+        "track_progress": 0.268775
       },
       "geometry": {
         "type": "Point",
@@ -5495,7 +5495,7 @@
         ],
         "snapped_distance": 57.02,
         "matched_line_id": "YL",
-        "track_progress": 0.289034
+        "track_progress": 0.290772
       },
       "geometry": {
         "type": "Point",
@@ -5521,7 +5521,7 @@
         ],
         "snapped_distance": 5.08,
         "matched_line_id": "YL",
-        "track_progress": 0.295671
+        "track_progress": 0.297449
       },
       "geometry": {
         "type": "Point",
@@ -5547,7 +5547,7 @@
         ],
         "snapped_distance": 30.38,
         "matched_line_id": "YL",
-        "track_progress": 0.326262
+        "track_progress": 0.328224
       },
       "geometry": {
         "type": "Point",
@@ -5573,7 +5573,7 @@
         ],
         "snapped_distance": 13.62,
         "matched_line_id": "YL",
-        "track_progress": 0.361528
+        "track_progress": 0.363703
       },
       "geometry": {
         "type": "Point",
@@ -5599,7 +5599,7 @@
         ],
         "snapped_distance": 3.08,
         "matched_line_id": "YL",
-        "track_progress": 0.374044
+        "track_progress": 0.376294
       },
       "geometry": {
         "type": "Point",
@@ -5625,7 +5625,7 @@
         ],
         "snapped_distance": 37.12,
         "matched_line_id": "YL",
-        "track_progress": 0.382762
+        "track_progress": 0.385065
       },
       "geometry": {
         "type": "Point",
@@ -5651,7 +5651,7 @@
         ],
         "snapped_distance": 14.31,
         "matched_line_id": "YL",
-        "track_progress": 0.423687
+        "track_progress": 0.426236
       },
       "geometry": {
         "type": "Point",
@@ -5677,7 +5677,7 @@
         ],
         "snapped_distance": 28.16,
         "matched_line_id": "YL",
-        "track_progress": 0.44978
+        "track_progress": 0.452486
       },
       "geometry": {
         "type": "Point",
@@ -5703,7 +5703,7 @@
         ],
         "snapped_distance": 19.67,
         "matched_line_id": "YL",
-        "track_progress": 0.482561
+        "track_progress": 0.485464
       },
       "geometry": {
         "type": "Point",
@@ -5729,7 +5729,7 @@
         ],
         "snapped_distance": 14.09,
         "matched_line_id": "YL",
-        "track_progress": 0.513013
+        "track_progress": 0.516099
       },
       "geometry": {
         "type": "Point",
@@ -5755,7 +5755,7 @@
         ],
         "snapped_distance": 22.34,
         "matched_line_id": "YL",
-        "track_progress": 0.528921
+        "track_progress": 0.532103
       },
       "geometry": {
         "type": "Point",
@@ -5781,7 +5781,7 @@
         ],
         "snapped_distance": 14.57,
         "matched_line_id": "YL",
-        "track_progress": 0.555355
+        "track_progress": 0.558696
       },
       "geometry": {
         "type": "Point",
@@ -5807,7 +5807,7 @@
         ],
         "snapped_distance": 31.15,
         "matched_line_id": "YL",
-        "track_progress": 0.581364
+        "track_progress": 0.584861
       },
       "geometry": {
         "type": "Point",
@@ -5833,7 +5833,7 @@
         ],
         "snapped_distance": 0.0,
         "matched_line_id": "YL",
-        "track_progress": 0.614036
+        "track_progress": 0.617729
       },
       "geometry": {
         "type": "Point",
@@ -5859,7 +5859,7 @@
         ],
         "snapped_distance": 22.42,
         "matched_line_id": "YL",
-        "track_progress": 0.654818
+        "track_progress": 0.652451
       },
       "geometry": {
         "type": "Point",
@@ -5885,7 +5885,7 @@
         ],
         "snapped_distance": 16.31,
         "matched_line_id": "YL",
-        "track_progress": 0.674317
+        "track_progress": 0.672358
       },
       "geometry": {
         "type": "Point",
@@ -5911,7 +5911,7 @@
         ],
         "snapped_distance": 30.87,
         "matched_line_id": "YL",
-        "track_progress": 0.713345
+        "track_progress": 0.711621
       },
       "geometry": {
         "type": "Point",
@@ -5937,7 +5937,7 @@
         ],
         "snapped_distance": 16.35,
         "matched_line_id": "YL",
-        "track_progress": 0.750945
+        "track_progress": 0.749447
       },
       "geometry": {
         "type": "Point",
@@ -5963,7 +5963,7 @@
         ],
         "snapped_distance": 31.04,
         "matched_line_id": "YL",
-        "track_progress": 0.814939
+        "track_progress": 0.813826
       },
       "geometry": {
         "type": "Point",
@@ -5989,7 +5989,7 @@
         ],
         "snapped_distance": 14.19,
         "matched_line_id": "YL",
-        "track_progress": 0.845685
+        "track_progress": 0.844757
       },
       "geometry": {
         "type": "Point",
@@ -6015,7 +6015,7 @@
         ],
         "snapped_distance": 12.61,
         "matched_line_id": "YL",
-        "track_progress": 0.872036
+        "track_progress": 0.871266
       },
       "geometry": {
         "type": "Point",
@@ -6197,7 +6197,7 @@
         ],
         "snapped_distance": 25.46,
         "matched_line_id": "YL",
-        "track_progress": 0.890003
+        "track_progress": 0.889341
       },
       "geometry": {
         "type": "Point",
@@ -6223,7 +6223,7 @@
         ],
         "snapped_distance": 8.49,
         "matched_line_id": "YL",
-        "track_progress": 0.929702
+        "track_progress": 0.929279
       },
       "geometry": {
         "type": "Point",
@@ -6301,7 +6301,7 @@
         ],
         "snapped_distance": 21.09,
         "matched_line_id": "YL",
-        "track_progress": 0.999925
+        "track_progress": 0.999924
       },
       "geometry": {
         "type": "Point",
@@ -6327,7 +6327,7 @@
         ],
         "snapped_distance": 9.82,
         "matched_line_id": "YL",
-        "track_progress": 0.947633
+        "track_progress": 0.947318
       },
       "geometry": {
         "type": "Point",

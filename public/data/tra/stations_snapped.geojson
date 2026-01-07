@@ -5249,13 +5249,15 @@
           121.71182,
           24.24225
         ],
-        "snapped_distance": 7740.21
+        "snapped_distance": 107.93,
+        "matched_line_id": "BH",
+        "track_progress": 0.014193
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.754587,
-          24.297327
+          121.712621,
+          24.241699
         ]
       }
     },
@@ -5273,15 +5275,15 @@
           121.75344,
           24.29839
         ],
-        "snapped_distance": 159.77,
-        "matched_line_id": "YL",
-        "track_progress": 0.000489
+        "snapped_distance": 158.72,
+        "matched_line_id": "BH",
+        "track_progress": 0.184359
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.754794,
-          24.297902
+          121.75479,
+          24.29792
         ]
       }
     },
@@ -5299,15 +5301,15 @@
           121.76838,
           24.33543
         ],
-        "snapped_distance": 34.79,
-        "matched_line_id": "YL",
-        "track_progress": 0.032473
+        "snapped_distance": 22.55,
+        "matched_line_id": "BH",
+        "track_progress": 0.322382
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.768674,
-          24.335321
+          121.768571,
+          24.335361
         ]
       }
     },
@@ -5351,15 +5353,15 @@
           121.80103,
           24.46342
         ],
-        "snapped_distance": 38.07,
-        "matched_line_id": "YL",
-        "track_progress": 0.15764
+        "snapped_distance": 26.1,
+        "matched_line_id": "BH",
+        "track_progress": 0.640678
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.800974,
-          24.463082
+          121.800992,
+          24.463188
         ]
       }
     },
@@ -5377,15 +5379,15 @@
           121.83072,
           24.51827
         ],
-        "snapped_distance": 27.51,
-        "matched_line_id": "YL",
-        "track_progress": 0.220081
+        "snapped_distance": 14.32,
+        "matched_line_id": "BH",
+        "track_progress": 0.82745
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.83049,
-          24.518178
+          121.830603,
+          24.518216
         ]
       }
     },

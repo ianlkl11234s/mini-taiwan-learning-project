@@ -10,20 +10,13 @@
         "name_zh": "基隆",
         "class": "1",
         "address": "203001基隆市中山區中山一路 16 之 1 號",
-        "phone": "02-24263743",
-        "original_coords": [
-          121.73837,
-          25.13191
-        ],
-        "snapped_distance": 10.92,
-        "matched_line_id": "WL-N",
-        "track_progress": 0.991587
+        "phone": "02-24263743"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.738453,
-          25.131857
+          121.73837,
+          25.13191
         ]
       }
     },
@@ -36,14 +29,7 @@
         "name_zh": "三坑",
         "class": "4",
         "address": "200006基隆市仁愛區德厚里龍安街 206 號",
-        "phone": "02-24230289",
-        "original_coords": [
-          121.74202,
-          25.12305
-        ],
-        "snapped_distance": 0.0,
-        "matched_line_id": "WL-N",
-        "track_progress": 1.0
+        "phone": "02-24230289"
       },
       "geometry": {
         "type": "Point",
@@ -62,20 +48,13 @@
         "name_zh": "八堵",
         "class": "2",
         "address": "205001基隆市暖暖區八南里八堵路 142 號",
-        "phone": "02-24560841",
-        "original_coords": [
-          121.72904,
-          25.10838
-        ],
-        "snapped_distance": 21.82,
-        "matched_line_id": "YL",
-        "track_progress": 0.997299
+        "phone": "02-24560841"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.728959,
-          25.108559
+          121.72904,
+          25.10838
         ]
       }
     },
@@ -88,20 +67,13 @@
         "name_zh": "七堵",
         "class": "1",
         "address": "206006基隆市七堵區長興里東新街 2 號",
-        "phone": "02-24553426",
-        "original_coords": [
-          121.71415,
-          25.09294
-        ],
-        "snapped_distance": 14.16,
-        "matched_line_id": "WL-N",
-        "track_progress": 0.930186
+        "phone": "02-24553426"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.714083,
-          25.093049
+          121.71415,
+          25.09294
         ]
       }
     },
@@ -114,20 +86,13 @@
         "name_zh": "百福",
         "class": "4",
         "address": "206011基隆市七堵區堵南里明德三路 1 之 1 號",
-        "phone": "02-24528372",
-        "original_coords": [
-          121.69379,
-          25.07795
-        ],
-        "snapped_distance": 4.27,
-        "matched_line_id": "WL-N",
-        "track_progress": 0.950986
+        "phone": "02-24528372"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.693801,
-          25.077913
+          121.69379,
+          25.07795
         ]
       }
     },
@@ -140,14 +105,7 @@
         "name_zh": "五堵",
         "class": "4",
         "address": "221041新北市汐止區長安里長安路 17 號",
-        "phone": "02-86476200",
-        "original_coords": [
-          121.66758,
-          25.07799
-        ],
-        "snapped_distance": 0.0,
-        "matched_line_id": "WL-N",
-        "track_progress": 0.972729
+        "phone": "02-86476200"
       },
       "geometry": {
         "type": "Point",
@@ -166,20 +124,13 @@
         "name_zh": "汐止",
         "class": "2",
         "address": "221029新北市汐止區信望里信義路 1 號",
-        "phone": "02-26415096",
-        "original_coords": [
-          121.66113,
-          25.0679
-        ],
-        "snapped_distance": 3.69,
-        "matched_line_id": "WL-N",
-        "track_progress": 0.86833
+        "phone": "02-26415096"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.661151,
-          25.067874
+          121.66113,
+          25.0679
         ]
       }
     },
@@ -192,20 +143,13 @@
         "name_zh": "汐科",
         "class": "4",
         "address": "221026新北市汐止區大同里大同路二段 182 號",
-        "phone": "02-26499817#8730",
-        "original_coords": [
-          121.65057,
-          25.06358
-        ],
-        "snapped_distance": 37.46,
-        "matched_line_id": "WL-N",
-        "track_progress": 0.877199
+        "phone": "02-26499817#8730"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.650681,
-          25.063261
+          121.65057,
+          25.06358
         ]
       }
     },
@@ -218,14 +162,7 @@
         "name_zh": "南港",
         "class": "1",
         "address": "115018臺北市南港區南港里南港路一段 313 號 B2",
-        "phone": "02-27838645",
-        "original_coords": [
-          121.60706,
-          25.05348
-        ],
-        "snapped_distance": 0.0,
-        "matched_line_id": "WL-N",
-        "track_progress": 0.778973
+        "phone": "02-27838645"
       },
       "geometry": {
         "type": "Point",
@@ -244,20 +181,13 @@
         "name_zh": "松山",
         "class": "1",
         "address": "110417臺北市信義區松山路 11 號B1",
-        "phone": "02-27673819",
-        "original_coords": [
-          121.57906,
-          25.04927
-        ],
-        "snapped_distance": 42.28,
-        "matched_line_id": "WL-N",
-        "track_progress": 0.800877
+        "phone": "02-27673819"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.579056,
-          25.048889
+          121.57906,
+          25.04927
         ]
       }
     },
@@ -270,14 +200,7 @@
         "name_zh": "臺北",
         "class": "0",
         "address": "100230臺北市中正區黎明里北平西路 3 號",
-        "phone": "02-23713558",
-        "original_coords": [
-          121.51711,
-          25.04775
-        ],
-        "snapped_distance": 0.0,
-        "matched_line_id": "WL-N",
-        "track_progress": 0.85861
+        "phone": "02-23713558"
       },
       "geometry": {
         "type": "Point",
@@ -296,20 +219,13 @@
         "name_zh": "臺北-環島",
         "class": "4",
         "address": "100230臺北市中正區",
-        "phone": "",
-        "original_coords": [
-          121.51711,
-          25.04774
-        ],
-        "snapped_distance": 0.29,
-        "matched_line_id": "WL-N",
-        "track_progress": 0.7556
+        "phone": ""
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
           121.51711,
-          25.047743
+          25.04774
         ]
       }
     },
@@ -322,20 +238,13 @@
         "name_zh": "萬華",
         "class": "1",
         "address": "108220臺北市萬華區富福里康定路 382 號",
-        "phone": "02-23020481",
-        "original_coords": [
-          121.50081,
-          25.03342
-        ],
-        "snapped_distance": 6.03,
-        "matched_line_id": "WL-N",
-        "track_progress": 0.735265
+        "phone": "02-23020481"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.500815,
-          25.033366
+          121.50081,
+          25.03342
         ]
       }
     },
@@ -348,20 +257,13 @@
         "name_zh": "板橋",
         "class": "1",
         "address": "220227新北市板橋區新民里縣民大道二段 7 號（縣民大道側）",
-        "phone": "02-89691036",
-        "original_coords": [
-          121.46377,
-          25.01434
-        ],
-        "snapped_distance": 64.73,
-        "matched_line_id": "WL-N",
-        "track_progress": 0.702445
+        "phone": "02-89691036"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.464116,
-          25.01387
+          121.46377,
+          25.01434
         ]
       }
     },
@@ -374,20 +276,13 @@
         "name_zh": "浮洲",
         "class": "4",
         "address": "22058新北市板橋區僑中里僑中二街 156 號",
-        "phone": "02-23815226#4665",
-        "original_coords": [
-          121.44477,
-          25.00419
-        ],
-        "snapped_distance": 2.47,
-        "matched_line_id": "WL-N",
-        "track_progress": 0.679186
+        "phone": "02-23815226#4665"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.444769,
-          25.004168
+          121.44477,
+          25.00419
         ]
       }
     },
@@ -400,20 +295,13 @@
         "name_zh": "樹林",
         "class": "1",
         "address": "238005新北市樹林區樹北里鎮前街 112 號",
-        "phone": "02-26812052",
-        "original_coords": [
-          121.42442,
-          24.99123
-        ],
-        "snapped_distance": 1.12,
-        "matched_line_id": "WL-N",
-        "track_progress": 0.653854
+        "phone": "02-26812052"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.424411,
-          24.991235
+          121.42442,
+          24.99123
         ]
       }
     },
@@ -426,20 +314,13 @@
         "name_zh": "南樹林",
         "class": "4",
         "address": "23846新北市樹林區東山里中山路二段 230 號",
-        "phone": "02-26812052",
-        "original_coords": [
-          121.40884,
-          24.98044
-        ],
-        "snapped_distance": 1.88,
-        "matched_line_id": "WL-N",
-        "track_progress": 0.627433
+        "phone": "02-26812052"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.408833,
-          24.980455
+          121.40884,
+          24.98044
         ]
       }
     },
@@ -452,20 +333,13 @@
         "name_zh": "山佳",
         "class": "3",
         "address": "238012新北市樹林區中山路三段108號",
-        "phone": "02-26808874",
-        "original_coords": [
-          121.39254,
-          24.97273
-        ],
-        "snapped_distance": 3.67,
-        "matched_line_id": "WL-N",
-        "track_progress": 0.613342
+        "phone": "02-26808874"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.392552,
-          24.972699
+          121.39254,
+          24.97273
         ]
       }
     },
@@ -478,20 +352,13 @@
         "name_zh": "鶯歌",
         "class": "2",
         "address": "239005新北市鶯歌區東鶯里文化路 68-1號",
-        "phone": "02-26792004",
-        "original_coords": [
-          121.35517,
-          24.95455
-        ],
-        "snapped_distance": 8.35,
-        "matched_line_id": "WL-N",
-        "track_progress": 0.580318
+        "phone": "02-26792004"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.355213,
-          24.954488
+          121.35517,
+          24.95455
         ]
       }
     },
@@ -504,20 +371,13 @@
         "name_zh": "鳳鳴",
         "class": "4",
         "address": "239013新北市鶯歌區鳳鳴里鳳一路 2 號",
-        "phone": "",
-        "original_coords": [
-          121.33658,
-          24.97268
-        ],
-        "snapped_distance": 16.97,
-        "matched_line_id": "WL-N",
-        "track_progress": 0.544856
+        "phone": ""
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.336683,
-          24.972793
+          121.33658,
+          24.97268
         ]
       }
     },
@@ -530,20 +390,13 @@
         "name_zh": "桃園",
         "class": "1",
         "address": "330002桃園市桃園區武陵里中正路 1 號",
-        "phone": "03-3767050",
-        "original_coords": [
-          121.314,
-          24.98902
-        ],
-        "snapped_distance": 28.78,
-        "matched_line_id": "WL-N",
-        "track_progress": 0.521243
+        "phone": "03-3767050"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.314078,
-          24.988773
+          121.314,
+          24.98902
         ]
       }
     },
@@ -556,20 +409,13 @@
         "name_zh": "內壢",
         "class": "3",
         "address": "320070桃園市中壢區中原里中華路一段 267 號",
-        "phone": "03-4559725",
-        "original_coords": [
-          121.25826,
-          24.97281
-        ],
-        "snapped_distance": 26.52,
-        "matched_line_id": "WL-N",
-        "track_progress": 0.475932
+        "phone": "03-4559725"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.258331,
-          24.972582
+          121.25826,
+          24.97281
         ]
       }
     },
@@ -582,20 +428,13 @@
         "name_zh": "中壢",
         "class": "1",
         "address": "320001桃園市中壢區石頭里中和路 139 號",
-        "phone": "03-4223235",
-        "original_coords": [
-          121.22531,
-          24.95321
-        ],
-        "snapped_distance": 0.18,
-        "matched_line_id": "WL-N",
-        "track_progress": 0.446175
+        "phone": "03-4223235"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.225311,
-          24.953209
+          121.22531,
+          24.95321
         ]
       }
     },
@@ -608,20 +447,13 @@
         "name_zh": "埔心",
         "class": "3",
         "address": "326009桃園市楊梅區埔心里永美路 208 號",
-        "phone": "03-4827100",
-        "original_coords": [
-          121.18321,
-          24.9197
-        ],
-        "snapped_distance": 34.77,
-        "matched_line_id": "WL-N",
-        "track_progress": 0.403978
+        "phone": "03-4827100"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.183437,
-          24.919484
+          121.18321,
+          24.9197
         ]
       }
     },
@@ -634,20 +466,13 @@
         "name_zh": "楊梅",
         "class": "3",
         "address": "326101桃園市楊梅區楊梅里大成路 256 號",
-        "phone": "03-4782893",
-        "original_coords": [
-          121.14637,
-          24.91427
-        ],
-        "snapped_distance": 1.5,
-        "matched_line_id": "WL-N",
-        "track_progress": 0.37372
+        "phone": "03-4782893"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.146371,
-          24.914283
+          121.14637,
+          24.91427
         ]
       }
     },
@@ -660,20 +485,13 @@
         "name_zh": "富岡",
         "class": "3",
         "address": "326019桃園市楊梅區富岡里成功路 37 號",
-        "phone": "03-4723754",
-        "original_coords": [
-          121.08308,
-          24.93445
-        ],
-        "snapped_distance": 36.91,
-        "matched_line_id": "WL-N",
-        "track_progress": 0.321939
+        "phone": "03-4723754"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.083144,
-          24.934124
+          121.08308,
+          24.93445
         ]
       }
     },
@@ -686,20 +504,13 @@
         "name_zh": "新富",
         "class": "5",
         "address": "326019桃園市楊梅區富豐里新明街",
-        "phone": "03-4723754",
-        "original_coords": [
-          121.06751,
-          24.93109
-        ],
-        "snapped_distance": 0.33,
-        "matched_line_id": "WL-N",
-        "track_progress": 0.309664
+        "phone": "03-4723754"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.067511,
-          24.931087
+          121.06751,
+          24.93109
         ]
       }
     },
@@ -712,20 +523,13 @@
         "name_zh": "北湖",
         "class": "4",
         "address": "303118新竹縣湖口鄉東興村北湖路 1 號",
-        "phone": "03-5993850",
-        "original_coords": [
-          121.05575,
-          24.92218
-        ],
-        "snapped_distance": 3.91,
-        "matched_line_id": "WL-N",
-        "track_progress": 0.29778
+        "phone": "03-5993850"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.055721,
-          24.9222
+          121.05575,
+          24.92218
         ]
       }
     },
@@ -738,20 +542,13 @@
         "name_zh": "湖口",
         "class": "3",
         "address": "303032新竹縣湖口鄉仁勢村中山路二段 121 號",
-        "phone": "03-5992192",
-        "original_coords": [
-          121.04384,
-          24.90298
-        ],
-        "snapped_distance": 4.85,
-        "matched_line_id": "WL-N",
-        "track_progress": 0.280357
+        "phone": "03-5992192"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.043877,
-          24.902957
+          121.04384,
+          24.90298
         ]
       }
     },
@@ -764,20 +561,13 @@
         "name_zh": "新豐",
         "class": "3",
         "address": "304114新竹縣新豐鄉山崎村新興路 202 號",
-        "phone": "03-5596314",
-        "original_coords": [
-          120.99626,
-          24.86939
-        ],
-        "snapped_distance": 32.16,
-        "matched_line_id": "WL-N",
-        "track_progress": 0.234611
+        "phone": "03-5596314"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.996444,
-          24.869166
+          120.99626,
+          24.86939
         ]
       }
     },
@@ -790,20 +580,13 @@
         "name_zh": "竹北",
         "class": "3",
         "address": "30265新竹縣竹北市竹義里和平街 59 號",
-        "phone": "03-5552024",
-        "original_coords": [
-          121.00921,
-          24.83904
-        ],
-        "snapped_distance": 4.47,
-        "matched_line_id": "WL-N",
-        "track_progress": 0.199993
+        "phone": "03-5552024"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.009178,
-          24.839064
+          121.00921,
+          24.83904
         ]
       }
     },
@@ -816,20 +599,13 @@
         "name_zh": "北新竹",
         "class": "4",
         "address": "300002新竹市 東區東園里中華路一段 291 之 2 號",
-        "phone": "03-5237441",
-        "original_coords": [
-          120.98381,
-          24.80875
-        ],
-        "snapped_distance": 39.46,
-        "matched_line_id": "WL-N",
-        "track_progress": 0.161081
+        "phone": "03-5237441"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.98398,
-          24.808438
+          120.98381,
+          24.80875
         ]
       }
     },
@@ -842,20 +618,13 @@
         "name_zh": "千甲",
         "class": "4",
         "address": "300053新竹市 東區水源里千甲路 142 號",
-        "phone": "03-5237441",
-        "original_coords": [
-          121.0034,
-          24.80657
-        ],
-        "snapped_distance": 3.45,
-        "matched_line_id": "NW",
-        "track_progress": 0.94194
+        "phone": "03-5237441"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.003412,
-          24.806599
+          121.0034,
+          24.80657
         ]
       }
     },
@@ -868,20 +637,13 @@
         "name_zh": "新莊",
         "class": "4",
         "address": "300051新竹市 東區新莊里關東路 310 號",
-        "phone": "03-5237441",
-        "original_coords": [
-          121.02196,
-          24.78811
-        ],
-        "snapped_distance": 2.54,
-        "matched_line_id": "NW",
-        "track_progress": 0.829392
+        "phone": "03-5237441"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.021938,
-          24.788104
+          121.02196,
+          24.78811
         ]
       }
     },
@@ -894,20 +656,13 @@
         "name_zh": "竹中",
         "class": "4",
         "address": "310019新竹縣竹東鎮頭重里竹中路 145 號",
-        "phone": "03-5962042",
-        "original_coords": [
-          121.03141,
-          24.78145
-        ],
-        "snapped_distance": 0.98,
-        "matched_line_id": "NW",
-        "track_progress": 0.776791
+        "phone": "03-5962042"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.031412,
-          24.781459
+          121.03141,
+          24.78145
         ]
       }
     },
@@ -920,20 +675,13 @@
         "name_zh": "六家",
         "class": "4",
         "address": "302052新竹縣竹北市隘口里復興三路二段 229 號",
-        "phone": "03-5962042",
-        "original_coords": [
-          121.03941,
-          24.80766
-        ],
-        "snapped_distance": 2.69,
-        "matched_line_id": "LJ",
-        "track_progress": 0.0
+        "phone": "03-5962042"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.039399,
-          24.807638
+          121.03941,
+          24.80766
         ]
       }
     },
@@ -946,20 +694,13 @@
         "name_zh": "上員",
         "class": "5",
         "address": "310021新竹縣竹東鎮上員里光明路 (無站房)",
-        "phone": "03-5962042",
-        "original_coords": [
-          121.05582,
-          24.77776
-        ],
-        "snapped_distance": 3.3,
-        "matched_line_id": "NW",
-        "track_progress": 0.673582
+        "phone": "03-5962042"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.055836,
-          24.777785
+          121.05582,
+          24.77776
         ]
       }
     },
@@ -972,20 +713,13 @@
         "name_zh": "榮華",
         "class": "5",
         "address": "310008新竹縣竹東鎮仁愛里北興路 (無站房)",
-        "phone": "03-5962042",
-        "original_coords": [
-          121.08319,
-          24.74839
-        ],
-        "snapped_distance": 4.56,
-        "matched_line_id": "NW",
-        "track_progress": 0.506387
+        "phone": "03-5962042"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.083213,
-          24.748424
+          121.08319,
+          24.74839
         ]
       }
     },
@@ -998,20 +732,13 @@
         "name_zh": "竹東",
         "class": "2",
         "address": "310007新竹縣竹東鎮雞林里東林路 196 號",
-        "phone": "03-5962042",
-        "original_coords": [
-          121.09472,
-          24.73823
-        ],
-        "snapped_distance": 22.79,
-        "matched_line_id": "NW",
-        "track_progress": 0.444313
+        "phone": "03-5962042"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.094864,
-          24.738377
+          121.09472,
+          24.73823
         ]
       }
     },
@@ -1024,20 +751,13 @@
         "name_zh": "橫山",
         "class": "5",
         "address": "312001新竹縣橫山鄉橫山村橫山路 97 號 (無站房)",
-        "phone": "03-5962042",
-        "original_coords": [
-          121.11772,
-          24.72041
-        ],
-        "snapped_distance": 2.94,
-        "matched_line_id": "NW",
-        "track_progress": 0.311875
+        "phone": "03-5962042"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.117724,
-          24.720436
+          121.11772,
+          24.72041
         ]
       }
     },
@@ -1050,20 +770,13 @@
         "name_zh": "九讚頭",
         "class": "4",
         "address": "312002新竹縣橫山鄉大肚村中豐路二段 286 巷 29 號",
-        "phone": "03-5962042",
-        "original_coords": [
-          121.13622,
-          24.72062
-        ],
-        "snapped_distance": 35.51,
-        "matched_line_id": "NW",
-        "track_progress": 0.231525
+        "phone": "03-5962042"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.136063,
-          24.720341
+          121.13622,
+          24.72062
         ]
       }
     },
@@ -1076,20 +789,13 @@
         "name_zh": "合興",
         "class": "5",
         "address": "312003新竹縣橫山鄉力行村中山街一段 17 號",
-        "phone": "03-5962042",
-        "original_coords": [
-          121.15437,
-          24.71667
-        ],
-        "snapped_distance": 26.26,
-        "matched_line_id": "NW",
-        "track_progress": 0.152694
+        "phone": "03-5962042"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.154468,
-          24.716454
+          121.15437,
+          24.71667
         ]
       }
     },
@@ -1102,20 +808,13 @@
         "name_zh": "富貴",
         "class": "5",
         "address": "312003新竹縣橫山鄉豐田村中山街一段 (無站房)",
-        "phone": "03-5962042",
-        "original_coords": [
-          121.16743,
-          24.71551
-        ],
-        "snapped_distance": 4.29,
-        "matched_line_id": "NW",
-        "track_progress": 0.092893
+        "phone": "03-5962042"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.167413,
-          24.715475
+          121.16743,
+          24.71551
         ]
       }
     },
@@ -1128,20 +827,13 @@
         "name_zh": "內灣",
         "class": "4",
         "address": "312003新竹縣橫山鄉內灣村中正路 6 號",
-        "phone": "03-5962042",
-        "original_coords": [
-          121.18255,
-          24.70535
-        ],
-        "snapped_distance": 14.81,
-        "matched_line_id": "NW",
-        "track_progress": 0.006742
+        "phone": "03-5962042"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.182671,
-          24.705407
+          121.18255,
+          24.70535
         ]
       }
     },
@@ -1154,20 +846,13 @@
         "name_zh": "新竹",
         "class": "1",
         "address": "300003新竹市 東區榮光里中華路二段 445 號",
-        "phone": "03-5237441",
-        "original_coords": [
-          120.97157,
-          24.80157
-        ],
-        "snapped_distance": 22.83,
-        "matched_line_id": "WL-N",
-        "track_progress": 0.150152
+        "phone": "03-5237441"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.971676,
-          24.801394
+          120.97157,
+          24.80157
         ]
       }
     },
@@ -1180,20 +865,13 @@
         "name_zh": "三姓橋",
         "class": "4",
         "address": "300109新竹市 香山區香山里元培街 32 巷 30 號",
-        "phone": "03-5237441",
-        "original_coords": [
-          120.92844,
-          24.78731
-        ],
-        "snapped_distance": 8.66,
-        "matched_line_id": "WL-N",
-        "track_progress": 0.114467
+        "phone": "03-5237441"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.928413,
-          24.787383
+          120.92844,
+          24.78731
         ]
       }
     },
@@ -1206,20 +884,13 @@
         "name_zh": "香山",
         "class": "4",
         "address": "300111新竹市 香山區朝山里中華路五段 347 巷 2 弄 27 號",
-        "phone": "03-5237441",
-        "original_coords": [
-          120.91388,
-          24.76311
-        ],
-        "snapped_distance": 28.25,
-        "matched_line_id": "WL-N",
-        "track_progress": 0.091018
+        "phone": "03-5237441"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.914111,
-          24.763003
+          120.91388,
+          24.76311
         ]
       }
     },
@@ -1232,20 +903,13 @@
         "name_zh": "崎頂",
         "class": "5",
         "address": "35054苗栗縣竹南鎮崎頂里北戶 55 號",
-        "phone": "037-472030",
-        "original_coords": [
-          120.87183,
-          24.72291
-        ],
-        "snapped_distance": 23.96,
-        "matched_line_id": "WL-N",
-        "track_progress": 0.044286
+        "phone": "037-472030"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.871659,
-          24.723041
+          120.87183,
+          24.72291
         ]
       }
     },
@@ -1258,20 +922,13 @@
         "name_zh": "竹南",
         "class": "1",
         "address": "350007苗栗縣竹南鎮竹南里中山路 166 號",
-        "phone": "037-472030",
-        "original_coords": [
-          120.88091,
-          24.68647
-        ],
-        "snapped_distance": 16.79,
-        "matched_line_id": "WL-N",
-        "track_progress": 0.004553
+        "phone": "037-472030"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.881061,
-          24.686461
+          120.88091,
+          24.68647
         ]
       }
     },
@@ -1284,20 +941,13 @@
         "name_zh": "談文",
         "class": "5",
         "address": "36143苗栗縣造橋鄉談文村仁愛路 29 號",
-        "phone": "037-472030",
-        "original_coords": [
-          120.85825,
-          24.65641
-        ],
-        "snapped_distance": 21.01,
-        "matched_line_id": "WL-H2",
-        "track_progress": 0.670066
+        "phone": "037-472030"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.858184,
-          24.656587
+          120.85825,
+          24.65641
         ]
       }
     },
@@ -1310,20 +960,13 @@
         "name_zh": "大山",
         "class": "4",
         "address": "35658苗栗縣後龍鎮大山里明山路 180 號",
-        "phone": "037-431208",
-        "original_coords": [
-          120.80376,
-          24.64565
-        ],
-        "snapped_distance": 27.32,
-        "matched_line_id": "WL-H2",
-        "track_progress": 0.438348
+        "phone": "037-431208"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.803552,
-          24.645781
+          120.80376,
+          24.64565
         ]
       }
     },
@@ -1336,20 +979,13 @@
         "name_zh": "後龍",
         "class": "3",
         "address": "35641苗栗縣後龍鎮北龍里車站街 127-2 號",
-        "phone": "037-728616",
-        "original_coords": [
-          120.78731,
-          24.61621
-        ],
-        "snapped_distance": 13.2,
-        "matched_line_id": "WL-H2",
-        "track_progress": 0.317978
+        "phone": "037-728616"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.787215,
-          24.616282
+          120.78731,
+          24.61621
         ]
       }
     },
@@ -1362,20 +998,13 @@
         "name_zh": "龍港",
         "class": "5",
         "address": "35668苗栗縣後龍鎮龍津里7鄰公司寮 85 號",
-        "phone": "037-728616",
-        "original_coords": [
-          120.75812,
-          24.61169
-        ],
-        "snapped_distance": 25.0,
-        "matched_line_id": "WL-H2",
-        "track_progress": 0.193261
+        "phone": "037-728616"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.758142,
-          24.611914
+          120.75812,
+          24.61169
         ]
       }
     },
@@ -1388,20 +1017,13 @@
         "name_zh": "白沙屯",
         "class": "3",
         "address": "35742苗栗縣通霄鎮白西里白西 131 號",
-        "phone": "037-793066",
-        "original_coords": [
-          120.70824,
-          24.56481
-        ],
-        "snapped_distance": 32.55,
-        "matched_line_id": "WL-H",
-        "track_progress": 0.855431
+        "phone": "037-793066"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.70799,
-          24.564964
+          120.70824,
+          24.56481
         ]
       }
     },
@@ -1414,20 +1036,13 @@
         "name_zh": "新埔",
         "class": "4",
         "address": "35742苗栗縣通霄鎮新埔里新埔 57 號",
-        "phone": "037-793930",
-        "original_coords": [
-          120.69518,
-          24.54018
-        ],
-        "snapped_distance": 29.15,
-        "matched_line_id": "WL-H",
-        "track_progress": 0.803596
+        "phone": "037-793930"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.695434,
-          24.540114
+          120.69518,
+          24.54018
         ]
       }
     },
@@ -1440,20 +1055,13 @@
         "name_zh": "通霄",
         "class": "3",
         "address": "357006苗栗縣通霄鎮通西里中正路 109 號",
-        "phone": "037-758300",
-        "original_coords": [
-          120.67843,
-          24.49141
-        ],
-        "snapped_distance": 44.5,
-        "matched_line_id": "WL-H",
-        "track_progress": 0.70633
+        "phone": "037-758300"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.678137,
-          24.491683
+          120.67843,
+          24.49141
         ]
       }
     },
@@ -1466,20 +1074,13 @@
         "name_zh": "苑裡",
         "class": "3",
         "address": "358011苗栗縣苑裡鎮苑北里中山路 165 號",
-        "phone": "037-851013",
-        "original_coords": [
-          120.65146,
-          24.44344
-        ],
-        "snapped_distance": 33.58,
-        "matched_line_id": "WL-H",
-        "track_progress": 0.602491
+        "phone": "037-851013"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.651185,
-          24.443567
+          120.65146,
+          24.44344
         ]
       }
     },
@@ -1492,20 +1093,13 @@
         "name_zh": "日南",
         "class": "4",
         "address": "437105臺中市大甲區孟春里中山路二段 140 巷 8 號",
-        "phone": "04-26816113",
-        "original_coords": [
-          120.65412,
-          24.37815
-        ],
-        "snapped_distance": 44.4,
-        "matched_line_id": "WL-H",
-        "track_progress": 0.471606
+        "phone": "04-26816113"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.654421,
-          24.377886
+          120.65412,
+          24.37815
         ]
       }
     },
@@ -1518,20 +1112,13 @@
         "name_zh": "大甲",
         "class": "2",
         "address": "437003臺中市大甲區大甲里中山路一段 828 號",
-        "phone": "04-26872022",
-        "original_coords": [
-          120.62702,
-          24.34448
-        ],
-        "snapped_distance": 46.16,
-        "matched_line_id": "WL-H",
-        "track_progress": 0.391864
+        "phone": "04-26872022"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.627375,
-          24.344263
+          120.62702,
+          24.34448
         ]
       }
     },
@@ -1544,20 +1131,13 @@
         "name_zh": "臺中港",
         "class": "2",
         "address": "43642臺中市清水區頂湳里甲南路 2 號",
-        "phone": "04-26225374",
-        "original_coords": [
-          120.60231,
-          24.30441
-        ],
-        "snapped_distance": 50.12,
-        "matched_line_id": "WL-H",
-        "track_progress": 1.0
+        "phone": "04-26225374"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.602729,
-          24.30424
+          120.60231,
+          24.30441
         ]
       }
     },
@@ -1570,20 +1150,13 @@
         "name_zh": "清水",
         "class": "3",
         "address": "436109臺中市清水區南社里中正街 115 號",
-        "phone": "04-26222021",
-        "original_coords": [
-          120.56918,
-          24.26364
-        ],
-        "snapped_distance": 27.8,
-        "matched_line_id": "WL-H",
-        "track_progress": 0.896926
+        "phone": "04-26222021"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.56895,
-          24.263738
+          120.56918,
+          24.26364
         ]
       }
     },
@@ -1596,20 +1169,13 @@
         "name_zh": "沙鹿",
         "class": "2",
         "address": "43353臺中市沙鹿區沙鹿里中正街 94 號",
-        "phone": "04-26625057",
-        "original_coords": [
-          120.55752,
-          24.23702
-        ],
-        "snapped_distance": 20.6,
-        "matched_line_id": "WL-H",
-        "track_progress": 0.247378
+        "phone": "04-26625057"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.55735,
-          24.237095
+          120.55752,
+          24.23702
         ]
       }
     },
@@ -1622,20 +1188,13 @@
         "name_zh": "龍井",
         "class": "3",
         "address": "43450臺中市龍井區龍泉里龍新路 1 號",
-        "phone": "04-26355578",
-        "original_coords": [
-          120.54335,
-          24.19748
-        ],
-        "snapped_distance": 25.18,
-        "matched_line_id": "WL-H",
-        "track_progress": 0.169753
+        "phone": "04-26355578"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.543134,
-          24.197548
+          120.54335,
+          24.19748
         ]
       }
     },
@@ -1648,20 +1207,13 @@
         "name_zh": "大肚",
         "class": "3",
         "address": "43242臺中市大肚區頂街里平和街 121 號",
-        "phone": "04-26992523",
-        "original_coords": [
-          120.54249,
-          24.15417
-        ],
-        "snapped_distance": 27.09,
-        "matched_line_id": "WL-H",
-        "track_progress": 0.086607
+        "phone": "04-26992523"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.54225,
-          24.154126
+          120.54249,
+          24.15417
         ]
       }
     },
@@ -1674,20 +1226,13 @@
         "name_zh": "追分",
         "class": "3",
         "address": "43245臺中市大肚區王田里追分街 13 號",
-        "phone": "04-26933106",
-        "original_coords": [
-          120.57018,
-          24.12051
-        ],
-        "snapped_distance": 32.58,
-        "matched_line_id": "WL-H",
-        "track_progress": 5.2e-05
+        "phone": "04-26933106"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.570108,
-          24.120225
+          120.57018,
+          24.12051
         ]
       }
     },
@@ -1700,20 +1245,13 @@
         "name_zh": "造橋",
         "class": "5",
         "address": "36144苗栗縣造橋鄉造橋村平仁路 54 號",
-        "phone": "037-472030",
-        "original_coords": [
-          120.86721,
-          24.64186
-        ],
-        "snapped_distance": 25.15,
-        "matched_line_id": "WL-M",
-        "track_progress": 0.945159
+        "phone": "037-472030"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.867365,
-          24.641695
+          120.86721,
+          24.64186
         ]
       }
     },
@@ -1726,20 +1264,13 @@
         "name_zh": "豐富",
         "class": "4",
         "address": "356002苗栗縣後龍鎮校椅里高鐵一路 66 號",
-        "phone": "037-726700",
-        "original_coords": [
-          120.82637,
-          24.60429
-        ],
-        "snapped_distance": 10.66,
-        "matched_line_id": "WL-M",
-        "track_progress": 0.874213
+        "phone": "037-726700"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.826299,
-          24.604355
+          120.82637,
+          24.60429
         ]
       }
     },
@@ -1752,20 +1283,13 @@
         "name_zh": "苗栗",
         "class": "1",
         "address": "360003苗栗縣苗栗市上苗里為公路 1 號",
-        "phone": "037-260031",
-        "original_coords": [
-          120.82233,
-          24.57001
-        ],
-        "snapped_distance": 19.04,
-        "matched_line_id": "WL-M",
-        "track_progress": 0.828746
+        "phone": "037-260031"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.82216,
-          24.569984
+          120.82233,
+          24.57001
         ]
       }
     },
@@ -1778,20 +1302,13 @@
         "name_zh": "南勢",
         "class": "5",
         "address": "360023苗栗縣苗栗市新英里南勢 39 號",
-        "phone": "037-260031",
-        "original_coords": [
-          120.79154,
-          24.52246
-        ],
-        "snapped_distance": 22.93,
-        "matched_line_id": "WL-M",
-        "track_progress": 0.749668
+        "phone": "037-260031"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.791376,
-          24.522586
+          120.79154,
+          24.52246
         ]
       }
     },
@@ -1804,20 +1321,13 @@
         "name_zh": "銅鑼",
         "class": "3",
         "address": "36641苗栗縣銅鑼鄉銅鑼村大同路13號",
-        "phone": "037-983838",
-        "original_coords": [
-          120.78591,
-          24.48713
-        ],
-        "snapped_distance": 17.28,
-        "matched_line_id": "WL-M",
-        "track_progress": 0.702964
+        "phone": "037-983838"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.786065,
-          24.487117
+          120.78591,
+          24.48713
         ]
       }
     },
@@ -1830,20 +1340,13 @@
         "name_zh": "三義",
         "class": "3",
         "address": "367001苗栗縣三義鄉雙湖村雙湖 90 號",
-        "phone": "037-874763",
-        "original_coords": [
-          120.77393,
-          24.42066
-        ],
-        "snapped_distance": 29.86,
-        "matched_line_id": "WL-M",
-        "track_progress": 0.616026
+        "phone": "037-874763"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.774199,
-          24.420656
+          120.77393,
+          24.42066
         ]
       }
     },
@@ -1856,20 +1359,13 @@
         "name_zh": "泰安",
         "class": "4",
         "address": "42156臺中市后里區泰安里安眉路 37 之 12 號",
-        "phone": "04-25586540",
-        "original_coords": [
-          120.74181,
-          24.33146
-        ],
-        "snapped_distance": 9.65,
-        "matched_line_id": "WL-M",
-        "track_progress": 0.489487
+        "phone": "04-25586540"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.741891,
-          24.331429
+          120.74181,
+          24.33146
         ]
       }
     },
@@ -1882,20 +1378,13 @@
         "name_zh": "后里",
         "class": "3",
         "address": "42142臺中市后里區義里里甲后路一段 1 號",
-        "phone": "04-25562038",
-        "original_coords": [
-          120.73288,
-          24.30933
-        ],
-        "snapped_distance": 31.41,
-        "matched_line_id": "WL-M",
-        "track_progress": 0.459142
+        "phone": "04-25562038"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.733144,
-          24.309228
+          120.73288,
+          24.30933
         ]
       }
     },
@@ -1908,20 +1397,13 @@
         "name_zh": "豐原",
         "class": "1",
         "address": "420020臺中市豐原區豐原里中正路 1-1號",
-        "phone": "04-25207950#32",
-        "original_coords": [
-          120.72374,
-          24.25438
-        ],
-        "snapped_distance": 13.92,
-        "matched_line_id": "WL-M",
-        "track_progress": 0.377164
+        "phone": "04-25207950#32"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.72363,
-          24.254441
+          120.72374,
+          24.25438
         ]
       }
     },
@@ -1934,20 +1416,13 @@
         "name_zh": "栗林",
         "class": "4",
         "address": "427001臺中市潭子區潭豐路二段747號",
-        "phone": "04-25391401",
-        "original_coords": [
-          120.7106,
-          24.23461
-        ],
-        "snapped_distance": 2.07,
-        "matched_line_id": "WL-M",
-        "track_progress": 0.346619
+        "phone": "04-25391401"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.710617,
-          24.234603
+          120.7106,
+          24.23461
         ]
       }
     },
@@ -1960,20 +1435,13 @@
         "name_zh": "潭子",
         "class": "3",
         "address": "42751臺中市潭子區中山路二段352-1號",
-        "phone": "04-25363852",
-        "original_coords": [
-          120.70564,
-          24.21214
-        ],
-        "snapped_distance": 23.14,
-        "matched_line_id": "WL-M",
-        "track_progress": 0.317268
+        "phone": "04-25363852"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.705848,
-          24.212121
+          120.70564,
+          24.21214
         ]
       }
     },
@@ -1986,20 +1454,13 @@
         "name_zh": "頭家厝",
         "class": "4",
         "address": "42745臺中市潭子區頭張東路43巷8號",
-        "phone": "04-25391426",
-        "original_coords": [
-          120.70398,
-          24.19572
-        ],
-        "snapped_distance": 5.45,
-        "matched_line_id": "WL-M",
-        "track_progress": 0.296275
+        "phone": "04-25391426"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.704029,
-          24.195714
+          120.70398,
+          24.19572
         ]
       }
     },
@@ -2012,20 +1473,13 @@
         "name_zh": "松竹",
         "class": "4",
         "address": "406015臺中市北屯區舊社里松竹路一段1473巷100號",
-        "phone": "04-22473033",
-        "original_coords": [
-          120.70193,
-          24.18035
-        ],
-        "snapped_distance": 11.86,
-        "matched_line_id": "WL-M",
-        "track_progress": 0.276556
+        "phone": "04-22473033"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.702036,
-          24.180337
+          120.70193,
+          24.18035
         ]
       }
     },
@@ -2038,20 +1492,13 @@
         "name_zh": "太原",
         "class": "4",
         "address": "406008臺中市北屯區北興里東光路 665 號",
-        "phone": "04-22313926",
-        "original_coords": [
-          120.69988,
-          24.16449
-        ],
-        "snapped_distance": 1.49,
-        "matched_line_id": "WL-M",
-        "track_progress": 0.256221
+        "phone": "04-22313926"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.699867,
-          24.164492
+          120.69988,
+          24.16449
         ]
       }
     },
@@ -2064,20 +1511,13 @@
         "name_zh": "精武",
         "class": "4",
         "address": "401005臺中市東區東南里東光路 161號",
-        "phone": "04-23606501",
-        "original_coords": [
-          120.69784,
-          24.14887
-        ],
-        "snapped_distance": 11.72,
-        "matched_line_id": "WL-M",
-        "track_progress": 0.236193
+        "phone": "04-23606501"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.697735,
-          24.148884
+          120.69784,
+          24.14887
         ]
       }
     },
@@ -2090,20 +1530,13 @@
         "name_zh": "臺中",
         "class": "0",
         "address": "400005臺中市中區綠川里臺灣大道一段 1 號",
-        "phone": "04-22227236",
-        "original_coords": [
-          120.68691,
-          24.13728
-        ],
-        "snapped_distance": 20.12,
-        "matched_line_id": "WL-M",
-        "track_progress": 0.213799
+        "phone": "04-22227236"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.68698,
-          24.137113
+          120.68691,
+          24.13728
         ]
       }
     },
@@ -2116,20 +1549,13 @@
         "name_zh": "五權",
         "class": "4",
         "address": "402019臺中市南區建國南路二段201號",
-        "phone": "04-22601636",
-        "original_coords": [
-          120.66654,
-          24.12877
-        ],
-        "snapped_distance": 2.29,
-        "matched_line_id": "WL-M",
-        "track_progress": 0.185724
+        "phone": "04-22601636"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.666548,
-          24.128751
+          120.66654,
+          24.12877
         ]
       }
     },
@@ -2142,20 +1568,13 @@
         "name_zh": "大慶",
         "class": "4",
         "address": "402026臺中市南區樹德里7鄰大慶街2段130號",
-        "phone": "04-22637940",
-        "original_coords": [
-          120.64795,
-          24.11911
-        ],
-        "snapped_distance": 18.81,
-        "matched_line_id": "WL-M",
-        "track_progress": 0.159031
+        "phone": "04-22637940"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.648039,
-          24.118966
+          120.64795,
+          24.11911
         ]
       }
     },
@@ -2168,20 +1587,13 @@
         "name_zh": "烏日",
         "class": "4",
         "address": "41442臺中市烏日區烏日里三民街 258 號",
-        "phone": "04-23381071",
-        "original_coords": [
-          120.62244,
-          24.10867
-        ],
-        "snapped_distance": 34.73,
-        "matched_line_id": "WL-M",
-        "track_progress": 0.120667
+        "phone": "04-23381071"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.622472,
-          24.108981
+          120.62244,
+          24.10867
         ]
       }
     },
@@ -2194,20 +1606,13 @@
         "name_zh": "新烏日",
         "class": "2",
         "address": "41456臺中市烏日區三和里高鐵東一路 26 號",
-        "phone": "04-23376883",
-        "original_coords": [
-          120.61421,
-          24.10937
-        ],
-        "snapped_distance": 48.37,
-        "matched_line_id": "WL-M",
-        "track_progress": 0.103849
+        "phone": "04-23376883"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.614249,
-          24.109804
+          120.61421,
+          24.10937
         ]
       }
     },
@@ -2220,20 +1625,13 @@
         "name_zh": "成功",
         "class": "3",
         "address": "414012臺中市烏日區榮泉里中山路三段 550 號",
-        "phone": "04-23371986",
-        "original_coords": [
-          120.59021,
-          24.11424
-        ],
-        "snapped_distance": 16.63,
-        "matched_line_id": "WL-M",
-        "track_progress": 0.072621
+        "phone": "04-23371986"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.590259,
-          24.114381
+          120.59021,
+          24.11424
         ]
       }
     },
@@ -2246,20 +1644,13 @@
         "name_zh": "彰化",
         "class": "1",
         "address": "500003彰化縣彰化市長樂里三民路 1 號",
-        "phone": "04-7274218#11",
-        "original_coords": [
-          120.53854,
-          24.08177
-        ],
-        "snapped_distance": 18.23,
-        "matched_line_id": "WL-S2",
-        "track_progress": 0.983388
+        "phone": "04-7274218#11"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.538402,
-          24.081859
+          120.53854,
+          24.08177
         ]
       }
     },
@@ -2272,20 +1663,13 @@
         "name_zh": "花壇",
         "class": "4",
         "address": "503009彰化縣花壇鄉花壇村中正路 370 號",
-        "phone": "04-7881418",
-        "original_coords": [
-          120.53742,
-          24.02502
-        ],
-        "snapped_distance": 22.16,
-        "matched_line_id": "WL-S2",
-        "track_progress": 0.884131
+        "phone": "04-7881418"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.537235,
-          24.024946
+          120.53742,
+          24.02502
         ]
       }
     },
@@ -2298,19 +1682,12 @@
         "name_zh": "大村",
         "class": "4",
         "address": "515002彰化縣大村鄉過溝村福進路 100 號",
-        "phone": "04-8525148",
-        "original_coords": [
-          120.56062,
-          23.99002
-        ],
-        "snapped_distance": 0.09,
-        "matched_line_id": "WL-S2",
-        "track_progress": 0.814412
+        "phone": "04-8525148"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.560621,
+          120.56062,
           23.99002
         ]
       }
@@ -2324,19 +1701,12 @@
         "name_zh": "員林",
         "class": "1",
         "address": "510001彰化縣員林市和平里民權街 55 號",
-        "phone": "04-8320544#14",
-        "original_coords": [
-          120.56977,
-          23.95947
-        ],
-        "snapped_distance": 12.87,
-        "matched_line_id": "WL-S2",
-        "track_progress": 0.761525
+        "phone": "04-8320544#14"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.569654,
+          120.56977,
           23.95947
         ]
       }
@@ -2350,20 +1720,13 @@
         "name_zh": "永靖",
         "class": "5",
         "address": "512001彰化縣永靖鄉崙子村崙饒路25 號",
-        "phone": "04-8320544#15",
-        "original_coords": [
-          120.57173,
-          23.92808
-        ],
-        "snapped_distance": 1.27,
-        "matched_line_id": "WL-S2",
-        "track_progress": 0.709415
+        "phone": "04-8320544#15"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.571741,
-          23.928084
+          120.57173,
+          23.92808
         ]
       }
     },
@@ -2376,20 +1739,13 @@
         "name_zh": "社頭",
         "class": "3",
         "address": "511009彰化縣社頭鄉廣興村社站路 10 號",
-        "phone": "04-8711646",
-        "original_coords": [
-          120.58077,
-          23.89573
-        ],
-        "snapped_distance": 17.77,
-        "matched_line_id": "WL-S2",
-        "track_progress": 0.654181
+        "phone": "04-8711646"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.580614,
-          23.895693
+          120.58077,
+          23.89573
         ]
       }
     },
@@ -2402,20 +1758,13 @@
         "name_zh": "田中",
         "class": "2",
         "address": "520022彰化縣田中鎮中路里中州路一段 1 號",
-        "phone": "04-8742142",
-        "original_coords": [
-          120.59146,
-          23.85843
-        ],
-        "snapped_distance": 1.38,
-        "matched_line_id": "WL-S2",
-        "track_progress": 0.590253
+        "phone": "04-8742142"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.591449,
-          23.858425
+          120.59146,
+          23.85843
         ]
       }
     },
@@ -2428,20 +1777,13 @@
         "name_zh": "二水",
         "class": "2",
         "address": "530018彰化縣二水鄉光化村光文路 1 號",
-        "phone": "04-8792027",
-        "original_coords": [
-          120.61805,
-          23.81321
-        ],
-        "snapped_distance": 26.03,
-        "matched_line_id": "WL-S2",
-        "track_progress": 0.502562
+        "phone": "04-8792027"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.618183,
-          23.813403
+          120.61805,
+          23.81321
         ]
       }
     },
@@ -2454,20 +1796,13 @@
         "name_zh": "源泉",
         "class": "5",
         "address": "530017彰化縣二水鄉合興村英義路 (無站房)",
-        "phone": "04-8792027",
-        "original_coords": [
-          120.64211,
-          23.79845
-        ],
-        "snapped_distance": 8.01,
-        "matched_line_id": "JJ",
-        "track_progress": 0.344196
+        "phone": "04-8792027"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.642106,
-          23.798522
+          120.64211,
+          23.79845
         ]
       }
     },
@@ -2480,20 +1815,13 @@
         "name_zh": "濁水",
         "class": "4",
         "address": "551001南投縣名間鄉濁水村車站路 15 號",
-        "phone": "049-2735850",
-        "original_coords": [
-          120.70467,
-          23.83467
-        ],
-        "snapped_distance": 367.27,
-        "matched_line_id": "JJ",
-        "track_progress": 1.0
+        "phone": "049-2735850"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.701412,
-          23.834092
+          120.70467,
+          23.83467
         ]
       }
     },
@@ -2506,18 +1834,13 @@
         "name_zh": "龍泉",
         "class": "5",
         "address": "552003南投縣集集鎮隘寮村龍泉巷 (無站房)",
-        "phone": "04-8792027",
-        "original_coords": [
-          120.75014,
-          23.83521
-        ],
-        "snapped_distance": 5410.21
+        "phone": "04-8792027"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.701412,
-          23.834092
+          120.75014,
+          23.83521
         ]
       }
     },
@@ -2530,18 +1853,13 @@
         "name_zh": "集集",
         "class": "5",
         "address": "552001南投縣集集鎮吳厝里民生路 75 號",
-        "phone": "049-2762546",
-        "original_coords": [
-          120.78495,
-          23.82647
-        ],
-        "snapped_distance": 9311.22
+        "phone": "049-2762546"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.701412,
-          23.834092
+          120.78495,
+          23.82647
         ]
       }
     },
@@ -2554,18 +1872,13 @@
         "name_zh": "水里",
         "class": "4",
         "address": "553001南投縣水里鄉水里村民生路 440 號",
-        "phone": "049-2770015",
-        "original_coords": [
-          120.85332,
-          23.81845
-        ],
-        "snapped_distance": 16950.93
+        "phone": "049-2770015"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.701412,
-          23.834092
+          120.85332,
+          23.81845
         ]
       }
     },
@@ -2578,18 +1891,13 @@
         "name_zh": "車埕",
         "class": "5",
         "address": "553004南投縣水里鄉車埕村民權巷 2 號",
-        "phone": "049-2774749",
-        "original_coords": [
-          120.86572,
-          23.83263
-        ],
-        "snapped_distance": 18238.89
+        "phone": "049-2774749"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.701412,
-          23.834092
+          120.86572,
+          23.83263
         ]
       }
     },
@@ -2602,20 +1910,13 @@
         "name_zh": "林內",
         "class": "3",
         "address": "643001雲林縣林內鄉林中村中山路 42 號",
-        "phone": "05-5892040",
-        "original_coords": [
-          120.61499,
-          23.75967
-        ],
-        "snapped_distance": 26.63,
-        "matched_line_id": "WL-S2",
-        "track_progress": 0.363143
+        "phone": "05-5892040"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.614845,
-          23.759861
+          120.61499,
+          23.75967
         ]
       }
     },
@@ -2628,20 +1929,13 @@
         "name_zh": "石榴",
         "class": "5",
         "address": "640155雲林縣斗六市榴北里文明路 31 號",
-        "phone": "05-5332900",
-        "original_coords": [
-          120.57998,
-          23.73167
-        ],
-        "snapped_distance": 23.17,
-        "matched_line_id": "WL-S2",
-        "track_progress": 0.289004
+        "phone": "05-5332900"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.579834,
-          23.73182
+          120.57998,
+          23.73167
         ]
       }
     },
@@ -2654,20 +1948,13 @@
         "name_zh": "斗六",
         "class": "1",
         "address": "640010雲林縣斗六市信義里民生路 187 號",
-        "phone": "05-5332900",
-        "original_coords": [
-          120.54099,
-          23.71184
-        ],
-        "snapped_distance": 8.15,
-        "matched_line_id": "WL-S2",
-        "track_progress": 0.213481
+        "phone": "05-5332900"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.541029,
-          23.711778
+          120.54099,
+          23.71184
         ]
       }
     },
@@ -2680,20 +1967,13 @@
         "name_zh": "斗南",
         "class": "2",
         "address": "630042雲林縣斗南鎮南昌里中山路 2 號",
-        "phone": "05-5972039",
-        "original_coords": [
-          120.48089,
-          23.67257
-        ],
-        "snapped_distance": 5.93,
-        "matched_line_id": "WL-S2",
-        "track_progress": 0.100501
+        "phone": "05-5972039"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.480849,
-          23.672604
+          120.48089,
+          23.67257
         ]
       }
     },
@@ -2706,20 +1986,13 @@
         "name_zh": "石龜",
         "class": "5",
         "address": "630雲林縣斗南鎮石龜里",
-        "phone": "05-5972039",
-        "original_coords": [
-          120.47106,
-          23.63951
-        ],
-        "snapped_distance": 13.89,
-        "matched_line_id": "WL-S2",
-        "track_progress": 0.015475
+        "phone": "05-5972039"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.470937,
-          23.63953
+          120.47106,
+          23.63951
         ]
       }
     },
@@ -2732,20 +2005,13 @@
         "name_zh": "大林",
         "class": "3",
         "address": "622002嘉義縣大林鎮吉林里中山路 2 號",
-        "phone": "05-2654804",
-        "original_coords": [
-          120.45597,
-          23.60089
-        ],
-        "snapped_distance": 0.42,
-        "matched_line_id": "WL-S1",
-        "track_progress": 0.972132
+        "phone": "05-2654804"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.455973,
-          23.600887
+          120.45597,
+          23.60089
         ]
       }
     },
@@ -2758,20 +2024,13 @@
         "name_zh": "民雄",
         "class": "3",
         "address": "621002嘉義縣民雄鄉東榮村和平路 2 號",
-        "phone": "05-2264272",
-        "original_coords": [
-          120.43165,
-          23.55522
-        ],
-        "snapped_distance": 4.64,
-        "matched_line_id": "WL-S1",
-        "track_progress": 0.926726
+        "phone": "05-2264272"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.43169,
-          23.555209
+          120.43165,
+          23.55522
         ]
       }
     },
@@ -2784,20 +2043,13 @@
         "name_zh": "嘉北",
         "class": "4",
         "address": "600050嘉義市 東區後湖里保建街 110 號",
-        "phone": "05-2334584",
-        "original_coords": [
-          120.44851,
-          23.49981
-        ],
-        "snapped_distance": 11.77,
-        "matched_line_id": "WL-S1",
-        "track_progress": 0.874506
+        "phone": "05-2334584"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.448407,
-          23.499786
+          120.44851,
+          23.49981
         ]
       }
     },
@@ -2810,20 +2062,13 @@
         "name_zh": "嘉義",
         "class": "1",
         "address": "600006嘉義市 西區番社里中山路 528 號",
-        "phone": "05-2228904",
-        "original_coords": [
-          120.44061,
-          23.47927
-        ],
-        "snapped_distance": 9.72,
-        "matched_line_id": "WL-S1",
-        "track_progress": 0.853793
+        "phone": "05-2228904"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.440545,
-          23.479329
+          120.44061,
+          23.47927
         ]
       }
     },
@@ -2836,20 +2081,13 @@
         "name_zh": "水上",
         "class": "4",
         "address": "608001嘉義縣水上鄉粗溪村68號",
-        "phone": "05-2228904",
-        "original_coords": [
-          120.39971,
-          23.43398
-        ],
-        "snapped_distance": 8.85,
-        "matched_line_id": "WL-S1",
-        "track_progress": 0.801758
+        "phone": "05-2228904"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.399769,
-          23.433926
+          120.39971,
+          23.43398
         ]
       }
     },
@@ -2862,20 +2100,13 @@
         "name_zh": "南靖",
         "class": "4",
         "address": "608009嘉義縣水上鄉三鎮村三鎮路 26 號",
-        "phone": "05-2601232",
-        "original_coords": [
-          120.38654,
-          23.41344
-        ],
-        "snapped_distance": 27.69,
-        "matched_line_id": "WL-S1",
-        "track_progress": 0.78092
+        "phone": "05-2601232"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.386782,
-          23.413379
+          120.38654,
+          23.41344
         ]
       }
     },
@@ -2888,20 +2119,13 @@
         "name_zh": "後壁",
         "class": "4",
         "address": "731022臺南市後壁區後壁里後壁 77 號",
-        "phone": "06-6872055",
-        "original_coords": [
-          120.36058,
-          23.36626
-        ],
-        "snapped_distance": 18.18,
-        "matched_line_id": "WL-S1",
-        "track_progress": 0.733614
+        "phone": "06-6872055"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.36044,
-          23.366345
+          120.36058,
+          23.36626
         ]
       }
     },
@@ -2914,20 +2138,13 @@
         "name_zh": "新營",
         "class": "1",
         "address": "730005臺南市新營區中營里中山路 1 號",
-        "phone": "06-6322104",
-        "original_coords": [
-          120.32307,
-          23.30673
-        ],
-        "snapped_distance": 48.43,
-        "matched_line_id": "WL-S1",
-        "track_progress": 0.673621
+        "phone": "06-6322104"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.32344,
-          23.306499
+          120.32307,
+          23.30673
         ]
       }
     },
@@ -2940,20 +2157,13 @@
         "name_zh": "柳營",
         "class": "4",
         "address": "736002臺南市柳營區東昇里建國路 1 號",
-        "phone": "06-6226450",
-        "original_coords": [
-          120.32252,
-          23.27762
-        ],
-        "snapped_distance": 11.98,
-        "matched_line_id": "WL-S1",
-        "track_progress": 0.648128
+        "phone": "06-6226450"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.322628,
-          23.277618
+          120.32252,
+          23.27762
         ]
       }
     },
@@ -2966,20 +2176,13 @@
         "name_zh": "林鳳營",
         "class": "4",
         "address": "734004臺南市六甲區中社里林鳳營 16 號",
-        "phone": "06-6986086",
-        "original_coords": [
-          120.32107,
-          23.24259
-        ],
-        "snapped_distance": 17.89,
-        "matched_line_id": "WL-S1",
-        "track_progress": 0.618239
+        "phone": "06-6986086"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.321231,
-          23.242579
+          120.32107,
+          23.24259
         ]
       }
     },
@@ -2992,20 +2195,13 @@
         "name_zh": "隆田",
         "class": "2",
         "address": "720001臺南市官田區隆田里中山路一段 1 號",
-        "phone": "06-5791664",
-        "original_coords": [
-          120.31917,
-          23.19271
-        ],
-        "snapped_distance": 44.73,
-        "matched_line_id": "WL-S1",
-        "track_progress": 0.575621
+        "phone": "06-5791664"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.319571,
-          23.192747
+          120.31917,
+          23.19271
         ]
       }
     },
@@ -3018,19 +2214,12 @@
         "name_zh": "拔林",
         "class": "5",
         "address": "720004臺南市官田區拔林里拔子林 83 之 1 號",
-        "phone": "06-5791664",
-        "original_coords": [
-          120.32125,
-          23.17284
-        ],
-        "snapped_distance": 0.98,
-        "matched_line_id": "WL-S1",
-        "track_progress": 0.558597
+        "phone": "06-5791664"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.321259,
+          120.32125,
           23.17284
         ]
       }
@@ -3044,20 +2233,13 @@
         "name_zh": "善化",
         "class": "2",
         "address": "741001臺南市善化區光文里中山路 1 號",
-        "phone": "06-5837301",
-        "original_coords": [
-          120.30653,
-          23.13333
-        ],
-        "snapped_distance": 22.57,
-        "matched_line_id": "WL-S1",
-        "track_progress": 0.522449
+        "phone": "06-5837301"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.30673,
-          23.133292
+          120.30653,
+          23.13333
         ]
       }
     },
@@ -3070,20 +2252,13 @@
         "name_zh": "南科",
         "class": "4",
         "address": "744008臺南市新市區大營里大營 287-300 號",
-        "phone": "06-5896356",
-        "original_coords": [
-          120.30202,
-          23.10726
-        ],
-        "snapped_distance": 5.41,
-        "matched_line_id": "WL-S1",
-        "track_progress": 0.499905
+        "phone": "06-5896356"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.301972,
-          23.107269
+          120.30202,
+          23.10726
         ]
       }
     },
@@ -3096,20 +2271,13 @@
         "name_zh": "新市",
         "class": "3",
         "address": "744004臺南市新市區新和里中華路 1 號",
-        "phone": "06-5996911",
-        "original_coords": [
-          120.29004,
-          23.06823
-        ],
-        "snapped_distance": 23.75,
-        "matched_line_id": "WL-S1",
-        "track_progress": 0.464113
+        "phone": "06-5996911"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.289908,
-          23.068399
+          120.29004,
+          23.06823
         ]
       }
     },
@@ -3122,20 +2290,13 @@
         "name_zh": "永康",
         "class": "2",
         "address": "710017臺南市永康區埔園里中山路 459 號",
-        "phone": "06-2323305",
-        "original_coords": [
-          120.25347,
-          23.03825
-        ],
-        "snapped_distance": 44.79,
-        "matched_line_id": "WL-S1",
-        "track_progress": 0.423774
+        "phone": "06-2323305"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.253179,
-          23.038529
+          120.25347,
+          23.03825
         ]
       }
     },
@@ -3148,20 +2309,13 @@
         "name_zh": "大橋",
         "class": "4",
         "address": "710009臺南市永康區西橋里中華路 835 號",
-        "phone": "06-3021755",
-        "original_coords": [
-          120.22429,
-          23.01923
-        ],
-        "snapped_distance": 10.69,
-        "matched_line_id": "WL-S1",
-        "track_progress": 0.394005
+        "phone": "06-3021755"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.224212,
-          23.019286
+          120.22429,
+          23.01923
         ]
       }
     },
@@ -3174,20 +2328,13 @@
         "name_zh": "臺南",
         "class": "1",
         "address": "701014臺南市東區成大里北門路二段4號",
-        "phone": "06-2261314",
-        "original_coords": [
-          120.21295,
-          22.99681
-        ],
-        "snapped_distance": 5.48,
-        "matched_line_id": "WL-S1",
-        "track_progress": 0.372143
+        "phone": "06-2261314"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.212901,
-          22.996819
+          120.21295,
+          22.99681
         ]
       }
     },
@@ -3200,20 +2347,13 @@
         "name_zh": "保安",
         "class": "3",
         "address": "717015臺南市仁德區保安里文賢路一段 529 巷 10 號",
-        "phone": "06-2665988",
-        "original_coords": [
-          120.23158,
-          22.93296
-        ],
-        "snapped_distance": 21.36,
-        "matched_line_id": "WL-S1",
-        "track_progress": 0.313379
+        "phone": "06-2665988"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.231748,
-          22.933053
+          120.23158,
+          22.93296
         ]
       }
     },
@@ -3226,20 +2366,13 @@
         "name_zh": "仁德",
         "class": "4",
         "address": "717010臺南市仁德區保安里永德路 10 號",
-        "phone": "06-2669383",
-        "original_coords": [
-          120.24054,
-          22.92354
-        ],
-        "snapped_distance": 14.12,
-        "matched_line_id": "WL-S1",
-        "track_progress": 0.302135
+        "phone": "06-2669383"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.24046,
-          22.923441
+          120.24054,
+          22.92354
         ]
       }
     },
@@ -3252,20 +2385,13 @@
         "name_zh": "中洲",
         "class": "2",
         "address": "717014臺南市仁德區中洲五街236號",
-        "phone": "06-2667191",
-        "original_coords": [
-          120.25284,
-          22.90446
-        ],
-        "snapped_distance": 21.43,
-        "matched_line_id": "SH",
-        "track_progress": 0.938915
+        "phone": "06-2667191"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.252654,
-          22.904407
+          120.25284,
+          22.90446
         ]
       }
     },
@@ -3278,20 +2404,13 @@
         "name_zh": "長榮大學",
         "class": "4",
         "address": "711010臺南市歸仁區大潭里長大路15 號",
-        "phone": "06-2782615",
-        "original_coords": [
-          120.27263,
-          22.90729
-        ],
-        "snapped_distance": 1.89,
-        "matched_line_id": "SH",
-        "track_progress": 0.423975
+        "phone": "06-2782615"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.272623,
-          22.907306
+          120.27263,
+          22.90729
         ]
       }
     },
@@ -3304,20 +2423,13 @@
         "name_zh": "沙崙",
         "class": "4",
         "address": "711010臺南市歸仁區沙崙里歸仁大道 102 號",
-        "phone": "06-3032686",
-        "original_coords": [
-          120.28622,
-          22.92407
-        ],
-        "snapped_distance": 28.12,
-        "matched_line_id": "SH",
-        "track_progress": 0.0
+        "phone": "06-3032686"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.286366,
-          22.923863
+          120.28622,
+          22.92407
         ]
       }
     },
@@ -3330,20 +2442,13 @@
         "name_zh": "大湖",
         "class": "3",
         "address": "821004高雄市路竹區甲南里天祐路 24 號",
-        "phone": "07-6932127",
-        "original_coords": [
-          120.25384,
-          22.87821
-        ],
-        "snapped_distance": 49.94,
-        "matched_line_id": "WL-S1",
-        "track_progress": 0.255911
+        "phone": "07-6932127"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.254278,
-          22.878313
+          120.25384,
+          22.87821
         ]
       }
     },
@@ -3356,20 +2461,13 @@
         "name_zh": "路竹",
         "class": "3",
         "address": "821006高雄市路竹區竹南里中正路 288 號",
-        "phone": "07-6072723",
-        "original_coords": [
-          120.26619,
-          22.85404
-        ],
-        "snapped_distance": 37.1,
-        "matched_line_id": "WL-S1",
-        "track_progress": 0.232714
+        "phone": "07-6072723"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.266463,
-          22.854233
+          120.26619,
+          22.85404
         ]
       }
     },
@@ -3382,20 +2480,13 @@
         "name_zh": "岡山",
         "class": "1",
         "address": "820102高雄市岡山區碧紅里岡燕路 111 號",
-        "phone": "07-6212074",
-        "original_coords": [
-          120.30004,
-          22.79223
-        ],
-        "snapped_distance": 57.51,
-        "matched_line_id": "WL-S1",
-        "track_progress": 0.16936
+        "phone": "07-6212074"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.300556,
-          22.792282
+          120.30004,
+          22.79223
         ]
       }
     },
@@ -3408,20 +2499,13 @@
         "name_zh": "橋頭",
         "class": "3",
         "address": "825008高雄市橋頭區橋頭里站前街 14 號",
-        "phone": "07-6115424",
-        "original_coords": [
-          120.31011,
-          22.76098
-        ],
-        "snapped_distance": 23.47,
-        "matched_line_id": "WL-S1",
-        "track_progress": 0.141269
+        "phone": "07-6115424"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.310296,
-          22.76108
+          120.31011,
+          22.76098
         ]
       }
     },
@@ -3434,20 +2518,13 @@
         "name_zh": "楠梓",
         "class": "2",
         "address": "811022高雄市楠梓區惠楠里建楠路 229 號",
-        "phone": "07-3510175",
-        "original_coords": [
-          120.32425,
-          22.72696
-        ],
-        "snapped_distance": 27.84,
-        "matched_line_id": "WL-S1",
-        "track_progress": 0.108593
+        "phone": "07-3510175"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.324013,
-          22.727043
+          120.32425,
+          22.72696
         ]
       }
     },
@@ -3460,20 +2537,13 @@
         "name_zh": "新左營",
         "class": "1",
         "address": "813014高雄市左營區尾北里站前北路 1 號",
-        "phone": "07-5887825",
-        "original_coords": [
-          120.30678,
-          22.68754
-        ],
-        "snapped_distance": 39.6,
-        "matched_line_id": "WL-S1",
-        "track_progress": 0.068515
+        "phone": "07-5887825"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.307013,
-          22.68727
+          120.30678,
+          22.68754
         ]
       }
     },
@@ -3486,20 +2556,13 @@
         "name_zh": "左營",
         "class": "4",
         "address": "813014高雄市左營區翠華路1050號地下1層",
-        "phone": "07-5887835",
-        "original_coords": [
-          120.29401,
-          22.67445
-        ],
-        "snapped_distance": 8.61,
-        "matched_line_id": "WL-S1",
-        "track_progress": 0.052941
+        "phone": "07-5887835"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.294066,
-          22.674396
+          120.29401,
+          22.67445
         ]
       }
     },
@@ -3512,20 +2575,13 @@
         "name_zh": "內惟",
         "class": "4",
         "address": "804056高雄市鼓山區翠華路500號地下1層",
-        "phone": "07-5886119",
-        "original_coords": [
-          120.28701,
-          22.66589
-        ],
-        "snapped_distance": 4.71,
-        "matched_line_id": "WL-S1",
-        "track_progress": 0.043495
+        "phone": "07-5886119"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.286975,
-          22.665914
+          120.28701,
+          22.66589
         ]
       }
     },
@@ -3538,20 +2594,13 @@
         "name_zh": "美術館",
         "class": "4",
         "address": "804016高雄市鼓山區翠華路246號",
-        "phone": "07-5215147",
-        "original_coords": [
-          120.28148,
-          22.65185
-        ],
-        "snapped_distance": 2.01,
-        "matched_line_id": "WL-S1",
-        "track_progress": 0.030269
+        "phone": "07-5215147"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.281498,
-          22.651849
+          120.28148,
+          22.65185
         ]
       }
     },
@@ -3564,20 +2613,13 @@
         "name_zh": "鼓山",
         "class": "4",
         "address": "804005高雄市鼓山區鐵路街20巷6號",
-        "phone": "07-5217014",
-        "original_coords": [
-          120.28071,
-          22.64181
-        ],
-        "snapped_distance": 23.81,
-        "matched_line_id": "WL-S1",
-        "track_progress": 0.021709
+        "phone": "07-5217014"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.280924,
-          22.641828
+          120.28071,
+          22.64181
         ]
       }
     },
@@ -3590,20 +2632,13 @@
         "name_zh": "三塊厝",
         "class": "4",
         "address": "807008高雄市三民區德北里6鄰康平街1號",
-        "phone": "07-2856234",
-        "original_coords": [
-          120.29414,
-          22.63931
-        ],
-        "snapped_distance": 2.22,
-        "matched_line_id": "WL-S1",
-        "track_progress": 0.007334
+        "phone": "07-2856234"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.294149,
-          22.639292
+          120.29414,
+          22.63931
         ]
       }
     },
@@ -3616,20 +2651,13 @@
         "name_zh": "高雄",
         "class": "0",
         "address": "807001高雄市三民區港西里建國二路 318 號",
-        "phone": "07-2352376",
-        "original_coords": [
-          120.30292,
-          22.63946
-        ],
-        "snapped_distance": 1.7,
-        "matched_line_id": "PT",
-        "track_progress": 0.999345
+        "phone": "07-2352376"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.302921,
-          22.639475
+          120.30292,
+          22.63946
         ]
       }
     },
@@ -3642,20 +2670,13 @@
         "name_zh": "民族",
         "class": "4",
         "address": "807027高雄市三民區博惠里14鄰凱旋一路260號",
-        "phone": "07-2231492",
-        "original_coords": [
-          120.31494,
-          22.63879
-        ],
-        "snapped_distance": 0.29,
-        "matched_line_id": "PT",
-        "track_progress": 0.974941
+        "phone": "07-2231492"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
           120.31494,
-          22.638793
+          22.63879
         ]
       }
     },
@@ -3668,20 +2689,13 @@
         "name_zh": "科工館",
         "class": "4",
         "address": "807031高雄市三民區寶盛里15鄰大順三路307號",
-        "phone": "07-2234778",
-        "original_coords": [
-          120.32603,
-          22.63709
-        ],
-        "snapped_distance": 3.0,
-        "matched_line_id": "PT",
-        "track_progress": 0.952176
+        "phone": "07-2234778"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.326035,
-          22.637117
+          120.32603,
+          22.63709
         ]
       }
     },
@@ -3694,20 +2708,13 @@
         "name_zh": "正義",
         "class": "4",
         "address": "802001高雄市苓雅區建軍里正義路 308 號 B1",
-        "phone": "07-7999818",
-        "original_coords": [
-          120.34245,
-          22.63425
-        ],
-        "snapped_distance": 7.27,
-        "matched_line_id": "PT",
-        "track_progress": 0.918396
+        "phone": "07-7999818"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.342439,
-          22.634185
+          120.34245,
+          22.63425
         ]
       }
     },
@@ -3720,20 +2727,13 @@
         "name_zh": "鳳山",
         "class": "2",
         "address": "830025高雄市鳳山區曹公里曹公路 137 號",
-        "phone": "07-7460423",
-        "original_coords": [
-          120.35745,
-          22.63145
-        ],
-        "snapped_distance": 4.02,
-        "matched_line_id": "PT",
-        "track_progress": 0.887466
+        "phone": "07-7460423"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.357457,
-          22.631486
+          120.35745,
+          22.63145
         ]
       }
     },
@@ -3746,20 +2746,13 @@
         "name_zh": "後庄",
         "class": "4",
         "address": "831115高雄市大寮區後庄里民慶街 9 號",
-        "phone": "07-7020149",
-        "original_coords": [
-          120.39131,
-          22.64016
-        ],
-        "snapped_distance": 34.91,
-        "matched_line_id": "PT",
-        "track_progress": 0.814601
+        "phone": "07-7020149"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.391247,
-          22.640468
+          120.39131,
+          22.64016
         ]
       }
     },
@@ -3772,20 +2765,13 @@
         "name_zh": "九曲堂",
         "class": "3",
         "address": "840001高雄市大樹區久堂里久堂路鐵路巷 15 號",
-        "phone": "07-6512020",
-        "original_coords": [
-          120.42089,
-          22.65641
-        ],
-        "snapped_distance": 48.14,
-        "matched_line_id": "PT",
-        "track_progress": 0.733793
+        "phone": "07-6512020"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.421313,
-          22.656316
+          120.42089,
+          22.65641
         ]
       }
     },
@@ -3798,20 +2784,13 @@
         "name_zh": "六塊厝",
         "class": "5",
         "address": "900008屏東縣屏東市長安里光復路 392 號",
-        "phone": "08-7515140",
-        "original_coords": [
-          120.46497,
-          22.66597
-        ],
-        "snapped_distance": 26.36,
-        "matched_line_id": "PT",
-        "track_progress": 0.636597
+        "phone": "08-7515140"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.465027,
-          22.665739
+          120.46497,
+          22.66597
         ]
       }
     },
@@ -3824,20 +2803,13 @@
         "name_zh": "屏東",
         "class": "1",
         "address": "900011屏東縣屏東市建國里公勇路 62 號",
-        "phone": "08-7515140",
-        "original_coords": [
-          120.48617,
-          22.66905
-        ],
-        "snapped_distance": 21.58,
-        "matched_line_id": "PT",
-        "track_progress": 0.592617
+        "phone": "08-7515140"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.486146,
-          22.668857
+          120.48617,
+          22.66905
         ]
       }
     },
@@ -3850,20 +2822,13 @@
         "name_zh": "歸來",
         "class": "5",
         "address": "900002屏東縣屏東市歸心里歸仁路 5 之 4 號",
-        "phone": "08-7515140",
-        "original_coords": [
-          120.50263,
-          22.65246
-        ],
-        "snapped_distance": 57.07,
-        "matched_line_id": "PT",
-        "track_progress": 0.590468
+        "phone": "08-7515140"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.502923,
-          22.652038
+          120.50263,
+          22.65246
         ]
       }
     },
@@ -3876,20 +2841,13 @@
         "name_zh": "麟洛",
         "class": "5",
         "address": "909141屏東縣麟洛鄉田道村中華路站前巷 15 號",
-        "phone": "08-7515140",
-        "original_coords": [
-          120.51432,
-          22.63481
-        ],
-        "snapped_distance": 2.96,
-        "matched_line_id": "PT",
-        "track_progress": 0.548599
+        "phone": "08-7515140"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.514298,
-          22.634795
+          120.51432,
+          22.63481
         ]
       }
     },
@@ -3902,20 +2860,13 @@
         "name_zh": "西勢",
         "class": "3",
         "address": "911165屏東縣竹田鄉西勢村西豐路 2 號",
-        "phone": "08-7784521",
-        "original_coords": [
-          120.52649,
-          22.61637
-        ],
-        "snapped_distance": 1.08,
-        "matched_line_id": "PT",
-        "track_progress": 0.503817
+        "phone": "08-7784521"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.526482,
-          22.616365
+          120.52649,
+          22.61637
         ]
       }
     },
@@ -3928,20 +2879,13 @@
         "name_zh": "竹田",
         "class": "4",
         "address": "911165屏東縣竹田鄉履豐村豐明路29 號",
-        "phone": "08-7711002",
-        "original_coords": [
-          120.53978,
-          22.58658
-        ],
-        "snapped_distance": 1.71,
-        "matched_line_id": "PT",
-        "track_progress": 0.435184
+        "phone": "08-7711002"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.539765,
-          22.586581
+          120.53978,
+          22.58658
         ]
       }
     },
@@ -3954,20 +2898,13 @@
         "name_zh": "潮州",
         "class": "1",
         "address": "920004屏東縣潮州鎮新榮里信義路 111 號",
-        "phone": "08-7882739",
-        "original_coords": [
-          120.53604,
-          22.55008
-        ],
-        "snapped_distance": 2.23,
-        "matched_line_id": "PT",
-        "track_progress": 0.360805
+        "phone": "08-7882739"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.53606,
-          22.550078
+          120.53604,
+          22.55008
         ]
       }
     },
@@ -3980,20 +2917,13 @@
         "name_zh": "崁頂",
         "class": "5",
         "address": "924003屏東縣崁頂鄉崁頂村田寮路",
-        "phone": "08-7882739",
-        "original_coords": [
-          120.51481,
-          22.51311
-        ],
-        "snapped_distance": 9.14,
-        "matched_line_id": "PT",
-        "track_progress": 0.270223
+        "phone": "08-7882739"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.51487,
-          22.513054
+          120.51481,
+          22.51311
         ]
       }
     },
@@ -4006,20 +2936,13 @@
         "name_zh": "南州",
         "class": "3",
         "address": "926003屏東縣南州鄉仁里村仁里路 86 號",
-        "phone": "08-8642942",
-        "original_coords": [
-          120.51174,
-          22.49207
-        ],
-        "snapped_distance": 37.97,
-        "matched_line_id": "PT",
-        "track_progress": 0.226104
+        "phone": "08-8642942"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.512082,
-          22.492057
+          120.51174,
+          22.49207
         ]
       }
     },
@@ -4032,20 +2955,13 @@
         "name_zh": "鎮安",
         "class": "5",
         "address": "927005屏東縣林邊鄉鎮安村永和路4號",
-        "phone": "08-8642942",
-        "original_coords": [
-          120.51129,
-          22.45794
-        ],
-        "snapped_distance": 14.21,
-        "matched_line_id": "PT",
-        "track_progress": 0.156923
+        "phone": "08-8642942"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.511162,
-          22.457943
+          120.51129,
+          22.45794
         ]
       }
     },
@@ -4058,20 +2974,13 @@
         "name_zh": "林邊",
         "class": "3",
         "address": "927001屏東縣林邊鄉仁和村仁愛路 33 號",
-        "phone": "08-8751475",
-        "original_coords": [
-          120.51529,
-          22.43135
-        ],
-        "snapped_distance": 4.42,
-        "matched_line_id": "PT",
-        "track_progress": 0.098285
+        "phone": "08-8751475"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.515271,
-          22.431315
+          120.51529,
+          22.43135
         ]
       }
     },
@@ -4084,20 +2993,13 @@
         "name_zh": "佳冬",
         "class": "4",
         "address": "931006屏東縣佳冬鄉六根村復興路21號",
-        "phone": "08-8662939",
-        "original_coords": [
-          120.54774,
-          22.41409
-        ],
-        "snapped_distance": 1480.85,
-        "matched_line_id": "PT",
-        "track_progress": 0.050817
+        "phone": "08-8662939"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.535885,
-          22.420208
+          120.54774,
+          22.41409
         ]
       }
     },
@@ -4110,20 +3012,13 @@
         "name_zh": "東海",
         "class": "5",
         "address": "940002屏東縣枋寮鄉東海村西安路 92 號",
-        "phone": "08-8782041",
-        "original_coords": [
-          120.57236,
-          22.39897
-        ],
-        "snapped_distance": 1480.89,
-        "matched_line_id": "PT",
-        "track_progress": 0.050817
+        "phone": "08-8782041"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.580318,
-          22.388262
+          120.57236,
+          22.39897
         ]
       }
     },
@@ -4136,20 +3031,13 @@
         "name_zh": "枋寮",
         "class": "2",
         "address": "940003屏東縣枋寮鄉枋寮村儲運路 18 號",
-        "phone": "08-8782041",
-        "original_coords": [
-          120.59511,
-          22.36802
-        ],
-        "snapped_distance": 32.55,
-        "matched_line_id": "PT",
-        "track_progress": 6e-06
+        "phone": "08-8782041"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.595344,
-          22.368197
+          120.59511,
+          22.36802
         ]
       }
     },
@@ -4162,20 +3050,13 @@
         "name_zh": "加祿",
         "class": "3",
         "address": "941005屏東縣枋山鄉加祿村會社 53 號",
-        "phone": "08-8720791",
-        "original_coords": [
-          120.62445,
-          22.33085
-        ],
-        "snapped_distance": 73.49,
-        "matched_line_id": "NH",
-        "track_progress": 0.062213
+        "phone": "08-8720791"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.624984,
-          22.331241
+          120.62445,
+          22.33085
         ]
       }
     },
@@ -4188,20 +3069,13 @@
         "name_zh": "內獅",
         "class": "5",
         "address": "941010屏東縣枋山鄉加祿村南和 43 號",
-        "phone": "08-8720791",
-        "original_coords": [
-          120.64331,
-          22.30617
-        ],
-        "snapped_distance": 34.17,
-        "matched_line_id": "NH",
-        "track_progress": 0.101436
+        "phone": "08-8720791"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.643583,
-          22.306312
+          120.64331,
+          22.30617
         ]
       }
     },
@@ -4214,20 +3088,13 @@
         "name_zh": "枋山",
         "class": "4",
         "address": "943010屏東縣獅子鄉內獅村內獅巷 84 號",
-        "phone": "08-8720791",
-        "original_coords": [
-          120.65947,
-          22.26704
-        ],
-        "snapped_distance": 25.39,
-        "matched_line_id": "NH",
-        "track_progress": 0.158152
+        "phone": "08-8720791"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.659548,
-          22.267255
+          120.65947,
+          22.26704
         ]
       }
     },
@@ -4240,20 +3107,13 @@
         "name_zh": "枋野",
         "class": "3",
         "address": "94350屏東縣獅子鄉內獅村內獅巷 88 號",
-        "phone": "08-8761953",
-        "original_coords": [
-          120.71709,
-          22.28091
-        ],
-        "snapped_distance": 5.69,
-        "matched_line_id": "NH",
-        "track_progress": 0.241945
+        "phone": "08-8761953"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.717057,
-          22.280949
+          120.71709,
+          22.28091
         ]
       }
     },
@@ -4266,20 +3126,13 @@
         "name_zh": "大武",
         "class": "3",
         "address": "965003臺東縣大武鄉大鳥村和平部落 33 號",
-        "phone": "089-792056",
-        "original_coords": [
-          120.90094,
-          22.36526
-        ],
-        "snapped_distance": 39.82,
-        "matched_line_id": "NH",
-        "track_progress": 0.422002
+        "phone": "089-792056"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.900701,
-          22.365527
+          120.90094,
+          22.36526
         ]
       }
     },
@@ -4292,20 +3145,13 @@
         "name_zh": "瀧溪",
         "class": "4",
         "address": "963006臺東縣太麻里鄉多良村大溪 37 號",
-        "phone": "089-761482",
-        "original_coords": [
-          120.94176,
-          22.46102
-        ],
-        "snapped_distance": 28.94,
-        "matched_line_id": "NH",
-        "track_progress": 0.535828
+        "phone": "089-761482"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.941987,
-          22.460891
+          120.94176,
+          22.46102
         ]
       }
     },
@@ -4318,20 +3164,13 @@
         "name_zh": "金崙",
         "class": "3",
         "address": "963005臺東縣太麻里鄉金崙村金崙 47 之 17 號",
-        "phone": "089-771068",
-        "original_coords": [
-          120.96721,
-          22.53161
-        ],
-        "snapped_distance": 39.84,
-        "matched_line_id": "NH",
-        "track_progress": 0.617967
+        "phone": "089-771068"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.967555,
-          22.531513
+          120.96721,
+          22.53161
         ]
       }
     },
@@ -4344,20 +3183,13 @@
         "name_zh": "太麻里",
         "class": "3",
         "address": "963004臺東縣太麻里鄉大王村站前路 2 號",
-        "phone": "089-781544",
-        "original_coords": [
-          121.00492,
-          22.61883
-        ],
-        "snapped_distance": 28.32,
-        "matched_line_id": "NH",
-        "track_progress": 0.73267
+        "phone": "089-781544"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.004725,
-          22.618995
+          121.00492,
+          22.61883
         ]
       }
     },
@@ -4370,20 +3202,13 @@
         "name_zh": "知本",
         "class": "3",
         "address": "950103臺東縣臺東市知本里知本路二段 900 巷 85 號",
-        "phone": "089-514482",
-        "original_coords": [
-          121.06068,
-          22.71022
-        ],
-        "snapped_distance": 48.58,
-        "matched_line_id": "NH",
-        "track_progress": 0.869103
+        "phone": "089-514482"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.061061,
-          22.710004
+          121.06068,
+          22.71022
         ]
       }
     },
@@ -4396,20 +3221,13 @@
         "name_zh": "康樂",
         "class": "4",
         "address": "950029臺東縣臺東市康樂里博物館路 51 巷 131 號",
-        "phone": "089-383107",
-        "original_coords": [
-          121.09356,
-          22.76426
-        ],
-        "snapped_distance": 39.85,
-        "matched_line_id": "NH",
-        "track_progress": 0.953232
+        "phone": "089-383107"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.093353,
-          22.764553
+          121.09356,
+          22.76426
         ]
       }
     },
@@ -4422,20 +3240,13 @@
         "name_zh": "南方小站",
         "class": "4",
         "address": "92013屏東縣潮州鎮光復路 461 號",
-        "phone": "",
-        "original_coords": [
-          120.53658,
-          22.52755
-        ],
-        "snapped_distance": 656.98,
-        "matched_line_id": "PT",
-        "track_progress": 0.321763
+        "phone": ""
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.532265,
-          22.531601
+          120.53658,
+          22.52755
         ]
       }
     },
@@ -4448,20 +3259,13 @@
         "name_zh": "潮州基地",
         "class": "4",
         "address": "92054屏東縣潮州鎮光春里光復路 616 號",
-        "phone": "08-7889880",
-        "original_coords": [
-          120.52642,
-          22.52231
-        ],
-        "snapped_distance": 232.4,
-        "matched_line_id": "PT",
-        "track_progress": 0.299918
+        "phone": "08-7889880"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.524891,
-          22.523741
+          120.52642,
+          22.52231
         ]
       }
     },
@@ -4474,20 +3278,13 @@
         "name_zh": "臺東",
         "class": "1",
         "address": "950030臺東縣臺東市岩灣里岩灣路 101 巷 598 號",
-        "phone": "089-229687",
-        "original_coords": [
-          121.1231,
-          22.79372
-        ],
-        "snapped_distance": 84.71,
-        "matched_line_id": "TD",
-        "track_progress": 0.004355
+        "phone": "089-229687"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.122343,
-          22.793816
+          121.1231,
+          22.79372
         ]
       }
     },
@@ -4500,20 +3297,13 @@
         "name_zh": "山里",
         "class": "3",
         "address": "954003臺東縣卑南鄉嘉豐村山里路 108 號",
-        "phone": "089-572370",
-        "original_coords": [
-          121.13778,
-          22.86194
-        ],
-        "snapped_distance": 19.75,
-        "matched_line_id": "TD",
-        "track_progress": 0.058431
+        "phone": "089-572370"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.137885,
-          22.861796
+          121.13778,
+          22.86194
         ]
       }
     },
@@ -4526,20 +3316,13 @@
         "name_zh": "鹿野",
         "class": "3",
         "address": "955002臺東縣鹿野鄉鹿野村中正路 38 號",
-        "phone": "089-550217",
-        "original_coords": [
-          121.13701,
-          22.91249
-        ],
-        "snapped_distance": 11.09,
-        "matched_line_id": "TD",
-        "track_progress": 0.099504
+        "phone": "089-550217"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.13711,
-          22.912499
+          121.13701,
+          22.91249
         ]
       }
     },
@@ -4552,20 +3335,13 @@
         "name_zh": "瑞源",
         "class": "3",
         "address": "955003臺東縣鹿野鄉瑞源村瑞景路一段 336 巷 8 號 之 1",
-        "phone": "089-580159",
-        "original_coords": [
-          121.15901,
-          22.95604
-        ],
-        "snapped_distance": 20.7,
-        "matched_line_id": "TD",
-        "track_progress": 0.136652
+        "phone": "089-580159"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.159195,
-          22.956018
+          121.15901,
+          22.95604
         ]
       }
     },
@@ -4578,20 +3354,13 @@
         "name_zh": "瑞和",
         "class": "5",
         "address": "955003臺東縣鹿野鄉瑞和村瑞景路三段 1 之 1 號",
-        "phone": "089-580159",
-        "original_coords": [
-          121.15595,
-          22.97997
-        ],
-        "snapped_distance": 15.93,
-        "matched_line_id": "TD",
-        "track_progress": 0.154615
+        "phone": "089-580159"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.156078,
-          22.980034
+          121.15595,
+          22.97997
         ]
       }
     },
@@ -4604,20 +3373,13 @@
         "name_zh": "關山",
         "class": "3",
         "address": "956004臺東縣關山鎮里壠里博愛路 2 號",
-        "phone": "089-811033",
-        "original_coords": [
-          121.1643,
-          23.04566
-        ],
-        "snapped_distance": 34.77,
-        "matched_line_id": "TD",
-        "track_progress": 0.204733
+        "phone": "089-811033"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.164599,
-          23.045565
+          121.1643,
+          23.04566
         ]
       }
     },
@@ -4630,20 +3392,13 @@
         "name_zh": "海端",
         "class": "4",
         "address": "956004臺東縣關山鎮德高里西莊 49 號",
-        "phone": "089-811033",
-        "original_coords": [
-          121.17676,
-          23.10292
-        ],
-        "snapped_distance": 59.63,
-        "matched_line_id": "TD",
-        "track_progress": 0.238471
+        "phone": "089-811033"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.177296,
-          23.102948
+          121.17676,
+          23.10292
         ]
       }
     },
@@ -4656,20 +3411,13 @@
         "name_zh": "池上",
         "class": "3",
         "address": "958003臺東縣池上鄉福文村鐵花路 30 號",
-        "phone": "089-862097",
-        "original_coords": [
-          121.21949,
-          23.12613
-        ],
-        "snapped_distance": 21.55,
-        "matched_line_id": "TD",
-        "track_progress": 0.276658
+        "phone": "089-862097"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.21938,
-          23.12629
+          121.21949,
+          23.12613
         ]
       }
     },
@@ -4682,20 +3430,13 @@
         "name_zh": "富里",
         "class": "3",
         "address": "983001花蓮縣富里鄉富里村車站街 56 號",
-        "phone": "03-8831771",
-        "original_coords": [
-          121.24864,
-          23.17924
-        ],
-        "snapped_distance": 17.23,
-        "matched_line_id": "TD",
-        "track_progress": 0.323361
+        "phone": "03-8831771"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.248504,
-          23.179315
+          121.24864,
+          23.17924
         ]
       }
     },
@@ -4708,20 +3449,13 @@
         "name_zh": "東竹",
         "class": "3",
         "address": "983005花蓮縣富里鄉新興村新興 23 號",
-        "phone": "03-8821504",
-        "original_coords": [
-          121.27842,
-          23.22605
-        ],
-        "snapped_distance": 11.43,
-        "matched_line_id": "TD",
-        "track_progress": 0.365342
+        "phone": "03-8821504"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.278325,
-          23.22609
+          121.27842,
+          23.22605
         ]
       }
     },
@@ -4734,20 +3468,13 @@
         "name_zh": "東里",
         "class": "3",
         "address": "983004花蓮縣富里鄉東里村大莊路 15 之 6 號",
-        "phone": "03-8861005",
-        "original_coords": [
-          121.30418,
-          23.27234
-        ],
-        "snapped_distance": 22.52,
-        "matched_line_id": "TD",
-        "track_progress": 0.405261
+        "phone": "03-8861005"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.303996,
-          23.272426
+          121.30418,
+          23.27234
         ]
       }
     },
@@ -4760,20 +3487,13 @@
         "name_zh": "玉里",
         "class": "1",
         "address": "981003花蓮縣玉里鎮中城里康樂街 39 號",
-        "phone": "03-8882020",
-        "original_coords": [
-          121.31172,
-          23.33155
-        ],
-        "snapped_distance": 28.11,
-        "matched_line_id": "TD",
-        "track_progress": 0.449513
+        "phone": "03-8882020"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.311468,
-          23.331572
+          121.31172,
+          23.33155
         ]
       }
     },
@@ -4786,20 +3506,13 @@
         "name_zh": "三民",
         "class": "3",
         "address": "981010花蓮縣玉里鎮三民里三民 10 號",
-        "phone": "03-8841847",
-        "original_coords": [
-          121.34539,
-          23.42458
-        ],
-        "snapped_distance": 12.32,
-        "matched_line_id": "TD",
-        "track_progress": 0.522745
+        "phone": "03-8841847"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.345288,
-          23.424623
+          121.34539,
+          23.42458
         ]
       }
     },
@@ -4812,19 +3525,12 @@
         "name_zh": "瑞穗",
         "class": "3",
         "address": "978001花蓮縣瑞穗鄉瑞穗村四維街 13 號",
-        "phone": "03-8875039",
-        "original_coords": [
-          121.37657,
-          23.49775
-        ],
-        "snapped_distance": 0.44,
-        "matched_line_id": "TD",
-        "track_progress": 0.574987
+        "phone": "03-8875039"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.376566,
+          121.37657,
           23.49775
         ]
       }
@@ -4838,20 +3544,13 @@
         "name_zh": "富源",
         "class": "3",
         "address": "978003花蓮縣瑞穗鄉富源村富源路 2 號",
-        "phone": "03-8811824",
-        "original_coords": [
-          121.38008,
-          23.58031
-        ],
-        "snapped_distance": 23.93,
-        "matched_line_id": "TD",
-        "track_progress": 0.63569
+        "phone": "03-8811824"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.380291,
-          23.580266
+          121.38008,
+          23.58031
         ]
       }
     },
@@ -4864,20 +3563,13 @@
         "name_zh": "大富",
         "class": "5",
         "address": "976007花蓮縣光復鄉大富村明德路 1 號",
-        "phone": "03-8811824",
-        "original_coords": [
-          121.38963,
-          23.60571
-        ],
-        "snapped_distance": 18.88,
-        "matched_line_id": "TD",
-        "track_progress": 0.655894
+        "phone": "03-8811824"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.38946,
-          23.605723
+          121.38963,
+          23.60571
         ]
       }
     },
@@ -4890,20 +3582,13 @@
         "name_zh": "光復",
         "class": "3",
         "address": "976007花蓮縣光復鄉大安村中正路一段 2 之 1 號",
-        "phone": "03-8704143",
-        "original_coords": [
-          121.42117,
-          23.66631
-        ],
-        "snapped_distance": 31.98,
-        "matched_line_id": "TD",
-        "track_progress": 0.707433
+        "phone": "03-8704143"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.420891,
-          23.666383
+          121.42117,
+          23.66631
         ]
       }
     },
@@ -4916,20 +3601,13 @@
         "name_zh": "萬榮",
         "class": "3",
         "address": "975003花蓮縣鳳林鎮長橋里長德街 17 號",
-        "phone": "03-8752175",
-        "original_coords": [
-          121.41907,
-          23.71199
-        ],
-        "snapped_distance": 22.71,
-        "matched_line_id": "TD",
-        "track_progress": 0.744949
+        "phone": "03-8752175"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.418911,
-          23.712119
+          121.41907,
+          23.71199
         ]
       }
     },
@@ -4942,20 +3620,13 @@
         "name_zh": "鳳林",
         "class": "3",
         "address": "975005花蓮縣鳳林鎮鳳智里中山路 43 號",
-        "phone": "03-8762004",
-        "original_coords": [
-          121.44701,
-          23.74634
-        ],
-        "snapped_distance": 24.57,
-        "matched_line_id": "TD",
-        "track_progress": 0.777864
+        "phone": "03-8762004"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.446812,
-          23.746439
+          121.44701,
+          23.74634
         ]
       }
     },
@@ -4968,20 +3639,13 @@
         "name_zh": "南平",
         "class": "4",
         "address": "975002花蓮縣鳳林鎮南平里自強路 233 號",
-        "phone": "03-8771597",
-        "original_coords": [
-          121.45824,
-          23.78231
-        ],
-        "snapped_distance": 17.93,
-        "matched_line_id": "TD",
-        "track_progress": 0.805697
+        "phone": "03-8771597"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.458081,
-          23.782337
+          121.45824,
+          23.78231
         ]
       }
     },
@@ -4994,20 +3658,13 @@
         "name_zh": "林榮新光",
         "class": "4",
         "address": "975002花蓮縣鳳林鎮兆豐路800號",
-        "phone": "03-8772677",
-        "original_coords": [
-          121.46169,
-          23.80176
-        ],
-        "snapped_distance": 0.93,
-        "matched_line_id": "TD",
-        "track_progress": 0.820164
+        "phone": "03-8772677"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.461682,
-          23.801762
+          121.46169,
+          23.80176
         ]
       }
     },
@@ -5020,20 +3677,13 @@
         "name_zh": "豐田",
         "class": "4",
         "address": "974006花蓮縣壽豐鄉豐山村站前街 36 號",
-        "phone": "03-8654251",
-        "original_coords": [
-          121.49618,
-          23.84842
-        ],
-        "snapped_distance": 15.42,
-        "matched_line_id": "TD",
-        "track_progress": 0.862809
+        "phone": "03-8654251"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.496067,
-          23.848501
+          121.49618,
+          23.84842
         ]
       }
     },
@@ -5046,20 +3696,13 @@
         "name_zh": "壽豐",
         "class": "3",
         "address": "974002花蓮縣壽豐鄉壽豐村壽山路 1 號",
-        "phone": "03-8653706",
-        "original_coords": [
-          121.51064,
-          23.86901
-        ],
-        "snapped_distance": 18.3,
-        "matched_line_id": "TD",
-        "track_progress": 0.88121
+        "phone": "03-8653706"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.510774,
-          23.868914
+          121.51064,
+          23.86901
         ]
       }
     },
@@ -5072,20 +3715,13 @@
         "name_zh": "平和",
         "class": "5",
         "address": "974004花蓮縣壽豐鄉平和村平和路 1 號",
-        "phone": "03-8653706",
-        "original_coords": [
-          121.52045,
-          23.88279
-        ],
-        "snapped_distance": 28.81,
-        "matched_line_id": "TD",
-        "track_progress": 0.893581
+        "phone": "03-8653706"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.520661,
-          23.882639
+          121.52045,
+          23.88279
         ]
       }
     },
@@ -5098,20 +3734,13 @@
         "name_zh": "志學",
         "class": "3",
         "address": "974003花蓮縣壽豐鄉志學村中正路 1 號",
-        "phone": "03-8662966",
-        "original_coords": [
-          121.5295,
-          23.90769
-        ],
-        "snapped_distance": 12.31,
-        "matched_line_id": "TD",
-        "track_progress": 0.913112
+        "phone": "03-8662966"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.529394,
-          23.907722
+          121.5295,
+          23.90769
         ]
       }
     },
@@ -5124,20 +3753,13 @@
         "name_zh": "吉安",
         "class": "3",
         "address": "973039花蓮縣吉安鄉南昌村南昌路1號",
-        "phone": "03-8539423",
-        "original_coords": [
-          121.58266,
-          23.96823
-        ],
-        "snapped_distance": 51.59,
-        "matched_line_id": "TD",
-        "track_progress": 0.982163
+        "phone": "03-8539423"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.582951,
-          23.967868
+          121.58266,
+          23.96823
         ]
       }
     },
@@ -5150,20 +3772,13 @@
         "name_zh": "花蓮",
         "class": "0",
         "address": "970015花蓮縣花蓮市國聯里國聯一路 100 號",
-        "phone": "03-8355941",
-        "original_coords": [
-          121.6008,
-          23.99325
-        ],
-        "snapped_distance": 30.1,
-        "matched_line_id": "TD",
-        "track_progress": 0.997406
+        "phone": "03-8355941"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.601044,
-          23.993131
+          121.6008,
+          23.99325
         ]
       }
     },
@@ -5176,18 +3791,13 @@
         "name_zh": "北埔",
         "class": "3",
         "address": "971066花蓮縣新城鄉北埔村自強街 113 號",
-        "phone": "03-8263809",
-        "original_coords": [
-          121.60166,
-          24.03253
-        ],
-        "snapped_distance": 4022.89
+        "phone": "03-8263809"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.602634,
-          23.996301
+          121.60166,
+          24.03253
         ]
       }
     },
@@ -5200,18 +3810,13 @@
         "name_zh": "景美",
         "class": "4",
         "address": "972067花蓮縣秀林鄉景美村加灣 178 之 1 號",
-        "phone": "03-8611237",
-        "original_coords": [
-          121.61078,
-          24.09048
-        ],
-        "snapped_distance": 10492.92
+        "phone": "03-8611237"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.602634,
-          23.996301
+          121.61078,
+          24.09048
         ]
       }
     },
@@ -5224,18 +3829,13 @@
         "name_zh": "新城",
         "class": "2",
         "address": "971001花蓮縣新城鄉新城村新興一路 73 號",
-        "phone": "03-8611237",
-        "original_coords": [
-          121.64086,
-          24.12756
-        ],
-        "snapped_distance": 14288.82
+        "phone": "03-8611237"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.70945,
-          24.236492
+          121.64086,
+          24.12756
         ]
       }
     },
@@ -5248,18 +3848,13 @@
         "name_zh": "崇德",
         "class": "3",
         "address": "972003花蓮縣秀林鄉崇德村海濱路 96 號",
-        "phone": "03-8621365",
-        "original_coords": [
-          121.65536,
-          24.17199
-        ],
-        "snapped_distance": 9344.02
+        "phone": "03-8621365"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.70945,
-          24.236492
+          121.65536,
+          24.17199
         ]
       }
     },
@@ -5272,20 +3867,13 @@
         "name_zh": "和仁",
         "class": "3",
         "address": "972005花蓮縣秀林鄉和平村和仁 71 號",
-        "phone": "03-8681221",
-        "original_coords": [
-          121.71182,
-          24.24225
-        ],
-        "snapped_distance": 107.93,
-        "matched_line_id": "BH",
-        "track_progress": 0.014193
+        "phone": "03-8681221"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.712621,
-          24.241699
+          121.71182,
+          24.24225
         ]
       }
     },
@@ -5298,20 +3886,13 @@
         "name_zh": "和平",
         "class": "2",
         "address": "972005花蓮縣秀林鄉和平村和平 276 號",
-        "phone": "03-8681009",
-        "original_coords": [
-          121.75344,
-          24.29839
-        ],
-        "snapped_distance": 158.72,
-        "matched_line_id": "BH",
-        "track_progress": 0.184359
+        "phone": "03-8681009"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.75479,
-          24.29792
+          121.75344,
+          24.29839
         ]
       }
     },
@@ -5324,20 +3905,13 @@
         "name_zh": "漢本",
         "class": "3",
         "address": "272019宜蘭縣南澳鄉澳花村蘇花路一段 56 號",
-        "phone": "03-9985238",
-        "original_coords": [
-          121.76838,
-          24.33543
-        ],
-        "snapped_distance": 22.55,
-        "matched_line_id": "BH",
-        "track_progress": 0.322382
+        "phone": "03-9985238"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.768571,
-          24.335361
+          121.76838,
+          24.33543
         ]
       }
     },
@@ -5350,20 +3924,13 @@
         "name_zh": "武塔",
         "class": "4",
         "address": "272017宜蘭縣南澳鄉武塔村新溪路 18 號",
-        "phone": "03-9981971",
-        "original_coords": [
-          121.77601,
-          24.44879
-        ],
-        "snapped_distance": 22.28,
-        "matched_line_id": "YL",
-        "track_progress": 0.129939
+        "phone": "03-9981971"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.775811,
-          24.448763
+          121.77601,
+          24.44879
         ]
       }
     },
@@ -5376,20 +3943,13 @@
         "name_zh": "南澳",
         "class": "3",
         "address": "270010宜蘭縣蘇澳鎮南強里大通路 22 號",
-        "phone": "03-9981971",
-        "original_coords": [
-          121.80103,
-          24.46342
-        ],
-        "snapped_distance": 26.1,
-        "matched_line_id": "BH",
-        "track_progress": 0.640678
+        "phone": "03-9981971"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.800992,
-          24.463188
+          121.80103,
+          24.46342
         ]
       }
     },
@@ -5402,20 +3962,13 @@
         "name_zh": "東澳",
         "class": "2",
         "address": "272006宜蘭縣南澳鄉東岳村東岳路 1 號",
-        "phone": "03-9986053",
-        "original_coords": [
-          121.83072,
-          24.51827
-        ],
-        "snapped_distance": 14.32,
-        "matched_line_id": "BH",
-        "track_progress": 0.82745
+        "phone": "03-9986053"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.830603,
-          24.518216
+          121.83072,
+          24.51827
         ]
       }
     },
@@ -5428,20 +3981,13 @@
         "name_zh": "永樂",
         "class": "3",
         "address": "270011宜蘭縣蘇澳鎮永樂里圳頭路 60 號",
-        "phone": "03-9961889",
-        "original_coords": [
-          121.84458,
-          24.56843
-        ],
-        "snapped_distance": 18.02,
-        "matched_line_id": "YL",
-        "track_progress": 0.262603
+        "phone": "03-9961889"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.844433,
-          24.568498
+          121.84458,
+          24.56843
         ]
       }
     },
@@ -5454,20 +4000,13 @@
         "name_zh": "蘇澳",
         "class": "2",
         "address": "270001宜蘭縣蘇澳鎮蘇南里太平路 1 號",
-        "phone": "03-9962028",
-        "original_coords": [
-          121.85143,
-          24.59516
-        ],
-        "snapped_distance": 1468.45,
-        "matched_line_id": "YL",
-        "track_progress": 0.277789
+        "phone": "03-9962028"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.841636,
-          24.586266
+          121.85143,
+          24.59516
         ]
       }
     },
@@ -5480,20 +4019,13 @@
         "name_zh": "蘇澳新",
         "class": "1",
         "address": "270013宜蘭縣蘇澳鎮聖愛里中山路二段 238 號",
-        "phone": "03-9961004",
-        "original_coords": [
-          121.82735,
-          24.60852
-        ],
-        "snapped_distance": 57.02,
-        "matched_line_id": "YL",
-        "track_progress": 0.300523
+        "phone": "03-9961004"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.827762,
-          24.608827
+          121.82735,
+          24.60852
         ]
       }
     },
@@ -5506,20 +4038,13 @@
         "name_zh": "新馬",
         "class": "5",
         "address": "270013宜蘭縣蘇澳鎮新城里中山路二段 322 號",
-        "phone": "03-9961004",
-        "original_coords": [
-          121.8229,
-          24.61564
-        ],
-        "snapped_distance": 5.08,
-        "matched_line_id": "YL",
-        "track_progress": 0.307424
+        "phone": "03-9961004"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.822914,
-          24.615684
+          121.8229,
+          24.61564
         ]
       }
     },
@@ -5532,20 +4057,13 @@
         "name_zh": "冬山",
         "class": "3",
         "address": "269027宜蘭縣冬山鄉冬山村中正路 1 -1號",
-        "phone": "03-9594221",
-        "original_coords": [
-          121.79211,
-          24.63633
-        ],
-        "snapped_distance": 30.38,
-        "matched_line_id": "YL",
-        "track_progress": 0.339231
+        "phone": "03-9594221"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.792303,
-          24.636524
+          121.79211,
+          24.63633
         ]
       }
     },
@@ -5558,20 +4076,13 @@
         "name_zh": "羅東",
         "class": "2",
         "address": "265010宜蘭縣羅東鎮大新里公正路 2 號",
-        "phone": "03-9542117",
-        "original_coords": [
-          121.77464,
-          24.67791
-        ],
-        "snapped_distance": 13.62,
-        "matched_line_id": "YL",
-        "track_progress": 0.375899
+        "phone": "03-9542117"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.774517,
-          24.677914
+          121.77464,
+          24.67791
         ]
       }
     },
@@ -5584,20 +4095,13 @@
         "name_zh": "中里",
         "class": "5",
         "address": "268018宜蘭縣五結鄉中里路",
-        "phone": "03-9542117",
-        "original_coords": [
-          121.77526,
-          24.69415
-        ],
-        "snapped_distance": 3.08,
-        "matched_line_id": "YL",
-        "track_progress": 0.388913
+        "phone": "03-9542117"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.775232,
-          24.694151
+          121.77526,
+          24.69415
         ]
       }
     },
@@ -5610,20 +4114,13 @@
         "name_zh": "二結",
         "class": "3",
         "address": "268016宜蘭縣五結鄉五結中路三段658巷8號",
-        "phone": "03-9650304",
-        "original_coords": [
-          121.77409,
-          24.70528
-        ],
-        "snapped_distance": 37.12,
-        "matched_line_id": "YL",
-        "track_progress": 0.397977
+        "phone": "03-9650304"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.774415,
-          24.705359
+          121.77409,
+          24.70528
         ]
       }
     },
@@ -5636,20 +4133,13 @@
         "name_zh": "宜蘭",
         "class": "1",
         "address": "260003宜蘭縣宜蘭市和睦里光復路 1 號",
-        "phone": "03-9323801",
-        "original_coords": [
-          121.75839,
-          24.75443
-        ],
-        "snapped_distance": 14.31,
-        "matched_line_id": "YL",
-        "track_progress": 0.440529
+        "phone": "03-9323801"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.75827,
-          24.754477
+          121.75839,
+          24.75443
         ]
       }
     },
@@ -5662,20 +4152,13 @@
         "name_zh": "四城",
         "class": "4",
         "address": "262005宜蘭縣礁溪鄉吳沙村站前路 24 號",
-        "phone": "03-9282449",
-        "original_coords": [
-          121.76271,
-          24.78681
-        ],
-        "snapped_distance": 28.16,
-        "matched_line_id": "YL",
-        "track_progress": 0.46766
+        "phone": "03-9282449"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.762958,
-          24.786756
+          121.76271,
+          24.78681
         ]
       }
     },
@@ -5688,20 +4171,13 @@
         "name_zh": "礁溪",
         "class": "3",
         "address": "262001宜蘭縣礁溪鄉德陽村溫泉路 1 號",
-        "phone": "03-9886940",
-        "original_coords": [
-          121.77535,
-          24.82703
-        ],
-        "snapped_distance": 19.67,
-        "matched_line_id": "YL",
-        "track_progress": 0.501743
+        "phone": "03-9886940"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.775486,
-          24.826917
+          121.77535,
+          24.82703
         ]
       }
     },
@@ -5714,20 +4190,13 @@
         "name_zh": "頂埔",
         "class": "5",
         "address": "261002宜蘭縣頭城鎮下埔里下埔路 4 之 8 號",
-        "phone": "03-9771429",
-        "original_coords": [
-          121.80913,
-          24.84391
-        ],
-        "snapped_distance": 14.09,
-        "matched_line_id": "YL",
-        "track_progress": 0.533406
+        "phone": "03-9771429"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.809054,
-          24.844012
+          121.80913,
+          24.84391
         ]
       }
     },
@@ -5740,20 +4209,13 @@
         "name_zh": "頭城",
         "class": "2",
         "address": "261006宜蘭縣頭城鎮纘祥路 59 號",
-        "phone": "03-9771429",
-        "original_coords": [
-          121.82258,
-          24.85898
-        ],
-        "snapped_distance": 22.34,
-        "matched_line_id": "YL",
-        "track_progress": 0.549947
+        "phone": "03-9771429"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.822401,
-          24.859071
+          121.82258,
+          24.85898
         ]
       }
     },
@@ -5766,20 +4228,13 @@
         "name_zh": "外澳",
         "class": "5",
         "address": "261004宜蘭縣頭城鎮濱海路二段 217 號",
-        "phone": "03-9771429",
-        "original_coords": [
-          121.84572,
-          24.88375
-        ],
-        "snapped_distance": 14.57,
-        "matched_line_id": "YL",
-        "track_progress": 0.577432
+        "phone": "03-9771429"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.845627,
-          24.883842
+          121.84572,
+          24.88375
         ]
       }
     },
@@ -5792,20 +4247,13 @@
         "name_zh": "龜山",
         "class": "4",
         "address": "261004宜蘭縣頭城鎮更新里濱海路三段 261 號",
-        "phone": "03-9770351",
-        "original_coords": [
-          121.8689,
-          24.90484
-        ],
-        "snapped_distance": 31.15,
-        "matched_line_id": "YL",
-        "track_progress": 0.604474
+        "phone": "03-9770351"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.868766,
-          24.905087
+          121.8689,
+          24.90484
         ]
       }
     },
@@ -5818,14 +4266,7 @@
         "name_zh": "大溪",
         "class": "5",
         "address": "261005宜蘭縣頭城鎮濱海路五段 63 號",
-        "phone": "03-9771429",
-        "original_coords": [
-          121.88983,
-          24.93836
-        ],
-        "snapped_distance": 0.0,
-        "matched_line_id": "YL",
-        "track_progress": 0.638444
+        "phone": "03-9771429"
       },
       "geometry": {
         "type": "Point",
@@ -5844,20 +4285,13 @@
         "name_zh": "大里",
         "class": "4",
         "address": "261005宜蘭縣頭城鎮大里里濱海路六段 326 號",
-        "phone": "03-9781171",
-        "original_coords": [
-          121.92253,
-          24.96677
-        ],
-        "snapped_distance": 22.42,
-        "matched_line_id": "YL",
-        "track_progress": 0.680848
+        "phone": "03-9781171"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.922675,
-          24.966629
+          121.92253,
+          24.96677
         ]
       }
     },
@@ -5870,20 +4304,13 @@
         "name_zh": "石城",
         "class": "5",
         "address": "261006宜蘭縣頭城鎮濱海路七段 230 號",
-        "phone": "03-9771429",
-        "original_coords": [
-          121.94507,
-          24.97832
-        ],
-        "snapped_distance": 16.31,
-        "matched_line_id": "YL",
-        "track_progress": 0.701122
+        "phone": "03-9771429"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.945127,
-          24.978185
+          121.94507,
+          24.97832
         ]
       }
     },
@@ -5896,20 +4323,13 @@
         "name_zh": "福隆",
         "class": "3",
         "address": "228001新北市貢寮區福隆里福隆街 2 號",
-        "phone": "02-24991800",
-        "original_coords": [
-          121.94471,
-          25.01595
-        ],
-        "snapped_distance": 30.87,
-        "matched_line_id": "YL",
-        "track_progress": 0.741701
+        "phone": "02-24991800"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.944621,
-          25.015687
+          121.94471,
+          25.01595
         ]
       }
     },
@@ -5922,20 +4342,13 @@
         "name_zh": "貢寮",
         "class": "4",
         "address": "228003新北市貢寮區貢寮里朝陽街 33 號",
-        "phone": "02-24941500",
-        "original_coords": [
-          121.90879,
-          25.02197
-        ],
-        "snapped_distance": 16.35,
-        "matched_line_id": "YL",
-        "track_progress": 0.780796
+        "phone": "02-24941500"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.908749,
-          25.021829
+          121.90879,
+          25.02197
         ]
       }
     },
@@ -5948,20 +4361,13 @@
         "name_zh": "雙溪",
         "class": "2",
         "address": "227004新北市雙溪區新基里朝陽街 1 號",
-        "phone": "02-24932980",
-        "original_coords": [
-          121.86654,
-          25.03851
-        ],
-        "snapped_distance": 31.04,
-        "matched_line_id": "YL",
-        "track_progress": 0.847334
+        "phone": "02-24932980"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.866816,
-          25.038463
+          121.86654,
+          25.03851
         ]
       }
     },
@@ -5974,20 +4380,13 @@
         "name_zh": "牡丹",
         "class": "5",
         "address": "227001新北市雙溪區牡丹里51號",
-        "phone": "02-24932980",
-        "original_coords": [
-          121.85197,
-          25.05871
-        ],
-        "snapped_distance": 14.19,
-        "matched_line_id": "YL",
-        "track_progress": 0.879303
+        "phone": "02-24932980"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.851905,
-          25.0586
+          121.85197,
+          25.05871
         ]
       }
     },
@@ -6000,20 +4399,13 @@
         "name_zh": "三貂嶺",
         "class": "3",
         "address": "224006新北市瑞芳區碩仁里魚寮路 1 號",
-        "phone": "02-24977896",
-        "original_coords": [
-          121.82257,
-          25.06555
-        ],
-        "snapped_distance": 12.61,
-        "matched_line_id": "YL",
-        "track_progress": 0.9067
+        "phone": "02-24977896"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.822456,
-          25.065546
+          121.82257,
+          25.06555
         ]
       }
     },
@@ -6026,20 +4418,13 @@
         "name_zh": "大華",
         "class": "5",
         "address": "226003新北市平溪區南山里六分 12 之 1 號",
-        "phone": "02-24972033",
-        "original_coords": [
-          121.79732,
-          25.04998
-        ],
-        "snapped_distance": 6.74,
-        "matched_line_id": "PX",
-        "track_progress": 0.737429
+        "phone": "02-24972033"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.797318,
-          25.049919
+          121.79732,
+          25.04998
         ]
       }
     },
@@ -6052,20 +4437,13 @@
         "name_zh": "十分",
         "class": "4",
         "address": "226003新北市平溪區十分里十分街 51 號",
-        "phone": "02-24958307",
-        "original_coords": [
-          121.77514,
-          25.04111
-        ],
-        "snapped_distance": 18.17,
-        "matched_line_id": "PX",
-        "track_progress": 0.517173
+        "phone": "02-24958307"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.775249,
-          25.040988
+          121.77514,
+          25.04111
         ]
       }
     },
@@ -6078,20 +4456,13 @@
         "name_zh": "望古",
         "class": "5",
         "address": "226003新北市平溪區望古里 (無站房)",
-        "phone": "02-24972033",
-        "original_coords": [
-          121.76349,
-          25.03445
-        ],
-        "snapped_distance": 3.56,
-        "matched_line_id": "PX",
-        "track_progress": 0.385117
+        "phone": "02-24972033"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.763479,
-          25.03448
+          121.76349,
+          25.03445
         ]
       }
     },
@@ -6104,20 +4475,13 @@
         "name_zh": "嶺腳",
         "class": "5",
         "address": "226001新北市平溪區嶺腳里嶺腳寮 22 號",
-        "phone": "02-24972033",
-        "original_coords": [
-          121.74795,
-          25.03016
-        ],
-        "snapped_distance": 3.64,
-        "matched_line_id": "PX",
-        "track_progress": 0.227617
+        "phone": "02-24972033"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.747935,
-          25.030131
+          121.74795,
+          25.03016
         ]
       }
     },
@@ -6130,20 +4494,13 @@
         "name_zh": "平溪",
         "class": "4",
         "address": "226001新北市平溪區平溪里中華街 12 號",
-        "phone": "02-24972033",
-        "original_coords": [
-          121.74019,
-          25.02571
-        ],
-        "snapped_distance": 5.66,
-        "matched_line_id": "PX",
-        "track_progress": 0.151315
+        "phone": "02-24972033"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.740199,
-          25.02566
+          121.74019,
+          25.02571
         ]
       }
     },
@@ -6156,20 +4513,13 @@
         "name_zh": "菁桐",
         "class": "4",
         "address": "226002新北市平溪區菁桐里菁桐街 52 號",
-        "phone": "02-24972033",
-        "original_coords": [
-          121.72391,
-          25.02391
-        ],
-        "snapped_distance": 5.57,
-        "matched_line_id": "PX",
-        "track_progress": 0.012009
+        "phone": "02-24972033"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.723901,
-          25.023959
+          121.72391,
+          25.02391
         ]
       }
     },
@@ -6182,20 +4532,13 @@
         "name_zh": "猴硐",
         "class": "3",
         "address": "224006新北市瑞芳區光復里柴寮路 70 號",
-        "phone": "02-24977747",
-        "original_coords": [
-          121.82743,
-          25.08702
-        ],
-        "snapped_distance": 25.46,
-        "matched_line_id": "YL",
-        "track_progress": 0.925382
+        "phone": "02-24977747"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.82724,
-          25.087149
+          121.82743,
+          25.08702
         ]
       }
     },
@@ -6208,20 +4551,13 @@
         "name_zh": "瑞芳",
         "class": "1",
         "address": "224001新北市瑞芳區龍潭里明燈路三段 82 號",
-        "phone": "02-24972033",
-        "original_coords": [
-          121.80624,
-          25.10893
-        ],
-        "snapped_distance": 8.49,
-        "matched_line_id": "YL",
-        "track_progress": 0.966659
+        "phone": "02-24972033"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.806254,
-          25.109005
+          121.80624,
+          25.10893
         ]
       }
     },
@@ -6234,20 +4570,13 @@
         "name_zh": "海科館",
         "class": "5",
         "address": "202010基隆市中正區長潭里",
-        "phone": "02-24972033",
-        "original_coords": [
-          121.79997,
-          25.13754
-        ],
-        "snapped_distance": 9.6,
-        "matched_line_id": "SA",
-        "track_progress": 0.656628
+        "phone": "02-24972033"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.799922,
-          25.137468
+          121.79997,
+          25.13754
         ]
       }
     },
@@ -6260,20 +4589,13 @@
         "name_zh": "八斗子",
         "class": "5",
         "address": "224007新北市瑞芳區建基路2段121號隔壁 砂子里省道臺 2 線 (與新北市瑞芳區交界處、無站房)",
-        "phone": "02-24972033",
-        "original_coords": [
-          121.80286,
-          25.13528
-        ],
-        "snapped_distance": 3.23,
-        "matched_line_id": "SA",
-        "track_progress": 0.731971
+        "phone": "02-24972033"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.802871,
-          25.135307
+          121.80286,
+          25.13528
         ]
       }
     },
@@ -6286,20 +4608,13 @@
         "name_zh": "四腳亭",
         "class": "3",
         "address": "22449新北市瑞芳區吉慶里中央路 65 號",
-        "phone": "02-24579346",
-        "original_coords": [
-          121.76195,
-          25.10281
-        ],
-        "snapped_distance": 25.49,
-        "matched_line_id": "YL",
-        "track_progress": 0.967338
+        "phone": "02-24579346"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.761923,
-          25.102582
+          121.76195,
+          25.10281
         ]
       }
     },
@@ -6312,20 +4627,13 @@
         "name_zh": "暖暖",
         "class": "5",
         "address": "20544基隆市暖暖區暖暖里暖暖街 51 號",
-        "phone": "02-24560841",
-        "original_coords": [
-          121.74031,
-          25.10231
-        ],
-        "snapped_distance": 9.82,
-        "matched_line_id": "YL",
-        "track_progress": 0.985303
+        "phone": "02-24560841"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.740307,
-          25.102222
+          121.74031,
+          25.10231
         ]
       }
     }

@@ -1,0 +1,1 @@
+{"type": "FeatureCollection", "features": [{"type": "Feature", "properties": {"track_id": "BH-0", "line_id": "BH", "direction": 0, "name": "\u5317\u8ff4\u7dda (\u8607\u6fb3\u65b0\u2192\u82b1\u84ee)", "origin": "\u8607\u6fb3\u65b0", "destination": "\u82b1\u84ee"}, "geometry": {"type": "MultiLineString", "coordinates": []}}]}

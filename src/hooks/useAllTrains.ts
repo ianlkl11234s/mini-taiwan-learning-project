@@ -91,19 +91,8 @@ export function useAllTrains(input: AllTrainsInput): TrainFeature[] {
     }
 
     // === THSR (高鐵) ===
-    for (const train of filteredThsrTrains) {
-      const direction = parseInt(getThsrDirection(train.trackId), 10);
-      const color = getThsrTrainColor(train.trackId);
-
-      features.push(
-        createFeature(train, 'thsr', selectedTrainId, {
-          lineId: 'THSR',
-          direction,
-          color,
-          isColliding: false,
-        })
-      );
-    }
+    // 高鐵使用 DOM Markers 保持長方形外觀，不加入 WebGL Circle Layer
+    void filteredThsrTrains;
 
     // === KRTC (高雄捷運) ===
     for (const train of filteredKrtcTrains) {

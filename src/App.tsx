@@ -2070,11 +2070,12 @@ function App() {
   }, [mapLoaded, filteredTrains, use3DMode, useSymbolLayer, handleSelectTrain, selectedTrainId]);
 
   // 更新高鐵列車標記（2D 模式時使用）
+  // 注意：高鐵使用 DOM Markers 保持長方形外觀，即使其他系統使用 WebGL Circle Layer
   useEffect(() => {
     if (!map.current || !mapLoaded) return;
 
-    // 3D 模式或 WebGL Symbol Layer 模式時清除所有 2D 標記並跳過
-    if (use3DMode || useSymbolLayer) {
+    // 只有 3D 模式時清除 DOM 標記（WebGL 模式下仍保留高鐵 DOM Markers）
+    if (use3DMode) {
       for (const marker of thsrTrainMarkers.current.values()) {
         marker.remove();
       }
@@ -2171,7 +2172,7 @@ function App() {
         }
       }
     }
-  }, [mapLoaded, filteredThsrTrains, use3DMode, useSymbolLayer, handleSelectTrain, selectedTrainId]);
+  }, [mapLoaded, filteredThsrTrains, use3DMode, handleSelectTrain, selectedTrainId]);
 
   // 更新高雄捷運列車標記（2D 模式時使用）
   useEffect(() => {

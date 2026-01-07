@@ -61,13 +61,14 @@ export class TrainSymbolLayer {
     });
 
     // 建立選中光暈圖層 (最底層)
+    // 尺寸約為選中圓點的 1.5 倍
     this.map.addLayer({
       id: TrainSymbolLayer.LAYER_GLOW,
       type: 'circle',
       source: TrainSymbolLayer.SOURCE_ID,
       filter: ['==', ['get', 'isSelected'], true],
       paint: {
-        'circle-radius': 16,
+        'circle-radius': 12,
         'circle-color': ['get', 'color'],
         'circle-opacity': 0.3,
         'circle-blur': 1,
@@ -75,6 +76,7 @@ export class TrainSymbolLayer {
     });
 
     // 建立停站發光圖層（僅 stopped 且非 selected 時顯示）
+    // 尺寸約為停站圓點的 1.5 倍
     this.map.addLayer({
       id: TrainSymbolLayer.LAYER_STOPPED_GLOW,
       type: 'circle',
@@ -85,7 +87,7 @@ export class TrainSymbolLayer {
         ['!=', ['get', 'isSelected'], true],
       ],
       paint: {
-        'circle-radius': 12,
+        'circle-radius': 9,
         'circle-color': ['get', 'color'],
         'circle-opacity': 0.25,
         'circle-blur': 0.8,
@@ -99,7 +101,7 @@ export class TrainSymbolLayer {
       source: TrainSymbolLayer.SOURCE_ID,
       filter: ['==', ['get', 'isColliding'], true],
       paint: {
-        'circle-radius': 12,
+        'circle-radius': 8,
         'circle-color': '#ffcc00',
         'circle-stroke-color': '#ff6600',
         'circle-stroke-width': 2,
@@ -109,6 +111,8 @@ export class TrainSymbolLayer {
     });
 
     // 建立基礎圓點圖層 (最上層)
+    // 尺寸匹配參考專案 DOM Markers: running 12px, stopped 14px, selected 18px
+    // 公式: total_size = 2 * radius + 2 * stroke_width (stroke 在外圈)
     this.map.addLayer({
       id: TrainSymbolLayer.LAYER_BASE,
       type: 'circle',
@@ -116,9 +120,9 @@ export class TrainSymbolLayer {
       paint: {
         'circle-radius': [
           'case',
-          ['get', 'isSelected'], 9,
-          ['==', ['get', 'status'], 'stopped'], 7,
-          6,
+          ['get', 'isSelected'], 6,    // 6*2 + 3*2 = 18px
+          ['==', ['get', 'status'], 'stopped'], 5, // 5*2 + 2*2 = 14px
+          4,                            // 4*2 + 2*2 = 12px
         ],
         'circle-color': ['get', 'color'],
         'circle-stroke-color': '#ffffff',

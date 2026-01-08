@@ -27,6 +27,7 @@ import { Thsr3DLayer } from './layers/Thsr3DLayer';
 import { Krtc3DLayer } from './layers/Krtc3DLayer';
 import { Klrt3DLayer } from './layers/Klrt3DLayer';
 import { Tmrt3DLayer } from './layers/Tmrt3DLayer';
+import { Tra3DLayer } from './layers/Tra3DLayer';
 import { TrainSymbolLayer } from './layers/TrainSymbolLayer';
 import { useAllTrains } from './hooks/useAllTrains';
 import { ThemeToggle, type MapTheme, type VisualTheme, getVisualTheme } from './components/ThemeToggle';
@@ -204,6 +205,7 @@ function App() {
   const krtc3DLayerRef = useRef<Krtc3DLayer | null>(null);
   const klrt3DLayerRef = useRef<Klrt3DLayer | null>(null);
   const tmrt3DLayerRef = useRef<Tmrt3DLayer | null>(null);
+  const tra3DLayerRef = useRef<Tra3DLayer | null>(null);
 
   // WebGL Circle Layer（取代 DOM Markers，階段 1 基礎設施）
   const trainSymbolLayerRef = useRef<TrainSymbolLayer | null>(null);
@@ -522,7 +524,7 @@ function App() {
     return names;
   }, [stations, thsrStations, krtcStations, klrtStations, tmrtStations]);
 
-  // 取得選中的列車資料（同時支援 MRT、THSR、KRTC、KLRT 和 TMRT）
+  // 取得選中的列車資料（同時支援 MRT、THSR、KRTC、KLRT、TMRT 和 TRA）
   const selectedTrain = useMemo(() => {
     if (!selectedTrainId) return null;
     // 先從 MRT 找
@@ -540,8 +542,11 @@ function App() {
     // 最後從 TMRT 找
     const tmrtTrain = filteredTmrtTrains.find(t => t.trainId === selectedTrainId);
     if (tmrtTrain) return tmrtTrain;
+    // 從 TRA O-D 列車找
+    const traTrain = odTrains.find(t => t.trainId === selectedTrainId);
+    if (traTrain) return traTrain;
     return null;
-  }, [selectedTrainId, filteredTrains, filteredThsrTrains, filteredKrtcTrains, filteredKlrtTrains, filteredTmrtTrains]);
+  }, [selectedTrainId, filteredTrains, filteredThsrTrains, filteredKrtcTrains, filteredKlrtTrains, filteredTmrtTrains, odTrains]);
 
 
   // 選擇列車
@@ -1533,6 +1538,56 @@ function App() {
   useEffect(() => {
     if (!tmrt3DLayerRef.current || !use3DMode) return;
     tmrt3DLayerRef.current.setSelectedTrainId(selectedTrainId);
+  }, [selectedTrainId, use3DMode]);
+
+  // === TRA 台鐵 3D 圖層 ===
+  // 建立台鐵車站座標索引
+  const traStationCoordinates = useMemo(() => {
+    const coords = new Map<string, [number, number]>();
+    if (traStations) {
+      for (const feature of traStations.features) {
+        const stationId = feature.properties.station_id;
+        const geometry = feature.geometry as GeoJSON.Point;
+        coords.set(stationId, geometry.coordinates as [number, number]);
+      }
+    }
+    return coords;
+  }, [traStations]);
+
+  // 初始化台鐵 3D 圖層
+  useEffect(() => {
+    if (!map.current || !mapLoaded || !use3DMode) return;
+    if (odTracks.size === 0) return;
+    if (traState === 'hidden') return;
+
+    // 建立台鐵 3D 圖層
+    const layer = new Tra3DLayer(odTracks);
+    layer.setStations(traStationCoordinates);
+    layer.setOnSelect(handleSelectTrain);
+    tra3DLayerRef.current = layer;
+
+    // 加入地圖
+    map.current.addLayer(layer);
+
+    return () => {
+      if (map.current && map.current.getLayer('tra-3d-layer')) {
+        map.current.removeLayer('tra-3d-layer');
+      }
+      tra3DLayerRef.current = null;
+    };
+  }, [mapLoaded, odTracks, traStationCoordinates, use3DMode, traState, handleSelectTrain, styleVersion]);
+
+  // 更新台鐵 3D 圖層列車資料（僅 O-D 專屬軌道列車）
+  useEffect(() => {
+    if (!tra3DLayerRef.current || !use3DMode) return;
+    if (traState === 'hidden') return;
+    tra3DLayerRef.current.updateTrains(odTrains);
+  }, [odTrains, use3DMode, traState]);
+
+  // 更新台鐵 3D 圖層選中狀態
+  useEffect(() => {
+    if (!tra3DLayerRef.current || !use3DMode) return;
+    tra3DLayerRef.current.setSelectedTrainId(selectedTrainId);
   }, [selectedTrainId, use3DMode]);
 
   // === WebGL Circle Layer（TrainSymbolLayer）===

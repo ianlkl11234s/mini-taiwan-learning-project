@@ -521,8 +521,16 @@ function App() {
         names.set(stationId, stationName);
       }
     }
+    // TRA 車站
+    if (traStations) {
+      for (const feature of traStations.features) {
+        const stationId = feature.properties.station_id;
+        const stationName = feature.properties.name_zh;
+        names.set(stationId, stationName);
+      }
+    }
     return names;
-  }, [stations, thsrStations, krtcStations, klrtStations, tmrtStations]);
+  }, [stations, thsrStations, krtcStations, klrtStations, tmrtStations, traStations]);
 
   // 取得選中的列車資料（同時支援 MRT、THSR、KRTC、KLRT、TMRT 和 TRA）
   const selectedTrain = useMemo(() => {

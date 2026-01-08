@@ -1,0 +1,1028 @@
+{
+  "track_id": "LJ-0",
+  "route_id": "LJ",
+  "name": "LJ 線時刻表",
+  "departure_count": 34,
+  "departures": [
+    {
+      "departure_time": "06:00:00",
+      "train_id": "LJ-2100",
+      "train_no": "2100",
+      "train_type": "區間",
+      "origin_station": "1210",
+      "destination_station": "1194",
+      "od_track_id": "LJ-HC-LJ",
+      "stations": [
+        {
+          "station_id": "1210",
+          "station_name": "新竹",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "1190",
+          "station_name": "北新竹",
+          "arrival": 300,
+          "departure": 330
+        },
+        {
+          "station_id": "1194",
+          "station_name": "六家",
+          "arrival": 630,
+          "departure": 630
+        }
+      ],
+      "total_travel_time": 630
+    },
+    {
+      "departure_time": "06:30:00",
+      "train_id": "LJ-2101",
+      "train_no": "2101",
+      "train_type": "區間",
+      "origin_station": "1210",
+      "destination_station": "1194",
+      "od_track_id": "LJ-HC-LJ",
+      "stations": [
+        {
+          "station_id": "1210",
+          "station_name": "新竹",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "1190",
+          "station_name": "北新竹",
+          "arrival": 300,
+          "departure": 330
+        },
+        {
+          "station_id": "1194",
+          "station_name": "六家",
+          "arrival": 630,
+          "departure": 630
+        }
+      ],
+      "total_travel_time": 630
+    },
+    {
+      "departure_time": "07:00:00",
+      "train_id": "LJ-2102",
+      "train_no": "2102",
+      "train_type": "區間",
+      "origin_station": "1210",
+      "destination_station": "1194",
+      "od_track_id": "LJ-HC-LJ",
+      "stations": [
+        {
+          "station_id": "1210",
+          "station_name": "新竹",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "1190",
+          "station_name": "北新竹",
+          "arrival": 300,
+          "departure": 330
+        },
+        {
+          "station_id": "1194",
+          "station_name": "六家",
+          "arrival": 630,
+          "departure": 630
+        }
+      ],
+      "total_travel_time": 630
+    },
+    {
+      "departure_time": "07:30:00",
+      "train_id": "LJ-2103",
+      "train_no": "2103",
+      "train_type": "區間",
+      "origin_station": "1210",
+      "destination_station": "1194",
+      "od_track_id": "LJ-HC-LJ",
+      "stations": [
+        {
+          "station_id": "1210",
+          "station_name": "新竹",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "1190",
+          "station_name": "北新竹",
+          "arrival": 300,
+          "departure": 330
+        },
+        {
+          "station_id": "1194",
+          "station_name": "六家",
+          "arrival": 630,
+          "departure": 630
+        }
+      ],
+      "total_travel_time": 630
+    },
+    {
+      "departure_time": "08:00:00",
+      "train_id": "LJ-2104",
+      "train_no": "2104",
+      "train_type": "區間",
+      "origin_station": "1210",
+      "destination_station": "1194",
+      "od_track_id": "LJ-HC-LJ",
+      "stations": [
+        {
+          "station_id": "1210",
+          "station_name": "新竹",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "1190",
+          "station_name": "北新竹",
+          "arrival": 300,
+          "departure": 330
+        },
+        {
+          "station_id": "1194",
+          "station_name": "六家",
+          "arrival": 630,
+          "departure": 630
+        }
+      ],
+      "total_travel_time": 630
+    },
+    {
+      "departure_time": "08:30:00",
+      "train_id": "LJ-2105",
+      "train_no": "2105",
+      "train_type": "區間",
+      "origin_station": "1210",
+      "destination_station": "1194",
+      "od_track_id": "LJ-HC-LJ",
+      "stations": [
+        {
+          "station_id": "1210",
+          "station_name": "新竹",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "1190",
+          "station_name": "北新竹",
+          "arrival": 300,
+          "departure": 330
+        },
+        {
+          "station_id": "1194",
+          "station_name": "六家",
+          "arrival": 630,
+          "departure": 630
+        }
+      ],
+      "total_travel_time": 630
+    },
+    {
+      "departure_time": "09:00:00",
+      "train_id": "LJ-2106",
+      "train_no": "2106",
+      "train_type": "區間",
+      "origin_station": "1210",
+      "destination_station": "1194",
+      "od_track_id": "LJ-HC-LJ",
+      "stations": [
+        {
+          "station_id": "1210",
+          "station_name": "新竹",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "1190",
+          "station_name": "北新竹",
+          "arrival": 300,
+          "departure": 330
+        },
+        {
+          "station_id": "1194",
+          "station_name": "六家",
+          "arrival": 630,
+          "departure": 630
+        }
+      ],
+      "total_travel_time": 630
+    },
+    {
+      "departure_time": "09:30:00",
+      "train_id": "LJ-2107",
+      "train_no": "2107",
+      "train_type": "區間",
+      "origin_station": "1210",
+      "destination_station": "1194",
+      "od_track_id": "LJ-HC-LJ",
+      "stations": [
+        {
+          "station_id": "1210",
+          "station_name": "新竹",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "1190",
+          "station_name": "北新竹",
+          "arrival": 300,
+          "departure": 330
+        },
+        {
+          "station_id": "1194",
+          "station_name": "六家",
+          "arrival": 630,
+          "departure": 630
+        }
+      ],
+      "total_travel_time": 630
+    },
+    {
+      "departure_time": "10:00:00",
+      "train_id": "LJ-2108",
+      "train_no": "2108",
+      "train_type": "區間",
+      "origin_station": "1210",
+      "destination_station": "1194",
+      "od_track_id": "LJ-HC-LJ",
+      "stations": [
+        {
+          "station_id": "1210",
+          "station_name": "新竹",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "1190",
+          "station_name": "北新竹",
+          "arrival": 300,
+          "departure": 330
+        },
+        {
+          "station_id": "1194",
+          "station_name": "六家",
+          "arrival": 630,
+          "departure": 630
+        }
+      ],
+      "total_travel_time": 630
+    },
+    {
+      "departure_time": "10:30:00",
+      "train_id": "LJ-2109",
+      "train_no": "2109",
+      "train_type": "區間",
+      "origin_station": "1210",
+      "destination_station": "1194",
+      "od_track_id": "LJ-HC-LJ",
+      "stations": [
+        {
+          "station_id": "1210",
+          "station_name": "新竹",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "1190",
+          "station_name": "北新竹",
+          "arrival": 300,
+          "departure": 330
+        },
+        {
+          "station_id": "1194",
+          "station_name": "六家",
+          "arrival": 630,
+          "departure": 630
+        }
+      ],
+      "total_travel_time": 630
+    },
+    {
+      "departure_time": "11:00:00",
+      "train_id": "LJ-2110",
+      "train_no": "2110",
+      "train_type": "區間",
+      "origin_station": "1210",
+      "destination_station": "1194",
+      "od_track_id": "LJ-HC-LJ",
+      "stations": [
+        {
+          "station_id": "1210",
+          "station_name": "新竹",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "1190",
+          "station_name": "北新竹",
+          "arrival": 300,
+          "departure": 330
+        },
+        {
+          "station_id": "1194",
+          "station_name": "六家",
+          "arrival": 630,
+          "departure": 630
+        }
+      ],
+      "total_travel_time": 630
+    },
+    {
+      "departure_time": "11:30:00",
+      "train_id": "LJ-2111",
+      "train_no": "2111",
+      "train_type": "區間",
+      "origin_station": "1210",
+      "destination_station": "1194",
+      "od_track_id": "LJ-HC-LJ",
+      "stations": [
+        {
+          "station_id": "1210",
+          "station_name": "新竹",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "1190",
+          "station_name": "北新竹",
+          "arrival": 300,
+          "departure": 330
+        },
+        {
+          "station_id": "1194",
+          "station_name": "六家",
+          "arrival": 630,
+          "departure": 630
+        }
+      ],
+      "total_travel_time": 630
+    },
+    {
+      "departure_time": "12:00:00",
+      "train_id": "LJ-2112",
+      "train_no": "2112",
+      "train_type": "區間",
+      "origin_station": "1210",
+      "destination_station": "1194",
+      "od_track_id": "LJ-HC-LJ",
+      "stations": [
+        {
+          "station_id": "1210",
+          "station_name": "新竹",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "1190",
+          "station_name": "北新竹",
+          "arrival": 300,
+          "departure": 330
+        },
+        {
+          "station_id": "1194",
+          "station_name": "六家",
+          "arrival": 630,
+          "departure": 630
+        }
+      ],
+      "total_travel_time": 630
+    },
+    {
+      "departure_time": "12:30:00",
+      "train_id": "LJ-2113",
+      "train_no": "2113",
+      "train_type": "區間",
+      "origin_station": "1210",
+      "destination_station": "1194",
+      "od_track_id": "LJ-HC-LJ",
+      "stations": [
+        {
+          "station_id": "1210",
+          "station_name": "新竹",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "1190",
+          "station_name": "北新竹",
+          "arrival": 300,
+          "departure": 330
+        },
+        {
+          "station_id": "1194",
+          "station_name": "六家",
+          "arrival": 630,
+          "departure": 630
+        }
+      ],
+      "total_travel_time": 630
+    },
+    {
+      "departure_time": "13:00:00",
+      "train_id": "LJ-2114",
+      "train_no": "2114",
+      "train_type": "區間",
+      "origin_station": "1210",
+      "destination_station": "1194",
+      "od_track_id": "LJ-HC-LJ",
+      "stations": [
+        {
+          "station_id": "1210",
+          "station_name": "新竹",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "1190",
+          "station_name": "北新竹",
+          "arrival": 300,
+          "departure": 330
+        },
+        {
+          "station_id": "1194",
+          "station_name": "六家",
+          "arrival": 630,
+          "departure": 630
+        }
+      ],
+      "total_travel_time": 630
+    },
+    {
+      "departure_time": "13:30:00",
+      "train_id": "LJ-2115",
+      "train_no": "2115",
+      "train_type": "區間",
+      "origin_station": "1210",
+      "destination_station": "1194",
+      "od_track_id": "LJ-HC-LJ",
+      "stations": [
+        {
+          "station_id": "1210",
+          "station_name": "新竹",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "1190",
+          "station_name": "北新竹",
+          "arrival": 300,
+          "departure": 330
+        },
+        {
+          "station_id": "1194",
+          "station_name": "六家",
+          "arrival": 630,
+          "departure": 630
+        }
+      ],
+      "total_travel_time": 630
+    },
+    {
+      "departure_time": "14:00:00",
+      "train_id": "LJ-2116",
+      "train_no": "2116",
+      "train_type": "區間",
+      "origin_station": "1210",
+      "destination_station": "1194",
+      "od_track_id": "LJ-HC-LJ",
+      "stations": [
+        {
+          "station_id": "1210",
+          "station_name": "新竹",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "1190",
+          "station_name": "北新竹",
+          "arrival": 300,
+          "departure": 330
+        },
+        {
+          "station_id": "1194",
+          "station_name": "六家",
+          "arrival": 630,
+          "departure": 630
+        }
+      ],
+      "total_travel_time": 630
+    },
+    {
+      "departure_time": "14:30:00",
+      "train_id": "LJ-2117",
+      "train_no": "2117",
+      "train_type": "區間",
+      "origin_station": "1210",
+      "destination_station": "1194",
+      "od_track_id": "LJ-HC-LJ",
+      "stations": [
+        {
+          "station_id": "1210",
+          "station_name": "新竹",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "1190",
+          "station_name": "北新竹",
+          "arrival": 300,
+          "departure": 330
+        },
+        {
+          "station_id": "1194",
+          "station_name": "六家",
+          "arrival": 630,
+          "departure": 630
+        }
+      ],
+      "total_travel_time": 630
+    },
+    {
+      "departure_time": "15:00:00",
+      "train_id": "LJ-2118",
+      "train_no": "2118",
+      "train_type": "區間",
+      "origin_station": "1210",
+      "destination_station": "1194",
+      "od_track_id": "LJ-HC-LJ",
+      "stations": [
+        {
+          "station_id": "1210",
+          "station_name": "新竹",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "1190",
+          "station_name": "北新竹",
+          "arrival": 300,
+          "departure": 330
+        },
+        {
+          "station_id": "1194",
+          "station_name": "六家",
+          "arrival": 630,
+          "departure": 630
+        }
+      ],
+      "total_travel_time": 630
+    },
+    {
+      "departure_time": "15:30:00",
+      "train_id": "LJ-2119",
+      "train_no": "2119",
+      "train_type": "區間",
+      "origin_station": "1210",
+      "destination_station": "1194",
+      "od_track_id": "LJ-HC-LJ",
+      "stations": [
+        {
+          "station_id": "1210",
+          "station_name": "新竹",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "1190",
+          "station_name": "北新竹",
+          "arrival": 300,
+          "departure": 330
+        },
+        {
+          "station_id": "1194",
+          "station_name": "六家",
+          "arrival": 630,
+          "departure": 630
+        }
+      ],
+      "total_travel_time": 630
+    },
+    {
+      "departure_time": "16:00:00",
+      "train_id": "LJ-2120",
+      "train_no": "2120",
+      "train_type": "區間",
+      "origin_station": "1210",
+      "destination_station": "1194",
+      "od_track_id": "LJ-HC-LJ",
+      "stations": [
+        {
+          "station_id": "1210",
+          "station_name": "新竹",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "1190",
+          "station_name": "北新竹",
+          "arrival": 300,
+          "departure": 330
+        },
+        {
+          "station_id": "1194",
+          "station_name": "六家",
+          "arrival": 630,
+          "departure": 630
+        }
+      ],
+      "total_travel_time": 630
+    },
+    {
+      "departure_time": "16:30:00",
+      "train_id": "LJ-2121",
+      "train_no": "2121",
+      "train_type": "區間",
+      "origin_station": "1210",
+      "destination_station": "1194",
+      "od_track_id": "LJ-HC-LJ",
+      "stations": [
+        {
+          "station_id": "1210",
+          "station_name": "新竹",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "1190",
+          "station_name": "北新竹",
+          "arrival": 300,
+          "departure": 330
+        },
+        {
+          "station_id": "1194",
+          "station_name": "六家",
+          "arrival": 630,
+          "departure": 630
+        }
+      ],
+      "total_travel_time": 630
+    },
+    {
+      "departure_time": "17:00:00",
+      "train_id": "LJ-2122",
+      "train_no": "2122",
+      "train_type": "區間",
+      "origin_station": "1210",
+      "destination_station": "1194",
+      "od_track_id": "LJ-HC-LJ",
+      "stations": [
+        {
+          "station_id": "1210",
+          "station_name": "新竹",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "1190",
+          "station_name": "北新竹",
+          "arrival": 300,
+          "departure": 330
+        },
+        {
+          "station_id": "1194",
+          "station_name": "六家",
+          "arrival": 630,
+          "departure": 630
+        }
+      ],
+      "total_travel_time": 630
+    },
+    {
+      "departure_time": "17:30:00",
+      "train_id": "LJ-2123",
+      "train_no": "2123",
+      "train_type": "區間",
+      "origin_station": "1210",
+      "destination_station": "1194",
+      "od_track_id": "LJ-HC-LJ",
+      "stations": [
+        {
+          "station_id": "1210",
+          "station_name": "新竹",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "1190",
+          "station_name": "北新竹",
+          "arrival": 300,
+          "departure": 330
+        },
+        {
+          "station_id": "1194",
+          "station_name": "六家",
+          "arrival": 630,
+          "departure": 630
+        }
+      ],
+      "total_travel_time": 630
+    },
+    {
+      "departure_time": "18:00:00",
+      "train_id": "LJ-2124",
+      "train_no": "2124",
+      "train_type": "區間",
+      "origin_station": "1210",
+      "destination_station": "1194",
+      "od_track_id": "LJ-HC-LJ",
+      "stations": [
+        {
+          "station_id": "1210",
+          "station_name": "新竹",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "1190",
+          "station_name": "北新竹",
+          "arrival": 300,
+          "departure": 330
+        },
+        {
+          "station_id": "1194",
+          "station_name": "六家",
+          "arrival": 630,
+          "departure": 630
+        }
+      ],
+      "total_travel_time": 630
+    },
+    {
+      "departure_time": "18:30:00",
+      "train_id": "LJ-2125",
+      "train_no": "2125",
+      "train_type": "區間",
+      "origin_station": "1210",
+      "destination_station": "1194",
+      "od_track_id": "LJ-HC-LJ",
+      "stations": [
+        {
+          "station_id": "1210",
+          "station_name": "新竹",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "1190",
+          "station_name": "北新竹",
+          "arrival": 300,
+          "departure": 330
+        },
+        {
+          "station_id": "1194",
+          "station_name": "六家",
+          "arrival": 630,
+          "departure": 630
+        }
+      ],
+      "total_travel_time": 630
+    },
+    {
+      "departure_time": "19:00:00",
+      "train_id": "LJ-2126",
+      "train_no": "2126",
+      "train_type": "區間",
+      "origin_station": "1210",
+      "destination_station": "1194",
+      "od_track_id": "LJ-HC-LJ",
+      "stations": [
+        {
+          "station_id": "1210",
+          "station_name": "新竹",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "1190",
+          "station_name": "北新竹",
+          "arrival": 300,
+          "departure": 330
+        },
+        {
+          "station_id": "1194",
+          "station_name": "六家",
+          "arrival": 630,
+          "departure": 630
+        }
+      ],
+      "total_travel_time": 630
+    },
+    {
+      "departure_time": "19:30:00",
+      "train_id": "LJ-2127",
+      "train_no": "2127",
+      "train_type": "區間",
+      "origin_station": "1210",
+      "destination_station": "1194",
+      "od_track_id": "LJ-HC-LJ",
+      "stations": [
+        {
+          "station_id": "1210",
+          "station_name": "新竹",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "1190",
+          "station_name": "北新竹",
+          "arrival": 300,
+          "departure": 330
+        },
+        {
+          "station_id": "1194",
+          "station_name": "六家",
+          "arrival": 630,
+          "departure": 630
+        }
+      ],
+      "total_travel_time": 630
+    },
+    {
+      "departure_time": "20:00:00",
+      "train_id": "LJ-2128",
+      "train_no": "2128",
+      "train_type": "區間",
+      "origin_station": "1210",
+      "destination_station": "1194",
+      "od_track_id": "LJ-HC-LJ",
+      "stations": [
+        {
+          "station_id": "1210",
+          "station_name": "新竹",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "1190",
+          "station_name": "北新竹",
+          "arrival": 300,
+          "departure": 330
+        },
+        {
+          "station_id": "1194",
+          "station_name": "六家",
+          "arrival": 630,
+          "departure": 630
+        }
+      ],
+      "total_travel_time": 630
+    },
+    {
+      "departure_time": "20:30:00",
+      "train_id": "LJ-2129",
+      "train_no": "2129",
+      "train_type": "區間",
+      "origin_station": "1210",
+      "destination_station": "1194",
+      "od_track_id": "LJ-HC-LJ",
+      "stations": [
+        {
+          "station_id": "1210",
+          "station_name": "新竹",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "1190",
+          "station_name": "北新竹",
+          "arrival": 300,
+          "departure": 330
+        },
+        {
+          "station_id": "1194",
+          "station_name": "六家",
+          "arrival": 630,
+          "departure": 630
+        }
+      ],
+      "total_travel_time": 630
+    },
+    {
+      "departure_time": "21:00:00",
+      "train_id": "LJ-2130",
+      "train_no": "2130",
+      "train_type": "區間",
+      "origin_station": "1210",
+      "destination_station": "1194",
+      "od_track_id": "LJ-HC-LJ",
+      "stations": [
+        {
+          "station_id": "1210",
+          "station_name": "新竹",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "1190",
+          "station_name": "北新竹",
+          "arrival": 300,
+          "departure": 330
+        },
+        {
+          "station_id": "1194",
+          "station_name": "六家",
+          "arrival": 630,
+          "departure": 630
+        }
+      ],
+      "total_travel_time": 630
+    },
+    {
+      "departure_time": "21:30:00",
+      "train_id": "LJ-2131",
+      "train_no": "2131",
+      "train_type": "區間",
+      "origin_station": "1210",
+      "destination_station": "1194",
+      "od_track_id": "LJ-HC-LJ",
+      "stations": [
+        {
+          "station_id": "1210",
+          "station_name": "新竹",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "1190",
+          "station_name": "北新竹",
+          "arrival": 300,
+          "departure": 330
+        },
+        {
+          "station_id": "1194",
+          "station_name": "六家",
+          "arrival": 630,
+          "departure": 630
+        }
+      ],
+      "total_travel_time": 630
+    },
+    {
+      "departure_time": "22:00:00",
+      "train_id": "LJ-2132",
+      "train_no": "2132",
+      "train_type": "區間",
+      "origin_station": "1210",
+      "destination_station": "1194",
+      "od_track_id": "LJ-HC-LJ",
+      "stations": [
+        {
+          "station_id": "1210",
+          "station_name": "新竹",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "1190",
+          "station_name": "北新竹",
+          "arrival": 300,
+          "departure": 330
+        },
+        {
+          "station_id": "1194",
+          "station_name": "六家",
+          "arrival": 630,
+          "departure": 630
+        }
+      ],
+      "total_travel_time": 630
+    },
+    {
+      "departure_time": "22:30:00",
+      "train_id": "LJ-2133",
+      "train_no": "2133",
+      "train_type": "區間",
+      "origin_station": "1210",
+      "destination_station": "1194",
+      "od_track_id": "LJ-HC-LJ",
+      "stations": [
+        {
+          "station_id": "1210",
+          "station_name": "新竹",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "1190",
+          "station_name": "北新竹",
+          "arrival": 300,
+          "departure": 330
+        },
+        {
+          "station_id": "1194",
+          "station_name": "六家",
+          "arrival": 630,
+          "departure": 630
+        }
+      ],
+      "total_travel_time": 630
+    }
+  ]
+}

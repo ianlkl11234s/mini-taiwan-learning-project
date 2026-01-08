@@ -11,9 +11,6 @@ import type { TrainFeature, TransportSystem, TrainStatus } from '../types/trainF
 // MRT (TRTC) 顏色
 import { getLineIdFromTrackId, getTrainColor, getDirectionFromTrackId } from '../constants/lineInfo';
 
-// THSR 顏色
-import { getThsrDirection, getThsrTrainColor } from '../constants/thsrInfo';
-
 // KRTC 顏色
 import { getKrtcLineId, getKrtcDirection, getKrtcTrainColor } from '../constants/krtcInfo';
 

@@ -9,7 +9,7 @@
  */
 
 import type { TrackSchedule, StationTime } from '../types/schedule';
-import type { Track } from '../types/track';
+import type { Track, TrackGeometry } from '../types/track';
 
 export interface TraTrain {
   trainId: string;
@@ -50,6 +50,28 @@ const TERMINAL_DWELL_TIME = 60;
 
 // 起站提前出現時間（秒）- 列車在發車前多久出現在起站
 const ORIGIN_EARLY_APPEAR_TIME = 120; // 2 分鐘
+
+/**
+ * 從軌道幾何取得座標陣列
+ * 支援 LineString 和 MultiLineString
+ */
+function getTrackCoordinates(geometry: TrackGeometry): [number, number][] {
+  if (geometry.type === 'LineString') {
+    return geometry.coordinates;
+  } else if (geometry.type === 'MultiLineString') {
+    // 將 MultiLineString 的所有線段展平為單一連續陣列
+    const coords: [number, number][] = [];
+    for (const lineCoords of geometry.coordinates) {
+      // 如果不是第一段，跳過第一個點（避免重複）
+      const startIndex = coords.length > 0 ? 1 : 0;
+      for (let i = startIndex; i < lineCoords.length; i++) {
+        coords.push(lineCoords[i]);
+      }
+    }
+    return coords;
+  }
+  return [];
+}
 
 /**
  * 計算線段總長度
@@ -223,7 +245,9 @@ export class TraTrainEngine {
       const track = this.tracks.get(trackId);
       if (!track) continue;
 
-      const coords = track.geometry.coordinates as [number, number][];
+      const coords = getTrackCoordinates(track.geometry);
+      if (coords.length === 0) continue;
+
       const totalStations = schedule.stations.length;
 
       // 遍歷該軌道的所有發車班次

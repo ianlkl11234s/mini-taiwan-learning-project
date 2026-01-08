@@ -4,18 +4,32 @@ import type { TrackSchedule } from '../types/schedule';
 
 /**
  * 台鐵軌道 ID 列表 (用於顯示軌道)
- * SH: 沙崙線
- * CZ: 成追線
- * WL-TN-KH: 西部幹線 臺南-高雄段
+ * 使用官方 SHP 資料 (國土測繪中心)
  */
 const TRA_TRACK_IDS = [
-  'SH-0', 'SH-1',             // 沙崙線
-  'CZ-0', 'CZ-1',             // 成追線
-  'WL-TN-KH-0', 'WL-TN-KH-1', // 西部幹線 臺南-高雄段
-  'WL-TN-ES-0', 'WL-TN-ES-1', // 西部幹線 臺南-二水段 (含嘉義、雲林)
-  'PT-0', 'PT-1',             // 屏東線 (左營-屏東)
+  // 西部幹線
+  'WL-N-0', 'WL-N-1',     // 縱貫線北段 (基隆-竹南)
+  'WL-M-0', 'WL-M-1',     // 山線 (竹南-彰化)
+  'WL-H-0', 'WL-H-1',     // 海線 (竹南-彰化)
+  'WL-H2-0', 'WL-H2-1',   // 海岸線
+  'WL-S1-0', 'WL-S1-1',   // 縱貫線南段 (彰化-高雄)
+  'WL-S2-0', 'WL-S2-1',   // 縱貫線南段 (竹南-彰化)
+  // 東部幹線
+  'YL-0', 'YL-1',         // 宜蘭線 (八堵-蘇澳)
+  'BH-0', 'BH-1',         // 北迴線 (蘇澳新-花蓮)
+  'TD-0', 'TD-1',         // 臺東線 (花蓮-臺東)
+  'NH-0', 'NH-1',         // 南迴線 (臺東-枋寮)
+  // 屏東線
+  'PT-0', 'PT-1',         // 屏東線 (高雄-枋寮)
+  // 支線
+  'SH-0', 'SH-1',         // 沙崙線
+  'CZ-0', 'CZ-1',         // 成追線
+  'NW-0', 'NW-1',         // 內灣線
+  'LJ-0', 'LJ-1',         // 六家線
+  'JJ-0', 'JJ-1',         // 集集線
+  'PX-0', 'PX-1',         // 平溪線
+  'SA-0', 'SA-1',         // 深澳線
 ];
-// 完整 WL 軌道太長，改用分段：'WL-0', 'WL-1'
 
 /**
  * 有完整時刻表的軌道 ID (用於列車動畫)
@@ -67,10 +81,10 @@ export function useTraData(): TraDataState {
       try {
         setLoading(true);
 
-        // 載入軌道
+        // 載入軌道 (使用官方資料)
         const trackFeatures: Track[] = [];
         for (const trackId of TRA_TRACK_IDS) {
-          const res = await fetch(`/data/tra/tracks/${trackId}.geojson`);
+          const res = await fetch(`/data/tra/tracks_official/${trackId}.geojson`);
           if (!res.ok) throw new Error(`Failed to load TRA track ${trackId}`);
           const data = await res.json();
           if (data.features?.[0]) {
@@ -91,8 +105,8 @@ export function useTraData(): TraDataState {
         }
         setTrackMap(tMap);
 
-        // 載入車站
-        const stationsRes = await fetch('/data/tra/stations.geojson');
+        // 載入車站 (使用對齊到軌道的版本)
+        const stationsRes = await fetch('/data/tra/stations_snapped.geojson');
         if (!stationsRes.ok) throw new Error('Failed to load TRA stations');
         const stationsData = await stationsRes.json();
         setStations(stationsData);

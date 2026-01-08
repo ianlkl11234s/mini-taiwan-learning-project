@@ -2,10 +2,17 @@
  * 軌道資料類型定義
  */
 
-export interface TrackGeometry {
+export interface LineStringGeometry {
   type: 'LineString';
   coordinates: [number, number][];
 }
+
+export interface MultiLineStringGeometry {
+  type: 'MultiLineString';
+  coordinates: [number, number][][];
+}
+
+export type TrackGeometry = LineStringGeometry | MultiLineStringGeometry;
 
 export interface TrackProperties {
   track_id: string;

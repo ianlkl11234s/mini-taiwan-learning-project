@@ -24,6 +24,11 @@ const HSR_LINES = {
   THSR: { color: '#f47920', label: 'HSR', name: '台灣高鐵' },
 };
 
+// TRA 路線配置
+const TRA_LINES = {
+  TRA: { color: '#0066b3', label: 'TRA', name: '台灣鐵路' },
+};
+
 // KHH (高雄捷運 + 輕軌) 路線配置
 const KHH_LINES = {
   R: { color: '#e2211c', label: 'R', name: '紅線' },
@@ -42,6 +47,9 @@ export type MKFilterState = 'full' | 'tracks-only' | 'hidden';
 // THSR 三段式狀態
 export type ThsrFilterState = 'full' | 'tracks-only' | 'hidden';
 
+// TRA 三段式狀態
+export type TraFilterState = 'full' | 'tracks-only' | 'hidden';
+
 interface LineFilterProps {
   visibleLines: Set<string>;
   onToggleLine: (lineId: string) => void;
@@ -50,6 +58,8 @@ interface LineFilterProps {
   onMKStateChange: (state: MKFilterState) => void;
   thsrState: ThsrFilterState;
   onThsrStateChange: (state: ThsrFilterState) => void;
+  traState: TraFilterState;
+  onTraStateChange: (state: TraFilterState) => void;
   // KRTC 改為個別路線控制
   visibleKrtcLines: Set<string>;
   onToggleKrtcLine: (lineId: string) => void;
@@ -61,7 +71,7 @@ interface LineFilterProps {
   visualTheme?: VisualTheme;
 }
 
-type ExpandedCategory = 'mrt' | 'cable' | 'hsr' | 'krtc' | 'tmrt' | null;
+type ExpandedCategory = 'mrt' | 'cable' | 'hsr' | 'tra' | 'krtc' | 'tmrt' | null;
 
 export function LineFilter({
   visibleLines,
@@ -71,6 +81,8 @@ export function LineFilter({
   onMKStateChange,
   thsrState,
   onThsrStateChange,
+  traState,
+  onTraStateChange,
   visibleKrtcLines,
   onToggleKrtcLine,
   onToggleAllKrtc,
@@ -130,6 +142,14 @@ export function LineFilter({
       thsrState === 'full' ? 'tracks-only' :
       thsrState === 'tracks-only' ? 'hidden' : 'full';
     onThsrStateChange(nextState);
+  };
+
+  // TRA 三段式切換
+  const handleTraClick = () => {
+    const nextState: TraFilterState =
+      traState === 'full' ? 'tracks-only' :
+      traState === 'tracks-only' ? 'hidden' : 'full';
+    onTraStateChange(nextState);
   };
 
 
@@ -204,6 +224,43 @@ export function LineFilter({
       case 'full': return '台灣高鐵 (全部顯示)';
       case 'tracks-only': return '台灣高鐵 (僅軌道與車站)';
       case 'hidden': return '台灣高鐵 (隱藏)';
+    }
+  };
+
+  // TRA 狀態對應的視覺效果
+  const getTraStyle = () => {
+    const config = TRA_LINES.TRA;
+    switch (traState) {
+      case 'full':
+        return {
+          background: config.color,
+          opacity: 1,
+          boxShadow: `0 0 8px ${config.color}`,
+          border: `2px solid ${colors.borderActive}`,
+        };
+      case 'tracks-only':
+        return {
+          background: config.color,
+          opacity: 0.5,
+          boxShadow: 'none',
+          border: `2px dashed ${colors.borderActive}`,
+        };
+      case 'hidden':
+        return {
+          background: colors.disabledBg,
+          opacity: 0.4,
+          boxShadow: 'none',
+          border: `2px solid ${colors.borderActive}`,
+        };
+    }
+  };
+
+  // TRA 狀態 tooltip
+  const getTraTooltip = () => {
+    switch (traState) {
+      case 'full': return '台灣鐵路 (全部顯示)';
+      case 'tracks-only': return '台灣鐵路 (僅軌道與車站)';
+      case 'hidden': return '台灣鐵路 (隱藏)';
     }
   };
 
@@ -577,6 +634,68 @@ export function LineFilter({
           }}
         >
           高鐵
+        </button>
+      </div>
+
+      {/* TRA 分類按鈕 */}
+      <button
+        onClick={() => handleCategoryClick('tra')}
+        style={{
+          padding: '8px 14px',
+          borderRadius: 20,
+          border: expanded === 'tra' ? `2px solid ${colors.borderActive}` : `2px solid ${colors.borderInactive}`,
+          background: expanded === 'tra' ? colors.bgActive : colors.bgInactive,
+          color: expanded === 'tra' ? colors.textActive : colors.textInactive,
+          fontSize: 13,
+          fontWeight: 600,
+          cursor: 'pointer',
+          display: 'flex',
+          alignItems: 'center',
+          gap: 6,
+          transition: 'all 0.2s ease',
+          backdropFilter: 'blur(8px)',
+        }}
+      >
+        <span>TRA</span>
+        <span style={{
+          fontSize: 10,
+          transition: 'transform 0.3s ease',
+          transform: expanded === 'tra' ? 'rotate(90deg)' : 'rotate(0deg)',
+        }}>
+          ▶
+        </span>
+      </button>
+
+      {/* TRA 路線按鈕列表 */}
+      <div
+        style={{
+          display: 'flex',
+          gap: 8,
+          maxWidth: expanded === 'tra' ? 60 : 0,
+          overflow: 'hidden',
+          transition: 'max-width 0.3s ease-out, opacity 0.3s ease-out',
+          opacity: expanded === 'tra' ? 1 : 0,
+        }}
+      >
+        <button
+          onClick={handleTraClick}
+          title={getTraTooltip()}
+          style={{
+            width: 40,
+            height: 40,
+            borderRadius: '50%',
+            color: colors.textActive,
+            fontSize: 10,
+            fontWeight: 700,
+            cursor: 'pointer',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            transition: 'all 0.2s ease',
+            ...getTraStyle(),
+          }}
+        >
+          台鐵
         </button>
       </div>
 

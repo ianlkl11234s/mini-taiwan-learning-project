@@ -79,6 +79,9 @@ STATIONS = {
     '3434': '集集',
     '3435': '水里',
     '3436': '車埕',
+    # 成追線
+    '3350': '成功',
+    '2260': '追分',
 }
 
 # NW 線車站順序 (從新竹方向)
@@ -96,6 +99,10 @@ PX_STATIONS = ['7330', '7331', '7332', '7333', '7334', '7335', '7336']
 # JJ 線車站順序 (從二水到車埕)
 JJ_STATIONS = ['3430', '3431', '3432', '3433', '3434', '3435', '3436']
 # 二水 -> 源泉 -> 濁水 -> 龍泉 -> 集集 -> 水里 -> 車埕
+
+# CZ 線車站順序 (從成功到追分)
+CZ_STATIONS = ['3350', '2260']
+# 成功 -> 追分
 
 # O-D 路由定義
 OD_ROUTES = [
@@ -218,6 +225,27 @@ OD_ROUTES = [
         destination_name='二水',
         segments=[
             ('JJ-1', '3436', '3430'),    # 車埕→二水 (全線)
+        ]
+    ),
+    # CZ 線 O-D (成追線)
+    ODRoute(
+        od_track_id='CZ-CG-ZF',
+        origin_station_id='3350',
+        destination_station_id='2260',
+        origin_name='成功',
+        destination_name='追分',
+        segments=[
+            ('CZ-0', '3350', '2260'),    # 成功→追分 (全線)
+        ]
+    ),
+    ODRoute(
+        od_track_id='CZ-ZF-CG',
+        origin_station_id='2260',
+        destination_station_id='3350',
+        origin_name='追分',
+        destination_name='成功',
+        segments=[
+            ('CZ-1', '2260', '3350'),    # 追分→成功 (全線)
         ]
     ),
 ]
@@ -498,6 +526,17 @@ def get_intermediate_stations(route: ODRoute, stations: Dict[str, Station]) -> L
                 return JJ_STATIONS[origin_idx:dest_idx+1]
             else:
                 return JJ_STATIONS[dest_idx:origin_idx+1][::-1]
+
+    elif route.od_track_id.startswith('CZ-'):
+        # 成追線
+        origin_idx = CZ_STATIONS.index(route.origin_station_id) if route.origin_station_id in CZ_STATIONS else -1
+        dest_idx = CZ_STATIONS.index(route.destination_station_id) if route.destination_station_id in CZ_STATIONS else -1
+
+        if origin_idx >= 0 and dest_idx >= 0:
+            if origin_idx <= dest_idx:
+                return CZ_STATIONS[origin_idx:dest_idx+1]
+            else:
+                return CZ_STATIONS[dest_idx:origin_idx+1][::-1]
 
     return [route.origin_station_id, route.destination_station_id]
 

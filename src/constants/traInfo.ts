@@ -10,6 +10,7 @@ export const TRA_LINE_NAMES: Record<string, string> = {
   LJ: '六家線',
   PX: '平溪線',
   JJ: '集集線',
+  CZ: '成追線',
 };
 
 // 方向名稱（依線路區分）
@@ -38,6 +39,10 @@ export const TRA_DIRECTION_NAMES: Record<string, Record<string, string>> = {
     '0': '往二水',
     '1': '往車埕',
   },
+  CZ: {
+    '0': '往追分',
+    '1': '往成功',
+  },
 };
 
 // 台鐵主色調（藍色系）
@@ -52,6 +57,7 @@ export const TRA_TRACK_COLORS: Record<string, string> = {
   LJ: '#228b22', // 六家線 - 森林綠
   PX: '#ff6347', // 平溪線 - 番茄紅
   JJ: '#9932cc', // 集集線 - 深蘭花紫
+  CZ: '#ffa500', // 成追線 - 橙色
 };
 
 // 列車顏色（依線路和方向區分）
@@ -68,6 +74,8 @@ export const TRA_TRAIN_COLORS: Record<string, string> = {
   'PX-1': '#ff7f50', // 往菁桐 - 珊瑚色
   'JJ-0': '#9932cc', // 往二水 - 深蘭花紫
   'JJ-1': '#ba55d3', // 往車埕 - 中蘭花紫
+  'CZ-0': '#ffa500', // 往追分 - 橙色
+  'CZ-1': '#ff8c00', // 往成功 - 深橙色
 };
 
 // 3D 渲染用顏色
@@ -134,6 +142,8 @@ export const TRA_STATION_NAMES: Record<string, string> = {
   '7336': '菁桐',
   // 集集線 (3430 二水已在西部幹線定義)
   '3431': '源泉',
+  // 成追線 (3350 成功已在西部幹線定義)
+  '2260': '追分',
   '3432': '濁水',
   '3433': '龍泉',
   '3434': '集集',

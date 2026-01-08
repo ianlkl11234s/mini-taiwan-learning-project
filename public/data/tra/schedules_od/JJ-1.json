@@ -1,0 +1,312 @@
+{
+  "track_id": "JJ-1",
+  "route_id": "JJ",
+  "name": "JJ 線時刻表",
+  "departure_count": 16,
+  "departures": [
+    {
+      "departure_time": "06:30:00",
+      "train_id": "JJ-2702",
+      "train_no": "2702",
+      "train_type": "區間",
+      "origin_station": "3436",
+      "destination_station": "3430",
+      "od_track_id": "JJ-CT-ES",
+      "stations": [
+        { "station_id": "3436", "station_name": "車埕", "arrival": 0, "departure": 0 },
+        { "station_id": "3435", "station_name": "水里", "arrival": 300, "departure": 330 },
+        { "station_id": "3434", "station_name": "集集", "arrival": 600, "departure": 630 },
+        { "station_id": "3433", "station_name": "龍泉", "arrival": 900, "departure": 930 },
+        { "station_id": "3432", "station_name": "濁水", "arrival": 1200, "departure": 1230 },
+        { "station_id": "3431", "station_name": "源泉", "arrival": 1500, "departure": 1530 },
+        { "station_id": "3430", "station_name": "二水", "arrival": 1800, "departure": 1800 }
+      ],
+      "total_travel_time": 1800
+    },
+    {
+      "departure_time": "07:30:00",
+      "train_id": "JJ-2704",
+      "train_no": "2704",
+      "train_type": "區間",
+      "origin_station": "3436",
+      "destination_station": "3430",
+      "od_track_id": "JJ-CT-ES",
+      "stations": [
+        { "station_id": "3436", "station_name": "車埕", "arrival": 0, "departure": 0 },
+        { "station_id": "3435", "station_name": "水里", "arrival": 300, "departure": 330 },
+        { "station_id": "3434", "station_name": "集集", "arrival": 600, "departure": 630 },
+        { "station_id": "3433", "station_name": "龍泉", "arrival": 900, "departure": 930 },
+        { "station_id": "3432", "station_name": "濁水", "arrival": 1200, "departure": 1230 },
+        { "station_id": "3431", "station_name": "源泉", "arrival": 1500, "departure": 1530 },
+        { "station_id": "3430", "station_name": "二水", "arrival": 1800, "departure": 1800 }
+      ],
+      "total_travel_time": 1800
+    },
+    {
+      "departure_time": "08:30:00",
+      "train_id": "JJ-2706",
+      "train_no": "2706",
+      "train_type": "區間",
+      "origin_station": "3436",
+      "destination_station": "3430",
+      "od_track_id": "JJ-CT-ES",
+      "stations": [
+        { "station_id": "3436", "station_name": "車埕", "arrival": 0, "departure": 0 },
+        { "station_id": "3435", "station_name": "水里", "arrival": 300, "departure": 330 },
+        { "station_id": "3434", "station_name": "集集", "arrival": 600, "departure": 630 },
+        { "station_id": "3433", "station_name": "龍泉", "arrival": 900, "departure": 930 },
+        { "station_id": "3432", "station_name": "濁水", "arrival": 1200, "departure": 1230 },
+        { "station_id": "3431", "station_name": "源泉", "arrival": 1500, "departure": 1530 },
+        { "station_id": "3430", "station_name": "二水", "arrival": 1800, "departure": 1800 }
+      ],
+      "total_travel_time": 1800
+    },
+    {
+      "departure_time": "09:30:00",
+      "train_id": "JJ-2708",
+      "train_no": "2708",
+      "train_type": "區間",
+      "origin_station": "3436",
+      "destination_station": "3430",
+      "od_track_id": "JJ-CT-ES",
+      "stations": [
+        { "station_id": "3436", "station_name": "車埕", "arrival": 0, "departure": 0 },
+        { "station_id": "3435", "station_name": "水里", "arrival": 300, "departure": 330 },
+        { "station_id": "3434", "station_name": "集集", "arrival": 600, "departure": 630 },
+        { "station_id": "3433", "station_name": "龍泉", "arrival": 900, "departure": 930 },
+        { "station_id": "3432", "station_name": "濁水", "arrival": 1200, "departure": 1230 },
+        { "station_id": "3431", "station_name": "源泉", "arrival": 1500, "departure": 1530 },
+        { "station_id": "3430", "station_name": "二水", "arrival": 1800, "departure": 1800 }
+      ],
+      "total_travel_time": 1800
+    },
+    {
+      "departure_time": "10:30:00",
+      "train_id": "JJ-2710",
+      "train_no": "2710",
+      "train_type": "區間",
+      "origin_station": "3436",
+      "destination_station": "3430",
+      "od_track_id": "JJ-CT-ES",
+      "stations": [
+        { "station_id": "3436", "station_name": "車埕", "arrival": 0, "departure": 0 },
+        { "station_id": "3435", "station_name": "水里", "arrival": 300, "departure": 330 },
+        { "station_id": "3434", "station_name": "集集", "arrival": 600, "departure": 630 },
+        { "station_id": "3433", "station_name": "龍泉", "arrival": 900, "departure": 930 },
+        { "station_id": "3432", "station_name": "濁水", "arrival": 1200, "departure": 1230 },
+        { "station_id": "3431", "station_name": "源泉", "arrival": 1500, "departure": 1530 },
+        { "station_id": "3430", "station_name": "二水", "arrival": 1800, "departure": 1800 }
+      ],
+      "total_travel_time": 1800
+    },
+    {
+      "departure_time": "11:30:00",
+      "train_id": "JJ-2712",
+      "train_no": "2712",
+      "train_type": "區間",
+      "origin_station": "3436",
+      "destination_station": "3430",
+      "od_track_id": "JJ-CT-ES",
+      "stations": [
+        { "station_id": "3436", "station_name": "車埕", "arrival": 0, "departure": 0 },
+        { "station_id": "3435", "station_name": "水里", "arrival": 300, "departure": 330 },
+        { "station_id": "3434", "station_name": "集集", "arrival": 600, "departure": 630 },
+        { "station_id": "3433", "station_name": "龍泉", "arrival": 900, "departure": 930 },
+        { "station_id": "3432", "station_name": "濁水", "arrival": 1200, "departure": 1230 },
+        { "station_id": "3431", "station_name": "源泉", "arrival": 1500, "departure": 1530 },
+        { "station_id": "3430", "station_name": "二水", "arrival": 1800, "departure": 1800 }
+      ],
+      "total_travel_time": 1800
+    },
+    {
+      "departure_time": "12:30:00",
+      "train_id": "JJ-2714",
+      "train_no": "2714",
+      "train_type": "區間",
+      "origin_station": "3436",
+      "destination_station": "3430",
+      "od_track_id": "JJ-CT-ES",
+      "stations": [
+        { "station_id": "3436", "station_name": "車埕", "arrival": 0, "departure": 0 },
+        { "station_id": "3435", "station_name": "水里", "arrival": 300, "departure": 330 },
+        { "station_id": "3434", "station_name": "集集", "arrival": 600, "departure": 630 },
+        { "station_id": "3433", "station_name": "龍泉", "arrival": 900, "departure": 930 },
+        { "station_id": "3432", "station_name": "濁水", "arrival": 1200, "departure": 1230 },
+        { "station_id": "3431", "station_name": "源泉", "arrival": 1500, "departure": 1530 },
+        { "station_id": "3430", "station_name": "二水", "arrival": 1800, "departure": 1800 }
+      ],
+      "total_travel_time": 1800
+    },
+    {
+      "departure_time": "13:30:00",
+      "train_id": "JJ-2716",
+      "train_no": "2716",
+      "train_type": "區間",
+      "origin_station": "3436",
+      "destination_station": "3430",
+      "od_track_id": "JJ-CT-ES",
+      "stations": [
+        { "station_id": "3436", "station_name": "車埕", "arrival": 0, "departure": 0 },
+        { "station_id": "3435", "station_name": "水里", "arrival": 300, "departure": 330 },
+        { "station_id": "3434", "station_name": "集集", "arrival": 600, "departure": 630 },
+        { "station_id": "3433", "station_name": "龍泉", "arrival": 900, "departure": 930 },
+        { "station_id": "3432", "station_name": "濁水", "arrival": 1200, "departure": 1230 },
+        { "station_id": "3431", "station_name": "源泉", "arrival": 1500, "departure": 1530 },
+        { "station_id": "3430", "station_name": "二水", "arrival": 1800, "departure": 1800 }
+      ],
+      "total_travel_time": 1800
+    },
+    {
+      "departure_time": "14:30:00",
+      "train_id": "JJ-2718",
+      "train_no": "2718",
+      "train_type": "區間",
+      "origin_station": "3436",
+      "destination_station": "3430",
+      "od_track_id": "JJ-CT-ES",
+      "stations": [
+        { "station_id": "3436", "station_name": "車埕", "arrival": 0, "departure": 0 },
+        { "station_id": "3435", "station_name": "水里", "arrival": 300, "departure": 330 },
+        { "station_id": "3434", "station_name": "集集", "arrival": 600, "departure": 630 },
+        { "station_id": "3433", "station_name": "龍泉", "arrival": 900, "departure": 930 },
+        { "station_id": "3432", "station_name": "濁水", "arrival": 1200, "departure": 1230 },
+        { "station_id": "3431", "station_name": "源泉", "arrival": 1500, "departure": 1530 },
+        { "station_id": "3430", "station_name": "二水", "arrival": 1800, "departure": 1800 }
+      ],
+      "total_travel_time": 1800
+    },
+    {
+      "departure_time": "15:30:00",
+      "train_id": "JJ-2720",
+      "train_no": "2720",
+      "train_type": "區間",
+      "origin_station": "3436",
+      "destination_station": "3430",
+      "od_track_id": "JJ-CT-ES",
+      "stations": [
+        { "station_id": "3436", "station_name": "車埕", "arrival": 0, "departure": 0 },
+        { "station_id": "3435", "station_name": "水里", "arrival": 300, "departure": 330 },
+        { "station_id": "3434", "station_name": "集集", "arrival": 600, "departure": 630 },
+        { "station_id": "3433", "station_name": "龍泉", "arrival": 900, "departure": 930 },
+        { "station_id": "3432", "station_name": "濁水", "arrival": 1200, "departure": 1230 },
+        { "station_id": "3431", "station_name": "源泉", "arrival": 1500, "departure": 1530 },
+        { "station_id": "3430", "station_name": "二水", "arrival": 1800, "departure": 1800 }
+      ],
+      "total_travel_time": 1800
+    },
+    {
+      "departure_time": "16:30:00",
+      "train_id": "JJ-2722",
+      "train_no": "2722",
+      "train_type": "區間",
+      "origin_station": "3436",
+      "destination_station": "3430",
+      "od_track_id": "JJ-CT-ES",
+      "stations": [
+        { "station_id": "3436", "station_name": "車埕", "arrival": 0, "departure": 0 },
+        { "station_id": "3435", "station_name": "水里", "arrival": 300, "departure": 330 },
+        { "station_id": "3434", "station_name": "集集", "arrival": 600, "departure": 630 },
+        { "station_id": "3433", "station_name": "龍泉", "arrival": 900, "departure": 930 },
+        { "station_id": "3432", "station_name": "濁水", "arrival": 1200, "departure": 1230 },
+        { "station_id": "3431", "station_name": "源泉", "arrival": 1500, "departure": 1530 },
+        { "station_id": "3430", "station_name": "二水", "arrival": 1800, "departure": 1800 }
+      ],
+      "total_travel_time": 1800
+    },
+    {
+      "departure_time": "17:30:00",
+      "train_id": "JJ-2724",
+      "train_no": "2724",
+      "train_type": "區間",
+      "origin_station": "3436",
+      "destination_station": "3430",
+      "od_track_id": "JJ-CT-ES",
+      "stations": [
+        { "station_id": "3436", "station_name": "車埕", "arrival": 0, "departure": 0 },
+        { "station_id": "3435", "station_name": "水里", "arrival": 300, "departure": 330 },
+        { "station_id": "3434", "station_name": "集集", "arrival": 600, "departure": 630 },
+        { "station_id": "3433", "station_name": "龍泉", "arrival": 900, "departure": 930 },
+        { "station_id": "3432", "station_name": "濁水", "arrival": 1200, "departure": 1230 },
+        { "station_id": "3431", "station_name": "源泉", "arrival": 1500, "departure": 1530 },
+        { "station_id": "3430", "station_name": "二水", "arrival": 1800, "departure": 1800 }
+      ],
+      "total_travel_time": 1800
+    },
+    {
+      "departure_time": "18:30:00",
+      "train_id": "JJ-2726",
+      "train_no": "2726",
+      "train_type": "區間",
+      "origin_station": "3436",
+      "destination_station": "3430",
+      "od_track_id": "JJ-CT-ES",
+      "stations": [
+        { "station_id": "3436", "station_name": "車埕", "arrival": 0, "departure": 0 },
+        { "station_id": "3435", "station_name": "水里", "arrival": 300, "departure": 330 },
+        { "station_id": "3434", "station_name": "集集", "arrival": 600, "departure": 630 },
+        { "station_id": "3433", "station_name": "龍泉", "arrival": 900, "departure": 930 },
+        { "station_id": "3432", "station_name": "濁水", "arrival": 1200, "departure": 1230 },
+        { "station_id": "3431", "station_name": "源泉", "arrival": 1500, "departure": 1530 },
+        { "station_id": "3430", "station_name": "二水", "arrival": 1800, "departure": 1800 }
+      ],
+      "total_travel_time": 1800
+    },
+    {
+      "departure_time": "19:30:00",
+      "train_id": "JJ-2728",
+      "train_no": "2728",
+      "train_type": "區間",
+      "origin_station": "3436",
+      "destination_station": "3430",
+      "od_track_id": "JJ-CT-ES",
+      "stations": [
+        { "station_id": "3436", "station_name": "車埕", "arrival": 0, "departure": 0 },
+        { "station_id": "3435", "station_name": "水里", "arrival": 300, "departure": 330 },
+        { "station_id": "3434", "station_name": "集集", "arrival": 600, "departure": 630 },
+        { "station_id": "3433", "station_name": "龍泉", "arrival": 900, "departure": 930 },
+        { "station_id": "3432", "station_name": "濁水", "arrival": 1200, "departure": 1230 },
+        { "station_id": "3431", "station_name": "源泉", "arrival": 1500, "departure": 1530 },
+        { "station_id": "3430", "station_name": "二水", "arrival": 1800, "departure": 1800 }
+      ],
+      "total_travel_time": 1800
+    },
+    {
+      "departure_time": "20:30:00",
+      "train_id": "JJ-2730",
+      "train_no": "2730",
+      "train_type": "區間",
+      "origin_station": "3436",
+      "destination_station": "3430",
+      "od_track_id": "JJ-CT-ES",
+      "stations": [
+        { "station_id": "3436", "station_name": "車埕", "arrival": 0, "departure": 0 },
+        { "station_id": "3435", "station_name": "水里", "arrival": 300, "departure": 330 },
+        { "station_id": "3434", "station_name": "集集", "arrival": 600, "departure": 630 },
+        { "station_id": "3433", "station_name": "龍泉", "arrival": 900, "departure": 930 },
+        { "station_id": "3432", "station_name": "濁水", "arrival": 1200, "departure": 1230 },
+        { "station_id": "3431", "station_name": "源泉", "arrival": 1500, "departure": 1530 },
+        { "station_id": "3430", "station_name": "二水", "arrival": 1800, "departure": 1800 }
+      ],
+      "total_travel_time": 1800
+    },
+    {
+      "departure_time": "21:30:00",
+      "train_id": "JJ-2732",
+      "train_no": "2732",
+      "train_type": "區間",
+      "origin_station": "3436",
+      "destination_station": "3430",
+      "od_track_id": "JJ-CT-ES",
+      "stations": [
+        { "station_id": "3436", "station_name": "車埕", "arrival": 0, "departure": 0 },
+        { "station_id": "3435", "station_name": "水里", "arrival": 300, "departure": 330 },
+        { "station_id": "3434", "station_name": "集集", "arrival": 600, "departure": 630 },
+        { "station_id": "3433", "station_name": "龍泉", "arrival": 900, "departure": 930 },
+        { "station_id": "3432", "station_name": "濁水", "arrival": 1200, "departure": 1230 },
+        { "station_id": "3431", "station_name": "源泉", "arrival": 1500, "departure": 1530 },
+        { "station_id": "3430", "station_name": "二水", "arrival": 1800, "departure": 1800 }
+      ],
+      "total_travel_time": 1800
+    }
+  ]
+}

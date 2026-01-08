@@ -63,6 +63,22 @@ STATIONS = {
     '1206': '合興',
     '1207': '富貴',
     '1208': '內灣',
+    # 平溪線
+    '7330': '三貂嶺',
+    '7331': '大華',
+    '7332': '十分',
+    '7333': '望古',
+    '7334': '嶺腳',
+    '7335': '平溪',
+    '7336': '菁桐',
+    # 集集線
+    '3430': '二水',
+    '3431': '源泉',
+    '3432': '濁水',
+    '3433': '龍泉',
+    '3434': '集集',
+    '3435': '水里',
+    '3436': '車埕',
 }
 
 # NW 線車站順序 (從新竹方向)
@@ -72,6 +88,14 @@ NW_STATIONS = ['1210', '1190', '1191', '1192', '1193', '1201', '1202', '1203', '
 # LJ 線車站順序 (從新竹方向，與 NW 線共線到竹中)
 LJ_STATIONS = ['1210', '1190', '1191', '1192', '1193', '1194']
 # 新竹 -> 北新竹 -> 千甲 -> 新莊 -> 竹中 -> 六家
+
+# PX 線車站順序 (從三貂嶺到菁桐)
+PX_STATIONS = ['7330', '7331', '7332', '7333', '7334', '7335', '7336']
+# 三貂嶺 -> 大華 -> 十分 -> 望古 -> 嶺腳 -> 平溪 -> 菁桐
+
+# JJ 線車站順序 (從二水到車埕)
+JJ_STATIONS = ['3430', '3431', '3432', '3433', '3434', '3435', '3436']
+# 二水 -> 源泉 -> 濁水 -> 龍泉 -> 集集 -> 水里 -> 車埕
 
 # O-D 路由定義
 OD_ROUTES = [
@@ -152,6 +176,48 @@ OD_ROUTES = [
             ('LJ-1', '1194', '1193'),    # 六家→竹中
             ('NW-1', '1193', '1190'),    # 竹中→北新竹 (使用內灣線高精度)
             ('WL-N-1', '1190', '1210'),  # 北新竹→新竹
+        ]
+    ),
+    # PX 線 O-D (平溪線)
+    ODRoute(
+        od_track_id='PX-SD-JT',
+        origin_station_id='7330',
+        destination_station_id='7336',
+        origin_name='三貂嶺',
+        destination_name='菁桐',
+        segments=[
+            ('PX-0', '7330', '7336'),    # 三貂嶺→菁桐 (全線)
+        ]
+    ),
+    ODRoute(
+        od_track_id='PX-JT-SD',
+        origin_station_id='7336',
+        destination_station_id='7330',
+        origin_name='菁桐',
+        destination_name='三貂嶺',
+        segments=[
+            ('PX-1', '7336', '7330'),    # 菁桐→三貂嶺 (全線)
+        ]
+    ),
+    # JJ 線 O-D (集集線)
+    ODRoute(
+        od_track_id='JJ-ES-CT',
+        origin_station_id='3430',
+        destination_station_id='3436',
+        origin_name='二水',
+        destination_name='車埕',
+        segments=[
+            ('JJ-0', '3430', '3436'),    # 二水→車埕 (全線)
+        ]
+    ),
+    ODRoute(
+        od_track_id='JJ-CT-ES',
+        origin_station_id='3436',
+        destination_station_id='3430',
+        origin_name='車埕',
+        destination_name='二水',
+        segments=[
+            ('JJ-1', '3436', '3430'),    # 車埕→二水 (全線)
         ]
     ),
 ]
@@ -278,6 +344,27 @@ def load_stations() -> Dict[str, Station]:
         )
 
     print(f"載入 {len(stations)} 個車站")
+
+    # 修正集集線車站座標 - 從軌道推算的近似座標
+    # 由於原始 stations_snapped.geojson 中部分車站座標錯誤，這裡手動修正
+    jj_station_corrections = {
+        '3430': (120.62169, 23.81130),   # 二水 - 軌道起點附近
+        '3431': (120.64211, 23.79852),   # 源泉 - 保持原值
+        '3432': (120.65500, 23.80016),   # 濁水 - 軌道中段
+        '3433': (120.66550, 23.80690),   # 龍泉 - 軌道中段
+        '3434': (120.68000, 23.81900),   # 集集 - 軌道中段
+        '3435': (120.69200, 23.82800),   # 水里 - 軌道中段
+        '3436': (120.70141, 23.83409),   # 車埕 - 軌道終點
+    }
+    for station_id, coords in jj_station_corrections.items():
+        if station_id in stations:
+            stations[station_id] = Station(
+                station_id=station_id,
+                name=stations[station_id].name,
+                coordinates=coords
+            )
+            print(f"修正 {stations[station_id].name} ({station_id}) 座標: {coords}")
+
     return stations
 
 
@@ -389,6 +476,28 @@ def get_intermediate_stations(route: ODRoute, stations: Dict[str, Station]) -> L
                 return LJ_STATIONS[origin_idx:dest_idx+1]
             else:
                 return LJ_STATIONS[dest_idx:origin_idx+1][::-1]
+
+    elif route.od_track_id.startswith('PX-'):
+        # 平溪線
+        origin_idx = PX_STATIONS.index(route.origin_station_id) if route.origin_station_id in PX_STATIONS else -1
+        dest_idx = PX_STATIONS.index(route.destination_station_id) if route.destination_station_id in PX_STATIONS else -1
+
+        if origin_idx >= 0 and dest_idx >= 0:
+            if origin_idx <= dest_idx:
+                return PX_STATIONS[origin_idx:dest_idx+1]
+            else:
+                return PX_STATIONS[dest_idx:origin_idx+1][::-1]
+
+    elif route.od_track_id.startswith('JJ-'):
+        # 集集線
+        origin_idx = JJ_STATIONS.index(route.origin_station_id) if route.origin_station_id in JJ_STATIONS else -1
+        dest_idx = JJ_STATIONS.index(route.destination_station_id) if route.destination_station_id in JJ_STATIONS else -1
+
+        if origin_idx >= 0 and dest_idx >= 0:
+            if origin_idx <= dest_idx:
+                return JJ_STATIONS[origin_idx:dest_idx+1]
+            else:
+                return JJ_STATIONS[dest_idx:origin_idx+1][::-1]
 
     return [route.origin_station_id, route.destination_station_id]
 

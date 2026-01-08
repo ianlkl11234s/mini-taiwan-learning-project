@@ -16,12 +16,18 @@ const OD_TRACK_IDS = [
   'NW-HC-JD',  // 新竹→竹東
   'LJ-HC-LJ',  // 新竹→六家
   'LJ-LJ-HC',  // 六家→新竹
+  'PX-SD-JT',  // 三貂嶺→菁桐
+  'PX-JT-SD',  // 菁桐→三貂嶺
+  'JJ-ES-CT',  // 二水→車埕
+  'JJ-CT-ES',  // 車埕→二水
 ];
 
 // 時刻表 ID 列表
 const SCHEDULE_IDS = [
   'NW-0', 'NW-1',
   'LJ-0', 'LJ-1',
+  'PX-0', 'PX-1',
+  'JJ-0', 'JJ-1',
 ];
 
 export interface ODTraDataState {

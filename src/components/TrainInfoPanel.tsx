@@ -29,7 +29,9 @@ export function TrainInfoPanel({ train, stationNames, onClose, visualTheme = 'da
   const isTra = train.trackId.startsWith('NW') ||
                 train.trackId.startsWith('LJ') ||
                 train.trackId.startsWith('SH') ||
-                train.trackId.startsWith('WL');
+                train.trackId.startsWith('WL') ||
+                train.trackId.startsWith('PX') ||
+                train.trackId.startsWith('JJ');
 
   // 根據類型取得線路資訊
   const lineColor = isThsr

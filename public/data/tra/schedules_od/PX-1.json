@@ -1,0 +1,616 @@
+{
+  "track_id": "PX-1",
+  "route_id": "PX",
+  "name": "PX 線時刻表",
+  "departure_count": 33,
+  "departures": [
+    {
+      "departure_time": "06:15:00",
+      "train_id": "PX-4702",
+      "train_no": "4702",
+      "train_type": "區間",
+      "origin_station": "7336",
+      "destination_station": "7330",
+      "od_track_id": "PX-JT-SD",
+      "stations": [
+        { "station_id": "7336", "station_name": "菁桐", "arrival": 0, "departure": 0 },
+        { "station_id": "7335", "station_name": "平溪", "arrival": 180, "departure": 210 },
+        { "station_id": "7334", "station_name": "嶺腳", "arrival": 300, "departure": 330 },
+        { "station_id": "7333", "station_name": "望古", "arrival": 480, "departure": 510 },
+        { "station_id": "7332", "station_name": "十分", "arrival": 660, "departure": 690 },
+        { "station_id": "7331", "station_name": "大華", "arrival": 960, "departure": 990 },
+        { "station_id": "7330", "station_name": "三貂嶺", "arrival": 1260, "departure": 1260 }
+      ],
+      "total_travel_time": 1260
+    },
+    {
+      "departure_time": "06:45:00",
+      "train_id": "PX-4704",
+      "train_no": "4704",
+      "train_type": "區間",
+      "origin_station": "7336",
+      "destination_station": "7330",
+      "od_track_id": "PX-JT-SD",
+      "stations": [
+        { "station_id": "7336", "station_name": "菁桐", "arrival": 0, "departure": 0 },
+        { "station_id": "7335", "station_name": "平溪", "arrival": 180, "departure": 210 },
+        { "station_id": "7334", "station_name": "嶺腳", "arrival": 300, "departure": 330 },
+        { "station_id": "7333", "station_name": "望古", "arrival": 480, "departure": 510 },
+        { "station_id": "7332", "station_name": "十分", "arrival": 660, "departure": 690 },
+        { "station_id": "7331", "station_name": "大華", "arrival": 960, "departure": 990 },
+        { "station_id": "7330", "station_name": "三貂嶺", "arrival": 1260, "departure": 1260 }
+      ],
+      "total_travel_time": 1260
+    },
+    {
+      "departure_time": "07:15:00",
+      "train_id": "PX-4706",
+      "train_no": "4706",
+      "train_type": "區間",
+      "origin_station": "7336",
+      "destination_station": "7330",
+      "od_track_id": "PX-JT-SD",
+      "stations": [
+        { "station_id": "7336", "station_name": "菁桐", "arrival": 0, "departure": 0 },
+        { "station_id": "7335", "station_name": "平溪", "arrival": 180, "departure": 210 },
+        { "station_id": "7334", "station_name": "嶺腳", "arrival": 300, "departure": 330 },
+        { "station_id": "7333", "station_name": "望古", "arrival": 480, "departure": 510 },
+        { "station_id": "7332", "station_name": "十分", "arrival": 660, "departure": 690 },
+        { "station_id": "7331", "station_name": "大華", "arrival": 960, "departure": 990 },
+        { "station_id": "7330", "station_name": "三貂嶺", "arrival": 1260, "departure": 1260 }
+      ],
+      "total_travel_time": 1260
+    },
+    {
+      "departure_time": "07:45:00",
+      "train_id": "PX-4708",
+      "train_no": "4708",
+      "train_type": "區間",
+      "origin_station": "7336",
+      "destination_station": "7330",
+      "od_track_id": "PX-JT-SD",
+      "stations": [
+        { "station_id": "7336", "station_name": "菁桐", "arrival": 0, "departure": 0 },
+        { "station_id": "7335", "station_name": "平溪", "arrival": 180, "departure": 210 },
+        { "station_id": "7334", "station_name": "嶺腳", "arrival": 300, "departure": 330 },
+        { "station_id": "7333", "station_name": "望古", "arrival": 480, "departure": 510 },
+        { "station_id": "7332", "station_name": "十分", "arrival": 660, "departure": 690 },
+        { "station_id": "7331", "station_name": "大華", "arrival": 960, "departure": 990 },
+        { "station_id": "7330", "station_name": "三貂嶺", "arrival": 1260, "departure": 1260 }
+      ],
+      "total_travel_time": 1260
+    },
+    {
+      "departure_time": "08:15:00",
+      "train_id": "PX-4710",
+      "train_no": "4710",
+      "train_type": "區間",
+      "origin_station": "7336",
+      "destination_station": "7330",
+      "od_track_id": "PX-JT-SD",
+      "stations": [
+        { "station_id": "7336", "station_name": "菁桐", "arrival": 0, "departure": 0 },
+        { "station_id": "7335", "station_name": "平溪", "arrival": 180, "departure": 210 },
+        { "station_id": "7334", "station_name": "嶺腳", "arrival": 300, "departure": 330 },
+        { "station_id": "7333", "station_name": "望古", "arrival": 480, "departure": 510 },
+        { "station_id": "7332", "station_name": "十分", "arrival": 660, "departure": 690 },
+        { "station_id": "7331", "station_name": "大華", "arrival": 960, "departure": 990 },
+        { "station_id": "7330", "station_name": "三貂嶺", "arrival": 1260, "departure": 1260 }
+      ],
+      "total_travel_time": 1260
+    },
+    {
+      "departure_time": "08:45:00",
+      "train_id": "PX-4712",
+      "train_no": "4712",
+      "train_type": "區間",
+      "origin_station": "7336",
+      "destination_station": "7330",
+      "od_track_id": "PX-JT-SD",
+      "stations": [
+        { "station_id": "7336", "station_name": "菁桐", "arrival": 0, "departure": 0 },
+        { "station_id": "7335", "station_name": "平溪", "arrival": 180, "departure": 210 },
+        { "station_id": "7334", "station_name": "嶺腳", "arrival": 300, "departure": 330 },
+        { "station_id": "7333", "station_name": "望古", "arrival": 480, "departure": 510 },
+        { "station_id": "7332", "station_name": "十分", "arrival": 660, "departure": 690 },
+        { "station_id": "7331", "station_name": "大華", "arrival": 960, "departure": 990 },
+        { "station_id": "7330", "station_name": "三貂嶺", "arrival": 1260, "departure": 1260 }
+      ],
+      "total_travel_time": 1260
+    },
+    {
+      "departure_time": "09:15:00",
+      "train_id": "PX-4714",
+      "train_no": "4714",
+      "train_type": "區間",
+      "origin_station": "7336",
+      "destination_station": "7330",
+      "od_track_id": "PX-JT-SD",
+      "stations": [
+        { "station_id": "7336", "station_name": "菁桐", "arrival": 0, "departure": 0 },
+        { "station_id": "7335", "station_name": "平溪", "arrival": 180, "departure": 210 },
+        { "station_id": "7334", "station_name": "嶺腳", "arrival": 300, "departure": 330 },
+        { "station_id": "7333", "station_name": "望古", "arrival": 480, "departure": 510 },
+        { "station_id": "7332", "station_name": "十分", "arrival": 660, "departure": 690 },
+        { "station_id": "7331", "station_name": "大華", "arrival": 960, "departure": 990 },
+        { "station_id": "7330", "station_name": "三貂嶺", "arrival": 1260, "departure": 1260 }
+      ],
+      "total_travel_time": 1260
+    },
+    {
+      "departure_time": "09:45:00",
+      "train_id": "PX-4716",
+      "train_no": "4716",
+      "train_type": "區間",
+      "origin_station": "7336",
+      "destination_station": "7330",
+      "od_track_id": "PX-JT-SD",
+      "stations": [
+        { "station_id": "7336", "station_name": "菁桐", "arrival": 0, "departure": 0 },
+        { "station_id": "7335", "station_name": "平溪", "arrival": 180, "departure": 210 },
+        { "station_id": "7334", "station_name": "嶺腳", "arrival": 300, "departure": 330 },
+        { "station_id": "7333", "station_name": "望古", "arrival": 480, "departure": 510 },
+        { "station_id": "7332", "station_name": "十分", "arrival": 660, "departure": 690 },
+        { "station_id": "7331", "station_name": "大華", "arrival": 960, "departure": 990 },
+        { "station_id": "7330", "station_name": "三貂嶺", "arrival": 1260, "departure": 1260 }
+      ],
+      "total_travel_time": 1260
+    },
+    {
+      "departure_time": "10:15:00",
+      "train_id": "PX-4718",
+      "train_no": "4718",
+      "train_type": "區間",
+      "origin_station": "7336",
+      "destination_station": "7330",
+      "od_track_id": "PX-JT-SD",
+      "stations": [
+        { "station_id": "7336", "station_name": "菁桐", "arrival": 0, "departure": 0 },
+        { "station_id": "7335", "station_name": "平溪", "arrival": 180, "departure": 210 },
+        { "station_id": "7334", "station_name": "嶺腳", "arrival": 300, "departure": 330 },
+        { "station_id": "7333", "station_name": "望古", "arrival": 480, "departure": 510 },
+        { "station_id": "7332", "station_name": "十分", "arrival": 660, "departure": 690 },
+        { "station_id": "7331", "station_name": "大華", "arrival": 960, "departure": 990 },
+        { "station_id": "7330", "station_name": "三貂嶺", "arrival": 1260, "departure": 1260 }
+      ],
+      "total_travel_time": 1260
+    },
+    {
+      "departure_time": "10:45:00",
+      "train_id": "PX-4720",
+      "train_no": "4720",
+      "train_type": "區間",
+      "origin_station": "7336",
+      "destination_station": "7330",
+      "od_track_id": "PX-JT-SD",
+      "stations": [
+        { "station_id": "7336", "station_name": "菁桐", "arrival": 0, "departure": 0 },
+        { "station_id": "7335", "station_name": "平溪", "arrival": 180, "departure": 210 },
+        { "station_id": "7334", "station_name": "嶺腳", "arrival": 300, "departure": 330 },
+        { "station_id": "7333", "station_name": "望古", "arrival": 480, "departure": 510 },
+        { "station_id": "7332", "station_name": "十分", "arrival": 660, "departure": 690 },
+        { "station_id": "7331", "station_name": "大華", "arrival": 960, "departure": 990 },
+        { "station_id": "7330", "station_name": "三貂嶺", "arrival": 1260, "departure": 1260 }
+      ],
+      "total_travel_time": 1260
+    },
+    {
+      "departure_time": "11:15:00",
+      "train_id": "PX-4722",
+      "train_no": "4722",
+      "train_type": "區間",
+      "origin_station": "7336",
+      "destination_station": "7330",
+      "od_track_id": "PX-JT-SD",
+      "stations": [
+        { "station_id": "7336", "station_name": "菁桐", "arrival": 0, "departure": 0 },
+        { "station_id": "7335", "station_name": "平溪", "arrival": 180, "departure": 210 },
+        { "station_id": "7334", "station_name": "嶺腳", "arrival": 300, "departure": 330 },
+        { "station_id": "7333", "station_name": "望古", "arrival": 480, "departure": 510 },
+        { "station_id": "7332", "station_name": "十分", "arrival": 660, "departure": 690 },
+        { "station_id": "7331", "station_name": "大華", "arrival": 960, "departure": 990 },
+        { "station_id": "7330", "station_name": "三貂嶺", "arrival": 1260, "departure": 1260 }
+      ],
+      "total_travel_time": 1260
+    },
+    {
+      "departure_time": "11:45:00",
+      "train_id": "PX-4724",
+      "train_no": "4724",
+      "train_type": "區間",
+      "origin_station": "7336",
+      "destination_station": "7330",
+      "od_track_id": "PX-JT-SD",
+      "stations": [
+        { "station_id": "7336", "station_name": "菁桐", "arrival": 0, "departure": 0 },
+        { "station_id": "7335", "station_name": "平溪", "arrival": 180, "departure": 210 },
+        { "station_id": "7334", "station_name": "嶺腳", "arrival": 300, "departure": 330 },
+        { "station_id": "7333", "station_name": "望古", "arrival": 480, "departure": 510 },
+        { "station_id": "7332", "station_name": "十分", "arrival": 660, "departure": 690 },
+        { "station_id": "7331", "station_name": "大華", "arrival": 960, "departure": 990 },
+        { "station_id": "7330", "station_name": "三貂嶺", "arrival": 1260, "departure": 1260 }
+      ],
+      "total_travel_time": 1260
+    },
+    {
+      "departure_time": "12:15:00",
+      "train_id": "PX-4726",
+      "train_no": "4726",
+      "train_type": "區間",
+      "origin_station": "7336",
+      "destination_station": "7330",
+      "od_track_id": "PX-JT-SD",
+      "stations": [
+        { "station_id": "7336", "station_name": "菁桐", "arrival": 0, "departure": 0 },
+        { "station_id": "7335", "station_name": "平溪", "arrival": 180, "departure": 210 },
+        { "station_id": "7334", "station_name": "嶺腳", "arrival": 300, "departure": 330 },
+        { "station_id": "7333", "station_name": "望古", "arrival": 480, "departure": 510 },
+        { "station_id": "7332", "station_name": "十分", "arrival": 660, "departure": 690 },
+        { "station_id": "7331", "station_name": "大華", "arrival": 960, "departure": 990 },
+        { "station_id": "7330", "station_name": "三貂嶺", "arrival": 1260, "departure": 1260 }
+      ],
+      "total_travel_time": 1260
+    },
+    {
+      "departure_time": "12:45:00",
+      "train_id": "PX-4728",
+      "train_no": "4728",
+      "train_type": "區間",
+      "origin_station": "7336",
+      "destination_station": "7330",
+      "od_track_id": "PX-JT-SD",
+      "stations": [
+        { "station_id": "7336", "station_name": "菁桐", "arrival": 0, "departure": 0 },
+        { "station_id": "7335", "station_name": "平溪", "arrival": 180, "departure": 210 },
+        { "station_id": "7334", "station_name": "嶺腳", "arrival": 300, "departure": 330 },
+        { "station_id": "7333", "station_name": "望古", "arrival": 480, "departure": 510 },
+        { "station_id": "7332", "station_name": "十分", "arrival": 660, "departure": 690 },
+        { "station_id": "7331", "station_name": "大華", "arrival": 960, "departure": 990 },
+        { "station_id": "7330", "station_name": "三貂嶺", "arrival": 1260, "departure": 1260 }
+      ],
+      "total_travel_time": 1260
+    },
+    {
+      "departure_time": "13:15:00",
+      "train_id": "PX-4730",
+      "train_no": "4730",
+      "train_type": "區間",
+      "origin_station": "7336",
+      "destination_station": "7330",
+      "od_track_id": "PX-JT-SD",
+      "stations": [
+        { "station_id": "7336", "station_name": "菁桐", "arrival": 0, "departure": 0 },
+        { "station_id": "7335", "station_name": "平溪", "arrival": 180, "departure": 210 },
+        { "station_id": "7334", "station_name": "嶺腳", "arrival": 300, "departure": 330 },
+        { "station_id": "7333", "station_name": "望古", "arrival": 480, "departure": 510 },
+        { "station_id": "7332", "station_name": "十分", "arrival": 660, "departure": 690 },
+        { "station_id": "7331", "station_name": "大華", "arrival": 960, "departure": 990 },
+        { "station_id": "7330", "station_name": "三貂嶺", "arrival": 1260, "departure": 1260 }
+      ],
+      "total_travel_time": 1260
+    },
+    {
+      "departure_time": "13:45:00",
+      "train_id": "PX-4732",
+      "train_no": "4732",
+      "train_type": "區間",
+      "origin_station": "7336",
+      "destination_station": "7330",
+      "od_track_id": "PX-JT-SD",
+      "stations": [
+        { "station_id": "7336", "station_name": "菁桐", "arrival": 0, "departure": 0 },
+        { "station_id": "7335", "station_name": "平溪", "arrival": 180, "departure": 210 },
+        { "station_id": "7334", "station_name": "嶺腳", "arrival": 300, "departure": 330 },
+        { "station_id": "7333", "station_name": "望古", "arrival": 480, "departure": 510 },
+        { "station_id": "7332", "station_name": "十分", "arrival": 660, "departure": 690 },
+        { "station_id": "7331", "station_name": "大華", "arrival": 960, "departure": 990 },
+        { "station_id": "7330", "station_name": "三貂嶺", "arrival": 1260, "departure": 1260 }
+      ],
+      "total_travel_time": 1260
+    },
+    {
+      "departure_time": "14:15:00",
+      "train_id": "PX-4734",
+      "train_no": "4734",
+      "train_type": "區間",
+      "origin_station": "7336",
+      "destination_station": "7330",
+      "od_track_id": "PX-JT-SD",
+      "stations": [
+        { "station_id": "7336", "station_name": "菁桐", "arrival": 0, "departure": 0 },
+        { "station_id": "7335", "station_name": "平溪", "arrival": 180, "departure": 210 },
+        { "station_id": "7334", "station_name": "嶺腳", "arrival": 300, "departure": 330 },
+        { "station_id": "7333", "station_name": "望古", "arrival": 480, "departure": 510 },
+        { "station_id": "7332", "station_name": "十分", "arrival": 660, "departure": 690 },
+        { "station_id": "7331", "station_name": "大華", "arrival": 960, "departure": 990 },
+        { "station_id": "7330", "station_name": "三貂嶺", "arrival": 1260, "departure": 1260 }
+      ],
+      "total_travel_time": 1260
+    },
+    {
+      "departure_time": "14:45:00",
+      "train_id": "PX-4736",
+      "train_no": "4736",
+      "train_type": "區間",
+      "origin_station": "7336",
+      "destination_station": "7330",
+      "od_track_id": "PX-JT-SD",
+      "stations": [
+        { "station_id": "7336", "station_name": "菁桐", "arrival": 0, "departure": 0 },
+        { "station_id": "7335", "station_name": "平溪", "arrival": 180, "departure": 210 },
+        { "station_id": "7334", "station_name": "嶺腳", "arrival": 300, "departure": 330 },
+        { "station_id": "7333", "station_name": "望古", "arrival": 480, "departure": 510 },
+        { "station_id": "7332", "station_name": "十分", "arrival": 660, "departure": 690 },
+        { "station_id": "7331", "station_name": "大華", "arrival": 960, "departure": 990 },
+        { "station_id": "7330", "station_name": "三貂嶺", "arrival": 1260, "departure": 1260 }
+      ],
+      "total_travel_time": 1260
+    },
+    {
+      "departure_time": "15:15:00",
+      "train_id": "PX-4738",
+      "train_no": "4738",
+      "train_type": "區間",
+      "origin_station": "7336",
+      "destination_station": "7330",
+      "od_track_id": "PX-JT-SD",
+      "stations": [
+        { "station_id": "7336", "station_name": "菁桐", "arrival": 0, "departure": 0 },
+        { "station_id": "7335", "station_name": "平溪", "arrival": 180, "departure": 210 },
+        { "station_id": "7334", "station_name": "嶺腳", "arrival": 300, "departure": 330 },
+        { "station_id": "7333", "station_name": "望古", "arrival": 480, "departure": 510 },
+        { "station_id": "7332", "station_name": "十分", "arrival": 660, "departure": 690 },
+        { "station_id": "7331", "station_name": "大華", "arrival": 960, "departure": 990 },
+        { "station_id": "7330", "station_name": "三貂嶺", "arrival": 1260, "departure": 1260 }
+      ],
+      "total_travel_time": 1260
+    },
+    {
+      "departure_time": "15:45:00",
+      "train_id": "PX-4740",
+      "train_no": "4740",
+      "train_type": "區間",
+      "origin_station": "7336",
+      "destination_station": "7330",
+      "od_track_id": "PX-JT-SD",
+      "stations": [
+        { "station_id": "7336", "station_name": "菁桐", "arrival": 0, "departure": 0 },
+        { "station_id": "7335", "station_name": "平溪", "arrival": 180, "departure": 210 },
+        { "station_id": "7334", "station_name": "嶺腳", "arrival": 300, "departure": 330 },
+        { "station_id": "7333", "station_name": "望古", "arrival": 480, "departure": 510 },
+        { "station_id": "7332", "station_name": "十分", "arrival": 660, "departure": 690 },
+        { "station_id": "7331", "station_name": "大華", "arrival": 960, "departure": 990 },
+        { "station_id": "7330", "station_name": "三貂嶺", "arrival": 1260, "departure": 1260 }
+      ],
+      "total_travel_time": 1260
+    },
+    {
+      "departure_time": "16:15:00",
+      "train_id": "PX-4742",
+      "train_no": "4742",
+      "train_type": "區間",
+      "origin_station": "7336",
+      "destination_station": "7330",
+      "od_track_id": "PX-JT-SD",
+      "stations": [
+        { "station_id": "7336", "station_name": "菁桐", "arrival": 0, "departure": 0 },
+        { "station_id": "7335", "station_name": "平溪", "arrival": 180, "departure": 210 },
+        { "station_id": "7334", "station_name": "嶺腳", "arrival": 300, "departure": 330 },
+        { "station_id": "7333", "station_name": "望古", "arrival": 480, "departure": 510 },
+        { "station_id": "7332", "station_name": "十分", "arrival": 660, "departure": 690 },
+        { "station_id": "7331", "station_name": "大華", "arrival": 960, "departure": 990 },
+        { "station_id": "7330", "station_name": "三貂嶺", "arrival": 1260, "departure": 1260 }
+      ],
+      "total_travel_time": 1260
+    },
+    {
+      "departure_time": "16:45:00",
+      "train_id": "PX-4744",
+      "train_no": "4744",
+      "train_type": "區間",
+      "origin_station": "7336",
+      "destination_station": "7330",
+      "od_track_id": "PX-JT-SD",
+      "stations": [
+        { "station_id": "7336", "station_name": "菁桐", "arrival": 0, "departure": 0 },
+        { "station_id": "7335", "station_name": "平溪", "arrival": 180, "departure": 210 },
+        { "station_id": "7334", "station_name": "嶺腳", "arrival": 300, "departure": 330 },
+        { "station_id": "7333", "station_name": "望古", "arrival": 480, "departure": 510 },
+        { "station_id": "7332", "station_name": "十分", "arrival": 660, "departure": 690 },
+        { "station_id": "7331", "station_name": "大華", "arrival": 960, "departure": 990 },
+        { "station_id": "7330", "station_name": "三貂嶺", "arrival": 1260, "departure": 1260 }
+      ],
+      "total_travel_time": 1260
+    },
+    {
+      "departure_time": "17:15:00",
+      "train_id": "PX-4746",
+      "train_no": "4746",
+      "train_type": "區間",
+      "origin_station": "7336",
+      "destination_station": "7330",
+      "od_track_id": "PX-JT-SD",
+      "stations": [
+        { "station_id": "7336", "station_name": "菁桐", "arrival": 0, "departure": 0 },
+        { "station_id": "7335", "station_name": "平溪", "arrival": 180, "departure": 210 },
+        { "station_id": "7334", "station_name": "嶺腳", "arrival": 300, "departure": 330 },
+        { "station_id": "7333", "station_name": "望古", "arrival": 480, "departure": 510 },
+        { "station_id": "7332", "station_name": "十分", "arrival": 660, "departure": 690 },
+        { "station_id": "7331", "station_name": "大華", "arrival": 960, "departure": 990 },
+        { "station_id": "7330", "station_name": "三貂嶺", "arrival": 1260, "departure": 1260 }
+      ],
+      "total_travel_time": 1260
+    },
+    {
+      "departure_time": "17:45:00",
+      "train_id": "PX-4748",
+      "train_no": "4748",
+      "train_type": "區間",
+      "origin_station": "7336",
+      "destination_station": "7330",
+      "od_track_id": "PX-JT-SD",
+      "stations": [
+        { "station_id": "7336", "station_name": "菁桐", "arrival": 0, "departure": 0 },
+        { "station_id": "7335", "station_name": "平溪", "arrival": 180, "departure": 210 },
+        { "station_id": "7334", "station_name": "嶺腳", "arrival": 300, "departure": 330 },
+        { "station_id": "7333", "station_name": "望古", "arrival": 480, "departure": 510 },
+        { "station_id": "7332", "station_name": "十分", "arrival": 660, "departure": 690 },
+        { "station_id": "7331", "station_name": "大華", "arrival": 960, "departure": 990 },
+        { "station_id": "7330", "station_name": "三貂嶺", "arrival": 1260, "departure": 1260 }
+      ],
+      "total_travel_time": 1260
+    },
+    {
+      "departure_time": "18:15:00",
+      "train_id": "PX-4750",
+      "train_no": "4750",
+      "train_type": "區間",
+      "origin_station": "7336",
+      "destination_station": "7330",
+      "od_track_id": "PX-JT-SD",
+      "stations": [
+        { "station_id": "7336", "station_name": "菁桐", "arrival": 0, "departure": 0 },
+        { "station_id": "7335", "station_name": "平溪", "arrival": 180, "departure": 210 },
+        { "station_id": "7334", "station_name": "嶺腳", "arrival": 300, "departure": 330 },
+        { "station_id": "7333", "station_name": "望古", "arrival": 480, "departure": 510 },
+        { "station_id": "7332", "station_name": "十分", "arrival": 660, "departure": 690 },
+        { "station_id": "7331", "station_name": "大華", "arrival": 960, "departure": 990 },
+        { "station_id": "7330", "station_name": "三貂嶺", "arrival": 1260, "departure": 1260 }
+      ],
+      "total_travel_time": 1260
+    },
+    {
+      "departure_time": "18:45:00",
+      "train_id": "PX-4752",
+      "train_no": "4752",
+      "train_type": "區間",
+      "origin_station": "7336",
+      "destination_station": "7330",
+      "od_track_id": "PX-JT-SD",
+      "stations": [
+        { "station_id": "7336", "station_name": "菁桐", "arrival": 0, "departure": 0 },
+        { "station_id": "7335", "station_name": "平溪", "arrival": 180, "departure": 210 },
+        { "station_id": "7334", "station_name": "嶺腳", "arrival": 300, "departure": 330 },
+        { "station_id": "7333", "station_name": "望古", "arrival": 480, "departure": 510 },
+        { "station_id": "7332", "station_name": "十分", "arrival": 660, "departure": 690 },
+        { "station_id": "7331", "station_name": "大華", "arrival": 960, "departure": 990 },
+        { "station_id": "7330", "station_name": "三貂嶺", "arrival": 1260, "departure": 1260 }
+      ],
+      "total_travel_time": 1260
+    },
+    {
+      "departure_time": "19:15:00",
+      "train_id": "PX-4754",
+      "train_no": "4754",
+      "train_type": "區間",
+      "origin_station": "7336",
+      "destination_station": "7330",
+      "od_track_id": "PX-JT-SD",
+      "stations": [
+        { "station_id": "7336", "station_name": "菁桐", "arrival": 0, "departure": 0 },
+        { "station_id": "7335", "station_name": "平溪", "arrival": 180, "departure": 210 },
+        { "station_id": "7334", "station_name": "嶺腳", "arrival": 300, "departure": 330 },
+        { "station_id": "7333", "station_name": "望古", "arrival": 480, "departure": 510 },
+        { "station_id": "7332", "station_name": "十分", "arrival": 660, "departure": 690 },
+        { "station_id": "7331", "station_name": "大華", "arrival": 960, "departure": 990 },
+        { "station_id": "7330", "station_name": "三貂嶺", "arrival": 1260, "departure": 1260 }
+      ],
+      "total_travel_time": 1260
+    },
+    {
+      "departure_time": "19:45:00",
+      "train_id": "PX-4756",
+      "train_no": "4756",
+      "train_type": "區間",
+      "origin_station": "7336",
+      "destination_station": "7330",
+      "od_track_id": "PX-JT-SD",
+      "stations": [
+        { "station_id": "7336", "station_name": "菁桐", "arrival": 0, "departure": 0 },
+        { "station_id": "7335", "station_name": "平溪", "arrival": 180, "departure": 210 },
+        { "station_id": "7334", "station_name": "嶺腳", "arrival": 300, "departure": 330 },
+        { "station_id": "7333", "station_name": "望古", "arrival": 480, "departure": 510 },
+        { "station_id": "7332", "station_name": "十分", "arrival": 660, "departure": 690 },
+        { "station_id": "7331", "station_name": "大華", "arrival": 960, "departure": 990 },
+        { "station_id": "7330", "station_name": "三貂嶺", "arrival": 1260, "departure": 1260 }
+      ],
+      "total_travel_time": 1260
+    },
+    {
+      "departure_time": "20:15:00",
+      "train_id": "PX-4758",
+      "train_no": "4758",
+      "train_type": "區間",
+      "origin_station": "7336",
+      "destination_station": "7330",
+      "od_track_id": "PX-JT-SD",
+      "stations": [
+        { "station_id": "7336", "station_name": "菁桐", "arrival": 0, "departure": 0 },
+        { "station_id": "7335", "station_name": "平溪", "arrival": 180, "departure": 210 },
+        { "station_id": "7334", "station_name": "嶺腳", "arrival": 300, "departure": 330 },
+        { "station_id": "7333", "station_name": "望古", "arrival": 480, "departure": 510 },
+        { "station_id": "7332", "station_name": "十分", "arrival": 660, "departure": 690 },
+        { "station_id": "7331", "station_name": "大華", "arrival": 960, "departure": 990 },
+        { "station_id": "7330", "station_name": "三貂嶺", "arrival": 1260, "departure": 1260 }
+      ],
+      "total_travel_time": 1260
+    },
+    {
+      "departure_time": "20:45:00",
+      "train_id": "PX-4760",
+      "train_no": "4760",
+      "train_type": "區間",
+      "origin_station": "7336",
+      "destination_station": "7330",
+      "od_track_id": "PX-JT-SD",
+      "stations": [
+        { "station_id": "7336", "station_name": "菁桐", "arrival": 0, "departure": 0 },
+        { "station_id": "7335", "station_name": "平溪", "arrival": 180, "departure": 210 },
+        { "station_id": "7334", "station_name": "嶺腳", "arrival": 300, "departure": 330 },
+        { "station_id": "7333", "station_name": "望古", "arrival": 480, "departure": 510 },
+        { "station_id": "7332", "station_name": "十分", "arrival": 660, "departure": 690 },
+        { "station_id": "7331", "station_name": "大華", "arrival": 960, "departure": 990 },
+        { "station_id": "7330", "station_name": "三貂嶺", "arrival": 1260, "departure": 1260 }
+      ],
+      "total_travel_time": 1260
+    },
+    {
+      "departure_time": "21:15:00",
+      "train_id": "PX-4762",
+      "train_no": "4762",
+      "train_type": "區間",
+      "origin_station": "7336",
+      "destination_station": "7330",
+      "od_track_id": "PX-JT-SD",
+      "stations": [
+        { "station_id": "7336", "station_name": "菁桐", "arrival": 0, "departure": 0 },
+        { "station_id": "7335", "station_name": "平溪", "arrival": 180, "departure": 210 },
+        { "station_id": "7334", "station_name": "嶺腳", "arrival": 300, "departure": 330 },
+        { "station_id": "7333", "station_name": "望古", "arrival": 480, "departure": 510 },
+        { "station_id": "7332", "station_name": "十分", "arrival": 660, "departure": 690 },
+        { "station_id": "7331", "station_name": "大華", "arrival": 960, "departure": 990 },
+        { "station_id": "7330", "station_name": "三貂嶺", "arrival": 1260, "departure": 1260 }
+      ],
+      "total_travel_time": 1260
+    },
+    {
+      "departure_time": "21:45:00",
+      "train_id": "PX-4764",
+      "train_no": "4764",
+      "train_type": "區間",
+      "origin_station": "7336",
+      "destination_station": "7330",
+      "od_track_id": "PX-JT-SD",
+      "stations": [
+        { "station_id": "7336", "station_name": "菁桐", "arrival": 0, "departure": 0 },
+        { "station_id": "7335", "station_name": "平溪", "arrival": 180, "departure": 210 },
+        { "station_id": "7334", "station_name": "嶺腳", "arrival": 300, "departure": 330 },
+        { "station_id": "7333", "station_name": "望古", "arrival": 480, "departure": 510 },
+        { "station_id": "7332", "station_name": "十分", "arrival": 660, "departure": 690 },
+        { "station_id": "7331", "station_name": "大華", "arrival": 960, "departure": 990 },
+        { "station_id": "7330", "station_name": "三貂嶺", "arrival": 1260, "departure": 1260 }
+      ],
+      "total_travel_time": 1260
+    }
+  ]
+}

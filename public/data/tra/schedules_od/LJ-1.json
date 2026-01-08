@@ -20,19 +20,37 @@
           "departure": 0
         },
         {
+          "station_id": "1193",
+          "station_name": "竹中",
+          "arrival": 200,
+          "departure": 235
+        },
+        {
+          "station_id": "1192",
+          "station_name": "新莊",
+          "arrival": 435,
+          "departure": 470
+        },
+        {
+          "station_id": "1191",
+          "station_name": "千甲",
+          "arrival": 670,
+          "departure": 705
+        },
+        {
           "station_id": "1190",
           "station_name": "北新竹",
-          "arrival": 300,
-          "departure": 330
+          "arrival": 905,
+          "departure": 940
         },
         {
           "station_id": "1210",
           "station_name": "新竹",
-          "arrival": 630,
-          "departure": 630
+          "arrival": 1140,
+          "departure": 1140
         }
       ],
-      "total_travel_time": 630
+      "total_travel_time": 1140
     },
     {
       "departure_time": "06:45:00",
@@ -50,19 +68,37 @@
           "departure": 0
         },
         {
+          "station_id": "1193",
+          "station_name": "竹中",
+          "arrival": 200,
+          "departure": 235
+        },
+        {
+          "station_id": "1192",
+          "station_name": "新莊",
+          "arrival": 435,
+          "departure": 470
+        },
+        {
+          "station_id": "1191",
+          "station_name": "千甲",
+          "arrival": 670,
+          "departure": 705
+        },
+        {
           "station_id": "1190",
           "station_name": "北新竹",
-          "arrival": 300,
-          "departure": 330
+          "arrival": 905,
+          "departure": 940
         },
         {
           "station_id": "1210",
           "station_name": "新竹",
-          "arrival": 630,
-          "departure": 630
+          "arrival": 1140,
+          "departure": 1140
         }
       ],
-      "total_travel_time": 630
+      "total_travel_time": 1140
     },
     {
       "departure_time": "07:15:00",
@@ -80,19 +116,37 @@
           "departure": 0
         },
         {
+          "station_id": "1193",
+          "station_name": "竹中",
+          "arrival": 200,
+          "departure": 235
+        },
+        {
+          "station_id": "1192",
+          "station_name": "新莊",
+          "arrival": 435,
+          "departure": 470
+        },
+        {
+          "station_id": "1191",
+          "station_name": "千甲",
+          "arrival": 670,
+          "departure": 705
+        },
+        {
           "station_id": "1190",
           "station_name": "北新竹",
-          "arrival": 300,
-          "departure": 330
+          "arrival": 905,
+          "departure": 940
         },
         {
           "station_id": "1210",
           "station_name": "新竹",
-          "arrival": 630,
-          "departure": 630
+          "arrival": 1140,
+          "departure": 1140
         }
       ],
-      "total_travel_time": 630
+      "total_travel_time": 1140
     },
     {
       "departure_time": "07:45:00",
@@ -110,19 +164,37 @@
           "departure": 0
         },
         {
+          "station_id": "1193",
+          "station_name": "竹中",
+          "arrival": 200,
+          "departure": 235
+        },
+        {
+          "station_id": "1192",
+          "station_name": "新莊",
+          "arrival": 435,
+          "departure": 470
+        },
+        {
+          "station_id": "1191",
+          "station_name": "千甲",
+          "arrival": 670,
+          "departure": 705
+        },
+        {
           "station_id": "1190",
           "station_name": "北新竹",
-          "arrival": 300,
-          "departure": 330
+          "arrival": 905,
+          "departure": 940
         },
         {
           "station_id": "1210",
           "station_name": "新竹",
-          "arrival": 630,
-          "departure": 630
+          "arrival": 1140,
+          "departure": 1140
         }
       ],
-      "total_travel_time": 630
+      "total_travel_time": 1140
     },
     {
       "departure_time": "08:15:00",
@@ -140,19 +212,37 @@
           "departure": 0
         },
         {
+          "station_id": "1193",
+          "station_name": "竹中",
+          "arrival": 200,
+          "departure": 235
+        },
+        {
+          "station_id": "1192",
+          "station_name": "新莊",
+          "arrival": 435,
+          "departure": 470
+        },
+        {
+          "station_id": "1191",
+          "station_name": "千甲",
+          "arrival": 670,
+          "departure": 705
+        },
+        {
           "station_id": "1190",
           "station_name": "北新竹",
-          "arrival": 300,
-          "departure": 330
+          "arrival": 905,
+          "departure": 940
         },
         {
           "station_id": "1210",
           "station_name": "新竹",
-          "arrival": 630,
-          "departure": 630
+          "arrival": 1140,
+          "departure": 1140
         }
       ],
-      "total_travel_time": 630
+      "total_travel_time": 1140
     },
     {
       "departure_time": "08:45:00",
@@ -170,19 +260,37 @@
           "departure": 0
         },
         {
+          "station_id": "1193",
+          "station_name": "竹中",
+          "arrival": 200,
+          "departure": 235
+        },
+        {
+          "station_id": "1192",
+          "station_name": "新莊",
+          "arrival": 435,
+          "departure": 470
+        },
+        {
+          "station_id": "1191",
+          "station_name": "千甲",
+          "arrival": 670,
+          "departure": 705
+        },
+        {
           "station_id": "1190",
           "station_name": "北新竹",
-          "arrival": 300,
-          "departure": 330
+          "arrival": 905,
+          "departure": 940
         },
         {
           "station_id": "1210",
           "station_name": "新竹",
-          "arrival": 630,
-          "departure": 630
+          "arrival": 1140,
+          "departure": 1140
         }
       ],
-      "total_travel_time": 630
+      "total_travel_time": 1140
     },
     {
       "departure_time": "09:15:00",
@@ -200,19 +308,37 @@
           "departure": 0
         },
         {
+          "station_id": "1193",
+          "station_name": "竹中",
+          "arrival": 200,
+          "departure": 235
+        },
+        {
+          "station_id": "1192",
+          "station_name": "新莊",
+          "arrival": 435,
+          "departure": 470
+        },
+        {
+          "station_id": "1191",
+          "station_name": "千甲",
+          "arrival": 670,
+          "departure": 705
+        },
+        {
           "station_id": "1190",
           "station_name": "北新竹",
-          "arrival": 300,
-          "departure": 330
+          "arrival": 905,
+          "departure": 940
         },
         {
           "station_id": "1210",
           "station_name": "新竹",
-          "arrival": 630,
-          "departure": 630
+          "arrival": 1140,
+          "departure": 1140
         }
       ],
-      "total_travel_time": 630
+      "total_travel_time": 1140
     },
     {
       "departure_time": "09:45:00",
@@ -230,19 +356,37 @@
           "departure": 0
         },
         {
+          "station_id": "1193",
+          "station_name": "竹中",
+          "arrival": 200,
+          "departure": 235
+        },
+        {
+          "station_id": "1192",
+          "station_name": "新莊",
+          "arrival": 435,
+          "departure": 470
+        },
+        {
+          "station_id": "1191",
+          "station_name": "千甲",
+          "arrival": 670,
+          "departure": 705
+        },
+        {
           "station_id": "1190",
           "station_name": "北新竹",
-          "arrival": 300,
-          "departure": 330
+          "arrival": 905,
+          "departure": 940
         },
         {
           "station_id": "1210",
           "station_name": "新竹",
-          "arrival": 630,
-          "departure": 630
+          "arrival": 1140,
+          "departure": 1140
         }
       ],
-      "total_travel_time": 630
+      "total_travel_time": 1140
     },
     {
       "departure_time": "10:15:00",
@@ -260,19 +404,37 @@
           "departure": 0
         },
         {
+          "station_id": "1193",
+          "station_name": "竹中",
+          "arrival": 200,
+          "departure": 235
+        },
+        {
+          "station_id": "1192",
+          "station_name": "新莊",
+          "arrival": 435,
+          "departure": 470
+        },
+        {
+          "station_id": "1191",
+          "station_name": "千甲",
+          "arrival": 670,
+          "departure": 705
+        },
+        {
           "station_id": "1190",
           "station_name": "北新竹",
-          "arrival": 300,
-          "departure": 330
+          "arrival": 905,
+          "departure": 940
         },
         {
           "station_id": "1210",
           "station_name": "新竹",
-          "arrival": 630,
-          "departure": 630
+          "arrival": 1140,
+          "departure": 1140
         }
       ],
-      "total_travel_time": 630
+      "total_travel_time": 1140
     },
     {
       "departure_time": "10:45:00",
@@ -290,19 +452,37 @@
           "departure": 0
         },
         {
+          "station_id": "1193",
+          "station_name": "竹中",
+          "arrival": 200,
+          "departure": 235
+        },
+        {
+          "station_id": "1192",
+          "station_name": "新莊",
+          "arrival": 435,
+          "departure": 470
+        },
+        {
+          "station_id": "1191",
+          "station_name": "千甲",
+          "arrival": 670,
+          "departure": 705
+        },
+        {
           "station_id": "1190",
           "station_name": "北新竹",
-          "arrival": 300,
-          "departure": 330
+          "arrival": 905,
+          "departure": 940
         },
         {
           "station_id": "1210",
           "station_name": "新竹",
-          "arrival": 630,
-          "departure": 630
+          "arrival": 1140,
+          "departure": 1140
         }
       ],
-      "total_travel_time": 630
+      "total_travel_time": 1140
     },
     {
       "departure_time": "11:15:00",
@@ -320,19 +500,37 @@
           "departure": 0
         },
         {
+          "station_id": "1193",
+          "station_name": "竹中",
+          "arrival": 200,
+          "departure": 235
+        },
+        {
+          "station_id": "1192",
+          "station_name": "新莊",
+          "arrival": 435,
+          "departure": 470
+        },
+        {
+          "station_id": "1191",
+          "station_name": "千甲",
+          "arrival": 670,
+          "departure": 705
+        },
+        {
           "station_id": "1190",
           "station_name": "北新竹",
-          "arrival": 300,
-          "departure": 330
+          "arrival": 905,
+          "departure": 940
         },
         {
           "station_id": "1210",
           "station_name": "新竹",
-          "arrival": 630,
-          "departure": 630
+          "arrival": 1140,
+          "departure": 1140
         }
       ],
-      "total_travel_time": 630
+      "total_travel_time": 1140
     },
     {
       "departure_time": "11:45:00",
@@ -350,19 +548,37 @@
           "departure": 0
         },
         {
+          "station_id": "1193",
+          "station_name": "竹中",
+          "arrival": 200,
+          "departure": 235
+        },
+        {
+          "station_id": "1192",
+          "station_name": "新莊",
+          "arrival": 435,
+          "departure": 470
+        },
+        {
+          "station_id": "1191",
+          "station_name": "千甲",
+          "arrival": 670,
+          "departure": 705
+        },
+        {
           "station_id": "1190",
           "station_name": "北新竹",
-          "arrival": 300,
-          "departure": 330
+          "arrival": 905,
+          "departure": 940
         },
         {
           "station_id": "1210",
           "station_name": "新竹",
-          "arrival": 630,
-          "departure": 630
+          "arrival": 1140,
+          "departure": 1140
         }
       ],
-      "total_travel_time": 630
+      "total_travel_time": 1140
     },
     {
       "departure_time": "12:15:00",
@@ -380,19 +596,37 @@
           "departure": 0
         },
         {
+          "station_id": "1193",
+          "station_name": "竹中",
+          "arrival": 200,
+          "departure": 235
+        },
+        {
+          "station_id": "1192",
+          "station_name": "新莊",
+          "arrival": 435,
+          "departure": 470
+        },
+        {
+          "station_id": "1191",
+          "station_name": "千甲",
+          "arrival": 670,
+          "departure": 705
+        },
+        {
           "station_id": "1190",
           "station_name": "北新竹",
-          "arrival": 300,
-          "departure": 330
+          "arrival": 905,
+          "departure": 940
         },
         {
           "station_id": "1210",
           "station_name": "新竹",
-          "arrival": 630,
-          "departure": 630
+          "arrival": 1140,
+          "departure": 1140
         }
       ],
-      "total_travel_time": 630
+      "total_travel_time": 1140
     },
     {
       "departure_time": "12:45:00",
@@ -410,19 +644,37 @@
           "departure": 0
         },
         {
+          "station_id": "1193",
+          "station_name": "竹中",
+          "arrival": 200,
+          "departure": 235
+        },
+        {
+          "station_id": "1192",
+          "station_name": "新莊",
+          "arrival": 435,
+          "departure": 470
+        },
+        {
+          "station_id": "1191",
+          "station_name": "千甲",
+          "arrival": 670,
+          "departure": 705
+        },
+        {
           "station_id": "1190",
           "station_name": "北新竹",
-          "arrival": 300,
-          "departure": 330
+          "arrival": 905,
+          "departure": 940
         },
         {
           "station_id": "1210",
           "station_name": "新竹",
-          "arrival": 630,
-          "departure": 630
+          "arrival": 1140,
+          "departure": 1140
         }
       ],
-      "total_travel_time": 630
+      "total_travel_time": 1140
     },
     {
       "departure_time": "13:15:00",
@@ -440,19 +692,37 @@
           "departure": 0
         },
         {
+          "station_id": "1193",
+          "station_name": "竹中",
+          "arrival": 200,
+          "departure": 235
+        },
+        {
+          "station_id": "1192",
+          "station_name": "新莊",
+          "arrival": 435,
+          "departure": 470
+        },
+        {
+          "station_id": "1191",
+          "station_name": "千甲",
+          "arrival": 670,
+          "departure": 705
+        },
+        {
           "station_id": "1190",
           "station_name": "北新竹",
-          "arrival": 300,
-          "departure": 330
+          "arrival": 905,
+          "departure": 940
         },
         {
           "station_id": "1210",
           "station_name": "新竹",
-          "arrival": 630,
-          "departure": 630
+          "arrival": 1140,
+          "departure": 1140
         }
       ],
-      "total_travel_time": 630
+      "total_travel_time": 1140
     },
     {
       "departure_time": "13:45:00",
@@ -470,19 +740,37 @@
           "departure": 0
         },
         {
+          "station_id": "1193",
+          "station_name": "竹中",
+          "arrival": 200,
+          "departure": 235
+        },
+        {
+          "station_id": "1192",
+          "station_name": "新莊",
+          "arrival": 435,
+          "departure": 470
+        },
+        {
+          "station_id": "1191",
+          "station_name": "千甲",
+          "arrival": 670,
+          "departure": 705
+        },
+        {
           "station_id": "1190",
           "station_name": "北新竹",
-          "arrival": 300,
-          "departure": 330
+          "arrival": 905,
+          "departure": 940
         },
         {
           "station_id": "1210",
           "station_name": "新竹",
-          "arrival": 630,
-          "departure": 630
+          "arrival": 1140,
+          "departure": 1140
         }
       ],
-      "total_travel_time": 630
+      "total_travel_time": 1140
     },
     {
       "departure_time": "14:15:00",
@@ -500,19 +788,37 @@
           "departure": 0
         },
         {
+          "station_id": "1193",
+          "station_name": "竹中",
+          "arrival": 200,
+          "departure": 235
+        },
+        {
+          "station_id": "1192",
+          "station_name": "新莊",
+          "arrival": 435,
+          "departure": 470
+        },
+        {
+          "station_id": "1191",
+          "station_name": "千甲",
+          "arrival": 670,
+          "departure": 705
+        },
+        {
           "station_id": "1190",
           "station_name": "北新竹",
-          "arrival": 300,
-          "departure": 330
+          "arrival": 905,
+          "departure": 940
         },
         {
           "station_id": "1210",
           "station_name": "新竹",
-          "arrival": 630,
-          "departure": 630
+          "arrival": 1140,
+          "departure": 1140
         }
       ],
-      "total_travel_time": 630
+      "total_travel_time": 1140
     },
     {
       "departure_time": "14:45:00",
@@ -530,19 +836,37 @@
           "departure": 0
         },
         {
+          "station_id": "1193",
+          "station_name": "竹中",
+          "arrival": 200,
+          "departure": 235
+        },
+        {
+          "station_id": "1192",
+          "station_name": "新莊",
+          "arrival": 435,
+          "departure": 470
+        },
+        {
+          "station_id": "1191",
+          "station_name": "千甲",
+          "arrival": 670,
+          "departure": 705
+        },
+        {
           "station_id": "1190",
           "station_name": "北新竹",
-          "arrival": 300,
-          "departure": 330
+          "arrival": 905,
+          "departure": 940
         },
         {
           "station_id": "1210",
           "station_name": "新竹",
-          "arrival": 630,
-          "departure": 630
+          "arrival": 1140,
+          "departure": 1140
         }
       ],
-      "total_travel_time": 630
+      "total_travel_time": 1140
     },
     {
       "departure_time": "15:15:00",
@@ -560,19 +884,37 @@
           "departure": 0
         },
         {
+          "station_id": "1193",
+          "station_name": "竹中",
+          "arrival": 200,
+          "departure": 235
+        },
+        {
+          "station_id": "1192",
+          "station_name": "新莊",
+          "arrival": 435,
+          "departure": 470
+        },
+        {
+          "station_id": "1191",
+          "station_name": "千甲",
+          "arrival": 670,
+          "departure": 705
+        },
+        {
           "station_id": "1190",
           "station_name": "北新竹",
-          "arrival": 300,
-          "departure": 330
+          "arrival": 905,
+          "departure": 940
         },
         {
           "station_id": "1210",
           "station_name": "新竹",
-          "arrival": 630,
-          "departure": 630
+          "arrival": 1140,
+          "departure": 1140
         }
       ],
-      "total_travel_time": 630
+      "total_travel_time": 1140
     },
     {
       "departure_time": "15:45:00",
@@ -590,19 +932,37 @@
           "departure": 0
         },
         {
+          "station_id": "1193",
+          "station_name": "竹中",
+          "arrival": 200,
+          "departure": 235
+        },
+        {
+          "station_id": "1192",
+          "station_name": "新莊",
+          "arrival": 435,
+          "departure": 470
+        },
+        {
+          "station_id": "1191",
+          "station_name": "千甲",
+          "arrival": 670,
+          "departure": 705
+        },
+        {
           "station_id": "1190",
           "station_name": "北新竹",
-          "arrival": 300,
-          "departure": 330
+          "arrival": 905,
+          "departure": 940
         },
         {
           "station_id": "1210",
           "station_name": "新竹",
-          "arrival": 630,
-          "departure": 630
+          "arrival": 1140,
+          "departure": 1140
         }
       ],
-      "total_travel_time": 630
+      "total_travel_time": 1140
     },
     {
       "departure_time": "16:15:00",
@@ -620,19 +980,37 @@
           "departure": 0
         },
         {
+          "station_id": "1193",
+          "station_name": "竹中",
+          "arrival": 200,
+          "departure": 235
+        },
+        {
+          "station_id": "1192",
+          "station_name": "新莊",
+          "arrival": 435,
+          "departure": 470
+        },
+        {
+          "station_id": "1191",
+          "station_name": "千甲",
+          "arrival": 670,
+          "departure": 705
+        },
+        {
           "station_id": "1190",
           "station_name": "北新竹",
-          "arrival": 300,
-          "departure": 330
+          "arrival": 905,
+          "departure": 940
         },
         {
           "station_id": "1210",
           "station_name": "新竹",
-          "arrival": 630,
-          "departure": 630
+          "arrival": 1140,
+          "departure": 1140
         }
       ],
-      "total_travel_time": 630
+      "total_travel_time": 1140
     },
     {
       "departure_time": "16:45:00",
@@ -650,19 +1028,37 @@
           "departure": 0
         },
         {
+          "station_id": "1193",
+          "station_name": "竹中",
+          "arrival": 200,
+          "departure": 235
+        },
+        {
+          "station_id": "1192",
+          "station_name": "新莊",
+          "arrival": 435,
+          "departure": 470
+        },
+        {
+          "station_id": "1191",
+          "station_name": "千甲",
+          "arrival": 670,
+          "departure": 705
+        },
+        {
           "station_id": "1190",
           "station_name": "北新竹",
-          "arrival": 300,
-          "departure": 330
+          "arrival": 905,
+          "departure": 940
         },
         {
           "station_id": "1210",
           "station_name": "新竹",
-          "arrival": 630,
-          "departure": 630
+          "arrival": 1140,
+          "departure": 1140
         }
       ],
-      "total_travel_time": 630
+      "total_travel_time": 1140
     },
     {
       "departure_time": "17:15:00",
@@ -680,19 +1076,37 @@
           "departure": 0
         },
         {
+          "station_id": "1193",
+          "station_name": "竹中",
+          "arrival": 200,
+          "departure": 235
+        },
+        {
+          "station_id": "1192",
+          "station_name": "新莊",
+          "arrival": 435,
+          "departure": 470
+        },
+        {
+          "station_id": "1191",
+          "station_name": "千甲",
+          "arrival": 670,
+          "departure": 705
+        },
+        {
           "station_id": "1190",
           "station_name": "北新竹",
-          "arrival": 300,
-          "departure": 330
+          "arrival": 905,
+          "departure": 940
         },
         {
           "station_id": "1210",
           "station_name": "新竹",
-          "arrival": 630,
-          "departure": 630
+          "arrival": 1140,
+          "departure": 1140
         }
       ],
-      "total_travel_time": 630
+      "total_travel_time": 1140
     },
     {
       "departure_time": "17:45:00",
@@ -710,19 +1124,37 @@
           "departure": 0
         },
         {
+          "station_id": "1193",
+          "station_name": "竹中",
+          "arrival": 200,
+          "departure": 235
+        },
+        {
+          "station_id": "1192",
+          "station_name": "新莊",
+          "arrival": 435,
+          "departure": 470
+        },
+        {
+          "station_id": "1191",
+          "station_name": "千甲",
+          "arrival": 670,
+          "departure": 705
+        },
+        {
           "station_id": "1190",
           "station_name": "北新竹",
-          "arrival": 300,
-          "departure": 330
+          "arrival": 905,
+          "departure": 940
         },
         {
           "station_id": "1210",
           "station_name": "新竹",
-          "arrival": 630,
-          "departure": 630
+          "arrival": 1140,
+          "departure": 1140
         }
       ],
-      "total_travel_time": 630
+      "total_travel_time": 1140
     },
     {
       "departure_time": "18:15:00",
@@ -740,19 +1172,37 @@
           "departure": 0
         },
         {
+          "station_id": "1193",
+          "station_name": "竹中",
+          "arrival": 200,
+          "departure": 235
+        },
+        {
+          "station_id": "1192",
+          "station_name": "新莊",
+          "arrival": 435,
+          "departure": 470
+        },
+        {
+          "station_id": "1191",
+          "station_name": "千甲",
+          "arrival": 670,
+          "departure": 705
+        },
+        {
           "station_id": "1190",
           "station_name": "北新竹",
-          "arrival": 300,
-          "departure": 330
+          "arrival": 905,
+          "departure": 940
         },
         {
           "station_id": "1210",
           "station_name": "新竹",
-          "arrival": 630,
-          "departure": 630
+          "arrival": 1140,
+          "departure": 1140
         }
       ],
-      "total_travel_time": 630
+      "total_travel_time": 1140
     },
     {
       "departure_time": "18:45:00",
@@ -770,19 +1220,37 @@
           "departure": 0
         },
         {
+          "station_id": "1193",
+          "station_name": "竹中",
+          "arrival": 200,
+          "departure": 235
+        },
+        {
+          "station_id": "1192",
+          "station_name": "新莊",
+          "arrival": 435,
+          "departure": 470
+        },
+        {
+          "station_id": "1191",
+          "station_name": "千甲",
+          "arrival": 670,
+          "departure": 705
+        },
+        {
           "station_id": "1190",
           "station_name": "北新竹",
-          "arrival": 300,
-          "departure": 330
+          "arrival": 905,
+          "departure": 940
         },
         {
           "station_id": "1210",
           "station_name": "新竹",
-          "arrival": 630,
-          "departure": 630
+          "arrival": 1140,
+          "departure": 1140
         }
       ],
-      "total_travel_time": 630
+      "total_travel_time": 1140
     },
     {
       "departure_time": "19:15:00",
@@ -800,19 +1268,37 @@
           "departure": 0
         },
         {
+          "station_id": "1193",
+          "station_name": "竹中",
+          "arrival": 200,
+          "departure": 235
+        },
+        {
+          "station_id": "1192",
+          "station_name": "新莊",
+          "arrival": 435,
+          "departure": 470
+        },
+        {
+          "station_id": "1191",
+          "station_name": "千甲",
+          "arrival": 670,
+          "departure": 705
+        },
+        {
           "station_id": "1190",
           "station_name": "北新竹",
-          "arrival": 300,
-          "departure": 330
+          "arrival": 905,
+          "departure": 940
         },
         {
           "station_id": "1210",
           "station_name": "新竹",
-          "arrival": 630,
-          "departure": 630
+          "arrival": 1140,
+          "departure": 1140
         }
       ],
-      "total_travel_time": 630
+      "total_travel_time": 1140
     },
     {
       "departure_time": "19:45:00",
@@ -830,19 +1316,37 @@
           "departure": 0
         },
         {
+          "station_id": "1193",
+          "station_name": "竹中",
+          "arrival": 200,
+          "departure": 235
+        },
+        {
+          "station_id": "1192",
+          "station_name": "新莊",
+          "arrival": 435,
+          "departure": 470
+        },
+        {
+          "station_id": "1191",
+          "station_name": "千甲",
+          "arrival": 670,
+          "departure": 705
+        },
+        {
           "station_id": "1190",
           "station_name": "北新竹",
-          "arrival": 300,
-          "departure": 330
+          "arrival": 905,
+          "departure": 940
         },
         {
           "station_id": "1210",
           "station_name": "新竹",
-          "arrival": 630,
-          "departure": 630
+          "arrival": 1140,
+          "departure": 1140
         }
       ],
-      "total_travel_time": 630
+      "total_travel_time": 1140
     },
     {
       "departure_time": "20:15:00",
@@ -860,19 +1364,37 @@
           "departure": 0
         },
         {
+          "station_id": "1193",
+          "station_name": "竹中",
+          "arrival": 200,
+          "departure": 235
+        },
+        {
+          "station_id": "1192",
+          "station_name": "新莊",
+          "arrival": 435,
+          "departure": 470
+        },
+        {
+          "station_id": "1191",
+          "station_name": "千甲",
+          "arrival": 670,
+          "departure": 705
+        },
+        {
           "station_id": "1190",
           "station_name": "北新竹",
-          "arrival": 300,
-          "departure": 330
+          "arrival": 905,
+          "departure": 940
         },
         {
           "station_id": "1210",
           "station_name": "新竹",
-          "arrival": 630,
-          "departure": 630
+          "arrival": 1140,
+          "departure": 1140
         }
       ],
-      "total_travel_time": 630
+      "total_travel_time": 1140
     },
     {
       "departure_time": "20:45:00",
@@ -890,19 +1412,37 @@
           "departure": 0
         },
         {
+          "station_id": "1193",
+          "station_name": "竹中",
+          "arrival": 200,
+          "departure": 235
+        },
+        {
+          "station_id": "1192",
+          "station_name": "新莊",
+          "arrival": 435,
+          "departure": 470
+        },
+        {
+          "station_id": "1191",
+          "station_name": "千甲",
+          "arrival": 670,
+          "departure": 705
+        },
+        {
           "station_id": "1190",
           "station_name": "北新竹",
-          "arrival": 300,
-          "departure": 330
+          "arrival": 905,
+          "departure": 940
         },
         {
           "station_id": "1210",
           "station_name": "新竹",
-          "arrival": 630,
-          "departure": 630
+          "arrival": 1140,
+          "departure": 1140
         }
       ],
-      "total_travel_time": 630
+      "total_travel_time": 1140
     },
     {
       "departure_time": "21:15:00",
@@ -920,19 +1460,37 @@
           "departure": 0
         },
         {
+          "station_id": "1193",
+          "station_name": "竹中",
+          "arrival": 200,
+          "departure": 235
+        },
+        {
+          "station_id": "1192",
+          "station_name": "新莊",
+          "arrival": 435,
+          "departure": 470
+        },
+        {
+          "station_id": "1191",
+          "station_name": "千甲",
+          "arrival": 670,
+          "departure": 705
+        },
+        {
           "station_id": "1190",
           "station_name": "北新竹",
-          "arrival": 300,
-          "departure": 330
+          "arrival": 905,
+          "departure": 940
         },
         {
           "station_id": "1210",
           "station_name": "新竹",
-          "arrival": 630,
-          "departure": 630
+          "arrival": 1140,
+          "departure": 1140
         }
       ],
-      "total_travel_time": 630
+      "total_travel_time": 1140
     },
     {
       "departure_time": "21:45:00",
@@ -950,19 +1508,37 @@
           "departure": 0
         },
         {
+          "station_id": "1193",
+          "station_name": "竹中",
+          "arrival": 200,
+          "departure": 235
+        },
+        {
+          "station_id": "1192",
+          "station_name": "新莊",
+          "arrival": 435,
+          "departure": 470
+        },
+        {
+          "station_id": "1191",
+          "station_name": "千甲",
+          "arrival": 670,
+          "departure": 705
+        },
+        {
           "station_id": "1190",
           "station_name": "北新竹",
-          "arrival": 300,
-          "departure": 330
+          "arrival": 905,
+          "departure": 940
         },
         {
           "station_id": "1210",
           "station_name": "新竹",
-          "arrival": 630,
-          "departure": 630
+          "arrival": 1140,
+          "departure": 1140
         }
       ],
-      "total_travel_time": 630
+      "total_travel_time": 1140
     },
     {
       "departure_time": "22:15:00",
@@ -980,19 +1556,37 @@
           "departure": 0
         },
         {
+          "station_id": "1193",
+          "station_name": "竹中",
+          "arrival": 200,
+          "departure": 235
+        },
+        {
+          "station_id": "1192",
+          "station_name": "新莊",
+          "arrival": 435,
+          "departure": 470
+        },
+        {
+          "station_id": "1191",
+          "station_name": "千甲",
+          "arrival": 670,
+          "departure": 705
+        },
+        {
           "station_id": "1190",
           "station_name": "北新竹",
-          "arrival": 300,
-          "departure": 330
+          "arrival": 905,
+          "departure": 940
         },
         {
           "station_id": "1210",
           "station_name": "新竹",
-          "arrival": 630,
-          "departure": 630
+          "arrival": 1140,
+          "departure": 1140
         }
       ],
-      "total_travel_time": 630
+      "total_travel_time": 1140
     },
     {
       "departure_time": "22:45:00",
@@ -1010,19 +1604,37 @@
           "departure": 0
         },
         {
+          "station_id": "1193",
+          "station_name": "竹中",
+          "arrival": 200,
+          "departure": 235
+        },
+        {
+          "station_id": "1192",
+          "station_name": "新莊",
+          "arrival": 435,
+          "departure": 470
+        },
+        {
+          "station_id": "1191",
+          "station_name": "千甲",
+          "arrival": 670,
+          "departure": 705
+        },
+        {
           "station_id": "1190",
           "station_name": "北新竹",
-          "arrival": 300,
-          "departure": 330
+          "arrival": 905,
+          "departure": 940
         },
         {
           "station_id": "1210",
           "station_name": "新竹",
-          "arrival": 630,
-          "departure": 630
+          "arrival": 1140,
+          "departure": 1140
         }
       ],
-      "total_travel_time": 630
+      "total_travel_time": 1140
     }
   ]
 }

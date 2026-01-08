@@ -36,12 +36,16 @@ NW_STATIONS = {
 LJ_STATIONS = {
     '1210': {'name': '新竹', 'name_en': 'Hsinchu'},
     '1190': {'name': '北新竹', 'name_en': 'North Hsinchu'},
+    '1191': {'name': '千甲', 'name_en': 'Qianjia'},
+    '1192': {'name': '新莊', 'name_en': 'Xinzhuang'},
+    '1193': {'name': '竹中', 'name_en': 'Zhuzhong'},
     '1194': {'name': '六家', 'name_en': 'Liujia'},
 }
 
 # 車站序列
 NW_STATION_ORDER = ['1210', '1190', '1191', '1192', '1193', '1201', '1202', '1203', '1204', '1205', '1206', '1207', '1208']
-LJ_STATION_ORDER = ['1210', '1190', '1194']
+LJ_STATION_ORDER = ['1210', '1190', '1191', '1192', '1193', '1194']
+# 新竹 → 北新竹 → 千甲 → 新莊 → 竹中 → 六家
 
 # O-D 軌道對應
 OD_TRACK_MAP = {
@@ -234,7 +238,9 @@ def generate_lj_schedules() -> List[Dict]:
 
         time_str = f'{hour:02d}:{minute:02d}'
         station_ids = get_station_sequence('1210', '1194', 'LJ')
-        stations = generate_station_times(station_ids, 0, avg_travel_time=300, dwell_time=30)
+        # 實際行車時間約 19 分鐘 (1140 秒)
+        # 5 段行車 × 200 秒 + 4 個中間站 × 35 秒停靠 = 1140 秒
+        stations = generate_station_times(station_ids, 0, avg_travel_time=200, dwell_time=35)
 
         departures.append({
             'departure_time': f'{time_str}:00',
@@ -257,7 +263,8 @@ def generate_lj_schedules() -> List[Dict]:
 
         time_str = f'{hour:02d}:{minute:02d}'
         station_ids = get_station_sequence('1194', '1210', 'LJ')
-        stations = generate_station_times(station_ids, 0, avg_travel_time=300, dwell_time=30)
+        # 實際行車時間約 19 分鐘 (1140 秒)
+        stations = generate_station_times(station_ids, 0, avg_travel_time=200, dwell_time=35)
 
         departures.append({
             'departure_time': f'{time_str}:00',

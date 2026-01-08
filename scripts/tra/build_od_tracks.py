@@ -192,10 +192,12 @@ def find_closest_point_index(coords: CoordList, target: Coord) -> int:
 
 
 def calculate_cumulative_distances(coords: CoordList) -> List[float]:
-    """計算累積距離"""
+    """計算累積距離 - 使用歐幾里得距離以匹配 TypeScript 引擎"""
     distances = [0.0]
     for i in range(1, len(coords)):
-        d = haversine_distance(coords[i-1], coords[i])
+        dx = coords[i][0] - coords[i-1][0]
+        dy = coords[i][1] - coords[i-1][1]
+        d = math.sqrt(dx * dx + dy * dy)  # 歐幾里得距離（度）
         distances.append(distances[-1] + d)
     return distances
 

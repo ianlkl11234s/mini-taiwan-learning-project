@@ -51,3 +51,7 @@ tools/data_collector/output/
 scripts/backup_klrt/
 scripts/backup_krtc/
 scripts/backup_tmrt/
+scripts/backup_trtc/
+
+# Raw data files
+public/data/tra/tra_shp_data/

@@ -521,16 +521,10 @@ function App() {
         names.set(stationId, stationName);
       }
     }
-    // TRA 車站
-    if (traStations) {
-      for (const feature of traStations.features) {
-        const stationId = feature.properties.station_id;
-        const stationName = feature.properties.name_zh;
-        names.set(stationId, stationName);
-      }
-    }
+    // 注意：TRA 車站使用與 THSR 相同的 station_id 編號系統，
+    // 為避免覆蓋，TRA 車站名稱在 TrainInfoPanel 中使用 TRA_STATION_NAMES 查找
     return names;
-  }, [stations, thsrStations, krtcStations, klrtStations, tmrtStations, traStations]);
+  }, [stations, thsrStations, krtcStations, klrtStations, tmrtStations]);
 
   // 取得選中的列車資料（同時支援 MRT、THSR、KRTC、KLRT、TMRT 和 TRA）
   const selectedTrain = useMemo(() => {

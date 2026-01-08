@@ -8,7 +8,7 @@ import { getThsrLineName, getThsrLineColor } from '../constants/thsrInfo';
 import { getKrtcLineName, getKrtcLineColor } from '../constants/krtcInfo';
 import { getKlrtLineName, getKlrtLineColor } from '../constants/klrtInfo';
 import { getTmrtLineName, getTmrtLineColor } from '../constants/tmrtInfo';
-import { getTraLineName, TRA_PRIMARY_COLOR } from '../constants/traInfo';
+import { getTraLineName, TRA_PRIMARY_COLOR, TRA_STATION_NAMES } from '../constants/traInfo';
 import type { VisualTheme } from './ThemeToggle';
 
 interface TrainInfoPanelProps {
@@ -68,8 +68,12 @@ export function TrainInfoPanel({ train, stationNames, onClose, visualTheme = 'da
   };
 
   // 取得站名（如果找不到則顯示 ID）
+  // TRA 使用獨立的站名查找表，避免與 THSR 的 station_id 衝突
   const getStationName = (stationId: string | undefined) => {
     if (!stationId) return '-';
+    if (isTra) {
+      return TRA_STATION_NAMES[stationId] || stationId;
+    }
     return stationNames.get(stationId) || stationId;
   };
 

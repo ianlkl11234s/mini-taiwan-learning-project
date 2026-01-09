@@ -1,0 +1,106 @@
+{
+  "type": "FeatureCollection",
+  "name": "集集線缺口 - 待手繪補完",
+  "description": "軌道從源泉站附近斷掉，需補到車埕站。請沿鐵路路線手繪連接。",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "集集線缺口",
+        "gap_id": "JJ-gap-01",
+        "line": "集集線",
+        "note": "從現有軌道終點補到車埕站，需經過: 濁水 → 龍泉 → 集集 → 水里 → 車埕",
+        "stroke": "#8B4513",
+        "stroke-width": 4,
+        "stroke-opacity": 0.9,
+        "stations_to_pass": [
+          {"id": "3432", "name": "濁水", "approx_coord": [120.664, 23.828]},
+          {"id": "3433", "name": "龍泉", "approx_coord": [120.687, 23.832]},
+          {"id": "3434", "name": "集集", "approx_coord": [120.781, 23.827]},
+          {"id": "3435", "name": "水里", "approx_coord": [120.855, 23.819]},
+          {"id": "3436", "name": "車埕", "approx_coord": [120.867, 23.833]}
+        ]
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [120.70141214730648, 23.834092134962344],
+          [120.867, 23.833]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "現有軌道終點 (起點標記)",
+        "type": "gap_start",
+        "note": "從這裡開始手繪"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.70141214730648, 23.834092134962344]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "車埕站 (終點標記)",
+        "type": "gap_end",
+        "station_id": "3436",
+        "note": "手繪終點"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.867, 23.833]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "濁水站 (參考點)",
+        "type": "reference_station",
+        "station_id": "3432"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.664, 23.828]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "龍泉站 (參考點)",
+        "type": "reference_station",
+        "station_id": "3433"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.687, 23.832]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "集集站 (參考點)",
+        "type": "reference_station",
+        "station_id": "3434"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.781, 23.827]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "水里站 (參考點)",
+        "type": "reference_station",
+        "station_id": "3435"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.855, 23.819]
+      }
+    }
+  ]
+}

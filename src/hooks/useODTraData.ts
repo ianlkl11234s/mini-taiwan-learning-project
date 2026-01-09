@@ -22,6 +22,8 @@ const OD_TRACK_IDS = [
   'JJ-CT-ES',  // 車埕→二水
   'CZ-CG-ZF',  // 成功→追分
   'CZ-ZF-CG',  // 追分→成功
+  'SH-TN-SL',  // 臺南→沙崙
+  'SH-SL-TN',  // 沙崙→臺南
 ];
 
 // 時刻表 ID 列表
@@ -31,6 +33,7 @@ const SCHEDULE_IDS = [
   'PX-0', 'PX-1',
   'JJ-0', 'JJ-1',
   'CZ-0', 'CZ-1',
+  'SH-0', 'SH-1',
 ];
 
 export interface ODTraDataState {

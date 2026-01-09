@@ -82,6 +82,13 @@ STATIONS = {
     # 成追線
     '3350': '成功',
     '2260': '追分',
+    # 沙崙線 (含縱貫線共線區段)
+    '4220': '臺南',
+    '4250': '保安',
+    '4260': '仁德',
+    '4270': '中洲',
+    '4271': '長榮大學',
+    '4272': '沙崙',
 }
 
 # NW 線車站順序 (從新竹方向)
@@ -103,6 +110,10 @@ JJ_STATIONS = ['3430', '3431', '3432', '3433', '3434', '3435', '3436']
 # CZ 線車站順序 (從成功到追分)
 CZ_STATIONS = ['3350', '2260']
 # 成功 -> 追分
+
+# SH 線車站順序 (從臺南到沙崙，包含縱貫線共線區段)
+SH_STATIONS = ['4220', '4250', '4260', '4270', '4271', '4272']
+# 臺南 -> 保安 -> 仁德 -> 中洲 -> 長榮大學 -> 沙崙
 
 # O-D 路由定義
 OD_ROUTES = [
@@ -246,6 +257,32 @@ OD_ROUTES = [
         destination_name='成功',
         segments=[
             ('CZ-1', '2260', '3350'),    # 追分→成功 (全線)
+        ]
+    ),
+    # SH 線 O-D (沙崙線)
+    # SH-0 實際方向是沙崙→中洲 (座標分析確認)
+    # SH-1 實際方向是中洲→沙崙
+    # WL-S1-0 是北上 (高雄→彰化)，WL-S1-1 是南下 (彰化→高雄)
+    ODRoute(
+        od_track_id='SH-TN-SL',
+        origin_station_id='4220',
+        destination_station_id='4272',
+        origin_name='臺南',
+        destination_name='沙崙',
+        segments=[
+            ('WL-S1-1', '4220', '4270'),  # 臺南→中洲 (縱貫線南下)
+            ('SH-1', '4270', '4272'),     # 中洲→沙崙 (沙崙線)
+        ]
+    ),
+    ODRoute(
+        od_track_id='SH-SL-TN',
+        origin_station_id='4272',
+        destination_station_id='4220',
+        origin_name='沙崙',
+        destination_name='臺南',
+        segments=[
+            ('SH-0', '4272', '4270'),     # 沙崙→中洲 (沙崙線)
+            ('WL-S1-0', '4270', '4220'),  # 中洲→臺南 (縱貫線北上)
         ]
     ),
 ]
@@ -537,6 +574,17 @@ def get_intermediate_stations(route: ODRoute, stations: Dict[str, Station]) -> L
                 return CZ_STATIONS[origin_idx:dest_idx+1]
             else:
                 return CZ_STATIONS[dest_idx:origin_idx+1][::-1]
+
+    elif route.od_track_id.startswith('SH-'):
+        # 沙崙線
+        origin_idx = SH_STATIONS.index(route.origin_station_id) if route.origin_station_id in SH_STATIONS else -1
+        dest_idx = SH_STATIONS.index(route.destination_station_id) if route.destination_station_id in SH_STATIONS else -1
+
+        if origin_idx >= 0 and dest_idx >= 0:
+            if origin_idx <= dest_idx:
+                return SH_STATIONS[origin_idx:dest_idx+1]
+            else:
+                return SH_STATIONS[dest_idx:origin_idx+1][::-1]
 
     return [route.origin_station_id, route.destination_station_id]
 

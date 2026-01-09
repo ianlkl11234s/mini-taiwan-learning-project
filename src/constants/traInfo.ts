@@ -16,8 +16,8 @@ export const TRA_LINE_NAMES: Record<string, string> = {
 // 方向名稱（依線路區分）
 export const TRA_DIRECTION_NAMES: Record<string, Record<string, string>> = {
   SH: {
-    '0': '往臺南',
-    '1': '往沙崙',
+    '0': '往沙崙',
+    '1': '往臺南',
   },
   WL: {
     '0': '北上',

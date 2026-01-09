@@ -1232,7 +1232,7 @@ function App() {
         'line-cap': 'round',
       },
       paint: {
-        'line-color': '#000000',
+        'line-color': '#000080',
         'line-width': 4,
         'line-opacity': 0.9,
       },
@@ -1265,7 +1265,7 @@ function App() {
       paint: {
         'circle-radius': 5,
         'circle-color': '#ffffff',
-        'circle-stroke-color': '#000000',
+        'circle-stroke-color': '#000080',
         'circle-stroke-width': 2,
         'circle-opacity': 1,
         'circle-stroke-opacity': 1,
@@ -1285,7 +1285,7 @@ function App() {
       },
       paint: {
         'text-color': '#ffffff',
-        'text-halo-color': '#000000',
+        'text-halo-color': '#000080',
         'text-halo-width': 1,
         'text-opacity': 1,
         'text-emissive-strength': 1.0,

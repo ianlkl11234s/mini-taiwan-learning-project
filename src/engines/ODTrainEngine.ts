@@ -149,16 +149,32 @@ function timeToSeconds(timeStr: string): number {
 
 /**
  * 從 O-D 軌道 ID 取得顯示用 trackId
- * NW-HC-NB (新竹→內灣) → NW-1
- * NW-NB-HC (內灣→新竹) → NW-0
- * LJ-HC-LJ (新竹→六家) → LJ-1
- * LJ-LJ-HC (六家→新竹) → LJ-0
+ *
+ * 方向 0 = 返回主線/起點站
+ * 方向 1 = 前往支線終點
+ *
+ * NW: HC=新竹(0), NB=內灣(1), JJ=竹中(中間站), JD=竹東(中間站)
+ * LJ: HC=新竹(0), LJ=六家(1)
+ * SH: TN=臺南(0), SL=沙崙(1)
+ * PX: SD=三貂嶺(0), JT=菁桐(1)
+ * JJ: ES=二水(0), CT=車埕(1)
+ * CZ: CG=成功(0), ZF=追分(1)
  */
 function getTrackIdFromOdTrackId(odTrackId: string): string {
   const [lineId, _origin, dest] = odTrackId.split('-');
 
-  // 判斷方向：往新竹(HC)為 0，往其他站為 1
-  const direction = dest === 'HC' ? '0' : '1';
+  // 各線的「起點站」代碼（方向 0 的終點）
+  const mainStations: Record<string, string> = {
+    'NW': 'HC',  // 新竹
+    'LJ': 'HC',  // 新竹
+    'SH': 'TN',  // 臺南
+    'PX': 'SD',  // 三貂嶺
+    'JJ': 'ES',  // 二水
+    'CZ': 'CG',  // 成功
+  };
+
+  const mainStation = mainStations[lineId] || 'HC';
+  const direction = dest === mainStation ? '0' : '1';
 
   return `${lineId}-${direction}`;
 }

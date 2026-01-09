@@ -33,9 +33,10 @@ const TRA_TRACK_IDS = [
 
 /**
  * 有完整時刻表的軌道 ID (用於列車動畫)
- * 只有這些軌道會有列車運行
+ * 注意：所有支線 (NW, LJ, SH, PX, JJ, CZ) 都已移至 ODTrainEngine 處理
+ * 此列表應為空，以避免重複渲染列車
  */
-const TRA_SCHEDULE_IDS = ['SH-0', 'SH-1'];
+const TRA_SCHEDULE_IDS: string[] = [];
 
 /**
  * 車站進度映射表類型

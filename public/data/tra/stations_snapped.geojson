@@ -2433,15 +2433,15 @@
           120.61805,
           23.81321
         ],
-        "snapped_distance": 26.03,
-        "matched_line_id": "WL-S2",
-        "track_progress": 0.502562
+        "snapped_distance": 456.4,
+        "matched_line_id": "JJ",
+        "track_progress": 0.0
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.618183,
-          23.813403
+          120.621691,
+          23.811299
         ]
       }
     },
@@ -2459,14 +2459,14 @@
           120.64211,
           23.79845
         ],
-        "snapped_distance": 8.01,
+        "snapped_distance": 8.02,
         "matched_line_id": "JJ",
-        "track_progress": 0.344196
+        "track_progress": 0.126957
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.642106,
+          120.642109,
           23.798522
         ]
       }
@@ -2485,15 +2485,15 @@
           120.70467,
           23.83467
         ],
-        "snapped_distance": 367.27,
+        "snapped_distance": 22.34,
         "matched_line_id": "JJ",
-        "track_progress": 1.0
+        "track_progress": 0.380419
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.701412,
-          23.834092
+          120.704797,
+          23.834514
         ]
       }
     },
@@ -2511,13 +2511,15 @@
           120.75014,
           23.83521
         ],
-        "snapped_distance": 5410.21
+        "snapped_distance": 12.08,
+        "matched_line_id": "JJ",
+        "track_progress": 0.540816
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.701412,
-          23.834092
+          120.750037,
+          23.835246
         ]
       }
     },
@@ -2535,13 +2537,15 @@
           120.78495,
           23.82647
         ],
-        "snapped_distance": 9311.22
+        "snapped_distance": 16.91,
+        "matched_line_id": "JJ",
+        "track_progress": 0.681729
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.701412,
-          23.834092
+          120.784961,
+          23.826318
         ]
       }
     },
@@ -2559,13 +2563,15 @@
           120.85332,
           23.81845
         ],
-        "snapped_distance": 16950.93
+        "snapped_distance": 24.71,
+        "matched_line_id": "JJ",
+        "track_progress": 0.922932
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.701412,
-          23.834092
+          120.853343,
+          23.818671
         ]
       }
     },
@@ -2583,13 +2589,15 @@
           120.86572,
           23.83263
         ],
-        "snapped_distance": 18238.89
+        "snapped_distance": 234.26,
+        "matched_line_id": "JJ",
+        "track_progress": 1.0
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.701412,
-          23.834092
+          120.867393,
+          23.833916
         ]
       }
     },

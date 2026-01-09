@@ -1,77 +1,99 @@
 /**
- * TraTrainEngine - 台灣鐵路列車引擎 (沙崙線 MVP)
+ * TraTrainEngine - 台鐵列車引擎
  *
- * 簡化版列車引擎：
- * - 支援單一支線（沙崙線 SH）
- * - 無碰撞檢測（支線軌道獨立）
- * - 使用累積距離計算車站進度
- * - 可擴展支援其他台鐵路線
+ * 使用 O-D 專屬軌道來計算列車位置，
+ * 避免軌道切換時的抖動問題。
+ *
+ * 支援路線：
+ * - NW (內灣線)
+ * - LJ (六家線)
+ * - SH (沙崙線)
+ * - PX (平溪線)
+ * - JJ (集集線)
+ * - CZ (成追線)
  */
-
-import type { TrackSchedule, StationTime } from '../types/schedule';
-import type { Track, TrackGeometry } from '../types/track';
 
 export interface TraTrain {
   trainId: string;
-  trackId: string;
-  departureTime: number; // 當天秒數
+  trackId: string;         // 用於顏色顯示 (如 NW-1, LJ-0)
+  odTrackId: string;       // O-D 軌道 ID (如 NW-HC-NB)
+  departureTime: number;   // 當天秒數
   totalTravelTime: number; // 秒
   status: 'waiting' | 'running' | 'stopped' | 'arrived';
-  progress: number; // 0-1 (整體進度)
+  progress: number;        // 0-1 (整體進度)
   position: [number, number]; // [lng, lat]
-  currentStation?: string; // 停靠中的車站 ID
-  nextStation?: string; // 下一站 ID
-  segmentProgress?: number; // 當前區段進度 0-1
+  currentStation?: string;
+  nextStation?: string;
+  segmentProgress?: number;
 
-  // 列車資訊面板用欄位
+  // 列車資訊
   originStation: string;
   destinationStation: string;
-  previousStation?: string;
-  previousDepartureTime?: string;
-  nextArrivalTime?: string;
+  trainNo?: string;
+  trainType?: string;
 }
 
-/**
- * 車站進度映射表類型
- * 外層 key: track_id (SH-0, SH-1)
- * 內層 key: station_id
- * value: 0-1 之間的進度值
- */
+export interface StationTime {
+  station_id: string;
+  station_name: string;
+  arrival: number;
+  departure: number;
+}
+
+export interface TraDeparture {
+  departure_time: string;
+  train_id: string;
+  train_no?: string;
+  train_type?: string;
+  origin_station: string;
+  destination_station: string;
+  od_track_id: string;
+  stations: StationTime[];
+  total_travel_time: number;
+}
+
+export interface TraSchedule {
+  track_id: string;
+  route_id: string;
+  name: string;
+  departure_count: number;
+  departures: TraDeparture[];
+}
+
+export interface TraTrack {
+  type: 'Feature';
+  properties: {
+    track_id: string;
+    origin: string;
+    destination: string;
+    origin_station_id: string;
+    destination_station_id: string;
+    source_tracks: string[];
+    stations: Array<{
+      station_id: string;
+      name: string;
+      progress: number;
+    }>;
+  };
+  geometry: {
+    type: 'LineString';
+    coordinates: [number, number][];
+  };
+}
+
+// 車站進度映射 { od_track_id: { station_id: progress } }
 export type TraStationProgressMap = Record<string, Record<string, number>>;
 
 export interface TraTrainEngineOptions {
-  schedules: Map<string, TrackSchedule>;
-  tracks: Map<string, Track>;
+  schedules: Map<string, TraSchedule>;
+  odTracks: Map<string, TraTrack>;
   stationProgress: TraStationProgressMap;
 }
 
-// 終站停留時間（秒）
+// 終站停留時間
 const TERMINAL_DWELL_TIME = 60;
-
-// 起站提前出現時間（秒）- 列車在發車前多久出現在起站
-const ORIGIN_EARLY_APPEAR_TIME = 120; // 2 分鐘
-
-/**
- * 從軌道幾何取得座標陣列
- * 支援 LineString 和 MultiLineString
- */
-function getTrackCoordinates(geometry: TrackGeometry): [number, number][] {
-  if (geometry.type === 'LineString') {
-    return geometry.coordinates;
-  } else if (geometry.type === 'MultiLineString') {
-    // 將 MultiLineString 的所有線段展平為單一連續陣列
-    const coords: [number, number][] = [];
-    for (const lineCoords of geometry.coordinates) {
-      // 如果不是第一段，跳過第一個點（避免重複）
-      const startIndex = coords.length > 0 ? 1 : 0;
-      for (let i = startIndex; i < lineCoords.length; i++) {
-        coords.push(lineCoords[i]);
-      }
-    }
-    return coords;
-  }
-  return [];
-}
+// 起站提前出現時間
+const ORIGIN_EARLY_APPEAR_TIME = 120;
 
 /**
  * 計算線段總長度
@@ -129,23 +151,46 @@ function timeToSeconds(timeStr: string): number {
 }
 
 /**
- * 秒數轉時間字串
+ * 從 O-D 軌道 ID 取得顯示用 trackId
+ *
+ * 方向 0 = 返回主線/起點站
+ * 方向 1 = 前往支線終點
+ *
+ * NW: HC=新竹(0), NB=內灣(1), JJ=竹中(中間站), JD=竹東(中間站)
+ * LJ: HC=新竹(0), LJ=六家(1)
+ * SH: TN=臺南(0), SL=沙崙(1)
+ * PX: SD=三貂嶺(0), JT=菁桐(1)
+ * JJ: ES=二水(0), CT=車埕(1)
+ * CZ: CG=成功(0), ZF=追分(1)
  */
-function secondsToTimeStr(seconds: number): string {
-  const hours = Math.floor(seconds / 3600) % 24;
-  const minutes = Math.floor((seconds % 3600) / 60);
-  return `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}`;
+function getTrackIdFromOdTrackId(odTrackId: string): string {
+  const [lineId, _origin, dest] = odTrackId.split('-');
+
+  // 各線的「起點站」代碼（方向 0 的終點）
+  const mainStations: Record<string, string> = {
+    'NW': 'HC',  // 新竹
+    'LJ': 'HC',  // 新竹
+    'SH': 'TN',  // 臺南
+    'PX': 'SD',  // 三貂嶺
+    'JJ': 'ES',  // 二水
+    'CZ': 'CG',  // 成功
+  };
+
+  const mainStation = mainStations[lineId] || 'HC';
+  const direction = dest === mainStation ? '0' : '1';
+
+  return `${lineId}-${direction}`;
 }
 
 export class TraTrainEngine {
-  private schedules: Map<string, TrackSchedule>;
-  private tracks: Map<string, Track>;
+  private schedules: Map<string, TraSchedule>;
+  private odTracks: Map<string, TraTrack>;
   private stationProgress: TraStationProgressMap;
   private activeTrains: Map<string, TraTrain> = new Map();
 
   constructor(options: TraTrainEngineOptions) {
     this.schedules = options.schedules;
-    this.tracks = options.tracks;
+    this.odTracks = options.odTracks;
     this.stationProgress = options.stationProgress;
   }
 
@@ -163,7 +208,6 @@ export class TraTrainEngine {
     currentStation?: string;
     nextStation?: string;
   } {
-    // 尚未發車
     if (elapsedTime < 0) {
       return {
         status: 'waiting',
@@ -174,13 +218,11 @@ export class TraTrainEngine {
       };
     }
 
-    // 遍歷所有站點
     for (let i = 0; i < stations.length; i++) {
       const station = stations[i];
       const arrival = station.arrival;
       const departure = station.departure;
 
-      // 檢查是否在這個站停靠
       if (elapsedTime >= arrival && elapsedTime < departure) {
         return {
           status: 'stopped',
@@ -192,7 +234,6 @@ export class TraTrainEngine {
         };
       }
 
-      // 檢查是否在這個站和下一站之間行駛
       if (i < stations.length - 1) {
         const nextStation = stations[i + 1];
         const nextArrival = nextStation.arrival;
@@ -214,7 +255,6 @@ export class TraTrainEngine {
       }
     }
 
-    // 已抵達終點
     return {
       status: 'arrived',
       stationIndex: stations.length - 1,
@@ -225,56 +265,50 @@ export class TraTrainEngine {
   }
 
   /**
-   * 計算車站在軌道上的進度 (0-1)
-   * 使用均勻分布作為回退
-   */
-  private getStationProgressFallback(stationIndex: number, totalStations: number): number {
-    if (totalStations <= 1) return 0;
-    return stationIndex / (totalStations - 1);
-  }
-
-  /**
    * 更新所有列車狀態
-   * @param currentTimeSeconds 當天秒數 (0-86399)
    */
   update(currentTimeSeconds: number): TraTrain[] {
     this.activeTrains.clear();
 
-    // 遍歷所有軌道的時刻表
-    for (const [trackId, schedule] of this.schedules) {
-      const track = this.tracks.get(trackId);
-      if (!track) continue;
-
-      const coords = getTrackCoordinates(track.geometry);
-      if (coords.length === 0) continue;
-
-      const totalStations = schedule.stations.length;
-
-      // 遍歷該軌道的所有發車班次
+    for (const [_scheduleId, schedule] of this.schedules) {
       for (const departure of schedule.departures) {
         const departureSeconds = timeToSeconds(departure.departure_time);
         const totalTravelTime = departure.total_travel_time;
-
-        // 計算已過時間
         const elapsedTime = currentTimeSeconds - departureSeconds;
 
-        // 快速檢查：跳過尚未出現或已完全離開的列車
+        // 跳過不在顯示範圍的列車
         if (elapsedTime < -ORIGIN_EARLY_APPEAR_TIME || elapsedTime > totalTravelTime + TERMINAL_DWELL_TIME + 60) {
           continue;
         }
 
-        // 使用分段插值找到當前狀態
+        // 取得 O-D 軌道
+        const odTrackId = departure.od_track_id;
+        const odTrack = this.odTracks.get(odTrackId);
+        if (!odTrack) {
+          console.warn(`O-D 軌道不存在: ${odTrackId}`);
+          continue;
+        }
+
+        const coords = odTrack.geometry.coordinates;
+        if (coords.length === 0) continue;
+
+        // 取得車站進度
+        const trackProgress = this.stationProgress[odTrackId];
+        if (!trackProgress) {
+          console.warn(`車站進度不存在: ${odTrackId}`);
+          continue;
+        }
+
+        // 找到當前狀態
         const segment = this.findCurrentSegment(departure.stations, elapsedTime);
 
-        // 處理尚未發車的列車：在起站等待
         let displayStatus = segment.status;
         let isWaitingAtOrigin = false;
         if (segment.status === 'waiting') {
-          displayStatus = 'stopped'; // 顯示為停站狀態
+          displayStatus = 'stopped';
           isWaitingAtOrigin = true;
         }
 
-        // 處理已抵達終點的列車
         if (segment.status === 'arrived') {
           const timeAfterArrival = elapsedTime - totalTravelTime;
           if (timeAfterArrival > TERMINAL_DWELL_TIME) {
@@ -283,68 +317,31 @@ export class TraTrainEngine {
           displayStatus = 'stopped';
         }
 
-        // 計算位置：使用車站在軌道上的實際進度進行內插
+        // 計算位置
         const stations = departure.stations;
         const fromStationId = stations[segment.stationIndex]?.station_id;
         const toStationId = stations[segment.nextStationIndex]?.station_id;
 
-        // 取得車站在軌道上的進度
-        const trackProgress = this.stationProgress[trackId];
-        const fromProgress = fromStationId && trackProgress?.[fromStationId] !== undefined
-          ? trackProgress[fromStationId]
-          : this.getStationProgressFallback(segment.stationIndex, totalStations);
-        const toProgress = toStationId && trackProgress?.[toStationId] !== undefined
-          ? trackProgress[toStationId]
-          : this.getStationProgressFallback(segment.nextStationIndex, totalStations);
+        const fromProgress = trackProgress[fromStationId] ?? 0;
+        const toProgress = trackProgress[toStationId] ?? 1;
 
         let position: [number, number];
 
-        if (isWaitingAtOrigin) {
-          // 等待發車中：固定在起站位置
-          position = interpolateOnLineString(coords, fromProgress);
-        } else if (displayStatus === 'stopped') {
-          // 停站中：使用該站的進度在軌道上定位
+        if (isWaitingAtOrigin || displayStatus === 'stopped') {
           position = interpolateOnLineString(coords, fromProgress);
         } else {
-          // 行駛中：在兩站進度間內插，沿軌道移動
           const actualProgress = fromProgress + (toProgress - fromProgress) * segment.segmentProgress;
           position = interpolateOnLineString(coords, actualProgress);
         }
 
-        // 計算整體進度
         const overallProgress = totalTravelTime > 0
           ? Math.max(0, Math.min(1, elapsedTime / totalTravelTime))
           : 0;
 
-        // 計算列車資訊面板所需資料
-        const stationList = departure.stations;
-        const originStation = stationList[0]?.station_id || '';
-        const destinationStation = stationList[stationList.length - 1]?.station_id || '';
-
-        // 前一站資訊
-        let previousStation: string | undefined;
-        let previousDepartureTime: string | undefined;
-        if (segment.stationIndex > 0) {
-          const prevIdx = segment.stationIndex - 1;
-          previousStation = stationList[prevIdx]?.station_id;
-          const prevDepartureSeconds = stationList[prevIdx]?.departure;
-          if (prevDepartureSeconds !== undefined) {
-            previousDepartureTime = secondsToTimeStr(departureSeconds + prevDepartureSeconds);
-          }
-        }
-
-        // 下一站到達時間
-        let nextArrivalTime: string | undefined;
-        if (segment.nextStation && segment.nextStationIndex < stationList.length) {
-          const nextArrivalSeconds = stationList[segment.nextStationIndex]?.arrival;
-          if (nextArrivalSeconds !== undefined) {
-            nextArrivalTime = secondsToTimeStr(departureSeconds + nextArrivalSeconds);
-          }
-        }
-
         const train: TraTrain = {
           trainId: departure.train_id,
-          trackId,
+          trackId: getTrackIdFromOdTrackId(odTrackId),
+          odTrackId,
           departureTime: departureSeconds,
           totalTravelTime,
           status: displayStatus,
@@ -353,11 +350,10 @@ export class TraTrainEngine {
           currentStation: segment.currentStation,
           nextStation: segment.nextStation,
           segmentProgress: segment.segmentProgress,
-          originStation,
-          destinationStation,
-          previousStation,
-          previousDepartureTime,
-          nextArrivalTime,
+          originStation: departure.origin_station,
+          destinationStation: departure.destination_station,
+          trainNo: departure.train_no,
+          trainType: departure.train_type,
         };
 
         this.activeTrains.set(train.trainId, train);

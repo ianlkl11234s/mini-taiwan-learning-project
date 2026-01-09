@@ -1,6 +1,6 @@
 import * as THREE from 'three';
 import mapboxgl from 'mapbox-gl';
-import type { ODTrain, ODTrack } from '../engines/ODTrainEngine';
+import type { TraTrain, TraTrack } from '../engines/TraTrainEngine';
 import { TRA_COLOR_3D, getTraDirection } from '../constants/traInfo';
 
 // 參考點：新竹附近（台鐵涵蓋範圍中心點）
@@ -30,10 +30,10 @@ export class Tra3DLayer implements mapboxgl.CustomLayerInterface {
   private trainMeshes: Map<string, THREE.Group> = new Map();
 
   // 目前顯示的列車資料
-  private trains: ODTrain[] = [];
+  private trains: TraTrain[] = [];
 
   // O-D 軌道資料（用於計算行進方向）
-  private odTracks: Map<string, ODTrack> = new Map();
+  private odTracks: Map<string, TraTrack> = new Map();
 
   // 車站座標（用於停站時精確定位）
   private stationCoordinates: Map<string, [number, number]> = new Map();
@@ -63,7 +63,7 @@ export class Tra3DLayer implements mapboxgl.CustomLayerInterface {
   private outlineMaterial: THREE.LineBasicMaterial | null = null;
   private outlineGeometry: THREE.EdgesGeometry | null = null;
 
-  constructor(odTracks?: Map<string, ODTrack>) {
+  constructor(odTracks?: Map<string, TraTrack>) {
     if (odTracks) {
       this.odTracks = odTracks;
     }
@@ -77,7 +77,7 @@ export class Tra3DLayer implements mapboxgl.CustomLayerInterface {
     this.selectedTrainId = trainId;
   }
 
-  setTracks(odTracks: Map<string, ODTrack>): void {
+  setTracks(odTracks: Map<string, TraTrack>): void {
     this.odTracks = odTracks;
   }
 
@@ -85,7 +85,7 @@ export class Tra3DLayer implements mapboxgl.CustomLayerInterface {
     this.stationCoordinates = stationCoordinates;
   }
 
-  updateTrains(trains: ODTrain[]): void {
+  updateTrains(trains: TraTrain[]): void {
     this.trains = trains;
   }
 
@@ -148,7 +148,7 @@ export class Tra3DLayer implements mapboxgl.CustomLayerInterface {
         event.clientY - rect.top
       );
 
-      let closestTrain: ODTrain | null = null;
+      let closestTrain: TraTrain | null = null;
       let minDistSq = Infinity;
       const clickThreshold = 35; // 介於高鐵 40px 和 MRT 30px 之間
 
@@ -338,7 +338,7 @@ export class Tra3DLayer implements mapboxgl.CustomLayerInterface {
     return distX * distX + distY * distY;
   }
 
-  private calculateBearing(train: ODTrain): number {
+  private calculateBearing(train: TraTrain): number {
     // 使用 O-D 專屬軌道計算方向
     const track = this.odTracks.get(train.odTrackId);
     if (!track) return 0;

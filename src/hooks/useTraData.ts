@@ -1,6 +1,17 @@
+/**
+ * useTraData - 台鐵資料載入 Hook
+ *
+ * 載入所有台鐵相關資料：
+ * - 軌道顯示資料 (tracks_official)
+ * - 車站資料 (stations_snapped)
+ * - O-D 軌道 (tracks_od) - 用於列車位置計算
+ * - 時刻表 (schedules_od)
+ * - 車站進度 (od_station_progress)
+ */
+
 import { useState, useEffect } from 'react';
 import type { TrackCollection, StationCollection, Track } from '../types/track';
-import type { TrackSchedule } from '../types/schedule';
+import type { TraTrack, TraSchedule, TraStationProgressMap } from '../engines/TraTrainEngine';
 
 /**
  * 台鐵軌道 ID 列表 (用於顯示軌道)
@@ -32,48 +43,65 @@ const TRA_TRACK_IDS = [
 ];
 
 /**
- * 有完整時刻表的軌道 ID (用於列車動畫)
- * 注意：所有支線 (NW, LJ, SH, PX, JJ, CZ) 都已移至 ODTrainEngine 處理
- * 此列表應為空，以避免重複渲染列車
+ * O-D 軌道 ID 列表 (用於列車位置計算)
  */
-const TRA_SCHEDULE_IDS: string[] = [];
+const OD_TRACK_IDS = [
+  'NW-HC-NB',  // 新竹→內灣
+  'NW-NB-HC',  // 內灣→新竹
+  'NW-JJ-NB',  // 竹中→內灣
+  'NW-NB-JJ',  // 內灣→竹中
+  'NW-HC-JD',  // 新竹→竹東
+  'LJ-HC-LJ',  // 新竹→六家
+  'LJ-LJ-HC',  // 六家→新竹
+  'PX-SD-JT',  // 三貂嶺→菁桐
+  'PX-JT-SD',  // 菁桐→三貂嶺
+  'JJ-ES-CT',  // 二水→車埕
+  'JJ-CT-ES',  // 車埕→二水
+  'CZ-CG-ZF',  // 成功→追分
+  'CZ-ZF-CG',  // 追分→成功
+  'SH-TN-SL',  // 臺南→沙崙
+  'SH-SL-TN',  // 沙崙→臺南
+];
 
 /**
- * 車站進度映射表類型
- * 外層 key: track_id (SH-0, SH-1)
- * 內層 key: station_id
- * value: 0-1 之間的進度值
+ * 時刻表 ID 列表
  */
-export type TraStationProgressMap = Record<string, Record<string, number>>;
+const SCHEDULE_IDS = [
+  'NW-0', 'NW-1',
+  'LJ-0', 'LJ-1',
+  'PX-0', 'PX-1',
+  'JJ-0', 'JJ-1',
+  'CZ-0', 'CZ-1',
+  'SH-0', 'SH-1',
+];
 
 /**
  * 台鐵資料狀態
  */
 export interface TraDataState {
+  // 顯示用資料
   tracks: TrackCollection | null;
   stations: StationCollection | null;
-  schedules: Map<string, TrackSchedule>;
   trackMap: Map<string, Track>;
+  // 列車引擎用資料
+  odTracks: Map<string, TraTrack>;
+  schedules: Map<string, TraSchedule>;
   stationProgress: TraStationProgressMap;
+  // 狀態
   loading: boolean;
   error: string | null;
 }
 
-/**
- * 台鐵資料 Hook
- *
- * 獨立載入台鐵相關資料：
- * - 軌道 GeoJSON
- * - 車站 GeoJSON
- * - 時刻表
- * - 車站進度映射
- */
 export function useTraData(): TraDataState {
+  // 顯示用資料
   const [tracks, setTracks] = useState<TrackCollection | null>(null);
   const [stations, setStations] = useState<StationCollection | null>(null);
-  const [schedules, setSchedules] = useState<Map<string, TrackSchedule>>(new Map());
   const [trackMap, setTrackMap] = useState<Map<string, Track>>(new Map());
+  // 列車引擎用資料
+  const [odTracks, setOdTracks] = useState<Map<string, TraTrack>>(new Map());
+  const [schedules, setSchedules] = useState<Map<string, TraSchedule>>(new Map());
   const [stationProgress, setStationProgress] = useState<TraStationProgressMap>({});
+  // 狀態
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
@@ -82,14 +110,19 @@ export function useTraData(): TraDataState {
       try {
         setLoading(true);
 
-        // 載入軌道 (使用官方資料)
+        // === 載入顯示用軌道 (官方資料) ===
         const trackFeatures: Track[] = [];
         for (const trackId of TRA_TRACK_IDS) {
-          const res = await fetch(`/data/tra/tracks_official/${trackId}.geojson`);
-          if (!res.ok) throw new Error(`Failed to load TRA track ${trackId}`);
-          const data = await res.json();
-          if (data.features?.[0]) {
-            trackFeatures.push(data.features[0]);
+          try {
+            const res = await fetch(`/data/tra/tracks_official/${trackId}.geojson`);
+            if (res.ok) {
+              const data = await res.json();
+              if (data.features?.[0]) {
+                trackFeatures.push(data.features[0]);
+              }
+            }
+          } catch (e) {
+            console.warn(`無法載入軌道 ${trackId}:`, e);
           }
         }
 
@@ -105,28 +138,65 @@ export function useTraData(): TraDataState {
           tMap.set(track.properties.track_id, track);
         }
         setTrackMap(tMap);
+        console.log(`載入 ${trackFeatures.length} 條顯示軌道`);
 
-        // 載入車站 (使用對齊到軌道的版本)
-        const stationsRes = await fetch('/data/tra/stations_snapped.geojson');
-        if (!stationsRes.ok) throw new Error('Failed to load TRA stations');
-        const stationsData = await stationsRes.json();
-        setStations(stationsData);
+        // === 載入車站 ===
+        try {
+          const stationsRes = await fetch('/data/tra/stations_snapped.geojson');
+          if (stationsRes.ok) {
+            const stationsData = await stationsRes.json();
+            setStations(stationsData);
+            console.log('載入車站資料');
+          }
+        } catch (e) {
+          console.warn('無法載入車站資料:', e);
+        }
 
-        // 載入車站進度映射表
-        const progressRes = await fetch('/data/tra/station_progress.json');
-        if (!progressRes.ok) throw new Error('Failed to load TRA station progress');
-        const progressData = await progressRes.json();
-        setStationProgress(progressData);
+        // === 載入 O-D 軌道 (用於列車位置計算) ===
+        const odTracksMap = new Map<string, TraTrack>();
+        for (const trackId of OD_TRACK_IDS) {
+          try {
+            const res = await fetch(`/data/tra/tracks_od/${trackId}.geojson`);
+            if (res.ok) {
+              const data = await res.json();
+              if (data.features?.[0]) {
+                odTracksMap.set(trackId, data.features[0]);
+              }
+            }
+          } catch (e) {
+            console.warn(`無法載入 O-D 軌道 ${trackId}:`, e);
+          }
+        }
+        setOdTracks(odTracksMap);
+        console.log(`載入 ${odTracksMap.size} 條 O-D 軌道`);
 
-        // 載入時刻表（只載入有完整時刻表的軌道）
-        const scheduleMap = new Map<string, TrackSchedule>();
-        for (const trackId of TRA_SCHEDULE_IDS) {
-          const scheduleRes = await fetch(`/data/tra/schedules/${trackId}.json`);
-          if (!scheduleRes.ok) throw new Error(`Failed to load TRA schedule ${trackId}`);
-          const scheduleData = await scheduleRes.json();
-          scheduleMap.set(trackId, scheduleData);
+        // === 載入車站進度 ===
+        try {
+          const progressRes = await fetch('/data/tra/tracks_od/od_station_progress.json');
+          if (progressRes.ok) {
+            const progressData = await progressRes.json();
+            setStationProgress(progressData);
+            console.log('載入車站進度');
+          }
+        } catch (e) {
+          console.warn('無法載入車站進度:', e);
+        }
+
+        // === 載入時刻表 ===
+        const scheduleMap = new Map<string, TraSchedule>();
+        for (const scheduleId of SCHEDULE_IDS) {
+          try {
+            const res = await fetch(`/data/tra/schedules_od/${scheduleId}.json`);
+            if (res.ok) {
+              const data = await res.json();
+              scheduleMap.set(scheduleId, data);
+            }
+          } catch (e) {
+            console.warn(`無法載入時刻表 ${scheduleId}:`, e);
+          }
         }
         setSchedules(scheduleMap);
+        console.log(`載入 ${scheduleMap.size} 個時刻表`);
 
         setLoading(false);
       } catch (err) {
@@ -138,5 +208,14 @@ export function useTraData(): TraDataState {
     loadData();
   }, []);
 
-  return { tracks, stations, schedules, trackMap, stationProgress, loading, error };
+  return {
+    tracks,
+    stations,
+    trackMap,
+    odTracks,
+    schedules,
+    stationProgress,
+    loading,
+    error,
+  };
 }

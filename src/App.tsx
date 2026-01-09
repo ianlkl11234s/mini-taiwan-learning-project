@@ -7,7 +7,6 @@ import { useKrtcData } from './hooks/useKrtcData';
 import { useKlrtData } from './hooks/useKlrtData';
 import { useTmrtData } from './hooks/useTmrtData';
 import { useTraData } from './hooks/useTraData';
-import { useODTraData } from './hooks/useODTraData';
 import { TimeEngine } from './engines/TimeEngine';
 import { TrainEngine, type Train } from './engines/TrainEngine';
 import { ThsrTrainEngine, type ThsrTrain } from './engines/ThsrTrainEngine';
@@ -15,7 +14,6 @@ import { KrtcTrainEngine, type KrtcTrain } from './engines/KrtcTrainEngine';
 import { KlrtTrainEngine, type KlrtTrain } from './engines/KlrtTrainEngine';
 import { TmrtTrainEngine, type TmrtTrain } from './engines/TmrtTrainEngine';
 import { TraTrainEngine, type TraTrain } from './engines/TraTrainEngine';
-import { ODTrainEngine, type ODTrain } from './engines/ODTrainEngine';
 import { TimeControl } from './components/TimeControl';
 import { LineFilter, type MKFilterState, type ThsrFilterState, type TraFilterState } from './components/LineFilter';
 import { TrainHistogram } from './components/TrainHistogram';
@@ -115,23 +113,14 @@ function App() {
   const {
     tracks: traTracks,
     stations: traStations,
+    trackMap: _traTrackMap,
+    odTracks: traOdTracks,
     schedules: traSchedules,
-    trackMap: traTrackMap,
     stationProgress: traStationProgress,
     loading: _traLoading,
     error: _traError,
   } = useTraData();
-  void _traLoading; void _traError; // 抑制未使用變數警告
-
-  // O-D 專屬軌道資料載入（NW/LJ 線）
-  const {
-    odTracks,
-    schedules: odSchedules,
-    stationProgress: odStationProgress,
-    loading: _odLoading,
-    error: _odError,
-  } = useODTraData();
-  void _odLoading; void _odError; // 抑制未使用變數警告
+  void _traLoading; void _traError; void _traTrackMap; // 抑制未使用變數警告
 
   // 預計算直方圖資料（所有運輸系統合計，排除纜車）
   const allSchedules = useMemo(() => {
@@ -184,13 +173,9 @@ function App() {
   const tmrtTrainEngineRef = useRef<TmrtTrainEngine | null>(null);
   const [tmrtTrains, setTmrtTrains] = useState<TmrtTrain[]>([]);
 
-  // 列車引擎 (TRA - 台鐵)
+  // 列車引擎 (TRA - 台鐵支線)
   const traTrainEngineRef = useRef<TraTrainEngine | null>(null);
   const [traTrains, setTraTrains] = useState<TraTrain[]>([]);
-
-  // 列車引擎 (O-D 專屬軌道 - NW/LJ)
-  const odTrainEngineRef = useRef<ODTrainEngine | null>(null);
-  const [odTrains, setOdTrains] = useState<ODTrain[]>([]);
 
   // 圖例收合狀態（預設收合）
   const [legendCollapsed, setLegendCollapsed] = useState(true);
@@ -418,29 +403,14 @@ function App() {
     });
   }, [tmrtTrains, visibleTmrtLines]);
 
-  // 台鐵列車（根據 traState 篩選，包含 O-D 專屬軌道列車）
+  // 台鐵列車（根據 traState 篩選）
   const filteredTraTrains = useMemo(() => {
     // 只有 'full' 模式顯示列車
     if (traState !== 'full') {
       return [];
     }
-    // 將 O-D 列車轉換為 TraTrain 格式並合併
-    const odTrainsAsTraTrains: TraTrain[] = odTrains.map(train => ({
-      trainId: train.trainId,
-      trackId: train.trackId,
-      departureTime: train.departureTime,
-      totalTravelTime: train.totalTravelTime,
-      status: train.status,
-      progress: train.progress,
-      position: train.position,
-      currentStation: train.currentStation,
-      nextStation: train.nextStation,
-      segmentProgress: train.segmentProgress,
-      originStation: train.originStation,
-      destinationStation: train.destinationStation,
-    }));
-    return [...traTrains, ...odTrainsAsTraTrains];
-  }, [traTrains, odTrains, traState]);
+    return traTrains;
+  }, [traTrains, traState]);
 
   // 計算各系統運行中列車數量
   const transportCounts = useMemo(() => {
@@ -544,11 +514,11 @@ function App() {
     // 最後從 TMRT 找
     const tmrtTrain = filteredTmrtTrains.find(t => t.trainId === selectedTrainId);
     if (tmrtTrain) return tmrtTrain;
-    // 從 TRA O-D 列車找
-    const traTrain = odTrains.find(t => t.trainId === selectedTrainId);
+    // 從 TRA 找
+    const traTrain = filteredTraTrains.find(t => t.trainId === selectedTrainId);
     if (traTrain) return traTrain;
     return null;
-  }, [selectedTrainId, filteredTrains, filteredThsrTrains, filteredKrtcTrains, filteredKlrtTrains, filteredTmrtTrains, odTrains]);
+  }, [selectedTrainId, filteredTrains, filteredThsrTrains, filteredKrtcTrains, filteredKlrtTrains, filteredTmrtTrains, filteredTraTrains]);
 
 
   // 選擇列車
@@ -1559,11 +1529,11 @@ function App() {
   // 初始化台鐵 3D 圖層
   useEffect(() => {
     if (!map.current || !mapLoaded || !use3DMode) return;
-    if (odTracks.size === 0) return;
+    if (traOdTracks.size === 0) return;
     if (traState === 'hidden') return;
 
     // 建立台鐵 3D 圖層
-    const layer = new Tra3DLayer(odTracks);
+    const layer = new Tra3DLayer(traOdTracks);
     layer.setStations(traStationCoordinates);
     layer.setOnSelect(handleSelectTrain);
     tra3DLayerRef.current = layer;
@@ -1577,14 +1547,14 @@ function App() {
       }
       tra3DLayerRef.current = null;
     };
-  }, [mapLoaded, odTracks, traStationCoordinates, use3DMode, traState, handleSelectTrain, styleVersion]);
+  }, [mapLoaded, traOdTracks, traStationCoordinates, use3DMode, traState, handleSelectTrain, styleVersion]);
 
   // 更新台鐵 3D 圖層列車資料（僅 O-D 專屬軌道列車）
   useEffect(() => {
     if (!tra3DLayerRef.current || !use3DMode) return;
     if (traState === 'hidden') return;
-    tra3DLayerRef.current.updateTrains(odTrains);
-  }, [odTrains, use3DMode, traState]);
+    tra3DLayerRef.current.updateTrains(traTrains);
+  }, [traTrains, use3DMode, traState]);
 
   // 更新台鐵 3D 圖層選中狀態
   useEffect(() => {
@@ -2007,12 +1977,12 @@ function App() {
   // 初始化台鐵列車引擎並訂閱時間更新
   useEffect(() => {
     if (!timeEngineReady || !timeEngineRef.current) return;
-    if (traSchedules.size === 0 || traTrackMap.size === 0) return;
+    if (traSchedules.size === 0 || traOdTracks.size === 0) return;
 
     // 建立台鐵列車引擎
     const traEngine = new TraTrainEngine({
       schedules: traSchedules,
-      tracks: traTrackMap,
+      odTracks: traOdTracks,
       stationProgress: traStationProgress,
     });
 
@@ -2035,40 +2005,7 @@ function App() {
       unsubscribe();
       traTrainEngineRef.current = null;
     };
-  }, [timeEngineReady, traSchedules, traTrackMap, traStationProgress]);
-
-  // 初始化 O-D 專屬軌道列車引擎 (NW/LJ)
-  useEffect(() => {
-    if (!timeEngineReady || !timeEngineRef.current) return;
-    if (odSchedules.size === 0 || odTracks.size === 0) return;
-
-    // 建立 O-D 列車引擎
-    const odEngine = new ODTrainEngine({
-      schedules: odSchedules,
-      odTracks: odTracks,
-      stationProgress: odStationProgress,
-    });
-
-    odTrainEngineRef.current = odEngine;
-
-    // 訂閱時間更新
-    const unsubscribe = timeEngineRef.current.onTick(() => {
-      if (timeEngineRef.current) {
-        const timeSeconds = timeEngineRef.current.getTimeOfDaySeconds();
-        const activeTrains = odEngine.update(timeSeconds);
-        setOdTrains(activeTrains);
-      }
-    });
-
-    // 初始更新
-    const timeSeconds = timeEngineRef.current.getTimeOfDaySeconds();
-    setOdTrains(odEngine.update(timeSeconds));
-
-    return () => {
-      unsubscribe();
-      odTrainEngineRef.current = null;
-    };
-  }, [timeEngineReady, odSchedules, odTracks, odStationProgress]);
+  }, [timeEngineReady, traSchedules, traOdTracks, traStationProgress]);
 
   // 更新列車標記（2D 模式時使用）
   useEffect(() => {
@@ -2758,11 +2695,6 @@ function App() {
     if (traTrainEngineRef.current) {
       const activeTraTrains = traTrainEngineRef.current.update(seconds);
       setTraTrains(activeTraTrains);
-    }
-
-    if (odTrainEngineRef.current) {
-      const activeOdTrains = odTrainEngineRef.current.update(seconds);
-      setOdTrains(activeOdTrains);
     }
   }, []);
 

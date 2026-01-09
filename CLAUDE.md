@@ -55,9 +55,9 @@ TimeEngine (模擬時間) → TrainEngine (計算列車狀態) → 3DLayer/Symbo
 
 | 檔案 | 說明 |
 |------|------|
-| `src/App.tsx` | 主應用 (126KB)，整合所有系統 |
+| `src/App.tsx` | 主應用，整合所有系統 |
 | `src/engines/TimeEngine.ts` | 時間模擬引擎 |
-| `src/engines/ODTrainEngine.ts` | TRA O-D 專屬軌道引擎 |
+| `src/engines/TraTrainEngine.ts` | TRA 台鐵列車引擎（使用 O-D 專屬軌道）|
 | `src/components/TrainInfoPanel.tsx` | 列車資訊面板 |
 
 ## Technical Implementation Details
@@ -212,16 +212,14 @@ const lineName = isThsr ? getThsrLineName(train.trackId)
 
 ## Important Conventions
 
-**TRA 雙引擎架構 - 避免重複渲染**：
-- TRA 有兩套列車引擎：
-  - `TraTrainEngine`：使用 `useTraData` 載入 `/data/tra/schedules/` 的時刻表
-  - `ODTrainEngine`：使用 `useODTraData` 載入 `/data/tra/schedules_od/` 的時刻表
-- **重要**：將路線遷移到 O-D 系統時，必須：
-  1. 在 `useODTraData.ts` 的 `OD_TRACK_IDS` 和 `SCHEDULE_IDS` 加入新路線
-  2. **同時**從 `useTraData.ts` 的 `TRA_SCHEDULE_IDS` 移除該路線
-  3. 否則會導致同一列車被兩個引擎渲染，出現「幽靈列車」
-- 目前所有支線 (NW, LJ, SH, PX, JJ, CZ) 都由 `ODTrainEngine` 處理
-- `TRA_SCHEDULE_IDS` 應保持為空陣列
+**TRA 架構**：
+- TRA 使用單一 `TraTrainEngine` 引擎處理所有支線列車
+- 資料由 `useTraData` hook 統一載入：
+  - 顯示用軌道：`/data/tra/tracks_official/`
+  - O-D 專屬軌道：`/data/tra/tracks_od/`
+  - 時刻表：`/data/tra/schedules_od/`
+  - 車站進度：`/data/tra/tracks_od/od_station_progress.json`
+- 支援路線：NW (內灣線)、LJ (六家線)、SH (沙崙線)、PX (平溪線)、JJ (集集線)、CZ (成追線)
 
 **TRA/THSR station_id 衝突**：
 - TRA 和 THSR 使用相同的 station_id 編號 (如 0990, 1000, 1010)
@@ -229,7 +227,7 @@ const lineName = isThsr ? getThsrLineName(train.trackId)
 - 在 `TrainInfoPanel` 中使用 `TRA_STATION_NAMES` 獨立查找
 
 **O-D 軌道方向對映**：
-- `ODTrainEngine.ts` 的 `getTrackIdFromOdTrackId()` 函數將 O-D 軌道 ID 轉換為顯示用 trackId
+- `TraTrainEngine.ts` 的 `getTrackIdFromOdTrackId()` 函數將 O-D 軌道 ID 轉換為顯示用 trackId
 - 新增支線時，必須在 `mainStations` 物件加入該線的「起點站代碼」
 - 起點站 = 方向 0 的終點（通常是連接幹線的車站）
 - 範例：`'SH': 'TN'` 表示沙崙線的起點是臺南 (TN)，往沙崙 (SL) 是方向 1

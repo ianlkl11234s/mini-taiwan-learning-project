@@ -1,0 +1,603 @@
+{
+  "track_id": "BH-0",
+  "route_id": "BH",
+  "name": "BH 線時刻表",
+  "departure_count": 17,
+  "departures": [
+    {
+      "departure_time": "06:00:00",
+      "train_id": "BH-1000",
+      "train_no": "1000",
+      "train_type": "自強",
+      "origin_station": "7130",
+      "destination_station": "7000",
+      "od_track_id": "BH-SX-HL",
+      "stations": [
+        {
+          "station_id": "7130",
+          "station_name": "蘇澳新",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "7060",
+          "station_name": "和平",
+          "arrival": 210,
+          "departure": 240
+        },
+        {
+          "station_id": "7030",
+          "station_name": "新城",
+          "arrival": 600,
+          "departure": 630
+        },
+        {
+          "station_id": "7000",
+          "station_name": "花蓮",
+          "arrival": 810,
+          "departure": 810
+        }
+      ]
+    },
+    {
+      "departure_time": "07:00:00",
+      "train_id": "BH-1002",
+      "train_no": "1002",
+      "train_type": "自強",
+      "origin_station": "7130",
+      "destination_station": "7000",
+      "od_track_id": "BH-SX-HL",
+      "stations": [
+        {
+          "station_id": "7130",
+          "station_name": "蘇澳新",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "7060",
+          "station_name": "和平",
+          "arrival": 210,
+          "departure": 240
+        },
+        {
+          "station_id": "7030",
+          "station_name": "新城",
+          "arrival": 600,
+          "departure": 630
+        },
+        {
+          "station_id": "7000",
+          "station_name": "花蓮",
+          "arrival": 810,
+          "departure": 810
+        }
+      ]
+    },
+    {
+      "departure_time": "08:00:00",
+      "train_id": "BH-1004",
+      "train_no": "1004",
+      "train_type": "自強",
+      "origin_station": "7130",
+      "destination_station": "7000",
+      "od_track_id": "BH-SX-HL",
+      "stations": [
+        {
+          "station_id": "7130",
+          "station_name": "蘇澳新",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "7060",
+          "station_name": "和平",
+          "arrival": 210,
+          "departure": 240
+        },
+        {
+          "station_id": "7030",
+          "station_name": "新城",
+          "arrival": 600,
+          "departure": 630
+        },
+        {
+          "station_id": "7000",
+          "station_name": "花蓮",
+          "arrival": 810,
+          "departure": 810
+        }
+      ]
+    },
+    {
+      "departure_time": "09:00:00",
+      "train_id": "BH-1006",
+      "train_no": "1006",
+      "train_type": "自強",
+      "origin_station": "7130",
+      "destination_station": "7000",
+      "od_track_id": "BH-SX-HL",
+      "stations": [
+        {
+          "station_id": "7130",
+          "station_name": "蘇澳新",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "7060",
+          "station_name": "和平",
+          "arrival": 210,
+          "departure": 240
+        },
+        {
+          "station_id": "7030",
+          "station_name": "新城",
+          "arrival": 600,
+          "departure": 630
+        },
+        {
+          "station_id": "7000",
+          "station_name": "花蓮",
+          "arrival": 810,
+          "departure": 810
+        }
+      ]
+    },
+    {
+      "departure_time": "10:00:00",
+      "train_id": "BH-1008",
+      "train_no": "1008",
+      "train_type": "自強",
+      "origin_station": "7130",
+      "destination_station": "7000",
+      "od_track_id": "BH-SX-HL",
+      "stations": [
+        {
+          "station_id": "7130",
+          "station_name": "蘇澳新",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "7060",
+          "station_name": "和平",
+          "arrival": 210,
+          "departure": 240
+        },
+        {
+          "station_id": "7030",
+          "station_name": "新城",
+          "arrival": 600,
+          "departure": 630
+        },
+        {
+          "station_id": "7000",
+          "station_name": "花蓮",
+          "arrival": 810,
+          "departure": 810
+        }
+      ]
+    },
+    {
+      "departure_time": "11:00:00",
+      "train_id": "BH-1010",
+      "train_no": "1010",
+      "train_type": "自強",
+      "origin_station": "7130",
+      "destination_station": "7000",
+      "od_track_id": "BH-SX-HL",
+      "stations": [
+        {
+          "station_id": "7130",
+          "station_name": "蘇澳新",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "7060",
+          "station_name": "和平",
+          "arrival": 210,
+          "departure": 240
+        },
+        {
+          "station_id": "7030",
+          "station_name": "新城",
+          "arrival": 600,
+          "departure": 630
+        },
+        {
+          "station_id": "7000",
+          "station_name": "花蓮",
+          "arrival": 810,
+          "departure": 810
+        }
+      ]
+    },
+    {
+      "departure_time": "12:00:00",
+      "train_id": "BH-1012",
+      "train_no": "1012",
+      "train_type": "自強",
+      "origin_station": "7130",
+      "destination_station": "7000",
+      "od_track_id": "BH-SX-HL",
+      "stations": [
+        {
+          "station_id": "7130",
+          "station_name": "蘇澳新",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "7060",
+          "station_name": "和平",
+          "arrival": 210,
+          "departure": 240
+        },
+        {
+          "station_id": "7030",
+          "station_name": "新城",
+          "arrival": 600,
+          "departure": 630
+        },
+        {
+          "station_id": "7000",
+          "station_name": "花蓮",
+          "arrival": 810,
+          "departure": 810
+        }
+      ]
+    },
+    {
+      "departure_time": "13:00:00",
+      "train_id": "BH-1014",
+      "train_no": "1014",
+      "train_type": "自強",
+      "origin_station": "7130",
+      "destination_station": "7000",
+      "od_track_id": "BH-SX-HL",
+      "stations": [
+        {
+          "station_id": "7130",
+          "station_name": "蘇澳新",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "7060",
+          "station_name": "和平",
+          "arrival": 210,
+          "departure": 240
+        },
+        {
+          "station_id": "7030",
+          "station_name": "新城",
+          "arrival": 600,
+          "departure": 630
+        },
+        {
+          "station_id": "7000",
+          "station_name": "花蓮",
+          "arrival": 810,
+          "departure": 810
+        }
+      ]
+    },
+    {
+      "departure_time": "14:00:00",
+      "train_id": "BH-1016",
+      "train_no": "1016",
+      "train_type": "自強",
+      "origin_station": "7130",
+      "destination_station": "7000",
+      "od_track_id": "BH-SX-HL",
+      "stations": [
+        {
+          "station_id": "7130",
+          "station_name": "蘇澳新",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "7060",
+          "station_name": "和平",
+          "arrival": 210,
+          "departure": 240
+        },
+        {
+          "station_id": "7030",
+          "station_name": "新城",
+          "arrival": 600,
+          "departure": 630
+        },
+        {
+          "station_id": "7000",
+          "station_name": "花蓮",
+          "arrival": 810,
+          "departure": 810
+        }
+      ]
+    },
+    {
+      "departure_time": "15:00:00",
+      "train_id": "BH-1018",
+      "train_no": "1018",
+      "train_type": "自強",
+      "origin_station": "7130",
+      "destination_station": "7000",
+      "od_track_id": "BH-SX-HL",
+      "stations": [
+        {
+          "station_id": "7130",
+          "station_name": "蘇澳新",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "7060",
+          "station_name": "和平",
+          "arrival": 210,
+          "departure": 240
+        },
+        {
+          "station_id": "7030",
+          "station_name": "新城",
+          "arrival": 600,
+          "departure": 630
+        },
+        {
+          "station_id": "7000",
+          "station_name": "花蓮",
+          "arrival": 810,
+          "departure": 810
+        }
+      ]
+    },
+    {
+      "departure_time": "16:00:00",
+      "train_id": "BH-1020",
+      "train_no": "1020",
+      "train_type": "自強",
+      "origin_station": "7130",
+      "destination_station": "7000",
+      "od_track_id": "BH-SX-HL",
+      "stations": [
+        {
+          "station_id": "7130",
+          "station_name": "蘇澳新",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "7060",
+          "station_name": "和平",
+          "arrival": 210,
+          "departure": 240
+        },
+        {
+          "station_id": "7030",
+          "station_name": "新城",
+          "arrival": 600,
+          "departure": 630
+        },
+        {
+          "station_id": "7000",
+          "station_name": "花蓮",
+          "arrival": 810,
+          "departure": 810
+        }
+      ]
+    },
+    {
+      "departure_time": "17:00:00",
+      "train_id": "BH-1022",
+      "train_no": "1022",
+      "train_type": "自強",
+      "origin_station": "7130",
+      "destination_station": "7000",
+      "od_track_id": "BH-SX-HL",
+      "stations": [
+        {
+          "station_id": "7130",
+          "station_name": "蘇澳新",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "7060",
+          "station_name": "和平",
+          "arrival": 210,
+          "departure": 240
+        },
+        {
+          "station_id": "7030",
+          "station_name": "新城",
+          "arrival": 600,
+          "departure": 630
+        },
+        {
+          "station_id": "7000",
+          "station_name": "花蓮",
+          "arrival": 810,
+          "departure": 810
+        }
+      ]
+    },
+    {
+      "departure_time": "18:00:00",
+      "train_id": "BH-1024",
+      "train_no": "1024",
+      "train_type": "自強",
+      "origin_station": "7130",
+      "destination_station": "7000",
+      "od_track_id": "BH-SX-HL",
+      "stations": [
+        {
+          "station_id": "7130",
+          "station_name": "蘇澳新",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "7060",
+          "station_name": "和平",
+          "arrival": 210,
+          "departure": 240
+        },
+        {
+          "station_id": "7030",
+          "station_name": "新城",
+          "arrival": 600,
+          "departure": 630
+        },
+        {
+          "station_id": "7000",
+          "station_name": "花蓮",
+          "arrival": 810,
+          "departure": 810
+        }
+      ]
+    },
+    {
+      "departure_time": "19:00:00",
+      "train_id": "BH-1026",
+      "train_no": "1026",
+      "train_type": "自強",
+      "origin_station": "7130",
+      "destination_station": "7000",
+      "od_track_id": "BH-SX-HL",
+      "stations": [
+        {
+          "station_id": "7130",
+          "station_name": "蘇澳新",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "7060",
+          "station_name": "和平",
+          "arrival": 210,
+          "departure": 240
+        },
+        {
+          "station_id": "7030",
+          "station_name": "新城",
+          "arrival": 600,
+          "departure": 630
+        },
+        {
+          "station_id": "7000",
+          "station_name": "花蓮",
+          "arrival": 810,
+          "departure": 810
+        }
+      ]
+    },
+    {
+      "departure_time": "20:00:00",
+      "train_id": "BH-1028",
+      "train_no": "1028",
+      "train_type": "自強",
+      "origin_station": "7130",
+      "destination_station": "7000",
+      "od_track_id": "BH-SX-HL",
+      "stations": [
+        {
+          "station_id": "7130",
+          "station_name": "蘇澳新",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "7060",
+          "station_name": "和平",
+          "arrival": 210,
+          "departure": 240
+        },
+        {
+          "station_id": "7030",
+          "station_name": "新城",
+          "arrival": 600,
+          "departure": 630
+        },
+        {
+          "station_id": "7000",
+          "station_name": "花蓮",
+          "arrival": 810,
+          "departure": 810
+        }
+      ]
+    },
+    {
+      "departure_time": "21:00:00",
+      "train_id": "BH-1030",
+      "train_no": "1030",
+      "train_type": "自強",
+      "origin_station": "7130",
+      "destination_station": "7000",
+      "od_track_id": "BH-SX-HL",
+      "stations": [
+        {
+          "station_id": "7130",
+          "station_name": "蘇澳新",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "7060",
+          "station_name": "和平",
+          "arrival": 210,
+          "departure": 240
+        },
+        {
+          "station_id": "7030",
+          "station_name": "新城",
+          "arrival": 600,
+          "departure": 630
+        },
+        {
+          "station_id": "7000",
+          "station_name": "花蓮",
+          "arrival": 810,
+          "departure": 810
+        }
+      ]
+    },
+    {
+      "departure_time": "22:00:00",
+      "train_id": "BH-1032",
+      "train_no": "1032",
+      "train_type": "自強",
+      "origin_station": "7130",
+      "destination_station": "7000",
+      "od_track_id": "BH-SX-HL",
+      "stations": [
+        {
+          "station_id": "7130",
+          "station_name": "蘇澳新",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "7060",
+          "station_name": "和平",
+          "arrival": 210,
+          "departure": 240
+        },
+        {
+          "station_id": "7030",
+          "station_name": "新城",
+          "arrival": 600,
+          "departure": 630
+        },
+        {
+          "station_id": "7000",
+          "station_name": "花蓮",
+          "arrival": 810,
+          "departure": 810
+        }
+      ]
+    }
+  ]
+}

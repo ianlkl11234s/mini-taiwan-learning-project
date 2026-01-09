@@ -1,0 +1,2021 @@
+{
+  "track_id": "YL-1",
+  "route_id": "YL",
+  "name": "YL 線時刻表",
+  "departure_count": 33,
+  "departures": [
+    {
+      "departure_time": "06:00:00",
+      "train_id": "YL-1000",
+      "train_no": "1000",
+      "train_type": "自強",
+      "origin_station": "7190",
+      "destination_station": "1000",
+      "od_track_id": "YL-YL-TP",
+      "stations": [
+        {
+          "station_id": "7190",
+          "station_name": "宜蘭",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "7210",
+          "station_name": "礁溪",
+          "arrival": 210,
+          "departure": 240
+        },
+        {
+          "station_id": "7360",
+          "station_name": "瑞芳",
+          "arrival": 420,
+          "departure": 450
+        },
+        {
+          "station_id": "0980",
+          "station_name": "南港",
+          "arrival": 630,
+          "departure": 660
+        },
+        {
+          "station_id": "0990",
+          "station_name": "松山",
+          "arrival": 840,
+          "departure": 870
+        },
+        {
+          "station_id": "1000",
+          "station_name": "臺北",
+          "arrival": 1050,
+          "departure": 1050
+        }
+      ]
+    },
+    {
+      "departure_time": "06:30:00",
+      "train_id": "YL-1002",
+      "train_no": "1002",
+      "train_type": "區間快",
+      "origin_station": "7000",
+      "destination_station": "1000",
+      "od_track_id": "YL-HL-TP",
+      "stations": [
+        {
+          "station_id": "7000",
+          "station_name": "花蓮",
+          "arrival": 0,
+          "departure": 35
+        },
+        {
+          "station_id": "7030",
+          "station_name": "新城",
+          "arrival": 260,
+          "departure": 295
+        },
+        {
+          "station_id": "7060",
+          "station_name": "和平",
+          "arrival": 520,
+          "departure": 555
+        },
+        {
+          "station_id": "7130",
+          "station_name": "蘇澳新",
+          "arrival": 930,
+          "departure": 965
+        },
+        {
+          "station_id": "7160",
+          "station_name": "羅東",
+          "arrival": 1190,
+          "departure": 1225
+        },
+        {
+          "station_id": "7190",
+          "station_name": "宜蘭",
+          "arrival": 1450,
+          "departure": 1485
+        },
+        {
+          "station_id": "7210",
+          "station_name": "礁溪",
+          "arrival": 1710,
+          "departure": 1745
+        },
+        {
+          "station_id": "7360",
+          "station_name": "瑞芳",
+          "arrival": 1970,
+          "departure": 2005
+        },
+        {
+          "station_id": "0980",
+          "station_name": "南港",
+          "arrival": 2230,
+          "departure": 2265
+        },
+        {
+          "station_id": "0990",
+          "station_name": "松山",
+          "arrival": 2490,
+          "departure": 2525
+        },
+        {
+          "station_id": "1000",
+          "station_name": "臺北",
+          "arrival": 2750,
+          "departure": 2750
+        }
+      ]
+    },
+    {
+      "departure_time": "07:00:00",
+      "train_id": "YL-1004",
+      "train_no": "1004",
+      "train_type": "自強",
+      "origin_station": "7130",
+      "destination_station": "1000",
+      "od_track_id": "YL-SA-TP",
+      "stations": [
+        {
+          "station_id": "7130",
+          "station_name": "蘇澳新",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "7160",
+          "station_name": "羅東",
+          "arrival": 210,
+          "departure": 240
+        },
+        {
+          "station_id": "7190",
+          "station_name": "宜蘭",
+          "arrival": 420,
+          "departure": 450
+        },
+        {
+          "station_id": "7210",
+          "station_name": "礁溪",
+          "arrival": 630,
+          "departure": 660
+        },
+        {
+          "station_id": "7360",
+          "station_name": "瑞芳",
+          "arrival": 840,
+          "departure": 870
+        },
+        {
+          "station_id": "0980",
+          "station_name": "南港",
+          "arrival": 1050,
+          "departure": 1080
+        },
+        {
+          "station_id": "0990",
+          "station_name": "松山",
+          "arrival": 1260,
+          "departure": 1290
+        },
+        {
+          "station_id": "1000",
+          "station_name": "臺北",
+          "arrival": 1470,
+          "departure": 1470
+        }
+      ]
+    },
+    {
+      "departure_time": "07:30:00",
+      "train_id": "YL-1006",
+      "train_no": "1006",
+      "train_type": "區間快",
+      "origin_station": "7190",
+      "destination_station": "1000",
+      "od_track_id": "YL-YL-TP",
+      "stations": [
+        {
+          "station_id": "7190",
+          "station_name": "宜蘭",
+          "arrival": 0,
+          "departure": 35
+        },
+        {
+          "station_id": "7210",
+          "station_name": "礁溪",
+          "arrival": 260,
+          "departure": 295
+        },
+        {
+          "station_id": "7360",
+          "station_name": "瑞芳",
+          "arrival": 520,
+          "departure": 555
+        },
+        {
+          "station_id": "0980",
+          "station_name": "南港",
+          "arrival": 780,
+          "departure": 815
+        },
+        {
+          "station_id": "0990",
+          "station_name": "松山",
+          "arrival": 1040,
+          "departure": 1075
+        },
+        {
+          "station_id": "1000",
+          "station_name": "臺北",
+          "arrival": 1300,
+          "departure": 1300
+        }
+      ]
+    },
+    {
+      "departure_time": "08:00:00",
+      "train_id": "YL-1008",
+      "train_no": "1008",
+      "train_type": "自強",
+      "origin_station": "7000",
+      "destination_station": "1000",
+      "od_track_id": "YL-HL-TP",
+      "stations": [
+        {
+          "station_id": "7000",
+          "station_name": "花蓮",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "7030",
+          "station_name": "新城",
+          "arrival": 210,
+          "departure": 240
+        },
+        {
+          "station_id": "7060",
+          "station_name": "和平",
+          "arrival": 420,
+          "departure": 450
+        },
+        {
+          "station_id": "7130",
+          "station_name": "蘇澳新",
+          "arrival": 750,
+          "departure": 780
+        },
+        {
+          "station_id": "7160",
+          "station_name": "羅東",
+          "arrival": 960,
+          "departure": 990
+        },
+        {
+          "station_id": "7190",
+          "station_name": "宜蘭",
+          "arrival": 1170,
+          "departure": 1200
+        },
+        {
+          "station_id": "7210",
+          "station_name": "礁溪",
+          "arrival": 1380,
+          "departure": 1410
+        },
+        {
+          "station_id": "7360",
+          "station_name": "瑞芳",
+          "arrival": 1590,
+          "departure": 1620
+        },
+        {
+          "station_id": "0980",
+          "station_name": "南港",
+          "arrival": 1800,
+          "departure": 1830
+        },
+        {
+          "station_id": "0990",
+          "station_name": "松山",
+          "arrival": 2010,
+          "departure": 2040
+        },
+        {
+          "station_id": "1000",
+          "station_name": "臺北",
+          "arrival": 2220,
+          "departure": 2220
+        }
+      ]
+    },
+    {
+      "departure_time": "08:30:00",
+      "train_id": "YL-1010",
+      "train_no": "1010",
+      "train_type": "區間快",
+      "origin_station": "7130",
+      "destination_station": "1000",
+      "od_track_id": "YL-SA-TP",
+      "stations": [
+        {
+          "station_id": "7130",
+          "station_name": "蘇澳新",
+          "arrival": 0,
+          "departure": 35
+        },
+        {
+          "station_id": "7160",
+          "station_name": "羅東",
+          "arrival": 260,
+          "departure": 295
+        },
+        {
+          "station_id": "7190",
+          "station_name": "宜蘭",
+          "arrival": 520,
+          "departure": 555
+        },
+        {
+          "station_id": "7210",
+          "station_name": "礁溪",
+          "arrival": 780,
+          "departure": 815
+        },
+        {
+          "station_id": "7360",
+          "station_name": "瑞芳",
+          "arrival": 1040,
+          "departure": 1075
+        },
+        {
+          "station_id": "0980",
+          "station_name": "南港",
+          "arrival": 1300,
+          "departure": 1335
+        },
+        {
+          "station_id": "0990",
+          "station_name": "松山",
+          "arrival": 1560,
+          "departure": 1595
+        },
+        {
+          "station_id": "1000",
+          "station_name": "臺北",
+          "arrival": 1820,
+          "departure": 1820
+        }
+      ]
+    },
+    {
+      "departure_time": "09:00:00",
+      "train_id": "YL-1012",
+      "train_no": "1012",
+      "train_type": "自強",
+      "origin_station": "7190",
+      "destination_station": "1000",
+      "od_track_id": "YL-YL-TP",
+      "stations": [
+        {
+          "station_id": "7190",
+          "station_name": "宜蘭",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "7210",
+          "station_name": "礁溪",
+          "arrival": 210,
+          "departure": 240
+        },
+        {
+          "station_id": "7360",
+          "station_name": "瑞芳",
+          "arrival": 420,
+          "departure": 450
+        },
+        {
+          "station_id": "0980",
+          "station_name": "南港",
+          "arrival": 630,
+          "departure": 660
+        },
+        {
+          "station_id": "0990",
+          "station_name": "松山",
+          "arrival": 840,
+          "departure": 870
+        },
+        {
+          "station_id": "1000",
+          "station_name": "臺北",
+          "arrival": 1050,
+          "departure": 1050
+        }
+      ]
+    },
+    {
+      "departure_time": "09:30:00",
+      "train_id": "YL-1014",
+      "train_no": "1014",
+      "train_type": "區間快",
+      "origin_station": "7000",
+      "destination_station": "1000",
+      "od_track_id": "YL-HL-TP",
+      "stations": [
+        {
+          "station_id": "7000",
+          "station_name": "花蓮",
+          "arrival": 0,
+          "departure": 35
+        },
+        {
+          "station_id": "7030",
+          "station_name": "新城",
+          "arrival": 260,
+          "departure": 295
+        },
+        {
+          "station_id": "7060",
+          "station_name": "和平",
+          "arrival": 520,
+          "departure": 555
+        },
+        {
+          "station_id": "7130",
+          "station_name": "蘇澳新",
+          "arrival": 930,
+          "departure": 965
+        },
+        {
+          "station_id": "7160",
+          "station_name": "羅東",
+          "arrival": 1190,
+          "departure": 1225
+        },
+        {
+          "station_id": "7190",
+          "station_name": "宜蘭",
+          "arrival": 1450,
+          "departure": 1485
+        },
+        {
+          "station_id": "7210",
+          "station_name": "礁溪",
+          "arrival": 1710,
+          "departure": 1745
+        },
+        {
+          "station_id": "7360",
+          "station_name": "瑞芳",
+          "arrival": 1970,
+          "departure": 2005
+        },
+        {
+          "station_id": "0980",
+          "station_name": "南港",
+          "arrival": 2230,
+          "departure": 2265
+        },
+        {
+          "station_id": "0990",
+          "station_name": "松山",
+          "arrival": 2490,
+          "departure": 2525
+        },
+        {
+          "station_id": "1000",
+          "station_name": "臺北",
+          "arrival": 2750,
+          "departure": 2750
+        }
+      ]
+    },
+    {
+      "departure_time": "10:00:00",
+      "train_id": "YL-1016",
+      "train_no": "1016",
+      "train_type": "自強",
+      "origin_station": "7130",
+      "destination_station": "1000",
+      "od_track_id": "YL-SA-TP",
+      "stations": [
+        {
+          "station_id": "7130",
+          "station_name": "蘇澳新",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "7160",
+          "station_name": "羅東",
+          "arrival": 210,
+          "departure": 240
+        },
+        {
+          "station_id": "7190",
+          "station_name": "宜蘭",
+          "arrival": 420,
+          "departure": 450
+        },
+        {
+          "station_id": "7210",
+          "station_name": "礁溪",
+          "arrival": 630,
+          "departure": 660
+        },
+        {
+          "station_id": "7360",
+          "station_name": "瑞芳",
+          "arrival": 840,
+          "departure": 870
+        },
+        {
+          "station_id": "0980",
+          "station_name": "南港",
+          "arrival": 1050,
+          "departure": 1080
+        },
+        {
+          "station_id": "0990",
+          "station_name": "松山",
+          "arrival": 1260,
+          "departure": 1290
+        },
+        {
+          "station_id": "1000",
+          "station_name": "臺北",
+          "arrival": 1470,
+          "departure": 1470
+        }
+      ]
+    },
+    {
+      "departure_time": "10:30:00",
+      "train_id": "YL-1018",
+      "train_no": "1018",
+      "train_type": "區間快",
+      "origin_station": "7190",
+      "destination_station": "1000",
+      "od_track_id": "YL-YL-TP",
+      "stations": [
+        {
+          "station_id": "7190",
+          "station_name": "宜蘭",
+          "arrival": 0,
+          "departure": 35
+        },
+        {
+          "station_id": "7210",
+          "station_name": "礁溪",
+          "arrival": 260,
+          "departure": 295
+        },
+        {
+          "station_id": "7360",
+          "station_name": "瑞芳",
+          "arrival": 520,
+          "departure": 555
+        },
+        {
+          "station_id": "0980",
+          "station_name": "南港",
+          "arrival": 780,
+          "departure": 815
+        },
+        {
+          "station_id": "0990",
+          "station_name": "松山",
+          "arrival": 1040,
+          "departure": 1075
+        },
+        {
+          "station_id": "1000",
+          "station_name": "臺北",
+          "arrival": 1300,
+          "departure": 1300
+        }
+      ]
+    },
+    {
+      "departure_time": "11:00:00",
+      "train_id": "YL-1020",
+      "train_no": "1020",
+      "train_type": "自強",
+      "origin_station": "7000",
+      "destination_station": "1000",
+      "od_track_id": "YL-HL-TP",
+      "stations": [
+        {
+          "station_id": "7000",
+          "station_name": "花蓮",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "7030",
+          "station_name": "新城",
+          "arrival": 210,
+          "departure": 240
+        },
+        {
+          "station_id": "7060",
+          "station_name": "和平",
+          "arrival": 420,
+          "departure": 450
+        },
+        {
+          "station_id": "7130",
+          "station_name": "蘇澳新",
+          "arrival": 750,
+          "departure": 780
+        },
+        {
+          "station_id": "7160",
+          "station_name": "羅東",
+          "arrival": 960,
+          "departure": 990
+        },
+        {
+          "station_id": "7190",
+          "station_name": "宜蘭",
+          "arrival": 1170,
+          "departure": 1200
+        },
+        {
+          "station_id": "7210",
+          "station_name": "礁溪",
+          "arrival": 1380,
+          "departure": 1410
+        },
+        {
+          "station_id": "7360",
+          "station_name": "瑞芳",
+          "arrival": 1590,
+          "departure": 1620
+        },
+        {
+          "station_id": "0980",
+          "station_name": "南港",
+          "arrival": 1800,
+          "departure": 1830
+        },
+        {
+          "station_id": "0990",
+          "station_name": "松山",
+          "arrival": 2010,
+          "departure": 2040
+        },
+        {
+          "station_id": "1000",
+          "station_name": "臺北",
+          "arrival": 2220,
+          "departure": 2220
+        }
+      ]
+    },
+    {
+      "departure_time": "11:30:00",
+      "train_id": "YL-1022",
+      "train_no": "1022",
+      "train_type": "區間快",
+      "origin_station": "7130",
+      "destination_station": "1000",
+      "od_track_id": "YL-SA-TP",
+      "stations": [
+        {
+          "station_id": "7130",
+          "station_name": "蘇澳新",
+          "arrival": 0,
+          "departure": 35
+        },
+        {
+          "station_id": "7160",
+          "station_name": "羅東",
+          "arrival": 260,
+          "departure": 295
+        },
+        {
+          "station_id": "7190",
+          "station_name": "宜蘭",
+          "arrival": 520,
+          "departure": 555
+        },
+        {
+          "station_id": "7210",
+          "station_name": "礁溪",
+          "arrival": 780,
+          "departure": 815
+        },
+        {
+          "station_id": "7360",
+          "station_name": "瑞芳",
+          "arrival": 1040,
+          "departure": 1075
+        },
+        {
+          "station_id": "0980",
+          "station_name": "南港",
+          "arrival": 1300,
+          "departure": 1335
+        },
+        {
+          "station_id": "0990",
+          "station_name": "松山",
+          "arrival": 1560,
+          "departure": 1595
+        },
+        {
+          "station_id": "1000",
+          "station_name": "臺北",
+          "arrival": 1820,
+          "departure": 1820
+        }
+      ]
+    },
+    {
+      "departure_time": "12:00:00",
+      "train_id": "YL-1024",
+      "train_no": "1024",
+      "train_type": "自強",
+      "origin_station": "7190",
+      "destination_station": "1000",
+      "od_track_id": "YL-YL-TP",
+      "stations": [
+        {
+          "station_id": "7190",
+          "station_name": "宜蘭",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "7210",
+          "station_name": "礁溪",
+          "arrival": 210,
+          "departure": 240
+        },
+        {
+          "station_id": "7360",
+          "station_name": "瑞芳",
+          "arrival": 420,
+          "departure": 450
+        },
+        {
+          "station_id": "0980",
+          "station_name": "南港",
+          "arrival": 630,
+          "departure": 660
+        },
+        {
+          "station_id": "0990",
+          "station_name": "松山",
+          "arrival": 840,
+          "departure": 870
+        },
+        {
+          "station_id": "1000",
+          "station_name": "臺北",
+          "arrival": 1050,
+          "departure": 1050
+        }
+      ]
+    },
+    {
+      "departure_time": "12:30:00",
+      "train_id": "YL-1026",
+      "train_no": "1026",
+      "train_type": "區間快",
+      "origin_station": "7000",
+      "destination_station": "1000",
+      "od_track_id": "YL-HL-TP",
+      "stations": [
+        {
+          "station_id": "7000",
+          "station_name": "花蓮",
+          "arrival": 0,
+          "departure": 35
+        },
+        {
+          "station_id": "7030",
+          "station_name": "新城",
+          "arrival": 260,
+          "departure": 295
+        },
+        {
+          "station_id": "7060",
+          "station_name": "和平",
+          "arrival": 520,
+          "departure": 555
+        },
+        {
+          "station_id": "7130",
+          "station_name": "蘇澳新",
+          "arrival": 930,
+          "departure": 965
+        },
+        {
+          "station_id": "7160",
+          "station_name": "羅東",
+          "arrival": 1190,
+          "departure": 1225
+        },
+        {
+          "station_id": "7190",
+          "station_name": "宜蘭",
+          "arrival": 1450,
+          "departure": 1485
+        },
+        {
+          "station_id": "7210",
+          "station_name": "礁溪",
+          "arrival": 1710,
+          "departure": 1745
+        },
+        {
+          "station_id": "7360",
+          "station_name": "瑞芳",
+          "arrival": 1970,
+          "departure": 2005
+        },
+        {
+          "station_id": "0980",
+          "station_name": "南港",
+          "arrival": 2230,
+          "departure": 2265
+        },
+        {
+          "station_id": "0990",
+          "station_name": "松山",
+          "arrival": 2490,
+          "departure": 2525
+        },
+        {
+          "station_id": "1000",
+          "station_name": "臺北",
+          "arrival": 2750,
+          "departure": 2750
+        }
+      ]
+    },
+    {
+      "departure_time": "13:00:00",
+      "train_id": "YL-1028",
+      "train_no": "1028",
+      "train_type": "自強",
+      "origin_station": "7130",
+      "destination_station": "1000",
+      "od_track_id": "YL-SA-TP",
+      "stations": [
+        {
+          "station_id": "7130",
+          "station_name": "蘇澳新",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "7160",
+          "station_name": "羅東",
+          "arrival": 210,
+          "departure": 240
+        },
+        {
+          "station_id": "7190",
+          "station_name": "宜蘭",
+          "arrival": 420,
+          "departure": 450
+        },
+        {
+          "station_id": "7210",
+          "station_name": "礁溪",
+          "arrival": 630,
+          "departure": 660
+        },
+        {
+          "station_id": "7360",
+          "station_name": "瑞芳",
+          "arrival": 840,
+          "departure": 870
+        },
+        {
+          "station_id": "0980",
+          "station_name": "南港",
+          "arrival": 1050,
+          "departure": 1080
+        },
+        {
+          "station_id": "0990",
+          "station_name": "松山",
+          "arrival": 1260,
+          "departure": 1290
+        },
+        {
+          "station_id": "1000",
+          "station_name": "臺北",
+          "arrival": 1470,
+          "departure": 1470
+        }
+      ]
+    },
+    {
+      "departure_time": "13:30:00",
+      "train_id": "YL-1030",
+      "train_no": "1030",
+      "train_type": "區間快",
+      "origin_station": "7190",
+      "destination_station": "1000",
+      "od_track_id": "YL-YL-TP",
+      "stations": [
+        {
+          "station_id": "7190",
+          "station_name": "宜蘭",
+          "arrival": 0,
+          "departure": 35
+        },
+        {
+          "station_id": "7210",
+          "station_name": "礁溪",
+          "arrival": 260,
+          "departure": 295
+        },
+        {
+          "station_id": "7360",
+          "station_name": "瑞芳",
+          "arrival": 520,
+          "departure": 555
+        },
+        {
+          "station_id": "0980",
+          "station_name": "南港",
+          "arrival": 780,
+          "departure": 815
+        },
+        {
+          "station_id": "0990",
+          "station_name": "松山",
+          "arrival": 1040,
+          "departure": 1075
+        },
+        {
+          "station_id": "1000",
+          "station_name": "臺北",
+          "arrival": 1300,
+          "departure": 1300
+        }
+      ]
+    },
+    {
+      "departure_time": "14:00:00",
+      "train_id": "YL-1032",
+      "train_no": "1032",
+      "train_type": "自強",
+      "origin_station": "7000",
+      "destination_station": "1000",
+      "od_track_id": "YL-HL-TP",
+      "stations": [
+        {
+          "station_id": "7000",
+          "station_name": "花蓮",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "7030",
+          "station_name": "新城",
+          "arrival": 210,
+          "departure": 240
+        },
+        {
+          "station_id": "7060",
+          "station_name": "和平",
+          "arrival": 420,
+          "departure": 450
+        },
+        {
+          "station_id": "7130",
+          "station_name": "蘇澳新",
+          "arrival": 750,
+          "departure": 780
+        },
+        {
+          "station_id": "7160",
+          "station_name": "羅東",
+          "arrival": 960,
+          "departure": 990
+        },
+        {
+          "station_id": "7190",
+          "station_name": "宜蘭",
+          "arrival": 1170,
+          "departure": 1200
+        },
+        {
+          "station_id": "7210",
+          "station_name": "礁溪",
+          "arrival": 1380,
+          "departure": 1410
+        },
+        {
+          "station_id": "7360",
+          "station_name": "瑞芳",
+          "arrival": 1590,
+          "departure": 1620
+        },
+        {
+          "station_id": "0980",
+          "station_name": "南港",
+          "arrival": 1800,
+          "departure": 1830
+        },
+        {
+          "station_id": "0990",
+          "station_name": "松山",
+          "arrival": 2010,
+          "departure": 2040
+        },
+        {
+          "station_id": "1000",
+          "station_name": "臺北",
+          "arrival": 2220,
+          "departure": 2220
+        }
+      ]
+    },
+    {
+      "departure_time": "14:30:00",
+      "train_id": "YL-1034",
+      "train_no": "1034",
+      "train_type": "區間快",
+      "origin_station": "7130",
+      "destination_station": "1000",
+      "od_track_id": "YL-SA-TP",
+      "stations": [
+        {
+          "station_id": "7130",
+          "station_name": "蘇澳新",
+          "arrival": 0,
+          "departure": 35
+        },
+        {
+          "station_id": "7160",
+          "station_name": "羅東",
+          "arrival": 260,
+          "departure": 295
+        },
+        {
+          "station_id": "7190",
+          "station_name": "宜蘭",
+          "arrival": 520,
+          "departure": 555
+        },
+        {
+          "station_id": "7210",
+          "station_name": "礁溪",
+          "arrival": 780,
+          "departure": 815
+        },
+        {
+          "station_id": "7360",
+          "station_name": "瑞芳",
+          "arrival": 1040,
+          "departure": 1075
+        },
+        {
+          "station_id": "0980",
+          "station_name": "南港",
+          "arrival": 1300,
+          "departure": 1335
+        },
+        {
+          "station_id": "0990",
+          "station_name": "松山",
+          "arrival": 1560,
+          "departure": 1595
+        },
+        {
+          "station_id": "1000",
+          "station_name": "臺北",
+          "arrival": 1820,
+          "departure": 1820
+        }
+      ]
+    },
+    {
+      "departure_time": "15:00:00",
+      "train_id": "YL-1036",
+      "train_no": "1036",
+      "train_type": "自強",
+      "origin_station": "7190",
+      "destination_station": "1000",
+      "od_track_id": "YL-YL-TP",
+      "stations": [
+        {
+          "station_id": "7190",
+          "station_name": "宜蘭",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "7210",
+          "station_name": "礁溪",
+          "arrival": 210,
+          "departure": 240
+        },
+        {
+          "station_id": "7360",
+          "station_name": "瑞芳",
+          "arrival": 420,
+          "departure": 450
+        },
+        {
+          "station_id": "0980",
+          "station_name": "南港",
+          "arrival": 630,
+          "departure": 660
+        },
+        {
+          "station_id": "0990",
+          "station_name": "松山",
+          "arrival": 840,
+          "departure": 870
+        },
+        {
+          "station_id": "1000",
+          "station_name": "臺北",
+          "arrival": 1050,
+          "departure": 1050
+        }
+      ]
+    },
+    {
+      "departure_time": "15:30:00",
+      "train_id": "YL-1038",
+      "train_no": "1038",
+      "train_type": "區間快",
+      "origin_station": "7000",
+      "destination_station": "1000",
+      "od_track_id": "YL-HL-TP",
+      "stations": [
+        {
+          "station_id": "7000",
+          "station_name": "花蓮",
+          "arrival": 0,
+          "departure": 35
+        },
+        {
+          "station_id": "7030",
+          "station_name": "新城",
+          "arrival": 260,
+          "departure": 295
+        },
+        {
+          "station_id": "7060",
+          "station_name": "和平",
+          "arrival": 520,
+          "departure": 555
+        },
+        {
+          "station_id": "7130",
+          "station_name": "蘇澳新",
+          "arrival": 930,
+          "departure": 965
+        },
+        {
+          "station_id": "7160",
+          "station_name": "羅東",
+          "arrival": 1190,
+          "departure": 1225
+        },
+        {
+          "station_id": "7190",
+          "station_name": "宜蘭",
+          "arrival": 1450,
+          "departure": 1485
+        },
+        {
+          "station_id": "7210",
+          "station_name": "礁溪",
+          "arrival": 1710,
+          "departure": 1745
+        },
+        {
+          "station_id": "7360",
+          "station_name": "瑞芳",
+          "arrival": 1970,
+          "departure": 2005
+        },
+        {
+          "station_id": "0980",
+          "station_name": "南港",
+          "arrival": 2230,
+          "departure": 2265
+        },
+        {
+          "station_id": "0990",
+          "station_name": "松山",
+          "arrival": 2490,
+          "departure": 2525
+        },
+        {
+          "station_id": "1000",
+          "station_name": "臺北",
+          "arrival": 2750,
+          "departure": 2750
+        }
+      ]
+    },
+    {
+      "departure_time": "16:00:00",
+      "train_id": "YL-1040",
+      "train_no": "1040",
+      "train_type": "自強",
+      "origin_station": "7130",
+      "destination_station": "1000",
+      "od_track_id": "YL-SA-TP",
+      "stations": [
+        {
+          "station_id": "7130",
+          "station_name": "蘇澳新",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "7160",
+          "station_name": "羅東",
+          "arrival": 210,
+          "departure": 240
+        },
+        {
+          "station_id": "7190",
+          "station_name": "宜蘭",
+          "arrival": 420,
+          "departure": 450
+        },
+        {
+          "station_id": "7210",
+          "station_name": "礁溪",
+          "arrival": 630,
+          "departure": 660
+        },
+        {
+          "station_id": "7360",
+          "station_name": "瑞芳",
+          "arrival": 840,
+          "departure": 870
+        },
+        {
+          "station_id": "0980",
+          "station_name": "南港",
+          "arrival": 1050,
+          "departure": 1080
+        },
+        {
+          "station_id": "0990",
+          "station_name": "松山",
+          "arrival": 1260,
+          "departure": 1290
+        },
+        {
+          "station_id": "1000",
+          "station_name": "臺北",
+          "arrival": 1470,
+          "departure": 1470
+        }
+      ]
+    },
+    {
+      "departure_time": "16:30:00",
+      "train_id": "YL-1042",
+      "train_no": "1042",
+      "train_type": "區間快",
+      "origin_station": "7190",
+      "destination_station": "1000",
+      "od_track_id": "YL-YL-TP",
+      "stations": [
+        {
+          "station_id": "7190",
+          "station_name": "宜蘭",
+          "arrival": 0,
+          "departure": 35
+        },
+        {
+          "station_id": "7210",
+          "station_name": "礁溪",
+          "arrival": 260,
+          "departure": 295
+        },
+        {
+          "station_id": "7360",
+          "station_name": "瑞芳",
+          "arrival": 520,
+          "departure": 555
+        },
+        {
+          "station_id": "0980",
+          "station_name": "南港",
+          "arrival": 780,
+          "departure": 815
+        },
+        {
+          "station_id": "0990",
+          "station_name": "松山",
+          "arrival": 1040,
+          "departure": 1075
+        },
+        {
+          "station_id": "1000",
+          "station_name": "臺北",
+          "arrival": 1300,
+          "departure": 1300
+        }
+      ]
+    },
+    {
+      "departure_time": "17:00:00",
+      "train_id": "YL-1044",
+      "train_no": "1044",
+      "train_type": "自強",
+      "origin_station": "7000",
+      "destination_station": "1000",
+      "od_track_id": "YL-HL-TP",
+      "stations": [
+        {
+          "station_id": "7000",
+          "station_name": "花蓮",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "7030",
+          "station_name": "新城",
+          "arrival": 210,
+          "departure": 240
+        },
+        {
+          "station_id": "7060",
+          "station_name": "和平",
+          "arrival": 420,
+          "departure": 450
+        },
+        {
+          "station_id": "7130",
+          "station_name": "蘇澳新",
+          "arrival": 750,
+          "departure": 780
+        },
+        {
+          "station_id": "7160",
+          "station_name": "羅東",
+          "arrival": 960,
+          "departure": 990
+        },
+        {
+          "station_id": "7190",
+          "station_name": "宜蘭",
+          "arrival": 1170,
+          "departure": 1200
+        },
+        {
+          "station_id": "7210",
+          "station_name": "礁溪",
+          "arrival": 1380,
+          "departure": 1410
+        },
+        {
+          "station_id": "7360",
+          "station_name": "瑞芳",
+          "arrival": 1590,
+          "departure": 1620
+        },
+        {
+          "station_id": "0980",
+          "station_name": "南港",
+          "arrival": 1800,
+          "departure": 1830
+        },
+        {
+          "station_id": "0990",
+          "station_name": "松山",
+          "arrival": 2010,
+          "departure": 2040
+        },
+        {
+          "station_id": "1000",
+          "station_name": "臺北",
+          "arrival": 2220,
+          "departure": 2220
+        }
+      ]
+    },
+    {
+      "departure_time": "17:30:00",
+      "train_id": "YL-1046",
+      "train_no": "1046",
+      "train_type": "區間快",
+      "origin_station": "7130",
+      "destination_station": "1000",
+      "od_track_id": "YL-SA-TP",
+      "stations": [
+        {
+          "station_id": "7130",
+          "station_name": "蘇澳新",
+          "arrival": 0,
+          "departure": 35
+        },
+        {
+          "station_id": "7160",
+          "station_name": "羅東",
+          "arrival": 260,
+          "departure": 295
+        },
+        {
+          "station_id": "7190",
+          "station_name": "宜蘭",
+          "arrival": 520,
+          "departure": 555
+        },
+        {
+          "station_id": "7210",
+          "station_name": "礁溪",
+          "arrival": 780,
+          "departure": 815
+        },
+        {
+          "station_id": "7360",
+          "station_name": "瑞芳",
+          "arrival": 1040,
+          "departure": 1075
+        },
+        {
+          "station_id": "0980",
+          "station_name": "南港",
+          "arrival": 1300,
+          "departure": 1335
+        },
+        {
+          "station_id": "0990",
+          "station_name": "松山",
+          "arrival": 1560,
+          "departure": 1595
+        },
+        {
+          "station_id": "1000",
+          "station_name": "臺北",
+          "arrival": 1820,
+          "departure": 1820
+        }
+      ]
+    },
+    {
+      "departure_time": "18:00:00",
+      "train_id": "YL-1048",
+      "train_no": "1048",
+      "train_type": "自強",
+      "origin_station": "7190",
+      "destination_station": "1000",
+      "od_track_id": "YL-YL-TP",
+      "stations": [
+        {
+          "station_id": "7190",
+          "station_name": "宜蘭",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "7210",
+          "station_name": "礁溪",
+          "arrival": 210,
+          "departure": 240
+        },
+        {
+          "station_id": "7360",
+          "station_name": "瑞芳",
+          "arrival": 420,
+          "departure": 450
+        },
+        {
+          "station_id": "0980",
+          "station_name": "南港",
+          "arrival": 630,
+          "departure": 660
+        },
+        {
+          "station_id": "0990",
+          "station_name": "松山",
+          "arrival": 840,
+          "departure": 870
+        },
+        {
+          "station_id": "1000",
+          "station_name": "臺北",
+          "arrival": 1050,
+          "departure": 1050
+        }
+      ]
+    },
+    {
+      "departure_time": "18:30:00",
+      "train_id": "YL-1050",
+      "train_no": "1050",
+      "train_type": "區間快",
+      "origin_station": "7000",
+      "destination_station": "1000",
+      "od_track_id": "YL-HL-TP",
+      "stations": [
+        {
+          "station_id": "7000",
+          "station_name": "花蓮",
+          "arrival": 0,
+          "departure": 35
+        },
+        {
+          "station_id": "7030",
+          "station_name": "新城",
+          "arrival": 260,
+          "departure": 295
+        },
+        {
+          "station_id": "7060",
+          "station_name": "和平",
+          "arrival": 520,
+          "departure": 555
+        },
+        {
+          "station_id": "7130",
+          "station_name": "蘇澳新",
+          "arrival": 930,
+          "departure": 965
+        },
+        {
+          "station_id": "7160",
+          "station_name": "羅東",
+          "arrival": 1190,
+          "departure": 1225
+        },
+        {
+          "station_id": "7190",
+          "station_name": "宜蘭",
+          "arrival": 1450,
+          "departure": 1485
+        },
+        {
+          "station_id": "7210",
+          "station_name": "礁溪",
+          "arrival": 1710,
+          "departure": 1745
+        },
+        {
+          "station_id": "7360",
+          "station_name": "瑞芳",
+          "arrival": 1970,
+          "departure": 2005
+        },
+        {
+          "station_id": "0980",
+          "station_name": "南港",
+          "arrival": 2230,
+          "departure": 2265
+        },
+        {
+          "station_id": "0990",
+          "station_name": "松山",
+          "arrival": 2490,
+          "departure": 2525
+        },
+        {
+          "station_id": "1000",
+          "station_name": "臺北",
+          "arrival": 2750,
+          "departure": 2750
+        }
+      ]
+    },
+    {
+      "departure_time": "19:00:00",
+      "train_id": "YL-1052",
+      "train_no": "1052",
+      "train_type": "自強",
+      "origin_station": "7130",
+      "destination_station": "1000",
+      "od_track_id": "YL-SA-TP",
+      "stations": [
+        {
+          "station_id": "7130",
+          "station_name": "蘇澳新",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "7160",
+          "station_name": "羅東",
+          "arrival": 210,
+          "departure": 240
+        },
+        {
+          "station_id": "7190",
+          "station_name": "宜蘭",
+          "arrival": 420,
+          "departure": 450
+        },
+        {
+          "station_id": "7210",
+          "station_name": "礁溪",
+          "arrival": 630,
+          "departure": 660
+        },
+        {
+          "station_id": "7360",
+          "station_name": "瑞芳",
+          "arrival": 840,
+          "departure": 870
+        },
+        {
+          "station_id": "0980",
+          "station_name": "南港",
+          "arrival": 1050,
+          "departure": 1080
+        },
+        {
+          "station_id": "0990",
+          "station_name": "松山",
+          "arrival": 1260,
+          "departure": 1290
+        },
+        {
+          "station_id": "1000",
+          "station_name": "臺北",
+          "arrival": 1470,
+          "departure": 1470
+        }
+      ]
+    },
+    {
+      "departure_time": "19:30:00",
+      "train_id": "YL-1054",
+      "train_no": "1054",
+      "train_type": "區間快",
+      "origin_station": "7190",
+      "destination_station": "1000",
+      "od_track_id": "YL-YL-TP",
+      "stations": [
+        {
+          "station_id": "7190",
+          "station_name": "宜蘭",
+          "arrival": 0,
+          "departure": 35
+        },
+        {
+          "station_id": "7210",
+          "station_name": "礁溪",
+          "arrival": 260,
+          "departure": 295
+        },
+        {
+          "station_id": "7360",
+          "station_name": "瑞芳",
+          "arrival": 520,
+          "departure": 555
+        },
+        {
+          "station_id": "0980",
+          "station_name": "南港",
+          "arrival": 780,
+          "departure": 815
+        },
+        {
+          "station_id": "0990",
+          "station_name": "松山",
+          "arrival": 1040,
+          "departure": 1075
+        },
+        {
+          "station_id": "1000",
+          "station_name": "臺北",
+          "arrival": 1300,
+          "departure": 1300
+        }
+      ]
+    },
+    {
+      "departure_time": "20:00:00",
+      "train_id": "YL-1056",
+      "train_no": "1056",
+      "train_type": "自強",
+      "origin_station": "7000",
+      "destination_station": "1000",
+      "od_track_id": "YL-HL-TP",
+      "stations": [
+        {
+          "station_id": "7000",
+          "station_name": "花蓮",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "7030",
+          "station_name": "新城",
+          "arrival": 210,
+          "departure": 240
+        },
+        {
+          "station_id": "7060",
+          "station_name": "和平",
+          "arrival": 420,
+          "departure": 450
+        },
+        {
+          "station_id": "7130",
+          "station_name": "蘇澳新",
+          "arrival": 750,
+          "departure": 780
+        },
+        {
+          "station_id": "7160",
+          "station_name": "羅東",
+          "arrival": 960,
+          "departure": 990
+        },
+        {
+          "station_id": "7190",
+          "station_name": "宜蘭",
+          "arrival": 1170,
+          "departure": 1200
+        },
+        {
+          "station_id": "7210",
+          "station_name": "礁溪",
+          "arrival": 1380,
+          "departure": 1410
+        },
+        {
+          "station_id": "7360",
+          "station_name": "瑞芳",
+          "arrival": 1590,
+          "departure": 1620
+        },
+        {
+          "station_id": "0980",
+          "station_name": "南港",
+          "arrival": 1800,
+          "departure": 1830
+        },
+        {
+          "station_id": "0990",
+          "station_name": "松山",
+          "arrival": 2010,
+          "departure": 2040
+        },
+        {
+          "station_id": "1000",
+          "station_name": "臺北",
+          "arrival": 2220,
+          "departure": 2220
+        }
+      ]
+    },
+    {
+      "departure_time": "20:30:00",
+      "train_id": "YL-1058",
+      "train_no": "1058",
+      "train_type": "區間快",
+      "origin_station": "7130",
+      "destination_station": "1000",
+      "od_track_id": "YL-SA-TP",
+      "stations": [
+        {
+          "station_id": "7130",
+          "station_name": "蘇澳新",
+          "arrival": 0,
+          "departure": 35
+        },
+        {
+          "station_id": "7160",
+          "station_name": "羅東",
+          "arrival": 260,
+          "departure": 295
+        },
+        {
+          "station_id": "7190",
+          "station_name": "宜蘭",
+          "arrival": 520,
+          "departure": 555
+        },
+        {
+          "station_id": "7210",
+          "station_name": "礁溪",
+          "arrival": 780,
+          "departure": 815
+        },
+        {
+          "station_id": "7360",
+          "station_name": "瑞芳",
+          "arrival": 1040,
+          "departure": 1075
+        },
+        {
+          "station_id": "0980",
+          "station_name": "南港",
+          "arrival": 1300,
+          "departure": 1335
+        },
+        {
+          "station_id": "0990",
+          "station_name": "松山",
+          "arrival": 1560,
+          "departure": 1595
+        },
+        {
+          "station_id": "1000",
+          "station_name": "臺北",
+          "arrival": 1820,
+          "departure": 1820
+        }
+      ]
+    },
+    {
+      "departure_time": "21:00:00",
+      "train_id": "YL-1060",
+      "train_no": "1060",
+      "train_type": "自強",
+      "origin_station": "7190",
+      "destination_station": "1000",
+      "od_track_id": "YL-YL-TP",
+      "stations": [
+        {
+          "station_id": "7190",
+          "station_name": "宜蘭",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "7210",
+          "station_name": "礁溪",
+          "arrival": 210,
+          "departure": 240
+        },
+        {
+          "station_id": "7360",
+          "station_name": "瑞芳",
+          "arrival": 420,
+          "departure": 450
+        },
+        {
+          "station_id": "0980",
+          "station_name": "南港",
+          "arrival": 630,
+          "departure": 660
+        },
+        {
+          "station_id": "0990",
+          "station_name": "松山",
+          "arrival": 840,
+          "departure": 870
+        },
+        {
+          "station_id": "1000",
+          "station_name": "臺北",
+          "arrival": 1050,
+          "departure": 1050
+        }
+      ]
+    },
+    {
+      "departure_time": "21:30:00",
+      "train_id": "YL-1062",
+      "train_no": "1062",
+      "train_type": "區間快",
+      "origin_station": "7000",
+      "destination_station": "1000",
+      "od_track_id": "YL-HL-TP",
+      "stations": [
+        {
+          "station_id": "7000",
+          "station_name": "花蓮",
+          "arrival": 0,
+          "departure": 35
+        },
+        {
+          "station_id": "7030",
+          "station_name": "新城",
+          "arrival": 260,
+          "departure": 295
+        },
+        {
+          "station_id": "7060",
+          "station_name": "和平",
+          "arrival": 520,
+          "departure": 555
+        },
+        {
+          "station_id": "7130",
+          "station_name": "蘇澳新",
+          "arrival": 930,
+          "departure": 965
+        },
+        {
+          "station_id": "7160",
+          "station_name": "羅東",
+          "arrival": 1190,
+          "departure": 1225
+        },
+        {
+          "station_id": "7190",
+          "station_name": "宜蘭",
+          "arrival": 1450,
+          "departure": 1485
+        },
+        {
+          "station_id": "7210",
+          "station_name": "礁溪",
+          "arrival": 1710,
+          "departure": 1745
+        },
+        {
+          "station_id": "7360",
+          "station_name": "瑞芳",
+          "arrival": 1970,
+          "departure": 2005
+        },
+        {
+          "station_id": "0980",
+          "station_name": "南港",
+          "arrival": 2230,
+          "departure": 2265
+        },
+        {
+          "station_id": "0990",
+          "station_name": "松山",
+          "arrival": 2490,
+          "departure": 2525
+        },
+        {
+          "station_id": "1000",
+          "station_name": "臺北",
+          "arrival": 2750,
+          "departure": 2750
+        }
+      ]
+    },
+    {
+      "departure_time": "22:00:00",
+      "train_id": "YL-1064",
+      "train_no": "1064",
+      "train_type": "自強",
+      "origin_station": "7130",
+      "destination_station": "1000",
+      "od_track_id": "YL-SA-TP",
+      "stations": [
+        {
+          "station_id": "7130",
+          "station_name": "蘇澳新",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "7160",
+          "station_name": "羅東",
+          "arrival": 210,
+          "departure": 240
+        },
+        {
+          "station_id": "7190",
+          "station_name": "宜蘭",
+          "arrival": 420,
+          "departure": 450
+        },
+        {
+          "station_id": "7210",
+          "station_name": "礁溪",
+          "arrival": 630,
+          "departure": 660
+        },
+        {
+          "station_id": "7360",
+          "station_name": "瑞芳",
+          "arrival": 840,
+          "departure": 870
+        },
+        {
+          "station_id": "0980",
+          "station_name": "南港",
+          "arrival": 1050,
+          "departure": 1080
+        },
+        {
+          "station_id": "0990",
+          "station_name": "松山",
+          "arrival": 1260,
+          "departure": 1290
+        },
+        {
+          "station_id": "1000",
+          "station_name": "臺北",
+          "arrival": 1470,
+          "departure": 1470
+        }
+      ]
+    }
+  ]
+}

@@ -61,6 +61,15 @@ const OD_TRACK_IDS = [
   'CZ-ZF-CG',  // 追分→成功
   'SH-TN-SL',  // 臺南→沙崙
   'SH-SL-TN',  // 沙崙→臺南
+  // 宜蘭線 + 北迴線 O-D 軌道
+  'YL-TP-HL',  // 臺北→花蓮 (跨 WL-N + YL + BH)
+  'YL-HL-TP',  // 花蓮→臺北
+  'YL-TP-YL',  // 臺北→宜蘭
+  'YL-YL-TP',  // 宜蘭→臺北
+  'YL-TP-SA',  // 臺北→蘇澳
+  'YL-SA-TP',  // 蘇澳→臺北
+  'BH-SX-HL',  // 蘇澳新→花蓮
+  'BH-HL-SX',  // 花蓮→蘇澳新
 ];
 
 /**
@@ -73,6 +82,8 @@ const SCHEDULE_IDS = [
   'JJ-0', 'JJ-1',
   'CZ-0', 'CZ-1',
   'SH-0', 'SH-1',
+  'YL-0', 'YL-1',  // 宜蘭線
+  'BH-0', 'BH-1',  // 北迴線
 ];
 
 /**

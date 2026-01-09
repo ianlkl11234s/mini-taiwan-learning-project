@@ -32,7 +32,9 @@ export function TrainInfoPanel({ train, stationNames, onClose, visualTheme = 'da
                 train.trackId.startsWith('WL') ||
                 train.trackId.startsWith('PX') ||
                 train.trackId.startsWith('JJ') ||
-                train.trackId.startsWith('CZ');
+                train.trackId.startsWith('CZ') ||
+                train.trackId.startsWith('YL') ||
+                train.trackId.startsWith('BH');
 
   // 根據類型取得線路資訊
   const lineColor = isThsr

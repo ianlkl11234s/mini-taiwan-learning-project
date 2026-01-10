@@ -70,6 +70,9 @@ const OD_TRACK_IDS = [
   'YL-SA-TP',  // 蘇澳→臺北
   'BH-SX-HL',  // 蘇澳新→花蓮
   'BH-HL-SX',  // 花蓮→蘇澳新
+  // 基隆支線 O-D 軌道
+  'KL-TP-KL',  // 臺北→基隆
+  'KL-KL-TP',  // 基隆→臺北
 ];
 
 /**
@@ -84,6 +87,7 @@ const SCHEDULE_IDS = [
   'SH-0', 'SH-1',
   'YL-0', 'YL-1',  // 宜蘭線
   'BH-0', 'BH-1',  // 北迴線
+  'KL-0', 'KL-1',  // 基隆支線
 ];
 
 /**

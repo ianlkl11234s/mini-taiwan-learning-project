@@ -64,6 +64,17 @@
 | 時刻表 | 📋 待處理 |
 | 備註 | 追分-成功 |
 
+### KL 基隆支線
+| 項目 | 狀態 |
+|------|------|
+| 軌道資料 | 🔧 使用 WL-N |
+| O-D 軌道 | ✅ 完成 |
+| 時刻表 | ✅ TDX 真實資料 |
+| 備註 | 八堵-基隆，從 WL-N 擷取軌道 |
+
+**已知問題**：
+- [x] 三坑站 (0910) 座標誤差約 1km → 已 snap 到軌道端點，待 WL-N 軌道修正後更新
+
 ---
 
 ## 幹線軌道 (Main Lines)
@@ -73,8 +84,8 @@
 |------|------|
 | 軌道資料 | 🔧 手繪補充 |
 | O-D 軌道 | ✅ 完成 |
-| 時刻表 | 🔧 模擬資料 (TDX 維護中) |
-| 備註 | 八堵-蘇澳 |
+| 時刻表 | ✅ TDX 真實資料 |
+| 備註 | 八堵-蘇澳，目前僅包含臺北起迄列車 |
 
 **已知問題與修正**：
 - [x] MultiLineString 段落順序錯亂 → 已用 `fix_yl_track_segments.py` 修正
@@ -146,7 +157,9 @@
 | `rebuild_bh_from_gaps.py` | 從手繪資料重建 BH 軌道 |
 | `rebuild_yl_from_gaps.py` | 從手繪資料重建 YL 軌道 |
 | `build_yl_bh_od_tracks.py` | 建立 YL/BH O-D 專屬軌道 |
-| `generate_yl_bh_schedules.py` | 產生 YL/BH 模擬時刻表 |
+| `generate_yl_bh_schedules.py` | 產生 YL/BH 模擬時刻表 (已棄用) |
+| `build_kl_od_tracks.py` | 從 WL-N 建立 KL 基隆支線 O-D 軌道 |
+| `fetch_yl_kl_timetable.py` | 從 TDX API 取得 YL/KL 真實時刻表 |
 
 ---
 
@@ -159,6 +172,14 @@
 ---
 
 ## 更新紀錄
+
+### 2026-01-10 (TDX 真實時刻表整合)
+- KL 基隆支線：新增 O-D 軌道 (KL-TP-KL, KL-KL-TP)
+- KL 基隆支線：TDX 真實時刻表 (61 班次)
+- YL 宜蘭線：TDX 真實時刻表 (33 班次，臺北起迄)
+- 新增 `fetch_yl_kl_timetable.py` TDX 時刻表轉換腳本
+- 新增 `build_kl_od_tracks.py` 基隆支線軌道建立腳本
+- 更新 `useTraData.ts` 和 `TraTrainEngine.ts` 支援 KL 路線
 
 ### 2026-01-10
 - YL 宜蘭線：手繪區段整合完成（福隆-貢寮、貢寮-雙溪、雙溪-牡丹、猴硐-瑞芳）

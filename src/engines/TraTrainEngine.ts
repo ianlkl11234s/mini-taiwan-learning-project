@@ -13,6 +13,7 @@
  * - CZ (成追線)
  * - YL (宜蘭線)
  * - BH (北迴線)
+ * - KL (基隆支線)
  */
 
 export interface TraTrain {
@@ -183,6 +184,12 @@ function getTrackIdFromOdTrackId(odTrackId: string): string {
   if (lineId === 'BH') {
     const direction = dest === 'SX' ? '1' : '0';
     return `BH-${direction}`;
+  }
+
+  // KL 基隆支線：終點是 TP (臺北) 則為北上 (方向 1)
+  if (lineId === 'KL') {
+    const direction = dest === 'TP' ? '1' : '0';
+    return `KL-${direction}`;
   }
 
   // 支線：各線的「起點站」代碼（方向 0 的終點）

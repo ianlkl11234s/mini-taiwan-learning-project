@@ -22,34 +22,35 @@
         {
           "station_id": "7210",
           "station_name": "礁溪",
-          "arrival": 210,
-          "departure": 240
+          "arrival": 390,
+          "departure": 420
         },
         {
           "station_id": "7360",
           "station_name": "瑞芳",
-          "arrival": 420,
-          "departure": 450
+          "arrival": 3160,
+          "departure": 3190
         },
         {
           "station_id": "0980",
           "station_name": "南港",
-          "arrival": 630,
-          "departure": 660
+          "arrival": 4810,
+          "departure": 4840
         },
         {
           "station_id": "0990",
           "station_name": "松山",
-          "arrival": 840,
-          "departure": 870
+          "arrival": 5020,
+          "departure": 5050
         },
         {
           "station_id": "1000",
           "station_name": "臺北",
-          "arrival": 1050,
-          "departure": 1050
+          "arrival": 5230,
+          "departure": 5230
         }
-      ]
+      ],
+      "total_travel_time": 5230
     },
     {
       "departure_time": "06:30:00",
@@ -69,64 +70,65 @@
         {
           "station_id": "7030",
           "station_name": "新城",
-          "arrival": 260,
-          "departure": 295
+          "arrival": 710,
+          "departure": 745
         },
         {
           "station_id": "7060",
           "station_name": "和平",
-          "arrival": 520,
-          "departure": 555
+          "arrival": 1870,
+          "departure": 1905
         },
         {
           "station_id": "7130",
           "station_name": "蘇澳新",
-          "arrival": 930,
-          "departure": 965
+          "arrival": 3930,
+          "departure": 3965
         },
         {
           "station_id": "7160",
           "station_name": "羅東",
-          "arrival": 1190,
-          "departure": 1225
+          "arrival": 4640,
+          "departure": 4675
         },
         {
           "station_id": "7190",
           "station_name": "宜蘭",
-          "arrival": 1450,
-          "departure": 1485
+          "arrival": 5350,
+          "departure": 5385
         },
         {
           "station_id": "7210",
           "station_name": "礁溪",
-          "arrival": 1710,
-          "departure": 1745
+          "arrival": 5835,
+          "departure": 5870
         },
         {
           "station_id": "7360",
           "station_name": "瑞芳",
-          "arrival": 1970,
-          "departure": 2005
+          "arrival": 9295,
+          "departure": 9330
         },
         {
           "station_id": "0980",
           "station_name": "南港",
-          "arrival": 2230,
-          "departure": 2265
+          "arrival": 11355,
+          "departure": 11390
         },
         {
           "station_id": "0990",
           "station_name": "松山",
-          "arrival": 2490,
-          "departure": 2525
+          "arrival": 11615,
+          "departure": 11650
         },
         {
           "station_id": "1000",
           "station_name": "臺北",
-          "arrival": 2750,
-          "departure": 2750
+          "arrival": 11875,
+          "departure": 11875
         }
-      ]
+      ],
+      "total_travel_time": 11875
     },
     {
       "departure_time": "07:00:00",
@@ -146,46 +148,47 @@
         {
           "station_id": "7160",
           "station_name": "羅東",
-          "arrival": 210,
-          "departure": 240
+          "arrival": 570,
+          "departure": 600
         },
         {
           "station_id": "7190",
           "station_name": "宜蘭",
-          "arrival": 420,
-          "departure": 450
+          "arrival": 1140,
+          "departure": 1170
         },
         {
           "station_id": "7210",
           "station_name": "礁溪",
-          "arrival": 630,
-          "departure": 660
+          "arrival": 1530,
+          "departure": 1560
         },
         {
           "station_id": "7360",
           "station_name": "瑞芳",
-          "arrival": 840,
-          "departure": 870
+          "arrival": 4300,
+          "departure": 4330
         },
         {
           "station_id": "0980",
           "station_name": "南港",
-          "arrival": 1050,
-          "departure": 1080
+          "arrival": 5950,
+          "departure": 5980
         },
         {
           "station_id": "0990",
           "station_name": "松山",
-          "arrival": 1260,
-          "departure": 1290
+          "arrival": 6160,
+          "departure": 6190
         },
         {
           "station_id": "1000",
           "station_name": "臺北",
-          "arrival": 1470,
-          "departure": 1470
+          "arrival": 6370,
+          "departure": 6370
         }
-      ]
+      ],
+      "total_travel_time": 6370
     },
     {
       "departure_time": "07:30:00",
@@ -205,34 +208,35 @@
         {
           "station_id": "7210",
           "station_name": "礁溪",
-          "arrival": 260,
-          "departure": 295
+          "arrival": 485,
+          "departure": 520
         },
         {
           "station_id": "7360",
           "station_name": "瑞芳",
-          "arrival": 520,
-          "departure": 555
+          "arrival": 3945,
+          "departure": 3980
         },
         {
           "station_id": "0980",
           "station_name": "南港",
-          "arrival": 780,
-          "departure": 815
+          "arrival": 6005,
+          "departure": 6040
         },
         {
           "station_id": "0990",
           "station_name": "松山",
-          "arrival": 1040,
-          "departure": 1075
+          "arrival": 6265,
+          "departure": 6300
         },
         {
           "station_id": "1000",
           "station_name": "臺北",
-          "arrival": 1300,
-          "departure": 1300
+          "arrival": 6525,
+          "departure": 6525
         }
-      ]
+      ],
+      "total_travel_time": 6525
     },
     {
       "departure_time": "08:00:00",
@@ -252,64 +256,65 @@
         {
           "station_id": "7030",
           "station_name": "新城",
-          "arrival": 210,
-          "departure": 240
+          "arrival": 570,
+          "departure": 600
         },
         {
           "station_id": "7060",
           "station_name": "和平",
-          "arrival": 420,
-          "departure": 450
+          "arrival": 1500,
+          "departure": 1530
         },
         {
           "station_id": "7130",
           "station_name": "蘇澳新",
-          "arrival": 750,
-          "departure": 780
+          "arrival": 3150,
+          "departure": 3180
         },
         {
           "station_id": "7160",
           "station_name": "羅東",
-          "arrival": 960,
-          "departure": 990
+          "arrival": 3720,
+          "departure": 3750
         },
         {
           "station_id": "7190",
           "station_name": "宜蘭",
-          "arrival": 1170,
-          "departure": 1200
+          "arrival": 4290,
+          "departure": 4320
         },
         {
           "station_id": "7210",
           "station_name": "礁溪",
-          "arrival": 1380,
-          "departure": 1410
+          "arrival": 4680,
+          "departure": 4710
         },
         {
           "station_id": "7360",
           "station_name": "瑞芳",
-          "arrival": 1590,
-          "departure": 1620
+          "arrival": 7450,
+          "departure": 7480
         },
         {
           "station_id": "0980",
           "station_name": "南港",
-          "arrival": 1800,
-          "departure": 1830
+          "arrival": 9100,
+          "departure": 9130
         },
         {
           "station_id": "0990",
           "station_name": "松山",
-          "arrival": 2010,
-          "departure": 2040
+          "arrival": 9310,
+          "departure": 9340
         },
         {
           "station_id": "1000",
           "station_name": "臺北",
-          "arrival": 2220,
-          "departure": 2220
+          "arrival": 9520,
+          "departure": 9520
         }
-      ]
+      ],
+      "total_travel_time": 9520
     },
     {
       "departure_time": "08:30:00",
@@ -329,46 +334,47 @@
         {
           "station_id": "7160",
           "station_name": "羅東",
-          "arrival": 260,
-          "departure": 295
+          "arrival": 710,
+          "departure": 745
         },
         {
           "station_id": "7190",
           "station_name": "宜蘭",
-          "arrival": 520,
-          "departure": 555
+          "arrival": 1420,
+          "departure": 1455
         },
         {
           "station_id": "7210",
           "station_name": "礁溪",
-          "arrival": 780,
-          "departure": 815
+          "arrival": 1905,
+          "departure": 1940
         },
         {
           "station_id": "7360",
           "station_name": "瑞芳",
-          "arrival": 1040,
-          "departure": 1075
+          "arrival": 5365,
+          "departure": 5400
         },
         {
           "station_id": "0980",
           "station_name": "南港",
-          "arrival": 1300,
-          "departure": 1335
+          "arrival": 7425,
+          "departure": 7460
         },
         {
           "station_id": "0990",
           "station_name": "松山",
-          "arrival": 1560,
-          "departure": 1595
+          "arrival": 7685,
+          "departure": 7720
         },
         {
           "station_id": "1000",
           "station_name": "臺北",
-          "arrival": 1820,
-          "departure": 1820
+          "arrival": 7945,
+          "departure": 7945
         }
-      ]
+      ],
+      "total_travel_time": 7945
     },
     {
       "departure_time": "09:00:00",
@@ -388,34 +394,35 @@
         {
           "station_id": "7210",
           "station_name": "礁溪",
-          "arrival": 210,
-          "departure": 240
+          "arrival": 390,
+          "departure": 420
         },
         {
           "station_id": "7360",
           "station_name": "瑞芳",
-          "arrival": 420,
-          "departure": 450
+          "arrival": 3160,
+          "departure": 3190
         },
         {
           "station_id": "0980",
           "station_name": "南港",
-          "arrival": 630,
-          "departure": 660
+          "arrival": 4810,
+          "departure": 4840
         },
         {
           "station_id": "0990",
           "station_name": "松山",
-          "arrival": 840,
-          "departure": 870
+          "arrival": 5020,
+          "departure": 5050
         },
         {
           "station_id": "1000",
           "station_name": "臺北",
-          "arrival": 1050,
-          "departure": 1050
+          "arrival": 5230,
+          "departure": 5230
         }
-      ]
+      ],
+      "total_travel_time": 5230
     },
     {
       "departure_time": "09:30:00",
@@ -435,64 +442,65 @@
         {
           "station_id": "7030",
           "station_name": "新城",
-          "arrival": 260,
-          "departure": 295
+          "arrival": 710,
+          "departure": 745
         },
         {
           "station_id": "7060",
           "station_name": "和平",
-          "arrival": 520,
-          "departure": 555
+          "arrival": 1870,
+          "departure": 1905
         },
         {
           "station_id": "7130",
           "station_name": "蘇澳新",
-          "arrival": 930,
-          "departure": 965
+          "arrival": 3930,
+          "departure": 3965
         },
         {
           "station_id": "7160",
           "station_name": "羅東",
-          "arrival": 1190,
-          "departure": 1225
+          "arrival": 4640,
+          "departure": 4675
         },
         {
           "station_id": "7190",
           "station_name": "宜蘭",
-          "arrival": 1450,
-          "departure": 1485
+          "arrival": 5350,
+          "departure": 5385
         },
         {
           "station_id": "7210",
           "station_name": "礁溪",
-          "arrival": 1710,
-          "departure": 1745
+          "arrival": 5835,
+          "departure": 5870
         },
         {
           "station_id": "7360",
           "station_name": "瑞芳",
-          "arrival": 1970,
-          "departure": 2005
+          "arrival": 9295,
+          "departure": 9330
         },
         {
           "station_id": "0980",
           "station_name": "南港",
-          "arrival": 2230,
-          "departure": 2265
+          "arrival": 11355,
+          "departure": 11390
         },
         {
           "station_id": "0990",
           "station_name": "松山",
-          "arrival": 2490,
-          "departure": 2525
+          "arrival": 11615,
+          "departure": 11650
         },
         {
           "station_id": "1000",
           "station_name": "臺北",
-          "arrival": 2750,
-          "departure": 2750
+          "arrival": 11875,
+          "departure": 11875
         }
-      ]
+      ],
+      "total_travel_time": 11875
     },
     {
       "departure_time": "10:00:00",
@@ -512,46 +520,47 @@
         {
           "station_id": "7160",
           "station_name": "羅東",
-          "arrival": 210,
-          "departure": 240
+          "arrival": 570,
+          "departure": 600
         },
         {
           "station_id": "7190",
           "station_name": "宜蘭",
-          "arrival": 420,
-          "departure": 450
+          "arrival": 1140,
+          "departure": 1170
         },
         {
           "station_id": "7210",
           "station_name": "礁溪",
-          "arrival": 630,
-          "departure": 660
+          "arrival": 1530,
+          "departure": 1560
         },
         {
           "station_id": "7360",
           "station_name": "瑞芳",
-          "arrival": 840,
-          "departure": 870
+          "arrival": 4300,
+          "departure": 4330
         },
         {
           "station_id": "0980",
           "station_name": "南港",
-          "arrival": 1050,
-          "departure": 1080
+          "arrival": 5950,
+          "departure": 5980
         },
         {
           "station_id": "0990",
           "station_name": "松山",
-          "arrival": 1260,
-          "departure": 1290
+          "arrival": 6160,
+          "departure": 6190
         },
         {
           "station_id": "1000",
           "station_name": "臺北",
-          "arrival": 1470,
-          "departure": 1470
+          "arrival": 6370,
+          "departure": 6370
         }
-      ]
+      ],
+      "total_travel_time": 6370
     },
     {
       "departure_time": "10:30:00",
@@ -571,34 +580,35 @@
         {
           "station_id": "7210",
           "station_name": "礁溪",
-          "arrival": 260,
-          "departure": 295
+          "arrival": 485,
+          "departure": 520
         },
         {
           "station_id": "7360",
           "station_name": "瑞芳",
-          "arrival": 520,
-          "departure": 555
+          "arrival": 3945,
+          "departure": 3980
         },
         {
           "station_id": "0980",
           "station_name": "南港",
-          "arrival": 780,
-          "departure": 815
+          "arrival": 6005,
+          "departure": 6040
         },
         {
           "station_id": "0990",
           "station_name": "松山",
-          "arrival": 1040,
-          "departure": 1075
+          "arrival": 6265,
+          "departure": 6300
         },
         {
           "station_id": "1000",
           "station_name": "臺北",
-          "arrival": 1300,
-          "departure": 1300
+          "arrival": 6525,
+          "departure": 6525
         }
-      ]
+      ],
+      "total_travel_time": 6525
     },
     {
       "departure_time": "11:00:00",
@@ -618,64 +628,65 @@
         {
           "station_id": "7030",
           "station_name": "新城",
-          "arrival": 210,
-          "departure": 240
+          "arrival": 570,
+          "departure": 600
         },
         {
           "station_id": "7060",
           "station_name": "和平",
-          "arrival": 420,
-          "departure": 450
+          "arrival": 1500,
+          "departure": 1530
         },
         {
           "station_id": "7130",
           "station_name": "蘇澳新",
-          "arrival": 750,
-          "departure": 780
+          "arrival": 3150,
+          "departure": 3180
         },
         {
           "station_id": "7160",
           "station_name": "羅東",
-          "arrival": 960,
-          "departure": 990
+          "arrival": 3720,
+          "departure": 3750
         },
         {
           "station_id": "7190",
           "station_name": "宜蘭",
-          "arrival": 1170,
-          "departure": 1200
+          "arrival": 4290,
+          "departure": 4320
         },
         {
           "station_id": "7210",
           "station_name": "礁溪",
-          "arrival": 1380,
-          "departure": 1410
+          "arrival": 4680,
+          "departure": 4710
         },
         {
           "station_id": "7360",
           "station_name": "瑞芳",
-          "arrival": 1590,
-          "departure": 1620
+          "arrival": 7450,
+          "departure": 7480
         },
         {
           "station_id": "0980",
           "station_name": "南港",
-          "arrival": 1800,
-          "departure": 1830
+          "arrival": 9100,
+          "departure": 9130
         },
         {
           "station_id": "0990",
           "station_name": "松山",
-          "arrival": 2010,
-          "departure": 2040
+          "arrival": 9310,
+          "departure": 9340
         },
         {
           "station_id": "1000",
           "station_name": "臺北",
-          "arrival": 2220,
-          "departure": 2220
+          "arrival": 9520,
+          "departure": 9520
         }
-      ]
+      ],
+      "total_travel_time": 9520
     },
     {
       "departure_time": "11:30:00",
@@ -695,46 +706,47 @@
         {
           "station_id": "7160",
           "station_name": "羅東",
-          "arrival": 260,
-          "departure": 295
+          "arrival": 710,
+          "departure": 745
         },
         {
           "station_id": "7190",
           "station_name": "宜蘭",
-          "arrival": 520,
-          "departure": 555
+          "arrival": 1420,
+          "departure": 1455
         },
         {
           "station_id": "7210",
           "station_name": "礁溪",
-          "arrival": 780,
-          "departure": 815
+          "arrival": 1905,
+          "departure": 1940
         },
         {
           "station_id": "7360",
           "station_name": "瑞芳",
-          "arrival": 1040,
-          "departure": 1075
+          "arrival": 5365,
+          "departure": 5400
         },
         {
           "station_id": "0980",
           "station_name": "南港",
-          "arrival": 1300,
-          "departure": 1335
+          "arrival": 7425,
+          "departure": 7460
         },
         {
           "station_id": "0990",
           "station_name": "松山",
-          "arrival": 1560,
-          "departure": 1595
+          "arrival": 7685,
+          "departure": 7720
         },
         {
           "station_id": "1000",
           "station_name": "臺北",
-          "arrival": 1820,
-          "departure": 1820
+          "arrival": 7945,
+          "departure": 7945
         }
-      ]
+      ],
+      "total_travel_time": 7945
     },
     {
       "departure_time": "12:00:00",
@@ -754,34 +766,35 @@
         {
           "station_id": "7210",
           "station_name": "礁溪",
-          "arrival": 210,
-          "departure": 240
+          "arrival": 390,
+          "departure": 420
         },
         {
           "station_id": "7360",
           "station_name": "瑞芳",
-          "arrival": 420,
-          "departure": 450
+          "arrival": 3160,
+          "departure": 3190
         },
         {
           "station_id": "0980",
           "station_name": "南港",
-          "arrival": 630,
-          "departure": 660
+          "arrival": 4810,
+          "departure": 4840
         },
         {
           "station_id": "0990",
           "station_name": "松山",
-          "arrival": 840,
-          "departure": 870
+          "arrival": 5020,
+          "departure": 5050
         },
         {
           "station_id": "1000",
           "station_name": "臺北",
-          "arrival": 1050,
-          "departure": 1050
+          "arrival": 5230,
+          "departure": 5230
         }
-      ]
+      ],
+      "total_travel_time": 5230
     },
     {
       "departure_time": "12:30:00",
@@ -801,64 +814,65 @@
         {
           "station_id": "7030",
           "station_name": "新城",
-          "arrival": 260,
-          "departure": 295
+          "arrival": 710,
+          "departure": 745
         },
         {
           "station_id": "7060",
           "station_name": "和平",
-          "arrival": 520,
-          "departure": 555
+          "arrival": 1870,
+          "departure": 1905
         },
         {
           "station_id": "7130",
           "station_name": "蘇澳新",
-          "arrival": 930,
-          "departure": 965
+          "arrival": 3930,
+          "departure": 3965
         },
         {
           "station_id": "7160",
           "station_name": "羅東",
-          "arrival": 1190,
-          "departure": 1225
+          "arrival": 4640,
+          "departure": 4675
         },
         {
           "station_id": "7190",
           "station_name": "宜蘭",
-          "arrival": 1450,
-          "departure": 1485
+          "arrival": 5350,
+          "departure": 5385
         },
         {
           "station_id": "7210",
           "station_name": "礁溪",
-          "arrival": 1710,
-          "departure": 1745
+          "arrival": 5835,
+          "departure": 5870
         },
         {
           "station_id": "7360",
           "station_name": "瑞芳",
-          "arrival": 1970,
-          "departure": 2005
+          "arrival": 9295,
+          "departure": 9330
         },
         {
           "station_id": "0980",
           "station_name": "南港",
-          "arrival": 2230,
-          "departure": 2265
+          "arrival": 11355,
+          "departure": 11390
         },
         {
           "station_id": "0990",
           "station_name": "松山",
-          "arrival": 2490,
-          "departure": 2525
+          "arrival": 11615,
+          "departure": 11650
         },
         {
           "station_id": "1000",
           "station_name": "臺北",
-          "arrival": 2750,
-          "departure": 2750
+          "arrival": 11875,
+          "departure": 11875
         }
-      ]
+      ],
+      "total_travel_time": 11875
     },
     {
       "departure_time": "13:00:00",
@@ -878,46 +892,47 @@
         {
           "station_id": "7160",
           "station_name": "羅東",
-          "arrival": 210,
-          "departure": 240
+          "arrival": 570,
+          "departure": 600
         },
         {
           "station_id": "7190",
           "station_name": "宜蘭",
-          "arrival": 420,
-          "departure": 450
+          "arrival": 1140,
+          "departure": 1170
         },
         {
           "station_id": "7210",
           "station_name": "礁溪",
-          "arrival": 630,
-          "departure": 660
+          "arrival": 1530,
+          "departure": 1560
         },
         {
           "station_id": "7360",
           "station_name": "瑞芳",
-          "arrival": 840,
-          "departure": 870
+          "arrival": 4300,
+          "departure": 4330
         },
         {
           "station_id": "0980",
           "station_name": "南港",
-          "arrival": 1050,
-          "departure": 1080
+          "arrival": 5950,
+          "departure": 5980
         },
         {
           "station_id": "0990",
           "station_name": "松山",
-          "arrival": 1260,
-          "departure": 1290
+          "arrival": 6160,
+          "departure": 6190
         },
         {
           "station_id": "1000",
           "station_name": "臺北",
-          "arrival": 1470,
-          "departure": 1470
+          "arrival": 6370,
+          "departure": 6370
         }
-      ]
+      ],
+      "total_travel_time": 6370
     },
     {
       "departure_time": "13:30:00",
@@ -937,34 +952,35 @@
         {
           "station_id": "7210",
           "station_name": "礁溪",
-          "arrival": 260,
-          "departure": 295
+          "arrival": 485,
+          "departure": 520
         },
         {
           "station_id": "7360",
           "station_name": "瑞芳",
-          "arrival": 520,
-          "departure": 555
+          "arrival": 3945,
+          "departure": 3980
         },
         {
           "station_id": "0980",
           "station_name": "南港",
-          "arrival": 780,
-          "departure": 815
+          "arrival": 6005,
+          "departure": 6040
         },
         {
           "station_id": "0990",
           "station_name": "松山",
-          "arrival": 1040,
-          "departure": 1075
+          "arrival": 6265,
+          "departure": 6300
         },
         {
           "station_id": "1000",
           "station_name": "臺北",
-          "arrival": 1300,
-          "departure": 1300
+          "arrival": 6525,
+          "departure": 6525
         }
-      ]
+      ],
+      "total_travel_time": 6525
     },
     {
       "departure_time": "14:00:00",
@@ -984,64 +1000,65 @@
         {
           "station_id": "7030",
           "station_name": "新城",
-          "arrival": 210,
-          "departure": 240
+          "arrival": 570,
+          "departure": 600
         },
         {
           "station_id": "7060",
           "station_name": "和平",
-          "arrival": 420,
-          "departure": 450
+          "arrival": 1500,
+          "departure": 1530
         },
         {
           "station_id": "7130",
           "station_name": "蘇澳新",
-          "arrival": 750,
-          "departure": 780
+          "arrival": 3150,
+          "departure": 3180
         },
         {
           "station_id": "7160",
           "station_name": "羅東",
-          "arrival": 960,
-          "departure": 990
+          "arrival": 3720,
+          "departure": 3750
         },
         {
           "station_id": "7190",
           "station_name": "宜蘭",
-          "arrival": 1170,
-          "departure": 1200
+          "arrival": 4290,
+          "departure": 4320
         },
         {
           "station_id": "7210",
           "station_name": "礁溪",
-          "arrival": 1380,
-          "departure": 1410
+          "arrival": 4680,
+          "departure": 4710
         },
         {
           "station_id": "7360",
           "station_name": "瑞芳",
-          "arrival": 1590,
-          "departure": 1620
+          "arrival": 7450,
+          "departure": 7480
         },
         {
           "station_id": "0980",
           "station_name": "南港",
-          "arrival": 1800,
-          "departure": 1830
+          "arrival": 9100,
+          "departure": 9130
         },
         {
           "station_id": "0990",
           "station_name": "松山",
-          "arrival": 2010,
-          "departure": 2040
+          "arrival": 9310,
+          "departure": 9340
         },
         {
           "station_id": "1000",
           "station_name": "臺北",
-          "arrival": 2220,
-          "departure": 2220
+          "arrival": 9520,
+          "departure": 9520
         }
-      ]
+      ],
+      "total_travel_time": 9520
     },
     {
       "departure_time": "14:30:00",
@@ -1061,46 +1078,47 @@
         {
           "station_id": "7160",
           "station_name": "羅東",
-          "arrival": 260,
-          "departure": 295
+          "arrival": 710,
+          "departure": 745
         },
         {
           "station_id": "7190",
           "station_name": "宜蘭",
-          "arrival": 520,
-          "departure": 555
+          "arrival": 1420,
+          "departure": 1455
         },
         {
           "station_id": "7210",
           "station_name": "礁溪",
-          "arrival": 780,
-          "departure": 815
+          "arrival": 1905,
+          "departure": 1940
         },
         {
           "station_id": "7360",
           "station_name": "瑞芳",
-          "arrival": 1040,
-          "departure": 1075
+          "arrival": 5365,
+          "departure": 5400
         },
         {
           "station_id": "0980",
           "station_name": "南港",
-          "arrival": 1300,
-          "departure": 1335
+          "arrival": 7425,
+          "departure": 7460
         },
         {
           "station_id": "0990",
           "station_name": "松山",
-          "arrival": 1560,
-          "departure": 1595
+          "arrival": 7685,
+          "departure": 7720
         },
         {
           "station_id": "1000",
           "station_name": "臺北",
-          "arrival": 1820,
-          "departure": 1820
+          "arrival": 7945,
+          "departure": 7945
         }
-      ]
+      ],
+      "total_travel_time": 7945
     },
     {
       "departure_time": "15:00:00",
@@ -1120,34 +1138,35 @@
         {
           "station_id": "7210",
           "station_name": "礁溪",
-          "arrival": 210,
-          "departure": 240
+          "arrival": 390,
+          "departure": 420
         },
         {
           "station_id": "7360",
           "station_name": "瑞芳",
-          "arrival": 420,
-          "departure": 450
+          "arrival": 3160,
+          "departure": 3190
         },
         {
           "station_id": "0980",
           "station_name": "南港",
-          "arrival": 630,
-          "departure": 660
+          "arrival": 4810,
+          "departure": 4840
         },
         {
           "station_id": "0990",
           "station_name": "松山",
-          "arrival": 840,
-          "departure": 870
+          "arrival": 5020,
+          "departure": 5050
         },
         {
           "station_id": "1000",
           "station_name": "臺北",
-          "arrival": 1050,
-          "departure": 1050
+          "arrival": 5230,
+          "departure": 5230
         }
-      ]
+      ],
+      "total_travel_time": 5230
     },
     {
       "departure_time": "15:30:00",
@@ -1167,64 +1186,65 @@
         {
           "station_id": "7030",
           "station_name": "新城",
-          "arrival": 260,
-          "departure": 295
+          "arrival": 710,
+          "departure": 745
         },
         {
           "station_id": "7060",
           "station_name": "和平",
-          "arrival": 520,
-          "departure": 555
+          "arrival": 1870,
+          "departure": 1905
         },
         {
           "station_id": "7130",
           "station_name": "蘇澳新",
-          "arrival": 930,
-          "departure": 965
+          "arrival": 3930,
+          "departure": 3965
         },
         {
           "station_id": "7160",
           "station_name": "羅東",
-          "arrival": 1190,
-          "departure": 1225
+          "arrival": 4640,
+          "departure": 4675
         },
         {
           "station_id": "7190",
           "station_name": "宜蘭",
-          "arrival": 1450,
-          "departure": 1485
+          "arrival": 5350,
+          "departure": 5385
         },
         {
           "station_id": "7210",
           "station_name": "礁溪",
-          "arrival": 1710,
-          "departure": 1745
+          "arrival": 5835,
+          "departure": 5870
         },
         {
           "station_id": "7360",
           "station_name": "瑞芳",
-          "arrival": 1970,
-          "departure": 2005
+          "arrival": 9295,
+          "departure": 9330
         },
         {
           "station_id": "0980",
           "station_name": "南港",
-          "arrival": 2230,
-          "departure": 2265
+          "arrival": 11355,
+          "departure": 11390
         },
         {
           "station_id": "0990",
           "station_name": "松山",
-          "arrival": 2490,
-          "departure": 2525
+          "arrival": 11615,
+          "departure": 11650
         },
         {
           "station_id": "1000",
           "station_name": "臺北",
-          "arrival": 2750,
-          "departure": 2750
+          "arrival": 11875,
+          "departure": 11875
         }
-      ]
+      ],
+      "total_travel_time": 11875
     },
     {
       "departure_time": "16:00:00",
@@ -1244,46 +1264,47 @@
         {
           "station_id": "7160",
           "station_name": "羅東",
-          "arrival": 210,
-          "departure": 240
+          "arrival": 570,
+          "departure": 600
         },
         {
           "station_id": "7190",
           "station_name": "宜蘭",
-          "arrival": 420,
-          "departure": 450
+          "arrival": 1140,
+          "departure": 1170
         },
         {
           "station_id": "7210",
           "station_name": "礁溪",
-          "arrival": 630,
-          "departure": 660
+          "arrival": 1530,
+          "departure": 1560
         },
         {
           "station_id": "7360",
           "station_name": "瑞芳",
-          "arrival": 840,
-          "departure": 870
+          "arrival": 4300,
+          "departure": 4330
         },
         {
           "station_id": "0980",
           "station_name": "南港",
-          "arrival": 1050,
-          "departure": 1080
+          "arrival": 5950,
+          "departure": 5980
         },
         {
           "station_id": "0990",
           "station_name": "松山",
-          "arrival": 1260,
-          "departure": 1290
+          "arrival": 6160,
+          "departure": 6190
         },
         {
           "station_id": "1000",
           "station_name": "臺北",
-          "arrival": 1470,
-          "departure": 1470
+          "arrival": 6370,
+          "departure": 6370
         }
-      ]
+      ],
+      "total_travel_time": 6370
     },
     {
       "departure_time": "16:30:00",
@@ -1303,34 +1324,35 @@
         {
           "station_id": "7210",
           "station_name": "礁溪",
-          "arrival": 260,
-          "departure": 295
+          "arrival": 485,
+          "departure": 520
         },
         {
           "station_id": "7360",
           "station_name": "瑞芳",
-          "arrival": 520,
-          "departure": 555
+          "arrival": 3945,
+          "departure": 3980
         },
         {
           "station_id": "0980",
           "station_name": "南港",
-          "arrival": 780,
-          "departure": 815
+          "arrival": 6005,
+          "departure": 6040
         },
         {
           "station_id": "0990",
           "station_name": "松山",
-          "arrival": 1040,
-          "departure": 1075
+          "arrival": 6265,
+          "departure": 6300
         },
         {
           "station_id": "1000",
           "station_name": "臺北",
-          "arrival": 1300,
-          "departure": 1300
+          "arrival": 6525,
+          "departure": 6525
         }
-      ]
+      ],
+      "total_travel_time": 6525
     },
     {
       "departure_time": "17:00:00",
@@ -1350,64 +1372,65 @@
         {
           "station_id": "7030",
           "station_name": "新城",
-          "arrival": 210,
-          "departure": 240
+          "arrival": 570,
+          "departure": 600
         },
         {
           "station_id": "7060",
           "station_name": "和平",
-          "arrival": 420,
-          "departure": 450
+          "arrival": 1500,
+          "departure": 1530
         },
         {
           "station_id": "7130",
           "station_name": "蘇澳新",
-          "arrival": 750,
-          "departure": 780
+          "arrival": 3150,
+          "departure": 3180
         },
         {
           "station_id": "7160",
           "station_name": "羅東",
-          "arrival": 960,
-          "departure": 990
+          "arrival": 3720,
+          "departure": 3750
         },
         {
           "station_id": "7190",
           "station_name": "宜蘭",
-          "arrival": 1170,
-          "departure": 1200
+          "arrival": 4290,
+          "departure": 4320
         },
         {
           "station_id": "7210",
           "station_name": "礁溪",
-          "arrival": 1380,
-          "departure": 1410
+          "arrival": 4680,
+          "departure": 4710
         },
         {
           "station_id": "7360",
           "station_name": "瑞芳",
-          "arrival": 1590,
-          "departure": 1620
+          "arrival": 7450,
+          "departure": 7480
         },
         {
           "station_id": "0980",
           "station_name": "南港",
-          "arrival": 1800,
-          "departure": 1830
+          "arrival": 9100,
+          "departure": 9130
         },
         {
           "station_id": "0990",
           "station_name": "松山",
-          "arrival": 2010,
-          "departure": 2040
+          "arrival": 9310,
+          "departure": 9340
         },
         {
           "station_id": "1000",
           "station_name": "臺北",
-          "arrival": 2220,
-          "departure": 2220
+          "arrival": 9520,
+          "departure": 9520
         }
-      ]
+      ],
+      "total_travel_time": 9520
     },
     {
       "departure_time": "17:30:00",
@@ -1427,46 +1450,47 @@
         {
           "station_id": "7160",
           "station_name": "羅東",
-          "arrival": 260,
-          "departure": 295
+          "arrival": 710,
+          "departure": 745
         },
         {
           "station_id": "7190",
           "station_name": "宜蘭",
-          "arrival": 520,
-          "departure": 555
+          "arrival": 1420,
+          "departure": 1455
         },
         {
           "station_id": "7210",
           "station_name": "礁溪",
-          "arrival": 780,
-          "departure": 815
+          "arrival": 1905,
+          "departure": 1940
         },
         {
           "station_id": "7360",
           "station_name": "瑞芳",
-          "arrival": 1040,
-          "departure": 1075
+          "arrival": 5365,
+          "departure": 5400
         },
         {
           "station_id": "0980",
           "station_name": "南港",
-          "arrival": 1300,
-          "departure": 1335
+          "arrival": 7425,
+          "departure": 7460
         },
         {
           "station_id": "0990",
           "station_name": "松山",
-          "arrival": 1560,
-          "departure": 1595
+          "arrival": 7685,
+          "departure": 7720
         },
         {
           "station_id": "1000",
           "station_name": "臺北",
-          "arrival": 1820,
-          "departure": 1820
+          "arrival": 7945,
+          "departure": 7945
         }
-      ]
+      ],
+      "total_travel_time": 7945
     },
     {
       "departure_time": "18:00:00",
@@ -1486,34 +1510,35 @@
         {
           "station_id": "7210",
           "station_name": "礁溪",
-          "arrival": 210,
-          "departure": 240
+          "arrival": 390,
+          "departure": 420
         },
         {
           "station_id": "7360",
           "station_name": "瑞芳",
-          "arrival": 420,
-          "departure": 450
+          "arrival": 3160,
+          "departure": 3190
         },
         {
           "station_id": "0980",
           "station_name": "南港",
-          "arrival": 630,
-          "departure": 660
+          "arrival": 4810,
+          "departure": 4840
         },
         {
           "station_id": "0990",
           "station_name": "松山",
-          "arrival": 840,
-          "departure": 870
+          "arrival": 5020,
+          "departure": 5050
         },
         {
           "station_id": "1000",
           "station_name": "臺北",
-          "arrival": 1050,
-          "departure": 1050
+          "arrival": 5230,
+          "departure": 5230
         }
-      ]
+      ],
+      "total_travel_time": 5230
     },
     {
       "departure_time": "18:30:00",
@@ -1533,64 +1558,65 @@
         {
           "station_id": "7030",
           "station_name": "新城",
-          "arrival": 260,
-          "departure": 295
+          "arrival": 710,
+          "departure": 745
         },
         {
           "station_id": "7060",
           "station_name": "和平",
-          "arrival": 520,
-          "departure": 555
+          "arrival": 1870,
+          "departure": 1905
         },
         {
           "station_id": "7130",
           "station_name": "蘇澳新",
-          "arrival": 930,
-          "departure": 965
+          "arrival": 3930,
+          "departure": 3965
         },
         {
           "station_id": "7160",
           "station_name": "羅東",
-          "arrival": 1190,
-          "departure": 1225
+          "arrival": 4640,
+          "departure": 4675
         },
         {
           "station_id": "7190",
           "station_name": "宜蘭",
-          "arrival": 1450,
-          "departure": 1485
+          "arrival": 5350,
+          "departure": 5385
         },
         {
           "station_id": "7210",
           "station_name": "礁溪",
-          "arrival": 1710,
-          "departure": 1745
+          "arrival": 5835,
+          "departure": 5870
         },
         {
           "station_id": "7360",
           "station_name": "瑞芳",
-          "arrival": 1970,
-          "departure": 2005
+          "arrival": 9295,
+          "departure": 9330
         },
         {
           "station_id": "0980",
           "station_name": "南港",
-          "arrival": 2230,
-          "departure": 2265
+          "arrival": 11355,
+          "departure": 11390
         },
         {
           "station_id": "0990",
           "station_name": "松山",
-          "arrival": 2490,
-          "departure": 2525
+          "arrival": 11615,
+          "departure": 11650
         },
         {
           "station_id": "1000",
           "station_name": "臺北",
-          "arrival": 2750,
-          "departure": 2750
+          "arrival": 11875,
+          "departure": 11875
         }
-      ]
+      ],
+      "total_travel_time": 11875
     },
     {
       "departure_time": "19:00:00",
@@ -1610,46 +1636,47 @@
         {
           "station_id": "7160",
           "station_name": "羅東",
-          "arrival": 210,
-          "departure": 240
+          "arrival": 570,
+          "departure": 600
         },
         {
           "station_id": "7190",
           "station_name": "宜蘭",
-          "arrival": 420,
-          "departure": 450
+          "arrival": 1140,
+          "departure": 1170
         },
         {
           "station_id": "7210",
           "station_name": "礁溪",
-          "arrival": 630,
-          "departure": 660
+          "arrival": 1530,
+          "departure": 1560
         },
         {
           "station_id": "7360",
           "station_name": "瑞芳",
-          "arrival": 840,
-          "departure": 870
+          "arrival": 4300,
+          "departure": 4330
         },
         {
           "station_id": "0980",
           "station_name": "南港",
-          "arrival": 1050,
-          "departure": 1080
+          "arrival": 5950,
+          "departure": 5980
         },
         {
           "station_id": "0990",
           "station_name": "松山",
-          "arrival": 1260,
-          "departure": 1290
+          "arrival": 6160,
+          "departure": 6190
         },
         {
           "station_id": "1000",
           "station_name": "臺北",
-          "arrival": 1470,
-          "departure": 1470
+          "arrival": 6370,
+          "departure": 6370
         }
-      ]
+      ],
+      "total_travel_time": 6370
     },
     {
       "departure_time": "19:30:00",
@@ -1669,34 +1696,35 @@
         {
           "station_id": "7210",
           "station_name": "礁溪",
-          "arrival": 260,
-          "departure": 295
+          "arrival": 485,
+          "departure": 520
         },
         {
           "station_id": "7360",
           "station_name": "瑞芳",
-          "arrival": 520,
-          "departure": 555
+          "arrival": 3945,
+          "departure": 3980
         },
         {
           "station_id": "0980",
           "station_name": "南港",
-          "arrival": 780,
-          "departure": 815
+          "arrival": 6005,
+          "departure": 6040
         },
         {
           "station_id": "0990",
           "station_name": "松山",
-          "arrival": 1040,
-          "departure": 1075
+          "arrival": 6265,
+          "departure": 6300
         },
         {
           "station_id": "1000",
           "station_name": "臺北",
-          "arrival": 1300,
-          "departure": 1300
+          "arrival": 6525,
+          "departure": 6525
         }
-      ]
+      ],
+      "total_travel_time": 6525
     },
     {
       "departure_time": "20:00:00",
@@ -1716,64 +1744,65 @@
         {
           "station_id": "7030",
           "station_name": "新城",
-          "arrival": 210,
-          "departure": 240
+          "arrival": 570,
+          "departure": 600
         },
         {
           "station_id": "7060",
           "station_name": "和平",
-          "arrival": 420,
-          "departure": 450
+          "arrival": 1500,
+          "departure": 1530
         },
         {
           "station_id": "7130",
           "station_name": "蘇澳新",
-          "arrival": 750,
-          "departure": 780
+          "arrival": 3150,
+          "departure": 3180
         },
         {
           "station_id": "7160",
           "station_name": "羅東",
-          "arrival": 960,
-          "departure": 990
+          "arrival": 3720,
+          "departure": 3750
         },
         {
           "station_id": "7190",
           "station_name": "宜蘭",
-          "arrival": 1170,
-          "departure": 1200
+          "arrival": 4290,
+          "departure": 4320
         },
         {
           "station_id": "7210",
           "station_name": "礁溪",
-          "arrival": 1380,
-          "departure": 1410
+          "arrival": 4680,
+          "departure": 4710
         },
         {
           "station_id": "7360",
           "station_name": "瑞芳",
-          "arrival": 1590,
-          "departure": 1620
+          "arrival": 7450,
+          "departure": 7480
         },
         {
           "station_id": "0980",
           "station_name": "南港",
-          "arrival": 1800,
-          "departure": 1830
+          "arrival": 9100,
+          "departure": 9130
         },
         {
           "station_id": "0990",
           "station_name": "松山",
-          "arrival": 2010,
-          "departure": 2040
+          "arrival": 9310,
+          "departure": 9340
         },
         {
           "station_id": "1000",
           "station_name": "臺北",
-          "arrival": 2220,
-          "departure": 2220
+          "arrival": 9520,
+          "departure": 9520
         }
-      ]
+      ],
+      "total_travel_time": 9520
     },
     {
       "departure_time": "20:30:00",
@@ -1793,46 +1822,47 @@
         {
           "station_id": "7160",
           "station_name": "羅東",
-          "arrival": 260,
-          "departure": 295
+          "arrival": 710,
+          "departure": 745
         },
         {
           "station_id": "7190",
           "station_name": "宜蘭",
-          "arrival": 520,
-          "departure": 555
+          "arrival": 1420,
+          "departure": 1455
         },
         {
           "station_id": "7210",
           "station_name": "礁溪",
-          "arrival": 780,
-          "departure": 815
+          "arrival": 1905,
+          "departure": 1940
         },
         {
           "station_id": "7360",
           "station_name": "瑞芳",
-          "arrival": 1040,
-          "departure": 1075
+          "arrival": 5365,
+          "departure": 5400
         },
         {
           "station_id": "0980",
           "station_name": "南港",
-          "arrival": 1300,
-          "departure": 1335
+          "arrival": 7425,
+          "departure": 7460
         },
         {
           "station_id": "0990",
           "station_name": "松山",
-          "arrival": 1560,
-          "departure": 1595
+          "arrival": 7685,
+          "departure": 7720
         },
         {
           "station_id": "1000",
           "station_name": "臺北",
-          "arrival": 1820,
-          "departure": 1820
+          "arrival": 7945,
+          "departure": 7945
         }
-      ]
+      ],
+      "total_travel_time": 7945
     },
     {
       "departure_time": "21:00:00",
@@ -1852,34 +1882,35 @@
         {
           "station_id": "7210",
           "station_name": "礁溪",
-          "arrival": 210,
-          "departure": 240
+          "arrival": 390,
+          "departure": 420
         },
         {
           "station_id": "7360",
           "station_name": "瑞芳",
-          "arrival": 420,
-          "departure": 450
+          "arrival": 3160,
+          "departure": 3190
         },
         {
           "station_id": "0980",
           "station_name": "南港",
-          "arrival": 630,
-          "departure": 660
+          "arrival": 4810,
+          "departure": 4840
         },
         {
           "station_id": "0990",
           "station_name": "松山",
-          "arrival": 840,
-          "departure": 870
+          "arrival": 5020,
+          "departure": 5050
         },
         {
           "station_id": "1000",
           "station_name": "臺北",
-          "arrival": 1050,
-          "departure": 1050
+          "arrival": 5230,
+          "departure": 5230
         }
-      ]
+      ],
+      "total_travel_time": 5230
     },
     {
       "departure_time": "21:30:00",
@@ -1899,64 +1930,65 @@
         {
           "station_id": "7030",
           "station_name": "新城",
-          "arrival": 260,
-          "departure": 295
+          "arrival": 710,
+          "departure": 745
         },
         {
           "station_id": "7060",
           "station_name": "和平",
-          "arrival": 520,
-          "departure": 555
+          "arrival": 1870,
+          "departure": 1905
         },
         {
           "station_id": "7130",
           "station_name": "蘇澳新",
-          "arrival": 930,
-          "departure": 965
+          "arrival": 3930,
+          "departure": 3965
         },
         {
           "station_id": "7160",
           "station_name": "羅東",
-          "arrival": 1190,
-          "departure": 1225
+          "arrival": 4640,
+          "departure": 4675
         },
         {
           "station_id": "7190",
           "station_name": "宜蘭",
-          "arrival": 1450,
-          "departure": 1485
+          "arrival": 5350,
+          "departure": 5385
         },
         {
           "station_id": "7210",
           "station_name": "礁溪",
-          "arrival": 1710,
-          "departure": 1745
+          "arrival": 5835,
+          "departure": 5870
         },
         {
           "station_id": "7360",
           "station_name": "瑞芳",
-          "arrival": 1970,
-          "departure": 2005
+          "arrival": 9295,
+          "departure": 9330
         },
         {
           "station_id": "0980",
           "station_name": "南港",
-          "arrival": 2230,
-          "departure": 2265
+          "arrival": 11355,
+          "departure": 11390
         },
         {
           "station_id": "0990",
           "station_name": "松山",
-          "arrival": 2490,
-          "departure": 2525
+          "arrival": 11615,
+          "departure": 11650
         },
         {
           "station_id": "1000",
           "station_name": "臺北",
-          "arrival": 2750,
-          "departure": 2750
+          "arrival": 11875,
+          "departure": 11875
         }
-      ]
+      ],
+      "total_travel_time": 11875
     },
     {
       "departure_time": "22:00:00",
@@ -1976,46 +2008,47 @@
         {
           "station_id": "7160",
           "station_name": "羅東",
-          "arrival": 210,
-          "departure": 240
+          "arrival": 570,
+          "departure": 600
         },
         {
           "station_id": "7190",
           "station_name": "宜蘭",
-          "arrival": 420,
-          "departure": 450
+          "arrival": 1140,
+          "departure": 1170
         },
         {
           "station_id": "7210",
           "station_name": "礁溪",
-          "arrival": 630,
-          "departure": 660
+          "arrival": 1530,
+          "departure": 1560
         },
         {
           "station_id": "7360",
           "station_name": "瑞芳",
-          "arrival": 840,
-          "departure": 870
+          "arrival": 4300,
+          "departure": 4330
         },
         {
           "station_id": "0980",
           "station_name": "南港",
-          "arrival": 1050,
-          "departure": 1080
+          "arrival": 5950,
+          "departure": 5980
         },
         {
           "station_id": "0990",
           "station_name": "松山",
-          "arrival": 1260,
-          "departure": 1290
+          "arrival": 6160,
+          "departure": 6190
         },
         {
           "station_id": "1000",
           "station_name": "臺北",
-          "arrival": 1470,
-          "departure": 1470
+          "arrival": 6370,
+          "departure": 6370
         }
-      ]
+      ],
+      "total_travel_time": 6370
     }
   ]
 }

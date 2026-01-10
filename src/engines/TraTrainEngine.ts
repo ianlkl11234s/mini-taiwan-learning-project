@@ -11,6 +11,8 @@
  * - PX (平溪線)
  * - JJ (集集線)
  * - CZ (成追線)
+ * - YL (宜蘭線)
+ * - BH (北迴線)
  */
 
 export interface TraTrain {
@@ -153,8 +155,9 @@ function timeToSeconds(timeStr: string): number {
 /**
  * 從 O-D 軌道 ID 取得顯示用 trackId
  *
- * 方向 0 = 返回主線/起點站
- * 方向 1 = 前往支線終點
+ * 支線方向：
+ * - 方向 0 = 返回主線/起點站
+ * - 方向 1 = 前往支線終點
  *
  * NW: HC=新竹(0), NB=內灣(1), JJ=竹中(中間站), JD=竹東(中間站)
  * LJ: HC=新竹(0), LJ=六家(1)
@@ -162,11 +165,27 @@ function timeToSeconds(timeStr: string): number {
  * PX: SD=三貂嶺(0), JT=菁桐(1)
  * JJ: ES=二水(0), CT=車埕(1)
  * CZ: CG=成功(0), ZF=追分(1)
+ *
+ * 幹線方向：
+ * YL: 0=往蘇澳(南下), 1=往臺北(北上)
+ * BH: 0=往花蓮(南下), 1=往蘇澳新(北上)
  */
 function getTrackIdFromOdTrackId(odTrackId: string): string {
   const [lineId, _origin, dest] = odTrackId.split('-');
 
-  // 各線的「起點站」代碼（方向 0 的終點）
+  // YL 宜蘭線：終點是 TP (臺北) 則為北上 (方向 1)
+  if (lineId === 'YL') {
+    const direction = dest === 'TP' ? '1' : '0';
+    return `YL-${direction}`;
+  }
+
+  // BH 北迴線：終點是 SX (蘇澳新) 則為北上 (方向 1)
+  if (lineId === 'BH') {
+    const direction = dest === 'SX' ? '1' : '0';
+    return `BH-${direction}`;
+  }
+
+  // 支線：各線的「起點站」代碼（方向 0 的終點）
   const mainStations: Record<string, string> = {
     'NW': 'HC',  // 新竹
     'LJ': 'HC',  // 新竹

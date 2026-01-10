@@ -22,22 +22,23 @@
         {
           "station_id": "7060",
           "station_name": "和平",
-          "arrival": 210,
-          "departure": 240
+          "arrival": 1650,
+          "departure": 1680
         },
         {
           "station_id": "7030",
           "station_name": "新城",
-          "arrival": 600,
-          "departure": 630
+          "arrival": 2580,
+          "departure": 2610
         },
         {
           "station_id": "7000",
           "station_name": "花蓮",
-          "arrival": 810,
-          "departure": 810
+          "arrival": 3150,
+          "departure": 3150
         }
-      ]
+      ],
+      "total_travel_time": 3150
     },
     {
       "departure_time": "07:00:00",
@@ -57,22 +58,23 @@
         {
           "station_id": "7060",
           "station_name": "和平",
-          "arrival": 210,
-          "departure": 240
+          "arrival": 1650,
+          "departure": 1680
         },
         {
           "station_id": "7030",
           "station_name": "新城",
-          "arrival": 600,
-          "departure": 630
+          "arrival": 2580,
+          "departure": 2610
         },
         {
           "station_id": "7000",
           "station_name": "花蓮",
-          "arrival": 810,
-          "departure": 810
+          "arrival": 3150,
+          "departure": 3150
         }
-      ]
+      ],
+      "total_travel_time": 3150
     },
     {
       "departure_time": "08:00:00",
@@ -92,22 +94,23 @@
         {
           "station_id": "7060",
           "station_name": "和平",
-          "arrival": 210,
-          "departure": 240
+          "arrival": 1650,
+          "departure": 1680
         },
         {
           "station_id": "7030",
           "station_name": "新城",
-          "arrival": 600,
-          "departure": 630
+          "arrival": 2580,
+          "departure": 2610
         },
         {
           "station_id": "7000",
           "station_name": "花蓮",
-          "arrival": 810,
-          "departure": 810
+          "arrival": 3150,
+          "departure": 3150
         }
-      ]
+      ],
+      "total_travel_time": 3150
     },
     {
       "departure_time": "09:00:00",
@@ -127,22 +130,23 @@
         {
           "station_id": "7060",
           "station_name": "和平",
-          "arrival": 210,
-          "departure": 240
+          "arrival": 1650,
+          "departure": 1680
         },
         {
           "station_id": "7030",
           "station_name": "新城",
-          "arrival": 600,
-          "departure": 630
+          "arrival": 2580,
+          "departure": 2610
         },
         {
           "station_id": "7000",
           "station_name": "花蓮",
-          "arrival": 810,
-          "departure": 810
+          "arrival": 3150,
+          "departure": 3150
         }
-      ]
+      ],
+      "total_travel_time": 3150
     },
     {
       "departure_time": "10:00:00",
@@ -162,22 +166,23 @@
         {
           "station_id": "7060",
           "station_name": "和平",
-          "arrival": 210,
-          "departure": 240
+          "arrival": 1650,
+          "departure": 1680
         },
         {
           "station_id": "7030",
           "station_name": "新城",
-          "arrival": 600,
-          "departure": 630
+          "arrival": 2580,
+          "departure": 2610
         },
         {
           "station_id": "7000",
           "station_name": "花蓮",
-          "arrival": 810,
-          "departure": 810
+          "arrival": 3150,
+          "departure": 3150
         }
-      ]
+      ],
+      "total_travel_time": 3150
     },
     {
       "departure_time": "11:00:00",
@@ -197,22 +202,23 @@
         {
           "station_id": "7060",
           "station_name": "和平",
-          "arrival": 210,
-          "departure": 240
+          "arrival": 1650,
+          "departure": 1680
         },
         {
           "station_id": "7030",
           "station_name": "新城",
-          "arrival": 600,
-          "departure": 630
+          "arrival": 2580,
+          "departure": 2610
         },
         {
           "station_id": "7000",
           "station_name": "花蓮",
-          "arrival": 810,
-          "departure": 810
+          "arrival": 3150,
+          "departure": 3150
         }
-      ]
+      ],
+      "total_travel_time": 3150
     },
     {
       "departure_time": "12:00:00",
@@ -232,22 +238,23 @@
         {
           "station_id": "7060",
           "station_name": "和平",
-          "arrival": 210,
-          "departure": 240
+          "arrival": 1650,
+          "departure": 1680
         },
         {
           "station_id": "7030",
           "station_name": "新城",
-          "arrival": 600,
-          "departure": 630
+          "arrival": 2580,
+          "departure": 2610
         },
         {
           "station_id": "7000",
           "station_name": "花蓮",
-          "arrival": 810,
-          "departure": 810
+          "arrival": 3150,
+          "departure": 3150
         }
-      ]
+      ],
+      "total_travel_time": 3150
     },
     {
       "departure_time": "13:00:00",
@@ -267,22 +274,23 @@
         {
           "station_id": "7060",
           "station_name": "和平",
-          "arrival": 210,
-          "departure": 240
+          "arrival": 1650,
+          "departure": 1680
         },
         {
           "station_id": "7030",
           "station_name": "新城",
-          "arrival": 600,
-          "departure": 630
+          "arrival": 2580,
+          "departure": 2610
         },
         {
           "station_id": "7000",
           "station_name": "花蓮",
-          "arrival": 810,
-          "departure": 810
+          "arrival": 3150,
+          "departure": 3150
         }
-      ]
+      ],
+      "total_travel_time": 3150
     },
     {
       "departure_time": "14:00:00",
@@ -302,22 +310,23 @@
         {
           "station_id": "7060",
           "station_name": "和平",
-          "arrival": 210,
-          "departure": 240
+          "arrival": 1650,
+          "departure": 1680
         },
         {
           "station_id": "7030",
           "station_name": "新城",
-          "arrival": 600,
-          "departure": 630
+          "arrival": 2580,
+          "departure": 2610
         },
         {
           "station_id": "7000",
           "station_name": "花蓮",
-          "arrival": 810,
-          "departure": 810
+          "arrival": 3150,
+          "departure": 3150
         }
-      ]
+      ],
+      "total_travel_time": 3150
     },
     {
       "departure_time": "15:00:00",
@@ -337,22 +346,23 @@
         {
           "station_id": "7060",
           "station_name": "和平",
-          "arrival": 210,
-          "departure": 240
+          "arrival": 1650,
+          "departure": 1680
         },
         {
           "station_id": "7030",
           "station_name": "新城",
-          "arrival": 600,
-          "departure": 630
+          "arrival": 2580,
+          "departure": 2610
         },
         {
           "station_id": "7000",
           "station_name": "花蓮",
-          "arrival": 810,
-          "departure": 810
+          "arrival": 3150,
+          "departure": 3150
         }
-      ]
+      ],
+      "total_travel_time": 3150
     },
     {
       "departure_time": "16:00:00",
@@ -372,22 +382,23 @@
         {
           "station_id": "7060",
           "station_name": "和平",
-          "arrival": 210,
-          "departure": 240
+          "arrival": 1650,
+          "departure": 1680
         },
         {
           "station_id": "7030",
           "station_name": "新城",
-          "arrival": 600,
-          "departure": 630
+          "arrival": 2580,
+          "departure": 2610
         },
         {
           "station_id": "7000",
           "station_name": "花蓮",
-          "arrival": 810,
-          "departure": 810
+          "arrival": 3150,
+          "departure": 3150
         }
-      ]
+      ],
+      "total_travel_time": 3150
     },
     {
       "departure_time": "17:00:00",
@@ -407,22 +418,23 @@
         {
           "station_id": "7060",
           "station_name": "和平",
-          "arrival": 210,
-          "departure": 240
+          "arrival": 1650,
+          "departure": 1680
         },
         {
           "station_id": "7030",
           "station_name": "新城",
-          "arrival": 600,
-          "departure": 630
+          "arrival": 2580,
+          "departure": 2610
         },
         {
           "station_id": "7000",
           "station_name": "花蓮",
-          "arrival": 810,
-          "departure": 810
+          "arrival": 3150,
+          "departure": 3150
         }
-      ]
+      ],
+      "total_travel_time": 3150
     },
     {
       "departure_time": "18:00:00",
@@ -442,22 +454,23 @@
         {
           "station_id": "7060",
           "station_name": "和平",
-          "arrival": 210,
-          "departure": 240
+          "arrival": 1650,
+          "departure": 1680
         },
         {
           "station_id": "7030",
           "station_name": "新城",
-          "arrival": 600,
-          "departure": 630
+          "arrival": 2580,
+          "departure": 2610
         },
         {
           "station_id": "7000",
           "station_name": "花蓮",
-          "arrival": 810,
-          "departure": 810
+          "arrival": 3150,
+          "departure": 3150
         }
-      ]
+      ],
+      "total_travel_time": 3150
     },
     {
       "departure_time": "19:00:00",
@@ -477,22 +490,23 @@
         {
           "station_id": "7060",
           "station_name": "和平",
-          "arrival": 210,
-          "departure": 240
+          "arrival": 1650,
+          "departure": 1680
         },
         {
           "station_id": "7030",
           "station_name": "新城",
-          "arrival": 600,
-          "departure": 630
+          "arrival": 2580,
+          "departure": 2610
         },
         {
           "station_id": "7000",
           "station_name": "花蓮",
-          "arrival": 810,
-          "departure": 810
+          "arrival": 3150,
+          "departure": 3150
         }
-      ]
+      ],
+      "total_travel_time": 3150
     },
     {
       "departure_time": "20:00:00",
@@ -512,22 +526,23 @@
         {
           "station_id": "7060",
           "station_name": "和平",
-          "arrival": 210,
-          "departure": 240
+          "arrival": 1650,
+          "departure": 1680
         },
         {
           "station_id": "7030",
           "station_name": "新城",
-          "arrival": 600,
-          "departure": 630
+          "arrival": 2580,
+          "departure": 2610
         },
         {
           "station_id": "7000",
           "station_name": "花蓮",
-          "arrival": 810,
-          "departure": 810
+          "arrival": 3150,
+          "departure": 3150
         }
-      ]
+      ],
+      "total_travel_time": 3150
     },
     {
       "departure_time": "21:00:00",
@@ -547,22 +562,23 @@
         {
           "station_id": "7060",
           "station_name": "和平",
-          "arrival": 210,
-          "departure": 240
+          "arrival": 1650,
+          "departure": 1680
         },
         {
           "station_id": "7030",
           "station_name": "新城",
-          "arrival": 600,
-          "departure": 630
+          "arrival": 2580,
+          "departure": 2610
         },
         {
           "station_id": "7000",
           "station_name": "花蓮",
-          "arrival": 810,
-          "departure": 810
+          "arrival": 3150,
+          "departure": 3150
         }
-      ]
+      ],
+      "total_travel_time": 3150
     },
     {
       "departure_time": "22:00:00",
@@ -582,22 +598,23 @@
         {
           "station_id": "7060",
           "station_name": "和平",
-          "arrival": 210,
-          "departure": 240
+          "arrival": 1650,
+          "departure": 1680
         },
         {
           "station_id": "7030",
           "station_name": "新城",
-          "arrival": 600,
-          "departure": 630
+          "arrival": 2580,
+          "departure": 2610
         },
         {
           "station_id": "7000",
           "station_name": "花蓮",
-          "arrival": 810,
-          "departure": 810
+          "arrival": 3150,
+          "departure": 3150
         }
-      ]
+      ],
+      "total_travel_time": 3150
     }
   ]
 }

@@ -221,6 +221,12 @@ const lineName = isThsr ? getThsrLineName(train.trackId)
   - 車站進度：`/data/tra/tracks_od/od_station_progress.json`
 - 支援路線：NW (內灣線)、LJ (六家線)、SH (沙崙線)、PX (平溪線)、JJ (集集線)、CZ (成追線)
 
+**TRA 軌道狀態追蹤**：
+- 狀態檔案：`public/data/tra/TRACKS_STATUS.md`
+- 記錄每條路線的處理狀態（✅完成、🔧手繪補充、⏸️直線替代、📋待處理、❌有問題）
+- 處理新路線前**必須先查看此檔案**確認狀態
+- 完成路線處理後**必須更新此檔案**
+
 **TRA/THSR station_id 衝突**：
 - TRA 和 THSR 使用相同的 station_id 編號 (如 0990, 1000, 1010)
 - TRA 車站**不加入**共用 `stationNames` Map

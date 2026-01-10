@@ -133,12 +133,14 @@ def generate_train_schedule(
     stations_list = OD_ROUTES_STATIONS[od_track_id]
     stop_time = TRAIN_TYPES[train_type]['stop_time']
 
+    # 先找出所有停靠站的索引
+    stop_indices = [i for i, sid in enumerate(stations_list) if should_stop(sid, train_type)]
+
     stations = []
     current_time = 0  # 從出發站開始計算（秒）
 
-    for i, station_id in enumerate(stations_list):
-        if not should_stop(station_id, train_type):
-            continue
+    for idx, stop_idx in enumerate(stop_indices):
+        station_id = stations_list[stop_idx]
 
         arrival = current_time
         departure = current_time + stop_time
@@ -150,10 +152,12 @@ def generate_train_schedule(
             'departure': departure,
         })
 
-        # 計算到下一站的時間
-        if i < len(stations_list) - 1:
-            next_station = stations_list[i + 1]
-            segment_time = get_segment_time(station_id, next_station, train_type)
+        # 計算到下一個停靠站的時間（累加所有區段，包含跳過的站）
+        if idx < len(stop_indices) - 1:
+            next_stop_idx = stop_indices[idx + 1]
+            segment_time = 0
+            for j in range(stop_idx, next_stop_idx):
+                segment_time += get_segment_time(stations_list[j], stations_list[j + 1], train_type)
             current_time = departure + segment_time
 
     # 最後一站不需要停留
@@ -162,6 +166,7 @@ def generate_train_schedule(
 
     origin_station = stations[0]['station_id'] if stations else ''
     destination_station = stations[-1]['station_id'] if stations else ''
+    total_travel_time = stations[-1]['arrival'] if stations else 0
 
     return {
         'departure_time': departure_time,
@@ -172,6 +177,7 @@ def generate_train_schedule(
         'destination_station': destination_station,
         'od_track_id': od_track_id,
         'stations': stations,
+        'total_travel_time': total_travel_time,
     }
 
 

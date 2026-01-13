@@ -2629,12 +2629,12 @@ function App() {
     }
   }, [mapLoaded, filteredTmrtTrains, use3DMode, useSymbolLayer, handleSelectTrain, selectedTrainId]);
 
-  // 更新台鐵列車標記（2D 模式時使用）
+  // 更新台鐵列車標記（2D 模式時使用 DOM Markers，類似高鐵的圓角正方形）
   useEffect(() => {
     if (!map.current || !mapLoaded) return;
 
-    // 3D 模式或 WebGL Symbol Layer 模式時清除所有 2D 標記並跳過
-    if (use3DMode || useSymbolLayer) {
+    // 只有 3D 模式時清除 DOM 標記（WebGL 模式下仍保留台鐵 DOM Markers）
+    if (use3DMode) {
       for (const marker of traTrainMarkers.current.values()) {
         marker.remove();
       }
@@ -2683,7 +2683,7 @@ function App() {
       // 更新位置
       marker.setLngLat(train.position);
 
-      // 更新樣式（含選中狀態）
+      // 更新樣式（含選中狀態）- 使用圓角正方形，與高鐵區隔
       const el = marker.getElement();
       const newState = `${isSelected}-${isStopped}-${baseColor}`;
       const prevState = el.dataset.trainState;
@@ -2694,7 +2694,7 @@ function App() {
         const baseStyles = `
           pointer-events: auto;
           cursor: pointer;
-          border-radius: 50%;
+          border-radius: 4px;
           transition: width 0.3s ease, height 0.3s ease, box-shadow 0.3s ease;
         `;
 
@@ -2702,8 +2702,8 @@ function App() {
           // 選中狀態：顯示粗白框
           el.style.cssText = `
             ${baseStyles}
-            width: 18px;
-            height: 18px;
+            width: 16px;
+            height: 16px;
             background-color: ${baseColor};
             border: 4px solid #ffffff;
             box-shadow: 0 0 16px rgba(255,255,255,0.8), 0 0 24px ${baseColor};
@@ -2730,7 +2730,7 @@ function App() {
         }
       }
     }
-  }, [mapLoaded, filteredTraTrains, use3DMode, useSymbolLayer, handleSelectTrain, selectedTrainId]);
+  }, [mapLoaded, filteredTraTrains, use3DMode, handleSelectTrain, selectedTrainId]);
 
   // 控制處理器
   const handleTogglePlay = useCallback(() => {

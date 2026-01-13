@@ -6,6 +6,43 @@
 import type { Map as MapboxMap, GeoJSONSource, MapLayerMouseEvent } from 'mapbox-gl';
 import type { TrainFeature, TrainFeatureCollection } from '../types/trainFeature';
 
+/**
+ * 建立圓角正方形圖標（用於 TRA 列車）
+ * 使用 Canvas 繪製，返回 ImageData
+ */
+function createRoundedSquareIcon(size: number, radius: number): ImageData {
+  const canvas = document.createElement('canvas');
+  canvas.width = size;
+  canvas.height = size;
+  const ctx = canvas.getContext('2d')!;
+
+  // 繪製圓角正方形路徑
+  const padding = 2;
+  const x = padding;
+  const y = padding;
+  const width = size - padding * 2;
+  const height = size - padding * 2;
+  const r = Math.min(radius, width / 2, height / 2);
+
+  ctx.beginPath();
+  ctx.moveTo(x + r, y);
+  ctx.lineTo(x + width - r, y);
+  ctx.arcTo(x + width, y, x + width, y + r, r);
+  ctx.lineTo(x + width, y + height - r);
+  ctx.arcTo(x + width, y + height, x + width - r, y + height, r);
+  ctx.lineTo(x + r, y + height);
+  ctx.arcTo(x, y + height, x, y + height - r, r);
+  ctx.lineTo(x, y + r);
+  ctx.arcTo(x, y, x + r, y, r);
+  ctx.closePath();
+
+  // 填滿白色（實際顏色由 icon-color 控制）
+  ctx.fillStyle = '#ffffff';
+  ctx.fill();
+
+  return ctx.getImageData(0, 0, size, size);
+}
+
 export interface TrainSymbolLayerOptions {
   map: MapboxMap;
   onTrainClick?: (trainId: string, system: string) => void;
@@ -26,6 +63,11 @@ export class TrainSymbolLayer {
   static readonly LAYER_GLOW = 'trains-circle-glow';
   static readonly LAYER_STOPPED_GLOW = 'trains-circle-stopped-glow';
   static readonly LAYER_COLLISION = 'trains-circle-collision';
+  // TRA 專用圖層（圓角正方形）
+  static readonly LAYER_TRA_BASE = 'trains-tra-base';
+  static readonly LAYER_TRA_GLOW = 'trains-tra-glow';
+  static readonly LAYER_TRA_STOPPED_GLOW = 'trains-tra-stopped-glow';
+  static readonly TRA_ICON_ID = 'tra-rounded-square';
 
   constructor(options: TrainSymbolLayerOptions) {
     this.map = options.map;
@@ -60,13 +102,21 @@ export class TrainSymbolLayer {
       },
     });
 
-    // 建立選中光暈圖層 (最底層)
+    // === TRA 圓角正方形圖標 ===
+    // 建立並註冊圓角正方形圖標（sdf 模式允許動態著色）
+    const iconSize = 32;
+    const cornerRadius = 8;
+    const iconData = createRoundedSquareIcon(iconSize, cornerRadius);
+    this.map.addImage(TrainSymbolLayer.TRA_ICON_ID, iconData, { sdf: true });
+
+    // === 非 TRA 的圓形圖層 ===
+    // 建立選中光暈圖層 (最底層) - 排除 TRA
     // 尺寸約為選中圓點的 1.5 倍
     this.map.addLayer({
       id: TrainSymbolLayer.LAYER_GLOW,
       type: 'circle',
       source: TrainSymbolLayer.SOURCE_ID,
-      filter: ['==', ['get', 'isSelected'], true],
+      filter: ['all', ['==', ['get', 'isSelected'], true], ['!=', ['get', 'system'], 'tra']],
       paint: {
         'circle-radius': 12,
         'circle-color': ['get', 'color'],
@@ -76,7 +126,7 @@ export class TrainSymbolLayer {
       },
     });
 
-    // 建立停站發光圖層（僅 stopped 且非 selected 時顯示）
+    // 建立停站發光圖層（僅 stopped 且非 selected 時顯示）- 排除 TRA
     // 尺寸約為停站圓點的 1.5 倍
     this.map.addLayer({
       id: TrainSymbolLayer.LAYER_STOPPED_GLOW,
@@ -86,6 +136,7 @@ export class TrainSymbolLayer {
         'all',
         ['==', ['get', 'status'], 'stopped'],
         ['!=', ['get', 'isSelected'], true],
+        ['!=', ['get', 'system'], 'tra'],
       ],
       paint: {
         'circle-radius': 9,
@@ -96,12 +147,12 @@ export class TrainSymbolLayer {
       },
     });
 
-    // 建立碰撞警示圖層
+    // 建立碰撞警示圖層 - 排除 TRA
     this.map.addLayer({
       id: TrainSymbolLayer.LAYER_COLLISION,
       type: 'circle',
       source: TrainSymbolLayer.SOURCE_ID,
-      filter: ['==', ['get', 'isColliding'], true],
+      filter: ['all', ['==', ['get', 'isColliding'], true], ['!=', ['get', 'system'], 'tra']],
       paint: {
         'circle-radius': 8,
         'circle-color': '#ffcc00',
@@ -113,13 +164,14 @@ export class TrainSymbolLayer {
       },
     });
 
-    // 建立基礎圓點圖層 (最上層)
+    // 建立基礎圓點圖層 - 排除 TRA
     // 尺寸匹配參考專案 DOM Markers: running 12px, stopped 14px, selected 18px
     // 公式: total_size = 2 * radius + 2 * stroke_width (stroke 在外圈)
     this.map.addLayer({
       id: TrainSymbolLayer.LAYER_BASE,
       type: 'circle',
       source: TrainSymbolLayer.SOURCE_ID,
+      filter: ['!=', ['get', 'system'], 'tra'],
       paint: {
         'circle-radius': [
           'case',
@@ -139,12 +191,86 @@ export class TrainSymbolLayer {
       },
     });
 
-    // 綁定點擊事件
-    this.map.on('click', TrainSymbolLayer.LAYER_BASE, this.handleClick);
+    // === TRA 專用圓角正方形圖層 ===
+    // TRA 選中光暈
+    this.map.addLayer({
+      id: TrainSymbolLayer.LAYER_TRA_GLOW,
+      type: 'symbol',
+      source: TrainSymbolLayer.SOURCE_ID,
+      filter: ['all', ['==', ['get', 'system'], 'tra'], ['==', ['get', 'isSelected'], true]],
+      layout: {
+        'icon-image': TrainSymbolLayer.TRA_ICON_ID,
+        'icon-size': 0.9,
+        'icon-allow-overlap': true,
+      },
+      paint: {
+        'icon-color': ['get', 'color'],
+        'icon-opacity': 0.3,
+        'icon-emissive-strength': 1.0,
+      },
+    });
 
-    // 設定游標樣式
+    // TRA 停站光暈
+    this.map.addLayer({
+      id: TrainSymbolLayer.LAYER_TRA_STOPPED_GLOW,
+      type: 'symbol',
+      source: TrainSymbolLayer.SOURCE_ID,
+      filter: [
+        'all',
+        ['==', ['get', 'system'], 'tra'],
+        ['==', ['get', 'status'], 'stopped'],
+        ['!=', ['get', 'isSelected'], true],
+      ],
+      layout: {
+        'icon-image': TrainSymbolLayer.TRA_ICON_ID,
+        'icon-size': 0.6,
+        'icon-allow-overlap': true,
+      },
+      paint: {
+        'icon-color': ['get', 'color'],
+        'icon-opacity': 0.25,
+        'icon-emissive-strength': 1.0,
+      },
+    });
+
+    // TRA 基礎圖層（圓角正方形）
+    this.map.addLayer({
+      id: TrainSymbolLayer.LAYER_TRA_BASE,
+      type: 'symbol',
+      source: TrainSymbolLayer.SOURCE_ID,
+      filter: ['==', ['get', 'system'], 'tra'],
+      layout: {
+        'icon-image': TrainSymbolLayer.TRA_ICON_ID,
+        'icon-size': [
+          'case',
+          ['get', 'isSelected'], 0.6,     // 選中時較大
+          ['==', ['get', 'status'], 'stopped'], 0.5, // 停站時中等
+          0.42,                            // 行駛中較小
+        ],
+        'icon-allow-overlap': true,
+      },
+      paint: {
+        'icon-color': ['get', 'color'],
+        'icon-opacity': 0.95,
+        'icon-halo-color': '#ffffff',
+        'icon-halo-width': [
+          'case',
+          ['get', 'isSelected'], 4,
+          3,
+        ],
+        'icon-emissive-strength': 1.0,
+      },
+    });
+
+    // 綁定點擊事件（包含 TRA 圖層）
+    this.map.on('click', TrainSymbolLayer.LAYER_BASE, this.handleClick);
+    this.map.on('click', TrainSymbolLayer.LAYER_TRA_BASE, this.handleClick);
+
+    // 設定游標樣式（包含 TRA 圖層）
     this.map.on('mouseenter', TrainSymbolLayer.LAYER_BASE, this.handleMouseEnter);
     this.map.on('mouseleave', TrainSymbolLayer.LAYER_BASE, this.handleMouseLeave);
+    this.map.on('mouseenter', TrainSymbolLayer.LAYER_TRA_BASE, this.handleMouseEnter);
+    this.map.on('mouseleave', TrainSymbolLayer.LAYER_TRA_BASE, this.handleMouseLeave);
 
     this.initialized = true;
 
@@ -213,6 +339,7 @@ export class TrainSymbolLayer {
 
     const visibility = visible ? 'visible' : 'none';
 
+    // 非 TRA 圓形圖層
     if (this.map.getLayer(TrainSymbolLayer.LAYER_BASE)) {
       this.map.setLayoutProperty(TrainSymbolLayer.LAYER_BASE, 'visibility', visibility);
     }
@@ -224,6 +351,16 @@ export class TrainSymbolLayer {
     }
     if (this.map.getLayer(TrainSymbolLayer.LAYER_COLLISION)) {
       this.map.setLayoutProperty(TrainSymbolLayer.LAYER_COLLISION, 'visibility', visibility);
+    }
+    // TRA 圓角正方形圖層
+    if (this.map.getLayer(TrainSymbolLayer.LAYER_TRA_BASE)) {
+      this.map.setLayoutProperty(TrainSymbolLayer.LAYER_TRA_BASE, 'visibility', visibility);
+    }
+    if (this.map.getLayer(TrainSymbolLayer.LAYER_TRA_GLOW)) {
+      this.map.setLayoutProperty(TrainSymbolLayer.LAYER_TRA_GLOW, 'visibility', visibility);
+    }
+    if (this.map.getLayer(TrainSymbolLayer.LAYER_TRA_STOPPED_GLOW)) {
+      this.map.setLayoutProperty(TrainSymbolLayer.LAYER_TRA_STOPPED_GLOW, 'visibility', visibility);
     }
   }
 
@@ -270,12 +407,26 @@ export class TrainSymbolLayer {
   destroy(): void {
     if (!this.initialized) return;
 
-    // 移除事件監聽
+    // 移除事件監聽（包含 TRA 圖層）
     this.map.off('click', TrainSymbolLayer.LAYER_BASE, this.handleClick);
+    this.map.off('click', TrainSymbolLayer.LAYER_TRA_BASE, this.handleClick);
     this.map.off('mouseenter', TrainSymbolLayer.LAYER_BASE, this.handleMouseEnter);
     this.map.off('mouseleave', TrainSymbolLayer.LAYER_BASE, this.handleMouseLeave);
+    this.map.off('mouseenter', TrainSymbolLayer.LAYER_TRA_BASE, this.handleMouseEnter);
+    this.map.off('mouseleave', TrainSymbolLayer.LAYER_TRA_BASE, this.handleMouseLeave);
 
     // 移除圖層 (順序重要，從上到下)
+    // TRA 圖層
+    if (this.map.getLayer(TrainSymbolLayer.LAYER_TRA_BASE)) {
+      this.map.removeLayer(TrainSymbolLayer.LAYER_TRA_BASE);
+    }
+    if (this.map.getLayer(TrainSymbolLayer.LAYER_TRA_STOPPED_GLOW)) {
+      this.map.removeLayer(TrainSymbolLayer.LAYER_TRA_STOPPED_GLOW);
+    }
+    if (this.map.getLayer(TrainSymbolLayer.LAYER_TRA_GLOW)) {
+      this.map.removeLayer(TrainSymbolLayer.LAYER_TRA_GLOW);
+    }
+    // 非 TRA 圖層
     if (this.map.getLayer(TrainSymbolLayer.LAYER_BASE)) {
       this.map.removeLayer(TrainSymbolLayer.LAYER_BASE);
     }
@@ -292,6 +443,11 @@ export class TrainSymbolLayer {
     // 移除 source
     if (this.map.getSource(TrainSymbolLayer.SOURCE_ID)) {
       this.map.removeSource(TrainSymbolLayer.SOURCE_ID);
+    }
+
+    // 移除圖標
+    if (this.map.hasImage(TrainSymbolLayer.TRA_ICON_ID)) {
+      this.map.removeImage(TrainSymbolLayer.TRA_ICON_ID);
     }
 
     this.onTrainClickCallback = null;

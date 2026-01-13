@@ -20,8 +20,7 @@ import { getKlrtLineId, getKlrtDirection, getKlrtTrainColor } from '../constants
 // TMRT 顏色
 import { getTmrtLineId, getTmrtDirection, getTmrtTrainColor } from '../constants/tmrtInfo';
 
-// TRA 顏色
-import { getTraLineId, getTraDirection, getTraTrainColor } from '../constants/traInfo';
+// TRA 使用 DOM Markers，不需要在這裡匯入顏色函數
 
 // 通用列車介面（各系統共用的欄位）
 interface BaseTrain {
@@ -140,20 +139,8 @@ export function useAllTrains(input: AllTrainsInput): TrainFeature[] {
     }
 
     // === TRA (台鐵) ===
-    for (const train of filteredTraTrains) {
-      const lineId = getTraLineId(train.trackId);
-      const direction = parseInt(getTraDirection(train.trackId), 10);
-      const color = getTraTrainColor(train.trackId);
-
-      features.push(
-        createFeature(train, 'tra', selectedTrainId, {
-          lineId,
-          direction,
-          color,
-          isColliding: false,
-        })
-      );
-    }
+    // 台鐵使用 DOM Markers 保持圓角正方形外觀，不加入 WebGL Circle Layer
+    void filteredTraTrains;
 
     return features;
   }, [

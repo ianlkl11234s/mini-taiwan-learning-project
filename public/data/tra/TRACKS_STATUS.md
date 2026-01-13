@@ -2,6 +2,31 @@
 
 > 最後更新：2026-01-10
 
+## Golden Track 架構
+
+自 2026-01-10 起，採用 Golden Track 架構管理軌道資料：
+
+```
+tracks_golden/      ← 黃金版本（前端載入來源）
+tracks_handdrawn/   ← 手繪修正（永不覆蓋）
+tracks_official/    ← TDX 原始資料（fallback）
+tracks_od/          ← O-D 專屬軌道（列車位置計算）
+```
+
+**工作流程**：
+1. 手繪修正存放在 `tracks_handdrawn/{路線}/` 目錄
+2. 使用 `build_golden_track.py` 合併 TDX + 手繪產生黃金版本
+3. 使用 `extract_golden_tracks.py` 驗證並產生 `manifest.json`
+4. 前端 `useTraData.ts` 優先載入 `tracks_golden/`
+
+**目錄結構**：
+- `tracks_golden/manifest.json` - 軌道狀態清單
+- `tracks_handdrawn/YL/` - 宜蘭線手繪區段 (4 檔案)
+- `tracks_handdrawn/KL/` - 基隆支線手繪區段 (2 檔案)
+- `tracks_handdrawn/BH/` - 北迴線手繪區段 (2 檔案)
+
+---
+
 ## 狀態說明
 
 | 狀態 | 說明 |
@@ -149,17 +174,32 @@
 
 ## 處理腳本
 
+### Golden Track 相關 (建議使用)
+
+| 腳本 | 用途 |
+|------|------|
+| `split_handdrawn_segments.py` | 拆分手繪區段到 tracks_handdrawn/ 目錄 |
+| `extract_golden_tracks.py` | 從 all_tracks.geojson 提取黃金軌道 + 驗證 |
+| `build_golden_track.py` | 重建軌道：TDX + 手繪 → 黃金版本 |
+
+### 路線建立相關
+
+| 腳本 | 用途 |
+|------|------|
+| `build_yl_bh_od_tracks.py` | 建立 YL/BH O-D 專屬軌道 |
+| `build_kl_od_tracks.py` | 從 WL-N 建立 KL 基隆支線 O-D 軌道 |
+| `fetch_yl_kl_timetable.py` | 從 TDX API 取得 YL/KL 真實時刻表 |
+
+### 舊版腳本 (已整合或棄用)
+
 | 腳本 | 用途 |
 |------|------|
 | `fix_yl_track_segments.py` | 修正 YL MultiLineString 段落順序 |
-| `fix_yl_problem_segments.py` | 產生 YL 手繪填補檔案，暫以直線替代問題區段 |
-| `smooth_yl_track.py` | YL 軌道平滑化 (已棄用，會破壞站點對齊) |
+| `fix_yl_problem_segments.py` | 產生 YL 手繪填補檔案 |
+| `smooth_yl_track.py` | YL 軌道平滑化 (已棄用) |
 | `rebuild_bh_from_gaps.py` | 從手繪資料重建 BH 軌道 |
 | `rebuild_yl_from_gaps.py` | 從手繪資料重建 YL 軌道 |
-| `build_yl_bh_od_tracks.py` | 建立 YL/BH O-D 專屬軌道 |
 | `generate_yl_bh_schedules.py` | 產生 YL/BH 模擬時刻表 (已棄用) |
-| `build_kl_od_tracks.py` | 從 WL-N 建立 KL 基隆支線 O-D 軌道 |
-| `fetch_yl_kl_timetable.py` | 從 TDX API 取得 YL/KL 真實時刻表 |
 
 ---
 
@@ -172,6 +212,15 @@
 ---
 
 ## 更新紀錄
+
+### 2026-01-10 (Golden Track 架構)
+- 新增 `tracks_golden/` 目錄作為黃金版本來源
+- 新增 `tracks_handdrawn/` 目錄，手繪區段永不覆蓋
+- 拆分手繪區段：YL (4檔案)、KL (2檔案)、BH (2檔案)
+- 新增腳本：`split_handdrawn_segments.py`、`extract_golden_tracks.py`、`build_golden_track.py`
+- 更新 `useTraData.ts`：優先載入 `tracks_golden/`，fallback 到 `tracks_official/`
+- 產生 `manifest.json` 追蹤軌道驗證狀態
+- 驗證結果：8 條通過 (NW, LJ, CZ, PX)，10 條需檢查 (YL, BH, KL, JJ, SH 有座標跳躍)
 
 ### 2026-01-10 (TDX 真實時刻表整合)
 - KL 基隆支線：新增 O-D 軌道 (KL-TP-KL, KL-KL-TP)

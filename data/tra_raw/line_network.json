@@ -1,0 +1,2794 @@
+[
+  {
+    "LineID": "CZ",
+    "LineName": {
+      "Zh_tw": "成追線",
+      "En": "Chengzhui Line"
+    },
+    "LineSegments": [
+      {
+        "LineSegmentID": "2260-3350",
+        "LineSegmentName": {
+          "Zh_tw": "追分-成功",
+          "En": "Zhuifen - Chenggong"
+        },
+        "FromStationID": "2260",
+        "ToStationID": "3350",
+        "SegmentType": "B",
+        "Distance": 2.2
+      }
+    ]
+  },
+  {
+    "LineID": "EL",
+    "LineName": {
+      "Zh_tw": "東部幹線",
+      "En": "Eastern Main Line"
+    },
+    "LineSegments": [
+      {
+        "LineSegmentID": "6000-6010",
+        "LineSegmentName": {
+          "Zh_tw": "臺東-山里",
+          "En": "Taitung - Shanli"
+        },
+        "FromStationID": "6000",
+        "ToStationID": "6010",
+        "SegmentType": "M",
+        "Distance": 8.2
+      },
+      {
+        "LineSegmentID": "6010-6020",
+        "LineSegmentName": {
+          "Zh_tw": "山里-鹿野",
+          "En": "Shanli - Luye"
+        },
+        "FromStationID": "6010",
+        "ToStationID": "6020",
+        "SegmentType": "M",
+        "Distance": 6.1
+      },
+      {
+        "LineSegmentID": "6020-6030",
+        "LineSegmentName": {
+          "Zh_tw": "鹿野-瑞源",
+          "En": "Luye - Ruiyuan"
+        },
+        "FromStationID": "6020",
+        "ToStationID": "6030",
+        "SegmentType": "M",
+        "Distance": 5.5
+      },
+      {
+        "LineSegmentID": "6030-6040",
+        "LineSegmentName": {
+          "Zh_tw": "瑞源-瑞和",
+          "En": "Ruiyuan - Ruihe"
+        },
+        "FromStationID": "6030",
+        "ToStationID": "6040",
+        "SegmentType": "M",
+        "Distance": 2.7
+      },
+      {
+        "LineSegmentID": "6040-6050",
+        "LineSegmentName": {
+          "Zh_tw": "瑞和-關山",
+          "En": "Ruihe - Guanshan"
+        },
+        "FromStationID": "6040",
+        "ToStationID": "6050",
+        "SegmentType": "M",
+        "Distance": 7.5
+      },
+      {
+        "LineSegmentID": "6050-6060",
+        "LineSegmentName": {
+          "Zh_tw": "關山-海端",
+          "En": "Guanshan - Haiduan"
+        },
+        "FromStationID": "6050",
+        "ToStationID": "6060",
+        "SegmentType": "M",
+        "Distance": 6.5
+      },
+      {
+        "LineSegmentID": "6060-6070",
+        "LineSegmentName": {
+          "Zh_tw": "海端-池上",
+          "En": "Haiduan - Chishang"
+        },
+        "FromStationID": "6060",
+        "ToStationID": "6070",
+        "SegmentType": "M",
+        "Distance": 5.7
+      },
+      {
+        "LineSegmentID": "6070-6080",
+        "LineSegmentName": {
+          "Zh_tw": "池上-富里",
+          "En": "Chishang - Fuli"
+        },
+        "FromStationID": "6070",
+        "ToStationID": "6080",
+        "SegmentType": "M",
+        "Distance": 6.8
+      },
+      {
+        "LineSegmentID": "6080-6090",
+        "LineSegmentName": {
+          "Zh_tw": "富里-東竹",
+          "En": "Fuli - Dongzhu"
+        },
+        "FromStationID": "6080",
+        "ToStationID": "6090",
+        "SegmentType": "M",
+        "Distance": 6.1
+      },
+      {
+        "LineSegmentID": "6090-6100",
+        "LineSegmentName": {
+          "Zh_tw": "東竹-東里",
+          "En": "Dongzhu - Dongli"
+        },
+        "FromStationID": "6090",
+        "ToStationID": "6100",
+        "SegmentType": "M",
+        "Distance": 6
+      },
+      {
+        "LineSegmentID": "6100-6110",
+        "LineSegmentName": {
+          "Zh_tw": "東里-玉里",
+          "En": "Dongli - Yuli"
+        },
+        "FromStationID": "6100",
+        "ToStationID": "6110",
+        "SegmentType": "M",
+        "Distance": 6.8
+      },
+      {
+        "LineSegmentID": "6110-6120",
+        "LineSegmentName": {
+          "Zh_tw": "玉里-三民",
+          "En": "Yuli - Sanmin"
+        },
+        "FromStationID": "6110",
+        "ToStationID": "6120",
+        "SegmentType": "M",
+        "Distance": 10.8
+      },
+      {
+        "LineSegmentID": "6120-6130",
+        "LineSegmentName": {
+          "Zh_tw": "三民-瑞穗",
+          "En": "Sanmin - Ruisui"
+        },
+        "FromStationID": "6120",
+        "ToStationID": "6130",
+        "SegmentType": "M",
+        "Distance": 9.4
+      },
+      {
+        "LineSegmentID": "6130-6140",
+        "LineSegmentName": {
+          "Zh_tw": "瑞穗-富源",
+          "En": "Ruisui - Fuyuan"
+        },
+        "FromStationID": "6130",
+        "ToStationID": "6140",
+        "SegmentType": "M",
+        "Distance": 9.1
+      },
+      {
+        "LineSegmentID": "6140-6150",
+        "LineSegmentName": {
+          "Zh_tw": "富源-大富",
+          "En": "Fuyuan - Dafu"
+        },
+        "FromStationID": "6140",
+        "ToStationID": "6150",
+        "SegmentType": "M",
+        "Distance": 3.2
+      },
+      {
+        "LineSegmentID": "6150-6160",
+        "LineSegmentName": {
+          "Zh_tw": "大富-光復",
+          "En": "Dafu - Guangfu"
+        },
+        "FromStationID": "6150",
+        "ToStationID": "6160",
+        "SegmentType": "M",
+        "Distance": 7.5
+      },
+      {
+        "LineSegmentID": "6160-6170",
+        "LineSegmentName": {
+          "Zh_tw": "光復-萬榮",
+          "En": "Guangfu - Wanrong"
+        },
+        "FromStationID": "6160",
+        "ToStationID": "6170",
+        "SegmentType": "M",
+        "Distance": 5.6
+      },
+      {
+        "LineSegmentID": "6170-6180",
+        "LineSegmentName": {
+          "Zh_tw": "萬榮-鳳林",
+          "En": "Wanrong - Fenglin"
+        },
+        "FromStationID": "6170",
+        "ToStationID": "6180",
+        "SegmentType": "M",
+        "Distance": 4.9
+      },
+      {
+        "LineSegmentID": "6180-6190",
+        "LineSegmentName": {
+          "Zh_tw": "鳳林-南平",
+          "En": "Fenglin - Nanping"
+        },
+        "FromStationID": "6180",
+        "ToStationID": "6190",
+        "SegmentType": "M",
+        "Distance": 4.2
+      },
+      {
+        "LineSegmentID": "6190-6200",
+        "LineSegmentName": {
+          "Zh_tw": "南平-林榮新光",
+          "En": "Nanping - Linrong Shin Kong"
+        },
+        "FromStationID": "6190",
+        "ToStationID": "6200",
+        "SegmentType": "M",
+        "Distance": 2.2
+      },
+      {
+        "LineSegmentID": "6200-6210",
+        "LineSegmentName": {
+          "Zh_tw": "林榮新光-豐田",
+          "En": "Linrong Shin Kong - Fengtian"
+        },
+        "FromStationID": "6200",
+        "ToStationID": "6210",
+        "SegmentType": "M",
+        "Distance": 6.2
+      },
+      {
+        "LineSegmentID": "6210-6220",
+        "LineSegmentName": {
+          "Zh_tw": "豐田-壽豐",
+          "En": "Fengtian - Shoufeng"
+        },
+        "FromStationID": "6210",
+        "ToStationID": "6220",
+        "SegmentType": "M",
+        "Distance": 2.8
+      },
+      {
+        "LineSegmentID": "6220-6230",
+        "LineSegmentName": {
+          "Zh_tw": "壽豐-平和",
+          "En": "Shoufeng - Pinghe"
+        },
+        "FromStationID": "6220",
+        "ToStationID": "6230",
+        "SegmentType": "M",
+        "Distance": 1.8
+      },
+      {
+        "LineSegmentID": "6230-6240",
+        "LineSegmentName": {
+          "Zh_tw": "平和-志學",
+          "En": "Pinghe - Zhixue"
+        },
+        "FromStationID": "6230",
+        "ToStationID": "6240",
+        "SegmentType": "M",
+        "Distance": 3
+      },
+      {
+        "LineSegmentID": "6240-6250",
+        "LineSegmentName": {
+          "Zh_tw": "志學-吉安",
+          "En": "Zhixue - Ji'an"
+        },
+        "FromStationID": "6240",
+        "ToStationID": "6250",
+        "SegmentType": "M",
+        "Distance": 8.8
+      },
+      {
+        "LineSegmentID": "6250-7000",
+        "LineSegmentName": {
+          "Zh_tw": "吉安-花蓮",
+          "En": "Ji'an - Hualien"
+        },
+        "FromStationID": "6250",
+        "ToStationID": "7000",
+        "SegmentType": "M",
+        "Distance": 3.5
+      },
+      {
+        "LineSegmentID": "7000-7010",
+        "LineSegmentName": {
+          "Zh_tw": "花蓮-北埔",
+          "En": "Hualien - Beipu"
+        },
+        "FromStationID": "7000",
+        "ToStationID": "7010",
+        "SegmentType": "M",
+        "Distance": 4.6
+      },
+      {
+        "LineSegmentID": "7010-7020",
+        "LineSegmentName": {
+          "Zh_tw": "北埔-景美",
+          "En": "Beipu - Jingmei"
+        },
+        "FromStationID": "7010",
+        "ToStationID": "7020",
+        "SegmentType": "M",
+        "Distance": 6.5
+      },
+      {
+        "LineSegmentID": "7020-7030",
+        "LineSegmentName": {
+          "Zh_tw": "景美-新城",
+          "En": "Jingmei - Xincheng"
+        },
+        "FromStationID": "7020",
+        "ToStationID": "7030",
+        "SegmentType": "M",
+        "Distance": 5.3
+      },
+      {
+        "LineSegmentID": "7030-7040",
+        "LineSegmentName": {
+          "Zh_tw": "新城-崇德",
+          "En": "Xincheng - Chongde"
+        },
+        "FromStationID": "7030",
+        "ToStationID": "7040",
+        "SegmentType": "M",
+        "Distance": 5.3
+      },
+      {
+        "LineSegmentID": "7040-7050",
+        "LineSegmentName": {
+          "Zh_tw": "崇德-和仁",
+          "En": "Chongde - Heren"
+        },
+        "FromStationID": "7040",
+        "ToStationID": "7050",
+        "SegmentType": "M",
+        "Distance": 10
+      },
+      {
+        "LineSegmentID": "7050-7060",
+        "LineSegmentName": {
+          "Zh_tw": "和仁-和平",
+          "En": "Heren - Heping"
+        },
+        "FromStationID": "7050",
+        "ToStationID": "7060",
+        "SegmentType": "M",
+        "Distance": 7.9
+      },
+      {
+        "LineSegmentID": "7060-7070",
+        "LineSegmentName": {
+          "Zh_tw": "和平-漢本",
+          "En": "Heping - Hanben"
+        },
+        "FromStationID": "7060",
+        "ToStationID": "7070",
+        "SegmentType": "M",
+        "Distance": 4.4
+      },
+      {
+        "LineSegmentID": "7070-7080",
+        "LineSegmentName": {
+          "Zh_tw": "漢本-武塔",
+          "En": "Hanben - Wuta"
+        },
+        "FromStationID": "7070",
+        "ToStationID": "7080",
+        "SegmentType": "M",
+        "Distance": 12.9
+      },
+      {
+        "LineSegmentID": "7080-7090",
+        "LineSegmentName": {
+          "Zh_tw": "武塔-南澳",
+          "En": "Wuta - Nan'ao"
+        },
+        "FromStationID": "7080",
+        "ToStationID": "7090",
+        "SegmentType": "M",
+        "Distance": 3.7
+      },
+      {
+        "LineSegmentID": "7090-7100",
+        "LineSegmentName": {
+          "Zh_tw": "南澳-東澳",
+          "En": "Nan'ao - Dong'ao"
+        },
+        "FromStationID": "7090",
+        "ToStationID": "7100",
+        "SegmentType": "M",
+        "Distance": 8
+      },
+      {
+        "LineSegmentID": "7100-7110",
+        "LineSegmentName": {
+          "Zh_tw": "東澳-永樂",
+          "En": "Dong'ao - Yongle"
+        },
+        "FromStationID": "7100",
+        "ToStationID": "7110",
+        "SegmentType": "M",
+        "Distance": 5.7
+      },
+      {
+        "LineSegmentID": "7110-7130",
+        "LineSegmentName": {
+          "Zh_tw": "永樂-蘇澳新",
+          "En": "Yongle - Su'aoxin"
+        },
+        "FromStationID": "7110",
+        "ToStationID": "7130",
+        "SegmentType": "M",
+        "Distance": 5.2
+      },
+      {
+        "LineSegmentID": "7130-7140",
+        "LineSegmentName": {
+          "Zh_tw": "蘇澳新-新馬",
+          "En": "Su'aoxin - Xinma"
+        },
+        "FromStationID": "7130",
+        "ToStationID": "7140",
+        "SegmentType": "M",
+        "Distance": 0.9
+      },
+      {
+        "LineSegmentID": "7140-7150",
+        "LineSegmentName": {
+          "Zh_tw": "新馬-冬山",
+          "En": "Xinma - Dongshan"
+        },
+        "FromStationID": "7140",
+        "ToStationID": "7150",
+        "SegmentType": "M",
+        "Distance": 4.2
+      },
+      {
+        "LineSegmentID": "7150-7160",
+        "LineSegmentName": {
+          "Zh_tw": "冬山-羅東",
+          "En": "Dongshan - Luodong"
+        },
+        "FromStationID": "7150",
+        "ToStationID": "7160",
+        "SegmentType": "M",
+        "Distance": 5
+      },
+      {
+        "LineSegmentID": "7160-7170",
+        "LineSegmentName": {
+          "Zh_tw": "羅東-中里",
+          "En": "Luodong - Zhongli_Yilan"
+        },
+        "FromStationID": "7160",
+        "ToStationID": "7170",
+        "SegmentType": "M",
+        "Distance": 1.8
+      },
+      {
+        "LineSegmentID": "7170-7180",
+        "LineSegmentName": {
+          "Zh_tw": "中里-二結",
+          "En": "Zhongli_Yilan - Erjie"
+        },
+        "FromStationID": "7170",
+        "ToStationID": "7180",
+        "SegmentType": "M",
+        "Distance": 1.2
+      },
+      {
+        "LineSegmentID": "7180-7190",
+        "LineSegmentName": {
+          "Zh_tw": "二結-宜蘭",
+          "En": "Erjie - Yilan"
+        },
+        "FromStationID": "7180",
+        "ToStationID": "7190",
+        "SegmentType": "M",
+        "Distance": 5.8
+      },
+      {
+        "LineSegmentID": "7190-7200",
+        "LineSegmentName": {
+          "Zh_tw": "宜蘭-四城",
+          "En": "Yilan - Sicheng"
+        },
+        "FromStationID": "7190",
+        "ToStationID": "7200",
+        "SegmentType": "M",
+        "Distance": 3.7
+      },
+      {
+        "LineSegmentID": "7200-7210",
+        "LineSegmentName": {
+          "Zh_tw": "四城-礁溪",
+          "En": "Sicheng - Jiaoxi"
+        },
+        "FromStationID": "7200",
+        "ToStationID": "7210",
+        "SegmentType": "M",
+        "Distance": 4.7
+      },
+      {
+        "LineSegmentID": "7210-7220",
+        "LineSegmentName": {
+          "Zh_tw": "礁溪-頂埔",
+          "En": "Jiaoxi - Dingpu"
+        },
+        "FromStationID": "7210",
+        "ToStationID": "7220",
+        "SegmentType": "M",
+        "Distance": 4.1
+      },
+      {
+        "LineSegmentID": "7220-7230",
+        "LineSegmentName": {
+          "Zh_tw": "頂埔-頭城",
+          "En": "Dingpu - Toucheng"
+        },
+        "FromStationID": "7220",
+        "ToStationID": "7230",
+        "SegmentType": "M",
+        "Distance": 2.2
+      },
+      {
+        "LineSegmentID": "7230-7240",
+        "LineSegmentName": {
+          "Zh_tw": "頭城-外澳",
+          "En": "Toucheng - Wai'ao"
+        },
+        "FromStationID": "7230",
+        "ToStationID": "7240",
+        "SegmentType": "M",
+        "Distance": 3.7
+      },
+      {
+        "LineSegmentID": "7240-7250",
+        "LineSegmentName": {
+          "Zh_tw": "外澳-龜山",
+          "En": "Wai'ao - Guishan"
+        },
+        "FromStationID": "7240",
+        "ToStationID": "7250",
+        "SegmentType": "M",
+        "Distance": 3.5
+      },
+      {
+        "LineSegmentID": "7250-7260",
+        "LineSegmentName": {
+          "Zh_tw": "龜山-大溪",
+          "En": "Guishan - Daxi"
+        },
+        "FromStationID": "7250",
+        "ToStationID": "7260",
+        "SegmentType": "M",
+        "Distance": 4.6
+      },
+      {
+        "LineSegmentID": "7260-7270",
+        "LineSegmentName": {
+          "Zh_tw": "大溪-大里",
+          "En": "Daxi - Dali"
+        },
+        "FromStationID": "7260",
+        "ToStationID": "7270",
+        "SegmentType": "M",
+        "Distance": 4.7
+      },
+      {
+        "LineSegmentID": "7270-7280",
+        "LineSegmentName": {
+          "Zh_tw": "大里-石城",
+          "En": "Dali - Shicheng"
+        },
+        "FromStationID": "7270",
+        "ToStationID": "7280",
+        "SegmentType": "M",
+        "Distance": 2.7
+      },
+      {
+        "LineSegmentID": "7280-7290",
+        "LineSegmentName": {
+          "Zh_tw": "石城-福隆",
+          "En": "Shicheng - Fulong"
+        },
+        "FromStationID": "7280",
+        "ToStationID": "7290",
+        "SegmentType": "M",
+        "Distance": 5.4
+      },
+      {
+        "LineSegmentID": "7290-7300",
+        "LineSegmentName": {
+          "Zh_tw": "福隆-貢寮",
+          "En": "Fulong - Gongliao"
+        },
+        "FromStationID": "7290",
+        "ToStationID": "7300",
+        "SegmentType": "M",
+        "Distance": 3.8
+      },
+      {
+        "LineSegmentID": "7300-7310",
+        "LineSegmentName": {
+          "Zh_tw": "貢寮-雙溪",
+          "En": "Gongliao - Shuangxi"
+        },
+        "FromStationID": "7300",
+        "ToStationID": "7310",
+        "SegmentType": "M",
+        "Distance": 5.3
+      },
+      {
+        "LineSegmentID": "7310-7320",
+        "LineSegmentName": {
+          "Zh_tw": "雙溪-牡丹",
+          "En": "Shuangxi - Mudan"
+        },
+        "FromStationID": "7310",
+        "ToStationID": "7320",
+        "SegmentType": "M",
+        "Distance": 3.4
+      },
+      {
+        "LineSegmentID": "7320-7330",
+        "LineSegmentName": {
+          "Zh_tw": "牡丹-三貂嶺",
+          "En": "Mudan - Sandiaoling"
+        },
+        "FromStationID": "7320",
+        "ToStationID": "7330",
+        "SegmentType": "M",
+        "Distance": 3.5
+      },
+      {
+        "LineSegmentID": "7330-7350",
+        "LineSegmentName": {
+          "Zh_tw": "三貂嶺-猴硐",
+          "En": "Sandiaoling - Houtong"
+        },
+        "FromStationID": "7330",
+        "ToStationID": "7350",
+        "SegmentType": "M",
+        "Distance": 2.5
+      },
+      {
+        "LineSegmentID": "7350-7360",
+        "LineSegmentName": {
+          "Zh_tw": "猴硐-瑞芳",
+          "En": "Houtong - Ruifang"
+        },
+        "FromStationID": "7350",
+        "ToStationID": "7360",
+        "SegmentType": "M",
+        "Distance": 4.6
+      },
+      {
+        "LineSegmentID": "7360-7380",
+        "LineSegmentName": {
+          "Zh_tw": "瑞芳-四腳亭",
+          "En": "Ruifang - Sijiaoting"
+        },
+        "FromStationID": "7360",
+        "ToStationID": "7380",
+        "SegmentType": "M",
+        "Distance": 5
+      },
+      {
+        "LineSegmentID": "7380-7390",
+        "LineSegmentName": {
+          "Zh_tw": "四腳亭-暖暖",
+          "En": "Sijiaoting - Nuannuan"
+        },
+        "FromStationID": "7380",
+        "ToStationID": "7390",
+        "SegmentType": "M",
+        "Distance": 2.3
+      },
+      {
+        "LineSegmentID": "7390-0920",
+        "LineSegmentName": {
+          "Zh_tw": "暖暖-八堵",
+          "En": "Nuannuan - Badu"
+        },
+        "FromStationID": "7390",
+        "ToStationID": "0920",
+        "SegmentType": "M",
+        "Distance": 1.6
+      }
+    ]
+  },
+  {
+    "LineID": "JJ",
+    "LineName": {
+      "Zh_tw": "集集線",
+      "En": "Jiji Line"
+    },
+    "LineSegments": [
+      {
+        "LineSegmentID": "3430-3431",
+        "LineSegmentName": {
+          "Zh_tw": "二水-源泉",
+          "En": "Ershui - Yuanquan"
+        },
+        "FromStationID": "3430",
+        "ToStationID": "3431",
+        "SegmentType": "B",
+        "Distance": 3
+      },
+      {
+        "LineSegmentID": "3431-3432",
+        "LineSegmentName": {
+          "Zh_tw": "源泉-濁水",
+          "En": "Yuanquan - Zhuoshui"
+        },
+        "FromStationID": "3431",
+        "ToStationID": "3432",
+        "SegmentType": "B",
+        "Distance": 7.8
+      },
+      {
+        "LineSegmentID": "3432-3433",
+        "LineSegmentName": {
+          "Zh_tw": "濁水-龍泉",
+          "En": "Zhuoshui - Longquan"
+        },
+        "FromStationID": "3432",
+        "ToStationID": "3433",
+        "SegmentType": "B",
+        "Distance": 4.9
+      },
+      {
+        "LineSegmentID": "3433-3434",
+        "LineSegmentName": {
+          "Zh_tw": "龍泉-集集",
+          "En": "Longquan - Jiji"
+        },
+        "FromStationID": "3433",
+        "ToStationID": "3434",
+        "SegmentType": "B",
+        "Distance": 4.3
+      },
+      {
+        "LineSegmentID": "3434-3435",
+        "LineSegmentName": {
+          "Zh_tw": "集集-水里",
+          "En": "Jiji - Shuili"
+        },
+        "FromStationID": "3434",
+        "ToStationID": "3435",
+        "SegmentType": "B",
+        "Distance": 7.4
+      },
+      {
+        "LineSegmentID": "3435-3436",
+        "LineSegmentName": {
+          "Zh_tw": "水里-車埕",
+          "En": "Shuili - Checheng"
+        },
+        "FromStationID": "3435",
+        "ToStationID": "3436",
+        "SegmentType": "B",
+        "Distance": 2.2
+      }
+    ]
+  },
+  {
+    "LineID": "LJ",
+    "LineName": {
+      "Zh_tw": "六家線",
+      "En": "Liujia Line"
+    },
+    "LineSegments": [
+      {
+        "LineSegmentID": "1194-1193",
+        "LineSegmentName": {
+          "Zh_tw": "六家-竹中",
+          "En": "Liujia - Zhuzhong"
+        },
+        "FromStationID": "1194",
+        "ToStationID": "1193",
+        "SegmentType": "B",
+        "Distance": 3.1
+      }
+    ]
+  },
+  {
+    "LineID": "NW",
+    "LineName": {
+      "Zh_tw": "內灣線",
+      "En": "Neiwan Line"
+    },
+    "LineSegments": [
+      {
+        "LineSegmentID": "1191-1190",
+        "LineSegmentName": {
+          "Zh_tw": "千甲-北新竹",
+          "En": "Qianjia - North Hsinchu"
+        },
+        "FromStationID": "1191",
+        "ToStationID": "1190",
+        "SegmentType": "B",
+        "Distance": 2.2
+      },
+      {
+        "LineSegmentID": "1192-1191",
+        "LineSegmentName": {
+          "Zh_tw": "新莊-千甲",
+          "En": "Xinzhuang - Qianjia"
+        },
+        "FromStationID": "1192",
+        "ToStationID": "1191",
+        "SegmentType": "B",
+        "Distance": 3
+      },
+      {
+        "LineSegmentID": "1193-1192",
+        "LineSegmentName": {
+          "Zh_tw": "竹中-新莊",
+          "En": "Zhuzhong - Xinzhuang"
+        },
+        "FromStationID": "1193",
+        "ToStationID": "1192",
+        "SegmentType": "B",
+        "Distance": 1.3
+      },
+      {
+        "LineSegmentID": "1201-1193",
+        "LineSegmentName": {
+          "Zh_tw": "上員-竹中",
+          "En": "Shangyuan - Zhuzhong"
+        },
+        "FromStationID": "1201",
+        "ToStationID": "1193",
+        "SegmentType": "B",
+        "Distance": 2.7
+      },
+      {
+        "LineSegmentID": "1202-1201",
+        "LineSegmentName": {
+          "Zh_tw": "榮華-上員",
+          "En": "Ronghua - Shangyuan"
+        },
+        "FromStationID": "1202",
+        "ToStationID": "1201",
+        "SegmentType": "B",
+        "Distance": 4.4
+      },
+      {
+        "LineSegmentID": "1203-1202",
+        "LineSegmentName": {
+          "Zh_tw": "竹東-榮華",
+          "En": "Zhudong - Ronghua"
+        },
+        "FromStationID": "1203",
+        "ToStationID": "1202",
+        "SegmentType": "B",
+        "Distance": 1.6
+      },
+      {
+        "LineSegmentID": "1204-1203",
+        "LineSegmentName": {
+          "Zh_tw": "橫山-竹東",
+          "En": "Hengshan - Zhudong"
+        },
+        "FromStationID": "1204",
+        "ToStationID": "1203",
+        "SegmentType": "B",
+        "Distance": 3.5
+      },
+      {
+        "LineSegmentID": "1205-1204",
+        "LineSegmentName": {
+          "Zh_tw": "九讚頭-橫山",
+          "En": "Jiuzantou - Hengshan"
+        },
+        "FromStationID": "1205",
+        "ToStationID": "1204",
+        "SegmentType": "B",
+        "Distance": 2
+      },
+      {
+        "LineSegmentID": "1206-1205",
+        "LineSegmentName": {
+          "Zh_tw": "合興-九讚頭",
+          "En": "Hexing - Jiuzantou"
+        },
+        "FromStationID": "1206",
+        "ToStationID": "1205",
+        "SegmentType": "B",
+        "Distance": 2.2
+      },
+      {
+        "LineSegmentID": "1207-1206",
+        "LineSegmentName": {
+          "Zh_tw": "富貴-合興",
+          "En": "Fugui - Hexing"
+        },
+        "FromStationID": "1207",
+        "ToStationID": "1206",
+        "SegmentType": "B",
+        "Distance": 1.4
+      },
+      {
+        "LineSegmentID": "1208-1207",
+        "LineSegmentName": {
+          "Zh_tw": "內灣-富貴",
+          "En": "Neiwan - Fugui"
+        },
+        "FromStationID": "1208",
+        "ToStationID": "1207",
+        "SegmentType": "B",
+        "Distance": 2.2
+      }
+    ]
+  },
+  {
+    "LineID": "PX",
+    "LineName": {
+      "Zh_tw": "平溪線",
+      "En": "Pingxi Line"
+    },
+    "LineSegments": [
+      {
+        "LineSegmentID": "7331-7330",
+        "LineSegmentName": {
+          "Zh_tw": "大華-三貂嶺",
+          "En": "Dahua - Sandiaoling"
+        },
+        "FromStationID": "7331",
+        "ToStationID": "7330",
+        "SegmentType": "B",
+        "Distance": 3.6
+      },
+      {
+        "LineSegmentID": "7332-7331",
+        "LineSegmentName": {
+          "Zh_tw": "十分-大華",
+          "En": "Shifen - Dahua"
+        },
+        "FromStationID": "7332",
+        "ToStationID": "7331",
+        "SegmentType": "B",
+        "Distance": 2.8
+      },
+      {
+        "LineSegmentID": "7333-7332",
+        "LineSegmentName": {
+          "Zh_tw": "望古-十分",
+          "En": "Wanggu - Shifen"
+        },
+        "FromStationID": "7333",
+        "ToStationID": "7332",
+        "SegmentType": "B",
+        "Distance": 1.7
+      },
+      {
+        "LineSegmentID": "7334-7333",
+        "LineSegmentName": {
+          "Zh_tw": "嶺腳-望古",
+          "En": "Lingjiao - Wanggu"
+        },
+        "FromStationID": "7334",
+        "ToStationID": "7333",
+        "SegmentType": "B",
+        "Distance": 2.1
+      },
+      {
+        "LineSegmentID": "7335-7334",
+        "LineSegmentName": {
+          "Zh_tw": "平溪-嶺腳",
+          "En": "Pingxi - Lingjiao"
+        },
+        "FromStationID": "7335",
+        "ToStationID": "7334",
+        "SegmentType": "B",
+        "Distance": 1
+      },
+      {
+        "LineSegmentID": "7336-7335",
+        "LineSegmentName": {
+          "Zh_tw": "菁桐-平溪",
+          "En": "Jingtong - Pingxi"
+        },
+        "FromStationID": "7336",
+        "ToStationID": "7335",
+        "SegmentType": "B",
+        "Distance": 1.7
+      }
+    ]
+  },
+  {
+    "LineID": "SA",
+    "LineName": {
+      "Zh_tw": "深澳線",
+      "En": "Shenao Line"
+    },
+    "LineSegments": [
+      {
+        "LineSegmentID": "7360-7361",
+        "LineSegmentName": {
+          "Zh_tw": "瑞芳-海科館",
+          "En": "Ruifang - Haikeguan"
+        },
+        "FromStationID": "7360",
+        "ToStationID": "7361",
+        "SegmentType": "B",
+        "Distance": 4.3
+      },
+      {
+        "LineSegmentID": "7361-7362",
+        "LineSegmentName": {
+          "Zh_tw": "海科館-八斗子",
+          "En": "Haikeguan - Badouzi"
+        },
+        "FromStationID": "7361",
+        "ToStationID": "7362",
+        "SegmentType": "B",
+        "Distance": 0.4
+      }
+    ]
+  },
+  {
+    "LineID": "SH",
+    "LineName": {
+      "Zh_tw": "沙崙線",
+      "En": "Shalun Line"
+    },
+    "LineSegments": [
+      {
+        "LineSegmentID": "4270-4271",
+        "LineSegmentName": {
+          "Zh_tw": "中洲-長榮大學",
+          "En": "Zhongzhou - Chang Jung Christian University"
+        },
+        "FromStationID": "4270",
+        "ToStationID": "4271",
+        "SegmentType": "B",
+        "Distance": 2.6
+      },
+      {
+        "LineSegmentID": "4271-4272",
+        "LineSegmentName": {
+          "Zh_tw": "長榮大學-沙崙",
+          "En": "Chang Jung Christian University - Shalun"
+        },
+        "FromStationID": "4271",
+        "ToStationID": "4272",
+        "SegmentType": "B",
+        "Distance": 3.1
+      }
+    ]
+  },
+  {
+    "LineID": "SL",
+    "LineName": {
+      "Zh_tw": "南迴線",
+      "En": "South Link Line"
+    },
+    "LineSegments": [
+      {
+        "LineSegmentID": "5000-5010",
+        "LineSegmentName": {
+          "Zh_tw": "屏東-歸來",
+          "En": "Pingtung - Guilai"
+        },
+        "FromStationID": "5000",
+        "ToStationID": "5010",
+        "SegmentType": "M",
+        "Distance": 2.6
+      },
+      {
+        "LineSegmentID": "5010-5020",
+        "LineSegmentName": {
+          "Zh_tw": "歸來-麟洛",
+          "En": "Guilai - Linluo"
+        },
+        "FromStationID": "5010",
+        "ToStationID": "5020",
+        "SegmentType": "M",
+        "Distance": 2.3
+      },
+      {
+        "LineSegmentID": "5020-5030",
+        "LineSegmentName": {
+          "Zh_tw": "麟洛-西勢",
+          "En": "Linluo - Xishi"
+        },
+        "FromStationID": "5020",
+        "ToStationID": "5030",
+        "SegmentType": "M",
+        "Distance": 2.4
+      },
+      {
+        "LineSegmentID": "5030-5040",
+        "LineSegmentName": {
+          "Zh_tw": "西勢-竹田",
+          "En": "Xishi - Zhutian"
+        },
+        "FromStationID": "5030",
+        "ToStationID": "5040",
+        "SegmentType": "M",
+        "Distance": 3.7
+      },
+      {
+        "LineSegmentID": "5040-5050",
+        "LineSegmentName": {
+          "Zh_tw": "竹田-潮州",
+          "En": "Zhutian - Chaozhou"
+        },
+        "FromStationID": "5040",
+        "ToStationID": "5050",
+        "SegmentType": "M",
+        "Distance": 4
+      },
+      {
+        "LineSegmentID": "5050-5060",
+        "LineSegmentName": {
+          "Zh_tw": "潮州-崁頂",
+          "En": "Chaozhou - Kanding"
+        },
+        "FromStationID": "5050",
+        "ToStationID": "5060",
+        "SegmentType": "M",
+        "Distance": 4.9
+      },
+      {
+        "LineSegmentID": "5060-5070",
+        "LineSegmentName": {
+          "Zh_tw": "崁頂-南州",
+          "En": "Kanding - Nanzhou"
+        },
+        "FromStationID": "5060",
+        "ToStationID": "5070",
+        "SegmentType": "M",
+        "Distance": 2.4
+      },
+      {
+        "LineSegmentID": "5070-5080",
+        "LineSegmentName": {
+          "Zh_tw": "南州-鎮安",
+          "En": "Nanzhou - Zhen'an"
+        },
+        "FromStationID": "5070",
+        "ToStationID": "5080",
+        "SegmentType": "M",
+        "Distance": 3.8
+      },
+      {
+        "LineSegmentID": "5080-5090",
+        "LineSegmentName": {
+          "Zh_tw": "鎮安-林邊",
+          "En": "Zhen'an - Linbian"
+        },
+        "FromStationID": "5080",
+        "ToStationID": "5090",
+        "SegmentType": "M",
+        "Distance": 3.1
+      },
+      {
+        "LineSegmentID": "5090-5100",
+        "LineSegmentName": {
+          "Zh_tw": "林邊-佳冬",
+          "En": "Linbian - Jiadong"
+        },
+        "FromStationID": "5090",
+        "ToStationID": "5100",
+        "SegmentType": "M",
+        "Distance": 3.9
+      },
+      {
+        "LineSegmentID": "5100-5110",
+        "LineSegmentName": {
+          "Zh_tw": "佳冬-東海",
+          "En": "Jiadong - Donghai"
+        },
+        "FromStationID": "5100",
+        "ToStationID": "5110",
+        "SegmentType": "M",
+        "Distance": 3.1
+      },
+      {
+        "LineSegmentID": "5110-5120",
+        "LineSegmentName": {
+          "Zh_tw": "東海-枋寮",
+          "En": "Donghai - Fangliao"
+        },
+        "FromStationID": "5110",
+        "ToStationID": "5120",
+        "SegmentType": "M",
+        "Distance": 4.1
+      },
+      {
+        "LineSegmentID": "5120-5130",
+        "LineSegmentName": {
+          "Zh_tw": "枋寮-加祿",
+          "En": "Fangliao - Jialu"
+        },
+        "FromStationID": "5120",
+        "ToStationID": "5130",
+        "SegmentType": "M",
+        "Distance": 5.3
+      },
+      {
+        "LineSegmentID": "5130-5140",
+        "LineSegmentName": {
+          "Zh_tw": "加祿-內獅",
+          "En": "Jialu - Neishi"
+        },
+        "FromStationID": "5130",
+        "ToStationID": "5140",
+        "SegmentType": "M",
+        "Distance": 3.5
+      },
+      {
+        "LineSegmentID": "5140-5160",
+        "LineSegmentName": {
+          "Zh_tw": "內獅-枋山",
+          "En": "Neishi - Fangshan"
+        },
+        "FromStationID": "5140",
+        "ToStationID": "5160",
+        "SegmentType": "M",
+        "Distance": 4.8
+      },
+      {
+        "LineSegmentID": "5160-5170",
+        "LineSegmentName": {
+          "Zh_tw": "枋山-枋野",
+          "En": "Fangshan - Fangye"
+        },
+        "FromStationID": "5160",
+        "ToStationID": "5170",
+        "SegmentType": "M",
+        "Distance": 6.9
+      },
+      {
+        "LineSegmentID": "5170-5190",
+        "LineSegmentName": {
+          "Zh_tw": "枋野-大武",
+          "En": "Fangye - Dawu"
+        },
+        "FromStationID": "5170",
+        "ToStationID": "5190",
+        "SegmentType": "M",
+        "Distance": 23.3
+      },
+      {
+        "LineSegmentID": "5190-5200",
+        "LineSegmentName": {
+          "Zh_tw": "大武-瀧溪",
+          "En": "Dawu - Longxi"
+        },
+        "FromStationID": "5190",
+        "ToStationID": "5200",
+        "SegmentType": "M",
+        "Distance": 11.7
+      },
+      {
+        "LineSegmentID": "5200-5210",
+        "LineSegmentName": {
+          "Zh_tw": "瀧溪-金崙",
+          "En": "Longxi - Jinlun"
+        },
+        "FromStationID": "5200",
+        "ToStationID": "5210",
+        "SegmentType": "M",
+        "Distance": 8.4
+      },
+      {
+        "LineSegmentID": "5210-5220",
+        "LineSegmentName": {
+          "Zh_tw": "金崙-太麻里",
+          "En": "Jinlun - Taimali"
+        },
+        "FromStationID": "5210",
+        "ToStationID": "5220",
+        "SegmentType": "M",
+        "Distance": 10.9
+      },
+      {
+        "LineSegmentID": "5220-5230",
+        "LineSegmentName": {
+          "Zh_tw": "太麻里-知本",
+          "En": "Taimali - Zhiben"
+        },
+        "FromStationID": "5220",
+        "ToStationID": "5230",
+        "SegmentType": "M",
+        "Distance": 11.7
+      },
+      {
+        "LineSegmentID": "5230-5240",
+        "LineSegmentName": {
+          "Zh_tw": "知本-康樂",
+          "En": "Zhiben - Kangle"
+        },
+        "FromStationID": "5230",
+        "ToStationID": "5240",
+        "SegmentType": "M",
+        "Distance": 7.1
+      },
+      {
+        "LineSegmentID": "5240-6000",
+        "LineSegmentName": {
+          "Zh_tw": "康樂-臺東",
+          "En": "Kangle - Taitung"
+        },
+        "FromStationID": "5240",
+        "ToStationID": "6000",
+        "SegmentType": "M",
+        "Distance": 4.5
+      }
+    ]
+  },
+  {
+    "LineID": "SU",
+    "LineName": {
+      "Zh_tw": "蘇澳新-蘇澳",
+      "En": "Su'aoxin-Su'ao"
+    },
+    "LineSegments": [
+      {
+        "LineSegmentID": "7120-7130",
+        "LineSegmentName": {
+          "Zh_tw": "蘇澳-蘇澳新",
+          "En": "Su'ao - Su'aoxin"
+        },
+        "FromStationID": "7120",
+        "ToStationID": "7130",
+        "SegmentType": "M",
+        "Distance": 3.3
+      }
+    ]
+  },
+  {
+    "LineID": "WL",
+    "LineName": {
+      "Zh_tw": "西部幹線",
+      "En": "Western Main Line"
+    },
+    "LineSegments": [
+      {
+        "LineSegmentID": "0900-0910",
+        "LineSegmentName": {
+          "Zh_tw": "基隆-三坑",
+          "En": "Keelung - Sankeng"
+        },
+        "FromStationID": "0900",
+        "ToStationID": "0910",
+        "SegmentType": "M",
+        "Distance": 1.5
+      },
+      {
+        "LineSegmentID": "0910-0920",
+        "LineSegmentName": {
+          "Zh_tw": "三坑-八堵",
+          "En": "Sankeng - Badu"
+        },
+        "FromStationID": "0910",
+        "ToStationID": "0920",
+        "SegmentType": "M",
+        "Distance": 2.4
+      },
+      {
+        "LineSegmentID": "0920-0930",
+        "LineSegmentName": {
+          "Zh_tw": "八堵-七堵",
+          "En": "Badu - Qidu"
+        },
+        "FromStationID": "0920",
+        "ToStationID": "0930",
+        "SegmentType": "M",
+        "Distance": 2.3
+      },
+      {
+        "LineSegmentID": "0930-0940",
+        "LineSegmentName": {
+          "Zh_tw": "七堵-百福",
+          "En": "Qidu - Baifu"
+        },
+        "FromStationID": "0930",
+        "ToStationID": "0940",
+        "SegmentType": "M",
+        "Distance": 2.7
+      },
+      {
+        "LineSegmentID": "0940-0950",
+        "LineSegmentName": {
+          "Zh_tw": "百福-五堵",
+          "En": "Baifu - Wudu"
+        },
+        "FromStationID": "0940",
+        "ToStationID": "0950",
+        "SegmentType": "M",
+        "Distance": 3
+      },
+      {
+        "LineSegmentID": "0950-0960",
+        "LineSegmentName": {
+          "Zh_tw": "五堵-汐止",
+          "En": "Wudu - Xizhi"
+        },
+        "FromStationID": "0950",
+        "ToStationID": "0960",
+        "SegmentType": "M",
+        "Distance": 1.4
+      },
+      {
+        "LineSegmentID": "0960-0970",
+        "LineSegmentName": {
+          "Zh_tw": "汐止-汐科",
+          "En": "Xizhi - Xike"
+        },
+        "FromStationID": "0960",
+        "ToStationID": "0970",
+        "SegmentType": "M",
+        "Distance": 1.3
+      },
+      {
+        "LineSegmentID": "0970-0980",
+        "LineSegmentName": {
+          "Zh_tw": "汐科-南港",
+          "En": "Xike - Nangang"
+        },
+        "FromStationID": "0970",
+        "ToStationID": "0980",
+        "SegmentType": "M",
+        "Distance": 4.7
+      },
+      {
+        "LineSegmentID": "0980-0990",
+        "LineSegmentName": {
+          "Zh_tw": "南港-松山",
+          "En": "Nangang - Songshan"
+        },
+        "FromStationID": "0980",
+        "ToStationID": "0990",
+        "SegmentType": "M",
+        "Distance": 2.8
+      },
+      {
+        "LineSegmentID": "0990-1000",
+        "LineSegmentName": {
+          "Zh_tw": "松山-臺北",
+          "En": "Songshan - Taipei"
+        },
+        "FromStationID": "0990",
+        "ToStationID": "1000",
+        "SegmentType": "M",
+        "Distance": 6.4
+      },
+      {
+        "LineSegmentID": "1000-1010",
+        "LineSegmentName": {
+          "Zh_tw": "臺北-萬華",
+          "En": "Taipei - Wanhua"
+        },
+        "FromStationID": "1000",
+        "ToStationID": "1010",
+        "SegmentType": "M",
+        "Distance": 2.8
+      },
+      {
+        "LineSegmentID": "1001-1010",
+        "LineSegmentName": {
+          "Zh_tw": "臺北-環島-萬華",
+          "En": "Taipei Surround Island - Wanhua"
+        },
+        "FromStationID": "1001",
+        "ToStationID": "1010",
+        "SegmentType": "M",
+        "Distance": 2.8
+      },
+      {
+        "LineSegmentID": "1010-1020",
+        "LineSegmentName": {
+          "Zh_tw": "萬華-板橋",
+          "En": "Wanhua - Banqiao"
+        },
+        "FromStationID": "1010",
+        "ToStationID": "1020",
+        "SegmentType": "M",
+        "Distance": 4.4
+      },
+      {
+        "LineSegmentID": "1020-1030",
+        "LineSegmentName": {
+          "Zh_tw": "板橋-浮洲",
+          "En": "Banqiao - Fuzhou"
+        },
+        "FromStationID": "1020",
+        "ToStationID": "1030",
+        "SegmentType": "M",
+        "Distance": 2.4
+      },
+      {
+        "LineSegmentID": "1030-1040",
+        "LineSegmentName": {
+          "Zh_tw": "浮洲-樹林",
+          "En": "Fuzhou - Shulin"
+        },
+        "FromStationID": "1030",
+        "ToStationID": "1040",
+        "SegmentType": "M",
+        "Distance": 3
+      },
+      {
+        "LineSegmentID": "1040-1050",
+        "LineSegmentName": {
+          "Zh_tw": "樹林-南樹林",
+          "En": "Shulin - South Shulin"
+        },
+        "FromStationID": "1040",
+        "ToStationID": "1050",
+        "SegmentType": "M",
+        "Distance": 2
+      },
+      {
+        "LineSegmentID": "1050-1060",
+        "LineSegmentName": {
+          "Zh_tw": "南樹林-山佳",
+          "En": "South Shulin - Shanjia"
+        },
+        "FromStationID": "1050",
+        "ToStationID": "1060",
+        "SegmentType": "M",
+        "Distance": 1.9
+      },
+      {
+        "LineSegmentID": "1060-1070",
+        "LineSegmentName": {
+          "Zh_tw": "山佳-鶯歌",
+          "En": "Shanjia - Yingge"
+        },
+        "FromStationID": "1060",
+        "ToStationID": "1070",
+        "SegmentType": "M",
+        "Distance": 4.4
+      },
+      {
+        "LineSegmentID": "1070-1075",
+        "LineSegmentName": {
+          "Zh_tw": "鶯歌-鳳鳴",
+          "En": "Yingge - Fengming"
+        },
+        "FromStationID": "1070",
+        "ToStationID": "1075",
+        "SegmentType": "M",
+        "Distance": 5
+      },
+      {
+        "LineSegmentID": "1075-1080",
+        "LineSegmentName": {
+          "Zh_tw": "鳳鳴-桃園",
+          "En": "Fengming - Taoyuan"
+        },
+        "FromStationID": "1075",
+        "ToStationID": "1080",
+        "SegmentType": "M",
+        "Distance": 3.2
+      },
+      {
+        "LineSegmentID": "1080-1090",
+        "LineSegmentName": {
+          "Zh_tw": "桃園-內壢",
+          "En": "Taoyuan - Neili"
+        },
+        "FromStationID": "1080",
+        "ToStationID": "1090",
+        "SegmentType": "M",
+        "Distance": 5.9
+      },
+      {
+        "LineSegmentID": "1090-1100",
+        "LineSegmentName": {
+          "Zh_tw": "內壢-中壢",
+          "En": "Neili - Zhongli_Taoyuan"
+        },
+        "FromStationID": "1090",
+        "ToStationID": "1100",
+        "SegmentType": "M",
+        "Distance": 4
+      },
+      {
+        "LineSegmentID": "1100-1110",
+        "LineSegmentName": {
+          "Zh_tw": "中壢-埔心",
+          "En": "Zhongli_Taoyuan - Puxin"
+        },
+        "FromStationID": "1100",
+        "ToStationID": "1110",
+        "SegmentType": "M",
+        "Distance": 5.8
+      },
+      {
+        "LineSegmentID": "1110-1120",
+        "LineSegmentName": {
+          "Zh_tw": "埔心-楊梅",
+          "En": "Puxin - Yangmei"
+        },
+        "FromStationID": "1110",
+        "ToStationID": "1120",
+        "SegmentType": "M",
+        "Distance": 4
+      },
+      {
+        "LineSegmentID": "1120-1130",
+        "LineSegmentName": {
+          "Zh_tw": "楊梅-富岡",
+          "En": "Yangmei - Fugang"
+        },
+        "FromStationID": "1120",
+        "ToStationID": "1130",
+        "SegmentType": "M",
+        "Distance": 6.8
+      },
+      {
+        "LineSegmentID": "1130-1140",
+        "LineSegmentName": {
+          "Zh_tw": "富岡-新富",
+          "En": "Fugang - Xinfu"
+        },
+        "FromStationID": "1130",
+        "ToStationID": "1140",
+        "SegmentType": "M",
+        "Distance": 1.7
+      },
+      {
+        "LineSegmentID": "1140-1150",
+        "LineSegmentName": {
+          "Zh_tw": "新富-北湖",
+          "En": "Xinfu - Beihu"
+        },
+        "FromStationID": "1140",
+        "ToStationID": "1150",
+        "SegmentType": "M",
+        "Distance": 1.5
+      },
+      {
+        "LineSegmentID": "1150-1160",
+        "LineSegmentName": {
+          "Zh_tw": "北湖-湖口",
+          "En": "Beihu - Hukou"
+        },
+        "FromStationID": "1150",
+        "ToStationID": "1160",
+        "SegmentType": "M",
+        "Distance": 2.5
+      },
+      {
+        "LineSegmentID": "1160-1170",
+        "LineSegmentName": {
+          "Zh_tw": "湖口-新豐",
+          "En": "Hukou - Xinfeng"
+        },
+        "FromStationID": "1160",
+        "ToStationID": "1170",
+        "SegmentType": "M",
+        "Distance": 6.2
+      },
+      {
+        "LineSegmentID": "1170-1180",
+        "LineSegmentName": {
+          "Zh_tw": "新豐-竹北",
+          "En": "Xinfeng - Zhubei"
+        },
+        "FromStationID": "1170",
+        "ToStationID": "1180",
+        "SegmentType": "M",
+        "Distance": 4.8
+      },
+      {
+        "LineSegmentID": "1180-1190",
+        "LineSegmentName": {
+          "Zh_tw": "竹北-北新竹",
+          "En": "Zhubei - North Hsinchu"
+        },
+        "FromStationID": "1180",
+        "ToStationID": "1190",
+        "SegmentType": "M",
+        "Distance": 4.4
+      },
+      {
+        "LineSegmentID": "1190-1210",
+        "LineSegmentName": {
+          "Zh_tw": "北新竹-新竹",
+          "En": "North Hsinchu - Hsinchu"
+        },
+        "FromStationID": "1190",
+        "ToStationID": "1210",
+        "SegmentType": "M",
+        "Distance": 1.4
+      },
+      {
+        "LineSegmentID": "1210-1220",
+        "LineSegmentName": {
+          "Zh_tw": "新竹-三姓橋",
+          "En": "Hsinchu - Sanxingqiao"
+        },
+        "FromStationID": "1210",
+        "ToStationID": "1220",
+        "SegmentType": "M",
+        "Distance": 4.8
+      },
+      {
+        "LineSegmentID": "1220-1230",
+        "LineSegmentName": {
+          "Zh_tw": "三姓橋-香山",
+          "En": "Sanxingqiao - Xiangshan"
+        },
+        "FromStationID": "1220",
+        "ToStationID": "1230",
+        "SegmentType": "M",
+        "Distance": 3.2
+      },
+      {
+        "LineSegmentID": "1230-1240",
+        "LineSegmentName": {
+          "Zh_tw": "香山-崎頂",
+          "En": "Xiangshan - Qiding"
+        },
+        "FromStationID": "1230",
+        "ToStationID": "1240",
+        "SegmentType": "M",
+        "Distance": 6.2
+      },
+      {
+        "LineSegmentID": "1240-1250",
+        "LineSegmentName": {
+          "Zh_tw": "崎頂-竹南",
+          "En": "Qiding - Zhunan"
+        },
+        "FromStationID": "1240",
+        "ToStationID": "1250",
+        "SegmentType": "M",
+        "Distance": 4.5
+      },
+      {
+        "LineSegmentID": "1250-3140",
+        "LineSegmentName": {
+          "Zh_tw": "竹南-造橋",
+          "En": "Zhunan - Zaoqiao"
+        },
+        "FromStationID": "1250",
+        "ToStationID": "3140",
+        "SegmentType": "M",
+        "Distance": 5.4
+      },
+      {
+        "LineSegmentID": "3140-3150",
+        "LineSegmentName": {
+          "Zh_tw": "造橋-豐富",
+          "En": "Zaoqiao - Fengfu"
+        },
+        "FromStationID": "3140",
+        "ToStationID": "3150",
+        "SegmentType": "M",
+        "Distance": 5.9
+      },
+      {
+        "LineSegmentID": "3150-3160",
+        "LineSegmentName": {
+          "Zh_tw": "豐富-苗栗",
+          "En": "Fengfu - Miaoli"
+        },
+        "FromStationID": "3150",
+        "ToStationID": "3160",
+        "SegmentType": "M",
+        "Distance": 4
+      },
+      {
+        "LineSegmentID": "3160-3170",
+        "LineSegmentName": {
+          "Zh_tw": "苗栗-南勢",
+          "En": "Miaoli - Nanshi"
+        },
+        "FromStationID": "3160",
+        "ToStationID": "3170",
+        "SegmentType": "M",
+        "Distance": 6.6
+      },
+      {
+        "LineSegmentID": "3170-3180",
+        "LineSegmentName": {
+          "Zh_tw": "南勢-銅鑼",
+          "En": "Nanshi - Tongluo"
+        },
+        "FromStationID": "3170",
+        "ToStationID": "3180",
+        "SegmentType": "M",
+        "Distance": 4.2
+      },
+      {
+        "LineSegmentID": "3180-3190",
+        "LineSegmentName": {
+          "Zh_tw": "銅鑼-三義",
+          "En": "Tongluo - Sanyi"
+        },
+        "FromStationID": "3180",
+        "ToStationID": "3190",
+        "SegmentType": "M",
+        "Distance": 7.4
+      },
+      {
+        "LineSegmentID": "3190-3210",
+        "LineSegmentName": {
+          "Zh_tw": "三義-泰安",
+          "En": "Sanyi - Tai'an"
+        },
+        "FromStationID": "3190",
+        "ToStationID": "3210",
+        "SegmentType": "M",
+        "Distance": 10.9
+      },
+      {
+        "LineSegmentID": "3210-3220",
+        "LineSegmentName": {
+          "Zh_tw": "泰安-后里",
+          "En": "Tai'an - Houli"
+        },
+        "FromStationID": "3210",
+        "ToStationID": "3220",
+        "SegmentType": "M",
+        "Distance": 2.6
+      },
+      {
+        "LineSegmentID": "3220-3230",
+        "LineSegmentName": {
+          "Zh_tw": "后里-豐原",
+          "En": "Houli - Fengyuan"
+        },
+        "FromStationID": "3220",
+        "ToStationID": "3230",
+        "SegmentType": "M",
+        "Distance": 6.7
+      },
+      {
+        "LineSegmentID": "3230-3240",
+        "LineSegmentName": {
+          "Zh_tw": "豐原-栗林",
+          "En": "Fengyuan - Lilin"
+        },
+        "FromStationID": "3230",
+        "ToStationID": "3240",
+        "SegmentType": "M",
+        "Distance": 2.6
+      },
+      {
+        "LineSegmentID": "3240-3250",
+        "LineSegmentName": {
+          "Zh_tw": "栗林-潭子",
+          "En": "Lilin - Tanzi"
+        },
+        "FromStationID": "3240",
+        "ToStationID": "3250",
+        "SegmentType": "M",
+        "Distance": 2.5
+      },
+      {
+        "LineSegmentID": "3250-3260",
+        "LineSegmentName": {
+          "Zh_tw": "潭子-頭家厝",
+          "En": "Tanzi - Toujiacuo"
+        },
+        "FromStationID": "3250",
+        "ToStationID": "3260",
+        "SegmentType": "M",
+        "Distance": 1.9
+      },
+      {
+        "LineSegmentID": "3260-3270",
+        "LineSegmentName": {
+          "Zh_tw": "頭家厝-松竹",
+          "En": "Toujiacuo - Songzhu"
+        },
+        "FromStationID": "3260",
+        "ToStationID": "3270",
+        "SegmentType": "M",
+        "Distance": 1.7
+      },
+      {
+        "LineSegmentID": "3270-3280",
+        "LineSegmentName": {
+          "Zh_tw": "松竹-太原",
+          "En": "Songzhu - Taiyuan"
+        },
+        "FromStationID": "3270",
+        "ToStationID": "3280",
+        "SegmentType": "M",
+        "Distance": 1.8
+      },
+      {
+        "LineSegmentID": "3280-3290",
+        "LineSegmentName": {
+          "Zh_tw": "太原-精武",
+          "En": "Taiyuan - Jingwu"
+        },
+        "FromStationID": "3280",
+        "ToStationID": "3290",
+        "SegmentType": "M",
+        "Distance": 1.7
+      },
+      {
+        "LineSegmentID": "3290-3300",
+        "LineSegmentName": {
+          "Zh_tw": "精武-臺中",
+          "En": "Jingwu - Taichung"
+        },
+        "FromStationID": "3290",
+        "ToStationID": "3300",
+        "SegmentType": "M",
+        "Distance": 1.9
+      },
+      {
+        "LineSegmentID": "3300-3310",
+        "LineSegmentName": {
+          "Zh_tw": "臺中-五權",
+          "En": "Taichung - Wuquan"
+        },
+        "FromStationID": "3300",
+        "ToStationID": "3310",
+        "SegmentType": "M",
+        "Distance": 2.2
+      },
+      {
+        "LineSegmentID": "3310-3320",
+        "LineSegmentName": {
+          "Zh_tw": "五權-大慶",
+          "En": "Wuquan - Daqing"
+        },
+        "FromStationID": "3310",
+        "ToStationID": "3320",
+        "SegmentType": "M",
+        "Distance": 2.1
+      },
+      {
+        "LineSegmentID": "3320-3330",
+        "LineSegmentName": {
+          "Zh_tw": "大慶-烏日",
+          "En": "Daqing - Wuri"
+        },
+        "FromStationID": "3320",
+        "ToStationID": "3330",
+        "SegmentType": "M",
+        "Distance": 3.1
+      },
+      {
+        "LineSegmentID": "3330-3340",
+        "LineSegmentName": {
+          "Zh_tw": "烏日-新烏日",
+          "En": "Wuri - Xinwuri"
+        },
+        "FromStationID": "3330",
+        "ToStationID": "3340",
+        "SegmentType": "M",
+        "Distance": 0.9
+      },
+      {
+        "LineSegmentID": "3340-3350",
+        "LineSegmentName": {
+          "Zh_tw": "新烏日-成功",
+          "En": "Xinwuri - Chenggong"
+        },
+        "FromStationID": "3340",
+        "ToStationID": "3350",
+        "SegmentType": "M",
+        "Distance": 2.4
+      },
+      {
+        "LineSegmentID": "3350-3360",
+        "LineSegmentName": {
+          "Zh_tw": "成功-彰化",
+          "En": "Chenggong - Changhua"
+        },
+        "FromStationID": "3350",
+        "ToStationID": "3360",
+        "SegmentType": "M",
+        "Distance": 7.1
+      },
+      {
+        "LineSegmentID": "3360-3370",
+        "LineSegmentName": {
+          "Zh_tw": "彰化-花壇",
+          "En": "Changhua - Huatan"
+        },
+        "FromStationID": "3360",
+        "ToStationID": "3370",
+        "SegmentType": "M",
+        "Distance": 6.6
+      },
+      {
+        "LineSegmentID": "3370-3380",
+        "LineSegmentName": {
+          "Zh_tw": "花壇-大村",
+          "En": "Huatan - Dacun"
+        },
+        "FromStationID": "3370",
+        "ToStationID": "3380",
+        "SegmentType": "M",
+        "Distance": 4.6
+      },
+      {
+        "LineSegmentID": "3380-3390",
+        "LineSegmentName": {
+          "Zh_tw": "大村-員林",
+          "En": "Dacun - Yuanlin"
+        },
+        "FromStationID": "3380",
+        "ToStationID": "3390",
+        "SegmentType": "M",
+        "Distance": 3.5
+      },
+      {
+        "LineSegmentID": "3390-3400",
+        "LineSegmentName": {
+          "Zh_tw": "員林-永靖",
+          "En": "Yuanlin - Yongjing"
+        },
+        "FromStationID": "3390",
+        "ToStationID": "3400",
+        "SegmentType": "M",
+        "Distance": 3.5
+      },
+      {
+        "LineSegmentID": "3400-3410",
+        "LineSegmentName": {
+          "Zh_tw": "永靖-社頭",
+          "En": "Yongjing - Shetou"
+        },
+        "FromStationID": "3400",
+        "ToStationID": "3410",
+        "SegmentType": "M",
+        "Distance": 3.7
+      },
+      {
+        "LineSegmentID": "3410-3420",
+        "LineSegmentName": {
+          "Zh_tw": "社頭-田中",
+          "En": "Shetou - Tianzhong"
+        },
+        "FromStationID": "3410",
+        "ToStationID": "3420",
+        "SegmentType": "M",
+        "Distance": 4.3
+      },
+      {
+        "LineSegmentID": "3420-3430",
+        "LineSegmentName": {
+          "Zh_tw": "田中-二水",
+          "En": "Tianzhong - Ershui"
+        },
+        "FromStationID": "3420",
+        "ToStationID": "3430",
+        "SegmentType": "M",
+        "Distance": 5.8
+      },
+      {
+        "LineSegmentID": "3430-3450",
+        "LineSegmentName": {
+          "Zh_tw": "二水-林內",
+          "En": "Ershui - Linnei"
+        },
+        "FromStationID": "3430",
+        "ToStationID": "3450",
+        "SegmentType": "M",
+        "Distance": 8.1
+      },
+      {
+        "LineSegmentID": "3450-3460",
+        "LineSegmentName": {
+          "Zh_tw": "林內-石榴",
+          "En": "Linnei - Shiliu"
+        },
+        "FromStationID": "3450",
+        "ToStationID": "3460",
+        "SegmentType": "M",
+        "Distance": 4.8
+      },
+      {
+        "LineSegmentID": "3460-3470",
+        "LineSegmentName": {
+          "Zh_tw": "石榴-斗六",
+          "En": "Shiliu - Douliu"
+        },
+        "FromStationID": "3460",
+        "ToStationID": "3470",
+        "SegmentType": "M",
+        "Distance": 4.8
+      },
+      {
+        "LineSegmentID": "3470-3480",
+        "LineSegmentName": {
+          "Zh_tw": "斗六-斗南",
+          "En": "Douliu - Dounan"
+        },
+        "FromStationID": "3470",
+        "ToStationID": "3480",
+        "SegmentType": "M",
+        "Distance": 7.6
+      },
+      {
+        "LineSegmentID": "3480-3490",
+        "LineSegmentName": {
+          "Zh_tw": "斗南-石龜",
+          "En": "Dounan - Shigui"
+        },
+        "FromStationID": "3480",
+        "ToStationID": "3490",
+        "SegmentType": "M",
+        "Distance": 3.9
+      },
+      {
+        "LineSegmentID": "3490-4050",
+        "LineSegmentName": {
+          "Zh_tw": "石龜-大林",
+          "En": "Shigui - Dalin"
+        },
+        "FromStationID": "3490",
+        "ToStationID": "4050",
+        "SegmentType": "M",
+        "Distance": 4.6
+      },
+      {
+        "LineSegmentID": "4050-4060",
+        "LineSegmentName": {
+          "Zh_tw": "大林-民雄",
+          "En": "Dalin - Minxiong"
+        },
+        "FromStationID": "4050",
+        "ToStationID": "4060",
+        "SegmentType": "M",
+        "Distance": 5.8
+      },
+      {
+        "LineSegmentID": "4060-4070",
+        "LineSegmentName": {
+          "Zh_tw": "民雄-嘉北",
+          "En": "Minxiong - Jiabei"
+        },
+        "FromStationID": "4060",
+        "ToStationID": "4070",
+        "SegmentType": "M",
+        "Distance": 6.7
+      },
+      {
+        "LineSegmentID": "4070-4080",
+        "LineSegmentName": {
+          "Zh_tw": "嘉北-嘉義",
+          "En": "Jiabei - Chiayi"
+        },
+        "FromStationID": "4070",
+        "ToStationID": "4080",
+        "SegmentType": "M",
+        "Distance": 2.6
+      },
+      {
+        "LineSegmentID": "4080-4090",
+        "LineSegmentName": {
+          "Zh_tw": "嘉義-水上",
+          "En": "Chiayi - Shuishang"
+        },
+        "FromStationID": "4080",
+        "ToStationID": "4090",
+        "SegmentType": "M",
+        "Distance": 6.6
+      },
+      {
+        "LineSegmentID": "4090-4100",
+        "LineSegmentName": {
+          "Zh_tw": "水上-南靖",
+          "En": "Shuishang - Nanjing"
+        },
+        "FromStationID": "4090",
+        "ToStationID": "4100",
+        "SegmentType": "M",
+        "Distance": 2.6
+      },
+      {
+        "LineSegmentID": "4100-4110",
+        "LineSegmentName": {
+          "Zh_tw": "南靖-後壁",
+          "En": "Nanjing - Houbi"
+        },
+        "FromStationID": "4100",
+        "ToStationID": "4110",
+        "SegmentType": "M",
+        "Distance": 6
+      },
+      {
+        "LineSegmentID": "4110-4120",
+        "LineSegmentName": {
+          "Zh_tw": "後壁-新營",
+          "En": "Houbi - Xinying"
+        },
+        "FromStationID": "4110",
+        "ToStationID": "4120",
+        "SegmentType": "M",
+        "Distance": 7.7
+      },
+      {
+        "LineSegmentID": "4120-4130",
+        "LineSegmentName": {
+          "Zh_tw": "新營-柳營",
+          "En": "Xinying - Liuying"
+        },
+        "FromStationID": "4120",
+        "ToStationID": "4130",
+        "SegmentType": "M",
+        "Distance": 3.3
+      },
+      {
+        "LineSegmentID": "4130-4140",
+        "LineSegmentName": {
+          "Zh_tw": "柳營-林鳳營",
+          "En": "Liuying - Linfengying"
+        },
+        "FromStationID": "4130",
+        "ToStationID": "4140",
+        "SegmentType": "M",
+        "Distance": 3.9
+      },
+      {
+        "LineSegmentID": "4140-4150",
+        "LineSegmentName": {
+          "Zh_tw": "林鳳營-隆田",
+          "En": "Linfengying - Longtian"
+        },
+        "FromStationID": "4140",
+        "ToStationID": "4150",
+        "SegmentType": "M",
+        "Distance": 5.5
+      },
+      {
+        "LineSegmentID": "4150-4160",
+        "LineSegmentName": {
+          "Zh_tw": "隆田-拔林",
+          "En": "Longtian - Balin"
+        },
+        "FromStationID": "4150",
+        "ToStationID": "4160",
+        "SegmentType": "M",
+        "Distance": 2.2
+      },
+      {
+        "LineSegmentID": "4160-4170",
+        "LineSegmentName": {
+          "Zh_tw": "拔林-善化",
+          "En": "Balin - Shanhua"
+        },
+        "FromStationID": "4160",
+        "ToStationID": "4170",
+        "SegmentType": "M",
+        "Distance": 4.6
+      },
+      {
+        "LineSegmentID": "4170-4180",
+        "LineSegmentName": {
+          "Zh_tw": "善化-南科",
+          "En": "Shanhua - Nanke"
+        },
+        "FromStationID": "4170",
+        "ToStationID": "4180",
+        "SegmentType": "M",
+        "Distance": 2.9
+      },
+      {
+        "LineSegmentID": "4180-4190",
+        "LineSegmentName": {
+          "Zh_tw": "南科-新市",
+          "En": "Nanke - Xinshi"
+        },
+        "FromStationID": "4180",
+        "ToStationID": "4190",
+        "SegmentType": "M",
+        "Distance": 4.7
+      },
+      {
+        "LineSegmentID": "4190-4200",
+        "LineSegmentName": {
+          "Zh_tw": "新市-永康",
+          "En": "Xinshi - Yongkang"
+        },
+        "FromStationID": "4190",
+        "ToStationID": "4200",
+        "SegmentType": "M",
+        "Distance": 5
+      },
+      {
+        "LineSegmentID": "4200-4210",
+        "LineSegmentName": {
+          "Zh_tw": "永康-大橋",
+          "En": "Yongkang - Daqiao"
+        },
+        "FromStationID": "4200",
+        "ToStationID": "4210",
+        "SegmentType": "M",
+        "Distance": 3.7
+      },
+      {
+        "LineSegmentID": "4210-4220",
+        "LineSegmentName": {
+          "Zh_tw": "大橋-臺南",
+          "En": "Daqiao - Tainan"
+        },
+        "FromStationID": "4210",
+        "ToStationID": "4220",
+        "SegmentType": "M",
+        "Distance": 2.7
+      },
+      {
+        "LineSegmentID": "4220-4250",
+        "LineSegmentName": {
+          "Zh_tw": "臺南-保安",
+          "En": "Tainan - Bao'an"
+        },
+        "FromStationID": "4220",
+        "ToStationID": "4250",
+        "SegmentType": "M",
+        "Distance": 7.6
+      },
+      {
+        "LineSegmentID": "4250-4260",
+        "LineSegmentName": {
+          "Zh_tw": "保安-仁德",
+          "En": "Bao'an - Rende"
+        },
+        "FromStationID": "4250",
+        "ToStationID": "4260",
+        "SegmentType": "M",
+        "Distance": 1.4
+      },
+      {
+        "LineSegmentID": "4260-4270",
+        "LineSegmentName": {
+          "Zh_tw": "仁德-中洲",
+          "En": "Rende - Zhongzhou"
+        },
+        "FromStationID": "4260",
+        "ToStationID": "4270",
+        "SegmentType": "M",
+        "Distance": 2.5
+      },
+      {
+        "LineSegmentID": "4270-4290",
+        "LineSegmentName": {
+          "Zh_tw": "中洲-大湖",
+          "En": "Zhongzhou - Dahu"
+        },
+        "FromStationID": "4270",
+        "ToStationID": "4290",
+        "SegmentType": "M",
+        "Distance": 2.9
+      },
+      {
+        "LineSegmentID": "4290-4300",
+        "LineSegmentName": {
+          "Zh_tw": "大湖-路竹",
+          "En": "Dahu - Luzhu"
+        },
+        "FromStationID": "4290",
+        "ToStationID": "4300",
+        "SegmentType": "M",
+        "Distance": 3
+      },
+      {
+        "LineSegmentID": "4300-4310",
+        "LineSegmentName": {
+          "Zh_tw": "路竹-岡山",
+          "En": "Luzhu - Gangshan"
+        },
+        "FromStationID": "4300",
+        "ToStationID": "4310",
+        "SegmentType": "M",
+        "Distance": 7.8
+      },
+      {
+        "LineSegmentID": "4310-4320",
+        "LineSegmentName": {
+          "Zh_tw": "岡山-橋頭",
+          "En": "Gangshan - Qiaotou"
+        },
+        "FromStationID": "4310",
+        "ToStationID": "4320",
+        "SegmentType": "M",
+        "Distance": 3.6
+      },
+      {
+        "LineSegmentID": "4320-4330",
+        "LineSegmentName": {
+          "Zh_tw": "橋頭-楠梓",
+          "En": "Qiaotou - Nanzi"
+        },
+        "FromStationID": "4320",
+        "ToStationID": "4330",
+        "SegmentType": "M",
+        "Distance": 4.2
+      },
+      {
+        "LineSegmentID": "4330-4340",
+        "LineSegmentName": {
+          "Zh_tw": "楠梓-新左營",
+          "En": "Nanzi - Xinzuoying"
+        },
+        "FromStationID": "4330",
+        "ToStationID": "4340",
+        "SegmentType": "M",
+        "Distance": 5.1
+      },
+      {
+        "LineSegmentID": "4340-4350",
+        "LineSegmentName": {
+          "Zh_tw": "新左營-左營",
+          "En": "Xinzuoying - Zuoying"
+        },
+        "FromStationID": "4340",
+        "ToStationID": "4350",
+        "SegmentType": "M",
+        "Distance": 2
+      },
+      {
+        "LineSegmentID": "4350-4360",
+        "LineSegmentName": {
+          "Zh_tw": "左營-內惟",
+          "En": "Zuoying - Neiwei"
+        },
+        "FromStationID": "4350",
+        "ToStationID": "4360",
+        "SegmentType": "M",
+        "Distance": 1.1
+      },
+      {
+        "LineSegmentID": "4360-4370",
+        "LineSegmentName": {
+          "Zh_tw": "內惟-美術館",
+          "En": "Neiwei - Museum of Fine Arts"
+        },
+        "FromStationID": "4360",
+        "ToStationID": "4370",
+        "SegmentType": "M",
+        "Distance": 1.7
+      },
+      {
+        "LineSegmentID": "4370-4380",
+        "LineSegmentName": {
+          "Zh_tw": "美術館-鼓山",
+          "En": "Museum of Fine Arts - Gushan"
+        },
+        "FromStationID": "4370",
+        "ToStationID": "4380",
+        "SegmentType": "M",
+        "Distance": 1.2
+      },
+      {
+        "LineSegmentID": "4380-4390",
+        "LineSegmentName": {
+          "Zh_tw": "鼓山-三塊厝",
+          "En": "Gushan - Sankuaicuo"
+        },
+        "FromStationID": "4380",
+        "ToStationID": "4390",
+        "SegmentType": "M",
+        "Distance": 1.7
+      },
+      {
+        "LineSegmentID": "4390-4400",
+        "LineSegmentName": {
+          "Zh_tw": "三塊厝-高雄",
+          "En": "Sankuaicuo - Kaohsiung"
+        },
+        "FromStationID": "4390",
+        "ToStationID": "4400",
+        "SegmentType": "M",
+        "Distance": 0.9
+      },
+      {
+        "LineSegmentID": "4400-4410",
+        "LineSegmentName": {
+          "Zh_tw": "高雄-民族",
+          "En": "Kaohsiung - Minzu"
+        },
+        "FromStationID": "4400",
+        "ToStationID": "4410",
+        "SegmentType": "M",
+        "Distance": 1.3
+      },
+      {
+        "LineSegmentID": "4410-4420",
+        "LineSegmentName": {
+          "Zh_tw": "民族-科工館",
+          "En": "Minzu - Science And Technology Museum"
+        },
+        "FromStationID": "4410",
+        "ToStationID": "4420",
+        "SegmentType": "M",
+        "Distance": 1.1
+      },
+      {
+        "LineSegmentID": "4420-4430",
+        "LineSegmentName": {
+          "Zh_tw": "科工館-正義",
+          "En": "Science And Technology Museum - Zhengyi"
+        },
+        "FromStationID": "4420",
+        "ToStationID": "4430",
+        "SegmentType": "M",
+        "Distance": 1.8
+      },
+      {
+        "LineSegmentID": "4430-4440",
+        "LineSegmentName": {
+          "Zh_tw": "正義-鳳山",
+          "En": "Zhengyi - Fongshan"
+        },
+        "FromStationID": "4430",
+        "ToStationID": "4440",
+        "SegmentType": "M",
+        "Distance": 1.3
+      },
+      {
+        "LineSegmentID": "4440-4450",
+        "LineSegmentName": {
+          "Zh_tw": "鳳山-後庄",
+          "En": "Fongshan - Houzhuang"
+        },
+        "FromStationID": "4440",
+        "ToStationID": "4450",
+        "SegmentType": "M",
+        "Distance": 3.9
+      },
+      {
+        "LineSegmentID": "4450-4460",
+        "LineSegmentName": {
+          "Zh_tw": "後庄-九曲堂",
+          "En": "Houzhuang - Jiuqutang"
+        },
+        "FromStationID": "4450",
+        "ToStationID": "4460",
+        "SegmentType": "M",
+        "Distance": 4.2
+      },
+      {
+        "LineSegmentID": "4460-4470",
+        "LineSegmentName": {
+          "Zh_tw": "九曲堂-六塊厝",
+          "En": "Jiuqutang - Liukuaicuo"
+        },
+        "FromStationID": "4460",
+        "ToStationID": "4470",
+        "SegmentType": "M",
+        "Distance": 5
+      },
+      {
+        "LineSegmentID": "4470-5000",
+        "LineSegmentName": {
+          "Zh_tw": "六塊厝-屏東",
+          "En": "Liukuaicuo - Pingtung"
+        },
+        "FromStationID": "4470",
+        "ToStationID": "5000",
+        "SegmentType": "M",
+        "Distance": 2.3
+      }
+    ]
+  },
+  {
+    "LineID": "WL-C",
+    "LineName": {
+      "Zh_tw": "西部幹線 (海線)",
+      "En": "Western Main Line (Coast Line)"
+    },
+    "LineSegments": [
+      {
+        "LineSegmentID": "1250-2110",
+        "LineSegmentName": {
+          "Zh_tw": "竹南-談文",
+          "En": "Zhunan - Tanwen"
+        },
+        "FromStationID": "1250",
+        "ToStationID": "2110",
+        "SegmentType": "M",
+        "Distance": 4.5
+      },
+      {
+        "LineSegmentID": "2110-2120",
+        "LineSegmentName": {
+          "Zh_tw": "談文-大山",
+          "En": "Tanwen - Dashan"
+        },
+        "FromStationID": "2110",
+        "ToStationID": "2120",
+        "SegmentType": "M",
+        "Distance": 6.8
+      },
+      {
+        "LineSegmentID": "2120-2130",
+        "LineSegmentName": {
+          "Zh_tw": "大山-後龍",
+          "En": "Dashan - Houlong"
+        },
+        "FromStationID": "2120",
+        "ToStationID": "2130",
+        "SegmentType": "M",
+        "Distance": 3.7
+      },
+      {
+        "LineSegmentID": "2130-2140",
+        "LineSegmentName": {
+          "Zh_tw": "後龍-龍港",
+          "En": "Houlong - Longgang"
+        },
+        "FromStationID": "2130",
+        "ToStationID": "2140",
+        "SegmentType": "M",
+        "Distance": 3.6
+      },
+      {
+        "LineSegmentID": "2140-2150",
+        "LineSegmentName": {
+          "Zh_tw": "龍港-白沙屯",
+          "En": "Longgang - Baishatun"
+        },
+        "FromStationID": "2140",
+        "ToStationID": "2150",
+        "SegmentType": "M",
+        "Distance": 8.1
+      },
+      {
+        "LineSegmentID": "2150-2160",
+        "LineSegmentName": {
+          "Zh_tw": "白沙屯-新埔",
+          "En": "Baishatun - Xinpu"
+        },
+        "FromStationID": "2150",
+        "ToStationID": "2160",
+        "SegmentType": "M",
+        "Distance": 3.1
+      },
+      {
+        "LineSegmentID": "2160-2170",
+        "LineSegmentName": {
+          "Zh_tw": "新埔-通霄",
+          "En": "Xinpu - Tongxiao"
+        },
+        "FromStationID": "2160",
+        "ToStationID": "2170",
+        "SegmentType": "M",
+        "Distance": 5.8
+      },
+      {
+        "LineSegmentID": "2170-2180",
+        "LineSegmentName": {
+          "Zh_tw": "通霄-苑裡",
+          "En": "Tongxiao - Yuanli"
+        },
+        "FromStationID": "2170",
+        "ToStationID": "2180",
+        "SegmentType": "M",
+        "Distance": 6.1
+      },
+      {
+        "LineSegmentID": "2180-2190",
+        "LineSegmentName": {
+          "Zh_tw": "苑裡-日南",
+          "En": "Yuanli - Rinan"
+        },
+        "FromStationID": "2180",
+        "ToStationID": "2190",
+        "SegmentType": "M",
+        "Distance": 7.7
+      },
+      {
+        "LineSegmentID": "2190-2200",
+        "LineSegmentName": {
+          "Zh_tw": "日南-大甲",
+          "En": "Rinan - Dajia"
+        },
+        "FromStationID": "2190",
+        "ToStationID": "2200",
+        "SegmentType": "M",
+        "Distance": 4.7
+      },
+      {
+        "LineSegmentID": "2200-2210",
+        "LineSegmentName": {
+          "Zh_tw": "大甲-臺中港",
+          "En": "Dajia - Taichung Port"
+        },
+        "FromStationID": "2200",
+        "ToStationID": "2210",
+        "SegmentType": "M",
+        "Distance": 5.2
+      },
+      {
+        "LineSegmentID": "2210-2220",
+        "LineSegmentName": {
+          "Zh_tw": "臺中港-清水",
+          "En": "Taichung Port - Qingshui"
+        },
+        "FromStationID": "2210",
+        "ToStationID": "2220",
+        "SegmentType": "M",
+        "Distance": 6
+      },
+      {
+        "LineSegmentID": "2220-2230",
+        "LineSegmentName": {
+          "Zh_tw": "清水-沙鹿",
+          "En": "Qingshui - Shalu"
+        },
+        "FromStationID": "2220",
+        "ToStationID": "2230",
+        "SegmentType": "M",
+        "Distance": 3.2
+      },
+      {
+        "LineSegmentID": "2230-2240",
+        "LineSegmentName": {
+          "Zh_tw": "沙鹿-龍井",
+          "En": "Shalu - Longjing"
+        },
+        "FromStationID": "2230",
+        "ToStationID": "2240",
+        "SegmentType": "M",
+        "Distance": 4.6
+      },
+      {
+        "LineSegmentID": "2240-2250",
+        "LineSegmentName": {
+          "Zh_tw": "龍井-大肚",
+          "En": "Longjing - Dadu"
+        },
+        "FromStationID": "2240",
+        "ToStationID": "2250",
+        "SegmentType": "M",
+        "Distance": 5
+      },
+      {
+        "LineSegmentID": "2250-2260",
+        "LineSegmentName": {
+          "Zh_tw": "大肚-追分",
+          "En": "Dadu - Zhuifen"
+        },
+        "FromStationID": "2250",
+        "ToStationID": "2260",
+        "SegmentType": "M",
+        "Distance": 5
+      },
+      {
+        "LineSegmentID": "2260-3360",
+        "LineSegmentName": {
+          "Zh_tw": "追分-彰化",
+          "En": "Zhuifen - Changhua"
+        },
+        "FromStationID": "2260",
+        "ToStationID": "3360",
+        "SegmentType": "M",
+        "Distance": 7.2
+      }
+    ]
+  }
+]

@@ -2,7 +2,7 @@
  * useTraData - 台鐵資料載入 Hook
  *
  * 載入所有台鐵相關資料：
- * - 軌道顯示資料 (tracks_official)
+ * - 軌道顯示資料 (優先使用 tracks_golden，fallback 到 tracks_official)
  * - 車站資料 (stations_snapped)
  * - O-D 軌道 (tracks_od) - 用於列車位置計算
  * - 時刻表 (schedules_od)
@@ -125,11 +125,15 @@ export function useTraData(): TraDataState {
       try {
         setLoading(true);
 
-        // === 載入顯示用軌道 (官方資料) ===
+        // === 載入顯示用軌道 (優先使用 Golden Track) ===
         const trackFeatures: Track[] = [];
         for (const trackId of TRA_TRACK_IDS) {
           try {
-            const res = await fetch(`/data/tra/tracks_official/${trackId}.geojson`);
+            // 優先嘗試 tracks_golden，fallback 到 tracks_official
+            let res = await fetch(`/data/tra/tracks_golden/${trackId}.geojson`);
+            if (!res.ok) {
+              res = await fetch(`/data/tra/tracks_official/${trackId}.geojson`);
+            }
             if (res.ok) {
               const data = await res.json();
               if (data.features?.[0]) {

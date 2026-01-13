@@ -217,16 +217,16 @@ function App() {
   const [interactionVersion, setInteractionVersion] = useState(0); // 用於觸發 effect 重新執行
   const isUserInteracting = useRef(false); // 追蹤使用者是否正在操作地圖
 
-  // 路線篩選狀態（MRT 線路）
+  // 路線篩選狀態（MRT 線路）- 預設隱藏以專注台鐵
   const [visibleLines, setVisibleLines] = useState<Set<string>>(
-    new Set(['R', 'BL', 'G', 'O', 'BR', 'K', 'V', 'A', 'Y'])
+    new Set([])
   );
 
-  // 貓空纜車三段式狀態：full | tracks-only | hidden
-  const [mkState, setMkState] = useState<MKFilterState>('tracks-only');
+  // 貓空纜車三段式狀態：full | tracks-only | hidden - 預設隱藏
+  const [mkState, setMkState] = useState<MKFilterState>('hidden');
 
-  // 高鐵三段式狀態：full | tracks-only | hidden
-  const [thsrState, setThsrState] = useState<ThsrFilterState>('full');
+  // 高鐵三段式狀態：full | tracks-only | hidden - 預設隱藏以專注台鐵
+  const [thsrState, setThsrState] = useState<ThsrFilterState>('hidden');
 
   // 台鐵三段式狀態：full | tracks-only | hidden
   const [traState, setTraState] = useState<TraFilterState>('full');
@@ -1184,7 +1184,7 @@ function App() {
         type: 'Feature',
         properties: {
           track_id: trackId,
-          od_track_id: track.properties?.od_track_id || trackId,
+          od_track_id: trackId,  // Map key 就是 od_track_id
         },
         geometry: track.geometry,
       });
@@ -1267,7 +1267,14 @@ function App() {
     console.log(`載入 ${traTracks.features?.length || 0} 條顯示軌道到地圖`);
   }, [mapLoaded, traTracks, styleVersion]);
 
-  // 載入台鐵車站圖層（沙崙線 MVP）
+  // TRA 與 THSR 共用 station_id 的車站（同一位置有 THSR 標籤，不重複顯示 TRA 標籤）
+  // THSR station_ids: 0990, 1000, 1010, 1020, 1030, 1035, 1040, 1043, 1047, 1050, 1060, 1070
+  const THSR_STATION_IDS = [
+    '0990', '1000', '1010', '1020', '1030', '1035',
+    '1040', '1043', '1047', '1050', '1060', '1070'
+  ];
+
+  // 載入台鐵車站圖層
   useEffect(() => {
     if (!map.current || !mapLoaded || !traStations) return;
 
@@ -1281,9 +1288,19 @@ function App() {
       map.current.removeSource('tra-stations');
     }
 
+    // 只有當高鐵顯示時，才過濾掉與 THSR 共用 station_id 的車站（避免標籤重疊）
+    const filteredStations: GeoJSON.FeatureCollection = {
+      type: 'FeatureCollection',
+      features: thsrState === 'hidden'
+        ? traStations.features  // 高鐵隱藏時，顯示所有台鐵站點
+        : traStations.features.filter(
+            (f) => !THSR_STATION_IDS.includes(f.properties?.station_id)
+          ),
+    };
+
     map.current.addSource('tra-stations', {
       type: 'geojson',
-      data: traStations as GeoJSON.FeatureCollection,
+      data: filteredStations,
     });
 
     map.current.addLayer({
@@ -1321,7 +1338,7 @@ function App() {
         'text-emissive-strength': 1.0,
       },
     });
-  }, [mapLoaded, traStations, styleVersion]);
+  }, [mapLoaded, traStations, thsrState, styleVersion]);
 
   // 更新台鐵圖層可見性
   useEffect(() => {

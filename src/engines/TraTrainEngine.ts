@@ -172,7 +172,17 @@ function timeToSeconds(timeStr: string): number {
  * BH: 0=往花蓮(南下), 1=往蘇澳新(北上)
  */
 function getTrackIdFromOdTrackId(odTrackId: string): string {
-  const [lineId, _origin, dest] = odTrackId.split('-');
+  const parts = odTrackId.split('-');
+  const lineId = parts[0];
+
+  // WL 西部幹線：WL-SL-BD-0 → WL-N-SL-BD-0
+  if (lineId === 'WL') {
+    // odTrackId 格式: WL-SL-BD-0 或 WL-BD-SL-1
+    const direction = parts[parts.length - 1];  // 取最後一個數字
+    return `WL-N-SL-BD-${direction}`;
+  }
+
+  const [, _origin, dest] = parts;
 
   // YL 宜蘭線：終點是 TP (臺北) 則為北上 (方向 1)
   if (lineId === 'YL') {

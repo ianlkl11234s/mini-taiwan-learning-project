@@ -1,0 +1,1314 @@
+{
+  "track_id": "WL-BD-SL-1",
+  "departures": [
+    {
+      "train_id": "WL-BD-SL-1-06",
+      "train_no": "TEST06",
+      "train_type": "區間",
+      "departure_time": "06:30:00",
+      "od_track_id": "WL-BD-SL-1",
+      "origin_station": "八堵",
+      "destination_station": "樹林",
+      "total_travel_time": 2160,
+      "stations": [
+        {
+          "station_id": "0920",
+          "arrival": 0,
+          "departure": 60
+        },
+        {
+          "station_id": "0930",
+          "arrival": 180,
+          "departure": 240
+        },
+        {
+          "station_id": "0940",
+          "arrival": 360,
+          "departure": 420
+        },
+        {
+          "station_id": "0950",
+          "arrival": 540,
+          "departure": 600
+        },
+        {
+          "station_id": "0960",
+          "arrival": 720,
+          "departure": 780
+        },
+        {
+          "station_id": "0970",
+          "arrival": 900,
+          "departure": 960
+        },
+        {
+          "station_id": "0980",
+          "arrival": 1080,
+          "departure": 1140
+        },
+        {
+          "station_id": "0990",
+          "arrival": 1260,
+          "departure": 1320
+        },
+        {
+          "station_id": "1000",
+          "arrival": 1440,
+          "departure": 1500
+        },
+        {
+          "station_id": "1010",
+          "arrival": 1620,
+          "departure": 1680
+        },
+        {
+          "station_id": "1020",
+          "arrival": 1800,
+          "departure": 1860
+        },
+        {
+          "station_id": "1030",
+          "arrival": 1980,
+          "departure": 2040
+        },
+        {
+          "station_id": "1040",
+          "arrival": 2160,
+          "departure": 2220
+        }
+      ]
+    },
+    {
+      "train_id": "WL-BD-SL-1-07",
+      "train_no": "TEST07",
+      "train_type": "區間",
+      "departure_time": "07:30:00",
+      "od_track_id": "WL-BD-SL-1",
+      "origin_station": "八堵",
+      "destination_station": "樹林",
+      "total_travel_time": 2160,
+      "stations": [
+        {
+          "station_id": "0920",
+          "arrival": 0,
+          "departure": 60
+        },
+        {
+          "station_id": "0930",
+          "arrival": 180,
+          "departure": 240
+        },
+        {
+          "station_id": "0940",
+          "arrival": 360,
+          "departure": 420
+        },
+        {
+          "station_id": "0950",
+          "arrival": 540,
+          "departure": 600
+        },
+        {
+          "station_id": "0960",
+          "arrival": 720,
+          "departure": 780
+        },
+        {
+          "station_id": "0970",
+          "arrival": 900,
+          "departure": 960
+        },
+        {
+          "station_id": "0980",
+          "arrival": 1080,
+          "departure": 1140
+        },
+        {
+          "station_id": "0990",
+          "arrival": 1260,
+          "departure": 1320
+        },
+        {
+          "station_id": "1000",
+          "arrival": 1440,
+          "departure": 1500
+        },
+        {
+          "station_id": "1010",
+          "arrival": 1620,
+          "departure": 1680
+        },
+        {
+          "station_id": "1020",
+          "arrival": 1800,
+          "departure": 1860
+        },
+        {
+          "station_id": "1030",
+          "arrival": 1980,
+          "departure": 2040
+        },
+        {
+          "station_id": "1040",
+          "arrival": 2160,
+          "departure": 2220
+        }
+      ]
+    },
+    {
+      "train_id": "WL-BD-SL-1-08",
+      "train_no": "TEST08",
+      "train_type": "區間",
+      "departure_time": "08:30:00",
+      "od_track_id": "WL-BD-SL-1",
+      "origin_station": "八堵",
+      "destination_station": "樹林",
+      "total_travel_time": 2160,
+      "stations": [
+        {
+          "station_id": "0920",
+          "arrival": 0,
+          "departure": 60
+        },
+        {
+          "station_id": "0930",
+          "arrival": 180,
+          "departure": 240
+        },
+        {
+          "station_id": "0940",
+          "arrival": 360,
+          "departure": 420
+        },
+        {
+          "station_id": "0950",
+          "arrival": 540,
+          "departure": 600
+        },
+        {
+          "station_id": "0960",
+          "arrival": 720,
+          "departure": 780
+        },
+        {
+          "station_id": "0970",
+          "arrival": 900,
+          "departure": 960
+        },
+        {
+          "station_id": "0980",
+          "arrival": 1080,
+          "departure": 1140
+        },
+        {
+          "station_id": "0990",
+          "arrival": 1260,
+          "departure": 1320
+        },
+        {
+          "station_id": "1000",
+          "arrival": 1440,
+          "departure": 1500
+        },
+        {
+          "station_id": "1010",
+          "arrival": 1620,
+          "departure": 1680
+        },
+        {
+          "station_id": "1020",
+          "arrival": 1800,
+          "departure": 1860
+        },
+        {
+          "station_id": "1030",
+          "arrival": 1980,
+          "departure": 2040
+        },
+        {
+          "station_id": "1040",
+          "arrival": 2160,
+          "departure": 2220
+        }
+      ]
+    },
+    {
+      "train_id": "WL-BD-SL-1-09",
+      "train_no": "TEST09",
+      "train_type": "區間",
+      "departure_time": "09:30:00",
+      "od_track_id": "WL-BD-SL-1",
+      "origin_station": "八堵",
+      "destination_station": "樹林",
+      "total_travel_time": 2160,
+      "stations": [
+        {
+          "station_id": "0920",
+          "arrival": 0,
+          "departure": 60
+        },
+        {
+          "station_id": "0930",
+          "arrival": 180,
+          "departure": 240
+        },
+        {
+          "station_id": "0940",
+          "arrival": 360,
+          "departure": 420
+        },
+        {
+          "station_id": "0950",
+          "arrival": 540,
+          "departure": 600
+        },
+        {
+          "station_id": "0960",
+          "arrival": 720,
+          "departure": 780
+        },
+        {
+          "station_id": "0970",
+          "arrival": 900,
+          "departure": 960
+        },
+        {
+          "station_id": "0980",
+          "arrival": 1080,
+          "departure": 1140
+        },
+        {
+          "station_id": "0990",
+          "arrival": 1260,
+          "departure": 1320
+        },
+        {
+          "station_id": "1000",
+          "arrival": 1440,
+          "departure": 1500
+        },
+        {
+          "station_id": "1010",
+          "arrival": 1620,
+          "departure": 1680
+        },
+        {
+          "station_id": "1020",
+          "arrival": 1800,
+          "departure": 1860
+        },
+        {
+          "station_id": "1030",
+          "arrival": 1980,
+          "departure": 2040
+        },
+        {
+          "station_id": "1040",
+          "arrival": 2160,
+          "departure": 2220
+        }
+      ]
+    },
+    {
+      "train_id": "WL-BD-SL-1-10",
+      "train_no": "TEST10",
+      "train_type": "區間",
+      "departure_time": "10:30:00",
+      "od_track_id": "WL-BD-SL-1",
+      "origin_station": "八堵",
+      "destination_station": "樹林",
+      "total_travel_time": 2160,
+      "stations": [
+        {
+          "station_id": "0920",
+          "arrival": 0,
+          "departure": 60
+        },
+        {
+          "station_id": "0930",
+          "arrival": 180,
+          "departure": 240
+        },
+        {
+          "station_id": "0940",
+          "arrival": 360,
+          "departure": 420
+        },
+        {
+          "station_id": "0950",
+          "arrival": 540,
+          "departure": 600
+        },
+        {
+          "station_id": "0960",
+          "arrival": 720,
+          "departure": 780
+        },
+        {
+          "station_id": "0970",
+          "arrival": 900,
+          "departure": 960
+        },
+        {
+          "station_id": "0980",
+          "arrival": 1080,
+          "departure": 1140
+        },
+        {
+          "station_id": "0990",
+          "arrival": 1260,
+          "departure": 1320
+        },
+        {
+          "station_id": "1000",
+          "arrival": 1440,
+          "departure": 1500
+        },
+        {
+          "station_id": "1010",
+          "arrival": 1620,
+          "departure": 1680
+        },
+        {
+          "station_id": "1020",
+          "arrival": 1800,
+          "departure": 1860
+        },
+        {
+          "station_id": "1030",
+          "arrival": 1980,
+          "departure": 2040
+        },
+        {
+          "station_id": "1040",
+          "arrival": 2160,
+          "departure": 2220
+        }
+      ]
+    },
+    {
+      "train_id": "WL-BD-SL-1-11",
+      "train_no": "TEST11",
+      "train_type": "區間",
+      "departure_time": "11:30:00",
+      "od_track_id": "WL-BD-SL-1",
+      "origin_station": "八堵",
+      "destination_station": "樹林",
+      "total_travel_time": 2160,
+      "stations": [
+        {
+          "station_id": "0920",
+          "arrival": 0,
+          "departure": 60
+        },
+        {
+          "station_id": "0930",
+          "arrival": 180,
+          "departure": 240
+        },
+        {
+          "station_id": "0940",
+          "arrival": 360,
+          "departure": 420
+        },
+        {
+          "station_id": "0950",
+          "arrival": 540,
+          "departure": 600
+        },
+        {
+          "station_id": "0960",
+          "arrival": 720,
+          "departure": 780
+        },
+        {
+          "station_id": "0970",
+          "arrival": 900,
+          "departure": 960
+        },
+        {
+          "station_id": "0980",
+          "arrival": 1080,
+          "departure": 1140
+        },
+        {
+          "station_id": "0990",
+          "arrival": 1260,
+          "departure": 1320
+        },
+        {
+          "station_id": "1000",
+          "arrival": 1440,
+          "departure": 1500
+        },
+        {
+          "station_id": "1010",
+          "arrival": 1620,
+          "departure": 1680
+        },
+        {
+          "station_id": "1020",
+          "arrival": 1800,
+          "departure": 1860
+        },
+        {
+          "station_id": "1030",
+          "arrival": 1980,
+          "departure": 2040
+        },
+        {
+          "station_id": "1040",
+          "arrival": 2160,
+          "departure": 2220
+        }
+      ]
+    },
+    {
+      "train_id": "WL-BD-SL-1-12",
+      "train_no": "TEST12",
+      "train_type": "區間",
+      "departure_time": "12:30:00",
+      "od_track_id": "WL-BD-SL-1",
+      "origin_station": "八堵",
+      "destination_station": "樹林",
+      "total_travel_time": 2160,
+      "stations": [
+        {
+          "station_id": "0920",
+          "arrival": 0,
+          "departure": 60
+        },
+        {
+          "station_id": "0930",
+          "arrival": 180,
+          "departure": 240
+        },
+        {
+          "station_id": "0940",
+          "arrival": 360,
+          "departure": 420
+        },
+        {
+          "station_id": "0950",
+          "arrival": 540,
+          "departure": 600
+        },
+        {
+          "station_id": "0960",
+          "arrival": 720,
+          "departure": 780
+        },
+        {
+          "station_id": "0970",
+          "arrival": 900,
+          "departure": 960
+        },
+        {
+          "station_id": "0980",
+          "arrival": 1080,
+          "departure": 1140
+        },
+        {
+          "station_id": "0990",
+          "arrival": 1260,
+          "departure": 1320
+        },
+        {
+          "station_id": "1000",
+          "arrival": 1440,
+          "departure": 1500
+        },
+        {
+          "station_id": "1010",
+          "arrival": 1620,
+          "departure": 1680
+        },
+        {
+          "station_id": "1020",
+          "arrival": 1800,
+          "departure": 1860
+        },
+        {
+          "station_id": "1030",
+          "arrival": 1980,
+          "departure": 2040
+        },
+        {
+          "station_id": "1040",
+          "arrival": 2160,
+          "departure": 2220
+        }
+      ]
+    },
+    {
+      "train_id": "WL-BD-SL-1-13",
+      "train_no": "TEST13",
+      "train_type": "區間",
+      "departure_time": "13:30:00",
+      "od_track_id": "WL-BD-SL-1",
+      "origin_station": "八堵",
+      "destination_station": "樹林",
+      "total_travel_time": 2160,
+      "stations": [
+        {
+          "station_id": "0920",
+          "arrival": 0,
+          "departure": 60
+        },
+        {
+          "station_id": "0930",
+          "arrival": 180,
+          "departure": 240
+        },
+        {
+          "station_id": "0940",
+          "arrival": 360,
+          "departure": 420
+        },
+        {
+          "station_id": "0950",
+          "arrival": 540,
+          "departure": 600
+        },
+        {
+          "station_id": "0960",
+          "arrival": 720,
+          "departure": 780
+        },
+        {
+          "station_id": "0970",
+          "arrival": 900,
+          "departure": 960
+        },
+        {
+          "station_id": "0980",
+          "arrival": 1080,
+          "departure": 1140
+        },
+        {
+          "station_id": "0990",
+          "arrival": 1260,
+          "departure": 1320
+        },
+        {
+          "station_id": "1000",
+          "arrival": 1440,
+          "departure": 1500
+        },
+        {
+          "station_id": "1010",
+          "arrival": 1620,
+          "departure": 1680
+        },
+        {
+          "station_id": "1020",
+          "arrival": 1800,
+          "departure": 1860
+        },
+        {
+          "station_id": "1030",
+          "arrival": 1980,
+          "departure": 2040
+        },
+        {
+          "station_id": "1040",
+          "arrival": 2160,
+          "departure": 2220
+        }
+      ]
+    },
+    {
+      "train_id": "WL-BD-SL-1-14",
+      "train_no": "TEST14",
+      "train_type": "區間",
+      "departure_time": "14:30:00",
+      "od_track_id": "WL-BD-SL-1",
+      "origin_station": "八堵",
+      "destination_station": "樹林",
+      "total_travel_time": 2160,
+      "stations": [
+        {
+          "station_id": "0920",
+          "arrival": 0,
+          "departure": 60
+        },
+        {
+          "station_id": "0930",
+          "arrival": 180,
+          "departure": 240
+        },
+        {
+          "station_id": "0940",
+          "arrival": 360,
+          "departure": 420
+        },
+        {
+          "station_id": "0950",
+          "arrival": 540,
+          "departure": 600
+        },
+        {
+          "station_id": "0960",
+          "arrival": 720,
+          "departure": 780
+        },
+        {
+          "station_id": "0970",
+          "arrival": 900,
+          "departure": 960
+        },
+        {
+          "station_id": "0980",
+          "arrival": 1080,
+          "departure": 1140
+        },
+        {
+          "station_id": "0990",
+          "arrival": 1260,
+          "departure": 1320
+        },
+        {
+          "station_id": "1000",
+          "arrival": 1440,
+          "departure": 1500
+        },
+        {
+          "station_id": "1010",
+          "arrival": 1620,
+          "departure": 1680
+        },
+        {
+          "station_id": "1020",
+          "arrival": 1800,
+          "departure": 1860
+        },
+        {
+          "station_id": "1030",
+          "arrival": 1980,
+          "departure": 2040
+        },
+        {
+          "station_id": "1040",
+          "arrival": 2160,
+          "departure": 2220
+        }
+      ]
+    },
+    {
+      "train_id": "WL-BD-SL-1-15",
+      "train_no": "TEST15",
+      "train_type": "區間",
+      "departure_time": "15:30:00",
+      "od_track_id": "WL-BD-SL-1",
+      "origin_station": "八堵",
+      "destination_station": "樹林",
+      "total_travel_time": 2160,
+      "stations": [
+        {
+          "station_id": "0920",
+          "arrival": 0,
+          "departure": 60
+        },
+        {
+          "station_id": "0930",
+          "arrival": 180,
+          "departure": 240
+        },
+        {
+          "station_id": "0940",
+          "arrival": 360,
+          "departure": 420
+        },
+        {
+          "station_id": "0950",
+          "arrival": 540,
+          "departure": 600
+        },
+        {
+          "station_id": "0960",
+          "arrival": 720,
+          "departure": 780
+        },
+        {
+          "station_id": "0970",
+          "arrival": 900,
+          "departure": 960
+        },
+        {
+          "station_id": "0980",
+          "arrival": 1080,
+          "departure": 1140
+        },
+        {
+          "station_id": "0990",
+          "arrival": 1260,
+          "departure": 1320
+        },
+        {
+          "station_id": "1000",
+          "arrival": 1440,
+          "departure": 1500
+        },
+        {
+          "station_id": "1010",
+          "arrival": 1620,
+          "departure": 1680
+        },
+        {
+          "station_id": "1020",
+          "arrival": 1800,
+          "departure": 1860
+        },
+        {
+          "station_id": "1030",
+          "arrival": 1980,
+          "departure": 2040
+        },
+        {
+          "station_id": "1040",
+          "arrival": 2160,
+          "departure": 2220
+        }
+      ]
+    },
+    {
+      "train_id": "WL-BD-SL-1-16",
+      "train_no": "TEST16",
+      "train_type": "區間",
+      "departure_time": "16:30:00",
+      "od_track_id": "WL-BD-SL-1",
+      "origin_station": "八堵",
+      "destination_station": "樹林",
+      "total_travel_time": 2160,
+      "stations": [
+        {
+          "station_id": "0920",
+          "arrival": 0,
+          "departure": 60
+        },
+        {
+          "station_id": "0930",
+          "arrival": 180,
+          "departure": 240
+        },
+        {
+          "station_id": "0940",
+          "arrival": 360,
+          "departure": 420
+        },
+        {
+          "station_id": "0950",
+          "arrival": 540,
+          "departure": 600
+        },
+        {
+          "station_id": "0960",
+          "arrival": 720,
+          "departure": 780
+        },
+        {
+          "station_id": "0970",
+          "arrival": 900,
+          "departure": 960
+        },
+        {
+          "station_id": "0980",
+          "arrival": 1080,
+          "departure": 1140
+        },
+        {
+          "station_id": "0990",
+          "arrival": 1260,
+          "departure": 1320
+        },
+        {
+          "station_id": "1000",
+          "arrival": 1440,
+          "departure": 1500
+        },
+        {
+          "station_id": "1010",
+          "arrival": 1620,
+          "departure": 1680
+        },
+        {
+          "station_id": "1020",
+          "arrival": 1800,
+          "departure": 1860
+        },
+        {
+          "station_id": "1030",
+          "arrival": 1980,
+          "departure": 2040
+        },
+        {
+          "station_id": "1040",
+          "arrival": 2160,
+          "departure": 2220
+        }
+      ]
+    },
+    {
+      "train_id": "WL-BD-SL-1-17",
+      "train_no": "TEST17",
+      "train_type": "區間",
+      "departure_time": "17:30:00",
+      "od_track_id": "WL-BD-SL-1",
+      "origin_station": "八堵",
+      "destination_station": "樹林",
+      "total_travel_time": 2160,
+      "stations": [
+        {
+          "station_id": "0920",
+          "arrival": 0,
+          "departure": 60
+        },
+        {
+          "station_id": "0930",
+          "arrival": 180,
+          "departure": 240
+        },
+        {
+          "station_id": "0940",
+          "arrival": 360,
+          "departure": 420
+        },
+        {
+          "station_id": "0950",
+          "arrival": 540,
+          "departure": 600
+        },
+        {
+          "station_id": "0960",
+          "arrival": 720,
+          "departure": 780
+        },
+        {
+          "station_id": "0970",
+          "arrival": 900,
+          "departure": 960
+        },
+        {
+          "station_id": "0980",
+          "arrival": 1080,
+          "departure": 1140
+        },
+        {
+          "station_id": "0990",
+          "arrival": 1260,
+          "departure": 1320
+        },
+        {
+          "station_id": "1000",
+          "arrival": 1440,
+          "departure": 1500
+        },
+        {
+          "station_id": "1010",
+          "arrival": 1620,
+          "departure": 1680
+        },
+        {
+          "station_id": "1020",
+          "arrival": 1800,
+          "departure": 1860
+        },
+        {
+          "station_id": "1030",
+          "arrival": 1980,
+          "departure": 2040
+        },
+        {
+          "station_id": "1040",
+          "arrival": 2160,
+          "departure": 2220
+        }
+      ]
+    },
+    {
+      "train_id": "WL-BD-SL-1-18",
+      "train_no": "TEST18",
+      "train_type": "區間",
+      "departure_time": "18:30:00",
+      "od_track_id": "WL-BD-SL-1",
+      "origin_station": "八堵",
+      "destination_station": "樹林",
+      "total_travel_time": 2160,
+      "stations": [
+        {
+          "station_id": "0920",
+          "arrival": 0,
+          "departure": 60
+        },
+        {
+          "station_id": "0930",
+          "arrival": 180,
+          "departure": 240
+        },
+        {
+          "station_id": "0940",
+          "arrival": 360,
+          "departure": 420
+        },
+        {
+          "station_id": "0950",
+          "arrival": 540,
+          "departure": 600
+        },
+        {
+          "station_id": "0960",
+          "arrival": 720,
+          "departure": 780
+        },
+        {
+          "station_id": "0970",
+          "arrival": 900,
+          "departure": 960
+        },
+        {
+          "station_id": "0980",
+          "arrival": 1080,
+          "departure": 1140
+        },
+        {
+          "station_id": "0990",
+          "arrival": 1260,
+          "departure": 1320
+        },
+        {
+          "station_id": "1000",
+          "arrival": 1440,
+          "departure": 1500
+        },
+        {
+          "station_id": "1010",
+          "arrival": 1620,
+          "departure": 1680
+        },
+        {
+          "station_id": "1020",
+          "arrival": 1800,
+          "departure": 1860
+        },
+        {
+          "station_id": "1030",
+          "arrival": 1980,
+          "departure": 2040
+        },
+        {
+          "station_id": "1040",
+          "arrival": 2160,
+          "departure": 2220
+        }
+      ]
+    },
+    {
+      "train_id": "WL-BD-SL-1-19",
+      "train_no": "TEST19",
+      "train_type": "區間",
+      "departure_time": "19:30:00",
+      "od_track_id": "WL-BD-SL-1",
+      "origin_station": "八堵",
+      "destination_station": "樹林",
+      "total_travel_time": 2160,
+      "stations": [
+        {
+          "station_id": "0920",
+          "arrival": 0,
+          "departure": 60
+        },
+        {
+          "station_id": "0930",
+          "arrival": 180,
+          "departure": 240
+        },
+        {
+          "station_id": "0940",
+          "arrival": 360,
+          "departure": 420
+        },
+        {
+          "station_id": "0950",
+          "arrival": 540,
+          "departure": 600
+        },
+        {
+          "station_id": "0960",
+          "arrival": 720,
+          "departure": 780
+        },
+        {
+          "station_id": "0970",
+          "arrival": 900,
+          "departure": 960
+        },
+        {
+          "station_id": "0980",
+          "arrival": 1080,
+          "departure": 1140
+        },
+        {
+          "station_id": "0990",
+          "arrival": 1260,
+          "departure": 1320
+        },
+        {
+          "station_id": "1000",
+          "arrival": 1440,
+          "departure": 1500
+        },
+        {
+          "station_id": "1010",
+          "arrival": 1620,
+          "departure": 1680
+        },
+        {
+          "station_id": "1020",
+          "arrival": 1800,
+          "departure": 1860
+        },
+        {
+          "station_id": "1030",
+          "arrival": 1980,
+          "departure": 2040
+        },
+        {
+          "station_id": "1040",
+          "arrival": 2160,
+          "departure": 2220
+        }
+      ]
+    },
+    {
+      "train_id": "WL-BD-SL-1-20",
+      "train_no": "TEST20",
+      "train_type": "區間",
+      "departure_time": "20:30:00",
+      "od_track_id": "WL-BD-SL-1",
+      "origin_station": "八堵",
+      "destination_station": "樹林",
+      "total_travel_time": 2160,
+      "stations": [
+        {
+          "station_id": "0920",
+          "arrival": 0,
+          "departure": 60
+        },
+        {
+          "station_id": "0930",
+          "arrival": 180,
+          "departure": 240
+        },
+        {
+          "station_id": "0940",
+          "arrival": 360,
+          "departure": 420
+        },
+        {
+          "station_id": "0950",
+          "arrival": 540,
+          "departure": 600
+        },
+        {
+          "station_id": "0960",
+          "arrival": 720,
+          "departure": 780
+        },
+        {
+          "station_id": "0970",
+          "arrival": 900,
+          "departure": 960
+        },
+        {
+          "station_id": "0980",
+          "arrival": 1080,
+          "departure": 1140
+        },
+        {
+          "station_id": "0990",
+          "arrival": 1260,
+          "departure": 1320
+        },
+        {
+          "station_id": "1000",
+          "arrival": 1440,
+          "departure": 1500
+        },
+        {
+          "station_id": "1010",
+          "arrival": 1620,
+          "departure": 1680
+        },
+        {
+          "station_id": "1020",
+          "arrival": 1800,
+          "departure": 1860
+        },
+        {
+          "station_id": "1030",
+          "arrival": 1980,
+          "departure": 2040
+        },
+        {
+          "station_id": "1040",
+          "arrival": 2160,
+          "departure": 2220
+        }
+      ]
+    },
+    {
+      "train_id": "WL-BD-SL-1-21",
+      "train_no": "TEST21",
+      "train_type": "區間",
+      "departure_time": "21:30:00",
+      "od_track_id": "WL-BD-SL-1",
+      "origin_station": "八堵",
+      "destination_station": "樹林",
+      "total_travel_time": 2160,
+      "stations": [
+        {
+          "station_id": "0920",
+          "arrival": 0,
+          "departure": 60
+        },
+        {
+          "station_id": "0930",
+          "arrival": 180,
+          "departure": 240
+        },
+        {
+          "station_id": "0940",
+          "arrival": 360,
+          "departure": 420
+        },
+        {
+          "station_id": "0950",
+          "arrival": 540,
+          "departure": 600
+        },
+        {
+          "station_id": "0960",
+          "arrival": 720,
+          "departure": 780
+        },
+        {
+          "station_id": "0970",
+          "arrival": 900,
+          "departure": 960
+        },
+        {
+          "station_id": "0980",
+          "arrival": 1080,
+          "departure": 1140
+        },
+        {
+          "station_id": "0990",
+          "arrival": 1260,
+          "departure": 1320
+        },
+        {
+          "station_id": "1000",
+          "arrival": 1440,
+          "departure": 1500
+        },
+        {
+          "station_id": "1010",
+          "arrival": 1620,
+          "departure": 1680
+        },
+        {
+          "station_id": "1020",
+          "arrival": 1800,
+          "departure": 1860
+        },
+        {
+          "station_id": "1030",
+          "arrival": 1980,
+          "departure": 2040
+        },
+        {
+          "station_id": "1040",
+          "arrival": 2160,
+          "departure": 2220
+        }
+      ]
+    },
+    {
+      "train_id": "WL-BD-SL-1-22",
+      "train_no": "TEST22",
+      "train_type": "區間",
+      "departure_time": "22:30:00",
+      "od_track_id": "WL-BD-SL-1",
+      "origin_station": "八堵",
+      "destination_station": "樹林",
+      "total_travel_time": 2160,
+      "stations": [
+        {
+          "station_id": "0920",
+          "arrival": 0,
+          "departure": 60
+        },
+        {
+          "station_id": "0930",
+          "arrival": 180,
+          "departure": 240
+        },
+        {
+          "station_id": "0940",
+          "arrival": 360,
+          "departure": 420
+        },
+        {
+          "station_id": "0950",
+          "arrival": 540,
+          "departure": 600
+        },
+        {
+          "station_id": "0960",
+          "arrival": 720,
+          "departure": 780
+        },
+        {
+          "station_id": "0970",
+          "arrival": 900,
+          "departure": 960
+        },
+        {
+          "station_id": "0980",
+          "arrival": 1080,
+          "departure": 1140
+        },
+        {
+          "station_id": "0990",
+          "arrival": 1260,
+          "departure": 1320
+        },
+        {
+          "station_id": "1000",
+          "arrival": 1440,
+          "departure": 1500
+        },
+        {
+          "station_id": "1010",
+          "arrival": 1620,
+          "departure": 1680
+        },
+        {
+          "station_id": "1020",
+          "arrival": 1800,
+          "departure": 1860
+        },
+        {
+          "station_id": "1030",
+          "arrival": 1980,
+          "departure": 2040
+        },
+        {
+          "station_id": "1040",
+          "arrival": 2160,
+          "departure": 2220
+        }
+      ]
+    }
+  ]
+}

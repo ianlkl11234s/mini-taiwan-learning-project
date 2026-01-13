@@ -73,6 +73,11 @@ const OD_TRACK_IDS = [
   // 基隆支線 O-D 軌道
   'KL-TP-KL',  // 臺北→基隆
   'KL-KL-TP',  // 基隆→臺北
+  // 樹林起迄 O-D 軌道
+  'YL-SL-YL',  // 樹林→宜蘭
+  'YL-YL-SL',  // 宜蘭→樹林
+  'KL-SL-KL',  // 樹林→基隆
+  'KL-KL-SL',  // 基隆→樹林
 ];
 
 /**

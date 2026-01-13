@@ -184,8 +184,13 @@ function getTrackIdFromOdTrackId(odTrackId: string): string {
 
   const [, _origin, dest] = parts;
 
-  // YL 宜蘭線：終點是 TP (臺北) 則為北上 (方向 1)
+  // YL 宜蘭線
   if (lineId === 'YL') {
+    // 新格式：YL-BD-SA-0 / YL-SA-BD-1 → 直接對應 golden track
+    if (odTrackId.startsWith('YL-BD-SA') || odTrackId.startsWith('YL-SA-BD')) {
+      return odTrackId;
+    }
+    // 舊格式：終點是 TP (臺北) 則為北上 (方向 1)
     const direction = dest === 'TP' ? '1' : '0';
     return `YL-${direction}`;
   }

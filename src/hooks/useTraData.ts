@@ -22,8 +22,11 @@ import type { TraTrack, TraSchedule, TraStationProgressMap } from '../engines/Tr
  * Step 3: KL (八堵→基隆) - 待處理
  */
 const TRA_TRACK_IDS = [
-  // === Step 1: 樹林→八堵 (驗證中) ===
+  // === Step 1: 樹林→八堵 ✅ ===
   'WL-N-SL-BD-0', 'WL-N-SL-BD-1',
+
+  // === Step 2: 八堵→蘇澳 (視覺檢視中) ===
+  'YL-BD-SA-0', 'YL-SA-BD-1',
 
   // === 以下暫時註解，待各 Step 驗證完成後逐步開啟 ===
   // // 西部幹線
@@ -60,9 +63,13 @@ const TRA_TRACK_IDS = [
  * - KL-SL-KL (樹林↔基隆)
  */
 const OD_TRACK_IDS = [
-  // === Step 1: 樹林↔八堵 (驗證中) ===
+  // === Step 1: 樹林↔八堵 ✅ ===
   'WL-SL-BD-0',  // 樹林→八堵
   'WL-BD-SL-1',  // 八堵→樹林
+
+  // === Step 2: 八堵↔蘇澳 (驗證中) ===
+  'YL-BD-SA-0',  // 八堵→蘇澳
+  'YL-SA-BD-1',  // 蘇澳→八堵
 
   // === 以下暫時註解，待軌道驗證完成後逐步開啟 ===
   // // 內灣線 + 六家線
@@ -103,9 +110,13 @@ const OD_TRACK_IDS = [
  * 時刻表 ID 列表
  */
 const SCHEDULE_IDS = [
-  // === Step 1: 樹林↔八堵 (驗證中) ===
+  // === Step 1: 樹林↔八堵 ✅ ===
   'WL-SL-BD-0',  // 樹林→八堵 測試時刻表
   'WL-BD-SL-1',  // 八堵→樹林 測試時刻表
+
+  // === Step 2: 八堵↔蘇澳 (驗證中) ===
+  'YL-BD-SA-0',  // 八堵→蘇澳 測試時刻表
+  'YL-SA-BD-1',  // 蘇澳→八堵 測試時刻表
 
   // === 以下暫時註解 ===
   // 'NW-0', 'NW-1',

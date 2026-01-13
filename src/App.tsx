@@ -1175,7 +1175,63 @@ function App() {
     map.current.setPaintProperty('tmrt-stations-label', 'text-opacity', opacity);
   }, [mapLoaded, visibleTmrtLines, styleVersion]);
 
-  // 載入台鐵軌道圖層（沙崙線 MVP）
+  // 將 O-D 軌道 Map 轉換為 GeoJSON FeatureCollection
+  const traOdTracksGeoJSON = useMemo(() => {
+    if (traOdTracks.size === 0) return null;
+    const features: GeoJSON.Feature[] = [];
+    traOdTracks.forEach((track, trackId) => {
+      features.push({
+        type: 'Feature',
+        properties: {
+          track_id: trackId,
+          od_track_id: track.properties?.od_track_id || trackId,
+        },
+        geometry: track.geometry,
+      });
+    });
+    return {
+      type: 'FeatureCollection',
+      features,
+    } as GeoJSON.FeatureCollection;
+  }, [traOdTracks]);
+
+  // 載入台鐵 O-D 軌道圖層（用於測試）
+  useEffect(() => {
+    if (!map.current || !mapLoaded || !traOdTracksGeoJSON) return;
+
+    // 清除舊圖層
+    if (map.current.getLayer('tra-od-tracks-line')) {
+      map.current.removeLayer('tra-od-tracks-line');
+    }
+    if (map.current.getSource('tra-od-tracks')) {
+      map.current.removeSource('tra-od-tracks');
+    }
+
+    map.current.addSource('tra-od-tracks', {
+      type: 'geojson',
+      data: traOdTracksGeoJSON,
+    });
+
+    // 台鐵 O-D 軌道 - 青色
+    map.current.addLayer({
+      id: 'tra-od-tracks-line',
+      type: 'line',
+      source: 'tra-od-tracks',
+      layout: {
+        'line-join': 'round',
+        'line-cap': 'round',
+      },
+      paint: {
+        'line-color': '#00cccc',
+        'line-width': 3,
+        'line-opacity': 0.8,
+      },
+    });
+
+    console.log(`載入 ${traOdTracks.size} 條 O-D 軌道到地圖`);
+  }, [mapLoaded, traOdTracksGeoJSON, styleVersion]);
+
+  // 載入台鐵顯示軌道圖層
   useEffect(() => {
     if (!map.current || !mapLoaded || !traTracks) return;
 
@@ -1192,7 +1248,7 @@ function App() {
       data: traTracks as GeoJSON.FeatureCollection,
     });
 
-    // 台鐵軌道 - 純黑色
+    // 台鐵軌道 - 深藍色
     map.current.addLayer({
       id: 'tra-tracks-line-base',
       type: 'line',
@@ -1207,6 +1263,8 @@ function App() {
         'line-opacity': 0.9,
       },
     });
+
+    console.log(`載入 ${traTracks.features?.length || 0} 條顯示軌道到地圖`);
   }, [mapLoaded, traTracks, styleVersion]);
 
   // 載入台鐵車站圖層（沙崙線 MVP）
@@ -1252,6 +1310,8 @@ function App() {
         'text-size': 10,
         'text-offset': [0, 1.3],
         'text-anchor': 'top',
+        'text-allow-overlap': true,  // 允許標籤重疊
+        'text-ignore-placement': true,  // 忽略其他標籤的位置
       },
       paint: {
         'text-color': '#ffffff',
@@ -1271,9 +1331,14 @@ function App() {
     const opacity = traState === 'hidden' ? 0 : 0.9;
     const stationOpacity = traState === 'hidden' ? 0 : 1;
 
-    // 更新軌道可見性
+    // 更新顯示軌道可見性
     if (map.current.getLayer('tra-tracks-line-base')) {
       map.current.setPaintProperty('tra-tracks-line-base', 'line-opacity', opacity);
+    }
+
+    // 更新 O-D 軌道可見性
+    if (map.current.getLayer('tra-od-tracks-line')) {
+      map.current.setPaintProperty('tra-od-tracks-line', 'line-opacity', traState === 'hidden' ? 0 : 0.8);
     }
 
     // 更新車站可見性

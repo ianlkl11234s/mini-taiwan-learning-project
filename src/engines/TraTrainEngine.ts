@@ -208,8 +208,13 @@ function getTrackIdFromOdTrackId(odTrackId: string): string {
     return `BH-${direction}`;
   }
 
-  // KL 基隆支線：終點是 TP (臺北) 則為北上 (方向 1)
+  // KL 基隆支線
   if (lineId === 'KL') {
+    // 區段軌道：KL-BD-KL-0 / KL-KL-BD-1 → 直接對應 golden track
+    if (odTrackId.startsWith('KL-BD-KL') || odTrackId.startsWith('KL-KL-BD')) {
+      return odTrackId;
+    }
+    // 舊格式：終點是 TP (臺北) 則為北上 (方向 1)
     const direction = dest === 'TP' ? '1' : '0';
     return `KL-${direction}`;
   }

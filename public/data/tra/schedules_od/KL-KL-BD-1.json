@@ -1,0 +1,86 @@
+{
+  "track_id": "KL-KL-BD-1",
+  "departures": [
+    {
+      "train_id": "KL-KL-BD-1-06",
+      "train_no": "TEST06",
+      "train_type": "區間",
+      "departure_time": "06:30:00",
+      "od_track_id": "KL-KL-BD-1",
+      "origin_station": "基隆",
+      "destination_station": "八堵",
+      "total_travel_time": 600,
+      "stations": [
+        {
+          "station_id": "0900",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "0910",
+          "arrival": 300,
+          "departure": 330
+        },
+        {
+          "station_id": "0920",
+          "arrival": 600,
+          "departure": 600
+        }
+      ]
+    },
+    {
+      "train_id": "KL-KL-BD-1-08",
+      "train_no": "TEST08",
+      "train_type": "區間",
+      "departure_time": "08:30:00",
+      "od_track_id": "KL-KL-BD-1",
+      "origin_station": "基隆",
+      "destination_station": "八堵",
+      "total_travel_time": 600,
+      "stations": [
+        {
+          "station_id": "0900",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "0910",
+          "arrival": 300,
+          "departure": 330
+        },
+        {
+          "station_id": "0920",
+          "arrival": 600,
+          "departure": 600
+        }
+      ]
+    },
+    {
+      "train_id": "KL-KL-BD-1-10",
+      "train_no": "TEST10",
+      "train_type": "區間",
+      "departure_time": "10:30:00",
+      "od_track_id": "KL-KL-BD-1",
+      "origin_station": "基隆",
+      "destination_station": "八堵",
+      "total_travel_time": 600,
+      "stations": [
+        {
+          "station_id": "0900",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "0910",
+          "arrival": 300,
+          "departure": 330
+        },
+        {
+          "station_id": "0920",
+          "arrival": 600,
+          "departure": 600
+        }
+      ]
+    }
+  ]
+}

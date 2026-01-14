@@ -55,3 +55,6 @@ scripts/backup_trtc/
 
 # Raw data files
 public/data/tra/tra_shp_data/
+
+# TRA 軌道歸檔（不追蹤）
+public/data/tra/tracks_archive/

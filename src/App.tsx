@@ -1248,7 +1248,7 @@ function App() {
       data: traTracks as GeoJSON.FeatureCollection,
     });
 
-    // 台鐵軌道 - 深藍色
+    // 台鐵軌道 - 灰色
     map.current.addLayer({
       id: 'tra-tracks-line-base',
       type: 'line',
@@ -1258,7 +1258,7 @@ function App() {
         'line-cap': 'round',
       },
       paint: {
-        'line-color': '#000080',
+        'line-color': '#7B7B7B',
         'line-width': 4,
         'line-opacity': 0.9,
       },
@@ -1310,7 +1310,7 @@ function App() {
       paint: {
         'circle-radius': 5,
         'circle-color': '#ffffff',
-        'circle-stroke-color': '#000080',
+        'circle-stroke-color': '#7B7B7B',
         'circle-stroke-width': 2,
         'circle-opacity': 1,
         'circle-stroke-opacity': 1,
@@ -1332,7 +1332,7 @@ function App() {
       },
       paint: {
         'text-color': '#ffffff',
-        'text-halo-color': '#000080',
+        'text-halo-color': '#7B7B7B',
         'text-halo-width': 1,
         'text-opacity': 1,
         'text-emissive-strength': 1.0,

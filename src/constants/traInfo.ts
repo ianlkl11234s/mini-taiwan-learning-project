@@ -55,47 +55,47 @@ export const TRA_DIRECTION_NAMES: Record<string, Record<string, string>> = {
   },
 };
 
-// 台鐵主色調（藍色系）
-export const TRA_PRIMARY_COLOR = '#0066b3';
-export const TRA_SECONDARY_COLOR = '#4d9ed6';
+// 台鐵主色調（統一灰色）
+export const TRA_PRIMARY_COLOR = '#7B7B7B';
+export const TRA_SECONDARY_COLOR = '#7B7B7B';
 
-// 軌道顏色（依線路區分）
+// 軌道顏色（統一灰色）
 export const TRA_TRACK_COLORS: Record<string, string> = {
-  SH: '#0066b3', // 沙崙線 - 藍色
-  WL: '#1e90ff', // 西部幹線 - 道奇藍
-  NW: '#8b4513', // 內灣線 - 褐色
-  LJ: '#228b22', // 六家線 - 森林綠
-  PX: '#ff6347', // 平溪線 - 番茄紅
-  JJ: '#9932cc', // 集集線 - 深蘭花紫
-  CZ: '#ffa500', // 成追線 - 橙色
-  YL: '#006400', // 宜蘭線 - 深綠色
-  BH: '#008b8b', // 北迴線 - 深青色
+  SH: '#7B7B7B', // 沙崙線
+  WL: '#7B7B7B', // 西部幹線
+  NW: '#7B7B7B', // 內灣線
+  LJ: '#7B7B7B', // 六家線
+  PX: '#7B7B7B', // 平溪線
+  JJ: '#7B7B7B', // 集集線
+  CZ: '#7B7B7B', // 成追線
+  YL: '#7B7B7B', // 宜蘭線
+  BH: '#7B7B7B', // 北迴線
 };
 
-// 列車顏色（依線路和方向區分）
+// 列車顏色（統一灰色）
 export const TRA_TRAIN_COLORS: Record<string, string> = {
-  'SH-0': '#0066b3', // 沙崙 → 臺南 - 深藍
-  'SH-1': '#4d9ed6', // 臺南 → 沙崙 - 淺藍
-  'WL-0': '#1e90ff', // 北上 - 道奇藍
-  'WL-1': '#00bfff', // 南下 - 天藍
-  'NW-0': '#8b4513', // 往新竹 - 褐色
-  'NW-1': '#cd853f', // 往內灣 - 祕魯褐
-  'LJ-0': '#228b22', // 往新竹 - 森林綠
-  'LJ-1': '#32cd32', // 往六家 - 萊姆綠
-  'PX-0': '#ff6347', // 往三貂嶺 - 番茄紅
-  'PX-1': '#ff7f50', // 往菁桐 - 珊瑚色
-  'JJ-0': '#9932cc', // 往二水 - 深蘭花紫
-  'JJ-1': '#ba55d3', // 往車埕 - 中蘭花紫
-  'CZ-0': '#ffa500', // 往追分 - 橙色
-  'CZ-1': '#ff8c00', // 往成功 - 深橙色
-  'YL-0': '#006400', // 往蘇澳 - 深綠色
-  'YL-1': '#228b22', // 往臺北 - 森林綠
-  'BH-0': '#008b8b', // 往花蓮 - 深青色
-  'BH-1': '#20b2aa', // 往蘇澳新 - 淺海綠
+  'SH-0': '#7B7B7B',
+  'SH-1': '#7B7B7B',
+  'WL-0': '#7B7B7B',
+  'WL-1': '#7B7B7B',
+  'NW-0': '#7B7B7B',
+  'NW-1': '#7B7B7B',
+  'LJ-0': '#7B7B7B',
+  'LJ-1': '#7B7B7B',
+  'PX-0': '#7B7B7B',
+  'PX-1': '#7B7B7B',
+  'JJ-0': '#7B7B7B',
+  'JJ-1': '#7B7B7B',
+  'CZ-0': '#7B7B7B',
+  'CZ-1': '#7B7B7B',
+  'YL-0': '#7B7B7B',
+  'YL-1': '#7B7B7B',
+  'BH-0': '#7B7B7B',
+  'BH-1': '#7B7B7B',
 };
 
 // 3D 渲染用顏色
-export const TRA_COLOR_3D = 0x0066b3;
+export const TRA_COLOR_3D = 0x7B7B7B;
 
 // 車站對照表（StationID -> 站名）
 export const TRA_STATION_NAMES: Record<string, string> = {

@@ -186,7 +186,14 @@ function getTrackIdFromOdTrackId(odTrackId: string): string {
 
   // YL 宜蘭線
   if (lineId === 'YL') {
-    // 新格式：YL-BD-SA-0 / YL-SA-BD-1 → 直接對應 golden track
+    // 合併軌道：YL-SL-SA-0 / YL-SA-SL-1 → 使用 YL golden track（主要路段）
+    if (odTrackId === 'YL-SL-SA-0') {
+      return 'YL-BD-SA-0';
+    }
+    if (odTrackId === 'YL-SA-SL-1') {
+      return 'YL-SA-BD-1';
+    }
+    // 區段軌道：YL-BD-SA-0 / YL-SA-BD-1 → 直接對應 golden track
     if (odTrackId.startsWith('YL-BD-SA') || odTrackId.startsWith('YL-SA-BD')) {
       return odTrackId;
     }

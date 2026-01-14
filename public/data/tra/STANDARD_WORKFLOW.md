@@ -234,7 +234,8 @@ public/data/tra/
 | Step | 路段 | 顯示軌道 | O-D 軌道 | Progress | 時刻表 | 驗證 |
 |------|------|----------|----------|----------|--------|------|
 | 1 | 樹林↔八堵 | ✅ | ✅ | ✅ | ✅ | ✅ |
-| 2 | 八堵↔蘇澳 | 📋 | 📋 | 📋 | 📋 | 📋 |
+| 2 | 八堵↔蘇澳 | ✅ | ✅ | ✅ | ✅ | ✅ |
+| 2+ | 樹林↔蘇澳 (合併) | - | ✅ | ✅ | ✅ | ✅ |
 | 3 | 八堵↔基隆 | 📋 | 📋 | 📋 | 📋 | 📋 |
 
 ---
@@ -278,3 +279,46 @@ public/data/tra/
 | 停站偏移 | 使用最近點法計算 | 改用投影法 |
 | 軌道不顯示 | 檔案格式不符或 ID 未加入 | 檢查格式和 useTraData.ts |
 | 列車顏色錯誤 | Track ID 映射錯誤 | 更新 getTrackIdFromOdTrackId() |
+| 列車走直線 | 反向軌道未正確建立 | 使用 `list(reversed(coords))` 建立反向軌道 |
+| 地圖出現青色線 | O-D 軌道測試圖層顯示中 | App.tsx 中 `tra-od-tracks-line` opacity 設為 0 |
+
+---
+
+## 合併軌道建立 (進階)
+
+當需要建立跨區段的完整 O-D 軌道時（如樹林↔蘇澳 = WL + YL）：
+
+### 步驟
+
+1. **合併座標**：將兩段軌道座標串接（移除重複的交界點）
+2. **建立正向軌道**：`YL-SL-SA-0.geojson`
+3. **建立反向軌道**：使用 `list(reversed(coords))` 建立 `YL-SA-SL-1.geojson`
+4. **計算 Station Progress**：使用投影法在合併軌道上計算
+
+### 重要注意
+
+- ⚠️ 反向軌道**必須**是正向軌道的完整反向
+- ⚠️ 不要分段反向再合併，會造成座標錯誤
+- ✅ 正確做法：先合併正向 → 整體反向
+
+### 範例
+
+```python
+# 正確做法
+with open('YL-SL-SA-0.geojson') as f:
+    data0 = json.load(f)
+coords0 = data0['features'][0]['geometry']['coordinates']
+
+# 建立反向軌道
+coords_reversed = list(reversed(coords0))
+
+# 驗證
+assert coords_reversed[0] == coords0[-1]  # 反向起點 = 正向終點
+assert coords_reversed[-1] == coords0[0]  # 反向終點 = 正向起點
+```
+
+---
+
+## 檔案歸檔
+
+舊的或待處理的 O-D 軌道應移至 `tracks_archive/tracks_od_pending/`，避免被錯誤載入。

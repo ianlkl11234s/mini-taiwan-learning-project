@@ -1212,7 +1212,7 @@ function App() {
       data: traOdTracksGeoJSON,
     });
 
-    // 台鐵 O-D 軌道 - 青色
+    // 台鐵 O-D 軌道 - 青色（預設隱藏，僅供測試）
     map.current.addLayer({
       id: 'tra-od-tracks-line',
       type: 'line',
@@ -1224,7 +1224,7 @@ function App() {
       paint: {
         'line-color': '#00cccc',
         'line-width': 3,
-        'line-opacity': 0.8,
+        'line-opacity': 0,  // 預設隱藏
       },
     });
 
@@ -1353,10 +1353,10 @@ function App() {
       map.current.setPaintProperty('tra-tracks-line-base', 'line-opacity', opacity);
     }
 
-    // 更新 O-D 軌道可見性
-    if (map.current.getLayer('tra-od-tracks-line')) {
-      map.current.setPaintProperty('tra-od-tracks-line', 'line-opacity', traState === 'hidden' ? 0 : 0.8);
-    }
+    // 更新 O-D 軌道可見性（預設隱藏，僅供測試時手動開啟）
+    // if (map.current.getLayer('tra-od-tracks-line')) {
+    //   map.current.setPaintProperty('tra-od-tracks-line', 'line-opacity', traState === 'hidden' ? 0 : 0.8);
+    // }
 
     // 更新車站可見性
     if (map.current.getLayer('tra-stations-circle')) {

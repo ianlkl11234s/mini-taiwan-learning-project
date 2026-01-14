@@ -1,0 +1,251 @@
+{
+  "track_id": "BH-HL-SX-1",
+  "departures": [
+    {
+      "train_id": "BH-HL-SX-1-06",
+      "train_no": "TEST06",
+      "train_type": "\u5340\u9593",
+      "departure_time": "06:30:00",
+      "od_track_id": "BH-HL-SX-1",
+      "origin_station": "\u82b1\u84ee",
+      "destination_station": "\u8607\u6fb3\u65b0",
+      "total_travel_time": 6000,
+      "stations": [
+        {
+          "station_id": "7000",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "7010",
+          "arrival": 461,
+          "departure": 491
+        },
+        {
+          "station_id": "7020",
+          "arrival": 922,
+          "departure": 952
+        },
+        {
+          "station_id": "7030",
+          "arrival": 1383,
+          "departure": 1413
+        },
+        {
+          "station_id": "7040",
+          "arrival": 1844,
+          "departure": 1874
+        },
+        {
+          "station_id": "7050",
+          "arrival": 2305,
+          "departure": 2335
+        },
+        {
+          "station_id": "7060",
+          "arrival": 2766,
+          "departure": 2796
+        },
+        {
+          "station_id": "7070",
+          "arrival": 3227,
+          "departure": 3257
+        },
+        {
+          "station_id": "7080",
+          "arrival": 3688,
+          "departure": 3718
+        },
+        {
+          "station_id": "7090",
+          "arrival": 4149,
+          "departure": 4179
+        },
+        {
+          "station_id": "7100",
+          "arrival": 4610,
+          "departure": 4640
+        },
+        {
+          "station_id": "7110",
+          "arrival": 5071,
+          "departure": 5101
+        },
+        {
+          "station_id": "7120",
+          "arrival": 5532,
+          "departure": 5562
+        },
+        {
+          "station_id": "7130",
+          "arrival": 5993,
+          "departure": 5993
+        }
+      ]
+    },
+    {
+      "train_id": "BH-HL-SX-1-08",
+      "train_no": "TEST08",
+      "train_type": "\u5340\u9593",
+      "departure_time": "08:30:00",
+      "od_track_id": "BH-HL-SX-1",
+      "origin_station": "\u82b1\u84ee",
+      "destination_station": "\u8607\u6fb3\u65b0",
+      "total_travel_time": 6000,
+      "stations": [
+        {
+          "station_id": "7000",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "7010",
+          "arrival": 461,
+          "departure": 491
+        },
+        {
+          "station_id": "7020",
+          "arrival": 922,
+          "departure": 952
+        },
+        {
+          "station_id": "7030",
+          "arrival": 1383,
+          "departure": 1413
+        },
+        {
+          "station_id": "7040",
+          "arrival": 1844,
+          "departure": 1874
+        },
+        {
+          "station_id": "7050",
+          "arrival": 2305,
+          "departure": 2335
+        },
+        {
+          "station_id": "7060",
+          "arrival": 2766,
+          "departure": 2796
+        },
+        {
+          "station_id": "7070",
+          "arrival": 3227,
+          "departure": 3257
+        },
+        {
+          "station_id": "7080",
+          "arrival": 3688,
+          "departure": 3718
+        },
+        {
+          "station_id": "7090",
+          "arrival": 4149,
+          "departure": 4179
+        },
+        {
+          "station_id": "7100",
+          "arrival": 4610,
+          "departure": 4640
+        },
+        {
+          "station_id": "7110",
+          "arrival": 5071,
+          "departure": 5101
+        },
+        {
+          "station_id": "7120",
+          "arrival": 5532,
+          "departure": 5562
+        },
+        {
+          "station_id": "7130",
+          "arrival": 5993,
+          "departure": 5993
+        }
+      ]
+    },
+    {
+      "train_id": "BH-HL-SX-1-10",
+      "train_no": "TEST10",
+      "train_type": "\u5340\u9593",
+      "departure_time": "10:30:00",
+      "od_track_id": "BH-HL-SX-1",
+      "origin_station": "\u82b1\u84ee",
+      "destination_station": "\u8607\u6fb3\u65b0",
+      "total_travel_time": 6000,
+      "stations": [
+        {
+          "station_id": "7000",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "7010",
+          "arrival": 461,
+          "departure": 491
+        },
+        {
+          "station_id": "7020",
+          "arrival": 922,
+          "departure": 952
+        },
+        {
+          "station_id": "7030",
+          "arrival": 1383,
+          "departure": 1413
+        },
+        {
+          "station_id": "7040",
+          "arrival": 1844,
+          "departure": 1874
+        },
+        {
+          "station_id": "7050",
+          "arrival": 2305,
+          "departure": 2335
+        },
+        {
+          "station_id": "7060",
+          "arrival": 2766,
+          "departure": 2796
+        },
+        {
+          "station_id": "7070",
+          "arrival": 3227,
+          "departure": 3257
+        },
+        {
+          "station_id": "7080",
+          "arrival": 3688,
+          "departure": 3718
+        },
+        {
+          "station_id": "7090",
+          "arrival": 4149,
+          "departure": 4179
+        },
+        {
+          "station_id": "7100",
+          "arrival": 4610,
+          "departure": 4640
+        },
+        {
+          "station_id": "7110",
+          "arrival": 5071,
+          "departure": 5101
+        },
+        {
+          "station_id": "7120",
+          "arrival": 5532,
+          "departure": 5562
+        },
+        {
+          "station_id": "7130",
+          "arrival": 5993,
+          "departure": 5993
+        }
+      ]
+    }
+  ]
+}

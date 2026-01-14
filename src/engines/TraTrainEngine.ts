@@ -202,8 +202,13 @@ function getTrackIdFromOdTrackId(odTrackId: string): string {
     return `YL-${direction}`;
   }
 
-  // BH 北迴線：終點是 SX (蘇澳新) 則為北上 (方向 1)
+  // BH 北迴線
   if (lineId === 'BH') {
+    // 區段軌道：BH-SX-HL-0 / BH-HL-SX-1 → 直接對應 golden track
+    if (odTrackId.startsWith('BH-SX-HL') || odTrackId.startsWith('BH-HL-SX')) {
+      return odTrackId;
+    }
+    // 舊格式：終點是 SX (蘇澳新) 則為北上 (方向 1)
     const direction = dest === 'SX' ? '1' : '0';
     return `BH-${direction}`;
   }

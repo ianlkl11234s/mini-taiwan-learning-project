@@ -793,6 +793,7 @@ function App() {
       id: 'thsr-stations-circle',
       type: 'circle',
       source: 'thsr-stations',
+      minzoom: 10,
       paint: {
         'circle-radius': 6,
         'circle-color': '#000000',
@@ -813,6 +814,8 @@ function App() {
         'text-size': 11,
         'text-offset': [0, 1.5],
         'text-anchor': 'top',
+        'text-allow-overlap': false,
+        'text-ignore-placement': false,
       },
       paint: {
         'text-color': '#ffffff',
@@ -919,6 +922,7 @@ function App() {
       id: 'krtc-stations-circle',
       type: 'circle',
       source: 'krtc-stations',
+      minzoom: 10,
       paint: {
         'circle-radius': 5,
         'circle-color': '#000000',
@@ -943,6 +947,8 @@ function App() {
         'text-size': 10,
         'text-offset': [0, 1.3],
         'text-anchor': 'top',
+        'text-allow-overlap': false,
+        'text-ignore-placement': false,
       },
       paint: {
         'text-color': '#ffffff',
@@ -1026,6 +1032,7 @@ function App() {
       id: 'klrt-stations-circle',
       type: 'circle',
       source: 'klrt-stations',
+      minzoom: 10,
       paint: {
         'circle-radius': 4,  // 輕軌車站較小
         'circle-color': '#000000',
@@ -1046,6 +1053,8 @@ function App() {
         'text-size': 9,  // 輕軌車站標籤較小
         'text-offset': [0, 1.3],
         'text-anchor': 'top',
+        'text-allow-overlap': false,
+        'text-ignore-placement': false,
       },
       paint: {
         'text-color': '#ffffff',
@@ -1133,6 +1142,7 @@ function App() {
       id: 'tmrt-stations-circle',
       type: 'circle',
       source: 'tmrt-stations',
+      minzoom: 10,
       paint: {
         'circle-radius': 5,
         'circle-color': '#000000',
@@ -1153,6 +1163,8 @@ function App() {
         'text-size': 10,
         'text-offset': [0, 1.3],
         'text-anchor': 'top',
+        'text-allow-overlap': false,
+        'text-ignore-placement': false,
       },
       paint: {
         'text-color': '#ffffff',
@@ -1307,6 +1319,7 @@ function App() {
       id: 'tra-stations-circle',
       type: 'circle',
       source: 'tra-stations',
+      minzoom: 10,  // 縮放 >= 10 才顯示圓點
       paint: {
         'circle-radius': 5,
         'circle-color': '#ffffff',
@@ -1327,8 +1340,8 @@ function App() {
         'text-size': 10,
         'text-offset': [0, 1.3],
         'text-anchor': 'top',
-        'text-allow-overlap': true,  // 允許標籤重疊
-        'text-ignore-placement': true,  // 忽略其他標籤的位置
+        'text-allow-overlap': false,  // 不允許標籤重疊
+        'text-ignore-placement': false,  // 考慮其他標籤的位置
       },
       paint: {
         'text-color': '#ffffff',
@@ -1757,6 +1770,7 @@ function App() {
       id: 'stations-circle',
       type: 'circle',
       source: 'stations',
+      minzoom: 10,
       paint: {
         'circle-radius': 5,
         'circle-color': '#000000',  // 黑色填充
@@ -1789,6 +1803,8 @@ function App() {
         'text-size': 11,
         'text-offset': [0, 1.5],
         'text-anchor': 'top',
+        'text-allow-overlap': false,
+        'text-ignore-placement': false,
       },
       paint: {
         'text-color': '#ffffff',

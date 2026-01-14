@@ -58,3 +58,7 @@ public/data/tra/tra_shp_data/
 
 # TRA 軌道歸檔（不追蹤）
 public/data/tra/tracks_archive/
+
+# TRA 分析結果（臨時檔案）
+public/data/tra/od_analysis.json
+public/data/tra/od_complete_analysis.json

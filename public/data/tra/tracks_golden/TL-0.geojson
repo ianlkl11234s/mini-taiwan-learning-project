@@ -7,9 +7,9 @@
         "track_id": "TL-0",
         "line_id": "TL",
         "direction": 0,
-        "name": "\u81fa\u6771\u7dda (\u82b1\u84ee\u2192\u81fa\u6771)",
-        "origin": "\u82b1\u84ee",
-        "destination": "\u81fa\u6771",
+        "name": "臺東線 (花蓮→臺東)",
+        "origin": "花蓮",
+        "destination": "臺東",
         "source": "TD"
       },
       "geometry": {

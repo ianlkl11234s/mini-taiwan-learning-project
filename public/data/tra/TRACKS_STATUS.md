@@ -172,10 +172,18 @@ tracks_od/          ← O-D 專屬軌道（列車位置計算）
 ### SK 南迴線
 | 項目 | 狀態 |
 |------|------|
-| 軌道資料 | 📋 待處理 |
-| O-D 軌道 | 📋 待處理 |
+| 軌道資料 | ✅ 完成 |
+| O-D 軌道 | ✅ 完成 |
 | 時刻表 | 📋 待處理 |
-| 備註 | 台東-枋寮 |
+| 備註 | 臺東-新左營 (合併 NH+PT+WL-S1) |
+
+**已知問題與修正**：
+- [x] NH/PT MultiLineString 段落亂序 → 使用 `reorder_multilinestring_by_geography()` 按地理位置排序
+- [x] 軌道覆蓋 30 站 (臺東→新左營)
+- [ ] 臺東站誤差 661m (軌道未完全延伸至車站) → 可接受
+
+**O-D 軌道**：`tracks_od/SK-TT-ZY-0.geojson`, `SK-ZY-TT-1.geojson`
+**合併來源**：NH (南迴線) + PT (屏東線) + WL-S1 (縱貫線南段)
 
 ---
 
@@ -195,6 +203,8 @@ tracks_od/          ← O-D 專屬軌道（列車位置計算）
 |------|------|
 | `build_yl_bh_od_tracks.py` | 建立 YL/BH O-D 專屬軌道 |
 | `build_kl_od_tracks.py` | 從 WL-N 建立 KL 基隆支線 O-D 軌道 |
+| `build_tl_od_tracks.py` | 建立 TL 臺東線 O-D 專屬軌道 |
+| `build_sk_od_tracks.py` | 建立 SK 南迴線 O-D 專屬軌道 (合併 NH+PT+WL-S1) |
 | `fetch_yl_kl_timetable.py` | 從 TDX API 取得 YL/KL 真實時刻表 |
 
 ### 舊版腳本 (已整合或棄用)
@@ -219,6 +229,15 @@ tracks_od/          ← O-D 專屬軌道（列車位置計算）
 ---
 
 ## 更新紀錄
+
+### 2026-01-15 (SK 南迴線)
+- 新增 SK 南迴線 O-D 軌道資料 (臺東-新左營)
+- 合併三條路線軌道：NH (南迴線) + PT (屏東線) + WL-S1 (縱貫線南段)
+- 開發 `reorder_multilinestring_by_geography()` 函數處理亂序的 MultiLineString 段落
+- 建立 O-D 軌道：`SK-TT-ZY-0.geojson` (臺東→新左營), `SK-ZY-TT-1.geojson` (新左營→臺東)
+- 共計 30 個車站，1946 個座標點
+- 臺東站誤差 661m (軌道未完全延伸至車站)，其餘車站誤差均在 200m 以內
+- 新增腳本：`build_sk_od_tracks.py`
 
 ### 2026-01-15 (TL 臺東線)
 - 新增 TL 臺東線軌道資料

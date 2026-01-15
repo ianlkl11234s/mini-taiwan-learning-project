@@ -15,11 +15,13 @@
  * - BH (北迴線)
  * - KL (基隆支線)
  * - TL (臺東線)
+ * - SK (南迴線)
  *
  * 合併軌道：
  * - YL-SL-SA (樹林↔蘇澳)
  * - YL-SL-HL (樹林↔花蓮)
  * - YL-SL-TT (樹林↔臺東)
+ * - SK-TT-ZY (臺東↔新左營)
  */
 
 export interface TraTrain {
@@ -323,6 +325,17 @@ function getTrackIdFromOdTrackId(odTrackId: string): string {
       return 'PX-1';  // 菁桐→三貂嶺
     }
     return 'PX-0';
+  }
+
+  // SK 南迴線 (臺東↔新左營)
+  if (lineId === 'SK') {
+    if (odTrackId === 'SK-TT-ZY-0') {
+      return 'SK-0';  // 臺東→新左營
+    }
+    if (odTrackId === 'SK-ZY-TT-1') {
+      return 'SK-1';  // 新左營→臺東
+    }
+    return 'SK-0';
   }
 
   // 預設：使用舊邏輯

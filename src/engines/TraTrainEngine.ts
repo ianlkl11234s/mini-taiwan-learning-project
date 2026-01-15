@@ -194,6 +194,13 @@ function getTrackIdFromOdTrackId(odTrackId: string): string {
 
   // YL 宜蘭線
   if (lineId === 'YL') {
+    // 環島軌道：YL-SL-ZY-0 / YL-ZY-SL-1 → 使用 YL golden track
+    if (odTrackId === 'YL-SL-ZY-0') {
+      return 'YL-BD-SA-0';  // 南下使用 YL 方向 0
+    }
+    if (odTrackId === 'YL-ZY-SL-1') {
+      return 'YL-SA-BD-1';  // 北上使用 YL 方向 1
+    }
     // 樹林↔臺東 合併軌道：YL-SL-TT-0 / YL-TT-SL-1 → 使用 YL golden track
     if (odTrackId === 'YL-SL-TT-0') {
       return 'YL-BD-SA-0';  // 南下使用 YL 方向 0
@@ -336,6 +343,17 @@ function getTrackIdFromOdTrackId(odTrackId: string): string {
       return 'SK-1';  // 新左營→臺東
     }
     return 'SK-0';
+  }
+
+  // PT 屏東線 (新左營↔枋寮，經高雄)
+  if (lineId === 'PT') {
+    if (odTrackId === 'PT-ZY-PL-0') {
+      return 'PT-0';  // 新左營→枋寮
+    }
+    if (odTrackId === 'PT-PL-ZY-1') {
+      return 'PT-1';  // 枋寮→新左營
+    }
+    return 'PT-0';
   }
 
   // 預設：使用舊邏輯

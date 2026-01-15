@@ -1,6 +1,6 @@
 # TRA 軌道資料狀態追蹤
 
-> 最後更新：2026-01-15
+> 最後更新：2026-01-16
 
 ## Golden Track 架構
 
@@ -185,6 +185,21 @@ tracks_od/          ← O-D 專屬軌道（列車位置計算）
 **O-D 軌道**：`tracks_od/SK-TT-ZY-0.geojson`, `SK-ZY-TT-1.geojson`
 **合併來源**：NH (南迴線) + PT (屏東線) + WL-S1 (縱貫線南段)
 
+### PT 屏東線
+| 項目 | 狀態 |
+|------|------|
+| 軌道資料 | ✅ 完成 |
+| O-D 軌道 | ✅ 完成 |
+| 時刻表 | 🔧 測試資料 |
+| 備註 | 新左營-枋寮 (27 站)，從 SK 軌道擷取 |
+
+**已知問題與修正**：
+- [x] 原始 TDX 軌道是 MultiLineString，新左營→高雄段有缺口 → 從 SK O-D 軌道擷取座標解決
+- [x] O-D 軌道與 SK 軌道座標完全一致，避免重疊段顯示多條線
+
+**O-D 軌道**：`tracks_od/PT-ZY-PL-0.geojson`, `PT-PL-ZY-1.geojson`
+**擷取來源**：從 `SK-ZY-TT-1` 和 `SK-TT-ZY-0` 擷取新左營↔枋寮段
+
 ---
 
 ## 處理腳本
@@ -229,6 +244,16 @@ tracks_od/          ← O-D 專屬軌道（列車位置計算）
 ---
 
 ## 更新紀錄
+
+### 2026-01-16 (PT 屏東線)
+- 新增 PT 屏東線 O-D 軌道資料 (新左營-枋寮)
+- **關鍵修正**：從 SK O-D 軌道擷取座標，確保 PT 和 SK 在重疊段（新左營↔枋寮）座標完全一致
+- 解決原始 TDX 軌道的 MultiLineString 缺口問題（新左營→高雄段）
+- 建立 O-D 軌道：`PT-ZY-PL-0.geojson` (新左營→枋寮), `PT-PL-ZY-1.geojson` (枋寮→新左營)
+- 計算完整 station_progress：27 個車站 (4340 新左營 ~ 5120 枋寮)
+- 建立測試時刻表：`PT-ZY-PL-0.json`, `PT-PL-ZY-1.json`
+- 更新 Golden Tracks：`PT-0.geojson`, `PT-1.geojson`, `SK-0.geojson`, `SK-1.geojson`
+- 更新 `useTraData.ts`、`TraTrainEngine.ts` 支援 PT 路線
 
 ### 2026-01-15 (SK 南迴線)
 - 新增 SK 南迴線 O-D 軌道資料 (臺東-新左營)

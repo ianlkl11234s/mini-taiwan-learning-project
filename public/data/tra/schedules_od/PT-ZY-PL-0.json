@@ -1,0 +1,47 @@
+{
+  "track_id": "PT-ZY-PL-0",
+  "departures": [
+    {
+      "train_id": "PT-ZY-PL-0-06",
+      "train_no": "TEST06",
+      "train_type": "區間",
+      "departure_time": "06:00:00",
+      "od_track_id": "PT-ZY-PL-0",
+      "origin_station": "新左營",
+      "destination_station": "枋寮",
+      "total_travel_time": 4200,
+      "stations": [
+        {
+          "station_id": "4340",
+          "arrival": 0,
+          "departure": 60
+        },
+        {
+          "station_id": "4400",
+          "arrival": 443,
+          "departure": 503
+        },
+        {
+          "station_id": "4440",
+          "arrival": 762,
+          "departure": 822
+        },
+        {
+          "station_id": "5000",
+          "arrival": 1604,
+          "departure": 1664
+        },
+        {
+          "station_id": "5050",
+          "arrival": 2422,
+          "departure": 2482
+        },
+        {
+          "station_id": "5120",
+          "arrival": 4199,
+          "departure": 4259
+        }
+      ]
+    }
+  ]
+}

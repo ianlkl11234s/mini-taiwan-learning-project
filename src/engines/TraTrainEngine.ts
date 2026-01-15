@@ -14,6 +14,7 @@
  * - YL (宜蘭線)
  * - BH (北迴線)
  * - KL (基隆支線)
+ * - TL (臺東線)
  *
  * 合併軌道：
  * - YL-SL-SA (樹林↔蘇澳)
@@ -233,6 +234,20 @@ function getTrackIdFromOdTrackId(odTrackId: string): string {
     // 舊格式：終點是 TP (臺北) 則為北上 (方向 1)
     const direction = dest === 'TP' ? '1' : '0';
     return `KL-${direction}`;
+  }
+
+  // TL 臺東線
+  if (lineId === 'TL') {
+    // O-D 軌道：TL-HL-TT / TL-TT-HL → 對應 TL golden track
+    if (odTrackId === 'TL-HL-TT') {
+      return 'TL-0';  // 花蓮→臺東 (南下)
+    }
+    if (odTrackId === 'TL-TT-HL') {
+      return 'TL-1';  // 臺東→花蓮 (北上)
+    }
+    // 終點是 HL (花蓮) 則為北上 (方向 1)
+    const direction = dest === 'HL' ? '1' : '0';
+    return `TL-${direction}`;
   }
 
   // 支線：各線的「起點站」代碼（方向 0 的終點）

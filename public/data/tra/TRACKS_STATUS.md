@@ -1,6 +1,6 @@
 # TRA 軌道資料狀態追蹤
 
-> 最後更新：2026-01-10
+> 最後更新：2026-01-15
 
 ## Golden Track 架構
 
@@ -154,13 +154,20 @@ tracks_od/          ← O-D 專屬軌道（列車位置計算）
 | 時刻表 | 📋 待處理 |
 | 備註 | 竹南-高雄 |
 
-### TL 台東線
+### TL 臺東線
 | 項目 | 狀態 |
 |------|------|
-| 軌道資料 | 📋 待處理 |
-| O-D 軌道 | 📋 待處理 |
-| 時刻表 | 📋 待處理 |
-| 備註 | 花蓮-台東 |
+| 軌道資料 | ✅ 完成 |
+| O-D 軌道 | ✅ 完成 |
+| 時刻表 | 🔧 模擬資料 |
+| 備註 | 花蓮-臺東 (27站) |
+
+**已知問題與修正**：
+- [x] TDX 軌道 (TD-0/TD-1) MultiLineString 段落亂序 → 已用 `build_tl_od_tracks.py` 重新排序
+- [x] 軌道覆蓋所有 27 站，平均誤差 28.6m，最大誤差 174.2m (瑞源站)
+
+**Golden Track**：`tracks_golden/TL-0.geojson`, `TL-1.geojson`
+**O-D 軌道**：`tracks_od/TL-HL-TT.geojson`, `TL-TT-HL.geojson`
 
 ### SK 南迴線
 | 項目 | 狀態 |
@@ -212,6 +219,15 @@ tracks_od/          ← O-D 專屬軌道（列車位置計算）
 ---
 
 ## 更新紀錄
+
+### 2026-01-15 (TL 臺東線)
+- 新增 TL 臺東線軌道資料
+- 處理 TDX TD-0/TD-1 的 MultiLineString 段落亂序問題
+- 建立 Golden Track：`TL-0.geojson`, `TL-1.geojson`
+- 建立 O-D 軌道：`TL-HL-TT.geojson`, `TL-TT-HL.geojson`
+- 建立測試時刻表：`TL-0.json`, `TL-1.json` (各 6 班次)
+- 更新 `useTraData.ts`、`TraTrainEngine.ts`、`traInfo.ts`
+- 新增腳本：`build_tl_od_tracks.py`
 
 ### 2026-01-10 (Golden Track 架構)
 - 新增 `tracks_golden/` 目錄作為黃金版本來源

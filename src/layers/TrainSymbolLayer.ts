@@ -116,6 +116,7 @@ export class TrainSymbolLayer {
       id: TrainSymbolLayer.LAYER_GLOW,
       type: 'circle',
       source: TrainSymbolLayer.SOURCE_ID,
+      minzoom: 10, // 縮放 >= 10 才顯示
       filter: ['all', ['==', ['get', 'isSelected'], true], ['!=', ['get', 'system'], 'tra']],
       paint: {
         'circle-radius': 12,
@@ -132,6 +133,7 @@ export class TrainSymbolLayer {
       id: TrainSymbolLayer.LAYER_STOPPED_GLOW,
       type: 'circle',
       source: TrainSymbolLayer.SOURCE_ID,
+      minzoom: 10, // 縮放 >= 10 才顯示
       filter: [
         'all',
         ['==', ['get', 'status'], 'stopped'],
@@ -152,6 +154,7 @@ export class TrainSymbolLayer {
       id: TrainSymbolLayer.LAYER_COLLISION,
       type: 'circle',
       source: TrainSymbolLayer.SOURCE_ID,
+      minzoom: 10, // 縮放 >= 10 才顯示
       filter: ['all', ['==', ['get', 'isColliding'], true], ['!=', ['get', 'system'], 'tra']],
       paint: {
         'circle-radius': 8,
@@ -171,6 +174,7 @@ export class TrainSymbolLayer {
       id: TrainSymbolLayer.LAYER_BASE,
       type: 'circle',
       source: TrainSymbolLayer.SOURCE_ID,
+      minzoom: 10, // 縮放 >= 10 才顯示
       filter: ['!=', ['get', 'system'], 'tra'],
       paint: {
         'circle-radius': [
@@ -197,6 +201,7 @@ export class TrainSymbolLayer {
       id: TrainSymbolLayer.LAYER_TRA_GLOW,
       type: 'symbol',
       source: TrainSymbolLayer.SOURCE_ID,
+      minzoom: 10, // 縮放 >= 10 才顯示
       filter: ['all', ['==', ['get', 'system'], 'tra'], ['==', ['get', 'isSelected'], true]],
       layout: {
         'icon-image': TrainSymbolLayer.TRA_ICON_ID,
@@ -215,6 +220,7 @@ export class TrainSymbolLayer {
       id: TrainSymbolLayer.LAYER_TRA_STOPPED_GLOW,
       type: 'symbol',
       source: TrainSymbolLayer.SOURCE_ID,
+      minzoom: 10, // 縮放 >= 10 才顯示
       filter: [
         'all',
         ['==', ['get', 'system'], 'tra'],
@@ -238,6 +244,7 @@ export class TrainSymbolLayer {
       id: TrainSymbolLayer.LAYER_TRA_BASE,
       type: 'symbol',
       source: TrainSymbolLayer.SOURCE_ID,
+      minzoom: 10, // 縮放 >= 10 才顯示
       filter: ['==', ['get', 'system'], 'tra'],
       layout: {
         'icon-image': TrainSymbolLayer.TRA_ICON_ID,

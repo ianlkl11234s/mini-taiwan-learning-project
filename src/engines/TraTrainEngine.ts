@@ -19,6 +19,7 @@
  * 合併軌道：
  * - YL-SL-SA (樹林↔蘇澳)
  * - YL-SL-HL (樹林↔花蓮)
+ * - YL-SL-TT (樹林↔臺東)
  */
 
 export interface TraTrain {
@@ -191,6 +192,13 @@ function getTrackIdFromOdTrackId(odTrackId: string): string {
 
   // YL 宜蘭線
   if (lineId === 'YL') {
+    // 樹林↔臺東 合併軌道：YL-SL-TT-0 / YL-TT-SL-1 → 使用 YL golden track
+    if (odTrackId === 'YL-SL-TT-0') {
+      return 'YL-BD-SA-0';  // 南下使用 YL 方向 0
+    }
+    if (odTrackId === 'YL-TT-SL-1') {
+      return 'YL-SA-BD-1';  // 北上使用 YL 方向 1
+    }
     // 樹林↔花蓮 合併軌道：YL-SL-HL-0 / YL-HL-SL-1 → 使用 YL golden track
     if (odTrackId === 'YL-SL-HL-0') {
       return 'YL-BD-SA-0';  // 南下使用 YL 方向 0

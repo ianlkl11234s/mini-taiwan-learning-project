@@ -1,0 +1,383 @@
+{
+  "track_id": "LJ-HC-LJ",
+  "departures": [
+    {
+      "train_id": "LJ-HC-LJ-06",
+      "train_no": "TEST06",
+      "train_type": "區間",
+      "departure_time": "06:00:00",
+      "od_track_id": "LJ-HC-LJ",
+      "origin_station": "新竹",
+      "destination_station": "六家",
+      "total_travel_time": 1200,
+      "stations": [
+        {
+          "station_id": "1210",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "1190",
+          "arrival": 161,
+          "departure": 191
+        },
+        {
+          "station_id": "1191",
+          "arrival": 399,
+          "departure": 429
+        },
+        {
+          "station_id": "1192",
+          "arrival": 721,
+          "departure": 751
+        },
+        {
+          "station_id": "1193",
+          "arrival": 871,
+          "departure": 901
+        },
+        {
+          "station_id": "1194",
+          "arrival": 1200,
+          "departure": 1200
+        }
+      ]
+    },
+    {
+      "train_id": "LJ-HC-LJ-08",
+      "train_no": "TEST08",
+      "train_type": "區間",
+      "departure_time": "08:00:00",
+      "od_track_id": "LJ-HC-LJ",
+      "origin_station": "新竹",
+      "destination_station": "六家",
+      "total_travel_time": 1200,
+      "stations": [
+        {
+          "station_id": "1210",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "1190",
+          "arrival": 161,
+          "departure": 191
+        },
+        {
+          "station_id": "1191",
+          "arrival": 399,
+          "departure": 429
+        },
+        {
+          "station_id": "1192",
+          "arrival": 721,
+          "departure": 751
+        },
+        {
+          "station_id": "1193",
+          "arrival": 871,
+          "departure": 901
+        },
+        {
+          "station_id": "1194",
+          "arrival": 1200,
+          "departure": 1200
+        }
+      ]
+    },
+    {
+      "train_id": "LJ-HC-LJ-10",
+      "train_no": "TEST10",
+      "train_type": "區間",
+      "departure_time": "10:00:00",
+      "od_track_id": "LJ-HC-LJ",
+      "origin_station": "新竹",
+      "destination_station": "六家",
+      "total_travel_time": 1200,
+      "stations": [
+        {
+          "station_id": "1210",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "1190",
+          "arrival": 161,
+          "departure": 191
+        },
+        {
+          "station_id": "1191",
+          "arrival": 399,
+          "departure": 429
+        },
+        {
+          "station_id": "1192",
+          "arrival": 721,
+          "departure": 751
+        },
+        {
+          "station_id": "1193",
+          "arrival": 871,
+          "departure": 901
+        },
+        {
+          "station_id": "1194",
+          "arrival": 1200,
+          "departure": 1200
+        }
+      ]
+    },
+    {
+      "train_id": "LJ-HC-LJ-12",
+      "train_no": "TEST12",
+      "train_type": "區間",
+      "departure_time": "12:00:00",
+      "od_track_id": "LJ-HC-LJ",
+      "origin_station": "新竹",
+      "destination_station": "六家",
+      "total_travel_time": 1200,
+      "stations": [
+        {
+          "station_id": "1210",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "1190",
+          "arrival": 161,
+          "departure": 191
+        },
+        {
+          "station_id": "1191",
+          "arrival": 399,
+          "departure": 429
+        },
+        {
+          "station_id": "1192",
+          "arrival": 721,
+          "departure": 751
+        },
+        {
+          "station_id": "1193",
+          "arrival": 871,
+          "departure": 901
+        },
+        {
+          "station_id": "1194",
+          "arrival": 1200,
+          "departure": 1200
+        }
+      ]
+    },
+    {
+      "train_id": "LJ-HC-LJ-14",
+      "train_no": "TEST14",
+      "train_type": "區間",
+      "departure_time": "14:00:00",
+      "od_track_id": "LJ-HC-LJ",
+      "origin_station": "新竹",
+      "destination_station": "六家",
+      "total_travel_time": 1200,
+      "stations": [
+        {
+          "station_id": "1210",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "1190",
+          "arrival": 161,
+          "departure": 191
+        },
+        {
+          "station_id": "1191",
+          "arrival": 399,
+          "departure": 429
+        },
+        {
+          "station_id": "1192",
+          "arrival": 721,
+          "departure": 751
+        },
+        {
+          "station_id": "1193",
+          "arrival": 871,
+          "departure": 901
+        },
+        {
+          "station_id": "1194",
+          "arrival": 1200,
+          "departure": 1200
+        }
+      ]
+    },
+    {
+      "train_id": "LJ-HC-LJ-16",
+      "train_no": "TEST16",
+      "train_type": "區間",
+      "departure_time": "16:00:00",
+      "od_track_id": "LJ-HC-LJ",
+      "origin_station": "新竹",
+      "destination_station": "六家",
+      "total_travel_time": 1200,
+      "stations": [
+        {
+          "station_id": "1210",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "1190",
+          "arrival": 161,
+          "departure": 191
+        },
+        {
+          "station_id": "1191",
+          "arrival": 399,
+          "departure": 429
+        },
+        {
+          "station_id": "1192",
+          "arrival": 721,
+          "departure": 751
+        },
+        {
+          "station_id": "1193",
+          "arrival": 871,
+          "departure": 901
+        },
+        {
+          "station_id": "1194",
+          "arrival": 1200,
+          "departure": 1200
+        }
+      ]
+    },
+    {
+      "train_id": "LJ-HC-LJ-18",
+      "train_no": "TEST18",
+      "train_type": "區間",
+      "departure_time": "18:00:00",
+      "od_track_id": "LJ-HC-LJ",
+      "origin_station": "新竹",
+      "destination_station": "六家",
+      "total_travel_time": 1200,
+      "stations": [
+        {
+          "station_id": "1210",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "1190",
+          "arrival": 161,
+          "departure": 191
+        },
+        {
+          "station_id": "1191",
+          "arrival": 399,
+          "departure": 429
+        },
+        {
+          "station_id": "1192",
+          "arrival": 721,
+          "departure": 751
+        },
+        {
+          "station_id": "1193",
+          "arrival": 871,
+          "departure": 901
+        },
+        {
+          "station_id": "1194",
+          "arrival": 1200,
+          "departure": 1200
+        }
+      ]
+    },
+    {
+      "train_id": "LJ-HC-LJ-20",
+      "train_no": "TEST20",
+      "train_type": "區間",
+      "departure_time": "20:00:00",
+      "od_track_id": "LJ-HC-LJ",
+      "origin_station": "新竹",
+      "destination_station": "六家",
+      "total_travel_time": 1200,
+      "stations": [
+        {
+          "station_id": "1210",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "1190",
+          "arrival": 161,
+          "departure": 191
+        },
+        {
+          "station_id": "1191",
+          "arrival": 399,
+          "departure": 429
+        },
+        {
+          "station_id": "1192",
+          "arrival": 721,
+          "departure": 751
+        },
+        {
+          "station_id": "1193",
+          "arrival": 871,
+          "departure": 901
+        },
+        {
+          "station_id": "1194",
+          "arrival": 1200,
+          "departure": 1200
+        }
+      ]
+    },
+    {
+      "train_id": "LJ-HC-LJ-22",
+      "train_no": "TEST22",
+      "train_type": "區間",
+      "departure_time": "22:00:00",
+      "od_track_id": "LJ-HC-LJ",
+      "origin_station": "新竹",
+      "destination_station": "六家",
+      "total_travel_time": 1200,
+      "stations": [
+        {
+          "station_id": "1210",
+          "arrival": 0,
+          "departure": 30
+        },
+        {
+          "station_id": "1190",
+          "arrival": 161,
+          "departure": 191
+        },
+        {
+          "station_id": "1191",
+          "arrival": 399,
+          "departure": 429
+        },
+        {
+          "station_id": "1192",
+          "arrival": 721,
+          "departure": 751
+        },
+        {
+          "station_id": "1193",
+          "arrival": 871,
+          "departure": 901
+        },
+        {
+          "station_id": "1194",
+          "arrival": 1200,
+          "departure": 1200
+        }
+      ]
+    }
+  ]
+}

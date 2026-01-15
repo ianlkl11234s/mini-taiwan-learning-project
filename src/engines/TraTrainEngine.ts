@@ -258,7 +258,74 @@ function getTrackIdFromOdTrackId(odTrackId: string): string {
     return `TL-${direction}`;
   }
 
-  // 支線：各線的「起點站」代碼（方向 0 的終點）
+  // NW 內灣線 (新竹↔內灣, 竹中↔內灣)
+  if (lineId === 'NW') {
+    // NW-HC-NB / NW-NB-HC: 新竹↔內灣
+    if (odTrackId === 'NW-HC-NB' || odTrackId === 'NW-JJ-NB') {
+      return 'NW-0';  // 往內灣方向
+    }
+    if (odTrackId === 'NW-NB-HC' || odTrackId === 'NW-NB-JJ') {
+      return 'NW-1';  // 往新竹方向
+    }
+    return 'NW-0';
+  }
+
+  // LJ 六家線 (新竹↔六家)
+  if (lineId === 'LJ') {
+    if (odTrackId === 'LJ-HC-LJ') {
+      return 'LJ-0';  // 新竹→六家
+    }
+    if (odTrackId === 'LJ-LJ-HC') {
+      return 'LJ-1';  // 六家→新竹
+    }
+    return 'LJ-0';
+  }
+
+  // SH 沙崙線 (臺南↔沙崙)
+  if (lineId === 'SH') {
+    if (odTrackId === 'SH-TN-SL') {
+      return 'SH-0';  // 臺南→沙崙
+    }
+    if (odTrackId === 'SH-SL-TN') {
+      return 'SH-1';  // 沙崙→臺南
+    }
+    return 'SH-0';
+  }
+
+  // JJ 集集線 (二水↔車埕)
+  if (lineId === 'JJ') {
+    if (odTrackId === 'JJ-ES-CT') {
+      return 'JJ-0';  // 二水→車埕
+    }
+    if (odTrackId === 'JJ-CT-ES') {
+      return 'JJ-1';  // 車埕→二水
+    }
+    return 'JJ-0';
+  }
+
+  // CZ 成追線 (成功↔追分)
+  if (lineId === 'CZ') {
+    if (odTrackId === 'CZ-CG-ZF') {
+      return 'CZ-0';  // 成功→追分
+    }
+    if (odTrackId === 'CZ-ZF-CG') {
+      return 'CZ-1';  // 追分→成功
+    }
+    return 'CZ-0';
+  }
+
+  // PX 平溪線 (三貂嶺↔菁桐)
+  if (lineId === 'PX') {
+    if (odTrackId === 'PX-SD-JT') {
+      return 'PX-0';  // 三貂嶺→菁桐
+    }
+    if (odTrackId === 'PX-JT-SD') {
+      return 'PX-1';  // 菁桐→三貂嶺
+    }
+    return 'PX-0';
+  }
+
+  // 預設：使用舊邏輯
   const mainStations: Record<string, string> = {
     'NW': 'HC',  // 新竹
     'LJ': 'HC',  // 新竹

@@ -1,0 +1,102 @@
+{
+  "track_id": "YL-ZY-SL-1",
+  "departures": [
+    {
+      "train_id": "YL-ZY-SL-1-06",
+      "train_no": "TEST07",
+      "train_type": "普悠瑪",
+      "departure_time": "06:00:00",
+      "od_track_id": "YL-ZY-SL-1",
+      "origin_station": "新左營",
+      "destination_station": "樹林",
+      "total_travel_time": 28800,
+      "stations": [
+        {
+          "station_id": "4340",
+          "arrival": 8,
+          "departure": 68
+        },
+        {
+          "station_id": "4440",
+          "arrival": 805,
+          "departure": 865
+        },
+        {
+          "station_id": "5000",
+          "arrival": 1658,
+          "departure": 1718
+        },
+        {
+          "station_id": "5160",
+          "arrival": 4578,
+          "departure": 4638
+        },
+        {
+          "station_id": "6000",
+          "arrival": 9169,
+          "departure": 9229
+        },
+        {
+          "station_id": "6020",
+          "arrival": 9932,
+          "departure": 9992
+        },
+        {
+          "station_id": "6060",
+          "arrival": 11125,
+          "departure": 11185
+        },
+        {
+          "station_id": "7000",
+          "arrival": 17344,
+          "departure": 17404
+        },
+        {
+          "station_id": "7130",
+          "arrival": 21696,
+          "departure": 21756
+        },
+        {
+          "station_id": "7160",
+          "arrival": 22249,
+          "departure": 22309
+        },
+        {
+          "station_id": "7190",
+          "arrival": 22722,
+          "departure": 22782
+        },
+        {
+          "station_id": "7360",
+          "arrival": 26181,
+          "departure": 26241
+        },
+        {
+          "station_id": "0920",
+          "arrival": 26689,
+          "departure": 26749
+        },
+        {
+          "station_id": "0970",
+          "arrival": 27286,
+          "departure": 27346
+        },
+        {
+          "station_id": "1000",
+          "arrival": 28096,
+          "departure": 28156
+        },
+        {
+          "station_id": "1020",
+          "arrival": 28501,
+          "departure": 28561
+        },
+        {
+          "station_id": "1040",
+          "arrival": 28800,
+          "departure": 28860
+        }
+      ]
+    }
+  ]
+}

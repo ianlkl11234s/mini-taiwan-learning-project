@@ -1,6 +1,6 @@
 # TRA 軌道資料狀態追蹤
 
-> 最後更新：2026-01-16
+> 最後更新：2026-01-17
 
 ## Golden Track 架構
 
@@ -149,10 +149,18 @@ tracks_od/          ← O-D 專屬軌道（列車位置計算）
 ### WL-S 西部幹線南段
 | 項目 | 狀態 |
 |------|------|
-| 軌道資料 | 📋 待處理 |
-| O-D 軌道 | 📋 待處理 |
-| 時刻表 | 📋 待處理 |
-| 備註 | 竹南-高雄 |
+| 軌道資料 | ✅ 完成 |
+| O-D 軌道 | ✅ 完成 |
+| 時刻表 | 🔧 測試資料 |
+| 備註 | 彰化-新左營 (39站) |
+
+**已知問題與修正**：
+- [x] 合併 WL-S1 (新左營→石龜) + WL-S2 (石龜→彰化) 軌道
+- [x] 計算完整 station_progress：39 個車站 (3360 彰化 ~ 4340 新左營)
+- [x] O-D 軌道與 Golden Track 完全一致
+
+**O-D 軌道**：`tracks_od/WL-CH-ZY-0.geojson`, `WL-ZY-CH-1.geojson`
+**Golden Track**：`tracks_golden/WL-S-CH-ZY-0.geojson`, `WL-S-CH-ZY-1.geojson`
 
 ### TL 臺東線
 | 項目 | 狀態 |
@@ -244,6 +252,17 @@ tracks_od/          ← O-D 專屬軌道（列車位置計算）
 ---
 
 ## 更新紀錄
+
+### 2026-01-17 (WL-S 西部幹線南段)
+- 新增 WL-S 西部幹線南段 O-D 軌道資料 (彰化-新左營)
+- 合併 WL-S1 (新左營→石龜) + WL-S2 (石龜→彰化) TDX 軌道
+- 建立 Golden Track：`WL-S-CH-ZY-0.geojson`, `WL-S-CH-ZY-1.geojson`
+- 建立 O-D 軌道：`WL-CH-ZY-0.geojson` (彰化→新左營), `WL-ZY-CH-1.geojson` (新左營→彰化)
+- 計算完整 station_progress：39 個車站 (3360 彰化 ~ 4340 新左營)
+- 所有車站誤差均在 40m 以內
+- 建立測試時刻表：`WL-CH-ZY-0.json`, `WL-ZY-CH-1.json` (每小時一班，06:00-22:00)
+- 新增腳本：`build_wl_south_od_tracks.py`, `build_wl_south_schedules.py`
+- 更新 `useTraData.ts`、`TraTrainEngine.ts` 支援 WL-S 路線
 
 ### 2026-01-16 (PT 屏東線)
 - 新增 PT 屏東線 O-D 軌道資料 (新左營-枋寮)

@@ -183,9 +183,16 @@ function getTrackIdFromOdTrackId(odTrackId: string): string {
   const parts = odTrackId.split('-');
   const lineId = parts[0];
 
-  // WL 西部幹線：WL-SL-BD-0 → WL-N-SL-BD-0
+  // WL 西部幹線
   if (lineId === 'WL') {
-    // odTrackId 格式: WL-SL-BD-0 或 WL-BD-SL-1
+    // 南段：WL-CH-ZY-0 / WL-ZY-CH-1 → WL-S-CH-ZY-0 / WL-S-CH-ZY-1
+    if (odTrackId === 'WL-CH-ZY-0') {
+      return 'WL-S-CH-ZY-0';  // 彰化→新左營
+    }
+    if (odTrackId === 'WL-ZY-CH-1') {
+      return 'WL-S-CH-ZY-1';  // 新左營→彰化
+    }
+    // 北段：WL-SL-BD-0 / WL-BD-SL-1 → WL-N-SL-BD-0 / WL-N-SL-BD-1
     const direction = parts[parts.length - 1];  // 取最後一個數字
     return `WL-N-SL-BD-${direction}`;
   }

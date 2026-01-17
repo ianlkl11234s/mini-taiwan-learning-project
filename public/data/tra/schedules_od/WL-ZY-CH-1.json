@@ -1,0 +1,3524 @@
+{
+  "track_id": "WL-ZY-CH-1",
+  "departures": [
+    {
+      "train_id": "WL-ZY-CH-1-06",
+      "train_no": "TEST06",
+      "train_type": "區間",
+      "departure_time": "06:00:00",
+      "od_track_id": "WL-ZY-CH-1",
+      "origin_station": "新左營",
+      "destination_station": "彰化",
+      "total_travel_time": 10800,
+      "stations": [
+        {
+          "station_id": "4340",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "4330",
+          "arrival": 763,
+          "departure": 803
+        },
+        {
+          "station_id": "4320",
+          "arrival": 993,
+          "departure": 1033
+        },
+        {
+          "station_id": "4310",
+          "arrival": 1190,
+          "departure": 1230
+        },
+        {
+          "station_id": "4300",
+          "arrival": 1636,
+          "departure": 1676
+        },
+        {
+          "station_id": "4290",
+          "arrival": 1799,
+          "departure": 1839
+        },
+        {
+          "station_id": "4270",
+          "arrival": 1984,
+          "departure": 2024
+        },
+        {
+          "station_id": "4260",
+          "arrival": 2124,
+          "departure": 2164
+        },
+        {
+          "station_id": "4250",
+          "arrival": 2195,
+          "departure": 2235
+        },
+        {
+          "station_id": "4220",
+          "arrival": 2616,
+          "departure": 2656
+        },
+        {
+          "station_id": "4210",
+          "arrival": 2770,
+          "departure": 2810
+        },
+        {
+          "station_id": "4200",
+          "arrival": 2979,
+          "departure": 3019
+        },
+        {
+          "station_id": "4190",
+          "arrival": 3263,
+          "departure": 3303
+        },
+        {
+          "station_id": "4180",
+          "arrival": 3515,
+          "departure": 3555
+        },
+        {
+          "station_id": "4170",
+          "arrival": 3673,
+          "departure": 3713
+        },
+        {
+          "station_id": "4160",
+          "arrival": 3928,
+          "departure": 3968
+        },
+        {
+          "station_id": "4150",
+          "arrival": 4047,
+          "departure": 4087
+        },
+        {
+          "station_id": "4140",
+          "arrival": 4347,
+          "departure": 4387
+        },
+        {
+          "station_id": "4130",
+          "arrival": 4557,
+          "departure": 4597
+        },
+        {
+          "station_id": "4120",
+          "arrival": 4736,
+          "departure": 4776
+        },
+        {
+          "station_id": "4110",
+          "arrival": 5158,
+          "departure": 5198
+        },
+        {
+          "station_id": "4100",
+          "arrival": 5491,
+          "departure": 5531
+        },
+        {
+          "station_id": "4090",
+          "arrival": 5637,
+          "departure": 5677
+        },
+        {
+          "station_id": "4080",
+          "arrival": 6003,
+          "departure": 6043
+        },
+        {
+          "station_id": "4060",
+          "arrival": 6516,
+          "departure": 6556
+        },
+        {
+          "station_id": "4050",
+          "arrival": 6836,
+          "departure": 6876
+        },
+        {
+          "station_id": "3490",
+          "arrival": 7088,
+          "departure": 7128
+        },
+        {
+          "station_id": "3480",
+          "arrival": 7398,
+          "departure": 7438
+        },
+        {
+          "station_id": "3470",
+          "arrival": 7882,
+          "departure": 7922
+        },
+        {
+          "station_id": "3460",
+          "arrival": 8157,
+          "departure": 8197
+        },
+        {
+          "station_id": "3450",
+          "arrival": 8428,
+          "departure": 8468
+        },
+        {
+          "station_id": "3430",
+          "arrival": 8962,
+          "departure": 9002
+        },
+        {
+          "station_id": "3420",
+          "arrival": 9306,
+          "departure": 9346
+        },
+        {
+          "station_id": "3410",
+          "arrival": 9539,
+          "departure": 9579
+        },
+        {
+          "station_id": "3400",
+          "arrival": 9740,
+          "departure": 9780
+        },
+        {
+          "station_id": "3390",
+          "arrival": 9930,
+          "departure": 9970
+        },
+        {
+          "station_id": "3380",
+          "arrival": 10123,
+          "departure": 10163
+        },
+        {
+          "station_id": "3370",
+          "arrival": 10377,
+          "departure": 10417
+        },
+        {
+          "station_id": "3360",
+          "arrival": 10739,
+          "departure": 10779
+        }
+      ]
+    },
+    {
+      "train_id": "WL-ZY-CH-1-07",
+      "train_no": "TEST07",
+      "train_type": "區間",
+      "departure_time": "07:00:00",
+      "od_track_id": "WL-ZY-CH-1",
+      "origin_station": "新左營",
+      "destination_station": "彰化",
+      "total_travel_time": 10800,
+      "stations": [
+        {
+          "station_id": "4340",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "4330",
+          "arrival": 763,
+          "departure": 803
+        },
+        {
+          "station_id": "4320",
+          "arrival": 993,
+          "departure": 1033
+        },
+        {
+          "station_id": "4310",
+          "arrival": 1190,
+          "departure": 1230
+        },
+        {
+          "station_id": "4300",
+          "arrival": 1636,
+          "departure": 1676
+        },
+        {
+          "station_id": "4290",
+          "arrival": 1799,
+          "departure": 1839
+        },
+        {
+          "station_id": "4270",
+          "arrival": 1984,
+          "departure": 2024
+        },
+        {
+          "station_id": "4260",
+          "arrival": 2124,
+          "departure": 2164
+        },
+        {
+          "station_id": "4250",
+          "arrival": 2195,
+          "departure": 2235
+        },
+        {
+          "station_id": "4220",
+          "arrival": 2616,
+          "departure": 2656
+        },
+        {
+          "station_id": "4210",
+          "arrival": 2770,
+          "departure": 2810
+        },
+        {
+          "station_id": "4200",
+          "arrival": 2979,
+          "departure": 3019
+        },
+        {
+          "station_id": "4190",
+          "arrival": 3263,
+          "departure": 3303
+        },
+        {
+          "station_id": "4180",
+          "arrival": 3515,
+          "departure": 3555
+        },
+        {
+          "station_id": "4170",
+          "arrival": 3673,
+          "departure": 3713
+        },
+        {
+          "station_id": "4160",
+          "arrival": 3928,
+          "departure": 3968
+        },
+        {
+          "station_id": "4150",
+          "arrival": 4047,
+          "departure": 4087
+        },
+        {
+          "station_id": "4140",
+          "arrival": 4347,
+          "departure": 4387
+        },
+        {
+          "station_id": "4130",
+          "arrival": 4557,
+          "departure": 4597
+        },
+        {
+          "station_id": "4120",
+          "arrival": 4736,
+          "departure": 4776
+        },
+        {
+          "station_id": "4110",
+          "arrival": 5158,
+          "departure": 5198
+        },
+        {
+          "station_id": "4100",
+          "arrival": 5491,
+          "departure": 5531
+        },
+        {
+          "station_id": "4090",
+          "arrival": 5637,
+          "departure": 5677
+        },
+        {
+          "station_id": "4080",
+          "arrival": 6003,
+          "departure": 6043
+        },
+        {
+          "station_id": "4060",
+          "arrival": 6516,
+          "departure": 6556
+        },
+        {
+          "station_id": "4050",
+          "arrival": 6836,
+          "departure": 6876
+        },
+        {
+          "station_id": "3490",
+          "arrival": 7088,
+          "departure": 7128
+        },
+        {
+          "station_id": "3480",
+          "arrival": 7398,
+          "departure": 7438
+        },
+        {
+          "station_id": "3470",
+          "arrival": 7882,
+          "departure": 7922
+        },
+        {
+          "station_id": "3460",
+          "arrival": 8157,
+          "departure": 8197
+        },
+        {
+          "station_id": "3450",
+          "arrival": 8428,
+          "departure": 8468
+        },
+        {
+          "station_id": "3430",
+          "arrival": 8962,
+          "departure": 9002
+        },
+        {
+          "station_id": "3420",
+          "arrival": 9306,
+          "departure": 9346
+        },
+        {
+          "station_id": "3410",
+          "arrival": 9539,
+          "departure": 9579
+        },
+        {
+          "station_id": "3400",
+          "arrival": 9740,
+          "departure": 9780
+        },
+        {
+          "station_id": "3390",
+          "arrival": 9930,
+          "departure": 9970
+        },
+        {
+          "station_id": "3380",
+          "arrival": 10123,
+          "departure": 10163
+        },
+        {
+          "station_id": "3370",
+          "arrival": 10377,
+          "departure": 10417
+        },
+        {
+          "station_id": "3360",
+          "arrival": 10739,
+          "departure": 10779
+        }
+      ]
+    },
+    {
+      "train_id": "WL-ZY-CH-1-08",
+      "train_no": "TEST08",
+      "train_type": "區間",
+      "departure_time": "08:00:00",
+      "od_track_id": "WL-ZY-CH-1",
+      "origin_station": "新左營",
+      "destination_station": "彰化",
+      "total_travel_time": 10800,
+      "stations": [
+        {
+          "station_id": "4340",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "4330",
+          "arrival": 763,
+          "departure": 803
+        },
+        {
+          "station_id": "4320",
+          "arrival": 993,
+          "departure": 1033
+        },
+        {
+          "station_id": "4310",
+          "arrival": 1190,
+          "departure": 1230
+        },
+        {
+          "station_id": "4300",
+          "arrival": 1636,
+          "departure": 1676
+        },
+        {
+          "station_id": "4290",
+          "arrival": 1799,
+          "departure": 1839
+        },
+        {
+          "station_id": "4270",
+          "arrival": 1984,
+          "departure": 2024
+        },
+        {
+          "station_id": "4260",
+          "arrival": 2124,
+          "departure": 2164
+        },
+        {
+          "station_id": "4250",
+          "arrival": 2195,
+          "departure": 2235
+        },
+        {
+          "station_id": "4220",
+          "arrival": 2616,
+          "departure": 2656
+        },
+        {
+          "station_id": "4210",
+          "arrival": 2770,
+          "departure": 2810
+        },
+        {
+          "station_id": "4200",
+          "arrival": 2979,
+          "departure": 3019
+        },
+        {
+          "station_id": "4190",
+          "arrival": 3263,
+          "departure": 3303
+        },
+        {
+          "station_id": "4180",
+          "arrival": 3515,
+          "departure": 3555
+        },
+        {
+          "station_id": "4170",
+          "arrival": 3673,
+          "departure": 3713
+        },
+        {
+          "station_id": "4160",
+          "arrival": 3928,
+          "departure": 3968
+        },
+        {
+          "station_id": "4150",
+          "arrival": 4047,
+          "departure": 4087
+        },
+        {
+          "station_id": "4140",
+          "arrival": 4347,
+          "departure": 4387
+        },
+        {
+          "station_id": "4130",
+          "arrival": 4557,
+          "departure": 4597
+        },
+        {
+          "station_id": "4120",
+          "arrival": 4736,
+          "departure": 4776
+        },
+        {
+          "station_id": "4110",
+          "arrival": 5158,
+          "departure": 5198
+        },
+        {
+          "station_id": "4100",
+          "arrival": 5491,
+          "departure": 5531
+        },
+        {
+          "station_id": "4090",
+          "arrival": 5637,
+          "departure": 5677
+        },
+        {
+          "station_id": "4080",
+          "arrival": 6003,
+          "departure": 6043
+        },
+        {
+          "station_id": "4060",
+          "arrival": 6516,
+          "departure": 6556
+        },
+        {
+          "station_id": "4050",
+          "arrival": 6836,
+          "departure": 6876
+        },
+        {
+          "station_id": "3490",
+          "arrival": 7088,
+          "departure": 7128
+        },
+        {
+          "station_id": "3480",
+          "arrival": 7398,
+          "departure": 7438
+        },
+        {
+          "station_id": "3470",
+          "arrival": 7882,
+          "departure": 7922
+        },
+        {
+          "station_id": "3460",
+          "arrival": 8157,
+          "departure": 8197
+        },
+        {
+          "station_id": "3450",
+          "arrival": 8428,
+          "departure": 8468
+        },
+        {
+          "station_id": "3430",
+          "arrival": 8962,
+          "departure": 9002
+        },
+        {
+          "station_id": "3420",
+          "arrival": 9306,
+          "departure": 9346
+        },
+        {
+          "station_id": "3410",
+          "arrival": 9539,
+          "departure": 9579
+        },
+        {
+          "station_id": "3400",
+          "arrival": 9740,
+          "departure": 9780
+        },
+        {
+          "station_id": "3390",
+          "arrival": 9930,
+          "departure": 9970
+        },
+        {
+          "station_id": "3380",
+          "arrival": 10123,
+          "departure": 10163
+        },
+        {
+          "station_id": "3370",
+          "arrival": 10377,
+          "departure": 10417
+        },
+        {
+          "station_id": "3360",
+          "arrival": 10739,
+          "departure": 10779
+        }
+      ]
+    },
+    {
+      "train_id": "WL-ZY-CH-1-09",
+      "train_no": "TEST09",
+      "train_type": "區間",
+      "departure_time": "09:00:00",
+      "od_track_id": "WL-ZY-CH-1",
+      "origin_station": "新左營",
+      "destination_station": "彰化",
+      "total_travel_time": 10800,
+      "stations": [
+        {
+          "station_id": "4340",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "4330",
+          "arrival": 763,
+          "departure": 803
+        },
+        {
+          "station_id": "4320",
+          "arrival": 993,
+          "departure": 1033
+        },
+        {
+          "station_id": "4310",
+          "arrival": 1190,
+          "departure": 1230
+        },
+        {
+          "station_id": "4300",
+          "arrival": 1636,
+          "departure": 1676
+        },
+        {
+          "station_id": "4290",
+          "arrival": 1799,
+          "departure": 1839
+        },
+        {
+          "station_id": "4270",
+          "arrival": 1984,
+          "departure": 2024
+        },
+        {
+          "station_id": "4260",
+          "arrival": 2124,
+          "departure": 2164
+        },
+        {
+          "station_id": "4250",
+          "arrival": 2195,
+          "departure": 2235
+        },
+        {
+          "station_id": "4220",
+          "arrival": 2616,
+          "departure": 2656
+        },
+        {
+          "station_id": "4210",
+          "arrival": 2770,
+          "departure": 2810
+        },
+        {
+          "station_id": "4200",
+          "arrival": 2979,
+          "departure": 3019
+        },
+        {
+          "station_id": "4190",
+          "arrival": 3263,
+          "departure": 3303
+        },
+        {
+          "station_id": "4180",
+          "arrival": 3515,
+          "departure": 3555
+        },
+        {
+          "station_id": "4170",
+          "arrival": 3673,
+          "departure": 3713
+        },
+        {
+          "station_id": "4160",
+          "arrival": 3928,
+          "departure": 3968
+        },
+        {
+          "station_id": "4150",
+          "arrival": 4047,
+          "departure": 4087
+        },
+        {
+          "station_id": "4140",
+          "arrival": 4347,
+          "departure": 4387
+        },
+        {
+          "station_id": "4130",
+          "arrival": 4557,
+          "departure": 4597
+        },
+        {
+          "station_id": "4120",
+          "arrival": 4736,
+          "departure": 4776
+        },
+        {
+          "station_id": "4110",
+          "arrival": 5158,
+          "departure": 5198
+        },
+        {
+          "station_id": "4100",
+          "arrival": 5491,
+          "departure": 5531
+        },
+        {
+          "station_id": "4090",
+          "arrival": 5637,
+          "departure": 5677
+        },
+        {
+          "station_id": "4080",
+          "arrival": 6003,
+          "departure": 6043
+        },
+        {
+          "station_id": "4060",
+          "arrival": 6516,
+          "departure": 6556
+        },
+        {
+          "station_id": "4050",
+          "arrival": 6836,
+          "departure": 6876
+        },
+        {
+          "station_id": "3490",
+          "arrival": 7088,
+          "departure": 7128
+        },
+        {
+          "station_id": "3480",
+          "arrival": 7398,
+          "departure": 7438
+        },
+        {
+          "station_id": "3470",
+          "arrival": 7882,
+          "departure": 7922
+        },
+        {
+          "station_id": "3460",
+          "arrival": 8157,
+          "departure": 8197
+        },
+        {
+          "station_id": "3450",
+          "arrival": 8428,
+          "departure": 8468
+        },
+        {
+          "station_id": "3430",
+          "arrival": 8962,
+          "departure": 9002
+        },
+        {
+          "station_id": "3420",
+          "arrival": 9306,
+          "departure": 9346
+        },
+        {
+          "station_id": "3410",
+          "arrival": 9539,
+          "departure": 9579
+        },
+        {
+          "station_id": "3400",
+          "arrival": 9740,
+          "departure": 9780
+        },
+        {
+          "station_id": "3390",
+          "arrival": 9930,
+          "departure": 9970
+        },
+        {
+          "station_id": "3380",
+          "arrival": 10123,
+          "departure": 10163
+        },
+        {
+          "station_id": "3370",
+          "arrival": 10377,
+          "departure": 10417
+        },
+        {
+          "station_id": "3360",
+          "arrival": 10739,
+          "departure": 10779
+        }
+      ]
+    },
+    {
+      "train_id": "WL-ZY-CH-1-10",
+      "train_no": "TEST10",
+      "train_type": "區間",
+      "departure_time": "10:00:00",
+      "od_track_id": "WL-ZY-CH-1",
+      "origin_station": "新左營",
+      "destination_station": "彰化",
+      "total_travel_time": 10800,
+      "stations": [
+        {
+          "station_id": "4340",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "4330",
+          "arrival": 763,
+          "departure": 803
+        },
+        {
+          "station_id": "4320",
+          "arrival": 993,
+          "departure": 1033
+        },
+        {
+          "station_id": "4310",
+          "arrival": 1190,
+          "departure": 1230
+        },
+        {
+          "station_id": "4300",
+          "arrival": 1636,
+          "departure": 1676
+        },
+        {
+          "station_id": "4290",
+          "arrival": 1799,
+          "departure": 1839
+        },
+        {
+          "station_id": "4270",
+          "arrival": 1984,
+          "departure": 2024
+        },
+        {
+          "station_id": "4260",
+          "arrival": 2124,
+          "departure": 2164
+        },
+        {
+          "station_id": "4250",
+          "arrival": 2195,
+          "departure": 2235
+        },
+        {
+          "station_id": "4220",
+          "arrival": 2616,
+          "departure": 2656
+        },
+        {
+          "station_id": "4210",
+          "arrival": 2770,
+          "departure": 2810
+        },
+        {
+          "station_id": "4200",
+          "arrival": 2979,
+          "departure": 3019
+        },
+        {
+          "station_id": "4190",
+          "arrival": 3263,
+          "departure": 3303
+        },
+        {
+          "station_id": "4180",
+          "arrival": 3515,
+          "departure": 3555
+        },
+        {
+          "station_id": "4170",
+          "arrival": 3673,
+          "departure": 3713
+        },
+        {
+          "station_id": "4160",
+          "arrival": 3928,
+          "departure": 3968
+        },
+        {
+          "station_id": "4150",
+          "arrival": 4047,
+          "departure": 4087
+        },
+        {
+          "station_id": "4140",
+          "arrival": 4347,
+          "departure": 4387
+        },
+        {
+          "station_id": "4130",
+          "arrival": 4557,
+          "departure": 4597
+        },
+        {
+          "station_id": "4120",
+          "arrival": 4736,
+          "departure": 4776
+        },
+        {
+          "station_id": "4110",
+          "arrival": 5158,
+          "departure": 5198
+        },
+        {
+          "station_id": "4100",
+          "arrival": 5491,
+          "departure": 5531
+        },
+        {
+          "station_id": "4090",
+          "arrival": 5637,
+          "departure": 5677
+        },
+        {
+          "station_id": "4080",
+          "arrival": 6003,
+          "departure": 6043
+        },
+        {
+          "station_id": "4060",
+          "arrival": 6516,
+          "departure": 6556
+        },
+        {
+          "station_id": "4050",
+          "arrival": 6836,
+          "departure": 6876
+        },
+        {
+          "station_id": "3490",
+          "arrival": 7088,
+          "departure": 7128
+        },
+        {
+          "station_id": "3480",
+          "arrival": 7398,
+          "departure": 7438
+        },
+        {
+          "station_id": "3470",
+          "arrival": 7882,
+          "departure": 7922
+        },
+        {
+          "station_id": "3460",
+          "arrival": 8157,
+          "departure": 8197
+        },
+        {
+          "station_id": "3450",
+          "arrival": 8428,
+          "departure": 8468
+        },
+        {
+          "station_id": "3430",
+          "arrival": 8962,
+          "departure": 9002
+        },
+        {
+          "station_id": "3420",
+          "arrival": 9306,
+          "departure": 9346
+        },
+        {
+          "station_id": "3410",
+          "arrival": 9539,
+          "departure": 9579
+        },
+        {
+          "station_id": "3400",
+          "arrival": 9740,
+          "departure": 9780
+        },
+        {
+          "station_id": "3390",
+          "arrival": 9930,
+          "departure": 9970
+        },
+        {
+          "station_id": "3380",
+          "arrival": 10123,
+          "departure": 10163
+        },
+        {
+          "station_id": "3370",
+          "arrival": 10377,
+          "departure": 10417
+        },
+        {
+          "station_id": "3360",
+          "arrival": 10739,
+          "departure": 10779
+        }
+      ]
+    },
+    {
+      "train_id": "WL-ZY-CH-1-11",
+      "train_no": "TEST11",
+      "train_type": "區間",
+      "departure_time": "11:00:00",
+      "od_track_id": "WL-ZY-CH-1",
+      "origin_station": "新左營",
+      "destination_station": "彰化",
+      "total_travel_time": 10800,
+      "stations": [
+        {
+          "station_id": "4340",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "4330",
+          "arrival": 763,
+          "departure": 803
+        },
+        {
+          "station_id": "4320",
+          "arrival": 993,
+          "departure": 1033
+        },
+        {
+          "station_id": "4310",
+          "arrival": 1190,
+          "departure": 1230
+        },
+        {
+          "station_id": "4300",
+          "arrival": 1636,
+          "departure": 1676
+        },
+        {
+          "station_id": "4290",
+          "arrival": 1799,
+          "departure": 1839
+        },
+        {
+          "station_id": "4270",
+          "arrival": 1984,
+          "departure": 2024
+        },
+        {
+          "station_id": "4260",
+          "arrival": 2124,
+          "departure": 2164
+        },
+        {
+          "station_id": "4250",
+          "arrival": 2195,
+          "departure": 2235
+        },
+        {
+          "station_id": "4220",
+          "arrival": 2616,
+          "departure": 2656
+        },
+        {
+          "station_id": "4210",
+          "arrival": 2770,
+          "departure": 2810
+        },
+        {
+          "station_id": "4200",
+          "arrival": 2979,
+          "departure": 3019
+        },
+        {
+          "station_id": "4190",
+          "arrival": 3263,
+          "departure": 3303
+        },
+        {
+          "station_id": "4180",
+          "arrival": 3515,
+          "departure": 3555
+        },
+        {
+          "station_id": "4170",
+          "arrival": 3673,
+          "departure": 3713
+        },
+        {
+          "station_id": "4160",
+          "arrival": 3928,
+          "departure": 3968
+        },
+        {
+          "station_id": "4150",
+          "arrival": 4047,
+          "departure": 4087
+        },
+        {
+          "station_id": "4140",
+          "arrival": 4347,
+          "departure": 4387
+        },
+        {
+          "station_id": "4130",
+          "arrival": 4557,
+          "departure": 4597
+        },
+        {
+          "station_id": "4120",
+          "arrival": 4736,
+          "departure": 4776
+        },
+        {
+          "station_id": "4110",
+          "arrival": 5158,
+          "departure": 5198
+        },
+        {
+          "station_id": "4100",
+          "arrival": 5491,
+          "departure": 5531
+        },
+        {
+          "station_id": "4090",
+          "arrival": 5637,
+          "departure": 5677
+        },
+        {
+          "station_id": "4080",
+          "arrival": 6003,
+          "departure": 6043
+        },
+        {
+          "station_id": "4060",
+          "arrival": 6516,
+          "departure": 6556
+        },
+        {
+          "station_id": "4050",
+          "arrival": 6836,
+          "departure": 6876
+        },
+        {
+          "station_id": "3490",
+          "arrival": 7088,
+          "departure": 7128
+        },
+        {
+          "station_id": "3480",
+          "arrival": 7398,
+          "departure": 7438
+        },
+        {
+          "station_id": "3470",
+          "arrival": 7882,
+          "departure": 7922
+        },
+        {
+          "station_id": "3460",
+          "arrival": 8157,
+          "departure": 8197
+        },
+        {
+          "station_id": "3450",
+          "arrival": 8428,
+          "departure": 8468
+        },
+        {
+          "station_id": "3430",
+          "arrival": 8962,
+          "departure": 9002
+        },
+        {
+          "station_id": "3420",
+          "arrival": 9306,
+          "departure": 9346
+        },
+        {
+          "station_id": "3410",
+          "arrival": 9539,
+          "departure": 9579
+        },
+        {
+          "station_id": "3400",
+          "arrival": 9740,
+          "departure": 9780
+        },
+        {
+          "station_id": "3390",
+          "arrival": 9930,
+          "departure": 9970
+        },
+        {
+          "station_id": "3380",
+          "arrival": 10123,
+          "departure": 10163
+        },
+        {
+          "station_id": "3370",
+          "arrival": 10377,
+          "departure": 10417
+        },
+        {
+          "station_id": "3360",
+          "arrival": 10739,
+          "departure": 10779
+        }
+      ]
+    },
+    {
+      "train_id": "WL-ZY-CH-1-12",
+      "train_no": "TEST12",
+      "train_type": "區間",
+      "departure_time": "12:00:00",
+      "od_track_id": "WL-ZY-CH-1",
+      "origin_station": "新左營",
+      "destination_station": "彰化",
+      "total_travel_time": 10800,
+      "stations": [
+        {
+          "station_id": "4340",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "4330",
+          "arrival": 763,
+          "departure": 803
+        },
+        {
+          "station_id": "4320",
+          "arrival": 993,
+          "departure": 1033
+        },
+        {
+          "station_id": "4310",
+          "arrival": 1190,
+          "departure": 1230
+        },
+        {
+          "station_id": "4300",
+          "arrival": 1636,
+          "departure": 1676
+        },
+        {
+          "station_id": "4290",
+          "arrival": 1799,
+          "departure": 1839
+        },
+        {
+          "station_id": "4270",
+          "arrival": 1984,
+          "departure": 2024
+        },
+        {
+          "station_id": "4260",
+          "arrival": 2124,
+          "departure": 2164
+        },
+        {
+          "station_id": "4250",
+          "arrival": 2195,
+          "departure": 2235
+        },
+        {
+          "station_id": "4220",
+          "arrival": 2616,
+          "departure": 2656
+        },
+        {
+          "station_id": "4210",
+          "arrival": 2770,
+          "departure": 2810
+        },
+        {
+          "station_id": "4200",
+          "arrival": 2979,
+          "departure": 3019
+        },
+        {
+          "station_id": "4190",
+          "arrival": 3263,
+          "departure": 3303
+        },
+        {
+          "station_id": "4180",
+          "arrival": 3515,
+          "departure": 3555
+        },
+        {
+          "station_id": "4170",
+          "arrival": 3673,
+          "departure": 3713
+        },
+        {
+          "station_id": "4160",
+          "arrival": 3928,
+          "departure": 3968
+        },
+        {
+          "station_id": "4150",
+          "arrival": 4047,
+          "departure": 4087
+        },
+        {
+          "station_id": "4140",
+          "arrival": 4347,
+          "departure": 4387
+        },
+        {
+          "station_id": "4130",
+          "arrival": 4557,
+          "departure": 4597
+        },
+        {
+          "station_id": "4120",
+          "arrival": 4736,
+          "departure": 4776
+        },
+        {
+          "station_id": "4110",
+          "arrival": 5158,
+          "departure": 5198
+        },
+        {
+          "station_id": "4100",
+          "arrival": 5491,
+          "departure": 5531
+        },
+        {
+          "station_id": "4090",
+          "arrival": 5637,
+          "departure": 5677
+        },
+        {
+          "station_id": "4080",
+          "arrival": 6003,
+          "departure": 6043
+        },
+        {
+          "station_id": "4060",
+          "arrival": 6516,
+          "departure": 6556
+        },
+        {
+          "station_id": "4050",
+          "arrival": 6836,
+          "departure": 6876
+        },
+        {
+          "station_id": "3490",
+          "arrival": 7088,
+          "departure": 7128
+        },
+        {
+          "station_id": "3480",
+          "arrival": 7398,
+          "departure": 7438
+        },
+        {
+          "station_id": "3470",
+          "arrival": 7882,
+          "departure": 7922
+        },
+        {
+          "station_id": "3460",
+          "arrival": 8157,
+          "departure": 8197
+        },
+        {
+          "station_id": "3450",
+          "arrival": 8428,
+          "departure": 8468
+        },
+        {
+          "station_id": "3430",
+          "arrival": 8962,
+          "departure": 9002
+        },
+        {
+          "station_id": "3420",
+          "arrival": 9306,
+          "departure": 9346
+        },
+        {
+          "station_id": "3410",
+          "arrival": 9539,
+          "departure": 9579
+        },
+        {
+          "station_id": "3400",
+          "arrival": 9740,
+          "departure": 9780
+        },
+        {
+          "station_id": "3390",
+          "arrival": 9930,
+          "departure": 9970
+        },
+        {
+          "station_id": "3380",
+          "arrival": 10123,
+          "departure": 10163
+        },
+        {
+          "station_id": "3370",
+          "arrival": 10377,
+          "departure": 10417
+        },
+        {
+          "station_id": "3360",
+          "arrival": 10739,
+          "departure": 10779
+        }
+      ]
+    },
+    {
+      "train_id": "WL-ZY-CH-1-13",
+      "train_no": "TEST13",
+      "train_type": "區間",
+      "departure_time": "13:00:00",
+      "od_track_id": "WL-ZY-CH-1",
+      "origin_station": "新左營",
+      "destination_station": "彰化",
+      "total_travel_time": 10800,
+      "stations": [
+        {
+          "station_id": "4340",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "4330",
+          "arrival": 763,
+          "departure": 803
+        },
+        {
+          "station_id": "4320",
+          "arrival": 993,
+          "departure": 1033
+        },
+        {
+          "station_id": "4310",
+          "arrival": 1190,
+          "departure": 1230
+        },
+        {
+          "station_id": "4300",
+          "arrival": 1636,
+          "departure": 1676
+        },
+        {
+          "station_id": "4290",
+          "arrival": 1799,
+          "departure": 1839
+        },
+        {
+          "station_id": "4270",
+          "arrival": 1984,
+          "departure": 2024
+        },
+        {
+          "station_id": "4260",
+          "arrival": 2124,
+          "departure": 2164
+        },
+        {
+          "station_id": "4250",
+          "arrival": 2195,
+          "departure": 2235
+        },
+        {
+          "station_id": "4220",
+          "arrival": 2616,
+          "departure": 2656
+        },
+        {
+          "station_id": "4210",
+          "arrival": 2770,
+          "departure": 2810
+        },
+        {
+          "station_id": "4200",
+          "arrival": 2979,
+          "departure": 3019
+        },
+        {
+          "station_id": "4190",
+          "arrival": 3263,
+          "departure": 3303
+        },
+        {
+          "station_id": "4180",
+          "arrival": 3515,
+          "departure": 3555
+        },
+        {
+          "station_id": "4170",
+          "arrival": 3673,
+          "departure": 3713
+        },
+        {
+          "station_id": "4160",
+          "arrival": 3928,
+          "departure": 3968
+        },
+        {
+          "station_id": "4150",
+          "arrival": 4047,
+          "departure": 4087
+        },
+        {
+          "station_id": "4140",
+          "arrival": 4347,
+          "departure": 4387
+        },
+        {
+          "station_id": "4130",
+          "arrival": 4557,
+          "departure": 4597
+        },
+        {
+          "station_id": "4120",
+          "arrival": 4736,
+          "departure": 4776
+        },
+        {
+          "station_id": "4110",
+          "arrival": 5158,
+          "departure": 5198
+        },
+        {
+          "station_id": "4100",
+          "arrival": 5491,
+          "departure": 5531
+        },
+        {
+          "station_id": "4090",
+          "arrival": 5637,
+          "departure": 5677
+        },
+        {
+          "station_id": "4080",
+          "arrival": 6003,
+          "departure": 6043
+        },
+        {
+          "station_id": "4060",
+          "arrival": 6516,
+          "departure": 6556
+        },
+        {
+          "station_id": "4050",
+          "arrival": 6836,
+          "departure": 6876
+        },
+        {
+          "station_id": "3490",
+          "arrival": 7088,
+          "departure": 7128
+        },
+        {
+          "station_id": "3480",
+          "arrival": 7398,
+          "departure": 7438
+        },
+        {
+          "station_id": "3470",
+          "arrival": 7882,
+          "departure": 7922
+        },
+        {
+          "station_id": "3460",
+          "arrival": 8157,
+          "departure": 8197
+        },
+        {
+          "station_id": "3450",
+          "arrival": 8428,
+          "departure": 8468
+        },
+        {
+          "station_id": "3430",
+          "arrival": 8962,
+          "departure": 9002
+        },
+        {
+          "station_id": "3420",
+          "arrival": 9306,
+          "departure": 9346
+        },
+        {
+          "station_id": "3410",
+          "arrival": 9539,
+          "departure": 9579
+        },
+        {
+          "station_id": "3400",
+          "arrival": 9740,
+          "departure": 9780
+        },
+        {
+          "station_id": "3390",
+          "arrival": 9930,
+          "departure": 9970
+        },
+        {
+          "station_id": "3380",
+          "arrival": 10123,
+          "departure": 10163
+        },
+        {
+          "station_id": "3370",
+          "arrival": 10377,
+          "departure": 10417
+        },
+        {
+          "station_id": "3360",
+          "arrival": 10739,
+          "departure": 10779
+        }
+      ]
+    },
+    {
+      "train_id": "WL-ZY-CH-1-14",
+      "train_no": "TEST14",
+      "train_type": "區間",
+      "departure_time": "14:00:00",
+      "od_track_id": "WL-ZY-CH-1",
+      "origin_station": "新左營",
+      "destination_station": "彰化",
+      "total_travel_time": 10800,
+      "stations": [
+        {
+          "station_id": "4340",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "4330",
+          "arrival": 763,
+          "departure": 803
+        },
+        {
+          "station_id": "4320",
+          "arrival": 993,
+          "departure": 1033
+        },
+        {
+          "station_id": "4310",
+          "arrival": 1190,
+          "departure": 1230
+        },
+        {
+          "station_id": "4300",
+          "arrival": 1636,
+          "departure": 1676
+        },
+        {
+          "station_id": "4290",
+          "arrival": 1799,
+          "departure": 1839
+        },
+        {
+          "station_id": "4270",
+          "arrival": 1984,
+          "departure": 2024
+        },
+        {
+          "station_id": "4260",
+          "arrival": 2124,
+          "departure": 2164
+        },
+        {
+          "station_id": "4250",
+          "arrival": 2195,
+          "departure": 2235
+        },
+        {
+          "station_id": "4220",
+          "arrival": 2616,
+          "departure": 2656
+        },
+        {
+          "station_id": "4210",
+          "arrival": 2770,
+          "departure": 2810
+        },
+        {
+          "station_id": "4200",
+          "arrival": 2979,
+          "departure": 3019
+        },
+        {
+          "station_id": "4190",
+          "arrival": 3263,
+          "departure": 3303
+        },
+        {
+          "station_id": "4180",
+          "arrival": 3515,
+          "departure": 3555
+        },
+        {
+          "station_id": "4170",
+          "arrival": 3673,
+          "departure": 3713
+        },
+        {
+          "station_id": "4160",
+          "arrival": 3928,
+          "departure": 3968
+        },
+        {
+          "station_id": "4150",
+          "arrival": 4047,
+          "departure": 4087
+        },
+        {
+          "station_id": "4140",
+          "arrival": 4347,
+          "departure": 4387
+        },
+        {
+          "station_id": "4130",
+          "arrival": 4557,
+          "departure": 4597
+        },
+        {
+          "station_id": "4120",
+          "arrival": 4736,
+          "departure": 4776
+        },
+        {
+          "station_id": "4110",
+          "arrival": 5158,
+          "departure": 5198
+        },
+        {
+          "station_id": "4100",
+          "arrival": 5491,
+          "departure": 5531
+        },
+        {
+          "station_id": "4090",
+          "arrival": 5637,
+          "departure": 5677
+        },
+        {
+          "station_id": "4080",
+          "arrival": 6003,
+          "departure": 6043
+        },
+        {
+          "station_id": "4060",
+          "arrival": 6516,
+          "departure": 6556
+        },
+        {
+          "station_id": "4050",
+          "arrival": 6836,
+          "departure": 6876
+        },
+        {
+          "station_id": "3490",
+          "arrival": 7088,
+          "departure": 7128
+        },
+        {
+          "station_id": "3480",
+          "arrival": 7398,
+          "departure": 7438
+        },
+        {
+          "station_id": "3470",
+          "arrival": 7882,
+          "departure": 7922
+        },
+        {
+          "station_id": "3460",
+          "arrival": 8157,
+          "departure": 8197
+        },
+        {
+          "station_id": "3450",
+          "arrival": 8428,
+          "departure": 8468
+        },
+        {
+          "station_id": "3430",
+          "arrival": 8962,
+          "departure": 9002
+        },
+        {
+          "station_id": "3420",
+          "arrival": 9306,
+          "departure": 9346
+        },
+        {
+          "station_id": "3410",
+          "arrival": 9539,
+          "departure": 9579
+        },
+        {
+          "station_id": "3400",
+          "arrival": 9740,
+          "departure": 9780
+        },
+        {
+          "station_id": "3390",
+          "arrival": 9930,
+          "departure": 9970
+        },
+        {
+          "station_id": "3380",
+          "arrival": 10123,
+          "departure": 10163
+        },
+        {
+          "station_id": "3370",
+          "arrival": 10377,
+          "departure": 10417
+        },
+        {
+          "station_id": "3360",
+          "arrival": 10739,
+          "departure": 10779
+        }
+      ]
+    },
+    {
+      "train_id": "WL-ZY-CH-1-15",
+      "train_no": "TEST15",
+      "train_type": "區間",
+      "departure_time": "15:00:00",
+      "od_track_id": "WL-ZY-CH-1",
+      "origin_station": "新左營",
+      "destination_station": "彰化",
+      "total_travel_time": 10800,
+      "stations": [
+        {
+          "station_id": "4340",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "4330",
+          "arrival": 763,
+          "departure": 803
+        },
+        {
+          "station_id": "4320",
+          "arrival": 993,
+          "departure": 1033
+        },
+        {
+          "station_id": "4310",
+          "arrival": 1190,
+          "departure": 1230
+        },
+        {
+          "station_id": "4300",
+          "arrival": 1636,
+          "departure": 1676
+        },
+        {
+          "station_id": "4290",
+          "arrival": 1799,
+          "departure": 1839
+        },
+        {
+          "station_id": "4270",
+          "arrival": 1984,
+          "departure": 2024
+        },
+        {
+          "station_id": "4260",
+          "arrival": 2124,
+          "departure": 2164
+        },
+        {
+          "station_id": "4250",
+          "arrival": 2195,
+          "departure": 2235
+        },
+        {
+          "station_id": "4220",
+          "arrival": 2616,
+          "departure": 2656
+        },
+        {
+          "station_id": "4210",
+          "arrival": 2770,
+          "departure": 2810
+        },
+        {
+          "station_id": "4200",
+          "arrival": 2979,
+          "departure": 3019
+        },
+        {
+          "station_id": "4190",
+          "arrival": 3263,
+          "departure": 3303
+        },
+        {
+          "station_id": "4180",
+          "arrival": 3515,
+          "departure": 3555
+        },
+        {
+          "station_id": "4170",
+          "arrival": 3673,
+          "departure": 3713
+        },
+        {
+          "station_id": "4160",
+          "arrival": 3928,
+          "departure": 3968
+        },
+        {
+          "station_id": "4150",
+          "arrival": 4047,
+          "departure": 4087
+        },
+        {
+          "station_id": "4140",
+          "arrival": 4347,
+          "departure": 4387
+        },
+        {
+          "station_id": "4130",
+          "arrival": 4557,
+          "departure": 4597
+        },
+        {
+          "station_id": "4120",
+          "arrival": 4736,
+          "departure": 4776
+        },
+        {
+          "station_id": "4110",
+          "arrival": 5158,
+          "departure": 5198
+        },
+        {
+          "station_id": "4100",
+          "arrival": 5491,
+          "departure": 5531
+        },
+        {
+          "station_id": "4090",
+          "arrival": 5637,
+          "departure": 5677
+        },
+        {
+          "station_id": "4080",
+          "arrival": 6003,
+          "departure": 6043
+        },
+        {
+          "station_id": "4060",
+          "arrival": 6516,
+          "departure": 6556
+        },
+        {
+          "station_id": "4050",
+          "arrival": 6836,
+          "departure": 6876
+        },
+        {
+          "station_id": "3490",
+          "arrival": 7088,
+          "departure": 7128
+        },
+        {
+          "station_id": "3480",
+          "arrival": 7398,
+          "departure": 7438
+        },
+        {
+          "station_id": "3470",
+          "arrival": 7882,
+          "departure": 7922
+        },
+        {
+          "station_id": "3460",
+          "arrival": 8157,
+          "departure": 8197
+        },
+        {
+          "station_id": "3450",
+          "arrival": 8428,
+          "departure": 8468
+        },
+        {
+          "station_id": "3430",
+          "arrival": 8962,
+          "departure": 9002
+        },
+        {
+          "station_id": "3420",
+          "arrival": 9306,
+          "departure": 9346
+        },
+        {
+          "station_id": "3410",
+          "arrival": 9539,
+          "departure": 9579
+        },
+        {
+          "station_id": "3400",
+          "arrival": 9740,
+          "departure": 9780
+        },
+        {
+          "station_id": "3390",
+          "arrival": 9930,
+          "departure": 9970
+        },
+        {
+          "station_id": "3380",
+          "arrival": 10123,
+          "departure": 10163
+        },
+        {
+          "station_id": "3370",
+          "arrival": 10377,
+          "departure": 10417
+        },
+        {
+          "station_id": "3360",
+          "arrival": 10739,
+          "departure": 10779
+        }
+      ]
+    },
+    {
+      "train_id": "WL-ZY-CH-1-16",
+      "train_no": "TEST16",
+      "train_type": "區間",
+      "departure_time": "16:00:00",
+      "od_track_id": "WL-ZY-CH-1",
+      "origin_station": "新左營",
+      "destination_station": "彰化",
+      "total_travel_time": 10800,
+      "stations": [
+        {
+          "station_id": "4340",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "4330",
+          "arrival": 763,
+          "departure": 803
+        },
+        {
+          "station_id": "4320",
+          "arrival": 993,
+          "departure": 1033
+        },
+        {
+          "station_id": "4310",
+          "arrival": 1190,
+          "departure": 1230
+        },
+        {
+          "station_id": "4300",
+          "arrival": 1636,
+          "departure": 1676
+        },
+        {
+          "station_id": "4290",
+          "arrival": 1799,
+          "departure": 1839
+        },
+        {
+          "station_id": "4270",
+          "arrival": 1984,
+          "departure": 2024
+        },
+        {
+          "station_id": "4260",
+          "arrival": 2124,
+          "departure": 2164
+        },
+        {
+          "station_id": "4250",
+          "arrival": 2195,
+          "departure": 2235
+        },
+        {
+          "station_id": "4220",
+          "arrival": 2616,
+          "departure": 2656
+        },
+        {
+          "station_id": "4210",
+          "arrival": 2770,
+          "departure": 2810
+        },
+        {
+          "station_id": "4200",
+          "arrival": 2979,
+          "departure": 3019
+        },
+        {
+          "station_id": "4190",
+          "arrival": 3263,
+          "departure": 3303
+        },
+        {
+          "station_id": "4180",
+          "arrival": 3515,
+          "departure": 3555
+        },
+        {
+          "station_id": "4170",
+          "arrival": 3673,
+          "departure": 3713
+        },
+        {
+          "station_id": "4160",
+          "arrival": 3928,
+          "departure": 3968
+        },
+        {
+          "station_id": "4150",
+          "arrival": 4047,
+          "departure": 4087
+        },
+        {
+          "station_id": "4140",
+          "arrival": 4347,
+          "departure": 4387
+        },
+        {
+          "station_id": "4130",
+          "arrival": 4557,
+          "departure": 4597
+        },
+        {
+          "station_id": "4120",
+          "arrival": 4736,
+          "departure": 4776
+        },
+        {
+          "station_id": "4110",
+          "arrival": 5158,
+          "departure": 5198
+        },
+        {
+          "station_id": "4100",
+          "arrival": 5491,
+          "departure": 5531
+        },
+        {
+          "station_id": "4090",
+          "arrival": 5637,
+          "departure": 5677
+        },
+        {
+          "station_id": "4080",
+          "arrival": 6003,
+          "departure": 6043
+        },
+        {
+          "station_id": "4060",
+          "arrival": 6516,
+          "departure": 6556
+        },
+        {
+          "station_id": "4050",
+          "arrival": 6836,
+          "departure": 6876
+        },
+        {
+          "station_id": "3490",
+          "arrival": 7088,
+          "departure": 7128
+        },
+        {
+          "station_id": "3480",
+          "arrival": 7398,
+          "departure": 7438
+        },
+        {
+          "station_id": "3470",
+          "arrival": 7882,
+          "departure": 7922
+        },
+        {
+          "station_id": "3460",
+          "arrival": 8157,
+          "departure": 8197
+        },
+        {
+          "station_id": "3450",
+          "arrival": 8428,
+          "departure": 8468
+        },
+        {
+          "station_id": "3430",
+          "arrival": 8962,
+          "departure": 9002
+        },
+        {
+          "station_id": "3420",
+          "arrival": 9306,
+          "departure": 9346
+        },
+        {
+          "station_id": "3410",
+          "arrival": 9539,
+          "departure": 9579
+        },
+        {
+          "station_id": "3400",
+          "arrival": 9740,
+          "departure": 9780
+        },
+        {
+          "station_id": "3390",
+          "arrival": 9930,
+          "departure": 9970
+        },
+        {
+          "station_id": "3380",
+          "arrival": 10123,
+          "departure": 10163
+        },
+        {
+          "station_id": "3370",
+          "arrival": 10377,
+          "departure": 10417
+        },
+        {
+          "station_id": "3360",
+          "arrival": 10739,
+          "departure": 10779
+        }
+      ]
+    },
+    {
+      "train_id": "WL-ZY-CH-1-17",
+      "train_no": "TEST17",
+      "train_type": "區間",
+      "departure_time": "17:00:00",
+      "od_track_id": "WL-ZY-CH-1",
+      "origin_station": "新左營",
+      "destination_station": "彰化",
+      "total_travel_time": 10800,
+      "stations": [
+        {
+          "station_id": "4340",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "4330",
+          "arrival": 763,
+          "departure": 803
+        },
+        {
+          "station_id": "4320",
+          "arrival": 993,
+          "departure": 1033
+        },
+        {
+          "station_id": "4310",
+          "arrival": 1190,
+          "departure": 1230
+        },
+        {
+          "station_id": "4300",
+          "arrival": 1636,
+          "departure": 1676
+        },
+        {
+          "station_id": "4290",
+          "arrival": 1799,
+          "departure": 1839
+        },
+        {
+          "station_id": "4270",
+          "arrival": 1984,
+          "departure": 2024
+        },
+        {
+          "station_id": "4260",
+          "arrival": 2124,
+          "departure": 2164
+        },
+        {
+          "station_id": "4250",
+          "arrival": 2195,
+          "departure": 2235
+        },
+        {
+          "station_id": "4220",
+          "arrival": 2616,
+          "departure": 2656
+        },
+        {
+          "station_id": "4210",
+          "arrival": 2770,
+          "departure": 2810
+        },
+        {
+          "station_id": "4200",
+          "arrival": 2979,
+          "departure": 3019
+        },
+        {
+          "station_id": "4190",
+          "arrival": 3263,
+          "departure": 3303
+        },
+        {
+          "station_id": "4180",
+          "arrival": 3515,
+          "departure": 3555
+        },
+        {
+          "station_id": "4170",
+          "arrival": 3673,
+          "departure": 3713
+        },
+        {
+          "station_id": "4160",
+          "arrival": 3928,
+          "departure": 3968
+        },
+        {
+          "station_id": "4150",
+          "arrival": 4047,
+          "departure": 4087
+        },
+        {
+          "station_id": "4140",
+          "arrival": 4347,
+          "departure": 4387
+        },
+        {
+          "station_id": "4130",
+          "arrival": 4557,
+          "departure": 4597
+        },
+        {
+          "station_id": "4120",
+          "arrival": 4736,
+          "departure": 4776
+        },
+        {
+          "station_id": "4110",
+          "arrival": 5158,
+          "departure": 5198
+        },
+        {
+          "station_id": "4100",
+          "arrival": 5491,
+          "departure": 5531
+        },
+        {
+          "station_id": "4090",
+          "arrival": 5637,
+          "departure": 5677
+        },
+        {
+          "station_id": "4080",
+          "arrival": 6003,
+          "departure": 6043
+        },
+        {
+          "station_id": "4060",
+          "arrival": 6516,
+          "departure": 6556
+        },
+        {
+          "station_id": "4050",
+          "arrival": 6836,
+          "departure": 6876
+        },
+        {
+          "station_id": "3490",
+          "arrival": 7088,
+          "departure": 7128
+        },
+        {
+          "station_id": "3480",
+          "arrival": 7398,
+          "departure": 7438
+        },
+        {
+          "station_id": "3470",
+          "arrival": 7882,
+          "departure": 7922
+        },
+        {
+          "station_id": "3460",
+          "arrival": 8157,
+          "departure": 8197
+        },
+        {
+          "station_id": "3450",
+          "arrival": 8428,
+          "departure": 8468
+        },
+        {
+          "station_id": "3430",
+          "arrival": 8962,
+          "departure": 9002
+        },
+        {
+          "station_id": "3420",
+          "arrival": 9306,
+          "departure": 9346
+        },
+        {
+          "station_id": "3410",
+          "arrival": 9539,
+          "departure": 9579
+        },
+        {
+          "station_id": "3400",
+          "arrival": 9740,
+          "departure": 9780
+        },
+        {
+          "station_id": "3390",
+          "arrival": 9930,
+          "departure": 9970
+        },
+        {
+          "station_id": "3380",
+          "arrival": 10123,
+          "departure": 10163
+        },
+        {
+          "station_id": "3370",
+          "arrival": 10377,
+          "departure": 10417
+        },
+        {
+          "station_id": "3360",
+          "arrival": 10739,
+          "departure": 10779
+        }
+      ]
+    },
+    {
+      "train_id": "WL-ZY-CH-1-18",
+      "train_no": "TEST18",
+      "train_type": "區間",
+      "departure_time": "18:00:00",
+      "od_track_id": "WL-ZY-CH-1",
+      "origin_station": "新左營",
+      "destination_station": "彰化",
+      "total_travel_time": 10800,
+      "stations": [
+        {
+          "station_id": "4340",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "4330",
+          "arrival": 763,
+          "departure": 803
+        },
+        {
+          "station_id": "4320",
+          "arrival": 993,
+          "departure": 1033
+        },
+        {
+          "station_id": "4310",
+          "arrival": 1190,
+          "departure": 1230
+        },
+        {
+          "station_id": "4300",
+          "arrival": 1636,
+          "departure": 1676
+        },
+        {
+          "station_id": "4290",
+          "arrival": 1799,
+          "departure": 1839
+        },
+        {
+          "station_id": "4270",
+          "arrival": 1984,
+          "departure": 2024
+        },
+        {
+          "station_id": "4260",
+          "arrival": 2124,
+          "departure": 2164
+        },
+        {
+          "station_id": "4250",
+          "arrival": 2195,
+          "departure": 2235
+        },
+        {
+          "station_id": "4220",
+          "arrival": 2616,
+          "departure": 2656
+        },
+        {
+          "station_id": "4210",
+          "arrival": 2770,
+          "departure": 2810
+        },
+        {
+          "station_id": "4200",
+          "arrival": 2979,
+          "departure": 3019
+        },
+        {
+          "station_id": "4190",
+          "arrival": 3263,
+          "departure": 3303
+        },
+        {
+          "station_id": "4180",
+          "arrival": 3515,
+          "departure": 3555
+        },
+        {
+          "station_id": "4170",
+          "arrival": 3673,
+          "departure": 3713
+        },
+        {
+          "station_id": "4160",
+          "arrival": 3928,
+          "departure": 3968
+        },
+        {
+          "station_id": "4150",
+          "arrival": 4047,
+          "departure": 4087
+        },
+        {
+          "station_id": "4140",
+          "arrival": 4347,
+          "departure": 4387
+        },
+        {
+          "station_id": "4130",
+          "arrival": 4557,
+          "departure": 4597
+        },
+        {
+          "station_id": "4120",
+          "arrival": 4736,
+          "departure": 4776
+        },
+        {
+          "station_id": "4110",
+          "arrival": 5158,
+          "departure": 5198
+        },
+        {
+          "station_id": "4100",
+          "arrival": 5491,
+          "departure": 5531
+        },
+        {
+          "station_id": "4090",
+          "arrival": 5637,
+          "departure": 5677
+        },
+        {
+          "station_id": "4080",
+          "arrival": 6003,
+          "departure": 6043
+        },
+        {
+          "station_id": "4060",
+          "arrival": 6516,
+          "departure": 6556
+        },
+        {
+          "station_id": "4050",
+          "arrival": 6836,
+          "departure": 6876
+        },
+        {
+          "station_id": "3490",
+          "arrival": 7088,
+          "departure": 7128
+        },
+        {
+          "station_id": "3480",
+          "arrival": 7398,
+          "departure": 7438
+        },
+        {
+          "station_id": "3470",
+          "arrival": 7882,
+          "departure": 7922
+        },
+        {
+          "station_id": "3460",
+          "arrival": 8157,
+          "departure": 8197
+        },
+        {
+          "station_id": "3450",
+          "arrival": 8428,
+          "departure": 8468
+        },
+        {
+          "station_id": "3430",
+          "arrival": 8962,
+          "departure": 9002
+        },
+        {
+          "station_id": "3420",
+          "arrival": 9306,
+          "departure": 9346
+        },
+        {
+          "station_id": "3410",
+          "arrival": 9539,
+          "departure": 9579
+        },
+        {
+          "station_id": "3400",
+          "arrival": 9740,
+          "departure": 9780
+        },
+        {
+          "station_id": "3390",
+          "arrival": 9930,
+          "departure": 9970
+        },
+        {
+          "station_id": "3380",
+          "arrival": 10123,
+          "departure": 10163
+        },
+        {
+          "station_id": "3370",
+          "arrival": 10377,
+          "departure": 10417
+        },
+        {
+          "station_id": "3360",
+          "arrival": 10739,
+          "departure": 10779
+        }
+      ]
+    },
+    {
+      "train_id": "WL-ZY-CH-1-19",
+      "train_no": "TEST19",
+      "train_type": "區間",
+      "departure_time": "19:00:00",
+      "od_track_id": "WL-ZY-CH-1",
+      "origin_station": "新左營",
+      "destination_station": "彰化",
+      "total_travel_time": 10800,
+      "stations": [
+        {
+          "station_id": "4340",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "4330",
+          "arrival": 763,
+          "departure": 803
+        },
+        {
+          "station_id": "4320",
+          "arrival": 993,
+          "departure": 1033
+        },
+        {
+          "station_id": "4310",
+          "arrival": 1190,
+          "departure": 1230
+        },
+        {
+          "station_id": "4300",
+          "arrival": 1636,
+          "departure": 1676
+        },
+        {
+          "station_id": "4290",
+          "arrival": 1799,
+          "departure": 1839
+        },
+        {
+          "station_id": "4270",
+          "arrival": 1984,
+          "departure": 2024
+        },
+        {
+          "station_id": "4260",
+          "arrival": 2124,
+          "departure": 2164
+        },
+        {
+          "station_id": "4250",
+          "arrival": 2195,
+          "departure": 2235
+        },
+        {
+          "station_id": "4220",
+          "arrival": 2616,
+          "departure": 2656
+        },
+        {
+          "station_id": "4210",
+          "arrival": 2770,
+          "departure": 2810
+        },
+        {
+          "station_id": "4200",
+          "arrival": 2979,
+          "departure": 3019
+        },
+        {
+          "station_id": "4190",
+          "arrival": 3263,
+          "departure": 3303
+        },
+        {
+          "station_id": "4180",
+          "arrival": 3515,
+          "departure": 3555
+        },
+        {
+          "station_id": "4170",
+          "arrival": 3673,
+          "departure": 3713
+        },
+        {
+          "station_id": "4160",
+          "arrival": 3928,
+          "departure": 3968
+        },
+        {
+          "station_id": "4150",
+          "arrival": 4047,
+          "departure": 4087
+        },
+        {
+          "station_id": "4140",
+          "arrival": 4347,
+          "departure": 4387
+        },
+        {
+          "station_id": "4130",
+          "arrival": 4557,
+          "departure": 4597
+        },
+        {
+          "station_id": "4120",
+          "arrival": 4736,
+          "departure": 4776
+        },
+        {
+          "station_id": "4110",
+          "arrival": 5158,
+          "departure": 5198
+        },
+        {
+          "station_id": "4100",
+          "arrival": 5491,
+          "departure": 5531
+        },
+        {
+          "station_id": "4090",
+          "arrival": 5637,
+          "departure": 5677
+        },
+        {
+          "station_id": "4080",
+          "arrival": 6003,
+          "departure": 6043
+        },
+        {
+          "station_id": "4060",
+          "arrival": 6516,
+          "departure": 6556
+        },
+        {
+          "station_id": "4050",
+          "arrival": 6836,
+          "departure": 6876
+        },
+        {
+          "station_id": "3490",
+          "arrival": 7088,
+          "departure": 7128
+        },
+        {
+          "station_id": "3480",
+          "arrival": 7398,
+          "departure": 7438
+        },
+        {
+          "station_id": "3470",
+          "arrival": 7882,
+          "departure": 7922
+        },
+        {
+          "station_id": "3460",
+          "arrival": 8157,
+          "departure": 8197
+        },
+        {
+          "station_id": "3450",
+          "arrival": 8428,
+          "departure": 8468
+        },
+        {
+          "station_id": "3430",
+          "arrival": 8962,
+          "departure": 9002
+        },
+        {
+          "station_id": "3420",
+          "arrival": 9306,
+          "departure": 9346
+        },
+        {
+          "station_id": "3410",
+          "arrival": 9539,
+          "departure": 9579
+        },
+        {
+          "station_id": "3400",
+          "arrival": 9740,
+          "departure": 9780
+        },
+        {
+          "station_id": "3390",
+          "arrival": 9930,
+          "departure": 9970
+        },
+        {
+          "station_id": "3380",
+          "arrival": 10123,
+          "departure": 10163
+        },
+        {
+          "station_id": "3370",
+          "arrival": 10377,
+          "departure": 10417
+        },
+        {
+          "station_id": "3360",
+          "arrival": 10739,
+          "departure": 10779
+        }
+      ]
+    },
+    {
+      "train_id": "WL-ZY-CH-1-20",
+      "train_no": "TEST20",
+      "train_type": "區間",
+      "departure_time": "20:00:00",
+      "od_track_id": "WL-ZY-CH-1",
+      "origin_station": "新左營",
+      "destination_station": "彰化",
+      "total_travel_time": 10800,
+      "stations": [
+        {
+          "station_id": "4340",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "4330",
+          "arrival": 763,
+          "departure": 803
+        },
+        {
+          "station_id": "4320",
+          "arrival": 993,
+          "departure": 1033
+        },
+        {
+          "station_id": "4310",
+          "arrival": 1190,
+          "departure": 1230
+        },
+        {
+          "station_id": "4300",
+          "arrival": 1636,
+          "departure": 1676
+        },
+        {
+          "station_id": "4290",
+          "arrival": 1799,
+          "departure": 1839
+        },
+        {
+          "station_id": "4270",
+          "arrival": 1984,
+          "departure": 2024
+        },
+        {
+          "station_id": "4260",
+          "arrival": 2124,
+          "departure": 2164
+        },
+        {
+          "station_id": "4250",
+          "arrival": 2195,
+          "departure": 2235
+        },
+        {
+          "station_id": "4220",
+          "arrival": 2616,
+          "departure": 2656
+        },
+        {
+          "station_id": "4210",
+          "arrival": 2770,
+          "departure": 2810
+        },
+        {
+          "station_id": "4200",
+          "arrival": 2979,
+          "departure": 3019
+        },
+        {
+          "station_id": "4190",
+          "arrival": 3263,
+          "departure": 3303
+        },
+        {
+          "station_id": "4180",
+          "arrival": 3515,
+          "departure": 3555
+        },
+        {
+          "station_id": "4170",
+          "arrival": 3673,
+          "departure": 3713
+        },
+        {
+          "station_id": "4160",
+          "arrival": 3928,
+          "departure": 3968
+        },
+        {
+          "station_id": "4150",
+          "arrival": 4047,
+          "departure": 4087
+        },
+        {
+          "station_id": "4140",
+          "arrival": 4347,
+          "departure": 4387
+        },
+        {
+          "station_id": "4130",
+          "arrival": 4557,
+          "departure": 4597
+        },
+        {
+          "station_id": "4120",
+          "arrival": 4736,
+          "departure": 4776
+        },
+        {
+          "station_id": "4110",
+          "arrival": 5158,
+          "departure": 5198
+        },
+        {
+          "station_id": "4100",
+          "arrival": 5491,
+          "departure": 5531
+        },
+        {
+          "station_id": "4090",
+          "arrival": 5637,
+          "departure": 5677
+        },
+        {
+          "station_id": "4080",
+          "arrival": 6003,
+          "departure": 6043
+        },
+        {
+          "station_id": "4060",
+          "arrival": 6516,
+          "departure": 6556
+        },
+        {
+          "station_id": "4050",
+          "arrival": 6836,
+          "departure": 6876
+        },
+        {
+          "station_id": "3490",
+          "arrival": 7088,
+          "departure": 7128
+        },
+        {
+          "station_id": "3480",
+          "arrival": 7398,
+          "departure": 7438
+        },
+        {
+          "station_id": "3470",
+          "arrival": 7882,
+          "departure": 7922
+        },
+        {
+          "station_id": "3460",
+          "arrival": 8157,
+          "departure": 8197
+        },
+        {
+          "station_id": "3450",
+          "arrival": 8428,
+          "departure": 8468
+        },
+        {
+          "station_id": "3430",
+          "arrival": 8962,
+          "departure": 9002
+        },
+        {
+          "station_id": "3420",
+          "arrival": 9306,
+          "departure": 9346
+        },
+        {
+          "station_id": "3410",
+          "arrival": 9539,
+          "departure": 9579
+        },
+        {
+          "station_id": "3400",
+          "arrival": 9740,
+          "departure": 9780
+        },
+        {
+          "station_id": "3390",
+          "arrival": 9930,
+          "departure": 9970
+        },
+        {
+          "station_id": "3380",
+          "arrival": 10123,
+          "departure": 10163
+        },
+        {
+          "station_id": "3370",
+          "arrival": 10377,
+          "departure": 10417
+        },
+        {
+          "station_id": "3360",
+          "arrival": 10739,
+          "departure": 10779
+        }
+      ]
+    },
+    {
+      "train_id": "WL-ZY-CH-1-21",
+      "train_no": "TEST21",
+      "train_type": "區間",
+      "departure_time": "21:00:00",
+      "od_track_id": "WL-ZY-CH-1",
+      "origin_station": "新左營",
+      "destination_station": "彰化",
+      "total_travel_time": 10800,
+      "stations": [
+        {
+          "station_id": "4340",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "4330",
+          "arrival": 763,
+          "departure": 803
+        },
+        {
+          "station_id": "4320",
+          "arrival": 993,
+          "departure": 1033
+        },
+        {
+          "station_id": "4310",
+          "arrival": 1190,
+          "departure": 1230
+        },
+        {
+          "station_id": "4300",
+          "arrival": 1636,
+          "departure": 1676
+        },
+        {
+          "station_id": "4290",
+          "arrival": 1799,
+          "departure": 1839
+        },
+        {
+          "station_id": "4270",
+          "arrival": 1984,
+          "departure": 2024
+        },
+        {
+          "station_id": "4260",
+          "arrival": 2124,
+          "departure": 2164
+        },
+        {
+          "station_id": "4250",
+          "arrival": 2195,
+          "departure": 2235
+        },
+        {
+          "station_id": "4220",
+          "arrival": 2616,
+          "departure": 2656
+        },
+        {
+          "station_id": "4210",
+          "arrival": 2770,
+          "departure": 2810
+        },
+        {
+          "station_id": "4200",
+          "arrival": 2979,
+          "departure": 3019
+        },
+        {
+          "station_id": "4190",
+          "arrival": 3263,
+          "departure": 3303
+        },
+        {
+          "station_id": "4180",
+          "arrival": 3515,
+          "departure": 3555
+        },
+        {
+          "station_id": "4170",
+          "arrival": 3673,
+          "departure": 3713
+        },
+        {
+          "station_id": "4160",
+          "arrival": 3928,
+          "departure": 3968
+        },
+        {
+          "station_id": "4150",
+          "arrival": 4047,
+          "departure": 4087
+        },
+        {
+          "station_id": "4140",
+          "arrival": 4347,
+          "departure": 4387
+        },
+        {
+          "station_id": "4130",
+          "arrival": 4557,
+          "departure": 4597
+        },
+        {
+          "station_id": "4120",
+          "arrival": 4736,
+          "departure": 4776
+        },
+        {
+          "station_id": "4110",
+          "arrival": 5158,
+          "departure": 5198
+        },
+        {
+          "station_id": "4100",
+          "arrival": 5491,
+          "departure": 5531
+        },
+        {
+          "station_id": "4090",
+          "arrival": 5637,
+          "departure": 5677
+        },
+        {
+          "station_id": "4080",
+          "arrival": 6003,
+          "departure": 6043
+        },
+        {
+          "station_id": "4060",
+          "arrival": 6516,
+          "departure": 6556
+        },
+        {
+          "station_id": "4050",
+          "arrival": 6836,
+          "departure": 6876
+        },
+        {
+          "station_id": "3490",
+          "arrival": 7088,
+          "departure": 7128
+        },
+        {
+          "station_id": "3480",
+          "arrival": 7398,
+          "departure": 7438
+        },
+        {
+          "station_id": "3470",
+          "arrival": 7882,
+          "departure": 7922
+        },
+        {
+          "station_id": "3460",
+          "arrival": 8157,
+          "departure": 8197
+        },
+        {
+          "station_id": "3450",
+          "arrival": 8428,
+          "departure": 8468
+        },
+        {
+          "station_id": "3430",
+          "arrival": 8962,
+          "departure": 9002
+        },
+        {
+          "station_id": "3420",
+          "arrival": 9306,
+          "departure": 9346
+        },
+        {
+          "station_id": "3410",
+          "arrival": 9539,
+          "departure": 9579
+        },
+        {
+          "station_id": "3400",
+          "arrival": 9740,
+          "departure": 9780
+        },
+        {
+          "station_id": "3390",
+          "arrival": 9930,
+          "departure": 9970
+        },
+        {
+          "station_id": "3380",
+          "arrival": 10123,
+          "departure": 10163
+        },
+        {
+          "station_id": "3370",
+          "arrival": 10377,
+          "departure": 10417
+        },
+        {
+          "station_id": "3360",
+          "arrival": 10739,
+          "departure": 10779
+        }
+      ]
+    },
+    {
+      "train_id": "WL-ZY-CH-1-22",
+      "train_no": "TEST22",
+      "train_type": "區間",
+      "departure_time": "22:00:00",
+      "od_track_id": "WL-ZY-CH-1",
+      "origin_station": "新左營",
+      "destination_station": "彰化",
+      "total_travel_time": 10800,
+      "stations": [
+        {
+          "station_id": "4340",
+          "arrival": 0,
+          "departure": 40
+        },
+        {
+          "station_id": "4330",
+          "arrival": 763,
+          "departure": 803
+        },
+        {
+          "station_id": "4320",
+          "arrival": 993,
+          "departure": 1033
+        },
+        {
+          "station_id": "4310",
+          "arrival": 1190,
+          "departure": 1230
+        },
+        {
+          "station_id": "4300",
+          "arrival": 1636,
+          "departure": 1676
+        },
+        {
+          "station_id": "4290",
+          "arrival": 1799,
+          "departure": 1839
+        },
+        {
+          "station_id": "4270",
+          "arrival": 1984,
+          "departure": 2024
+        },
+        {
+          "station_id": "4260",
+          "arrival": 2124,
+          "departure": 2164
+        },
+        {
+          "station_id": "4250",
+          "arrival": 2195,
+          "departure": 2235
+        },
+        {
+          "station_id": "4220",
+          "arrival": 2616,
+          "departure": 2656
+        },
+        {
+          "station_id": "4210",
+          "arrival": 2770,
+          "departure": 2810
+        },
+        {
+          "station_id": "4200",
+          "arrival": 2979,
+          "departure": 3019
+        },
+        {
+          "station_id": "4190",
+          "arrival": 3263,
+          "departure": 3303
+        },
+        {
+          "station_id": "4180",
+          "arrival": 3515,
+          "departure": 3555
+        },
+        {
+          "station_id": "4170",
+          "arrival": 3673,
+          "departure": 3713
+        },
+        {
+          "station_id": "4160",
+          "arrival": 3928,
+          "departure": 3968
+        },
+        {
+          "station_id": "4150",
+          "arrival": 4047,
+          "departure": 4087
+        },
+        {
+          "station_id": "4140",
+          "arrival": 4347,
+          "departure": 4387
+        },
+        {
+          "station_id": "4130",
+          "arrival": 4557,
+          "departure": 4597
+        },
+        {
+          "station_id": "4120",
+          "arrival": 4736,
+          "departure": 4776
+        },
+        {
+          "station_id": "4110",
+          "arrival": 5158,
+          "departure": 5198
+        },
+        {
+          "station_id": "4100",
+          "arrival": 5491,
+          "departure": 5531
+        },
+        {
+          "station_id": "4090",
+          "arrival": 5637,
+          "departure": 5677
+        },
+        {
+          "station_id": "4080",
+          "arrival": 6003,
+          "departure": 6043
+        },
+        {
+          "station_id": "4060",
+          "arrival": 6516,
+          "departure": 6556
+        },
+        {
+          "station_id": "4050",
+          "arrival": 6836,
+          "departure": 6876
+        },
+        {
+          "station_id": "3490",
+          "arrival": 7088,
+          "departure": 7128
+        },
+        {
+          "station_id": "3480",
+          "arrival": 7398,
+          "departure": 7438
+        },
+        {
+          "station_id": "3470",
+          "arrival": 7882,
+          "departure": 7922
+        },
+        {
+          "station_id": "3460",
+          "arrival": 8157,
+          "departure": 8197
+        },
+        {
+          "station_id": "3450",
+          "arrival": 8428,
+          "departure": 8468
+        },
+        {
+          "station_id": "3430",
+          "arrival": 8962,
+          "departure": 9002
+        },
+        {
+          "station_id": "3420",
+          "arrival": 9306,
+          "departure": 9346
+        },
+        {
+          "station_id": "3410",
+          "arrival": 9539,
+          "departure": 9579
+        },
+        {
+          "station_id": "3400",
+          "arrival": 9740,
+          "departure": 9780
+        },
+        {
+          "station_id": "3390",
+          "arrival": 9930,
+          "departure": 9970
+        },
+        {
+          "station_id": "3380",
+          "arrival": 10123,
+          "departure": 10163
+        },
+        {
+          "station_id": "3370",
+          "arrival": 10377,
+          "departure": 10417
+        },
+        {
+          "station_id": "3360",
+          "arrival": 10739,
+          "departure": 10779
+        }
+      ]
+    }
+  ]
+}

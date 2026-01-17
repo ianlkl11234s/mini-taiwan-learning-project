@@ -24,6 +24,7 @@ tracks_od/          ← O-D 專屬軌道（列車位置計算）
 - `tracks_handdrawn/YL/` - 宜蘭線手繪區段 (4 檔案)
 - `tracks_handdrawn/KL/` - 基隆支線手繪區段 (2 檔案)
 - `tracks_handdrawn/BH/` - 北迴線手繪區段 (2 檔案)
+- `tracks_handdrawn/WL-S-handraw-template.geojson` - 西部幹線南段手繪區段 (林內、斗南、大湖、岡山)
 
 ---
 
@@ -149,7 +150,7 @@ tracks_od/          ← O-D 專屬軌道（列車位置計算）
 ### WL-S 西部幹線南段
 | 項目 | 狀態 |
 |------|------|
-| 軌道資料 | ✅ 完成 |
+| 軌道資料 | 🔧 手繪補充 |
 | O-D 軌道 | ✅ 完成 |
 | 時刻表 | 🔧 測試資料 |
 | 備註 | 彰化-新左營 (39站) |
@@ -158,7 +159,13 @@ tracks_od/          ← O-D 專屬軌道（列車位置計算）
 - [x] 合併 WL-S1 (新左營→石龜) + WL-S2 (石龜→彰化) 軌道
 - [x] 計算完整 station_progress：39 個車站 (3360 彰化 ~ 4340 新左營)
 - [x] O-D 軌道與 Golden Track 完全一致
+- [x] 林內附近軌道迴圈 → 手繪修正
+- [x] 斗南附近軌道迴圈 → 手繪修正
+- [x] 大湖附近軌道分岔 → 手繪修正
+- [x] 岡山附近軌道分岔 → 手繪修正
+- [x] 全部 39 站投影到軌道上，停車點與站點標示一致 (距離 < 1m)
 
+**手繪檔案**：`tracks_handdrawn/WL-S-handraw-template.geojson`
 **O-D 軌道**：`tracks_od/WL-CH-ZY-0.geojson`, `WL-ZY-CH-1.geojson`
 **Golden Track**：`tracks_golden/WL-S-CH-ZY-0.geojson`, `WL-S-CH-ZY-1.geojson`
 
@@ -259,10 +266,12 @@ tracks_od/          ← O-D 專屬軌道（列車位置計算）
 - 建立 Golden Track：`WL-S-CH-ZY-0.geojson`, `WL-S-CH-ZY-1.geojson`
 - 建立 O-D 軌道：`WL-CH-ZY-0.geojson` (彰化→新左營), `WL-ZY-CH-1.geojson` (新左營→彰化)
 - 計算完整 station_progress：39 個車站 (3360 彰化 ~ 4340 新左營)
-- 所有車站誤差均在 40m 以內
 - 建立測試時刻表：`WL-CH-ZY-0.json`, `WL-ZY-CH-1.json` (每小時一班，06:00-22:00)
 - 新增腳本：`build_wl_south_od_tracks.py`, `build_wl_south_schedules.py`
 - 更新 `useTraData.ts`、`TraTrainEngine.ts` 支援 WL-S 路線
+- **手繪修正**：林內、斗南、大湖、岡山附近軌道迴圈/分岔問題
+- **車站投影**：全部 39 站投影到軌道上，確保停車點與站點標示一致
+- 新增手繪模板：`tracks_handdrawn/WL-S-handraw-template.geojson`
 
 ### 2026-01-16 (PT 屏東線)
 - 新增 PT 屏東線 O-D 軌道資料 (新左營-枋寮)

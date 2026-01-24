@@ -215,6 +215,44 @@ tracks_od/          ← O-D 專屬軌道（列車位置計算）
 **O-D 軌道**：`tracks_od/PT-ZY-PL-0.geojson`, `PT-PL-ZY-1.geojson`
 **擷取來源**：從 `SK-ZY-TT-1` 和 `SK-TT-ZY-0` 擷取新左營↔枋寮段
 
+### WL-C 西部幹線海線
+| 項目 | 狀態 |
+|------|------|
+| 軌道資料 | ⚠️ 有跳躍點 |
+| O-D 軌道 | ✅ 完成 |
+| 時刻表 | 🔧 測試資料 |
+| 備註 | 彰化-竹南 (18 站)，合併 WL-H + WL-H2 軌道 |
+
+**已知問題與修正**：
+- [x] 合併 WL-H (追分→白沙屯) + WL-H2 (龍港→談文) 軌道
+- [x] 軌道覆蓋所有 18 站，車站誤差均 < 50m
+- [x] 延伸軌道到彰化站 (起點) 和竹南站 (終點)
+- [ ] 有 7 處跳躍點 (最大 5.5km 在彰化附近) → 待手繪修正
+- [ ] 軌道未經過追分→彰化段中間站，僅直線連接
+
+**Golden Track**：`tracks_golden/WL-C-CH-ZN-0.geojson`, `WL-C-ZN-CH-1.geojson`
+**O-D 軌道**：`tracks_od/WL-CH-ZN-0.geojson`, `WL-ZN-CH-1.geojson`
+**合併來源**：WL-H (追分→白沙屯) + WL-H2 (龍港→談文)
+
+### WL-M 西部幹線山線
+| 項目 | 狀態 |
+|------|------|
+| 軌道資料 | ⚠️ 有偏移 |
+| O-D 軌道 | ✅ 完成 |
+| 時刻表 | 🔧 測試資料 |
+| 備註 | 竹南-彰化 (23 站)，使用 TDX WL-M 軌道 |
+
+**已知問題與修正**：
+- [x] 從備份檔案讀取 WL-M-0/WL-M-1 軌道 (2592 pts)
+- [x] 延伸軌道到竹南站和彰化站
+- [x] 計算完整 station_progress：23 個車站
+- [ ] 5 站距離軌道 >1km：南勢 (2030m)、三義 (1234m)、松竹 (1099m)、太原 (1358m)、精武 (1628m)
+- [ ] 8 站距離軌道 300m~1km：需要軌道修正或手繪補充
+
+**Golden Track**：`tracks_golden/WL-M-ZN-CH-0.geojson`, `WL-M-CH-ZN-1.geojson`
+**O-D 軌道**：`tracks_od/WL-M-ZN-CH-0.geojson`, `WL-M-CH-ZN-1.geojson`
+**腳本**：`build_wl_mountain_od_tracks.py`, `build_wl_mountain_schedules.py`
+
 ---
 
 ## 處理腳本
@@ -235,6 +273,12 @@ tracks_od/          ← O-D 專屬軌道（列車位置計算）
 | `build_kl_od_tracks.py` | 從 WL-N 建立 KL 基隆支線 O-D 軌道 |
 | `build_tl_od_tracks.py` | 建立 TL 臺東線 O-D 專屬軌道 |
 | `build_sk_od_tracks.py` | 建立 SK 南迴線 O-D 專屬軌道 (合併 NH+PT+WL-S1) |
+| `build_wl_south_od_tracks.py` | 建立 WL-S 西部幹線南段 O-D 專屬軌道 |
+| `build_wl_south_schedules.py` | 建立 WL-S 西部幹線南段測試時刻表 |
+| `build_wl_coast_od_tracks.py` | 建立 WL-C 西部幹線海線 O-D 專屬軌道 |
+| `build_wl_coast_schedules.py` | 建立 WL-C 西部幹線海線測試時刻表 |
+| `build_wl_mountain_od_tracks.py` | 建立 WL-M 西部幹線山線 O-D 專屬軌道 |
+| `build_wl_mountain_schedules.py` | 建立 WL-M 西部幹線山線測試時刻表 |
 | `fetch_yl_kl_timetable.py` | 從 TDX API 取得 YL/KL 真實時刻表 |
 
 ### 舊版腳本 (已整合或棄用)
@@ -259,6 +303,29 @@ tracks_od/          ← O-D 專屬軌道（列車位置計算）
 ---
 
 ## 更新紀錄
+
+### 2026-01-24 (WL-M 西部幹線山線)
+- 新增 WL-M 西部幹線山線 O-D 軌道資料 (竹南-彰化)
+- 從備份檔案讀取 TDX WL-M-0/WL-M-1 軌道 (2592 pts)
+- 延伸軌道到竹南站 (北端) 和彰化站 (南端)
+- 建立 Golden Track：`WL-M-ZN-CH-0.geojson`, `WL-M-CH-ZN-1.geojson`
+- 建立 O-D 軌道：`WL-M-ZN-CH-0.geojson` (竹南→彰化), `WL-M-CH-ZN-1.geojson` (彰化→竹南)
+- 計算完整 station_progress：23 個車站 (1250 竹南 ~ 3360 彰化)
+- 建立測試時刻表：`WL-M-ZN-CH-0.json`, `WL-M-CH-ZN-1.json` (每小時一班，06:00-22:00)
+- 新增腳本：`build_wl_mountain_od_tracks.py`, `build_wl_mountain_schedules.py`
+- 更新 `useTraData.ts`、`TraTrainEngine.ts` 支援 WL-M 路線
+- **待修正**：5 站距離軌道 >1km（南勢、三義、松竹、太原、精武），需要手繪補充
+
+### 2026-01-17 (WL-C 西部幹線海線)
+- 新增 WL-C 西部幹線海線 O-D 軌道資料 (彰化-竹南)
+- 合併 WL-H (追分→白沙屯) + WL-H2 (龍港→談文) TDX 軌道
+- 建立 Golden Track：`WL-C-CH-ZN-0.geojson`, `WL-C-ZN-CH-1.geojson`
+- 建立 O-D 軌道：`WL-CH-ZN-0.geojson` (彰化→竹南), `WL-ZN-CH-1.geojson` (竹南→彰化)
+- 計算完整 station_progress：18 個車站 (3360 彰化 ~ 1250 竹南)
+- 建立測試時刻表：`WL-CH-ZN-0.json`, `WL-ZN-CH-1.json` (每小時一班，06:00-22:00)
+- 新增腳本：`build_wl_coast_od_tracks.py`, `build_wl_coast_schedules.py`
+- 更新 `useTraData.ts`、`TraTrainEngine.ts`、`traInfo.ts` 支援 WL-C 路線
+- **待修正**：7 處跳躍點 (最大 5.5km 在彰化附近)，需要手繪補充
 
 ### 2026-01-17 (WL-S 西部幹線南段)
 - 新增 WL-S 西部幹線南段 O-D 軌道資料 (彰化-新左營)

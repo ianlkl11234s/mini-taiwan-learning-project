@@ -5,11 +5,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "0900",
-        "name": "\u57fa\u9686",
+        "name": "基隆",
         "name_en": "Keelung",
-        "name_zh": "\u57fa\u9686",
+        "name_zh": "基隆",
         "class": "1",
-        "address": "203001\u57fa\u9686\u5e02\u4e2d\u5c71\u5340\u4e2d\u5c71\u4e00\u8def 16 \u4e4b 1 \u865f",
+        "address": "203001基隆市中山區中山一路 16 之 1 號",
         "phone": "02-24263743",
         "original_coords": [
           121.73837,
@@ -31,11 +31,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "0910",
-        "name": "\u4e09\u5751",
+        "name": "三坑",
         "name_en": "Sankeng",
-        "name_zh": "\u4e09\u5751",
+        "name_zh": "三坑",
         "class": "4",
-        "address": "200006\u57fa\u9686\u5e02\u4ec1\u611b\u5340\u5fb7\u539a\u91cc\u9f8d\u5b89\u8857 206 \u865f",
+        "address": "200006基隆市仁愛區德厚里龍安街 206 號",
         "phone": "02-24230289",
         "original_coords": [
           121.74202,
@@ -57,11 +57,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "0920",
-        "name": "\u516b\u5835",
+        "name": "八堵",
         "name_en": "Badu",
-        "name_zh": "\u516b\u5835",
+        "name_zh": "八堵",
         "class": "2",
-        "address": "205001\u57fa\u9686\u5e02\u6696\u6696\u5340\u516b\u5357\u91cc\u516b\u5835\u8def 142 \u865f",
+        "address": "205001基隆市暖暖區八南里八堵路 142 號",
         "phone": "02-24560841",
         "original_coords": [
           121.72904,
@@ -83,11 +83,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "0930",
-        "name": "\u4e03\u5835",
+        "name": "七堵",
         "name_en": "Qidu",
-        "name_zh": "\u4e03\u5835",
+        "name_zh": "七堵",
         "class": "1",
-        "address": "206006\u57fa\u9686\u5e02\u4e03\u5835\u5340\u9577\u8208\u91cc\u6771\u65b0\u8857 2 \u865f",
+        "address": "206006基隆市七堵區長興里東新街 2 號",
         "phone": "02-24553426",
         "original_coords": [
           121.71415,
@@ -109,11 +109,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "0940",
-        "name": "\u767e\u798f",
+        "name": "百福",
         "name_en": "Baifu",
-        "name_zh": "\u767e\u798f",
+        "name_zh": "百福",
         "class": "4",
-        "address": "206011\u57fa\u9686\u5e02\u4e03\u5835\u5340\u5835\u5357\u91cc\u660e\u5fb7\u4e09\u8def 1 \u4e4b 1 \u865f",
+        "address": "206011基隆市七堵區堵南里明德三路 1 之 1 號",
         "phone": "02-24528372",
         "original_coords": [
           121.69379,
@@ -135,11 +135,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "0950",
-        "name": "\u4e94\u5835",
+        "name": "五堵",
         "name_en": "Wudu",
-        "name_zh": "\u4e94\u5835",
+        "name_zh": "五堵",
         "class": "4",
-        "address": "221041\u65b0\u5317\u5e02\u6c50\u6b62\u5340\u9577\u5b89\u91cc\u9577\u5b89\u8def 17 \u865f",
+        "address": "221041新北市汐止區長安里長安路 17 號",
         "phone": "02-86476200",
         "original_coords": [
           121.66758,
@@ -161,11 +161,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "0960",
-        "name": "\u6c50\u6b62",
+        "name": "汐止",
         "name_en": "Xizhi",
-        "name_zh": "\u6c50\u6b62",
+        "name_zh": "汐止",
         "class": "2",
-        "address": "221029\u65b0\u5317\u5e02\u6c50\u6b62\u5340\u4fe1\u671b\u91cc\u4fe1\u7fa9\u8def 1 \u865f",
+        "address": "221029新北市汐止區信望里信義路 1 號",
         "phone": "02-26415096",
         "original_coords": [
           121.66113,
@@ -187,11 +187,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "0970",
-        "name": "\u6c50\u79d1",
+        "name": "汐科",
         "name_en": "Xike",
-        "name_zh": "\u6c50\u79d1",
+        "name_zh": "汐科",
         "class": "4",
-        "address": "221026\u65b0\u5317\u5e02\u6c50\u6b62\u5340\u5927\u540c\u91cc\u5927\u540c\u8def\u4e8c\u6bb5 182 \u865f",
+        "address": "221026新北市汐止區大同里大同路二段 182 號",
         "phone": "02-26499817#8730",
         "original_coords": [
           121.65057,
@@ -213,11 +213,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "0980",
-        "name": "\u5357\u6e2f",
+        "name": "南港",
         "name_en": "Nangang",
-        "name_zh": "\u5357\u6e2f",
+        "name_zh": "南港",
         "class": "1",
-        "address": "115018\u81fa\u5317\u5e02\u5357\u6e2f\u5340\u5357\u6e2f\u91cc\u5357\u6e2f\u8def\u4e00\u6bb5 313 \u865f B2",
+        "address": "115018臺北市南港區南港里南港路一段 313 號 B2",
         "phone": "02-27838645",
         "original_coords": [
           121.60706,
@@ -239,11 +239,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "0990",
-        "name": "\u677e\u5c71",
+        "name": "松山",
         "name_en": "Songshan",
-        "name_zh": "\u677e\u5c71",
+        "name_zh": "松山",
         "class": "1",
-        "address": "110417\u81fa\u5317\u5e02\u4fe1\u7fa9\u5340\u677e\u5c71\u8def 11 \u865fB1",
+        "address": "110417臺北市信義區松山路 11 號B1",
         "phone": "02-27673819",
         "original_coords": [
           121.57906,
@@ -265,11 +265,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "1000",
-        "name": "\u81fa\u5317",
+        "name": "臺北",
         "name_en": "Taipei",
-        "name_zh": "\u81fa\u5317",
+        "name_zh": "臺北",
         "class": "0",
-        "address": "100230\u81fa\u5317\u5e02\u4e2d\u6b63\u5340\u9ece\u660e\u91cc\u5317\u5e73\u897f\u8def 3 \u865f",
+        "address": "100230臺北市中正區黎明里北平西路 3 號",
         "phone": "02-23713558",
         "original_coords": [
           121.51711,
@@ -291,11 +291,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "1001",
-        "name": "\u81fa\u5317-\u74b0\u5cf6",
+        "name": "臺北-環島",
         "name_en": "Taipei Surround Island",
-        "name_zh": "\u81fa\u5317-\u74b0\u5cf6",
+        "name_zh": "臺北-環島",
         "class": "4",
-        "address": "100230\u81fa\u5317\u5e02\u4e2d\u6b63\u5340",
+        "address": "100230臺北市中正區",
         "phone": "",
         "original_coords": [
           121.51711,
@@ -317,11 +317,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "1010",
-        "name": "\u842c\u83ef",
+        "name": "萬華",
         "name_en": "Wanhua",
-        "name_zh": "\u842c\u83ef",
+        "name_zh": "萬華",
         "class": "1",
-        "address": "108220\u81fa\u5317\u5e02\u842c\u83ef\u5340\u5bcc\u798f\u91cc\u5eb7\u5b9a\u8def 382 \u865f",
+        "address": "108220臺北市萬華區富福里康定路 382 號",
         "phone": "02-23020481",
         "original_coords": [
           121.50081,
@@ -343,11 +343,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "1020",
-        "name": "\u677f\u6a4b",
+        "name": "板橋",
         "name_en": "Banqiao",
-        "name_zh": "\u677f\u6a4b",
+        "name_zh": "板橋",
         "class": "1",
-        "address": "220227\u65b0\u5317\u5e02\u677f\u6a4b\u5340\u65b0\u6c11\u91cc\u7e23\u6c11\u5927\u9053\u4e8c\u6bb5 7 \u865f\uff08\u7e23\u6c11\u5927\u9053\u5074\uff09",
+        "address": "220227新北市板橋區新民里縣民大道二段 7 號（縣民大道側）",
         "phone": "02-89691036",
         "original_coords": [
           121.46377,
@@ -369,11 +369,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "1030",
-        "name": "\u6d6e\u6d32",
+        "name": "浮洲",
         "name_en": "Fuzhou",
-        "name_zh": "\u6d6e\u6d32",
+        "name_zh": "浮洲",
         "class": "4",
-        "address": "22058\u65b0\u5317\u5e02\u677f\u6a4b\u5340\u50d1\u4e2d\u91cc\u50d1\u4e2d\u4e8c\u8857 156 \u865f",
+        "address": "22058新北市板橋區僑中里僑中二街 156 號",
         "phone": "02-23815226#4665",
         "original_coords": [
           121.44477,
@@ -395,11 +395,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "1040",
-        "name": "\u6a39\u6797",
+        "name": "樹林",
         "name_en": "Shulin",
-        "name_zh": "\u6a39\u6797",
+        "name_zh": "樹林",
         "class": "1",
-        "address": "238005\u65b0\u5317\u5e02\u6a39\u6797\u5340\u6a39\u5317\u91cc\u93ae\u524d\u8857 112 \u865f",
+        "address": "238005新北市樹林區樹北里鎮前街 112 號",
         "phone": "02-26812052",
         "original_coords": [
           121.42442,
@@ -421,11 +421,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "1050",
-        "name": "\u5357\u6a39\u6797",
+        "name": "南樹林",
         "name_en": "South Shulin",
-        "name_zh": "\u5357\u6a39\u6797",
+        "name_zh": "南樹林",
         "class": "4",
-        "address": "23846\u65b0\u5317\u5e02\u6a39\u6797\u5340\u6771\u5c71\u91cc\u4e2d\u5c71\u8def\u4e8c\u6bb5 230 \u865f",
+        "address": "23846新北市樹林區東山里中山路二段 230 號",
         "phone": "02-26812052",
         "original_coords": [
           121.40884,
@@ -447,11 +447,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "1060",
-        "name": "\u5c71\u4f73",
+        "name": "山佳",
         "name_en": "Shanjia",
-        "name_zh": "\u5c71\u4f73",
+        "name_zh": "山佳",
         "class": "3",
-        "address": "238012\u65b0\u5317\u5e02\u6a39\u6797\u5340\u4e2d\u5c71\u8def\u4e09\u6bb5108\u865f",
+        "address": "238012新北市樹林區中山路三段108號",
         "phone": "02-26808874",
         "original_coords": [
           121.39254,
@@ -473,11 +473,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "1070",
-        "name": "\u9daf\u6b4c",
+        "name": "鶯歌",
         "name_en": "Yingge",
-        "name_zh": "\u9daf\u6b4c",
+        "name_zh": "鶯歌",
         "class": "2",
-        "address": "239005\u65b0\u5317\u5e02\u9daf\u6b4c\u5340\u6771\u9daf\u91cc\u6587\u5316\u8def 68-1\u865f",
+        "address": "239005新北市鶯歌區東鶯里文化路 68-1號",
         "phone": "02-26792004",
         "original_coords": [
           121.35517,
@@ -499,11 +499,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "1075",
-        "name": "\u9cf3\u9cf4",
+        "name": "鳳鳴",
         "name_en": "Fengming",
-        "name_zh": "\u9cf3\u9cf4",
+        "name_zh": "鳳鳴",
         "class": "4",
-        "address": "239013\u65b0\u5317\u5e02\u9daf\u6b4c\u5340\u9cf3\u9cf4\u91cc\u9cf3\u4e00\u8def 2 \u865f",
+        "address": "239013新北市鶯歌區鳳鳴里鳳一路 2 號",
         "phone": "",
         "original_coords": [
           121.33658,
@@ -525,11 +525,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "1080",
-        "name": "\u6843\u5712",
+        "name": "桃園",
         "name_en": "Taoyuan",
-        "name_zh": "\u6843\u5712",
+        "name_zh": "桃園",
         "class": "1",
-        "address": "330002\u6843\u5712\u5e02\u6843\u5712\u5340\u6b66\u9675\u91cc\u4e2d\u6b63\u8def 1 \u865f",
+        "address": "330002桃園市桃園區武陵里中正路 1 號",
         "phone": "03-3767050",
         "original_coords": [
           121.314,
@@ -551,11 +551,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "1090",
-        "name": "\u5167\u58e2",
+        "name": "內壢",
         "name_en": "Neili",
-        "name_zh": "\u5167\u58e2",
+        "name_zh": "內壢",
         "class": "3",
-        "address": "320070\u6843\u5712\u5e02\u4e2d\u58e2\u5340\u4e2d\u539f\u91cc\u4e2d\u83ef\u8def\u4e00\u6bb5 267 \u865f",
+        "address": "320070桃園市中壢區中原里中華路一段 267 號",
         "phone": "03-4559725",
         "original_coords": [
           121.25826,
@@ -577,11 +577,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "1100",
-        "name": "\u4e2d\u58e2",
+        "name": "中壢",
         "name_en": "Zhongli_Taoyuan",
-        "name_zh": "\u4e2d\u58e2",
+        "name_zh": "中壢",
         "class": "1",
-        "address": "320001\u6843\u5712\u5e02\u4e2d\u58e2\u5340\u77f3\u982d\u91cc\u4e2d\u548c\u8def 139 \u865f",
+        "address": "320001桃園市中壢區石頭里中和路 139 號",
         "phone": "03-4223235",
         "original_coords": [
           121.22531,
@@ -603,11 +603,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "1110",
-        "name": "\u57d4\u5fc3",
+        "name": "埔心",
         "name_en": "Puxin",
-        "name_zh": "\u57d4\u5fc3",
+        "name_zh": "埔心",
         "class": "3",
-        "address": "326009\u6843\u5712\u5e02\u694a\u6885\u5340\u57d4\u5fc3\u91cc\u6c38\u7f8e\u8def 208 \u865f",
+        "address": "326009桃園市楊梅區埔心里永美路 208 號",
         "phone": "03-4827100",
         "original_coords": [
           121.18321,
@@ -629,11 +629,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "1120",
-        "name": "\u694a\u6885",
+        "name": "楊梅",
         "name_en": "Yangmei",
-        "name_zh": "\u694a\u6885",
+        "name_zh": "楊梅",
         "class": "3",
-        "address": "326101\u6843\u5712\u5e02\u694a\u6885\u5340\u694a\u6885\u91cc\u5927\u6210\u8def 256 \u865f",
+        "address": "326101桃園市楊梅區楊梅里大成路 256 號",
         "phone": "03-4782893",
         "original_coords": [
           121.14637,
@@ -655,11 +655,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "1130",
-        "name": "\u5bcc\u5ca1",
+        "name": "富岡",
         "name_en": "Fugang",
-        "name_zh": "\u5bcc\u5ca1",
+        "name_zh": "富岡",
         "class": "3",
-        "address": "326019\u6843\u5712\u5e02\u694a\u6885\u5340\u5bcc\u5ca1\u91cc\u6210\u529f\u8def 37 \u865f",
+        "address": "326019桃園市楊梅區富岡里成功路 37 號",
         "phone": "03-4723754",
         "original_coords": [
           121.08308,
@@ -681,11 +681,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "1140",
-        "name": "\u65b0\u5bcc",
+        "name": "新富",
         "name_en": "Xinfu",
-        "name_zh": "\u65b0\u5bcc",
+        "name_zh": "新富",
         "class": "5",
-        "address": "326019\u6843\u5712\u5e02\u694a\u6885\u5340\u5bcc\u8c50\u91cc\u65b0\u660e\u8857",
+        "address": "326019桃園市楊梅區富豐里新明街",
         "phone": "03-4723754",
         "original_coords": [
           121.06751,
@@ -707,11 +707,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "1150",
-        "name": "\u5317\u6e56",
+        "name": "北湖",
         "name_en": "Beihu",
-        "name_zh": "\u5317\u6e56",
+        "name_zh": "北湖",
         "class": "4",
-        "address": "303118\u65b0\u7af9\u7e23\u6e56\u53e3\u9109\u6771\u8208\u6751\u5317\u6e56\u8def 1 \u865f",
+        "address": "303118新竹縣湖口鄉東興村北湖路 1 號",
         "phone": "03-5993850",
         "original_coords": [
           121.05575,
@@ -733,11 +733,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "1160",
-        "name": "\u6e56\u53e3",
+        "name": "湖口",
         "name_en": "Hukou",
-        "name_zh": "\u6e56\u53e3",
+        "name_zh": "湖口",
         "class": "3",
-        "address": "303032\u65b0\u7af9\u7e23\u6e56\u53e3\u9109\u4ec1\u52e2\u6751\u4e2d\u5c71\u8def\u4e8c\u6bb5 121 \u865f",
+        "address": "303032新竹縣湖口鄉仁勢村中山路二段 121 號",
         "phone": "03-5992192",
         "original_coords": [
           121.04384,
@@ -759,11 +759,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "1170",
-        "name": "\u65b0\u8c50",
+        "name": "新豐",
         "name_en": "Xinfeng",
-        "name_zh": "\u65b0\u8c50",
+        "name_zh": "新豐",
         "class": "3",
-        "address": "304114\u65b0\u7af9\u7e23\u65b0\u8c50\u9109\u5c71\u5d0e\u6751\u65b0\u8208\u8def 202 \u865f",
+        "address": "304114新竹縣新豐鄉山崎村新興路 202 號",
         "phone": "03-5596314",
         "original_coords": [
           120.99626,
@@ -785,11 +785,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "1180",
-        "name": "\u7af9\u5317",
+        "name": "竹北",
         "name_en": "Zhubei",
-        "name_zh": "\u7af9\u5317",
+        "name_zh": "竹北",
         "class": "3",
-        "address": "30265\u65b0\u7af9\u7e23\u7af9\u5317\u5e02\u7af9\u7fa9\u91cc\u548c\u5e73\u8857 59 \u865f",
+        "address": "30265新竹縣竹北市竹義里和平街 59 號",
         "phone": "03-5552024",
         "original_coords": [
           121.00921,
@@ -811,11 +811,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "1190",
-        "name": "\u5317\u65b0\u7af9",
+        "name": "北新竹",
         "name_en": "North Hsinchu",
-        "name_zh": "\u5317\u65b0\u7af9",
+        "name_zh": "北新竹",
         "class": "4",
-        "address": "300002\u65b0\u7af9\u5e02 \u6771\u5340\u6771\u5712\u91cc\u4e2d\u83ef\u8def\u4e00\u6bb5 291 \u4e4b 2 \u865f",
+        "address": "300002新竹市 東區東園里中華路一段 291 之 2 號",
         "phone": "03-5237441",
         "original_coords": [
           120.98381,
@@ -837,11 +837,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "1191",
-        "name": "\u5343\u7532",
+        "name": "千甲",
         "name_en": "Qianjia",
-        "name_zh": "\u5343\u7532",
+        "name_zh": "千甲",
         "class": "4",
-        "address": "300053\u65b0\u7af9\u5e02 \u6771\u5340\u6c34\u6e90\u91cc\u5343\u7532\u8def 142 \u865f",
+        "address": "300053新竹市 東區水源里千甲路 142 號",
         "phone": "03-5237441",
         "original_coords": [
           121.0034,
@@ -863,11 +863,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "1192",
-        "name": "\u65b0\u838a",
+        "name": "新莊",
         "name_en": "Xinzhuang",
-        "name_zh": "\u65b0\u838a",
+        "name_zh": "新莊",
         "class": "4",
-        "address": "300051\u65b0\u7af9\u5e02 \u6771\u5340\u65b0\u838a\u91cc\u95dc\u6771\u8def 310 \u865f",
+        "address": "300051新竹市 東區新莊里關東路 310 號",
         "phone": "03-5237441",
         "original_coords": [
           121.02196,
@@ -889,11 +889,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "1193",
-        "name": "\u7af9\u4e2d",
+        "name": "竹中",
         "name_en": "Zhuzhong",
-        "name_zh": "\u7af9\u4e2d",
+        "name_zh": "竹中",
         "class": "4",
-        "address": "310019\u65b0\u7af9\u7e23\u7af9\u6771\u93ae\u982d\u91cd\u91cc\u7af9\u4e2d\u8def 145 \u865f",
+        "address": "310019新竹縣竹東鎮頭重里竹中路 145 號",
         "phone": "03-5962042",
         "original_coords": [
           121.03141,
@@ -915,11 +915,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "1194",
-        "name": "\u516d\u5bb6",
+        "name": "六家",
         "name_en": "Liujia",
-        "name_zh": "\u516d\u5bb6",
+        "name_zh": "六家",
         "class": "4",
-        "address": "302052\u65b0\u7af9\u7e23\u7af9\u5317\u5e02\u9698\u53e3\u91cc\u5fa9\u8208\u4e09\u8def\u4e8c\u6bb5 229 \u865f",
+        "address": "302052新竹縣竹北市隘口里復興三路二段 229 號",
         "phone": "03-5962042",
         "original_coords": [
           121.03941,
@@ -941,11 +941,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "1201",
-        "name": "\u4e0a\u54e1",
+        "name": "上員",
         "name_en": "Shangyuan",
-        "name_zh": "\u4e0a\u54e1",
+        "name_zh": "上員",
         "class": "5",
-        "address": "310021\u65b0\u7af9\u7e23\u7af9\u6771\u93ae\u4e0a\u54e1\u91cc\u5149\u660e\u8def (\u7121\u7ad9\u623f)",
+        "address": "310021新竹縣竹東鎮上員里光明路 (無站房)",
         "phone": "03-5962042",
         "original_coords": [
           121.05582,
@@ -967,11 +967,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "1202",
-        "name": "\u69ae\u83ef",
+        "name": "榮華",
         "name_en": "Ronghua",
-        "name_zh": "\u69ae\u83ef",
+        "name_zh": "榮華",
         "class": "5",
-        "address": "310008\u65b0\u7af9\u7e23\u7af9\u6771\u93ae\u4ec1\u611b\u91cc\u5317\u8208\u8def (\u7121\u7ad9\u623f)",
+        "address": "310008新竹縣竹東鎮仁愛里北興路 (無站房)",
         "phone": "03-5962042",
         "original_coords": [
           121.08319,
@@ -993,11 +993,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "1203",
-        "name": "\u7af9\u6771",
+        "name": "竹東",
         "name_en": "Zhudong",
-        "name_zh": "\u7af9\u6771",
+        "name_zh": "竹東",
         "class": "2",
-        "address": "310007\u65b0\u7af9\u7e23\u7af9\u6771\u93ae\u96de\u6797\u91cc\u6771\u6797\u8def 196 \u865f",
+        "address": "310007新竹縣竹東鎮雞林里東林路 196 號",
         "phone": "03-5962042",
         "original_coords": [
           121.09472,
@@ -1019,11 +1019,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "1204",
-        "name": "\u6a6b\u5c71",
+        "name": "橫山",
         "name_en": "Hengshan",
-        "name_zh": "\u6a6b\u5c71",
+        "name_zh": "橫山",
         "class": "5",
-        "address": "312001\u65b0\u7af9\u7e23\u6a6b\u5c71\u9109\u6a6b\u5c71\u6751\u6a6b\u5c71\u8def 97 \u865f (\u7121\u7ad9\u623f)",
+        "address": "312001新竹縣橫山鄉橫山村橫山路 97 號 (無站房)",
         "phone": "03-5962042",
         "original_coords": [
           121.11772,
@@ -1045,11 +1045,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "1205",
-        "name": "\u4e5d\u8b9a\u982d",
+        "name": "九讚頭",
         "name_en": "Jiuzantou",
-        "name_zh": "\u4e5d\u8b9a\u982d",
+        "name_zh": "九讚頭",
         "class": "4",
-        "address": "312002\u65b0\u7af9\u7e23\u6a6b\u5c71\u9109\u5927\u809a\u6751\u4e2d\u8c50\u8def\u4e8c\u6bb5 286 \u5df7 29 \u865f",
+        "address": "312002新竹縣橫山鄉大肚村中豐路二段 286 巷 29 號",
         "phone": "03-5962042",
         "original_coords": [
           121.13622,
@@ -1071,11 +1071,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "1206",
-        "name": "\u5408\u8208",
+        "name": "合興",
         "name_en": "Hexing",
-        "name_zh": "\u5408\u8208",
+        "name_zh": "合興",
         "class": "5",
-        "address": "312003\u65b0\u7af9\u7e23\u6a6b\u5c71\u9109\u529b\u884c\u6751\u4e2d\u5c71\u8857\u4e00\u6bb5 17 \u865f",
+        "address": "312003新竹縣橫山鄉力行村中山街一段 17 號",
         "phone": "03-5962042",
         "original_coords": [
           121.15437,
@@ -1097,11 +1097,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "1207",
-        "name": "\u5bcc\u8cb4",
+        "name": "富貴",
         "name_en": "Fugui",
-        "name_zh": "\u5bcc\u8cb4",
+        "name_zh": "富貴",
         "class": "5",
-        "address": "312003\u65b0\u7af9\u7e23\u6a6b\u5c71\u9109\u8c50\u7530\u6751\u4e2d\u5c71\u8857\u4e00\u6bb5 (\u7121\u7ad9\u623f)",
+        "address": "312003新竹縣橫山鄉豐田村中山街一段 (無站房)",
         "phone": "03-5962042",
         "original_coords": [
           121.16743,
@@ -1123,11 +1123,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "1208",
-        "name": "\u5167\u7063",
+        "name": "內灣",
         "name_en": "Neiwan",
-        "name_zh": "\u5167\u7063",
+        "name_zh": "內灣",
         "class": "4",
-        "address": "312003\u65b0\u7af9\u7e23\u6a6b\u5c71\u9109\u5167\u7063\u6751\u4e2d\u6b63\u8def 6 \u865f",
+        "address": "312003新竹縣橫山鄉內灣村中正路 6 號",
         "phone": "03-5962042",
         "original_coords": [
           121.18255,
@@ -1149,11 +1149,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "1210",
-        "name": "\u65b0\u7af9",
+        "name": "新竹",
         "name_en": "Hsinchu",
-        "name_zh": "\u65b0\u7af9",
+        "name_zh": "新竹",
         "class": "1",
-        "address": "300003\u65b0\u7af9\u5e02 \u6771\u5340\u69ae\u5149\u91cc\u4e2d\u83ef\u8def\u4e8c\u6bb5 445 \u865f",
+        "address": "300003新竹市 東區榮光里中華路二段 445 號",
         "phone": "03-5237441",
         "original_coords": [
           120.97157,
@@ -1175,11 +1175,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "1220",
-        "name": "\u4e09\u59d3\u6a4b",
+        "name": "三姓橋",
         "name_en": "Sanxingqiao",
-        "name_zh": "\u4e09\u59d3\u6a4b",
+        "name_zh": "三姓橋",
         "class": "4",
-        "address": "300109\u65b0\u7af9\u5e02 \u9999\u5c71\u5340\u9999\u5c71\u91cc\u5143\u57f9\u8857 32 \u5df7 30 \u865f",
+        "address": "300109新竹市 香山區香山里元培街 32 巷 30 號",
         "phone": "03-5237441",
         "original_coords": [
           120.92844,
@@ -1201,11 +1201,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "1230",
-        "name": "\u9999\u5c71",
+        "name": "香山",
         "name_en": "Xiangshan",
-        "name_zh": "\u9999\u5c71",
+        "name_zh": "香山",
         "class": "4",
-        "address": "300111\u65b0\u7af9\u5e02 \u9999\u5c71\u5340\u671d\u5c71\u91cc\u4e2d\u83ef\u8def\u4e94\u6bb5 347 \u5df7 2 \u5f04 27 \u865f",
+        "address": "300111新竹市 香山區朝山里中華路五段 347 巷 2 弄 27 號",
         "phone": "03-5237441",
         "original_coords": [
           120.91388,
@@ -1227,11 +1227,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "1240",
-        "name": "\u5d0e\u9802",
+        "name": "崎頂",
         "name_en": "Qiding",
-        "name_zh": "\u5d0e\u9802",
+        "name_zh": "崎頂",
         "class": "5",
-        "address": "35054\u82d7\u6817\u7e23\u7af9\u5357\u93ae\u5d0e\u9802\u91cc\u5317\u6236 55 \u865f",
+        "address": "35054苗栗縣竹南鎮崎頂里北戶 55 號",
         "phone": "037-472030",
         "original_coords": [
           120.87183,
@@ -1253,11 +1253,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "1250",
-        "name": "\u7af9\u5357",
+        "name": "竹南",
         "name_en": "Zhunan",
-        "name_zh": "\u7af9\u5357",
+        "name_zh": "竹南",
         "class": "1",
-        "address": "350007\u82d7\u6817\u7e23\u7af9\u5357\u93ae\u7af9\u5357\u91cc\u4e2d\u5c71\u8def 166 \u865f",
+        "address": "350007苗栗縣竹南鎮竹南里中山路 166 號",
         "phone": "037-472030",
         "original_coords": [
           120.88091,
@@ -1270,8 +1270,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.881061,
-          24.686461
+          120.876823,
+          24.686267
         ]
       }
     },
@@ -1279,11 +1279,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "2110",
-        "name": "\u8ac7\u6587",
+        "name": "談文",
         "name_en": "Tanwen",
-        "name_zh": "\u8ac7\u6587",
+        "name_zh": "談文",
         "class": "5",
-        "address": "36143\u82d7\u6817\u7e23\u9020\u6a4b\u9109\u8ac7\u6587\u6751\u4ec1\u611b\u8def 29 \u865f",
+        "address": "36143苗栗縣造橋鄉談文村仁愛路 29 號",
         "phone": "037-472030",
         "original_coords": [
           120.85825,
@@ -1305,11 +1305,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "2120",
-        "name": "\u5927\u5c71",
+        "name": "大山",
         "name_en": "Dashan",
-        "name_zh": "\u5927\u5c71",
+        "name_zh": "大山",
         "class": "4",
-        "address": "35658\u82d7\u6817\u7e23\u5f8c\u9f8d\u93ae\u5927\u5c71\u91cc\u660e\u5c71\u8def 180 \u865f",
+        "address": "35658苗栗縣後龍鎮大山里明山路 180 號",
         "phone": "037-431208",
         "original_coords": [
           120.80376,
@@ -1331,11 +1331,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "2130",
-        "name": "\u5f8c\u9f8d",
+        "name": "後龍",
         "name_en": "Houlong",
-        "name_zh": "\u5f8c\u9f8d",
+        "name_zh": "後龍",
         "class": "3",
-        "address": "35641\u82d7\u6817\u7e23\u5f8c\u9f8d\u93ae\u5317\u9f8d\u91cc\u8eca\u7ad9\u8857 127-2 \u865f",
+        "address": "35641苗栗縣後龍鎮北龍里車站街 127-2 號",
         "phone": "037-728616",
         "original_coords": [
           120.78731,
@@ -1357,11 +1357,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "2140",
-        "name": "\u9f8d\u6e2f",
+        "name": "龍港",
         "name_en": "Longgang",
-        "name_zh": "\u9f8d\u6e2f",
+        "name_zh": "龍港",
         "class": "5",
-        "address": "35668\u82d7\u6817\u7e23\u5f8c\u9f8d\u93ae\u9f8d\u6d25\u91cc7\u9130\u516c\u53f8\u5bee 85 \u865f",
+        "address": "35668苗栗縣後龍鎮龍津里7鄰公司寮 85 號",
         "phone": "037-728616",
         "original_coords": [
           120.75812,
@@ -1383,11 +1383,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "2150",
-        "name": "\u767d\u6c99\u5c6f",
+        "name": "白沙屯",
         "name_en": "Baishatun",
-        "name_zh": "\u767d\u6c99\u5c6f",
+        "name_zh": "白沙屯",
         "class": "3",
-        "address": "35742\u82d7\u6817\u7e23\u901a\u9704\u93ae\u767d\u897f\u91cc\u767d\u897f 131 \u865f",
+        "address": "35742苗栗縣通霄鎮白西里白西 131 號",
         "phone": "037-793066",
         "original_coords": [
           120.70824,
@@ -1409,11 +1409,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "2160",
-        "name": "\u65b0\u57d4",
+        "name": "新埔",
         "name_en": "Xinpu",
-        "name_zh": "\u65b0\u57d4",
+        "name_zh": "新埔",
         "class": "4",
-        "address": "35742\u82d7\u6817\u7e23\u901a\u9704\u93ae\u65b0\u57d4\u91cc\u65b0\u57d4 57 \u865f",
+        "address": "35742苗栗縣通霄鎮新埔里新埔 57 號",
         "phone": "037-793930",
         "original_coords": [
           120.69518,
@@ -1435,11 +1435,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "2170",
-        "name": "\u901a\u9704",
+        "name": "通霄",
         "name_en": "Tongxiao",
-        "name_zh": "\u901a\u9704",
+        "name_zh": "通霄",
         "class": "3",
-        "address": "357006\u82d7\u6817\u7e23\u901a\u9704\u93ae\u901a\u897f\u91cc\u4e2d\u6b63\u8def 109 \u865f",
+        "address": "357006苗栗縣通霄鎮通西里中正路 109 號",
         "phone": "037-758300",
         "original_coords": [
           120.67843,
@@ -1461,11 +1461,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "2180",
-        "name": "\u82d1\u88e1",
+        "name": "苑裡",
         "name_en": "Yuanli",
-        "name_zh": "\u82d1\u88e1",
+        "name_zh": "苑裡",
         "class": "3",
-        "address": "358011\u82d7\u6817\u7e23\u82d1\u88e1\u93ae\u82d1\u5317\u91cc\u4e2d\u5c71\u8def 165 \u865f",
+        "address": "358011苗栗縣苑裡鎮苑北里中山路 165 號",
         "phone": "037-851013",
         "original_coords": [
           120.65146,
@@ -1487,11 +1487,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "2190",
-        "name": "\u65e5\u5357",
+        "name": "日南",
         "name_en": "Rinan",
-        "name_zh": "\u65e5\u5357",
+        "name_zh": "日南",
         "class": "4",
-        "address": "437105\u81fa\u4e2d\u5e02\u5927\u7532\u5340\u5b5f\u6625\u91cc\u4e2d\u5c71\u8def\u4e8c\u6bb5 140 \u5df7 8 \u865f",
+        "address": "437105臺中市大甲區孟春里中山路二段 140 巷 8 號",
         "phone": "04-26816113",
         "original_coords": [
           120.65412,
@@ -1513,11 +1513,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "2200",
-        "name": "\u5927\u7532",
+        "name": "大甲",
         "name_en": "Dajia",
-        "name_zh": "\u5927\u7532",
+        "name_zh": "大甲",
         "class": "2",
-        "address": "437003\u81fa\u4e2d\u5e02\u5927\u7532\u5340\u5927\u7532\u91cc\u4e2d\u5c71\u8def\u4e00\u6bb5 828 \u865f",
+        "address": "437003臺中市大甲區大甲里中山路一段 828 號",
         "phone": "04-26872022",
         "original_coords": [
           120.62702,
@@ -1539,11 +1539,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "2210",
-        "name": "\u81fa\u4e2d\u6e2f",
+        "name": "臺中港",
         "name_en": "Taichung Port",
-        "name_zh": "\u81fa\u4e2d\u6e2f",
+        "name_zh": "臺中港",
         "class": "2",
-        "address": "43642\u81fa\u4e2d\u5e02\u6e05\u6c34\u5340\u9802\u6e73\u91cc\u7532\u5357\u8def 2 \u865f",
+        "address": "43642臺中市清水區頂湳里甲南路 2 號",
         "phone": "04-26225374",
         "original_coords": [
           120.60231,
@@ -1565,11 +1565,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "2220",
-        "name": "\u6e05\u6c34",
+        "name": "清水",
         "name_en": "Qingshui",
-        "name_zh": "\u6e05\u6c34",
+        "name_zh": "清水",
         "class": "3",
-        "address": "436109\u81fa\u4e2d\u5e02\u6e05\u6c34\u5340\u5357\u793e\u91cc\u4e2d\u6b63\u8857 115 \u865f",
+        "address": "436109臺中市清水區南社里中正街 115 號",
         "phone": "04-26222021",
         "original_coords": [
           120.56918,
@@ -1591,11 +1591,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "2230",
-        "name": "\u6c99\u9e7f",
+        "name": "沙鹿",
         "name_en": "Shalu",
-        "name_zh": "\u6c99\u9e7f",
+        "name_zh": "沙鹿",
         "class": "2",
-        "address": "43353\u81fa\u4e2d\u5e02\u6c99\u9e7f\u5340\u6c99\u9e7f\u91cc\u4e2d\u6b63\u8857 94 \u865f",
+        "address": "43353臺中市沙鹿區沙鹿里中正街 94 號",
         "phone": "04-26625057",
         "original_coords": [
           120.55752,
@@ -1617,11 +1617,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "2240",
-        "name": "\u9f8d\u4e95",
+        "name": "龍井",
         "name_en": "Longjing",
-        "name_zh": "\u9f8d\u4e95",
+        "name_zh": "龍井",
         "class": "3",
-        "address": "43450\u81fa\u4e2d\u5e02\u9f8d\u4e95\u5340\u9f8d\u6cc9\u91cc\u9f8d\u65b0\u8def 1 \u865f",
+        "address": "43450臺中市龍井區龍泉里龍新路 1 號",
         "phone": "04-26355578",
         "original_coords": [
           120.54335,
@@ -1643,11 +1643,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "2250",
-        "name": "\u5927\u809a",
+        "name": "大肚",
         "name_en": "Dadu",
-        "name_zh": "\u5927\u809a",
+        "name_zh": "大肚",
         "class": "3",
-        "address": "43242\u81fa\u4e2d\u5e02\u5927\u809a\u5340\u9802\u8857\u91cc\u5e73\u548c\u8857 121 \u865f",
+        "address": "43242臺中市大肚區頂街里平和街 121 號",
         "phone": "04-26992523",
         "original_coords": [
           120.54249,
@@ -1669,11 +1669,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "2260",
-        "name": "\u8ffd\u5206",
+        "name": "追分",
         "name_en": "Zhuifen",
-        "name_zh": "\u8ffd\u5206",
+        "name_zh": "追分",
         "class": "3",
-        "address": "43245\u81fa\u4e2d\u5e02\u5927\u809a\u5340\u738b\u7530\u91cc\u8ffd\u5206\u8857 13 \u865f",
+        "address": "43245臺中市大肚區王田里追分街 13 號",
         "phone": "04-26933106",
         "original_coords": [
           120.57018,
@@ -1695,11 +1695,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "3140",
-        "name": "\u9020\u6a4b",
+        "name": "造橋",
         "name_en": "Zaoqiao",
-        "name_zh": "\u9020\u6a4b",
+        "name_zh": "造橋",
         "class": "5",
-        "address": "36144\u82d7\u6817\u7e23\u9020\u6a4b\u9109\u9020\u6a4b\u6751\u5e73\u4ec1\u8def 54 \u865f",
+        "address": "36144苗栗縣造橋鄉造橋村平仁路 54 號",
         "phone": "037-472030",
         "original_coords": [
           120.86721,
@@ -1712,8 +1712,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.867365,
-          24.641695
+          120.8658160654358,
+          24.63994247145804
         ]
       }
     },
@@ -1721,11 +1721,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "3150",
-        "name": "\u8c50\u5bcc",
+        "name": "豐富",
         "name_en": "Fengfu",
-        "name_zh": "\u8c50\u5bcc",
+        "name_zh": "豐富",
         "class": "4",
-        "address": "356002\u82d7\u6817\u7e23\u5f8c\u9f8d\u93ae\u6821\u6905\u91cc\u9ad8\u9435\u4e00\u8def 66 \u865f",
+        "address": "356002苗栗縣後龍鎮校椅里高鐵一路 66 號",
         "phone": "037-726700",
         "original_coords": [
           120.82637,
@@ -1738,8 +1738,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.826299,
-          24.604355
+          120.82661654377364,
+          24.604703613350235
         ]
       }
     },
@@ -1747,11 +1747,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "3160",
-        "name": "\u82d7\u6817",
+        "name": "苗栗",
         "name_en": "Miaoli",
-        "name_zh": "\u82d7\u6817",
+        "name_zh": "苗栗",
         "class": "1",
-        "address": "360003\u82d7\u6817\u7e23\u82d7\u6817\u5e02\u4e0a\u82d7\u91cc\u70ba\u516c\u8def 1 \u865f",
+        "address": "360003苗栗縣苗栗市上苗里為公路 1 號",
         "phone": "037-260031",
         "original_coords": [
           120.82233,
@@ -1764,8 +1764,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.82216,
-          24.569984
+          120.82197699410771,
+          24.5711950910324
         ]
       }
     },
@@ -1773,11 +1773,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "3170",
-        "name": "\u5357\u52e2",
+        "name": "南勢",
         "name_en": "Nanshi",
-        "name_zh": "\u5357\u52e2",
+        "name_zh": "南勢",
         "class": "5",
-        "address": "360023\u82d7\u6817\u7e23\u82d7\u6817\u5e02\u65b0\u82f1\u91cc\u5357\u52e2 39 \u865f",
+        "address": "360023苗栗縣苗栗市新英里南勢 39 號",
         "phone": "037-260031",
         "original_coords": [
           120.79154,
@@ -1790,8 +1790,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.791376,
-          24.522586
+          120.81397500873132,
+          24.55596554705087
         ]
       }
     },
@@ -1799,11 +1799,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "3180",
-        "name": "\u9285\u947c",
+        "name": "銅鑼",
         "name_en": "Tongluo",
-        "name_zh": "\u9285\u947c",
+        "name_zh": "銅鑼",
         "class": "3",
-        "address": "36641\u82d7\u6817\u7e23\u9285\u947c\u9109\u9285\u947c\u6751\u5927\u540c\u8def13\u865f",
+        "address": "36641苗栗縣銅鑼鄉銅鑼村大同路13號",
         "phone": "037-983838",
         "original_coords": [
           120.78591,
@@ -1816,8 +1816,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.786065,
-          24.487117
+          120.78627050726674,
+          24.489692320119364
         ]
       }
     },
@@ -1825,11 +1825,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "3190",
-        "name": "\u4e09\u7fa9",
+        "name": "三義",
         "name_en": "Sanyi",
-        "name_zh": "\u4e09\u7fa9",
+        "name_zh": "三義",
         "class": "3",
-        "address": "367001\u82d7\u6817\u7e23\u4e09\u7fa9\u9109\u96d9\u6e56\u6751\u96d9\u6e56 90 \u865f",
+        "address": "367001苗栗縣三義鄉雙湖村雙湖 90 號",
         "phone": "037-874763",
         "original_coords": [
           120.77393,
@@ -1842,8 +1842,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.774199,
-          24.420656
+          120.77110200926379,
+          24.40963166113155
         ]
       }
     },
@@ -1851,11 +1851,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "3210",
-        "name": "\u6cf0\u5b89",
+        "name": "泰安",
         "name_en": "Tai'an",
-        "name_zh": "\u6cf0\u5b89",
+        "name_zh": "泰安",
         "class": "4",
-        "address": "42156\u81fa\u4e2d\u5e02\u540e\u91cc\u5340\u6cf0\u5b89\u91cc\u5b89\u7709\u8def 37 \u4e4b 12 \u865f",
+        "address": "42156臺中市后里區泰安里安眉路 37 之 12 號",
         "phone": "04-25586540",
         "original_coords": [
           120.74181,
@@ -1868,8 +1868,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.741891,
-          24.331429
+          120.74193716965237,
+          24.331550826834945
         ]
       }
     },
@@ -1877,11 +1877,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "3220",
-        "name": "\u540e\u91cc",
+        "name": "后里",
         "name_en": "Houli",
-        "name_zh": "\u540e\u91cc",
+        "name_zh": "后里",
         "class": "3",
-        "address": "42142\u81fa\u4e2d\u5e02\u540e\u91cc\u5340\u7fa9\u91cc\u91cc\u7532\u540e\u8def\u4e00\u6bb5 1 \u865f",
+        "address": "42142臺中市后里區義里里甲后路一段 1 號",
         "phone": "04-25562038",
         "original_coords": [
           120.73288,
@@ -1894,8 +1894,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.733144,
-          24.309228
+          120.73311630191603,
+          24.309175287074893
         ]
       }
     },
@@ -1903,11 +1903,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "3230",
-        "name": "\u8c50\u539f",
+        "name": "豐原",
         "name_en": "Fengyuan",
-        "name_zh": "\u8c50\u539f",
+        "name_zh": "豐原",
         "class": "1",
-        "address": "420020\u81fa\u4e2d\u5e02\u8c50\u539f\u5340\u8c50\u539f\u91cc\u4e2d\u6b63\u8def 1-1\u865f",
+        "address": "420020臺中市豐原區豐原里中正路 1-1號",
         "phone": "04-25207950#32",
         "original_coords": [
           120.72374,
@@ -1920,8 +1920,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.72363,
-          24.254441
+          120.7227211029644,
+          24.25279632944702
         ]
       }
     },
@@ -1929,11 +1929,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "3240",
-        "name": "\u6817\u6797",
-        "name_en": "Lilin",
-        "name_zh": "\u6817\u6797",
+        "name": "潭子",
+        "name_en": "Tanzi",
+        "name_zh": "潭子",
         "class": "4",
-        "address": "427001\u81fa\u4e2d\u5e02\u6f6d\u5b50\u5340\u6f6d\u8c50\u8def\u4e8c\u6bb5747\u865f",
+        "address": "427001臺中市潭子區潭豐路二段747號",
         "phone": "04-25391401",
         "original_coords": [
           120.7106,
@@ -1946,138 +1946,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.710617,
-          24.234603
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "station_id": "3250",
-        "name": "\u6f6d\u5b50",
-        "name_en": "Tanzi",
-        "name_zh": "\u6f6d\u5b50",
-        "class": "3",
-        "address": "42751\u81fa\u4e2d\u5e02\u6f6d\u5b50\u5340\u4e2d\u5c71\u8def\u4e8c\u6bb5352-1\u865f",
-        "phone": "04-25363852",
-        "original_coords": [
-          120.70564,
-          24.21214
-        ],
-        "snapped_distance": 23.14,
-        "matched_line_id": "WL-M",
-        "track_progress": 0.317268
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          120.705848,
-          24.212121
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "station_id": "3260",
-        "name": "\u982d\u5bb6\u539d",
-        "name_en": "Toujiacuo",
-        "name_zh": "\u982d\u5bb6\u539d",
-        "class": "4",
-        "address": "42745\u81fa\u4e2d\u5e02\u6f6d\u5b50\u5340\u982d\u5f35\u6771\u8def43\u5df78\u865f",
-        "phone": "04-25391426",
-        "original_coords": [
-          120.70398,
-          24.19572
-        ],
-        "snapped_distance": 5.45,
-        "matched_line_id": "WL-M",
-        "track_progress": 0.296275
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          120.704029,
-          24.195714
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "station_id": "3270",
-        "name": "\u677e\u7af9",
-        "name_en": "Songzhu",
-        "name_zh": "\u677e\u7af9",
-        "class": "4",
-        "address": "406015\u81fa\u4e2d\u5e02\u5317\u5c6f\u5340\u820a\u793e\u91cc\u677e\u7af9\u8def\u4e00\u6bb51473\u5df7100\u865f",
-        "phone": "04-22473033",
-        "original_coords": [
-          120.70193,
-          24.18035
-        ],
-        "snapped_distance": 11.86,
-        "matched_line_id": "WL-M",
-        "track_progress": 0.276556
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          120.702036,
-          24.180337
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "station_id": "3280",
-        "name": "\u592a\u539f",
-        "name_en": "Taiyuan",
-        "name_zh": "\u592a\u539f",
-        "class": "4",
-        "address": "406008\u81fa\u4e2d\u5e02\u5317\u5c6f\u5340\u5317\u8208\u91cc\u6771\u5149\u8def 665 \u865f",
-        "phone": "04-22313926",
-        "original_coords": [
-          120.69988,
-          24.16449
-        ],
-        "snapped_distance": 1.49,
-        "matched_line_id": "WL-M",
-        "track_progress": 0.256221
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          120.699867,
-          24.164492
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "station_id": "3290",
-        "name": "\u7cbe\u6b66",
-        "name_en": "Jingwu",
-        "name_zh": "\u7cbe\u6b66",
-        "class": "4",
-        "address": "401005\u81fa\u4e2d\u5e02\u6771\u5340\u6771\u5357\u91cc\u6771\u5149\u8def 161\u865f",
-        "phone": "04-23606501",
-        "original_coords": [
-          120.69784,
-          24.14887
-        ],
-        "snapped_distance": 11.72,
-        "matched_line_id": "WL-M",
-        "track_progress": 0.236193
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          120.697735,
-          24.148884
+          120.70591209107305,
+          24.212815107177846
         ]
       }
     },
@@ -2085,11 +1955,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "3300",
-        "name": "\u81fa\u4e2d",
+        "name": "臺中",
         "name_en": "Taichung",
-        "name_zh": "\u81fa\u4e2d",
+        "name_zh": "臺中",
         "class": "0",
-        "address": "400005\u81fa\u4e2d\u5e02\u4e2d\u5340\u7da0\u5ddd\u91cc\u81fa\u7063\u5927\u9053\u4e00\u6bb5 1 \u865f",
+        "address": "400005臺中市中區綠川里臺灣大道一段 1 號",
         "phone": "04-22227236",
         "original_coords": [
           120.68691,
@@ -2102,8 +1972,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.68698,
-          24.137113
+          120.6853169470242,
+          24.136441237614957
         ]
       }
     },
@@ -2111,11 +1981,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "3310",
-        "name": "\u4e94\u6b0a",
-        "name_en": "Wuquan",
-        "name_zh": "\u4e94\u6b0a",
+        "name": "大慶",
+        "name_en": "Daqing",
+        "name_zh": "大慶",
         "class": "4",
-        "address": "402019\u81fa\u4e2d\u5e02\u5357\u5340\u5efa\u570b\u5357\u8def\u4e8c\u6bb5201\u865f",
+        "address": "402019臺中市南區建國南路二段201號",
         "phone": "04-22601636",
         "original_coords": [
           120.66654,
@@ -2128,8 +1998,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.666548,
-          24.128751
+          120.65076045863695,
+          24.120639267944693
         ]
       }
     },
@@ -2137,11 +2007,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "3320",
-        "name": "\u5927\u6176",
-        "name_en": "Daqing",
-        "name_zh": "\u5927\u6176",
+        "name": "烏日",
+        "name_en": "Wuri",
+        "name_zh": "烏日",
         "class": "4",
-        "address": "402026\u81fa\u4e2d\u5e02\u5357\u5340\u6a39\u5fb7\u91cc7\u9130\u5927\u6176\u88572\u6bb5130\u865f",
+        "address": "402026臺中市南區樹德里7鄰大慶街2段130號",
         "phone": "04-22637940",
         "original_coords": [
           120.64795,
@@ -2154,8 +2024,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.648039,
-          24.118966
+          120.62353534112196,
+          24.108861849481027
         ]
       }
     },
@@ -2163,11 +2033,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "3330",
-        "name": "\u70cf\u65e5",
-        "name_en": "Wuri",
-        "name_zh": "\u70cf\u65e5",
+        "name": "成功",
+        "name_en": "Chenggong",
+        "name_zh": "成功",
         "class": "4",
-        "address": "41442\u81fa\u4e2d\u5e02\u70cf\u65e5\u5340\u70cf\u65e5\u91cc\u4e09\u6c11\u8857 258 \u865f",
+        "address": "41442臺中市烏日區烏日里三民街 258 號",
         "phone": "04-23381071",
         "original_coords": [
           120.62244,
@@ -2180,60 +2050,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.622472,
-          24.108981
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "station_id": "3340",
-        "name": "\u65b0\u70cf\u65e5",
-        "name_en": "Xinwuri",
-        "name_zh": "\u65b0\u70cf\u65e5",
-        "class": "2",
-        "address": "41456\u81fa\u4e2d\u5e02\u70cf\u65e5\u5340\u4e09\u548c\u91cc\u9ad8\u9435\u6771\u4e00\u8def 26 \u865f",
-        "phone": "04-23376883",
-        "original_coords": [
-          120.61421,
-          24.10937
-        ],
-        "snapped_distance": 48.37,
-        "matched_line_id": "WL-M",
-        "track_progress": 0.103849
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          120.614249,
-          24.109804
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "station_id": "3350",
-        "name": "\u6210\u529f",
-        "name_en": "Chenggong",
-        "name_zh": "\u6210\u529f",
-        "class": "3",
-        "address": "414012\u81fa\u4e2d\u5e02\u70cf\u65e5\u5340\u69ae\u6cc9\u91cc\u4e2d\u5c71\u8def\u4e09\u6bb5 550 \u865f",
-        "phone": "04-23371986",
-        "original_coords": [
-          120.59021,
-          24.11424
-        ],
-        "snapped_distance": 16.63,
-        "matched_line_id": "WL-M",
-        "track_progress": 0.072621
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          120.590259,
-          24.114381
+          120.59910523699683,
+          24.111492824465667
         ]
       }
     },
@@ -2241,11 +2059,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "3360",
-        "name": "\u5f70\u5316",
+        "name": "彰化",
         "name_en": "Changhua",
-        "name_zh": "\u5f70\u5316",
+        "name_zh": "彰化",
         "class": "1",
-        "address": "500003\u5f70\u5316\u7e23\u5f70\u5316\u5e02\u9577\u6a02\u91cc\u4e09\u6c11\u8def 1 \u865f",
+        "address": "500003彰化縣彰化市長樂里三民路 1 號",
         "phone": "04-7274218#11",
         "original_coords": [
           120.53854,
@@ -2258,8 +2076,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.53840197332002,
-          24.081859017128853
+          120.538402,
+          24.081859
         ]
       }
     },
@@ -2267,11 +2085,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "3370",
-        "name": "\u82b1\u58c7",
+        "name": "花壇",
         "name_en": "Huatan",
-        "name_zh": "\u82b1\u58c7",
+        "name_zh": "花壇",
         "class": "4",
-        "address": "503009\u5f70\u5316\u7e23\u82b1\u58c7\u9109\u82b1\u58c7\u6751\u4e2d\u6b63\u8def 370 \u865f",
+        "address": "503009彰化縣花壇鄉花壇村中正路 370 號",
         "phone": "04-7881418",
         "original_coords": [
           120.53742,
@@ -2293,11 +2111,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "3380",
-        "name": "\u5927\u6751",
+        "name": "大村",
         "name_en": "Dacun",
-        "name_zh": "\u5927\u6751",
+        "name_zh": "大村",
         "class": "4",
-        "address": "515002\u5f70\u5316\u7e23\u5927\u6751\u9109\u904e\u6e9d\u6751\u798f\u9032\u8def 100 \u865f",
+        "address": "515002彰化縣大村鄉過溝村福進路 100 號",
         "phone": "04-8525148",
         "original_coords": [
           120.56062,
@@ -2319,11 +2137,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "3390",
-        "name": "\u54e1\u6797",
+        "name": "員林",
         "name_en": "Yuanlin",
-        "name_zh": "\u54e1\u6797",
+        "name_zh": "員林",
         "class": "1",
-        "address": "510001\u5f70\u5316\u7e23\u54e1\u6797\u5e02\u548c\u5e73\u91cc\u6c11\u6b0a\u8857 55 \u865f",
+        "address": "510001彰化縣員林市和平里民權街 55 號",
         "phone": "04-8320544#14",
         "original_coords": [
           120.56977,
@@ -2345,11 +2163,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "3400",
-        "name": "\u6c38\u9756",
+        "name": "永靖",
         "name_en": "Yongjing",
-        "name_zh": "\u6c38\u9756",
+        "name_zh": "永靖",
         "class": "5",
-        "address": "512001\u5f70\u5316\u7e23\u6c38\u9756\u9109\u5d19\u5b50\u6751\u5d19\u9952\u8def25 \u865f",
+        "address": "512001彰化縣永靖鄉崙子村崙饒路25 號",
         "phone": "04-8320544#15",
         "original_coords": [
           120.57173,
@@ -2371,11 +2189,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "3410",
-        "name": "\u793e\u982d",
+        "name": "社頭",
         "name_en": "Shetou",
-        "name_zh": "\u793e\u982d",
+        "name_zh": "社頭",
         "class": "3",
-        "address": "511009\u5f70\u5316\u7e23\u793e\u982d\u9109\u5ee3\u8208\u6751\u793e\u7ad9\u8def 10 \u865f",
+        "address": "511009彰化縣社頭鄉廣興村社站路 10 號",
         "phone": "04-8711646",
         "original_coords": [
           120.58077,
@@ -2397,11 +2215,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "3420",
-        "name": "\u7530\u4e2d",
+        "name": "田中",
         "name_en": "Tianzhong",
-        "name_zh": "\u7530\u4e2d",
+        "name_zh": "田中",
         "class": "2",
-        "address": "520022\u5f70\u5316\u7e23\u7530\u4e2d\u93ae\u4e2d\u8def\u91cc\u4e2d\u5dde\u8def\u4e00\u6bb5 1 \u865f",
+        "address": "520022彰化縣田中鎮中路里中州路一段 1 號",
         "phone": "04-8742142",
         "original_coords": [
           120.59146,
@@ -2423,11 +2241,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "3430",
-        "name": "\u4e8c\u6c34",
+        "name": "二水",
         "name_en": "Ershui",
-        "name_zh": "\u4e8c\u6c34",
+        "name_zh": "二水",
         "class": "2",
-        "address": "530018\u5f70\u5316\u7e23\u4e8c\u6c34\u9109\u5149\u5316\u6751\u5149\u6587\u8def 1 \u865f",
+        "address": "530018彰化縣二水鄉光化村光文路 1 號",
         "phone": "04-8792027",
         "original_coords": [
           120.61805,
@@ -2449,11 +2267,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "3431",
-        "name": "\u6e90\u6cc9",
+        "name": "源泉",
         "name_en": "Yuanquan",
-        "name_zh": "\u6e90\u6cc9",
+        "name_zh": "源泉",
         "class": "5",
-        "address": "530017\u5f70\u5316\u7e23\u4e8c\u6c34\u9109\u5408\u8208\u6751\u82f1\u7fa9\u8def (\u7121\u7ad9\u623f)",
+        "address": "530017彰化縣二水鄉合興村英義路 (無站房)",
         "phone": "04-8792027",
         "original_coords": [
           120.64211,
@@ -2475,11 +2293,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "3432",
-        "name": "\u6fc1\u6c34",
+        "name": "濁水",
         "name_en": "Zhuoshui",
-        "name_zh": "\u6fc1\u6c34",
+        "name_zh": "濁水",
         "class": "4",
-        "address": "551001\u5357\u6295\u7e23\u540d\u9593\u9109\u6fc1\u6c34\u6751\u8eca\u7ad9\u8def 15 \u865f",
+        "address": "551001南投縣名間鄉濁水村車站路 15 號",
         "phone": "049-2735850",
         "original_coords": [
           120.70467,
@@ -2501,11 +2319,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "3433",
-        "name": "\u9f8d\u6cc9",
+        "name": "龍泉",
         "name_en": "Longquan",
-        "name_zh": "\u9f8d\u6cc9",
+        "name_zh": "龍泉",
         "class": "5",
-        "address": "552003\u5357\u6295\u7e23\u96c6\u96c6\u93ae\u9698\u5bee\u6751\u9f8d\u6cc9\u5df7 (\u7121\u7ad9\u623f)",
+        "address": "552003南投縣集集鎮隘寮村龍泉巷 (無站房)",
         "phone": "04-8792027",
         "original_coords": [
           120.75014,
@@ -2527,11 +2345,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "3434",
-        "name": "\u96c6\u96c6",
+        "name": "集集",
         "name_en": "Jiji",
-        "name_zh": "\u96c6\u96c6",
+        "name_zh": "集集",
         "class": "5",
-        "address": "552001\u5357\u6295\u7e23\u96c6\u96c6\u93ae\u5433\u539d\u91cc\u6c11\u751f\u8def 75 \u865f",
+        "address": "552001南投縣集集鎮吳厝里民生路 75 號",
         "phone": "049-2762546",
         "original_coords": [
           120.78495,
@@ -2553,11 +2371,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "3435",
-        "name": "\u6c34\u91cc",
+        "name": "水里",
         "name_en": "Shuili",
-        "name_zh": "\u6c34\u91cc",
+        "name_zh": "水里",
         "class": "4",
-        "address": "553001\u5357\u6295\u7e23\u6c34\u91cc\u9109\u6c34\u91cc\u6751\u6c11\u751f\u8def 440 \u865f",
+        "address": "553001南投縣水里鄉水里村民生路 440 號",
         "phone": "049-2770015",
         "original_coords": [
           120.85332,
@@ -2579,11 +2397,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "3436",
-        "name": "\u8eca\u57d5",
+        "name": "車埕",
         "name_en": "Checheng",
-        "name_zh": "\u8eca\u57d5",
+        "name_zh": "車埕",
         "class": "5",
-        "address": "553004\u5357\u6295\u7e23\u6c34\u91cc\u9109\u8eca\u57d5\u6751\u6c11\u6b0a\u5df7 2 \u865f",
+        "address": "553004南投縣水里鄉車埕村民權巷 2 號",
         "phone": "049-2774749",
         "original_coords": [
           120.86572,
@@ -2605,11 +2423,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "3450",
-        "name": "\u6797\u5167",
+        "name": "林內",
         "name_en": "Linnei",
-        "name_zh": "\u6797\u5167",
+        "name_zh": "林內",
         "class": "3",
-        "address": "643001\u96f2\u6797\u7e23\u6797\u5167\u9109\u6797\u4e2d\u6751\u4e2d\u5c71\u8def 42 \u865f",
+        "address": "643001雲林縣林內鄉林中村中山路 42 號",
         "phone": "05-5892040",
         "original_coords": [
           120.61499,
@@ -2631,11 +2449,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "3460",
-        "name": "\u77f3\u69b4",
+        "name": "石榴",
         "name_en": "Shiliu",
-        "name_zh": "\u77f3\u69b4",
+        "name_zh": "石榴",
         "class": "5",
-        "address": "640155\u96f2\u6797\u7e23\u6597\u516d\u5e02\u69b4\u5317\u91cc\u6587\u660e\u8def 31 \u865f",
+        "address": "640155雲林縣斗六市榴北里文明路 31 號",
         "phone": "05-5332900",
         "original_coords": [
           120.57998,
@@ -2657,11 +2475,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "3470",
-        "name": "\u6597\u516d",
+        "name": "斗六",
         "name_en": "Douliu",
-        "name_zh": "\u6597\u516d",
+        "name_zh": "斗六",
         "class": "1",
-        "address": "640010\u96f2\u6797\u7e23\u6597\u516d\u5e02\u4fe1\u7fa9\u91cc\u6c11\u751f\u8def 187 \u865f",
+        "address": "640010雲林縣斗六市信義里民生路 187 號",
         "phone": "05-5332900",
         "original_coords": [
           120.54099,
@@ -2683,11 +2501,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "3480",
-        "name": "\u6597\u5357",
+        "name": "斗南",
         "name_en": "Dounan",
-        "name_zh": "\u6597\u5357",
+        "name_zh": "斗南",
         "class": "2",
-        "address": "630042\u96f2\u6797\u7e23\u6597\u5357\u93ae\u5357\u660c\u91cc\u4e2d\u5c71\u8def 2 \u865f",
+        "address": "630042雲林縣斗南鎮南昌里中山路 2 號",
         "phone": "05-5972039",
         "original_coords": [
           120.48089,
@@ -2709,11 +2527,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "3490",
-        "name": "\u77f3\u9f9c",
+        "name": "石龜",
         "name_en": "Shigui",
-        "name_zh": "\u77f3\u9f9c",
+        "name_zh": "石龜",
         "class": "5",
-        "address": "630\u96f2\u6797\u7e23\u6597\u5357\u93ae\u77f3\u9f9c\u91cc",
+        "address": "630雲林縣斗南鎮石龜里",
         "phone": "05-5972039",
         "original_coords": [
           120.47106,
@@ -2735,11 +2553,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "4050",
-        "name": "\u5927\u6797",
+        "name": "大林",
         "name_en": "Dalin",
-        "name_zh": "\u5927\u6797",
+        "name_zh": "大林",
         "class": "3",
-        "address": "622002\u5609\u7fa9\u7e23\u5927\u6797\u93ae\u5409\u6797\u91cc\u4e2d\u5c71\u8def 2 \u865f",
+        "address": "622002嘉義縣大林鎮吉林里中山路 2 號",
         "phone": "05-2654804",
         "original_coords": [
           120.45597,
@@ -2761,11 +2579,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "4060",
-        "name": "\u6c11\u96c4",
+        "name": "民雄",
         "name_en": "Minxiong",
-        "name_zh": "\u6c11\u96c4",
+        "name_zh": "民雄",
         "class": "3",
-        "address": "621002\u5609\u7fa9\u7e23\u6c11\u96c4\u9109\u6771\u69ae\u6751\u548c\u5e73\u8def 2 \u865f",
+        "address": "621002嘉義縣民雄鄉東榮村和平路 2 號",
         "phone": "05-2264272",
         "original_coords": [
           120.43165,
@@ -2787,11 +2605,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "4070",
-        "name": "\u5609\u5317",
+        "name": "嘉北",
         "name_en": "Jiabei",
-        "name_zh": "\u5609\u5317",
+        "name_zh": "嘉北",
         "class": "4",
-        "address": "600050\u5609\u7fa9\u5e02 \u6771\u5340\u5f8c\u6e56\u91cc\u4fdd\u5efa\u8857 110 \u865f",
+        "address": "600050嘉義市 東區後湖里保建街 110 號",
         "phone": "05-2334584",
         "original_coords": [
           120.44851,
@@ -2813,11 +2631,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "4080",
-        "name": "\u5609\u7fa9",
+        "name": "嘉義",
         "name_en": "Chiayi",
-        "name_zh": "\u5609\u7fa9",
+        "name_zh": "嘉義",
         "class": "1",
-        "address": "600006\u5609\u7fa9\u5e02 \u897f\u5340\u756a\u793e\u91cc\u4e2d\u5c71\u8def 528 \u865f",
+        "address": "600006嘉義市 西區番社里中山路 528 號",
         "phone": "05-2228904",
         "original_coords": [
           120.44061,
@@ -2839,11 +2657,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "4090",
-        "name": "\u6c34\u4e0a",
+        "name": "水上",
         "name_en": "Shuishang",
-        "name_zh": "\u6c34\u4e0a",
+        "name_zh": "水上",
         "class": "4",
-        "address": "608001\u5609\u7fa9\u7e23\u6c34\u4e0a\u9109\u7c97\u6eaa\u675168\u865f",
+        "address": "608001嘉義縣水上鄉粗溪村68號",
         "phone": "05-2228904",
         "original_coords": [
           120.39971,
@@ -2865,11 +2683,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "4100",
-        "name": "\u5357\u9756",
+        "name": "南靖",
         "name_en": "Nanjing",
-        "name_zh": "\u5357\u9756",
+        "name_zh": "南靖",
         "class": "4",
-        "address": "608009\u5609\u7fa9\u7e23\u6c34\u4e0a\u9109\u4e09\u93ae\u6751\u4e09\u93ae\u8def 26 \u865f",
+        "address": "608009嘉義縣水上鄉三鎮村三鎮路 26 號",
         "phone": "05-2601232",
         "original_coords": [
           120.38654,
@@ -2891,11 +2709,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "4110",
-        "name": "\u5f8c\u58c1",
+        "name": "後壁",
         "name_en": "Houbi",
-        "name_zh": "\u5f8c\u58c1",
+        "name_zh": "後壁",
         "class": "4",
-        "address": "731022\u81fa\u5357\u5e02\u5f8c\u58c1\u5340\u5f8c\u58c1\u91cc\u5f8c\u58c1 77 \u865f",
+        "address": "731022臺南市後壁區後壁里後壁 77 號",
         "phone": "06-6872055",
         "original_coords": [
           120.36058,
@@ -2917,11 +2735,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "4120",
-        "name": "\u65b0\u71df",
+        "name": "新營",
         "name_en": "Xinying",
-        "name_zh": "\u65b0\u71df",
+        "name_zh": "新營",
         "class": "1",
-        "address": "730005\u81fa\u5357\u5e02\u65b0\u71df\u5340\u4e2d\u71df\u91cc\u4e2d\u5c71\u8def 1 \u865f",
+        "address": "730005臺南市新營區中營里中山路 1 號",
         "phone": "06-6322104",
         "original_coords": [
           120.32307,
@@ -2943,11 +2761,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "4130",
-        "name": "\u67f3\u71df",
+        "name": "柳營",
         "name_en": "Liuying",
-        "name_zh": "\u67f3\u71df",
+        "name_zh": "柳營",
         "class": "4",
-        "address": "736002\u81fa\u5357\u5e02\u67f3\u71df\u5340\u6771\u6607\u91cc\u5efa\u570b\u8def 1 \u865f",
+        "address": "736002臺南市柳營區東昇里建國路 1 號",
         "phone": "06-6226450",
         "original_coords": [
           120.32252,
@@ -2969,11 +2787,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "4140",
-        "name": "\u6797\u9cf3\u71df",
+        "name": "林鳳營",
         "name_en": "Linfengying",
-        "name_zh": "\u6797\u9cf3\u71df",
+        "name_zh": "林鳳營",
         "class": "4",
-        "address": "734004\u81fa\u5357\u5e02\u516d\u7532\u5340\u4e2d\u793e\u91cc\u6797\u9cf3\u71df 16 \u865f",
+        "address": "734004臺南市六甲區中社里林鳳營 16 號",
         "phone": "06-6986086",
         "original_coords": [
           120.32107,
@@ -2995,11 +2813,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "4150",
-        "name": "\u9686\u7530",
+        "name": "隆田",
         "name_en": "Longtian",
-        "name_zh": "\u9686\u7530",
+        "name_zh": "隆田",
         "class": "2",
-        "address": "720001\u81fa\u5357\u5e02\u5b98\u7530\u5340\u9686\u7530\u91cc\u4e2d\u5c71\u8def\u4e00\u6bb5 1 \u865f",
+        "address": "720001臺南市官田區隆田里中山路一段 1 號",
         "phone": "06-5791664",
         "original_coords": [
           120.31917,
@@ -3021,11 +2839,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "4160",
-        "name": "\u62d4\u6797",
+        "name": "拔林",
         "name_en": "Balin",
-        "name_zh": "\u62d4\u6797",
+        "name_zh": "拔林",
         "class": "5",
-        "address": "720004\u81fa\u5357\u5e02\u5b98\u7530\u5340\u62d4\u6797\u91cc\u62d4\u5b50\u6797 83 \u4e4b 1 \u865f",
+        "address": "720004臺南市官田區拔林里拔子林 83 之 1 號",
         "phone": "06-5791664",
         "original_coords": [
           120.32125,
@@ -3047,11 +2865,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "4170",
-        "name": "\u5584\u5316",
+        "name": "善化",
         "name_en": "Shanhua",
-        "name_zh": "\u5584\u5316",
+        "name_zh": "善化",
         "class": "2",
-        "address": "741001\u81fa\u5357\u5e02\u5584\u5316\u5340\u5149\u6587\u91cc\u4e2d\u5c71\u8def 1 \u865f",
+        "address": "741001臺南市善化區光文里中山路 1 號",
         "phone": "06-5837301",
         "original_coords": [
           120.30653,
@@ -3073,11 +2891,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "4180",
-        "name": "\u5357\u79d1",
+        "name": "南科",
         "name_en": "Nanke",
-        "name_zh": "\u5357\u79d1",
+        "name_zh": "南科",
         "class": "4",
-        "address": "744008\u81fa\u5357\u5e02\u65b0\u5e02\u5340\u5927\u71df\u91cc\u5927\u71df 287-300 \u865f",
+        "address": "744008臺南市新市區大營里大營 287-300 號",
         "phone": "06-5896356",
         "original_coords": [
           120.30202,
@@ -3099,11 +2917,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "4190",
-        "name": "\u65b0\u5e02",
+        "name": "新市",
         "name_en": "Xinshi",
-        "name_zh": "\u65b0\u5e02",
+        "name_zh": "新市",
         "class": "3",
-        "address": "744004\u81fa\u5357\u5e02\u65b0\u5e02\u5340\u65b0\u548c\u91cc\u4e2d\u83ef\u8def 1 \u865f",
+        "address": "744004臺南市新市區新和里中華路 1 號",
         "phone": "06-5996911",
         "original_coords": [
           120.29004,
@@ -3125,11 +2943,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "4200",
-        "name": "\u6c38\u5eb7",
+        "name": "永康",
         "name_en": "Yongkang",
-        "name_zh": "\u6c38\u5eb7",
+        "name_zh": "永康",
         "class": "2",
-        "address": "710017\u81fa\u5357\u5e02\u6c38\u5eb7\u5340\u57d4\u5712\u91cc\u4e2d\u5c71\u8def 459 \u865f",
+        "address": "710017臺南市永康區埔園里中山路 459 號",
         "phone": "06-2323305",
         "original_coords": [
           120.25347,
@@ -3151,11 +2969,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "4210",
-        "name": "\u5927\u6a4b",
+        "name": "大橋",
         "name_en": "Daqiao",
-        "name_zh": "\u5927\u6a4b",
+        "name_zh": "大橋",
         "class": "4",
-        "address": "710009\u81fa\u5357\u5e02\u6c38\u5eb7\u5340\u897f\u6a4b\u91cc\u4e2d\u83ef\u8def 835 \u865f",
+        "address": "710009臺南市永康區西橋里中華路 835 號",
         "phone": "06-3021755",
         "original_coords": [
           120.22429,
@@ -3177,11 +2995,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "4220",
-        "name": "\u81fa\u5357",
+        "name": "臺南",
         "name_en": "Tainan",
-        "name_zh": "\u81fa\u5357",
+        "name_zh": "臺南",
         "class": "1",
-        "address": "701014\u81fa\u5357\u5e02\u6771\u5340\u6210\u5927\u91cc\u5317\u9580\u8def\u4e8c\u6bb54\u865f",
+        "address": "701014臺南市東區成大里北門路二段4號",
         "phone": "06-2261314",
         "original_coords": [
           120.21295,
@@ -3203,11 +3021,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "4250",
-        "name": "\u4fdd\u5b89",
+        "name": "保安",
         "name_en": "Bao'an",
-        "name_zh": "\u4fdd\u5b89",
+        "name_zh": "保安",
         "class": "3",
-        "address": "717015\u81fa\u5357\u5e02\u4ec1\u5fb7\u5340\u4fdd\u5b89\u91cc\u6587\u8ce2\u8def\u4e00\u6bb5 529 \u5df7 10 \u865f",
+        "address": "717015臺南市仁德區保安里文賢路一段 529 巷 10 號",
         "phone": "06-2665988",
         "original_coords": [
           120.23158,
@@ -3229,11 +3047,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "4260",
-        "name": "\u4ec1\u5fb7",
+        "name": "仁德",
         "name_en": "Rende",
-        "name_zh": "\u4ec1\u5fb7",
+        "name_zh": "仁德",
         "class": "4",
-        "address": "717010\u81fa\u5357\u5e02\u4ec1\u5fb7\u5340\u4fdd\u5b89\u91cc\u6c38\u5fb7\u8def 10 \u865f",
+        "address": "717010臺南市仁德區保安里永德路 10 號",
         "phone": "06-2669383",
         "original_coords": [
           120.24054,
@@ -3255,11 +3073,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "4270",
-        "name": "\u4e2d\u6d32",
+        "name": "中洲",
         "name_en": "Zhongzhou",
-        "name_zh": "\u4e2d\u6d32",
+        "name_zh": "中洲",
         "class": "2",
-        "address": "717014\u81fa\u5357\u5e02\u4ec1\u5fb7\u5340\u4e2d\u6d32\u4e94\u8857236\u865f",
+        "address": "717014臺南市仁德區中洲五街236號",
         "phone": "06-2667191",
         "original_coords": [
           120.25284,
@@ -3281,11 +3099,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "4271",
-        "name": "\u9577\u69ae\u5927\u5b78",
+        "name": "長榮大學",
         "name_en": "Chang Jung Christian University",
-        "name_zh": "\u9577\u69ae\u5927\u5b78",
+        "name_zh": "長榮大學",
         "class": "4",
-        "address": "711010\u81fa\u5357\u5e02\u6b78\u4ec1\u5340\u5927\u6f6d\u91cc\u9577\u5927\u8def15 \u865f",
+        "address": "711010臺南市歸仁區大潭里長大路15 號",
         "phone": "06-2782615",
         "original_coords": [
           120.27263,
@@ -3307,11 +3125,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "4272",
-        "name": "\u6c99\u5d19",
+        "name": "沙崙",
         "name_en": "Shalun",
-        "name_zh": "\u6c99\u5d19",
+        "name_zh": "沙崙",
         "class": "4",
-        "address": "711010\u81fa\u5357\u5e02\u6b78\u4ec1\u5340\u6c99\u5d19\u91cc\u6b78\u4ec1\u5927\u9053 102 \u865f",
+        "address": "711010臺南市歸仁區沙崙里歸仁大道 102 號",
         "phone": "06-3032686",
         "original_coords": [
           120.28622,
@@ -3333,11 +3151,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "4290",
-        "name": "\u5927\u6e56",
+        "name": "大湖",
         "name_en": "Dahu",
-        "name_zh": "\u5927\u6e56",
+        "name_zh": "大湖",
         "class": "3",
-        "address": "821004\u9ad8\u96c4\u5e02\u8def\u7af9\u5340\u7532\u5357\u91cc\u5929\u7950\u8def 24 \u865f",
+        "address": "821004高雄市路竹區甲南里天祐路 24 號",
         "phone": "07-6932127",
         "original_coords": [
           120.25384,
@@ -3359,11 +3177,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "4300",
-        "name": "\u8def\u7af9",
+        "name": "路竹",
         "name_en": "Luzhu",
-        "name_zh": "\u8def\u7af9",
+        "name_zh": "路竹",
         "class": "3",
-        "address": "821006\u9ad8\u96c4\u5e02\u8def\u7af9\u5340\u7af9\u5357\u91cc\u4e2d\u6b63\u8def 288 \u865f",
+        "address": "821006高雄市路竹區竹南里中正路 288 號",
         "phone": "07-6072723",
         "original_coords": [
           120.26619,
@@ -3385,11 +3203,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "4310",
-        "name": "\u5ca1\u5c71",
+        "name": "岡山",
         "name_en": "Gangshan",
-        "name_zh": "\u5ca1\u5c71",
+        "name_zh": "岡山",
         "class": "1",
-        "address": "820102\u9ad8\u96c4\u5e02\u5ca1\u5c71\u5340\u78a7\u7d05\u91cc\u5ca1\u71d5\u8def 111 \u865f",
+        "address": "820102高雄市岡山區碧紅里岡燕路 111 號",
         "phone": "07-6212074",
         "original_coords": [
           120.30004,
@@ -3411,11 +3229,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "4320",
-        "name": "\u6a4b\u982d",
+        "name": "橋頭",
         "name_en": "Qiaotou",
-        "name_zh": "\u6a4b\u982d",
+        "name_zh": "橋頭",
         "class": "3",
-        "address": "825008\u9ad8\u96c4\u5e02\u6a4b\u982d\u5340\u6a4b\u982d\u91cc\u7ad9\u524d\u8857 14 \u865f",
+        "address": "825008高雄市橋頭區橋頭里站前街 14 號",
         "phone": "07-6115424",
         "original_coords": [
           120.31011,
@@ -3437,11 +3255,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "4330",
-        "name": "\u6960\u6893",
+        "name": "楠梓",
         "name_en": "Nanzi",
-        "name_zh": "\u6960\u6893",
+        "name_zh": "楠梓",
         "class": "2",
-        "address": "811022\u9ad8\u96c4\u5e02\u6960\u6893\u5340\u60e0\u6960\u91cc\u5efa\u6960\u8def 229 \u865f",
+        "address": "811022高雄市楠梓區惠楠里建楠路 229 號",
         "phone": "07-3510175",
         "original_coords": [
           120.32425,
@@ -3463,11 +3281,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "4340",
-        "name": "\u65b0\u5de6\u71df",
+        "name": "新左營",
         "name_en": "Xinzuoying",
-        "name_zh": "\u65b0\u5de6\u71df",
+        "name_zh": "新左營",
         "class": "1",
-        "address": "813014\u9ad8\u96c4\u5e02\u5de6\u71df\u5340\u5c3e\u5317\u91cc\u7ad9\u524d\u5317\u8def 1 \u865f",
+        "address": "813014高雄市左營區尾北里站前北路 1 號",
         "phone": "07-5887825",
         "original_coords": [
           120.30678,
@@ -3489,11 +3307,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "4350",
-        "name": "\u5de6\u71df",
+        "name": "左營",
         "name_en": "Zuoying",
-        "name_zh": "\u5de6\u71df",
+        "name_zh": "左營",
         "class": "4",
-        "address": "813014\u9ad8\u96c4\u5e02\u5de6\u71df\u5340\u7fe0\u83ef\u8def1050\u865f\u5730\u4e0b1\u5c64",
+        "address": "813014高雄市左營區翠華路1050號地下1層",
         "phone": "07-5887835",
         "original_coords": [
           120.29401,
@@ -3515,11 +3333,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "4360",
-        "name": "\u5167\u60df",
+        "name": "內惟",
         "name_en": "Neiwei",
-        "name_zh": "\u5167\u60df",
+        "name_zh": "內惟",
         "class": "4",
-        "address": "804056\u9ad8\u96c4\u5e02\u9f13\u5c71\u5340\u7fe0\u83ef\u8def500\u865f\u5730\u4e0b1\u5c64",
+        "address": "804056高雄市鼓山區翠華路500號地下1層",
         "phone": "07-5886119",
         "original_coords": [
           120.28701,
@@ -3541,11 +3359,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "4370",
-        "name": "\u7f8e\u8853\u9928",
+        "name": "美術館",
         "name_en": "Museum of Fine Arts",
-        "name_zh": "\u7f8e\u8853\u9928",
+        "name_zh": "美術館",
         "class": "4",
-        "address": "804016\u9ad8\u96c4\u5e02\u9f13\u5c71\u5340\u7fe0\u83ef\u8def246\u865f",
+        "address": "804016高雄市鼓山區翠華路246號",
         "phone": "07-5215147",
         "original_coords": [
           120.28148,
@@ -3567,11 +3385,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "4380",
-        "name": "\u9f13\u5c71",
+        "name": "鼓山",
         "name_en": "Gushan",
-        "name_zh": "\u9f13\u5c71",
+        "name_zh": "鼓山",
         "class": "4",
-        "address": "804005\u9ad8\u96c4\u5e02\u9f13\u5c71\u5340\u9435\u8def\u885720\u5df76\u865f",
+        "address": "804005高雄市鼓山區鐵路街20巷6號",
         "phone": "07-5217014",
         "original_coords": [
           120.28071,
@@ -3593,11 +3411,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "4390",
-        "name": "\u4e09\u584a\u539d",
+        "name": "三塊厝",
         "name_en": "Sankuaicuo",
-        "name_zh": "\u4e09\u584a\u539d",
+        "name_zh": "三塊厝",
         "class": "4",
-        "address": "807008\u9ad8\u96c4\u5e02\u4e09\u6c11\u5340\u5fb7\u5317\u91cc6\u9130\u5eb7\u5e73\u88571\u865f",
+        "address": "807008高雄市三民區德北里6鄰康平街1號",
         "phone": "07-2856234",
         "original_coords": [
           120.29414,
@@ -3619,11 +3437,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "4400",
-        "name": "\u9ad8\u96c4",
+        "name": "高雄",
         "name_en": "Kaohsiung",
-        "name_zh": "\u9ad8\u96c4",
+        "name_zh": "高雄",
         "class": "0",
-        "address": "807001\u9ad8\u96c4\u5e02\u4e09\u6c11\u5340\u6e2f\u897f\u91cc\u5efa\u570b\u4e8c\u8def 318 \u865f",
+        "address": "807001高雄市三民區港西里建國二路 318 號",
         "phone": "07-2352376",
         "original_coords": [
           120.30292,
@@ -3645,11 +3463,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "4410",
-        "name": "\u6c11\u65cf",
+        "name": "民族",
         "name_en": "Minzu",
-        "name_zh": "\u6c11\u65cf",
+        "name_zh": "民族",
         "class": "4",
-        "address": "807027\u9ad8\u96c4\u5e02\u4e09\u6c11\u5340\u535a\u60e0\u91cc14\u9130\u51f1\u65cb\u4e00\u8def260\u865f",
+        "address": "807027高雄市三民區博惠里14鄰凱旋一路260號",
         "phone": "07-2231492",
         "original_coords": [
           120.31494,
@@ -3671,11 +3489,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "4420",
-        "name": "\u79d1\u5de5\u9928",
+        "name": "科工館",
         "name_en": "Science And Technology Museum",
-        "name_zh": "\u79d1\u5de5\u9928",
+        "name_zh": "科工館",
         "class": "4",
-        "address": "807031\u9ad8\u96c4\u5e02\u4e09\u6c11\u5340\u5bf6\u76db\u91cc15\u9130\u5927\u9806\u4e09\u8def307\u865f",
+        "address": "807031高雄市三民區寶盛里15鄰大順三路307號",
         "phone": "07-2234778",
         "original_coords": [
           120.32603,
@@ -3697,11 +3515,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "4430",
-        "name": "\u6b63\u7fa9",
+        "name": "正義",
         "name_en": "Zhengyi",
-        "name_zh": "\u6b63\u7fa9",
+        "name_zh": "正義",
         "class": "4",
-        "address": "802001\u9ad8\u96c4\u5e02\u82d3\u96c5\u5340\u5efa\u8ecd\u91cc\u6b63\u7fa9\u8def 308 \u865f B1",
+        "address": "802001高雄市苓雅區建軍里正義路 308 號 B1",
         "phone": "07-7999818",
         "original_coords": [
           120.34245,
@@ -3723,11 +3541,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "4440",
-        "name": "\u9cf3\u5c71",
+        "name": "鳳山",
         "name_en": "Fongshan",
-        "name_zh": "\u9cf3\u5c71",
+        "name_zh": "鳳山",
         "class": "2",
-        "address": "830025\u9ad8\u96c4\u5e02\u9cf3\u5c71\u5340\u66f9\u516c\u91cc\u66f9\u516c\u8def 137 \u865f",
+        "address": "830025高雄市鳳山區曹公里曹公路 137 號",
         "phone": "07-7460423",
         "original_coords": [
           120.35745,
@@ -3749,11 +3567,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "4450",
-        "name": "\u5f8c\u5e84",
+        "name": "後庄",
         "name_en": "Houzhuang",
-        "name_zh": "\u5f8c\u5e84",
+        "name_zh": "後庄",
         "class": "4",
-        "address": "831115\u9ad8\u96c4\u5e02\u5927\u5bee\u5340\u5f8c\u5e84\u91cc\u6c11\u6176\u8857 9 \u865f",
+        "address": "831115高雄市大寮區後庄里民慶街 9 號",
         "phone": "07-7020149",
         "original_coords": [
           120.39131,
@@ -3775,11 +3593,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "4460",
-        "name": "\u4e5d\u66f2\u5802",
+        "name": "九曲堂",
         "name_en": "Jiuqutang",
-        "name_zh": "\u4e5d\u66f2\u5802",
+        "name_zh": "九曲堂",
         "class": "3",
-        "address": "840001\u9ad8\u96c4\u5e02\u5927\u6a39\u5340\u4e45\u5802\u91cc\u4e45\u5802\u8def\u9435\u8def\u5df7 15 \u865f",
+        "address": "840001高雄市大樹區久堂里久堂路鐵路巷 15 號",
         "phone": "07-6512020",
         "original_coords": [
           120.42089,
@@ -3801,11 +3619,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "4470",
-        "name": "\u516d\u584a\u539d",
+        "name": "六塊厝",
         "name_en": "Liukuaicuo",
-        "name_zh": "\u516d\u584a\u539d",
+        "name_zh": "六塊厝",
         "class": "5",
-        "address": "900008\u5c4f\u6771\u7e23\u5c4f\u6771\u5e02\u9577\u5b89\u91cc\u5149\u5fa9\u8def 392 \u865f",
+        "address": "900008屏東縣屏東市長安里光復路 392 號",
         "phone": "08-7515140",
         "original_coords": [
           120.46497,
@@ -3827,11 +3645,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "5000",
-        "name": "\u5c4f\u6771",
+        "name": "屏東",
         "name_en": "Pingtung",
-        "name_zh": "\u5c4f\u6771",
+        "name_zh": "屏東",
         "class": "1",
-        "address": "900011\u5c4f\u6771\u7e23\u5c4f\u6771\u5e02\u5efa\u570b\u91cc\u516c\u52c7\u8def 62 \u865f",
+        "address": "900011屏東縣屏東市建國里公勇路 62 號",
         "phone": "08-7515140",
         "original_coords": [
           120.48617,
@@ -3853,11 +3671,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "5010",
-        "name": "\u6b78\u4f86",
+        "name": "歸來",
         "name_en": "Guilai",
-        "name_zh": "\u6b78\u4f86",
+        "name_zh": "歸來",
         "class": "5",
-        "address": "900002\u5c4f\u6771\u7e23\u5c4f\u6771\u5e02\u6b78\u5fc3\u91cc\u6b78\u4ec1\u8def 5 \u4e4b 4 \u865f",
+        "address": "900002屏東縣屏東市歸心里歸仁路 5 之 4 號",
         "phone": "08-7515140",
         "original_coords": [
           120.50263,
@@ -3879,11 +3697,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "5020",
-        "name": "\u9e9f\u6d1b",
+        "name": "麟洛",
         "name_en": "Linluo",
-        "name_zh": "\u9e9f\u6d1b",
+        "name_zh": "麟洛",
         "class": "5",
-        "address": "909141\u5c4f\u6771\u7e23\u9e9f\u6d1b\u9109\u7530\u9053\u6751\u4e2d\u83ef\u8def\u7ad9\u524d\u5df7 15 \u865f",
+        "address": "909141屏東縣麟洛鄉田道村中華路站前巷 15 號",
         "phone": "08-7515140",
         "original_coords": [
           120.51432,
@@ -3905,11 +3723,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "5030",
-        "name": "\u897f\u52e2",
+        "name": "西勢",
         "name_en": "Xishi",
-        "name_zh": "\u897f\u52e2",
+        "name_zh": "西勢",
         "class": "3",
-        "address": "911165\u5c4f\u6771\u7e23\u7af9\u7530\u9109\u897f\u52e2\u6751\u897f\u8c50\u8def 2 \u865f",
+        "address": "911165屏東縣竹田鄉西勢村西豐路 2 號",
         "phone": "08-7784521",
         "original_coords": [
           120.52649,
@@ -3931,11 +3749,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "5040",
-        "name": "\u7af9\u7530",
+        "name": "竹田",
         "name_en": "Zhutian",
-        "name_zh": "\u7af9\u7530",
+        "name_zh": "竹田",
         "class": "4",
-        "address": "911165\u5c4f\u6771\u7e23\u7af9\u7530\u9109\u5c65\u8c50\u6751\u8c50\u660e\u8def29 \u865f",
+        "address": "911165屏東縣竹田鄉履豐村豐明路29 號",
         "phone": "08-7711002",
         "original_coords": [
           120.53978,
@@ -3957,11 +3775,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "5050",
-        "name": "\u6f6e\u5dde",
+        "name": "潮州",
         "name_en": "Chaozhou",
-        "name_zh": "\u6f6e\u5dde",
+        "name_zh": "潮州",
         "class": "1",
-        "address": "920004\u5c4f\u6771\u7e23\u6f6e\u5dde\u93ae\u65b0\u69ae\u91cc\u4fe1\u7fa9\u8def 111 \u865f",
+        "address": "920004屏東縣潮州鎮新榮里信義路 111 號",
         "phone": "08-7882739",
         "original_coords": [
           120.53604,
@@ -3983,11 +3801,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "5060",
-        "name": "\u5d01\u9802",
+        "name": "崁頂",
         "name_en": "Kanding",
-        "name_zh": "\u5d01\u9802",
+        "name_zh": "崁頂",
         "class": "5",
-        "address": "924003\u5c4f\u6771\u7e23\u5d01\u9802\u9109\u5d01\u9802\u6751\u7530\u5bee\u8def",
+        "address": "924003屏東縣崁頂鄉崁頂村田寮路",
         "phone": "08-7882739",
         "original_coords": [
           120.51481,
@@ -4009,11 +3827,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "5070",
-        "name": "\u5357\u5dde",
+        "name": "南州",
         "name_en": "Nanzhou",
-        "name_zh": "\u5357\u5dde",
+        "name_zh": "南州",
         "class": "3",
-        "address": "926003\u5c4f\u6771\u7e23\u5357\u5dde\u9109\u4ec1\u91cc\u6751\u4ec1\u91cc\u8def 86 \u865f",
+        "address": "926003屏東縣南州鄉仁里村仁里路 86 號",
         "phone": "08-8642942",
         "original_coords": [
           120.51174,
@@ -4035,11 +3853,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "5080",
-        "name": "\u93ae\u5b89",
+        "name": "鎮安",
         "name_en": "Zhen'an",
-        "name_zh": "\u93ae\u5b89",
+        "name_zh": "鎮安",
         "class": "5",
-        "address": "927005\u5c4f\u6771\u7e23\u6797\u908a\u9109\u93ae\u5b89\u6751\u6c38\u548c\u8def4\u865f",
+        "address": "927005屏東縣林邊鄉鎮安村永和路4號",
         "phone": "08-8642942",
         "original_coords": [
           120.51129,
@@ -4061,11 +3879,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "5090",
-        "name": "\u6797\u908a",
+        "name": "林邊",
         "name_en": "Linbian",
-        "name_zh": "\u6797\u908a",
+        "name_zh": "林邊",
         "class": "3",
-        "address": "927001\u5c4f\u6771\u7e23\u6797\u908a\u9109\u4ec1\u548c\u6751\u4ec1\u611b\u8def 33 \u865f",
+        "address": "927001屏東縣林邊鄉仁和村仁愛路 33 號",
         "phone": "08-8751475",
         "original_coords": [
           120.51529,
@@ -4087,11 +3905,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "5100",
-        "name": "\u4f73\u51ac",
+        "name": "佳冬",
         "name_en": "Jiadong",
-        "name_zh": "\u4f73\u51ac",
+        "name_zh": "佳冬",
         "class": "4",
-        "address": "931006\u5c4f\u6771\u7e23\u4f73\u51ac\u9109\u516d\u6839\u6751\u5fa9\u8208\u8def21\u865f",
+        "address": "931006屏東縣佳冬鄉六根村復興路21號",
         "phone": "08-8662939",
         "original_coords": [
           120.54774,
@@ -4113,11 +3931,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "5110",
-        "name": "\u6771\u6d77",
+        "name": "東海",
         "name_en": "Donghai",
-        "name_zh": "\u6771\u6d77",
+        "name_zh": "東海",
         "class": "5",
-        "address": "940002\u5c4f\u6771\u7e23\u678b\u5bee\u9109\u6771\u6d77\u6751\u897f\u5b89\u8def 92 \u865f",
+        "address": "940002屏東縣枋寮鄉東海村西安路 92 號",
         "phone": "08-8782041",
         "original_coords": [
           120.57236,
@@ -4139,11 +3957,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "5120",
-        "name": "\u678b\u5bee",
+        "name": "枋寮",
         "name_en": "Fangliao",
-        "name_zh": "\u678b\u5bee",
+        "name_zh": "枋寮",
         "class": "2",
-        "address": "940003\u5c4f\u6771\u7e23\u678b\u5bee\u9109\u678b\u5bee\u6751\u5132\u904b\u8def 18 \u865f",
+        "address": "940003屏東縣枋寮鄉枋寮村儲運路 18 號",
         "phone": "08-8782041",
         "original_coords": [
           120.59511,
@@ -4165,11 +3983,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "5130",
-        "name": "\u52a0\u797f",
+        "name": "加祿",
         "name_en": "Jialu",
-        "name_zh": "\u52a0\u797f",
+        "name_zh": "加祿",
         "class": "3",
-        "address": "941005\u5c4f\u6771\u7e23\u678b\u5c71\u9109\u52a0\u797f\u6751\u6703\u793e 53 \u865f",
+        "address": "941005屏東縣枋山鄉加祿村會社 53 號",
         "phone": "08-8720791",
         "original_coords": [
           120.62445,
@@ -4191,11 +4009,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "5140",
-        "name": "\u5167\u7345",
+        "name": "內獅",
         "name_en": "Neishi",
-        "name_zh": "\u5167\u7345",
+        "name_zh": "內獅",
         "class": "5",
-        "address": "941010\u5c4f\u6771\u7e23\u678b\u5c71\u9109\u52a0\u797f\u6751\u5357\u548c 43 \u865f",
+        "address": "941010屏東縣枋山鄉加祿村南和 43 號",
         "phone": "08-8720791",
         "original_coords": [
           120.64331,
@@ -4217,11 +4035,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "5160",
-        "name": "\u678b\u5c71",
+        "name": "枋山",
         "name_en": "Fangshan",
-        "name_zh": "\u678b\u5c71",
+        "name_zh": "枋山",
         "class": "4",
-        "address": "943010\u5c4f\u6771\u7e23\u7345\u5b50\u9109\u5167\u7345\u6751\u5167\u7345\u5df7 84 \u865f",
+        "address": "943010屏東縣獅子鄉內獅村內獅巷 84 號",
         "phone": "08-8720791",
         "original_coords": [
           120.65947,
@@ -4243,11 +4061,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "5170",
-        "name": "\u678b\u91ce",
+        "name": "枋野",
         "name_en": "Fangye",
-        "name_zh": "\u678b\u91ce",
+        "name_zh": "枋野",
         "class": "3",
-        "address": "94350\u5c4f\u6771\u7e23\u7345\u5b50\u9109\u5167\u7345\u6751\u5167\u7345\u5df7 88 \u865f",
+        "address": "94350屏東縣獅子鄉內獅村內獅巷 88 號",
         "phone": "08-8761953",
         "original_coords": [
           120.71709,
@@ -4269,11 +4087,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "5190",
-        "name": "\u5927\u6b66",
+        "name": "大武",
         "name_en": "Dawu",
-        "name_zh": "\u5927\u6b66",
+        "name_zh": "大武",
         "class": "3",
-        "address": "965003\u81fa\u6771\u7e23\u5927\u6b66\u9109\u5927\u9ce5\u6751\u548c\u5e73\u90e8\u843d 33 \u865f",
+        "address": "965003臺東縣大武鄉大鳥村和平部落 33 號",
         "phone": "089-792056",
         "original_coords": [
           120.90094,
@@ -4295,11 +4113,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "5200",
-        "name": "\u7027\u6eaa",
+        "name": "瀧溪",
         "name_en": "Longxi",
-        "name_zh": "\u7027\u6eaa",
+        "name_zh": "瀧溪",
         "class": "4",
-        "address": "963006\u81fa\u6771\u7e23\u592a\u9ebb\u91cc\u9109\u591a\u826f\u6751\u5927\u6eaa 37 \u865f",
+        "address": "963006臺東縣太麻里鄉多良村大溪 37 號",
         "phone": "089-761482",
         "original_coords": [
           120.94176,
@@ -4321,11 +4139,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "5210",
-        "name": "\u91d1\u5d19",
+        "name": "金崙",
         "name_en": "Jinlun",
-        "name_zh": "\u91d1\u5d19",
+        "name_zh": "金崙",
         "class": "3",
-        "address": "963005\u81fa\u6771\u7e23\u592a\u9ebb\u91cc\u9109\u91d1\u5d19\u6751\u91d1\u5d19 47 \u4e4b 17 \u865f",
+        "address": "963005臺東縣太麻里鄉金崙村金崙 47 之 17 號",
         "phone": "089-771068",
         "original_coords": [
           120.96721,
@@ -4347,11 +4165,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "5220",
-        "name": "\u592a\u9ebb\u91cc",
+        "name": "太麻里",
         "name_en": "Taimali",
-        "name_zh": "\u592a\u9ebb\u91cc",
+        "name_zh": "太麻里",
         "class": "3",
-        "address": "963004\u81fa\u6771\u7e23\u592a\u9ebb\u91cc\u9109\u5927\u738b\u6751\u7ad9\u524d\u8def 2 \u865f",
+        "address": "963004臺東縣太麻里鄉大王村站前路 2 號",
         "phone": "089-781544",
         "original_coords": [
           121.00492,
@@ -4373,11 +4191,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "5230",
-        "name": "\u77e5\u672c",
+        "name": "知本",
         "name_en": "Zhiben",
-        "name_zh": "\u77e5\u672c",
+        "name_zh": "知本",
         "class": "3",
-        "address": "950103\u81fa\u6771\u7e23\u81fa\u6771\u5e02\u77e5\u672c\u91cc\u77e5\u672c\u8def\u4e8c\u6bb5 900 \u5df7 85 \u865f",
+        "address": "950103臺東縣臺東市知本里知本路二段 900 巷 85 號",
         "phone": "089-514482",
         "original_coords": [
           121.06068,
@@ -4399,11 +4217,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "5240",
-        "name": "\u5eb7\u6a02",
+        "name": "康樂",
         "name_en": "Kangle",
-        "name_zh": "\u5eb7\u6a02",
+        "name_zh": "康樂",
         "class": "4",
-        "address": "950029\u81fa\u6771\u7e23\u81fa\u6771\u5e02\u5eb7\u6a02\u91cc\u535a\u7269\u9928\u8def 51 \u5df7 131 \u865f",
+        "address": "950029臺東縣臺東市康樂里博物館路 51 巷 131 號",
         "phone": "089-383107",
         "original_coords": [
           121.09356,
@@ -4425,11 +4243,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "5998",
-        "name": "\u5357\u65b9\u5c0f\u7ad9",
+        "name": "南方小站",
         "name_en": "South",
-        "name_zh": "\u5357\u65b9\u5c0f\u7ad9",
+        "name_zh": "南方小站",
         "class": "4",
-        "address": "92013\u5c4f\u6771\u7e23\u6f6e\u5dde\u93ae\u5149\u5fa9\u8def 461 \u865f",
+        "address": "92013屏東縣潮州鎮光復路 461 號",
         "phone": "",
         "original_coords": [
           120.53658,
@@ -4451,11 +4269,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "5999",
-        "name": "\u6f6e\u5dde\u57fa\u5730",
+        "name": "潮州基地",
         "name_en": "Chaozhou Railway Workshop",
-        "name_zh": "\u6f6e\u5dde\u57fa\u5730",
+        "name_zh": "潮州基地",
         "class": "4",
-        "address": "92054\u5c4f\u6771\u7e23\u6f6e\u5dde\u93ae\u5149\u6625\u91cc\u5149\u5fa9\u8def 616 \u865f",
+        "address": "92054屏東縣潮州鎮光春里光復路 616 號",
         "phone": "08-7889880",
         "original_coords": [
           120.52642,
@@ -4477,11 +4295,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "6000",
-        "name": "\u81fa\u6771",
+        "name": "臺東",
         "name_en": "Taitung",
-        "name_zh": "\u81fa\u6771",
+        "name_zh": "臺東",
         "class": "1",
-        "address": "950030\u81fa\u6771\u7e23\u81fa\u6771\u5e02\u5ca9\u7063\u91cc\u5ca9\u7063\u8def 101 \u5df7 598 \u865f",
+        "address": "950030臺東縣臺東市岩灣里岩灣路 101 巷 598 號",
         "phone": "089-229687",
         "original_coords": [
           121.1231,
@@ -4503,11 +4321,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "6010",
-        "name": "\u5c71\u91cc",
+        "name": "山里",
         "name_en": "Shanli",
-        "name_zh": "\u5c71\u91cc",
+        "name_zh": "山里",
         "class": "3",
-        "address": "954003\u81fa\u6771\u7e23\u5351\u5357\u9109\u5609\u8c50\u6751\u5c71\u91cc\u8def 108 \u865f",
+        "address": "954003臺東縣卑南鄉嘉豐村山里路 108 號",
         "phone": "089-572370",
         "original_coords": [
           121.13778,
@@ -4529,11 +4347,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "6020",
-        "name": "\u9e7f\u91ce",
+        "name": "鹿野",
         "name_en": "Luye",
-        "name_zh": "\u9e7f\u91ce",
+        "name_zh": "鹿野",
         "class": "3",
-        "address": "955002\u81fa\u6771\u7e23\u9e7f\u91ce\u9109\u9e7f\u91ce\u6751\u4e2d\u6b63\u8def 38 \u865f",
+        "address": "955002臺東縣鹿野鄉鹿野村中正路 38 號",
         "phone": "089-550217",
         "original_coords": [
           121.13701,
@@ -4555,11 +4373,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "6030",
-        "name": "\u745e\u6e90",
+        "name": "瑞源",
         "name_en": "Ruiyuan",
-        "name_zh": "\u745e\u6e90",
+        "name_zh": "瑞源",
         "class": "3",
-        "address": "955003\u81fa\u6771\u7e23\u9e7f\u91ce\u9109\u745e\u6e90\u6751\u745e\u666f\u8def\u4e00\u6bb5 336 \u5df7 8 \u865f \u4e4b 1",
+        "address": "955003臺東縣鹿野鄉瑞源村瑞景路一段 336 巷 8 號 之 1",
         "phone": "089-580159",
         "original_coords": [
           121.15901,
@@ -4581,11 +4399,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "6040",
-        "name": "\u745e\u548c",
+        "name": "瑞和",
         "name_en": "Ruihe",
-        "name_zh": "\u745e\u548c",
+        "name_zh": "瑞和",
         "class": "5",
-        "address": "955003\u81fa\u6771\u7e23\u9e7f\u91ce\u9109\u745e\u548c\u6751\u745e\u666f\u8def\u4e09\u6bb5 1 \u4e4b 1 \u865f",
+        "address": "955003臺東縣鹿野鄉瑞和村瑞景路三段 1 之 1 號",
         "phone": "089-580159",
         "original_coords": [
           121.15595,
@@ -4607,11 +4425,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "6050",
-        "name": "\u95dc\u5c71",
+        "name": "關山",
         "name_en": "Guanshan",
-        "name_zh": "\u95dc\u5c71",
+        "name_zh": "關山",
         "class": "3",
-        "address": "956004\u81fa\u6771\u7e23\u95dc\u5c71\u93ae\u91cc\u58e0\u91cc\u535a\u611b\u8def 2 \u865f",
+        "address": "956004臺東縣關山鎮里壠里博愛路 2 號",
         "phone": "089-811033",
         "original_coords": [
           121.1643,
@@ -4633,11 +4451,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "6060",
-        "name": "\u6d77\u7aef",
+        "name": "海端",
         "name_en": "Haiduan",
-        "name_zh": "\u6d77\u7aef",
+        "name_zh": "海端",
         "class": "4",
-        "address": "956004\u81fa\u6771\u7e23\u95dc\u5c71\u93ae\u5fb7\u9ad8\u91cc\u897f\u838a 49 \u865f",
+        "address": "956004臺東縣關山鎮德高里西莊 49 號",
         "phone": "089-811033",
         "original_coords": [
           121.17676,
@@ -4659,11 +4477,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "6070",
-        "name": "\u6c60\u4e0a",
+        "name": "池上",
         "name_en": "Chishang",
-        "name_zh": "\u6c60\u4e0a",
+        "name_zh": "池上",
         "class": "3",
-        "address": "958003\u81fa\u6771\u7e23\u6c60\u4e0a\u9109\u798f\u6587\u6751\u9435\u82b1\u8def 30 \u865f",
+        "address": "958003臺東縣池上鄉福文村鐵花路 30 號",
         "phone": "089-862097",
         "original_coords": [
           121.21949,
@@ -4685,11 +4503,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "6080",
-        "name": "\u5bcc\u91cc",
+        "name": "富里",
         "name_en": "Fuli",
-        "name_zh": "\u5bcc\u91cc",
+        "name_zh": "富里",
         "class": "3",
-        "address": "983001\u82b1\u84ee\u7e23\u5bcc\u91cc\u9109\u5bcc\u91cc\u6751\u8eca\u7ad9\u8857 56 \u865f",
+        "address": "983001花蓮縣富里鄉富里村車站街 56 號",
         "phone": "03-8831771",
         "original_coords": [
           121.24864,
@@ -4711,11 +4529,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "6090",
-        "name": "\u6771\u7af9",
+        "name": "東竹",
         "name_en": "Dongzhu",
-        "name_zh": "\u6771\u7af9",
+        "name_zh": "東竹",
         "class": "3",
-        "address": "983005\u82b1\u84ee\u7e23\u5bcc\u91cc\u9109\u65b0\u8208\u6751\u65b0\u8208 23 \u865f",
+        "address": "983005花蓮縣富里鄉新興村新興 23 號",
         "phone": "03-8821504",
         "original_coords": [
           121.27842,
@@ -4737,11 +4555,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "6100",
-        "name": "\u6771\u91cc",
+        "name": "東里",
         "name_en": "Dongli",
-        "name_zh": "\u6771\u91cc",
+        "name_zh": "東里",
         "class": "3",
-        "address": "983004\u82b1\u84ee\u7e23\u5bcc\u91cc\u9109\u6771\u91cc\u6751\u5927\u838a\u8def 15 \u4e4b 6 \u865f",
+        "address": "983004花蓮縣富里鄉東里村大莊路 15 之 6 號",
         "phone": "03-8861005",
         "original_coords": [
           121.30418,
@@ -4763,11 +4581,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "6110",
-        "name": "\u7389\u91cc",
+        "name": "玉里",
         "name_en": "Yuli",
-        "name_zh": "\u7389\u91cc",
+        "name_zh": "玉里",
         "class": "1",
-        "address": "981003\u82b1\u84ee\u7e23\u7389\u91cc\u93ae\u4e2d\u57ce\u91cc\u5eb7\u6a02\u8857 39 \u865f",
+        "address": "981003花蓮縣玉里鎮中城里康樂街 39 號",
         "phone": "03-8882020",
         "original_coords": [
           121.31172,
@@ -4789,11 +4607,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "6120",
-        "name": "\u4e09\u6c11",
+        "name": "三民",
         "name_en": "Sanmin",
-        "name_zh": "\u4e09\u6c11",
+        "name_zh": "三民",
         "class": "3",
-        "address": "981010\u82b1\u84ee\u7e23\u7389\u91cc\u93ae\u4e09\u6c11\u91cc\u4e09\u6c11 10 \u865f",
+        "address": "981010花蓮縣玉里鎮三民里三民 10 號",
         "phone": "03-8841847",
         "original_coords": [
           121.34539,
@@ -4815,11 +4633,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "6130",
-        "name": "\u745e\u7a57",
+        "name": "瑞穗",
         "name_en": "Ruisui",
-        "name_zh": "\u745e\u7a57",
+        "name_zh": "瑞穗",
         "class": "3",
-        "address": "978001\u82b1\u84ee\u7e23\u745e\u7a57\u9109\u745e\u7a57\u6751\u56db\u7dad\u8857 13 \u865f",
+        "address": "978001花蓮縣瑞穗鄉瑞穗村四維街 13 號",
         "phone": "03-8875039",
         "original_coords": [
           121.37657,
@@ -4841,11 +4659,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "6140",
-        "name": "\u5bcc\u6e90",
+        "name": "富源",
         "name_en": "Fuyuan",
-        "name_zh": "\u5bcc\u6e90",
+        "name_zh": "富源",
         "class": "3",
-        "address": "978003\u82b1\u84ee\u7e23\u745e\u7a57\u9109\u5bcc\u6e90\u6751\u5bcc\u6e90\u8def 2 \u865f",
+        "address": "978003花蓮縣瑞穗鄉富源村富源路 2 號",
         "phone": "03-8811824",
         "original_coords": [
           121.38008,
@@ -4867,11 +4685,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "6150",
-        "name": "\u5927\u5bcc",
+        "name": "大富",
         "name_en": "Dafu",
-        "name_zh": "\u5927\u5bcc",
+        "name_zh": "大富",
         "class": "5",
-        "address": "976007\u82b1\u84ee\u7e23\u5149\u5fa9\u9109\u5927\u5bcc\u6751\u660e\u5fb7\u8def 1 \u865f",
+        "address": "976007花蓮縣光復鄉大富村明德路 1 號",
         "phone": "03-8811824",
         "original_coords": [
           121.38963,
@@ -4893,11 +4711,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "6160",
-        "name": "\u5149\u5fa9",
+        "name": "光復",
         "name_en": "Guangfu",
-        "name_zh": "\u5149\u5fa9",
+        "name_zh": "光復",
         "class": "3",
-        "address": "976007\u82b1\u84ee\u7e23\u5149\u5fa9\u9109\u5927\u5b89\u6751\u4e2d\u6b63\u8def\u4e00\u6bb5 2 \u4e4b 1 \u865f",
+        "address": "976007花蓮縣光復鄉大安村中正路一段 2 之 1 號",
         "phone": "03-8704143",
         "original_coords": [
           121.42117,
@@ -4919,11 +4737,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "6170",
-        "name": "\u842c\u69ae",
+        "name": "萬榮",
         "name_en": "Wanrong",
-        "name_zh": "\u842c\u69ae",
+        "name_zh": "萬榮",
         "class": "3",
-        "address": "975003\u82b1\u84ee\u7e23\u9cf3\u6797\u93ae\u9577\u6a4b\u91cc\u9577\u5fb7\u8857 17 \u865f",
+        "address": "975003花蓮縣鳳林鎮長橋里長德街 17 號",
         "phone": "03-8752175",
         "original_coords": [
           121.41907,
@@ -4945,11 +4763,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "6180",
-        "name": "\u9cf3\u6797",
+        "name": "鳳林",
         "name_en": "Fenglin",
-        "name_zh": "\u9cf3\u6797",
+        "name_zh": "鳳林",
         "class": "3",
-        "address": "975005\u82b1\u84ee\u7e23\u9cf3\u6797\u93ae\u9cf3\u667a\u91cc\u4e2d\u5c71\u8def 43 \u865f",
+        "address": "975005花蓮縣鳳林鎮鳳智里中山路 43 號",
         "phone": "03-8762004",
         "original_coords": [
           121.44701,
@@ -4971,11 +4789,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "6190",
-        "name": "\u5357\u5e73",
+        "name": "南平",
         "name_en": "Nanping",
-        "name_zh": "\u5357\u5e73",
+        "name_zh": "南平",
         "class": "4",
-        "address": "975002\u82b1\u84ee\u7e23\u9cf3\u6797\u93ae\u5357\u5e73\u91cc\u81ea\u5f37\u8def 233 \u865f",
+        "address": "975002花蓮縣鳳林鎮南平里自強路 233 號",
         "phone": "03-8771597",
         "original_coords": [
           121.45824,
@@ -4997,11 +4815,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "6200",
-        "name": "\u6797\u69ae\u65b0\u5149",
+        "name": "林榮新光",
         "name_en": "Linrong Shin Kong",
-        "name_zh": "\u6797\u69ae\u65b0\u5149",
+        "name_zh": "林榮新光",
         "class": "4",
-        "address": "975002\u82b1\u84ee\u7e23\u9cf3\u6797\u93ae\u5146\u8c50\u8def800\u865f",
+        "address": "975002花蓮縣鳳林鎮兆豐路800號",
         "phone": "03-8772677",
         "original_coords": [
           121.46169,
@@ -5023,11 +4841,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "6210",
-        "name": "\u8c50\u7530",
+        "name": "豐田",
         "name_en": "Fengtian",
-        "name_zh": "\u8c50\u7530",
+        "name_zh": "豐田",
         "class": "4",
-        "address": "974006\u82b1\u84ee\u7e23\u58fd\u8c50\u9109\u8c50\u5c71\u6751\u7ad9\u524d\u8857 36 \u865f",
+        "address": "974006花蓮縣壽豐鄉豐山村站前街 36 號",
         "phone": "03-8654251",
         "original_coords": [
           121.49618,
@@ -5049,11 +4867,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "6220",
-        "name": "\u58fd\u8c50",
+        "name": "壽豐",
         "name_en": "Shoufeng",
-        "name_zh": "\u58fd\u8c50",
+        "name_zh": "壽豐",
         "class": "3",
-        "address": "974002\u82b1\u84ee\u7e23\u58fd\u8c50\u9109\u58fd\u8c50\u6751\u58fd\u5c71\u8def 1 \u865f",
+        "address": "974002花蓮縣壽豐鄉壽豐村壽山路 1 號",
         "phone": "03-8653706",
         "original_coords": [
           121.51064,
@@ -5075,11 +4893,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "6230",
-        "name": "\u5e73\u548c",
+        "name": "平和",
         "name_en": "Pinghe",
-        "name_zh": "\u5e73\u548c",
+        "name_zh": "平和",
         "class": "5",
-        "address": "974004\u82b1\u84ee\u7e23\u58fd\u8c50\u9109\u5e73\u548c\u6751\u5e73\u548c\u8def 1 \u865f",
+        "address": "974004花蓮縣壽豐鄉平和村平和路 1 號",
         "phone": "03-8653706",
         "original_coords": [
           121.52045,
@@ -5101,11 +4919,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "6240",
-        "name": "\u5fd7\u5b78",
+        "name": "志學",
         "name_en": "Zhixue",
-        "name_zh": "\u5fd7\u5b78",
+        "name_zh": "志學",
         "class": "3",
-        "address": "974003\u82b1\u84ee\u7e23\u58fd\u8c50\u9109\u5fd7\u5b78\u6751\u4e2d\u6b63\u8def 1 \u865f",
+        "address": "974003花蓮縣壽豐鄉志學村中正路 1 號",
         "phone": "03-8662966",
         "original_coords": [
           121.5295,
@@ -5127,11 +4945,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "6250",
-        "name": "\u5409\u5b89",
+        "name": "吉安",
         "name_en": "Ji'an",
-        "name_zh": "\u5409\u5b89",
+        "name_zh": "吉安",
         "class": "3",
-        "address": "973039\u82b1\u84ee\u7e23\u5409\u5b89\u9109\u5357\u660c\u6751\u5357\u660c\u8def1\u865f",
+        "address": "973039花蓮縣吉安鄉南昌村南昌路1號",
         "phone": "03-8539423",
         "original_coords": [
           121.58266,
@@ -5153,11 +4971,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "7000",
-        "name": "\u82b1\u84ee",
+        "name": "花蓮",
         "name_en": "Hualien",
-        "name_zh": "\u82b1\u84ee",
+        "name_zh": "花蓮",
         "class": "0",
-        "address": "970015\u82b1\u84ee\u7e23\u82b1\u84ee\u5e02\u570b\u806f\u91cc\u570b\u806f\u4e00\u8def 100 \u865f",
+        "address": "970015花蓮縣花蓮市國聯里國聯一路 100 號",
         "phone": "03-8355941",
         "original_coords": [
           121.6008,
@@ -5179,11 +4997,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "7010",
-        "name": "\u5317\u57d4",
+        "name": "北埔",
         "name_en": "Beipu",
-        "name_zh": "\u5317\u57d4",
+        "name_zh": "北埔",
         "class": "3",
-        "address": "971066\u82b1\u84ee\u7e23\u65b0\u57ce\u9109\u5317\u57d4\u6751\u81ea\u5f37\u8857 113 \u865f",
+        "address": "971066花蓮縣新城鄉北埔村自強街 113 號",
         "phone": "03-8263809",
         "original_coords": [
           121.60166,
@@ -5205,11 +5023,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "7020",
-        "name": "\u666f\u7f8e",
+        "name": "景美",
         "name_en": "Jingmei",
-        "name_zh": "\u666f\u7f8e",
+        "name_zh": "景美",
         "class": "4",
-        "address": "972067\u82b1\u84ee\u7e23\u79c0\u6797\u9109\u666f\u7f8e\u6751\u52a0\u7063 178 \u4e4b 1 \u865f",
+        "address": "972067花蓮縣秀林鄉景美村加灣 178 之 1 號",
         "phone": "03-8611237",
         "original_coords": [
           121.61078,
@@ -5231,11 +5049,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "7030",
-        "name": "\u65b0\u57ce",
+        "name": "新城",
         "name_en": "Xincheng",
-        "name_zh": "\u65b0\u57ce",
+        "name_zh": "新城",
         "class": "2",
-        "address": "971001\u82b1\u84ee\u7e23\u65b0\u57ce\u9109\u65b0\u57ce\u6751\u65b0\u8208\u4e00\u8def 73 \u865f",
+        "address": "971001花蓮縣新城鄉新城村新興一路 73 號",
         "phone": "03-8611237",
         "original_coords": [
           121.64086,
@@ -5257,11 +5075,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "7040",
-        "name": "\u5d07\u5fb7",
+        "name": "崇德",
         "name_en": "Chongde",
-        "name_zh": "\u5d07\u5fb7",
+        "name_zh": "崇德",
         "class": "3",
-        "address": "972003\u82b1\u84ee\u7e23\u79c0\u6797\u9109\u5d07\u5fb7\u6751\u6d77\u6ff1\u8def 96 \u865f",
+        "address": "972003花蓮縣秀林鄉崇德村海濱路 96 號",
         "phone": "03-8621365",
         "original_coords": [
           121.65536,
@@ -5283,11 +5101,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "7050",
-        "name": "\u548c\u4ec1",
+        "name": "和仁",
         "name_en": "Heren",
-        "name_zh": "\u548c\u4ec1",
+        "name_zh": "和仁",
         "class": "3",
-        "address": "972005\u82b1\u84ee\u7e23\u79c0\u6797\u9109\u548c\u5e73\u6751\u548c\u4ec1 71 \u865f",
+        "address": "972005花蓮縣秀林鄉和平村和仁 71 號",
         "phone": "03-8681221",
         "original_coords": [
           121.71182,
@@ -5309,11 +5127,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "7060",
-        "name": "\u548c\u5e73",
+        "name": "和平",
         "name_en": "Heping",
-        "name_zh": "\u548c\u5e73",
+        "name_zh": "和平",
         "class": "2",
-        "address": "972005\u82b1\u84ee\u7e23\u79c0\u6797\u9109\u548c\u5e73\u6751\u548c\u5e73 276 \u865f",
+        "address": "972005花蓮縣秀林鄉和平村和平 276 號",
         "phone": "03-8681009",
         "original_coords": [
           121.75344,
@@ -5335,11 +5153,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "7070",
-        "name": "\u6f22\u672c",
+        "name": "漢本",
         "name_en": "Hanben",
-        "name_zh": "\u6f22\u672c",
+        "name_zh": "漢本",
         "class": "3",
-        "address": "272019\u5b9c\u862d\u7e23\u5357\u6fb3\u9109\u6fb3\u82b1\u6751\u8607\u82b1\u8def\u4e00\u6bb5 56 \u865f",
+        "address": "272019宜蘭縣南澳鄉澳花村蘇花路一段 56 號",
         "phone": "03-9985238",
         "original_coords": [
           121.76838,
@@ -5361,11 +5179,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "7080",
-        "name": "\u6b66\u5854",
+        "name": "武塔",
         "name_en": "Wuta",
-        "name_zh": "\u6b66\u5854",
+        "name_zh": "武塔",
         "class": "4",
-        "address": "272017\u5b9c\u862d\u7e23\u5357\u6fb3\u9109\u6b66\u5854\u6751\u65b0\u6eaa\u8def 18 \u865f",
+        "address": "272017宜蘭縣南澳鄉武塔村新溪路 18 號",
         "phone": "03-9981971",
         "original_coords": [
           121.77601,
@@ -5387,11 +5205,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "7090",
-        "name": "\u5357\u6fb3",
+        "name": "南澳",
         "name_en": "Nan'ao",
-        "name_zh": "\u5357\u6fb3",
+        "name_zh": "南澳",
         "class": "3",
-        "address": "270010\u5b9c\u862d\u7e23\u8607\u6fb3\u93ae\u5357\u5f37\u91cc\u5927\u901a\u8def 22 \u865f",
+        "address": "270010宜蘭縣蘇澳鎮南強里大通路 22 號",
         "phone": "03-9981971",
         "original_coords": [
           121.80103,
@@ -5413,11 +5231,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "7100",
-        "name": "\u6771\u6fb3",
+        "name": "東澳",
         "name_en": "Dong'ao",
-        "name_zh": "\u6771\u6fb3",
+        "name_zh": "東澳",
         "class": "2",
-        "address": "272006\u5b9c\u862d\u7e23\u5357\u6fb3\u9109\u6771\u5cb3\u6751\u6771\u5cb3\u8def 1 \u865f",
+        "address": "272006宜蘭縣南澳鄉東岳村東岳路 1 號",
         "phone": "03-9986053",
         "original_coords": [
           121.83072,
@@ -5439,11 +5257,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "7110",
-        "name": "\u6c38\u6a02",
+        "name": "永樂",
         "name_en": "Yongle",
-        "name_zh": "\u6c38\u6a02",
+        "name_zh": "永樂",
         "class": "3",
-        "address": "270011\u5b9c\u862d\u7e23\u8607\u6fb3\u93ae\u6c38\u6a02\u91cc\u5733\u982d\u8def 60 \u865f",
+        "address": "270011宜蘭縣蘇澳鎮永樂里圳頭路 60 號",
         "phone": "03-9961889",
         "original_coords": [
           121.84458,
@@ -5465,11 +5283,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "7120",
-        "name": "\u8607\u6fb3",
+        "name": "蘇澳",
         "name_en": "Su'ao",
-        "name_zh": "\u8607\u6fb3",
+        "name_zh": "蘇澳",
         "class": "2",
-        "address": "270001\u5b9c\u862d\u7e23\u8607\u6fb3\u93ae\u8607\u5357\u91cc\u592a\u5e73\u8def 1 \u865f",
+        "address": "270001宜蘭縣蘇澳鎮蘇南里太平路 1 號",
         "phone": "03-9962028",
         "original_coords": [
           121.85143,
@@ -5491,11 +5309,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "7130",
-        "name": "\u8607\u6fb3\u65b0",
+        "name": "蘇澳新",
         "name_en": "Su'aoxin",
-        "name_zh": "\u8607\u6fb3\u65b0",
+        "name_zh": "蘇澳新",
         "class": "1",
-        "address": "270013\u5b9c\u862d\u7e23\u8607\u6fb3\u93ae\u8056\u611b\u91cc\u4e2d\u5c71\u8def\u4e8c\u6bb5 238 \u865f",
+        "address": "270013宜蘭縣蘇澳鎮聖愛里中山路二段 238 號",
         "phone": "03-9961004",
         "original_coords": [
           121.82735,
@@ -5517,11 +5335,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "7140",
-        "name": "\u65b0\u99ac",
+        "name": "新馬",
         "name_en": "Xinma",
-        "name_zh": "\u65b0\u99ac",
+        "name_zh": "新馬",
         "class": "5",
-        "address": "270013\u5b9c\u862d\u7e23\u8607\u6fb3\u93ae\u65b0\u57ce\u91cc\u4e2d\u5c71\u8def\u4e8c\u6bb5 322 \u865f",
+        "address": "270013宜蘭縣蘇澳鎮新城里中山路二段 322 號",
         "phone": "03-9961004",
         "original_coords": [
           121.8229,
@@ -5543,11 +5361,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "7150",
-        "name": "\u51ac\u5c71",
+        "name": "冬山",
         "name_en": "Dongshan",
-        "name_zh": "\u51ac\u5c71",
+        "name_zh": "冬山",
         "class": "3",
-        "address": "269027\u5b9c\u862d\u7e23\u51ac\u5c71\u9109\u51ac\u5c71\u6751\u4e2d\u6b63\u8def 1 -1\u865f",
+        "address": "269027宜蘭縣冬山鄉冬山村中正路 1 -1號",
         "phone": "03-9594221",
         "original_coords": [
           121.79211,
@@ -5569,11 +5387,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "7160",
-        "name": "\u7f85\u6771",
+        "name": "羅東",
         "name_en": "Luodong",
-        "name_zh": "\u7f85\u6771",
+        "name_zh": "羅東",
         "class": "2",
-        "address": "265010\u5b9c\u862d\u7e23\u7f85\u6771\u93ae\u5927\u65b0\u91cc\u516c\u6b63\u8def 2 \u865f",
+        "address": "265010宜蘭縣羅東鎮大新里公正路 2 號",
         "phone": "03-9542117",
         "original_coords": [
           121.77464,
@@ -5595,11 +5413,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "7170",
-        "name": "\u4e2d\u91cc",
+        "name": "中里",
         "name_en": "Zhongli_Yilan",
-        "name_zh": "\u4e2d\u91cc",
+        "name_zh": "中里",
         "class": "5",
-        "address": "268018\u5b9c\u862d\u7e23\u4e94\u7d50\u9109\u4e2d\u91cc\u8def",
+        "address": "268018宜蘭縣五結鄉中里路",
         "phone": "03-9542117",
         "original_coords": [
           121.77526,
@@ -5621,11 +5439,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "7180",
-        "name": "\u4e8c\u7d50",
+        "name": "二結",
         "name_en": "Erjie",
-        "name_zh": "\u4e8c\u7d50",
+        "name_zh": "二結",
         "class": "3",
-        "address": "268016\u5b9c\u862d\u7e23\u4e94\u7d50\u9109\u4e94\u7d50\u4e2d\u8def\u4e09\u6bb5658\u5df78\u865f",
+        "address": "268016宜蘭縣五結鄉五結中路三段658巷8號",
         "phone": "03-9650304",
         "original_coords": [
           121.77409,
@@ -5647,11 +5465,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "7190",
-        "name": "\u5b9c\u862d",
+        "name": "宜蘭",
         "name_en": "Yilan",
-        "name_zh": "\u5b9c\u862d",
+        "name_zh": "宜蘭",
         "class": "1",
-        "address": "260003\u5b9c\u862d\u7e23\u5b9c\u862d\u5e02\u548c\u7766\u91cc\u5149\u5fa9\u8def 1 \u865f",
+        "address": "260003宜蘭縣宜蘭市和睦里光復路 1 號",
         "phone": "03-9323801",
         "original_coords": [
           121.75839,
@@ -5673,11 +5491,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "7200",
-        "name": "\u56db\u57ce",
+        "name": "四城",
         "name_en": "Sicheng",
-        "name_zh": "\u56db\u57ce",
+        "name_zh": "四城",
         "class": "4",
-        "address": "262005\u5b9c\u862d\u7e23\u7901\u6eaa\u9109\u5433\u6c99\u6751\u7ad9\u524d\u8def 24 \u865f",
+        "address": "262005宜蘭縣礁溪鄉吳沙村站前路 24 號",
         "phone": "03-9282449",
         "original_coords": [
           121.76271,
@@ -5699,11 +5517,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "7210",
-        "name": "\u7901\u6eaa",
+        "name": "礁溪",
         "name_en": "Jiaoxi",
-        "name_zh": "\u7901\u6eaa",
+        "name_zh": "礁溪",
         "class": "3",
-        "address": "262001\u5b9c\u862d\u7e23\u7901\u6eaa\u9109\u5fb7\u967d\u6751\u6eab\u6cc9\u8def 1 \u865f",
+        "address": "262001宜蘭縣礁溪鄉德陽村溫泉路 1 號",
         "phone": "03-9886940",
         "original_coords": [
           121.77535,
@@ -5725,11 +5543,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "7220",
-        "name": "\u9802\u57d4",
+        "name": "頂埔",
         "name_en": "Dingpu",
-        "name_zh": "\u9802\u57d4",
+        "name_zh": "頂埔",
         "class": "5",
-        "address": "261002\u5b9c\u862d\u7e23\u982d\u57ce\u93ae\u4e0b\u57d4\u91cc\u4e0b\u57d4\u8def 4 \u4e4b 8 \u865f",
+        "address": "261002宜蘭縣頭城鎮下埔里下埔路 4 之 8 號",
         "phone": "03-9771429",
         "original_coords": [
           121.80913,
@@ -5751,11 +5569,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "7230",
-        "name": "\u982d\u57ce",
+        "name": "頭城",
         "name_en": "Toucheng",
-        "name_zh": "\u982d\u57ce",
+        "name_zh": "頭城",
         "class": "2",
-        "address": "261006\u5b9c\u862d\u7e23\u982d\u57ce\u93ae\u7e98\u7965\u8def 59 \u865f",
+        "address": "261006宜蘭縣頭城鎮纘祥路 59 號",
         "phone": "03-9771429",
         "original_coords": [
           121.82258,
@@ -5777,11 +5595,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "7240",
-        "name": "\u5916\u6fb3",
+        "name": "外澳",
         "name_en": "Wai'ao",
-        "name_zh": "\u5916\u6fb3",
+        "name_zh": "外澳",
         "class": "5",
-        "address": "261004\u5b9c\u862d\u7e23\u982d\u57ce\u93ae\u6ff1\u6d77\u8def\u4e8c\u6bb5 217 \u865f",
+        "address": "261004宜蘭縣頭城鎮濱海路二段 217 號",
         "phone": "03-9771429",
         "original_coords": [
           121.84572,
@@ -5803,11 +5621,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "7250",
-        "name": "\u9f9c\u5c71",
+        "name": "龜山",
         "name_en": "Guishan",
-        "name_zh": "\u9f9c\u5c71",
+        "name_zh": "龜山",
         "class": "4",
-        "address": "261004\u5b9c\u862d\u7e23\u982d\u57ce\u93ae\u66f4\u65b0\u91cc\u6ff1\u6d77\u8def\u4e09\u6bb5 261 \u865f",
+        "address": "261004宜蘭縣頭城鎮更新里濱海路三段 261 號",
         "phone": "03-9770351",
         "original_coords": [
           121.8689,
@@ -5829,11 +5647,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "7260",
-        "name": "\u5927\u6eaa",
+        "name": "大溪",
         "name_en": "Daxi",
-        "name_zh": "\u5927\u6eaa",
+        "name_zh": "大溪",
         "class": "5",
-        "address": "261005\u5b9c\u862d\u7e23\u982d\u57ce\u93ae\u6ff1\u6d77\u8def\u4e94\u6bb5 63 \u865f",
+        "address": "261005宜蘭縣頭城鎮濱海路五段 63 號",
         "phone": "03-9771429",
         "original_coords": [
           121.88983,
@@ -5855,11 +5673,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "7270",
-        "name": "\u5927\u91cc",
+        "name": "大里",
         "name_en": "Dali",
-        "name_zh": "\u5927\u91cc",
+        "name_zh": "大里",
         "class": "4",
-        "address": "261005\u5b9c\u862d\u7e23\u982d\u57ce\u93ae\u5927\u91cc\u91cc\u6ff1\u6d77\u8def\u516d\u6bb5 326 \u865f",
+        "address": "261005宜蘭縣頭城鎮大里里濱海路六段 326 號",
         "phone": "03-9781171",
         "original_coords": [
           121.92253,
@@ -5881,11 +5699,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "7280",
-        "name": "\u77f3\u57ce",
+        "name": "石城",
         "name_en": "Shicheng",
-        "name_zh": "\u77f3\u57ce",
+        "name_zh": "石城",
         "class": "5",
-        "address": "261006\u5b9c\u862d\u7e23\u982d\u57ce\u93ae\u6ff1\u6d77\u8def\u4e03\u6bb5 230 \u865f",
+        "address": "261006宜蘭縣頭城鎮濱海路七段 230 號",
         "phone": "03-9771429",
         "original_coords": [
           121.94507,
@@ -5907,11 +5725,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "7290",
-        "name": "\u798f\u9686",
+        "name": "福隆",
         "name_en": "Fulong",
-        "name_zh": "\u798f\u9686",
+        "name_zh": "福隆",
         "class": "3",
-        "address": "228001\u65b0\u5317\u5e02\u8ca2\u5bee\u5340\u798f\u9686\u91cc\u798f\u9686\u8857 2 \u865f",
+        "address": "228001新北市貢寮區福隆里福隆街 2 號",
         "phone": "02-24991800",
         "original_coords": [
           121.94471,
@@ -5933,11 +5751,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "7300",
-        "name": "\u8ca2\u5bee",
+        "name": "貢寮",
         "name_en": "Gongliao",
-        "name_zh": "\u8ca2\u5bee",
+        "name_zh": "貢寮",
         "class": "4",
-        "address": "228003\u65b0\u5317\u5e02\u8ca2\u5bee\u5340\u8ca2\u5bee\u91cc\u671d\u967d\u8857 33 \u865f",
+        "address": "228003新北市貢寮區貢寮里朝陽街 33 號",
         "phone": "02-24941500",
         "original_coords": [
           121.90879,
@@ -5959,11 +5777,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "7310",
-        "name": "\u96d9\u6eaa",
+        "name": "雙溪",
         "name_en": "Shuangxi",
-        "name_zh": "\u96d9\u6eaa",
+        "name_zh": "雙溪",
         "class": "2",
-        "address": "227004\u65b0\u5317\u5e02\u96d9\u6eaa\u5340\u65b0\u57fa\u91cc\u671d\u967d\u8857 1 \u865f",
+        "address": "227004新北市雙溪區新基里朝陽街 1 號",
         "phone": "02-24932980",
         "original_coords": [
           121.86654,
@@ -5985,11 +5803,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "7320",
-        "name": "\u7261\u4e39",
+        "name": "牡丹",
         "name_en": "Mudan",
-        "name_zh": "\u7261\u4e39",
+        "name_zh": "牡丹",
         "class": "5",
-        "address": "227001\u65b0\u5317\u5e02\u96d9\u6eaa\u5340\u7261\u4e39\u91cc51\u865f",
+        "address": "227001新北市雙溪區牡丹里51號",
         "phone": "02-24932980",
         "original_coords": [
           121.85197,
@@ -6011,11 +5829,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "7330",
-        "name": "\u4e09\u8c82\u5dba",
+        "name": "三貂嶺",
         "name_en": "Sandiaoling",
-        "name_zh": "\u4e09\u8c82\u5dba",
+        "name_zh": "三貂嶺",
         "class": "3",
-        "address": "224006\u65b0\u5317\u5e02\u745e\u82b3\u5340\u78a9\u4ec1\u91cc\u9b5a\u5bee\u8def 1 \u865f",
+        "address": "224006新北市瑞芳區碩仁里魚寮路 1 號",
         "phone": "02-24977896",
         "original_coords": [
           121.82257,
@@ -6037,11 +5855,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "7331",
-        "name": "\u5927\u83ef",
+        "name": "大華",
         "name_en": "Dahua",
-        "name_zh": "\u5927\u83ef",
+        "name_zh": "大華",
         "class": "5",
-        "address": "226003\u65b0\u5317\u5e02\u5e73\u6eaa\u5340\u5357\u5c71\u91cc\u516d\u5206 12 \u4e4b 1 \u865f",
+        "address": "226003新北市平溪區南山里六分 12 之 1 號",
         "phone": "02-24972033",
         "original_coords": [
           121.79732,
@@ -6063,11 +5881,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "7332",
-        "name": "\u5341\u5206",
+        "name": "十分",
         "name_en": "Shifen",
-        "name_zh": "\u5341\u5206",
+        "name_zh": "十分",
         "class": "4",
-        "address": "226003\u65b0\u5317\u5e02\u5e73\u6eaa\u5340\u5341\u5206\u91cc\u5341\u5206\u8857 51 \u865f",
+        "address": "226003新北市平溪區十分里十分街 51 號",
         "phone": "02-24958307",
         "original_coords": [
           121.77514,
@@ -6089,11 +5907,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "7333",
-        "name": "\u671b\u53e4",
+        "name": "望古",
         "name_en": "Wanggu",
-        "name_zh": "\u671b\u53e4",
+        "name_zh": "望古",
         "class": "5",
-        "address": "226003\u65b0\u5317\u5e02\u5e73\u6eaa\u5340\u671b\u53e4\u91cc (\u7121\u7ad9\u623f)",
+        "address": "226003新北市平溪區望古里 (無站房)",
         "phone": "02-24972033",
         "original_coords": [
           121.76349,
@@ -6115,11 +5933,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "7334",
-        "name": "\u5dba\u8173",
+        "name": "嶺腳",
         "name_en": "Lingjiao",
-        "name_zh": "\u5dba\u8173",
+        "name_zh": "嶺腳",
         "class": "5",
-        "address": "226001\u65b0\u5317\u5e02\u5e73\u6eaa\u5340\u5dba\u8173\u91cc\u5dba\u8173\u5bee 22 \u865f",
+        "address": "226001新北市平溪區嶺腳里嶺腳寮 22 號",
         "phone": "02-24972033",
         "original_coords": [
           121.74795,
@@ -6141,11 +5959,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "7335",
-        "name": "\u5e73\u6eaa",
+        "name": "平溪",
         "name_en": "Pingxi",
-        "name_zh": "\u5e73\u6eaa",
+        "name_zh": "平溪",
         "class": "4",
-        "address": "226001\u65b0\u5317\u5e02\u5e73\u6eaa\u5340\u5e73\u6eaa\u91cc\u4e2d\u83ef\u8857 12 \u865f",
+        "address": "226001新北市平溪區平溪里中華街 12 號",
         "phone": "02-24972033",
         "original_coords": [
           121.74019,
@@ -6167,11 +5985,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "7336",
-        "name": "\u83c1\u6850",
+        "name": "菁桐",
         "name_en": "Jingtong",
-        "name_zh": "\u83c1\u6850",
+        "name_zh": "菁桐",
         "class": "4",
-        "address": "226002\u65b0\u5317\u5e02\u5e73\u6eaa\u5340\u83c1\u6850\u91cc\u83c1\u6850\u8857 52 \u865f",
+        "address": "226002新北市平溪區菁桐里菁桐街 52 號",
         "phone": "02-24972033",
         "original_coords": [
           121.72391,
@@ -6193,11 +6011,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "7350",
-        "name": "\u7334\u7850",
+        "name": "猴硐",
         "name_en": "Houtong",
-        "name_zh": "\u7334\u7850",
+        "name_zh": "猴硐",
         "class": "3",
-        "address": "224006\u65b0\u5317\u5e02\u745e\u82b3\u5340\u5149\u5fa9\u91cc\u67f4\u5bee\u8def 70 \u865f",
+        "address": "224006新北市瑞芳區光復里柴寮路 70 號",
         "phone": "02-24977747",
         "original_coords": [
           121.82743,
@@ -6219,11 +6037,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "7360",
-        "name": "\u745e\u82b3",
+        "name": "瑞芳",
         "name_en": "Ruifang",
-        "name_zh": "\u745e\u82b3",
+        "name_zh": "瑞芳",
         "class": "1",
-        "address": "224001\u65b0\u5317\u5e02\u745e\u82b3\u5340\u9f8d\u6f6d\u91cc\u660e\u71c8\u8def\u4e09\u6bb5 82 \u865f",
+        "address": "224001新北市瑞芳區龍潭里明燈路三段 82 號",
         "phone": "02-24972033",
         "original_coords": [
           121.80624,
@@ -6245,11 +6063,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "7361",
-        "name": "\u6d77\u79d1\u9928",
+        "name": "海科館",
         "name_en": "Haikeguan",
-        "name_zh": "\u6d77\u79d1\u9928",
+        "name_zh": "海科館",
         "class": "5",
-        "address": "202010\u57fa\u9686\u5e02\u4e2d\u6b63\u5340\u9577\u6f6d\u91cc",
+        "address": "202010基隆市中正區長潭里",
         "phone": "02-24972033",
         "original_coords": [
           121.79997,
@@ -6271,11 +6089,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "7362",
-        "name": "\u516b\u6597\u5b50",
+        "name": "八斗子",
         "name_en": "Badouzi",
-        "name_zh": "\u516b\u6597\u5b50",
+        "name_zh": "八斗子",
         "class": "5",
-        "address": "224007\u65b0\u5317\u5e02\u745e\u82b3\u5340\u5efa\u57fa\u8def2\u6bb5121\u865f\u9694\u58c1 \u7802\u5b50\u91cc\u7701\u9053\u81fa 2 \u7dda (\u8207\u65b0\u5317\u5e02\u745e\u82b3\u5340\u4ea4\u754c\u8655\u3001\u7121\u7ad9\u623f)",
+        "address": "224007新北市瑞芳區建基路2段121號隔壁 砂子里省道臺 2 線 (與新北市瑞芳區交界處、無站房)",
         "phone": "02-24972033",
         "original_coords": [
           121.80286,
@@ -6297,11 +6115,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "7380",
-        "name": "\u56db\u8173\u4ead",
+        "name": "四腳亭",
         "name_en": "Sijiaoting",
-        "name_zh": "\u56db\u8173\u4ead",
+        "name_zh": "四腳亭",
         "class": "3",
-        "address": "22449\u65b0\u5317\u5e02\u745e\u82b3\u5340\u5409\u6176\u91cc\u4e2d\u592e\u8def 65 \u865f",
+        "address": "22449新北市瑞芳區吉慶里中央路 65 號",
         "phone": "02-24579346",
         "original_coords": [
           121.76195,
@@ -6323,11 +6141,11 @@
       "type": "Feature",
       "properties": {
         "station_id": "7390",
-        "name": "\u6696\u6696",
+        "name": "暖暖",
         "name_en": "Nuannuan",
-        "name_zh": "\u6696\u6696",
+        "name_zh": "暖暖",
         "class": "5",
-        "address": "20544\u57fa\u9686\u5e02\u6696\u6696\u5340\u6696\u6696\u91cc\u6696\u6696\u8857 51 \u865f",
+        "address": "20544基隆市暖暖區暖暖里暖暖街 51 號",
         "phone": "02-24560841",
         "original_coords": [
           121.74031,
@@ -6342,6 +6160,118 @@
         "coordinates": [
           121.740307,
           25.102222
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "3232",
+        "name_zh": "栗林",
+        "name": "栗林",
+        "name_en": "Lilin"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.70990401276593,
+          24.232818868073693
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "3243",
+        "name_zh": "頭家厝",
+        "name": "頭家厝",
+        "name_en": "Toujiacuo"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.70337331492846,
+          24.191033269716232
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "3245",
+        "name_zh": "松竹",
+        "name": "松竹",
+        "name_en": "Songzhu"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.70069732123756,
+          24.170573588611276
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "3247",
+        "name_zh": "太原",
+        "name": "太原",
+        "name_en": "Taiyuan"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.69949512502794,
+          24.161771065885972
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "3249",
+        "name_zh": "精武",
+        "name": "精武",
+        "name_en": "Jingwu"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.69779925399126,
+          24.14933229127675
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "3305",
+        "name_zh": "五權",
+        "name": "五權",
+        "name_en": "Wuquan"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.66568887616872,
+          24.128391028094562
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "3325",
+        "name_zh": "新烏日",
+        "name": "新烏日",
+        "name_en": "Xinwuri"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.61598037302912,
+          24.10961816126579
         ]
       }
     }

@@ -1,6 +1,6 @@
 # TRA 軌道資料狀態追蹤
 
-> 最後更新：2026-01-17
+> 最後更新：2026-01-24
 
 ## Golden Track 架構
 
@@ -138,14 +138,33 @@ tracks_od/          ← O-D 專屬軌道（列車位置計算）
 ### WL-N 西部幹線北段
 | 項目 | 狀態 |
 |------|------|
-| 軌道資料 | ❌ 有問題 |
-| O-D 軌道 | ⚠️ 部分使用 |
-| 時刻表 | - |
-| 備註 | 竹南-基隆 (含基隆支線) |
+| 軌道資料 | ⚠️ 有小缺口 |
+| O-D 軌道 | ✅ 完成 (兩段) |
+| 時刻表 | 🔧 測試資料 |
+| 備註 | 分為兩段：竹南-樹林 (22站) + 樹林-八堵 (已完成) |
 
-**已知問題**：
-- [ ] 包含基隆支線，列車會繞道基隆 → 待真實時刻表後處理
-- [ ] 需要建立臺北-八堵專用軌道，排除基隆支線
+**WL-N-ZN-SL (竹南↔樹林)**：
+- [x] 從 TDX WL-N-0 軌道提取竹南→樹林區間 (2324 pts)
+- [x] 計算完整 station_progress：22 個車站 (1250 竹南 ~ 1040 樹林)
+- [x] 建立測試時刻表：34 班次 (每小時一班，06:00-22:00)
+- [x] 更新 useTraData.ts、TraTrainEngine.ts 支援 WL-N 路線
+- [ ] 竹南附近有 1.1km 軌道缺口 (索引 6-7) → 待手繪補充
+- [ ] 北新竹附近有小跳躍點 (索引 387-390) → 暫不影響行駛
+
+**WL-N-SL-BD (樹林↔八堵)**：
+- [x] 已完成 (Step 1)
+
+**O-D 軌道檔案**：
+- `tracks_od/WL-ZN-SL-0.geojson` (竹南→樹林)
+- `tracks_od/WL-SL-ZN-1.geojson` (樹林→竹南)
+- `tracks_od/WL-SL-BD-0.geojson` (樹林→八堵) - 已存在
+- `tracks_od/WL-BD-SL-1.geojson` (八堵→樹林) - 已存在
+
+**Golden Track**：
+- `tracks_golden/WL-N-ZN-SL-0.geojson` (竹南→樹林)
+- `tracks_golden/WL-N-ZN-SL-1.geojson` (樹林→竹南)
+
+**腳本**：`build_wl_north_od_tracks.py`、`build_wl_north_schedules.py`
 
 ### WL-S 西部幹線南段
 | 項目 | 狀態 |
@@ -237,25 +256,41 @@ tracks_od/          ← O-D 專屬軌道（列車位置計算）
 ### WL-M 西部幹線山線
 | 項目 | 狀態 |
 |------|------|
-| 軌道資料 | ⚠️ 有偏移 |
+| 軌道資料 | 🔧 手繪補充 |
 | O-D 軌道 | ✅ 完成 |
 | 時刻表 | 🔧 測試資料 |
-| 備註 | 竹南-彰化 (23 站)，使用 TDX WL-M 軌道 |
+| 備註 | 竹南-彰化 (23 站)，使用 TDX WL-M 軌道 + 手繪修正 |
 
 **已知問題與修正**：
 - [x] 從備份檔案讀取 WL-M-0/WL-M-1 軌道 (2592 pts)
 - [x] 延伸軌道到竹南站和彰化站
 - [x] 計算完整 station_progress：23 個車站
-- [ ] 5 站距離軌道 >1km：南勢 (2030m)、三義 (1234m)、松竹 (1099m)、太原 (1358m)、精武 (1628m)
-- [ ] 8 站距離軌道 300m~1km：需要軌道修正或手繪補充
+- [x] 移除 7 個舊編號車站 (3250, 3260, 3270, 3280, 3290, 3340, 3350)，僅保留新編號
+- [x] 修正 4 個車站名稱錯誤 (潭子、大慶、烏日、成功)
+- [x] 后里-泰安 軌道繞路 → 手繪修正
+- [x] 烏日-新烏日 軌道偏離 → 手繪修正
+- [x] 6 站座標投影到軌道 (松竹、精武、五權、大慶、烏日、成功)
+- [x] 與成追線共用成功站 (3330)
 
+**手繪檔案**：`tracks_handdrawn/WL-M-handraw-template.geojson`
 **Golden Track**：`tracks_golden/WL-M-ZN-CH-0.geojson`, `WL-M-CH-ZN-1.geojson`
 **O-D 軌道**：`tracks_od/WL-M-ZN-CH-0.geojson`, `WL-M-CH-ZN-1.geojson`
 **腳本**：`build_wl_mountain_od_tracks.py`, `build_wl_mountain_schedules.py`
+**問題報告**：`WL-M_ISSUE_REPORT.md`
 
 ---
 
 ## 處理腳本
+
+### 驗證工具 (建議使用)
+
+| 腳本 | 用途 |
+|------|------|
+| `validate_stations.py` | 車站驗證 (重複 ID、舊編號、名稱錯誤、距離過近) |
+| `validate_tracks.py` | 軌道驗證 (大跳躍、急轉彎、回頭路段) |
+| `snap_stations.py` | 車站投影 (將車站座標投影到軌道上) |
+| `calc_progress.py` | 進度值計算 (計算車站在軌道上的 progress) |
+| `sync_shared_stations.py` | 共用車站同步 (確保跨路線車站一致性) |
 
 ### Golden Track 相關 (建議使用)
 
@@ -279,6 +314,8 @@ tracks_od/          ← O-D 專屬軌道（列車位置計算）
 | `build_wl_coast_schedules.py` | 建立 WL-C 西部幹線海線測試時刻表 |
 | `build_wl_mountain_od_tracks.py` | 建立 WL-M 西部幹線山線 O-D 專屬軌道 |
 | `build_wl_mountain_schedules.py` | 建立 WL-M 西部幹線山線測試時刻表 |
+| `build_wl_north_od_tracks.py` | 建立 WL-N 西部幹線北段 O-D 專屬軌道 |
+| `build_wl_north_schedules.py` | 建立 WL-N 西部幹線北段測試時刻表 |
 | `fetch_yl_kl_timetable.py` | 從 TDX API 取得 YL/KL 真實時刻表 |
 
 ### 舊版腳本 (已整合或棄用)
@@ -304,7 +341,33 @@ tracks_od/          ← O-D 專屬軌道（列車位置計算）
 
 ## 更新紀錄
 
-### 2026-01-24 (WL-M 西部幹線山線)
+### 2026-01-24 (WL-N 竹南↔樹林完成)
+- **WL-N 西部幹線北段完成** (竹南-樹林，22 站)
+- 從 TDX WL-N-0 軌道擷取竹南→樹林區間 (2324 pts)
+- 計算完整 station_progress：22 個車站
+- 建立測試時刻表：34 班次 (每小時一班，06:00-22:00)
+- 更新 useTraData.ts、TraTrainEngine.ts 支援 WL-N 路線
+- **待處理**：竹南附近有 1.1km 軌道缺口，北新竹附近有小跳躍點
+
+### 2026-01-24 (WL-M 完成 + 驗證工具)
+- **WL-M 西部幹線山線完成** (竹南-彰化，23 站)
+- 手繪修正兩段問題軌道：后里-泰安、烏日-新烏日
+- 移除 7 個舊編號車站，修正 4 個名稱錯誤
+- 投影 6 個車站座標到軌道上
+- 與成追線統一共用成功站 (3330)
+- Golden Track 與 O-D 軌道同步
+- 建立 `WL-M_ISSUE_REPORT.md` 記錄問題處理經驗
+- **新增驗證工具**：
+  - `validate_stations.py` - 車站資料驗證
+  - `validate_tracks.py` - 軌道資料驗證
+  - `snap_stations.py` - 車站投影工具
+  - `calc_progress.py` - 進度值計算工具
+  - `sync_shared_stations.py` - 共用車站同步工具
+- **更新 Agent**：
+  - `tra-route-builder.md` - 新增 Optra 備份優先、驗證流程
+  - `tra-validator.md` - 新增專用驗證 Agent
+
+### 2026-01-24 (WL-M 初步建立)
 - 新增 WL-M 西部幹線山線 O-D 軌道資料 (竹南-彰化)
 - 從備份檔案讀取 TDX WL-M-0/WL-M-1 軌道 (2592 pts)
 - 延伸軌道到竹南站 (北端) 和彰化站 (南端)
@@ -314,7 +377,6 @@ tracks_od/          ← O-D 專屬軌道（列車位置計算）
 - 建立測試時刻表：`WL-M-ZN-CH-0.json`, `WL-M-CH-ZN-1.json` (每小時一班，06:00-22:00)
 - 新增腳本：`build_wl_mountain_od_tracks.py`, `build_wl_mountain_schedules.py`
 - 更新 `useTraData.ts`、`TraTrainEngine.ts` 支援 WL-M 路線
-- **待修正**：5 站距離軌道 >1km（南勢、三義、松竹、太原、精武），需要手繪補充
 
 ### 2026-01-17 (WL-C 西部幹線海線)
 - 新增 WL-C 西部幹線海線 O-D 軌道資料 (彰化-竹南)

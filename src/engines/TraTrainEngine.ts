@@ -206,7 +206,14 @@ function getTrackIdFromOdTrackId(odTrackId: string): string {
     if (odTrackId === 'WL-M-CH-ZN-1') {
       return 'WL-M-CH-ZN-1';  // 彰化→竹南
     }
-    // 北段：WL-SL-BD-0 / WL-BD-SL-1 → WL-N-SL-BD-0 / WL-N-SL-BD-1
+    // 北段（竹南-樹林）：WL-ZN-SL-0 / WL-SL-ZN-1 → WL-N-ZN-SL-0 / WL-N-ZN-SL-1
+    if (odTrackId === 'WL-ZN-SL-0') {
+      return 'WL-N-ZN-SL-0';  // 竹南→樹林
+    }
+    if (odTrackId === 'WL-SL-ZN-1') {
+      return 'WL-N-ZN-SL-1';  // 樹林→竹南
+    }
+    // 北段（樹林-八堵）：WL-SL-BD-0 / WL-BD-SL-1 → WL-N-SL-BD-0 / WL-N-SL-BD-1
     const direction = parts[parts.length - 1];  // 取最後一個數字
     return `WL-N-SL-BD-${direction}`;
   }

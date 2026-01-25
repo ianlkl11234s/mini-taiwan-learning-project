@@ -1,6 +1,6 @@
 # TRA 軌道資料狀態追蹤
 
-> 最後更新：2026-01-24
+> 最後更新：2026-01-25
 
 ## Golden Track 架構
 
@@ -25,6 +25,8 @@ tracks_od/          ← O-D 專屬軌道（列車位置計算）
 - `tracks_handdrawn/KL/` - 基隆支線手繪區段 (2 檔案)
 - `tracks_handdrawn/BH/` - 北迴線手繪區段 (2 檔案)
 - `tracks_handdrawn/WL-S-handraw-template.geojson` - 西部幹線南段手繪區段 (林內、斗南、大湖、岡山)
+- `tracks_handdrawn/WL-C-changhua-gap-template.geojson` - 西部幹線海線手繪區段 (彰化→追分)
+- `tracks_handdrawn/WL-C-taichungport-gap-template.geojson` - 西部幹線海線手繪區段 (台中港附近)
 
 ---
 
@@ -237,21 +239,28 @@ tracks_od/          ← O-D 專屬軌道（列車位置計算）
 ### WL-C 西部幹線海線
 | 項目 | 狀態 |
 |------|------|
-| 軌道資料 | ⚠️ 有跳躍點 |
+| 軌道資料 | 🔧 手繪補充 |
 | O-D 軌道 | ✅ 完成 |
 | 時刻表 | 🔧 測試資料 |
-| 備註 | 彰化-竹南 (18 站)，合併 WL-H + WL-H2 軌道 |
+| 備註 | 彰化-竹南 (18 站)，合併 WL-H + WL-H2 軌道 + 手繪修正 |
 
 **已知問題與修正**：
 - [x] 合併 WL-H (追分→白沙屯) + WL-H2 (龍港→談文) 軌道
 - [x] 軌道覆蓋所有 18 站，車站誤差均 < 50m
 - [x] 延伸軌道到彰化站 (起點) 和竹南站 (終點)
-- [ ] 有 7 處跳躍點 (最大 5.5km 在彰化附近) → 待手繪修正
-- [ ] 軌道未經過追分→彰化段中間站，僅直線連接
+- [x] 彰化→追分 軌道跳躍 (5.5km) → 手繪修正 (100 座標)
+- [x] 清水→台中港 軌道跳躍 (1.5km) → 手繪修正
+- [x] 台中港附近 軌道跳躍 (743m) → 手繪修正
+- [x] 其餘 4 處小跳躍 (<600m) → 線性插值修正
+- [x] 時刻表格式修正 (arrival/departure 改用秒數格式)
+
+**手繪檔案**：
+- `tracks_handdrawn/WL-C-changhua-gap-template.geojson` (彰化→追分)
+- `tracks_handdrawn/WL-C-taichungport-gap-template.geojson` (台中港附近)
 
 **Golden Track**：`tracks_golden/WL-C-CH-ZN-0.geojson`, `WL-C-ZN-CH-1.geojson`
-**O-D 軌道**：`tracks_od/WL-CH-ZN-0.geojson`, `WL-ZN-CH-1.geojson`
-**合併來源**：WL-H (追分→白沙屯) + WL-H2 (龍港→談文)
+**O-D 軌道**：`tracks_od/WL-C-CH-ZN-0.geojson`, `WL-C-ZN-CH-1.geojson`
+**合併來源**：WL-H (追分→白沙屯) + WL-H2 (龍港→談文) + 手繪修正
 
 ### WL-M 西部幹線山線
 | 項目 | 狀態 |
@@ -340,6 +349,18 @@ tracks_od/          ← O-D 專屬軌道（列車位置計算）
 ---
 
 ## 更新紀錄
+
+### 2026-01-25 (WL-C 海線手繪完成)
+- **WL-C 西部幹線海線完成** (彰化-竹南，18 站)
+- 手繪修正彰化→追分段 (5.5km 跳躍，100 座標點)
+- 手繪修正清水→台中港段 (1.5km + 743m 跳躍)
+- 線性插值修正其餘 4 處小跳躍 (<600m)
+- 軌道座標點從原本約 900 點增加到 1959 點
+- 修正時刻表格式：arrival/departure 改用秒數格式 (原為字串格式)
+- O-D 軌道命名標準化：`WL-C-CH-ZN-0`, `WL-C-ZN-CH-1`
+- 啟用海線載入：更新 `useTraData.ts` 取消註解
+- 更新 `TraTrainEngine.ts` 軌道對映
+- 海線列車現已正常運行
 
 ### 2026-01-24 (WL-N 竹南↔樹林完成)
 - **WL-N 西部幹線北段完成** (竹南-樹林，22 站)

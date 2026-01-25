@@ -1286,16 +1286,55 @@ function App() {
     '1040', '1043', '1047', '1050', '1060', '1070'
   ];
 
+  // 重要車站（縮小時仍顯示標籤）
+  const MAJOR_STATION_IDS = [
+    '0900',  // 基隆
+    '1000',  // 臺北
+    '1020',  // 板橋
+    '1080',  // 桃園
+    '1208',  // 內灣
+    '1210',  // 新竹
+    '1250',  // 竹南
+    '2180',  // 苑裡
+    '2230',  // 沙鹿
+    '3160',  // 苗栗
+    '3220',  // 后里
+    '3300',  // 臺中
+    '3360',  // 彰化
+    '3434',  // 集集
+    '3470',  // 斗六
+    '4080',  // 嘉義
+    '4120',  // 新營
+    '4220',  // 臺南
+    '4272',  // 沙崙
+    '4310',  // 岡山
+    '4400',  // 高雄
+    '5000',  // 屏東
+    '5050',  // 潮州
+    '5160',  // 枋山
+    '5190',  // 大武
+    '6000',  // 臺東
+    '6130',  // 瑞穗
+    '7000',  // 花蓮
+    '7090',  // 南澳
+    '7190',  // 宜蘭
+    '7335',  // 平溪
+  ];
+
   // 載入台鐵車站圖層
   useEffect(() => {
     if (!map.current || !mapLoaded || !traStations) return;
 
+    // 移除舊圖層
     if (map.current.getSource('tra-stations')) {
       if (map.current.getLayer('tra-stations-circle')) {
         map.current.removeLayer('tra-stations-circle');
       }
       if (map.current.getLayer('tra-stations-label')) {
         map.current.removeLayer('tra-stations-label');
+      }
+      if (map.current.getLayer('tra-stations-label-major')) {
+        map.current.removeLayer('tra-stations-label-major');
       }
       map.current.removeSource('tra-stations');
     }
@@ -1315,11 +1354,12 @@ function App() {
       data: filteredStations,
     });
 
+    // 車站圓點（zoom >= 10 才顯示）
     map.current.addLayer({
       id: 'tra-stations-circle',
       type: 'circle',
       source: 'tra-stations',
-      minzoom: 10,  // 縮放 >= 10 才顯示圓點
+      minzoom: 10,
       paint: {
         'circle-radius': 5,
         'circle-color': '#ffffff',
@@ -1331,17 +1371,43 @@ function App() {
       },
     });
 
+    // 重要車站標籤（zoom < 10 時顯示，只顯示重要車站）
+    map.current.addLayer({
+      id: 'tra-stations-label-major',
+      type: 'symbol',
+      source: 'tra-stations',
+      maxzoom: 10,  // 只在 zoom < 10 時顯示
+      filter: ['in', ['get', 'station_id'], ['literal', MAJOR_STATION_IDS]],
+      layout: {
+        'text-field': ['get', 'name_zh'],
+        'text-size': 10,
+        'text-offset': [0, 0],
+        'text-anchor': 'center',
+        'text-allow-overlap': false,
+        'text-ignore-placement': false,
+      },
+      paint: {
+        'text-color': '#ffffff',
+        'text-halo-color': '#7B7B7B',
+        'text-halo-width': 1,
+        'text-opacity': 1,
+        'text-emissive-strength': 1.0,
+      },
+    });
+
+    // 所有車站標籤（zoom >= 10 時顯示）
     map.current.addLayer({
       id: 'tra-stations-label',
       type: 'symbol',
       source: 'tra-stations',
+      minzoom: 10,  // 只在 zoom >= 10 時顯示
       layout: {
         'text-field': ['get', 'name_zh'],
         'text-size': 10,
         'text-offset': [0, 1.3],
         'text-anchor': 'top',
-        'text-allow-overlap': false,  // 不允許標籤重疊
-        'text-ignore-placement': false,  // 考慮其他標籤的位置
+        'text-allow-overlap': false,
+        'text-ignore-placement': false,
       },
       paint: {
         'text-color': '#ffffff',
@@ -1378,6 +1444,9 @@ function App() {
     }
     if (map.current.getLayer('tra-stations-label')) {
       map.current.setPaintProperty('tra-stations-label', 'text-opacity', stationOpacity);
+    }
+    if (map.current.getLayer('tra-stations-label-major')) {
+      map.current.setPaintProperty('tra-stations-label-major', 'text-opacity', stationOpacity);
     }
   }, [mapLoaded, traState, styleVersion]);
 

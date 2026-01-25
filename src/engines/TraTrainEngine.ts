@@ -192,11 +192,11 @@ function getTrackIdFromOdTrackId(odTrackId: string): string {
     if (odTrackId === 'WL-ZY-CH-1') {
       return 'WL-S-CH-ZY-1';  // 新左營→彰化
     }
-    // 海線：WL-CH-ZN-0 / WL-ZN-CH-1 → WL-C-CH-ZN-0 / WL-C-ZN-CH-1
-    if (odTrackId === 'WL-CH-ZN-0') {
+    // 海線：WL-C-CH-ZN-0 / WL-C-ZN-CH-1 → 同名顯示軌道
+    if (odTrackId === 'WL-C-CH-ZN-0') {
       return 'WL-C-CH-ZN-0';  // 彰化→竹南
     }
-    if (odTrackId === 'WL-ZN-CH-1') {
+    if (odTrackId === 'WL-C-ZN-CH-1') {
       return 'WL-C-ZN-CH-1';  // 竹南→彰化
     }
     // 山線：WL-M-ZN-CH-0 / WL-M-CH-ZN-1 → 同名顯示軌道

@@ -7,10 +7,30 @@
 自 2026-01-10 起，採用 Golden Track 架構管理軌道資料：
 
 ```
-tracks_golden/      ← 黃金版本（前端載入來源）
-tracks_handdrawn/   ← 手繪修正（永不覆蓋）
-tracks_official/    ← TDX 原始資料（fallback）
-tracks_od/          ← O-D 專屬軌道（列車位置計算）
+public/data/tra/
+├── TRACKS_STATUS.md          # 軌道狀態追蹤（本檔案）
+├── STANDARD_WORKFLOW.md      # 標準工作流程
+├── REAL_TIMETABLE_PLAN.md    # 真實時刻表實作計畫
+│
+├── tracks_golden/            # 🏆 黃金版本（前端載入來源）
+├── tracks_od/                # O-D 專屬軌道（列車位置計算）
+├── tracks_handdrawn/         # 手繪修正（永不覆蓋）
+├── tracks_official/          # TDX 原始資料（fallback）
+├── tracks_debug/             # 除錯用暫存檔
+├── tracks_archive/           # 已歸檔的舊版資料
+│
+├── schedules_od/             # O-D 時刻表（目前使用）
+│
+├── stations.geojson          # 車站原始座標
+├── stations_snapped.geojson  # 投影到軌道上的車站座標
+├── od_complete_analysis.json # O-D 組合完整分析
+│
+├── docs/                     # 文件目錄
+│   ├── OD_COMPLETE_LIST.md   # O-D 組合清單
+│   ├── od_analysis.json      # O-D 組合分析
+│   └── archive/              # 已歸檔的舊版文件
+│
+└── tra_shp_data/             # Shapefile 原始資料
 ```
 
 **工作流程**：
@@ -19,8 +39,7 @@ tracks_od/          ← O-D 專屬軌道（列車位置計算）
 3. 使用 `extract_golden_tracks.py` 驗證並產生 `manifest.json`
 4. 前端 `useTraData.ts` 優先載入 `tracks_golden/`
 
-**目錄結構**：
-- `tracks_golden/manifest.json` - 軌道狀態清單
+**手繪目錄結構**：
 - `tracks_handdrawn/YL/` - 宜蘭線手繪區段 (4 檔案)
 - `tracks_handdrawn/KL/` - 基隆支線手繪區段 (2 檔案)
 - `tracks_handdrawn/BH/` - 北迴線手繪區段 (2 檔案)
@@ -94,18 +113,24 @@ tracks_od/          ← O-D 專屬軌道（列車位置計算）
 ### JJ 集集線
 | 項目 | 狀態 |
 |------|------|
-| 軌道資料 | 📋 待處理 |
-| O-D 軌道 | 📋 待處理 |
-| 時刻表 | 📋 待處理 |
-| 備註 | 二水-車埕 |
+| 軌道資料 | ✅ 完成 |
+| O-D 軌道 | ✅ 完成 |
+| 時刻表 | ✅ 完成 |
+| 備註 | 二水-車埕，Golden Track + O-D 軌道 |
+
+**Golden Track**：`tracks_golden/JJ-0.geojson`, `JJ-1.geojson`
+**O-D 軌道**：`tracks_od/JJ-CT-ES.geojson`, `JJ-ES-CT.geojson`
 
 ### CZ 成追線
 | 項目 | 狀態 |
 |------|------|
-| 軌道資料 | 📋 待處理 |
-| O-D 軌道 | 📋 待處理 |
-| 時刻表 | 📋 待處理 |
-| 備註 | 追分-成功 |
+| 軌道資料 | ✅ 完成 |
+| O-D 軌道 | ✅ 完成 |
+| 時刻表 | ✅ 完成 |
+| 備註 | 追分-成功，與山線共用成功站 (3330) |
+
+**Golden Track**：`tracks_golden/CZ-0.geojson`, `CZ-1.geojson`
+**O-D 軌道**：`tracks_od/CZ-CG-ZF.geojson`, `CZ-ZF-CG.geojson`
 
 ### KL 基隆支線
 | 項目 | 狀態 |
@@ -363,6 +388,22 @@ tracks_od/          ← O-D 專屬軌道（列車位置計算）
 ---
 
 ## 更新紀錄
+
+### 2026-01-25 (檔案結構整理)
+- **整理目錄結構**，移除過時檔案和空目錄
+- 建立 `docs/` 目錄存放文件，`docs/archive/` 存放歸檔文件
+- 移動舊版計畫文件到 `docs/archive/`：
+  - `IMPLEMENTATION_PLAN.md` (舊版實作計畫)
+  - `WESTERN_LINE_PLAN.md` (西部幹線計畫)
+  - `WL-M_ISSUE_REPORT.md` (山線問題報告)
+  - `track_doc.md` (舊版文檔)
+- 移動過時檔案到 `tracks_archive/`：
+  - `station_progress.json` (舊版 progress，已改用 `tracks_od/od_station_progress.json`)
+  - `shalun_stations.geojson` (沙崙線專用車站資料)
+  - `schedules/` (舊格式時刻表，已改用 `schedules_od/`)
+- 刪除空目錄：`tracks_raw/`, `tra_docs/`
+- 更新 JJ 集集線和 CZ 成追線狀態為「✅ 完成」
+- 更新目錄結構說明
 
 ### 2026-01-25 (SA 深澳線完成)
 - **SA 深澳線完成** (瑞芳-八斗子，3 站)

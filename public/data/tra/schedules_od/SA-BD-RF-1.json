@@ -1,0 +1,464 @@
+{
+  "track_id": "SA-BD-RF-1",
+  "departures": [
+    {
+      "train_id": "SA-BD-RF-1-0600",
+      "train_no": "SA4006",
+      "train_type": "區間",
+      "departure_time": "06:00:00",
+      "od_track_id": "SA-BD-RF-1",
+      "origin_station": "八斗子",
+      "destination_station": "瑞芳",
+      "total_travel_time": 720,
+      "stations": [
+        {
+          "station_id": "7362",
+          "arrival": 0,
+          "departure": 60
+        },
+        {
+          "station_id": "7361",
+          "arrival": 180,
+          "departure": 240
+        },
+        {
+          "station_id": "7360",
+          "arrival": 660,
+          "departure": 720
+        }
+      ]
+    },
+    {
+      "train_id": "SA-BD-RF-1-0700",
+      "train_no": "SA4007",
+      "train_type": "區間",
+      "departure_time": "07:00:00",
+      "od_track_id": "SA-BD-RF-1",
+      "origin_station": "八斗子",
+      "destination_station": "瑞芳",
+      "total_travel_time": 720,
+      "stations": [
+        {
+          "station_id": "7362",
+          "arrival": 0,
+          "departure": 60
+        },
+        {
+          "station_id": "7361",
+          "arrival": 180,
+          "departure": 240
+        },
+        {
+          "station_id": "7360",
+          "arrival": 660,
+          "departure": 720
+        }
+      ]
+    },
+    {
+      "train_id": "SA-BD-RF-1-0800",
+      "train_no": "SA4008",
+      "train_type": "區間",
+      "departure_time": "08:00:00",
+      "od_track_id": "SA-BD-RF-1",
+      "origin_station": "八斗子",
+      "destination_station": "瑞芳",
+      "total_travel_time": 720,
+      "stations": [
+        {
+          "station_id": "7362",
+          "arrival": 0,
+          "departure": 60
+        },
+        {
+          "station_id": "7361",
+          "arrival": 180,
+          "departure": 240
+        },
+        {
+          "station_id": "7360",
+          "arrival": 660,
+          "departure": 720
+        }
+      ]
+    },
+    {
+      "train_id": "SA-BD-RF-1-0900",
+      "train_no": "SA4009",
+      "train_type": "區間",
+      "departure_time": "09:00:00",
+      "od_track_id": "SA-BD-RF-1",
+      "origin_station": "八斗子",
+      "destination_station": "瑞芳",
+      "total_travel_time": 720,
+      "stations": [
+        {
+          "station_id": "7362",
+          "arrival": 0,
+          "departure": 60
+        },
+        {
+          "station_id": "7361",
+          "arrival": 180,
+          "departure": 240
+        },
+        {
+          "station_id": "7360",
+          "arrival": 660,
+          "departure": 720
+        }
+      ]
+    },
+    {
+      "train_id": "SA-BD-RF-1-1000",
+      "train_no": "SA4010",
+      "train_type": "區間",
+      "departure_time": "10:00:00",
+      "od_track_id": "SA-BD-RF-1",
+      "origin_station": "八斗子",
+      "destination_station": "瑞芳",
+      "total_travel_time": 720,
+      "stations": [
+        {
+          "station_id": "7362",
+          "arrival": 0,
+          "departure": 60
+        },
+        {
+          "station_id": "7361",
+          "arrival": 180,
+          "departure": 240
+        },
+        {
+          "station_id": "7360",
+          "arrival": 660,
+          "departure": 720
+        }
+      ]
+    },
+    {
+      "train_id": "SA-BD-RF-1-1100",
+      "train_no": "SA4011",
+      "train_type": "區間",
+      "departure_time": "11:00:00",
+      "od_track_id": "SA-BD-RF-1",
+      "origin_station": "八斗子",
+      "destination_station": "瑞芳",
+      "total_travel_time": 720,
+      "stations": [
+        {
+          "station_id": "7362",
+          "arrival": 0,
+          "departure": 60
+        },
+        {
+          "station_id": "7361",
+          "arrival": 180,
+          "departure": 240
+        },
+        {
+          "station_id": "7360",
+          "arrival": 660,
+          "departure": 720
+        }
+      ]
+    },
+    {
+      "train_id": "SA-BD-RF-1-1200",
+      "train_no": "SA4012",
+      "train_type": "區間",
+      "departure_time": "12:00:00",
+      "od_track_id": "SA-BD-RF-1",
+      "origin_station": "八斗子",
+      "destination_station": "瑞芳",
+      "total_travel_time": 720,
+      "stations": [
+        {
+          "station_id": "7362",
+          "arrival": 0,
+          "departure": 60
+        },
+        {
+          "station_id": "7361",
+          "arrival": 180,
+          "departure": 240
+        },
+        {
+          "station_id": "7360",
+          "arrival": 660,
+          "departure": 720
+        }
+      ]
+    },
+    {
+      "train_id": "SA-BD-RF-1-1300",
+      "train_no": "SA4013",
+      "train_type": "區間",
+      "departure_time": "13:00:00",
+      "od_track_id": "SA-BD-RF-1",
+      "origin_station": "八斗子",
+      "destination_station": "瑞芳",
+      "total_travel_time": 720,
+      "stations": [
+        {
+          "station_id": "7362",
+          "arrival": 0,
+          "departure": 60
+        },
+        {
+          "station_id": "7361",
+          "arrival": 180,
+          "departure": 240
+        },
+        {
+          "station_id": "7360",
+          "arrival": 660,
+          "departure": 720
+        }
+      ]
+    },
+    {
+      "train_id": "SA-BD-RF-1-1400",
+      "train_no": "SA4014",
+      "train_type": "區間",
+      "departure_time": "14:00:00",
+      "od_track_id": "SA-BD-RF-1",
+      "origin_station": "八斗子",
+      "destination_station": "瑞芳",
+      "total_travel_time": 720,
+      "stations": [
+        {
+          "station_id": "7362",
+          "arrival": 0,
+          "departure": 60
+        },
+        {
+          "station_id": "7361",
+          "arrival": 180,
+          "departure": 240
+        },
+        {
+          "station_id": "7360",
+          "arrival": 660,
+          "departure": 720
+        }
+      ]
+    },
+    {
+      "train_id": "SA-BD-RF-1-1500",
+      "train_no": "SA4015",
+      "train_type": "區間",
+      "departure_time": "15:00:00",
+      "od_track_id": "SA-BD-RF-1",
+      "origin_station": "八斗子",
+      "destination_station": "瑞芳",
+      "total_travel_time": 720,
+      "stations": [
+        {
+          "station_id": "7362",
+          "arrival": 0,
+          "departure": 60
+        },
+        {
+          "station_id": "7361",
+          "arrival": 180,
+          "departure": 240
+        },
+        {
+          "station_id": "7360",
+          "arrival": 660,
+          "departure": 720
+        }
+      ]
+    },
+    {
+      "train_id": "SA-BD-RF-1-1600",
+      "train_no": "SA4016",
+      "train_type": "區間",
+      "departure_time": "16:00:00",
+      "od_track_id": "SA-BD-RF-1",
+      "origin_station": "八斗子",
+      "destination_station": "瑞芳",
+      "total_travel_time": 720,
+      "stations": [
+        {
+          "station_id": "7362",
+          "arrival": 0,
+          "departure": 60
+        },
+        {
+          "station_id": "7361",
+          "arrival": 180,
+          "departure": 240
+        },
+        {
+          "station_id": "7360",
+          "arrival": 660,
+          "departure": 720
+        }
+      ]
+    },
+    {
+      "train_id": "SA-BD-RF-1-1700",
+      "train_no": "SA4017",
+      "train_type": "區間",
+      "departure_time": "17:00:00",
+      "od_track_id": "SA-BD-RF-1",
+      "origin_station": "八斗子",
+      "destination_station": "瑞芳",
+      "total_travel_time": 720,
+      "stations": [
+        {
+          "station_id": "7362",
+          "arrival": 0,
+          "departure": 60
+        },
+        {
+          "station_id": "7361",
+          "arrival": 180,
+          "departure": 240
+        },
+        {
+          "station_id": "7360",
+          "arrival": 660,
+          "departure": 720
+        }
+      ]
+    },
+    {
+      "train_id": "SA-BD-RF-1-1800",
+      "train_no": "SA4018",
+      "train_type": "區間",
+      "departure_time": "18:00:00",
+      "od_track_id": "SA-BD-RF-1",
+      "origin_station": "八斗子",
+      "destination_station": "瑞芳",
+      "total_travel_time": 720,
+      "stations": [
+        {
+          "station_id": "7362",
+          "arrival": 0,
+          "departure": 60
+        },
+        {
+          "station_id": "7361",
+          "arrival": 180,
+          "departure": 240
+        },
+        {
+          "station_id": "7360",
+          "arrival": 660,
+          "departure": 720
+        }
+      ]
+    },
+    {
+      "train_id": "SA-BD-RF-1-1900",
+      "train_no": "SA4019",
+      "train_type": "區間",
+      "departure_time": "19:00:00",
+      "od_track_id": "SA-BD-RF-1",
+      "origin_station": "八斗子",
+      "destination_station": "瑞芳",
+      "total_travel_time": 720,
+      "stations": [
+        {
+          "station_id": "7362",
+          "arrival": 0,
+          "departure": 60
+        },
+        {
+          "station_id": "7361",
+          "arrival": 180,
+          "departure": 240
+        },
+        {
+          "station_id": "7360",
+          "arrival": 660,
+          "departure": 720
+        }
+      ]
+    },
+    {
+      "train_id": "SA-BD-RF-1-2000",
+      "train_no": "SA4020",
+      "train_type": "區間",
+      "departure_time": "20:00:00",
+      "od_track_id": "SA-BD-RF-1",
+      "origin_station": "八斗子",
+      "destination_station": "瑞芳",
+      "total_travel_time": 720,
+      "stations": [
+        {
+          "station_id": "7362",
+          "arrival": 0,
+          "departure": 60
+        },
+        {
+          "station_id": "7361",
+          "arrival": 180,
+          "departure": 240
+        },
+        {
+          "station_id": "7360",
+          "arrival": 660,
+          "departure": 720
+        }
+      ]
+    },
+    {
+      "train_id": "SA-BD-RF-1-2100",
+      "train_no": "SA4021",
+      "train_type": "區間",
+      "departure_time": "21:00:00",
+      "od_track_id": "SA-BD-RF-1",
+      "origin_station": "八斗子",
+      "destination_station": "瑞芳",
+      "total_travel_time": 720,
+      "stations": [
+        {
+          "station_id": "7362",
+          "arrival": 0,
+          "departure": 60
+        },
+        {
+          "station_id": "7361",
+          "arrival": 180,
+          "departure": 240
+        },
+        {
+          "station_id": "7360",
+          "arrival": 660,
+          "departure": 720
+        }
+      ]
+    },
+    {
+      "train_id": "SA-BD-RF-1-2200",
+      "train_no": "SA4022",
+      "train_type": "區間",
+      "departure_time": "22:00:00",
+      "od_track_id": "SA-BD-RF-1",
+      "origin_station": "八斗子",
+      "destination_station": "瑞芳",
+      "total_travel_time": 720,
+      "stations": [
+        {
+          "station_id": "7362",
+          "arrival": 0,
+          "departure": 60
+        },
+        {
+          "station_id": "7361",
+          "arrival": 180,
+          "departure": 240
+        },
+        {
+          "station_id": "7360",
+          "arrival": 660,
+          "departure": 720
+        }
+      ]
+    }
+  ]
+}

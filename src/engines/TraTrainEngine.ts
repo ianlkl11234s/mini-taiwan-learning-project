@@ -384,6 +384,17 @@ function getTrackIdFromOdTrackId(odTrackId: string): string {
     return 'PT-0';
   }
 
+  // SA 深澳線 (瑞芳↔八斗子)
+  if (lineId === 'SA') {
+    if (odTrackId === 'SA-RF-BD-0') {
+      return 'SA-RF-BD-0';  // 瑞芳→八斗子
+    }
+    if (odTrackId === 'SA-BD-RF-1') {
+      return 'SA-BD-RF-1';  // 八斗子→瑞芳
+    }
+    return 'SA-RF-BD-0';
+  }
+
   // 預設：使用舊邏輯
   const mainStations: Record<string, string> = {
     'NW': 'HC',  // 新竹

@@ -1,7 +1,8 @@
 # TRA 真實時刻表實作計畫
 
 > 建立時間：2026-01-25
-> 狀態：規劃中
+> 最後更新：2026-01-26
+> 狀態：準備執行
 
 ---
 
@@ -19,73 +20,146 @@
 | 實際 O-D 組合 | 288 組 | 來自 TDX API |
 | 總班次數 | 928 班 | 定期車次 |
 | 資料來源日期 | 2026-01-13 | `od_complete_analysis.json` |
+| 現有腳本 | 33 個 | 可重用大部分邏輯 |
 
 **結論**：現有軌道可支援所有路線組合，新的 O-D 軌道可透過「從現有軌道擷取子區段」產生。
 
 ---
 
-## Phase 1：O-D 軌道精細化
+## 系統設計確認
 
-### 1.1 確認資料來源
-- [ ] 確認 TDX API 時刻表日期（目前 2026-01-13）
-- [ ] 決定是否使用更新的時刻表資料
-- [ ] 確認 TDX API 存取權限
+### 列車位置計算機制
 
-### 1.2 建立軌道擷取機制
-- [ ] 建立腳本 `extract_od_segment.py`
-  - 輸入：起站 ID、迄站 ID、基礎軌道
-  - 輸出：新的 O-D 軌道 GeoJSON + station_progress
-- [ ] 支援跨路線軌道合併
+```
+時刻表 stations[] ──→ 只包含「實際停靠站」
+                          ↓
+stationProgress{} ──→ 包含「軌道上所有車站」的 progress 值
+                          ↓
+TraTrainEngine ─────→ 在兩個停靠站之間「沿軌道連續移動」
+```
 
-### 1.3 按路線組合處理
+### 自強號與區間車的相容性
 
-| 優先級 | 路線組合 | O-D 組合數 | 班次數 | 處理方式 |
-|--------|----------|------------|--------|----------|
-| P1 | WL only | 132 | 323 | 從 WL-N/M/C/S 擷取 |
-| P2 | KL+WL | 30 | 124 | 從 WL-N + KL 擷取 |
-| P3 | SH+WL | 8 | 73 | 從 WL-S + SH 擷取 |
-| P4 | WL+YL | 39 | 73 | 從 WL-N + YL 擷取 |
-| P5 | LJ+NW+WL | 2 | 70 | 已有 (六家線) |
-| P6 | BH+WL+YL | 15 | 46 | 從 YL+BH 擷取 |
-| P7 | NW+WL | 5 | 43 | 從 WL-N + NW 擷取 |
-| P8 | 其他 | 57 | 176 | 個別處理 |
+- ✅ 兩者使用相同的 O-D 軌道和 stationProgress
+- ✅ 差別只在時刻表的 stations 陣列內容
+- ✅ 自強號會經過中間站位置，但不停留
+- ✅ 速度根據站間時間自動調整
 
-### 1.4 預計產出
-- 建立 `tracks_od/` 下新增約 50-80 條細分軌道
-- 更新 `od_station_progress.json`
+### 關鍵條件
+
+- stationProgress 必須包含時刻表中所有可能的停靠站
+- TDX 時刻表的停靠站都是合法車站，不會有問題
 
 ---
 
-## Phase 2：車種與停靠站配置
+## Phase 0：資料準備
 
-### 2.1 車種資料結構
+### 0.1 目標
+為後續步驟建立完整的資料基礎。
+
+### 0.2 腳本清單
+
+```
+scripts/tra/prepare_real_timetable/
+├── 01_fetch_tdx_timetable.py    # 下載最新 TDX 時刻表
+├── 02_build_station_mapping.py  # 建立車站 ID ↔ 名稱對照表
+├── 03_build_od_mapping.py       # 建立 O-D → 基礎軌道對照表
+└── 04_analyze_missing_od.py     # 分析缺少的 O-D 軌道
+```
+
+### 0.3 產出檔案
+
+| 檔案 | 說明 |
+|------|------|
+| `data/tdx_timetable_YYYYMMDD.json` | TDX 原始時刻表 |
+| `data/station_mapping.json` | 車站對照表 |
+| `data/od_to_base_track.json` | O-D → 基礎軌道對照 |
+| `data/missing_od_tracks.json` | 需要新建的 O-D 軌道清單 |
+
+### 0.4 檢查項目
+
+- [ ] 確認 TDX API Key 有效
+- [ ] 測試 `/v2/Rail/TRA/GeneralTrainTimetable/Today` 端點
+- [ ] 下載最新時刻表資料
+- [ ] 確認 288 個 O-D 組合都有對應的基礎軌道
+
+---
+
+## Phase 1：O-D 軌道精細化
+
+### 1.1 目標
+從現有 46 條軌道擴展到支援 288 組 O-D 組合。
+
+### 1.2 核心工具
+
+```python
+# scripts/tra/extract_od_segment.py
+# 輸入：起站 ID、迄站 ID、基礎軌道清單
+# 輸出：新的 O-D 軌道 GeoJSON + station_progress
+```
+
+### 1.3 按優先級批次處理
+
+| 批次 | 路線組合 | O-D 數 | 班次數 | 處理腳本 |
+|------|----------|--------|--------|----------|
+| B1 | WL only | 132 | 323 | `batch_wl_od.py` |
+| B2 | KL+WL | 30 | 124 | `batch_kl_wl_od.py` |
+| B3 | SH+WL | 8 | 73 | `batch_sh_wl_od.py` |
+| B4 | WL+YL | 39 | 73 | `batch_wl_yl_od.py` |
+| B5 | LJ+NW+WL | 2 | 70 | 已有 (六家線) |
+| B6 | BH+WL+YL | 15 | 46 | `batch_bh_wl_yl_od.py` |
+| B7 | NW+WL | 5 | 43 | `batch_nw_wl_od.py` |
+| B8 | 其他 | 57 | 176 | `batch_others_od.py` |
+
+### 1.4 預計產出
+
+- `tracks_od/` 下新增約 50-80 條細分軌道
+- 更新 `od_station_progress.json`
+
+### 1.5 驗證標準
+
+- 每條軌道座標點 > 50
+- station_progress 起點 = 0.0, 終點 = 1.0
+- 所有途經車站都有 progress 值
+
+---
+
+## Phase 2：車種配置 (簡化版)
+
+### 2.1 目標
+定義車種顏色，用於 3D 渲染區分。
+
+### 2.2 車種定義
 
 ```typescript
 // src/constants/traTrainTypes.ts
-export interface TraTrainType {
-  id: string;           // 'TC', 'PP', 'TZ', 'CK', 'FX', 'LC'
-  name: string;         // '自強', '普悠瑪', '太魯閣', '區間快', '復興', '區間'
-  color: string;        // 列車顏色 (用於 3D 渲染)
-  priority: number;     // 顯示優先級 (越高越優先)
-}
+export const TRA_TRAIN_TYPES: Record<string, { name: string; color: string }> = {
+  'TC': { name: '自強(3000)', color: '#FF6B00' },  // 橘色 - EMU3000
+  'PP': { name: '普悠瑪', color: '#E53935' },      // 紅色 - 傾斜式
+  'TZ': { name: '太魯閣', color: '#E53935' },      // 紅色 - 傾斜式
+  'CK': { name: '區間快', color: '#1976D2' },      // 深藍 - 快車
+  'FX': { name: '復興', color: '#42A5F5' },        // 淺藍 - 各站停
+  'LC': { name: '區間', color: '#42A5F5' },        // 淺藍 - 各站停
+  'OTHER': { name: '其他', color: '#9E9E9E' },     // 灰色 - 臨時車
+};
 ```
 
-### 2.2 車種清單
+### 2.3 車種代碼解析規則
 
-| 代碼 | 車種 | 班次數 | 顏色建議 | 特性 |
-|------|------|--------|----------|------|
-| TC | 自強(3000) | ~50 | 橘色 | EMU3000，只停大站 |
-| PP | 普悠瑪 | ~30 | 紅色 | 傾斜式列車 |
-| TZ | 太魯閣 | ~30 | 紅色 | 傾斜式列車 |
-| CK | 區間快 | ~100 | 藍色 | 停較多站 |
-| FX | 復興 | ~400 | 藍色 | 各站停靠 |
-| LC | 區間 | ~200 | 藍色 | 各站停靠 |
-| OTHER | 其他 | ~100 | 灰色 | 臨時車、觀光列車 |
+| TDX TrainTypeName | 代碼 |
+|-------------------|------|
+| 自強(3000) | TC |
+| 普悠瑪 | PP |
+| 太魯閣 | TZ |
+| 區間快 | CK |
+| 復興 | FX |
+| 區間 | LC |
+| 其他 | OTHER |
 
-### 2.3 停靠站規則
-- [ ] 建立 `traStopPatterns.ts`：各車種停靠站清單
-- [ ] 根據 TDX 時刻表解析每班車的實際停靠站
-- [ ] 計算站間行駛時間（依車種調整）
+### 2.4 不需要的項目 (已簡化)
+
+- ~~各車種停靠站清單~~ → TDX 時刻表已包含
+- ~~站間行駛時間計算~~ → TDX 時刻表已包含
 
 ---
 
@@ -131,23 +205,25 @@ export interface TraTrainType {
 ```
 
 ### 3.3 轉換腳本
-- [ ] 建立 `scripts/tra/convert_tdx_timetable.py`
-- [ ] 自動對應 O-D 軌道（根據起迄站匹配）
-- [ ] 轉換時間為相對秒數
-- [ ] 驗證站點存在於 station_progress
 
-### 3.4 時刻表檔案結構
+```python
+# scripts/tra/convert_tdx_timetable.py
+# 功能：
+# 1. 讀取 TDX 時刻表
+# 2. 解析車種代碼
+# 3. 匹配 O-D 軌道
+# 4. 轉換時間為相對秒數
+# 5. 產生 Mini Taiwan 格式
+```
+
+### 3.4 輸出結構
 
 ```
 schedules_od/
-├── by_train_type/          # 按車種分類
-│   ├── TC.json             # 所有自強號
-│   ├── PP.json             # 所有普悠瑪
-│   └── ...
-├── by_od/                  # 按 O-D 分類 (現有結構)
-│   ├── YL-SL-HL-0.json
-│   └── ...
-└── master_schedule.json    # 完整時刻表索引
+├── master_schedule.json    # 索引檔：928 班車基本資訊
+└── by_od/                  # 按 O-D 分類
+    ├── WL-N-SL-KL-0.json
+    └── ...
 ```
 
 ---
@@ -155,29 +231,89 @@ schedules_od/
 ## Phase 4：驗證與調整
 
 ### 4.1 自動驗證腳本
-- [ ] `validate_schedule_stations.py`：檢查時刻表站點是否存在於軌道
-- [ ] `validate_travel_time.py`：檢查站間時間是否合理
-- [ ] `detect_train_collision.py`：檢查同軌道列車是否重疊
+
+| 腳本 | 用途 |
+|------|------|
+| `validate_schedule_stations.py` | 檢查時刻表站點是否存在於 stationProgress |
+| `validate_travel_time.py` | 檢查站間時間是否合理 (> 0) |
+| `validate_od_coverage.py` | 檢查所有時刻表都有對應的 O-D 軌道 |
 
 ### 4.2 視覺驗證
+
 - [ ] 在地圖上測試各車種列車運行
 - [ ] 確認停站位置正確
 - [ ] 確認列車顏色區分
-- [ ] 測試高密度時段（如早晨尖峰）
+- [ ] 測試高密度時段（如早晨尖峰 07:00-09:00）
 
 ---
 
 ## Phase 5：前端整合
 
 ### 5.1 TraTrainEngine 更新
-- [ ] 支援車種識別
+
+- [ ] 支援車種識別 (`train_type_code`)
 - [ ] 根據車種設定列車顏色
-- [ ] 優化大量列車渲染效能
+- [ ] 優化大量列車渲染效能 (928 班)
 
 ### 5.2 UI 更新
+
 - [ ] TrainInfoPanel 顯示車種資訊
 - [ ] 新增車種篩選功能（可選）
 - [ ] 新增時刻表查詢功能（可選）
+
+---
+
+## 時刻表替換流程
+
+### 快速替換步驟
+
+當需要更新時刻表時（如 2 月初更新），只需：
+
+```bash
+# 1. 下載新時刻表
+python3 scripts/tra/prepare_real_timetable/01_fetch_tdx_timetable.py
+
+# 2. 重新轉換（O-D 軌道不需重建）
+python3 scripts/tra/convert_tdx_timetable.py
+
+# 3. 驗證
+python3 scripts/tra/validate_all.py
+```
+
+### 替換條件
+
+- ✅ 新時刻表的停靠站都在現有 stationProgress 中 → 直接替換
+- ⚠️ 新時刻表有新的 O-D 組合 → 需要先執行 Phase 1 新增軌道
+- ⚠️ 新時刻表有新的車站 → 需要更新 stationProgress
+
+---
+
+## Agent 配置
+
+### Agent 1: real-timetable-pipeline
+
+**用途**：協調整個流程，追蹤進度
+
+### Agent 2: od-batch-generator
+
+**用途**：批次產生 O-D 軌道 (Phase 1)
+
+### Agent 3: schedule-converter
+
+**用途**：TDX 時刻表轉換 (Phase 3)
+
+---
+
+## 里程碑
+
+| 里程碑 | 內容 | 完成條件 |
+|--------|------|----------|
+| M0 | Phase 0 完成 | 資料準備完成，對照表建立 |
+| M1 | Phase 1 完成 | 所有 288 O-D 軌道可用 |
+| M2 | Phase 2 完成 | 車種定義檔建立 |
+| M3 | Phase 3 完成 | 928 班時刻表轉換完成 |
+| M4 | Phase 4 完成 | 驗證通過，列車正常運行 |
+| M5 | Phase 5 完成 | 前端整合完成 |
 
 ---
 
@@ -188,52 +324,26 @@ schedules_od/
 | `/v2/Rail/TRA/GeneralTrainTimetable/Today` | 當日所有列車時刻表 | 主要資料來源 |
 | `/v2/Rail/TRA/DailyTrainTimetable/Today` | 當日實際運行時刻表 | 含臨時調整 |
 | `/v2/Rail/TRA/Station` | 車站基本資料 | 已有備份 |
-| `/v2/Rail/TRA/Shape` | 軌道形狀 | 已有備份 |
-
----
-
-## 預計工具/Agent
-
-### 建議建立的工具
-
-| 工具名稱 | 用途 |
-|----------|------|
-| `extract_od_segment.py` | 從現有軌道擷取子區段 |
-| `convert_tdx_timetable.py` | TDX 時刻表轉換 |
-| `validate_schedule.py` | 時刻表驗證 |
-| `batch_generate_od.py` | 批次產生 O-D 軌道 |
-
-### 建議建立的 Agent
-
-| Agent 名稱 | 用途 |
-|------------|------|
-| `timetable-converter` | 自動化時刻表轉換流程 |
-| `od-track-generator` | 自動化 O-D 軌道產生 |
-
----
-
-## 里程碑
-
-| 里程碑 | 內容 | 預計完成條件 |
-|--------|------|--------------|
-| M1 | Phase 1 完成 | 所有 288 O-D 軌道可用 |
-| M2 | Phase 2 完成 | 車種資料結構定義完成 |
-| M3 | Phase 3 完成 | 928 班時刻表轉換完成 |
-| M4 | Phase 4 完成 | 驗證通過，列車正常運行 |
-| M5 | Phase 5 完成 | 前端整合完成 |
 
 ---
 
 ## 參考文件
 
-- `od_complete_analysis.json`：O-D 組合分析資料
-- `OD_COMPLETE_LIST.md`：O-D 組合清單 (Markdown)
-- `TRACKS_STATUS.md`：軌道狀態追蹤
-- `STANDARD_WORKFLOW.md`：軌道建立標準流程
+| 文件 | 說明 |
+|------|------|
+| `docs/OD_COMPLETE_LIST.md` | O-D 組合清單 |
+| `TRACKS_STATUS.md` | 軌道狀態追蹤 |
+| `STANDARD_WORKFLOW.md` | 軌道建立標準流程 |
 
 ---
 
 ## 更新紀錄
+
+### 2026-01-26
+- 簡化 Phase 2（車種配置）：移除不需要的停靠站規則
+- 確認系統設計：自強號與區間車相容性
+- 新增時刻表替換流程說明
+- 新增 Agent 配置章節
 
 ### 2026-01-25
 - 初版計畫建立

@@ -198,10 +198,6 @@ function getTrackIdFromOdTrackId(odTrackId: string): string {
     if (trackStr.includes('JJ')) {
       return 'JJ-0';
     }
-    // 成追線
-    if (trackStr.includes('CZ')) {
-      return 'CZ-0';
-    }
     // 臺東相關
     if (trackStr.includes('TT')) {
       return 'TL-0';
@@ -218,8 +214,8 @@ function getTrackIdFromOdTrackId(odTrackId: string): string {
     if (trackStr.includes('SHL') || trackStr.includes('沙崙')) {
       return 'SH-0';
     }
-    // 嘉義、臺南等南段
-    if (trackStr.includes('CY') || trackStr.includes('TN') || trackStr.includes('KS')) {
+    // 嘉義、臺南、潮州等南段（CZ=潮州，非成追線）
+    if (trackStr.includes('CY') || trackStr.includes('TN') || trackStr.includes('KS') || trackStr.includes('CZ')) {
       return 'WL-S-CH-ZY-0';
     }
     // 彰化相關

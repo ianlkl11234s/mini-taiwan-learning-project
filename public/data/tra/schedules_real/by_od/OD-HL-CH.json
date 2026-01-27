@@ -266,7 +266,7 @@
           "departure": 10920
         },
         {
-          "station_id": "3325",
+          "station_id": "3330",
           "arrival": 11280,
           "departure": 11340
         },
@@ -2519,7 +2519,7 @@
           "departure": 9420
         },
         {
-          "station_id": "3325",
+          "station_id": "3330",
           "arrival": 9780,
           "departure": 9840
         },
@@ -3351,7 +3351,7 @@
       "od_track_id": "OD-HL-CH",
       "origin_station": "北湖",
       "destination_station": "新烏日",
-      "total_travel_time": 8880,
+      "total_travel_time": 8700,
       "stations": [
         {
           "station_id": "1150",
@@ -3492,11 +3492,6 @@
           "station_id": "3330",
           "arrival": 8700,
           "departure": 8760
-        },
-        {
-          "station_id": "3325",
-          "arrival": 8880,
-          "departure": 8880
         }
       ]
     },

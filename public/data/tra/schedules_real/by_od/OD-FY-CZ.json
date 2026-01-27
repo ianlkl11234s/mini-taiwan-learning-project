@@ -33,11 +33,6 @@
           "departure": 660
         },
         {
-          "station_id": "3325",
-          "arrival": 720,
-          "departure": 840
-        },
-        {
           "station_id": "3360",
           "arrival": 1500,
           "departure": 1680
@@ -136,11 +131,6 @@
           "departure": 2040
         },
         {
-          "station_id": "3325",
-          "arrival": 2100,
-          "departure": 2160
-        },
-        {
           "station_id": "3360",
           "arrival": 2760,
           "departure": 2760
@@ -207,11 +197,6 @@
           "station_id": "3330",
           "arrival": 1920,
           "departure": 1980
-        },
-        {
-          "station_id": "3325",
-          "arrival": 2040,
-          "departure": 2100
         },
         {
           "station_id": "3360",
@@ -282,11 +267,6 @@
           "departure": 2400
         },
         {
-          "station_id": "3325",
-          "arrival": 2460,
-          "departure": 2580
-        },
-        {
           "station_id": "3360",
           "arrival": 3180,
           "departure": 3180
@@ -355,11 +335,6 @@
           "departure": 2400
         },
         {
-          "station_id": "3325",
-          "arrival": 2520,
-          "departure": 2820
-        },
-        {
           "station_id": "3360",
           "arrival": 3420,
           "departure": 3420
@@ -393,7 +368,7 @@
           "departure": 840
         },
         {
-          "station_id": "3325",
+          "station_id": "3330",
           "arrival": 1200,
           "departure": 1260
         },
@@ -551,7 +526,7 @@
           "departure": 840
         },
         {
-          "station_id": "3325",
+          "station_id": "3330",
           "arrival": 1200,
           "departure": 1260
         },
@@ -729,7 +704,7 @@
           "departure": 1320
         },
         {
-          "station_id": "3325",
+          "station_id": "3330",
           "arrival": 1560,
           "departure": 2040
         },
@@ -762,7 +737,7 @@
           "departure": 360
         },
         {
-          "station_id": "3325",
+          "station_id": "3330",
           "arrival": 540,
           "departure": 600
         },
@@ -825,7 +800,7 @@
           "departure": 360
         },
         {
-          "station_id": "3325",
+          "station_id": "3330",
           "arrival": 540,
           "departure": 600
         },

@@ -68,11 +68,6 @@
           "departure": 2400
         },
         {
-          "station_id": "3325",
-          "arrival": 2460,
-          "departure": 2520
-        },
-        {
           "station_id": "3360",
           "arrival": 3120,
           "departure": 3240

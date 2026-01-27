@@ -295,6 +295,62 @@ def main():
     ], 'OD-SHL-CY', all_progress)
     save_track('OD-SHL-CY', coords, progress, ['SH-SL-TN', 'BB-CZ-KL-0'], all_progress)
 
+    # ============================================================
+    # 9. OD-大甲-FY: 大甲→豐原 via 海線+成追線+山線
+    #    海線到追分，成追線到成功(烏日)，山線到豐原
+    # ============================================================
+    print("\n[9] OD-大甲-FY: 大甲→豐原 (海線+成追+山線)")
+    coords, progress = build_crossline_track([
+        {'source_track': 'BB-ZN-ZY-C-1', 'origin': '2200', 'dest': '2260'},  # 海線: 大甲→追分
+        {'source_track': 'CZ-ZF-CG', 'origin': '2260', 'dest': '3330'},      # 成追線: 追分→成功
+        {'source_track': 'BB-ZY-ZN-M-0', 'origin': '3330', 'dest': '3230'},  # 山線: 烏日→豐原
+    ], 'OD-大甲-FY', all_progress)
+    save_track('OD-大甲-FY', coords, progress, ['BB-ZN-ZY-C-1', 'CZ-ZF-CG', 'BB-ZY-ZN-M-0'], all_progress)
+
+    # ============================================================
+    # 10. OD-FY-大甲: 豐原→大甲 via 山線+成追線+海線
+    # ============================================================
+    print("\n[10] OD-FY-大甲: 豐原→大甲 (山線+成追+海線)")
+    coords, progress = build_crossline_track([
+        {'source_track': 'BB-ZN-ZY-M-1', 'origin': '3230', 'dest': '3330'},  # 山線: 豐原→烏日
+        {'source_track': 'CZ-CG-ZF', 'origin': '3330', 'dest': '2260'},      # 成追線: 成功→追分
+        {'source_track': 'BB-ZY-ZN-C-0', 'origin': '2260', 'dest': '2200'},  # 海線: 追分→大甲
+    ], 'OD-FY-大甲', all_progress)
+    save_track('OD-FY-大甲', coords, progress, ['BB-ZN-ZY-M-1', 'CZ-CG-ZF', 'BB-ZY-ZN-C-0'], all_progress)
+
+    # ============================================================
+    # 11. OD-大甲-TC: 大甲→臺中 via 海線+成追線+山線
+    # ============================================================
+    print("\n[11] OD-大甲-TC: 大甲→臺中 (海線+成追+山線)")
+    coords, progress = build_crossline_track([
+        {'source_track': 'BB-ZN-ZY-C-1', 'origin': '2200', 'dest': '2260'},  # 海線: 大甲→追分
+        {'source_track': 'CZ-ZF-CG', 'origin': '2260', 'dest': '3330'},      # 成追線: 追分→成功
+        {'source_track': 'BB-ZY-ZN-M-0', 'origin': '3330', 'dest': '3300'},  # 山線: 烏日→臺中
+    ], 'OD-大甲-TC', all_progress)
+    save_track('OD-大甲-TC', coords, progress, ['BB-ZN-ZY-C-1', 'CZ-ZF-CG', 'BB-ZY-ZN-M-0'], all_progress)
+
+    # ============================================================
+    # 12. OD-TC-大甲: 臺中→大甲 via 山線+成追線+海線
+    # ============================================================
+    print("\n[12] OD-TC-大甲: 臺中→大甲 (山線+成追+海線)")
+    coords, progress = build_crossline_track([
+        {'source_track': 'BB-ZN-ZY-M-1', 'origin': '3300', 'dest': '3330'},  # 山線: 臺中→烏日
+        {'source_track': 'CZ-CG-ZF', 'origin': '3330', 'dest': '2260'},      # 成追線: 成功→追分
+        {'source_track': 'BB-ZY-ZN-C-0', 'origin': '2260', 'dest': '2200'},  # 海線: 追分→大甲
+    ], 'OD-TC-大甲', all_progress)
+    save_track('OD-TC-大甲', coords, progress, ['BB-ZN-ZY-M-1', 'CZ-CG-ZF', 'BB-ZY-ZN-C-0'], all_progress)
+
+    # ============================================================
+    # 13. OD-大甲-ML: 大甲→苗栗 via 海線+成追線+山線
+    # ============================================================
+    print("\n[13] OD-大甲-ML: 大甲→苗栗 (海線+成追+山線)")
+    coords, progress = build_crossline_track([
+        {'source_track': 'BB-ZN-ZY-C-1', 'origin': '2200', 'dest': '2260'},  # 海線: 大甲→追分
+        {'source_track': 'CZ-ZF-CG', 'origin': '2260', 'dest': '3330'},      # 成追線: 追分→成功
+        {'source_track': 'BB-ZY-ZN-M-0', 'origin': '3330', 'dest': '3160'},  # 山線: 烏日→苗栗
+    ], 'OD-大甲-ML', all_progress)
+    save_track('OD-大甲-ML', coords, progress, ['BB-ZN-ZY-C-1', 'CZ-ZF-CG', 'BB-ZY-ZN-M-0'], all_progress)
+
     # 儲存 station_progress
     save_progress(all_progress)
     print("\n✓ 所有跨線軌道建立完成")

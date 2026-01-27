@@ -45,6 +45,1076 @@
       ]
     },
     {
+      "train_id": "LC-3704",
+      "train_no": "3704",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "07:15:00",
+      "od_track_id": "OD-SHL-CY",
+      "origin_station": "沙崙",
+      "destination_station": "善化",
+      "total_travel_time": 2880,
+      "stations": [
+        {
+          "station_id": "4272",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "4270",
+          "arrival": 480,
+          "departure": 540
+        },
+        {
+          "station_id": "4260",
+          "arrival": 720,
+          "departure": 780
+        },
+        {
+          "station_id": "4220",
+          "arrival": 1320,
+          "departure": 1440
+        },
+        {
+          "station_id": "4210",
+          "arrival": 1620,
+          "departure": 1620
+        },
+        {
+          "station_id": "4200",
+          "arrival": 1860,
+          "departure": 1980
+        },
+        {
+          "station_id": "4190",
+          "arrival": 2280,
+          "departure": 2340
+        },
+        {
+          "station_id": "4180",
+          "arrival": 2580,
+          "departure": 2640
+        },
+        {
+          "station_id": "4170",
+          "arrival": 2880,
+          "departure": 2880
+        }
+      ]
+    },
+    {
+      "train_id": "LC-3706",
+      "train_no": "3706",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "07:33:00",
+      "od_track_id": "OD-SHL-CY",
+      "origin_station": "沙崙",
+      "destination_station": "善化",
+      "total_travel_time": 3240,
+      "stations": [
+        {
+          "station_id": "4272",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "4270",
+          "arrival": 480,
+          "departure": 600
+        },
+        {
+          "station_id": "4260",
+          "arrival": 780,
+          "departure": 840
+        },
+        {
+          "station_id": "4220",
+          "arrival": 1380,
+          "departure": 1500
+        },
+        {
+          "station_id": "4210",
+          "arrival": 1680,
+          "departure": 1680
+        },
+        {
+          "station_id": "4200",
+          "arrival": 1920,
+          "departure": 2040
+        },
+        {
+          "station_id": "4190",
+          "arrival": 2340,
+          "departure": 2700
+        },
+        {
+          "station_id": "4180",
+          "arrival": 2940,
+          "departure": 3000
+        },
+        {
+          "station_id": "4170",
+          "arrival": 3240,
+          "departure": 3240
+        }
+      ]
+    },
+    {
+      "train_id": "LC-3708",
+      "train_no": "3708",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "08:15:00",
+      "od_track_id": "OD-SHL-CY",
+      "origin_station": "沙崙",
+      "destination_station": "善化",
+      "total_travel_time": 3300,
+      "stations": [
+        {
+          "station_id": "4272",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "4270",
+          "arrival": 480,
+          "departure": 540
+        },
+        {
+          "station_id": "4260",
+          "arrival": 720,
+          "departure": 780
+        },
+        {
+          "station_id": "4220",
+          "arrival": 1320,
+          "departure": 1380
+        },
+        {
+          "station_id": "4210",
+          "arrival": 1560,
+          "departure": 1560
+        },
+        {
+          "station_id": "4200",
+          "arrival": 1860,
+          "departure": 2220
+        },
+        {
+          "station_id": "4190",
+          "arrival": 2580,
+          "departure": 2760
+        },
+        {
+          "station_id": "4180",
+          "arrival": 3000,
+          "departure": 3060
+        },
+        {
+          "station_id": "4170",
+          "arrival": 3300,
+          "departure": 3300
+        }
+      ]
+    },
+    {
+      "train_id": "LC-3712",
+      "train_no": "3712",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "08:33:00",
+      "od_track_id": "OD-SHL-CY",
+      "origin_station": "沙崙",
+      "destination_station": "善化",
+      "total_travel_time": 2700,
+      "stations": [
+        {
+          "station_id": "4272",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "4270",
+          "arrival": 480,
+          "departure": 540
+        },
+        {
+          "station_id": "4260",
+          "arrival": 720,
+          "departure": 780
+        },
+        {
+          "station_id": "4220",
+          "arrival": 1320,
+          "departure": 1380
+        },
+        {
+          "station_id": "4210",
+          "arrival": 1560,
+          "departure": 1560
+        },
+        {
+          "station_id": "4200",
+          "arrival": 1800,
+          "departure": 1860
+        },
+        {
+          "station_id": "4190",
+          "arrival": 2160,
+          "departure": 2220
+        },
+        {
+          "station_id": "4180",
+          "arrival": 2460,
+          "departure": 2520
+        },
+        {
+          "station_id": "4170",
+          "arrival": 2700,
+          "departure": 2700
+        }
+      ]
+    },
+    {
+      "train_id": "LC-3716",
+      "train_no": "3716",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "09:24:00",
+      "od_track_id": "OD-SHL-CY",
+      "origin_station": "沙崙",
+      "destination_station": "善化",
+      "total_travel_time": 3060,
+      "stations": [
+        {
+          "station_id": "4272",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "4270",
+          "arrival": 480,
+          "departure": 540
+        },
+        {
+          "station_id": "4260",
+          "arrival": 720,
+          "departure": 780
+        },
+        {
+          "station_id": "4220",
+          "arrival": 1320,
+          "departure": 1380
+        },
+        {
+          "station_id": "4210",
+          "arrival": 1560,
+          "departure": 1560
+        },
+        {
+          "station_id": "4200",
+          "arrival": 1800,
+          "departure": 1860
+        },
+        {
+          "station_id": "4190",
+          "arrival": 2160,
+          "departure": 2520
+        },
+        {
+          "station_id": "4180",
+          "arrival": 2760,
+          "departure": 2820
+        },
+        {
+          "station_id": "4170",
+          "arrival": 3060,
+          "departure": 3060
+        }
+      ]
+    },
+    {
+      "train_id": "LC-3722",
+      "train_no": "3722",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "10:28:00",
+      "od_track_id": "OD-SHL-CY",
+      "origin_station": "沙崙",
+      "destination_station": "永康",
+      "total_travel_time": 1920,
+      "stations": [
+        {
+          "station_id": "4272",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "4270",
+          "arrival": 480,
+          "departure": 540
+        },
+        {
+          "station_id": "4260",
+          "arrival": 720,
+          "departure": 780
+        },
+        {
+          "station_id": "4220",
+          "arrival": 1320,
+          "departure": 1440
+        },
+        {
+          "station_id": "4210",
+          "arrival": 1620,
+          "departure": 1620
+        },
+        {
+          "station_id": "4200",
+          "arrival": 1920,
+          "departure": 1920
+        }
+      ]
+    },
+    {
+      "train_id": "LC-3724",
+      "train_no": "3724",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "10:53:00",
+      "od_track_id": "OD-SHL-CY",
+      "origin_station": "沙崙",
+      "destination_station": "永康",
+      "total_travel_time": 1920,
+      "stations": [
+        {
+          "station_id": "4272",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "4270",
+          "arrival": 480,
+          "departure": 540
+        },
+        {
+          "station_id": "4260",
+          "arrival": 720,
+          "departure": 780
+        },
+        {
+          "station_id": "4220",
+          "arrival": 1320,
+          "departure": 1440
+        },
+        {
+          "station_id": "4210",
+          "arrival": 1620,
+          "departure": 1620
+        },
+        {
+          "station_id": "4200",
+          "arrival": 1920,
+          "departure": 1920
+        }
+      ]
+    },
+    {
+      "train_id": "LC-3726",
+      "train_no": "3726",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "11:28:00",
+      "od_track_id": "OD-SHL-CY",
+      "origin_station": "沙崙",
+      "destination_station": "善化",
+      "total_travel_time": 3120,
+      "stations": [
+        {
+          "station_id": "4272",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "4270",
+          "arrival": 480,
+          "departure": 540
+        },
+        {
+          "station_id": "4260",
+          "arrival": 720,
+          "departure": 780
+        },
+        {
+          "station_id": "4220",
+          "arrival": 1320,
+          "departure": 1440
+        },
+        {
+          "station_id": "4210",
+          "arrival": 1620,
+          "departure": 1620
+        },
+        {
+          "station_id": "4200",
+          "arrival": 1860,
+          "departure": 1920
+        },
+        {
+          "station_id": "4190",
+          "arrival": 2220,
+          "departure": 2580
+        },
+        {
+          "station_id": "4180",
+          "arrival": 2820,
+          "departure": 2880
+        },
+        {
+          "station_id": "4170",
+          "arrival": 3120,
+          "departure": 3120
+        }
+      ]
+    },
+    {
+      "train_id": "LC-3734",
+      "train_no": "3734",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "12:45:00",
+      "od_track_id": "OD-SHL-CY",
+      "origin_station": "沙崙",
+      "destination_station": "善化",
+      "total_travel_time": 3180,
+      "stations": [
+        {
+          "station_id": "4272",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "4270",
+          "arrival": 480,
+          "departure": 600
+        },
+        {
+          "station_id": "4260",
+          "arrival": 780,
+          "departure": 840
+        },
+        {
+          "station_id": "4220",
+          "arrival": 1380,
+          "departure": 1560
+        },
+        {
+          "station_id": "4210",
+          "arrival": 1740,
+          "departure": 1740
+        },
+        {
+          "station_id": "4200",
+          "arrival": 1980,
+          "departure": 2040
+        },
+        {
+          "station_id": "4190",
+          "arrival": 2340,
+          "departure": 2640
+        },
+        {
+          "station_id": "4180",
+          "arrival": 2880,
+          "departure": 2940
+        },
+        {
+          "station_id": "4170",
+          "arrival": 3180,
+          "departure": 3180
+        }
+      ]
+    },
+    {
+      "train_id": "LC-3738",
+      "train_no": "3738",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "13:50:00",
+      "od_track_id": "OD-SHL-CY",
+      "origin_station": "沙崙",
+      "destination_station": "永康",
+      "total_travel_time": 1920,
+      "stations": [
+        {
+          "station_id": "4272",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "4270",
+          "arrival": 480,
+          "departure": 540
+        },
+        {
+          "station_id": "4260",
+          "arrival": 720,
+          "departure": 780
+        },
+        {
+          "station_id": "4220",
+          "arrival": 1320,
+          "departure": 1440
+        },
+        {
+          "station_id": "4210",
+          "arrival": 1620,
+          "departure": 1620
+        },
+        {
+          "station_id": "4200",
+          "arrival": 1920,
+          "departure": 1920
+        }
+      ]
+    },
+    {
+      "train_id": "LC-3742",
+      "train_no": "3742",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "14:29:00",
+      "od_track_id": "OD-SHL-CY",
+      "origin_station": "沙崙",
+      "destination_station": "善化",
+      "total_travel_time": 2760,
+      "stations": [
+        {
+          "station_id": "4272",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "4270",
+          "arrival": 480,
+          "departure": 540
+        },
+        {
+          "station_id": "4260",
+          "arrival": 720,
+          "departure": 780
+        },
+        {
+          "station_id": "4220",
+          "arrival": 1320,
+          "departure": 1380
+        },
+        {
+          "station_id": "4210",
+          "arrival": 1560,
+          "departure": 1560
+        },
+        {
+          "station_id": "4200",
+          "arrival": 1800,
+          "departure": 1860
+        },
+        {
+          "station_id": "4190",
+          "arrival": 2160,
+          "departure": 2220
+        },
+        {
+          "station_id": "4180",
+          "arrival": 2460,
+          "departure": 2520
+        },
+        {
+          "station_id": "4170",
+          "arrival": 2760,
+          "departure": 2760
+        }
+      ]
+    },
+    {
+      "train_id": "LC-3746",
+      "train_no": "3746",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "15:23:00",
+      "od_track_id": "OD-SHL-CY",
+      "origin_station": "沙崙",
+      "destination_station": "永康",
+      "total_travel_time": 1860,
+      "stations": [
+        {
+          "station_id": "4272",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "4270",
+          "arrival": 480,
+          "departure": 540
+        },
+        {
+          "station_id": "4260",
+          "arrival": 720,
+          "departure": 780
+        },
+        {
+          "station_id": "4220",
+          "arrival": 1320,
+          "departure": 1380
+        },
+        {
+          "station_id": "4210",
+          "arrival": 1560,
+          "departure": 1560
+        },
+        {
+          "station_id": "4200",
+          "arrival": 1860,
+          "departure": 1860
+        }
+      ]
+    },
+    {
+      "train_id": "LC-3748",
+      "train_no": "3748",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "15:54:00",
+      "od_track_id": "OD-SHL-CY",
+      "origin_station": "沙崙",
+      "destination_station": "善化",
+      "total_travel_time": 2880,
+      "stations": [
+        {
+          "station_id": "4272",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "4270",
+          "arrival": 480,
+          "departure": 600
+        },
+        {
+          "station_id": "4260",
+          "arrival": 780,
+          "departure": 840
+        },
+        {
+          "station_id": "4220",
+          "arrival": 1380,
+          "departure": 1440
+        },
+        {
+          "station_id": "4210",
+          "arrival": 1680,
+          "departure": 1680
+        },
+        {
+          "station_id": "4200",
+          "arrival": 1920,
+          "departure": 1980
+        },
+        {
+          "station_id": "4190",
+          "arrival": 2280,
+          "departure": 2340
+        },
+        {
+          "station_id": "4180",
+          "arrival": 2580,
+          "departure": 2640
+        },
+        {
+          "station_id": "4170",
+          "arrival": 2880,
+          "departure": 2880
+        }
+      ]
+    },
+    {
+      "train_id": "LC-3752",
+      "train_no": "3752",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "16:18:00",
+      "od_track_id": "OD-SHL-CY",
+      "origin_station": "沙崙",
+      "destination_station": "永康",
+      "total_travel_time": 1860,
+      "stations": [
+        {
+          "station_id": "4272",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "4270",
+          "arrival": 480,
+          "departure": 540
+        },
+        {
+          "station_id": "4260",
+          "arrival": 720,
+          "departure": 780
+        },
+        {
+          "station_id": "4220",
+          "arrival": 1320,
+          "departure": 1380
+        },
+        {
+          "station_id": "4210",
+          "arrival": 1560,
+          "departure": 1560
+        },
+        {
+          "station_id": "4200",
+          "arrival": 1860,
+          "departure": 1860
+        }
+      ]
+    },
+    {
+      "train_id": "LC-3754",
+      "train_no": "3754",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "16:38:00",
+      "od_track_id": "OD-SHL-CY",
+      "origin_station": "沙崙",
+      "destination_station": "善化",
+      "total_travel_time": 3180,
+      "stations": [
+        {
+          "station_id": "4272",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "4270",
+          "arrival": 480,
+          "departure": 540
+        },
+        {
+          "station_id": "4260",
+          "arrival": 720,
+          "departure": 780
+        },
+        {
+          "station_id": "4220",
+          "arrival": 1320,
+          "departure": 1440
+        },
+        {
+          "station_id": "4210",
+          "arrival": 1620,
+          "departure": 1620
+        },
+        {
+          "station_id": "4200",
+          "arrival": 1860,
+          "departure": 1980
+        },
+        {
+          "station_id": "4190",
+          "arrival": 2280,
+          "departure": 2700
+        },
+        {
+          "station_id": "4180",
+          "arrival": 2940,
+          "departure": 3000
+        },
+        {
+          "station_id": "4170",
+          "arrival": 3180,
+          "departure": 3180
+        }
+      ]
+    },
+    {
+      "train_id": "LC-3758",
+      "train_no": "3758",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "17:48:00",
+      "od_track_id": "OD-SHL-CY",
+      "origin_station": "沙崙",
+      "destination_station": "永康",
+      "total_travel_time": 1860,
+      "stations": [
+        {
+          "station_id": "4272",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "4270",
+          "arrival": 480,
+          "departure": 540
+        },
+        {
+          "station_id": "4260",
+          "arrival": 720,
+          "departure": 780
+        },
+        {
+          "station_id": "4220",
+          "arrival": 1320,
+          "departure": 1380
+        },
+        {
+          "station_id": "4210",
+          "arrival": 1560,
+          "departure": 1560
+        },
+        {
+          "station_id": "4200",
+          "arrival": 1860,
+          "departure": 1860
+        }
+      ]
+    },
+    {
+      "train_id": "LC-3760",
+      "train_no": "3760",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "18:24:00",
+      "od_track_id": "OD-SHL-CY",
+      "origin_station": "沙崙",
+      "destination_station": "善化",
+      "total_travel_time": 2940,
+      "stations": [
+        {
+          "station_id": "4272",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "4270",
+          "arrival": 480,
+          "departure": 540
+        },
+        {
+          "station_id": "4260",
+          "arrival": 720,
+          "departure": 780
+        },
+        {
+          "station_id": "4220",
+          "arrival": 1320,
+          "departure": 1380
+        },
+        {
+          "station_id": "4210",
+          "arrival": 1560,
+          "departure": 1560
+        },
+        {
+          "station_id": "4200",
+          "arrival": 1800,
+          "departure": 1800
+        },
+        {
+          "station_id": "4190",
+          "arrival": 2100,
+          "departure": 2400
+        },
+        {
+          "station_id": "4180",
+          "arrival": 2700,
+          "departure": 2760
+        },
+        {
+          "station_id": "4170",
+          "arrival": 2940,
+          "departure": 2940
+        }
+      ]
+    },
+    {
+      "train_id": "LC-3764",
+      "train_no": "3764",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "19:04:00",
+      "od_track_id": "OD-SHL-CY",
+      "origin_station": "沙崙",
+      "destination_station": "善化",
+      "total_travel_time": 2700,
+      "stations": [
+        {
+          "station_id": "4272",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "4270",
+          "arrival": 480,
+          "departure": 540
+        },
+        {
+          "station_id": "4260",
+          "arrival": 720,
+          "departure": 780
+        },
+        {
+          "station_id": "4220",
+          "arrival": 1320,
+          "departure": 1440
+        },
+        {
+          "station_id": "4210",
+          "arrival": 1620,
+          "departure": 1620
+        },
+        {
+          "station_id": "4200",
+          "arrival": 1860,
+          "departure": 1860
+        },
+        {
+          "station_id": "4190",
+          "arrival": 2160,
+          "departure": 2220
+        },
+        {
+          "station_id": "4180",
+          "arrival": 2460,
+          "departure": 2520
+        },
+        {
+          "station_id": "4170",
+          "arrival": 2700,
+          "departure": 2700
+        }
+      ]
+    },
+    {
+      "train_id": "LC-3768",
+      "train_no": "3768",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "19:54:00",
+      "od_track_id": "OD-SHL-CY",
+      "origin_station": "沙崙",
+      "destination_station": "善化",
+      "total_travel_time": 2760,
+      "stations": [
+        {
+          "station_id": "4272",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "4270",
+          "arrival": 480,
+          "departure": 540
+        },
+        {
+          "station_id": "4260",
+          "arrival": 720,
+          "departure": 780
+        },
+        {
+          "station_id": "4220",
+          "arrival": 1320,
+          "departure": 1380
+        },
+        {
+          "station_id": "4210",
+          "arrival": 1560,
+          "departure": 1560
+        },
+        {
+          "station_id": "4200",
+          "arrival": 1800,
+          "departure": 1860
+        },
+        {
+          "station_id": "4190",
+          "arrival": 2160,
+          "departure": 2220
+        },
+        {
+          "station_id": "4180",
+          "arrival": 2460,
+          "departure": 2520
+        },
+        {
+          "station_id": "4170",
+          "arrival": 2760,
+          "departure": 2760
+        }
+      ]
+    },
+    {
+      "train_id": "LC-3776",
+      "train_no": "3776",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "21:28:00",
+      "od_track_id": "OD-SHL-CY",
+      "origin_station": "沙崙",
+      "destination_station": "善化",
+      "total_travel_time": 3000,
+      "stations": [
+        {
+          "station_id": "4272",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "4270",
+          "arrival": 480,
+          "departure": 720
+        },
+        {
+          "station_id": "4260",
+          "arrival": 900,
+          "departure": 960
+        },
+        {
+          "station_id": "4220",
+          "arrival": 1500,
+          "departure": 1620
+        },
+        {
+          "station_id": "4210",
+          "arrival": 1800,
+          "departure": 1800
+        },
+        {
+          "station_id": "4200",
+          "arrival": 2040,
+          "departure": 2100
+        },
+        {
+          "station_id": "4190",
+          "arrival": 2400,
+          "departure": 2460
+        },
+        {
+          "station_id": "4180",
+          "arrival": 2700,
+          "departure": 2760
+        },
+        {
+          "station_id": "4170",
+          "arrival": 3000,
+          "departure": 3000
+        }
+      ]
+    },
+    {
       "train_id": "LC-3782",
       "train_no": "3782",
       "train_type": "區間",

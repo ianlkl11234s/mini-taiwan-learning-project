@@ -130,15 +130,33 @@ def find_matching_track(
     stops_normalized = [normalize_station_id(s) for s in stop_ids]
     stops_set = set(stops_normalized)
 
-    def score_track(track_id: str) -> Tuple[float, int, str]:
+    def score_track(track_id: str) -> Tuple[float, float, int, str]:
         """計算軌道的匹配分數（越小越好）"""
-        station_list = list(od_progress[track_id].keys())
-        track_set = set(station_list)
+        track_stations = od_progress[track_id]
+        track_set = set(track_stations.keys())
         coverage = len(stops_set & track_set)
         coverage_ratio = coverage / len(stops_normalized) if stops_normalized else 0
 
-        # 主排序：覆蓋率（越高越好 → 負數越小越好）
-        # 次排序：軌道類型優先級
+        # 計算中間站單調性（monotonicity）
+        # 按列車停靠順序檢查 progress 是否遞增
+        prev_prog = -1.0
+        forward = 0
+        backward = 0
+        for sid in stops_normalized:
+            if sid in track_stations:
+                prog = track_stations[sid]
+                if prev_prog >= 0:
+                    if prog > prev_prog:
+                        forward += 1
+                    elif prog < prev_prog:
+                        backward += 1
+                prev_prog = prog
+        total_pairs = forward + backward
+        backward_ratio = backward / total_pairs if total_pairs > 0 else 0
+
+        # 主排序：backward 比例（越低越好）
+        # 次排序：覆蓋率（越高越好 → 負數越小越好）
+        # 三排序：軌道類型優先級
         if track_id.startswith('OD-'):
             type_priority = 0
         elif track_id.startswith('SP-'):
@@ -148,7 +166,7 @@ def find_matching_track(
         else:
             type_priority = 3
 
-        return (-coverage_ratio, type_priority, track_id)
+        return (backward_ratio, -coverage_ratio, type_priority, track_id)
 
     # 精確匹配（起站和迄站完全一致）
     key = (origin_normalized, dest_normalized)

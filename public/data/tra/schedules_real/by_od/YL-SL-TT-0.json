@@ -2,6 +2,44 @@
   "track_id": "YL-SL-TT-0",
   "departures": [
     {
+      "train_id": "TC-161",
+      "train_no": "161",
+      "train_type": "自強(3000)(EMU3000 型電車)",
+      "train_type_code": "TC",
+      "departure_time": "05:46:00",
+      "od_track_id": "YL-SL-TT-0",
+      "origin_station": "南港",
+      "destination_station": "臺東",
+      "total_travel_time": 23340,
+      "stations": [
+        {
+          "station_id": "0980",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "0990",
+          "arrival": 240,
+          "departure": 300
+        },
+        {
+          "station_id": "1000",
+          "arrival": 720,
+          "departure": 840
+        },
+        {
+          "station_id": "1020",
+          "arrival": 1260,
+          "departure": 1320
+        },
+        {
+          "station_id": "6000",
+          "arrival": 23340,
+          "departure": 23340
+        }
+      ]
+    },
+    {
       "train_id": "TC-406",
       "train_no": "406",
       "train_type": "自強(3000)(EMU3000 型電車)",
@@ -481,6 +519,44 @@
           "station_id": "6000",
           "arrival": 16980,
           "departure": 16980
+        }
+      ]
+    },
+    {
+      "train_id": "PP-165",
+      "train_no": "165",
+      "train_type": "普悠瑪(普悠瑪)",
+      "train_type_code": "PP",
+      "departure_time": "13:15:00",
+      "od_track_id": "YL-SL-TT-0",
+      "origin_station": "南港",
+      "destination_station": "臺東",
+      "total_travel_time": 20520,
+      "stations": [
+        {
+          "station_id": "0980",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "0990",
+          "arrival": 240,
+          "departure": 300
+        },
+        {
+          "station_id": "1000",
+          "arrival": 720,
+          "departure": 900
+        },
+        {
+          "station_id": "1020",
+          "arrival": 1320,
+          "departure": 1380
+        },
+        {
+          "station_id": "6000",
+          "arrival": 20520,
+          "departure": 20520
         }
       ]
     },

@@ -1,0 +1,412 @@
+{
+  "track_id": "OD-TT-NK",
+  "departures": [
+    {
+      "train_id": "PP-162",
+      "train_no": "162",
+      "train_type": "普悠瑪(普悠瑪)",
+      "train_type_code": "PP",
+      "departure_time": "05:52:00",
+      "od_track_id": "OD-TT-NK",
+      "origin_station": "臺東",
+      "destination_station": "南港",
+      "total_travel_time": 21840,
+      "stations": [
+        {
+          "station_id": "6000",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "5230",
+          "arrival": 540,
+          "departure": 600
+        },
+        {
+          "station_id": "5220",
+          "arrival": 1140,
+          "departure": 1200
+        },
+        {
+          "station_id": "5190",
+          "arrival": 2400,
+          "departure": 2460
+        },
+        {
+          "station_id": "5120",
+          "arrival": 4320,
+          "departure": 4380
+        },
+        {
+          "station_id": "5050",
+          "arrival": 5400,
+          "departure": 5580
+        },
+        {
+          "station_id": "5000",
+          "arrival": 6180,
+          "departure": 6360
+        },
+        {
+          "station_id": "4440",
+          "arrival": 6960,
+          "departure": 7080
+        },
+        {
+          "station_id": "4220",
+          "arrival": 9300,
+          "departure": 9420
+        },
+        {
+          "station_id": "4080",
+          "arrival": 11400,
+          "departure": 11520
+        },
+        {
+          "station_id": "3300",
+          "arrival": 14760,
+          "departure": 14880
+        },
+        {
+          "station_id": "1210",
+          "arrival": 17640,
+          "departure": 17700
+        },
+        {
+          "station_id": "1020",
+          "arrival": 20400,
+          "departure": 20520
+        },
+        {
+          "station_id": "1000",
+          "arrival": 21000,
+          "departure": 21180
+        },
+        {
+          "station_id": "0990",
+          "arrival": 21540,
+          "departure": 21600
+        },
+        {
+          "station_id": "0980",
+          "arrival": 21840,
+          "departure": 21840
+        }
+      ]
+    },
+    {
+      "train_id": "CK-3006",
+      "train_no": "3006",
+      "train_type": "區間快",
+      "train_type_code": "CK",
+      "departure_time": "06:20:00",
+      "od_track_id": "OD-TT-NK",
+      "origin_station": "臺東",
+      "destination_station": "潮州",
+      "total_travel_time": 7620,
+      "stations": [
+        {
+          "station_id": "6000",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "5240",
+          "arrival": 300,
+          "departure": 360
+        },
+        {
+          "station_id": "5230",
+          "arrival": 720,
+          "departure": 780
+        },
+        {
+          "station_id": "5220",
+          "arrival": 1320,
+          "departure": 1380
+        },
+        {
+          "station_id": "5210",
+          "arrival": 1860,
+          "departure": 1920
+        },
+        {
+          "station_id": "5200",
+          "arrival": 2340,
+          "departure": 2580
+        },
+        {
+          "station_id": "5190",
+          "arrival": 3180,
+          "departure": 3240
+        },
+        {
+          "station_id": "5160",
+          "arrival": 4680,
+          "departure": 4740
+        },
+        {
+          "station_id": "5140",
+          "arrival": 5040,
+          "departure": 5100
+        },
+        {
+          "station_id": "5130",
+          "arrival": 5280,
+          "departure": 5340
+        },
+        {
+          "station_id": "5120",
+          "arrival": 5700,
+          "departure": 6060
+        },
+        {
+          "station_id": "5090",
+          "arrival": 6600,
+          "departure": 6660
+        },
+        {
+          "station_id": "5070",
+          "arrival": 7020,
+          "departure": 7260
+        },
+        {
+          "station_id": "5050",
+          "arrival": 7620,
+          "departure": 8400
+        }
+      ]
+    },
+    {
+      "train_id": "LC-3310",
+      "train_no": "3310",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "07:04:00",
+      "od_track_id": "OD-TT-NK",
+      "origin_station": "加祿",
+      "destination_station": "新左營",
+      "total_travel_time": 6120,
+      "stations": [
+        {
+          "station_id": "5130",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "5120",
+          "arrival": 360,
+          "departure": 420
+        },
+        {
+          "station_id": "5110",
+          "arrival": 600,
+          "departure": 660
+        },
+        {
+          "station_id": "5100",
+          "arrival": 840,
+          "departure": 840
+        },
+        {
+          "station_id": "5090",
+          "arrival": 1140,
+          "departure": 1200
+        },
+        {
+          "station_id": "5080",
+          "arrival": 1380,
+          "departure": 1440
+        },
+        {
+          "station_id": "5070",
+          "arrival": 1680,
+          "departure": 1740
+        },
+        {
+          "station_id": "5060",
+          "arrival": 1920,
+          "departure": 1920
+        },
+        {
+          "station_id": "5050",
+          "arrival": 2220,
+          "departure": 2340
+        },
+        {
+          "station_id": "5040",
+          "arrival": 2580,
+          "departure": 2580
+        },
+        {
+          "station_id": "5030",
+          "arrival": 2820,
+          "departure": 2880
+        },
+        {
+          "station_id": "5020",
+          "arrival": 3000,
+          "departure": 3060
+        },
+        {
+          "station_id": "5010",
+          "arrival": 3180,
+          "departure": 3240
+        },
+        {
+          "station_id": "5000",
+          "arrival": 3420,
+          "departure": 3480
+        },
+        {
+          "station_id": "4470",
+          "arrival": 3600,
+          "departure": 3660
+        },
+        {
+          "station_id": "4460",
+          "arrival": 3900,
+          "departure": 3960
+        },
+        {
+          "station_id": "4450",
+          "arrival": 4140,
+          "departure": 4200
+        },
+        {
+          "station_id": "4440",
+          "arrival": 4440,
+          "departure": 4500
+        },
+        {
+          "station_id": "4340",
+          "arrival": 6120,
+          "departure": 6120
+        }
+      ]
+    },
+    {
+      "train_id": "TC-168",
+      "train_no": "168",
+      "train_type": "自強(3000)(EMU3000 型電車)",
+      "train_type_code": "TC",
+      "departure_time": "16:00:00",
+      "od_track_id": "OD-TT-NK",
+      "origin_station": "臺東",
+      "destination_station": "七堵",
+      "total_travel_time": 24660,
+      "stations": [
+        {
+          "station_id": "6000",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "5050",
+          "arrival": 4740,
+          "departure": 4800
+        },
+        {
+          "station_id": "5000",
+          "arrival": 5400,
+          "departure": 5520
+        },
+        {
+          "station_id": "4340",
+          "arrival": 6900,
+          "departure": 7020
+        },
+        {
+          "station_id": "4220",
+          "arrival": 8460,
+          "departure": 8640
+        },
+        {
+          "station_id": "4120",
+          "arrival": 9960,
+          "departure": 10080
+        },
+        {
+          "station_id": "4080",
+          "arrival": 10980,
+          "departure": 11100
+        },
+        {
+          "station_id": "3470",
+          "arrival": 12240,
+          "departure": 12360
+        },
+        {
+          "station_id": "3420",
+          "arrival": 13260,
+          "departure": 13320
+        },
+        {
+          "station_id": "3390",
+          "arrival": 13800,
+          "departure": 13860
+        },
+        {
+          "station_id": "3360",
+          "arrival": 14460,
+          "departure": 14580
+        },
+        {
+          "station_id": "3300",
+          "arrival": 15360,
+          "departure": 15480
+        },
+        {
+          "station_id": "3230",
+          "arrival": 15960,
+          "departure": 16080
+        },
+        {
+          "station_id": "3160",
+          "arrival": 17340,
+          "departure": 17460
+        },
+        {
+          "station_id": "1210",
+          "arrival": 18780,
+          "departure": 18900
+        },
+        {
+          "station_id": "1100",
+          "arrival": 20400,
+          "departure": 20580
+        },
+        {
+          "station_id": "1080",
+          "arrival": 21000,
+          "departure": 21180
+        },
+        {
+          "station_id": "1020",
+          "arrival": 22320,
+          "departure": 22440
+        },
+        {
+          "station_id": "1000",
+          "arrival": 22920,
+          "departure": 23100
+        },
+        {
+          "station_id": "0990",
+          "arrival": 23460,
+          "departure": 23520
+        },
+        {
+          "station_id": "0980",
+          "arrival": 23700,
+          "departure": 23760
+        },
+        {
+          "station_id": "0930",
+          "arrival": 24660,
+          "departure": 24660
+        }
+      ]
+    }
+  ]
+}

@@ -272,6 +272,16 @@ def convert_train(
             'departure': departure_sec
         })
 
+    # 去除重複站（如 3350→3330 映射後與原本的 3330 重複）
+    # 保留每個 station_id 的第一次出現
+    seen_ids = set()
+    deduped_stations = []
+    for st in converted_stations:
+        if st['station_id'] not in seen_ids:
+            seen_ids.add(st['station_id'])
+            deduped_stations.append(st)
+    converted_stations = deduped_stations
+
     # 確保至少有 2 站
     if len(converted_stations) < 2:
         return None

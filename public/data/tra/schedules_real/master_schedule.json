@@ -2,8 +2,8 @@
   "metadata": {
     "title": "TRA 真實時刻表",
     "total_trains": 928,
-    "total_od_tracks": 170,
-    "generated_at": "2026-01-27T19:40:57.376618",
+    "total_od_tracks": 176,
+    "generated_at": "2026-01-27T21:53:43.463483",
     "source": "TDX GeneralTrainTimetable"
   },
   "schedules": [
@@ -13,7 +13,7 @@
       "train_type": "區間快",
       "train_type_code": "CK",
       "departure_time": "04:57:00",
-      "od_track_id": "OD-KL-CZ",
+      "od_track_id": "OD-HL-CZ",
       "origin_station": "七堵",
       "destination_station": "新左營",
       "total_travel_time": 21060,
@@ -314,7 +314,7 @@
       "train_type": "區間快",
       "train_type_code": "CK",
       "departure_time": "06:45:00",
-      "od_track_id": "OD-CZ-KL",
+      "od_track_id": "OD-CZ-HL",
       "origin_station": "潮州",
       "destination_station": "七堵",
       "total_travel_time": 25020,
@@ -786,7 +786,7 @@
       "train_type": "自強(推拉式自強號且無自行車車廂)",
       "train_type_code": "TC-PP",
       "departure_time": "06:05:00",
-      "od_track_id": "OD-KL-CZ",
+      "od_track_id": "OD-HL-CZ",
       "origin_station": "汐止",
       "destination_station": "潮州",
       "total_travel_time": 22320,
@@ -899,7 +899,7 @@
       "train_type": "區間快",
       "train_type_code": "CK",
       "departure_time": "14:55:00",
-      "od_track_id": "OD-CZ-KL",
+      "od_track_id": "OD-CZ-HL",
       "origin_station": "新左營",
       "destination_station": "七堵",
       "total_travel_time": 22740,
@@ -1132,7 +1132,7 @@
       "train_type": "區間快",
       "train_type_code": "CK",
       "departure_time": "14:30:00",
-      "od_track_id": "OD-CZ-KL",
+      "od_track_id": "OD-CZ-HL",
       "origin_station": "潮州",
       "destination_station": "七堵",
       "total_travel_time": 27240,
@@ -1606,7 +1606,7 @@
       "train_type": "普悠瑪(普悠瑪)",
       "train_type_code": "PP",
       "departure_time": "07:28:00",
-      "od_track_id": "OD-KL-CZ",
+      "od_track_id": "OD-HL-CZ",
       "origin_station": "南港",
       "destination_station": "潮州",
       "total_travel_time": 15840,
@@ -1669,7 +1669,7 @@
       "train_type": "自強(推拉式自強號且無自行車車廂)",
       "train_type_code": "TC-PP",
       "departure_time": "05:27:00",
-      "od_track_id": "OD-CZ-KL",
+      "od_track_id": "OD-CZ-HL",
       "origin_station": "潮州",
       "destination_station": "七堵",
       "total_travel_time": 22500,
@@ -1945,7 +1945,7 @@
       "train_type": "自強(3000)(EMU3000 型電車)",
       "train_type_code": "TC",
       "departure_time": "06:22:00",
-      "od_track_id": "OD-CZ-KL",
+      "od_track_id": "OD-CZ-HL",
       "origin_station": "潮州",
       "destination_station": "七堵",
       "total_travel_time": 17880,
@@ -6160,7 +6160,7 @@
       "train_type": "自強(推拉式自強號且無自行車車廂)",
       "train_type_code": "TC-PP",
       "departure_time": "07:30:00",
-      "od_track_id": "OD-CZ-KL",
+      "od_track_id": "OD-CZ-HL",
       "origin_station": "潮州",
       "destination_station": "七堵",
       "total_travel_time": 21840,
@@ -8384,7 +8384,7 @@
       "train_type": "自強(3000)(EMU3000 型電車)",
       "train_type_code": "TC",
       "departure_time": "08:50:00",
-      "od_track_id": "OD-CZ-KL",
+      "od_track_id": "OD-CZ-HL",
       "origin_station": "潮州",
       "destination_station": "七堵",
       "total_travel_time": 19980,
@@ -10754,7 +10754,7 @@
       "train_type": "自強(推拉式自強號且無自行車車廂)",
       "train_type_code": "TC-PP",
       "departure_time": "09:39:00",
-      "od_track_id": "OD-CZ-KL",
+      "od_track_id": "OD-CZ-HL",
       "origin_station": "屏東",
       "destination_station": "七堵",
       "total_travel_time": 21240,
@@ -12933,7 +12933,7 @@
       "train_type": "自強(3000)(EMU3000 型電車)",
       "train_type_code": "TC",
       "departure_time": "10:01:00",
-      "od_track_id": "OD-CZ-KL",
+      "od_track_id": "OD-CZ-HL",
       "origin_station": "潮州",
       "destination_station": "七堵",
       "total_travel_time": 21120,
@@ -13961,7 +13961,7 @@
       "train_type": "自強(推拉式自強號且無自行車車廂)",
       "train_type_code": "TC-PP",
       "departure_time": "10:29:00",
-      "od_track_id": "OD-KL-CZ",
+      "od_track_id": "OD-HL-CZ",
       "origin_station": "七堵",
       "destination_station": "屏東",
       "total_travel_time": 20820,
@@ -16165,7 +16165,7 @@
       "train_type": "自強(推拉式自強號且無自行車車廂)",
       "train_type_code": "TC-PP",
       "departure_time": "11:29:00",
-      "od_track_id": "OD-KL-CZ",
+      "od_track_id": "OD-HL-CZ",
       "origin_station": "七堵",
       "destination_station": "屏東",
       "total_travel_time": 21240,
@@ -17534,7 +17534,7 @@
       "train_type": "普悠瑪(普悠瑪)",
       "train_type_code": "PP",
       "departure_time": "12:05:00",
-      "od_track_id": "OD-CZ-KL",
+      "od_track_id": "OD-CZ-HL",
       "origin_station": "潮州",
       "destination_station": "南港",
       "total_travel_time": 15660,
@@ -18512,7 +18512,7 @@
       "train_type": "自強(推拉式自強號且無自行車車廂)",
       "train_type_code": "TC-PP",
       "departure_time": "12:26:00",
-      "od_track_id": "OD-KL-CZ",
+      "od_track_id": "OD-HL-CZ",
       "origin_station": "七堵",
       "destination_station": "潮州",
       "total_travel_time": 22020,
@@ -23158,7 +23158,7 @@
       "train_type": "自強(3000)(EMU3000 型電車)",
       "train_type_code": "TC",
       "departure_time": "09:30:00",
-      "od_track_id": "OD-KL-CZ",
+      "od_track_id": "OD-HL-CZ",
       "origin_station": "七堵",
       "destination_station": "潮州",
       "total_travel_time": 17940,
@@ -23319,7 +23319,7 @@
       "train_type": "自強(3000)(EMU3000 型電車)",
       "train_type_code": "TC",
       "departure_time": "14:07:00",
-      "od_track_id": "OD-KL-CZ",
+      "od_track_id": "OD-HL-CZ",
       "origin_station": "七堵",
       "destination_station": "潮州",
       "total_travel_time": 22080,
@@ -23595,7 +23595,7 @@
       "train_type": "自強(推拉式自強號且無自行車車廂)",
       "train_type_code": "TC-PP",
       "departure_time": "14:28:00",
-      "od_track_id": "OD-KL-CZ",
+      "od_track_id": "OD-HL-CZ",
       "origin_station": "七堵",
       "destination_station": "屏東",
       "total_travel_time": 21300,
@@ -23728,7 +23728,7 @@
       "train_type": "普悠瑪(普悠瑪)",
       "train_type_code": "PP",
       "departure_time": "14:57:00",
-      "od_track_id": "OD-CZ-KL",
+      "od_track_id": "OD-CZ-HL",
       "origin_station": "潮州",
       "destination_station": "南港",
       "total_travel_time": 15840,
@@ -23796,7 +23796,7 @@
       "train_type": "普悠瑪(普悠瑪)",
       "train_type_code": "PP",
       "departure_time": "15:30:00",
-      "od_track_id": "OD-KL-CZ",
+      "od_track_id": "OD-HL-CZ",
       "origin_station": "南港",
       "destination_station": "潮州",
       "total_travel_time": 15960,
@@ -23864,7 +23864,7 @@
       "train_type": "自強(推拉式自強號且無自行車車廂)",
       "train_type_code": "TC-PP",
       "departure_time": "15:12:00",
-      "od_track_id": "OD-CZ-KL",
+      "od_track_id": "OD-CZ-HL",
       "origin_station": "屏東",
       "destination_station": "七堵",
       "total_travel_time": 21000,
@@ -23992,7 +23992,7 @@
       "train_type": "自強(推拉式自強號且無自行車車廂)",
       "train_type_code": "TC-PP",
       "departure_time": "16:23:00",
-      "od_track_id": "OD-KL-CZ",
+      "od_track_id": "OD-HL-CZ",
       "origin_station": "七堵",
       "destination_station": "潮州",
       "total_travel_time": 21960,
@@ -24125,7 +24125,7 @@
       "train_type": "自強(推拉式自強號且無自行車車廂)",
       "train_type_code": "TC-PP",
       "departure_time": "16:55:00",
-      "od_track_id": "OD-KL-CZ",
+      "od_track_id": "OD-HL-CZ",
       "origin_station": "七堵",
       "destination_station": "潮州",
       "total_travel_time": 22440,
@@ -24258,7 +24258,7 @@
       "train_type": "自強(推拉式自強號且無自行車車廂)",
       "train_type_code": "TC-PP",
       "departure_time": "15:35:00",
-      "od_track_id": "OD-CZ-KL",
+      "od_track_id": "OD-CZ-HL",
       "origin_station": "潮州",
       "destination_station": "七堵",
       "total_travel_time": 22140,
@@ -24401,7 +24401,7 @@
       "train_type": "自強(3000)(EMU3000 型電車)",
       "train_type_code": "TC",
       "departure_time": "17:20:00",
-      "od_track_id": "OD-KL-CZ",
+      "od_track_id": "OD-HL-CZ",
       "origin_station": "七堵",
       "destination_station": "潮州",
       "total_travel_time": 18780,
@@ -24642,7 +24642,7 @@
       "train_type": "自強(3000)(EMU3000 型電車)",
       "train_type_code": "TC",
       "departure_time": "17:37:00",
-      "od_track_id": "OD-KL-CZ",
+      "od_track_id": "OD-HL-CZ",
       "origin_station": "七堵",
       "destination_station": "潮州",
       "total_travel_time": 21780,
@@ -24765,7 +24765,7 @@
       "train_type": "自強(3000)(EMU3000 型電車)",
       "train_type_code": "TC",
       "departure_time": "16:50:00",
-      "od_track_id": "OD-CZ-KL",
+      "od_track_id": "OD-CZ-HL",
       "origin_station": "潮州",
       "destination_station": "七堵",
       "total_travel_time": 21240,
@@ -25084,7 +25084,7 @@
       "train_type": "自強(推拉式自強號且無自行車車廂)",
       "train_type_code": "TC-PP",
       "departure_time": "17:48:00",
-      "od_track_id": "OD-CZ-KL",
+      "od_track_id": "OD-CZ-HL",
       "origin_station": "屏東",
       "destination_station": "七堵",
       "total_travel_time": 21780,
@@ -25227,7 +25227,7 @@
       "train_type": "自強(推拉式自強號且無自行車車廂)",
       "train_type_code": "TC-PP",
       "departure_time": "18:26:00",
-      "od_track_id": "OD-CZ-KL",
+      "od_track_id": "OD-CZ-HL",
       "origin_station": "潮州",
       "destination_station": "汐止",
       "total_travel_time": 21420,
@@ -25365,7 +25365,7 @@
       "train_type": "自強(3000)(EMU3000 型電車)",
       "train_type_code": "TC",
       "departure_time": "18:14:00",
-      "od_track_id": "OD-CZ-KL",
+      "od_track_id": "OD-CZ-HL",
       "origin_station": "潮州",
       "destination_station": "南港",
       "total_travel_time": 16920,
@@ -25798,7 +25798,7 @@
       "train_type": "自強(3000)(EMU3000 型電車)",
       "train_type_code": "TC",
       "departure_time": "05:46:00",
-      "od_track_id": "YL-SL-TT-0",
+      "od_track_id": "OD-NK-TT",
       "origin_station": "南港",
       "destination_station": "臺東",
       "total_travel_time": 23340,
@@ -25824,6 +25824,86 @@
           "departure": 1320
         },
         {
+          "station_id": "1080",
+          "arrival": 2460,
+          "departure": 2520
+        },
+        {
+          "station_id": "1100",
+          "arrival": 3000,
+          "departure": 3120
+        },
+        {
+          "station_id": "1210",
+          "arrival": 4680,
+          "departure": 4800
+        },
+        {
+          "station_id": "3160",
+          "arrival": 6180,
+          "departure": 6240
+        },
+        {
+          "station_id": "3230",
+          "arrival": 7560,
+          "departure": 7680
+        },
+        {
+          "station_id": "3300",
+          "arrival": 8220,
+          "departure": 8340
+        },
+        {
+          "station_id": "3360",
+          "arrival": 9120,
+          "departure": 9240
+        },
+        {
+          "station_id": "3390",
+          "arrival": 9840,
+          "departure": 9900
+        },
+        {
+          "station_id": "3420",
+          "arrival": 10380,
+          "departure": 10440
+        },
+        {
+          "station_id": "3470",
+          "arrival": 11280,
+          "departure": 11340
+        },
+        {
+          "station_id": "4080",
+          "arrival": 12420,
+          "departure": 12540
+        },
+        {
+          "station_id": "4120",
+          "arrival": 13320,
+          "departure": 13440
+        },
+        {
+          "station_id": "4220",
+          "arrival": 14760,
+          "departure": 14880
+        },
+        {
+          "station_id": "4340",
+          "arrival": 16320,
+          "departure": 16440
+        },
+        {
+          "station_id": "5000",
+          "arrival": 17820,
+          "departure": 17940
+        },
+        {
+          "station_id": "5050",
+          "arrival": 18540,
+          "departure": 18660
+        },
+        {
           "station_id": "6000",
           "arrival": 23340,
           "departure": 23340
@@ -25836,7 +25916,7 @@
       "train_type": "普悠瑪(普悠瑪)",
       "train_type_code": "PP",
       "departure_time": "05:52:00",
-      "od_track_id": "YL-TT-SL-1",
+      "od_track_id": "OD-TT-NK",
       "origin_station": "臺東",
       "destination_station": "南港",
       "total_travel_time": 21840,
@@ -25845,6 +25925,61 @@
           "station_id": "6000",
           "arrival": 0,
           "departure": 0
+        },
+        {
+          "station_id": "5230",
+          "arrival": 540,
+          "departure": 600
+        },
+        {
+          "station_id": "5220",
+          "arrival": 1140,
+          "departure": 1200
+        },
+        {
+          "station_id": "5190",
+          "arrival": 2400,
+          "departure": 2460
+        },
+        {
+          "station_id": "5120",
+          "arrival": 4320,
+          "departure": 4380
+        },
+        {
+          "station_id": "5050",
+          "arrival": 5400,
+          "departure": 5580
+        },
+        {
+          "station_id": "5000",
+          "arrival": 6180,
+          "departure": 6360
+        },
+        {
+          "station_id": "4440",
+          "arrival": 6960,
+          "departure": 7080
+        },
+        {
+          "station_id": "4220",
+          "arrival": 9300,
+          "departure": 9420
+        },
+        {
+          "station_id": "4080",
+          "arrival": 11400,
+          "departure": 11520
+        },
+        {
+          "station_id": "3300",
+          "arrival": 14760,
+          "departure": 14880
+        },
+        {
+          "station_id": "1210",
+          "arrival": 17640,
+          "departure": 17700
         },
         {
           "station_id": "1020",
@@ -25874,7 +26009,7 @@
       "train_type": "普悠瑪(普悠瑪)",
       "train_type_code": "PP",
       "departure_time": "13:15:00",
-      "od_track_id": "YL-SL-TT-0",
+      "od_track_id": "OD-NK-TT",
       "origin_station": "南港",
       "destination_station": "臺東",
       "total_travel_time": 20520,
@@ -25900,6 +26035,36 @@
           "departure": 1380
         },
         {
+          "station_id": "1210",
+          "arrival": 3960,
+          "departure": 4080
+        },
+        {
+          "station_id": "3300",
+          "arrival": 6900,
+          "departure": 7020
+        },
+        {
+          "station_id": "4080",
+          "arrival": 10260,
+          "departure": 10380
+        },
+        {
+          "station_id": "4220",
+          "arrival": 12360,
+          "departure": 12480
+        },
+        {
+          "station_id": "5000",
+          "arrival": 15060,
+          "departure": 15180
+        },
+        {
+          "station_id": "5050",
+          "arrival": 15720,
+          "departure": 15840
+        },
+        {
           "station_id": "6000",
           "arrival": 20520,
           "departure": 20520
@@ -25912,7 +26077,7 @@
       "train_type": "自強(3000)(EMU3000 型電車)",
       "train_type_code": "TC",
       "departure_time": "16:00:00",
-      "od_track_id": "YL-TT-SL-1",
+      "od_track_id": "OD-TT-NK",
       "origin_station": "臺東",
       "destination_station": "七堵",
       "total_travel_time": 24660,
@@ -25921,6 +26086,86 @@
           "station_id": "6000",
           "arrival": 0,
           "departure": 0
+        },
+        {
+          "station_id": "5050",
+          "arrival": 4740,
+          "departure": 4800
+        },
+        {
+          "station_id": "5000",
+          "arrival": 5400,
+          "departure": 5520
+        },
+        {
+          "station_id": "4340",
+          "arrival": 6900,
+          "departure": 7020
+        },
+        {
+          "station_id": "4220",
+          "arrival": 8460,
+          "departure": 8640
+        },
+        {
+          "station_id": "4120",
+          "arrival": 9960,
+          "departure": 10080
+        },
+        {
+          "station_id": "4080",
+          "arrival": 10980,
+          "departure": 11100
+        },
+        {
+          "station_id": "3470",
+          "arrival": 12240,
+          "departure": 12360
+        },
+        {
+          "station_id": "3420",
+          "arrival": 13260,
+          "departure": 13320
+        },
+        {
+          "station_id": "3390",
+          "arrival": 13800,
+          "departure": 13860
+        },
+        {
+          "station_id": "3360",
+          "arrival": 14460,
+          "departure": 14580
+        },
+        {
+          "station_id": "3300",
+          "arrival": 15360,
+          "departure": 15480
+        },
+        {
+          "station_id": "3230",
+          "arrival": 15960,
+          "departure": 16080
+        },
+        {
+          "station_id": "3160",
+          "arrival": 17340,
+          "departure": 17460
+        },
+        {
+          "station_id": "1210",
+          "arrival": 18780,
+          "departure": 18900
+        },
+        {
+          "station_id": "1100",
+          "arrival": 20400,
+          "departure": 20580
+        },
+        {
+          "station_id": "1080",
+          "arrival": 21000,
+          "departure": 21180
         },
         {
           "station_id": "1020",
@@ -26791,7 +27036,7 @@
       "train_type": "自強(推拉式自強號且無自行車車廂)",
       "train_type_code": "TC-PP",
       "departure_time": "10:31:00",
-      "od_track_id": "YL-ZY-SL-1",
+      "od_track_id": "OD-CZ-HL",
       "origin_station": "潮州",
       "destination_station": "花蓮",
       "total_travel_time": 31560,
@@ -26812,9 +27057,84 @@
           "departure": 1560
         },
         {
+          "station_id": "4400",
+          "arrival": 1920,
+          "departure": 2160
+        },
+        {
           "station_id": "4340",
           "arrival": 2640,
           "departure": 2760
+        },
+        {
+          "station_id": "4220",
+          "arrival": 4260,
+          "departure": 4380
+        },
+        {
+          "station_id": "4170",
+          "arrival": 5100,
+          "departure": 5160
+        },
+        {
+          "station_id": "4120",
+          "arrival": 5940,
+          "departure": 6060
+        },
+        {
+          "station_id": "4080",
+          "arrival": 7020,
+          "departure": 7140
+        },
+        {
+          "station_id": "3470",
+          "arrival": 8280,
+          "departure": 8400
+        },
+        {
+          "station_id": "3390",
+          "arrival": 9780,
+          "departure": 9900
+        },
+        {
+          "station_id": "3360",
+          "arrival": 10560,
+          "departure": 10680
+        },
+        {
+          "station_id": "3300",
+          "arrival": 11520,
+          "departure": 11640
+        },
+        {
+          "station_id": "3230",
+          "arrival": 12240,
+          "departure": 12300
+        },
+        {
+          "station_id": "3160",
+          "arrival": 13800,
+          "departure": 13920
+        },
+        {
+          "station_id": "1250",
+          "arrival": 14520,
+          "departure": 14640
+        },
+        {
+          "station_id": "1210",
+          "arrival": 15480,
+          "departure": 15600
+        },
+        {
+          "station_id": "1100",
+          "arrival": 17220,
+          "departure": 17340
+        },
+        {
+          "station_id": "1080",
+          "arrival": 17820,
+          "departure": 17940
         },
         {
           "station_id": "1020",
@@ -27941,7 +28261,7 @@
       "train_type": "自強(推拉式自強號且無自行車車廂)",
       "train_type_code": "TC-PP",
       "departure_time": "12:55:00",
-      "od_track_id": "YL-SL-ZY-0",
+      "od_track_id": "OD-HL-CZ",
       "origin_station": "花蓮",
       "destination_station": "潮州",
       "total_travel_time": 31500,
@@ -28017,9 +28337,94 @@
           "departure": 11700
         },
         {
+          "station_id": "1080",
+          "arrival": 12900,
+          "departure": 13020
+        },
+        {
+          "station_id": "1100",
+          "arrival": 13560,
+          "departure": 13680
+        },
+        {
+          "station_id": "1210",
+          "arrival": 15360,
+          "departure": 15480
+        },
+        {
+          "station_id": "1250",
+          "arrival": 16320,
+          "departure": 16380
+        },
+        {
+          "station_id": "3160",
+          "arrival": 17040,
+          "departure": 17100
+        },
+        {
+          "station_id": "3230",
+          "arrival": 18600,
+          "departure": 18780
+        },
+        {
+          "station_id": "3300",
+          "arrival": 19380,
+          "departure": 19500
+        },
+        {
+          "station_id": "3360",
+          "arrival": 20340,
+          "departure": 20460
+        },
+        {
+          "station_id": "3390",
+          "arrival": 21120,
+          "departure": 21240
+        },
+        {
+          "station_id": "3470",
+          "arrival": 22500,
+          "departure": 22620
+        },
+        {
+          "station_id": "3480",
+          "arrival": 22980,
+          "departure": 23040
+        },
+        {
+          "station_id": "4080",
+          "arrival": 23940,
+          "departure": 24060
+        },
+        {
+          "station_id": "4120",
+          "arrival": 24900,
+          "departure": 25020
+        },
+        {
+          "station_id": "4170",
+          "arrival": 25800,
+          "departure": 25860
+        },
+        {
+          "station_id": "4220",
+          "arrival": 26640,
+          "departure": 26760
+        },
+        {
+          "station_id": "4310",
+          "arrival": 27780,
+          "departure": 27840
+        },
+        {
           "station_id": "4340",
           "arrival": 28440,
           "departure": 28560
+        },
+        {
+          "station_id": "4400",
+          "arrival": 29100,
+          "departure": 29280
         },
         {
           "station_id": "4440",
@@ -28393,7 +28798,7 @@
       "train_type": "自強(推拉式自強號且無自行車車廂)",
       "train_type_code": "TC-PP",
       "departure_time": "12:18:00",
-      "od_track_id": "YL-ZY-SL-1",
+      "od_track_id": "OD-CZ-HL",
       "origin_station": "潮州",
       "destination_station": "瑞芳",
       "total_travel_time": 22920,
@@ -28414,9 +28819,79 @@
           "departure": 1440
         },
         {
+          "station_id": "4400",
+          "arrival": 1800,
+          "departure": 2040
+        },
+        {
           "station_id": "4340",
           "arrival": 2520,
           "departure": 2640
+        },
+        {
+          "station_id": "4220",
+          "arrival": 4140,
+          "departure": 4260
+        },
+        {
+          "station_id": "4120",
+          "arrival": 5640,
+          "departure": 5700
+        },
+        {
+          "station_id": "4080",
+          "arrival": 6660,
+          "departure": 6780
+        },
+        {
+          "station_id": "3470",
+          "arrival": 7920,
+          "departure": 8100
+        },
+        {
+          "station_id": "3390",
+          "arrival": 9480,
+          "departure": 9600
+        },
+        {
+          "station_id": "3360",
+          "arrival": 10260,
+          "departure": 10380
+        },
+        {
+          "station_id": "3300",
+          "arrival": 11220,
+          "departure": 11340
+        },
+        {
+          "station_id": "3230",
+          "arrival": 11940,
+          "departure": 12000
+        },
+        {
+          "station_id": "3160",
+          "arrival": 13500,
+          "departure": 13620
+        },
+        {
+          "station_id": "1250",
+          "arrival": 14220,
+          "departure": 14340
+        },
+        {
+          "station_id": "1210",
+          "arrival": 15180,
+          "departure": 15300
+        },
+        {
+          "station_id": "1100",
+          "arrival": 16980,
+          "departure": 17280
+        },
+        {
+          "station_id": "1080",
+          "arrival": 17880,
+          "departure": 18000
         },
         {
           "station_id": "1020",
@@ -30154,7 +30629,7 @@
       "train_type": "自強(推拉式自強號且無自行車車廂)",
       "train_type_code": "TC-PP",
       "departure_time": "16:23:00",
-      "od_track_id": "YL-SL-ZY-0",
+      "od_track_id": "OD-HL-CZ",
       "origin_station": "花蓮",
       "destination_station": "屏東",
       "total_travel_time": 29940,
@@ -30225,9 +30700,79 @@
           "departure": 11820
         },
         {
+          "station_id": "1080",
+          "arrival": 13020,
+          "departure": 13080
+        },
+        {
+          "station_id": "1100",
+          "arrival": 13620,
+          "departure": 13740
+        },
+        {
+          "station_id": "1210",
+          "arrival": 15420,
+          "departure": 15600
+        },
+        {
+          "station_id": "3160",
+          "arrival": 17040,
+          "departure": 17160
+        },
+        {
+          "station_id": "3230",
+          "arrival": 18660,
+          "departure": 18780
+        },
+        {
+          "station_id": "3300",
+          "arrival": 19380,
+          "departure": 19500
+        },
+        {
+          "station_id": "3360",
+          "arrival": 20340,
+          "departure": 20400
+        },
+        {
+          "station_id": "3390",
+          "arrival": 21120,
+          "departure": 21180
+        },
+        {
+          "station_id": "3420",
+          "arrival": 21660,
+          "departure": 21720
+        },
+        {
+          "station_id": "3470",
+          "arrival": 22620,
+          "departure": 22740
+        },
+        {
+          "station_id": "4080",
+          "arrival": 23880,
+          "departure": 24000
+        },
+        {
+          "station_id": "4120",
+          "arrival": 24840,
+          "departure": 24960
+        },
+        {
+          "station_id": "4220",
+          "arrival": 26400,
+          "departure": 26520
+        },
+        {
           "station_id": "4340",
           "arrival": 28020,
           "departure": 28080
+        },
+        {
+          "station_id": "4400",
+          "arrival": 28620,
+          "departure": 28740
         },
         {
           "station_id": "4440",
@@ -33329,7 +33874,7 @@
       "train_type": "區間快",
       "train_type_code": "CK",
       "departure_time": "11:10:00",
-      "od_track_id": "OD-HL-TN",
+      "od_track_id": "OD-HL-CZ",
       "origin_station": "七堵",
       "destination_station": "嘉義",
       "total_travel_time": 16980,
@@ -34951,11 +35496,6 @@
           "departure": 840
         },
         {
-          "station_id": "3330",
-          "arrival": 1020,
-          "departure": 1140
-        },
-        {
           "station_id": "3360",
           "arrival": 1500,
           "departure": 1680
@@ -35079,11 +35619,6 @@
           "departure": 4380
         },
         {
-          "station_id": "3240",
-          "arrival": 4560,
-          "departure": 4620
-        },
-        {
           "station_id": "3243",
           "arrival": 4740,
           "departure": 4800
@@ -35127,11 +35662,6 @@
           "station_id": "3325",
           "arrival": 6240,
           "departure": 6360
-        },
-        {
-          "station_id": "3330",
-          "arrival": 6540,
-          "departure": 6600
         },
         {
           "station_id": "3360",
@@ -35294,7 +35824,7 @@
       "train_type": "區間",
       "train_type_code": "LC",
       "departure_time": "05:31:00",
-      "od_track_id": "OD-HL-TN",
+      "od_track_id": "OD-HL-CZ",
       "origin_station": "北湖",
       "destination_station": "嘉義",
       "total_travel_time": 14640,
@@ -35400,11 +35930,6 @@
           "departure": 5820
         },
         {
-          "station_id": "3240",
-          "arrival": 6000,
-          "departure": 6060
-        },
-        {
           "station_id": "3243",
           "arrival": 6180,
           "departure": 6240
@@ -35448,11 +35973,6 @@
           "station_id": "3325",
           "arrival": 7980,
           "departure": 8040
-        },
-        {
-          "station_id": "3330",
-          "arrival": 8220,
-          "departure": 8280
         },
         {
           "station_id": "3360",
@@ -35563,11 +36083,6 @@
           "departure": 660
         },
         {
-          "station_id": "3330",
-          "arrival": 720,
-          "departure": 780
-        },
-        {
           "station_id": "3320",
           "arrival": 960,
           "departure": 960
@@ -35606,11 +36121,6 @@
           "station_id": "3240",
           "arrival": 2220,
           "departure": 2280
-        },
-        {
-          "station_id": "3240",
-          "arrival": 2400,
-          "departure": 2460
         },
         {
           "station_id": "3230",
@@ -35861,11 +36371,6 @@
           "departure": 240
         },
         {
-          "station_id": "3240",
-          "arrival": 420,
-          "departure": 480
-        },
-        {
           "station_id": "3243",
           "arrival": 600,
           "departure": 660
@@ -35911,11 +36416,6 @@
           "departure": 2160
         },
         {
-          "station_id": "3330",
-          "arrival": 2340,
-          "departure": 2400
-        },
-        {
           "station_id": "3360",
           "arrival": 2760,
           "departure": 2760
@@ -35947,11 +36447,6 @@
           "station_id": "3325",
           "arrival": 600,
           "departure": 660
-        },
-        {
-          "station_id": "3330",
-          "arrival": 780,
-          "departure": 780
         },
         {
           "station_id": "3320",
@@ -36115,11 +36610,6 @@
           "departure": 2820
         },
         {
-          "station_id": "3330",
-          "arrival": 2940,
-          "departure": 2940
-        },
-        {
           "station_id": "3320",
           "arrival": 3120,
           "departure": 3180
@@ -36158,11 +36648,6 @@
           "station_id": "3240",
           "arrival": 4440,
           "departure": 4500
-        },
-        {
-          "station_id": "3240",
-          "arrival": 4620,
-          "departure": 4680
         },
         {
           "station_id": "3230",
@@ -36288,11 +36773,6 @@
           "departure": 660
         },
         {
-          "station_id": "3330",
-          "arrival": 780,
-          "departure": 780
-        },
-        {
           "station_id": "3320",
           "arrival": 960,
           "departure": 1020
@@ -36333,11 +36813,6 @@
           "departure": 2880
         },
         {
-          "station_id": "3240",
-          "arrival": 3000,
-          "departure": 3060
-        },
-        {
           "station_id": "3230",
           "arrival": 3240,
           "departure": 3300
@@ -36355,7 +36830,7 @@
       "train_type": "區間",
       "train_type_code": "LC",
       "departure_time": "06:25:00",
-      "od_track_id": "OD-HL-TN",
+      "od_track_id": "OD-HL-CZ",
       "origin_station": "北湖",
       "destination_station": "嘉義",
       "total_travel_time": 15000,
@@ -36461,11 +36936,6 @@
           "departure": 6120
         },
         {
-          "station_id": "3240",
-          "arrival": 6300,
-          "departure": 6360
-        },
-        {
           "station_id": "3243",
           "arrival": 6480,
           "departure": 6540
@@ -36509,11 +36979,6 @@
           "station_id": "3325",
           "arrival": 8100,
           "departure": 8460
-        },
-        {
-          "station_id": "3330",
-          "arrival": 8700,
-          "departure": 8760
         },
         {
           "station_id": "3360",
@@ -36699,11 +37164,6 @@
           "departure": 5940
         },
         {
-          "station_id": "3330",
-          "arrival": 6060,
-          "departure": 6060
-        },
-        {
           "station_id": "3320",
           "arrival": 6240,
           "departure": 6300
@@ -36742,11 +37202,6 @@
           "station_id": "3240",
           "arrival": 7620,
           "departure": 7680
-        },
-        {
-          "station_id": "3240",
-          "arrival": 7800,
-          "departure": 7860
         },
         {
           "station_id": "3230",
@@ -36947,11 +37402,6 @@
           "departure": 5700
         },
         {
-          "station_id": "3330",
-          "arrival": 5820,
-          "departure": 5820
-        },
-        {
           "station_id": "3320",
           "arrival": 6000,
           "departure": 6060
@@ -36990,11 +37440,6 @@
           "station_id": "3240",
           "arrival": 7320,
           "departure": 7380
-        },
-        {
-          "station_id": "3240",
-          "arrival": 7500,
-          "departure": 7560
         },
         {
           "station_id": "3230",
@@ -37045,11 +37490,6 @@
           "departure": 240
         },
         {
-          "station_id": "3240",
-          "arrival": 420,
-          "departure": 480
-        },
-        {
           "station_id": "3243",
           "arrival": 600,
           "departure": 660
@@ -37093,11 +37533,6 @@
           "station_id": "3325",
           "arrival": 2040,
           "departure": 2100
-        },
-        {
-          "station_id": "3330",
-          "arrival": 2280,
-          "departure": 2340
         },
         {
           "station_id": "3360",
@@ -37348,11 +37783,6 @@
           "departure": 14220
         },
         {
-          "station_id": "3240",
-          "arrival": 14400,
-          "departure": 14460
-        },
-        {
           "station_id": "3243",
           "arrival": 14580,
           "departure": 14640
@@ -37396,11 +37826,6 @@
           "station_id": "3325",
           "arrival": 16860,
           "departure": 16920
-        },
-        {
-          "station_id": "3330",
-          "arrival": 17100,
-          "departure": 17160
         },
         {
           "station_id": "3360",
@@ -37586,11 +38011,6 @@
           "departure": 6060
         },
         {
-          "station_id": "3330",
-          "arrival": 6180,
-          "departure": 6180
-        },
-        {
           "station_id": "3320",
           "arrival": 6360,
           "departure": 6420
@@ -37629,11 +38049,6 @@
           "station_id": "3240",
           "arrival": 7800,
           "departure": 7860
-        },
-        {
-          "station_id": "3240",
-          "arrival": 7980,
-          "departure": 8040
         },
         {
           "station_id": "3230",
@@ -37984,11 +38399,6 @@
           "departure": 8100
         },
         {
-          "station_id": "3330",
-          "arrival": 8220,
-          "departure": 8220
-        },
-        {
           "station_id": "3320",
           "arrival": 8400,
           "departure": 8460
@@ -38029,11 +38439,6 @@
           "departure": 9840
         },
         {
-          "station_id": "3240",
-          "arrival": 9960,
-          "departure": 10020
-        },
-        {
           "station_id": "3230",
           "arrival": 10200,
           "departure": 10260
@@ -38061,7 +38466,7 @@
       "train_type": "區間",
       "train_type_code": "LC",
       "departure_time": "08:12:00",
-      "od_track_id": "OD-HL-TN",
+      "od_track_id": "OD-HL-CZ",
       "origin_station": "北湖",
       "destination_station": "嘉義",
       "total_travel_time": 14640,
@@ -38167,11 +38572,6 @@
           "departure": 6540
         },
         {
-          "station_id": "3240",
-          "arrival": 6720,
-          "departure": 6780
-        },
-        {
           "station_id": "3243",
           "arrival": 6900,
           "departure": 6960
@@ -38215,11 +38615,6 @@
           "station_id": "3325",
           "arrival": 8460,
           "departure": 8760
-        },
-        {
-          "station_id": "3330",
-          "arrival": 8940,
-          "departure": 9060
         },
         {
           "station_id": "3360",
@@ -38405,11 +38800,6 @@
           "departure": 5880
         },
         {
-          "station_id": "3330",
-          "arrival": 6000,
-          "departure": 6000
-        },
-        {
           "station_id": "3320",
           "arrival": 6180,
           "departure": 6240
@@ -38448,11 +38838,6 @@
           "station_id": "3240",
           "arrival": 7620,
           "departure": 7920
-        },
-        {
-          "station_id": "3240",
-          "arrival": 8100,
-          "departure": 8160
         },
         {
           "station_id": "3230",
@@ -38576,11 +38961,6 @@
           "station_id": "3325",
           "arrival": 660,
           "departure": 1020
-        },
-        {
-          "station_id": "3330",
-          "arrival": 1140,
-          "departure": 1140
         },
         {
           "station_id": "3320",
@@ -38919,11 +39299,6 @@
           "departure": 14520
         },
         {
-          "station_id": "3240",
-          "arrival": 14700,
-          "departure": 14760
-        },
-        {
           "station_id": "3243",
           "arrival": 14880,
           "departure": 14940
@@ -38967,11 +39342,6 @@
           "station_id": "3325",
           "arrival": 16740,
           "departure": 16800
-        },
-        {
-          "station_id": "3330",
-          "arrival": 16980,
-          "departure": 17040
         },
         {
           "station_id": "3360",
@@ -39157,11 +39527,6 @@
           "departure": 6480
         },
         {
-          "station_id": "3330",
-          "arrival": 6600,
-          "departure": 6600
-        },
-        {
           "station_id": "3320",
           "arrival": 6780,
           "departure": 6840
@@ -39200,11 +39565,6 @@
           "station_id": "3240",
           "arrival": 8160,
           "departure": 8220
-        },
-        {
-          "station_id": "3240",
-          "arrival": 8340,
-          "departure": 8400
         },
         {
           "station_id": "3230",
@@ -39455,11 +39815,6 @@
           "departure": 240
         },
         {
-          "station_id": "3240",
-          "arrival": 480,
-          "departure": 780
-        },
-        {
           "station_id": "3243",
           "arrival": 960,
           "departure": 1020
@@ -39505,11 +39860,6 @@
           "departure": 2580
         },
         {
-          "station_id": "3330",
-          "arrival": 2760,
-          "departure": 2820
-        },
-        {
           "station_id": "3360",
           "arrival": 3180,
           "departure": 3180
@@ -39522,7 +39872,7 @@
       "train_type": "區間",
       "train_type_code": "LC",
       "departure_time": "10:09:00",
-      "od_track_id": "OD-HL-TN",
+      "od_track_id": "OD-HL-CZ",
       "origin_station": "北湖",
       "destination_station": "嘉義",
       "total_travel_time": 14880,
@@ -39628,11 +39978,6 @@
           "departure": 6720
         },
         {
-          "station_id": "3240",
-          "arrival": 6900,
-          "departure": 6960
-        },
-        {
           "station_id": "3243",
           "arrival": 7080,
           "departure": 7140
@@ -39676,11 +40021,6 @@
           "station_id": "3325",
           "arrival": 9060,
           "departure": 9180
-        },
-        {
-          "station_id": "3330",
-          "arrival": 9360,
-          "departure": 9480
         },
         {
           "station_id": "3360",
@@ -39791,11 +40131,6 @@
           "departure": 600
         },
         {
-          "station_id": "3330",
-          "arrival": 720,
-          "departure": 720
-        },
-        {
           "station_id": "3320",
           "arrival": 900,
           "departure": 960
@@ -39834,11 +40169,6 @@
           "station_id": "3240",
           "arrival": 2280,
           "departure": 2340
-        },
-        {
-          "station_id": "3240",
-          "arrival": 2460,
-          "departure": 2520
         },
         {
           "station_id": "3230",
@@ -40142,11 +40472,6 @@
           "departure": 14460
         },
         {
-          "station_id": "3240",
-          "arrival": 14640,
-          "departure": 14700
-        },
-        {
           "station_id": "3243",
           "arrival": 14820,
           "departure": 14880
@@ -40190,11 +40515,6 @@
           "station_id": "3325",
           "arrival": 16860,
           "departure": 16920
-        },
-        {
-          "station_id": "3330",
-          "arrival": 17100,
-          "departure": 17160
         },
         {
           "station_id": "3360",
@@ -40380,11 +40700,6 @@
           "departure": 5760
         },
         {
-          "station_id": "3330",
-          "arrival": 5880,
-          "departure": 5880
-        },
-        {
           "station_id": "3320",
           "arrival": 6060,
           "departure": 6120
@@ -40423,11 +40738,6 @@
           "station_id": "3240",
           "arrival": 7800,
           "departure": 7860
-        },
-        {
-          "station_id": "3240",
-          "arrival": 7980,
-          "departure": 8040
         },
         {
           "station_id": "3230",
@@ -40720,7 +41030,7 @@
       "train_type": "區間",
       "train_type_code": "LC",
       "departure_time": "12:08:00",
-      "od_track_id": "OD-HL-TN",
+      "od_track_id": "OD-HL-CZ",
       "origin_station": "北湖",
       "destination_station": "斗六",
       "total_travel_time": 13080,
@@ -40826,11 +41136,6 @@
           "departure": 6360
         },
         {
-          "station_id": "3240",
-          "arrival": 6540,
-          "departure": 6600
-        },
-        {
           "station_id": "3243",
           "arrival": 6720,
           "departure": 6780
@@ -40874,11 +41179,6 @@
           "station_id": "3325",
           "arrival": 8880,
           "departure": 9000
-        },
-        {
-          "station_id": "3330",
-          "arrival": 9180,
-          "departure": 9240
         },
         {
           "station_id": "3360",
@@ -41039,11 +41339,6 @@
           "departure": 5940
         },
         {
-          "station_id": "3330",
-          "arrival": 6060,
-          "departure": 6060
-        },
-        {
           "station_id": "3320",
           "arrival": 6240,
           "departure": 6300
@@ -41082,11 +41377,6 @@
           "station_id": "3240",
           "arrival": 7860,
           "departure": 7920
-        },
-        {
-          "station_id": "3240",
-          "arrival": 8040,
-          "departure": 8100
         },
         {
           "station_id": "3230",
@@ -41295,11 +41585,6 @@
           "departure": 660
         },
         {
-          "station_id": "3330",
-          "arrival": 780,
-          "departure": 780
-        },
-        {
           "station_id": "3320",
           "arrival": 960,
           "departure": 1020
@@ -41340,11 +41625,6 @@
           "departure": 2400
         },
         {
-          "station_id": "3240",
-          "arrival": 2520,
-          "departure": 2580
-        },
-        {
           "station_id": "3230",
           "arrival": 2820,
           "departure": 2820
@@ -41371,11 +41651,6 @@
           "station_id": "3240",
           "arrival": 240,
           "departure": 240
-        },
-        {
-          "station_id": "3240",
-          "arrival": 420,
-          "departure": 420
         },
         {
           "station_id": "3243",
@@ -41421,11 +41696,6 @@
           "station_id": "3325",
           "arrival": 2520,
           "departure": 2820
-        },
-        {
-          "station_id": "3330",
-          "arrival": 3000,
-          "departure": 3060
         },
         {
           "station_id": "3360",
@@ -41676,11 +41946,6 @@
           "departure": 14100
         },
         {
-          "station_id": "3240",
-          "arrival": 14340,
-          "departure": 14700
-        },
-        {
           "station_id": "3243",
           "arrival": 14880,
           "departure": 14940
@@ -41724,11 +41989,6 @@
           "station_id": "3325",
           "arrival": 16740,
           "departure": 16800
-        },
-        {
-          "station_id": "3330",
-          "arrival": 16980,
-          "departure": 17040
         },
         {
           "station_id": "3360",
@@ -41914,11 +42174,6 @@
           "departure": 6000
         },
         {
-          "station_id": "3330",
-          "arrival": 6120,
-          "departure": 6120
-        },
-        {
           "station_id": "3320",
           "arrival": 6300,
           "departure": 6360
@@ -41957,11 +42212,6 @@
           "station_id": "3240",
           "arrival": 7680,
           "departure": 7980
-        },
-        {
-          "station_id": "3240",
-          "arrival": 8160,
-          "departure": 8220
         },
         {
           "station_id": "3230",
@@ -42264,7 +42514,7 @@
       "train_type": "區間",
       "train_type_code": "LC",
       "departure_time": "14:03:00",
-      "od_track_id": "OD-HL-TN",
+      "od_track_id": "OD-HL-CZ",
       "origin_station": "北湖",
       "destination_station": "嘉義",
       "total_travel_time": 15960,
@@ -42370,11 +42620,6 @@
           "departure": 6540
         },
         {
-          "station_id": "3240",
-          "arrival": 6720,
-          "departure": 6780
-        },
-        {
           "station_id": "3243",
           "arrival": 6900,
           "departure": 6960
@@ -42418,11 +42663,6 @@
           "station_id": "3325",
           "arrival": 9120,
           "departure": 9180
-        },
-        {
-          "station_id": "3330",
-          "arrival": 9360,
-          "departure": 9420
         },
         {
           "station_id": "3360",
@@ -42608,11 +42848,6 @@
           "departure": 6480
         },
         {
-          "station_id": "3330",
-          "arrival": 6600,
-          "departure": 6660
-        },
-        {
           "station_id": "3320",
           "arrival": 6840,
           "departure": 6840
@@ -42651,11 +42886,6 @@
           "station_id": "3240",
           "arrival": 8640,
           "departure": 8700
-        },
-        {
-          "station_id": "3240",
-          "arrival": 8820,
-          "departure": 8880
         },
         {
           "station_id": "3230",
@@ -42996,11 +43226,6 @@
           "departure": 14400
         },
         {
-          "station_id": "3240",
-          "arrival": 14580,
-          "departure": 14640
-        },
-        {
           "station_id": "3243",
           "arrival": 14760,
           "departure": 14820
@@ -43044,11 +43269,6 @@
           "station_id": "3325",
           "arrival": 17100,
           "departure": 17160
-        },
-        {
-          "station_id": "3330",
-          "arrival": 17340,
-          "departure": 17400
         },
         {
           "station_id": "3360",
@@ -43234,11 +43454,6 @@
           "departure": 6660
         },
         {
-          "station_id": "3330",
-          "arrival": 6780,
-          "departure": 6840
-        },
-        {
           "station_id": "3320",
           "arrival": 7020,
           "departure": 7020
@@ -43277,11 +43492,6 @@
           "station_id": "3240",
           "arrival": 8340,
           "departure": 8400
-        },
-        {
-          "station_id": "3240",
-          "arrival": 8520,
-          "departure": 8580
         },
         {
           "station_id": "3230",
@@ -43516,7 +43726,7 @@
       "train_type": "區間",
       "train_type_code": "LC",
       "departure_time": "16:33:00",
-      "od_track_id": "OD-HL-TN",
+      "od_track_id": "OD-HL-CZ",
       "origin_station": "北湖",
       "destination_station": "嘉義",
       "total_travel_time": 14700,
@@ -43622,11 +43832,6 @@
           "departure": 6540
         },
         {
-          "station_id": "3240",
-          "arrival": 6720,
-          "departure": 6780
-        },
-        {
           "station_id": "3243",
           "arrival": 6900,
           "departure": 6960
@@ -43670,11 +43875,6 @@
           "station_id": "3325",
           "arrival": 8400,
           "departure": 8520
-        },
-        {
-          "station_id": "3330",
-          "arrival": 8700,
-          "departure": 8760
         },
         {
           "station_id": "3360",
@@ -43860,11 +44060,6 @@
           "departure": 6660
         },
         {
-          "station_id": "3330",
-          "arrival": 6780,
-          "departure": 6780
-        },
-        {
           "station_id": "3320",
           "arrival": 6960,
           "departure": 7020
@@ -43903,11 +44098,6 @@
           "station_id": "3240",
           "arrival": 8340,
           "departure": 8400
-        },
-        {
-          "station_id": "3240",
-          "arrival": 8520,
-          "departure": 8580
         },
         {
           "station_id": "3230",
@@ -44031,11 +44221,6 @@
           "station_id": "3325",
           "arrival": 600,
           "departure": 660
-        },
-        {
-          "station_id": "3330",
-          "arrival": 780,
-          "departure": 780
         },
         {
           "station_id": "3320",
@@ -44339,11 +44524,6 @@
           "departure": 14460
         },
         {
-          "station_id": "3240",
-          "arrival": 14640,
-          "departure": 14700
-        },
-        {
           "station_id": "3243",
           "arrival": 14820,
           "departure": 14880
@@ -44387,11 +44567,6 @@
           "station_id": "3325",
           "arrival": 16800,
           "departure": 16860
-        },
-        {
-          "station_id": "3330",
-          "arrival": 17040,
-          "departure": 17100
         },
         {
           "station_id": "3360",
@@ -44577,11 +44752,6 @@
           "departure": 6720
         },
         {
-          "station_id": "3330",
-          "arrival": 6840,
-          "departure": 6900
-        },
-        {
           "station_id": "3320",
           "arrival": 7080,
           "departure": 7080
@@ -44620,11 +44790,6 @@
           "station_id": "3240",
           "arrival": 8400,
           "departure": 8460
-        },
-        {
-          "station_id": "3240",
-          "arrival": 8580,
-          "departure": 8640
         },
         {
           "station_id": "3230",
@@ -44880,11 +45045,6 @@
           "departure": 720
         },
         {
-          "station_id": "3330",
-          "arrival": 840,
-          "departure": 840
-        },
-        {
           "station_id": "3320",
           "arrival": 1020,
           "departure": 1080
@@ -45011,11 +45171,6 @@
           "station_id": "3240",
           "arrival": 7020,
           "departure": 7020
-        },
-        {
-          "station_id": "3240",
-          "arrival": 7200,
-          "departure": 7260
         },
         {
           "station_id": "3243",
@@ -45168,7 +45323,7 @@
       "train_type": "區間",
       "train_type_code": "LC",
       "departure_time": "18:10:00",
-      "od_track_id": "OD-HL-TN",
+      "od_track_id": "OD-HL-CZ",
       "origin_station": "北湖",
       "destination_station": "嘉義",
       "total_travel_time": 15180,
@@ -45274,11 +45429,6 @@
           "departure": 6720
         },
         {
-          "station_id": "3240",
-          "arrival": 6960,
-          "departure": 7440
-        },
-        {
           "station_id": "3243",
           "arrival": 7620,
           "departure": 7680
@@ -45322,11 +45472,6 @@
           "station_id": "3325",
           "arrival": 9180,
           "departure": 9300
-        },
-        {
-          "station_id": "3330",
-          "arrival": 9480,
-          "departure": 9600
         },
         {
           "station_id": "3360",
@@ -45512,11 +45657,6 @@
           "departure": 6240
         },
         {
-          "station_id": "3330",
-          "arrival": 6360,
-          "departure": 6360
-        },
-        {
           "station_id": "3320",
           "arrival": 6540,
           "departure": 6600
@@ -45555,11 +45695,6 @@
           "station_id": "3240",
           "arrival": 7980,
           "departure": 8040
-        },
-        {
-          "station_id": "3240",
-          "arrival": 8160,
-          "departure": 8220
         },
         {
           "station_id": "3230",
@@ -45683,11 +45818,6 @@
           "station_id": "3325",
           "arrival": 600,
           "departure": 660
-        },
-        {
-          "station_id": "3330",
-          "arrival": 780,
-          "departure": 780
         },
         {
           "station_id": "3320",
@@ -45948,11 +46078,6 @@
           "departure": 13980
         },
         {
-          "station_id": "3240",
-          "arrival": 14160,
-          "departure": 14220
-        },
-        {
           "station_id": "3243",
           "arrival": 14340,
           "departure": 14400
@@ -45996,11 +46121,6 @@
           "station_id": "3325",
           "arrival": 16320,
           "departure": 16440
-        },
-        {
-          "station_id": "3330",
-          "arrival": 16620,
-          "departure": 16680
         },
         {
           "station_id": "3360",
@@ -46186,11 +46306,6 @@
           "departure": 6480
         },
         {
-          "station_id": "3330",
-          "arrival": 6600,
-          "departure": 6660
-        },
-        {
           "station_id": "3320",
           "arrival": 6840,
           "departure": 6840
@@ -46229,11 +46344,6 @@
           "station_id": "3240",
           "arrival": 8100,
           "departure": 8160
-        },
-        {
-          "station_id": "3240",
-          "arrival": 8280,
-          "departure": 8340
         },
         {
           "station_id": "3230",
@@ -46489,11 +46599,6 @@
           "departure": 600
         },
         {
-          "station_id": "3240",
-          "arrival": 780,
-          "departure": 840
-        },
-        {
           "station_id": "3243",
           "arrival": 960,
           "departure": 1020
@@ -46537,11 +46642,6 @@
           "station_id": "3325",
           "arrival": 2940,
           "departure": 3060
-        },
-        {
-          "station_id": "3330",
-          "arrival": 3240,
-          "departure": 3360
         },
         {
           "station_id": "3360",
@@ -46631,7 +46731,7 @@
       "train_type": "區間",
       "train_type_code": "LC",
       "departure_time": "20:14:00",
-      "od_track_id": "OD-HL-TN",
+      "od_track_id": "OD-HL-CZ",
       "origin_station": "北湖",
       "destination_station": "嘉義",
       "total_travel_time": 14280,
@@ -46737,11 +46837,6 @@
           "departure": 6180
         },
         {
-          "station_id": "3240",
-          "arrival": 6360,
-          "departure": 6420
-        },
-        {
           "station_id": "3243",
           "arrival": 6540,
           "departure": 6600
@@ -46785,11 +46880,6 @@
           "station_id": "3325",
           "arrival": 8400,
           "departure": 8520
-        },
-        {
-          "station_id": "3330",
-          "arrival": 8700,
-          "departure": 8760
         },
         {
           "station_id": "3360",
@@ -46975,11 +47065,6 @@
           "departure": 5940
         },
         {
-          "station_id": "3330",
-          "arrival": 6060,
-          "departure": 6060
-        },
-        {
           "station_id": "3320",
           "arrival": 6240,
           "departure": 6300
@@ -47018,11 +47103,6 @@
           "station_id": "3240",
           "arrival": 7560,
           "departure": 7620
-        },
-        {
-          "station_id": "3240",
-          "arrival": 7740,
-          "departure": 7800
         },
         {
           "station_id": "3230",
@@ -47148,11 +47228,6 @@
           "departure": 600
         },
         {
-          "station_id": "3240",
-          "arrival": 780,
-          "departure": 840
-        },
-        {
           "station_id": "3243",
           "arrival": 960,
           "departure": 1020
@@ -47196,11 +47271,6 @@
           "station_id": "3325",
           "arrival": 2460,
           "departure": 2520
-        },
-        {
-          "station_id": "3330",
-          "arrival": 2700,
-          "departure": 2760
         },
         {
           "station_id": "3360",
@@ -47276,11 +47346,6 @@
           "departure": 2400
         },
         {
-          "station_id": "3240",
-          "arrival": 2580,
-          "departure": 2640
-        },
-        {
           "station_id": "3243",
           "arrival": 2760,
           "departure": 2820
@@ -47324,11 +47389,6 @@
           "station_id": "3325",
           "arrival": 4680,
           "departure": 4800
-        },
-        {
-          "station_id": "3330",
-          "arrival": 4980,
-          "departure": 5040
         },
         {
           "station_id": "3360",
@@ -47432,11 +47492,6 @@
           "station_id": "3240",
           "arrival": 2160,
           "departure": 2460
-        },
-        {
-          "station_id": "3240",
-          "arrival": 2640,
-          "departure": 2700
         },
         {
           "station_id": "3230",
@@ -47552,11 +47607,6 @@
           "departure": 3780
         },
         {
-          "station_id": "3330",
-          "arrival": 3900,
-          "departure": 3900
-        },
-        {
           "station_id": "3320",
           "arrival": 4080,
           "departure": 4140
@@ -47595,11 +47645,6 @@
           "station_id": "3240",
           "arrival": 6240,
           "departure": 6300
-        },
-        {
-          "station_id": "3240",
-          "arrival": 6480,
-          "departure": 6540
         },
         {
           "station_id": "3230",
@@ -47850,11 +47895,6 @@
           "departure": 14520
         },
         {
-          "station_id": "3240",
-          "arrival": 14700,
-          "departure": 14760
-        },
-        {
           "station_id": "3243",
           "arrival": 14880,
           "departure": 14940
@@ -47898,11 +47938,6 @@
           "station_id": "3325",
           "arrival": 16380,
           "departure": 16440
-        },
-        {
-          "station_id": "3330",
-          "arrival": 16620,
-          "departure": 16680
         },
         {
           "station_id": "3360",
@@ -48013,11 +48048,6 @@
           "departure": 6060
         },
         {
-          "station_id": "3330",
-          "arrival": 6180,
-          "departure": 6180
-        },
-        {
           "station_id": "3320",
           "arrival": 6360,
           "departure": 6420
@@ -48056,11 +48086,6 @@
           "station_id": "3240",
           "arrival": 7680,
           "departure": 7740
-        },
-        {
-          "station_id": "3240",
-          "arrival": 7860,
-          "departure": 7920
         },
         {
           "station_id": "3230",
@@ -48401,11 +48426,6 @@
           "departure": 14520
         },
         {
-          "station_id": "3240",
-          "arrival": 14700,
-          "departure": 14760
-        },
-        {
           "station_id": "3243",
           "arrival": 14880,
           "departure": 14940
@@ -48449,11 +48469,6 @@
           "station_id": "3325",
           "arrival": 16380,
           "departure": 16440
-        },
-        {
-          "station_id": "3330",
-          "arrival": 16620,
-          "departure": 16680
         },
         {
           "station_id": "3360",
@@ -49395,7 +49410,7 @@
       "train_type": "區間",
       "train_type_code": "LC",
       "departure_time": "05:01:00",
-      "od_track_id": "OD-大甲-FY",
+      "od_track_id": "OD-ZN-FY-C",
       "origin_station": "大甲",
       "destination_station": "彰化",
       "total_travel_time": 2400,
@@ -52241,7 +52256,7 @@
       "train_type": "區間",
       "train_type_code": "LC",
       "departure_time": "22:54:00",
-      "od_track_id": "OD-FY-大甲",
+      "od_track_id": "OD-FY-ZN-C",
       "origin_station": "彰化",
       "destination_station": "大甲",
       "total_travel_time": 2820,
@@ -52323,11 +52338,6 @@
           "station_id": "3325",
           "arrival": 720,
           "departure": 780
-        },
-        {
-          "station_id": "3330",
-          "arrival": 1020,
-          "departure": 1020
         },
         {
           "station_id": "2260",
@@ -52423,11 +52433,6 @@
           "departure": 3060
         },
         {
-          "station_id": "3330",
-          "arrival": 3180,
-          "departure": 3180
-        },
-        {
           "station_id": "3320",
           "arrival": 3360,
           "departure": 3420
@@ -52468,11 +52473,6 @@
           "departure": 4740
         },
         {
-          "station_id": "3240",
-          "arrival": 4860,
-          "departure": 4920
-        },
-        {
           "station_id": "3230",
           "arrival": 5160,
           "departure": 5160
@@ -52485,7 +52485,7 @@
       "train_type": "區間",
       "train_type_code": "LC",
       "departure_time": "05:45:00",
-      "od_track_id": "OD-CH-HC",
+      "od_track_id": "OD-FY-ZN-C",
       "origin_station": "豐原",
       "destination_station": "竹南",
       "total_travel_time": 9060,
@@ -52499,11 +52499,6 @@
           "station_id": "3240",
           "arrival": 240,
           "departure": 240
-        },
-        {
-          "station_id": "3240",
-          "arrival": 420,
-          "departure": 480
         },
         {
           "station_id": "3243",
@@ -52551,9 +52546,84 @@
           "departure": 2160
         },
         {
-          "station_id": "3330",
-          "arrival": 2400,
-          "departure": 2460
+          "station_id": "2260",
+          "arrival": 2640,
+          "departure": 2700
+        },
+        {
+          "station_id": "2250",
+          "arrival": 3000,
+          "departure": 3060
+        },
+        {
+          "station_id": "2240",
+          "arrival": 3420,
+          "departure": 3480
+        },
+        {
+          "station_id": "2230",
+          "arrival": 3780,
+          "departure": 3840
+        },
+        {
+          "station_id": "2220",
+          "arrival": 4020,
+          "departure": 4080
+        },
+        {
+          "station_id": "2210",
+          "arrival": 4380,
+          "departure": 4380
+        },
+        {
+          "station_id": "2200",
+          "arrival": 4680,
+          "departure": 4800
+        },
+        {
+          "station_id": "2190",
+          "arrival": 5040,
+          "departure": 5100
+        },
+        {
+          "station_id": "2180",
+          "arrival": 5460,
+          "departure": 5520
+        },
+        {
+          "station_id": "2170",
+          "arrival": 5880,
+          "departure": 5940
+        },
+        {
+          "station_id": "2160",
+          "arrival": 6240,
+          "departure": 6360
+        },
+        {
+          "station_id": "2150",
+          "arrival": 6540,
+          "departure": 6600
+        },
+        {
+          "station_id": "2140",
+          "arrival": 6960,
+          "departure": 7020
+        },
+        {
+          "station_id": "2130",
+          "arrival": 7260,
+          "departure": 7740
+        },
+        {
+          "station_id": "2120",
+          "arrival": 8040,
+          "departure": 8340
+        },
+        {
+          "station_id": "2110",
+          "arrival": 8760,
+          "departure": 8760
         },
         {
           "station_id": "1250",
@@ -52619,11 +52689,6 @@
           "departure": 2700
         },
         {
-          "station_id": "3330",
-          "arrival": 2820,
-          "departure": 2820
-        },
-        {
           "station_id": "3320",
           "arrival": 3000,
           "departure": 3060
@@ -52664,11 +52729,6 @@
           "departure": 4920
         },
         {
-          "station_id": "3240",
-          "arrival": 5040,
-          "departure": 5100
-        },
-        {
           "station_id": "3230",
           "arrival": 5340,
           "departure": 5340
@@ -52695,11 +52755,6 @@
           "station_id": "3240",
           "arrival": 240,
           "departure": 240
-        },
-        {
-          "station_id": "3240",
-          "arrival": 480,
-          "departure": 780
         },
         {
           "station_id": "3243",
@@ -52745,11 +52800,6 @@
           "station_id": "3325",
           "arrival": 2460,
           "departure": 2520
-        },
-        {
-          "station_id": "3330",
-          "arrival": 2760,
-          "departure": 2820
         },
         {
           "station_id": "2260",
@@ -52838,11 +52888,6 @@
           "station_id": "3325",
           "arrival": 720,
           "departure": 840
-        },
-        {
-          "station_id": "3330",
-          "arrival": 1080,
-          "departure": 1380
         },
         {
           "station_id": "2260",
@@ -52968,11 +53013,6 @@
           "departure": 3480
         },
         {
-          "station_id": "3330",
-          "arrival": 3540,
-          "departure": 3600
-        },
-        {
           "station_id": "3320",
           "arrival": 3780,
           "departure": 3780
@@ -53013,11 +53053,6 @@
           "departure": 5100
         },
         {
-          "station_id": "3240",
-          "arrival": 5220,
-          "departure": 5280
-        },
-        {
           "station_id": "3230",
           "arrival": 5520,
           "departure": 5520
@@ -53044,11 +53079,6 @@
           "station_id": "3240",
           "arrival": 240,
           "departure": 240
-        },
-        {
-          "station_id": "3240",
-          "arrival": 420,
-          "departure": 480
         },
         {
           "station_id": "3243",
@@ -53094,11 +53124,6 @@
           "station_id": "3325",
           "arrival": 2100,
           "departure": 2400
-        },
-        {
-          "station_id": "3330",
-          "arrival": 2640,
-          "departure": 2940
         },
         {
           "station_id": "2260",
@@ -53209,11 +53234,6 @@
           "departure": 2700
         },
         {
-          "station_id": "3330",
-          "arrival": 2820,
-          "departure": 2820
-        },
-        {
           "station_id": "3320",
           "arrival": 3000,
           "departure": 3060
@@ -53250,11 +53270,6 @@
           "station_id": "3240",
           "arrival": 240,
           "departure": 240
-        },
-        {
-          "station_id": "3240",
-          "arrival": 420,
-          "departure": 480
         },
         {
           "station_id": "3243",
@@ -53300,11 +53315,6 @@
           "station_id": "3325",
           "arrival": 2100,
           "departure": 2160
-        },
-        {
-          "station_id": "3330",
-          "arrival": 2400,
-          "departure": 2400
         },
         {
           "station_id": "2260",
@@ -53349,7 +53359,7 @@
       "train_type": "區間",
       "train_type_code": "LC",
       "departure_time": "08:28:00",
-      "od_track_id": "OD-HC-CH",
+      "od_track_id": "OD-ZN-FY-C",
       "origin_station": "竹南",
       "destination_station": "豐原",
       "total_travel_time": 7980,
@@ -53360,6 +53370,86 @@
           "departure": 0
         },
         {
+          "station_id": "2110",
+          "arrival": 240,
+          "departure": 300
+        },
+        {
+          "station_id": "2120",
+          "arrival": 660,
+          "departure": 660
+        },
+        {
+          "station_id": "2130",
+          "arrival": 900,
+          "departure": 1020
+        },
+        {
+          "station_id": "2140",
+          "arrival": 1200,
+          "departure": 1260
+        },
+        {
+          "station_id": "2150",
+          "arrival": 1620,
+          "departure": 1680
+        },
+        {
+          "station_id": "2160",
+          "arrival": 1860,
+          "departure": 1920
+        },
+        {
+          "station_id": "2170",
+          "arrival": 2220,
+          "departure": 2400
+        },
+        {
+          "station_id": "2180",
+          "arrival": 2760,
+          "departure": 2820
+        },
+        {
+          "station_id": "2190",
+          "arrival": 3180,
+          "departure": 3180
+        },
+        {
+          "station_id": "2200",
+          "arrival": 3480,
+          "departure": 3540
+        },
+        {
+          "station_id": "2210",
+          "arrival": 3780,
+          "departure": 3780
+        },
+        {
+          "station_id": "2220",
+          "arrival": 4080,
+          "departure": 4140
+        },
+        {
+          "station_id": "2230",
+          "arrival": 4380,
+          "departure": 4440
+        },
+        {
+          "station_id": "2240",
+          "arrival": 4680,
+          "departure": 4800
+        },
+        {
+          "station_id": "2250",
+          "arrival": 5040,
+          "departure": 5100
+        },
+        {
+          "station_id": "2260",
+          "arrival": 5400,
+          "departure": 5400
+        },
+        {
           "station_id": "3330",
           "arrival": 5640,
           "departure": 5640
@@ -53368,11 +53458,6 @@
           "station_id": "3325",
           "arrival": 5880,
           "departure": 5940
-        },
-        {
-          "station_id": "3330",
-          "arrival": 6000,
-          "departure": 6060
         },
         {
           "station_id": "3320",
@@ -53415,11 +53500,6 @@
           "departure": 7560
         },
         {
-          "station_id": "3240",
-          "arrival": 7680,
-          "departure": 7740
-        },
-        {
           "station_id": "3230",
           "arrival": 7980,
           "departure": 7980
@@ -53446,11 +53526,6 @@
           "station_id": "3240",
           "arrival": 240,
           "departure": 240
-        },
-        {
-          "station_id": "3240",
-          "arrival": 420,
-          "departure": 480
         },
         {
           "station_id": "3243",
@@ -53496,11 +53571,6 @@
           "station_id": "3325",
           "arrival": 2100,
           "departure": 2160
-        },
-        {
-          "station_id": "3330",
-          "arrival": 2400,
-          "departure": 2400
         },
         {
           "station_id": "2260",
@@ -53611,11 +53681,6 @@
           "departure": 4140
         },
         {
-          "station_id": "3330",
-          "arrival": 4260,
-          "departure": 4260
-        },
-        {
           "station_id": "3320",
           "arrival": 4440,
           "departure": 4500
@@ -53656,11 +53721,6 @@
           "departure": 5820
         },
         {
-          "station_id": "3240",
-          "arrival": 5940,
-          "departure": 6000
-        },
-        {
           "station_id": "3230",
           "arrival": 6240,
           "departure": 6240
@@ -53687,11 +53747,6 @@
           "station_id": "3240",
           "arrival": 240,
           "departure": 240
-        },
-        {
-          "station_id": "3240",
-          "arrival": 420,
-          "departure": 480
         },
         {
           "station_id": "3243",
@@ -53737,11 +53792,6 @@
           "station_id": "3325",
           "arrival": 2520,
           "departure": 2580
-        },
-        {
-          "station_id": "3330",
-          "arrival": 2820,
-          "departure": 2880
         },
         {
           "station_id": "2260",
@@ -53867,11 +53917,6 @@
           "departure": 4620
         },
         {
-          "station_id": "3330",
-          "arrival": 4740,
-          "departure": 4740
-        },
-        {
           "station_id": "3320",
           "arrival": 4920,
           "departure": 4980
@@ -53910,11 +53955,6 @@
           "station_id": "3240",
           "arrival": 6360,
           "departure": 6420
-        },
-        {
-          "station_id": "3240",
-          "arrival": 6540,
-          "departure": 6600
         },
         {
           "station_id": "3230",
@@ -53995,11 +54035,6 @@
           "departure": 3840
         },
         {
-          "station_id": "3330",
-          "arrival": 3960,
-          "departure": 3960
-        },
-        {
           "station_id": "3320",
           "arrival": 4140,
           "departure": 4200
@@ -54038,11 +54073,6 @@
           "station_id": "3240",
           "arrival": 5520,
           "departure": 5640
-        },
-        {
-          "station_id": "3240",
-          "arrival": 5760,
-          "departure": 5820
         },
         {
           "station_id": "3230",
@@ -54086,11 +54116,6 @@
           "station_id": "3325",
           "arrival": 780,
           "departure": 1380
-        },
-        {
-          "station_id": "3330",
-          "arrival": 1620,
-          "departure": 1680
         },
         {
           "station_id": "2260",
@@ -54186,11 +54211,6 @@
           "departure": 2880
         },
         {
-          "station_id": "3330",
-          "arrival": 3000,
-          "departure": 3000
-        },
-        {
           "station_id": "3320",
           "arrival": 3180,
           "departure": 3240
@@ -54229,11 +54249,6 @@
           "station_id": "3240",
           "arrival": 4560,
           "departure": 4620
-        },
-        {
-          "station_id": "3240",
-          "arrival": 4740,
-          "departure": 4800
         },
         {
           "station_id": "3230",
@@ -54329,11 +54344,6 @@
           "departure": 3000
         },
         {
-          "station_id": "3330",
-          "arrival": 3120,
-          "departure": 3120
-        },
-        {
           "station_id": "3320",
           "arrival": 3300,
           "departure": 3360
@@ -54372,11 +54382,6 @@
           "station_id": "3240",
           "arrival": 4620,
           "departure": 4680
-        },
-        {
-          "station_id": "3240",
-          "arrival": 4800,
-          "departure": 4860
         },
         {
           "station_id": "3230",
@@ -54437,11 +54442,6 @@
           "departure": 2340
         },
         {
-          "station_id": "3240",
-          "arrival": 2520,
-          "departure": 2580
-        },
-        {
           "station_id": "3243",
           "arrival": 2700,
           "departure": 2760
@@ -54485,11 +54485,6 @@
           "station_id": "3325",
           "arrival": 4200,
           "departure": 4260
-        },
-        {
-          "station_id": "3330",
-          "arrival": 4500,
-          "departure": 4560
         },
         {
           "station_id": "2260",
@@ -54615,11 +54610,6 @@
           "departure": 4440
         },
         {
-          "station_id": "3330",
-          "arrival": 4560,
-          "departure": 4560
-        },
-        {
           "station_id": "3320",
           "arrival": 4740,
           "departure": 4800
@@ -54660,11 +54650,6 @@
           "departure": 6240
         },
         {
-          "station_id": "3240",
-          "arrival": 6360,
-          "departure": 6420
-        },
-        {
           "station_id": "3230",
           "arrival": 6660,
           "departure": 6660
@@ -54691,11 +54676,6 @@
           "station_id": "3240",
           "arrival": 240,
           "departure": 240
-        },
-        {
-          "station_id": "3240",
-          "arrival": 420,
-          "departure": 480
         },
         {
           "station_id": "3243",
@@ -54741,11 +54721,6 @@
           "station_id": "3325",
           "arrival": 2100,
           "departure": 2160
-        },
-        {
-          "station_id": "3330",
-          "arrival": 2400,
-          "departure": 2700
         },
         {
           "station_id": "2260",
@@ -54856,11 +54831,6 @@
           "departure": 2760
         },
         {
-          "station_id": "3330",
-          "arrival": 2880,
-          "departure": 2880
-        },
-        {
           "station_id": "3320",
           "arrival": 3060,
           "departure": 3120
@@ -54901,11 +54871,6 @@
           "departure": 4980
         },
         {
-          "station_id": "3240",
-          "arrival": 5100,
-          "departure": 5160
-        },
-        {
           "station_id": "3230",
           "arrival": 5400,
           "departure": 5400
@@ -54932,11 +54897,6 @@
           "station_id": "3240",
           "arrival": 240,
           "departure": 240
-        },
-        {
-          "station_id": "3240",
-          "arrival": 420,
-          "departure": 480
         },
         {
           "station_id": "3243",
@@ -54982,11 +54942,6 @@
           "station_id": "3325",
           "arrival": 2100,
           "departure": 2160
-        },
-        {
-          "station_id": "3330",
-          "arrival": 2400,
-          "departure": 2460
         },
         {
           "station_id": "2260",
@@ -55112,11 +55067,6 @@
           "departure": 4200
         },
         {
-          "station_id": "3330",
-          "arrival": 4320,
-          "departure": 4320
-        },
-        {
           "station_id": "3320",
           "arrival": 4500,
           "departure": 4560
@@ -55168,11 +55118,6 @@
           "station_id": "3325",
           "arrival": 660,
           "departure": 720
-        },
-        {
-          "station_id": "3330",
-          "arrival": 960,
-          "departure": 960
         },
         {
           "station_id": "2260",
@@ -55283,11 +55228,6 @@
           "departure": 4200
         },
         {
-          "station_id": "3330",
-          "arrival": 4320,
-          "departure": 4320
-        },
-        {
           "station_id": "3320",
           "arrival": 4500,
           "departure": 4560
@@ -55328,11 +55268,6 @@
           "departure": 5940
         },
         {
-          "station_id": "3240",
-          "arrival": 6060,
-          "departure": 6120
-        },
-        {
           "station_id": "3230",
           "arrival": 6360,
           "departure": 6360
@@ -55359,11 +55294,6 @@
           "station_id": "3240",
           "arrival": 240,
           "departure": 240
-        },
-        {
-          "station_id": "3240",
-          "arrival": 480,
-          "departure": 840
         },
         {
           "station_id": "3243",
@@ -55409,11 +55339,6 @@
           "station_id": "3325",
           "arrival": 2580,
           "departure": 2640
-        },
-        {
-          "station_id": "3330",
-          "arrival": 2880,
-          "departure": 2940
         },
         {
           "station_id": "2260",
@@ -57379,7 +57304,7 @@
       "train_type": "區間快",
       "train_type_code": "CK",
       "departure_time": "05:52:00",
-      "od_track_id": "SK-ZY-TT-1",
+      "od_track_id": "OD-NK-TT",
       "origin_station": "潮州",
       "destination_station": "臺東",
       "total_travel_time": 9060,
@@ -57593,7 +57518,7 @@
       "train_type": "區間快",
       "train_type_code": "CK",
       "departure_time": "06:20:00",
-      "od_track_id": "SK-TT-ZY-0",
+      "od_track_id": "OD-TT-NK",
       "origin_station": "臺東",
       "destination_station": "潮州",
       "total_travel_time": 7620,
@@ -61599,11 +61524,6 @@
           "departure": 14400
         },
         {
-          "station_id": "3330",
-          "arrival": 14520,
-          "departure": 14520
-        },
-        {
           "station_id": "3320",
           "arrival": 14700,
           "departure": 14760
@@ -61642,11 +61562,6 @@
           "station_id": "3240",
           "arrival": 16080,
           "departure": 16140
-        },
-        {
-          "station_id": "3240",
-          "arrival": 16260,
-          "departure": 16320
         },
         {
           "station_id": "3230",
@@ -62631,11 +62546,6 @@
           "departure": 18000
         },
         {
-          "station_id": "3330",
-          "arrival": 18120,
-          "departure": 18120
-        },
-        {
           "station_id": "3320",
           "arrival": 18300,
           "departure": 18360
@@ -62674,11 +62584,6 @@
           "station_id": "3240",
           "arrival": 19620,
           "departure": 19680
-        },
-        {
-          "station_id": "3240",
-          "arrival": 19800,
-          "departure": 19860
         },
         {
           "station_id": "3230",
@@ -63360,11 +63265,6 @@
           "departure": 18120
         },
         {
-          "station_id": "3330",
-          "arrival": 18240,
-          "departure": 18240
-        },
-        {
           "station_id": "3320",
           "arrival": 18420,
           "departure": 18480
@@ -63403,11 +63303,6 @@
           "station_id": "3240",
           "arrival": 19860,
           "departure": 20220
-        },
-        {
-          "station_id": "3240",
-          "arrival": 20400,
-          "departure": 20460
         },
         {
           "station_id": "3230",
@@ -64121,11 +64016,6 @@
           "departure": 18720
         },
         {
-          "station_id": "3330",
-          "arrival": 18840,
-          "departure": 18840
-        },
-        {
           "station_id": "3320",
           "arrival": 19020,
           "departure": 19080
@@ -64164,11 +64054,6 @@
           "station_id": "3240",
           "arrival": 20400,
           "departure": 20460
-        },
-        {
-          "station_id": "3240",
-          "arrival": 20580,
-          "departure": 20640
         },
         {
           "station_id": "3230",
@@ -65307,11 +65192,6 @@
           "departure": 18540
         },
         {
-          "station_id": "3330",
-          "arrival": 18660,
-          "departure": 18660
-        },
-        {
           "station_id": "3320",
           "arrival": 18840,
           "departure": 18900
@@ -65352,11 +65232,6 @@
           "departure": 20280
         },
         {
-          "station_id": "3240",
-          "arrival": 20400,
-          "departure": 20460
-        },
-        {
           "station_id": "3230",
           "arrival": 20640,
           "departure": 20700
@@ -65393,11 +65268,6 @@
           "station_id": "3240",
           "arrival": 600,
           "departure": 600
-        },
-        {
-          "station_id": "3240",
-          "arrival": 780,
-          "departure": 840
         },
         {
           "station_id": "3243",
@@ -65443,11 +65313,6 @@
           "station_id": "3325",
           "arrival": 2400,
           "departure": 2460
-        },
-        {
-          "station_id": "3330",
-          "arrival": 2640,
-          "departure": 2700
         },
         {
           "station_id": "3360",
@@ -66053,11 +65918,6 @@
           "departure": 17580
         },
         {
-          "station_id": "3330",
-          "arrival": 17700,
-          "departure": 17700
-        },
-        {
           "station_id": "3320",
           "arrival": 17880,
           "departure": 17940
@@ -66096,11 +65956,6 @@
           "station_id": "3240",
           "arrival": 19260,
           "departure": 19320
-        },
-        {
-          "station_id": "3240",
-          "arrival": 19440,
-          "departure": 19500
         },
         {
           "station_id": "3230",
@@ -66657,11 +66512,6 @@
           "departure": 4440
         },
         {
-          "station_id": "3240",
-          "arrival": 4620,
-          "departure": 4680
-        },
-        {
           "station_id": "3243",
           "arrival": 4800,
           "departure": 4860
@@ -66705,11 +66555,6 @@
           "station_id": "3325",
           "arrival": 6660,
           "departure": 6720
-        },
-        {
-          "station_id": "3330",
-          "arrival": 6900,
-          "departure": 6960
         },
         {
           "station_id": "3360",
@@ -67315,11 +67160,6 @@
           "departure": 17700
         },
         {
-          "station_id": "3330",
-          "arrival": 17820,
-          "departure": 17820
-        },
-        {
           "station_id": "3320",
           "arrival": 18000,
           "departure": 18060
@@ -67358,11 +67198,6 @@
           "station_id": "3240",
           "arrival": 19380,
           "departure": 19440
-        },
-        {
-          "station_id": "3240",
-          "arrival": 19560,
-          "departure": 19620
         },
         {
           "station_id": "3230",
@@ -67463,11 +67298,6 @@
           "departure": 4440
         },
         {
-          "station_id": "3240",
-          "arrival": 4620,
-          "departure": 4680
-        },
-        {
           "station_id": "3243",
           "arrival": 4800,
           "departure": 4860
@@ -67511,11 +67341,6 @@
           "station_id": "3325",
           "arrival": 6660,
           "departure": 6720
-        },
-        {
-          "station_id": "3330",
-          "arrival": 6900,
-          "departure": 6960
         },
         {
           "station_id": "3360",
@@ -68405,11 +68230,6 @@
           "departure": 600
         },
         {
-          "station_id": "3240",
-          "arrival": 780,
-          "departure": 840
-        },
-        {
           "station_id": "3243",
           "arrival": 960,
           "departure": 1020
@@ -68453,11 +68273,6 @@
           "station_id": "3325",
           "arrival": 3180,
           "departure": 3240
-        },
-        {
-          "station_id": "3330",
-          "arrival": 3420,
-          "departure": 3480
         },
         {
           "station_id": "3360",
@@ -69063,11 +68878,6 @@
           "departure": 17640
         },
         {
-          "station_id": "3330",
-          "arrival": 17760,
-          "departure": 17760
-        },
-        {
           "station_id": "3320",
           "arrival": 17940,
           "departure": 18000
@@ -69106,11 +68916,6 @@
           "station_id": "3240",
           "arrival": 19320,
           "departure": 19380
-        },
-        {
-          "station_id": "3240",
-          "arrival": 19500,
-          "departure": 19560
         },
         {
           "station_id": "3230",
@@ -69645,11 +69450,6 @@
           "departure": 1680
         },
         {
-          "station_id": "3240",
-          "arrival": 1860,
-          "departure": 1920
-        },
-        {
           "station_id": "3243",
           "arrival": 2040,
           "departure": 2100
@@ -69693,11 +69493,6 @@
           "station_id": "3325",
           "arrival": 3600,
           "departure": 3720
-        },
-        {
-          "station_id": "3330",
-          "arrival": 3900,
-          "departure": 3960
         },
         {
           "station_id": "3360",
@@ -70303,11 +70098,6 @@
           "departure": 19200
         },
         {
-          "station_id": "3330",
-          "arrival": 19260,
-          "departure": 19320
-        },
-        {
           "station_id": "3320",
           "arrival": 19500,
           "departure": 19500
@@ -70346,11 +70136,6 @@
           "station_id": "3240",
           "arrival": 21120,
           "departure": 21180
-        },
-        {
-          "station_id": "3240",
-          "arrival": 21300,
-          "departure": 21360
         },
         {
           "station_id": "3230",
@@ -70717,11 +70502,6 @@
           "departure": 1260
         },
         {
-          "station_id": "3240",
-          "arrival": 1440,
-          "departure": 1500
-        },
-        {
           "station_id": "3243",
           "arrival": 1620,
           "departure": 1680
@@ -70765,11 +70545,6 @@
           "station_id": "3325",
           "arrival": 3660,
           "departure": 3720
-        },
-        {
-          "station_id": "3330",
-          "arrival": 3900,
-          "departure": 3960
         },
         {
           "station_id": "3360",
@@ -71375,11 +71150,6 @@
           "departure": 18780
         },
         {
-          "station_id": "3330",
-          "arrival": 18900,
-          "departure": 18900
-        },
-        {
           "station_id": "3320",
           "arrival": 19080,
           "departure": 19140
@@ -71418,11 +71188,6 @@
           "station_id": "3240",
           "arrival": 20400,
           "departure": 20700
-        },
-        {
-          "station_id": "3240",
-          "arrival": 20880,
-          "departure": 20940
         },
         {
           "station_id": "3230",
@@ -71944,11 +71709,6 @@
           "departure": 600
         },
         {
-          "station_id": "3240",
-          "arrival": 780,
-          "departure": 840
-        },
-        {
           "station_id": "3243",
           "arrival": 960,
           "departure": 1020
@@ -71992,11 +71752,6 @@
           "station_id": "3325",
           "arrival": 2460,
           "departure": 2520
-        },
-        {
-          "station_id": "3330",
-          "arrival": 2700,
-          "departure": 2820
         },
         {
           "station_id": "3360",
@@ -72602,11 +72357,6 @@
           "departure": 18540
         },
         {
-          "station_id": "3330",
-          "arrival": 18660,
-          "departure": 18660
-        },
-        {
           "station_id": "3320",
           "arrival": 18840,
           "departure": 18900
@@ -72645,11 +72395,6 @@
           "station_id": "3240",
           "arrival": 20220,
           "departure": 20280
-        },
-        {
-          "station_id": "3240",
-          "arrival": 20400,
-          "departure": 20460
         },
         {
           "station_id": "3230",
@@ -73146,11 +72891,6 @@
           "departure": 600
         },
         {
-          "station_id": "3240",
-          "arrival": 780,
-          "departure": 840
-        },
-        {
           "station_id": "3243",
           "arrival": 960,
           "departure": 1020
@@ -73194,11 +72934,6 @@
           "station_id": "3325",
           "arrival": 2700,
           "departure": 3000
-        },
-        {
-          "station_id": "3330",
-          "arrival": 3240,
-          "departure": 3300
         },
         {
           "station_id": "3360",
@@ -73779,11 +73514,6 @@
           "departure": 17400
         },
         {
-          "station_id": "3330",
-          "arrival": 17520,
-          "departure": 17520
-        },
-        {
           "station_id": "3320",
           "arrival": 17700,
           "departure": 17760
@@ -73822,11 +73552,6 @@
           "station_id": "3240",
           "arrival": 19380,
           "departure": 19440
-        },
-        {
-          "station_id": "3240",
-          "arrival": 19560,
-          "departure": 19620
         },
         {
           "station_id": "3230",
@@ -74323,11 +74048,6 @@
           "departure": 600
         },
         {
-          "station_id": "3240",
-          "arrival": 780,
-          "departure": 840
-        },
-        {
           "station_id": "3243",
           "arrival": 960,
           "departure": 1020
@@ -74371,11 +74091,6 @@
           "station_id": "3325",
           "arrival": 2460,
           "departure": 2520
-        },
-        {
-          "station_id": "3330",
-          "arrival": 2700,
-          "departure": 2760
         },
         {
           "station_id": "3360",
@@ -74981,11 +74696,6 @@
           "departure": 18360
         },
         {
-          "station_id": "3330",
-          "arrival": 18480,
-          "departure": 18480
-        },
-        {
           "station_id": "3320",
           "arrival": 18660,
           "departure": 18720
@@ -75024,11 +74734,6 @@
           "station_id": "3240",
           "arrival": 20700,
           "departure": 20760
-        },
-        {
-          "station_id": "3240",
-          "arrival": 20880,
-          "departure": 20940
         },
         {
           "station_id": "3230",
@@ -75525,11 +75230,6 @@
           "departure": 600
         },
         {
-          "station_id": "3240",
-          "arrival": 780,
-          "departure": 840
-        },
-        {
           "station_id": "3243",
           "arrival": 960,
           "departure": 1020
@@ -75573,11 +75273,6 @@
           "station_id": "3325",
           "arrival": 2640,
           "departure": 2700
-        },
-        {
-          "station_id": "3330",
-          "arrival": 2880,
-          "departure": 2940
         },
         {
           "station_id": "3360",
@@ -76183,11 +75878,6 @@
           "departure": 19200
         },
         {
-          "station_id": "3330",
-          "arrival": 19320,
-          "departure": 19320
-        },
-        {
           "station_id": "3320",
           "arrival": 19500,
           "departure": 19560
@@ -76226,11 +75916,6 @@
           "station_id": "3240",
           "arrival": 21180,
           "departure": 21240
-        },
-        {
-          "station_id": "3240",
-          "arrival": 21360,
-          "departure": 21420
         },
         {
           "station_id": "3230",
@@ -76863,11 +76548,6 @@
           "departure": 600
         },
         {
-          "station_id": "3240",
-          "arrival": 780,
-          "departure": 840
-        },
-        {
           "station_id": "3243",
           "arrival": 960,
           "departure": 1020
@@ -76911,11 +76591,6 @@
           "station_id": "3325",
           "arrival": 2460,
           "departure": 2580
-        },
-        {
-          "station_id": "3330",
-          "arrival": 2760,
-          "departure": 2820
         },
         {
           "station_id": "3360",
@@ -77521,11 +77196,6 @@
           "departure": 19020
         },
         {
-          "station_id": "3330",
-          "arrival": 19140,
-          "departure": 19140
-        },
-        {
           "station_id": "3320",
           "arrival": 19320,
           "departure": 19380
@@ -77564,11 +77234,6 @@
           "station_id": "3240",
           "arrival": 20820,
           "departure": 20880
-        },
-        {
-          "station_id": "3240",
-          "arrival": 21000,
-          "departure": 21060
         },
         {
           "station_id": "3230",
@@ -78093,11 +77758,6 @@
           "departure": 600
         },
         {
-          "station_id": "3240",
-          "arrival": 780,
-          "departure": 840
-        },
-        {
           "station_id": "3243",
           "arrival": 960,
           "departure": 1020
@@ -78141,11 +77801,6 @@
           "station_id": "3325",
           "arrival": 2760,
           "departure": 2820
-        },
-        {
-          "station_id": "3330",
-          "arrival": 3000,
-          "departure": 3060
         },
         {
           "station_id": "3360",
@@ -78726,11 +78381,6 @@
           "departure": 17820
         },
         {
-          "station_id": "3330",
-          "arrival": 17940,
-          "departure": 17940
-        },
-        {
           "station_id": "3320",
           "arrival": 18120,
           "departure": 18180
@@ -78769,11 +78419,6 @@
           "station_id": "3240",
           "arrival": 19500,
           "departure": 19560
-        },
-        {
-          "station_id": "3240",
-          "arrival": 19680,
-          "departure": 19740
         },
         {
           "station_id": "3230",
@@ -79500,11 +79145,6 @@
           "departure": 17700
         },
         {
-          "station_id": "3330",
-          "arrival": 17820,
-          "departure": 17820
-        },
-        {
           "station_id": "3320",
           "arrival": 18000,
           "departure": 18060
@@ -79543,11 +79183,6 @@
           "station_id": "3240",
           "arrival": 19680,
           "departure": 19740
-        },
-        {
-          "station_id": "3240",
-          "arrival": 19860,
-          "departure": 19920
         },
         {
           "station_id": "3230",
@@ -79648,11 +79283,6 @@
           "departure": 660
         },
         {
-          "station_id": "3240",
-          "arrival": 840,
-          "departure": 900
-        },
-        {
           "station_id": "3243",
           "arrival": 1020,
           "departure": 1080
@@ -79696,11 +79326,6 @@
           "station_id": "3325",
           "arrival": 3060,
           "departure": 3180
-        },
-        {
-          "station_id": "3330",
-          "arrival": 3360,
-          "departure": 3480
         },
         {
           "station_id": "3360",
@@ -80802,11 +80427,6 @@
           "departure": 16920
         },
         {
-          "station_id": "3330",
-          "arrival": 17040,
-          "departure": 17040
-        },
-        {
           "station_id": "3320",
           "arrival": 17220,
           "departure": 17280
@@ -80845,11 +80465,6 @@
           "station_id": "3240",
           "arrival": 18540,
           "departure": 18600
-        },
-        {
-          "station_id": "3240",
-          "arrival": 18720,
-          "departure": 18780
         },
         {
           "station_id": "3230",
@@ -81048,11 +80663,6 @@
           "departure": 600
         },
         {
-          "station_id": "3240",
-          "arrival": 780,
-          "departure": 840
-        },
-        {
           "station_id": "3243",
           "arrival": 960,
           "departure": 1020
@@ -81096,11 +80706,6 @@
           "station_id": "3325",
           "arrival": 2460,
           "departure": 2520
-        },
-        {
-          "station_id": "3330",
-          "arrival": 2700,
-          "departure": 2760
         },
         {
           "station_id": "3360",
@@ -82278,11 +81883,6 @@
           "departure": 600
         },
         {
-          "station_id": "3240",
-          "arrival": 780,
-          "departure": 840
-        },
-        {
           "station_id": "3243",
           "arrival": 960,
           "departure": 1020
@@ -82326,11 +81926,6 @@
           "station_id": "3325",
           "arrival": 3060,
           "departure": 3120
-        },
-        {
-          "station_id": "3330",
-          "arrival": 3300,
-          "departure": 3360
         },
         {
           "station_id": "3360",
@@ -83270,11 +82865,6 @@
           "departure": 600
         },
         {
-          "station_id": "3240",
-          "arrival": 780,
-          "departure": 840
-        },
-        {
           "station_id": "3243",
           "arrival": 960,
           "departure": 1020
@@ -83318,11 +82908,6 @@
           "station_id": "3325",
           "arrival": 2460,
           "departure": 3060
-        },
-        {
-          "station_id": "3330",
-          "arrival": 3240,
-          "departure": 3360
         },
         {
           "station_id": "3360",
@@ -84205,11 +83790,6 @@
           "departure": 600
         },
         {
-          "station_id": "3240",
-          "arrival": 780,
-          "departure": 840
-        },
-        {
           "station_id": "3243",
           "arrival": 960,
           "departure": 1020
@@ -84253,11 +83833,6 @@
           "station_id": "3325",
           "arrival": 2820,
           "departure": 2880
-        },
-        {
-          "station_id": "3330",
-          "arrival": 3060,
-          "departure": 3120
         },
         {
           "station_id": "3360",
@@ -84470,7 +84045,7 @@
       "train_type": "區間",
       "train_type_code": "LC",
       "departure_time": "06:08:00",
-      "od_track_id": "SK-ZY-TT-1",
+      "od_track_id": "OD-NK-TT",
       "origin_station": "潮州",
       "destination_station": "加祿",
       "total_travel_time": 2640,
@@ -84676,7 +84251,7 @@
       "train_type": "區間",
       "train_type_code": "LC",
       "departure_time": "07:04:00",
-      "od_track_id": "SK-TT-ZY-0",
+      "od_track_id": "OD-TT-NK",
       "origin_station": "加祿",
       "destination_station": "新左營",
       "total_travel_time": 6120,
@@ -111325,7 +110900,7 @@
       "train_type": "莒光(無身障座位)",
       "train_type_code": "CG",
       "departure_time": "08:35:00",
-      "od_track_id": "OD-CZ-KL",
+      "od_track_id": "OD-CZ-HL",
       "origin_station": "新左營",
       "destination_station": "七堵",
       "total_travel_time": 23640,
@@ -111463,7 +111038,7 @@
       "train_type": "莒光(無身障座位)",
       "train_type_code": "CG",
       "departure_time": "08:43:00",
-      "od_track_id": "OD-KL-CZ",
+      "od_track_id": "OD-HL-CZ",
       "origin_station": "七堵",
       "destination_station": "新左營",
       "total_travel_time": 25080,
@@ -111616,7 +111191,7 @@
       "train_type": "莒光(無身障座位)",
       "train_type_code": "CG",
       "departure_time": "11:13:00",
-      "od_track_id": "OD-CZ-KL",
+      "od_track_id": "OD-CZ-HL",
       "origin_station": "高雄",
       "destination_station": "七堵",
       "total_travel_time": 23820,
@@ -111744,7 +111319,7 @@
       "train_type": "莒光(無身障座位)",
       "train_type_code": "CG",
       "departure_time": "15:39:00",
-      "od_track_id": "OD-KL-CZ",
+      "od_track_id": "OD-HL-CZ",
       "origin_station": "七堵",
       "destination_station": "潮州",
       "total_travel_time": 27960,
@@ -111912,7 +111487,7 @@
       "train_type": "莒光(有身障座位)",
       "train_type_code": "CG",
       "departure_time": "12:58:00",
-      "od_track_id": "YL-ZY-SL-1",
+      "od_track_id": "OD-CZ-HL",
       "origin_station": "潮州",
       "destination_station": "花蓮",
       "total_travel_time": 42900,
@@ -111933,9 +111508,129 @@
           "departure": 1800
         },
         {
+          "station_id": "4400",
+          "arrival": 2220,
+          "departure": 2340
+        },
+        {
           "station_id": "4340",
           "arrival": 2880,
           "departure": 3000
+        },
+        {
+          "station_id": "4330",
+          "arrival": 3360,
+          "departure": 3420
+        },
+        {
+          "station_id": "4310",
+          "arrival": 3900,
+          "departure": 4020
+        },
+        {
+          "station_id": "4220",
+          "arrival": 5220,
+          "departure": 5460
+        },
+        {
+          "station_id": "4200",
+          "arrival": 5820,
+          "departure": 5880
+        },
+        {
+          "station_id": "4170",
+          "arrival": 6540,
+          "departure": 6600
+        },
+        {
+          "station_id": "4120",
+          "arrival": 7560,
+          "departure": 7920
+        },
+        {
+          "station_id": "4080",
+          "arrival": 9000,
+          "departure": 9240
+        },
+        {
+          "station_id": "4060",
+          "arrival": 9780,
+          "departure": 9840
+        },
+        {
+          "station_id": "4050",
+          "arrival": 10200,
+          "departure": 10440
+        },
+        {
+          "station_id": "3480",
+          "arrival": 10920,
+          "departure": 11100
+        },
+        {
+          "station_id": "3470",
+          "arrival": 11580,
+          "departure": 12180
+        },
+        {
+          "station_id": "3450",
+          "arrival": 12660,
+          "departure": 12720
+        },
+        {
+          "station_id": "3430",
+          "arrival": 13200,
+          "departure": 13320
+        },
+        {
+          "station_id": "3420",
+          "arrival": 13680,
+          "departure": 13800
+        },
+        {
+          "station_id": "3390",
+          "arrival": 14460,
+          "departure": 14880
+        },
+        {
+          "station_id": "3360",
+          "arrival": 15660,
+          "departure": 15900
+        },
+        {
+          "station_id": "1250",
+          "arrival": 21600,
+          "departure": 21900
+        },
+        {
+          "station_id": "1210",
+          "arrival": 22860,
+          "departure": 23040
+        },
+        {
+          "station_id": "1180",
+          "arrival": 23400,
+          "departure": 23460
+        },
+        {
+          "station_id": "1160",
+          "arrival": 24060,
+          "departure": 24180
+        },
+        {
+          "station_id": "1120",
+          "arrival": 24840,
+          "departure": 24960
+        },
+        {
+          "station_id": "1100",
+          "arrival": 25500,
+          "departure": 25680
+        },
+        {
+          "station_id": "1080",
+          "arrival": 26220,
+          "departure": 26400
         },
         {
           "station_id": "1040",
@@ -112504,7 +112199,7 @@
       "train_type": "莒光(有身障座位)",
       "train_type_code": "CG",
       "departure_time": "11:55:00",
-      "od_track_id": "SK-ZY-TT-1",
+      "od_track_id": "OD-NK-TT",
       "origin_station": "潮州",
       "destination_station": "臺東",
       "total_travel_time": 10500,

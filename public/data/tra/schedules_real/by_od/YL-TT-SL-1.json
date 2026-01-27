@@ -65,44 +65,6 @@
       ]
     },
     {
-      "train_id": "PP-162",
-      "train_no": "162",
-      "train_type": "普悠瑪(普悠瑪)",
-      "train_type_code": "PP",
-      "departure_time": "05:52:00",
-      "od_track_id": "YL-TT-SL-1",
-      "origin_station": "臺東",
-      "destination_station": "南港",
-      "total_travel_time": 21840,
-      "stations": [
-        {
-          "station_id": "6000",
-          "arrival": 0,
-          "departure": 0
-        },
-        {
-          "station_id": "1020",
-          "arrival": 20400,
-          "departure": 20520
-        },
-        {
-          "station_id": "1000",
-          "arrival": 21000,
-          "departure": 21180
-        },
-        {
-          "station_id": "0990",
-          "arrival": 21540,
-          "departure": 21600
-        },
-        {
-          "station_id": "0980",
-          "arrival": 21840,
-          "departure": 21840
-        }
-      ]
-    },
-    {
       "train_id": "TC-405",
       "train_no": "405",
       "train_type": "自強(3000)(EMU3000 型電車)",
@@ -509,49 +471,6 @@
           "station_id": "1040",
           "arrival": 17340,
           "departure": 18060
-        }
-      ]
-    },
-    {
-      "train_id": "TC-168",
-      "train_no": "168",
-      "train_type": "自強(3000)(EMU3000 型電車)",
-      "train_type_code": "TC",
-      "departure_time": "16:00:00",
-      "od_track_id": "YL-TT-SL-1",
-      "origin_station": "臺東",
-      "destination_station": "七堵",
-      "total_travel_time": 24660,
-      "stations": [
-        {
-          "station_id": "6000",
-          "arrival": 0,
-          "departure": 0
-        },
-        {
-          "station_id": "1020",
-          "arrival": 22320,
-          "departure": 22440
-        },
-        {
-          "station_id": "1000",
-          "arrival": 22920,
-          "departure": 23100
-        },
-        {
-          "station_id": "0990",
-          "arrival": 23460,
-          "departure": 23520
-        },
-        {
-          "station_id": "0980",
-          "arrival": 23700,
-          "departure": 23760
-        },
-        {
-          "station_id": "0930",
-          "arrival": 24660,
-          "departure": 24660
         }
       ]
     },

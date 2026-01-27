@@ -1,0 +1,693 @@
+{
+  "track_id": "SH-TN-SL",
+  "departures": [
+    {
+      "train_id": "LC-3701",
+      "train_no": "3701",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "05:29:00",
+      "od_track_id": "SH-TN-SL",
+      "origin_station": "臺南",
+      "destination_station": "沙崙",
+      "total_travel_time": 1440,
+      "stations": [
+        {
+          "station_id": "4220",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "4250",
+          "arrival": 420,
+          "departure": 420
+        },
+        {
+          "station_id": "4260",
+          "arrival": 540,
+          "departure": 600
+        },
+        {
+          "station_id": "4270",
+          "arrival": 780,
+          "departure": 840
+        },
+        {
+          "station_id": "4271",
+          "arrival": 1080,
+          "departure": 1140
+        },
+        {
+          "station_id": "4272",
+          "arrival": 1440,
+          "departure": 1440
+        }
+      ]
+    },
+    {
+      "train_id": "LC-3703",
+      "train_no": "3703",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "05:53:00",
+      "od_track_id": "SH-TN-SL",
+      "origin_station": "臺南",
+      "destination_station": "沙崙",
+      "total_travel_time": 1440,
+      "stations": [
+        {
+          "station_id": "4220",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "4250",
+          "arrival": 420,
+          "departure": 420
+        },
+        {
+          "station_id": "4260",
+          "arrival": 540,
+          "departure": 600
+        },
+        {
+          "station_id": "4270",
+          "arrival": 780,
+          "departure": 840
+        },
+        {
+          "station_id": "4271",
+          "arrival": 1080,
+          "departure": 1140
+        },
+        {
+          "station_id": "4272",
+          "arrival": 1440,
+          "departure": 1440
+        }
+      ]
+    },
+    {
+      "train_id": "LC-3707",
+      "train_no": "3707",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "06:57:00",
+      "od_track_id": "SH-TN-SL",
+      "origin_station": "臺南",
+      "destination_station": "沙崙",
+      "total_travel_time": 1440,
+      "stations": [
+        {
+          "station_id": "4220",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "4250",
+          "arrival": 420,
+          "departure": 420
+        },
+        {
+          "station_id": "4260",
+          "arrival": 540,
+          "departure": 600
+        },
+        {
+          "station_id": "4270",
+          "arrival": 780,
+          "departure": 840
+        },
+        {
+          "station_id": "4271",
+          "arrival": 1080,
+          "departure": 1140
+        },
+        {
+          "station_id": "4272",
+          "arrival": 1440,
+          "departure": 1440
+        }
+      ]
+    },
+    {
+      "train_id": "LC-3717",
+      "train_no": "3717",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "09:27:00",
+      "od_track_id": "SH-TN-SL",
+      "origin_station": "臺南",
+      "destination_station": "沙崙",
+      "total_travel_time": 1440,
+      "stations": [
+        {
+          "station_id": "4220",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "4250",
+          "arrival": 420,
+          "departure": 420
+        },
+        {
+          "station_id": "4260",
+          "arrival": 540,
+          "departure": 600
+        },
+        {
+          "station_id": "4270",
+          "arrival": 780,
+          "departure": 840
+        },
+        {
+          "station_id": "4271",
+          "arrival": 1080,
+          "departure": 1140
+        },
+        {
+          "station_id": "4272",
+          "arrival": 1440,
+          "departure": 1440
+        }
+      ]
+    },
+    {
+      "train_id": "LC-3723",
+      "train_no": "3723",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "10:26:00",
+      "od_track_id": "SH-TN-SL",
+      "origin_station": "臺南",
+      "destination_station": "沙崙",
+      "total_travel_time": 1440,
+      "stations": [
+        {
+          "station_id": "4220",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "4250",
+          "arrival": 420,
+          "departure": 420
+        },
+        {
+          "station_id": "4260",
+          "arrival": 540,
+          "departure": 600
+        },
+        {
+          "station_id": "4270",
+          "arrival": 780,
+          "departure": 840
+        },
+        {
+          "station_id": "4271",
+          "arrival": 1080,
+          "departure": 1140
+        },
+        {
+          "station_id": "4272",
+          "arrival": 1440,
+          "departure": 1440
+        }
+      ]
+    },
+    {
+      "train_id": "LC-3727",
+      "train_no": "3727",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "11:36:00",
+      "od_track_id": "SH-TN-SL",
+      "origin_station": "臺南",
+      "destination_station": "沙崙",
+      "total_travel_time": 1440,
+      "stations": [
+        {
+          "station_id": "4220",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "4250",
+          "arrival": 420,
+          "departure": 420
+        },
+        {
+          "station_id": "4260",
+          "arrival": 540,
+          "departure": 600
+        },
+        {
+          "station_id": "4270",
+          "arrival": 780,
+          "departure": 840
+        },
+        {
+          "station_id": "4271",
+          "arrival": 1080,
+          "departure": 1140
+        },
+        {
+          "station_id": "4272",
+          "arrival": 1440,
+          "departure": 1440
+        }
+      ]
+    },
+    {
+      "train_id": "LC-3733",
+      "train_no": "3733",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "12:31:00",
+      "od_track_id": "SH-TN-SL",
+      "origin_station": "臺南",
+      "destination_station": "沙崙",
+      "total_travel_time": 1440,
+      "stations": [
+        {
+          "station_id": "4220",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "4250",
+          "arrival": 420,
+          "departure": 420
+        },
+        {
+          "station_id": "4260",
+          "arrival": 540,
+          "departure": 600
+        },
+        {
+          "station_id": "4270",
+          "arrival": 780,
+          "departure": 840
+        },
+        {
+          "station_id": "4271",
+          "arrival": 1080,
+          "departure": 1140
+        },
+        {
+          "station_id": "4272",
+          "arrival": 1440,
+          "departure": 1440
+        }
+      ]
+    },
+    {
+      "train_id": "LC-3737",
+      "train_no": "3737",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "13:38:00",
+      "od_track_id": "SH-TN-SL",
+      "origin_station": "臺南",
+      "destination_station": "沙崙",
+      "total_travel_time": 1440,
+      "stations": [
+        {
+          "station_id": "4220",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "4250",
+          "arrival": 420,
+          "departure": 420
+        },
+        {
+          "station_id": "4260",
+          "arrival": 540,
+          "departure": 600
+        },
+        {
+          "station_id": "4270",
+          "arrival": 780,
+          "departure": 840
+        },
+        {
+          "station_id": "4271",
+          "arrival": 1080,
+          "departure": 1140
+        },
+        {
+          "station_id": "4272",
+          "arrival": 1440,
+          "departure": 1440
+        }
+      ]
+    },
+    {
+      "train_id": "LC-3741",
+      "train_no": "3741",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "14:04:00",
+      "od_track_id": "SH-TN-SL",
+      "origin_station": "臺南",
+      "destination_station": "沙崙",
+      "total_travel_time": 1440,
+      "stations": [
+        {
+          "station_id": "4220",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "4250",
+          "arrival": 420,
+          "departure": 420
+        },
+        {
+          "station_id": "4260",
+          "arrival": 540,
+          "departure": 600
+        },
+        {
+          "station_id": "4270",
+          "arrival": 780,
+          "departure": 840
+        },
+        {
+          "station_id": "4271",
+          "arrival": 1080,
+          "departure": 1140
+        },
+        {
+          "station_id": "4272",
+          "arrival": 1440,
+          "departure": 1440
+        }
+      ]
+    },
+    {
+      "train_id": "LC-3747",
+      "train_no": "3747",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "15:42:00",
+      "od_track_id": "SH-TN-SL",
+      "origin_station": "臺南",
+      "destination_station": "沙崙",
+      "total_travel_time": 1440,
+      "stations": [
+        {
+          "station_id": "4220",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "4250",
+          "arrival": 420,
+          "departure": 420
+        },
+        {
+          "station_id": "4260",
+          "arrival": 540,
+          "departure": 600
+        },
+        {
+          "station_id": "4270",
+          "arrival": 780,
+          "departure": 840
+        },
+        {
+          "station_id": "4271",
+          "arrival": 1080,
+          "departure": 1140
+        },
+        {
+          "station_id": "4272",
+          "arrival": 1440,
+          "departure": 1440
+        }
+      ]
+    },
+    {
+      "train_id": "LC-3761",
+      "train_no": "3761",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "18:06:00",
+      "od_track_id": "SH-TN-SL",
+      "origin_station": "臺南",
+      "destination_station": "沙崙",
+      "total_travel_time": 1860,
+      "stations": [
+        {
+          "station_id": "4220",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "4250",
+          "arrival": 480,
+          "departure": 780
+        },
+        {
+          "station_id": "4260",
+          "arrival": 960,
+          "departure": 960
+        },
+        {
+          "station_id": "4270",
+          "arrival": 1200,
+          "departure": 1260
+        },
+        {
+          "station_id": "4271",
+          "arrival": 1500,
+          "departure": 1560
+        },
+        {
+          "station_id": "4272",
+          "arrival": 1860,
+          "departure": 1860
+        }
+      ]
+    },
+    {
+      "train_id": "LC-3767",
+      "train_no": "3767",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "19:26:00",
+      "od_track_id": "SH-TN-SL",
+      "origin_station": "臺南",
+      "destination_station": "沙崙",
+      "total_travel_time": 1440,
+      "stations": [
+        {
+          "station_id": "4220",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "4250",
+          "arrival": 420,
+          "departure": 420
+        },
+        {
+          "station_id": "4260",
+          "arrival": 540,
+          "departure": 600
+        },
+        {
+          "station_id": "4270",
+          "arrival": 780,
+          "departure": 840
+        },
+        {
+          "station_id": "4271",
+          "arrival": 1080,
+          "departure": 1140
+        },
+        {
+          "station_id": "4272",
+          "arrival": 1440,
+          "departure": 1440
+        }
+      ]
+    },
+    {
+      "train_id": "LC-3773",
+      "train_no": "3773",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "20:25:00",
+      "od_track_id": "SH-TN-SL",
+      "origin_station": "臺南",
+      "destination_station": "沙崙",
+      "total_travel_time": 1440,
+      "stations": [
+        {
+          "station_id": "4220",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "4250",
+          "arrival": 420,
+          "departure": 420
+        },
+        {
+          "station_id": "4260",
+          "arrival": 540,
+          "departure": 600
+        },
+        {
+          "station_id": "4270",
+          "arrival": 780,
+          "departure": 840
+        },
+        {
+          "station_id": "4271",
+          "arrival": 1080,
+          "departure": 1140
+        },
+        {
+          "station_id": "4272",
+          "arrival": 1440,
+          "departure": 1440
+        }
+      ]
+    },
+    {
+      "train_id": "LC-3775",
+      "train_no": "3775",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "21:04:00",
+      "od_track_id": "SH-TN-SL",
+      "origin_station": "臺南",
+      "destination_station": "沙崙",
+      "total_travel_time": 1440,
+      "stations": [
+        {
+          "station_id": "4220",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "4250",
+          "arrival": 420,
+          "departure": 420
+        },
+        {
+          "station_id": "4260",
+          "arrival": 540,
+          "departure": 600
+        },
+        {
+          "station_id": "4270",
+          "arrival": 780,
+          "departure": 840
+        },
+        {
+          "station_id": "4271",
+          "arrival": 1080,
+          "departure": 1140
+        },
+        {
+          "station_id": "4272",
+          "arrival": 1440,
+          "departure": 1440
+        }
+      ]
+    },
+    {
+      "train_id": "LC-3781",
+      "train_no": "3781",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "21:45:00",
+      "od_track_id": "SH-TN-SL",
+      "origin_station": "臺南",
+      "destination_station": "沙崙",
+      "total_travel_time": 1560,
+      "stations": [
+        {
+          "station_id": "4220",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "4250",
+          "arrival": 420,
+          "departure": 420
+        },
+        {
+          "station_id": "4260",
+          "arrival": 540,
+          "departure": 600
+        },
+        {
+          "station_id": "4270",
+          "arrival": 780,
+          "departure": 960
+        },
+        {
+          "station_id": "4271",
+          "arrival": 1200,
+          "departure": 1260
+        },
+        {
+          "station_id": "4272",
+          "arrival": 1560,
+          "departure": 1560
+        }
+      ]
+    },
+    {
+      "train_id": "LC-3783",
+      "train_no": "3783",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "22:30:00",
+      "od_track_id": "SH-TN-SL",
+      "origin_station": "臺南",
+      "destination_station": "沙崙",
+      "total_travel_time": 1440,
+      "stations": [
+        {
+          "station_id": "4220",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "4250",
+          "arrival": 420,
+          "departure": 420
+        },
+        {
+          "station_id": "4260",
+          "arrival": 540,
+          "departure": 600
+        },
+        {
+          "station_id": "4270",
+          "arrival": 780,
+          "departure": 840
+        },
+        {
+          "station_id": "4271",
+          "arrival": 1080,
+          "departure": 1140
+        },
+        {
+          "station_id": "4272",
+          "arrival": 1440,
+          "departure": 1440
+        }
+      ]
+    }
+  ]
+}

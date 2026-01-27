@@ -6,11 +6,19 @@
       "properties": {
         "track_id": "OD-CY-HL",
         "source_track": "BB-ZY-TT-1",
-        "point_count": 9460
+        "point_count": 9462
       },
       "geometry": {
         "type": "LineString",
         "coordinates": [
+          [
+            120.39479901698586,
+            23.427916773464652
+          ],
+          [
+            120.39510384705144,
+            23.42843164019718
+          ],
           [
             120.39540732982245,
             23.428894676731648

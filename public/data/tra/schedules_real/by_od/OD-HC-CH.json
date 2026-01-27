@@ -1,0 +1,392 @@
+{
+  "track_id": "OD-HC-CH",
+  "departures": [
+    {
+      "train_id": "LC-2503",
+      "train_no": "2503",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "04:53:00",
+      "od_track_id": "OD-HC-CH",
+      "origin_station": "新竹",
+      "destination_station": "彰化",
+      "total_travel_time": 7200,
+      "stations": [
+        {
+          "station_id": "1210",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "1220",
+          "arrival": 300,
+          "departure": 300
+        },
+        {
+          "station_id": "1230",
+          "arrival": 480,
+          "departure": 540
+        },
+        {
+          "station_id": "1240",
+          "arrival": 840,
+          "departure": 840
+        },
+        {
+          "station_id": "1250",
+          "arrival": 1140,
+          "departure": 1200
+        },
+        {
+          "station_id": "3360",
+          "arrival": 7200,
+          "departure": 7200
+        }
+      ]
+    },
+    {
+      "train_id": "LC-2507",
+      "train_no": "2507",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "05:31:00",
+      "od_track_id": "OD-HC-CH",
+      "origin_station": "新竹",
+      "destination_station": "彰化",
+      "total_travel_time": 7140,
+      "stations": [
+        {
+          "station_id": "1210",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "1220",
+          "arrival": 300,
+          "departure": 300
+        },
+        {
+          "station_id": "1230",
+          "arrival": 480,
+          "departure": 540
+        },
+        {
+          "station_id": "1240",
+          "arrival": 840,
+          "departure": 840
+        },
+        {
+          "station_id": "1250",
+          "arrival": 1140,
+          "departure": 1260
+        },
+        {
+          "station_id": "3360",
+          "arrival": 7140,
+          "departure": 7140
+        }
+      ]
+    },
+    {
+      "train_id": "LC-2511",
+      "train_no": "2511",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "06:34:00",
+      "od_track_id": "OD-HC-CH",
+      "origin_station": "新竹",
+      "destination_station": "彰化",
+      "total_travel_time": 7320,
+      "stations": [
+        {
+          "station_id": "1210",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "1220",
+          "arrival": 300,
+          "departure": 300
+        },
+        {
+          "station_id": "1230",
+          "arrival": 480,
+          "departure": 540
+        },
+        {
+          "station_id": "1240",
+          "arrival": 840,
+          "departure": 840
+        },
+        {
+          "station_id": "1250",
+          "arrival": 1140,
+          "departure": 1500
+        },
+        {
+          "station_id": "3360",
+          "arrival": 7320,
+          "departure": 7320
+        }
+      ]
+    },
+    {
+      "train_id": "LC-2513",
+      "train_no": "2513",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "08:23:00",
+      "od_track_id": "OD-HC-CH",
+      "origin_station": "新竹",
+      "destination_station": "彰化",
+      "total_travel_time": 7500,
+      "stations": [
+        {
+          "station_id": "1210",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "1220",
+          "arrival": 300,
+          "departure": 300
+        },
+        {
+          "station_id": "1230",
+          "arrival": 480,
+          "departure": 540
+        },
+        {
+          "station_id": "1240",
+          "arrival": 840,
+          "departure": 840
+        },
+        {
+          "station_id": "1250",
+          "arrival": 1140,
+          "departure": 1200
+        },
+        {
+          "station_id": "3360",
+          "arrival": 7500,
+          "departure": 7500
+        }
+      ]
+    },
+    {
+      "train_id": "LC-2521",
+      "train_no": "2521",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "10:05:00",
+      "od_track_id": "OD-HC-CH",
+      "origin_station": "新竹",
+      "destination_station": "彰化",
+      "total_travel_time": 7740,
+      "stations": [
+        {
+          "station_id": "1210",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "1220",
+          "arrival": 300,
+          "departure": 300
+        },
+        {
+          "station_id": "1230",
+          "arrival": 480,
+          "departure": 540
+        },
+        {
+          "station_id": "1240",
+          "arrival": 840,
+          "departure": 840
+        },
+        {
+          "station_id": "1250",
+          "arrival": 1200,
+          "departure": 1740
+        },
+        {
+          "station_id": "3360",
+          "arrival": 7740,
+          "departure": 7740
+        }
+      ]
+    },
+    {
+      "train_id": "LC-2523",
+      "train_no": "2523",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "11:13:00",
+      "od_track_id": "OD-HC-CH",
+      "origin_station": "新竹",
+      "destination_station": "彰化",
+      "total_travel_time": 7620,
+      "stations": [
+        {
+          "station_id": "1210",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "1220",
+          "arrival": 300,
+          "departure": 300
+        },
+        {
+          "station_id": "1230",
+          "arrival": 480,
+          "departure": 540
+        },
+        {
+          "station_id": "1240",
+          "arrival": 840,
+          "departure": 840
+        },
+        {
+          "station_id": "1250",
+          "arrival": 1140,
+          "departure": 1260
+        },
+        {
+          "station_id": "3360",
+          "arrival": 7620,
+          "departure": 7620
+        }
+      ]
+    },
+    {
+      "train_id": "LC-2551",
+      "train_no": "2551",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "19:44:00",
+      "od_track_id": "OD-HC-CH",
+      "origin_station": "新竹",
+      "destination_station": "彰化",
+      "total_travel_time": 7020,
+      "stations": [
+        {
+          "station_id": "1210",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "1220",
+          "arrival": 300,
+          "departure": 300
+        },
+        {
+          "station_id": "1230",
+          "arrival": 480,
+          "departure": 540
+        },
+        {
+          "station_id": "1240",
+          "arrival": 840,
+          "departure": 840
+        },
+        {
+          "station_id": "1250",
+          "arrival": 1140,
+          "departure": 1200
+        },
+        {
+          "station_id": "3360",
+          "arrival": 7020,
+          "departure": 7020
+        }
+      ]
+    },
+    {
+      "train_id": "LC-2553",
+      "train_no": "2553",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "20:31:00",
+      "od_track_id": "OD-HC-CH",
+      "origin_station": "新竹",
+      "destination_station": "彰化",
+      "total_travel_time": 7440,
+      "stations": [
+        {
+          "station_id": "1210",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "1220",
+          "arrival": 300,
+          "departure": 300
+        },
+        {
+          "station_id": "1230",
+          "arrival": 480,
+          "departure": 540
+        },
+        {
+          "station_id": "1240",
+          "arrival": 840,
+          "departure": 840
+        },
+        {
+          "station_id": "1250",
+          "arrival": 1140,
+          "departure": 1200
+        },
+        {
+          "station_id": "3360",
+          "arrival": 7440,
+          "departure": 7440
+        }
+      ]
+    },
+    {
+      "train_id": "LC-2557",
+      "train_no": "2557",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "21:24:00",
+      "od_track_id": "OD-HC-CH",
+      "origin_station": "新竹",
+      "destination_station": "彰化",
+      "total_travel_time": 7080,
+      "stations": [
+        {
+          "station_id": "1210",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "1220",
+          "arrival": 300,
+          "departure": 300
+        },
+        {
+          "station_id": "1230",
+          "arrival": 480,
+          "departure": 540
+        },
+        {
+          "station_id": "1240",
+          "arrival": 840,
+          "departure": 840
+        },
+        {
+          "station_id": "1250",
+          "arrival": 1140,
+          "departure": 1200
+        },
+        {
+          "station_id": "3360",
+          "arrival": 7080,
+          "departure": 7080
+        }
+      ]
+    }
+  ]
+}

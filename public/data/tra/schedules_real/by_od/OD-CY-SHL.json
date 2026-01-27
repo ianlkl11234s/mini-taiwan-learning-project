@@ -1,0 +1,221 @@
+{
+  "track_id": "OD-CY-SHL",
+  "departures": [
+    {
+      "train_id": "LC-3705",
+      "train_no": "3705",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "05:21:00",
+      "od_track_id": "OD-CY-SHL",
+      "origin_station": "嘉義",
+      "destination_station": "沙崙",
+      "total_travel_time": 5760,
+      "stations": [
+        {
+          "station_id": "4080",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "4090",
+          "arrival": 360,
+          "departure": 360
+        },
+        {
+          "station_id": "4100",
+          "arrival": 540,
+          "departure": 540
+        },
+        {
+          "station_id": "4110",
+          "arrival": 840,
+          "departure": 900
+        },
+        {
+          "station_id": "4120",
+          "arrival": 1260,
+          "departure": 1380
+        },
+        {
+          "station_id": "4130",
+          "arrival": 1560,
+          "departure": 1560
+        },
+        {
+          "station_id": "4140",
+          "arrival": 1800,
+          "departure": 1800
+        },
+        {
+          "station_id": "4150",
+          "arrival": 2100,
+          "departure": 2160
+        },
+        {
+          "station_id": "4160",
+          "arrival": 2280,
+          "departure": 2340
+        },
+        {
+          "station_id": "4170",
+          "arrival": 2580,
+          "departure": 2700
+        },
+        {
+          "station_id": "4180",
+          "arrival": 2880,
+          "departure": 2880
+        },
+        {
+          "station_id": "4190",
+          "arrival": 3120,
+          "departure": 3180
+        },
+        {
+          "station_id": "4200",
+          "arrival": 3480,
+          "departure": 3540
+        },
+        {
+          "station_id": "4210",
+          "arrival": 3720,
+          "departure": 3780
+        },
+        {
+          "station_id": "4220",
+          "arrival": 3960,
+          "departure": 4380
+        },
+        {
+          "station_id": "4250",
+          "arrival": 4740,
+          "departure": 4740
+        },
+        {
+          "station_id": "4260",
+          "arrival": 4860,
+          "departure": 4920
+        },
+        {
+          "station_id": "4270",
+          "arrival": 5100,
+          "departure": 5160
+        },
+        {
+          "station_id": "4272",
+          "arrival": 5760,
+          "departure": 5760
+        }
+      ]
+    },
+    {
+      "train_id": "LC-3709",
+      "train_no": "3709",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "06:32:00",
+      "od_track_id": "OD-CY-SHL",
+      "origin_station": "嘉義",
+      "destination_station": "沙崙",
+      "total_travel_time": 5400,
+      "stations": [
+        {
+          "station_id": "4080",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "4090",
+          "arrival": 360,
+          "departure": 360
+        },
+        {
+          "station_id": "4100",
+          "arrival": 540,
+          "departure": 540
+        },
+        {
+          "station_id": "4110",
+          "arrival": 840,
+          "departure": 900
+        },
+        {
+          "station_id": "4120",
+          "arrival": 1260,
+          "departure": 1380
+        },
+        {
+          "station_id": "4130",
+          "arrival": 1560,
+          "departure": 1560
+        },
+        {
+          "station_id": "4140",
+          "arrival": 1800,
+          "departure": 1800
+        },
+        {
+          "station_id": "4150",
+          "arrival": 2100,
+          "departure": 2160
+        },
+        {
+          "station_id": "4160",
+          "arrival": 2280,
+          "departure": 2340
+        },
+        {
+          "station_id": "4170",
+          "arrival": 2580,
+          "departure": 2640
+        },
+        {
+          "station_id": "4180",
+          "arrival": 2820,
+          "departure": 2820
+        },
+        {
+          "station_id": "4190",
+          "arrival": 3060,
+          "departure": 3120
+        },
+        {
+          "station_id": "4200",
+          "arrival": 3420,
+          "departure": 3480
+        },
+        {
+          "station_id": "4210",
+          "arrival": 3660,
+          "departure": 3720
+        },
+        {
+          "station_id": "4220",
+          "arrival": 3900,
+          "departure": 4020
+        },
+        {
+          "station_id": "4250",
+          "arrival": 4380,
+          "departure": 4380
+        },
+        {
+          "station_id": "4260",
+          "arrival": 4500,
+          "departure": 4560
+        },
+        {
+          "station_id": "4270",
+          "arrival": 4740,
+          "departure": 4800
+        },
+        {
+          "station_id": "4272",
+          "arrival": 5400,
+          "departure": 5400
+        }
+      ]
+    }
+  ]
+}

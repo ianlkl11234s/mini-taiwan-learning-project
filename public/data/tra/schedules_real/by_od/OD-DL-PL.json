@@ -1,0 +1,317 @@
+{
+  "track_id": "OD-DL-PL",
+  "departures": [
+    {
+      "train_id": "LC-3301",
+      "train_no": "3301",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "05:26:00",
+      "od_track_id": "OD-DL-PL",
+      "origin_station": "潮州",
+      "destination_station": "枋寮",
+      "total_travel_time": 2040,
+      "stations": [
+        {
+          "station_id": "5050",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "5060",
+          "arrival": 240,
+          "departure": 300
+        },
+        {
+          "station_id": "5070",
+          "arrival": 480,
+          "departure": 660
+        },
+        {
+          "station_id": "5080",
+          "arrival": 960,
+          "departure": 960
+        },
+        {
+          "station_id": "5090",
+          "arrival": 1200,
+          "departure": 1260
+        },
+        {
+          "station_id": "5100",
+          "arrival": 1500,
+          "departure": 1500
+        },
+        {
+          "station_id": "5110",
+          "arrival": 1740,
+          "departure": 1740
+        },
+        {
+          "station_id": "5120",
+          "arrival": 2040,
+          "departure": 2040
+        }
+      ]
+    },
+    {
+      "train_id": "LC-3323",
+      "train_no": "3323",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "13:27:00",
+      "od_track_id": "OD-DL-PL",
+      "origin_station": "潮州",
+      "destination_station": "枋寮",
+      "total_travel_time": 3000,
+      "stations": [
+        {
+          "station_id": "5050",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "5060",
+          "arrival": 240,
+          "departure": 300
+        },
+        {
+          "station_id": "5070",
+          "arrival": 480,
+          "departure": 600
+        },
+        {
+          "station_id": "5080",
+          "arrival": 900,
+          "departure": 900
+        },
+        {
+          "station_id": "5090",
+          "arrival": 1140,
+          "departure": 1500
+        },
+        {
+          "station_id": "5100",
+          "arrival": 1800,
+          "departure": 2400
+        },
+        {
+          "station_id": "5110",
+          "arrival": 2700,
+          "departure": 2700
+        },
+        {
+          "station_id": "5120",
+          "arrival": 3000,
+          "departure": 3000
+        }
+      ]
+    },
+    {
+      "train_id": "CK-3023",
+      "train_no": "3023",
+      "train_type": "區間快",
+      "train_type_code": "CK",
+      "departure_time": "15:39:00",
+      "od_track_id": "OD-DL-PL",
+      "origin_station": "斗六",
+      "destination_station": "枋寮",
+      "total_travel_time": 13800,
+      "stations": [
+        {
+          "station_id": "3470",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "3480",
+          "arrival": 420,
+          "departure": 480
+        },
+        {
+          "station_id": "4050",
+          "arrival": 900,
+          "departure": 1260
+        },
+        {
+          "station_id": "4060",
+          "arrival": 1560,
+          "departure": 1680
+        },
+        {
+          "station_id": "4080",
+          "arrival": 2100,
+          "departure": 2280
+        },
+        {
+          "station_id": "4120",
+          "arrival": 3180,
+          "departure": 3300
+        },
+        {
+          "station_id": "4150",
+          "arrival": 3840,
+          "departure": 3900
+        },
+        {
+          "station_id": "4170",
+          "arrival": 4260,
+          "departure": 4380
+        },
+        {
+          "station_id": "4190",
+          "arrival": 4740,
+          "departure": 4800
+        },
+        {
+          "station_id": "4200",
+          "arrival": 5040,
+          "departure": 5160
+        },
+        {
+          "station_id": "4220",
+          "arrival": 5580,
+          "departure": 6120
+        },
+        {
+          "station_id": "4290",
+          "arrival": 6840,
+          "departure": 6900
+        },
+        {
+          "station_id": "4300",
+          "arrival": 7080,
+          "departure": 7140
+        },
+        {
+          "station_id": "4310",
+          "arrival": 7560,
+          "departure": 7620
+        },
+        {
+          "station_id": "4330",
+          "arrival": 7980,
+          "departure": 8040
+        },
+        {
+          "station_id": "4340",
+          "arrival": 8280,
+          "departure": 8400
+        },
+        {
+          "station_id": "4400",
+          "arrival": 8880,
+          "departure": 9000
+        },
+        {
+          "station_id": "4440",
+          "arrival": 9300,
+          "departure": 9360
+        },
+        {
+          "station_id": "4460",
+          "arrival": 9780,
+          "departure": 9840
+        },
+        {
+          "station_id": "5000",
+          "arrival": 10200,
+          "departure": 10260
+        },
+        {
+          "station_id": "5050",
+          "arrival": 10980,
+          "departure": 11040
+        },
+        {
+          "station_id": "5060",
+          "arrival": 11280,
+          "departure": 11340
+        },
+        {
+          "station_id": "5070",
+          "arrival": 11580,
+          "departure": 11820
+        },
+        {
+          "station_id": "5080",
+          "arrival": 12120,
+          "departure": 12120
+        },
+        {
+          "station_id": "5090",
+          "arrival": 12360,
+          "departure": 12420
+        },
+        {
+          "station_id": "5100",
+          "arrival": 12720,
+          "departure": 13260
+        },
+        {
+          "station_id": "5110",
+          "arrival": 13500,
+          "departure": 13500
+        },
+        {
+          "station_id": "5120",
+          "arrival": 13800,
+          "departure": 13800
+        }
+      ]
+    },
+    {
+      "train_id": "LC-3329",
+      "train_no": "3329",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "17:32:00",
+      "od_track_id": "OD-DL-PL",
+      "origin_station": "潮州",
+      "destination_station": "枋寮",
+      "total_travel_time": 2760,
+      "stations": [
+        {
+          "station_id": "5050",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "5060",
+          "arrival": 240,
+          "departure": 300
+        },
+        {
+          "station_id": "5070",
+          "arrival": 540,
+          "departure": 1080
+        },
+        {
+          "station_id": "5080",
+          "arrival": 1380,
+          "departure": 1380
+        },
+        {
+          "station_id": "5090",
+          "arrival": 1620,
+          "departure": 1680
+        },
+        {
+          "station_id": "5100",
+          "arrival": 1980,
+          "departure": 2220
+        },
+        {
+          "station_id": "5110",
+          "arrival": 2460,
+          "departure": 2460
+        },
+        {
+          "station_id": "5120",
+          "arrival": 2760,
+          "departure": 2760
+        }
+      ]
+    }
+  ]
+}

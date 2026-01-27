@@ -6,11 +6,19 @@
       "properties": {
         "track_id": "OD-壽豐-DL",
         "source_track": "BB-TT-ZY-0",
-        "point_count": 9255
+        "point_count": 9257
       },
       "geometry": {
         "type": "LineString",
         "coordinates": [
+          [
+            121.5197793884825,
+            23.8814141571294
+          ],
+          [
+            121.52035402528507,
+            23.882211890963546
+          ],
           [
             121.52072106786856,
             23.88272243953805

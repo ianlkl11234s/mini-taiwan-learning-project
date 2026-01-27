@@ -1,0 +1,228 @@
+{
+  "track_id": "OD-北湖-DL",
+  "departures": [
+    {
+      "train_id": "LC-2183",
+      "train_no": "2183",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "12:08:00",
+      "od_track_id": "OD-北湖-DL",
+      "origin_station": "北湖",
+      "destination_station": "斗六",
+      "total_travel_time": 13080,
+      "stations": [
+        {
+          "station_id": "1150",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "1160",
+          "arrival": 180,
+          "departure": 180
+        },
+        {
+          "station_id": "1170",
+          "arrival": 540,
+          "departure": 840
+        },
+        {
+          "station_id": "1180",
+          "arrival": 1140,
+          "departure": 1200
+        },
+        {
+          "station_id": "1190",
+          "arrival": 1440,
+          "departure": 1440
+        },
+        {
+          "station_id": "1210",
+          "arrival": 1620,
+          "departure": 1740
+        },
+        {
+          "station_id": "1220",
+          "arrival": 2040,
+          "departure": 2040
+        },
+        {
+          "station_id": "1230",
+          "arrival": 2220,
+          "departure": 2280
+        },
+        {
+          "station_id": "1240",
+          "arrival": 2580,
+          "departure": 2580
+        },
+        {
+          "station_id": "1250",
+          "arrival": 2880,
+          "departure": 3000
+        },
+        {
+          "station_id": "3140",
+          "arrival": 3240,
+          "departure": 3300
+        },
+        {
+          "station_id": "3150",
+          "arrival": 3540,
+          "departure": 3600
+        },
+        {
+          "station_id": "3160",
+          "arrival": 3840,
+          "departure": 3960
+        },
+        {
+          "station_id": "3170",
+          "arrival": 4260,
+          "departure": 4320
+        },
+        {
+          "station_id": "3180",
+          "arrival": 4560,
+          "departure": 4620
+        },
+        {
+          "station_id": "3190",
+          "arrival": 5040,
+          "departure": 5100
+        },
+        {
+          "station_id": "3210",
+          "arrival": 5520,
+          "departure": 5520
+        },
+        {
+          "station_id": "3220",
+          "arrival": 5700,
+          "departure": 5760
+        },
+        {
+          "station_id": "3230",
+          "arrival": 6060,
+          "departure": 6180
+        },
+        {
+          "station_id": "3240",
+          "arrival": 6360,
+          "departure": 6360
+        },
+        {
+          "station_id": "3240",
+          "arrival": 6540,
+          "departure": 6600
+        },
+        {
+          "station_id": "3243",
+          "arrival": 6720,
+          "departure": 6780
+        },
+        {
+          "station_id": "3245",
+          "arrival": 6900,
+          "departure": 6900
+        },
+        {
+          "station_id": "3247",
+          "arrival": 7020,
+          "departure": 7080
+        },
+        {
+          "station_id": "3249",
+          "arrival": 7260,
+          "departure": 7260
+        },
+        {
+          "station_id": "3300",
+          "arrival": 7500,
+          "departure": 8160
+        },
+        {
+          "station_id": "3310",
+          "arrival": 8340,
+          "departure": 8340
+        },
+        {
+          "station_id": "3320",
+          "arrival": 8520,
+          "departure": 8580
+        },
+        {
+          "station_id": "3330",
+          "arrival": 8760,
+          "departure": 8760
+        },
+        {
+          "station_id": "3325",
+          "arrival": 8880,
+          "departure": 9000
+        },
+        {
+          "station_id": "3330",
+          "arrival": 9180,
+          "departure": 9240
+        },
+        {
+          "station_id": "3360",
+          "arrival": 9600,
+          "departure": 9960
+        },
+        {
+          "station_id": "3370",
+          "arrival": 10320,
+          "departure": 10380
+        },
+        {
+          "station_id": "3380",
+          "arrival": 10620,
+          "departure": 10620
+        },
+        {
+          "station_id": "3390",
+          "arrival": 10860,
+          "departure": 10920
+        },
+        {
+          "station_id": "3400",
+          "arrival": 11100,
+          "departure": 11160
+        },
+        {
+          "station_id": "3410",
+          "arrival": 11340,
+          "departure": 11400
+        },
+        {
+          "station_id": "3420",
+          "arrival": 11640,
+          "departure": 11700
+        },
+        {
+          "station_id": "3430",
+          "arrival": 12000,
+          "departure": 12060
+        },
+        {
+          "station_id": "3450",
+          "arrival": 12420,
+          "departure": 12480
+        },
+        {
+          "station_id": "3460",
+          "arrival": 12720,
+          "departure": 12780
+        },
+        {
+          "station_id": "3470",
+          "arrival": 13080,
+          "departure": 13080
+        }
+      ]
+    }
+  ]
+}

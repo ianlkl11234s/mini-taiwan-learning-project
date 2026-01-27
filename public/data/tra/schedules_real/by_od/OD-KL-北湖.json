@@ -1,0 +1,893 @@
+{
+  "track_id": "OD-KL-北湖",
+  "departures": [
+    {
+      "train_id": "LC-1129",
+      "train_no": "1129",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "06:45:00",
+      "od_track_id": "OD-KL-北湖",
+      "origin_station": "基隆",
+      "destination_station": "北湖",
+      "total_travel_time": 7980,
+      "stations": [
+        {
+          "station_id": "0900",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "0910",
+          "arrival": 240,
+          "departure": 240
+        },
+        {
+          "station_id": "0920",
+          "arrival": 420,
+          "departure": 480
+        },
+        {
+          "station_id": "0930",
+          "arrival": 720,
+          "departure": 840
+        },
+        {
+          "station_id": "0940",
+          "arrival": 1020,
+          "departure": 1080
+        },
+        {
+          "station_id": "0950",
+          "arrival": 1260,
+          "departure": 1320
+        },
+        {
+          "station_id": "0960",
+          "arrival": 1440,
+          "departure": 1500
+        },
+        {
+          "station_id": "0970",
+          "arrival": 1620,
+          "departure": 1680
+        },
+        {
+          "station_id": "0980",
+          "arrival": 1920,
+          "departure": 1980
+        },
+        {
+          "station_id": "0990",
+          "arrival": 2220,
+          "departure": 2280
+        },
+        {
+          "station_id": "1000",
+          "arrival": 2700,
+          "departure": 2880
+        },
+        {
+          "station_id": "1010",
+          "arrival": 3120,
+          "departure": 3120
+        },
+        {
+          "station_id": "1020",
+          "arrival": 3420,
+          "departure": 3480
+        },
+        {
+          "station_id": "1030",
+          "arrival": 3660,
+          "departure": 3660
+        },
+        {
+          "station_id": "1040",
+          "arrival": 3840,
+          "departure": 3900
+        },
+        {
+          "station_id": "1050",
+          "arrival": 4080,
+          "departure": 4080
+        },
+        {
+          "station_id": "1060",
+          "arrival": 4320,
+          "departure": 4560
+        },
+        {
+          "station_id": "1070",
+          "arrival": 4860,
+          "departure": 4920
+        },
+        {
+          "station_id": "1075",
+          "arrival": 5220,
+          "departure": 5280
+        },
+        {
+          "station_id": "1080",
+          "arrival": 5520,
+          "departure": 5580
+        },
+        {
+          "station_id": "1090",
+          "arrival": 5880,
+          "departure": 5880
+        },
+        {
+          "station_id": "1100",
+          "arrival": 6120,
+          "departure": 6240
+        },
+        {
+          "station_id": "1110",
+          "arrival": 6600,
+          "departure": 6900
+        },
+        {
+          "station_id": "1120",
+          "arrival": 7200,
+          "departure": 7260
+        },
+        {
+          "station_id": "1130",
+          "arrival": 7560,
+          "departure": 7620
+        },
+        {
+          "station_id": "1140",
+          "arrival": 7740,
+          "departure": 7800
+        },
+        {
+          "station_id": "1150",
+          "arrival": 7980,
+          "departure": 8460
+        }
+      ]
+    },
+    {
+      "train_id": "LC-1135",
+      "train_no": "1135",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "07:24:00",
+      "od_track_id": "OD-KL-北湖",
+      "origin_station": "基隆",
+      "destination_station": "北湖",
+      "total_travel_time": 8160,
+      "stations": [
+        {
+          "station_id": "0900",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "0910",
+          "arrival": 240,
+          "departure": 240
+        },
+        {
+          "station_id": "0920",
+          "arrival": 420,
+          "departure": 480
+        },
+        {
+          "station_id": "0930",
+          "arrival": 720,
+          "departure": 780
+        },
+        {
+          "station_id": "0940",
+          "arrival": 960,
+          "departure": 1020
+        },
+        {
+          "station_id": "0950",
+          "arrival": 1200,
+          "departure": 1260
+        },
+        {
+          "station_id": "0960",
+          "arrival": 1380,
+          "departure": 1440
+        },
+        {
+          "station_id": "0970",
+          "arrival": 1560,
+          "departure": 1620
+        },
+        {
+          "station_id": "0980",
+          "arrival": 1860,
+          "departure": 1920
+        },
+        {
+          "station_id": "0990",
+          "arrival": 2160,
+          "departure": 2520
+        },
+        {
+          "station_id": "1000",
+          "arrival": 3000,
+          "departure": 3180
+        },
+        {
+          "station_id": "1010",
+          "arrival": 3420,
+          "departure": 3420
+        },
+        {
+          "station_id": "1020",
+          "arrival": 3720,
+          "departure": 3780
+        },
+        {
+          "station_id": "1030",
+          "arrival": 3960,
+          "departure": 3960
+        },
+        {
+          "station_id": "1040",
+          "arrival": 4140,
+          "departure": 4200
+        },
+        {
+          "station_id": "1050",
+          "arrival": 4380,
+          "departure": 4380
+        },
+        {
+          "station_id": "1060",
+          "arrival": 4560,
+          "departure": 4620
+        },
+        {
+          "station_id": "1070",
+          "arrival": 4920,
+          "departure": 5280
+        },
+        {
+          "station_id": "1075",
+          "arrival": 5640,
+          "departure": 5700
+        },
+        {
+          "station_id": "1080",
+          "arrival": 5940,
+          "departure": 6060
+        },
+        {
+          "station_id": "1090",
+          "arrival": 6360,
+          "departure": 6420
+        },
+        {
+          "station_id": "1100",
+          "arrival": 6660,
+          "departure": 6780
+        },
+        {
+          "station_id": "1110",
+          "arrival": 7080,
+          "departure": 7140
+        },
+        {
+          "station_id": "1120",
+          "arrival": 7380,
+          "departure": 7440
+        },
+        {
+          "station_id": "1130",
+          "arrival": 7740,
+          "departure": 7800
+        },
+        {
+          "station_id": "1140",
+          "arrival": 7920,
+          "departure": 7980
+        },
+        {
+          "station_id": "1150",
+          "arrival": 8160,
+          "departure": 8640
+        }
+      ]
+    },
+    {
+      "train_id": "LC-1143",
+      "train_no": "1143",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "07:55:00",
+      "od_track_id": "OD-KL-北湖",
+      "origin_station": "基隆",
+      "destination_station": "北湖",
+      "total_travel_time": 7320,
+      "stations": [
+        {
+          "station_id": "0900",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "0910",
+          "arrival": 240,
+          "departure": 240
+        },
+        {
+          "station_id": "0920",
+          "arrival": 420,
+          "departure": 540
+        },
+        {
+          "station_id": "0930",
+          "arrival": 780,
+          "departure": 900
+        },
+        {
+          "station_id": "0940",
+          "arrival": 1080,
+          "departure": 1140
+        },
+        {
+          "station_id": "0950",
+          "arrival": 1320,
+          "departure": 1380
+        },
+        {
+          "station_id": "0960",
+          "arrival": 1500,
+          "departure": 1560
+        },
+        {
+          "station_id": "0970",
+          "arrival": 1680,
+          "departure": 1740
+        },
+        {
+          "station_id": "0980",
+          "arrival": 1980,
+          "departure": 2040
+        },
+        {
+          "station_id": "0990",
+          "arrival": 2280,
+          "departure": 2340
+        },
+        {
+          "station_id": "1000",
+          "arrival": 2760,
+          "departure": 2820
+        },
+        {
+          "station_id": "1010",
+          "arrival": 3060,
+          "departure": 3060
+        },
+        {
+          "station_id": "1020",
+          "arrival": 3360,
+          "departure": 3420
+        },
+        {
+          "station_id": "1030",
+          "arrival": 3600,
+          "departure": 3600
+        },
+        {
+          "station_id": "1040",
+          "arrival": 3780,
+          "departure": 3840
+        },
+        {
+          "station_id": "1050",
+          "arrival": 4020,
+          "departure": 4020
+        },
+        {
+          "station_id": "1060",
+          "arrival": 4200,
+          "departure": 4200
+        },
+        {
+          "station_id": "1070",
+          "arrival": 4440,
+          "departure": 4500
+        },
+        {
+          "station_id": "1075",
+          "arrival": 4800,
+          "departure": 4860
+        },
+        {
+          "station_id": "1080",
+          "arrival": 5100,
+          "departure": 5220
+        },
+        {
+          "station_id": "1090",
+          "arrival": 5520,
+          "departure": 5580
+        },
+        {
+          "station_id": "1100",
+          "arrival": 5820,
+          "departure": 5940
+        },
+        {
+          "station_id": "1110",
+          "arrival": 6240,
+          "departure": 6300
+        },
+        {
+          "station_id": "1120",
+          "arrival": 6540,
+          "departure": 6600
+        },
+        {
+          "station_id": "1130",
+          "arrival": 6900,
+          "departure": 6960
+        },
+        {
+          "station_id": "1140",
+          "arrival": 7080,
+          "departure": 7140
+        },
+        {
+          "station_id": "1150",
+          "arrival": 7320,
+          "departure": 7920
+        }
+      ]
+    },
+    {
+      "train_id": "LC-1163",
+      "train_no": "1163",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "09:58:00",
+      "od_track_id": "OD-KL-北湖",
+      "origin_station": "基隆",
+      "destination_station": "北湖",
+      "total_travel_time": 7680,
+      "stations": [
+        {
+          "station_id": "0900",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "0910",
+          "arrival": 240,
+          "departure": 240
+        },
+        {
+          "station_id": "0920",
+          "arrival": 420,
+          "departure": 480
+        },
+        {
+          "station_id": "0930",
+          "arrival": 720,
+          "departure": 840
+        },
+        {
+          "station_id": "0940",
+          "arrival": 1020,
+          "departure": 1080
+        },
+        {
+          "station_id": "0950",
+          "arrival": 1260,
+          "departure": 1320
+        },
+        {
+          "station_id": "0960",
+          "arrival": 1440,
+          "departure": 1500
+        },
+        {
+          "station_id": "0970",
+          "arrival": 1620,
+          "departure": 1620
+        },
+        {
+          "station_id": "0980",
+          "arrival": 1920,
+          "departure": 1920
+        },
+        {
+          "station_id": "0990",
+          "arrival": 2160,
+          "departure": 2220
+        },
+        {
+          "station_id": "1000",
+          "arrival": 2640,
+          "departure": 2820
+        },
+        {
+          "station_id": "1010",
+          "arrival": 3060,
+          "departure": 3060
+        },
+        {
+          "station_id": "1020",
+          "arrival": 3360,
+          "departure": 3420
+        },
+        {
+          "station_id": "1030",
+          "arrival": 3600,
+          "departure": 3600
+        },
+        {
+          "station_id": "1040",
+          "arrival": 3780,
+          "departure": 3840
+        },
+        {
+          "station_id": "1050",
+          "arrival": 4020,
+          "departure": 4020
+        },
+        {
+          "station_id": "1060",
+          "arrival": 4200,
+          "departure": 4200
+        },
+        {
+          "station_id": "1070",
+          "arrival": 4440,
+          "departure": 4500
+        },
+        {
+          "station_id": "1075",
+          "arrival": 4800,
+          "departure": 4860
+        },
+        {
+          "station_id": "1080",
+          "arrival": 5100,
+          "departure": 5220
+        },
+        {
+          "station_id": "1090",
+          "arrival": 5520,
+          "departure": 5580
+        },
+        {
+          "station_id": "1100",
+          "arrival": 5820,
+          "departure": 5940
+        },
+        {
+          "station_id": "1110",
+          "arrival": 6240,
+          "departure": 6300
+        },
+        {
+          "station_id": "1120",
+          "arrival": 6600,
+          "departure": 6900
+        },
+        {
+          "station_id": "1130",
+          "arrival": 7260,
+          "departure": 7320
+        },
+        {
+          "station_id": "1140",
+          "arrival": 7440,
+          "departure": 7500
+        },
+        {
+          "station_id": "1150",
+          "arrival": 7680,
+          "departure": 8280
+        }
+      ]
+    },
+    {
+      "train_id": "LC-1203",
+      "train_no": "1203",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "13:58:00",
+      "od_track_id": "OD-KL-北湖",
+      "origin_station": "基隆",
+      "destination_station": "北湖",
+      "total_travel_time": 7680,
+      "stations": [
+        {
+          "station_id": "0900",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "0910",
+          "arrival": 240,
+          "departure": 240
+        },
+        {
+          "station_id": "0920",
+          "arrival": 420,
+          "departure": 480
+        },
+        {
+          "station_id": "0930",
+          "arrival": 720,
+          "departure": 780
+        },
+        {
+          "station_id": "0940",
+          "arrival": 960,
+          "departure": 1020
+        },
+        {
+          "station_id": "0950",
+          "arrival": 1200,
+          "departure": 1260
+        },
+        {
+          "station_id": "0960",
+          "arrival": 1380,
+          "departure": 1440
+        },
+        {
+          "station_id": "0970",
+          "arrival": 1560,
+          "departure": 1560
+        },
+        {
+          "station_id": "0980",
+          "arrival": 1860,
+          "departure": 1860
+        },
+        {
+          "station_id": "0990",
+          "arrival": 2100,
+          "departure": 2160
+        },
+        {
+          "station_id": "1000",
+          "arrival": 2580,
+          "departure": 2760
+        },
+        {
+          "station_id": "1010",
+          "arrival": 3000,
+          "departure": 3000
+        },
+        {
+          "station_id": "1020",
+          "arrival": 3300,
+          "departure": 3360
+        },
+        {
+          "station_id": "1030",
+          "arrival": 3540,
+          "departure": 3540
+        },
+        {
+          "station_id": "1040",
+          "arrival": 3720,
+          "departure": 3840
+        },
+        {
+          "station_id": "1050",
+          "arrival": 4020,
+          "departure": 4020
+        },
+        {
+          "station_id": "1060",
+          "arrival": 4200,
+          "departure": 4200
+        },
+        {
+          "station_id": "1070",
+          "arrival": 4440,
+          "departure": 4500
+        },
+        {
+          "station_id": "1075",
+          "arrival": 4800,
+          "departure": 4860
+        },
+        {
+          "station_id": "1080",
+          "arrival": 5100,
+          "departure": 5220
+        },
+        {
+          "station_id": "1090",
+          "arrival": 5520,
+          "departure": 5580
+        },
+        {
+          "station_id": "1100",
+          "arrival": 5820,
+          "departure": 5940
+        },
+        {
+          "station_id": "1110",
+          "arrival": 6240,
+          "departure": 6300
+        },
+        {
+          "station_id": "1120",
+          "arrival": 6600,
+          "departure": 6900
+        },
+        {
+          "station_id": "1130",
+          "arrival": 7260,
+          "departure": 7320
+        },
+        {
+          "station_id": "1140",
+          "arrival": 7440,
+          "departure": 7500
+        },
+        {
+          "station_id": "1150",
+          "arrival": 7680,
+          "departure": 8160
+        }
+      ]
+    },
+    {
+      "train_id": "LC-1221",
+      "train_no": "1221",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "15:54:00",
+      "od_track_id": "OD-KL-北湖",
+      "origin_station": "基隆",
+      "destination_station": "北湖",
+      "total_travel_time": 7920,
+      "stations": [
+        {
+          "station_id": "0900",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "0910",
+          "arrival": 240,
+          "departure": 240
+        },
+        {
+          "station_id": "0920",
+          "arrival": 420,
+          "departure": 480
+        },
+        {
+          "station_id": "0930",
+          "arrival": 720,
+          "departure": 780
+        },
+        {
+          "station_id": "0940",
+          "arrival": 960,
+          "departure": 1020
+        },
+        {
+          "station_id": "0950",
+          "arrival": 1200,
+          "departure": 1260
+        },
+        {
+          "station_id": "0960",
+          "arrival": 1380,
+          "departure": 1440
+        },
+        {
+          "station_id": "0970",
+          "arrival": 1560,
+          "departure": 1560
+        },
+        {
+          "station_id": "0980",
+          "arrival": 1860,
+          "departure": 1860
+        },
+        {
+          "station_id": "0990",
+          "arrival": 2100,
+          "departure": 2160
+        },
+        {
+          "station_id": "1000",
+          "arrival": 2580,
+          "departure": 2700
+        },
+        {
+          "station_id": "1010",
+          "arrival": 2940,
+          "departure": 2940
+        },
+        {
+          "station_id": "1020",
+          "arrival": 3240,
+          "departure": 3660
+        },
+        {
+          "station_id": "1030",
+          "arrival": 3840,
+          "departure": 3840
+        },
+        {
+          "station_id": "1040",
+          "arrival": 4020,
+          "departure": 4080
+        },
+        {
+          "station_id": "1050",
+          "arrival": 4260,
+          "departure": 4260
+        },
+        {
+          "station_id": "1060",
+          "arrival": 4440,
+          "departure": 4440
+        },
+        {
+          "station_id": "1070",
+          "arrival": 4680,
+          "departure": 4740
+        },
+        {
+          "station_id": "1075",
+          "arrival": 5040,
+          "departure": 5100
+        },
+        {
+          "station_id": "1080",
+          "arrival": 5340,
+          "departure": 5460
+        },
+        {
+          "station_id": "1090",
+          "arrival": 5760,
+          "departure": 5820
+        },
+        {
+          "station_id": "1100",
+          "arrival": 6060,
+          "departure": 6180
+        },
+        {
+          "station_id": "1110",
+          "arrival": 6480,
+          "departure": 6540
+        },
+        {
+          "station_id": "1120",
+          "arrival": 6840,
+          "departure": 7140
+        },
+        {
+          "station_id": "1130",
+          "arrival": 7500,
+          "departure": 7560
+        },
+        {
+          "station_id": "1140",
+          "arrival": 7680,
+          "departure": 7740
+        },
+        {
+          "station_id": "1150",
+          "arrival": 7920,
+          "departure": 8400
+        }
+      ]
+    }
+  ]
+}

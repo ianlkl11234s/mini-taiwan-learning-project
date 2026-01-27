@@ -1,0 +1,563 @@
+{
+  "track_id": "SP-CH-JJ-0",
+  "departures": [
+    {
+      "train_id": "CK-2703",
+      "train_no": "2703",
+      "train_type": "區間快",
+      "train_type_code": "CK",
+      "departure_time": "05:18:00",
+      "od_track_id": "SP-CH-JJ-0",
+      "origin_station": "彰化",
+      "destination_station": "車埕",
+      "total_travel_time": 5640,
+      "stations": [
+        {
+          "station_id": "3360",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "3390",
+          "arrival": 780,
+          "departure": 840
+        },
+        {
+          "station_id": "3420",
+          "arrival": 1440,
+          "departure": 1500
+        },
+        {
+          "station_id": "3430",
+          "arrival": 1860,
+          "departure": 2160
+        },
+        {
+          "station_id": "3431",
+          "arrival": 2400,
+          "departure": 2460
+        },
+        {
+          "station_id": "3432",
+          "arrival": 3000,
+          "departure": 3360
+        },
+        {
+          "station_id": "3433",
+          "arrival": 3780,
+          "departure": 3840
+        },
+        {
+          "station_id": "3434",
+          "arrival": 4260,
+          "departure": 4380
+        },
+        {
+          "station_id": "3435",
+          "arrival": 5280,
+          "departure": 5340
+        },
+        {
+          "station_id": "3436",
+          "arrival": 5640,
+          "departure": 5640
+        }
+      ]
+    },
+    {
+      "train_id": "LC-2705",
+      "train_no": "2705",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "08:00:00",
+      "od_track_id": "SP-CH-JJ-0",
+      "origin_station": "二水",
+      "destination_station": "車埕",
+      "total_travel_time": 3240,
+      "stations": [
+        {
+          "station_id": "3430",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "3431",
+          "arrival": 240,
+          "departure": 300
+        },
+        {
+          "station_id": "3432",
+          "arrival": 840,
+          "departure": 900
+        },
+        {
+          "station_id": "3433",
+          "arrival": 1320,
+          "departure": 1380
+        },
+        {
+          "station_id": "3434",
+          "arrival": 1800,
+          "departure": 1980
+        },
+        {
+          "station_id": "3435",
+          "arrival": 2880,
+          "departure": 2940
+        },
+        {
+          "station_id": "3436",
+          "arrival": 3240,
+          "departure": 3240
+        }
+      ]
+    },
+    {
+      "train_id": "CK-2707",
+      "train_no": "2707",
+      "train_type": "區間快",
+      "train_type_code": "CK",
+      "departure_time": "08:40:00",
+      "od_track_id": "SP-CH-JJ-0",
+      "origin_station": "彰化",
+      "destination_station": "車埕",
+      "total_travel_time": 5520,
+      "stations": [
+        {
+          "station_id": "3360",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "3390",
+          "arrival": 780,
+          "departure": 840
+        },
+        {
+          "station_id": "3420",
+          "arrival": 1440,
+          "departure": 1500
+        },
+        {
+          "station_id": "3430",
+          "arrival": 1860,
+          "departure": 2100
+        },
+        {
+          "station_id": "3431",
+          "arrival": 2340,
+          "departure": 2400
+        },
+        {
+          "station_id": "3432",
+          "arrival": 2940,
+          "departure": 3240
+        },
+        {
+          "station_id": "3433",
+          "arrival": 3660,
+          "departure": 3720
+        },
+        {
+          "station_id": "3434",
+          "arrival": 4140,
+          "departure": 4260
+        },
+        {
+          "station_id": "3435",
+          "arrival": 5160,
+          "departure": 5220
+        },
+        {
+          "station_id": "3436",
+          "arrival": 5520,
+          "departure": 5520
+        }
+      ]
+    },
+    {
+      "train_id": "LC-2711",
+      "train_no": "2711",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "10:40:00",
+      "od_track_id": "SP-CH-JJ-0",
+      "origin_station": "二水",
+      "destination_station": "車埕",
+      "total_travel_time": 3240,
+      "stations": [
+        {
+          "station_id": "3430",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "3431",
+          "arrival": 240,
+          "departure": 300
+        },
+        {
+          "station_id": "3432",
+          "arrival": 840,
+          "departure": 900
+        },
+        {
+          "station_id": "3433",
+          "arrival": 1320,
+          "departure": 1380
+        },
+        {
+          "station_id": "3434",
+          "arrival": 1800,
+          "departure": 1980
+        },
+        {
+          "station_id": "3435",
+          "arrival": 2880,
+          "departure": 2940
+        },
+        {
+          "station_id": "3436",
+          "arrival": 3240,
+          "departure": 3240
+        }
+      ]
+    },
+    {
+      "train_id": "LC-2713",
+      "train_no": "2713",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "12:00:00",
+      "od_track_id": "SP-CH-JJ-0",
+      "origin_station": "二水",
+      "destination_station": "車埕",
+      "total_travel_time": 3240,
+      "stations": [
+        {
+          "station_id": "3430",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "3431",
+          "arrival": 240,
+          "departure": 300
+        },
+        {
+          "station_id": "3432",
+          "arrival": 840,
+          "departure": 900
+        },
+        {
+          "station_id": "3433",
+          "arrival": 1320,
+          "departure": 1380
+        },
+        {
+          "station_id": "3434",
+          "arrival": 1800,
+          "departure": 1980
+        },
+        {
+          "station_id": "3435",
+          "arrival": 2880,
+          "departure": 2940
+        },
+        {
+          "station_id": "3436",
+          "arrival": 3240,
+          "departure": 3240
+        }
+      ]
+    },
+    {
+      "train_id": "LC-2715",
+      "train_no": "2715",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "13:20:00",
+      "od_track_id": "SP-CH-JJ-0",
+      "origin_station": "二水",
+      "destination_station": "車埕",
+      "total_travel_time": 3240,
+      "stations": [
+        {
+          "station_id": "3430",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "3431",
+          "arrival": 240,
+          "departure": 300
+        },
+        {
+          "station_id": "3432",
+          "arrival": 840,
+          "departure": 900
+        },
+        {
+          "station_id": "3433",
+          "arrival": 1320,
+          "departure": 1380
+        },
+        {
+          "station_id": "3434",
+          "arrival": 1800,
+          "departure": 1980
+        },
+        {
+          "station_id": "3435",
+          "arrival": 2880,
+          "departure": 2940
+        },
+        {
+          "station_id": "3436",
+          "arrival": 3240,
+          "departure": 3240
+        }
+      ]
+    },
+    {
+      "train_id": "LC-2717",
+      "train_no": "2717",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "14:40:00",
+      "od_track_id": "SP-CH-JJ-0",
+      "origin_station": "二水",
+      "destination_station": "車埕",
+      "total_travel_time": 3240,
+      "stations": [
+        {
+          "station_id": "3430",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "3431",
+          "arrival": 240,
+          "departure": 300
+        },
+        {
+          "station_id": "3432",
+          "arrival": 840,
+          "departure": 900
+        },
+        {
+          "station_id": "3433",
+          "arrival": 1320,
+          "departure": 1380
+        },
+        {
+          "station_id": "3434",
+          "arrival": 1800,
+          "departure": 1980
+        },
+        {
+          "station_id": "3435",
+          "arrival": 2880,
+          "departure": 2940
+        },
+        {
+          "station_id": "3436",
+          "arrival": 3240,
+          "departure": 3240
+        }
+      ]
+    },
+    {
+      "train_id": "LC-2721",
+      "train_no": "2721",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "16:05:00",
+      "od_track_id": "SP-CH-JJ-0",
+      "origin_station": "二水",
+      "destination_station": "車埕",
+      "total_travel_time": 3240,
+      "stations": [
+        {
+          "station_id": "3430",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "3431",
+          "arrival": 240,
+          "departure": 300
+        },
+        {
+          "station_id": "3432",
+          "arrival": 840,
+          "departure": 900
+        },
+        {
+          "station_id": "3433",
+          "arrival": 1320,
+          "departure": 1380
+        },
+        {
+          "station_id": "3434",
+          "arrival": 1800,
+          "departure": 1980
+        },
+        {
+          "station_id": "3435",
+          "arrival": 2880,
+          "departure": 2940
+        },
+        {
+          "station_id": "3436",
+          "arrival": 3240,
+          "departure": 3240
+        }
+      ]
+    },
+    {
+      "train_id": "LC-2723",
+      "train_no": "2723",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "17:30:00",
+      "od_track_id": "SP-CH-JJ-0",
+      "origin_station": "二水",
+      "destination_station": "車埕",
+      "total_travel_time": 3240,
+      "stations": [
+        {
+          "station_id": "3430",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "3431",
+          "arrival": 240,
+          "departure": 300
+        },
+        {
+          "station_id": "3432",
+          "arrival": 840,
+          "departure": 900
+        },
+        {
+          "station_id": "3433",
+          "arrival": 1320,
+          "departure": 1380
+        },
+        {
+          "station_id": "3434",
+          "arrival": 1800,
+          "departure": 1980
+        },
+        {
+          "station_id": "3435",
+          "arrival": 2880,
+          "departure": 2940
+        },
+        {
+          "station_id": "3436",
+          "arrival": 3240,
+          "departure": 3240
+        }
+      ]
+    },
+    {
+      "train_id": "LC-2725",
+      "train_no": "2725",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "18:50:00",
+      "od_track_id": "SP-CH-JJ-0",
+      "origin_station": "二水",
+      "destination_station": "車埕",
+      "total_travel_time": 3240,
+      "stations": [
+        {
+          "station_id": "3430",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "3431",
+          "arrival": 240,
+          "departure": 300
+        },
+        {
+          "station_id": "3432",
+          "arrival": 840,
+          "departure": 900
+        },
+        {
+          "station_id": "3433",
+          "arrival": 1320,
+          "departure": 1380
+        },
+        {
+          "station_id": "3434",
+          "arrival": 1800,
+          "departure": 1980
+        },
+        {
+          "station_id": "3435",
+          "arrival": 2880,
+          "departure": 2940
+        },
+        {
+          "station_id": "3436",
+          "arrival": 3240,
+          "departure": 3240
+        }
+      ]
+    },
+    {
+      "train_id": "LC-2727",
+      "train_no": "2727",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "20:20:00",
+      "od_track_id": "SP-CH-JJ-0",
+      "origin_station": "二水",
+      "destination_station": "車埕",
+      "total_travel_time": 3180,
+      "stations": [
+        {
+          "station_id": "3430",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "3431",
+          "arrival": 240,
+          "departure": 300
+        },
+        {
+          "station_id": "3432",
+          "arrival": 840,
+          "departure": 900
+        },
+        {
+          "station_id": "3433",
+          "arrival": 1320,
+          "departure": 1380
+        },
+        {
+          "station_id": "3434",
+          "arrival": 1800,
+          "departure": 1920
+        },
+        {
+          "station_id": "3435",
+          "arrival": 2820,
+          "departure": 2880
+        },
+        {
+          "station_id": "3436",
+          "arrival": 3180,
+          "departure": 3180
+        }
+      ]
+    }
+  ]
+}

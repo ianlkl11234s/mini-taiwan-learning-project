@@ -1,0 +1,183 @@
+{
+  "track_id": "OD-CY-銅鑼",
+  "departures": [
+    {
+      "train_id": "LC-2128",
+      "train_no": "2128",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "05:18:00",
+      "od_track_id": "OD-CY-銅鑼",
+      "origin_station": "嘉義",
+      "destination_station": "銅鑼",
+      "total_travel_time": 9180,
+      "stations": [
+        {
+          "station_id": "4080",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "4060",
+          "arrival": 540,
+          "departure": 600
+        },
+        {
+          "station_id": "4050",
+          "arrival": 900,
+          "departure": 960
+        },
+        {
+          "station_id": "3490",
+          "arrival": 1200,
+          "departure": 1200
+        },
+        {
+          "station_id": "3480",
+          "arrival": 1440,
+          "departure": 1500
+        },
+        {
+          "station_id": "3470",
+          "arrival": 1860,
+          "departure": 1920
+        },
+        {
+          "station_id": "3460",
+          "arrival": 2160,
+          "departure": 2160
+        },
+        {
+          "station_id": "3450",
+          "arrival": 2400,
+          "departure": 2460
+        },
+        {
+          "station_id": "3430",
+          "arrival": 2820,
+          "departure": 2880
+        },
+        {
+          "station_id": "3420",
+          "arrival": 3180,
+          "departure": 3240
+        },
+        {
+          "station_id": "3410",
+          "arrival": 3480,
+          "departure": 3480
+        },
+        {
+          "station_id": "3400",
+          "arrival": 3720,
+          "departure": 3720
+        },
+        {
+          "station_id": "3390",
+          "arrival": 3960,
+          "departure": 4080
+        },
+        {
+          "station_id": "3380",
+          "arrival": 4260,
+          "departure": 4320
+        },
+        {
+          "station_id": "3370",
+          "arrival": 4560,
+          "departure": 4620
+        },
+        {
+          "station_id": "3360",
+          "arrival": 4980,
+          "departure": 5100
+        },
+        {
+          "station_id": "3330",
+          "arrival": 5460,
+          "departure": 5460
+        },
+        {
+          "station_id": "3325",
+          "arrival": 5640,
+          "departure": 5700
+        },
+        {
+          "station_id": "3330",
+          "arrival": 5820,
+          "departure": 5820
+        },
+        {
+          "station_id": "3320",
+          "arrival": 6000,
+          "departure": 6060
+        },
+        {
+          "station_id": "3310",
+          "arrival": 6240,
+          "departure": 6240
+        },
+        {
+          "station_id": "3300",
+          "arrival": 6420,
+          "departure": 6480
+        },
+        {
+          "station_id": "3249",
+          "arrival": 6600,
+          "departure": 6660
+        },
+        {
+          "station_id": "3247",
+          "arrival": 6780,
+          "departure": 6840
+        },
+        {
+          "station_id": "3245",
+          "arrival": 6960,
+          "departure": 7020
+        },
+        {
+          "station_id": "3243",
+          "arrival": 7140,
+          "departure": 7140
+        },
+        {
+          "station_id": "3240",
+          "arrival": 7320,
+          "departure": 7380
+        },
+        {
+          "station_id": "3240",
+          "arrival": 7500,
+          "departure": 7560
+        },
+        {
+          "station_id": "3230",
+          "arrival": 7740,
+          "departure": 7800
+        },
+        {
+          "station_id": "3220",
+          "arrival": 8100,
+          "departure": 8160
+        },
+        {
+          "station_id": "3210",
+          "arrival": 8280,
+          "departure": 8340
+        },
+        {
+          "station_id": "3190",
+          "arrival": 8760,
+          "departure": 8760
+        },
+        {
+          "station_id": "3180",
+          "arrival": 9180,
+          "departure": 9180
+        }
+      ]
+    }
+  ]
+}

@@ -1,8 +1,8 @@
 # TRA 真實時刻表實作計畫
 
 > 建立時間：2026-01-25
-> 最後更新：2026-01-26
-> 狀態：準備執行
+> 最後更新：2026-01-27
+> 狀態：Phase 5 完成，進入視覺驗證階段
 
 ---
 
@@ -220,6 +220,15 @@ export const TRA_TRAIN_TYPES: Record<string, { name: string; color: string }> = 
 - ~~各車種停靠站清單~~ → TDX 時刻表已包含
 - ~~站間行駛時間計算~~ → TDX 時刻表已包含
 
+### 2.5 Phase 2 執行結果 (2026-01-26)
+
+✅ **已完成**
+
+建立 `src/constants/traTrainTypes.ts`：
+- 定義 8 種車種代碼和顏色
+- 包含 TDX 車種名稱對照表
+- 提供 `getTrainTypeCode()`, `getTrainTypeColor()` 等工具函數
+
 ---
 
 ## Phase 3：時刻表轉換
@@ -278,26 +287,88 @@ export const TRA_TRAIN_TYPES: Record<string, { name: string; color: string }> = 
 ### 3.4 輸出結構
 
 ```
-schedules_od/
-├── master_schedule.json    # 索引檔：928 班車基本資訊
+schedules_real/
+├── master_schedule.json    # 索引檔：927 班車基本資訊
+├── conversion_failed.json  # 轉換失敗清單
 └── by_od/                  # 按 O-D 分類
-    ├── WL-N-SL-KL-0.json
-    └── ...
+    ├── OD-KL-CZ.json
+    └── ... (共 138 個檔案)
 ```
+
+### 3.5 Phase 3 執行結果 (2026-01-26)
+
+✅ **已完成** - 轉換率 99.9%
+
+**建立的工具**：
+- `scripts/tra/prepare_real_timetable/05_convert_tdx_timetable.py`
+
+**Station ID 對照表**：
+已處理 TDX 新 ID 與軌道舊 ID 的對應問題：
+| 車站 | TDX 新 ID | 軌道舊 ID |
+|------|-----------|-----------|
+| 潭子 | 3250 | 3240 |
+| 頭家厝 | 3260 | 3243 |
+| 松竹 | 3270 | 3245 |
+| 太原 | 3280 | 3247 |
+| 精武 | 3290 | 3249 |
+| 新烏日 | 3340 | 3325 |
+| 成功 | 3350 | 3330 |
+
+**轉換結果**：
+| 項目 | 數量 |
+|------|------|
+| 總班次 | 928 |
+| 轉換成功 | 927 (99.9%) |
+| 轉換失敗 | 1 (0.1%) |
+| O-D 軌道使用 | 138 條 |
+
+**車種分布**：
+| 車種代碼 | 班次 |
+|----------|------|
+| LC (區間) | 669 |
+| CK (區間快) | 90 |
+| TC (自強3000) | 82 |
+| TC-PP (推拉式) | 41 |
+| PP (普悠瑪) | 22 |
+| CG (莒光) | 11 |
+| TZ (太魯閣) | 8 |
+| TC-DMU (柴聯) | 4 |
+
+**未覆蓋班次**（1 班）：
+- **2294 區間車**（嘉義→彰化，22:04 發車）
+- 原因：嘉北站(4070)不在現有軌道中（2019 年通車新站）
+- 此班次為深夜短程車，影響極小
 
 ---
 
-## Phase 4：驗證與調整
+## Phase 4：驗證與調整 ✅
 
-### 4.1 自動驗證腳本
+> 完成時間：2026-01-27
 
-| 腳本 | 用途 |
-|------|------|
-| `validate_schedule_stations.py` | 檢查時刻表站點是否存在於 stationProgress |
-| `validate_travel_time.py` | 檢查站間時間是否合理 (> 0) |
-| `validate_od_coverage.py` | 檢查所有時刻表都有對應的 O-D 軌道 |
+### 4.1 資料驗證結果
 
-### 4.2 視覺驗證
+| 項目 | 結果 | 備註 |
+|------|------|------|
+| 轉換成功 | 928/933 班 (99.5%) | 5 班失敗（屏東/潮州超出軌道範圍） |
+| O-D 軌道 | 205 條使用中 | 含 OD-/BB-/SP- 三種類型 |
+| 嚴重 backward | 14 班 (1.5%) | 環島/跨線列車，已知限制 |
+| 輕微 backward | 115 班 (12.4%) | <5% 偏差，視覺上不明顯 |
+
+### 4.2 已修復問題
+
+1. **座標方向反轉**：Direction-1 GeoJSON 座標未反轉 → `merge_tracks.py` 加入自動偵測反轉
+2. **station_progress 計算**：改用投影法計算，避免分段縮放的精度問題
+3. **軌道匹配方向**：`05_convert_tdx_timetable.py` 改用 progress 值判斷方向（非 dict key 順序）
+
+### 4.3 已知限制
+
+| 類型 | 數量 | 說明 |
+|------|------|------|
+| 環島列車 backward | 14 班 | 花蓮→潮州等跨線列車，在單一 OD 軌道上無法完整表達方向 |
+| 成追線站序 | 1 班 | 新烏日/彰化 站序特殊（LC-2101） |
+| 未覆蓋路段 | 5 班 | 屏東↔基隆、新竹↔潮州、屏東↔善化 |
+
+### 4.4 視覺驗證
 
 - [ ] 在地圖上測試各車種列車運行
 - [ ] 確認停站位置正確
@@ -306,19 +377,32 @@ schedules_od/
 
 ---
 
-## Phase 5：前端整合
+## Phase 5：前端整合 ✅
 
-### 5.1 TraTrainEngine 更新
+> 完成時間：2026-01-27
 
-- [ ] 支援車種識別 (`train_type_code`)
-- [ ] 根據車種設定列車顏色
-- [ ] 優化大量列車渲染效能 (928 班)
+### 5.1 TraTrainEngine 更新 ✅
 
-### 5.2 UI 更新
+- [x] 支援車種識別 (`train_type_code`) → `TraTrain.trainTypeCode`
+- [x] OD-/BB-/SP- 軌道顯示路由 → `getTrackIdFromOdTrackId()` 擴展
+- [x] `TraDeparture` 新增 `train_type_code`, `train_no`, `train_type` 欄位
+
+### 5.2 useTraData 更新 ✅
+
+- [x] 載入 `schedules_real/master_schedule.json` 取代個別 `schedules_od/` 檔案
+- [x] 動態提取 `od_track_id` 並載入對應 GeoJSON 軌道
+- [x] 按 `od_track_id` 分組為 `Map<string, TraSchedule>`
+
+### 5.3 Tra3DLayer 更新 ✅
+
+- [x] 根據車種代碼設定列車顏色 (PP/TZ=紅, TC=橘, CK=深藍, LC=淺藍, CG=紫)
+- [x] 建立各車種獨立材質，取代方向分色
+
+### 5.4 UI 更新（未來可選）
 
 - [ ] TrainInfoPanel 顯示車種資訊
-- [ ] 新增車種篩選功能（可選）
-- [ ] 新增時刻表查詢功能（可選）
+- [ ] 新增車種篩選功能
+- [ ] 新增時刻表查詢功能
 
 ---
 

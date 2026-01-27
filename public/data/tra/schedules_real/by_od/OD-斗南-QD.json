@@ -1,0 +1,93 @@
+{
+  "track_id": "OD-斗南-QD",
+  "departures": [
+    {
+      "train_id": "TC-PP-126",
+      "train_no": "126",
+      "train_type": "自強(推拉式自強號且無自行車車廂)",
+      "train_type_code": "TC-PP",
+      "departure_time": "15:13:00",
+      "od_track_id": "OD-斗南-QD",
+      "origin_station": "斗南",
+      "destination_station": "七堵",
+      "total_travel_time": 15180,
+      "stations": [
+        {
+          "station_id": "3480",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "3470",
+          "arrival": 420,
+          "departure": 480
+        },
+        {
+          "station_id": "3430",
+          "arrival": 1200,
+          "departure": 1320
+        },
+        {
+          "station_id": "3420",
+          "arrival": 1620,
+          "departure": 1740
+        },
+        {
+          "station_id": "3390",
+          "arrival": 2280,
+          "departure": 2400
+        },
+        {
+          "station_id": "3360",
+          "arrival": 3060,
+          "departure": 3240
+        },
+        {
+          "station_id": "1250",
+          "arrival": 7680,
+          "departure": 7800
+        },
+        {
+          "station_id": "1210",
+          "arrival": 8640,
+          "departure": 8760
+        },
+        {
+          "station_id": "1100",
+          "arrival": 10380,
+          "departure": 10500
+        },
+        {
+          "station_id": "1080",
+          "arrival": 11040,
+          "departure": 11160
+        },
+        {
+          "station_id": "1020",
+          "arrival": 12360,
+          "departure": 12540
+        },
+        {
+          "station_id": "1000",
+          "arrival": 13080,
+          "departure": 13320
+        },
+        {
+          "station_id": "0990",
+          "arrival": 13740,
+          "departure": 13800
+        },
+        {
+          "station_id": "0960",
+          "arrival": 14460,
+          "departure": 14580
+        },
+        {
+          "station_id": "0930",
+          "arrival": 15180,
+          "departure": 15180
+        }
+      ]
+    }
+  ]
+}

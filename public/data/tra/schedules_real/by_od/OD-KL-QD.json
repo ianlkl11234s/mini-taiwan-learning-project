@@ -1,0 +1,38 @@
+{
+  "track_id": "OD-KL-QD",
+  "departures": [
+    {
+      "train_id": "LC-1295",
+      "train_no": "1295",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "23:25:00",
+      "od_track_id": "OD-KL-QD",
+      "origin_station": "基隆",
+      "destination_station": "七堵",
+      "total_travel_time": 720,
+      "stations": [
+        {
+          "station_id": "0900",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "0910",
+          "arrival": 240,
+          "departure": 240
+        },
+        {
+          "station_id": "0920",
+          "arrival": 420,
+          "departure": 480
+        },
+        {
+          "station_id": "0930",
+          "arrival": 720,
+          "departure": 720
+        }
+      ]
+    }
+  ]
+}

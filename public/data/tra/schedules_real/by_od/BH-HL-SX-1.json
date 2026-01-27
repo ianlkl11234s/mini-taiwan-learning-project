@@ -1,0 +1,58 @@
+{
+  "track_id": "BH-HL-SX-1",
+  "departures": [
+    {
+      "train_id": "CK-4043",
+      "train_no": "4043",
+      "train_type": "區間快",
+      "train_type_code": "CK",
+      "departure_time": "22:45:00",
+      "od_track_id": "BH-HL-SX-1",
+      "origin_station": "花蓮",
+      "destination_station": "蘇澳新",
+      "total_travel_time": 4140,
+      "stations": [
+        {
+          "station_id": "7000",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "7030",
+          "arrival": 660,
+          "departure": 780
+        },
+        {
+          "station_id": "7040",
+          "arrival": 1020,
+          "departure": 1080
+        },
+        {
+          "station_id": "7050",
+          "arrival": 1800,
+          "departure": 1860
+        },
+        {
+          "station_id": "7060",
+          "arrival": 2220,
+          "departure": 2280
+        },
+        {
+          "station_id": "7090",
+          "arrival": 3120,
+          "departure": 3180
+        },
+        {
+          "station_id": "7100",
+          "arrival": 3540,
+          "departure": 3540
+        },
+        {
+          "station_id": "7130",
+          "arrival": 4140,
+          "departure": 4140
+        }
+      ]
+    }
+  ]
+}

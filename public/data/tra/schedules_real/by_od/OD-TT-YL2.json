@@ -1,0 +1,163 @@
+{
+  "track_id": "OD-TT-YL2",
+  "departures": [
+    {
+      "train_id": "TC-477",
+      "train_no": "477",
+      "train_type": "自強(3000)(EMU3000 型電車)",
+      "train_type_code": "TC",
+      "departure_time": "13:56:00",
+      "od_track_id": "OD-TT-YL2",
+      "origin_station": "臺東",
+      "destination_station": "員林",
+      "total_travel_time": 26520,
+      "stations": [
+        {
+          "station_id": "6000",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "6050",
+          "arrival": 1140,
+          "departure": 1260
+        },
+        {
+          "station_id": "6070",
+          "arrival": 1860,
+          "departure": 1920
+        },
+        {
+          "station_id": "6080",
+          "arrival": 2280,
+          "departure": 2340
+        },
+        {
+          "station_id": "6110",
+          "arrival": 3060,
+          "departure": 3120
+        },
+        {
+          "station_id": "6130",
+          "arrival": 3840,
+          "departure": 3960
+        },
+        {
+          "station_id": "6160",
+          "arrival": 4620,
+          "departure": 4740
+        },
+        {
+          "station_id": "6180",
+          "arrival": 5160,
+          "departure": 5280
+        },
+        {
+          "station_id": "6200",
+          "arrival": 5580,
+          "departure": 5640
+        },
+        {
+          "station_id": "6220",
+          "arrival": 6000,
+          "departure": 6120
+        },
+        {
+          "station_id": "6240",
+          "arrival": 6360,
+          "departure": 6480
+        },
+        {
+          "station_id": "6250",
+          "arrival": 6840,
+          "departure": 6900
+        },
+        {
+          "station_id": "7000",
+          "arrival": 7260,
+          "departure": 7740
+        },
+        {
+          "station_id": "7160",
+          "arrival": 11220,
+          "departure": 11340
+        },
+        {
+          "station_id": "7190",
+          "arrival": 11700,
+          "departure": 11820
+        },
+        {
+          "station_id": "0930",
+          "arrival": 15180,
+          "departure": 15300
+        },
+        {
+          "station_id": "0990",
+          "arrival": 16380,
+          "departure": 16500
+        },
+        {
+          "station_id": "1000",
+          "arrival": 16920,
+          "departure": 17100
+        },
+        {
+          "station_id": "1020",
+          "arrival": 17520,
+          "departure": 17640
+        },
+        {
+          "station_id": "1040",
+          "arrival": 18000,
+          "departure": 18120
+        },
+        {
+          "station_id": "1080",
+          "arrival": 18960,
+          "departure": 19080
+        },
+        {
+          "station_id": "1100",
+          "arrival": 19560,
+          "departure": 19680
+        },
+        {
+          "station_id": "1210",
+          "arrival": 21240,
+          "departure": 21360
+        },
+        {
+          "station_id": "1250",
+          "arrival": 22200,
+          "departure": 22260
+        },
+        {
+          "station_id": "3160",
+          "arrival": 22860,
+          "departure": 22920
+        },
+        {
+          "station_id": "3230",
+          "arrival": 24240,
+          "departure": 24300
+        },
+        {
+          "station_id": "3300",
+          "arrival": 24840,
+          "departure": 24960
+        },
+        {
+          "station_id": "3360",
+          "arrival": 25740,
+          "departure": 25860
+        },
+        {
+          "station_id": "3390",
+          "arrival": 26520,
+          "departure": 26520
+        }
+      ]
+    }
+  ]
+}

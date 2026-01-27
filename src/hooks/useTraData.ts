@@ -5,13 +5,13 @@
  * - 軌道顯示資料 (優先使用 tracks_golden，fallback 到 tracks_official)
  * - 車站資料 (stations_snapped)
  * - O-D 軌道 (tracks_od) - 用於列車位置計算
- * - 時刻表 (schedules_od)
+ * - 真實時刻表 (schedules_real/master_schedule.json)
  * - 車站進度 (od_station_progress)
  */
 
 import { useState, useEffect } from 'react';
 import type { TrackCollection, StationCollection, Track } from '../types/track';
-import type { TraTrack, TraSchedule, TraStationProgressMap } from '../engines/TraTrainEngine';
+import type { TraTrack, TraSchedule, TraDeparture, TraStationProgressMap } from '../engines/TraTrainEngine';
 
 /**
  * 台鐵軌道 ID 列表 (用於顯示軌道)
@@ -204,91 +204,6 @@ const OD_TRACK_IDS = [
   // 'KL-KL-SL',  // 基隆→樹林
 ];
 
-/**
- * 時刻表 ID 列表
- */
-const SCHEDULE_IDS = [
-  // === Step 1: 樹林↔八堵 ✅ ===
-  'WL-SL-BD-0',  // 樹林→八堵 測試時刻表
-  'WL-BD-SL-1',  // 八堵→樹林 測試時刻表
-
-  // === Step 2: 八堵↔蘇澳 ✅ ===
-  'YL-BD-SA-0',  // 八堵→蘇澳 測試時刻表
-  'YL-SA-BD-1',  // 蘇澳→八堵 測試時刻表
-
-  // === 合併: 樹林↔蘇澳 ✅ ===
-  'YL-SL-SA-0',  // 樹林→蘇澳 測試時刻表
-  'YL-SA-SL-1',  // 蘇澳→樹林 測試時刻表
-
-  // === Step 3: 八堵↔基隆 ✅ ===
-  'KL-BD-KL-0',  // 八堵→基隆 測試時刻表
-  'KL-KL-BD-1',  // 基隆→八堵 測試時刻表
-
-  // === Step 4: 蘇澳新↔花蓮 ✅ ===
-  'BH-SX-HL-0',  // 蘇澳新→花蓮 測試時刻表
-  'BH-HL-SX-1',  // 花蓮→蘇澳新 測試時刻表
-
-  // === Step 5: 樹林↔花蓮 (合併軌道) ===
-  'YL-SL-HL-0',  // 樹林→花蓮 測試時刻表
-  'YL-HL-SL-1',  // 花蓮→樹林 測試時刻表
-
-  // === Step 6: 花蓮↔臺東 ===
-  'TL-0',        // 花蓮→臺東 測試時刻表
-  'TL-1',        // 臺東→花蓮 測試時刻表
-
-  // === Step 13: 臺東↔新左營 ===
-  'SK-TT-ZY-0',  // 臺東→新左營 測試時刻表
-  'SK-ZY-TT-1',  // 新左營→臺東 測試時刻表
-
-  // === Step 14: 環島軌道 ===
-  'YL-SL-ZY-0',  // 樹林→新左營 測試時刻表
-  'YL-ZY-SL-1',  // 新左營→樹林 測試時刻表
-
-  // === Step 15: 屏東線 ===
-  'PT-ZY-PL-0',  // 新左營→枋寮 測試時刻表
-  'PT-PL-ZY-1',  // 枋寮→新左營 測試時刻表
-
-  // === Step 19: 西部幹線南段 ===
-  'WL-CH-ZY-0',  // 彰化→新左營 測試時刻表
-  'WL-ZY-CH-1',  // 新左營→彰化 測試時刻表
-
-  // === Step 18: 西部幹線海線 ===
-  'WL-C-CH-ZN-0',  // 彰化→竹南 測試時刻表
-  'WL-C-ZN-CH-1',  // 竹南→彰化 測試時刻表
-
-  // === Step 20: 西部幹線山線 ===
-  'WL-M-ZN-CH-0',  // 竹南→彰化 測試時刻表
-  'WL-M-CH-ZN-1',  // 彰化→竹南 測試時刻表
-
-  // === Step 21: 西部幹線北段 ===
-  'WL-ZN-SL-0',    // 竹南→樹林 測試時刻表
-  'WL-SL-ZN-1',    // 樹林→竹南 測試時刻表
-
-  // === 支線測試時刻表 ===
-  // 內灣線
-  'NW-HC-NB',    // 新竹→內灣
-  'NW-NB-HC',    // 內灣→新竹
-  'NW-JJ-NB',    // 竹中→內灣
-  'NW-NB-JJ',    // 內灣→竹中
-  // 六家線
-  'LJ-HC-LJ',    // 新竹→六家
-  'LJ-LJ-HC',    // 六家→新竹
-  // 沙崙線
-  'SH-TN-SL',    // 臺南→沙崙
-  'SH-SL-TN',    // 沙崙→臺南
-  // 集集線
-  'JJ-ES-CT',    // 二水→車埕
-  'JJ-CT-ES',    // 車埕→二水
-  // 成追線
-  'CZ-CG-ZF',    // 成功→追分
-  'CZ-ZF-CG',    // 追分→成功
-  // 平溪線
-  'PX-SD-JT',    // 三貂嶺→菁桐
-  'PX-JT-SD',    // 菁桐→三貂嶺
-  // 深澳線
-  'SA-RF-BD-0',  // 瑞芳→八斗子
-  'SA-BD-RF-1',  // 八斗子→瑞芳
-];
 
 /**
  * 台鐵資料狀態
@@ -374,9 +289,44 @@ export function useTraData(): TraDataState {
           console.warn('無法載入車站資料:', e);
         }
 
+        // === 載入真實時刻表 ===
+        const scheduleMap = new Map<string, TraSchedule>();
+        const odTrackIdsFromSchedule = new Set<string>();
+
+        try {
+          const masterRes = await fetch('/data/tra/schedules_real/master_schedule.json');
+          if (masterRes.ok) {
+            const masterData = await masterRes.json();
+            const schedules: TraDeparture[] = masterData.schedules || [];
+
+            // 按 od_track_id 分組
+            const byOd = new Map<string, TraDeparture[]>();
+            for (const s of schedules) {
+              const trackId = s.od_track_id;
+              odTrackIdsFromSchedule.add(trackId);
+              if (!byOd.has(trackId)) byOd.set(trackId, []);
+              byOd.get(trackId)!.push(s);
+            }
+
+            // 轉換為 TraSchedule 格式
+            for (const [trackId, departures] of byOd) {
+              scheduleMap.set(trackId, {
+                track_id: trackId,
+                departures,
+              });
+            }
+            console.log(`載入真實時刻表: ${schedules.length} 班, ${scheduleMap.size} 條軌道`);
+          }
+        } catch (e) {
+          console.warn('無法載入真實時刻表:', e);
+        }
+        setSchedules(scheduleMap);
+
         // === 載入 O-D 軌道 (用於列車位置計算) ===
+        // 合併硬編碼清單 + 時刻表中引用的軌道
+        const allOdTrackIds = new Set([...OD_TRACK_IDS, ...odTrackIdsFromSchedule]);
         const odTracksMap = new Map<string, TraTrack>();
-        for (const trackId of OD_TRACK_IDS) {
+        for (const trackId of allOdTrackIds) {
           try {
             const res = await fetch(`/data/tra/tracks_od/${trackId}.geojson`);
             if (res.ok) {
@@ -386,7 +336,7 @@ export function useTraData(): TraDataState {
               }
             }
           } catch (e) {
-            console.warn(`無法載入 O-D 軌道 ${trackId}:`, e);
+            // 靜默忽略，部分舊軌道可能不存在
           }
         }
         setOdTracks(odTracksMap);
@@ -403,22 +353,6 @@ export function useTraData(): TraDataState {
         } catch (e) {
           console.warn('無法載入車站進度:', e);
         }
-
-        // === 載入時刻表 ===
-        const scheduleMap = new Map<string, TraSchedule>();
-        for (const scheduleId of SCHEDULE_IDS) {
-          try {
-            const res = await fetch(`/data/tra/schedules_od/${scheduleId}.json`);
-            if (res.ok) {
-              const data = await res.json();
-              scheduleMap.set(scheduleId, data);
-            }
-          } catch (e) {
-            console.warn(`無法載入時刻表 ${scheduleId}:`, e);
-          }
-        }
-        setSchedules(scheduleMap);
-        console.log(`載入 ${scheduleMap.size} 個時刻表`);
 
         setLoading(false);
       } catch (err) {

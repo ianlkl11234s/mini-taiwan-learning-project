@@ -1,0 +1,1510 @@
+{
+  "track_id": "LJ-LJ-HC",
+  "departures": [
+    {
+      "train_id": "LC-1701",
+      "train_no": "1701",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "06:27:00",
+      "od_track_id": "LJ-LJ-HC",
+      "origin_station": "六家",
+      "destination_station": "新竹",
+      "total_travel_time": 1140,
+      "stations": [
+        {
+          "station_id": "1194",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "1193",
+          "arrival": 240,
+          "departure": 300
+        },
+        {
+          "station_id": "1192",
+          "arrival": 420,
+          "departure": 420
+        },
+        {
+          "station_id": "1191",
+          "arrival": 600,
+          "departure": 660
+        },
+        {
+          "station_id": "1190",
+          "arrival": 840,
+          "departure": 900
+        },
+        {
+          "station_id": "1210",
+          "arrival": 1140,
+          "departure": 1140
+        }
+      ]
+    },
+    {
+      "train_id": "LC-1703",
+      "train_no": "1703",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "07:07:00",
+      "od_track_id": "LJ-LJ-HC",
+      "origin_station": "六家",
+      "destination_station": "新竹",
+      "total_travel_time": 1140,
+      "stations": [
+        {
+          "station_id": "1194",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "1193",
+          "arrival": 240,
+          "departure": 300
+        },
+        {
+          "station_id": "1192",
+          "arrival": 420,
+          "departure": 420
+        },
+        {
+          "station_id": "1191",
+          "arrival": 600,
+          "departure": 660
+        },
+        {
+          "station_id": "1190",
+          "arrival": 840,
+          "departure": 900
+        },
+        {
+          "station_id": "1210",
+          "arrival": 1140,
+          "departure": 1140
+        }
+      ]
+    },
+    {
+      "train_id": "LC-1705",
+      "train_no": "1705",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "07:32:00",
+      "od_track_id": "LJ-LJ-HC",
+      "origin_station": "六家",
+      "destination_station": "新竹",
+      "total_travel_time": 1140,
+      "stations": [
+        {
+          "station_id": "1194",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "1193",
+          "arrival": 240,
+          "departure": 300
+        },
+        {
+          "station_id": "1192",
+          "arrival": 420,
+          "departure": 420
+        },
+        {
+          "station_id": "1191",
+          "arrival": 600,
+          "departure": 660
+        },
+        {
+          "station_id": "1190",
+          "arrival": 840,
+          "departure": 900
+        },
+        {
+          "station_id": "1210",
+          "arrival": 1140,
+          "departure": 1140
+        }
+      ]
+    },
+    {
+      "train_id": "LC-1707",
+      "train_no": "1707",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "08:02:00",
+      "od_track_id": "LJ-LJ-HC",
+      "origin_station": "六家",
+      "destination_station": "新竹",
+      "total_travel_time": 1140,
+      "stations": [
+        {
+          "station_id": "1194",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "1193",
+          "arrival": 240,
+          "departure": 300
+        },
+        {
+          "station_id": "1192",
+          "arrival": 420,
+          "departure": 420
+        },
+        {
+          "station_id": "1191",
+          "arrival": 600,
+          "departure": 660
+        },
+        {
+          "station_id": "1190",
+          "arrival": 840,
+          "departure": 900
+        },
+        {
+          "station_id": "1210",
+          "arrival": 1140,
+          "departure": 1140
+        }
+      ]
+    },
+    {
+      "train_id": "LC-1711",
+      "train_no": "1711",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "08:29:00",
+      "od_track_id": "LJ-LJ-HC",
+      "origin_station": "六家",
+      "destination_station": "新竹",
+      "total_travel_time": 1140,
+      "stations": [
+        {
+          "station_id": "1194",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "1193",
+          "arrival": 240,
+          "departure": 300
+        },
+        {
+          "station_id": "1192",
+          "arrival": 420,
+          "departure": 420
+        },
+        {
+          "station_id": "1191",
+          "arrival": 600,
+          "departure": 660
+        },
+        {
+          "station_id": "1190",
+          "arrival": 840,
+          "departure": 900
+        },
+        {
+          "station_id": "1210",
+          "arrival": 1140,
+          "departure": 1140
+        }
+      ]
+    },
+    {
+      "train_id": "LC-1713",
+      "train_no": "1713",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "09:02:00",
+      "od_track_id": "LJ-LJ-HC",
+      "origin_station": "六家",
+      "destination_station": "新竹",
+      "total_travel_time": 1140,
+      "stations": [
+        {
+          "station_id": "1194",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "1193",
+          "arrival": 240,
+          "departure": 300
+        },
+        {
+          "station_id": "1192",
+          "arrival": 420,
+          "departure": 420
+        },
+        {
+          "station_id": "1191",
+          "arrival": 600,
+          "departure": 660
+        },
+        {
+          "station_id": "1190",
+          "arrival": 840,
+          "departure": 900
+        },
+        {
+          "station_id": "1210",
+          "arrival": 1140,
+          "departure": 1140
+        }
+      ]
+    },
+    {
+      "train_id": "LC-1715",
+      "train_no": "1715",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "09:29:00",
+      "od_track_id": "LJ-LJ-HC",
+      "origin_station": "六家",
+      "destination_station": "新竹",
+      "total_travel_time": 1140,
+      "stations": [
+        {
+          "station_id": "1194",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "1193",
+          "arrival": 240,
+          "departure": 300
+        },
+        {
+          "station_id": "1192",
+          "arrival": 420,
+          "departure": 420
+        },
+        {
+          "station_id": "1191",
+          "arrival": 600,
+          "departure": 660
+        },
+        {
+          "station_id": "1190",
+          "arrival": 840,
+          "departure": 900
+        },
+        {
+          "station_id": "1210",
+          "arrival": 1140,
+          "departure": 1140
+        }
+      ]
+    },
+    {
+      "train_id": "LC-1717",
+      "train_no": "1717",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "10:02:00",
+      "od_track_id": "LJ-LJ-HC",
+      "origin_station": "六家",
+      "destination_station": "新竹",
+      "total_travel_time": 1140,
+      "stations": [
+        {
+          "station_id": "1194",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "1193",
+          "arrival": 240,
+          "departure": 300
+        },
+        {
+          "station_id": "1192",
+          "arrival": 420,
+          "departure": 420
+        },
+        {
+          "station_id": "1191",
+          "arrival": 600,
+          "departure": 660
+        },
+        {
+          "station_id": "1190",
+          "arrival": 840,
+          "departure": 900
+        },
+        {
+          "station_id": "1210",
+          "arrival": 1140,
+          "departure": 1140
+        }
+      ]
+    },
+    {
+      "train_id": "LC-1721",
+      "train_no": "1721",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "10:29:00",
+      "od_track_id": "LJ-LJ-HC",
+      "origin_station": "六家",
+      "destination_station": "新竹",
+      "total_travel_time": 1140,
+      "stations": [
+        {
+          "station_id": "1194",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "1193",
+          "arrival": 240,
+          "departure": 300
+        },
+        {
+          "station_id": "1192",
+          "arrival": 420,
+          "departure": 420
+        },
+        {
+          "station_id": "1191",
+          "arrival": 600,
+          "departure": 660
+        },
+        {
+          "station_id": "1190",
+          "arrival": 840,
+          "departure": 900
+        },
+        {
+          "station_id": "1210",
+          "arrival": 1140,
+          "departure": 1140
+        }
+      ]
+    },
+    {
+      "train_id": "LC-1723",
+      "train_no": "1723",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "11:02:00",
+      "od_track_id": "LJ-LJ-HC",
+      "origin_station": "六家",
+      "destination_station": "新竹",
+      "total_travel_time": 1140,
+      "stations": [
+        {
+          "station_id": "1194",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "1193",
+          "arrival": 240,
+          "departure": 300
+        },
+        {
+          "station_id": "1192",
+          "arrival": 420,
+          "departure": 420
+        },
+        {
+          "station_id": "1191",
+          "arrival": 600,
+          "departure": 660
+        },
+        {
+          "station_id": "1190",
+          "arrival": 840,
+          "departure": 900
+        },
+        {
+          "station_id": "1210",
+          "arrival": 1140,
+          "departure": 1140
+        }
+      ]
+    },
+    {
+      "train_id": "LC-1725",
+      "train_no": "1725",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "11:29:00",
+      "od_track_id": "LJ-LJ-HC",
+      "origin_station": "六家",
+      "destination_station": "新竹",
+      "total_travel_time": 1140,
+      "stations": [
+        {
+          "station_id": "1194",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "1193",
+          "arrival": 240,
+          "departure": 300
+        },
+        {
+          "station_id": "1192",
+          "arrival": 420,
+          "departure": 420
+        },
+        {
+          "station_id": "1191",
+          "arrival": 600,
+          "departure": 660
+        },
+        {
+          "station_id": "1190",
+          "arrival": 840,
+          "departure": 900
+        },
+        {
+          "station_id": "1210",
+          "arrival": 1140,
+          "departure": 1140
+        }
+      ]
+    },
+    {
+      "train_id": "LC-1727",
+      "train_no": "1727",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "12:02:00",
+      "od_track_id": "LJ-LJ-HC",
+      "origin_station": "六家",
+      "destination_station": "新竹",
+      "total_travel_time": 1140,
+      "stations": [
+        {
+          "station_id": "1194",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "1193",
+          "arrival": 240,
+          "departure": 300
+        },
+        {
+          "station_id": "1192",
+          "arrival": 420,
+          "departure": 420
+        },
+        {
+          "station_id": "1191",
+          "arrival": 600,
+          "departure": 660
+        },
+        {
+          "station_id": "1190",
+          "arrival": 840,
+          "departure": 900
+        },
+        {
+          "station_id": "1210",
+          "arrival": 1140,
+          "departure": 1140
+        }
+      ]
+    },
+    {
+      "train_id": "LC-1731",
+      "train_no": "1731",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "12:29:00",
+      "od_track_id": "LJ-LJ-HC",
+      "origin_station": "六家",
+      "destination_station": "新竹",
+      "total_travel_time": 1140,
+      "stations": [
+        {
+          "station_id": "1194",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "1193",
+          "arrival": 240,
+          "departure": 300
+        },
+        {
+          "station_id": "1192",
+          "arrival": 420,
+          "departure": 420
+        },
+        {
+          "station_id": "1191",
+          "arrival": 600,
+          "departure": 660
+        },
+        {
+          "station_id": "1190",
+          "arrival": 840,
+          "departure": 900
+        },
+        {
+          "station_id": "1210",
+          "arrival": 1140,
+          "departure": 1140
+        }
+      ]
+    },
+    {
+      "train_id": "LC-1733",
+      "train_no": "1733",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "13:02:00",
+      "od_track_id": "LJ-LJ-HC",
+      "origin_station": "六家",
+      "destination_station": "新竹",
+      "total_travel_time": 1140,
+      "stations": [
+        {
+          "station_id": "1194",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "1193",
+          "arrival": 240,
+          "departure": 300
+        },
+        {
+          "station_id": "1192",
+          "arrival": 420,
+          "departure": 420
+        },
+        {
+          "station_id": "1191",
+          "arrival": 600,
+          "departure": 660
+        },
+        {
+          "station_id": "1190",
+          "arrival": 840,
+          "departure": 900
+        },
+        {
+          "station_id": "1210",
+          "arrival": 1140,
+          "departure": 1140
+        }
+      ]
+    },
+    {
+      "train_id": "LC-1735",
+      "train_no": "1735",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "13:29:00",
+      "od_track_id": "LJ-LJ-HC",
+      "origin_station": "六家",
+      "destination_station": "新竹",
+      "total_travel_time": 1140,
+      "stations": [
+        {
+          "station_id": "1194",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "1193",
+          "arrival": 240,
+          "departure": 300
+        },
+        {
+          "station_id": "1192",
+          "arrival": 420,
+          "departure": 420
+        },
+        {
+          "station_id": "1191",
+          "arrival": 600,
+          "departure": 660
+        },
+        {
+          "station_id": "1190",
+          "arrival": 840,
+          "departure": 900
+        },
+        {
+          "station_id": "1210",
+          "arrival": 1140,
+          "departure": 1140
+        }
+      ]
+    },
+    {
+      "train_id": "LC-1737",
+      "train_no": "1737",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "14:02:00",
+      "od_track_id": "LJ-LJ-HC",
+      "origin_station": "六家",
+      "destination_station": "新竹",
+      "total_travel_time": 1140,
+      "stations": [
+        {
+          "station_id": "1194",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "1193",
+          "arrival": 240,
+          "departure": 300
+        },
+        {
+          "station_id": "1192",
+          "arrival": 420,
+          "departure": 420
+        },
+        {
+          "station_id": "1191",
+          "arrival": 600,
+          "departure": 660
+        },
+        {
+          "station_id": "1190",
+          "arrival": 840,
+          "departure": 900
+        },
+        {
+          "station_id": "1210",
+          "arrival": 1140,
+          "departure": 1140
+        }
+      ]
+    },
+    {
+      "train_id": "LC-1741",
+      "train_no": "1741",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "14:29:00",
+      "od_track_id": "LJ-LJ-HC",
+      "origin_station": "六家",
+      "destination_station": "新竹",
+      "total_travel_time": 1140,
+      "stations": [
+        {
+          "station_id": "1194",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "1193",
+          "arrival": 240,
+          "departure": 300
+        },
+        {
+          "station_id": "1192",
+          "arrival": 420,
+          "departure": 420
+        },
+        {
+          "station_id": "1191",
+          "arrival": 600,
+          "departure": 660
+        },
+        {
+          "station_id": "1190",
+          "arrival": 840,
+          "departure": 900
+        },
+        {
+          "station_id": "1210",
+          "arrival": 1140,
+          "departure": 1140
+        }
+      ]
+    },
+    {
+      "train_id": "LC-1743",
+      "train_no": "1743",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "15:02:00",
+      "od_track_id": "LJ-LJ-HC",
+      "origin_station": "六家",
+      "destination_station": "新竹",
+      "total_travel_time": 1140,
+      "stations": [
+        {
+          "station_id": "1194",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "1193",
+          "arrival": 240,
+          "departure": 300
+        },
+        {
+          "station_id": "1192",
+          "arrival": 420,
+          "departure": 420
+        },
+        {
+          "station_id": "1191",
+          "arrival": 600,
+          "departure": 660
+        },
+        {
+          "station_id": "1190",
+          "arrival": 840,
+          "departure": 900
+        },
+        {
+          "station_id": "1210",
+          "arrival": 1140,
+          "departure": 1140
+        }
+      ]
+    },
+    {
+      "train_id": "LC-1745",
+      "train_no": "1745",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "15:29:00",
+      "od_track_id": "LJ-LJ-HC",
+      "origin_station": "六家",
+      "destination_station": "新竹",
+      "total_travel_time": 1140,
+      "stations": [
+        {
+          "station_id": "1194",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "1193",
+          "arrival": 240,
+          "departure": 300
+        },
+        {
+          "station_id": "1192",
+          "arrival": 420,
+          "departure": 420
+        },
+        {
+          "station_id": "1191",
+          "arrival": 600,
+          "departure": 660
+        },
+        {
+          "station_id": "1190",
+          "arrival": 840,
+          "departure": 900
+        },
+        {
+          "station_id": "1210",
+          "arrival": 1140,
+          "departure": 1140
+        }
+      ]
+    },
+    {
+      "train_id": "LC-1747",
+      "train_no": "1747",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "16:02:00",
+      "od_track_id": "LJ-LJ-HC",
+      "origin_station": "六家",
+      "destination_station": "新竹",
+      "total_travel_time": 1140,
+      "stations": [
+        {
+          "station_id": "1194",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "1193",
+          "arrival": 240,
+          "departure": 300
+        },
+        {
+          "station_id": "1192",
+          "arrival": 420,
+          "departure": 420
+        },
+        {
+          "station_id": "1191",
+          "arrival": 600,
+          "departure": 660
+        },
+        {
+          "station_id": "1190",
+          "arrival": 840,
+          "departure": 900
+        },
+        {
+          "station_id": "1210",
+          "arrival": 1140,
+          "departure": 1140
+        }
+      ]
+    },
+    {
+      "train_id": "LC-1751",
+      "train_no": "1751",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "16:29:00",
+      "od_track_id": "LJ-LJ-HC",
+      "origin_station": "六家",
+      "destination_station": "新竹",
+      "total_travel_time": 1140,
+      "stations": [
+        {
+          "station_id": "1194",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "1193",
+          "arrival": 240,
+          "departure": 300
+        },
+        {
+          "station_id": "1192",
+          "arrival": 420,
+          "departure": 420
+        },
+        {
+          "station_id": "1191",
+          "arrival": 600,
+          "departure": 660
+        },
+        {
+          "station_id": "1190",
+          "arrival": 840,
+          "departure": 900
+        },
+        {
+          "station_id": "1210",
+          "arrival": 1140,
+          "departure": 1140
+        }
+      ]
+    },
+    {
+      "train_id": "LC-1753",
+      "train_no": "1753",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "17:01:00",
+      "od_track_id": "LJ-LJ-HC",
+      "origin_station": "六家",
+      "destination_station": "新竹",
+      "total_travel_time": 1140,
+      "stations": [
+        {
+          "station_id": "1194",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "1193",
+          "arrival": 240,
+          "departure": 300
+        },
+        {
+          "station_id": "1192",
+          "arrival": 420,
+          "departure": 420
+        },
+        {
+          "station_id": "1191",
+          "arrival": 600,
+          "departure": 660
+        },
+        {
+          "station_id": "1190",
+          "arrival": 840,
+          "departure": 900
+        },
+        {
+          "station_id": "1210",
+          "arrival": 1140,
+          "departure": 1140
+        }
+      ]
+    },
+    {
+      "train_id": "LC-1755",
+      "train_no": "1755",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "17:29:00",
+      "od_track_id": "LJ-LJ-HC",
+      "origin_station": "六家",
+      "destination_station": "新竹",
+      "total_travel_time": 1140,
+      "stations": [
+        {
+          "station_id": "1194",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "1193",
+          "arrival": 240,
+          "departure": 300
+        },
+        {
+          "station_id": "1192",
+          "arrival": 420,
+          "departure": 420
+        },
+        {
+          "station_id": "1191",
+          "arrival": 600,
+          "departure": 660
+        },
+        {
+          "station_id": "1190",
+          "arrival": 840,
+          "departure": 900
+        },
+        {
+          "station_id": "1210",
+          "arrival": 1140,
+          "departure": 1140
+        }
+      ]
+    },
+    {
+      "train_id": "LC-1757",
+      "train_no": "1757",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "18:02:00",
+      "od_track_id": "LJ-LJ-HC",
+      "origin_station": "六家",
+      "destination_station": "新竹",
+      "total_travel_time": 1140,
+      "stations": [
+        {
+          "station_id": "1194",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "1193",
+          "arrival": 240,
+          "departure": 300
+        },
+        {
+          "station_id": "1192",
+          "arrival": 420,
+          "departure": 420
+        },
+        {
+          "station_id": "1191",
+          "arrival": 600,
+          "departure": 660
+        },
+        {
+          "station_id": "1190",
+          "arrival": 840,
+          "departure": 900
+        },
+        {
+          "station_id": "1210",
+          "arrival": 1140,
+          "departure": 1140
+        }
+      ]
+    },
+    {
+      "train_id": "LC-1761",
+      "train_no": "1761",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "18:29:00",
+      "od_track_id": "LJ-LJ-HC",
+      "origin_station": "六家",
+      "destination_station": "新竹",
+      "total_travel_time": 1140,
+      "stations": [
+        {
+          "station_id": "1194",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "1193",
+          "arrival": 240,
+          "departure": 300
+        },
+        {
+          "station_id": "1192",
+          "arrival": 420,
+          "departure": 420
+        },
+        {
+          "station_id": "1191",
+          "arrival": 600,
+          "departure": 660
+        },
+        {
+          "station_id": "1190",
+          "arrival": 840,
+          "departure": 900
+        },
+        {
+          "station_id": "1210",
+          "arrival": 1140,
+          "departure": 1140
+        }
+      ]
+    },
+    {
+      "train_id": "LC-1763",
+      "train_no": "1763",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "19:02:00",
+      "od_track_id": "LJ-LJ-HC",
+      "origin_station": "六家",
+      "destination_station": "新竹",
+      "total_travel_time": 1140,
+      "stations": [
+        {
+          "station_id": "1194",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "1193",
+          "arrival": 240,
+          "departure": 300
+        },
+        {
+          "station_id": "1192",
+          "arrival": 420,
+          "departure": 420
+        },
+        {
+          "station_id": "1191",
+          "arrival": 600,
+          "departure": 660
+        },
+        {
+          "station_id": "1190",
+          "arrival": 840,
+          "departure": 900
+        },
+        {
+          "station_id": "1210",
+          "arrival": 1140,
+          "departure": 1140
+        }
+      ]
+    },
+    {
+      "train_id": "LC-1765",
+      "train_no": "1765",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "19:29:00",
+      "od_track_id": "LJ-LJ-HC",
+      "origin_station": "六家",
+      "destination_station": "新竹",
+      "total_travel_time": 1140,
+      "stations": [
+        {
+          "station_id": "1194",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "1193",
+          "arrival": 240,
+          "departure": 300
+        },
+        {
+          "station_id": "1192",
+          "arrival": 420,
+          "departure": 420
+        },
+        {
+          "station_id": "1191",
+          "arrival": 600,
+          "departure": 660
+        },
+        {
+          "station_id": "1190",
+          "arrival": 840,
+          "departure": 900
+        },
+        {
+          "station_id": "1210",
+          "arrival": 1140,
+          "departure": 1140
+        }
+      ]
+    },
+    {
+      "train_id": "LC-1767",
+      "train_no": "1767",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "20:02:00",
+      "od_track_id": "LJ-LJ-HC",
+      "origin_station": "六家",
+      "destination_station": "新竹",
+      "total_travel_time": 1140,
+      "stations": [
+        {
+          "station_id": "1194",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "1193",
+          "arrival": 240,
+          "departure": 300
+        },
+        {
+          "station_id": "1192",
+          "arrival": 420,
+          "departure": 420
+        },
+        {
+          "station_id": "1191",
+          "arrival": 600,
+          "departure": 660
+        },
+        {
+          "station_id": "1190",
+          "arrival": 840,
+          "departure": 900
+        },
+        {
+          "station_id": "1210",
+          "arrival": 1140,
+          "departure": 1140
+        }
+      ]
+    },
+    {
+      "train_id": "LC-1771",
+      "train_no": "1771",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "20:29:00",
+      "od_track_id": "LJ-LJ-HC",
+      "origin_station": "六家",
+      "destination_station": "新竹",
+      "total_travel_time": 1140,
+      "stations": [
+        {
+          "station_id": "1194",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "1193",
+          "arrival": 240,
+          "departure": 300
+        },
+        {
+          "station_id": "1192",
+          "arrival": 420,
+          "departure": 420
+        },
+        {
+          "station_id": "1191",
+          "arrival": 600,
+          "departure": 660
+        },
+        {
+          "station_id": "1190",
+          "arrival": 840,
+          "departure": 900
+        },
+        {
+          "station_id": "1210",
+          "arrival": 1140,
+          "departure": 1140
+        }
+      ]
+    },
+    {
+      "train_id": "LC-1773",
+      "train_no": "1773",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "21:02:00",
+      "od_track_id": "LJ-LJ-HC",
+      "origin_station": "六家",
+      "destination_station": "新竹",
+      "total_travel_time": 1140,
+      "stations": [
+        {
+          "station_id": "1194",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "1193",
+          "arrival": 240,
+          "departure": 300
+        },
+        {
+          "station_id": "1192",
+          "arrival": 420,
+          "departure": 420
+        },
+        {
+          "station_id": "1191",
+          "arrival": 600,
+          "departure": 660
+        },
+        {
+          "station_id": "1190",
+          "arrival": 840,
+          "departure": 900
+        },
+        {
+          "station_id": "1210",
+          "arrival": 1140,
+          "departure": 1140
+        }
+      ]
+    },
+    {
+      "train_id": "LC-1775",
+      "train_no": "1775",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "21:29:00",
+      "od_track_id": "LJ-LJ-HC",
+      "origin_station": "六家",
+      "destination_station": "新竹",
+      "total_travel_time": 1140,
+      "stations": [
+        {
+          "station_id": "1194",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "1193",
+          "arrival": 240,
+          "departure": 300
+        },
+        {
+          "station_id": "1192",
+          "arrival": 420,
+          "departure": 420
+        },
+        {
+          "station_id": "1191",
+          "arrival": 600,
+          "departure": 660
+        },
+        {
+          "station_id": "1190",
+          "arrival": 840,
+          "departure": 900
+        },
+        {
+          "station_id": "1210",
+          "arrival": 1140,
+          "departure": 1140
+        }
+      ]
+    },
+    {
+      "train_id": "LC-1777",
+      "train_no": "1777",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "22:02:00",
+      "od_track_id": "LJ-LJ-HC",
+      "origin_station": "六家",
+      "destination_station": "新竹",
+      "total_travel_time": 1140,
+      "stations": [
+        {
+          "station_id": "1194",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "1193",
+          "arrival": 240,
+          "departure": 300
+        },
+        {
+          "station_id": "1192",
+          "arrival": 420,
+          "departure": 420
+        },
+        {
+          "station_id": "1191",
+          "arrival": 600,
+          "departure": 660
+        },
+        {
+          "station_id": "1190",
+          "arrival": 840,
+          "departure": 900
+        },
+        {
+          "station_id": "1210",
+          "arrival": 1140,
+          "departure": 1140
+        }
+      ]
+    },
+    {
+      "train_id": "LC-1781",
+      "train_no": "1781",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "22:35:00",
+      "od_track_id": "LJ-LJ-HC",
+      "origin_station": "六家",
+      "destination_station": "新竹",
+      "total_travel_time": 1140,
+      "stations": [
+        {
+          "station_id": "1194",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "1193",
+          "arrival": 240,
+          "departure": 300
+        },
+        {
+          "station_id": "1192",
+          "arrival": 420,
+          "departure": 420
+        },
+        {
+          "station_id": "1191",
+          "arrival": 600,
+          "departure": 660
+        },
+        {
+          "station_id": "1190",
+          "arrival": 840,
+          "departure": 900
+        },
+        {
+          "station_id": "1210",
+          "arrival": 1140,
+          "departure": 1140
+        }
+      ]
+    },
+    {
+      "train_id": "LC-1783",
+      "train_no": "1783",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "23:06:00",
+      "od_track_id": "LJ-LJ-HC",
+      "origin_station": "六家",
+      "destination_station": "新竹",
+      "total_travel_time": 1140,
+      "stations": [
+        {
+          "station_id": "1194",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "1193",
+          "arrival": 240,
+          "departure": 300
+        },
+        {
+          "station_id": "1192",
+          "arrival": 420,
+          "departure": 420
+        },
+        {
+          "station_id": "1191",
+          "arrival": 600,
+          "departure": 660
+        },
+        {
+          "station_id": "1190",
+          "arrival": 840,
+          "departure": 900
+        },
+        {
+          "station_id": "1210",
+          "arrival": 1140,
+          "departure": 1140
+        }
+      ]
+    },
+    {
+      "train_id": "LC-1785",
+      "train_no": "1785",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "23:40:00",
+      "od_track_id": "LJ-LJ-HC",
+      "origin_station": "六家",
+      "destination_station": "新竹",
+      "total_travel_time": 1140,
+      "stations": [
+        {
+          "station_id": "1194",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "1193",
+          "arrival": 240,
+          "departure": 300
+        },
+        {
+          "station_id": "1192",
+          "arrival": 420,
+          "departure": 420
+        },
+        {
+          "station_id": "1191",
+          "arrival": 600,
+          "departure": 660
+        },
+        {
+          "station_id": "1190",
+          "arrival": 840,
+          "departure": 900
+        },
+        {
+          "station_id": "1210",
+          "arrival": 1140,
+          "departure": 1140
+        }
+      ]
+    }
+  ]
+}

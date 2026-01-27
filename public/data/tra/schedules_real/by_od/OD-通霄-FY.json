@@ -1,0 +1,773 @@
+{
+  "track_id": "OD-通霄-FY",
+  "departures": [
+    {
+      "train_id": "LC-2607",
+      "train_no": "2607",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "07:00:00",
+      "od_track_id": "OD-通霄-FY",
+      "origin_station": "通霄",
+      "destination_station": "豐原",
+      "total_travel_time": 5520,
+      "stations": [
+        {
+          "station_id": "2170",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "2180",
+          "arrival": 360,
+          "departure": 360
+        },
+        {
+          "station_id": "2190",
+          "arrival": 720,
+          "departure": 780
+        },
+        {
+          "station_id": "2200",
+          "arrival": 1020,
+          "departure": 1140
+        },
+        {
+          "station_id": "2210",
+          "arrival": 1380,
+          "departure": 1380
+        },
+        {
+          "station_id": "2220",
+          "arrival": 1680,
+          "departure": 1740
+        },
+        {
+          "station_id": "2230",
+          "arrival": 1920,
+          "departure": 1980
+        },
+        {
+          "station_id": "2240",
+          "arrival": 2220,
+          "departure": 2340
+        },
+        {
+          "station_id": "2250",
+          "arrival": 2580,
+          "departure": 2640
+        },
+        {
+          "station_id": "2260",
+          "arrival": 2940,
+          "departure": 2940
+        },
+        {
+          "station_id": "3330",
+          "arrival": 3180,
+          "departure": 3180
+        },
+        {
+          "station_id": "3325",
+          "arrival": 3420,
+          "departure": 3480
+        },
+        {
+          "station_id": "3330",
+          "arrival": 3540,
+          "departure": 3600
+        },
+        {
+          "station_id": "3320",
+          "arrival": 3780,
+          "departure": 3780
+        },
+        {
+          "station_id": "3310",
+          "arrival": 3960,
+          "departure": 3960
+        },
+        {
+          "station_id": "3300",
+          "arrival": 4140,
+          "departure": 4200
+        },
+        {
+          "station_id": "3249",
+          "arrival": 4320,
+          "departure": 4380
+        },
+        {
+          "station_id": "3247",
+          "arrival": 4500,
+          "departure": 4560
+        },
+        {
+          "station_id": "3245",
+          "arrival": 4680,
+          "departure": 4740
+        },
+        {
+          "station_id": "3243",
+          "arrival": 4860,
+          "departure": 4860
+        },
+        {
+          "station_id": "3240",
+          "arrival": 5040,
+          "departure": 5100
+        },
+        {
+          "station_id": "3240",
+          "arrival": 5220,
+          "departure": 5280
+        },
+        {
+          "station_id": "3230",
+          "arrival": 5520,
+          "departure": 5520
+        }
+      ]
+    },
+    {
+      "train_id": "LC-2613",
+      "train_no": "2613",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "10:39:00",
+      "od_track_id": "OD-通霄-FY",
+      "origin_station": "通霄",
+      "destination_station": "豐原",
+      "total_travel_time": 6240,
+      "stations": [
+        {
+          "station_id": "2170",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "2180",
+          "arrival": 360,
+          "departure": 420
+        },
+        {
+          "station_id": "2190",
+          "arrival": 780,
+          "departure": 900
+        },
+        {
+          "station_id": "2200",
+          "arrival": 1200,
+          "departure": 1320
+        },
+        {
+          "station_id": "2210",
+          "arrival": 1560,
+          "departure": 1560
+        },
+        {
+          "station_id": "2220",
+          "arrival": 1920,
+          "departure": 1980
+        },
+        {
+          "station_id": "2230",
+          "arrival": 2220,
+          "departure": 2280
+        },
+        {
+          "station_id": "2240",
+          "arrival": 2580,
+          "departure": 2640
+        },
+        {
+          "station_id": "2250",
+          "arrival": 3000,
+          "departure": 3240
+        },
+        {
+          "station_id": "2260",
+          "arrival": 3600,
+          "departure": 3600
+        },
+        {
+          "station_id": "3330",
+          "arrival": 3840,
+          "departure": 3900
+        },
+        {
+          "station_id": "3325",
+          "arrival": 4080,
+          "departure": 4140
+        },
+        {
+          "station_id": "3330",
+          "arrival": 4260,
+          "departure": 4260
+        },
+        {
+          "station_id": "3320",
+          "arrival": 4440,
+          "departure": 4500
+        },
+        {
+          "station_id": "3310",
+          "arrival": 4680,
+          "departure": 4680
+        },
+        {
+          "station_id": "3300",
+          "arrival": 4860,
+          "departure": 4920
+        },
+        {
+          "station_id": "3249",
+          "arrival": 5040,
+          "departure": 5100
+        },
+        {
+          "station_id": "3247",
+          "arrival": 5220,
+          "departure": 5280
+        },
+        {
+          "station_id": "3245",
+          "arrival": 5400,
+          "departure": 5460
+        },
+        {
+          "station_id": "3243",
+          "arrival": 5580,
+          "departure": 5580
+        },
+        {
+          "station_id": "3240",
+          "arrival": 5760,
+          "departure": 5820
+        },
+        {
+          "station_id": "3240",
+          "arrival": 5940,
+          "departure": 6000
+        },
+        {
+          "station_id": "3230",
+          "arrival": 6240,
+          "departure": 6240
+        }
+      ]
+    },
+    {
+      "train_id": "LC-2615",
+      "train_no": "2615",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "11:22:00",
+      "od_track_id": "OD-通霄-FY",
+      "origin_station": "通霄",
+      "destination_station": "豐原",
+      "total_travel_time": 6840,
+      "stations": [
+        {
+          "station_id": "2170",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "2180",
+          "arrival": 360,
+          "departure": 480
+        },
+        {
+          "station_id": "2190",
+          "arrival": 840,
+          "departure": 840
+        },
+        {
+          "station_id": "2200",
+          "arrival": 1140,
+          "departure": 1320
+        },
+        {
+          "station_id": "2210",
+          "arrival": 1560,
+          "departure": 1560
+        },
+        {
+          "station_id": "2220",
+          "arrival": 1860,
+          "departure": 1920
+        },
+        {
+          "station_id": "2230",
+          "arrival": 2220,
+          "departure": 2340
+        },
+        {
+          "station_id": "2240",
+          "arrival": 2640,
+          "departure": 2700
+        },
+        {
+          "station_id": "2250",
+          "arrival": 3000,
+          "departure": 3120
+        },
+        {
+          "station_id": "2260",
+          "arrival": 3420,
+          "departure": 3540
+        },
+        {
+          "station_id": "3330",
+          "arrival": 3780,
+          "departure": 3900
+        },
+        {
+          "station_id": "3325",
+          "arrival": 4140,
+          "departure": 4620
+        },
+        {
+          "station_id": "3330",
+          "arrival": 4740,
+          "departure": 4740
+        },
+        {
+          "station_id": "3320",
+          "arrival": 4920,
+          "departure": 4980
+        },
+        {
+          "station_id": "3310",
+          "arrival": 5160,
+          "departure": 5160
+        },
+        {
+          "station_id": "3300",
+          "arrival": 5340,
+          "departure": 5520
+        },
+        {
+          "station_id": "3249",
+          "arrival": 5640,
+          "departure": 5700
+        },
+        {
+          "station_id": "3247",
+          "arrival": 5820,
+          "departure": 5880
+        },
+        {
+          "station_id": "3245",
+          "arrival": 6000,
+          "departure": 6060
+        },
+        {
+          "station_id": "3243",
+          "arrival": 6180,
+          "departure": 6180
+        },
+        {
+          "station_id": "3240",
+          "arrival": 6360,
+          "departure": 6420
+        },
+        {
+          "station_id": "3240",
+          "arrival": 6540,
+          "departure": 6600
+        },
+        {
+          "station_id": "3230",
+          "arrival": 6840,
+          "departure": 6840
+        }
+      ]
+    },
+    {
+      "train_id": "LC-2617",
+      "train_no": "2617",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "12:51:00",
+      "od_track_id": "OD-通霄-FY",
+      "origin_station": "通霄",
+      "destination_station": "豐原",
+      "total_travel_time": 6060,
+      "stations": [
+        {
+          "station_id": "2170",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "2180",
+          "arrival": 360,
+          "departure": 420
+        },
+        {
+          "station_id": "2190",
+          "arrival": 780,
+          "departure": 780
+        },
+        {
+          "station_id": "2200",
+          "arrival": 1080,
+          "departure": 1140
+        },
+        {
+          "station_id": "2210",
+          "arrival": 1380,
+          "departure": 1380
+        },
+        {
+          "station_id": "2220",
+          "arrival": 1740,
+          "departure": 1800
+        },
+        {
+          "station_id": "2230",
+          "arrival": 2040,
+          "departure": 2280
+        },
+        {
+          "station_id": "2240",
+          "arrival": 2580,
+          "departure": 2640
+        },
+        {
+          "station_id": "2250",
+          "arrival": 2880,
+          "departure": 2940
+        },
+        {
+          "station_id": "2260",
+          "arrival": 3240,
+          "departure": 3240
+        },
+        {
+          "station_id": "3330",
+          "arrival": 3480,
+          "departure": 3540
+        },
+        {
+          "station_id": "3325",
+          "arrival": 3720,
+          "departure": 3840
+        },
+        {
+          "station_id": "3330",
+          "arrival": 3960,
+          "departure": 3960
+        },
+        {
+          "station_id": "3320",
+          "arrival": 4140,
+          "departure": 4200
+        },
+        {
+          "station_id": "3310",
+          "arrival": 4380,
+          "departure": 4380
+        },
+        {
+          "station_id": "3300",
+          "arrival": 4560,
+          "departure": 4680
+        },
+        {
+          "station_id": "3249",
+          "arrival": 4800,
+          "departure": 4860
+        },
+        {
+          "station_id": "3247",
+          "arrival": 4980,
+          "departure": 5040
+        },
+        {
+          "station_id": "3245",
+          "arrival": 5160,
+          "departure": 5220
+        },
+        {
+          "station_id": "3243",
+          "arrival": 5340,
+          "departure": 5340
+        },
+        {
+          "station_id": "3240",
+          "arrival": 5520,
+          "departure": 5640
+        },
+        {
+          "station_id": "3240",
+          "arrival": 5760,
+          "departure": 5820
+        },
+        {
+          "station_id": "3230",
+          "arrival": 6060,
+          "departure": 6060
+        }
+      ]
+    },
+    {
+      "train_id": "LC-2623",
+      "train_no": "2623",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "16:10:00",
+      "od_track_id": "OD-通霄-FY",
+      "origin_station": "通霄",
+      "destination_station": "豐原",
+      "total_travel_time": 6660,
+      "stations": [
+        {
+          "station_id": "2170",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "2180",
+          "arrival": 360,
+          "departure": 420
+        },
+        {
+          "station_id": "2190",
+          "arrival": 780,
+          "departure": 780
+        },
+        {
+          "station_id": "2200",
+          "arrival": 1080,
+          "departure": 1200
+        },
+        {
+          "station_id": "2210",
+          "arrival": 1440,
+          "departure": 1440
+        },
+        {
+          "station_id": "2220",
+          "arrival": 1800,
+          "departure": 2040
+        },
+        {
+          "station_id": "2230",
+          "arrival": 2280,
+          "departure": 2340
+        },
+        {
+          "station_id": "2240",
+          "arrival": 2580,
+          "departure": 2640
+        },
+        {
+          "station_id": "2250",
+          "arrival": 2880,
+          "departure": 2940
+        },
+        {
+          "station_id": "2260",
+          "arrival": 3300,
+          "departure": 3360
+        },
+        {
+          "station_id": "3330",
+          "arrival": 3600,
+          "departure": 4140
+        },
+        {
+          "station_id": "3325",
+          "arrival": 4320,
+          "departure": 4440
+        },
+        {
+          "station_id": "3330",
+          "arrival": 4560,
+          "departure": 4560
+        },
+        {
+          "station_id": "3320",
+          "arrival": 4740,
+          "departure": 4800
+        },
+        {
+          "station_id": "3310",
+          "arrival": 4980,
+          "departure": 4980
+        },
+        {
+          "station_id": "3300",
+          "arrival": 5160,
+          "departure": 5340
+        },
+        {
+          "station_id": "3249",
+          "arrival": 5460,
+          "departure": 5520
+        },
+        {
+          "station_id": "3247",
+          "arrival": 5640,
+          "departure": 5700
+        },
+        {
+          "station_id": "3245",
+          "arrival": 5820,
+          "departure": 5880
+        },
+        {
+          "station_id": "3243",
+          "arrival": 6000,
+          "departure": 6000
+        },
+        {
+          "station_id": "3240",
+          "arrival": 6180,
+          "departure": 6240
+        },
+        {
+          "station_id": "3240",
+          "arrival": 6360,
+          "departure": 6420
+        },
+        {
+          "station_id": "3230",
+          "arrival": 6660,
+          "departure": 6660
+        }
+      ]
+    },
+    {
+      "train_id": "LC-2633",
+      "train_no": "2633",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "20:49:00",
+      "od_track_id": "OD-通霄-FY",
+      "origin_station": "通霄",
+      "destination_station": "豐原",
+      "total_travel_time": 6360,
+      "stations": [
+        {
+          "station_id": "2170",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "2180",
+          "arrival": 420,
+          "departure": 480
+        },
+        {
+          "station_id": "2190",
+          "arrival": 900,
+          "departure": 900
+        },
+        {
+          "station_id": "2200",
+          "arrival": 1200,
+          "departure": 1260
+        },
+        {
+          "station_id": "2210",
+          "arrival": 1500,
+          "departure": 1500
+        },
+        {
+          "station_id": "2220",
+          "arrival": 1860,
+          "departure": 1920
+        },
+        {
+          "station_id": "2230",
+          "arrival": 2160,
+          "departure": 2280
+        },
+        {
+          "station_id": "2240",
+          "arrival": 2520,
+          "departure": 2580
+        },
+        {
+          "station_id": "2250",
+          "arrival": 2820,
+          "departure": 2880
+        },
+        {
+          "station_id": "2260",
+          "arrival": 3180,
+          "departure": 3180
+        },
+        {
+          "station_id": "3330",
+          "arrival": 3420,
+          "departure": 3540
+        },
+        {
+          "station_id": "3325",
+          "arrival": 3780,
+          "departure": 4200
+        },
+        {
+          "station_id": "3330",
+          "arrival": 4320,
+          "departure": 4320
+        },
+        {
+          "station_id": "3320",
+          "arrival": 4500,
+          "departure": 4560
+        },
+        {
+          "station_id": "3310",
+          "arrival": 4740,
+          "departure": 4740
+        },
+        {
+          "station_id": "3300",
+          "arrival": 4920,
+          "departure": 5040
+        },
+        {
+          "station_id": "3249",
+          "arrival": 5160,
+          "departure": 5220
+        },
+        {
+          "station_id": "3247",
+          "arrival": 5340,
+          "departure": 5400
+        },
+        {
+          "station_id": "3245",
+          "arrival": 5520,
+          "departure": 5580
+        },
+        {
+          "station_id": "3243",
+          "arrival": 5700,
+          "departure": 5700
+        },
+        {
+          "station_id": "3240",
+          "arrival": 5880,
+          "departure": 5940
+        },
+        {
+          "station_id": "3240",
+          "arrival": 6060,
+          "departure": 6120
+        },
+        {
+          "station_id": "3230",
+          "arrival": 6360,
+          "departure": 6360
+        }
+      ]
+    }
+  ]
+}

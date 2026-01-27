@@ -1,0 +1,98 @@
+{
+  "track_id": "OD-TC-通霄",
+  "departures": [
+    {
+      "train_id": "LC-2606",
+      "train_no": "2606",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "09:37:00",
+      "od_track_id": "OD-TC-通霄",
+      "origin_station": "臺中",
+      "destination_station": "通霄",
+      "total_travel_time": 5160,
+      "stations": [
+        {
+          "station_id": "3300",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "3310",
+          "arrival": 180,
+          "departure": 240
+        },
+        {
+          "station_id": "3320",
+          "arrival": 360,
+          "departure": 420
+        },
+        {
+          "station_id": "3330",
+          "arrival": 600,
+          "departure": 660
+        },
+        {
+          "station_id": "3325",
+          "arrival": 720,
+          "departure": 840
+        },
+        {
+          "station_id": "3330",
+          "arrival": 1080,
+          "departure": 1380
+        },
+        {
+          "station_id": "2260",
+          "arrival": 1560,
+          "departure": 1620
+        },
+        {
+          "station_id": "2250",
+          "arrival": 1980,
+          "departure": 2100
+        },
+        {
+          "station_id": "2240",
+          "arrival": 2400,
+          "departure": 2520
+        },
+        {
+          "station_id": "2230",
+          "arrival": 2820,
+          "departure": 2880
+        },
+        {
+          "station_id": "2220",
+          "arrival": 3060,
+          "departure": 3120
+        },
+        {
+          "station_id": "2210",
+          "arrival": 3420,
+          "departure": 3420
+        },
+        {
+          "station_id": "2200",
+          "arrival": 3720,
+          "departure": 4020
+        },
+        {
+          "station_id": "2190",
+          "arrival": 4260,
+          "departure": 4320
+        },
+        {
+          "station_id": "2180",
+          "arrival": 4680,
+          "departure": 4740
+        },
+        {
+          "station_id": "2170",
+          "arrival": 5160,
+          "departure": 5160
+        }
+      ]
+    }
+  ]
+}

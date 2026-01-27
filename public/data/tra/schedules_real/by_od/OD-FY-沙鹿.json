@@ -1,0 +1,103 @@
+{
+  "track_id": "OD-FY-沙鹿",
+  "departures": [
+    {
+      "train_id": "LC-2634",
+      "train_no": "2634",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "21:58:00",
+      "od_track_id": "OD-FY-沙鹿",
+      "origin_station": "豐原",
+      "destination_station": "沙鹿",
+      "total_travel_time": 4200,
+      "stations": [
+        {
+          "station_id": "3230",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "3240",
+          "arrival": 240,
+          "departure": 240
+        },
+        {
+          "station_id": "3240",
+          "arrival": 480,
+          "departure": 840
+        },
+        {
+          "station_id": "3243",
+          "arrival": 1020,
+          "departure": 1080
+        },
+        {
+          "station_id": "3245",
+          "arrival": 1200,
+          "departure": 1200
+        },
+        {
+          "station_id": "3247",
+          "arrival": 1320,
+          "departure": 1380
+        },
+        {
+          "station_id": "3249",
+          "arrival": 1560,
+          "departure": 1560
+        },
+        {
+          "station_id": "3300",
+          "arrival": 1740,
+          "departure": 1920
+        },
+        {
+          "station_id": "3310",
+          "arrival": 2040,
+          "departure": 2100
+        },
+        {
+          "station_id": "3320",
+          "arrival": 2220,
+          "departure": 2280
+        },
+        {
+          "station_id": "3330",
+          "arrival": 2460,
+          "departure": 2520
+        },
+        {
+          "station_id": "3325",
+          "arrival": 2580,
+          "departure": 2640
+        },
+        {
+          "station_id": "3330",
+          "arrival": 2880,
+          "departure": 2940
+        },
+        {
+          "station_id": "2260",
+          "arrival": 3120,
+          "departure": 3180
+        },
+        {
+          "station_id": "2250",
+          "arrival": 3480,
+          "departure": 3540
+        },
+        {
+          "station_id": "2240",
+          "arrival": 3780,
+          "departure": 3840
+        },
+        {
+          "station_id": "2230",
+          "arrival": 4200,
+          "departure": 4200
+        }
+      ]
+    }
+  ]
+}

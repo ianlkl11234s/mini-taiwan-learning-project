@@ -1,0 +1,53 @@
+{
+  "track_id": "BH-SX-HL-0",
+  "departures": [
+    {
+      "train_id": "LC-4122",
+      "train_no": "4122",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "08:18:00",
+      "od_track_id": "BH-SX-HL-0",
+      "origin_station": "和平",
+      "destination_station": "花蓮",
+      "total_travel_time": 3000,
+      "stations": [
+        {
+          "station_id": "7060",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "7050",
+          "arrival": 420,
+          "departure": 480
+        },
+        {
+          "station_id": "7040",
+          "arrival": 1200,
+          "departure": 1200
+        },
+        {
+          "station_id": "7030",
+          "arrival": 1560,
+          "departure": 1860
+        },
+        {
+          "station_id": "7020",
+          "arrival": 2160,
+          "departure": 2220
+        },
+        {
+          "station_id": "7010",
+          "arrival": 2520,
+          "departure": 2580
+        },
+        {
+          "station_id": "7000",
+          "arrival": 3000,
+          "departure": 3000
+        }
+      ]
+    }
+  ]
+}

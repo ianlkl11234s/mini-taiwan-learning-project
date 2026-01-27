@@ -6,11 +6,19 @@
       "properties": {
         "track_id": "OD-YL2-TT",
         "source_track": "BB-ZY-TT-1",
-        "point_count": 10645
+        "point_count": 10647
       },
       "geometry": {
         "type": "LineString",
         "coordinates": [
+          [
+            120.57944126264768,
+            23.900343018359226
+          ],
+          [
+            120.57928243596892,
+            23.900978549189897
+          ],
           [
             120.57918811017679,
             23.901361668732257

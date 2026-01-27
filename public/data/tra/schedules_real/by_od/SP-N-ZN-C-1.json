@@ -1,0 +1,1817 @@
+{
+  "track_id": "SP-N-ZN-C-1",
+  "departures": [
+    {
+      "train_id": "LC-2503",
+      "train_no": "2503",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "04:53:00",
+      "od_track_id": "SP-N-ZN-C-1",
+      "origin_station": "新竹",
+      "destination_station": "彰化",
+      "total_travel_time": 7200,
+      "stations": [
+        {
+          "station_id": "1210",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "1220",
+          "arrival": 300,
+          "departure": 300
+        },
+        {
+          "station_id": "1230",
+          "arrival": 480,
+          "departure": 540
+        },
+        {
+          "station_id": "1240",
+          "arrival": 840,
+          "departure": 840
+        },
+        {
+          "station_id": "1250",
+          "arrival": 1140,
+          "departure": 1200
+        },
+        {
+          "station_id": "2110",
+          "arrival": 1440,
+          "departure": 1500
+        },
+        {
+          "station_id": "2120",
+          "arrival": 1860,
+          "departure": 1860
+        },
+        {
+          "station_id": "2130",
+          "arrival": 2100,
+          "departure": 2160
+        },
+        {
+          "station_id": "2140",
+          "arrival": 2340,
+          "departure": 2400
+        },
+        {
+          "station_id": "2150",
+          "arrival": 2760,
+          "departure": 2820
+        },
+        {
+          "station_id": "2160",
+          "arrival": 3000,
+          "departure": 3060
+        },
+        {
+          "station_id": "2170",
+          "arrival": 3360,
+          "departure": 3420
+        },
+        {
+          "station_id": "2180",
+          "arrival": 3780,
+          "departure": 3840
+        },
+        {
+          "station_id": "2190",
+          "arrival": 4200,
+          "departure": 4200
+        },
+        {
+          "station_id": "2200",
+          "arrival": 4500,
+          "departure": 4560
+        },
+        {
+          "station_id": "2210",
+          "arrival": 4800,
+          "departure": 4800
+        },
+        {
+          "station_id": "2220",
+          "arrival": 5160,
+          "departure": 5220
+        },
+        {
+          "station_id": "2230",
+          "arrival": 5460,
+          "departure": 5520
+        },
+        {
+          "station_id": "2240",
+          "arrival": 5760,
+          "departure": 5880
+        },
+        {
+          "station_id": "2250",
+          "arrival": 6120,
+          "departure": 6240
+        },
+        {
+          "station_id": "2260",
+          "arrival": 6540,
+          "departure": 6720
+        },
+        {
+          "station_id": "3360",
+          "arrival": 7200,
+          "departure": 7200
+        }
+      ]
+    },
+    {
+      "train_id": "LC-2507",
+      "train_no": "2507",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "05:31:00",
+      "od_track_id": "SP-N-ZN-C-1",
+      "origin_station": "新竹",
+      "destination_station": "彰化",
+      "total_travel_time": 7140,
+      "stations": [
+        {
+          "station_id": "1210",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "1220",
+          "arrival": 300,
+          "departure": 300
+        },
+        {
+          "station_id": "1230",
+          "arrival": 480,
+          "departure": 540
+        },
+        {
+          "station_id": "1240",
+          "arrival": 840,
+          "departure": 840
+        },
+        {
+          "station_id": "1250",
+          "arrival": 1140,
+          "departure": 1260
+        },
+        {
+          "station_id": "2110",
+          "arrival": 1500,
+          "departure": 1560
+        },
+        {
+          "station_id": "2120",
+          "arrival": 1920,
+          "departure": 1920
+        },
+        {
+          "station_id": "2130",
+          "arrival": 2160,
+          "departure": 2220
+        },
+        {
+          "station_id": "2140",
+          "arrival": 2400,
+          "departure": 2460
+        },
+        {
+          "station_id": "2150",
+          "arrival": 2820,
+          "departure": 2880
+        },
+        {
+          "station_id": "2160",
+          "arrival": 3060,
+          "departure": 3120
+        },
+        {
+          "station_id": "2170",
+          "arrival": 3420,
+          "departure": 3480
+        },
+        {
+          "station_id": "2180",
+          "arrival": 3840,
+          "departure": 3900
+        },
+        {
+          "station_id": "2190",
+          "arrival": 4260,
+          "departure": 4260
+        },
+        {
+          "station_id": "2200",
+          "arrival": 4560,
+          "departure": 4620
+        },
+        {
+          "station_id": "2210",
+          "arrival": 4860,
+          "departure": 4860
+        },
+        {
+          "station_id": "2220",
+          "arrival": 5160,
+          "departure": 5220
+        },
+        {
+          "station_id": "2230",
+          "arrival": 5520,
+          "departure": 5700
+        },
+        {
+          "station_id": "2240",
+          "arrival": 6000,
+          "departure": 6000
+        },
+        {
+          "station_id": "2250",
+          "arrival": 6300,
+          "departure": 6300
+        },
+        {
+          "station_id": "2260",
+          "arrival": 6600,
+          "departure": 6660
+        },
+        {
+          "station_id": "3360",
+          "arrival": 7140,
+          "departure": 7140
+        }
+      ]
+    },
+    {
+      "train_id": "LC-2511",
+      "train_no": "2511",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "06:34:00",
+      "od_track_id": "SP-N-ZN-C-1",
+      "origin_station": "新竹",
+      "destination_station": "彰化",
+      "total_travel_time": 7320,
+      "stations": [
+        {
+          "station_id": "1210",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "1220",
+          "arrival": 300,
+          "departure": 300
+        },
+        {
+          "station_id": "1230",
+          "arrival": 480,
+          "departure": 540
+        },
+        {
+          "station_id": "1240",
+          "arrival": 840,
+          "departure": 840
+        },
+        {
+          "station_id": "1250",
+          "arrival": 1140,
+          "departure": 1500
+        },
+        {
+          "station_id": "2110",
+          "arrival": 1740,
+          "departure": 1800
+        },
+        {
+          "station_id": "2120",
+          "arrival": 2160,
+          "departure": 2160
+        },
+        {
+          "station_id": "2130",
+          "arrival": 2400,
+          "departure": 2460
+        },
+        {
+          "station_id": "2140",
+          "arrival": 2640,
+          "departure": 2700
+        },
+        {
+          "station_id": "2150",
+          "arrival": 3060,
+          "departure": 3120
+        },
+        {
+          "station_id": "2160",
+          "arrival": 3300,
+          "departure": 3360
+        },
+        {
+          "station_id": "2170",
+          "arrival": 3660,
+          "departure": 3660
+        },
+        {
+          "station_id": "2180",
+          "arrival": 4020,
+          "departure": 4140
+        },
+        {
+          "station_id": "2190",
+          "arrival": 4500,
+          "departure": 4500
+        },
+        {
+          "station_id": "2200",
+          "arrival": 4800,
+          "departure": 4860
+        },
+        {
+          "station_id": "2210",
+          "arrival": 5100,
+          "departure": 5100
+        },
+        {
+          "station_id": "2220",
+          "arrival": 5400,
+          "departure": 5460
+        },
+        {
+          "station_id": "2230",
+          "arrival": 5700,
+          "departure": 5760
+        },
+        {
+          "station_id": "2240",
+          "arrival": 6000,
+          "departure": 6060
+        },
+        {
+          "station_id": "2250",
+          "arrival": 6360,
+          "departure": 6480
+        },
+        {
+          "station_id": "2260",
+          "arrival": 6780,
+          "departure": 6840
+        },
+        {
+          "station_id": "3360",
+          "arrival": 7320,
+          "departure": 7320
+        }
+      ]
+    },
+    {
+      "train_id": "LC-2513",
+      "train_no": "2513",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "08:23:00",
+      "od_track_id": "SP-N-ZN-C-1",
+      "origin_station": "新竹",
+      "destination_station": "彰化",
+      "total_travel_time": 7500,
+      "stations": [
+        {
+          "station_id": "1210",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "1220",
+          "arrival": 300,
+          "departure": 300
+        },
+        {
+          "station_id": "1230",
+          "arrival": 480,
+          "departure": 540
+        },
+        {
+          "station_id": "1240",
+          "arrival": 840,
+          "departure": 840
+        },
+        {
+          "station_id": "1250",
+          "arrival": 1140,
+          "departure": 1200
+        },
+        {
+          "station_id": "2110",
+          "arrival": 1440,
+          "departure": 1500
+        },
+        {
+          "station_id": "2120",
+          "arrival": 2040,
+          "departure": 2040
+        },
+        {
+          "station_id": "2130",
+          "arrival": 2280,
+          "departure": 2400
+        },
+        {
+          "station_id": "2140",
+          "arrival": 2580,
+          "departure": 2640
+        },
+        {
+          "station_id": "2150",
+          "arrival": 3000,
+          "departure": 3060
+        },
+        {
+          "station_id": "2160",
+          "arrival": 3240,
+          "departure": 3360
+        },
+        {
+          "station_id": "2170",
+          "arrival": 3660,
+          "departure": 3720
+        },
+        {
+          "station_id": "2180",
+          "arrival": 4080,
+          "departure": 4140
+        },
+        {
+          "station_id": "2190",
+          "arrival": 4500,
+          "departure": 4500
+        },
+        {
+          "station_id": "2200",
+          "arrival": 4800,
+          "departure": 4860
+        },
+        {
+          "station_id": "2210",
+          "arrival": 5100,
+          "departure": 5100
+        },
+        {
+          "station_id": "2220",
+          "arrival": 5460,
+          "departure": 5580
+        },
+        {
+          "station_id": "2230",
+          "arrival": 5820,
+          "departure": 5880
+        },
+        {
+          "station_id": "2240",
+          "arrival": 6120,
+          "departure": 6180
+        },
+        {
+          "station_id": "2250",
+          "arrival": 6480,
+          "departure": 6600
+        },
+        {
+          "station_id": "2260",
+          "arrival": 6900,
+          "departure": 7020
+        },
+        {
+          "station_id": "3360",
+          "arrival": 7500,
+          "departure": 7500
+        }
+      ]
+    },
+    {
+      "train_id": "LC-2517",
+      "train_no": "2517",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "08:42:00",
+      "od_track_id": "SP-N-ZN-C-1",
+      "origin_station": "湖口",
+      "destination_station": "彰化",
+      "total_travel_time": 8760,
+      "stations": [
+        {
+          "station_id": "1160",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "1170",
+          "arrival": 360,
+          "departure": 660
+        },
+        {
+          "station_id": "1180",
+          "arrival": 960,
+          "departure": 1020
+        },
+        {
+          "station_id": "1190",
+          "arrival": 1260,
+          "departure": 1260
+        },
+        {
+          "station_id": "1210",
+          "arrival": 1440,
+          "departure": 1500
+        },
+        {
+          "station_id": "1220",
+          "arrival": 1800,
+          "departure": 1800
+        },
+        {
+          "station_id": "1230",
+          "arrival": 1980,
+          "departure": 2040
+        },
+        {
+          "station_id": "1240",
+          "arrival": 2340,
+          "departure": 2340
+        },
+        {
+          "station_id": "1250",
+          "arrival": 2640,
+          "departure": 2700
+        },
+        {
+          "station_id": "2110",
+          "arrival": 2940,
+          "departure": 3000
+        },
+        {
+          "station_id": "2120",
+          "arrival": 3360,
+          "departure": 3360
+        },
+        {
+          "station_id": "2130",
+          "arrival": 3600,
+          "departure": 3660
+        },
+        {
+          "station_id": "2140",
+          "arrival": 3900,
+          "departure": 3960
+        },
+        {
+          "station_id": "2150",
+          "arrival": 4320,
+          "departure": 4380
+        },
+        {
+          "station_id": "2160",
+          "arrival": 4560,
+          "departure": 4620
+        },
+        {
+          "station_id": "2170",
+          "arrival": 4920,
+          "departure": 5040
+        },
+        {
+          "station_id": "2180",
+          "arrival": 5400,
+          "departure": 5460
+        },
+        {
+          "station_id": "2190",
+          "arrival": 5820,
+          "departure": 5820
+        },
+        {
+          "station_id": "2200",
+          "arrival": 6120,
+          "departure": 6180
+        },
+        {
+          "station_id": "2210",
+          "arrival": 6420,
+          "departure": 6420
+        },
+        {
+          "station_id": "2220",
+          "arrival": 6780,
+          "departure": 6960
+        },
+        {
+          "station_id": "2230",
+          "arrival": 7200,
+          "departure": 7260
+        },
+        {
+          "station_id": "2240",
+          "arrival": 7500,
+          "departure": 7620
+        },
+        {
+          "station_id": "2250",
+          "arrival": 7860,
+          "departure": 7920
+        },
+        {
+          "station_id": "2260",
+          "arrival": 8160,
+          "departure": 8280
+        },
+        {
+          "station_id": "3360",
+          "arrival": 8760,
+          "departure": 8760
+        }
+      ]
+    },
+    {
+      "train_id": "LC-2521",
+      "train_no": "2521",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "10:05:00",
+      "od_track_id": "SP-N-ZN-C-1",
+      "origin_station": "新竹",
+      "destination_station": "彰化",
+      "total_travel_time": 7740,
+      "stations": [
+        {
+          "station_id": "1210",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "1220",
+          "arrival": 300,
+          "departure": 300
+        },
+        {
+          "station_id": "1230",
+          "arrival": 480,
+          "departure": 540
+        },
+        {
+          "station_id": "1240",
+          "arrival": 840,
+          "departure": 840
+        },
+        {
+          "station_id": "1250",
+          "arrival": 1200,
+          "departure": 1740
+        },
+        {
+          "station_id": "2110",
+          "arrival": 1980,
+          "departure": 2040
+        },
+        {
+          "station_id": "2120",
+          "arrival": 2400,
+          "departure": 2400
+        },
+        {
+          "station_id": "2130",
+          "arrival": 2640,
+          "departure": 2760
+        },
+        {
+          "station_id": "2140",
+          "arrival": 2940,
+          "departure": 3000
+        },
+        {
+          "station_id": "2150",
+          "arrival": 3360,
+          "departure": 3420
+        },
+        {
+          "station_id": "2160",
+          "arrival": 3600,
+          "departure": 3660
+        },
+        {
+          "station_id": "2170",
+          "arrival": 3960,
+          "departure": 4020
+        },
+        {
+          "station_id": "2180",
+          "arrival": 4380,
+          "departure": 4440
+        },
+        {
+          "station_id": "2190",
+          "arrival": 4800,
+          "departure": 4800
+        },
+        {
+          "station_id": "2200",
+          "arrival": 5100,
+          "departure": 5220
+        },
+        {
+          "station_id": "2210",
+          "arrival": 5460,
+          "departure": 5460
+        },
+        {
+          "station_id": "2220",
+          "arrival": 5820,
+          "departure": 6000
+        },
+        {
+          "station_id": "2230",
+          "arrival": 6240,
+          "departure": 6300
+        },
+        {
+          "station_id": "2240",
+          "arrival": 6600,
+          "departure": 6660
+        },
+        {
+          "station_id": "2250",
+          "arrival": 6900,
+          "departure": 6960
+        },
+        {
+          "station_id": "2260",
+          "arrival": 7200,
+          "departure": 7260
+        },
+        {
+          "station_id": "3360",
+          "arrival": 7740,
+          "departure": 7740
+        }
+      ]
+    },
+    {
+      "train_id": "LC-2523",
+      "train_no": "2523",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "11:13:00",
+      "od_track_id": "SP-N-ZN-C-1",
+      "origin_station": "新竹",
+      "destination_station": "彰化",
+      "total_travel_time": 7620,
+      "stations": [
+        {
+          "station_id": "1210",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "1220",
+          "arrival": 300,
+          "departure": 300
+        },
+        {
+          "station_id": "1230",
+          "arrival": 480,
+          "departure": 540
+        },
+        {
+          "station_id": "1240",
+          "arrival": 840,
+          "departure": 840
+        },
+        {
+          "station_id": "1250",
+          "arrival": 1140,
+          "departure": 1260
+        },
+        {
+          "station_id": "2110",
+          "arrival": 1500,
+          "departure": 1560
+        },
+        {
+          "station_id": "2120",
+          "arrival": 1920,
+          "departure": 1920
+        },
+        {
+          "station_id": "2130",
+          "arrival": 2160,
+          "departure": 2280
+        },
+        {
+          "station_id": "2140",
+          "arrival": 2460,
+          "departure": 2520
+        },
+        {
+          "station_id": "2150",
+          "arrival": 2880,
+          "departure": 2940
+        },
+        {
+          "station_id": "2160",
+          "arrival": 3120,
+          "departure": 3180
+        },
+        {
+          "station_id": "2170",
+          "arrival": 3540,
+          "departure": 3840
+        },
+        {
+          "station_id": "2180",
+          "arrival": 4200,
+          "departure": 4260
+        },
+        {
+          "station_id": "2190",
+          "arrival": 4620,
+          "departure": 4620
+        },
+        {
+          "station_id": "2200",
+          "arrival": 4920,
+          "departure": 4980
+        },
+        {
+          "station_id": "2210",
+          "arrival": 5220,
+          "departure": 5220
+        },
+        {
+          "station_id": "2220",
+          "arrival": 5520,
+          "departure": 5580
+        },
+        {
+          "station_id": "2230",
+          "arrival": 5820,
+          "departure": 5880
+        },
+        {
+          "station_id": "2240",
+          "arrival": 6180,
+          "departure": 6360
+        },
+        {
+          "station_id": "2250",
+          "arrival": 6660,
+          "departure": 6720
+        },
+        {
+          "station_id": "2260",
+          "arrival": 6960,
+          "departure": 7080
+        },
+        {
+          "station_id": "3360",
+          "arrival": 7620,
+          "departure": 7620
+        }
+      ]
+    },
+    {
+      "train_id": "LC-2535",
+      "train_no": "2535",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "14:49:00",
+      "od_track_id": "SP-N-ZN-C-1",
+      "origin_station": "北湖",
+      "destination_station": "彰化",
+      "total_travel_time": 10380,
+      "stations": [
+        {
+          "station_id": "1150",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "1160",
+          "arrival": 180,
+          "departure": 240
+        },
+        {
+          "station_id": "1170",
+          "arrival": 600,
+          "departure": 900
+        },
+        {
+          "station_id": "1180",
+          "arrival": 1200,
+          "departure": 1260
+        },
+        {
+          "station_id": "1190",
+          "arrival": 1500,
+          "departure": 1500
+        },
+        {
+          "station_id": "1210",
+          "arrival": 1680,
+          "departure": 1740
+        },
+        {
+          "station_id": "1220",
+          "arrival": 2040,
+          "departure": 2040
+        },
+        {
+          "station_id": "1230",
+          "arrival": 2220,
+          "departure": 2700
+        },
+        {
+          "station_id": "1240",
+          "arrival": 3060,
+          "departure": 3060
+        },
+        {
+          "station_id": "1250",
+          "arrival": 3360,
+          "departure": 3420
+        },
+        {
+          "station_id": "2110",
+          "arrival": 3660,
+          "departure": 3720
+        },
+        {
+          "station_id": "2120",
+          "arrival": 4080,
+          "departure": 4080
+        },
+        {
+          "station_id": "2130",
+          "arrival": 4320,
+          "departure": 4380
+        },
+        {
+          "station_id": "2140",
+          "arrival": 4560,
+          "departure": 4620
+        },
+        {
+          "station_id": "2150",
+          "arrival": 4980,
+          "departure": 5040
+        },
+        {
+          "station_id": "2160",
+          "arrival": 5280,
+          "departure": 5700
+        },
+        {
+          "station_id": "2170",
+          "arrival": 6120,
+          "departure": 6240
+        },
+        {
+          "station_id": "2180",
+          "arrival": 6660,
+          "departure": 6840
+        },
+        {
+          "station_id": "2190",
+          "arrival": 7260,
+          "departure": 7260
+        },
+        {
+          "station_id": "2200",
+          "arrival": 7560,
+          "departure": 7740
+        },
+        {
+          "station_id": "2210",
+          "arrival": 7980,
+          "departure": 7980
+        },
+        {
+          "station_id": "2220",
+          "arrival": 8280,
+          "departure": 8340
+        },
+        {
+          "station_id": "2230",
+          "arrival": 8580,
+          "departure": 8640
+        },
+        {
+          "station_id": "2240",
+          "arrival": 8940,
+          "departure": 9000
+        },
+        {
+          "station_id": "2250",
+          "arrival": 9300,
+          "departure": 9300
+        },
+        {
+          "station_id": "2260",
+          "arrival": 9600,
+          "departure": 9660
+        },
+        {
+          "station_id": "3360",
+          "arrival": 10380,
+          "departure": 10380
+        }
+      ]
+    },
+    {
+      "train_id": "LC-2541",
+      "train_no": "2541",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "16:10:00",
+      "od_track_id": "SP-N-ZN-C-1",
+      "origin_station": "竹北",
+      "destination_station": "彰化",
+      "total_travel_time": 7920,
+      "stations": [
+        {
+          "station_id": "1180",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "1190",
+          "arrival": 300,
+          "departure": 300
+        },
+        {
+          "station_id": "1210",
+          "arrival": 480,
+          "departure": 600
+        },
+        {
+          "station_id": "1220",
+          "arrival": 900,
+          "departure": 900
+        },
+        {
+          "station_id": "1230",
+          "arrival": 1080,
+          "departure": 1140
+        },
+        {
+          "station_id": "1240",
+          "arrival": 1440,
+          "departure": 1440
+        },
+        {
+          "station_id": "1250",
+          "arrival": 1740,
+          "departure": 1800
+        },
+        {
+          "station_id": "2110",
+          "arrival": 2040,
+          "departure": 2100
+        },
+        {
+          "station_id": "2120",
+          "arrival": 2460,
+          "departure": 2460
+        },
+        {
+          "station_id": "2130",
+          "arrival": 2700,
+          "departure": 2820
+        },
+        {
+          "station_id": "2140",
+          "arrival": 3000,
+          "departure": 3060
+        },
+        {
+          "station_id": "2150",
+          "arrival": 3420,
+          "departure": 3480
+        },
+        {
+          "station_id": "2160",
+          "arrival": 3660,
+          "departure": 3720
+        },
+        {
+          "station_id": "2170",
+          "arrival": 4020,
+          "departure": 4080
+        },
+        {
+          "station_id": "2180",
+          "arrival": 4500,
+          "departure": 4560
+        },
+        {
+          "station_id": "2190",
+          "arrival": 4920,
+          "departure": 4920
+        },
+        {
+          "station_id": "2200",
+          "arrival": 5220,
+          "departure": 5280
+        },
+        {
+          "station_id": "2210",
+          "arrival": 5520,
+          "departure": 5520
+        },
+        {
+          "station_id": "2220",
+          "arrival": 5880,
+          "departure": 5880
+        },
+        {
+          "station_id": "2230",
+          "arrival": 6120,
+          "departure": 6180
+        },
+        {
+          "station_id": "2240",
+          "arrival": 6480,
+          "departure": 6540
+        },
+        {
+          "station_id": "2250",
+          "arrival": 6840,
+          "departure": 6960
+        },
+        {
+          "station_id": "2260",
+          "arrival": 7260,
+          "departure": 7440
+        },
+        {
+          "station_id": "3360",
+          "arrival": 7920,
+          "departure": 7920
+        }
+      ]
+    },
+    {
+      "train_id": "LC-2543",
+      "train_no": "2543",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "16:59:00",
+      "od_track_id": "SP-N-ZN-C-1",
+      "origin_station": "北湖",
+      "destination_station": "彰化",
+      "total_travel_time": 9000,
+      "stations": [
+        {
+          "station_id": "1150",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "1160",
+          "arrival": 180,
+          "departure": 240
+        },
+        {
+          "station_id": "1170",
+          "arrival": 540,
+          "departure": 600
+        },
+        {
+          "station_id": "1180",
+          "arrival": 840,
+          "departure": 900
+        },
+        {
+          "station_id": "1190",
+          "arrival": 1140,
+          "departure": 1140
+        },
+        {
+          "station_id": "1210",
+          "arrival": 1320,
+          "departure": 1440
+        },
+        {
+          "station_id": "1220",
+          "arrival": 1740,
+          "departure": 1740
+        },
+        {
+          "station_id": "1230",
+          "arrival": 1920,
+          "departure": 1980
+        },
+        {
+          "station_id": "1240",
+          "arrival": 2280,
+          "departure": 2280
+        },
+        {
+          "station_id": "1250",
+          "arrival": 2580,
+          "departure": 2760
+        },
+        {
+          "station_id": "2110",
+          "arrival": 3000,
+          "departure": 3060
+        },
+        {
+          "station_id": "2120",
+          "arrival": 3420,
+          "departure": 3420
+        },
+        {
+          "station_id": "2130",
+          "arrival": 3660,
+          "departure": 3780
+        },
+        {
+          "station_id": "2140",
+          "arrival": 3960,
+          "departure": 4020
+        },
+        {
+          "station_id": "2150",
+          "arrival": 4380,
+          "departure": 4440
+        },
+        {
+          "station_id": "2160",
+          "arrival": 4620,
+          "departure": 4680
+        },
+        {
+          "station_id": "2170",
+          "arrival": 4980,
+          "departure": 5040
+        },
+        {
+          "station_id": "2180",
+          "arrival": 5400,
+          "departure": 5520
+        },
+        {
+          "station_id": "2190",
+          "arrival": 5880,
+          "departure": 5880
+        },
+        {
+          "station_id": "2200",
+          "arrival": 6180,
+          "departure": 6300
+        },
+        {
+          "station_id": "2210",
+          "arrival": 6540,
+          "departure": 6540
+        },
+        {
+          "station_id": "2220",
+          "arrival": 6840,
+          "departure": 6900
+        },
+        {
+          "station_id": "2230",
+          "arrival": 7140,
+          "departure": 7200
+        },
+        {
+          "station_id": "2240",
+          "arrival": 7440,
+          "departure": 7500
+        },
+        {
+          "station_id": "2250",
+          "arrival": 7800,
+          "departure": 7860
+        },
+        {
+          "station_id": "2260",
+          "arrival": 8160,
+          "departure": 8280
+        },
+        {
+          "station_id": "3360",
+          "arrival": 9000,
+          "departure": 9000
+        }
+      ]
+    },
+    {
+      "train_id": "LC-2547",
+      "train_no": "2547",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "18:17:00",
+      "od_track_id": "SP-N-ZN-C-1",
+      "origin_station": "竹北",
+      "destination_station": "彰化",
+      "total_travel_time": 7620,
+      "stations": [
+        {
+          "station_id": "1180",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "1190",
+          "arrival": 300,
+          "departure": 300
+        },
+        {
+          "station_id": "1210",
+          "arrival": 480,
+          "departure": 600
+        },
+        {
+          "station_id": "1220",
+          "arrival": 900,
+          "departure": 900
+        },
+        {
+          "station_id": "1230",
+          "arrival": 1080,
+          "departure": 1140
+        },
+        {
+          "station_id": "1240",
+          "arrival": 1440,
+          "departure": 1440
+        },
+        {
+          "station_id": "1250",
+          "arrival": 1740,
+          "departure": 1860
+        },
+        {
+          "station_id": "2110",
+          "arrival": 2100,
+          "departure": 2160
+        },
+        {
+          "station_id": "2120",
+          "arrival": 2520,
+          "departure": 2520
+        },
+        {
+          "station_id": "2130",
+          "arrival": 2760,
+          "departure": 2820
+        },
+        {
+          "station_id": "2140",
+          "arrival": 3000,
+          "departure": 3060
+        },
+        {
+          "station_id": "2150",
+          "arrival": 3420,
+          "departure": 3480
+        },
+        {
+          "station_id": "2160",
+          "arrival": 3660,
+          "departure": 3720
+        },
+        {
+          "station_id": "2170",
+          "arrival": 4020,
+          "departure": 4080
+        },
+        {
+          "station_id": "2180",
+          "arrival": 4440,
+          "departure": 4500
+        },
+        {
+          "station_id": "2190",
+          "arrival": 4860,
+          "departure": 4860
+        },
+        {
+          "station_id": "2200",
+          "arrival": 5160,
+          "departure": 5280
+        },
+        {
+          "station_id": "2210",
+          "arrival": 5520,
+          "departure": 5520
+        },
+        {
+          "station_id": "2220",
+          "arrival": 5880,
+          "departure": 5940
+        },
+        {
+          "station_id": "2230",
+          "arrival": 6180,
+          "departure": 6240
+        },
+        {
+          "station_id": "2240",
+          "arrival": 6480,
+          "departure": 6540
+        },
+        {
+          "station_id": "2250",
+          "arrival": 6780,
+          "departure": 6840
+        },
+        {
+          "station_id": "2260",
+          "arrival": 7080,
+          "departure": 7140
+        },
+        {
+          "station_id": "3360",
+          "arrival": 7620,
+          "departure": 7620
+        }
+      ]
+    },
+    {
+      "train_id": "LC-2551",
+      "train_no": "2551",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "19:44:00",
+      "od_track_id": "SP-N-ZN-C-1",
+      "origin_station": "新竹",
+      "destination_station": "彰化",
+      "total_travel_time": 7020,
+      "stations": [
+        {
+          "station_id": "1210",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "1220",
+          "arrival": 300,
+          "departure": 300
+        },
+        {
+          "station_id": "1230",
+          "arrival": 480,
+          "departure": 540
+        },
+        {
+          "station_id": "1240",
+          "arrival": 840,
+          "departure": 840
+        },
+        {
+          "station_id": "1250",
+          "arrival": 1140,
+          "departure": 1200
+        },
+        {
+          "station_id": "2110",
+          "arrival": 1440,
+          "departure": 1500
+        },
+        {
+          "station_id": "2120",
+          "arrival": 1860,
+          "departure": 1860
+        },
+        {
+          "station_id": "2130",
+          "arrival": 2100,
+          "departure": 2160
+        },
+        {
+          "station_id": "2140",
+          "arrival": 2340,
+          "departure": 2400
+        },
+        {
+          "station_id": "2150",
+          "arrival": 2760,
+          "departure": 2820
+        },
+        {
+          "station_id": "2160",
+          "arrival": 3000,
+          "departure": 3060
+        },
+        {
+          "station_id": "2170",
+          "arrival": 3360,
+          "departure": 3420
+        },
+        {
+          "station_id": "2180",
+          "arrival": 3780,
+          "departure": 3840
+        },
+        {
+          "station_id": "2190",
+          "arrival": 4200,
+          "departure": 4200
+        },
+        {
+          "station_id": "2200",
+          "arrival": 4500,
+          "departure": 4620
+        },
+        {
+          "station_id": "2210",
+          "arrival": 4860,
+          "departure": 4860
+        },
+        {
+          "station_id": "2220",
+          "arrival": 5160,
+          "departure": 5220
+        },
+        {
+          "station_id": "2230",
+          "arrival": 5520,
+          "departure": 5580
+        },
+        {
+          "station_id": "2240",
+          "arrival": 5880,
+          "departure": 5880
+        },
+        {
+          "station_id": "2250",
+          "arrival": 6180,
+          "departure": 6180
+        },
+        {
+          "station_id": "2260",
+          "arrival": 6480,
+          "departure": 6540
+        },
+        {
+          "station_id": "3360",
+          "arrival": 7020,
+          "departure": 7020
+        }
+      ]
+    },
+    {
+      "train_id": "LC-2553",
+      "train_no": "2553",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "20:31:00",
+      "od_track_id": "SP-N-ZN-C-1",
+      "origin_station": "新竹",
+      "destination_station": "彰化",
+      "total_travel_time": 7440,
+      "stations": [
+        {
+          "station_id": "1210",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "1220",
+          "arrival": 300,
+          "departure": 300
+        },
+        {
+          "station_id": "1230",
+          "arrival": 480,
+          "departure": 540
+        },
+        {
+          "station_id": "1240",
+          "arrival": 840,
+          "departure": 840
+        },
+        {
+          "station_id": "1250",
+          "arrival": 1140,
+          "departure": 1200
+        },
+        {
+          "station_id": "2110",
+          "arrival": 1440,
+          "departure": 1500
+        },
+        {
+          "station_id": "2120",
+          "arrival": 1860,
+          "departure": 1860
+        },
+        {
+          "station_id": "2130",
+          "arrival": 2100,
+          "departure": 2160
+        },
+        {
+          "station_id": "2140",
+          "arrival": 2340,
+          "departure": 2400
+        },
+        {
+          "station_id": "2150",
+          "arrival": 2760,
+          "departure": 2820
+        },
+        {
+          "station_id": "2160",
+          "arrival": 3000,
+          "departure": 3060
+        },
+        {
+          "station_id": "2170",
+          "arrival": 3360,
+          "departure": 3360
+        },
+        {
+          "station_id": "2180",
+          "arrival": 3720,
+          "departure": 3840
+        },
+        {
+          "station_id": "2190",
+          "arrival": 4200,
+          "departure": 4200
+        },
+        {
+          "station_id": "2200",
+          "arrival": 4500,
+          "departure": 4620
+        },
+        {
+          "station_id": "2210",
+          "arrival": 4860,
+          "departure": 4860
+        },
+        {
+          "station_id": "2220",
+          "arrival": 5160,
+          "departure": 5280
+        },
+        {
+          "station_id": "2230",
+          "arrival": 5520,
+          "departure": 5820
+        },
+        {
+          "station_id": "2240",
+          "arrival": 6120,
+          "departure": 6120
+        },
+        {
+          "station_id": "2250",
+          "arrival": 6420,
+          "departure": 6480
+        },
+        {
+          "station_id": "2260",
+          "arrival": 6720,
+          "departure": 6840
+        },
+        {
+          "station_id": "3360",
+          "arrival": 7440,
+          "departure": 7440
+        }
+      ]
+    },
+    {
+      "train_id": "LC-2557",
+      "train_no": "2557",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "21:24:00",
+      "od_track_id": "SP-N-ZN-C-1",
+      "origin_station": "新竹",
+      "destination_station": "彰化",
+      "total_travel_time": 7080,
+      "stations": [
+        {
+          "station_id": "1210",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "1220",
+          "arrival": 300,
+          "departure": 300
+        },
+        {
+          "station_id": "1230",
+          "arrival": 480,
+          "departure": 540
+        },
+        {
+          "station_id": "1240",
+          "arrival": 840,
+          "departure": 840
+        },
+        {
+          "station_id": "1250",
+          "arrival": 1140,
+          "departure": 1200
+        },
+        {
+          "station_id": "2110",
+          "arrival": 1440,
+          "departure": 1500
+        },
+        {
+          "station_id": "2120",
+          "arrival": 1860,
+          "departure": 1860
+        },
+        {
+          "station_id": "2130",
+          "arrival": 2100,
+          "departure": 2160
+        },
+        {
+          "station_id": "2140",
+          "arrival": 2340,
+          "departure": 2400
+        },
+        {
+          "station_id": "2150",
+          "arrival": 2760,
+          "departure": 2820
+        },
+        {
+          "station_id": "2160",
+          "arrival": 3000,
+          "departure": 3060
+        },
+        {
+          "station_id": "2170",
+          "arrival": 3360,
+          "departure": 3420
+        },
+        {
+          "station_id": "2180",
+          "arrival": 3780,
+          "departure": 3840
+        },
+        {
+          "station_id": "2190",
+          "arrival": 4200,
+          "departure": 4200
+        },
+        {
+          "station_id": "2200",
+          "arrival": 4500,
+          "departure": 4620
+        },
+        {
+          "station_id": "2210",
+          "arrival": 4860,
+          "departure": 4860
+        },
+        {
+          "station_id": "2220",
+          "arrival": 5160,
+          "departure": 5220
+        },
+        {
+          "station_id": "2230",
+          "arrival": 5460,
+          "departure": 5520
+        },
+        {
+          "station_id": "2240",
+          "arrival": 5820,
+          "departure": 5940
+        },
+        {
+          "station_id": "2250",
+          "arrival": 6240,
+          "departure": 6300
+        },
+        {
+          "station_id": "2260",
+          "arrival": 6540,
+          "departure": 6600
+        },
+        {
+          "station_id": "3360",
+          "arrival": 7080,
+          "departure": 7080
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "track_id": "OD-湖口-CH",
+  "departures": [
+    {
+      "train_id": "LC-2517",
+      "train_no": "2517",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "08:42:00",
+      "od_track_id": "OD-湖口-CH",
+      "origin_station": "湖口",
+      "destination_station": "彰化",
+      "total_travel_time": 8760,
+      "stations": [
+        {
+          "station_id": "1160",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "1170",
+          "arrival": 360,
+          "departure": 660
+        },
+        {
+          "station_id": "1180",
+          "arrival": 960,
+          "departure": 1020
+        },
+        {
+          "station_id": "1190",
+          "arrival": 1260,
+          "departure": 1260
+        },
+        {
+          "station_id": "1210",
+          "arrival": 1440,
+          "departure": 1500
+        },
+        {
+          "station_id": "1220",
+          "arrival": 1800,
+          "departure": 1800
+        },
+        {
+          "station_id": "1230",
+          "arrival": 1980,
+          "departure": 2040
+        },
+        {
+          "station_id": "1240",
+          "arrival": 2340,
+          "departure": 2340
+        },
+        {
+          "station_id": "1250",
+          "arrival": 2640,
+          "departure": 2700
+        },
+        {
+          "station_id": "3360",
+          "arrival": 8760,
+          "departure": 8760
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,191 @@
+{
+  "track_id": "OD-TC-CZ",
+  "departures": [
+    {
+      "train_id": "TC-PP-101",
+      "train_no": "101",
+      "train_type": "自強(推拉式自強號且無自行車車廂)",
+      "train_type_code": "TC-PP",
+      "departure_time": "05:33:00",
+      "od_track_id": "OD-TC-CZ",
+      "origin_station": "臺中",
+      "destination_station": "潮州",
+      "total_travel_time": 12780,
+      "stations": [
+        {
+          "station_id": "3300",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "3325",
+          "arrival": 420,
+          "departure": 480
+        },
+        {
+          "station_id": "3360",
+          "arrival": 1020,
+          "departure": 1140
+        },
+        {
+          "station_id": "3390",
+          "arrival": 1800,
+          "departure": 1920
+        },
+        {
+          "station_id": "3420",
+          "arrival": 2400,
+          "departure": 2460
+        },
+        {
+          "station_id": "3470",
+          "arrival": 3360,
+          "departure": 3480
+        },
+        {
+          "station_id": "3480",
+          "arrival": 3900,
+          "departure": 3960
+        },
+        {
+          "station_id": "4080",
+          "arrival": 4860,
+          "departure": 4980
+        },
+        {
+          "station_id": "4120",
+          "arrival": 5820,
+          "departure": 5940
+        },
+        {
+          "station_id": "4170",
+          "arrival": 6720,
+          "departure": 6840
+        },
+        {
+          "station_id": "4200",
+          "arrival": 7380,
+          "departure": 7500
+        },
+        {
+          "station_id": "4220",
+          "arrival": 7860,
+          "departure": 8040
+        },
+        {
+          "station_id": "4310",
+          "arrival": 9060,
+          "departure": 9120
+        },
+        {
+          "station_id": "4340",
+          "arrival": 9720,
+          "departure": 9900
+        },
+        {
+          "station_id": "4400",
+          "arrival": 10440,
+          "departure": 10560
+        },
+        {
+          "station_id": "4440",
+          "arrival": 10860,
+          "departure": 10980
+        },
+        {
+          "station_id": "4460",
+          "arrival": 11400,
+          "departure": 11460
+        },
+        {
+          "station_id": "5000",
+          "arrival": 11880,
+          "departure": 12000
+        },
+        {
+          "station_id": "5050",
+          "arrival": 12780,
+          "departure": 12960
+        }
+      ]
+    },
+    {
+      "train_id": "TC-191",
+      "train_no": "191",
+      "train_type": "自強(3000)(EMU3000 型電車)",
+      "train_type_code": "TC",
+      "departure_time": "07:30:00",
+      "od_track_id": "OD-TC-CZ",
+      "origin_station": "臺中",
+      "destination_station": "潮州",
+      "total_travel_time": 10860,
+      "stations": [
+        {
+          "station_id": "3300",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "3360",
+          "arrival": 840,
+          "departure": 1020
+        },
+        {
+          "station_id": "3390",
+          "arrival": 1620,
+          "departure": 1740
+        },
+        {
+          "station_id": "3470",
+          "arrival": 2940,
+          "departure": 3060
+        },
+        {
+          "station_id": "4080",
+          "arrival": 4140,
+          "departure": 4260
+        },
+        {
+          "station_id": "4120",
+          "arrival": 5100,
+          "departure": 5160
+        },
+        {
+          "station_id": "4220",
+          "arrival": 6540,
+          "departure": 6720
+        },
+        {
+          "station_id": "4310",
+          "arrival": 7740,
+          "departure": 7800
+        },
+        {
+          "station_id": "4340",
+          "arrival": 8400,
+          "departure": 8460
+        },
+        {
+          "station_id": "4400",
+          "arrival": 8940,
+          "departure": 9120
+        },
+        {
+          "station_id": "4440",
+          "arrival": 9420,
+          "departure": 9480
+        },
+        {
+          "station_id": "5000",
+          "arrival": 10080,
+          "departure": 10200
+        },
+        {
+          "station_id": "5050",
+          "arrival": 10860,
+          "departure": 11040
+        }
+      ]
+    }
+  ]
+}

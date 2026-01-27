@@ -42,11 +42,12 @@ export interface TraTrain {
   destinationStation: string;
   trainNo?: string;
   trainType?: string;
+  trainTypeCode?: string;  // 車種代碼 (TC, PP, TZ, CK, LC 等)
 }
 
 export interface StationTime {
   station_id: string;
-  station_name: string;
+  station_name?: string;
   arrival: number;
   departure: number;
 }
@@ -56,6 +57,7 @@ export interface TraDeparture {
   train_id: string;
   train_no?: string;
   train_type?: string;
+  train_type_code?: string;
   origin_station: string;
   destination_station: string;
   od_track_id: string;
@@ -65,9 +67,9 @@ export interface TraDeparture {
 
 export interface TraSchedule {
   track_id: string;
-  route_id: string;
-  name: string;
-  departure_count: number;
+  route_id?: string;
+  name?: string;
+  departure_count?: number;
   departures: TraDeparture[];
 }
 
@@ -182,6 +184,59 @@ function timeToSeconds(timeStr: string): number {
 function getTrackIdFromOdTrackId(odTrackId: string): string {
   const parts = odTrackId.split('-');
   const lineId = parts[0];
+
+  // === 新增：OD-/BB-/SP- 軌道 → 推斷顯示軌道 ===
+  // 這些軌道來自真實時刻表，需要從軌道名稱推斷對應的顯示軌道
+  if (lineId === 'OD' || lineId === 'BB' || lineId === 'SP') {
+    // 嘗試從軌道 ID 中的站名縮寫推斷路線
+    const trackStr = odTrackId.toUpperCase();
+    // 海線車站
+    if (trackStr.includes('-C-') && !trackStr.includes('-CH-')) {
+      return 'WL-C-CH-ZN-0';
+    }
+    // 集集線
+    if (trackStr.includes('JJ')) {
+      return 'JJ-0';
+    }
+    // 成追線
+    if (trackStr.includes('CZ')) {
+      return 'CZ-0';
+    }
+    // 臺東相關
+    if (trackStr.includes('TT')) {
+      return 'TL-0';
+    }
+    // 花蓮相關
+    if (trackStr.includes('HL') && !trackStr.includes('SHL')) {
+      return 'BH-SX-HL-0';
+    }
+    // 屏東相關
+    if (trackStr.includes('屏東') || trackStr.includes('PL')) {
+      return 'PT-0';
+    }
+    // 沙崙線
+    if (trackStr.includes('SHL') || trackStr.includes('沙崙')) {
+      return 'SH-0';
+    }
+    // 嘉義、臺南等南段
+    if (trackStr.includes('CY') || trackStr.includes('TN') || trackStr.includes('KS')) {
+      return 'WL-S-CH-ZY-0';
+    }
+    // 彰化相關
+    if (trackStr.includes('CH')) {
+      return 'WL-M-ZN-CH-0';
+    }
+    // 基隆、七堵
+    if (trackStr.includes('KL') || trackStr.includes('QD')) {
+      return 'WL-N-SL-BD-0';
+    }
+    // 苗栗、三義
+    if (trackStr.includes('ML') || trackStr.includes('三義')) {
+      return 'WL-M-ZN-CH-0';
+    }
+    // 預設：西部幹線
+    return 'WL-N-ZN-SL-0';
+  }
 
   // WL 西部幹線
   if (lineId === 'WL') {
@@ -583,6 +638,7 @@ export class TraTrainEngine {
           destinationStation: departure.destination_station,
           trainNo: departure.train_no,
           trainType: departure.train_type,
+          trainTypeCode: departure.train_type_code,
         };
 
         this.activeTrains.set(train.trainId, train);

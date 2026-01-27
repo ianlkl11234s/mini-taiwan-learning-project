@@ -5,20 +5,12 @@
       "type": "Feature",
       "properties": {
         "track_id": "OD-南港-KL",
-        "source_track": "BB-ZY-KL-M-0",
-        "point_count": 110
+        "source_track": "BB-CZ-KL-0",
+        "point_count": 108
       },
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [
-            121.60282214310845,
-            25.05250474360782
-          ],
-          [
-            121.6042552476512,
-            25.05270469637659
-          ],
           [
             121.60805548003184,
             25.053289272716604

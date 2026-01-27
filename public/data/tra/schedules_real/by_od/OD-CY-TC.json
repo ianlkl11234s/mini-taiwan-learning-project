@@ -1,0 +1,88 @@
+{
+  "track_id": "OD-CY-TC",
+  "departures": [
+    {
+      "train_id": "CK-2004",
+      "train_no": "2004",
+      "train_type": "區間快",
+      "train_type_code": "CK",
+      "departure_time": "06:33:00",
+      "od_track_id": "OD-CY-TC",
+      "origin_station": "嘉義",
+      "destination_station": "臺中",
+      "total_travel_time": 6000,
+      "stations": [
+        {
+          "station_id": "4080",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "4060",
+          "arrival": 480,
+          "departure": 540
+        },
+        {
+          "station_id": "4050",
+          "arrival": 780,
+          "departure": 900
+        },
+        {
+          "station_id": "3480",
+          "arrival": 1260,
+          "departure": 1380
+        },
+        {
+          "station_id": "3470",
+          "arrival": 1740,
+          "departure": 1860
+        },
+        {
+          "station_id": "3450",
+          "arrival": 2280,
+          "departure": 2340
+        },
+        {
+          "station_id": "3430",
+          "arrival": 2700,
+          "departure": 2760
+        },
+        {
+          "station_id": "3420",
+          "arrival": 3060,
+          "departure": 3120
+        },
+        {
+          "station_id": "3410",
+          "arrival": 3360,
+          "departure": 3420
+        },
+        {
+          "station_id": "3390",
+          "arrival": 3780,
+          "departure": 3900
+        },
+        {
+          "station_id": "3360",
+          "arrival": 4560,
+          "departure": 4800
+        },
+        {
+          "station_id": "3325",
+          "arrival": 5280,
+          "departure": 5400
+        },
+        {
+          "station_id": "3320",
+          "arrival": 5580,
+          "departure": 5640
+        },
+        {
+          "station_id": "3300",
+          "arrival": 6000,
+          "departure": 6000
+        }
+      ]
+    }
+  ]
+}

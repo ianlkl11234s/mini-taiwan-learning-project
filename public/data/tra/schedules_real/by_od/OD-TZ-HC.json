@@ -1,0 +1,78 @@
+{
+  "track_id": "OD-TZ-HC",
+  "departures": [
+    {
+      "train_id": "LC-2518",
+      "train_no": "2518",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "07:35:00",
+      "od_track_id": "OD-TZ-HC",
+      "origin_station": "田中",
+      "destination_station": "新竹",
+      "total_travel_time": 9300,
+      "stations": [
+        {
+          "station_id": "3420",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "3410",
+          "arrival": 300,
+          "departure": 300
+        },
+        {
+          "station_id": "3400",
+          "arrival": 540,
+          "departure": 540
+        },
+        {
+          "station_id": "3390",
+          "arrival": 780,
+          "departure": 840
+        },
+        {
+          "station_id": "3380",
+          "arrival": 1020,
+          "departure": 1080
+        },
+        {
+          "station_id": "3370",
+          "arrival": 1320,
+          "departure": 1380
+        },
+        {
+          "station_id": "3360",
+          "arrival": 1740,
+          "departure": 1860
+        },
+        {
+          "station_id": "1250",
+          "arrival": 8100,
+          "departure": 8160
+        },
+        {
+          "station_id": "1240",
+          "arrival": 8400,
+          "departure": 8400
+        },
+        {
+          "station_id": "1230",
+          "arrival": 8700,
+          "departure": 8760
+        },
+        {
+          "station_id": "1220",
+          "arrival": 8940,
+          "departure": 8940
+        },
+        {
+          "station_id": "1210",
+          "arrival": 9300,
+          "departure": 9300
+        }
+      ]
+    }
+  ]
+}

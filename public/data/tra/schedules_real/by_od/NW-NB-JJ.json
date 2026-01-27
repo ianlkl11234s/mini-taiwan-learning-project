@@ -1,0 +1,759 @@
+{
+  "track_id": "NW-NB-JJ",
+  "departures": [
+    {
+      "train_id": "LC-1805",
+      "train_no": "1805",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "07:47:00",
+      "od_track_id": "NW-NB-JJ",
+      "origin_station": "內灣",
+      "destination_station": "竹中",
+      "total_travel_time": 2640,
+      "stations": [
+        {
+          "station_id": "1208",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "1207",
+          "arrival": 240,
+          "departure": 240
+        },
+        {
+          "station_id": "1206",
+          "arrival": 480,
+          "departure": 480
+        },
+        {
+          "station_id": "1205",
+          "arrival": 720,
+          "departure": 780
+        },
+        {
+          "station_id": "1204",
+          "arrival": 960,
+          "departure": 1020
+        },
+        {
+          "station_id": "1203",
+          "arrival": 1320,
+          "departure": 1740
+        },
+        {
+          "station_id": "1202",
+          "arrival": 1920,
+          "departure": 1980
+        },
+        {
+          "station_id": "1201",
+          "arrival": 2340,
+          "departure": 2340
+        },
+        {
+          "station_id": "1193",
+          "arrival": 2640,
+          "departure": 2640
+        }
+      ]
+    },
+    {
+      "train_id": "LC-1807",
+      "train_no": "1807",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "08:47:00",
+      "od_track_id": "NW-NB-JJ",
+      "origin_station": "內灣",
+      "destination_station": "竹中",
+      "total_travel_time": 2400,
+      "stations": [
+        {
+          "station_id": "1208",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "1207",
+          "arrival": 240,
+          "departure": 240
+        },
+        {
+          "station_id": "1206",
+          "arrival": 480,
+          "departure": 480
+        },
+        {
+          "station_id": "1205",
+          "arrival": 720,
+          "departure": 780
+        },
+        {
+          "station_id": "1204",
+          "arrival": 960,
+          "departure": 1020
+        },
+        {
+          "station_id": "1203",
+          "arrival": 1320,
+          "departure": 1500
+        },
+        {
+          "station_id": "1202",
+          "arrival": 1680,
+          "departure": 1740
+        },
+        {
+          "station_id": "1201",
+          "arrival": 2100,
+          "departure": 2100
+        },
+        {
+          "station_id": "1193",
+          "arrival": 2400,
+          "departure": 2460
+        }
+      ]
+    },
+    {
+      "train_id": "LC-1811",
+      "train_no": "1811",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "09:47:00",
+      "od_track_id": "NW-NB-JJ",
+      "origin_station": "內灣",
+      "destination_station": "竹中",
+      "total_travel_time": 2400,
+      "stations": [
+        {
+          "station_id": "1208",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "1207",
+          "arrival": 240,
+          "departure": 240
+        },
+        {
+          "station_id": "1206",
+          "arrival": 480,
+          "departure": 480
+        },
+        {
+          "station_id": "1205",
+          "arrival": 720,
+          "departure": 780
+        },
+        {
+          "station_id": "1204",
+          "arrival": 960,
+          "departure": 1020
+        },
+        {
+          "station_id": "1203",
+          "arrival": 1320,
+          "departure": 1500
+        },
+        {
+          "station_id": "1202",
+          "arrival": 1680,
+          "departure": 1740
+        },
+        {
+          "station_id": "1201",
+          "arrival": 2100,
+          "departure": 2100
+        },
+        {
+          "station_id": "1193",
+          "arrival": 2400,
+          "departure": 2460
+        }
+      ]
+    },
+    {
+      "train_id": "LC-1813",
+      "train_no": "1813",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "10:47:00",
+      "od_track_id": "NW-NB-JJ",
+      "origin_station": "內灣",
+      "destination_station": "竹中",
+      "total_travel_time": 2400,
+      "stations": [
+        {
+          "station_id": "1208",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "1207",
+          "arrival": 240,
+          "departure": 240
+        },
+        {
+          "station_id": "1206",
+          "arrival": 480,
+          "departure": 480
+        },
+        {
+          "station_id": "1205",
+          "arrival": 720,
+          "departure": 780
+        },
+        {
+          "station_id": "1204",
+          "arrival": 960,
+          "departure": 1020
+        },
+        {
+          "station_id": "1203",
+          "arrival": 1320,
+          "departure": 1500
+        },
+        {
+          "station_id": "1202",
+          "arrival": 1680,
+          "departure": 1740
+        },
+        {
+          "station_id": "1201",
+          "arrival": 2100,
+          "departure": 2100
+        },
+        {
+          "station_id": "1193",
+          "arrival": 2400,
+          "departure": 2460
+        }
+      ]
+    },
+    {
+      "train_id": "LC-1815",
+      "train_no": "1815",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "11:47:00",
+      "od_track_id": "NW-NB-JJ",
+      "origin_station": "內灣",
+      "destination_station": "竹中",
+      "total_travel_time": 2400,
+      "stations": [
+        {
+          "station_id": "1208",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "1207",
+          "arrival": 240,
+          "departure": 240
+        },
+        {
+          "station_id": "1206",
+          "arrival": 480,
+          "departure": 480
+        },
+        {
+          "station_id": "1205",
+          "arrival": 720,
+          "departure": 780
+        },
+        {
+          "station_id": "1204",
+          "arrival": 960,
+          "departure": 1020
+        },
+        {
+          "station_id": "1203",
+          "arrival": 1320,
+          "departure": 1500
+        },
+        {
+          "station_id": "1202",
+          "arrival": 1680,
+          "departure": 1740
+        },
+        {
+          "station_id": "1201",
+          "arrival": 2100,
+          "departure": 2100
+        },
+        {
+          "station_id": "1193",
+          "arrival": 2400,
+          "departure": 2460
+        }
+      ]
+    },
+    {
+      "train_id": "LC-1819",
+      "train_no": "1819",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "12:47:00",
+      "od_track_id": "NW-NB-JJ",
+      "origin_station": "內灣",
+      "destination_station": "竹中",
+      "total_travel_time": 2400,
+      "stations": [
+        {
+          "station_id": "1208",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "1207",
+          "arrival": 240,
+          "departure": 240
+        },
+        {
+          "station_id": "1206",
+          "arrival": 480,
+          "departure": 480
+        },
+        {
+          "station_id": "1205",
+          "arrival": 720,
+          "departure": 780
+        },
+        {
+          "station_id": "1204",
+          "arrival": 960,
+          "departure": 1020
+        },
+        {
+          "station_id": "1203",
+          "arrival": 1320,
+          "departure": 1500
+        },
+        {
+          "station_id": "1202",
+          "arrival": 1680,
+          "departure": 1740
+        },
+        {
+          "station_id": "1201",
+          "arrival": 2100,
+          "departure": 2100
+        },
+        {
+          "station_id": "1193",
+          "arrival": 2400,
+          "departure": 2460
+        }
+      ]
+    },
+    {
+      "train_id": "LC-1821",
+      "train_no": "1821",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "13:47:00",
+      "od_track_id": "NW-NB-JJ",
+      "origin_station": "內灣",
+      "destination_station": "竹中",
+      "total_travel_time": 2400,
+      "stations": [
+        {
+          "station_id": "1208",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "1207",
+          "arrival": 240,
+          "departure": 240
+        },
+        {
+          "station_id": "1206",
+          "arrival": 480,
+          "departure": 480
+        },
+        {
+          "station_id": "1205",
+          "arrival": 720,
+          "departure": 780
+        },
+        {
+          "station_id": "1204",
+          "arrival": 960,
+          "departure": 1020
+        },
+        {
+          "station_id": "1203",
+          "arrival": 1320,
+          "departure": 1500
+        },
+        {
+          "station_id": "1202",
+          "arrival": 1680,
+          "departure": 1740
+        },
+        {
+          "station_id": "1201",
+          "arrival": 2100,
+          "departure": 2100
+        },
+        {
+          "station_id": "1193",
+          "arrival": 2400,
+          "departure": 2460
+        }
+      ]
+    },
+    {
+      "train_id": "LC-1823",
+      "train_no": "1823",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "14:47:00",
+      "od_track_id": "NW-NB-JJ",
+      "origin_station": "內灣",
+      "destination_station": "竹中",
+      "total_travel_time": 2400,
+      "stations": [
+        {
+          "station_id": "1208",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "1207",
+          "arrival": 240,
+          "departure": 240
+        },
+        {
+          "station_id": "1206",
+          "arrival": 480,
+          "departure": 480
+        },
+        {
+          "station_id": "1205",
+          "arrival": 720,
+          "departure": 780
+        },
+        {
+          "station_id": "1204",
+          "arrival": 960,
+          "departure": 1020
+        },
+        {
+          "station_id": "1203",
+          "arrival": 1320,
+          "departure": 1500
+        },
+        {
+          "station_id": "1202",
+          "arrival": 1680,
+          "departure": 1740
+        },
+        {
+          "station_id": "1201",
+          "arrival": 2100,
+          "departure": 2100
+        },
+        {
+          "station_id": "1193",
+          "arrival": 2400,
+          "departure": 2460
+        }
+      ]
+    },
+    {
+      "train_id": "LC-1825",
+      "train_no": "1825",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "15:47:00",
+      "od_track_id": "NW-NB-JJ",
+      "origin_station": "內灣",
+      "destination_station": "竹中",
+      "total_travel_time": 2400,
+      "stations": [
+        {
+          "station_id": "1208",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "1207",
+          "arrival": 240,
+          "departure": 240
+        },
+        {
+          "station_id": "1206",
+          "arrival": 480,
+          "departure": 480
+        },
+        {
+          "station_id": "1205",
+          "arrival": 720,
+          "departure": 780
+        },
+        {
+          "station_id": "1204",
+          "arrival": 960,
+          "departure": 1020
+        },
+        {
+          "station_id": "1203",
+          "arrival": 1320,
+          "departure": 1500
+        },
+        {
+          "station_id": "1202",
+          "arrival": 1680,
+          "departure": 1740
+        },
+        {
+          "station_id": "1201",
+          "arrival": 2100,
+          "departure": 2100
+        },
+        {
+          "station_id": "1193",
+          "arrival": 2400,
+          "departure": 2460
+        }
+      ]
+    },
+    {
+      "train_id": "LC-1827",
+      "train_no": "1827",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "16:47:00",
+      "od_track_id": "NW-NB-JJ",
+      "origin_station": "內灣",
+      "destination_station": "竹中",
+      "total_travel_time": 2400,
+      "stations": [
+        {
+          "station_id": "1208",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "1207",
+          "arrival": 240,
+          "departure": 240
+        },
+        {
+          "station_id": "1206",
+          "arrival": 480,
+          "departure": 480
+        },
+        {
+          "station_id": "1205",
+          "arrival": 720,
+          "departure": 780
+        },
+        {
+          "station_id": "1204",
+          "arrival": 960,
+          "departure": 1020
+        },
+        {
+          "station_id": "1203",
+          "arrival": 1320,
+          "departure": 1500
+        },
+        {
+          "station_id": "1202",
+          "arrival": 1680,
+          "departure": 1740
+        },
+        {
+          "station_id": "1201",
+          "arrival": 2100,
+          "departure": 2100
+        },
+        {
+          "station_id": "1193",
+          "arrival": 2400,
+          "departure": 2460
+        }
+      ]
+    },
+    {
+      "train_id": "LC-1833",
+      "train_no": "1833",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "17:47:00",
+      "od_track_id": "NW-NB-JJ",
+      "origin_station": "內灣",
+      "destination_station": "竹中",
+      "total_travel_time": 2400,
+      "stations": [
+        {
+          "station_id": "1208",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "1207",
+          "arrival": 240,
+          "departure": 240
+        },
+        {
+          "station_id": "1206",
+          "arrival": 480,
+          "departure": 480
+        },
+        {
+          "station_id": "1205",
+          "arrival": 720,
+          "departure": 780
+        },
+        {
+          "station_id": "1204",
+          "arrival": 960,
+          "departure": 1020
+        },
+        {
+          "station_id": "1203",
+          "arrival": 1320,
+          "departure": 1500
+        },
+        {
+          "station_id": "1202",
+          "arrival": 1680,
+          "departure": 1740
+        },
+        {
+          "station_id": "1201",
+          "arrival": 2100,
+          "departure": 2100
+        },
+        {
+          "station_id": "1193",
+          "arrival": 2400,
+          "departure": 2460
+        }
+      ]
+    },
+    {
+      "train_id": "LC-1835",
+      "train_no": "1835",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "18:47:00",
+      "od_track_id": "NW-NB-JJ",
+      "origin_station": "內灣",
+      "destination_station": "竹中",
+      "total_travel_time": 2400,
+      "stations": [
+        {
+          "station_id": "1208",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "1207",
+          "arrival": 240,
+          "departure": 240
+        },
+        {
+          "station_id": "1206",
+          "arrival": 480,
+          "departure": 480
+        },
+        {
+          "station_id": "1205",
+          "arrival": 720,
+          "departure": 780
+        },
+        {
+          "station_id": "1204",
+          "arrival": 960,
+          "departure": 1020
+        },
+        {
+          "station_id": "1203",
+          "arrival": 1320,
+          "departure": 1500
+        },
+        {
+          "station_id": "1202",
+          "arrival": 1680,
+          "departure": 1740
+        },
+        {
+          "station_id": "1201",
+          "arrival": 2100,
+          "departure": 2100
+        },
+        {
+          "station_id": "1193",
+          "arrival": 2400,
+          "departure": 2460
+        }
+      ]
+    },
+    {
+      "train_id": "LC-1837",
+      "train_no": "1837",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "19:47:00",
+      "od_track_id": "NW-NB-JJ",
+      "origin_station": "內灣",
+      "destination_station": "竹中",
+      "total_travel_time": 2400,
+      "stations": [
+        {
+          "station_id": "1208",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "1207",
+          "arrival": 240,
+          "departure": 240
+        },
+        {
+          "station_id": "1206",
+          "arrival": 480,
+          "departure": 480
+        },
+        {
+          "station_id": "1205",
+          "arrival": 720,
+          "departure": 780
+        },
+        {
+          "station_id": "1204",
+          "arrival": 960,
+          "departure": 1020
+        },
+        {
+          "station_id": "1203",
+          "arrival": 1320,
+          "departure": 1500
+        },
+        {
+          "station_id": "1202",
+          "arrival": 1680,
+          "departure": 1740
+        },
+        {
+          "station_id": "1201",
+          "arrival": 2100,
+          "departure": 2100
+        },
+        {
+          "station_id": "1193",
+          "arrival": 2400,
+          "departure": 2460
+        }
+      ]
+    }
+  ]
+}

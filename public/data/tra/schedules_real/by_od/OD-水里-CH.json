@@ -1,0 +1,63 @@
+{
+  "track_id": "OD-水里-CH",
+  "departures": [
+    {
+      "train_id": "CK-2702",
+      "train_no": "2702",
+      "train_type": "區間快",
+      "train_type_code": "CK",
+      "departure_time": "05:40:00",
+      "od_track_id": "OD-水里-CH",
+      "origin_station": "水里",
+      "destination_station": "彰化",
+      "total_travel_time": 5460,
+      "stations": [
+        {
+          "station_id": "3435",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "3434",
+          "arrival": 900,
+          "departure": 1080
+        },
+        {
+          "station_id": "3433",
+          "arrival": 1500,
+          "departure": 1500
+        },
+        {
+          "station_id": "3432",
+          "arrival": 1980,
+          "departure": 2100
+        },
+        {
+          "station_id": "3431",
+          "arrival": 2640,
+          "departure": 2700
+        },
+        {
+          "station_id": "3430",
+          "arrival": 3000,
+          "departure": 3420
+        },
+        {
+          "station_id": "3420",
+          "arrival": 3840,
+          "departure": 3900
+        },
+        {
+          "station_id": "3390",
+          "arrival": 4560,
+          "departure": 4680
+        },
+        {
+          "station_id": "3360",
+          "arrival": 5460,
+          "departure": 5460
+        }
+      ]
+    }
+  ]
+}

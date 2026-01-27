@@ -1,0 +1,604 @@
+{
+  "track_id": "NW-HC-NB",
+  "departures": [
+    {
+      "train_id": "LC-1802",
+      "train_no": "1802",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "05:02:00",
+      "od_track_id": "NW-HC-NB",
+      "origin_station": "新竹",
+      "destination_station": "內灣",
+      "total_travel_time": 3480,
+      "stations": [
+        {
+          "station_id": "1210",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "1190",
+          "arrival": 240,
+          "departure": 240
+        },
+        {
+          "station_id": "1191",
+          "arrival": 480,
+          "departure": 480
+        },
+        {
+          "station_id": "1192",
+          "arrival": 720,
+          "departure": 780
+        },
+        {
+          "station_id": "1193",
+          "arrival": 960,
+          "departure": 1020
+        },
+        {
+          "station_id": "1201",
+          "arrival": 1260,
+          "departure": 1320
+        },
+        {
+          "station_id": "1202",
+          "arrival": 1680,
+          "departure": 1680
+        },
+        {
+          "station_id": "1203",
+          "arrival": 1920,
+          "departure": 2040
+        },
+        {
+          "station_id": "1204",
+          "arrival": 2340,
+          "departure": 2400
+        },
+        {
+          "station_id": "1205",
+          "arrival": 2640,
+          "departure": 2640
+        },
+        {
+          "station_id": "1206",
+          "arrival": 2880,
+          "departure": 2940
+        },
+        {
+          "station_id": "1207",
+          "arrival": 3120,
+          "departure": 3180
+        },
+        {
+          "station_id": "1208",
+          "arrival": 3480,
+          "departure": 3480
+        }
+      ]
+    },
+    {
+      "train_id": "LC-1846",
+      "train_no": "1846",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "05:54:00",
+      "od_track_id": "NW-HC-NB",
+      "origin_station": "新竹",
+      "destination_station": "內灣",
+      "total_travel_time": 3600,
+      "stations": [
+        {
+          "station_id": "1210",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "1190",
+          "arrival": 240,
+          "departure": 240
+        },
+        {
+          "station_id": "1191",
+          "arrival": 480,
+          "departure": 480
+        },
+        {
+          "station_id": "1192",
+          "arrival": 720,
+          "departure": 780
+        },
+        {
+          "station_id": "1193",
+          "arrival": 960,
+          "departure": 1020
+        },
+        {
+          "station_id": "1201",
+          "arrival": 1260,
+          "departure": 1320
+        },
+        {
+          "station_id": "1202",
+          "arrival": 1680,
+          "departure": 1680
+        },
+        {
+          "station_id": "1203",
+          "arrival": 1920,
+          "departure": 2160
+        },
+        {
+          "station_id": "1204",
+          "arrival": 2460,
+          "departure": 2520
+        },
+        {
+          "station_id": "1205",
+          "arrival": 2760,
+          "departure": 2760
+        },
+        {
+          "station_id": "1206",
+          "arrival": 3000,
+          "departure": 3060
+        },
+        {
+          "station_id": "1207",
+          "arrival": 3240,
+          "departure": 3300
+        },
+        {
+          "station_id": "1208",
+          "arrival": 3600,
+          "departure": 3600
+        }
+      ]
+    },
+    {
+      "train_id": "LC-1804",
+      "train_no": "1804",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "06:36:00",
+      "od_track_id": "NW-HC-NB",
+      "origin_station": "新竹",
+      "destination_station": "內灣",
+      "total_travel_time": 3480,
+      "stations": [
+        {
+          "station_id": "1210",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "1190",
+          "arrival": 240,
+          "departure": 240
+        },
+        {
+          "station_id": "1191",
+          "arrival": 480,
+          "departure": 480
+        },
+        {
+          "station_id": "1192",
+          "arrival": 720,
+          "departure": 780
+        },
+        {
+          "station_id": "1193",
+          "arrival": 960,
+          "departure": 1020
+        },
+        {
+          "station_id": "1201",
+          "arrival": 1260,
+          "departure": 1320
+        },
+        {
+          "station_id": "1202",
+          "arrival": 1680,
+          "departure": 1680
+        },
+        {
+          "station_id": "1203",
+          "arrival": 1920,
+          "departure": 1980
+        },
+        {
+          "station_id": "1204",
+          "arrival": 2280,
+          "departure": 2340
+        },
+        {
+          "station_id": "1205",
+          "arrival": 2580,
+          "departure": 2640
+        },
+        {
+          "station_id": "1206",
+          "arrival": 2880,
+          "departure": 2940
+        },
+        {
+          "station_id": "1207",
+          "arrival": 3120,
+          "departure": 3180
+        },
+        {
+          "station_id": "1208",
+          "arrival": 3480,
+          "departure": 3480
+        }
+      ]
+    },
+    {
+      "train_id": "LC-1806",
+      "train_no": "1806",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "07:40:00",
+      "od_track_id": "NW-HC-NB",
+      "origin_station": "新竹",
+      "destination_station": "內灣",
+      "total_travel_time": 3480,
+      "stations": [
+        {
+          "station_id": "1210",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "1190",
+          "arrival": 240,
+          "departure": 240
+        },
+        {
+          "station_id": "1191",
+          "arrival": 480,
+          "departure": 480
+        },
+        {
+          "station_id": "1192",
+          "arrival": 720,
+          "departure": 780
+        },
+        {
+          "station_id": "1193",
+          "arrival": 960,
+          "departure": 1020
+        },
+        {
+          "station_id": "1201",
+          "arrival": 1260,
+          "departure": 1320
+        },
+        {
+          "station_id": "1202",
+          "arrival": 1680,
+          "departure": 1680
+        },
+        {
+          "station_id": "1203",
+          "arrival": 1920,
+          "departure": 2040
+        },
+        {
+          "station_id": "1204",
+          "arrival": 2340,
+          "departure": 2400
+        },
+        {
+          "station_id": "1205",
+          "arrival": 2640,
+          "departure": 2640
+        },
+        {
+          "station_id": "1206",
+          "arrival": 2880,
+          "departure": 2940
+        },
+        {
+          "station_id": "1207",
+          "arrival": 3120,
+          "departure": 3180
+        },
+        {
+          "station_id": "1208",
+          "arrival": 3480,
+          "departure": 3480
+        }
+      ]
+    },
+    {
+      "train_id": "LC-1820",
+      "train_no": "1820",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "12:35:00",
+      "od_track_id": "NW-HC-NB",
+      "origin_station": "新竹",
+      "destination_station": "內灣",
+      "total_travel_time": 3540,
+      "stations": [
+        {
+          "station_id": "1210",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "1190",
+          "arrival": 240,
+          "departure": 240
+        },
+        {
+          "station_id": "1191",
+          "arrival": 480,
+          "departure": 480
+        },
+        {
+          "station_id": "1192",
+          "arrival": 720,
+          "departure": 780
+        },
+        {
+          "station_id": "1193",
+          "arrival": 960,
+          "departure": 1020
+        },
+        {
+          "station_id": "1201",
+          "arrival": 1260,
+          "departure": 1320
+        },
+        {
+          "station_id": "1202",
+          "arrival": 1680,
+          "departure": 1680
+        },
+        {
+          "station_id": "1203",
+          "arrival": 1920,
+          "departure": 2100
+        },
+        {
+          "station_id": "1204",
+          "arrival": 2400,
+          "departure": 2460
+        },
+        {
+          "station_id": "1205",
+          "arrival": 2700,
+          "departure": 2700
+        },
+        {
+          "station_id": "1206",
+          "arrival": 2940,
+          "departure": 3000
+        },
+        {
+          "station_id": "1207",
+          "arrival": 3180,
+          "departure": 3240
+        },
+        {
+          "station_id": "1208",
+          "arrival": 3540,
+          "departure": 3540
+        }
+      ]
+    },
+    {
+      "train_id": "LC-1834",
+      "train_no": "1834",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "17:35:00",
+      "od_track_id": "NW-HC-NB",
+      "origin_station": "新竹",
+      "destination_station": "內灣",
+      "total_travel_time": 3540,
+      "stations": [
+        {
+          "station_id": "1210",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "1190",
+          "arrival": 240,
+          "departure": 240
+        },
+        {
+          "station_id": "1191",
+          "arrival": 480,
+          "departure": 480
+        },
+        {
+          "station_id": "1192",
+          "arrival": 720,
+          "departure": 780
+        },
+        {
+          "station_id": "1193",
+          "arrival": 960,
+          "departure": 1020
+        },
+        {
+          "station_id": "1201",
+          "arrival": 1260,
+          "departure": 1320
+        },
+        {
+          "station_id": "1202",
+          "arrival": 1680,
+          "departure": 1680
+        },
+        {
+          "station_id": "1203",
+          "arrival": 1920,
+          "departure": 2100
+        },
+        {
+          "station_id": "1204",
+          "arrival": 2400,
+          "departure": 2460
+        },
+        {
+          "station_id": "1205",
+          "arrival": 2700,
+          "departure": 2700
+        },
+        {
+          "station_id": "1206",
+          "arrival": 2940,
+          "departure": 3000
+        },
+        {
+          "station_id": "1207",
+          "arrival": 3180,
+          "departure": 3240
+        },
+        {
+          "station_id": "1208",
+          "arrival": 3540,
+          "departure": 3540
+        }
+      ]
+    },
+    {
+      "train_id": "LC-1842",
+      "train_no": "1842",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "21:35:00",
+      "od_track_id": "NW-HC-NB",
+      "origin_station": "新竹",
+      "destination_station": "內灣",
+      "total_travel_time": 3540,
+      "stations": [
+        {
+          "station_id": "1210",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "1190",
+          "arrival": 240,
+          "departure": 240
+        },
+        {
+          "station_id": "1191",
+          "arrival": 480,
+          "departure": 480
+        },
+        {
+          "station_id": "1192",
+          "arrival": 720,
+          "departure": 780
+        },
+        {
+          "station_id": "1193",
+          "arrival": 960,
+          "departure": 1020
+        },
+        {
+          "station_id": "1201",
+          "arrival": 1260,
+          "departure": 1320
+        },
+        {
+          "station_id": "1202",
+          "arrival": 1680,
+          "departure": 1680
+        },
+        {
+          "station_id": "1203",
+          "arrival": 1920,
+          "departure": 2100
+        },
+        {
+          "station_id": "1204",
+          "arrival": 2400,
+          "departure": 2460
+        },
+        {
+          "station_id": "1205",
+          "arrival": 2700,
+          "departure": 2700
+        },
+        {
+          "station_id": "1206",
+          "arrival": 2940,
+          "departure": 3000
+        },
+        {
+          "station_id": "1207",
+          "arrival": 3180,
+          "departure": 3240
+        },
+        {
+          "station_id": "1208",
+          "arrival": 3540,
+          "departure": 3540
+        }
+      ]
+    },
+    {
+      "train_id": "LC-1844",
+      "train_no": "1844",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "22:35:00",
+      "od_track_id": "NW-HC-NB",
+      "origin_station": "新竹",
+      "destination_station": "竹東",
+      "total_travel_time": 1920,
+      "stations": [
+        {
+          "station_id": "1210",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "1190",
+          "arrival": 240,
+          "departure": 240
+        },
+        {
+          "station_id": "1191",
+          "arrival": 480,
+          "departure": 480
+        },
+        {
+          "station_id": "1192",
+          "arrival": 720,
+          "departure": 780
+        },
+        {
+          "station_id": "1193",
+          "arrival": 960,
+          "departure": 1020
+        },
+        {
+          "station_id": "1201",
+          "arrival": 1260,
+          "departure": 1320
+        },
+        {
+          "station_id": "1202",
+          "arrival": 1680,
+          "departure": 1680
+        },
+        {
+          "station_id": "1203",
+          "arrival": 1920,
+          "departure": 1920
+        }
+      ]
+    }
+  ]
+}

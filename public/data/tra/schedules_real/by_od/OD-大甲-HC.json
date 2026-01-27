@@ -1,0 +1,93 @@
+{
+  "track_id": "OD-大甲-HC",
+  "departures": [
+    {
+      "train_id": "LC-2502",
+      "train_no": "2502",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "05:00:00",
+      "od_track_id": "OD-大甲-HC",
+      "origin_station": "大甲",
+      "destination_station": "新竹",
+      "total_travel_time": 4560,
+      "stations": [
+        {
+          "station_id": "2200",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "2190",
+          "arrival": 300,
+          "departure": 360
+        },
+        {
+          "station_id": "2180",
+          "arrival": 720,
+          "departure": 780
+        },
+        {
+          "station_id": "2170",
+          "arrival": 1140,
+          "departure": 1200
+        },
+        {
+          "station_id": "2160",
+          "arrival": 1500,
+          "departure": 1500
+        },
+        {
+          "station_id": "2150",
+          "arrival": 1740,
+          "departure": 1740
+        },
+        {
+          "station_id": "2140",
+          "arrival": 2160,
+          "departure": 2160
+        },
+        {
+          "station_id": "2130",
+          "arrival": 2400,
+          "departure": 2460
+        },
+        {
+          "station_id": "2120",
+          "arrival": 2640,
+          "departure": 2700
+        },
+        {
+          "station_id": "2110",
+          "arrival": 3060,
+          "departure": 3060
+        },
+        {
+          "station_id": "1250",
+          "arrival": 3360,
+          "departure": 3420
+        },
+        {
+          "station_id": "1240",
+          "arrival": 3660,
+          "departure": 3660
+        },
+        {
+          "station_id": "1230",
+          "arrival": 3960,
+          "departure": 4020
+        },
+        {
+          "station_id": "1220",
+          "arrival": 4200,
+          "departure": 4200
+        },
+        {
+          "station_id": "1210",
+          "arrival": 4560,
+          "departure": 4560
+        }
+      ]
+    }
+  ]
+}

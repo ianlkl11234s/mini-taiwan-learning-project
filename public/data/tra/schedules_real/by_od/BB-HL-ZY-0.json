@@ -1,0 +1,51 @@
+{
+  "track_id": "BB-HL-ZY-0",
+  "departures": [
+    {
+      "train_id": "TC-306",
+      "train_no": "306",
+      "train_type": "自強(3000)(EMU3000 型電車)",
+      "train_type_code": "TC",
+      "departure_time": "06:21:00",
+      "od_track_id": "BB-HL-ZY-0",
+      "origin_station": "花蓮",
+      "destination_station": "新左營",
+      "total_travel_time": 16740,
+      "stations": [
+        {
+          "station_id": "7000",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "4340",
+          "arrival": 16740,
+          "departure": 16740
+        }
+      ]
+    },
+    {
+      "train_id": "TC-308",
+      "train_no": "308",
+      "train_type": "自強(3000)(EMU3000 型電車)",
+      "train_type_code": "TC",
+      "departure_time": "10:24:00",
+      "od_track_id": "BB-HL-ZY-0",
+      "origin_station": "花蓮",
+      "destination_station": "新左營",
+      "total_travel_time": 16620,
+      "stations": [
+        {
+          "station_id": "7000",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "4340",
+          "arrival": 16620,
+          "departure": 16620
+        }
+      ]
+    }
+  ]
+}

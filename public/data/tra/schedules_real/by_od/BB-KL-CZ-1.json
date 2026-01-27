@@ -1,0 +1,83 @@
+{
+  "track_id": "BB-KL-CZ-1",
+  "departures": [
+    {
+      "train_id": "TC-111",
+      "train_no": "111",
+      "train_type": "自強(3000)(EMU3000 型電車)",
+      "train_type_code": "TC",
+      "departure_time": "07:23:00",
+      "od_track_id": "BB-KL-CZ-1",
+      "origin_station": "七堵",
+      "destination_station": "枋寮",
+      "total_travel_time": 19440,
+      "stations": [
+        {
+          "station_id": "0930",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "0980",
+          "arrival": 1080,
+          "departure": 1140
+        },
+        {
+          "station_id": "0990",
+          "arrival": 1380,
+          "departure": 1500
+        },
+        {
+          "station_id": "1000",
+          "arrival": 1920,
+          "departure": 2220
+        },
+        {
+          "station_id": "1020",
+          "arrival": 2640,
+          "departure": 2700
+        },
+        {
+          "station_id": "1080",
+          "arrival": 3840,
+          "departure": 3900
+        },
+        {
+          "station_id": "3300",
+          "arrival": 8760,
+          "departure": 8880
+        },
+        {
+          "station_id": "4080",
+          "arrival": 12360,
+          "departure": 12480
+        },
+        {
+          "station_id": "4220",
+          "arrival": 14520,
+          "departure": 14640
+        },
+        {
+          "station_id": "4400",
+          "arrival": 16440,
+          "departure": 16620
+        },
+        {
+          "station_id": "5000",
+          "arrival": 17460,
+          "departure": 17580
+        },
+        {
+          "station_id": "5050",
+          "arrival": 18180,
+          "departure": 18300
+        },
+        {
+          "station_id": "5120",
+          "arrival": 19440,
+          "departure": 19440
+        }
+      ]
+    }
+  ]
+}

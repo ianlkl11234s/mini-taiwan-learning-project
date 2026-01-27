@@ -1,0 +1,93 @@
+{
+  "track_id": "OD-TN-CY",
+  "departures": [
+    {
+      "train_id": "LC-3116",
+      "train_no": "3116",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "05:30:00",
+      "od_track_id": "OD-TN-CY",
+      "origin_station": "臺南",
+      "destination_station": "嘉義",
+      "total_travel_time": 4080,
+      "stations": [
+        {
+          "station_id": "4220",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "4210",
+          "arrival": 240,
+          "departure": 240
+        },
+        {
+          "station_id": "4200",
+          "arrival": 480,
+          "departure": 540
+        },
+        {
+          "station_id": "4190",
+          "arrival": 840,
+          "departure": 900
+        },
+        {
+          "station_id": "4180",
+          "arrival": 1140,
+          "departure": 1200
+        },
+        {
+          "station_id": "4170",
+          "arrival": 1380,
+          "departure": 1440
+        },
+        {
+          "station_id": "4160",
+          "arrival": 1680,
+          "departure": 1680
+        },
+        {
+          "station_id": "4150",
+          "arrival": 1860,
+          "departure": 1920
+        },
+        {
+          "station_id": "4140",
+          "arrival": 2160,
+          "departure": 2220
+        },
+        {
+          "station_id": "4130",
+          "arrival": 2400,
+          "departure": 2460
+        },
+        {
+          "station_id": "4120",
+          "arrival": 2640,
+          "departure": 2760
+        },
+        {
+          "station_id": "4110",
+          "arrival": 3120,
+          "departure": 3120
+        },
+        {
+          "station_id": "4100",
+          "arrival": 3420,
+          "departure": 3480
+        },
+        {
+          "station_id": "4090",
+          "arrival": 3600,
+          "departure": 3660
+        },
+        {
+          "station_id": "4080",
+          "arrival": 4080,
+          "departure": 4080
+        }
+      ]
+    }
+  ]
+}

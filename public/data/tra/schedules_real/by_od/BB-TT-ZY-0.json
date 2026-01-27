@@ -1,0 +1,118 @@
+{
+  "track_id": "BB-TT-ZY-0",
+  "departures": [
+    {
+      "train_id": "TC-168",
+      "train_no": "168",
+      "train_type": "自強(3000)(EMU3000 型電車)",
+      "train_type_code": "TC",
+      "departure_time": "16:00:00",
+      "od_track_id": "BB-TT-ZY-0",
+      "origin_station": "臺東",
+      "destination_station": "七堵",
+      "total_travel_time": 24660,
+      "stations": [
+        {
+          "station_id": "6000",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "4340",
+          "arrival": 6900,
+          "departure": 7020
+        },
+        {
+          "station_id": "4220",
+          "arrival": 8460,
+          "departure": 8640
+        },
+        {
+          "station_id": "4120",
+          "arrival": 9960,
+          "departure": 10080
+        },
+        {
+          "station_id": "4080",
+          "arrival": 10980,
+          "departure": 11100
+        },
+        {
+          "station_id": "3470",
+          "arrival": 12240,
+          "departure": 12360
+        },
+        {
+          "station_id": "3420",
+          "arrival": 13260,
+          "departure": 13320
+        },
+        {
+          "station_id": "3390",
+          "arrival": 13800,
+          "departure": 13860
+        },
+        {
+          "station_id": "3360",
+          "arrival": 14460,
+          "departure": 14580
+        },
+        {
+          "station_id": "3300",
+          "arrival": 15360,
+          "departure": 15480
+        },
+        {
+          "station_id": "3230",
+          "arrival": 15960,
+          "departure": 16080
+        },
+        {
+          "station_id": "3160",
+          "arrival": 17340,
+          "departure": 17460
+        },
+        {
+          "station_id": "1210",
+          "arrival": 18780,
+          "departure": 18900
+        },
+        {
+          "station_id": "1100",
+          "arrival": 20400,
+          "departure": 20580
+        },
+        {
+          "station_id": "1080",
+          "arrival": 21000,
+          "departure": 21180
+        },
+        {
+          "station_id": "1020",
+          "arrival": 22320,
+          "departure": 22440
+        },
+        {
+          "station_id": "1000",
+          "arrival": 22920,
+          "departure": 23100
+        },
+        {
+          "station_id": "0990",
+          "arrival": 23460,
+          "departure": 23520
+        },
+        {
+          "station_id": "0980",
+          "arrival": 23700,
+          "departure": 23760
+        },
+        {
+          "station_id": "0930",
+          "arrival": 24660,
+          "departure": 24660
+        }
+      ]
+    }
+  ]
+}

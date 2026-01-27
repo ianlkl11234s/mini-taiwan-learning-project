@@ -1,0 +1,285 @@
+{
+  "track_id": "SA-RF-BD-0",
+  "departures": [
+    {
+      "train_id": "LC-4907",
+      "train_no": "4907",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "08:26:00",
+      "od_track_id": "SA-RF-BD-0",
+      "origin_station": "瑞芳",
+      "destination_station": "八斗子",
+      "total_travel_time": 720,
+      "stations": [
+        {
+          "station_id": "7360",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "7361",
+          "arrival": 540,
+          "departure": 600
+        },
+        {
+          "station_id": "7362",
+          "arrival": 720,
+          "departure": 720
+        }
+      ]
+    },
+    {
+      "train_id": "LC-4911",
+      "train_no": "4911",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "09:15:00",
+      "od_track_id": "SA-RF-BD-0",
+      "origin_station": "瑞芳",
+      "destination_station": "八斗子",
+      "total_travel_time": 720,
+      "stations": [
+        {
+          "station_id": "7360",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "7361",
+          "arrival": 540,
+          "departure": 600
+        },
+        {
+          "station_id": "7362",
+          "arrival": 720,
+          "departure": 720
+        }
+      ]
+    },
+    {
+      "train_id": "LC-4913",
+      "train_no": "4913",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "10:13:00",
+      "od_track_id": "SA-RF-BD-0",
+      "origin_station": "瑞芳",
+      "destination_station": "八斗子",
+      "total_travel_time": 720,
+      "stations": [
+        {
+          "station_id": "7360",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "7361",
+          "arrival": 540,
+          "departure": 600
+        },
+        {
+          "station_id": "7362",
+          "arrival": 720,
+          "departure": 720
+        }
+      ]
+    },
+    {
+      "train_id": "LC-4915",
+      "train_no": "4915",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "11:08:00",
+      "od_track_id": "SA-RF-BD-0",
+      "origin_station": "瑞芳",
+      "destination_station": "八斗子",
+      "total_travel_time": 720,
+      "stations": [
+        {
+          "station_id": "7360",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "7361",
+          "arrival": 540,
+          "departure": 600
+        },
+        {
+          "station_id": "7362",
+          "arrival": 720,
+          "departure": 720
+        }
+      ]
+    },
+    {
+      "train_id": "LC-4917",
+      "train_no": "4917",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "12:08:00",
+      "od_track_id": "SA-RF-BD-0",
+      "origin_station": "瑞芳",
+      "destination_station": "八斗子",
+      "total_travel_time": 720,
+      "stations": [
+        {
+          "station_id": "7360",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "7361",
+          "arrival": 540,
+          "departure": 600
+        },
+        {
+          "station_id": "7362",
+          "arrival": 720,
+          "departure": 720
+        }
+      ]
+    },
+    {
+      "train_id": "LC-4921",
+      "train_no": "4921",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "13:13:00",
+      "od_track_id": "SA-RF-BD-0",
+      "origin_station": "瑞芳",
+      "destination_station": "八斗子",
+      "total_travel_time": 720,
+      "stations": [
+        {
+          "station_id": "7360",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "7361",
+          "arrival": 540,
+          "departure": 600
+        },
+        {
+          "station_id": "7362",
+          "arrival": 720,
+          "departure": 720
+        }
+      ]
+    },
+    {
+      "train_id": "LC-4923",
+      "train_no": "4923",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "14:13:00",
+      "od_track_id": "SA-RF-BD-0",
+      "origin_station": "瑞芳",
+      "destination_station": "八斗子",
+      "total_travel_time": 720,
+      "stations": [
+        {
+          "station_id": "7360",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "7361",
+          "arrival": 540,
+          "departure": 600
+        },
+        {
+          "station_id": "7362",
+          "arrival": 720,
+          "departure": 720
+        }
+      ]
+    },
+    {
+      "train_id": "LC-4925",
+      "train_no": "4925",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "15:13:00",
+      "od_track_id": "SA-RF-BD-0",
+      "origin_station": "瑞芳",
+      "destination_station": "八斗子",
+      "total_travel_time": 720,
+      "stations": [
+        {
+          "station_id": "7360",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "7361",
+          "arrival": 540,
+          "departure": 600
+        },
+        {
+          "station_id": "7362",
+          "arrival": 720,
+          "departure": 720
+        }
+      ]
+    },
+    {
+      "train_id": "LC-4927",
+      "train_no": "4927",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "16:06:00",
+      "od_track_id": "SA-RF-BD-0",
+      "origin_station": "瑞芳",
+      "destination_station": "八斗子",
+      "total_travel_time": 720,
+      "stations": [
+        {
+          "station_id": "7360",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "7361",
+          "arrival": 540,
+          "departure": 600
+        },
+        {
+          "station_id": "7362",
+          "arrival": 720,
+          "departure": 720
+        }
+      ]
+    },
+    {
+      "train_id": "LC-4931",
+      "train_no": "4931",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "17:10:00",
+      "od_track_id": "SA-RF-BD-0",
+      "origin_station": "瑞芳",
+      "destination_station": "八斗子",
+      "total_travel_time": 720,
+      "stations": [
+        {
+          "station_id": "7360",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "7361",
+          "arrival": 540,
+          "departure": 600
+        },
+        {
+          "station_id": "7362",
+          "arrival": 720,
+          "departure": 720
+        }
+      ]
+    }
+  ]
+}

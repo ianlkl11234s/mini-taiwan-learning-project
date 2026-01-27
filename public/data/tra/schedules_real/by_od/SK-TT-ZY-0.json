@@ -1,0 +1,742 @@
+{
+  "track_id": "SK-TT-ZY-0",
+  "departures": [
+    {
+      "train_id": "TC-302",
+      "train_no": "302",
+      "train_type": "自強(3000)(EMU3000 型電車)",
+      "train_type_code": "TC",
+      "departure_time": "05:30:00",
+      "od_track_id": "SK-TT-ZY-0",
+      "origin_station": "臺東",
+      "destination_station": "新左營",
+      "total_travel_time": 8520,
+      "stations": [
+        {
+          "station_id": "6000",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "5230",
+          "arrival": 540,
+          "departure": 600
+        },
+        {
+          "station_id": "5120",
+          "arrival": 4500,
+          "departure": 4620
+        },
+        {
+          "station_id": "5050",
+          "arrival": 6000,
+          "departure": 6120
+        },
+        {
+          "station_id": "5000",
+          "arrival": 6720,
+          "departure": 6900
+        },
+        {
+          "station_id": "4440",
+          "arrival": 7500,
+          "departure": 7560
+        },
+        {
+          "station_id": "4340",
+          "arrival": 8520,
+          "departure": 8520
+        }
+      ]
+    },
+    {
+      "train_id": "CK-3006",
+      "train_no": "3006",
+      "train_type": "區間快",
+      "train_type_code": "CK",
+      "departure_time": "06:20:00",
+      "od_track_id": "SK-TT-ZY-0",
+      "origin_station": "臺東",
+      "destination_station": "潮州",
+      "total_travel_time": 7620,
+      "stations": [
+        {
+          "station_id": "6000",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "5240",
+          "arrival": 300,
+          "departure": 360
+        },
+        {
+          "station_id": "5230",
+          "arrival": 720,
+          "departure": 780
+        },
+        {
+          "station_id": "5220",
+          "arrival": 1320,
+          "departure": 1380
+        },
+        {
+          "station_id": "5210",
+          "arrival": 1860,
+          "departure": 1920
+        },
+        {
+          "station_id": "5200",
+          "arrival": 2340,
+          "departure": 2580
+        },
+        {
+          "station_id": "5190",
+          "arrival": 3180,
+          "departure": 3240
+        },
+        {
+          "station_id": "5160",
+          "arrival": 4680,
+          "departure": 4740
+        },
+        {
+          "station_id": "5140",
+          "arrival": 5040,
+          "departure": 5100
+        },
+        {
+          "station_id": "5130",
+          "arrival": 5280,
+          "departure": 5340
+        },
+        {
+          "station_id": "5120",
+          "arrival": 5700,
+          "departure": 6060
+        },
+        {
+          "station_id": "5090",
+          "arrival": 6600,
+          "departure": 6660
+        },
+        {
+          "station_id": "5070",
+          "arrival": 7020,
+          "departure": 7260
+        },
+        {
+          "station_id": "5050",
+          "arrival": 7620,
+          "departure": 8400
+        }
+      ]
+    },
+    {
+      "train_id": "LC-3310",
+      "train_no": "3310",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "07:04:00",
+      "od_track_id": "SK-TT-ZY-0",
+      "origin_station": "加祿",
+      "destination_station": "新左營",
+      "total_travel_time": 6120,
+      "stations": [
+        {
+          "station_id": "5130",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "5120",
+          "arrival": 360,
+          "departure": 420
+        },
+        {
+          "station_id": "5110",
+          "arrival": 600,
+          "departure": 660
+        },
+        {
+          "station_id": "5100",
+          "arrival": 840,
+          "departure": 840
+        },
+        {
+          "station_id": "5090",
+          "arrival": 1140,
+          "departure": 1200
+        },
+        {
+          "station_id": "5080",
+          "arrival": 1380,
+          "departure": 1440
+        },
+        {
+          "station_id": "5070",
+          "arrival": 1680,
+          "departure": 1740
+        },
+        {
+          "station_id": "5060",
+          "arrival": 1920,
+          "departure": 1920
+        },
+        {
+          "station_id": "5050",
+          "arrival": 2220,
+          "departure": 2340
+        },
+        {
+          "station_id": "5040",
+          "arrival": 2580,
+          "departure": 2580
+        },
+        {
+          "station_id": "5030",
+          "arrival": 2820,
+          "departure": 2880
+        },
+        {
+          "station_id": "5020",
+          "arrival": 3000,
+          "departure": 3060
+        },
+        {
+          "station_id": "5010",
+          "arrival": 3180,
+          "departure": 3240
+        },
+        {
+          "station_id": "5000",
+          "arrival": 3420,
+          "departure": 3480
+        },
+        {
+          "station_id": "4470",
+          "arrival": 3600,
+          "departure": 3660
+        },
+        {
+          "station_id": "4460",
+          "arrival": 3900,
+          "departure": 3960
+        },
+        {
+          "station_id": "4450",
+          "arrival": 4140,
+          "departure": 4200
+        },
+        {
+          "station_id": "4440",
+          "arrival": 4440,
+          "departure": 4500
+        },
+        {
+          "station_id": "4340",
+          "arrival": 6120,
+          "departure": 6120
+        }
+      ]
+    },
+    {
+      "train_id": "TC-304",
+      "train_no": "304",
+      "train_type": "自強(3000)(EMU3000 型電車)",
+      "train_type_code": "TC",
+      "departure_time": "07:16:00",
+      "od_track_id": "SK-TT-ZY-0",
+      "origin_station": "臺東",
+      "destination_station": "新左營",
+      "total_travel_time": 9660,
+      "stations": [
+        {
+          "station_id": "6000",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "5240",
+          "arrival": 300,
+          "departure": 420
+        },
+        {
+          "station_id": "5230",
+          "arrival": 720,
+          "departure": 900
+        },
+        {
+          "station_id": "5220",
+          "arrival": 1440,
+          "departure": 1500
+        },
+        {
+          "station_id": "5210",
+          "arrival": 1980,
+          "departure": 2100
+        },
+        {
+          "station_id": "5200",
+          "arrival": 2460,
+          "departure": 2520
+        },
+        {
+          "station_id": "5190",
+          "arrival": 3060,
+          "departure": 3120
+        },
+        {
+          "station_id": "5120",
+          "arrival": 5700,
+          "departure": 5760
+        },
+        {
+          "station_id": "5090",
+          "arrival": 6240,
+          "departure": 6300
+        },
+        {
+          "station_id": "5070",
+          "arrival": 6660,
+          "departure": 6720
+        },
+        {
+          "station_id": "5050",
+          "arrival": 7080,
+          "departure": 7200
+        },
+        {
+          "station_id": "5000",
+          "arrival": 7800,
+          "departure": 7860
+        },
+        {
+          "station_id": "4460",
+          "arrival": 8160,
+          "departure": 8220
+        },
+        {
+          "station_id": "4440",
+          "arrival": 8580,
+          "departure": 8700
+        },
+        {
+          "station_id": "4340",
+          "arrival": 9660,
+          "departure": 9660
+        }
+      ]
+    },
+    {
+      "train_id": "CK-3018",
+      "train_no": "3018",
+      "train_type": "區間快",
+      "train_type_code": "CK",
+      "departure_time": "11:08:00",
+      "od_track_id": "SK-TT-ZY-0",
+      "origin_station": "臺東",
+      "destination_station": "新左營",
+      "total_travel_time": 11040,
+      "stations": [
+        {
+          "station_id": "6000",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "5240",
+          "arrival": 300,
+          "departure": 360
+        },
+        {
+          "station_id": "5230",
+          "arrival": 780,
+          "departure": 1260
+        },
+        {
+          "station_id": "5220",
+          "arrival": 1860,
+          "departure": 1920
+        },
+        {
+          "station_id": "5210",
+          "arrival": 2460,
+          "departure": 2700
+        },
+        {
+          "station_id": "5200",
+          "arrival": 3240,
+          "departure": 3480
+        },
+        {
+          "station_id": "5190",
+          "arrival": 4140,
+          "departure": 4380
+        },
+        {
+          "station_id": "5120",
+          "arrival": 6600,
+          "departure": 6660
+        },
+        {
+          "station_id": "5090",
+          "arrival": 7140,
+          "departure": 7200
+        },
+        {
+          "station_id": "5070",
+          "arrival": 7560,
+          "departure": 7620
+        },
+        {
+          "station_id": "5050",
+          "arrival": 7980,
+          "departure": 8040
+        },
+        {
+          "station_id": "5030",
+          "arrival": 8400,
+          "departure": 8400
+        },
+        {
+          "station_id": "5000",
+          "arrival": 8760,
+          "departure": 8880
+        },
+        {
+          "station_id": "4460",
+          "arrival": 9180,
+          "departure": 9300
+        },
+        {
+          "station_id": "4440",
+          "arrival": 9720,
+          "departure": 9840
+        },
+        {
+          "station_id": "4340",
+          "arrival": 11040,
+          "departure": 11040
+        }
+      ]
+    },
+    {
+      "train_id": "TC-310",
+      "train_no": "310",
+      "train_type": "自強(3000)(EMU3000 型電車)",
+      "train_type_code": "TC",
+      "departure_time": "12:20:00",
+      "od_track_id": "SK-TT-ZY-0",
+      "origin_station": "臺東",
+      "destination_station": "新左營",
+      "total_travel_time": 8820,
+      "stations": [
+        {
+          "station_id": "6000",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "5230",
+          "arrival": 540,
+          "departure": 600
+        },
+        {
+          "station_id": "5210",
+          "arrival": 1500,
+          "departure": 1620
+        },
+        {
+          "station_id": "5120",
+          "arrival": 4680,
+          "departure": 5040
+        },
+        {
+          "station_id": "5050",
+          "arrival": 6120,
+          "departure": 6300
+        },
+        {
+          "station_id": "5000",
+          "arrival": 6900,
+          "departure": 7020
+        },
+        {
+          "station_id": "4440",
+          "arrival": 7620,
+          "departure": 7680
+        },
+        {
+          "station_id": "4340",
+          "arrival": 8820,
+          "departure": 8820
+        }
+      ]
+    },
+    {
+      "train_id": "TC-314",
+      "train_no": "314",
+      "train_type": "自強(3000)(EMU3000 型電車)",
+      "train_type_code": "TC",
+      "departure_time": "13:41:00",
+      "od_track_id": "SK-TT-ZY-0",
+      "origin_station": "臺東",
+      "destination_station": "新左營",
+      "total_travel_time": 7740,
+      "stations": [
+        {
+          "station_id": "6000",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "5230",
+          "arrival": 540,
+          "departure": 600
+        },
+        {
+          "station_id": "5210",
+          "arrival": 1500,
+          "departure": 1620
+        },
+        {
+          "station_id": "5120",
+          "arrival": 4200,
+          "departure": 4260
+        },
+        {
+          "station_id": "5050",
+          "arrival": 5280,
+          "departure": 5400
+        },
+        {
+          "station_id": "5000",
+          "arrival": 6000,
+          "departure": 6120
+        },
+        {
+          "station_id": "4440",
+          "arrival": 6720,
+          "departure": 6840
+        },
+        {
+          "station_id": "4340",
+          "arrival": 7740,
+          "departure": 7740
+        }
+      ]
+    },
+    {
+      "train_id": "CG-708",
+      "train_no": "708",
+      "train_type": "莒光(有身障座位)",
+      "train_type_code": "CG",
+      "departure_time": "15:17:00",
+      "od_track_id": "SK-TT-ZY-0",
+      "origin_station": "臺東",
+      "destination_station": "新左營",
+      "total_travel_time": 12540,
+      "stations": [
+        {
+          "station_id": "6000",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "5240",
+          "arrival": 360,
+          "departure": 420
+        },
+        {
+          "station_id": "5230",
+          "arrival": 900,
+          "departure": 1020
+        },
+        {
+          "station_id": "5220",
+          "arrival": 1680,
+          "departure": 1740
+        },
+        {
+          "station_id": "5210",
+          "arrival": 2340,
+          "departure": 2460
+        },
+        {
+          "station_id": "5200",
+          "arrival": 3000,
+          "departure": 3060
+        },
+        {
+          "station_id": "5190",
+          "arrival": 3660,
+          "departure": 3780
+        },
+        {
+          "station_id": "5160",
+          "arrival": 5580,
+          "departure": 5940
+        },
+        {
+          "station_id": "5130",
+          "arrival": 6480,
+          "departure": 6720
+        },
+        {
+          "station_id": "5120",
+          "arrival": 7140,
+          "departure": 7260
+        },
+        {
+          "station_id": "5090",
+          "arrival": 7860,
+          "departure": 7980
+        },
+        {
+          "station_id": "5070",
+          "arrival": 8460,
+          "departure": 8940
+        },
+        {
+          "station_id": "5050",
+          "arrival": 9360,
+          "departure": 9480
+        },
+        {
+          "station_id": "5000",
+          "arrival": 10200,
+          "departure": 10320
+        },
+        {
+          "station_id": "4460",
+          "arrival": 10740,
+          "departure": 10800
+        },
+        {
+          "station_id": "4440",
+          "arrival": 11280,
+          "departure": 11400
+        },
+        {
+          "station_id": "4340",
+          "arrival": 12540,
+          "departure": 12540
+        }
+      ]
+    },
+    {
+      "train_id": "CK-3038",
+      "train_no": "3038",
+      "train_type": "區間快",
+      "train_type_code": "CK",
+      "departure_time": "17:00:00",
+      "od_track_id": "SK-TT-ZY-0",
+      "origin_station": "臺東",
+      "destination_station": "新左營",
+      "total_travel_time": 11220,
+      "stations": [
+        {
+          "station_id": "6000",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "5240",
+          "arrival": 300,
+          "departure": 360
+        },
+        {
+          "station_id": "5230",
+          "arrival": 780,
+          "departure": 960
+        },
+        {
+          "station_id": "5220",
+          "arrival": 1500,
+          "departure": 1620
+        },
+        {
+          "station_id": "5210",
+          "arrival": 2100,
+          "departure": 2160
+        },
+        {
+          "station_id": "5200",
+          "arrival": 2580,
+          "departure": 2820
+        },
+        {
+          "station_id": "5190",
+          "arrival": 3420,
+          "departure": 3600
+        },
+        {
+          "station_id": "5160",
+          "arrival": 5040,
+          "departure": 5040
+        },
+        {
+          "station_id": "5140",
+          "arrival": 5340,
+          "departure": 5340
+        },
+        {
+          "station_id": "5130",
+          "arrival": 5640,
+          "departure": 6000
+        },
+        {
+          "station_id": "5120",
+          "arrival": 6360,
+          "departure": 6420
+        },
+        {
+          "station_id": "5100",
+          "arrival": 6720,
+          "departure": 6840
+        },
+        {
+          "station_id": "5090",
+          "arrival": 7080,
+          "departure": 7140
+        },
+        {
+          "station_id": "5070",
+          "arrival": 7500,
+          "departure": 7560
+        },
+        {
+          "station_id": "5050",
+          "arrival": 7920,
+          "departure": 7980
+        },
+        {
+          "station_id": "5030",
+          "arrival": 8340,
+          "departure": 8400
+        },
+        {
+          "station_id": "5000",
+          "arrival": 8760,
+          "departure": 8880
+        },
+        {
+          "station_id": "4460",
+          "arrival": 9180,
+          "departure": 9240
+        },
+        {
+          "station_id": "4440",
+          "arrival": 9600,
+          "departure": 9720
+        },
+        {
+          "station_id": "4340",
+          "arrival": 11220,
+          "departure": 11220
+        }
+      ]
+    }
+  ]
+}

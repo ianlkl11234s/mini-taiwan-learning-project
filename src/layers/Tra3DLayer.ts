@@ -1,7 +1,8 @@
 import * as THREE from 'three';
 import mapboxgl from 'mapbox-gl';
 import type { TraTrain, TraTrack } from '../engines/TraTrainEngine';
-import { TRA_COLOR_3D, getTraDirection } from '../constants/traInfo';
+import { TRA_COLOR_3D } from '../constants/traInfo';
+import { TRA_TRAIN_TYPES } from '../constants/traTrainTypes';
 
 // 參考點：新竹附近（台鐵涵蓋範圍中心點）
 const MODEL_ORIGIN: [number, number] = [121.0, 24.5];
@@ -117,23 +118,28 @@ export class Tra3DLayer implements mapboxgl.CustomLayerInterface {
       linewidth: 2,
     });
 
-    // 建立台鐵方向材質（方向 0/1 略有不同）
-    const material0 = new THREE.MeshStandardMaterial({
-      color: TRA_COLOR_3D,      // 深藍色 0x0066b3
-      transparent: true,
-      opacity: 0.9,
-      emissive: TRA_COLOR_3D,
-      emissiveIntensity: 0,
-    });
-    const material1 = new THREE.MeshStandardMaterial({
-      color: 0x4d9fdb,          // 淺藍色
-      transparent: true,
-      opacity: 0.9,
-      emissive: 0x4d9fdb,
-      emissiveIntensity: 0,
-    });
-    this.materials.set('0', material0);
-    this.materials.set('1', material1);
+    // 建立各車種材質
+    for (const [code, info] of Object.entries(TRA_TRAIN_TYPES)) {
+      const mat = new THREE.MeshStandardMaterial({
+        color: info.color3D,
+        transparent: true,
+        opacity: 0.9,
+        emissive: info.color3D,
+        emissiveIntensity: 0,
+      });
+      this.materials.set(code, mat);
+    }
+    // 預設材質 (無車種代碼時使用)
+    if (!this.materials.has('default')) {
+      const defaultMat = new THREE.MeshStandardMaterial({
+        color: TRA_COLOR_3D,
+        transparent: true,
+        opacity: 0.9,
+        emissive: TRA_COLOR_3D,
+        emissiveIntensity: 0,
+      });
+      this.materials.set('default', defaultMat);
+    }
 
     // 點擊事件處理
     const handleClick = (event: MouseEvent) => {
@@ -251,8 +257,8 @@ export class Tra3DLayer implements mapboxgl.CustomLayerInterface {
     // 更新或建立列車 mesh
     for (const train of this.trains) {
       let group = this.trainMeshes.get(train.trainId);
-      const direction = getTraDirection(train.trackId);
-      const material = this.materials.get(direction) || this.materials.get('0')!;
+      const typeCode = train.trainTypeCode || 'default';
+      const material = this.materials.get(typeCode) || this.materials.get('default')!;
 
       if (!group) {
         group = new THREE.Group();

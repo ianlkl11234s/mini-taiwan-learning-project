@@ -1,0 +1,51 @@
+{
+  "track_id": "OD-TT-TC",
+  "departures": [
+    {
+      "train_id": "TC-372",
+      "train_no": "372",
+      "train_type": "自強(3000)(EMU3000 型電車)",
+      "train_type_code": "TC",
+      "departure_time": "10:17:00",
+      "od_track_id": "OD-TT-TC",
+      "origin_station": "臺東",
+      "destination_station": "臺中",
+      "total_travel_time": 17580,
+      "stations": [
+        {
+          "station_id": "6000",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "3300",
+          "arrival": 17580,
+          "departure": 17580
+        }
+      ]
+    },
+    {
+      "train_id": "TC-386",
+      "train_no": "386",
+      "train_type": "自強(3000)(EMU3000 型電車)",
+      "train_type_code": "TC",
+      "departure_time": "17:30:00",
+      "od_track_id": "OD-TT-TC",
+      "origin_station": "臺東",
+      "destination_station": "臺中",
+      "total_travel_time": 16380,
+      "stations": [
+        {
+          "station_id": "6000",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "3300",
+          "arrival": 16380,
+          "departure": 16380
+        }
+      ]
+    }
+  ]
+}

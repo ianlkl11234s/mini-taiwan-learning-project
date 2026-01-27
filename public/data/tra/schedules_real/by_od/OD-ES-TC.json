@@ -1,0 +1,48 @@
+{
+  "track_id": "OD-ES-TC",
+  "departures": [
+    {
+      "train_id": "CK-2016",
+      "train_no": "2016",
+      "train_type": "區間快",
+      "train_type_code": "CK",
+      "departure_time": "11:30:00",
+      "od_track_id": "OD-ES-TC",
+      "origin_station": "二水",
+      "destination_station": "臺中",
+      "total_travel_time": 3000,
+      "stations": [
+        {
+          "station_id": "3430",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "3420",
+          "arrival": 360,
+          "departure": 420
+        },
+        {
+          "station_id": "3390",
+          "arrival": 960,
+          "departure": 1080
+        },
+        {
+          "station_id": "3360",
+          "arrival": 1740,
+          "departure": 1980
+        },
+        {
+          "station_id": "3325",
+          "arrival": 2400,
+          "departure": 2520
+        },
+        {
+          "station_id": "3300",
+          "arrival": 3000,
+          "departure": 3000
+        }
+      ]
+    }
+  ]
+}

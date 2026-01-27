@@ -1,0 +1,461 @@
+{
+  "track_id": "YL-SA-BD-1",
+  "departures": [
+    {
+      "train_id": "LC-4127",
+      "train_no": "4127",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "07:33:00",
+      "od_track_id": "YL-SA-BD-1",
+      "origin_station": "蘇澳",
+      "destination_station": "瑞芳",
+      "total_travel_time": 6300,
+      "stations": [
+        {
+          "station_id": "7120",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "7130",
+          "arrival": 240,
+          "departure": 300
+        },
+        {
+          "station_id": "7150",
+          "arrival": 660,
+          "departure": 660
+        },
+        {
+          "station_id": "7160",
+          "arrival": 960,
+          "departure": 1020
+        },
+        {
+          "station_id": "7170",
+          "arrival": 1140,
+          "departure": 1200
+        },
+        {
+          "station_id": "7180",
+          "arrival": 1320,
+          "departure": 1320
+        },
+        {
+          "station_id": "7190",
+          "arrival": 1620,
+          "departure": 1740
+        },
+        {
+          "station_id": "7200",
+          "arrival": 1980,
+          "departure": 1980
+        },
+        {
+          "station_id": "7210",
+          "arrival": 2280,
+          "departure": 2340
+        },
+        {
+          "station_id": "7220",
+          "arrival": 2580,
+          "departure": 2580
+        },
+        {
+          "station_id": "7230",
+          "arrival": 2760,
+          "departure": 2820
+        },
+        {
+          "station_id": "7240",
+          "arrival": 3000,
+          "departure": 3060
+        },
+        {
+          "station_id": "7250",
+          "arrival": 3240,
+          "departure": 3300
+        },
+        {
+          "station_id": "7260",
+          "arrival": 3540,
+          "departure": 3600
+        },
+        {
+          "station_id": "7270",
+          "arrival": 3840,
+          "departure": 3900
+        },
+        {
+          "station_id": "7280",
+          "arrival": 4080,
+          "departure": 4080
+        },
+        {
+          "station_id": "7290",
+          "arrival": 4380,
+          "departure": 4440
+        },
+        {
+          "station_id": "7300",
+          "arrival": 4680,
+          "departure": 4680
+        },
+        {
+          "station_id": "7310",
+          "arrival": 5040,
+          "departure": 5100
+        },
+        {
+          "station_id": "7320",
+          "arrival": 5340,
+          "departure": 5340
+        },
+        {
+          "station_id": "7330",
+          "arrival": 5640,
+          "departure": 5640
+        },
+        {
+          "station_id": "7350",
+          "arrival": 5880,
+          "departure": 5940
+        },
+        {
+          "station_id": "7360",
+          "arrival": 6300,
+          "departure": 6300
+        }
+      ]
+    },
+    {
+      "train_id": "LC-4129",
+      "train_no": "4129",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "07:50:00",
+      "od_track_id": "YL-SA-BD-1",
+      "origin_station": "蘇澳",
+      "destination_station": "頭城",
+      "total_travel_time": 2880,
+      "stations": [
+        {
+          "station_id": "7120",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "7130",
+          "arrival": 240,
+          "departure": 300
+        },
+        {
+          "station_id": "7150",
+          "arrival": 660,
+          "departure": 660
+        },
+        {
+          "station_id": "7160",
+          "arrival": 960,
+          "departure": 1080
+        },
+        {
+          "station_id": "7170",
+          "arrival": 1200,
+          "departure": 1260
+        },
+        {
+          "station_id": "7180",
+          "arrival": 1380,
+          "departure": 1380
+        },
+        {
+          "station_id": "7190",
+          "arrival": 1680,
+          "departure": 1800
+        },
+        {
+          "station_id": "7200",
+          "arrival": 2040,
+          "departure": 2040
+        },
+        {
+          "station_id": "7210",
+          "arrival": 2340,
+          "departure": 2400
+        },
+        {
+          "station_id": "7220",
+          "arrival": 2640,
+          "departure": 2640
+        },
+        {
+          "station_id": "7230",
+          "arrival": 2880,
+          "departure": 2880
+        }
+      ]
+    },
+    {
+      "train_id": "LC-4919",
+      "train_no": "4919",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "11:05:00",
+      "od_track_id": "YL-SA-BD-1",
+      "origin_station": "瑞芳",
+      "destination_station": "八堵",
+      "total_travel_time": 780,
+      "stations": [
+        {
+          "station_id": "7360",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "7380",
+          "arrival": 300,
+          "departure": 360
+        },
+        {
+          "station_id": "7390",
+          "arrival": 540,
+          "departure": 600
+        },
+        {
+          "station_id": "0920",
+          "arrival": 780,
+          "departure": 900
+        }
+      ]
+    },
+    {
+      "train_id": "LC-4213",
+      "train_no": "4213",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "17:55:00",
+      "od_track_id": "YL-SA-BD-1",
+      "origin_station": "蘇澳",
+      "destination_station": "頭城",
+      "total_travel_time": 3420,
+      "stations": [
+        {
+          "station_id": "7120",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "7130",
+          "arrival": 240,
+          "departure": 300
+        },
+        {
+          "station_id": "7150",
+          "arrival": 660,
+          "departure": 660
+        },
+        {
+          "station_id": "7160",
+          "arrival": 960,
+          "departure": 1020
+        },
+        {
+          "station_id": "7170",
+          "arrival": 1140,
+          "departure": 1200
+        },
+        {
+          "station_id": "7180",
+          "arrival": 1320,
+          "departure": 1320
+        },
+        {
+          "station_id": "7190",
+          "arrival": 1620,
+          "departure": 1680
+        },
+        {
+          "station_id": "7200",
+          "arrival": 1920,
+          "departure": 1920
+        },
+        {
+          "station_id": "7210",
+          "arrival": 2280,
+          "departure": 2880
+        },
+        {
+          "station_id": "7220",
+          "arrival": 3180,
+          "departure": 3180
+        },
+        {
+          "station_id": "7230",
+          "arrival": 3420,
+          "departure": 3420
+        }
+      ]
+    },
+    {
+      "train_id": "LC-4229",
+      "train_no": "4229",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "18:38:00",
+      "od_track_id": "YL-SA-BD-1",
+      "origin_station": "蘇澳",
+      "destination_station": "頭城",
+      "total_travel_time": 3960,
+      "stations": [
+        {
+          "station_id": "7120",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "7130",
+          "arrival": 240,
+          "departure": 300
+        },
+        {
+          "station_id": "7150",
+          "arrival": 660,
+          "departure": 660
+        },
+        {
+          "station_id": "7160",
+          "arrival": 1020,
+          "departure": 1380
+        },
+        {
+          "station_id": "7170",
+          "arrival": 1560,
+          "departure": 1620
+        },
+        {
+          "station_id": "7180",
+          "arrival": 1740,
+          "departure": 1740
+        },
+        {
+          "station_id": "7190",
+          "arrival": 2040,
+          "departure": 2160
+        },
+        {
+          "station_id": "7200",
+          "arrival": 2400,
+          "departure": 2400
+        },
+        {
+          "station_id": "7210",
+          "arrival": 2760,
+          "departure": 3420
+        },
+        {
+          "station_id": "7220",
+          "arrival": 3720,
+          "departure": 3720
+        },
+        {
+          "station_id": "7230",
+          "arrival": 3960,
+          "departure": 3960
+        }
+      ]
+    },
+    {
+      "train_id": "LC-4239",
+      "train_no": "4239",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "20:30:00",
+      "od_track_id": "YL-SA-BD-1",
+      "origin_station": "蘇澳",
+      "destination_station": "蘇澳新",
+      "total_travel_time": 300,
+      "stations": [
+        {
+          "station_id": "7120",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "7130",
+          "arrival": 300,
+          "departure": 300
+        }
+      ]
+    },
+    {
+      "train_id": "LC-4253",
+      "train_no": "4253",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "22:20:00",
+      "od_track_id": "YL-SA-BD-1",
+      "origin_station": "蘇澳",
+      "destination_station": "頭城",
+      "total_travel_time": 2760,
+      "stations": [
+        {
+          "station_id": "7120",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "7130",
+          "arrival": 240,
+          "departure": 300
+        },
+        {
+          "station_id": "7150",
+          "arrival": 660,
+          "departure": 660
+        },
+        {
+          "station_id": "7160",
+          "arrival": 960,
+          "departure": 1020
+        },
+        {
+          "station_id": "7170",
+          "arrival": 1140,
+          "departure": 1200
+        },
+        {
+          "station_id": "7180",
+          "arrival": 1320,
+          "departure": 1320
+        },
+        {
+          "station_id": "7190",
+          "arrival": 1620,
+          "departure": 1680
+        },
+        {
+          "station_id": "7200",
+          "arrival": 1920,
+          "departure": 1920
+        },
+        {
+          "station_id": "7210",
+          "arrival": 2220,
+          "departure": 2280
+        },
+        {
+          "station_id": "7220",
+          "arrival": 2520,
+          "departure": 2520
+        },
+        {
+          "station_id": "7230",
+          "arrival": 2760,
+          "departure": 2760
+        }
+      ]
+    }
+  ]
+}

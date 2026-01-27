@@ -1,0 +1,83 @@
+{
+  "track_id": "OD-大甲-TC",
+  "departures": [
+    {
+      "train_id": "LC-2609",
+      "train_no": "2609",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "08:25:00",
+      "od_track_id": "OD-大甲-TC",
+      "origin_station": "大甲",
+      "destination_station": "臺中",
+      "total_travel_time": 3480,
+      "stations": [
+        {
+          "station_id": "2200",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "2210",
+          "arrival": 300,
+          "departure": 300
+        },
+        {
+          "station_id": "2220",
+          "arrival": 660,
+          "departure": 780
+        },
+        {
+          "station_id": "2230",
+          "arrival": 1020,
+          "departure": 1080
+        },
+        {
+          "station_id": "2240",
+          "arrival": 1320,
+          "departure": 1380
+        },
+        {
+          "station_id": "2250",
+          "arrival": 1620,
+          "departure": 1680
+        },
+        {
+          "station_id": "2260",
+          "arrival": 1980,
+          "departure": 1980
+        },
+        {
+          "station_id": "3330",
+          "arrival": 2220,
+          "departure": 2460
+        },
+        {
+          "station_id": "3325",
+          "arrival": 2640,
+          "departure": 2700
+        },
+        {
+          "station_id": "3330",
+          "arrival": 2820,
+          "departure": 2820
+        },
+        {
+          "station_id": "3320",
+          "arrival": 3000,
+          "departure": 3060
+        },
+        {
+          "station_id": "3310",
+          "arrival": 3240,
+          "departure": 3240
+        },
+        {
+          "station_id": "3300",
+          "arrival": 3480,
+          "departure": 3480
+        }
+      ]
+    }
+  ]
+}

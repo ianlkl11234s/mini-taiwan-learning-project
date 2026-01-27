@@ -1,0 +1,316 @@
+{
+  "track_id": "OD-屏東-KL",
+  "departures": [
+    {
+      "train_id": "TC-PP-134",
+      "train_no": "134",
+      "train_type": "自強(推拉式自強號且無自行車車廂)",
+      "train_type_code": "TC-PP",
+      "departure_time": "14:07:00",
+      "od_track_id": "OD-屏東-KL",
+      "origin_station": "屏東",
+      "destination_station": "基隆",
+      "total_travel_time": 22860,
+      "stations": [
+        {
+          "station_id": "5000",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "4460",
+          "arrival": 420,
+          "departure": 480
+        },
+        {
+          "station_id": "4440",
+          "arrival": 900,
+          "departure": 960
+        },
+        {
+          "station_id": "4400",
+          "arrival": 1320,
+          "departure": 1440
+        },
+        {
+          "station_id": "4340",
+          "arrival": 1920,
+          "departure": 2040
+        },
+        {
+          "station_id": "4220",
+          "arrival": 3540,
+          "departure": 3660
+        },
+        {
+          "station_id": "4170",
+          "arrival": 4380,
+          "departure": 4440
+        },
+        {
+          "station_id": "4120",
+          "arrival": 5220,
+          "departure": 5340
+        },
+        {
+          "station_id": "4080",
+          "arrival": 6300,
+          "departure": 6420
+        },
+        {
+          "station_id": "3480",
+          "arrival": 7320,
+          "departure": 7380
+        },
+        {
+          "station_id": "3470",
+          "arrival": 7740,
+          "departure": 7860
+        },
+        {
+          "station_id": "3420",
+          "arrival": 8820,
+          "departure": 8880
+        },
+        {
+          "station_id": "3390",
+          "arrival": 9420,
+          "departure": 9540
+        },
+        {
+          "station_id": "3360",
+          "arrival": 10200,
+          "departure": 10440
+        },
+        {
+          "station_id": "3300",
+          "arrival": 11280,
+          "departure": 11460
+        },
+        {
+          "station_id": "3230",
+          "arrival": 12120,
+          "departure": 12480
+        },
+        {
+          "station_id": "3160",
+          "arrival": 14040,
+          "departure": 14160
+        },
+        {
+          "station_id": "1250",
+          "arrival": 14760,
+          "departure": 14820
+        },
+        {
+          "station_id": "1210",
+          "arrival": 15660,
+          "departure": 15780
+        },
+        {
+          "station_id": "1100",
+          "arrival": 17400,
+          "departure": 17520
+        },
+        {
+          "station_id": "1080",
+          "arrival": 18060,
+          "departure": 18180
+        },
+        {
+          "station_id": "1020",
+          "arrival": 19380,
+          "departure": 19500
+        },
+        {
+          "station_id": "1000",
+          "arrival": 20040,
+          "departure": 20220
+        },
+        {
+          "station_id": "0990",
+          "arrival": 20640,
+          "departure": 20700
+        },
+        {
+          "station_id": "0980",
+          "arrival": 20940,
+          "departure": 21000
+        },
+        {
+          "station_id": "0960",
+          "arrival": 21420,
+          "departure": 21480
+        },
+        {
+          "station_id": "0930",
+          "arrival": 22080,
+          "departure": 22140
+        },
+        {
+          "station_id": "0920",
+          "arrival": 22380,
+          "departure": 22440
+        },
+        {
+          "station_id": "0900",
+          "arrival": 22860,
+          "departure": 22860
+        }
+      ]
+    },
+    {
+      "train_id": "TC-PP-144",
+      "train_no": "144",
+      "train_type": "自強(推拉式自強號且無自行車車廂)",
+      "train_type_code": "TC-PP",
+      "departure_time": "16:35:00",
+      "od_track_id": "OD-屏東-KL",
+      "origin_station": "屏東",
+      "destination_station": "基隆",
+      "total_travel_time": 22320,
+      "stations": [
+        {
+          "station_id": "5000",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "4440",
+          "arrival": 720,
+          "departure": 840
+        },
+        {
+          "station_id": "4400",
+          "arrival": 1200,
+          "departure": 1320
+        },
+        {
+          "station_id": "4340",
+          "arrival": 1800,
+          "departure": 1920
+        },
+        {
+          "station_id": "4220",
+          "arrival": 3420,
+          "departure": 3600
+        },
+        {
+          "station_id": "4200",
+          "arrival": 3960,
+          "departure": 4020
+        },
+        {
+          "station_id": "4170",
+          "arrival": 4500,
+          "departure": 4620
+        },
+        {
+          "station_id": "4120",
+          "arrival": 5400,
+          "departure": 5460
+        },
+        {
+          "station_id": "4080",
+          "arrival": 6420,
+          "departure": 6540
+        },
+        {
+          "station_id": "3470",
+          "arrival": 7680,
+          "departure": 7800
+        },
+        {
+          "station_id": "3420",
+          "arrival": 8760,
+          "departure": 8820
+        },
+        {
+          "station_id": "3390",
+          "arrival": 9360,
+          "departure": 9480
+        },
+        {
+          "station_id": "3360",
+          "arrival": 10140,
+          "departure": 10260
+        },
+        {
+          "station_id": "3300",
+          "arrival": 11100,
+          "departure": 11220
+        },
+        {
+          "station_id": "3230",
+          "arrival": 11820,
+          "departure": 11880
+        },
+        {
+          "station_id": "3160",
+          "arrival": 13380,
+          "departure": 13500
+        },
+        {
+          "station_id": "1250",
+          "arrival": 14100,
+          "departure": 14160
+        },
+        {
+          "station_id": "1210",
+          "arrival": 15000,
+          "departure": 15120
+        },
+        {
+          "station_id": "1100",
+          "arrival": 16740,
+          "departure": 16860
+        },
+        {
+          "station_id": "1080",
+          "arrival": 17400,
+          "departure": 17520
+        },
+        {
+          "station_id": "1040",
+          "arrival": 18420,
+          "departure": 18540
+        },
+        {
+          "station_id": "1020",
+          "arrival": 18900,
+          "departure": 19020
+        },
+        {
+          "station_id": "1000",
+          "arrival": 19560,
+          "departure": 19740
+        },
+        {
+          "station_id": "0990",
+          "arrival": 20160,
+          "departure": 20220
+        },
+        {
+          "station_id": "0980",
+          "arrival": 20460,
+          "departure": 20520
+        },
+        {
+          "station_id": "0960",
+          "arrival": 20940,
+          "departure": 21000
+        },
+        {
+          "station_id": "0930",
+          "arrival": 21600,
+          "departure": 21720
+        },
+        {
+          "station_id": "0900",
+          "arrival": 22320,
+          "departure": 22320
+        }
+      ]
+    }
+  ]
+}

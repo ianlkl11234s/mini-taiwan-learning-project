@@ -1,0 +1,118 @@
+{
+  "track_id": "OD-ML-桃園",
+  "departures": [
+    {
+      "train_id": "LC-1298",
+      "train_no": "1298",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "22:10:00",
+      "od_track_id": "OD-ML-桃園",
+      "origin_station": "苗栗",
+      "destination_station": "桃園",
+      "total_travel_time": 5880,
+      "stations": [
+        {
+          "station_id": "3160",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "3150",
+          "arrival": 240,
+          "departure": 300
+        },
+        {
+          "station_id": "3140",
+          "arrival": 540,
+          "departure": 600
+        },
+        {
+          "station_id": "1250",
+          "arrival": 900,
+          "departure": 960
+        },
+        {
+          "station_id": "1240",
+          "arrival": 1200,
+          "departure": 1200
+        },
+        {
+          "station_id": "1230",
+          "arrival": 1560,
+          "departure": 1920
+        },
+        {
+          "station_id": "1220",
+          "arrival": 2160,
+          "departure": 2160
+        },
+        {
+          "station_id": "1210",
+          "arrival": 2460,
+          "departure": 2580
+        },
+        {
+          "station_id": "1190",
+          "arrival": 2700,
+          "departure": 2760
+        },
+        {
+          "station_id": "1180",
+          "arrival": 3000,
+          "departure": 3000
+        },
+        {
+          "station_id": "1170",
+          "arrival": 3300,
+          "departure": 3300
+        },
+        {
+          "station_id": "1160",
+          "arrival": 3600,
+          "departure": 3660
+        },
+        {
+          "station_id": "1150",
+          "arrival": 3840,
+          "departure": 3840
+        },
+        {
+          "station_id": "1140",
+          "arrival": 3960,
+          "departure": 4020
+        },
+        {
+          "station_id": "1130",
+          "arrival": 4140,
+          "departure": 4200
+        },
+        {
+          "station_id": "1120",
+          "arrival": 4500,
+          "departure": 4560
+        },
+        {
+          "station_id": "1110",
+          "arrival": 4800,
+          "departure": 4860
+        },
+        {
+          "station_id": "1100",
+          "arrival": 5160,
+          "departure": 5280
+        },
+        {
+          "station_id": "1090",
+          "arrival": 5460,
+          "departure": 5520
+        },
+        {
+          "station_id": "1080",
+          "arrival": 5880,
+          "departure": 5880
+        }
+      ]
+    }
+  ]
+}

@@ -72,24 +72,45 @@ def merge_coordinates(tracks_coords: List[List[List[float]]]) -> List[List[float
     """
     合併多條軌道的座標
 
-    去除連接點附近的重複座標
+    自動偵測方向並反轉座標，去除連接點附近的重複座標
     """
     if not tracks_coords:
         return []
 
-    merged = list(tracks_coords[0])
+    # 第一條軌道：檢查是否需要反轉
+    first_coords = list(tracks_coords[0])
+    if len(tracks_coords) > 1:
+        next_coords = tracks_coords[1]
+        if next_coords:
+            # 比較第一條軌道尾端與第二條軌道的兩端距離
+            d_normal = euclidean_distance(first_coords[-1], next_coords[0])
+            d_next_rev = euclidean_distance(first_coords[-1], next_coords[-1])
+            d_self_rev = euclidean_distance(first_coords[0], next_coords[0])
+            d_both_rev = euclidean_distance(first_coords[0], next_coords[-1])
+            # 如果反轉第一條後接正向第二條更近，就反轉第一條
+            if d_self_rev < d_normal and d_self_rev < d_next_rev:
+                first_coords.reverse()
+
+    merged = first_coords
 
     for coords in tracks_coords[1:]:
         if not coords:
             continue
 
-        # 檢查連接點距離
         last_point = merged[-1]
         first_point = coords[0]
-        dist = euclidean_distance(last_point, first_point)
+        last_point_rev = coords[-1]
+
+        dist_normal = euclidean_distance(last_point, first_point)
+        dist_reversed = euclidean_distance(last_point, last_point_rev)
+
+        # 如果反轉後更接近，就反轉座標
+        if dist_reversed < dist_normal:
+            coords = list(reversed(coords))
+            dist_normal = dist_reversed
 
         # 如果距離很近（<100m），跳過第一個點避免重複
-        if dist < 0.001:  # 約 100m in degree
+        if dist_normal < 0.001:  # 約 100m in degree
             merged.extend(coords[1:])
         else:
             merged.extend(coords)
@@ -98,46 +119,86 @@ def merge_coordinates(tracks_coords: List[List[List[float]]]) -> List[List[float
 
 
 def calculate_station_progress(
-    coords: List[List[float]],
+    merged_coords: List[List[float]],
     tracks_progress: List[Dict[str, float]],
     tracks_coords: List[List[List[float]]]
 ) -> Dict[str, float]:
     """
     計算合併後的 station_progress
 
-    方法：
-    1. 計算每條軌道在合併後的長度佔比
-    2. 根據佔比重新計算各站的 progress
+    方法：將所有車站座標投影到合併後的軌道上，計算 progress
+    這樣無論原始軌道方向如何，都能得到正確的單調遞增 progress
     """
-    # 計算各軌道長度
-    track_lengths = []
-    for track_coords in tracks_coords:
-        length = 0.0
-        for i in range(1, len(track_coords)):
-            length += euclidean_distance(track_coords[i-1], track_coords[i])
-        track_lengths.append(length)
+    if not merged_coords or len(merged_coords) < 2:
+        return {}
 
-    total_length = sum(track_lengths)
+    # 計算合併軌道的累積距離
+    cum_distances = [0.0]
+    for i in range(1, len(merged_coords)):
+        dist = euclidean_distance(merged_coords[i-1], merged_coords[i])
+        cum_distances.append(cum_distances[-1] + dist)
+
+    total_length = cum_distances[-1]
     if total_length == 0:
         return {}
 
-    # 計算各軌道的起點 offset
-    offsets = [0.0]
-    for i, length in enumerate(track_lengths[:-1]):
-        offsets.append(offsets[-1] + length / total_length)
+    # 收集所有不重複的車站 ID（從所有來源軌道）
+    all_station_ids = set()
+    for progress_map in tracks_progress:
+        all_station_ids.update(progress_map.keys())
 
-    # 合併各軌道的 station_progress
+    # 載入車站座標（從 stations_snapped.geojson）
+    stations_file = os.path.join(DATA_DIR, 'stations_snapped.geojson')
+    station_coords = {}
+    if os.path.exists(stations_file):
+        with open(stations_file, 'r', encoding='utf-8') as f:
+            stations_data = json.load(f)
+        for feature in stations_data.get('features', []):
+            sid = feature.get('properties', {}).get('station_id', '')
+            coord = feature.get('geometry', {}).get('coordinates', [])
+            if sid and coord:
+                station_coords[sid] = coord
+
+    # 將車站投影到合併軌道上
     merged_progress = {}
 
-    for i, (progress_map, track_length) in enumerate(zip(tracks_progress, track_lengths)):
-        scale = track_length / total_length
-        offset = offsets[i]
+    for station_id in all_station_ids:
+        if station_id not in station_coords:
+            continue
 
-        for station_id, prog in progress_map.items():
-            new_prog = offset + prog * scale
-            # 如果車站已存在，取較小的值（靠近起點）
-            if station_id not in merged_progress:
-                merged_progress[station_id] = round(new_prog, 6)
+        sc = station_coords[station_id]
+
+        # 找到最近的軌道線段
+        min_dist_sq = float('inf')
+        best_progress = 0.0
+
+        for i in range(len(merged_coords) - 1):
+            a = merged_coords[i]
+            b = merged_coords[i + 1]
+
+            # 計算點到線段的投影
+            dx = b[0] - a[0]
+            dy = b[1] - a[1]
+            seg_len_sq = dx * dx + dy * dy
+
+            if seg_len_sq == 0:
+                t = 0
+            else:
+                t = ((sc[0] - a[0]) * dx + (sc[1] - a[1]) * dy) / seg_len_sq
+                t = max(0, min(1, t))
+
+            proj_x = a[0] + t * dx
+            proj_y = a[1] + t * dy
+            dist_sq = (sc[0] - proj_x) ** 2 + (sc[1] - proj_y) ** 2
+
+            if dist_sq < min_dist_sq:
+                min_dist_sq = dist_sq
+                # 計算投影點的累積距離
+                seg_start_dist = cum_distances[i]
+                seg_length = math.sqrt(seg_len_sq)
+                best_progress = (seg_start_dist + t * seg_length) / total_length
+
+        merged_progress[station_id] = round(best_progress, 6)
 
     # 確保起點是 0.0，終點是 1.0
     if merged_progress:

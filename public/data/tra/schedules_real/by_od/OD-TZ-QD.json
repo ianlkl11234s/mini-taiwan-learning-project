@@ -1,0 +1,83 @@
+{
+  "track_id": "OD-TZ-QD",
+  "departures": [
+    {
+      "train_id": "TC-160",
+      "train_no": "160",
+      "train_type": "自強(3000)(EMU3000 型電車)",
+      "train_type_code": "TC",
+      "departure_time": "17:36:00",
+      "od_track_id": "OD-TZ-QD",
+      "origin_station": "田中",
+      "destination_station": "七堵",
+      "total_travel_time": 14040,
+      "stations": [
+        {
+          "station_id": "3420",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "3410",
+          "arrival": 300,
+          "departure": 360
+        },
+        {
+          "station_id": "3390",
+          "arrival": 720,
+          "departure": 840
+        },
+        {
+          "station_id": "3360",
+          "arrival": 1500,
+          "departure": 1800
+        },
+        {
+          "station_id": "1250",
+          "arrival": 6960,
+          "departure": 7020
+        },
+        {
+          "station_id": "1210",
+          "arrival": 7800,
+          "departure": 8040
+        },
+        {
+          "station_id": "1100",
+          "arrival": 9540,
+          "departure": 9660
+        },
+        {
+          "station_id": "1080",
+          "arrival": 10140,
+          "departure": 10260
+        },
+        {
+          "station_id": "1020",
+          "arrival": 11460,
+          "departure": 11640
+        },
+        {
+          "station_id": "1000",
+          "arrival": 12180,
+          "departure": 12360
+        },
+        {
+          "station_id": "0990",
+          "arrival": 12720,
+          "departure": 12780
+        },
+        {
+          "station_id": "0960",
+          "arrival": 13320,
+          "departure": 13440
+        },
+        {
+          "station_id": "0930",
+          "arrival": 14040,
+          "departure": 14040
+        }
+      ]
+    }
+  ]
+}

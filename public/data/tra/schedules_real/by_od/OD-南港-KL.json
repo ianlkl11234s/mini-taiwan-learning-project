@@ -1,0 +1,63 @@
+{
+  "track_id": "OD-南港-KL",
+  "departures": [
+    {
+      "train_id": "LC-1110",
+      "train_no": "1110",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "06:38:00",
+      "od_track_id": "OD-南港-KL",
+      "origin_station": "南港",
+      "destination_station": "基隆",
+      "total_travel_time": 2040,
+      "stations": [
+        {
+          "station_id": "0980",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "0970",
+          "arrival": 360,
+          "departure": 420
+        },
+        {
+          "station_id": "0960",
+          "arrival": 540,
+          "departure": 600
+        },
+        {
+          "station_id": "0950",
+          "arrival": 720,
+          "departure": 720
+        },
+        {
+          "station_id": "0940",
+          "arrival": 960,
+          "departure": 960
+        },
+        {
+          "station_id": "0930",
+          "arrival": 1260,
+          "departure": 1320
+        },
+        {
+          "station_id": "0920",
+          "arrival": 1500,
+          "departure": 1560
+        },
+        {
+          "station_id": "0910",
+          "arrival": 1740,
+          "departure": 1740
+        },
+        {
+          "station_id": "0900",
+          "arrival": 2040,
+          "departure": 2040
+        }
+      ]
+    }
+  ]
+}

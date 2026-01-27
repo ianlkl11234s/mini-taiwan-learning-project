@@ -1,0 +1,161 @@
+{
+  "track_id": "OD-北湖-ML",
+  "departures": [
+    {
+      "train_id": "LC-1105",
+      "train_no": "1105",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "05:59:00",
+      "od_track_id": "OD-北湖-ML",
+      "origin_station": "北湖",
+      "destination_station": "苗栗",
+      "total_travel_time": 3660,
+      "stations": [
+        {
+          "station_id": "1150",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "1160",
+          "arrival": 180,
+          "departure": 180
+        },
+        {
+          "station_id": "1170",
+          "arrival": 480,
+          "departure": 540
+        },
+        {
+          "station_id": "1180",
+          "arrival": 780,
+          "departure": 840
+        },
+        {
+          "station_id": "1190",
+          "arrival": 1080,
+          "departure": 1080
+        },
+        {
+          "station_id": "1210",
+          "arrival": 1260,
+          "departure": 1560
+        },
+        {
+          "station_id": "1220",
+          "arrival": 1860,
+          "departure": 1860
+        },
+        {
+          "station_id": "1230",
+          "arrival": 2040,
+          "departure": 2100
+        },
+        {
+          "station_id": "1240",
+          "arrival": 2400,
+          "departure": 2400
+        },
+        {
+          "station_id": "1250",
+          "arrival": 2700,
+          "departure": 2760
+        },
+        {
+          "station_id": "3140",
+          "arrival": 3000,
+          "departure": 3060
+        },
+        {
+          "station_id": "3150",
+          "arrival": 3300,
+          "departure": 3360
+        },
+        {
+          "station_id": "3160",
+          "arrival": 3660,
+          "departure": 3660
+        }
+      ]
+    },
+    {
+      "train_id": "LC-1265",
+      "train_no": "1265",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "22:26:00",
+      "od_track_id": "OD-北湖-ML",
+      "origin_station": "北湖",
+      "destination_station": "苗栗",
+      "total_travel_time": 3540,
+      "stations": [
+        {
+          "station_id": "1150",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "1160",
+          "arrival": 180,
+          "departure": 180
+        },
+        {
+          "station_id": "1170",
+          "arrival": 480,
+          "departure": 540
+        },
+        {
+          "station_id": "1180",
+          "arrival": 840,
+          "departure": 900
+        },
+        {
+          "station_id": "1190",
+          "arrival": 1140,
+          "departure": 1140
+        },
+        {
+          "station_id": "1210",
+          "arrival": 1320,
+          "departure": 1440
+        },
+        {
+          "station_id": "1220",
+          "arrival": 1740,
+          "departure": 1740
+        },
+        {
+          "station_id": "1230",
+          "arrival": 1920,
+          "departure": 1980
+        },
+        {
+          "station_id": "1240",
+          "arrival": 2280,
+          "departure": 2280
+        },
+        {
+          "station_id": "1250",
+          "arrival": 2580,
+          "departure": 2640
+        },
+        {
+          "station_id": "3140",
+          "arrival": 2880,
+          "departure": 2940
+        },
+        {
+          "station_id": "3150",
+          "arrival": 3180,
+          "departure": 3240
+        },
+        {
+          "station_id": "3160",
+          "arrival": 3540,
+          "departure": 3540
+        }
+      ]
+    }
+  ]
+}

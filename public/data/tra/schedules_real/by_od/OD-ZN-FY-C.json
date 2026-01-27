@@ -2,59 +2,6 @@
   "track_id": "OD-ZN-FY-C",
   "departures": [
     {
-      "train_id": "LC-2501",
-      "train_no": "2501",
-      "train_type": "區間",
-      "train_type_code": "LC",
-      "departure_time": "05:01:00",
-      "od_track_id": "OD-ZN-FY-C",
-      "origin_station": "大甲",
-      "destination_station": "彰化",
-      "total_travel_time": 2400,
-      "stations": [
-        {
-          "station_id": "2200",
-          "arrival": 0,
-          "departure": 0
-        },
-        {
-          "station_id": "2210",
-          "arrival": 240,
-          "departure": 300
-        },
-        {
-          "station_id": "2220",
-          "arrival": 600,
-          "departure": 600
-        },
-        {
-          "station_id": "2230",
-          "arrival": 840,
-          "departure": 900
-        },
-        {
-          "station_id": "2240",
-          "arrival": 1200,
-          "departure": 1260
-        },
-        {
-          "station_id": "2250",
-          "arrival": 1560,
-          "departure": 1620
-        },
-        {
-          "station_id": "2260",
-          "arrival": 1860,
-          "departure": 1920
-        },
-        {
-          "station_id": "3360",
-          "arrival": 2400,
-          "departure": 2400
-        }
-      ]
-    },
-    {
       "train_id": "LC-2611",
       "train_no": "2611",
       "train_type": "區間",

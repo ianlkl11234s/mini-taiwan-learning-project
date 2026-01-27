@@ -565,6 +565,59 @@
           "departure": 5640
         }
       ]
+    },
+    {
+      "train_id": "LC-2564",
+      "train_no": "2564",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "22:54:00",
+      "od_track_id": "OD-FY-通霄",
+      "origin_station": "彰化",
+      "destination_station": "大甲",
+      "total_travel_time": 2820,
+      "stations": [
+        {
+          "station_id": "3360",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "2260",
+          "arrival": 420,
+          "departure": 480
+        },
+        {
+          "station_id": "2250",
+          "arrival": 840,
+          "departure": 1260
+        },
+        {
+          "station_id": "2240",
+          "arrival": 1560,
+          "departure": 1620
+        },
+        {
+          "station_id": "2230",
+          "arrival": 1860,
+          "departure": 1920
+        },
+        {
+          "station_id": "2220",
+          "arrival": 2100,
+          "departure": 2160
+        },
+        {
+          "station_id": "2210",
+          "arrival": 2460,
+          "departure": 2460
+        },
+        {
+          "station_id": "2200",
+          "arrival": 2820,
+          "departure": 2820
+        }
+      ]
     }
   ]
 }

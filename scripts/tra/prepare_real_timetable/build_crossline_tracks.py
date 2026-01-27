@@ -213,24 +213,28 @@ def main():
     all_progress = load_progress()
 
     # ============================================================
-    # 1. OD-ZN-FY-C: 竹南→豐原 via 海線→山線 (for LC-2611)
+    # 1. OD-ZN-FY-C: 竹南→豐原 via 海線+成追線+山線 (for LC-2611)
+    #    修正：原走彰化，改走成追線（追分→成功→烏日）
     # ============================================================
-    print("\n[1] OD-ZN-FY-C: 竹南→豐原 (海→山)")
+    print("\n[1] OD-ZN-FY-C: 竹南→豐原 (海線+成追+山線)")
     coords, progress = build_crossline_track([
-        {'source_track': 'BB-ZN-ZY-C-1', 'origin': '1250', 'dest': '3360'},  # 海線: 竹南→彰化
-        {'source_track': 'BB-ZY-ZN-M-0', 'origin': '3360', 'dest': '3230'},  # 山線: 彰化→豐原
+        {'source_track': 'BB-ZN-ZY-C-1', 'origin': '1250', 'dest': '2260'},  # 海線: 竹南→追分
+        {'source_track': 'CZ-ZF-CG', 'origin': '2260', 'dest': '3330'},      # 成追線: 追分→成功
+        {'source_track': 'BB-ZY-ZN-M-0', 'origin': '3330', 'dest': '3230'},  # 山線: 烏日→豐原
     ], 'OD-ZN-FY-C', all_progress)
-    save_track('OD-ZN-FY-C', coords, progress, ['BB-ZN-ZY-C-1', 'BB-ZY-ZN-M-0'], all_progress)
+    save_track('OD-ZN-FY-C', coords, progress, ['BB-ZN-ZY-C-1', 'CZ-ZF-CG', 'BB-ZY-ZN-M-0'], all_progress)
 
     # ============================================================
-    # 2. OD-FY-ZN-C: 豐原→竹南 via 山線→海線 (for LC-2602)
+    # 2. OD-FY-ZN-C: 豐原→竹南 via 山線+成追線+海線 (for LC-2602)
+    #    修正：原走彰化，改走成追線（烏日→成功→追分）
     # ============================================================
-    print("\n[2] OD-FY-ZN-C: 豐原→竹南 (山→海)")
+    print("\n[2] OD-FY-ZN-C: 豐原→竹南 (山線+成追+海線)")
     coords, progress = build_crossline_track([
-        {'source_track': 'BB-ZN-ZY-M-1', 'origin': '3230', 'dest': '3360'},  # 山線: 豐原→彰化
-        {'source_track': 'BB-ZY-ZN-C-0', 'origin': '3360', 'dest': '1250'},  # 海線: 彰化→竹南
+        {'source_track': 'BB-ZN-ZY-M-1', 'origin': '3230', 'dest': '3330'},  # 山線: 豐原→烏日
+        {'source_track': 'CZ-CG-ZF', 'origin': '3330', 'dest': '2260'},      # 成追線: 成功→追分
+        {'source_track': 'BB-ZY-ZN-C-0', 'origin': '2260', 'dest': '1250'},  # 海線: 追分→竹南
     ], 'OD-FY-ZN-C', all_progress)
-    save_track('OD-FY-ZN-C', coords, progress, ['BB-ZN-ZY-M-1', 'BB-ZY-ZN-C-0'], all_progress)
+    save_track('OD-FY-ZN-C', coords, progress, ['BB-ZN-ZY-M-1', 'CZ-CG-ZF', 'BB-ZY-ZN-C-0'], all_progress)
 
     # ============================================================
     # 3. OD-CZ-HL: 潮州→花蓮 via 西幹+宜蘭 (for TC-PP-172, TC-PP-176, CG-554)

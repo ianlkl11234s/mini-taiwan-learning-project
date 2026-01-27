@@ -3,7 +3,7 @@
     "title": "TRA 真實時刻表",
     "total_trains": 928,
     "total_od_tracks": 176,
-    "generated_at": "2026-01-27T23:26:15.494226",
+    "generated_at": "2026-01-28T00:26:04.046081",
     "source": "TDX GeneralTrainTimetable"
   },
   "schedules": [
@@ -49125,7 +49125,7 @@
       "train_type": "區間",
       "train_type_code": "LC",
       "departure_time": "05:01:00",
-      "od_track_id": "OD-ZN-FY-C",
+      "od_track_id": "OD-通霄-FY",
       "origin_station": "大甲",
       "destination_station": "彰化",
       "total_travel_time": 2400,
@@ -51971,7 +51971,7 @@
       "train_type": "區間",
       "train_type_code": "LC",
       "departure_time": "22:54:00",
-      "od_track_id": "OD-FY-ZN-C",
+      "od_track_id": "OD-FY-通霄",
       "origin_station": "彰化",
       "destination_station": "大甲",
       "total_travel_time": 2820,

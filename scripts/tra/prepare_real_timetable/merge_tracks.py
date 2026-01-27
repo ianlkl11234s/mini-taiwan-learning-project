@@ -200,16 +200,6 @@ def calculate_station_progress(
 
         merged_progress[station_id] = round(best_progress, 6)
 
-    # 確保起點是 0.0，終點是 1.0
-    if merged_progress:
-        min_prog = min(merged_progress.values())
-        max_prog = max(merged_progress.values())
-
-        if max_prog > min_prog:
-            for station_id in merged_progress:
-                normalized = (merged_progress[station_id] - min_prog) / (max_prog - min_prog)
-                merged_progress[station_id] = round(normalized, 6)
-
     return merged_progress
 
 

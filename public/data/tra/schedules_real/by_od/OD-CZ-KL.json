@@ -1219,6 +1219,134 @@
       ]
     },
     {
+      "train_id": "CG-516",
+      "train_no": "516",
+      "train_type": "莒光(無身障座位)",
+      "train_type_code": "CG",
+      "departure_time": "11:13:00",
+      "od_track_id": "OD-CZ-KL",
+      "origin_station": "高雄",
+      "destination_station": "七堵",
+      "total_travel_time": 23820,
+      "stations": [
+        {
+          "station_id": "4400",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "4340",
+          "arrival": 600,
+          "departure": 660
+        },
+        {
+          "station_id": "4330",
+          "arrival": 960,
+          "departure": 1020
+        },
+        {
+          "station_id": "4310",
+          "arrival": 1500,
+          "departure": 1560
+        },
+        {
+          "station_id": "4220",
+          "arrival": 2700,
+          "departure": 2820
+        },
+        {
+          "station_id": "4120",
+          "arrival": 4500,
+          "departure": 4620
+        },
+        {
+          "station_id": "4080",
+          "arrival": 5700,
+          "departure": 5820
+        },
+        {
+          "station_id": "3480",
+          "arrival": 6900,
+          "departure": 6960
+        },
+        {
+          "station_id": "3470",
+          "arrival": 7380,
+          "departure": 7500
+        },
+        {
+          "station_id": "3430",
+          "arrival": 8340,
+          "departure": 8400
+        },
+        {
+          "station_id": "3420",
+          "arrival": 8700,
+          "departure": 8760
+        },
+        {
+          "station_id": "3390",
+          "arrival": 9360,
+          "departure": 9480
+        },
+        {
+          "station_id": "3360",
+          "arrival": 10200,
+          "departure": 10320
+        },
+        {
+          "station_id": "1250",
+          "arrival": 15840,
+          "departure": 15960
+        },
+        {
+          "station_id": "1210",
+          "arrival": 16860,
+          "departure": 17040
+        },
+        {
+          "station_id": "1100",
+          "arrival": 18840,
+          "departure": 19020
+        },
+        {
+          "station_id": "1080",
+          "arrival": 19560,
+          "departure": 19740
+        },
+        {
+          "station_id": "1040",
+          "arrival": 20760,
+          "departure": 20880
+        },
+        {
+          "station_id": "1020",
+          "arrival": 21240,
+          "departure": 21360
+        },
+        {
+          "station_id": "1000",
+          "arrival": 21900,
+          "departure": 22020
+        },
+        {
+          "station_id": "0990",
+          "arrival": 22440,
+          "departure": 22500
+        },
+        {
+          "station_id": "0960",
+          "arrival": 23100,
+          "departure": 23220
+        },
+        {
+          "station_id": "0930",
+          "arrival": 23820,
+          "departure": 23820
+        }
+      ]
+    },
+    {
       "train_id": "TC-PP-122",
       "train_no": "122",
       "train_type": "自強(推拉式自強號且無自行車車廂)",

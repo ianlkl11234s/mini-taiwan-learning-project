@@ -2,6 +2,49 @@
   "track_id": "OD-SHL-CY",
   "departures": [
     {
+      "train_id": "CK-3802",
+      "train_no": "3802",
+      "train_type": "區間快",
+      "train_type_code": "CK",
+      "departure_time": "06:45:00",
+      "od_track_id": "OD-SHL-CY",
+      "origin_station": "沙崙",
+      "destination_station": "善化",
+      "total_travel_time": 2460,
+      "stations": [
+        {
+          "station_id": "4272",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "4270",
+          "arrival": 420,
+          "departure": 480
+        },
+        {
+          "station_id": "4220",
+          "arrival": 1080,
+          "departure": 1200
+        },
+        {
+          "station_id": "4200",
+          "arrival": 1560,
+          "departure": 1620
+        },
+        {
+          "station_id": "4180",
+          "arrival": 2100,
+          "departure": 2220
+        },
+        {
+          "station_id": "4170",
+          "arrival": 2460,
+          "departure": 2460
+        }
+      ]
+    },
+    {
       "train_id": "LC-3782",
       "train_no": "3782",
       "train_type": "區間",

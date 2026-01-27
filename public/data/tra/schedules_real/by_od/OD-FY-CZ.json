@@ -2,6 +2,84 @@
   "track_id": "OD-FY-CZ",
   "departures": [
     {
+      "train_id": "LC-2101",
+      "train_no": "2101",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "06:21:00",
+      "od_track_id": "OD-FY-CZ",
+      "origin_station": "臺中",
+      "destination_station": "田中",
+      "total_travel_time": 3420,
+      "stations": [
+        {
+          "station_id": "3300",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "3310",
+          "arrival": 180,
+          "departure": 240
+        },
+        {
+          "station_id": "3320",
+          "arrival": 360,
+          "departure": 420
+        },
+        {
+          "station_id": "3330",
+          "arrival": 600,
+          "departure": 660
+        },
+        {
+          "station_id": "3325",
+          "arrival": 720,
+          "departure": 840
+        },
+        {
+          "station_id": "3330",
+          "arrival": 1020,
+          "departure": 1140
+        },
+        {
+          "station_id": "3360",
+          "arrival": 1500,
+          "departure": 1680
+        },
+        {
+          "station_id": "3370",
+          "arrival": 2040,
+          "departure": 2100
+        },
+        {
+          "station_id": "3380",
+          "arrival": 2340,
+          "departure": 2340
+        },
+        {
+          "station_id": "3390",
+          "arrival": 2580,
+          "departure": 2640
+        },
+        {
+          "station_id": "3400",
+          "arrival": 2820,
+          "departure": 2880
+        },
+        {
+          "station_id": "3410",
+          "arrival": 3060,
+          "departure": 3120
+        },
+        {
+          "station_id": "3420",
+          "arrival": 3420,
+          "departure": 3420
+        }
+      ]
+    },
+    {
       "train_id": "LC-2115",
       "train_no": "2115",
       "train_type": "區間",
@@ -704,6 +782,152 @@
           "station_id": "3360",
           "arrival": 2640,
           "departure": 2640
+        }
+      ]
+    },
+    {
+      "train_id": "CK-2023",
+      "train_no": "2023",
+      "train_type": "區間快",
+      "train_type_code": "CK",
+      "departure_time": "18:07:00",
+      "od_track_id": "OD-FY-CZ",
+      "origin_station": "臺中",
+      "destination_station": "斗六",
+      "total_travel_time": 4200,
+      "stations": [
+        {
+          "station_id": "3300",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "3320",
+          "arrival": 300,
+          "departure": 360
+        },
+        {
+          "station_id": "3325",
+          "arrival": 540,
+          "departure": 600
+        },
+        {
+          "station_id": "3360",
+          "arrival": 1140,
+          "departure": 1260
+        },
+        {
+          "station_id": "3390",
+          "arrival": 1920,
+          "departure": 1980
+        },
+        {
+          "station_id": "3410",
+          "arrival": 2280,
+          "departure": 2340
+        },
+        {
+          "station_id": "3420",
+          "arrival": 2580,
+          "departure": 2640
+        },
+        {
+          "station_id": "3430",
+          "arrival": 2940,
+          "departure": 3240
+        },
+        {
+          "station_id": "3450",
+          "arrival": 3600,
+          "departure": 3660
+        },
+        {
+          "station_id": "3470",
+          "arrival": 4200,
+          "departure": 4200
+        }
+      ]
+    },
+    {
+      "train_id": "CK-2027",
+      "train_no": "2027",
+      "train_type": "區間快",
+      "train_type_code": "CK",
+      "departure_time": "19:05:00",
+      "od_track_id": "OD-FY-CZ",
+      "origin_station": "臺中",
+      "destination_station": "嘉義",
+      "total_travel_time": 6000,
+      "stations": [
+        {
+          "station_id": "3300",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "3320",
+          "arrival": 300,
+          "departure": 360
+        },
+        {
+          "station_id": "3325",
+          "arrival": 540,
+          "departure": 600
+        },
+        {
+          "station_id": "3360",
+          "arrival": 1140,
+          "departure": 1320
+        },
+        {
+          "station_id": "3390",
+          "arrival": 1980,
+          "departure": 2100
+        },
+        {
+          "station_id": "3410",
+          "arrival": 2400,
+          "departure": 2460
+        },
+        {
+          "station_id": "3420",
+          "arrival": 2700,
+          "departure": 2760
+        },
+        {
+          "station_id": "3430",
+          "arrival": 3060,
+          "departure": 3360
+        },
+        {
+          "station_id": "3450",
+          "arrival": 3720,
+          "departure": 3780
+        },
+        {
+          "station_id": "3470",
+          "arrival": 4260,
+          "departure": 4320
+        },
+        {
+          "station_id": "3480",
+          "arrival": 4680,
+          "departure": 4740
+        },
+        {
+          "station_id": "4050",
+          "arrival": 5100,
+          "departure": 5160
+        },
+        {
+          "station_id": "4060",
+          "arrival": 5520,
+          "departure": 5580
+        },
+        {
+          "station_id": "4080",
+          "arrival": 6000,
+          "departure": 6000
         }
       ]
     }

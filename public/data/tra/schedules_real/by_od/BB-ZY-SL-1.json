@@ -2,228 +2,342 @@
   "track_id": "BB-ZY-SL-1",
   "departures": [
     {
-      "train_id": "LC-3705",
-      "train_no": "3705",
+      "train_id": "LC-3711",
+      "train_no": "3711",
       "train_type": "區間",
       "train_type_code": "LC",
-      "departure_time": "05:21:00",
+      "departure_time": "07:44:00",
       "od_track_id": "BB-ZY-SL-1",
-      "origin_station": "嘉義",
+      "origin_station": "善化",
       "destination_station": "沙崙",
-      "total_travel_time": 5760,
+      "total_travel_time": 2880,
       "stations": [
         {
-          "station_id": "4080",
+          "station_id": "4170",
           "arrival": 0,
           "departure": 0
         },
         {
-          "station_id": "4090",
-          "arrival": 360,
-          "departure": 360
+          "station_id": "4180",
+          "arrival": 240,
+          "departure": 240
         },
         {
-          "station_id": "4100",
-          "arrival": 540,
+          "station_id": "4190",
+          "arrival": 480,
           "departure": 540
         },
         {
-          "station_id": "4110",
+          "station_id": "4200",
           "arrival": 840,
           "departure": 900
         },
         {
-          "station_id": "4120",
-          "arrival": 1260,
-          "departure": 1380
+          "station_id": "4210",
+          "arrival": 1080,
+          "departure": 1140
         },
         {
-          "station_id": "4130",
-          "arrival": 1560,
-          "departure": 1560
+          "station_id": "4220",
+          "arrival": 1320,
+          "departure": 1440
         },
         {
-          "station_id": "4140",
+          "station_id": "4250",
           "arrival": 1800,
           "departure": 1800
         },
         {
-          "station_id": "4150",
-          "arrival": 2100,
-          "departure": 2160
-        },
-        {
-          "station_id": "4160",
-          "arrival": 2280,
-          "departure": 2340
-        },
-        {
-          "station_id": "4170",
-          "arrival": 2580,
-          "departure": 2700
-        },
-        {
-          "station_id": "4180",
-          "arrival": 2880,
-          "departure": 2880
-        },
-        {
-          "station_id": "4190",
-          "arrival": 3120,
-          "departure": 3180
-        },
-        {
-          "station_id": "4200",
-          "arrival": 3480,
-          "departure": 3540
-        },
-        {
-          "station_id": "4210",
-          "arrival": 3720,
-          "departure": 3780
-        },
-        {
-          "station_id": "4220",
-          "arrival": 3960,
-          "departure": 4380
-        },
-        {
-          "station_id": "4250",
-          "arrival": 4740,
-          "departure": 4740
-        },
-        {
           "station_id": "4260",
-          "arrival": 4860,
-          "departure": 4920
+          "arrival": 1920,
+          "departure": 1980
         },
         {
           "station_id": "4270",
-          "arrival": 5100,
-          "departure": 5160
+          "arrival": 2160,
+          "departure": 2280
         },
         {
           "station_id": "4271",
-          "arrival": 5400,
-          "departure": 5460
+          "arrival": 2520,
+          "departure": 2580
         },
         {
           "station_id": "4272",
-          "arrival": 5760,
-          "departure": 5760
+          "arrival": 2880,
+          "departure": 2880
         }
       ]
     },
     {
-      "train_id": "LC-3709",
-      "train_no": "3709",
+      "train_id": "LC-3713",
+      "train_no": "3713",
       "train_type": "區間",
       "train_type_code": "LC",
-      "departure_time": "06:32:00",
+      "departure_time": "08:17:00",
       "od_track_id": "BB-ZY-SL-1",
-      "origin_station": "嘉義",
+      "origin_station": "善化",
       "destination_station": "沙崙",
-      "total_travel_time": 5400,
+      "total_travel_time": 2820,
       "stations": [
         {
-          "station_id": "4080",
+          "station_id": "4170",
           "arrival": 0,
           "departure": 0
         },
         {
-          "station_id": "4090",
-          "arrival": 360,
-          "departure": 360
+          "station_id": "4180",
+          "arrival": 240,
+          "departure": 240
         },
         {
-          "station_id": "4100",
-          "arrival": 540,
+          "station_id": "4190",
+          "arrival": 480,
           "departure": 540
         },
         {
-          "station_id": "4110",
+          "station_id": "4200",
           "arrival": 840,
           "departure": 900
         },
         {
-          "station_id": "4120",
-          "arrival": 1260,
-          "departure": 1380
+          "station_id": "4210",
+          "arrival": 1080,
+          "departure": 1140
         },
         {
-          "station_id": "4130",
-          "arrival": 1560,
-          "departure": 1560
+          "station_id": "4220",
+          "arrival": 1320,
+          "departure": 1440
         },
         {
-          "station_id": "4140",
+          "station_id": "4250",
           "arrival": 1800,
           "departure": 1800
         },
         {
-          "station_id": "4150",
+          "station_id": "4260",
+          "arrival": 1920,
+          "departure": 1980
+        },
+        {
+          "station_id": "4270",
+          "arrival": 2160,
+          "departure": 2220
+        },
+        {
+          "station_id": "4271",
+          "arrival": 2460,
+          "departure": 2520
+        },
+        {
+          "station_id": "4272",
+          "arrival": 2820,
+          "departure": 2820
+        }
+      ]
+    },
+    {
+      "train_id": "LC-3715",
+      "train_no": "3715",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "08:47:00",
+      "od_track_id": "BB-ZY-SL-1",
+      "origin_station": "善化",
+      "destination_station": "沙崙",
+      "total_travel_time": 2820,
+      "stations": [
+        {
+          "station_id": "4170",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "4180",
+          "arrival": 240,
+          "departure": 240
+        },
+        {
+          "station_id": "4190",
+          "arrival": 480,
+          "departure": 540
+        },
+        {
+          "station_id": "4200",
+          "arrival": 840,
+          "departure": 900
+        },
+        {
+          "station_id": "4210",
+          "arrival": 1080,
+          "departure": 1140
+        },
+        {
+          "station_id": "4220",
+          "arrival": 1320,
+          "departure": 1440
+        },
+        {
+          "station_id": "4250",
+          "arrival": 1800,
+          "departure": 1800
+        },
+        {
+          "station_id": "4260",
+          "arrival": 1920,
+          "departure": 1980
+        },
+        {
+          "station_id": "4270",
+          "arrival": 2160,
+          "departure": 2220
+        },
+        {
+          "station_id": "4271",
+          "arrival": 2460,
+          "departure": 2520
+        },
+        {
+          "station_id": "4272",
+          "arrival": 2820,
+          "departure": 2820
+        }
+      ]
+    },
+    {
+      "train_id": "LC-3721",
+      "train_no": "3721",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "09:23:00",
+      "od_track_id": "BB-ZY-SL-1",
+      "origin_station": "善化",
+      "destination_station": "沙崙",
+      "total_travel_time": 2760,
+      "stations": [
+        {
+          "station_id": "4170",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "4180",
+          "arrival": 240,
+          "departure": 240
+        },
+        {
+          "station_id": "4190",
+          "arrival": 480,
+          "departure": 540
+        },
+        {
+          "station_id": "4200",
+          "arrival": 840,
+          "departure": 900
+        },
+        {
+          "station_id": "4210",
+          "arrival": 1080,
+          "departure": 1140
+        },
+        {
+          "station_id": "4220",
+          "arrival": 1320,
+          "departure": 1380
+        },
+        {
+          "station_id": "4250",
+          "arrival": 1740,
+          "departure": 1740
+        },
+        {
+          "station_id": "4260",
+          "arrival": 1860,
+          "departure": 1920
+        },
+        {
+          "station_id": "4270",
           "arrival": 2100,
           "departure": 2160
         },
         {
-          "station_id": "4160",
-          "arrival": 2280,
-          "departure": 2340
+          "station_id": "4271",
+          "arrival": 2400,
+          "departure": 2460
         },
         {
+          "station_id": "4272",
+          "arrival": 2760,
+          "departure": 2760
+        }
+      ]
+    },
+    {
+      "train_id": "LC-3725",
+      "train_no": "3725",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "10:25:00",
+      "od_track_id": "BB-ZY-SL-1",
+      "origin_station": "善化",
+      "destination_station": "沙崙",
+      "total_travel_time": 3720,
+      "stations": [
+        {
           "station_id": "4170",
-          "arrival": 2580,
-          "departure": 2640
+          "arrival": 0,
+          "departure": 0
         },
         {
           "station_id": "4180",
-          "arrival": 2820,
-          "departure": 2820
+          "arrival": 240,
+          "departure": 240
         },
         {
           "station_id": "4190",
+          "arrival": 480,
+          "departure": 600
+        },
+        {
+          "station_id": "4200",
+          "arrival": 840,
+          "departure": 900
+        },
+        {
+          "station_id": "4210",
+          "arrival": 1080,
+          "departure": 1140
+        },
+        {
+          "station_id": "4220",
+          "arrival": 1380,
+          "departure": 2280
+        },
+        {
+          "station_id": "4250",
+          "arrival": 2700,
+          "departure": 2700
+        },
+        {
+          "station_id": "4260",
+          "arrival": 2820,
+          "departure": 2880
+        },
+        {
+          "station_id": "4270",
           "arrival": 3060,
           "departure": 3120
         },
         {
-          "station_id": "4200",
-          "arrival": 3420,
-          "departure": 3480
-        },
-        {
-          "station_id": "4210",
-          "arrival": 3660,
-          "departure": 3720
-        },
-        {
-          "station_id": "4220",
-          "arrival": 3900,
-          "departure": 4020
-        },
-        {
-          "station_id": "4250",
-          "arrival": 4380,
-          "departure": 4380
-        },
-        {
-          "station_id": "4260",
-          "arrival": 4500,
-          "departure": 4560
-        },
-        {
-          "station_id": "4270",
-          "arrival": 4740,
-          "departure": 4800
-        },
-        {
           "station_id": "4271",
-          "arrival": 5040,
-          "departure": 5100
+          "arrival": 3360,
+          "departure": 3420
         },
         {
           "station_id": "4272",
-          "arrival": 5400,
-          "departure": 5400
+          "arrival": 3720,
+          "departure": 3720
         }
       ]
     },
@@ -281,6 +395,142 @@
       ]
     },
     {
+      "train_id": "LC-3735",
+      "train_no": "3735",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "12:31:00",
+      "od_track_id": "BB-ZY-SL-1",
+      "origin_station": "善化",
+      "destination_station": "沙崙",
+      "total_travel_time": 2820,
+      "stations": [
+        {
+          "station_id": "4170",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "4180",
+          "arrival": 240,
+          "departure": 240
+        },
+        {
+          "station_id": "4190",
+          "arrival": 480,
+          "departure": 540
+        },
+        {
+          "station_id": "4200",
+          "arrival": 840,
+          "departure": 900
+        },
+        {
+          "station_id": "4210",
+          "arrival": 1080,
+          "departure": 1140
+        },
+        {
+          "station_id": "4220",
+          "arrival": 1320,
+          "departure": 1440
+        },
+        {
+          "station_id": "4250",
+          "arrival": 1800,
+          "departure": 1800
+        },
+        {
+          "station_id": "4260",
+          "arrival": 1920,
+          "departure": 1980
+        },
+        {
+          "station_id": "4270",
+          "arrival": 2160,
+          "departure": 2220
+        },
+        {
+          "station_id": "4271",
+          "arrival": 2460,
+          "departure": 2520
+        },
+        {
+          "station_id": "4272",
+          "arrival": 2820,
+          "departure": 2820
+        }
+      ]
+    },
+    {
+      "train_id": "LC-3743",
+      "train_no": "3743",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "14:18:00",
+      "od_track_id": "BB-ZY-SL-1",
+      "origin_station": "善化",
+      "destination_station": "沙崙",
+      "total_travel_time": 2820,
+      "stations": [
+        {
+          "station_id": "4170",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "4180",
+          "arrival": 240,
+          "departure": 240
+        },
+        {
+          "station_id": "4190",
+          "arrival": 480,
+          "departure": 540
+        },
+        {
+          "station_id": "4200",
+          "arrival": 840,
+          "departure": 900
+        },
+        {
+          "station_id": "4210",
+          "arrival": 1080,
+          "departure": 1140
+        },
+        {
+          "station_id": "4220",
+          "arrival": 1320,
+          "departure": 1440
+        },
+        {
+          "station_id": "4250",
+          "arrival": 1800,
+          "departure": 1800
+        },
+        {
+          "station_id": "4260",
+          "arrival": 1920,
+          "departure": 1980
+        },
+        {
+          "station_id": "4270",
+          "arrival": 2160,
+          "departure": 2220
+        },
+        {
+          "station_id": "4271",
+          "arrival": 2460,
+          "departure": 2520
+        },
+        {
+          "station_id": "4272",
+          "arrival": 2820,
+          "departure": 2820
+        }
+      ]
+    },
+    {
       "train_id": "LC-3745",
       "train_no": "3745",
       "train_type": "區間",
@@ -330,6 +580,74 @@
           "station_id": "4272",
           "arrival": 1980,
           "departure": 1980
+        }
+      ]
+    },
+    {
+      "train_id": "LC-3751",
+      "train_no": "3751",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "15:42:00",
+      "od_track_id": "BB-ZY-SL-1",
+      "origin_station": "善化",
+      "destination_station": "沙崙",
+      "total_travel_time": 2820,
+      "stations": [
+        {
+          "station_id": "4170",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "4180",
+          "arrival": 240,
+          "departure": 240
+        },
+        {
+          "station_id": "4190",
+          "arrival": 480,
+          "departure": 540
+        },
+        {
+          "station_id": "4200",
+          "arrival": 840,
+          "departure": 900
+        },
+        {
+          "station_id": "4210",
+          "arrival": 1080,
+          "departure": 1140
+        },
+        {
+          "station_id": "4220",
+          "arrival": 1320,
+          "departure": 1440
+        },
+        {
+          "station_id": "4250",
+          "arrival": 1800,
+          "departure": 1800
+        },
+        {
+          "station_id": "4260",
+          "arrival": 1920,
+          "departure": 1980
+        },
+        {
+          "station_id": "4270",
+          "arrival": 2160,
+          "departure": 2220
+        },
+        {
+          "station_id": "4271",
+          "arrival": 2460,
+          "departure": 2520
+        },
+        {
+          "station_id": "4272",
+          "arrival": 2820,
+          "departure": 2820
         }
       ]
     },
@@ -440,6 +758,74 @@
       ]
     },
     {
+      "train_id": "LC-3757",
+      "train_no": "3757",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "17:06:00",
+      "od_track_id": "BB-ZY-SL-1",
+      "origin_station": "善化",
+      "destination_station": "沙崙",
+      "total_travel_time": 2820,
+      "stations": [
+        {
+          "station_id": "4170",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "4180",
+          "arrival": 240,
+          "departure": 240
+        },
+        {
+          "station_id": "4190",
+          "arrival": 480,
+          "departure": 540
+        },
+        {
+          "station_id": "4200",
+          "arrival": 840,
+          "departure": 900
+        },
+        {
+          "station_id": "4210",
+          "arrival": 1080,
+          "departure": 1140
+        },
+        {
+          "station_id": "4220",
+          "arrival": 1320,
+          "departure": 1440
+        },
+        {
+          "station_id": "4250",
+          "arrival": 1800,
+          "departure": 1800
+        },
+        {
+          "station_id": "4260",
+          "arrival": 1920,
+          "departure": 1980
+        },
+        {
+          "station_id": "4270",
+          "arrival": 2160,
+          "departure": 2220
+        },
+        {
+          "station_id": "4271",
+          "arrival": 2460,
+          "departure": 2520
+        },
+        {
+          "station_id": "4272",
+          "arrival": 2820,
+          "departure": 2820
+        }
+      ]
+    },
+    {
       "train_id": "LC-3765",
       "train_no": "3765",
       "train_type": "區間",
@@ -489,6 +875,142 @@
           "station_id": "4272",
           "arrival": 2040,
           "departure": 2040
+        }
+      ]
+    },
+    {
+      "train_id": "LC-3771",
+      "train_no": "3771",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "19:41:00",
+      "od_track_id": "BB-ZY-SL-1",
+      "origin_station": "善化",
+      "destination_station": "沙崙",
+      "total_travel_time": 2760,
+      "stations": [
+        {
+          "station_id": "4170",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "4180",
+          "arrival": 180,
+          "departure": 180
+        },
+        {
+          "station_id": "4190",
+          "arrival": 420,
+          "departure": 480
+        },
+        {
+          "station_id": "4200",
+          "arrival": 780,
+          "departure": 840
+        },
+        {
+          "station_id": "4210",
+          "arrival": 1020,
+          "departure": 1080
+        },
+        {
+          "station_id": "4220",
+          "arrival": 1260,
+          "departure": 1380
+        },
+        {
+          "station_id": "4250",
+          "arrival": 1740,
+          "departure": 1740
+        },
+        {
+          "station_id": "4260",
+          "arrival": 1860,
+          "departure": 1920
+        },
+        {
+          "station_id": "4270",
+          "arrival": 2100,
+          "departure": 2160
+        },
+        {
+          "station_id": "4271",
+          "arrival": 2400,
+          "departure": 2460
+        },
+        {
+          "station_id": "4272",
+          "arrival": 2760,
+          "departure": 2760
+        }
+      ]
+    },
+    {
+      "train_id": "LC-3777",
+      "train_no": "3777",
+      "train_type": "區間",
+      "train_type_code": "LC",
+      "departure_time": "20:50:00",
+      "od_track_id": "BB-ZY-SL-1",
+      "origin_station": "善化",
+      "destination_station": "沙崙",
+      "total_travel_time": 3240,
+      "stations": [
+        {
+          "station_id": "4170",
+          "arrival": 0,
+          "departure": 0
+        },
+        {
+          "station_id": "4180",
+          "arrival": 240,
+          "departure": 240
+        },
+        {
+          "station_id": "4190",
+          "arrival": 480,
+          "departure": 540
+        },
+        {
+          "station_id": "4200",
+          "arrival": 840,
+          "departure": 1200
+        },
+        {
+          "station_id": "4210",
+          "arrival": 1440,
+          "departure": 1500
+        },
+        {
+          "station_id": "4220",
+          "arrival": 1680,
+          "departure": 1860
+        },
+        {
+          "station_id": "4250",
+          "arrival": 2220,
+          "departure": 2220
+        },
+        {
+          "station_id": "4260",
+          "arrival": 2340,
+          "departure": 2400
+        },
+        {
+          "station_id": "4270",
+          "arrival": 2580,
+          "departure": 2640
+        },
+        {
+          "station_id": "4271",
+          "arrival": 2880,
+          "departure": 2940
+        },
+        {
+          "station_id": "4272",
+          "arrival": 3240,
+          "departure": 3240
         }
       ]
     }

@@ -274,6 +274,27 @@ def main():
     ], 'OD-TT-NK', all_progress)
     save_track('OD-TT-NK', coords, progress, ['SK-TT-ZY-0', 'BB-CZ-KL-0'], all_progress)
 
+    # ============================================================
+    # 7. OD-CY-SHL: 嘉義→沙崙 (主線+沙崙支線)
+    #    修正：原軌道誤走主線到新左營，應在臺南轉沙崙支線
+    # ============================================================
+    print("\n[7] OD-CY-SHL: 嘉義→沙崙 (主線+沙崙支線)")
+    coords, progress = build_crossline_track([
+        {'source_track': 'BB-KL-CZ-1', 'origin': '4080', 'dest': '4220'},  # 主線: 嘉義→臺南
+        {'source_track': 'SH-TN-SL', 'origin': '4220', 'dest': '4272'},    # 沙崙支線: 臺南→沙崙
+    ], 'OD-CY-SHL', all_progress)
+    save_track('OD-CY-SHL', coords, progress, ['BB-KL-CZ-1', 'SH-TN-SL'], all_progress)
+
+    # ============================================================
+    # 8. OD-SHL-CY: 沙崙→嘉義 (沙崙支線+主線)
+    # ============================================================
+    print("\n[8] OD-SHL-CY: 沙崙→嘉義 (沙崙支線+主線)")
+    coords, progress = build_crossline_track([
+        {'source_track': 'SH-SL-TN', 'origin': '4272', 'dest': '4220'},    # 沙崙支線: 沙崙→臺南
+        {'source_track': 'BB-CZ-KL-0', 'origin': '4220', 'dest': '4080'},  # 主線: 臺南→嘉義
+    ], 'OD-SHL-CY', all_progress)
+    save_track('OD-SHL-CY', coords, progress, ['SH-SL-TN', 'BB-CZ-KL-0'], all_progress)
+
     # 儲存 station_progress
     save_progress(all_progress)
     print("\n✓ 所有跨線軌道建立完成")

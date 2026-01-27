@@ -61,6 +61,11 @@
           "departure": 0
         },
         {
+          "station_id": "4271",
+          "arrival": 240,
+          "departure": 240
+        },
+        {
           "station_id": "4270",
           "arrival": 480,
           "departure": 540
@@ -69,6 +74,11 @@
           "station_id": "4260",
           "arrival": 720,
           "departure": 780
+        },
+        {
+          "station_id": "4250",
+          "arrival": 900,
+          "departure": 960
         },
         {
           "station_id": "4220",
@@ -119,6 +129,11 @@
           "departure": 0
         },
         {
+          "station_id": "4271",
+          "arrival": 240,
+          "departure": 240
+        },
+        {
           "station_id": "4270",
           "arrival": 480,
           "departure": 600
@@ -127,6 +142,11 @@
           "station_id": "4260",
           "arrival": 780,
           "departure": 840
+        },
+        {
+          "station_id": "4250",
+          "arrival": 960,
+          "departure": 1020
         },
         {
           "station_id": "4220",
@@ -177,6 +197,11 @@
           "departure": 0
         },
         {
+          "station_id": "4271",
+          "arrival": 240,
+          "departure": 240
+        },
+        {
           "station_id": "4270",
           "arrival": 480,
           "departure": 540
@@ -185,6 +210,11 @@
           "station_id": "4260",
           "arrival": 720,
           "departure": 780
+        },
+        {
+          "station_id": "4250",
+          "arrival": 900,
+          "departure": 960
         },
         {
           "station_id": "4220",
@@ -235,6 +265,11 @@
           "departure": 0
         },
         {
+          "station_id": "4271",
+          "arrival": 240,
+          "departure": 240
+        },
+        {
           "station_id": "4270",
           "arrival": 480,
           "departure": 540
@@ -243,6 +278,11 @@
           "station_id": "4260",
           "arrival": 720,
           "departure": 780
+        },
+        {
+          "station_id": "4250",
+          "arrival": 900,
+          "departure": 960
         },
         {
           "station_id": "4220",
@@ -293,6 +333,11 @@
           "departure": 0
         },
         {
+          "station_id": "4271",
+          "arrival": 240,
+          "departure": 240
+        },
+        {
           "station_id": "4270",
           "arrival": 480,
           "departure": 540
@@ -301,6 +346,11 @@
           "station_id": "4260",
           "arrival": 720,
           "departure": 780
+        },
+        {
+          "station_id": "4250",
+          "arrival": 900,
+          "departure": 960
         },
         {
           "station_id": "4220",
@@ -351,6 +401,11 @@
           "departure": 0
         },
         {
+          "station_id": "4271",
+          "arrival": 240,
+          "departure": 240
+        },
+        {
           "station_id": "4270",
           "arrival": 480,
           "departure": 540
@@ -359,6 +414,11 @@
           "station_id": "4260",
           "arrival": 720,
           "departure": 780
+        },
+        {
+          "station_id": "4250",
+          "arrival": 900,
+          "departure": 960
         },
         {
           "station_id": "4220",
@@ -394,6 +454,11 @@
           "departure": 0
         },
         {
+          "station_id": "4271",
+          "arrival": 240,
+          "departure": 240
+        },
+        {
           "station_id": "4270",
           "arrival": 480,
           "departure": 540
@@ -402,6 +467,11 @@
           "station_id": "4260",
           "arrival": 720,
           "departure": 780
+        },
+        {
+          "station_id": "4250",
+          "arrival": 900,
+          "departure": 960
         },
         {
           "station_id": "4220",
@@ -437,6 +507,11 @@
           "departure": 0
         },
         {
+          "station_id": "4271",
+          "arrival": 240,
+          "departure": 240
+        },
+        {
           "station_id": "4270",
           "arrival": 480,
           "departure": 540
@@ -445,6 +520,11 @@
           "station_id": "4260",
           "arrival": 720,
           "departure": 780
+        },
+        {
+          "station_id": "4250",
+          "arrival": 900,
+          "departure": 960
         },
         {
           "station_id": "4220",
@@ -495,6 +575,11 @@
           "departure": 0
         },
         {
+          "station_id": "4271",
+          "arrival": 240,
+          "departure": 240
+        },
+        {
           "station_id": "4270",
           "arrival": 480,
           "departure": 600
@@ -503,6 +588,11 @@
           "station_id": "4260",
           "arrival": 780,
           "departure": 840
+        },
+        {
+          "station_id": "4250",
+          "arrival": 960,
+          "departure": 1020
         },
         {
           "station_id": "4220",
@@ -553,6 +643,11 @@
           "departure": 0
         },
         {
+          "station_id": "4271",
+          "arrival": 240,
+          "departure": 240
+        },
+        {
           "station_id": "4270",
           "arrival": 480,
           "departure": 540
@@ -561,6 +656,11 @@
           "station_id": "4260",
           "arrival": 720,
           "departure": 780
+        },
+        {
+          "station_id": "4250",
+          "arrival": 900,
+          "departure": 960
         },
         {
           "station_id": "4220",
@@ -596,6 +696,11 @@
           "departure": 0
         },
         {
+          "station_id": "4271",
+          "arrival": 240,
+          "departure": 240
+        },
+        {
           "station_id": "4270",
           "arrival": 480,
           "departure": 540
@@ -604,6 +709,11 @@
           "station_id": "4260",
           "arrival": 720,
           "departure": 780
+        },
+        {
+          "station_id": "4250",
+          "arrival": 900,
+          "departure": 960
         },
         {
           "station_id": "4220",
@@ -654,6 +764,11 @@
           "departure": 0
         },
         {
+          "station_id": "4271",
+          "arrival": 240,
+          "departure": 240
+        },
+        {
           "station_id": "4270",
           "arrival": 480,
           "departure": 540
@@ -662,6 +777,11 @@
           "station_id": "4260",
           "arrival": 720,
           "departure": 780
+        },
+        {
+          "station_id": "4250",
+          "arrival": 900,
+          "departure": 900
         },
         {
           "station_id": "4220",
@@ -697,6 +817,11 @@
           "departure": 0
         },
         {
+          "station_id": "4271",
+          "arrival": 240,
+          "departure": 240
+        },
+        {
           "station_id": "4270",
           "arrival": 480,
           "departure": 600
@@ -705,6 +830,11 @@
           "station_id": "4260",
           "arrival": 780,
           "departure": 840
+        },
+        {
+          "station_id": "4250",
+          "arrival": 960,
+          "departure": 1020
         },
         {
           "station_id": "4220",
@@ -755,6 +885,11 @@
           "departure": 0
         },
         {
+          "station_id": "4271",
+          "arrival": 240,
+          "departure": 240
+        },
+        {
           "station_id": "4270",
           "arrival": 480,
           "departure": 540
@@ -763,6 +898,11 @@
           "station_id": "4260",
           "arrival": 720,
           "departure": 780
+        },
+        {
+          "station_id": "4250",
+          "arrival": 900,
+          "departure": 960
         },
         {
           "station_id": "4220",
@@ -798,6 +938,11 @@
           "departure": 0
         },
         {
+          "station_id": "4271",
+          "arrival": 240,
+          "departure": 240
+        },
+        {
           "station_id": "4270",
           "arrival": 480,
           "departure": 540
@@ -806,6 +951,11 @@
           "station_id": "4260",
           "arrival": 720,
           "departure": 780
+        },
+        {
+          "station_id": "4250",
+          "arrival": 900,
+          "departure": 960
         },
         {
           "station_id": "4220",
@@ -856,6 +1006,11 @@
           "departure": 0
         },
         {
+          "station_id": "4271",
+          "arrival": 240,
+          "departure": 240
+        },
+        {
           "station_id": "4270",
           "arrival": 480,
           "departure": 540
@@ -864,6 +1019,11 @@
           "station_id": "4260",
           "arrival": 720,
           "departure": 780
+        },
+        {
+          "station_id": "4250",
+          "arrival": 900,
+          "departure": 960
         },
         {
           "station_id": "4220",
@@ -899,6 +1059,11 @@
           "departure": 0
         },
         {
+          "station_id": "4271",
+          "arrival": 240,
+          "departure": 240
+        },
+        {
           "station_id": "4270",
           "arrival": 480,
           "departure": 540
@@ -907,6 +1072,11 @@
           "station_id": "4260",
           "arrival": 720,
           "departure": 780
+        },
+        {
+          "station_id": "4250",
+          "arrival": 900,
+          "departure": 960
         },
         {
           "station_id": "4220",
@@ -957,6 +1127,11 @@
           "departure": 0
         },
         {
+          "station_id": "4271",
+          "arrival": 240,
+          "departure": 240
+        },
+        {
           "station_id": "4270",
           "arrival": 480,
           "departure": 540
@@ -965,6 +1140,11 @@
           "station_id": "4260",
           "arrival": 720,
           "departure": 780
+        },
+        {
+          "station_id": "4250",
+          "arrival": 900,
+          "departure": 960
         },
         {
           "station_id": "4220",
@@ -1015,6 +1195,11 @@
           "departure": 0
         },
         {
+          "station_id": "4271",
+          "arrival": 240,
+          "departure": 240
+        },
+        {
           "station_id": "4270",
           "arrival": 480,
           "departure": 540
@@ -1023,6 +1208,11 @@
           "station_id": "4260",
           "arrival": 720,
           "departure": 780
+        },
+        {
+          "station_id": "4250",
+          "arrival": 900,
+          "departure": 900
         },
         {
           "station_id": "4220",
@@ -1073,6 +1263,11 @@
           "departure": 0
         },
         {
+          "station_id": "4271",
+          "arrival": 240,
+          "departure": 240
+        },
+        {
           "station_id": "4270",
           "arrival": 480,
           "departure": 720
@@ -1081,6 +1276,11 @@
           "station_id": "4260",
           "arrival": 900,
           "departure": 960
+        },
+        {
+          "station_id": "4250",
+          "arrival": 1080,
+          "departure": 1140
         },
         {
           "station_id": "4220",
@@ -1131,6 +1331,11 @@
           "departure": 0
         },
         {
+          "station_id": "4271",
+          "arrival": 240,
+          "departure": 240
+        },
+        {
           "station_id": "4270",
           "arrival": 480,
           "departure": 540
@@ -1139,6 +1344,11 @@
           "station_id": "4260",
           "arrival": 720,
           "departure": 780
+        },
+        {
+          "station_id": "4250",
+          "arrival": 900,
+          "departure": 960
         },
         {
           "station_id": "4220",

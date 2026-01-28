@@ -892,7 +892,7 @@ function App() {
         'line-emissive-strength': 1.0,
       },
     });
-  }, [mapLoaded, krtcTracks, visibleKrtcLines, styleVersion]);
+  }, [mapLoaded, krtcTracks, styleVersion]);
 
   // 更新高雄捷運軌道可見性
   useEffect(() => {
@@ -958,7 +958,7 @@ function App() {
         'text-emissive-strength': 1.0,
       },
     });
-  }, [mapLoaded, krtcStations, visibleKrtcLines, styleVersion]);
+  }, [mapLoaded, krtcStations, styleVersion]);
 
   // 更新高雄捷運車站可見性
   useEffect(() => {
@@ -1003,7 +1003,7 @@ function App() {
         'line-emissive-strength': 1.0,
       },
     });
-  }, [mapLoaded, klrtTracks, visibleKrtcLines, styleVersion]);
+  }, [mapLoaded, klrtTracks, styleVersion]);
 
   // 更新高雄輕軌軌道可見性
   useEffect(() => {
@@ -1064,7 +1064,7 @@ function App() {
         'text-emissive-strength': 1.0,
       },
     });
-  }, [mapLoaded, klrtStations, visibleKrtcLines, styleVersion]);
+  }, [mapLoaded, klrtStations, styleVersion]);
 
   // 更新高雄輕軌車站可見性
   useEffect(() => {
@@ -1109,7 +1109,7 @@ function App() {
         'line-emissive-strength': 1.0,
       },
     });
-  }, [mapLoaded, tmrtTracks, visibleTmrtLines, styleVersion]);
+  }, [mapLoaded, tmrtTracks, styleVersion]);
 
   // 更新台中捷運軌道可見性
   useEffect(() => {
@@ -1174,7 +1174,7 @@ function App() {
         'text-emissive-strength': 1.0,
       },
     });
-  }, [mapLoaded, tmrtStations, visibleTmrtLines, styleVersion]);
+  }, [mapLoaded, tmrtStations, styleVersion]);
 
   // 更新台中捷運車站可見性
   useEffect(() => {
@@ -1549,7 +1549,6 @@ function App() {
   useEffect(() => {
     if (!map.current || !mapLoaded || !use3DMode) return;
     if (krtcTrackMap.size === 0) return;
-    if (visibleKrtcLines.size === 0) return;  // 全部隱藏時不顯示 3D 圖層
 
     // 建立高雄捷運 3D 圖層
     const layer = new Krtc3DLayer(krtcTrackMap);
@@ -1566,7 +1565,7 @@ function App() {
       }
       krtc3DLayerRef.current = null;
     };
-  }, [mapLoaded, krtcTrackMap, krtcStationCoordinates, use3DMode, visibleKrtcLines, handleSelectTrain, styleVersion]);
+  }, [mapLoaded, krtcTrackMap, krtcStationCoordinates, use3DMode, handleSelectTrain, styleVersion]);
 
   // 更新高雄捷運 3D 圖層列車資料
   useEffect(() => {
@@ -1645,7 +1644,6 @@ function App() {
   useEffect(() => {
     if (!map.current || !mapLoaded || !use3DMode) return;
     if (tmrtTrackMap.size === 0) return;
-    if (visibleTmrtLines.size === 0) return;  // 全部隱藏時不顯示 3D 圖層
 
     // 建立台中捷運 3D 圖層
     const layer = new Tmrt3DLayer(tmrtTrackMap);
@@ -1662,7 +1660,7 @@ function App() {
       }
       tmrt3DLayerRef.current = null;
     };
-  }, [mapLoaded, tmrtTrackMap, tmrtStationCoordinates, use3DMode, visibleTmrtLines, handleSelectTrain, styleVersion]);
+  }, [mapLoaded, tmrtTrackMap, tmrtStationCoordinates, use3DMode, handleSelectTrain, styleVersion]);
 
   // 更新台中捷運 3D 圖層列車資料
   useEffect(() => {

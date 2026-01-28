@@ -565,10 +565,11 @@ function App() {
         pitch: currentPitch,
       });
     } else {
-      // 2D 模式：使用平滑動畫
-      map.current.easeTo({
+      // 2D 模式：使用 jumpTo 瞬間置中，避免動畫延遲導致列車偏離中心
+      // 加 bottom padding 補償底部時間軸，讓列車在可視區域中央偏上
+      map.current.jumpTo({
         center: [lng, lat],
-        duration: 300,
+        padding: { top: 0, bottom: 120, left: 0, right: 0 },
       });
     }
   }, [mapLoaded, isFollowing, selectedTrain, use3DMode, interactionVersion]);

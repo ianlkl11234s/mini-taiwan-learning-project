@@ -1758,7 +1758,6 @@ function App() {
   useEffect(() => {
     if (!symbolLayerReady || !trainSymbolLayerRef.current) return;
     if (!useSymbolLayer || use3DMode) return;
-    if (allTrainFeatures.length === 0) return;
 
     trainSymbolLayerRef.current.updateTrains(allTrainFeatures);
   }, [allTrainFeatures, useSymbolLayer, use3DMode, symbolLayerReady]);

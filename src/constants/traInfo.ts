@@ -416,6 +416,43 @@ export function getTraStationName(stationId: string): string {
 /**
  * 取得線路名稱（含方向）
  */
+/**
+ * 根據起終站推斷路線名稱
+ */
+export function inferLineNameFromStations(originId: string, destId: string): string {
+  const originNum = parseInt(originId, 10);
+  const destNum = parseInt(destId, 10);
+
+  // 花蓮/臺東線 (6000-7100)
+  if ((originNum >= 6000 && originNum <= 7100) || (destNum >= 6000 && destNum <= 7100)) {
+    // 只有起終點都在東部才顯示臺東/北迴線
+    if (originNum >= 6000 && originNum <= 7130 && destNum >= 6000 && destNum <= 7130) {
+      if (originNum >= 6000 && originNum < 7000) {
+        return '臺東線';
+      }
+      return '北迴線';
+    }
+  }
+
+  // 宜蘭線 (7130-7390)
+  if ((originNum >= 7130 && originNum <= 7390) || (destNum >= 7130 && destNum <= 7390)) {
+    // 只有起終點都在宜蘭線範圍才顯示宜蘭線
+    if (originNum >= 7130 && originNum <= 7390 && destNum >= 7130 && destNum <= 7390) {
+      return '宜蘭線';
+    }
+  }
+
+  // 屏東線 (4340-5000+)
+  if ((originNum >= 4340 && originNum <= 5100) || (destNum >= 4340 && destNum <= 5100)) {
+    if (originNum >= 4340 && destNum >= 4340) {
+      return '屏東線';
+    }
+  }
+
+  // 預設西部幹線
+  return '西部幹線';
+}
+
 export function getTraLineName(trackId: string): string {
   const lineId = getTraLineId(trackId);
   const lineName = TRA_LINE_NAMES[lineId] || '台鐵';
@@ -425,6 +462,20 @@ export function getTraLineName(trackId: string): string {
   }
   const directionName = getTraDirectionName(trackId);
   return `${lineName} (${directionName})`;
+}
+
+/**
+ * 取得線路名稱（根據起終站推斷，用於 OD 軌道）
+ */
+export function getTraLineNameFromStations(trackId: string, originId?: string, destId?: string): string {
+  const lineId = getTraLineId(trackId);
+
+  // OD/BB/SP 軌道：根據起終站推斷路線
+  if ((lineId === 'OD' || lineId === 'BB' || lineId === 'SP') && originId && destId) {
+    return inferLineNameFromStations(originId, destId);
+  }
+
+  return getTraLineName(trackId);
 }
 
 /**

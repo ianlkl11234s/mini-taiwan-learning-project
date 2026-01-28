@@ -14,6 +14,12 @@ export const TRA_LINE_NAMES: Record<string, string> = {
   YL: '宜蘭線',
   BH: '北迴線',
   TL: '臺東線',
+  SK: '南迴線',
+  PT: '屏東線',
+  SA: '深澳線',
+  OD: '台鐵',      // O-D 軌道
+  BB: '台鐵',      // 合併軌道
+  SP: '台鐵',      // 跨線軌道
 };
 
 // 方向名稱（依線路區分）
@@ -58,6 +64,22 @@ export const TRA_DIRECTION_NAMES: Record<string, Record<string, string>> = {
     '0': '往臺東',
     '1': '往花蓮',
   },
+  SK: {
+    '0': '往新左營',
+    '1': '往臺東',
+  },
+  PT: {
+    '0': '往枋寮',
+    '1': '往新左營',
+  },
+  SA: {
+    '0': '往八斗子',
+    '1': '往瑞芳',
+  },
+  // O-D/BB/SP 軌道不顯示方向
+  OD: {},
+  BB: {},
+  SP: {},
 };
 
 // 台鐵主色調（統一灰色）
@@ -76,6 +98,12 @@ export const TRA_TRACK_COLORS: Record<string, string> = {
   YL: '#7B7B7B', // 宜蘭線
   BH: '#7B7B7B', // 北迴線
   TL: '#7B7B7B', // 臺東線
+  SK: '#7B7B7B', // 南迴線
+  PT: '#7B7B7B', // 屏東線
+  SA: '#7B7B7B', // 深澳線
+  OD: '#7B7B7B', // O-D 軌道
+  BB: '#7B7B7B', // 合併軌道
+  SP: '#7B7B7B', // 跨線軌道
 };
 
 // 列車顏色（統一灰色）
@@ -391,6 +419,10 @@ export function getTraStationName(stationId: string): string {
 export function getTraLineName(trackId: string): string {
   const lineId = getTraLineId(trackId);
   const lineName = TRA_LINE_NAMES[lineId] || '台鐵';
+  // OD/BB/SP 軌道不顯示方向（方向已包含在 trackId 中）
+  if (lineId === 'OD' || lineId === 'BB' || lineId === 'SP') {
+    return lineName;
+  }
   const directionName = getTraDirectionName(trackId);
   return `${lineName} (${directionName})`;
 }

@@ -27,15 +27,23 @@ export function TrainInfoPanel({ train, stationNames, onClose, visualTheme = 'da
   const isKrtc = train.trackId.startsWith('KRTC');
   const isKlrt = train.trackId.startsWith('KLRT');
   const isTmrt = train.trackId.startsWith('TMRT');
-  const isTra = train.trackId.startsWith('NW') ||
-                train.trackId.startsWith('LJ') ||
-                train.trackId.startsWith('SH') ||
-                train.trackId.startsWith('WL') ||
-                train.trackId.startsWith('PX') ||
-                train.trackId.startsWith('JJ') ||
-                train.trackId.startsWith('CZ') ||
-                train.trackId.startsWith('YL') ||
-                train.trackId.startsWith('BH');
+  // TRA 路線判斷（包含所有可能的 trackId 前綴）
+  const isTra = train.trackId.startsWith('NW') ||   // 內灣線
+                train.trackId.startsWith('LJ') ||   // 六家線
+                train.trackId.startsWith('SH') ||   // 沙崙線
+                train.trackId.startsWith('WL') ||   // 西部幹線
+                train.trackId.startsWith('PX') ||   // 平溪線
+                train.trackId.startsWith('JJ') ||   // 集集線
+                train.trackId.startsWith('CZ') ||   // 成追線
+                train.trackId.startsWith('YL') ||   // 宜蘭線
+                train.trackId.startsWith('BH') ||   // 北迴線
+                train.trackId.startsWith('TL') ||   // 臺東線
+                train.trackId.startsWith('SK') ||   // 南迴線
+                train.trackId.startsWith('PT') ||   // 屏東線
+                train.trackId.startsWith('SA') ||   // 深澳線
+                train.trackId.startsWith('OD') ||   // O-D 軌道
+                train.trackId.startsWith('BB') ||   // 合併軌道
+                train.trackId.startsWith('SP');
 
   // 根據類型取得線路資訊
   const lineColor = isThsr

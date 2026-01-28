@@ -378,6 +378,8 @@ export function getTraLineId(trackId: string): string {
  * @example "SH-0" -> "0"
  * @example "BH-SX-HL-0" -> "0"
  * @example "WL-M-ZN-CH-0" -> "0"
+ * @example "PX-SD-JT" -> "1" (往菁桐)
+ * @example "PX-JT-SD" -> "0" (往三貂嶺)
  */
 export function getTraDirection(trackId: string): string {
   const parts = trackId.split('-');
@@ -386,6 +388,14 @@ export function getTraDirection(trackId: string): string {
   if (lastPart === '0' || lastPart === '1') {
     return lastPart;
   }
+
+  // 平溪線特殊格式：PX-SD-JT / PX-JT-SD
+  // SD = 三貂嶺, JT = 菁桐
+  if (trackId.startsWith('PX-')) {
+    if (trackId.endsWith('-JT')) return '1';  // 往菁桐
+    if (trackId.endsWith('-SD')) return '0';  // 往三貂嶺
+  }
+
   // 簡單格式：第二個部分是方向
   return parts[1] || '0';
 }

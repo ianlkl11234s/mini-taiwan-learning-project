@@ -1,0 +1,69 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "MK01",
+        "name_zh": "動物園站",
+        "name_en": "Taipei Zoo Station",
+        "line_id": "MK"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.576313,
+          24.996095
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "MK02",
+        "name_zh": "動物園南站",
+        "name_en": "Taipei Zoo South Station",
+        "line_id": "MK"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.587404,
+          24.990233
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "MK03",
+        "name_zh": "指南宮站",
+        "name_en": "Zhinan Temple Station",
+        "line_id": "MK"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.589748,
+          24.979004
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "MK04",
+        "name_zh": "貓空站",
+        "name_en": "Maokong Station",
+        "line_id": "MK"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.58826,
+          24.968727
+        ]
+      }
+    }
+  ]
+}

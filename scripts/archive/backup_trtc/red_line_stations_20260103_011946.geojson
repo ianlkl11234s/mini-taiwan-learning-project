@@ -1,0 +1,425 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "R02",
+        "name_zh": "象山",
+        "name_en": "Xiangshan"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.57008,
+          25.032816
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "R03",
+        "name_zh": "台北101/世貿",
+        "name_en": "Taipei 101/World Trade Center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.562755,
+          25.033028
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "R04",
+        "name_zh": "信義安和",
+        "name_en": "Xinyi Anhe"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.55265,
+          25.03331
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "R05",
+        "name_zh": "大安",
+        "name_en": "Daan"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.54237,
+          25.033311
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "R06",
+        "name_zh": "大安森林公園",
+        "name_en": "Daan Park"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.536151,
+          25.033225
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "R07",
+        "name_zh": "東門",
+        "name_en": "Dongmen"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.528766,
+          25.033894
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "R08",
+        "name_zh": "中正紀念堂",
+        "name_en": "Chiang Kai-Shek Memorial Hall"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.518273,
+          25.032767
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "R09",
+        "name_zh": "台大醫院",
+        "name_en": "NTU Hospital"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.51602,
+          25.041399
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "R10",
+        "name_zh": "台北車站",
+        "name_en": "Taipei Main Station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.517415,
+          25.04631
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "R11",
+        "name_zh": "中山",
+        "name_en": "Zhongshan"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.520364,
+          25.052621
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "R12",
+        "name_zh": "雙連",
+        "name_en": "Shuanglian"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.520685,
+          25.057575
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "R13",
+        "name_zh": "民權西路",
+        "name_en": "Minquan W. Rd."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.519585,
+          25.06235
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "R14",
+        "name_zh": "圓山",
+        "name_en": "Yuanshan"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.520074,
+          25.071409
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "R15",
+        "name_zh": "劍潭",
+        "name_en": "Jiantan"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.524955,
+          25.084201
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "R16",
+        "name_zh": "士林",
+        "name_en": "Shilin"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.52623,
+          25.093492
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "R17",
+        "name_zh": "芝山",
+        "name_en": "Zhishan"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.522546,
+          25.102718
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "R18",
+        "name_zh": "明德",
+        "name_en": "Mingde"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.518785,
+          25.109815
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "R19",
+        "name_zh": "石牌",
+        "name_en": "Shipai"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.515572,
+          25.114455
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "R20",
+        "name_zh": "唭哩岸",
+        "name_en": "Qilian"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.506234,
+          25.120852
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "R21",
+        "name_zh": "奇岩",
+        "name_en": "Qiyan"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.50114,
+          25.12547
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "R22",
+        "name_zh": "北投",
+        "name_en": "Beitou"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.498648,
+          25.131819
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "R23",
+        "name_zh": "復興崗",
+        "name_en": "Fuxinggang"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.485457,
+          25.137474
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "R24",
+        "name_zh": "忠義",
+        "name_en": "Zhongyi"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.473293,
+          25.131041
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "R25",
+        "name_zh": "關渡",
+        "name_en": "Guandu"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.4671,
+          25.12563
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "R26",
+        "name_zh": "竹圍",
+        "name_en": "Zhuwei"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.45955,
+          25.1369
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "R27",
+        "name_zh": "紅樹林",
+        "name_en": "Hongshulin"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.4588,
+          25.15399
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "R28",
+        "name_zh": "淡水",
+        "name_en": "Tamsui"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.445805,
+          25.167745
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "R22A",
+        "name_zh": "新北投",
+        "name_en": "Xinbeitou"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.502595,
+          25.136931
+        ]
+      }
+    }
+  ]
+}

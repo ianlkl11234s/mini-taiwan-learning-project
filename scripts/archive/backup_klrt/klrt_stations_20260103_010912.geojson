@@ -1,0 +1,803 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "C1",
+        "station_uid": "KLRT-C1",
+        "name_zh": "籬仔內",
+        "name_en": "Lizihnei",
+        "line_id": "C",
+        "sequence": 1,
+        "cumulative_distance": 0,
+        "city": "高雄市",
+        "address": "高雄市前鎮區瑞隆路與凱旋四路口;Intersection of Rueilong Road and Kaixuan Fourth Road, Qianzhen District, Kaohsiung City"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.324651,
+          22.604625
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "C2",
+        "station_uid": "KLRT-C2",
+        "name_zh": "凱旋瑞田",
+        "name_en": "Kaisyuan Rueitian",
+        "line_id": "C",
+        "sequence": 2,
+        "cumulative_distance": 0.77,
+        "city": "高雄市",
+        "address": "高雄市前鎮區凱旋四路與瑞田路口;Intersection of Kaixuan Fourth Road and Rueitian Road, Qianzhen District, Kaohsiung City"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.319799,
+          22.599533
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "C3",
+        "station_uid": "KLRT-C3",
+        "name_zh": "前鎮之星",
+        "name_en": "Cianjhen Star",
+        "line_id": "C",
+        "sequence": 3,
+        "cumulative_distance": 1.4,
+        "city": "高雄市",
+        "address": "高雄市前鎮區中山三路與凱旋四路路口;Intersection of Zhongshan Third Road and Kaixuan Fourth Road, Qianzhen District, Kaohsiung City"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.315368,
+          22.595503
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "C4",
+        "station_uid": "KLRT-C4",
+        "name_zh": "凱旋中華",
+        "name_en": "Kaisyuan Jhonghua",
+        "line_id": "C",
+        "sequence": 4,
+        "cumulative_distance": 1.94,
+        "city": "高雄市",
+        "address": "高雄市前鎮區中華五路與凱旋四路路口;Intersection of Zhonghua Fifth Road and Kaixuan Fourth Road, Qianzhen District, Kaohsiung City"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.310517,
+          22.593656
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "C5",
+        "station_uid": "KLRT-C5",
+        "name_zh": "夢時代",
+        "name_en": "Dream Mall",
+        "line_id": "C",
+        "sequence": 5,
+        "cumulative_distance": 2.66,
+        "city": "高雄市",
+        "address": "高雄市前鎮區成功二路與時代大道路口;Intersection of Chenggong Second Road and Shidai Boulevard, Qianzhen District, Kaohsiung City"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.305004,
+          22.594886
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "C6",
+        "station_uid": "KLRT-C6",
+        "name_zh": "經貿園區",
+        "name_en": "Commerce and Trade Park",
+        "line_id": "C",
+        "sequence": 6,
+        "cumulative_distance": 3.38,
+        "city": "高雄市",
+        "address": "高雄市前鎮區成功二路與正勤路路口南側;South corner of the intersection of Chenggong Second Road and Zhengqin Road, Qianzhen District, Kaohsiung City"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.30266,
+          22.600961
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "C7",
+        "station_uid": "KLRT-C7",
+        "name_zh": "軟體園區",
+        "name_en": "Software Technology Park",
+        "line_id": "C",
+        "sequence": 7,
+        "cumulative_distance": 3.93,
+        "city": "高雄市",
+        "address": "高雄市前鎮區成功二路與復興三路路口北側;North corner of the intersect of Chenggong Second Road and Fuxing Third Road, Qianzhen District, Kaohsiung City"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.300832,
+          22.605684
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "C8",
+        "station_uid": "KLRT-C8",
+        "name_zh": "高雄展覽館",
+        "name_en": "Kaohsiung Exhibition Center",
+        "line_id": "C",
+        "sequence": 8,
+        "cumulative_distance": 4.58,
+        "city": "高雄市",
+        "address": "高雄市苓雅區成功二路與新光路路口;Intersection of Chenggong Second Road and Xinguang Road, Lingya District, Kaohsiung City"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.298022,
+          22.610133
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "C9",
+        "station_uid": "KLRT-C9",
+        "name_zh": "旅運中心",
+        "name_en": "Cruise Terminal",
+        "line_id": "C",
+        "sequence": 9,
+        "cumulative_distance": 5.1,
+        "city": "高雄市",
+        "address": "高雄市苓雅區海邊路與苓南前路路口;Intersection of Haibian Road and Lingnanqian Road, Lingya District, Kaohsiung City"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.293424,
+          22.611587
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "C10",
+        "station_uid": "KLRT-C10",
+        "name_zh": "光榮碼頭",
+        "name_en": "Glory Pier",
+        "line_id": "C",
+        "sequence": 10,
+        "cumulative_distance": 5.8,
+        "city": "高雄市",
+        "address": "高雄市苓雅區海邊路與青年二路路口;Intersection of Haibian Road and Qingnian Second Road, Lingya District, Kaohsiung City"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.293234,
+          22.616805
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "C11",
+        "station_uid": "KLRT-C11",
+        "name_zh": "真愛碼頭",
+        "name_en": "Love Pier",
+        "line_id": "C",
+        "sequence": 11,
+        "cumulative_distance": 6.43,
+        "city": "高雄市",
+        "address": "高雄市鹽埕區公園二路與必忠街路口;Intersection of Gongyuan Second Road and Bizhong Street, Yancheng District, Kaohsiung City"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.289466,
+          22.619315
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "C12",
+        "station_uid": "KLRT-C12",
+        "name_zh": "駁二大義",
+        "name_en": "Dayi Pier-2",
+        "line_id": "C",
+        "sequence": 12,
+        "cumulative_distance": 7.07,
+        "city": "高雄市",
+        "address": "高雄市鹽埕區駁二特區，大義街路口;Intersection of Pier Two Art Center and Dayi Street, Yancheng District, Kaohsiung City"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.284204,
+          22.618562
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "C13",
+        "station_uid": "KLRT-C13",
+        "name_zh": "駁二蓬萊",
+        "name_en": "Penglai Pier-2",
+        "line_id": "C",
+        "sequence": 13,
+        "cumulative_distance": 7.56,
+        "city": "高雄市",
+        "address": "高雄市鹽埕區駁二特區，七賢三路路口;Intersection of Pier Two Art Center and Qixian Third Road, Yancheng District, Kaohsiung City"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.279923,
+          22.6205
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "C14",
+        "station_uid": "KLRT-C14",
+        "name_zh": "哈瑪星",
+        "name_en": "Hamasen",
+        "line_id": "C",
+        "sequence": 14,
+        "cumulative_distance": 8.17,
+        "city": "高雄市",
+        "address": "高雄市鼓山區鼓山一路與臨海新路路口;Intersection of Gushan First Road and Linhaixin Road, Gushan District, Kaohsiung City"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.275849,
+          22.621617
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "C15",
+        "station_uid": "KLRT-C15",
+        "name_zh": "壽山公園站",
+        "name_en": "Shoushan Park",
+        "line_id": "C",
+        "sequence": 15,
+        "cumulative_distance": 8.74,
+        "city": "高雄市",
+        "address": "高雄市鼓山區五福四路與新樂街段;Intersection of Wufu Fourth Road and Xinle Street, Gushan District, Kaohsiung City"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.278601,
+          22.626541
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "C16",
+        "station_uid": "KLRT-C16",
+        "name_zh": "文武聖殿站",
+        "name_en": "Wenwu Temple",
+        "line_id": "C",
+        "sequence": 16,
+        "cumulative_distance": 9.14,
+        "city": "高雄市",
+        "address": "高雄市鼓山區大公路與鼓山一路口;Intersection of Dagong Road and Gushan First Road, Gushan District, Kaohsiung City"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.2807,
+          22.62959
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "C17",
+        "station_uid": "KLRT-C17",
+        "name_zh": "鼓山區公所站",
+        "name_en": "Gushan District Office",
+        "line_id": "C",
+        "sequence": 17,
+        "cumulative_distance": 9.92,
+        "city": "高雄市",
+        "address": "高雄市鼓山區興隆路與河川街103巷;Intersection of Xinglong Road and Lane 103, Hechuan Street, Gushan District, Kaohsiung City"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.282567,
+          22.635988
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "C18",
+        "station_uid": "KLRT-C18",
+        "name_zh": "鼓山",
+        "name_en": "Gushan",
+        "line_id": "C",
+        "sequence": 18,
+        "cumulative_distance": 10.61,
+        "city": "高雄市",
+        "address": "高雄市鼓山區鐵路街及鐵路街18巷;Intersection of Railway Street and Lane 18, Railway Street, Gushan District, Kaohsiung City"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.281067,
+          22.642037
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "C19",
+        "station_uid": "KLRT-C19",
+        "name_zh": "馬卡道",
+        "name_en": "Makadao",
+        "line_id": "C",
+        "sequence": 19,
+        "cumulative_distance": 11.17,
+        "city": "高雄市",
+        "address": "高雄市鼓山區馬卡道路與華安街口;Intersection of Makadao Road and Hua'an Street, Gushan District, Kaohsiung City"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.281415,
+          22.647089
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "C20",
+        "station_uid": "KLRT-C20",
+        "name_zh": "臺鐵美術館",
+        "name_en": "TRA Museum of Fine Arts",
+        "line_id": "C",
+        "sequence": 20,
+        "cumulative_distance": 11.73,
+        "city": "高雄市",
+        "address": "高雄市鼓山區馬卡道路與青海路口;Intersection of Makadao Road and Qinghai Road, Gushan District, Kaohsiung City"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.281669,
+          22.652074
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "C21A",
+        "station_uid": "KLRT-C21A",
+        "name_zh": "內惟藝術中心",
+        "name_en": "Neiwei Arts Center",
+        "line_id": "C",
+        "sequence": 21,
+        "cumulative_distance": 12.13,
+        "city": "高雄市",
+        "address": "高雄市鼓山區馬卡道路與美術館路口;Intersection of Makadao Road and Meishuguan Road, Gushan District, Kaohsiung City"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.282868,
+          22.65497
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "C21",
+        "station_uid": "KLRT-C21",
+        "name_zh": "美術館",
+        "name_en": "Kaohsiung Museum of Fine Arts",
+        "line_id": "C",
+        "sequence": 22,
+        "cumulative_distance": 12.57,
+        "city": "高雄市",
+        "address": "高雄市鼓山區美術館路與美術東二路口;Intersection of Meishuguan Road and Meishu East Second Road, Gushan District, Kaohsiung City"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.287437,
+          22.655026
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "C22",
+        "station_uid": "KLRT-C22",
+        "name_zh": "聯合醫院",
+        "name_en": "Kaohsiung Municipal United Hospital",
+        "line_id": "C",
+        "sequence": 23,
+        "cumulative_distance": 12.96,
+        "city": "高雄市",
+        "address": "高雄市鼓山區美術館路與中華一路;Intersection of Meishuguan Road and Zhonghua First Road, Gushan District, Kaohsiung City"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.290918,
+          22.654827
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "C23",
+        "station_uid": "KLRT-C23",
+        "name_zh": "龍華國小",
+        "name_en": "Longhua Elementary School",
+        "line_id": "C",
+        "sequence": 24,
+        "cumulative_distance": 13.39,
+        "city": "高雄市",
+        "address": "高雄市鼓山區大順一路與龍勝路口;Intersection of Dashun First Road and Longsheng Road, Gushan District, Kaohsiung City"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.295042,
+          22.654493
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "C24",
+        "station_uid": "KLRT-C24",
+        "name_zh": "愛河之心",
+        "name_en": "Heart of Love River",
+        "line_id": "C",
+        "sequence": 25,
+        "cumulative_distance": 14.34,
+        "city": "高雄市",
+        "address": "高雄市鼓山區大順一路與博愛一路口;Intersection of Dashun First Road and Bo'ai First Road, Gushan District, Kaohsiung City"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.30282,
+          22.65604
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "C25",
+        "station_uid": "KLRT-C25",
+        "name_zh": "新上國小",
+        "name_en": "Sinshang Elementary School",
+        "line_id": "C",
+        "sequence": 26,
+        "cumulative_distance": 14.92,
+        "city": "高雄市",
+        "address": "高雄市左營區大順一路與自由一路口;Intersection of Dashun First Road and Ziyou First Road, Zuoying District, Kaohsiung City"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.3083,
+          22.6567
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "C26",
+        "station_uid": "KLRT-C26",
+        "name_zh": "大順民族",
+        "name_en": "Dashun Minzu",
+        "line_id": "C",
+        "sequence": 27,
+        "cumulative_distance": 15.47,
+        "city": "高雄市",
+        "address": "高雄市三民區大順一路與民族一路口;Intersection of Dashun First Road and Minzu First Road, Sanmin District, Kaohsiung City"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.3149,
+          22.6556
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "C27",
+        "station_uid": "KLRT-C27",
+        "name_zh": "灣仔內(大順鼎山)",
+        "name_en": "Wanzihnei(Dashun Dingshan)",
+        "line_id": "C",
+        "sequence": 28,
+        "cumulative_distance": 16.03,
+        "city": "高雄市",
+        "address": "高雄市三民區大順二路與鼎山街口;Intersection of Dashun Second Road and Dingshan Street, Sanmin District, Kaohsiung City"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.3185,
+          22.6538
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "C28",
+        "station_uid": "KLRT-C28",
+        "name_zh": "高雄高工",
+        "name_en": "Kaohsiung Industrial High School",
+        "line_id": "C",
+        "sequence": 29,
+        "cumulative_distance": 16.71,
+        "city": "高雄市",
+        "address": "高雄市三民區大順二路與建工路口;Intersection of Dashun Second Road and Jiangong Road, Sanmin District, Kaohsiung City"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.32405,
+          22.64983
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "C29",
+        "station_uid": "KLRT-C29",
+        "name_zh": "樹德家商",
+        "name_en": "Shu-Te Home-Economics & Commercial High School",
+        "line_id": "C",
+        "sequence": 30,
+        "cumulative_distance": 17.43,
+        "city": "高雄市",
+        "address": "高雄市三民區大順二路與建興路口;Intersection of Dashun Second Road and Jianxing Road, Sanmin District, Kaohsiung City"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.3262,
+          22.6442
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "C30",
+        "station_uid": "KLRT-C30",
+        "name_zh": "科工館",
+        "name_en": "Science and Technology Museum",
+        "line_id": "C",
+        "sequence": 31,
+        "cumulative_distance": 18.23,
+        "city": "高雄市",
+        "address": "高雄市三民區大順三路與鐵道園區（大順三路309巷）;Intersection of Dashun Third Road and Railway Park (Lane 309, Dashun Third Road), Sanmin District, Kaohsiung City"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.3274,
+          22.6375
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "C31",
+        "station_uid": "KLRT-C31",
+        "name_zh": "聖功醫院",
+        "name_en": "St.Joseph Hospital",
+        "line_id": "C",
+        "sequence": 32,
+        "cumulative_distance": 18.72,
+        "city": "高雄市",
+        "address": "高雄市苓雅區大順三路與建國一路口;Intersection of Dashun Third Road and Jianguo First Road, Lingya District, Kaohsiung City"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.325819,
+          22.633278
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "C32",
+        "station_uid": "KLRT-C32",
+        "name_zh": "凱旋公園站",
+        "name_en": "Kaisyuan Park",
+        "line_id": "C",
+        "sequence": 33,
+        "cumulative_distance": 19.17,
+        "city": "高雄市",
+        "address": "高雄市苓雅區中正一路與河南路口;Intersection of Zhongzheng First Road and Henan Road, Lingya District, Kaohsiung City"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.322785,
+          22.629433
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "C33",
+        "station_uid": "KLRT-C33",
+        "name_zh": "衛生局站",
+        "name_en": "Department of Health",
+        "line_id": "C",
+        "sequence": 34,
+        "cumulative_distance": 19.68,
+        "city": "高雄市",
+        "address": "高雄市苓雅區凱旋二路與凱旋二路81巷;Intersection of Kaixuan Second Road and Lane 81, Kaixuan Second Road, Lingya District, Kaohsiung City"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.3237,
+          22.6252
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "C34",
+        "station_uid": "KLRT-C34",
+        "name_zh": "五權國小站",
+        "name_en": "Wucyuan Elementary School",
+        "line_id": "C",
+        "sequence": 35,
+        "cumulative_distance": 20.15,
+        "city": "高雄市",
+        "address": "高雄市苓雅區凱旋二路與三多二路口;Intersection of Kaixuan Second Road and Sanduo Second Road, Lingya District, Kaohsiung City"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.3252,
+          22.62121
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "C35",
+        "station_uid": "KLRT-C35",
+        "name_zh": "凱旋武昌站",
+        "name_en": "Kaisyuan Wuchang",
+        "line_id": "C",
+        "sequence": 36,
+        "cumulative_distance": 20.66,
+        "city": "高雄市",
+        "address": "高雄市苓雅區凱旋三路與武昌路口;Intersection of Kaixuan Third Road and Wuchang Road, Lingya District, Kaohsiung City"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.3269,
+          22.61693
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "C36",
+        "station_uid": "KLRT-C36",
+        "name_zh": "凱旋二聖站",
+        "name_en": "Kaisyuan Ersheng",
+        "line_id": "C",
+        "sequence": 37,
+        "cumulative_distance": 21.16,
+        "city": "高雄市",
+        "address": "高雄市前鎮區凱旋三路與二聖路口;Intersection of Kaixuan Third Road and Ersheng Road, Qianzhen District, Kaohsiung City"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.3272,
+          22.61253
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "C37",
+        "station_uid": "KLRT-C37",
+        "name_zh": "輕軌機廠站",
+        "name_en": "LRT Depot",
+        "line_id": "C",
+        "sequence": 38,
+        "cumulative_distance": 21.62,
+        "city": "高雄市",
+        "address": "高雄市前鎮區瑞西街與瑞北路口;Intersection of Ruixi Street and Ruibei Road, Qianzhen District, Kaohsiung City"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.3261,
+          22.6085
+        ]
+      }
+    }
+  ]
+}

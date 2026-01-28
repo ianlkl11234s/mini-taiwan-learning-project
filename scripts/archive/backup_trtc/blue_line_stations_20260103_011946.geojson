@@ -1,0 +1,350 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "BL01",
+        "name_zh": "頂埔",
+        "name_en": "Dingpu"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.418744,
+          24.959351
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "BL02",
+        "name_zh": "永寧",
+        "name_en": "Yongning"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.43613,
+          24.96682
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "BL03",
+        "name_zh": "土城",
+        "name_en": "Tucheng"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.44432,
+          24.97313
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "BL04",
+        "name_zh": "海山",
+        "name_en": "Haishan"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.448787,
+          24.985348
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "BL05",
+        "name_zh": "亞東醫院",
+        "name_en": "Far Eastern Hospital"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.452465,
+          24.99828
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "BL06",
+        "name_zh": "府中",
+        "name_en": "Fuzhong"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.459276,
+          25.008465
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "BL07",
+        "name_zh": "板橋",
+        "name_en": "Banqiao"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.462671,
+          25.014098
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "BL08",
+        "name_zh": "新埔",
+        "name_en": "Xinpu"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.468363,
+          25.023736
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "BL09",
+        "name_zh": "江子翠",
+        "name_en": "Jiangzicui"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.47257,
+          25.030265
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "BL10",
+        "name_zh": "龍山寺",
+        "name_en": "Longshan Temple"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.500325,
+          25.03528
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "BL11",
+        "name_zh": "西門",
+        "name_en": "Ximen"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.508511,
+          25.042274
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "BL12",
+        "name_zh": "台北車站",
+        "name_en": "Taipei Main Station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.517415,
+          25.04631
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "BL13",
+        "name_zh": "善導寺",
+        "name_en": "Shandao Temple"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.523885,
+          25.04468
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "BL14",
+        "name_zh": "忠孝新生",
+        "name_en": "Zhongxiao Xinsheng"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5328,
+          25.0423
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "BL15",
+        "name_zh": "忠孝復興",
+        "name_en": "Zhongxiao Fuxing"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.543769,
+          25.041633
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "BL16",
+        "name_zh": "忠孝敦化",
+        "name_en": "Zhongxiao Dunhua"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.55045,
+          25.041505
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "BL17",
+        "name_zh": "國父紀念館",
+        "name_en": "Sun Yat-Sen Memorial Hall"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.557815,
+          25.04137
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "BL18",
+        "name_zh": "市政府",
+        "name_en": "Taipei City Hall"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.565685,
+          25.041135
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "BL19",
+        "name_zh": "永春",
+        "name_en": "Yongchun"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5762,
+          25.040855
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "BL20",
+        "name_zh": "後山埤",
+        "name_en": "Houshanpi"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.58227,
+          25.044715
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "BL21",
+        "name_zh": "昆陽",
+        "name_en": "Kunyang"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.593228,
+          25.050459
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "BL22",
+        "name_zh": "南港",
+        "name_en": "Nangang"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.60697,
+          25.052035
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "BL23",
+        "name_zh": "南港展覽館",
+        "name_en": "Taipei Nangang Exhibition Center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.616861,
+          25.054919
+        ]
+      }
+    }
+  ]
+}

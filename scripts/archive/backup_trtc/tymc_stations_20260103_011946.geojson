@@ -1,0 +1,357 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "A1",
+        "name_zh": "台北車站",
+        "name_en": "Taipei Main Station",
+        "line_id": "A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.51428,
+          25.04869
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "A2",
+        "name_zh": "三重站",
+        "name_en": "Sanchong Station",
+        "line_id": "A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.48273,
+          25.0548
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "A3",
+        "name_zh": "新北產業園區站",
+        "name_en": "New Taipei Industrial Park Station",
+        "line_id": "A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.45918,
+          25.06171
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "A4",
+        "name_zh": "新莊副都心站",
+        "name_en": "Xinzhuang Fuduxin Station",
+        "line_id": "A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.44561,
+          25.05924
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "A5",
+        "name_zh": "泰山站",
+        "name_en": "Taishan Station",
+        "line_id": "A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.43943,
+          25.05321
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "A6",
+        "name_zh": "泰山貴和站",
+        "name_en": "Taishan Guihe Station",
+        "line_id": "A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.42262,
+          25.03321
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "A7",
+        "name_zh": "體育大學站",
+        "name_en": "National Taiwan Sport University Station",
+        "line_id": "A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.38543,
+          25.04124
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "A8",
+        "name_zh": "長庚醫院站",
+        "name_en": "Chang Gung Memorial Hospital Station",
+        "line_id": "A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.37073,
+          25.06053
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "A9",
+        "name_zh": "林口站",
+        "name_en": "Linkou Station",
+        "line_id": "A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.36134,
+          25.0658
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "A10",
+        "name_zh": "山鼻站",
+        "name_en": "Shanbi Station",
+        "line_id": "A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.28476,
+          25.0808
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "A11",
+        "name_zh": "坑口站",
+        "name_en": "Kengkou Station",
+        "line_id": "A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.26637,
+          25.08646
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "A12",
+        "name_zh": "機場第一航廈站",
+        "name_en": "Airport Terminal 1 Station",
+        "line_id": "A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.23783,
+          25.0814
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "A13",
+        "name_zh": "機場第二航廈站",
+        "name_en": "Airport Terminal 2 Station",
+        "line_id": "A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.23213,
+          25.07735
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "A14a",
+        "name_zh": "機場旅館站",
+        "name_en": "Airport Hotel Station",
+        "line_id": "A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.22142,
+          25.07007
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "A15",
+        "name_zh": "大園站",
+        "name_en": "Dayuan Station",
+        "line_id": "A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.21048,
+          25.05595
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "A16",
+        "name_zh": "橫山站",
+        "name_en": "Hengshan Station",
+        "line_id": "A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.21556,
+          25.03665
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "A17",
+        "name_zh": "領航站",
+        "name_en": "Linghang Station",
+        "line_id": "A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.22095,
+          25.02417
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "A18",
+        "name_zh": "高鐵桃園站",
+        "name_en": "Taoyuan HSR Station",
+        "line_id": "A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.21406,
+          25.01374
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "A19",
+        "name_zh": "桃園體育園區站",
+        "name_en": "Taoyuan Sports Park Station",
+        "line_id": "A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.20349,
+          25.00199
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "A20",
+        "name_zh": "興南站",
+        "name_en": "Xingnan Station",
+        "line_id": "A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.21627,
+          24.98025
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "A21",
+        "name_zh": "環北站",
+        "name_en": "Huanbei Station",
+        "line_id": "A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.22114,
+          24.96722
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "A22",
+        "name_zh": "老街溪站",
+        "name_en": "Laojie River Station",
+        "line_id": "A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.21936,
+          24.95823
+        ]
+      }
+    }
+  ]
+}

@@ -24,7 +24,7 @@
 - **即時列車模擬** - 根據真實時刻表模擬列車運行
 - **多城市切換** - 支援台北 (TPE)、台中 (TXG)、高雄 (KHH) 三城市快速切換
 - **Mapbox 地圖視覺化** - 使用 Mapbox GL JS 呈現精美地圖
-- **完整路網支援** - 支援台北捷運、台中捷運、高雄捷運、高雄輕軌、台灣高鐵
+- **完整路網支援** - 支援台北捷運、台中捷運、高雄捷運、高雄輕軌、台灣高鐵、台鐵 (992 班)
 - **2D / 3D 模式切換** - 支援平面與立體視角，3D 模式下列車以方塊呈現
 - **列車跟隨模式** - 點擊列車可開啟跟隨，自動追蹤列車位置
 - **日夜主題切換** - 支援 Auto（隨時間自動切換）、Dawn、Day、Dusk、Night、Dark 六種主題
@@ -71,20 +71,40 @@
 |------|------|--------|----------|
 | 🟧 台灣高鐵 | THSR | 12 站 | 南港 ↔ 左營 |
 
+### 台鐵 (TRA)
+
+| 路線 | 代碼 | 說明 | 班次 |
+|------|------|------|------|
+| 🚃 西部幹線 | WL | 基隆 ↔ 高雄（含山線/海線） | 主要幹線 |
+| 🚃 宜蘭線 | YL | 八堵 ↔ 蘇澳新 | 環島東部 |
+| 🚃 北迴線 | BH | 蘇澳新 ↔ 花蓮 | 環島東部 |
+| 🚃 臺東線 | TL | 花蓮 ↔ 臺東 | 環島東部 |
+| 🚃 南迴線 | SK | 臺東 ↔ 高雄（枋寮） | 環島南部 |
+| 🚃 屏東線 | PT | 高雄 ↔ 枋寮 | 南部支線 |
+| 🚃 平溪線 | PX | 三貂嶺 ↔ 菁桐 | 64 班 |
+| 🚃 內灣線 | NW | 竹中 ↔ 內灣 | 支線 |
+| 🚃 六家線 | LJ | 竹中 ↔ 六家 | 支線 |
+| 🚃 沙崙線 | SH | 臺南 ↔ 沙崙 | 支線 |
+| 🚃 集集線 | JJ | 二水 ↔ 車埕 | 支線 |
+| 🚃 成追線 | CZ | 成功 ↔ 追分 | 支線 |
+
+> 台鐵總計 992 班列車（含區間車、自強號、普悠瑪、太魯閣等各車種）
+
 ## 技術架構
 
 ```
-┌──────────────────────────────────────────────────────────────────┐
-│                            App.tsx                                │
-│  ┌─────────────┐  ┌─────────────┐  ┌─────────────────────────┐   │
-│  │  Mapbox GL  │  │ TimeEngine  │  │      Train Engines      │   │
-│  │   (地圖)    │  │  (時間模擬)  │  │ TRTC/THSR/KRTC/KLRT/TMRT│   │
-│  └─────────────┘  └─────────────┘  └─────────────────────────┘   │
-│         ↑               ↓                   ↓                     │
-│         └───────────────┴───────────────────┘                     │
-│                         Data Hooks                                 │
-│     useData / useThsrData / useKrtcData / useKlrtData / useTmrtData│
-└──────────────────────────────────────────────────────────────────┘
+┌───────────────────────────────────────────────────────────────────────┐
+│                              App.tsx                                   │
+│  ┌─────────────┐  ┌─────────────┐  ┌────────────────────────────────┐ │
+│  │  Mapbox GL  │  │ TimeEngine  │  │         Train Engines          │ │
+│  │   (地圖)    │  │  (時間模擬)  │  │ TRTC/THSR/KRTC/KLRT/TMRT/TRA  │ │
+│  └─────────────┘  └─────────────┘  └────────────────────────────────┘ │
+│         ↑               ↓                       ↓                      │
+│         └───────────────┴───────────────────────┘                      │
+│                           Data Hooks                                   │
+│   useData / useThsrData / useKrtcData / useKlrtData / useTmrtData      │
+│                         / useTraData                                   │
+└───────────────────────────────────────────────────────────────────────┘
 ```
 
 ### 核心模組
@@ -97,16 +117,19 @@
 | KrtcTrainEngine | `src/engines/KrtcTrainEngine.ts` | 高雄捷運列車引擎 |
 | KlrtTrainEngine | `src/engines/KlrtTrainEngine.ts` | 高雄輕軌列車引擎 |
 | TmrtTrainEngine | `src/engines/TmrtTrainEngine.ts` | 台中捷運列車引擎 |
+| TraTrainEngine | `src/engines/TraTrainEngine.ts` | 台鐵列車引擎 |
 | Train3DLayer | `src/layers/Train3DLayer.ts` | 台北捷運 3D 圖層 |
 | Thsr3DLayer | `src/layers/Thsr3DLayer.ts` | 高鐵 3D 圖層 |
 | Krtc3DLayer | `src/layers/Krtc3DLayer.ts` | 高雄捷運 3D 圖層 |
 | Klrt3DLayer | `src/layers/Klrt3DLayer.ts` | 高雄輕軌 3D 圖層 |
 | Tmrt3DLayer | `src/layers/Tmrt3DLayer.ts` | 台中捷運 3D 圖層 |
+| Tra3DLayer | `src/layers/Tra3DLayer.ts` | 台鐵 3D 圖層 |
 | useData | `src/hooks/useData.ts` | 台北捷運資料載入 |
 | useThsrData | `src/hooks/useThsrData.ts` | 高鐵資料載入 |
 | useKrtcData | `src/hooks/useKrtcData.ts` | 高雄捷運資料載入 |
 | useKlrtData | `src/hooks/useKlrtData.ts` | 高雄輕軌資料載入 |
 | useTmrtData | `src/hooks/useTmrtData.ts` | 台中捷運資料載入 |
+| useTraData | `src/hooks/useTraData.ts` | 台鐵資料載入 |
 | CitySelector | `src/components/CitySelector.tsx` | 城市快速切換 |
 | LineFilter | `src/components/LineFilter.tsx` | 路線篩選 |
 | TrainInfoPanel | `src/components/TrainInfoPanel.tsx` | 列車跟隨資訊面板 |
@@ -177,7 +200,8 @@ mini-taiwan/
 │   │   ├── thsrInfo.ts           # 高鐵路線資訊
 │   │   ├── krtcInfo.ts           # 高雄捷運路線資訊
 │   │   ├── klrtInfo.ts           # 高雄輕軌路線資訊
-│   │   └── tmrtInfo.ts           # 台中捷運路線資訊
+│   │   ├── tmrtInfo.ts           # 台中捷運路線資訊
+│   │   └── traInfo.ts            # 台鐵路線資訊
 │   └── types/                    # TypeScript 型別
 ├── public/data/                  # 靜態資料
 │   ├── trtc/                     # 台北捷運資料
@@ -200,20 +224,32 @@ mini-taiwan/
 │   │   ├── schedules/
 │   │   ├── stations/
 │   │   └── station_progress.json
-│   └── tmrt/                     # 台中捷運資料
-│       ├── tracks/
-│       ├── schedules/
-│       ├── stations/
-│       └── station_progress.json
+│   ├── tmrt/                     # 台中捷運資料
+│   │   ├── tracks/
+│   │   ├── schedules/
+│   │   ├── stations/
+│   │   └── station_progress.json
+│   └── tra/                      # 台鐵資料
+│       ├── tracks_golden/        # 精修軌道（顯示用）
+│       ├── tracks_official/      # 官方軌道（顯示用）
+│       ├── tracks_od/            # O-D 計算用軌道
+│       │   └── od_station_progress.json
+│       ├── schedules_real/       # 時刻表
+│       │   └── master_schedule.json
+│       ├── stations.geojson      # 原始車站座標
+│       └── stations_snapped.geojson  # 對齊後車站座標
 ├── data/                         # 原始 TDX 資料
 │   ├── tdx_metro_test/           # 台北捷運原始資料
 │   ├── tdx_klrt/                 # 高雄輕軌原始資料
 │   └── ...
 ├── scripts/                      # 資料處理腳本
-│   ├── fetch_klrt_data.py        # 取得高雄輕軌資料
-│   ├── build_klrt_*.py           # 建立高雄輕軌各類資料
-│   └── ...
-└── tools/data_collector/         # 資料轉換工具
+│   ├── fetch_*.py                # 取得各系統 TDX 資料
+│   ├── build_*.py                # 建立各系統軌道/時刻表
+│   └── tra/                      # 台鐵專用腳本
+│       ├── build_*_od_tracks.py  # 建立 O-D 軌道
+│       ├── calc_progress.py      # 計算站點進度
+│       └── prepare_real_timetable/  # 時刻表轉換
+└── docs/                         # 技術文件
 ```
 
 ---
@@ -351,9 +387,26 @@ VITE_MAPBOX_TOKEN=your_mapbox_token_here
 
 ## 開發歷程
 
+### 2026-01-28
+- ✨ 台鐵 Phase 2 完成 - 宜蘭線/北迴線 O-D 軌道
+- 🔧 改進軌道配對算法，加入中間站單調性檢查
+- 🔧 修正 station_progress normalization 造成的 5-6km 位置偏差
+
+### 2026-01-27
+- ✨ 台鐵真實時刻表 928 班列車上線
+- ✨ 新增 6 條特殊軌道，覆蓋率提升至 99.8%
+
+### 2026-01-24
+- ✨ 台鐵 Phase 0-1 完成 - 覆蓋 96.3% 班次
+- 🔧 修正平溪線方向顯示問題
+
+### 2026-01-08
+- ✨ 新增平溪線 64 班列車
+- 🔧 改進 2D 跟隨模式，列車固定在畫面中央
+
 ### 2026-01-04
 - 🎨 品牌更新為 Mini Taiwan
-- ✨ 列車統計改為各系統分開顯示 (TPE/KHH/LRT/TXG/HSR)
+- ✨ 列車統計改為各系統分開顯示 (TPE/KHH/LRT/TXG/HSR/TRA)
 - ✨ 列車數趨勢圖改為所有系統總和（排除纜車）
 - 🔧 修正全線軌道折角問題（KLRT/KRTC/TRTC 共 118 站）
 

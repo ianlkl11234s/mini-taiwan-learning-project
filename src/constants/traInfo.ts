@@ -348,9 +348,18 @@ export function getTraLineId(trackId: string): string {
 /**
  * 從 trackId 取得方向
  * @example "SH-0" -> "0"
+ * @example "BH-SX-HL-0" -> "0"
+ * @example "WL-M-ZN-CH-0" -> "0"
  */
 export function getTraDirection(trackId: string): string {
-  return trackId.split('-')[1] || '0';
+  const parts = trackId.split('-');
+  // 複雜格式：最後一個數字是方向
+  const lastPart = parts[parts.length - 1];
+  if (lastPart === '0' || lastPart === '1') {
+    return lastPart;
+  }
+  // 簡單格式：第二個部分是方向
+  return parts[1] || '0';
 }
 
 /**

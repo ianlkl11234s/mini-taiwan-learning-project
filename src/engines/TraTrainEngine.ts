@@ -43,6 +43,11 @@ export interface TraTrain {
   trainNo?: string;
   trainType?: string;
   trainTypeCode?: string;  // 車種代碼 (TC, PP, TZ, CK, LC 等)
+
+  // 資訊面板用
+  previousStation?: string;        // 前一站 ID
+  previousDepartureTime?: string;  // 前一站發車時間 "HH:MM"
+  nextArrivalTime?: string;        // 下一站到達時間 "HH:MM"
 }
 
 export interface StationTime {
@@ -479,7 +484,8 @@ export class TraTrainEngine {
    */
   private findCurrentSegment(
     stations: StationTime[],
-    elapsedTime: number
+    elapsedTime: number,
+    departureSeconds: number
   ): {
     status: 'waiting' | 'running' | 'stopped' | 'arrived';
     stationIndex: number;
@@ -487,7 +493,18 @@ export class TraTrainEngine {
     segmentProgress: number;
     currentStation?: string;
     nextStation?: string;
+    previousStation?: string;
+    previousDepartureTime?: string;
+    nextArrivalTime?: string;
   } {
+    // 輔助函數：將秒數轉為 HH:MM 格式
+    const formatTime = (seconds: number): string => {
+      const totalSeconds = departureSeconds + seconds;
+      const hours = Math.floor(totalSeconds / 3600) % 24;
+      const minutes = Math.floor((totalSeconds % 3600) / 60);
+      return `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}`;
+    };
+
     if (elapsedTime < 0) {
       return {
         status: 'waiting',
@@ -495,6 +512,8 @@ export class TraTrainEngine {
         nextStationIndex: 0,
         segmentProgress: 0,
         currentStation: stations[0]?.station_id,
+        nextStation: stations.length > 1 ? stations[1]?.station_id : undefined,
+        nextArrivalTime: stations.length > 1 ? formatTime(stations[1].arrival) : undefined,
       };
     }
 
@@ -511,6 +530,9 @@ export class TraTrainEngine {
           segmentProgress: 0,
           currentStation: station.station_id,
           nextStation: i < stations.length - 1 ? stations[i + 1].station_id : undefined,
+          previousStation: i > 0 ? stations[i - 1].station_id : undefined,
+          previousDepartureTime: i > 0 ? formatTime(stations[i - 1].departure) : undefined,
+          nextArrivalTime: i < stations.length - 1 ? formatTime(stations[i + 1].arrival) : undefined,
         };
       }
 
@@ -530,6 +552,9 @@ export class TraTrainEngine {
             segmentProgress: Math.min(1, Math.max(0, segmentProgress)),
             currentStation: undefined,
             nextStation: nextStation.station_id,
+            previousStation: station.station_id,
+            previousDepartureTime: formatTime(departure),
+            nextArrivalTime: formatTime(nextArrival),
           };
         }
       }
@@ -541,6 +566,8 @@ export class TraTrainEngine {
       nextStationIndex: stations.length - 1,
       segmentProgress: 1,
       currentStation: stations[stations.length - 1]?.station_id,
+      previousStation: stations.length > 1 ? stations[stations.length - 2]?.station_id : undefined,
+      previousDepartureTime: stations.length > 1 ? formatTime(stations[stations.length - 2].departure) : undefined,
     };
   }
 
@@ -580,7 +607,7 @@ export class TraTrainEngine {
         }
 
         // 找到當前狀態
-        const segment = this.findCurrentSegment(departure.stations, elapsedTime);
+        const segment = this.findCurrentSegment(departure.stations, elapsedTime, departureSeconds);
 
         let displayStatus = segment.status;
         let isWaitingAtOrigin = false;
@@ -635,6 +662,10 @@ export class TraTrainEngine {
           trainNo: departure.train_no,
           trainType: departure.train_type,
           trainTypeCode: departure.train_type_code,
+          // 資訊面板用
+          previousStation: segment.previousStation,
+          previousDepartureTime: segment.previousDepartureTime,
+          nextArrivalTime: segment.nextArrivalTime,
         };
 
         this.activeTrains.set(train.trainId, train);

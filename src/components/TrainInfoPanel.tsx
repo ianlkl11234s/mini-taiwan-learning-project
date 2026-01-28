@@ -9,10 +9,11 @@ import { getKrtcLineName, getKrtcLineColor } from '../constants/krtcInfo';
 import { getKlrtLineName, getKlrtLineColor } from '../constants/klrtInfo';
 import { getTmrtLineName, getTmrtLineColor } from '../constants/tmrtInfo';
 import { getTraLineName, TRA_PRIMARY_COLOR, TRA_STATION_NAMES } from '../constants/traInfo';
+import type { TraTrain } from '../engines/TraTrainEngine';
 import type { VisualTheme } from './ThemeToggle';
 
 interface TrainInfoPanelProps {
-  train: Train | ThsrTrain | KrtcTrain | TmrtTrain;
+  train: Train | ThsrTrain | KrtcTrain | TmrtTrain | TraTrain;
   stationNames: Map<string, string>;
   onClose: () => void;
   visualTheme?: VisualTheme;
@@ -174,13 +175,42 @@ export function TrainInfoPanel({ train, stationNames, onClose, visualTheme = 'da
       {/* 可收合的詳細資訊 */}
       <div
         style={{
-          maxHeight: collapsed ? 0 : 200,
+          maxHeight: collapsed ? 0 : 250,
           overflow: 'hidden',
           transition: 'max-height 0.2s ease, opacity 0.2s ease, margin 0.2s ease',
           opacity: collapsed ? 0 : 1,
           marginTop: collapsed ? 0 : 12,
         }}
       >
+        {/* 車種（僅 TRA） */}
+        {isTra && 'trainType' in train && train.trainType && (
+          <div
+            style={{
+              marginBottom: 8,
+              fontSize: 12,
+              display: 'flex',
+              alignItems: 'center',
+              gap: 6,
+            }}
+          >
+            <span
+              style={{
+                background: colors.bgHighlight,
+                padding: '2px 8px',
+                borderRadius: 4,
+                fontWeight: 500,
+              }}
+            >
+              {train.trainType}
+            </span>
+            {'trainNo' in train && train.trainNo && (
+              <span style={{ color: colors.textSecondary, fontFamily: 'monospace' }}>
+                #{train.trainNo}
+              </span>
+            )}
+          </div>
+        )}
+
         {/* 起點 → 終點 */}
         <div
           style={{

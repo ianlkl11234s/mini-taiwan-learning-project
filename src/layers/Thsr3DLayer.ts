@@ -3,6 +3,7 @@ import mapboxgl from 'mapbox-gl';
 import type { ThsrTrain } from '../engines/ThsrTrainEngine';
 import type { Track } from '../types/track';
 import { THSR_COLOR_3D, getThsrDirection } from '../constants/thsrInfo';
+import { findSegmentByProgress } from '../utils/trackPreprocessor';
 
 // 參考點：台北市中心
 const MODEL_ORIGIN: [number, number] = [121.52, 25.02];
@@ -348,16 +349,23 @@ export class Thsr3DLayer implements mapboxgl.CustomLayerInterface {
     const coords = track.geometry.coordinates as [number, number][];
     if (coords.length < 2) return 0;
 
-    const trainPos = train.position;
+    let closestSegment: number;
 
-    let minDistSq = Infinity;
-    let closestSegment = 0;
+    // 效能優化：使用 progress + 距離快取直接定位線段
+    if (track.distanceCache && train.progress !== undefined) {
+      closestSegment = findSegmentByProgress(track.distanceCache, train.progress);
+    } else {
+      // 降級到原始方式
+      const trainPos = train.position;
+      let minDistSq = Infinity;
+      closestSegment = 0;
 
-    for (let i = 0; i < coords.length - 1; i++) {
-      const distSq = this.pointToSegmentDistSq(trainPos, coords[i], coords[i + 1]);
-      if (distSq < minDistSq) {
-        minDistSq = distSq;
-        closestSegment = i;
+      for (let i = 0; i < coords.length - 1; i++) {
+        const distSq = this.pointToSegmentDistSq(trainPos, coords[i], coords[i + 1]);
+        if (distSq < minDistSq) {
+          minDistSq = distSq;
+          closestSegment = i;
+        }
       }
     }
 

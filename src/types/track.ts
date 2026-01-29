@@ -26,10 +26,20 @@ export interface TrackProperties {
   color: string;
 }
 
+/**
+ * 效能優化：預計算的軌道距離資料
+ * 用於加速 interpolateOnLineString 和 calculateBearing
+ */
+export interface TrackDistanceCache {
+  totalLength: number;           // 軌道總長度
+  cumulativeDistances: number[]; // 累積距離陣列 [0, d1, d1+d2, ...]
+}
+
 export interface Track {
   type: 'Feature';
   properties: TrackProperties;
   geometry: TrackGeometry;
+  distanceCache?: TrackDistanceCache; // 效能優化：預計算的距離快取
 }
 
 export interface TrackCollection {

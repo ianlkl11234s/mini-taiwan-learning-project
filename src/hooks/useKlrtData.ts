@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import type { TrackCollection, StationCollection, Track } from '../types/track';
 import type { TrackSchedule } from '../types/schedule';
+import { preprocessTrack } from '../utils/trackPreprocessor';
 
 /**
  * 高雄輕軌軌道 ID 列表
@@ -74,10 +75,11 @@ export function useKlrtData(): KlrtDataState {
         };
         setTracks(trackCollection);
 
-        // 建立軌道索引
+        // 建立軌道索引（含距離快取預處理）
         const tMap = new Map<string, Track>();
         for (const track of trackFeatures) {
-          tMap.set(track.properties.track_id, track);
+          const processedTrack = preprocessTrack(track);
+          tMap.set(track.properties.track_id, processedTrack);
         }
         setTrackMap(tMap);
 

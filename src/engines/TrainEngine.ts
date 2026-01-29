@@ -8,8 +8,9 @@
  */
 
 import type { TrackSchedule, StationTime } from '../types/schedule';
-import type { Track } from '../types/track';
+import type { Track, TrackDistanceCache } from '../types/track';
 import { toExtendedSeconds, timeToSeconds, secondsToTimeStr } from '../utils/timeUtils';
+import { interpolateWithCache } from '../utils/trackPreprocessor';
 
 export interface Train {
   trainId: string;
@@ -115,16 +116,24 @@ function distance(p1: [number, number], p2: [number, number]): number {
 
 /**
  * 在線段上進行線性內插
+ * 效能優化：當提供 cache 時使用預計算的距離，避免每次重新計算
  */
 function interpolateOnLineString(
   coords: [number, number][],
-  progress: number
+  progress: number,
+  cache?: TrackDistanceCache
 ): [number, number] {
   if (coords.length === 0) return [0, 0];
   if (coords.length === 1) return coords[0];
   if (progress <= 0) return coords[0];
   if (progress >= 1) return coords[coords.length - 1];
 
+  // 使用快取版本（效能優化）
+  if (cache && cache.cumulativeDistances.length > 0) {
+    return interpolateWithCache(coords, cache, progress);
+  }
+
+  // 降級到原始版本（向後相容）
   const totalLength = calculateTotalLength(coords);
   const targetDistance = totalLength * progress;
 
@@ -154,15 +163,17 @@ function getStationProgressFallback(stationIndex: number, totalStations: number)
 
 /**
  * 在兩站之間進行插值 (使用實際進度)
+ * 效能優化：傳遞 cache 以加速內插計算
  */
 function interpolateBetweenStationsWithProgress(
   coords: [number, number][],
   fromProgress: number,
   toProgress: number,
-  segmentProgress: number
+  segmentProgress: number,
+  cache?: TrackDistanceCache
 ): [number, number] {
   const actualProgress = fromProgress + (toProgress - fromProgress) * segmentProgress;
-  return interpolateOnLineString(coords, actualProgress);
+  return interpolateOnLineString(coords, actualProgress, cache);
 }
 
 export class TrainEngine {
@@ -487,12 +498,15 @@ export class TrainEngine {
         const currentStationId = departure.stations[segment.stationIndex]?.station_id;
         const nextStationId = departure.stations[segment.nextStationIndex]?.station_id;
 
+        // 效能優化：取得預計算的距離快取
+        const distanceCache = track.distanceCache;
+
         if (displayStatus === 'stopped') {
           // 停站中：位置固定在車站 (使用實際進度)
           const stationProg = currentStationId
             ? this.getStationProgress(trackId, currentStationId, segment.stationIndex, totalStations)
             : getStationProgressFallback(segment.stationIndex, totalStations);
-          position = interpolateOnLineString(coords, stationProg);
+          position = interpolateOnLineString(coords, stationProg, distanceCache);
         } else {
           // 行駛中：在兩站間插值 (使用實際進度)
           const fromProgress = currentStationId
@@ -505,7 +519,8 @@ export class TrainEngine {
             coords,
             fromProgress,
             toProgress,
-            segment.segmentProgress
+            segment.segmentProgress,
+            distanceCache
           );
         }
 

@@ -12,7 +12,6 @@
 import { useState, useEffect } from 'react';
 import type { TrackCollection, StationCollection, Track } from '../types/track';
 import type { TraTrack, TraSchedule, TraDeparture, TraStationProgressMap } from '../engines/TraTrainEngine';
-import { preprocessTrack } from '../utils/trackPreprocessor';
 
 /**
  * 台鐵軌道 ID 列表 (用於顯示軌道)
@@ -270,11 +269,10 @@ export function useTraData(): TraDataState {
         };
         setTracks(trackCollection);
 
-        // 建立軌道索引（含距離快取預處理）
+        // 建立軌道索引
         const tMap = new Map<string, Track>();
         for (const track of trackFeatures) {
-          const processedTrack = preprocessTrack(track);
-          tMap.set(track.properties.track_id, processedTrack);
+          tMap.set(track.properties.track_id, track);
         }
         setTrackMap(tMap);
         console.log(`載入 ${trackFeatures.length} 條顯示軌道`);

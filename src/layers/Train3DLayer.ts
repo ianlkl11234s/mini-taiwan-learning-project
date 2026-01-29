@@ -3,7 +3,6 @@ import mapboxgl from 'mapbox-gl';
 import type { Train } from '../engines/TrainEngine';
 import type { Track } from '../types/track';
 import { getLineIdFromTrackId, LINE_COLORS_3D } from '../constants/lineInfo';
-import { findSegmentByProgress } from '../utils/trackPreprocessor';
 
 // 參考點：台北市中心
 const MODEL_ORIGIN: [number, number] = [121.52, 25.02];
@@ -381,8 +380,8 @@ export class Train3DLayer implements mapboxgl.CustomLayerInterface {
   /**
    * 根據列車實際位置計算行進方向
    *
-   * 效能優化：當軌道有預計算的距離快取時，使用 progress 直接定位線段
-   * 否則降級到遍歷找最近線段的方式
+   * 核心想法：找到列車位置最接近的軌道線段，用該線段的方向
+   * 這樣避免 progress 和實際位置不一致的問題
    */
   private calculateBearing(train: Train): number {
     const track = this.tracks.get(train.trackId);
@@ -391,23 +390,17 @@ export class Train3DLayer implements mapboxgl.CustomLayerInterface {
     const coords = track.geometry.coordinates as [number, number][];
     if (coords.length < 2) return 0;
 
-    let closestSegment: number;
+    const trainPos = train.position;
 
-    // 效能優化：使用 progress + 距離快取直接定位線段
-    if (track.distanceCache && train.progress !== undefined) {
-      closestSegment = findSegmentByProgress(track.distanceCache, train.progress);
-    } else {
-      // 降級到原始方式：遍歷找最近線段
-      const trainPos = train.position;
-      let minDistSq = Infinity;
-      closestSegment = 0;
+    // 找到最接近的軌道線段
+    let minDistSq = Infinity;
+    let closestSegment = 0;
 
-      for (let i = 0; i < coords.length - 1; i++) {
-        const distSq = this.pointToSegmentDistSq(trainPos, coords[i], coords[i + 1]);
-        if (distSq < minDistSq) {
-          minDistSq = distSq;
-          closestSegment = i;
-        }
+    for (let i = 0; i < coords.length - 1; i++) {
+      const distSq = this.pointToSegmentDistSq(trainPos, coords[i], coords[i + 1]);
+      if (distSq < minDistSq) {
+        minDistSq = distSq;
+        closestSegment = i;
       }
     }
 

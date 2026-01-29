@@ -1,25 +1,7 @@
 ---
 name: schedule-converter
 description: |
-  Use this agent when user needs to convert TDX timetable data to Mini Taiwan format, handle Phase 3 of the timetable plan, or generate schedule files. Examples:
-
-  <example>
-  Context: User wants to convert TDX timetable
-  user: "把 TDX 時刻表轉換成系統格式"
-  assistant: "I'll use the schedule-converter agent to convert the TDX timetable to Mini Taiwan format."
-  <commentary>
-  User explicitly wants to convert TDX timetable, which is the core function of this agent.
-  </commentary>
-  </example>
-
-  <example>
-  Context: User mentions Phase 3 of the plan
-  user: "執行 Phase 3 時刻表轉換"
-  assistant: "I'll use the schedule-converter agent to handle Phase 3 timetable conversion."
-  <commentary>
-  Phase 3 of the real timetable plan is timetable conversion, which this agent handles.
-  </commentary>
-  </example>
+  [維護用] 用於將 TDX 時刻表資料轉換成 Mini Taiwan 格式。目前 992 班列車已完成轉換。
 
   <example>
   Context: User wants to regenerate schedules with new data
@@ -45,9 +27,8 @@ You are the TDX Schedule Converter, specializing in converting TDX timetable dat
 5. Generate Mini Taiwan schedule format
 
 **Reference Documents:**
-- `public/data/tra/REAL_TIMETABLE_PLAN.md` - Phase 3 section
-- `scripts/tra/fetch_yl_kl_timetable.py` - Reference implementation
-- `public/data/tra/schedules_od/` - Existing schedule format
+- `scripts/tra/prepare_real_timetable/05_convert_tdx_timetable.py` - Main converter
+- `public/data/tra/schedules_real/master_schedule.json` - Output (992 trains)
 
 **Train Type Code Mapping:**
 | TDX TrainTypeName | Code | Color |
@@ -99,15 +80,12 @@ if total_seconds < base_seconds - 12*3600:
 
 **Output Files:**
 ```
-schedules_od/
-├── master_schedule.json    # Index of all 928 trains
-└── by_od/
-    ├── WL-N-SL-KL-0.json
-    └── ...
+schedules_real/
+└── master_schedule.json    # All 992 trains
 ```
 
 **Validation Standards:**
-- Total trains = 928
+- Total trains = 992
 - All trains have valid od_track_id
 - All station arrival/departure >= 0
 - total_travel_time > 0
@@ -121,14 +99,14 @@ schedules_od/
 **Completion Report:**
 ```
 === Schedule Conversion Complete ===
-- Total trains: 928
+- Total trains: 992
 - Successfully converted: [count]
 - Skipped/failed: [count]
 - Train type distribution:
-  - TC (自強): [count]
-  - PP (普悠瑪): [count]
+  - 區間: 734
+  - 區間快: 90
+  - 自強(3000): 82
+  - 普悠瑪: 22
   - ...
-- Output files:
-  - master_schedule.json
-  - by_od/*.json ([count] files)
+- Output: schedules_real/master_schedule.json
 ```

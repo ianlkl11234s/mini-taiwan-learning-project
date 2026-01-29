@@ -1,25 +1,7 @@
 ---
 name: od-batch-generator
 description: |
-  Use this agent when user needs to generate O-D tracks from base tracks, extract track segments, or handle Phase 1 of the timetable plan. Examples:
-
-  <example>
-  Context: User wants to generate missing O-D tracks
-  user: "幫我產生缺少的 O-D 軌道"
-  assistant: "I'll use the od-batch-generator agent to extract and generate the missing O-D tracks."
-  <commentary>
-  User explicitly wants to generate O-D tracks, which is the core function of this agent.
-  </commentary>
-  </example>
-
-  <example>
-  Context: User mentions Phase 1 of the plan
-  user: "執行 Phase 1 軌道精細化"
-  assistant: "I'll use the od-batch-generator agent to handle Phase 1 O-D track generation."
-  <commentary>
-  Phase 1 of the real timetable plan is O-D track refinement, which this agent handles.
-  </commentary>
-  </example>
+  [維護用] 用於產生新的 O-D 軌道或擷取軌道區段。目前 178 種 O-D 軌道已完成。
 
   <example>
   Context: User wants to extract a specific track segment

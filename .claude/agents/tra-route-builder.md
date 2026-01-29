@@ -137,12 +137,13 @@ color: blue
    - 距離 > 50m 的車站需人工確認
    - 確保進度值順序正確
 
-### Phase 4: 時刻表生成
+### Phase 4: 時刻表整合
 
-1. 查詢台鐵官網時刻表
-2. 定義車站順序和 ID
-3. 計算行車時間參數
-4. 輸出：`public/data/tra/schedules_od/{LINE}-*.json`
+> 注意：目前所有時刻表已整合到 `schedules_real/master_schedule.json` (992 班 TDX 資料)
+
+如需新增路線的時刻表：
+1. 執行 TDX 時刻表轉換腳本
+2. 更新 `master_schedule.json`
 
 ### Phase 5: 程式碼整合
 

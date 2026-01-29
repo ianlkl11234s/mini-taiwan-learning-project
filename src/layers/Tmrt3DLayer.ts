@@ -62,6 +62,17 @@ export class Tmrt3DLayer implements mapboxgl.CustomLayerInterface {
   private outlineMaterial: THREE.LineBasicMaterial | null = null;
   private outlineGeometry: THREE.EdgesGeometry | null = null;
 
+  // 效能優化：重用矩陣物件，避免每幀建立新物件
+  private readonly _rotationX = new THREE.Matrix4();
+  private readonly _rotationY = new THREE.Matrix4();
+  private readonly _rotationZ = new THREE.Matrix4();
+  private readonly _matrixM = new THREE.Matrix4();
+  private readonly _matrixL = new THREE.Matrix4();
+  private readonly _scaleVector = new THREE.Vector3();
+  private readonly _axisX = new THREE.Vector3(1, 0, 0);
+  private readonly _axisY = new THREE.Vector3(0, 1, 0);
+  private readonly _axisZ = new THREE.Vector3(0, 0, 1);
+
   constructor(tracks?: Map<string, Track>) {
     if (tracks) {
       this.tracks = tracks;
@@ -200,36 +211,29 @@ export class Tmrt3DLayer implements mapboxgl.CustomLayerInterface {
 
     this.updateTrainMeshes();
 
-    const rotationX = new THREE.Matrix4().makeRotationAxis(
-      new THREE.Vector3(1, 0, 0),
-      this.modelTransform.rotateX
-    );
-    const rotationY = new THREE.Matrix4().makeRotationAxis(
-      new THREE.Vector3(0, 1, 0),
-      this.modelTransform.rotateY
-    );
-    const rotationZ = new THREE.Matrix4().makeRotationAxis(
-      new THREE.Vector3(0, 0, 1),
-      this.modelTransform.rotateZ
-    );
+    // 效能優化：重用矩陣物件
+    this._rotationX.makeRotationAxis(this._axisX, this.modelTransform.rotateX);
+    this._rotationY.makeRotationAxis(this._axisY, this.modelTransform.rotateY);
+    this._rotationZ.makeRotationAxis(this._axisZ, this.modelTransform.rotateZ);
 
-    const m = new THREE.Matrix4().fromArray(matrix);
-    const l = new THREE.Matrix4()
+    this._matrixM.fromArray(matrix);
+    this._scaleVector.set(
+      this.modelTransform.scale,
+      -this.modelTransform.scale,
+      this.modelTransform.scale
+    );
+    this._matrixL
       .makeTranslation(
         this.modelTransform.translateX,
         this.modelTransform.translateY,
         this.modelTransform.translateZ
       )
-      .scale(new THREE.Vector3(
-        this.modelTransform.scale,
-        -this.modelTransform.scale,
-        this.modelTransform.scale
-      ))
-      .multiply(rotationX)
-      .multiply(rotationY)
-      .multiply(rotationZ);
+      .scale(this._scaleVector)
+      .multiply(this._rotationX)
+      .multiply(this._rotationY)
+      .multiply(this._rotationZ);
 
-    this.camera.projectionMatrix = m.multiply(l);
+    this.camera.projectionMatrix = this._matrixM.multiply(this._matrixL);
 
     this.renderer.resetState();
     this.renderer.render(this.scene, this.camera);

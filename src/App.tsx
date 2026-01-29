@@ -496,29 +496,36 @@ function App() {
     return names;
   }, [stations, thsrStations, krtcStations, klrtStations, tmrtStations]);
 
-  // 取得選中的列車資料（同時支援 MRT、THSR、KRTC、KLRT、TMRT 和 TRA）
+  // 建立列車索引（效能優化：O(1) 查找取代 O(n) find）
+  const trainMap = useMemo(() => {
+    const map = new Map<string, Train | ThsrTrain | KrtcTrain | KlrtTrain | TmrtTrain | TraTrain>();
+    // 加入所有系統的列車
+    for (const train of filteredTrains) {
+      map.set(train.trainId, train);
+    }
+    for (const train of filteredThsrTrains) {
+      map.set(train.trainId, train);
+    }
+    for (const train of filteredKrtcTrains) {
+      map.set(train.trainId, train);
+    }
+    for (const train of filteredKlrtTrains) {
+      map.set(train.trainId, train);
+    }
+    for (const train of filteredTmrtTrains) {
+      map.set(train.trainId, train);
+    }
+    for (const train of filteredTraTrains) {
+      map.set(train.trainId, train);
+    }
+    return map;
+  }, [filteredTrains, filteredThsrTrains, filteredKrtcTrains, filteredKlrtTrains, filteredTmrtTrains, filteredTraTrains]);
+
+  // 取得選中的列車資料（效能優化：使用 Map O(1) 查找）
   const selectedTrain = useMemo(() => {
     if (!selectedTrainId) return null;
-    // 先從 MRT 找
-    const mrtTrain = filteredTrains.find(t => t.trainId === selectedTrainId);
-    if (mrtTrain) return mrtTrain;
-    // 再從 THSR 找
-    const thsrTrain = filteredThsrTrains.find(t => t.trainId === selectedTrainId);
-    if (thsrTrain) return thsrTrain;
-    // 再從 KRTC 找
-    const krtcTrain = filteredKrtcTrains.find(t => t.trainId === selectedTrainId);
-    if (krtcTrain) return krtcTrain;
-    // 再從 KLRT 找
-    const klrtTrain = filteredKlrtTrains.find(t => t.trainId === selectedTrainId);
-    if (klrtTrain) return klrtTrain;
-    // 最後從 TMRT 找
-    const tmrtTrain = filteredTmrtTrains.find(t => t.trainId === selectedTrainId);
-    if (tmrtTrain) return tmrtTrain;
-    // 從 TRA 找
-    const traTrain = filteredTraTrains.find(t => t.trainId === selectedTrainId);
-    if (traTrain) return traTrain;
-    return null;
-  }, [selectedTrainId, filteredTrains, filteredThsrTrains, filteredKrtcTrains, filteredKlrtTrains, filteredTmrtTrains, filteredTraTrains]);
+    return trainMap.get(selectedTrainId) ?? null;
+  }, [selectedTrainId, trainMap]);
 
 
   // 選擇列車

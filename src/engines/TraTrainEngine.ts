@@ -195,6 +195,22 @@ function getTrackIdFromOdTrackId(odTrackId: string): string {
   if (lineId === 'OD' || lineId === 'BB' || lineId === 'SP') {
     // 嘗試從軌道 ID 中的站名縮寫推斷路線
     const trackStr = odTrackId.toUpperCase();
+
+    // 【優先】南迴線軌道（以 -SK 結尾或包含 -SK-）
+    // 這些是經由南迴線的跨線車，顯示為南迴線
+    if (trackStr.endsWith('-SK') || trackStr.includes('-SK-')) {
+      // 根據軌道名稱判斷方向：
+      // HL-*, TT-* 開頭（東→西）= 往新左營方向 = SK-0
+      // *-HL, *-TT 結尾（西→東）= 往臺東方向 = SK-1
+      const parts2 = odTrackId.split('-');
+      // OD-HL-TN-SK → HL 是第二部分 → 往西 → 0
+      // OD-TN-HL-SK → TN 是第二部分 → 往東 → 1
+      if (parts2[1] === 'HL' || parts2[1] === 'TT') {
+        return 'SK-0';  // 南迴線 往新左營
+      }
+      return 'SK-1';  // 南迴線 往臺東
+    }
+
     // 海線車站
     if (trackStr.includes('-C-') && !trackStr.includes('-CH-')) {
       return 'WL-C-CH-ZN-0';
@@ -203,11 +219,11 @@ function getTrackIdFromOdTrackId(odTrackId: string): string {
     if (trackStr.includes('JJ')) {
       return 'JJ-0';
     }
-    // 臺東相關
+    // 臺東相關（不含南迴，已在上方處理）
     if (trackStr.includes('TT')) {
       return 'TL-0';
     }
-    // 花蓮相關
+    // 花蓮相關（不含南迴，已在上方處理）
     if (trackStr.includes('HL') && !trackStr.includes('SHL')) {
       return 'BH-SX-HL-0';
     }

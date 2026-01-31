@@ -222,8 +222,8 @@ function App() {
     new Set(['R', 'BL', 'G', 'O', 'BR', 'Y', 'A', 'K', 'V'])
   );
 
-  // 貓空纜車三段式狀態：full | tracks-only | hidden - 預設隱藏
-  const [mkState, setMkState] = useState<MKFilterState>('hidden');
+  // 貓空纜車三段式狀態：full | tracks-only | hidden - 預設僅軌道
+  const [mkState, setMkState] = useState<MKFilterState>('tracks-only');
 
   // 高鐵三段式狀態：full | tracks-only | hidden - 預設顯示
   const [thsrState, setThsrState] = useState<ThsrFilterState>('full');
@@ -3458,22 +3458,24 @@ function App() {
 
             {/* 公告區塊 */}
             <div style={{ marginBottom: 24 }}>
-              <h3 style={{ margin: '0 0 12px', fontSize: 16, fontWeight: 600, color: '#f8b61c', display: 'flex', alignItems: 'center', gap: 8 }}>
-                <span style={{ fontSize: 18 }}>📢</span> 公告
+              <h3 style={{ margin: '0 0 12px', fontSize: 16, fontWeight: 600, color: '#f8b61c' }}>
+                公告
               </h3>
               <div style={{ background: '#2a2a2a', borderRadius: 8, padding: '12px 16px', fontSize: 14, lineHeight: 1.6 }}>
                 <p style={{ margin: '0 0 8px', color: '#fff' }}>網站為學習性質，仍需持續優化中！</p>
                 <ul style={{ margin: 0, paddingLeft: 20 }}>
+                  <li style={{ color: '#ccc' }}>目前效能尚未經過完整優化，使用時可能會有輕微卡頓</li>
+                  <li style={{ color: '#ccc' }}>部分捷運系統的時刻表是以推估形式呈現，詳見下方資料來源</li>
+                  <li style={{ color: '#ccc' }}>列車位置皆為模擬，並非實際即時位置，且尚未考慮追車或行駛速度不均等狀況</li>
                   <li style={{ color: '#ccc' }}>台北捷運文湖線與環狀線首班車時刻表尚未校正</li>
-                  <li style={{ color: '#ccc' }}>高鐵時刻表為平日班次</li>
                 </ul>
               </div>
             </div>
 
             {/* 資料來源區塊 */}
             <div style={{ marginBottom: 24 }}>
-              <h3 style={{ margin: '0 0 12px', fontSize: 16, fontWeight: 600, color: '#a78bfa', display: 'flex', alignItems: 'center', gap: 8 }}>
-                <span style={{ fontSize: 18 }}>📊</span> 時刻表資料來源
+              <h3 style={{ margin: '0 0 12px', fontSize: 16, fontWeight: 600, color: '#66c4a0' }}>
+                時刻表資料來源
               </h3>
               <div style={{ background: '#2a2a2a', borderRadius: 8, padding: '12px 16px', fontSize: 13, lineHeight: 1.6 }}>
                 <table style={{ width: '100%', borderCollapse: 'collapse' }}>
@@ -3526,8 +3528,8 @@ function App() {
 
             {/* 使用說明區塊 */}
             <div>
-              <h3 style={{ margin: '0 0 12px', fontSize: 16, fontWeight: 600, color: '#66c4a0', display: 'flex', alignItems: 'center', gap: 8 }}>
-                <span style={{ fontSize: 18 }}>📖</span> 使用說明
+              <h3 style={{ margin: '0 0 12px', fontSize: 16, fontWeight: 600, color: '#66c4a0' }}>
+                使用說明
               </h3>
               <div style={{ background: '#2a2a2a', borderRadius: 8, padding: '12px 16px', fontSize: 14, lineHeight: 1.8 }}>
                 <div style={{ marginBottom: 12 }}>

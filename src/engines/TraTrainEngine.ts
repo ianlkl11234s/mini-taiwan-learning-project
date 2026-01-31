@@ -211,7 +211,7 @@ function getTrackIdFromOdTrackId(odTrackId: string): string {
       return 'SK-1';  // 南迴線 往臺東
     }
 
-    // 海線車站
+    // 海線車站（-C- 但不是 -CH-）
     if (trackStr.includes('-C-') && !trackStr.includes('-CH-')) {
       return 'WL-C-CH-ZN-0';
     }
@@ -219,37 +219,45 @@ function getTrackIdFromOdTrackId(odTrackId: string): string {
     if (trackStr.includes('JJ')) {
       return 'JJ-0';
     }
-    // 臺東相關（不含南迴，已在上方處理）
-    if (trackStr.includes('TT')) {
-      return 'TL-0';
+    // 沙崙線（SHL，需要在 HL 之前檢查）
+    if (trackStr.includes('SHL') || trackStr.includes('沙崙')) {
+      return 'SH-0';
     }
-    // 花蓮相關（不含南迴，已在上方處理）
-    if (trackStr.includes('HL') && !trackStr.includes('SHL')) {
-      return 'BH-SX-HL-0';
+    // 后里相關（HL2，需要在 HL 之前檢查）
+    if (trackStr.includes('HL2')) {
+      return 'WL-M-ZN-CH-0';  // 山線
     }
     // 屏東相關
     if (trackStr.includes('屏東') || trackStr.includes('PL')) {
       return 'PT-0';
     }
-    // 沙崙線
-    if (trackStr.includes('SHL') || trackStr.includes('沙崙')) {
-      return 'SH-0';
-    }
     // 嘉義、臺南、潮州等南段（CZ=潮州，非成追線）
+    // 需要在 HL 之前檢查，因為 OD-CZ-HL 的 HL 代表七堵不是花蓮
     if (trackStr.includes('CY') || trackStr.includes('TN') || trackStr.includes('KS') || trackStr.includes('CZ')) {
       return 'WL-S-CH-ZY-0';
     }
-    // 彰化相關
+    // 彰化相關（需要在 HL 之前檢查，因為 OD-CH-HL 的 HL 代表湖口）
     if (trackStr.includes('CH')) {
       return 'WL-M-ZN-CH-0';
     }
-    // 基隆、七堵
+    // 基隆、七堵（需要在 HL 之前檢查）
     if (trackStr.includes('KL') || trackStr.includes('QD')) {
       return 'WL-N-SL-BD-0';
     }
     // 苗栗、三義
     if (trackStr.includes('ML') || trackStr.includes('三義')) {
       return 'WL-M-ZN-CH-0';
+    }
+    // 臺東相關（不含南迴，已在上方處理）
+    // 放在最後，因為只有真正經過台東的軌道才應該匹配
+    if (trackStr.includes('TT')) {
+      return 'TL-0';
+    }
+    // 花蓮相關（不含南迴和沙崙，已在上方處理）
+    // 放在最後，只有真正經過花蓮的軌道才應該匹配
+    // 例如 OD-ML-HL（苗栗→花蓮）、OD-DL-HL（斗六→花蓮）
+    if (trackStr.includes('HL')) {
+      return 'BH-SX-HL-0';
     }
     // 預設：西部幹線
     return 'WL-N-ZN-SL-0';

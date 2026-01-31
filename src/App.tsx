@@ -3353,7 +3353,6 @@ function App() {
             <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 4 }}>
               <div style={{ width: 20, height: 3, background: TRA_PRIMARY_COLOR, borderRadius: 2 }} />
               <span style={{ fontWeight: 500 }}>台灣鐵路</span>
-              <span style={{ color: themeColors.panelTextSecondary, fontSize: 10 }}>({filteredTraTrains.length})</span>
             </div>
             <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginLeft: 8 }}>
               <div style={{ width: 8, height: 8, background: TRA_PRIMARY_COLOR, borderRadius: '50%', border: '1px solid white' }} />

@@ -8,6 +8,7 @@ export interface TransportCounts {
   klrt: number;   // KHH LRT (高雄輕軌)
   thsr: number;   // THSR (高鐵)
   tmrt: number;   // TXG MRT (台中捷運)
+  tra: number;    // TRA (台鐵)
 }
 
 interface TimeControlProps {
@@ -117,6 +118,8 @@ export function TimeControl({
           <span style={{ fontVariantNumeric: 'tabular-nums', minWidth: 24 }}>{transportCounts.tmrt}</span>
           <span style={{ color: '#f37421' }}>HSR</span>
           <span style={{ fontVariantNumeric: 'tabular-nums', minWidth: 24 }}>{transportCounts.thsr}</span>
+          <span style={{ color: '#0072bc' }}>TRA</span>
+          <span style={{ fontVariantNumeric: 'tabular-nums', minWidth: 24 }}>{transportCounts.tra}</span>
         </div>
       </div>
 

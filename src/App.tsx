@@ -65,55 +65,55 @@ function App() {
   // MRT 資料載入
   const { tracks, stations, schedules, trackMap, stationProgress, loading, error } = useData();
 
-  // THSR 資料載入（THSR 載入錯誤不阻止 MRT 顯示）
+  // THSR 資料載入
   const {
     tracks: thsrTracks,
     stations: thsrStations,
     schedules: thsrSchedules,
     trackMap: thsrTrackMap,
     stationProgress: thsrStationProgress,
-    loading: _thsrLoading,
+    loading: thsrLoading,
     error: _thsrError,
   } = useThsrData();
-  void _thsrLoading; void _thsrError; // 抑制未使用變數警告
+  void _thsrError; // 錯誤不阻止顯示
 
-  // KRTC 資料載入（KRTC 載入錯誤不阻止其他顯示）
+  // KRTC 資料載入
   const {
     tracks: krtcTracks,
     stations: krtcStations,
     schedules: krtcSchedules,
     trackMap: krtcTrackMap,
     stationProgress: krtcStationProgress,
-    loading: _krtcLoading,
+    loading: krtcLoading,
     error: _krtcError,
   } = useKrtcData();
-  void _krtcLoading; void _krtcError; // 抑制未使用變數警告
+  void _krtcError; // 錯誤不阻止顯示
 
-  // KLRT 資料載入（KLRT 載入錯誤不阻止其他顯示）
+  // KLRT 資料載入
   const {
     tracks: klrtTracks,
     stations: klrtStations,
     schedules: klrtSchedules,
     trackMap: klrtTrackMap,
     stationProgress: klrtStationProgress,
-    loading: _klrtLoading,
+    loading: klrtLoading,
     error: _klrtError,
   } = useKlrtData();
-  void _klrtLoading; void _klrtError; // 抑制未使用變數警告
+  void _klrtError; // 錯誤不阻止顯示
 
-  // TMRT 資料載入（TMRT 載入錯誤不阻止其他顯示）
+  // TMRT 資料載入
   const {
     tracks: tmrtTracks,
     stations: tmrtStations,
     schedules: tmrtSchedules,
     trackMap: tmrtTrackMap,
     stationProgress: tmrtStationProgress,
-    loading: _tmrtLoading,
+    loading: tmrtLoading,
     error: _tmrtError,
   } = useTmrtData();
-  void _tmrtLoading; void _tmrtError; // 抑制未使用變數警告
+  void _tmrtError; // 錯誤不阻止顯示
 
-  // TRA 資料載入（TRA 載入錯誤不阻止其他顯示）
+  // TRA 資料載入
   const {
     tracks: traTracks,
     stations: traStations,
@@ -121,10 +121,13 @@ function App() {
     odTracks: traOdTracks,
     schedules: traSchedules,
     stationProgress: traStationProgress,
-    loading: _traLoading,
+    loading: traLoading,
     error: _traError,
   } = useTraData();
-  void _traLoading; void _traError; void _traTrackMap; // 抑制未使用變數警告
+  void _traError; void _traTrackMap; // 錯誤不阻止顯示
+
+  // 合併所有系統的載入狀態
+  const allLoading = loading || thsrLoading || krtcLoading || klrtLoading || tmrtLoading || traLoading;
 
   // 預計算直方圖資料（所有運輸系統合計，排除纜車）
   const allSchedules = useMemo(() => {
@@ -628,9 +631,9 @@ function App() {
     };
   }, [mapLoaded, isFollowing, use3DMode]);
 
-  // 初始化地圖 - 當 loading 完成後才初始化
+  // 初始化地圖 - 當所有資料載入完成後才初始化
   useEffect(() => {
-    if (loading || !mapContainer.current || map.current) return;
+    if (allLoading || !mapContainer.current || map.current) return;
 
     // 根據預設主題選擇初始樣式，避免載入時閃爍
     const initialStyle = MAP_STYLES[currentMapStyleRef.current];
@@ -661,7 +664,7 @@ function App() {
       map.current?.remove();
       map.current = null;
     };
-  }, [loading]);
+  }, [allLoading]);
 
   // 載入軌道圖層
   useEffect(() => {
@@ -2985,8 +2988,17 @@ function App() {
     }
   }, [mapTheme, mapLoaded, switchLightPreset, switchMapStyle]);
 
-  // 載入中畫面
-  if (loading) {
+  // 載入中畫面（等待所有系統資料載入完成）
+  if (allLoading) {
+    // 計算載入進度
+    const loadingStatus = [
+      { name: '台北捷運', done: !loading },
+      { name: '台灣高鐵', done: !thsrLoading },
+      { name: '高雄捷運', done: !krtcLoading },
+      { name: '高雄輕軌', done: !klrtLoading },
+      { name: '台中捷運', done: !tmrtLoading },
+      { name: '台灣鐵路', done: !traLoading },
+    ];
     return (
       <div
         style={{
@@ -2997,11 +3009,84 @@ function App() {
           background: '#1a1a1a',
           color: 'white',
           fontFamily: 'system-ui',
+          position: 'relative',
         }}
       >
+        <style>{`
+          @keyframes spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+          }
+        `}</style>
+        {/* 左上角標題 */}
+        <div
+          style={{
+            position: 'absolute',
+            top: 20,
+            left: 20,
+          }}
+        >
+          <h1 style={{ margin: 0, fontSize: 24, fontWeight: 600 }}>
+            Mini Taiwan
+          </h1>
+          <p style={{ margin: '4px 0 0', fontSize: 14, color: '#888' }}>
+            台灣交通運輸模擬
+          </p>
+        </div>
         <div style={{ textAlign: 'center' }}>
-          <div style={{ fontSize: 48, marginBottom: 16 }}>🚇</div>
-          <div>載入資料中...</div>
+          {/* 列車 icon 外圍旋轉圈 */}
+          <div style={{
+            position: 'relative',
+            width: 80,
+            height: 80,
+            margin: '0 auto 16px',
+          }}>
+            {/* 旋轉的外圈 */}
+            <div style={{
+              position: 'absolute',
+              inset: 0,
+              border: '3px solid transparent',
+              borderTopColor: '#4a9eff',
+              borderRightColor: '#4a9eff',
+              borderRadius: '50%',
+              animation: 'spin 1s linear infinite',
+            }} />
+            {/* 列車 icon */}
+            <div style={{
+              position: 'absolute',
+              inset: 0,
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              fontSize: 36,
+            }}>
+              🚇
+            </div>
+          </div>
+          <div style={{ marginBottom: 16 }}>載入資料中...</div>
+          {/* 載入清單 */}
+          <div style={{
+            display: 'flex',
+            flexDirection: 'column',
+            gap: 6,
+            fontSize: 14,
+            textAlign: 'left',
+          }}>
+            {loadingStatus.map((item) => (
+              <div
+                key={item.name}
+                style={{
+                  display: 'flex',
+                  justifyContent: 'space-between',
+                  gap: 24,
+                  color: item.done ? '#4a9eff' : '#666',
+                }}
+              >
+                <span>{item.name}</span>
+                <span>{item.done ? '✓' : '...'}</span>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     );

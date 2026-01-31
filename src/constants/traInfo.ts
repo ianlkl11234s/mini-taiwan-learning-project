@@ -499,14 +499,19 @@ export function getTraLineName(trackId: string): string {
 }
 
 /**
- * 取得線路名稱（根據起終站推斷，用於 OD 軌道）
+ * 取得線路名稱（用於顯示）
+ *
+ * 由於台鐵跨線列車的路線判斷非常複雜（同一車次可能經過多條路線），
+ * 且軌道分配也可能有誤，為避免顯示錯誤資訊，
+ * 所有 O-D/BB/SP 軌道統一顯示為「台鐵」。
  */
-export function getTraLineNameFromStations(trackId: string, originId?: string, destId?: string): string {
+export function getTraLineNameFromStations(trackId: string, _originId?: string, _destId?: string): string {
   const lineId = getTraLineId(trackId);
 
-  // OD/BB/SP 軌道：根據起終站推斷路線
-  if ((lineId === 'OD' || lineId === 'BB' || lineId === 'SP') && originId && destId) {
-    return inferLineNameFromStations(originId, destId);
+  // O-D/BB/SP 軌道：統一顯示「台鐵」
+  // 原因：跨線列車無法準確判斷屬於哪條路線
+  if (lineId === 'OD' || lineId === 'BB' || lineId === 'SP') {
+    return '台鐵';
   }
 
   return getTraLineName(trackId);

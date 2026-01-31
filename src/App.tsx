@@ -29,7 +29,7 @@ import { Tra3DLayer } from './layers/Tra3DLayer';
 import { TrainSymbolLayer } from './layers/TrainSymbolLayer';
 import { useAllTrains } from './hooks/useAllTrains';
 import { ThemeToggle, type MapTheme, type VisualTheme, getVisualTheme } from './components/ThemeToggle';
-import { TRACK_COLORS, TRAIN_COLORS, getTrainColor, getLineIdFromTrackId } from './constants/lineInfo';
+import { TRACK_COLORS, getTrainColor, getLineIdFromTrackId } from './constants/lineInfo';
 import { THSR_TRACK_COLOR, THSR_TRAIN_COLORS, getThsrDirection } from './constants/thsrInfo';
 import { KRTC_TRACK_COLORS, KRTC_TRAIN_COLORS, getKrtcLineId, getKrtcDirection } from './constants/krtcInfo';
 import { KLRT_TRACK_COLORS, KLRT_TRAIN_COLORS, getKlrtLineId, getKlrtDirection } from './constants/klrtInfo';
@@ -3078,8 +3078,7 @@ function App() {
         )}
       </div>
 
-      {/* 圖例 - 根據開啟的圖層動態顯示 */}
-      {(mkState !== 'hidden' || visibleKrtcLines.size > 0 || visibleTmrtLines.size > 0 || thsrState !== 'hidden' || traState !== 'hidden') && (
+      {/* 圖例 - 簡化版，始終顯示所有路線 */}
       <div
         style={{
           position: 'absolute',
@@ -3091,10 +3090,11 @@ function App() {
           padding: '10px 14px',
           color: themeColors.panelText,
           fontFamily: 'system-ui',
-          fontSize: 12,
+          fontSize: 11,
           backdropFilter: 'blur(8px)',
           border: `1px solid ${themeColors.panelBorder}`,
           transition: 'background 0.3s, color 0.3s, border-color 0.3s',
+          minWidth: 140,
         }}
       >
         {/* 可點擊的標題 */}
@@ -3106,7 +3106,7 @@ function App() {
             gap: 6,
             cursor: 'pointer',
             userSelect: 'none',
-            marginBottom: legendCollapsed ? 0 : 8,
+            marginBottom: legendCollapsed ? 0 : 10,
           }}
         >
           <span style={{
@@ -3123,246 +3123,100 @@ function App() {
         {/* 可收合內容區 */}
         <div
           style={{
-            maxHeight: legendCollapsed ? 0 : 400,
+            maxHeight: legendCollapsed ? 0 : 300,
             overflow: legendCollapsed ? 'hidden' : 'auto',
             transition: 'max-height 0.3s ease-out, opacity 0.3s ease-out',
             opacity: legendCollapsed ? 0 : 1,
           }}
         >
-          {/* === 台北捷運 === */}
-          {mkState !== 'hidden' && visibleLines.has('R') && (
-          <div style={{ marginBottom: 10 }}>
-            <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 4 }}>
-              <div style={{ width: 20, height: 3, background: TRACK_COLORS.R, borderRadius: 2 }} />
-              <span style={{ fontWeight: 500 }}>淡水信義線</span>
-            </div>
-            <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 2, marginLeft: 8 }}>
-              <div style={{ width: 8, height: 8, background: TRAIN_COLORS.R_0, borderRadius: '50%', border: '1px solid white' }} />
-              <span style={{ color: themeColors.panelTextSecondary }}>往淡水</span>
-            </div>
-            <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginLeft: 8 }}>
-              <div style={{ width: 8, height: 8, background: TRAIN_COLORS.R_1, borderRadius: '50%', border: '1px solid white' }} />
-              <span style={{ color: themeColors.panelTextSecondary }}>往象山</span>
-            </div>
-          </div>
-          )}
-
-          {mkState !== 'hidden' && visibleLines.has('BL') && (
-          <div style={{ marginBottom: 10 }}>
-            <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 4 }}>
-              <div style={{ width: 20, height: 3, background: TRACK_COLORS.BL, borderRadius: 2 }} />
-              <span style={{ fontWeight: 500 }}>板南線</span>
-            </div>
-            <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 2, marginLeft: 8 }}>
-              <div style={{ width: 8, height: 8, background: TRAIN_COLORS.BL_0, borderRadius: '50%', border: '1px solid white' }} />
-              <span style={{ color: themeColors.panelTextSecondary }}>往南港展覽館</span>
-            </div>
-            <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginLeft: 8 }}>
-              <div style={{ width: 8, height: 8, background: TRAIN_COLORS.BL_1, borderRadius: '50%', border: '1px solid white' }} />
-              <span style={{ color: themeColors.panelTextSecondary }}>往頂埔</span>
+          {/* 台北捷運 */}
+          <div style={{ marginBottom: 8 }}>
+            <div style={{ fontWeight: 500, marginBottom: 4, color: themeColors.panelTextSecondary, fontSize: 10 }}>台北捷運</div>
+            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '4px 12px' }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: 4 }}>
+                <div style={{ width: 16, height: 3, background: TRACK_COLORS.R, borderRadius: 1 }} />
+                <span>紅線</span>
+              </div>
+              <div style={{ display: 'flex', alignItems: 'center', gap: 4 }}>
+                <div style={{ width: 16, height: 3, background: TRACK_COLORS.BL, borderRadius: 1 }} />
+                <span>藍線</span>
+              </div>
+              <div style={{ display: 'flex', alignItems: 'center', gap: 4 }}>
+                <div style={{ width: 16, height: 3, background: TRACK_COLORS.G, borderRadius: 1 }} />
+                <span>綠線</span>
+              </div>
+              <div style={{ display: 'flex', alignItems: 'center', gap: 4 }}>
+                <div style={{ width: 16, height: 3, background: TRACK_COLORS.O, borderRadius: 1 }} />
+                <span>橘線</span>
+              </div>
+              <div style={{ display: 'flex', alignItems: 'center', gap: 4 }}>
+                <div style={{ width: 16, height: 3, background: TRACK_COLORS.BR, borderRadius: 1 }} />
+                <span>棕線</span>
+              </div>
             </div>
           </div>
-          )}
 
-          {mkState !== 'hidden' && visibleLines.has('G') && (
-          <div style={{ marginBottom: 10 }}>
-            <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 4 }}>
-              <div style={{ width: 20, height: 3, background: TRACK_COLORS.G, borderRadius: 2 }} />
-              <span style={{ fontWeight: 500 }}>松山新店線</span>
-            </div>
-            <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 2, marginLeft: 8 }}>
-              <div style={{ width: 8, height: 8, background: TRAIN_COLORS.G_0, borderRadius: '50%', border: '1px solid white' }} />
-              <span style={{ color: themeColors.panelTextSecondary }}>往新店</span>
-            </div>
-            <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginLeft: 8 }}>
-              <div style={{ width: 8, height: 8, background: TRAIN_COLORS.G_1, borderRadius: '50%', border: '1px solid white' }} />
-              <span style={{ color: themeColors.panelTextSecondary }}>往松山</span>
+          {/* 台北輕軌 */}
+          <div style={{ marginBottom: 8 }}>
+            <div style={{ fontWeight: 500, marginBottom: 4, color: themeColors.panelTextSecondary, fontSize: 10 }}>台北輕軌</div>
+            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '4px 12px' }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: 4 }}>
+                <div style={{ width: 16, height: 3, background: TRACK_COLORS.K, borderRadius: 1 }} />
+                <span>安坑</span>
+              </div>
+              <div style={{ display: 'flex', alignItems: 'center', gap: 4 }}>
+                <div style={{ width: 16, height: 3, background: TRACK_COLORS.V, borderRadius: 1 }} />
+                <span>淡海</span>
+              </div>
             </div>
           </div>
-          )}
 
-          {mkState !== 'hidden' && visibleLines.has('G3') && (
-          <div style={{ marginBottom: 10 }}>
-            <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 4 }}>
-              <div style={{ width: 20, height: 3, background: TRACK_COLORS.G3, borderRadius: 2 }} />
-              <span style={{ fontWeight: 500 }}>小碧潭支線</span>
-            </div>
-            <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginLeft: 8 }}>
-              <div style={{ width: 8, height: 8, background: TRACK_COLORS.G3, borderRadius: '50%', border: '1px solid white' }} />
-              <span style={{ color: themeColors.panelTextSecondary }}>七張↔小碧潭</span>
+          {/* 高雄捷運/輕軌 */}
+          <div style={{ marginBottom: 8 }}>
+            <div style={{ fontWeight: 500, marginBottom: 4, color: themeColors.panelTextSecondary, fontSize: 10 }}>高雄捷運</div>
+            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '4px 12px' }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: 4 }}>
+                <div style={{ width: 16, height: 3, background: KRTC_TRACK_COLORS.O, borderRadius: 1 }} />
+                <span>橘線</span>
+              </div>
+              <div style={{ display: 'flex', alignItems: 'center', gap: 4 }}>
+                <div style={{ width: 16, height: 3, background: KRTC_TRACK_COLORS.R, borderRadius: 1 }} />
+                <span>紅線</span>
+              </div>
+              <div style={{ display: 'flex', alignItems: 'center', gap: 4 }}>
+                <div style={{ width: 16, height: 3, background: KLRT_TRACK_COLORS.C, borderRadius: 1 }} />
+                <span>輕軌</span>
+              </div>
             </div>
           </div>
-          )}
 
-          {mkState !== 'hidden' && visibleLines.has('O') && (
-          <div style={{ marginBottom: 10 }}>
-            <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 4 }}>
-              <div style={{ width: 20, height: 3, background: TRACK_COLORS.O, borderRadius: 2 }} />
-              <span style={{ fontWeight: 500 }}>中和新蘆線</span>
-            </div>
-            <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 2, marginLeft: 8 }}>
-              <div style={{ width: 8, height: 8, background: TRAIN_COLORS.O_0, borderRadius: '50%', border: '1px solid white' }} />
-              <span style={{ color: themeColors.panelTextSecondary }}>往南勢角</span>
-            </div>
-            <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginLeft: 8 }}>
-              <div style={{ width: 8, height: 8, background: TRAIN_COLORS.O_1, borderRadius: '50%', border: '1px solid white' }} />
-              <span style={{ color: themeColors.panelTextSecondary }}>往迴龍/蘆洲</span>
+          {/* 台中捷運 */}
+          <div style={{ marginBottom: 8 }}>
+            <div style={{ fontWeight: 500, marginBottom: 4, color: themeColors.panelTextSecondary, fontSize: 10 }}>台中捷運</div>
+            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '4px 12px' }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: 4 }}>
+                <div style={{ width: 16, height: 3, background: TMRT_TRACK_COLORS.G, borderRadius: 1 }} />
+                <span>綠線</span>
+              </div>
             </div>
           </div>
-          )}
 
-          {mkState !== 'hidden' && visibleLines.has('BR') && (
-          <div style={{ marginBottom: 10 }}>
-            <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 4 }}>
-              <div style={{ width: 20, height: 3, background: TRACK_COLORS.BR, borderRadius: 2 }} />
-              <span style={{ fontWeight: 500 }}>文湖線</span>
-            </div>
-            <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 2, marginLeft: 8 }}>
-              <div style={{ width: 8, height: 8, background: TRAIN_COLORS.BR_0, borderRadius: '50%', border: '1px solid white' }} />
-              <span style={{ color: themeColors.panelTextSecondary }}>往南港展覽館</span>
-            </div>
-            <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginLeft: 8 }}>
-              <div style={{ width: 8, height: 8, background: TRAIN_COLORS.BR_1, borderRadius: '50%', border: '1px solid white' }} />
-              <span style={{ color: themeColors.panelTextSecondary }}>往動物園</span>
-            </div>
-          </div>
-          )}
-
-          {mkState !== 'hidden' && visibleLines.has('K') && (
-          <div style={{ marginBottom: 10 }}>
-            <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 4 }}>
-              <div style={{ width: 20, height: 3, background: TRACK_COLORS.K, borderRadius: 2 }} />
-              <span style={{ fontWeight: 500 }}>安坑輕軌</span>
-            </div>
-            <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 2, marginLeft: 8 }}>
-              <div style={{ width: 8, height: 8, background: TRAIN_COLORS.K_0, borderRadius: '50%', border: '1px solid white' }} />
-              <span style={{ color: themeColors.panelTextSecondary }}>往十四張</span>
-            </div>
-            <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginLeft: 8 }}>
-              <div style={{ width: 8, height: 8, background: TRAIN_COLORS.K_1, borderRadius: '50%', border: '1px solid white' }} />
-              <span style={{ color: themeColors.panelTextSecondary }}>往雙城</span>
-            </div>
-          </div>
-          )}
-
-          {mkState !== 'hidden' && visibleLines.has('V') && (
-          <div style={{ marginBottom: 10 }}>
-            <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 4 }}>
-              <div style={{ width: 20, height: 3, background: TRACK_COLORS.V, borderRadius: 2 }} />
-              <span style={{ fontWeight: 500 }}>淡海輕軌</span>
-            </div>
-            <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 2, marginLeft: 8 }}>
-              <div style={{ width: 8, height: 8, background: TRAIN_COLORS.V_0, borderRadius: '50%', border: '1px solid white' }} />
-              <span style={{ color: themeColors.panelTextSecondary }}>往崁頂/台北海洋大學</span>
-            </div>
-            <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginLeft: 8 }}>
-              <div style={{ width: 8, height: 8, background: TRAIN_COLORS.V_1, borderRadius: '50%', border: '1px solid white' }} />
-              <span style={{ color: themeColors.panelTextSecondary }}>往紅樹林/淡水漁人碼頭</span>
-            </div>
-          </div>
-          )}
-
-          {/* === 高雄捷運 === */}
-          {visibleKrtcLines.has('O') && (
-          <div style={{ marginBottom: 10 }}>
-            <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 4 }}>
-              <div style={{ width: 20, height: 3, background: KRTC_TRACK_COLORS.O, borderRadius: 2 }} />
-              <span style={{ fontWeight: 500 }}>高雄橘線</span>
-            </div>
-            <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 2, marginLeft: 8 }}>
-              <div style={{ width: 8, height: 8, background: KRTC_TRAIN_COLORS.O_0, borderRadius: '50%', border: '1px solid white' }} />
-              <span style={{ color: themeColors.panelTextSecondary }}>往西子灣</span>
-            </div>
-            <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginLeft: 8 }}>
-              <div style={{ width: 8, height: 8, background: KRTC_TRAIN_COLORS.O_1, borderRadius: '50%', border: '1px solid white' }} />
-              <span style={{ color: themeColors.panelTextSecondary }}>往大寮</span>
-            </div>
-          </div>
-          )}
-
-          {visibleKrtcLines.has('R') && (
-          <div style={{ marginBottom: 10 }}>
-            <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 4 }}>
-              <div style={{ width: 20, height: 3, background: KRTC_TRACK_COLORS.R, borderRadius: 2 }} />
-              <span style={{ fontWeight: 500 }}>高雄紅線</span>
-            </div>
-            <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 2, marginLeft: 8 }}>
-              <div style={{ width: 8, height: 8, background: KRTC_TRAIN_COLORS.R_0, borderRadius: '50%', border: '1px solid white' }} />
-              <span style={{ color: themeColors.panelTextSecondary }}>往南岡山</span>
-            </div>
-            <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginLeft: 8 }}>
-              <div style={{ width: 8, height: 8, background: KRTC_TRAIN_COLORS.R_1, borderRadius: '50%', border: '1px solid white' }} />
-              <span style={{ color: themeColors.panelTextSecondary }}>往小港</span>
-            </div>
-          </div>
-          )}
-
-          {visibleKrtcLines.has('C') && (
-          <div style={{ marginBottom: 10 }}>
-            <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 4 }}>
-              <div style={{ width: 20, height: 3, background: KLRT_TRACK_COLORS.C, borderRadius: 2 }} />
-              <span style={{ fontWeight: 500 }}>高雄輕軌</span>
-            </div>
-            <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginLeft: 8 }}>
-              <div style={{ width: 8, height: 8, background: KLRT_TRACK_COLORS.C, borderRadius: '50%', border: '1px solid white' }} />
-              <span style={{ color: themeColors.panelTextSecondary }}>環狀運行</span>
-            </div>
-          </div>
-          )}
-
-          {/* === 台中捷運 === */}
-          {visibleTmrtLines.has('G') && (
-          <div style={{ marginBottom: 10 }}>
-            <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 4 }}>
-              <div style={{ width: 20, height: 3, background: TMRT_TRACK_COLORS.G, borderRadius: 2 }} />
-              <span style={{ fontWeight: 500 }}>台中綠線</span>
-            </div>
-            <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 2, marginLeft: 8 }}>
-              <div style={{ width: 8, height: 8, background: TMRT_TRAIN_COLORS.G_0, borderRadius: '50%', border: '1px solid white' }} />
-              <span style={{ color: themeColors.panelTextSecondary }}>往高鐵台中站</span>
-            </div>
-            <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginLeft: 8 }}>
-              <div style={{ width: 8, height: 8, background: TMRT_TRAIN_COLORS.G_1, borderRadius: '50%', border: '1px solid white' }} />
-              <span style={{ color: themeColors.panelTextSecondary }}>往北屯總站</span>
-            </div>
-          </div>
-          )}
-
-          {/* === 高鐵 === */}
-          {thsrState !== 'hidden' && (
-          <div style={{ marginBottom: 10 }}>
-            <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 4 }}>
-              <div style={{ width: 20, height: 3, background: THSR_TRACK_COLOR, borderRadius: 2 }} />
-              <span style={{ fontWeight: 500 }}>台灣高鐵</span>
-              <span style={{ color: themeColors.panelTextSecondary, fontSize: 10 }}>({filteredThsrTrains.length})</span>
-            </div>
-            <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 2, marginLeft: 8 }}>
-              <div style={{ width: 8, height: 8, background: THSR_TRAIN_COLORS['0'], borderRadius: '50%', border: '1px solid white' }} />
-              <span style={{ color: themeColors.panelTextSecondary }}>南下</span>
-            </div>
-            <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginLeft: 8 }}>
-              <div style={{ width: 8, height: 8, background: THSR_TRAIN_COLORS['1'], borderRadius: '50%', border: '1px solid white' }} />
-              <span style={{ color: themeColors.panelTextSecondary }}>北上</span>
-            </div>
-          </div>
-          )}
-
-          {/* === 台鐵 === */}
-          {traState !== 'hidden' && (
+          {/* 台灣高鐵/台鐵 */}
           <div>
-            <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 4 }}>
-              <div style={{ width: 20, height: 3, background: TRA_PRIMARY_COLOR, borderRadius: 2 }} />
-              <span style={{ fontWeight: 500 }}>台灣鐵路</span>
-            </div>
-            <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginLeft: 8 }}>
-              <div style={{ width: 8, height: 8, background: TRA_PRIMARY_COLOR, borderRadius: '50%', border: '1px solid white' }} />
-              <span style={{ color: themeColors.panelTextSecondary }}>全線運行</span>
+            <div style={{ fontWeight: 500, marginBottom: 4, color: themeColors.panelTextSecondary, fontSize: 10 }}>鐵路</div>
+            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '4px 12px' }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: 4 }}>
+                <div style={{ width: 16, height: 3, background: THSR_TRACK_COLOR, borderRadius: 1 }} />
+                <span>高鐵</span>
+              </div>
+              <div style={{ display: 'flex', alignItems: 'center', gap: 4 }}>
+                <div style={{ width: 16, height: 3, background: TRA_PRIMARY_COLOR, borderRadius: 1 }} />
+                <span>台鐵</span>
+              </div>
             </div>
           </div>
-          )}
         </div>
       </div>
-      )}
 
       {/* 社群連結與提示 */}
       <div

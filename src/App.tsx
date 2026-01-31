@@ -44,7 +44,11 @@ type LightPreset = 'dawn' | 'day' | 'dusk' | 'night';
 const MAP_STYLES = {
   standard: 'mapbox://styles/mapbox/standard',
   dark: 'mapbox://styles/mapbox/dark-v11',
+  light: 'mapbox://styles/mapbox/light-v11',
+  satellite: 'mapbox://styles/mapbox/standard-satellite',
 } as const;
+
+type MapStyleKey = keyof typeof MAP_STYLES;
 
 // 根據小時取得光線預設
 const getPresetForHour = (hour: number): LightPreset => {
@@ -202,7 +206,7 @@ function App() {
   // 地圖主題模式（日夜切換）- 預設使用 dark 樣式
   const [mapTheme, setMapTheme] = useState<MapTheme>('dark');
   const currentLightPresetRef = useRef<LightPreset>('day');
-  const currentMapStyleRef = useRef<'standard' | 'dark'>('dark'); // 與預設 mapTheme 一致
+  const currentMapStyleRef = useRef<MapStyleKey>('dark'); // 與預設 mapTheme 一致
   const [styleVersion, setStyleVersion] = useState(0); // 樣式版本，用於觸發圖層重建
 
   // 視覺主題（用於面板顏色）
@@ -2896,16 +2900,17 @@ function App() {
     }
   }, [use3DMode]);
 
-  // 切換光線預設（僅用於 standard 樣式）
+  // 切換光線預設（用於 standard 和 satellite 樣式）
   const switchLightPreset = useCallback((preset: LightPreset) => {
-    if (!map.current || currentMapStyleRef.current !== 'standard') return;
+    const supportsLightPreset = currentMapStyleRef.current === 'standard' || currentMapStyleRef.current === 'satellite';
+    if (!map.current || !supportsLightPreset) return;
     if (currentLightPresetRef.current === preset) return;
     currentLightPresetRef.current = preset;
     map.current.setConfigProperty('basemap', 'lightPreset', preset);
   }, []);
 
-  // 切換地圖樣式（standard 或 dark-v11）
-  const switchMapStyle = useCallback((targetStyle: 'standard' | 'dark') => {
+  // 切換地圖樣式
+  const switchMapStyle = useCallback((targetStyle: MapStyleKey) => {
     if (!map.current || currentMapStyleRef.current === targetStyle) return;
     currentMapStyleRef.current = targetStyle;
 
@@ -2955,11 +2960,19 @@ function App() {
   useEffect(() => {
     if (mapTheme === 'auto' || !mapLoaded) return;
 
-    if (mapTheme === 'dark') {
-      // 使用 dark-v11 樣式
-      switchMapStyle('dark');
+    // 獨立樣式：dark, light, satellite
+    if (mapTheme === 'dark' || mapTheme === 'light') {
+      switchMapStyle(mapTheme);
+    } else if (mapTheme === 'satellite') {
+      // satellite 使用 standard-satellite 樣式，支援 lightPreset
+      if (currentMapStyleRef.current !== 'satellite') {
+        switchMapStyle('satellite');
+        map.current?.once('style.load', () => {
+          switchLightPreset('day'); // 衛星預設用 day 光線
+        });
+      }
     } else {
-      // 使用 standard 樣式 + lightPreset
+      // standard 樣式 + lightPreset (dawn/day/dusk/night)
       if (currentMapStyleRef.current !== 'standard') {
         switchMapStyle('standard');
         // 樣式切換後需要等待 style.load 才能設定 lightPreset

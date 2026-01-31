@@ -2,8 +2,8 @@ import { useState } from 'react';
 
 // 地圖主題模式
 // standard 樣式的 lightPreset: dawn, day, dusk, night
-// 獨立樣式: dark (dark-v11)
-export type MapTheme = 'dawn' | 'day' | 'dusk' | 'night' | 'dark' | 'auto';
+// 獨立樣式: dark (dark-v11), light (light-v11), satellite (standard-satellite)
+export type MapTheme = 'dawn' | 'day' | 'dusk' | 'night' | 'dark' | 'light' | 'satellite' | 'auto';
 
 // 視覺主題（用於面板顏色）
 export type VisualTheme = 'light' | 'dark';
@@ -18,8 +18,8 @@ export const getVisualTheme = (theme: MapTheme, currentHour?: number): VisualThe
     return 'dark'; // night
   }
   // 手動模式
-  if (theme === 'dawn' || theme === 'day') return 'light';
-  return 'dark'; // dusk, night, dark
+  if (theme === 'dawn' || theme === 'day' || theme === 'light') return 'light';
+  return 'dark'; // dusk, night, dark, satellite
 };
 
 interface ThemeToggleProps {
@@ -35,6 +35,8 @@ const THEME_OPTIONS: { value: MapTheme; label: string }[] = [
   { value: 'dusk', label: 'Dusk' },
   { value: 'night', label: 'Night' },
   { value: 'dark', label: 'Dark' },
+  { value: 'light', label: 'Light' },
+  { value: 'satellite', label: 'Satellite' },
 ];
 
 export function ThemeToggle({ theme, onChange, visualTheme }: ThemeToggleProps) {

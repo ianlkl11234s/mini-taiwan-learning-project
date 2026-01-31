@@ -3132,41 +3132,52 @@ function App() {
           {/* 台北捷運 */}
           <div style={{ marginBottom: 8 }}>
             <div style={{ fontWeight: 500, marginBottom: 4, color: themeColors.panelTextSecondary, fontSize: 10 }}>台北捷運</div>
-            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '4px 12px' }}>
-              <div style={{ display: 'flex', alignItems: 'center', gap: 4 }}>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: 3 }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
                 <div style={{ width: 16, height: 3, background: TRACK_COLORS.R, borderRadius: 1 }} />
-                <span>紅線</span>
+                <span>淡水信義線</span>
               </div>
-              <div style={{ display: 'flex', alignItems: 'center', gap: 4 }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
                 <div style={{ width: 16, height: 3, background: TRACK_COLORS.BL, borderRadius: 1 }} />
-                <span>藍線</span>
+                <span>板南線</span>
               </div>
-              <div style={{ display: 'flex', alignItems: 'center', gap: 4 }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
                 <div style={{ width: 16, height: 3, background: TRACK_COLORS.G, borderRadius: 1 }} />
-                <span>綠線</span>
+                <span>松山新店線</span>
               </div>
-              <div style={{ display: 'flex', alignItems: 'center', gap: 4 }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
                 <div style={{ width: 16, height: 3, background: TRACK_COLORS.O, borderRadius: 1 }} />
-                <span>橘線</span>
+                <span>中和新蘆線</span>
               </div>
-              <div style={{ display: 'flex', alignItems: 'center', gap: 4 }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
                 <div style={{ width: 16, height: 3, background: TRACK_COLORS.BR, borderRadius: 1 }} />
-                <span>棕線</span>
+                <span>文湖線</span>
+              </div>
+            </div>
+          </div>
+
+          {/* 新北捷運 */}
+          <div style={{ marginBottom: 8 }}>
+            <div style={{ fontWeight: 500, marginBottom: 4, color: themeColors.panelTextSecondary, fontSize: 10 }}>新北捷運</div>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: 3 }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
+                <div style={{ width: 16, height: 3, background: TRACK_COLORS.A, borderRadius: 1 }} />
+                <span>機場捷運線</span>
               </div>
             </div>
           </div>
 
           {/* 台北輕軌 */}
           <div style={{ marginBottom: 8 }}>
-            <div style={{ fontWeight: 500, marginBottom: 4, color: themeColors.panelTextSecondary, fontSize: 10 }}>台北輕軌</div>
-            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '4px 12px' }}>
-              <div style={{ display: 'flex', alignItems: 'center', gap: 4 }}>
+            <div style={{ fontWeight: 500, marginBottom: 4, color: themeColors.panelTextSecondary, fontSize: 10 }}>新北輕軌</div>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: 3 }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
                 <div style={{ width: 16, height: 3, background: TRACK_COLORS.K, borderRadius: 1 }} />
-                <span>安坑</span>
+                <span>安坑輕軌</span>
               </div>
-              <div style={{ display: 'flex', alignItems: 'center', gap: 4 }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
                 <div style={{ width: 16, height: 3, background: TRACK_COLORS.V, borderRadius: 1 }} />
-                <span>淡海</span>
+                <span>淡海輕軌</span>
               </div>
             </div>
           </div>
@@ -3174,16 +3185,16 @@ function App() {
           {/* 高雄捷運/輕軌 */}
           <div style={{ marginBottom: 8 }}>
             <div style={{ fontWeight: 500, marginBottom: 4, color: themeColors.panelTextSecondary, fontSize: 10 }}>高雄捷運</div>
-            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '4px 12px' }}>
-              <div style={{ display: 'flex', alignItems: 'center', gap: 4 }}>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: 3 }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
                 <div style={{ width: 16, height: 3, background: KRTC_TRACK_COLORS.O, borderRadius: 1 }} />
                 <span>橘線</span>
               </div>
-              <div style={{ display: 'flex', alignItems: 'center', gap: 4 }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
                 <div style={{ width: 16, height: 3, background: KRTC_TRACK_COLORS.R, borderRadius: 1 }} />
                 <span>紅線</span>
               </div>
-              <div style={{ display: 'flex', alignItems: 'center', gap: 4 }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
                 <div style={{ width: 16, height: 3, background: KLRT_TRACK_COLORS.C, borderRadius: 1 }} />
                 <span>輕軌</span>
               </div>
@@ -3193,8 +3204,8 @@ function App() {
           {/* 台中捷運 */}
           <div style={{ marginBottom: 8 }}>
             <div style={{ fontWeight: 500, marginBottom: 4, color: themeColors.panelTextSecondary, fontSize: 10 }}>台中捷運</div>
-            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '4px 12px' }}>
-              <div style={{ display: 'flex', alignItems: 'center', gap: 4 }}>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: 3 }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
                 <div style={{ width: 16, height: 3, background: TMRT_TRACK_COLORS.G, borderRadius: 1 }} />
                 <span>綠線</span>
               </div>
@@ -3204,12 +3215,12 @@ function App() {
           {/* 台灣高鐵/台鐵 */}
           <div>
             <div style={{ fontWeight: 500, marginBottom: 4, color: themeColors.panelTextSecondary, fontSize: 10 }}>鐵路</div>
-            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '4px 12px' }}>
-              <div style={{ display: 'flex', alignItems: 'center', gap: 4 }}>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: 3 }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
                 <div style={{ width: 16, height: 3, background: THSR_TRACK_COLOR, borderRadius: 1 }} />
                 <span>高鐵</span>
               </div>
-              <div style={{ display: 'flex', alignItems: 'center', gap: 4 }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
                 <div style={{ width: 16, height: 3, background: TRA_PRIMARY_COLOR, borderRadius: 1 }} />
                 <span>台鐵</span>
               </div>

@@ -65,3 +65,7 @@ public/data/tra/tracks_debug/
 # TRA 分析結果（臨時檔案）
 public/data/tra/od_analysis.json
 public/data/tra/od_complete_analysis.json
+
+# TRA 時刻表轉換中間檔案
+public/data/tra/data/
+public/data/tra/schedules_real/by_od/

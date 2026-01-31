@@ -92,15 +92,12 @@ const TRA_TRACK_IDS = [
 ];
 
 /**
- * O-D 軌道 ID 列表 (用於列車位置計算)
+ * O-D 軌道 ID 列表 (僅供參考，實際從 bundle 載入)
  *
- * === 漸進式實作中 ===
- * 待 WL-N-SL-BD + YL + KL 完成後，會建立以下 O-D 軌道：
- * - YL-SL-SA (樹林↔蘇澳)
- * - YL-SL-HL (樹林↔花蓮)
- * - KL-SL-KL (樹林↔基隆)
+ * 注意：目前改用 tracks_od_bundle.json 一次載入所有軌道，
+ * 此列表僅保留作為文件參考用途。
  */
-const OD_TRACK_IDS = [
+const _OD_TRACK_IDS_REFERENCE = [
   // === Step 1: 樹林↔八堵 ✅ ===
   'WL-SL-BD-0',  // 樹林→八堵
   'WL-BD-SL-1',  // 八堵→樹林
@@ -203,7 +200,7 @@ const OD_TRACK_IDS = [
   // 'KL-SL-KL',  // 樹林→基隆
   // 'KL-KL-SL',  // 基隆→樹林
 ];
-
+void _OD_TRACK_IDS_REFERENCE; // 抑制未使用變數警告
 
 /**
  * 台鐵資料狀態
@@ -323,21 +320,23 @@ export function useTraData(): TraDataState {
         setSchedules(scheduleMap);
 
         // === 載入 O-D 軌道 (用於列車位置計算) ===
-        // 合併硬編碼清單 + 時刻表中引用的軌道
-        const allOdTrackIds = new Set([...OD_TRACK_IDS, ...odTrackIdsFromSchedule]);
+        // 使用 bundle 檔案一次載入所有軌道（優化：263 個請求 → 1 個請求）
         const odTracksMap = new Map<string, TraTrack>();
-        for (const trackId of allOdTrackIds) {
-          try {
-            const res = await fetch(`/data/tra/tracks_od/${trackId}.geojson`);
-            if (res.ok) {
-              const data = await res.json();
-              if (data.features?.[0]) {
-                odTracksMap.set(trackId, data.features[0]);
-              }
+        try {
+          const bundleRes = await fetch('/data/tra/tracks_od/tracks_od_bundle.json');
+          if (bundleRes.ok) {
+            const bundleData: Record<string, GeoJSON.LineString> = await bundleRes.json();
+            for (const [trackId, geometry] of Object.entries(bundleData)) {
+              // 建立符合 TraTrack 格式的物件
+              odTracksMap.set(trackId, {
+                type: 'Feature',
+                properties: { track_id: trackId },
+                geometry,
+              } as TraTrack);
             }
-          } catch (e) {
-            // 靜默忽略，部分舊軌道可能不存在
           }
+        } catch (e) {
+          console.warn('無法載入 O-D 軌道 bundle:', e);
         }
         setOdTracks(odTracksMap);
         console.log(`載入 ${odTracksMap.size} 條 O-D 軌道`);

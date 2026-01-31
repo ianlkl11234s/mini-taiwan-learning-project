@@ -8,7 +8,7 @@ import { getThsrLineName, getThsrLineColor } from '../constants/thsrInfo';
 import { getKrtcLineName, getKrtcLineColor } from '../constants/krtcInfo';
 import { getKlrtLineName, getKlrtLineColor } from '../constants/klrtInfo';
 import { getTmrtLineName, getTmrtLineColor } from '../constants/tmrtInfo';
-import { getTraLineNameFromStations, TRA_PRIMARY_COLOR, TRA_STATION_NAMES } from '../constants/traInfo';
+import { getTraDynamicLineName, TRA_PRIMARY_COLOR, TRA_STATION_NAMES } from '../constants/traInfo';
 import type { TraTrain } from '../engines/TraTrainEngine';
 import type { VisualTheme } from './ThemeToggle';
 
@@ -66,7 +66,7 @@ export function TrainInfoPanel({ train, stationNames, onClose, visualTheme = 'da
     : isTmrt
     ? getTmrtLineName(train.trackId)
     : isTra
-    ? getTraLineNameFromStations(train.trackId, train.originStation, train.destinationStation)
+    ? getTraDynamicLineName(train.previousStation, train.nextStation)
     : getLineName(train.trackId);
 
   // 主題顏色

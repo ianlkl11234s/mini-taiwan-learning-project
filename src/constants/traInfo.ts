@@ -524,3 +524,116 @@ export function getTraTrackColor(trackId: string): string {
   const lineId = getTraLineId(trackId);
   return TRA_TRACK_COLORS[lineId] || TRA_PRIMARY_COLOR;
 }
+
+/**
+ * 根據車站 ID 判斷所屬路線名稱
+ * 用於跨線列車動態顯示當前路線
+ *
+ * @added 2026-01-31 動態路線名稱功能
+ */
+export function getLineNameFromStationId(stationId: string): string {
+  const id = parseInt(stationId, 10);
+  if (isNaN(id)) return '台鐵';
+
+  // 支線優先判斷（避免被幹線覆蓋）
+  // 平溪線 (7331-7336)
+  if (id >= 7331 && id <= 7336) return '平溪線';
+  // 內灣線 (1197-1208)
+  if (id >= 1197 && id <= 1208) return '內灣線';
+  // 六家線 (1193-1194)
+  if (id >= 1193 && id <= 1194) return '六家線';
+  // 沙崙線 (4271-4272)
+  if (id >= 4271 && id <= 4272) return '沙崙線';
+  // 集集線 (3431-3436)
+  if (id >= 3431 && id <= 3436) return '集集線';
+  // 成追線 (2260 追分)
+  if (id === 2260) return '成追線';
+  // 深澳線 (略，目前無營運)
+
+  // 幹線判斷
+  // 南迴線 (5130-5240: 加祿→康樂)
+  if (id >= 5130 && id <= 5240) return '南迴線';
+  // 屏東線 (5000-5120: 屏東→枋寮)
+  if (id >= 5000 && id <= 5120) return '屏東線';
+  // 臺東線 (6000-6250: 臺東→吉安)
+  if (id >= 6000 && id <= 6250) return '臺東線';
+  // 北迴線 (7000-7110: 花蓮→永樂)
+  if (id >= 7000 && id <= 7110) return '北迴線';
+  // 宜蘭線 (7120-7390: 蘇澳→暖暖)
+  if (id >= 7120 && id <= 7390) return '宜蘭線';
+  // 海線 (2110-2250: 談文→大肚)
+  if (id >= 2110 && id <= 2250) return '海線';
+  // 山線 (3140-3220: 造橋→后里)
+  if (id >= 3140 && id <= 3220) return '山線';
+
+  // 西部幹線（預設）
+  return '西部幹線';
+}
+
+/**
+ * 判斷列車行進方向（北上/南下）
+ *
+ * 車站 ID 編號規則：
+ * - 西部幹線、屏東線、南迴線、海線、山線：ID 遞增 = 南下
+ *   (0900 基隆 → 5240 康樂)
+ * - 宜蘭線、北迴線、臺東線：ID 遞減 = 南下
+ *   (7390 暖暖 → 7120 蘇澳 → 7000 花蓮 → 6000 臺東)
+ * - 東西向路線（成追線、集集線、內灣/六家線、沙崙線、平溪線）：不顯示方向
+ *
+ * @added 2026-01-31 動態路線名稱功能
+ * @returns "北上" | "南下" | ""
+ */
+export function getTraDirectionFromStations(
+  prevStationId: string | undefined,
+  nextStationId: string | undefined,
+  currentLineName: string
+): string {
+  // 東西向路線不顯示方向
+  const eastWestLines = ['成追線', '集集線', '內灣線', '六家線', '沙崙線', '平溪線'];
+  if (eastWestLines.includes(currentLineName)) {
+    return '';
+  }
+
+  // 需要兩個站點才能判斷方向
+  if (!prevStationId || !nextStationId) return '';
+
+  const prevId = parseInt(prevStationId, 10);
+  const nextId = parseInt(nextStationId, 10);
+  if (isNaN(prevId) || isNaN(nextId)) return '';
+
+  // 東部路線（宜蘭線、北迴線、臺東線）：ID 遞減 = 南下，ID 遞增 = 北上
+  // 7390(暖暖) → 7120(蘇澳) → 7000(花蓮) → 6000(臺東)
+  const eastLines = ['宜蘭線', '北迴線', '臺東線'];
+  if (eastLines.includes(currentLineName)) {
+    return nextId > prevId ? '北上' : '南下';
+  }
+
+  // 西部路線（西部幹線、屏東線、南迴線、海線、山線）：ID 遞增 = 南下，ID 遞減 = 北上
+  // 0900(基隆) → 4220(臺南) → 5000(屏東) → 5240(康樂)
+  return nextId > prevId ? '南下' : '北上';
+}
+
+/**
+ * 取得動態路線名稱（根據當前車站位置）
+ *
+ * 用於跨線列車，根據當前所在位置顯示對應路線名稱
+ * 例如：臺中→臺東 的列車在屏東線站點時顯示「屏東線 (南下)」
+ *
+ * @added 2026-01-31 動態路線名稱功能
+ */
+export function getTraDynamicLineName(
+  prevStationId: string | undefined,
+  nextStationId: string | undefined
+): string {
+  // 優先使用下一站判斷路線（更能反映列車即將到達的位置）
+  const referenceStation = nextStationId || prevStationId;
+  if (!referenceStation) return '台鐵';
+
+  const lineName = getLineNameFromStationId(referenceStation);
+  const direction = getTraDirectionFromStations(prevStationId, nextStationId, lineName);
+
+  if (direction) {
+    return `${lineName} (${direction})`;
+  }
+  return lineName;
+}

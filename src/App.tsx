@@ -217,16 +217,16 @@ function App() {
   const [interactionVersion, setInteractionVersion] = useState(0); // 用於觸發 effect 重新執行
   const isUserInteracting = useRef(false); // 追蹤使用者是否正在操作地圖
 
-  // 路線篩選狀態（MRT 線路）- 預設隱藏以專注台鐵
+  // 路線篩選狀態（MRT 線路）- 預設顯示台北捷運全部路線
   const [visibleLines, setVisibleLines] = useState<Set<string>>(
-    new Set([])
+    new Set(['R', 'BL', 'G', 'O', 'BR', 'Y', 'A', 'K', 'V'])
   );
 
   // 貓空纜車三段式狀態：full | tracks-only | hidden - 預設隱藏
   const [mkState, setMkState] = useState<MKFilterState>('hidden');
 
-  // 高鐵三段式狀態：full | tracks-only | hidden - 預設隱藏以專注台鐵
-  const [thsrState, setThsrState] = useState<ThsrFilterState>('hidden');
+  // 高鐵三段式狀態：full | tracks-only | hidden - 預設顯示
+  const [thsrState, setThsrState] = useState<ThsrFilterState>('full');
 
   // 台鐵三段式狀態：full | tracks-only | hidden
   const [traState, setTraState] = useState<TraFilterState>('full');
@@ -3470,6 +3470,60 @@ function App() {
               </div>
             </div>
 
+            {/* 資料來源區塊 */}
+            <div style={{ marginBottom: 24 }}>
+              <h3 style={{ margin: '0 0 12px', fontSize: 16, fontWeight: 600, color: '#a78bfa', display: 'flex', alignItems: 'center', gap: 8 }}>
+                <span style={{ fontSize: 18 }}>📊</span> 時刻表資料來源
+              </h3>
+              <div style={{ background: '#2a2a2a', borderRadius: 8, padding: '12px 16px', fontSize: 13, lineHeight: 1.6 }}>
+                <table style={{ width: '100%', borderCollapse: 'collapse' }}>
+                  <thead>
+                    <tr style={{ borderBottom: '1px solid #444' }}>
+                      <th style={{ textAlign: 'left', padding: '6px 8px', color: '#888', fontWeight: 500 }}>系統</th>
+                      <th style={{ textAlign: 'left', padding: '6px 8px', color: '#888', fontWeight: 500 }}>來源</th>
+                      <th style={{ textAlign: 'left', padding: '6px 8px', color: '#888', fontWeight: 500 }}>時刻表日期</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td style={{ padding: '6px 8px', color: '#ccc' }}>台北捷運</td>
+                      <td style={{ padding: '6px 8px', color: '#f59e0b' }}>推估</td>
+                      <td style={{ padding: '6px 8px', color: '#888' }}>2024 平日班表</td>
+                    </tr>
+                    <tr>
+                      <td style={{ padding: '6px 8px', color: '#ccc' }}>新北捷運/輕軌</td>
+                      <td style={{ padding: '6px 8px', color: '#f59e0b' }}>推估</td>
+                      <td style={{ padding: '6px 8px', color: '#888' }}>2024 平日班表</td>
+                    </tr>
+                    <tr>
+                      <td style={{ padding: '6px 8px', color: '#ccc' }}>高雄捷運/輕軌</td>
+                      <td style={{ padding: '6px 8px', color: '#f59e0b' }}>推估</td>
+                      <td style={{ padding: '6px 8px', color: '#888' }}>2024 平日班表</td>
+                    </tr>
+                    <tr>
+                      <td style={{ padding: '6px 8px', color: '#ccc' }}>台中捷運</td>
+                      <td style={{ padding: '6px 8px', color: '#f59e0b' }}>推估</td>
+                      <td style={{ padding: '6px 8px', color: '#888' }}>2025-01 平日班表</td>
+                    </tr>
+                    <tr>
+                      <td style={{ padding: '6px 8px', color: '#ccc' }}>台灣高鐵</td>
+                      <td style={{ padding: '6px 8px', color: '#22c55e' }}>TDX API</td>
+                      <td style={{ padding: '6px 8px', color: '#888' }}>2025-01 平日班表</td>
+                    </tr>
+                    <tr>
+                      <td style={{ padding: '6px 8px', color: '#ccc' }}>台鐵</td>
+                      <td style={{ padding: '6px 8px', color: '#22c55e' }}>TDX API</td>
+                      <td style={{ padding: '6px 8px', color: '#888' }}>2026-01-13 定期車次</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <div style={{ marginTop: 10, fontSize: 12, color: '#888' }}>
+                  <span style={{ color: '#22c55e' }}>●</span> TDX API：使用交通部 TDX 平台的官方時刻表<br />
+                  <span style={{ color: '#f59e0b' }}>●</span> 推估：根據官方首末班車時間與班距計算發車時刻
+                </div>
+              </div>
+            </div>
+
             {/* 使用說明區塊 */}
             <div>
               <h3 style={{ margin: '0 0 12px', fontSize: 16, fontWeight: 600, color: '#66c4a0', display: 'flex', alignItems: 'center', gap: 8 }}>
@@ -3488,7 +3542,7 @@ function App() {
                   <strong style={{ color: '#80bfff' }}>路線篩選</strong>
                   <ul style={{ margin: '4px 0 0', paddingLeft: 20, color: '#ccc' }}>
                     <li>點擊左下角各城市按鈕展開路線選單</li>
-                    <li>支援系統：TPE MRT、KHH MRT/LRT、TXG MRT、THSR、Cable</li>
+                    <li>支援系統：TPE MRT、KHH MRT/LRT、TXG MRT、THSR、TRA、Cable</li>
                     <li>點擊路線按鈕可顯示/隱藏特定路線</li>
                     <li>貓空纜車支援三段式切換：全部顯示 → 僅軌道 → 隱藏</li>
                   </ul>
@@ -3499,6 +3553,7 @@ function App() {
                     <li>暫停後點擊任意列車可開啟跟隨模式</li>
                     <li>跟隨時地圖會自動追蹤列車位置</li>
                     <li>右上角會顯示列車詳細資訊（路線、前後站、狀態）</li>
+                    <li>台鐵跨線列車會動態顯示目前所在路線（如「屏東線 (南下)」）</li>
                     <li>關閉資訊面板即可退出跟隨模式</li>
                   </ul>
                 </div>

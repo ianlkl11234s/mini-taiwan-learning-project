@@ -20,6 +20,18 @@ const CITIES = {
     center: [120.31, 22.615] as [number, number],
     zoom: 12,
   },
+  HUN: {
+    label: 'HUN',
+    name: '花蓮',
+    center: [121.6014, 23.9910] as [number, number],
+    zoom: 13,
+  },
+  TTT: {
+    label: 'TTT',
+    name: '台東',
+    center: [121.1136, 22.7583] as [number, number],
+    zoom: 13,
+  },
 };
 
 export type CityId = keyof typeof CITIES;

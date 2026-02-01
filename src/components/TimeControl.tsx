@@ -65,12 +65,12 @@ export function TimeControl({
     <div
       style={{
         position: 'absolute',
-        bottom: isMobile ? 0 : 20,
-        left: isMobile ? 0 : 20,
-        right: isMobile ? 0 : 20,
+        bottom: isMobile ? 0 : 16,
+        left: isMobile ? 0 : 60,
+        right: isMobile ? 0 : 60,
         background: colors.bg,
-        borderRadius: isMobile ? '16px 16px 0 0' : 12,
-        padding: isMobile ? '12px 16px 20px' : '16px 20px',
+        borderRadius: isMobile ? '16px 16px 0 0' : 10,
+        padding: isMobile ? '12px 16px 20px' : '10px 16px',
         color: colors.text,
         fontFamily: 'system-ui, -apple-system, sans-serif',
         boxShadow: colors.shadow,
@@ -85,81 +85,43 @@ export function TimeControl({
           display: 'flex',
           justifyContent: 'space-between',
           alignItems: 'center',
-          marginBottom: isMobile ? 8 : 12,
+          marginBottom: isMobile ? 8 : 6,
         }}
       >
         {/* 時間顯示 */}
         <div style={{
-          fontSize: isMobile ? 20 : 32,
+          fontSize: isMobile ? 20 : 24,
           fontWeight: 600,
           fontVariantNumeric: 'tabular-nums'
         }}>
           {currentTime}
         </div>
 
-        {/* 右側：各系統列車數量 */}
-        {isMobile ? (
-          // 手機版：簡化顯示總數
-          <div
+        {/* 右側：列車數量（手機版顯示總數，桌面版簡化顯示）*/}
+        <div
+          style={{
+            display: 'flex',
+            alignItems: 'center',
+            gap: 6,
+            fontSize: isMobile ? 12 : 13,
+            color: colors.textSecondary,
+          }}
+        >
+          <span
             style={{
-              display: 'flex',
-              alignItems: 'center',
-              gap: 6,
-              fontSize: 12,
-              color: colors.textSecondary,
+              display: 'inline-block',
+              width: isMobile ? 6 : 8,
+              height: isMobile ? 6 : 8,
+              background: '#d90023',
+              borderRadius: '50%',
             }}
-          >
-            <span
-              style={{
-                display: 'inline-block',
-                width: 6,
-                height: 6,
-                background: '#d90023',
-                borderRadius: '50%',
-              }}
-            />
-            <span>{totalTrains} 列車運行中</span>
-          </div>
-        ) : (
-          // 桌面版：詳細顯示各系統
-          <div
-            style={{
-              display: 'flex',
-              alignItems: 'center',
-              gap: 6,
-              fontSize: 13,
-              color: colors.textSecondary,
-            }}
-          >
-            <span
-              style={{
-                display: 'inline-block',
-                width: 8,
-                height: 8,
-                background: '#d90023',
-                borderRadius: '50%',
-              }}
-            />
-            <span style={{ marginRight: 4 }}>運行中</span>
-            <span style={{ color: colors.textMuted }}>|</span>
-            <span style={{ color: '#d90023' }}>TPE</span>
-            <span style={{ fontVariantNumeric: 'tabular-nums', minWidth: 24 }}>{transportCounts.trtc}</span>
-            <span style={{ color: '#e2211c' }}>KHH</span>
-            <span style={{ fontVariantNumeric: 'tabular-nums', minWidth: 24 }}>{transportCounts.krtc}</span>
-            <span style={{ color: '#00ab4e' }}>LRT</span>
-            <span style={{ fontVariantNumeric: 'tabular-nums', minWidth: 24 }}>{transportCounts.klrt}</span>
-            <span style={{ color: '#0cab2c' }}>TXG</span>
-            <span style={{ fontVariantNumeric: 'tabular-nums', minWidth: 24 }}>{transportCounts.tmrt}</span>
-            <span style={{ color: '#f37421' }}>HSR</span>
-            <span style={{ fontVariantNumeric: 'tabular-nums', minWidth: 24 }}>{transportCounts.thsr}</span>
-            <span style={{ color: '#0072bc' }}>TRA</span>
-            <span style={{ fontVariantNumeric: 'tabular-nums', minWidth: 24 }}>{transportCounts.tra}</span>
-          </div>
-        )}
+          />
+          <span>{totalTrains} 列車運行中</span>
+        </div>
       </div>
 
       {/* 時間滑桿 */}
-      <div style={{ marginBottom: isMobile ? 8 : 12 }}>
+      <div style={{ marginBottom: isMobile ? 8 : 6 }}>
         <style>
           {`
             .time-slider::-webkit-slider-thumb {
@@ -257,13 +219,13 @@ export function TimeControl({
         <button
           onClick={onTogglePlay}
           style={{
-            width: isMobile ? 40 : 48,
-            height: isMobile ? 40 : 48,
+            width: isMobile ? 40 : 40,
+            height: isMobile ? 40 : 40,
             borderRadius: '50%',
             border: 'none',
             background: '#d90023',
             color: 'white',
-            fontSize: isMobile ? 16 : 20,
+            fontSize: isMobile ? 16 : 16,
             cursor: 'pointer',
             display: 'flex',
             alignItems: 'center',
@@ -319,29 +281,6 @@ export function TimeControl({
           </span>
         </div>
 
-        {/* 快速跳轉按鈕（手機版隱藏）*/}
-        {!isMobile && (
-          <div style={{ display: 'flex', gap: 8 }}>
-            {['05:50', '06:00', '08:00', '12:00', '18:00', '22:00'].map((time) => (
-              <button
-                key={time}
-                onClick={() => timeEngine.jumpTo(time)}
-                style={{
-                  padding: '6px 10px',
-                  borderRadius: 4,
-                  border: `1px solid ${colors.border}`,
-                  background: 'transparent',
-                  color: colors.textMuted,
-                  fontSize: 12,
-                  cursor: 'pointer',
-                  transition: 'border-color 0.2s, color 0.2s',
-                }}
-              >
-                {time}
-              </button>
-            ))}
-          </div>
-        )}
       </div>
     </div>
   );

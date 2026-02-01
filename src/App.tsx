@@ -3576,7 +3576,7 @@ function App() {
         <div
           style={{
             position: 'absolute',
-            bottom: 205,
+            bottom: 140,
             right: 20,
             zIndex: 10,
           }}
@@ -3584,6 +3584,7 @@ function App() {
           <TrainHistogram
             data={histogramData}
             currentTimeSeconds={timeEngineRef.current.getTimeOfDaySeconds()}
+            transportCounts={transportCounts}
             width={200}
             height={50}
             visualTheme={visualTheme}

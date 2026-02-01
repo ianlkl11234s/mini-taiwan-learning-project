@@ -3433,13 +3433,30 @@ function App() {
         </div>
       )}
 
-      {/* 手機版右上角按鈕組 - 說明按鈕 */}
+      {/* 手機版提示文字 */}
+      {isMobile && (
+        <div
+          style={{
+            position: 'absolute',
+            top: 50,
+            left: 12,
+            zIndex: 10,
+            fontSize: 10,
+            color: themeColors.panelTextSecondary,
+            fontFamily: 'system-ui',
+          }}
+        >
+          目前是手機版，部分功能受限
+        </div>
+      )}
+
+      {/* 手機版右上角按鈕組 - 說明按鈕（往左移避免與地圖控制項重疊）*/}
       {isMobile && (
         <div
           style={{
             position: 'absolute',
             top: 12,
-            right: 12,
+            right: 60,
             zIndex: 30,
             display: 'flex',
             flexDirection: 'column',
@@ -3549,6 +3566,7 @@ function App() {
           stationNames={stationNames}
           onClose={handleDeselectTrain}
           visualTheme={visualTheme}
+          isMobile={isMobile}
         />
       )}
 

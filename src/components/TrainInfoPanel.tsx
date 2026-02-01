@@ -17,9 +17,10 @@ interface TrainInfoPanelProps {
   stationNames: Map<string, string>;
   onClose: () => void;
   visualTheme?: VisualTheme;
+  isMobile?: boolean;
 }
 
-export function TrainInfoPanel({ train, stationNames, onClose, visualTheme = 'dark' }: TrainInfoPanelProps) {
+export function TrainInfoPanel({ train, stationNames, onClose, visualTheme = 'dark', isMobile = false }: TrainInfoPanelProps) {
   const [collapsed, setCollapsed] = useState(false);
 
   // 判斷列車類型
@@ -104,16 +105,20 @@ export function TrainInfoPanel({ train, stationNames, onClose, visualTheme = 'da
     <div
       style={{
         position: 'absolute',
-        top: 75,
-        right: 60,
+        ...(isMobile
+          ? { bottom: 140, left: 12 }
+          : { top: 75, right: 60 }),
         zIndex: 20,
         background: colors.bg,
-        borderRadius: 10,
-        padding: collapsed ? '10px 16px' : '16px 20px',
+        borderRadius: isMobile ? 8 : 10,
+        padding: collapsed
+          ? (isMobile ? '6px 10px' : '10px 16px')
+          : (isMobile ? '10px 12px' : '16px 20px'),
         color: colors.text,
         fontFamily: 'system-ui',
-        fontSize: 14,
-        minWidth: collapsed ? 160 : 220,
+        fontSize: isMobile ? 12 : 14,
+        minWidth: collapsed ? (isMobile ? 120 : 160) : (isMobile ? 160 : 220),
+        maxWidth: isMobile ? 180 : undefined,
         boxShadow: colors.shadow,
         border: `2px solid ${lineColor}`,
         transition: 'all 0.2s ease',
@@ -133,14 +138,14 @@ export function TrainInfoPanel({ train, stationNames, onClose, visualTheme = 'da
       >
         <div
           style={{
-            width: 12,
-            height: 12,
+            width: isMobile ? 10 : 12,
+            height: isMobile ? 10 : 12,
             borderRadius: 3,
             background: lineColor,
             flexShrink: 0,
           }}
         />
-        <span style={{ fontWeight: 600, fontSize: 15 }}>{lineName}</span>
+        <span style={{ fontWeight: 600, fontSize: isMobile ? 13 : 15 }}>{lineName}</span>
         <span
           style={{
             fontSize: 10,
@@ -183,11 +188,11 @@ export function TrainInfoPanel({ train, stationNames, onClose, visualTheme = 'da
       {/* 可收合的詳細資訊 */}
       <div
         style={{
-          maxHeight: collapsed ? 0 : 250,
+          maxHeight: collapsed ? 0 : (isMobile ? 180 : 250),
           overflow: 'hidden',
           transition: 'max-height 0.2s ease, opacity 0.2s ease, margin 0.2s ease',
           opacity: collapsed ? 0 : 1,
-          marginTop: collapsed ? 0 : 12,
+          marginTop: collapsed ? 0 : (isMobile ? 8 : 12),
         }}
       >
         {/* 車種（僅 TRA） */}
@@ -224,12 +229,12 @@ export function TrainInfoPanel({ train, stationNames, onClose, visualTheme = 'da
           style={{
             display: 'flex',
             alignItems: 'center',
-            gap: 8,
-            marginBottom: 10,
-            padding: '6px 10px',
+            gap: isMobile ? 4 : 8,
+            marginBottom: isMobile ? 6 : 10,
+            padding: isMobile ? '4px 8px' : '6px 10px',
             background: colors.bgHighlight,
             borderRadius: 6,
-            fontSize: 13,
+            fontSize: isMobile ? 11 : 13,
           }}
         >
           <span style={{ fontWeight: 500 }}>{originName}</span>
@@ -238,10 +243,10 @@ export function TrainInfoPanel({ train, stationNames, onClose, visualTheme = 'da
         </div>
 
         {/* 前一站 */}
-        <div style={{ marginBottom: 4, fontSize: 13 }}>
+        <div style={{ marginBottom: isMobile ? 2 : 4, fontSize: isMobile ? 11 : 13 }}>
           <span style={{ color: colors.textSecondary }}>前一站：</span>
           <span>{prevStationName}</span>
-          {train.previousDepartureTime && (
+          {train.previousDepartureTime && !isMobile && (
             <span
               style={{
                 marginLeft: 8,
@@ -255,10 +260,10 @@ export function TrainInfoPanel({ train, stationNames, onClose, visualTheme = 'da
         </div>
 
         {/* 下一站 */}
-        <div style={{ marginBottom: 4, fontSize: 13 }}>
+        <div style={{ marginBottom: isMobile ? 2 : 4, fontSize: isMobile ? 11 : 13 }}>
           <span style={{ color: colors.textSecondary }}>下一站：</span>
           <span>{nextStationName}</span>
-          {train.nextArrivalTime && (
+          {train.nextArrivalTime && !isMobile && (
             <span
               style={{
                 marginLeft: 8,
@@ -274,18 +279,18 @@ export function TrainInfoPanel({ train, stationNames, onClose, visualTheme = 'da
         {/* 列車狀態 */}
         <div
           style={{
-            marginTop: 8,
-            paddingTop: 8,
+            marginTop: isMobile ? 4 : 8,
+            paddingTop: isMobile ? 4 : 8,
             borderTop: `1px solid ${colors.border}`,
             display: 'flex',
             alignItems: 'center',
-            gap: 6,
+            gap: isMobile ? 4 : 6,
           }}
         >
           <div
             style={{
-              width: 6,
-              height: 6,
+              width: isMobile ? 5 : 6,
+              height: isMobile ? 5 : 6,
               borderRadius: '50%',
               background:
                 train.status === 'stopped'
@@ -301,7 +306,7 @@ export function TrainInfoPanel({ train, stationNames, onClose, visualTheme = 'da
                   : 'none',
             }}
           />
-          <span style={{ color: colors.textMuted, fontSize: 11 }}>
+          <span style={{ color: colors.textMuted, fontSize: isMobile ? 10 : 11 }}>
             {train.status === 'stopped'
               ? '停站中'
               : train.status === 'running'

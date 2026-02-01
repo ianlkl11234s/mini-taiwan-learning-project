@@ -62,7 +62,7 @@ export function CitySelector({
       style={{
         position: 'absolute',
         bottom: 205,
-        left: 20,
+        left: 60,
         zIndex: 10,
         display: 'flex',
         alignItems: 'center',

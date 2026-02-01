@@ -270,7 +270,7 @@ export function LineFilter({
       style={{
         position: 'absolute',
         bottom: 160,
-        left: 20,
+        left: 60,
         zIndex: 10,
         display: 'flex',
         alignItems: 'center',

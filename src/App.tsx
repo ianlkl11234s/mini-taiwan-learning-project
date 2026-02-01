@@ -3640,8 +3640,20 @@ function App() {
             }}
             onClick={(e) => e.stopPropagation()}
           >
-            {/* 標題與關閉按鈕 */}
-            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 20 }}>
+            {/* 標題與關閉按鈕 - sticky 固定在頂部 */}
+            <div style={{
+              display: 'flex',
+              justifyContent: 'space-between',
+              alignItems: 'center',
+              marginBottom: 20,
+              position: 'sticky',
+              top: -24,
+              background: '#1a1a1a',
+              paddingTop: 24,
+              paddingBottom: 12,
+              marginTop: -24,
+              zIndex: 10,
+            }}>
               <h2 style={{ margin: 0, fontSize: 20, fontWeight: 600 }}>說明與公告</h2>
               <button
                 onClick={() => setShowInfoModal(false)}

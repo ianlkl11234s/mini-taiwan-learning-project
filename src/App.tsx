@@ -190,6 +190,11 @@ function App() {
   // 說明/公告 Modal 狀態
   const [showInfoModal, setShowInfoModal] = useState(false);
 
+  // 手機版偵測（寬度 < 768px）
+  const [isMobile, setIsMobile] = useState(() =>
+    typeof window !== 'undefined' && window.innerWidth < 768
+  );
+
   // 3D 模式狀態
   const [use3DMode, setUse3DMode] = useState(false);
   const train3DLayerRef = useRef<Train3DLayer | null>(null);
@@ -665,6 +670,15 @@ function App() {
       map.current = null;
     };
   }, [allLoading]);
+
+  // 監聽視窗大小變化（手機版偵測）
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   // 載入軌道圖層
   useEffect(() => {
@@ -3129,54 +3143,57 @@ function App() {
       <div
         style={{
           position: 'absolute',
-          top: 20,
-          left: 20,
+          top: isMobile ? 12 : 20,
+          left: isMobile ? 12 : 20,
           zIndex: 10,
           color: themeColors.panelText,
           fontFamily: 'system-ui',
         }}
       >
-        <h1 style={{ margin: 0, fontSize: 24, fontWeight: 600 }}>
+        <h1 style={{ margin: 0, fontSize: isMobile ? 16 : 24, fontWeight: 600 }}>
           Mini Taiwan
         </h1>
-        <p style={{ margin: '4px 0 0', fontSize: 14, color: themeColors.panelTextSecondary }}>
+        <p style={{ margin: '2px 0 0', fontSize: isMobile ? 10 : 14, color: themeColors.panelTextSecondary }}>
           台灣交通運輸模擬
         </p>
       </div>
 
-      {/* 跟隨模式狀態提示 */}
-      <div
-        style={{
-          position: 'absolute',
-          top: 20,
-          left: '50%',
-          transform: 'translateX(-50%)',
-          zIndex: 10,
-          background: themeColors.panelBg,
-          borderRadius: 20,
-          padding: '8px 16px',
-          color: themeColors.panelText,
-          fontFamily: 'system-ui',
-          fontSize: 12,
-          whiteSpace: 'nowrap',
-          backdropFilter: 'blur(8px)',
-          border: isFollowing ? '1px solid rgba(217, 0, 35, 0.6)' : `1px solid ${themeColors.panelBorder}`,
-          boxShadow: isFollowing ? '0 0 12px rgba(217, 0, 35, 0.4), 0 0 24px rgba(217, 0, 35, 0.2)' : 'none',
-          transition: 'all 0.3s ease',
-        }}
-      >
-        {isFollowing ? (
-          <span style={{ color: '#ff8a8a' }}>
-            跟隨模式中，可縮放焦距，關閉右上面板可退出
-          </span>
-        ) : (
-          <span style={{ color: themeColors.panelTextSecondary }}>
-            可暫停後點選列車開啟跟隨模式
-          </span>
-        )}
-      </div>
+      {/* 跟隨模式狀態提示 - 手機版隱藏 */}
+      {!isMobile && (
+        <div
+          style={{
+            position: 'absolute',
+            top: 20,
+            left: '50%',
+            transform: 'translateX(-50%)',
+            zIndex: 10,
+            background: themeColors.panelBg,
+            borderRadius: 20,
+            padding: '8px 16px',
+            color: themeColors.panelText,
+            fontFamily: 'system-ui',
+            fontSize: 12,
+            whiteSpace: 'nowrap',
+            backdropFilter: 'blur(8px)',
+            border: isFollowing ? '1px solid rgba(217, 0, 35, 0.6)' : `1px solid ${themeColors.panelBorder}`,
+            boxShadow: isFollowing ? '0 0 12px rgba(217, 0, 35, 0.4), 0 0 24px rgba(217, 0, 35, 0.2)' : 'none',
+            transition: 'all 0.3s ease',
+          }}
+        >
+          {isFollowing ? (
+            <span style={{ color: '#ff8a8a' }}>
+              跟隨模式中，可縮放焦距，關閉右上面板可退出
+            </span>
+          ) : (
+            <span style={{ color: themeColors.panelTextSecondary }}>
+              可暫停後點選列車開啟跟隨模式
+            </span>
+          )}
+        </div>
+      )}
 
-      {/* 圖例 - 簡化版，始終顯示所有路線 */}
+      {/* 圖例 - 簡化版，始終顯示所有路線（手機版隱藏）*/}
+      {!isMobile && (
       <div
         style={{
           position: 'absolute',
@@ -3326,92 +3343,161 @@ function App() {
           </div>
         </div>
       </div>
+      )}
 
-      {/* 社群連結與提示 */}
-      <div
-        style={{
-          position: 'absolute',
-          top: 20,
-          right: 60,
-          zIndex: 30,
-          display: 'flex',
-          alignItems: 'center',
-          gap: 12,
-          fontFamily: 'system-ui',
-          background: themeColors.panelBg,
-          borderRadius: 20,
-          padding: '8px 16px',
-          backdropFilter: 'blur(8px)',
-          border: `1px solid ${themeColors.panelBorder}`,
-          transition: 'background 0.3s, border-color 0.3s',
-        }}
-      >
-        <a
-          href="https://github.com/ianlkl11234s/mini-taiwan-learning-project"
-          target="_blank"
-          rel="noopener noreferrer"
-          style={{ color: themeColors.panelTextSecondary, transition: 'color 0.2s' }}
-          onMouseEnter={(e) => (e.currentTarget.style.color = themeColors.panelText)}
-          onMouseLeave={(e) => (e.currentTarget.style.color = themeColors.panelTextSecondary)}
+      {/* 社群連結與按鈕組 - 桌面版：右上角 */}
+      {!isMobile && (
+        <div
+          style={{
+            position: 'absolute',
+            top: 20,
+            right: 60,
+            zIndex: 30,
+            display: 'flex',
+            alignItems: 'center',
+            gap: 12,
+            fontFamily: 'system-ui',
+            background: themeColors.panelBg,
+            borderRadius: 20,
+            padding: '8px 16px',
+            backdropFilter: 'blur(8px)',
+            border: `1px solid ${themeColors.panelBorder}`,
+            transition: 'background 0.3s, border-color 0.3s',
+          }}
         >
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-          </svg>
-        </a>
-        <a
-          href="https://www.threads.com/@ianlkl1314"
-          target="_blank"
-          rel="noopener noreferrer"
-          style={{ color: themeColors.panelTextSecondary, transition: 'color 0.2s' }}
-          onMouseEnter={(e) => (e.currentTarget.style.color = themeColors.panelText)}
-          onMouseLeave={(e) => (e.currentTarget.style.color = themeColors.panelTextSecondary)}
+          <a
+            href="https://github.com/ianlkl11234s/mini-taiwan-learning-project"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ color: themeColors.panelTextSecondary, transition: 'color 0.2s' }}
+            onMouseEnter={(e) => (e.currentTarget.style.color = themeColors.panelText)}
+            onMouseLeave={(e) => (e.currentTarget.style.color = themeColors.panelTextSecondary)}
+          >
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+            </svg>
+          </a>
+          <a
+            href="https://www.threads.com/@ianlkl1314"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ color: themeColors.panelTextSecondary, transition: 'color 0.2s' }}
+            onMouseEnter={(e) => (e.currentTarget.style.color = themeColors.panelText)}
+            onMouseLeave={(e) => (e.currentTarget.style.color = themeColors.panelTextSecondary)}
+          >
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12.186 24h-.007c-3.581-.024-6.334-1.205-8.184-3.509C2.35 18.44 1.5 15.586 1.472 12.01v-.017c.03-3.579.879-6.43 2.525-8.482C5.845 1.205 8.6.024 12.18 0h.014c2.746.02 5.043.725 6.826 2.098 1.677 1.29 2.858 3.13 3.509 5.467l-2.04.569c-1.104-3.96-3.898-5.984-8.304-6.015-2.91.022-5.11.936-6.54 2.717C4.307 6.504 3.616 8.914 3.589 12c.027 3.086.718 5.496 2.057 7.164 1.43 1.783 3.631 2.698 6.54 2.717 2.623-.02 4.358-.631 5.8-2.045 1.647-1.613 1.618-3.593 1.09-4.798-.31-.71-.873-1.3-1.634-1.75-.192 1.352-.622 2.446-1.284 3.272-.886 1.102-2.14 1.704-3.73 1.79-1.202.065-2.361-.218-3.259-.801-1.063-.689-1.685-1.74-1.752-2.96-.065-1.182.408-2.256 1.332-3.025.88-.732 2.084-1.195 3.59-1.377.954-.115 1.963-.104 2.998.032-.06-1.289-.693-1.95-1.89-1.984-1.1-.033-1.921.564-2.214 1.013l-1.706-1.046c.655-1.07 1.916-1.828 3.534-2.127l.085-.015c.822-.14 1.67-.14 2.494 0 1.588.268 2.765.985 3.498 2.132.68 1.064.882 2.37.6 3.887l.007-.024.007.024c-.02.1-.043.198-.068.295.85.39 1.577.94 2.133 1.62.832 1.016 1.233 2.29 1.16 3.692-.094 1.77-.74 3.353-1.921 4.705C18.09 22.843 15.448 23.977 12.186 24zm.102-7.26c.775-.045 1.39-.315 1.828-.803.438-.487.728-1.164.863-2.012-.65-.078-1.307-.112-1.958-.102-.986.016-1.779.2-2.36.548-.59.355-.873.81-.84 1.354.034.538.345.967.876 1.209.53.24 1.122.307 1.59.306z"/>
+            </svg>
+          </a>
+          {/* 日夜模式切換 */}
+          <ThemeToggle theme={mapTheme} onChange={setMapTheme} visualTheme={visualTheme} />
+          {/* 2D/3D 切換按鈕 */}
+          <button
+            onClick={handleToggle3DMode}
+            style={{
+              background: use3DMode ? 'rgba(102, 196, 160, 0.2)' : 'rgba(128, 191, 255, 0.2)',
+              border: `1px solid ${use3DMode ? '#66c4a0' : '#80bfff'}`,
+              borderRadius: 4,
+              color: use3DMode ? '#66c4a0' : '#80bfff',
+              cursor: 'pointer',
+              padding: '4px 8px',
+              fontSize: 12,
+              fontWeight: 600,
+              transition: 'all 0.2s',
+            }}
+            title={use3DMode ? '切換至 2D 模式' : '切換至 3D 模式'}
+          >
+            {use3DMode ? '3D' : '2D'}
+          </button>
+          {/* 說明/公告按鈕 */}
+          <button
+            onClick={() => setShowInfoModal(true)}
+            style={{
+              background: 'none',
+              border: 'none',
+              color: themeColors.panelTextSecondary,
+              cursor: 'pointer',
+              padding: 0,
+              display: 'flex',
+              alignItems: 'center',
+              transition: 'color 0.2s',
+            }}
+            onMouseEnter={(e) => (e.currentTarget.style.color = themeColors.panelText)}
+            onMouseLeave={(e) => (e.currentTarget.style.color = themeColors.panelTextSecondary)}
+            title="說明與公告"
+          >
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25z"/>
+            </svg>
+          </button>
+        </div>
+      )}
+
+      {/* 手機版右上角按鈕組 - 說明按鈕 */}
+      {isMobile && (
+        <div
+          style={{
+            position: 'absolute',
+            top: 12,
+            right: 12,
+            zIndex: 30,
+            display: 'flex',
+            flexDirection: 'column',
+            gap: 8,
+          }}
         >
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M12.186 24h-.007c-3.581-.024-6.334-1.205-8.184-3.509C2.35 18.44 1.5 15.586 1.472 12.01v-.017c.03-3.579.879-6.43 2.525-8.482C5.845 1.205 8.6.024 12.18 0h.014c2.746.02 5.043.725 6.826 2.098 1.677 1.29 2.858 3.13 3.509 5.467l-2.04.569c-1.104-3.96-3.898-5.984-8.304-6.015-2.91.022-5.11.936-6.54 2.717C4.307 6.504 3.616 8.914 3.589 12c.027 3.086.718 5.496 2.057 7.164 1.43 1.783 3.631 2.698 6.54 2.717 2.623-.02 4.358-.631 5.8-2.045 1.647-1.613 1.618-3.593 1.09-4.798-.31-.71-.873-1.3-1.634-1.75-.192 1.352-.622 2.446-1.284 3.272-.886 1.102-2.14 1.704-3.73 1.79-1.202.065-2.361-.218-3.259-.801-1.063-.689-1.685-1.74-1.752-2.96-.065-1.182.408-2.256 1.332-3.025.88-.732 2.084-1.195 3.59-1.377.954-.115 1.963-.104 2.998.032-.06-1.289-.693-1.95-1.89-1.984-1.1-.033-1.921.564-2.214 1.013l-1.706-1.046c.655-1.07 1.916-1.828 3.534-2.127l.085-.015c.822-.14 1.67-.14 2.494 0 1.588.268 2.765.985 3.498 2.132.68 1.064.882 2.37.6 3.887l.007-.024.007.024c-.02.1-.043.198-.068.295.85.39 1.577.94 2.133 1.62.832 1.016 1.233 2.29 1.16 3.692-.094 1.77-.74 3.353-1.921 4.705C18.09 22.843 15.448 23.977 12.186 24zm.102-7.26c.775-.045 1.39-.315 1.828-.803.438-.487.728-1.164.863-2.012-.65-.078-1.307-.112-1.958-.102-.986.016-1.779.2-2.36.548-.59.355-.873.81-.84 1.354.034.538.345.967.876 1.209.53.24 1.122.307 1.59.306z"/>
-          </svg>
-        </a>
-        {/* 日夜模式切換 */}
-        <ThemeToggle theme={mapTheme} onChange={setMapTheme} visualTheme={visualTheme} />
-        {/* 2D/3D 切換按鈕 */}
+          {/* 說明/公告按鈕 */}
+          <button
+            onClick={() => setShowInfoModal(true)}
+            style={{
+              width: 36,
+              height: 36,
+              borderRadius: '50%',
+              background: themeColors.panelBg,
+              border: `1px solid ${themeColors.panelBorder}`,
+              color: themeColors.panelText,
+              cursor: 'pointer',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              backdropFilter: 'blur(8px)',
+            }}
+          >
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25z"/>
+            </svg>
+          </button>
+        </div>
+      )}
+
+      {/* 手機版右下角 3D 切換按鈕 */}
+      {isMobile && (
         <button
           onClick={handleToggle3DMode}
           style={{
-            background: use3DMode ? 'rgba(102, 196, 160, 0.2)' : 'rgba(128, 191, 255, 0.2)',
-            border: `1px solid ${use3DMode ? '#66c4a0' : '#80bfff'}`,
-            borderRadius: 4,
-            color: use3DMode ? '#66c4a0' : '#80bfff',
+            position: 'absolute',
+            bottom: 140,
+            right: 12,
+            zIndex: 30,
+            width: 44,
+            height: 44,
+            borderRadius: '50%',
+            background: use3DMode ? 'rgba(102, 196, 160, 0.9)' : themeColors.panelBg,
+            border: `1px solid ${use3DMode ? '#66c4a0' : themeColors.panelBorder}`,
+            color: use3DMode ? '#fff' : themeColors.panelText,
             cursor: 'pointer',
-            padding: '4px 8px',
-            fontSize: 12,
-            fontWeight: 600,
-            transition: 'all 0.2s',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            fontSize: 14,
+            fontWeight: 700,
+            backdropFilter: 'blur(8px)',
+            boxShadow: '0 2px 8px rgba(0,0,0,0.2)',
           }}
-          title={use3DMode ? '切換至 2D 模式' : '切換至 3D 模式'}
         >
           {use3DMode ? '3D' : '2D'}
         </button>
-        {/* 說明/公告按鈕 */}
-        <button
-          onClick={() => setShowInfoModal(true)}
-          style={{
-            background: 'none',
-            border: 'none',
-            color: themeColors.panelTextSecondary,
-            cursor: 'pointer',
-            padding: 0,
-            display: 'flex',
-            alignItems: 'center',
-            transition: 'color 0.2s',
-          }}
-          onMouseEnter={(e) => (e.currentTarget.style.color = themeColors.panelText)}
-          onMouseLeave={(e) => (e.currentTarget.style.color = themeColors.panelTextSecondary)}
-          title="說明與公告"
-        >
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25z"/>
-          </svg>
-        </button>
-      </div>
+      )}
 
       {/* 地圖 */}
       <div
@@ -3425,32 +3511,36 @@ function App() {
         }}
       />
 
-      {/* 城市選擇器 - 路線篩選器上方 */}
-      <CitySelector
-        onCitySelect={handleCitySelect}
-        selectedCity={selectedCity}
-        visualTheme={visualTheme}
-      />
+      {/* 城市選擇器 - 路線篩選器上方（手機版隱藏）*/}
+      {!isMobile && (
+        <CitySelector
+          onCitySelect={handleCitySelect}
+          selectedCity={selectedCity}
+          visualTheme={visualTheme}
+        />
+      )}
 
-      {/* 路線篩選器 - 控制面板左上方漂浮 */}
-      <LineFilter
-        visibleLines={visibleLines}
-        onToggleLine={handleToggleLine}
-        onToggleAllMrt={handleToggleAllMrt}
-        mkState={mkState}
-        onMKStateChange={handleMKStateChange}
-        thsrState={thsrState}
-        onThsrStateChange={handleThsrStateChange}
-        traState={traState}
-        onTraStateChange={handleTraStateChange}
-        visibleKrtcLines={visibleKrtcLines}
-        onToggleKrtcLine={handleToggleKrtcLine}
-        onToggleAllKrtc={handleToggleAllKrtc}
-        visibleTmrtLines={visibleTmrtLines}
-        onToggleTmrtLine={handleToggleTmrtLine}
-        onToggleAllTmrt={handleToggleAllTmrt}
-        visualTheme={visualTheme}
-      />
+      {/* 路線篩選器 - 控制面板左上方漂浮（手機版隱藏）*/}
+      {!isMobile && (
+        <LineFilter
+          visibleLines={visibleLines}
+          onToggleLine={handleToggleLine}
+          onToggleAllMrt={handleToggleAllMrt}
+          mkState={mkState}
+          onMKStateChange={handleMKStateChange}
+          thsrState={thsrState}
+          onThsrStateChange={handleThsrStateChange}
+          traState={traState}
+          onTraStateChange={handleTraStateChange}
+          visibleKrtcLines={visibleKrtcLines}
+          onToggleKrtcLine={handleToggleKrtcLine}
+          onToggleAllKrtc={handleToggleAllKrtc}
+          visibleTmrtLines={visibleTmrtLines}
+          onToggleTmrtLine={handleToggleTmrtLine}
+          onToggleAllTmrt={handleToggleAllTmrt}
+          visualTheme={visualTheme}
+        />
+      )}
 
       {/* 列車資訊面板 */}
       {selectedTrain && (
@@ -3462,8 +3552,8 @@ function App() {
         />
       )}
 
-      {/* 列車數量直方圖 - 控制面板右上方漂浮 */}
-      {timeEngineRef.current && (
+      {/* 列車數量直方圖 - 控制面板右上方漂浮（手機版隱藏）*/}
+      {!isMobile && timeEngineRef.current && (
         <div
           style={{
             position: 'absolute',
@@ -3494,6 +3584,7 @@ function App() {
           onSpeedChange={handleSpeedChange}
           onTimeChange={handleTimeChange}
           visualTheme={visualTheme}
+          isMobile={isMobile}
         />
       )}
 

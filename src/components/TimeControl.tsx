@@ -21,6 +21,7 @@ interface TimeControlProps {
   onSpeedChange: (speed: number) => void;
   onTimeChange: (seconds: number) => void;
   visualTheme?: VisualTheme;
+  isMobile?: boolean;
 }
 
 export function TimeControl({
@@ -33,6 +34,7 @@ export function TimeControl({
   onSpeedChange,
   onTimeChange,
   visualTheme = 'dark',
+  isMobile = false,
 }: TimeControlProps) {
   const standardSeconds = timeEngine.getTimeOfDaySeconds();
   const timeSeconds = toExtendedSeconds(standardSeconds);
@@ -55,16 +57,20 @@ export function TimeControl({
     thumbShadow: isDark ? '0 2px 4px rgba(0,0,0,0.3)' : '0 2px 4px rgba(0,0,0,0.2)',
   };
 
+  // 計算總列車數（手機版用）
+  const totalTrains = transportCounts.trtc + transportCounts.krtc + transportCounts.klrt +
+                      transportCounts.tmrt + transportCounts.thsr + transportCounts.tra;
+
   return (
     <div
       style={{
         position: 'absolute',
-        bottom: 20,
-        left: 20,
-        right: 20,
+        bottom: isMobile ? 0 : 20,
+        left: isMobile ? 0 : 20,
+        right: isMobile ? 0 : 20,
         background: colors.bg,
-        borderRadius: 12,
-        padding: '16px 20px',
+        borderRadius: isMobile ? '16px 16px 0 0' : 12,
+        padding: isMobile ? '12px 16px 20px' : '16px 20px',
         color: colors.text,
         fontFamily: 'system-ui, -apple-system, sans-serif',
         boxShadow: colors.shadow,
@@ -79,67 +85,96 @@ export function TimeControl({
           display: 'flex',
           justifyContent: 'space-between',
           alignItems: 'center',
-          marginBottom: 12,
+          marginBottom: isMobile ? 8 : 12,
         }}
       >
         {/* 時間顯示 */}
-        <div style={{ fontSize: 32, fontWeight: 600, fontVariantNumeric: 'tabular-nums' }}>
+        <div style={{
+          fontSize: isMobile ? 20 : 32,
+          fontWeight: 600,
+          fontVariantNumeric: 'tabular-nums'
+        }}>
           {currentTime}
         </div>
 
         {/* 右側：各系統列車數量 */}
-        <div
-          style={{
-            display: 'flex',
-            alignItems: 'center',
-            gap: 6,
-            fontSize: 13,
-            color: colors.textSecondary,
-          }}
-        >
-          <span
+        {isMobile ? (
+          // 手機版：簡化顯示總數
+          <div
             style={{
-              display: 'inline-block',
-              width: 8,
-              height: 8,
-              background: '#d90023',
-              borderRadius: '50%',
+              display: 'flex',
+              alignItems: 'center',
+              gap: 6,
+              fontSize: 12,
+              color: colors.textSecondary,
             }}
-          />
-          <span style={{ marginRight: 4 }}>運行中</span>
-          <span style={{ color: colors.textMuted }}>|</span>
-          <span style={{ color: '#d90023' }}>TPE</span>
-          <span style={{ fontVariantNumeric: 'tabular-nums', minWidth: 24 }}>{transportCounts.trtc}</span>
-          <span style={{ color: '#e2211c' }}>KHH</span>
-          <span style={{ fontVariantNumeric: 'tabular-nums', minWidth: 24 }}>{transportCounts.krtc}</span>
-          <span style={{ color: '#00ab4e' }}>LRT</span>
-          <span style={{ fontVariantNumeric: 'tabular-nums', minWidth: 24 }}>{transportCounts.klrt}</span>
-          <span style={{ color: '#0cab2c' }}>TXG</span>
-          <span style={{ fontVariantNumeric: 'tabular-nums', minWidth: 24 }}>{transportCounts.tmrt}</span>
-          <span style={{ color: '#f37421' }}>HSR</span>
-          <span style={{ fontVariantNumeric: 'tabular-nums', minWidth: 24 }}>{transportCounts.thsr}</span>
-          <span style={{ color: '#0072bc' }}>TRA</span>
-          <span style={{ fontVariantNumeric: 'tabular-nums', minWidth: 24 }}>{transportCounts.tra}</span>
-        </div>
+          >
+            <span
+              style={{
+                display: 'inline-block',
+                width: 6,
+                height: 6,
+                background: '#d90023',
+                borderRadius: '50%',
+              }}
+            />
+            <span>{totalTrains} 列車運行中</span>
+          </div>
+        ) : (
+          // 桌面版：詳細顯示各系統
+          <div
+            style={{
+              display: 'flex',
+              alignItems: 'center',
+              gap: 6,
+              fontSize: 13,
+              color: colors.textSecondary,
+            }}
+          >
+            <span
+              style={{
+                display: 'inline-block',
+                width: 8,
+                height: 8,
+                background: '#d90023',
+                borderRadius: '50%',
+              }}
+            />
+            <span style={{ marginRight: 4 }}>運行中</span>
+            <span style={{ color: colors.textMuted }}>|</span>
+            <span style={{ color: '#d90023' }}>TPE</span>
+            <span style={{ fontVariantNumeric: 'tabular-nums', minWidth: 24 }}>{transportCounts.trtc}</span>
+            <span style={{ color: '#e2211c' }}>KHH</span>
+            <span style={{ fontVariantNumeric: 'tabular-nums', minWidth: 24 }}>{transportCounts.krtc}</span>
+            <span style={{ color: '#00ab4e' }}>LRT</span>
+            <span style={{ fontVariantNumeric: 'tabular-nums', minWidth: 24 }}>{transportCounts.klrt}</span>
+            <span style={{ color: '#0cab2c' }}>TXG</span>
+            <span style={{ fontVariantNumeric: 'tabular-nums', minWidth: 24 }}>{transportCounts.tmrt}</span>
+            <span style={{ color: '#f37421' }}>HSR</span>
+            <span style={{ fontVariantNumeric: 'tabular-nums', minWidth: 24 }}>{transportCounts.thsr}</span>
+            <span style={{ color: '#0072bc' }}>TRA</span>
+            <span style={{ fontVariantNumeric: 'tabular-nums', minWidth: 24 }}>{transportCounts.tra}</span>
+          </div>
+        )}
       </div>
 
       {/* 時間滑桿 */}
-      <div style={{ marginBottom: 12 }}>
+      <div style={{ marginBottom: isMobile ? 8 : 12 }}>
         <style>
           {`
             .time-slider::-webkit-slider-thumb {
               -webkit-appearance: none;
               appearance: none;
-              width: 14px;
-              height: 14px;
+              width: ${isMobile ? '12px' : '14px'};
+              height: ${isMobile ? '12px' : '14px'};
               border-radius: 50%;
               background: ${isDark ? 'white' : '#333'};
               cursor: pointer;
               box-shadow: ${colors.thumbShadow};
             }
             .time-slider::-moz-range-thumb {
-              width: 14px;
-              height: 14px;
+              width: ${isMobile ? '12px' : '14px'};
+              height: ${isMobile ? '12px' : '14px'};
               border-radius: 50%;
               background: ${isDark ? 'white' : '#333'};
               cursor: pointer;
@@ -161,7 +196,7 @@ export function TimeControl({
           }}
           style={{
             width: '100%',
-            height: 6,
+            height: isMobile ? 4 : 6,
             appearance: 'none',
             background: `linear-gradient(to right, ${colors.sliderTrack} 0%, #d90023 50%, ${colors.sliderTrack} 100%)`,
             borderRadius: 3,
@@ -173,7 +208,7 @@ export function TimeControl({
           style={{
             position: 'relative',
             height: 16,
-            fontSize: 11,
+            fontSize: isMobile ? 9 : 11,
             color: colors.textDim,
             marginTop: 4,
           }}
@@ -188,11 +223,24 @@ export function TimeControl({
             - 24:00 = (86400-21000)/70800 = 92.37%
             - 01:30 = 100%
           */}
-          <span style={{ position: 'absolute', left: '0%', transform: 'translateX(0)' }}>05:50</span>
-          <span style={{ position: 'absolute', left: '31.36%', transform: 'translateX(-50%)' }}>12:00</span>
-          <span style={{ position: 'absolute', left: '61.86%', transform: 'translateX(-50%)' }}>18:00</span>
-          <span style={{ position: 'absolute', left: '92.37%', transform: 'translateX(-50%)' }}>24:00</span>
-          <span style={{ position: 'absolute', right: '0%', transform: 'translateX(0)' }}>01:30</span>
+          {isMobile ? (
+            // 手機版：簡化標籤
+            <>
+              <span style={{ position: 'absolute', left: '0%', transform: 'translateX(0)' }}>6AM</span>
+              <span style={{ position: 'absolute', left: '31.36%', transform: 'translateX(-50%)' }}>12PM</span>
+              <span style={{ position: 'absolute', left: '61.86%', transform: 'translateX(-50%)' }}>6PM</span>
+              <span style={{ position: 'absolute', right: '0%', transform: 'translateX(0)' }}>1AM</span>
+            </>
+          ) : (
+            // 桌面版：完整標籤
+            <>
+              <span style={{ position: 'absolute', left: '0%', transform: 'translateX(0)' }}>05:50</span>
+              <span style={{ position: 'absolute', left: '31.36%', transform: 'translateX(-50%)' }}>12:00</span>
+              <span style={{ position: 'absolute', left: '61.86%', transform: 'translateX(-50%)' }}>18:00</span>
+              <span style={{ position: 'absolute', left: '92.37%', transform: 'translateX(-50%)' }}>24:00</span>
+              <span style={{ position: 'absolute', right: '0%', transform: 'translateX(0)' }}>01:30</span>
+            </>
+          )}
         </div>
       </div>
 
@@ -202,24 +250,26 @@ export function TimeControl({
           display: 'flex',
           justifyContent: 'space-between',
           alignItems: 'center',
+          gap: isMobile ? 12 : 0,
         }}
       >
         {/* 播放/暫停按鈕 */}
         <button
           onClick={onTogglePlay}
           style={{
-            width: 48,
-            height: 48,
+            width: isMobile ? 40 : 48,
+            height: isMobile ? 40 : 48,
             borderRadius: '50%',
             border: 'none',
             background: '#d90023',
             color: 'white',
-            fontSize: 20,
+            fontSize: isMobile ? 16 : 20,
             cursor: 'pointer',
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
             transition: 'transform 0.1s',
+            flexShrink: 0,
           }}
           onMouseDown={(e) => (e.currentTarget.style.transform = 'scale(0.95)')}
           onMouseUp={(e) => (e.currentTarget.style.transform = 'scale(1)')}
@@ -229,8 +279,14 @@ export function TimeControl({
         </button>
 
         {/* 速度滑桿 (線性刻度) */}
-        <div style={{ display: 'flex', alignItems: 'center', gap: 12, flex: 1, maxWidth: 320 }}>
-          <span style={{ fontSize: 12, color: colors.textMuted, minWidth: 24 }}>1x</span>
+        <div style={{
+          display: 'flex',
+          alignItems: 'center',
+          gap: isMobile ? 8 : 12,
+          flex: 1,
+          maxWidth: isMobile ? undefined : 320
+        }}>
+          {!isMobile && <span style={{ fontSize: 12, color: colors.textMuted, minWidth: 24 }}>1x</span>}
           <input
             type="range"
             min={1}
@@ -241,20 +297,20 @@ export function TimeControl({
             }}
             style={{
               flex: 1,
-              height: 6,
+              height: isMobile ? 4 : 6,
               appearance: 'none',
               background: `linear-gradient(to right, #d90023 0%, #d90023 ${(speed - 1) / 299 * 100}%, ${colors.sliderTrack} ${(speed - 1) / 299 * 100}%, ${colors.sliderTrack} 100%)`,
               borderRadius: 3,
               cursor: 'pointer',
             }}
           />
-          <span style={{ fontSize: 12, color: colors.textMuted, minWidth: 32 }}>300x</span>
+          {!isMobile && <span style={{ fontSize: 12, color: colors.textMuted, minWidth: 32 }}>300x</span>}
           <span
             style={{
-              fontSize: 16,
+              fontSize: isMobile ? 14 : 16,
               fontWeight: 600,
               color: '#d90023',
-              minWidth: 50,
+              minWidth: isMobile ? 40 : 50,
               textAlign: 'right',
               fontVariantNumeric: 'tabular-nums',
             }}
@@ -263,27 +319,29 @@ export function TimeControl({
           </span>
         </div>
 
-        {/* 快速跳轉按鈕 */}
-        <div style={{ display: 'flex', gap: 8 }}>
-          {['05:50', '06:00', '08:00', '12:00', '18:00', '22:00'].map((time) => (
-            <button
-              key={time}
-              onClick={() => timeEngine.jumpTo(time)}
-              style={{
-                padding: '6px 10px',
-                borderRadius: 4,
-                border: `1px solid ${colors.border}`,
-                background: 'transparent',
-                color: colors.textMuted,
-                fontSize: 12,
-                cursor: 'pointer',
-                transition: 'border-color 0.2s, color 0.2s',
-              }}
-            >
-              {time}
-            </button>
-          ))}
-        </div>
+        {/* 快速跳轉按鈕（手機版隱藏）*/}
+        {!isMobile && (
+          <div style={{ display: 'flex', gap: 8 }}>
+            {['05:50', '06:00', '08:00', '12:00', '18:00', '22:00'].map((time) => (
+              <button
+                key={time}
+                onClick={() => timeEngine.jumpTo(time)}
+                style={{
+                  padding: '6px 10px',
+                  borderRadius: 4,
+                  border: `1px solid ${colors.border}`,
+                  background: 'transparent',
+                  color: colors.textMuted,
+                  fontSize: 12,
+                  cursor: 'pointer',
+                  transition: 'border-color 0.2s, color 0.2s',
+                }}
+              >
+                {time}
+              </button>
+            ))}
+          </div>
+        )}
       </div>
     </div>
   );

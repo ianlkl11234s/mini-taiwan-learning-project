@@ -3451,19 +3451,26 @@ function App() {
         </div>
       )}
 
-      {/* 手機版右上角按鈕組 - 說明按鈕 + 地圖樣式（往左移避免與地圖控制項重疊）*/}
+      {/* 手機版右下角按鈕組（由上到下：地圖樣式、說明、2D/3D）*/}
       {isMobile && (
         <div
           style={{
             position: 'absolute',
-            top: 12,
-            right: 60,
+            bottom: 140,
+            right: 12,
             zIndex: 30,
             display: 'flex',
             flexDirection: 'column',
             gap: 8,
+            alignItems: 'center',
           }}
         >
+          {/* 地圖樣式選擇器 */}
+          <MobileMapStyleSelector
+            theme={mapTheme}
+            onChange={setMapTheme}
+            visualTheme={visualTheme}
+          />
           {/* 說明/公告按鈕 */}
           <button
             onClick={() => setShowInfoModal(true)}
@@ -3485,42 +3492,29 @@ function App() {
               <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25z"/>
             </svg>
           </button>
-          {/* 地圖樣式選擇器 */}
-          <MobileMapStyleSelector
-            theme={mapTheme}
-            onChange={setMapTheme}
-            visualTheme={visualTheme}
-          />
+          {/* 2D/3D 切換按鈕 */}
+          <button
+            onClick={handleToggle3DMode}
+            style={{
+              width: 44,
+              height: 44,
+              borderRadius: '50%',
+              background: use3DMode ? 'rgba(102, 196, 160, 0.9)' : themeColors.panelBg,
+              border: `1px solid ${use3DMode ? '#66c4a0' : themeColors.panelBorder}`,
+              color: use3DMode ? '#fff' : themeColors.panelText,
+              cursor: 'pointer',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              fontSize: 14,
+              fontWeight: 700,
+              backdropFilter: 'blur(8px)',
+              boxShadow: '0 2px 8px rgba(0,0,0,0.2)',
+            }}
+          >
+            {use3DMode ? '3D' : '2D'}
+          </button>
         </div>
-      )}
-
-      {/* 手機版右下角 3D 切換按鈕 */}
-      {isMobile && (
-        <button
-          onClick={handleToggle3DMode}
-          style={{
-            position: 'absolute',
-            bottom: 140,
-            right: 12,
-            zIndex: 30,
-            width: 44,
-            height: 44,
-            borderRadius: '50%',
-            background: use3DMode ? 'rgba(102, 196, 160, 0.9)' : themeColors.panelBg,
-            border: `1px solid ${use3DMode ? '#66c4a0' : themeColors.panelBorder}`,
-            color: use3DMode ? '#fff' : themeColors.panelText,
-            cursor: 'pointer',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            fontSize: 14,
-            fontWeight: 700,
-            backdropFilter: 'blur(8px)',
-            boxShadow: '0 2px 8px rgba(0,0,0,0.2)',
-          }}
-        >
-          {use3DMode ? '3D' : '2D'}
-        </button>
       )}
 
       {/* 地圖 */}

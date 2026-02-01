@@ -269,7 +269,7 @@ export function LineFilter({
     <div
       style={{
         position: 'absolute',
-        bottom: 125,
+        bottom: 160,
         left: 20,
         zIndex: 10,
         display: 'flex',

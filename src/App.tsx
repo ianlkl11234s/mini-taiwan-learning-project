@@ -29,6 +29,7 @@ import { Tra3DLayer } from './layers/Tra3DLayer';
 import { TrainSymbolLayer } from './layers/TrainSymbolLayer';
 import { useAllTrains } from './hooks/useAllTrains';
 import { ThemeToggle, type MapTheme, type VisualTheme, getVisualTheme } from './components/ThemeToggle';
+import { MobileMapStyleSelector } from './components/MobileMapStyleSelector';
 import { TRACK_COLORS, getTrainColor, getLineIdFromTrackId } from './constants/lineInfo';
 import { THSR_TRACK_COLOR, THSR_TRAIN_COLORS, getThsrDirection } from './constants/thsrInfo';
 import { KRTC_TRACK_COLORS, KRTC_TRAIN_COLORS, getKrtcLineId, getKrtcDirection } from './constants/krtcInfo';
@@ -3450,7 +3451,7 @@ function App() {
         </div>
       )}
 
-      {/* 手機版右上角按鈕組 - 說明按鈕（往左移避免與地圖控制項重疊）*/}
+      {/* 手機版右上角按鈕組 - 說明按鈕 + 地圖樣式（往左移避免與地圖控制項重疊）*/}
       {isMobile && (
         <div
           style={{
@@ -3484,6 +3485,12 @@ function App() {
               <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25z"/>
             </svg>
           </button>
+          {/* 地圖樣式選擇器 */}
+          <MobileMapStyleSelector
+            theme={mapTheme}
+            onChange={setMapTheme}
+            visualTheme={visualTheme}
+          />
         </div>
       )}
 

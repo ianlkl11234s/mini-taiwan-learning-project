@@ -24,6 +24,8 @@
  * - SK-TT-ZY (臺東↔新左營)
  */
 
+import { toExtendedSeconds, timeToSeconds } from '../utils/timeUtils';
+
 export interface TraTrain {
   trainId: string;
   trackId: string;         // 用於顏色顯示 (如 NW-1, LJ-0)
@@ -158,14 +160,6 @@ function interpolateOnLineString(
   }
 
   return coords[coords.length - 1];
-}
-
-/**
- * 時間字串轉秒數
- */
-function timeToSeconds(timeStr: string): number {
-  const parts = timeStr.split(':').map(Number);
-  return parts[0] * 3600 + parts[1] * 60 + (parts[2] || 0);
 }
 
 /**
@@ -601,11 +595,14 @@ export class TraTrainEngine {
   update(currentTimeSeconds: number): TraTrain[] {
     this.activeTrains.clear();
 
+    // 轉換為延伸時間（凌晨 00:00-05:49 轉為 24:00-29:49），支援跨日列車
+    const extendedCurrentTime = toExtendedSeconds(currentTimeSeconds);
+
     for (const [_scheduleId, schedule] of this.schedules) {
       for (const departure of schedule.departures) {
         const departureSeconds = timeToSeconds(departure.departure_time);
         const totalTravelTime = departure.total_travel_time;
-        const elapsedTime = currentTimeSeconds - departureSeconds;
+        const elapsedTime = extendedCurrentTime - departureSeconds;
 
         // 跳過不在顯示範圍的列車
         if (elapsedTime < -ORIGIN_EARLY_APPEAR_TIME || elapsedTime > totalTravelTime + TERMINAL_DWELL_TIME + 60) {

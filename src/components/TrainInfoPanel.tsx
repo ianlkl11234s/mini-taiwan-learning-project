@@ -106,7 +106,7 @@ export function TrainInfoPanel({ train, stationNames, onClose, visualTheme = 'da
       style={{
         position: 'absolute',
         ...(isMobile
-          ? { bottom: 140, left: 12 }
+          ? { bottom: 170, left: 12 }
           : { top: 75, right: 60 }),
         zIndex: 20,
         background: colors.bg,

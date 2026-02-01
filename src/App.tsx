@@ -16,10 +16,7 @@ import { TmrtTrainEngine, type TmrtTrain } from './engines/TmrtTrainEngine';
 import { TraTrainEngine, type TraTrain } from './engines/TraTrainEngine';
 import { TimeControl } from './components/TimeControl';
 import { LineFilter, type MKFilterState, type ThsrFilterState, type TraFilterState } from './components/LineFilter';
-import { TrainHistogram } from './components/TrainHistogram';
 import { TrainInfoPanel } from './components/TrainInfoPanel';
-import { useTrainCountHistogram } from './hooks/useTrainCountHistogram';
-import type { TrackSchedule } from './types/schedule';
 import { Train3DLayer } from './layers/Train3DLayer';
 import { Thsr3DLayer } from './layers/Thsr3DLayer';
 import { Krtc3DLayer } from './layers/Krtc3DLayer';
@@ -129,19 +126,6 @@ function App() {
 
   // 合併所有系統的載入狀態
   const allLoading = loading || thsrLoading || krtcLoading || klrtLoading || tmrtLoading || traLoading;
-
-  // 預計算直方圖資料（所有運輸系統合計，排除纜車）
-  const allSchedules = useMemo(() => {
-    // 過濾掉貓纜的時刻表
-    const trtcSchedulesNoMK = new Map<string, TrackSchedule>();
-    for (const [key, value] of schedules.entries()) {
-      if (!key.startsWith('MK')) {
-        trtcSchedulesNoMK.set(key, value);
-      }
-    }
-    return [trtcSchedulesNoMK, thsrSchedules, krtcSchedules, klrtSchedules, tmrtSchedules];
-  }, [schedules, thsrSchedules, krtcSchedules, klrtSchedules, tmrtSchedules]);
-  const histogramData = useTrainCountHistogram(allSchedules);
 
   // 地圖狀態
   const mapContainer = useRef<HTMLDivElement>(null);
@@ -3569,27 +3553,6 @@ function App() {
           visualTheme={visualTheme}
           isMobile={isMobile}
         />
-      )}
-
-      {/* 列車數量直方圖 - 控制面板右上方漂浮（手機版隱藏）*/}
-      {!isMobile && timeEngineRef.current && (
-        <div
-          style={{
-            position: 'absolute',
-            bottom: 140,
-            right: 20,
-            zIndex: 10,
-          }}
-        >
-          <TrainHistogram
-            data={histogramData}
-            currentTimeSeconds={timeEngineRef.current.getTimeOfDaySeconds()}
-            transportCounts={transportCounts}
-            width={200}
-            height={50}
-            visualTheme={visualTheme}
-          />
-        </div>
       )}
 
       {/* 時間控制 */}

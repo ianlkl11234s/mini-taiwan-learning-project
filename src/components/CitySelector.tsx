@@ -61,7 +61,7 @@ export function CitySelector({
     <div
       style={{
         position: 'absolute',
-        bottom: 255,
+        bottom: 170,
         left: 20,
         zIndex: 10,
         display: 'flex',

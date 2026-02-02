@@ -71,8 +71,10 @@ export function TimeControl({
         background: colors.bg,
         borderRadius: isMobile ? '16px 16px 0 0' : 10,
         padding: isMobile ? '12px 16px 20px' : '10px 16px',
-        // Safe Area: 避免被手機底部 Home Indicator 遮擋
-        paddingBottom: isMobile ? 'calc(20px + env(safe-area-inset-bottom))' : '10px',
+        // Safe Area: 避免被手機底部 Home Indicator + 瀏覽器工具列遮擋
+        // env(safe-area-inset-bottom) 只處理 Home Indicator (~34px)
+        // 額外加 50px 補償瀏覽器底部工具列
+        paddingBottom: isMobile ? 'calc(70px + env(safe-area-inset-bottom))' : '10px',
         color: colors.text,
         fontFamily: 'system-ui, -apple-system, sans-serif',
         boxShadow: colors.shadow,

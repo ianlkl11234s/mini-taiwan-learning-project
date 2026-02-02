@@ -3440,7 +3440,8 @@ function App() {
         <div
           style={{
             position: 'absolute',
-            bottom: 140,
+            // 使用 calc 配合 safe-area-inset-bottom 確保按鈕在 TimeControl 上方
+            bottom: 'calc(200px + env(safe-area-inset-bottom))',
             right: 12,
             zIndex: 30,
             display: 'flex',

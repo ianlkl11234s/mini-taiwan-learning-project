@@ -942,7 +942,8 @@ function App() {
         'circle-color': '#000000',
         'circle-stroke-color': [
           'case',
-          ['==', ['slice', ['get', 'station_id'], 0, 1], 'O'], KRTC_TRACK_COLORS.O,
+          // KRTC 站點 ID 為 KO/KR 開頭（加 K 前綴避免與 TRTC 衝突）
+          ['==', ['slice', ['get', 'station_id'], 0, 2], 'KO'], KRTC_TRACK_COLORS.O,
           KRTC_TRACK_COLORS.R,
         ],
         'circle-stroke-width': 2,

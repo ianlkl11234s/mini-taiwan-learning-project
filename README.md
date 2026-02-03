@@ -387,6 +387,16 @@ VITE_MAPBOX_TOKEN=your_mapbox_token_here
 
 ## 開發歷程
 
+### 2026-02-03
+- 🔧 修正高雄捷運 (KRTC) 站點 ID 與台北捷運橘線衝突問題
+  - 將 KRTC 所有站點 ID 加上 `K` 前綴（O1→KO1, R3→KR3）
+  - 修復「鳳山→南勢角」等錯誤顯示
+- 🔧 修正台鐵彰化區域軌道跳躍問題
+  - 新增手繪軌道 `CH-north-draft.geojson` 修復 87 條 OD 軌道
+  - 更新顯示軌道 WL-M/WL-S 正確連接彰化站
+- 🔧 新增新烏日站 (3340) 到 stations_snapped 和 108 條軌道的 station_progress
+- 🔧 重新計算 94 條經過彰化的軌道 station_progress
+
 ### 2026-01-31
 - ✨ 新增台鐵跨線列車動態路線顯示（根據當前站點顯示所在路線，如「屏東線 (南下)」）
 - ✨ 新增時刻表資料來源說明區塊（在說明與公告 Modal 中）

@@ -4,7 +4,7 @@
     {
       "type": "Feature",
       "properties": {
-        "station_id": "O1",
+        "station_id": "KO1",
         "station_uid": "KRTC-O1",
         "name_zh": "哈瑪星",
         "name_en": "Hamasen",
@@ -25,7 +25,7 @@
     {
       "type": "Feature",
       "properties": {
-        "station_id": "O2",
+        "station_id": "KO2",
         "station_uid": "KRTC-O2",
         "name_zh": "鹽埕埔",
         "name_en": "Yanchengpu",
@@ -46,7 +46,7 @@
     {
       "type": "Feature",
       "properties": {
-        "station_id": "O4",
+        "station_id": "KO4",
         "station_uid": "KRTC-O4",
         "name_zh": "前金",
         "name_en": "Cianjin",
@@ -67,7 +67,7 @@
     {
       "type": "Feature",
       "properties": {
-        "station_id": "O5",
+        "station_id": "KO5",
         "station_uid": "KRTC-O5",
         "name_zh": "美麗島",
         "name_en": "Formosa Boulevard",
@@ -88,7 +88,7 @@
     {
       "type": "Feature",
       "properties": {
-        "station_id": "O6",
+        "station_id": "KO6",
         "station_uid": "KRTC-O6",
         "name_zh": "信義國小",
         "name_en": "Sinyi Elementary School",
@@ -109,7 +109,7 @@
     {
       "type": "Feature",
       "properties": {
-        "station_id": "O7",
+        "station_id": "KO7",
         "station_uid": "KRTC-O7",
         "name_zh": "文化中心",
         "name_en": "Cultural Center",
@@ -130,7 +130,7 @@
     {
       "type": "Feature",
       "properties": {
-        "station_id": "O8",
+        "station_id": "KO8",
         "station_uid": "KRTC-O8",
         "name_zh": "五塊厝",
         "name_en": "Wukuaicuo",
@@ -151,7 +151,7 @@
     {
       "type": "Feature",
       "properties": {
-        "station_id": "O9",
+        "station_id": "KO9",
         "station_uid": "KRTC-O9",
         "name_zh": "苓雅運動園區",
         "name_en": "Lingya Sports Park",
@@ -172,7 +172,7 @@
     {
       "type": "Feature",
       "properties": {
-        "station_id": "O10",
+        "station_id": "KO10",
         "station_uid": "KRTC-O10",
         "name_zh": "衛武營",
         "name_en": "Weiwuying",
@@ -193,7 +193,7 @@
     {
       "type": "Feature",
       "properties": {
-        "station_id": "O11",
+        "station_id": "KO11",
         "station_uid": "KRTC-O11",
         "name_zh": "鳳山西站",
         "name_en": "Fongshan West",
@@ -214,7 +214,7 @@
     {
       "type": "Feature",
       "properties": {
-        "station_id": "O12",
+        "station_id": "KO12",
         "station_uid": "KRTC-O12",
         "name_zh": "鳳山",
         "name_en": "Fongshan",
@@ -235,7 +235,7 @@
     {
       "type": "Feature",
       "properties": {
-        "station_id": "O13",
+        "station_id": "KO13",
         "station_uid": "KRTC-O13",
         "name_zh": "大東",
         "name_en": "Dadong",
@@ -256,7 +256,7 @@
     {
       "type": "Feature",
       "properties": {
-        "station_id": "O14",
+        "station_id": "KO14",
         "station_uid": "KRTC-O14",
         "name_zh": "鳳山國中",
         "name_en": "Fongshan Junior High School",
@@ -277,7 +277,7 @@
     {
       "type": "Feature",
       "properties": {
-        "station_id": "OT1",
+        "station_id": "KOT1",
         "station_uid": "KRTC-OT1",
         "name_zh": "大寮",
         "name_en": "Daliao",
@@ -298,7 +298,7 @@
     {
       "type": "Feature",
       "properties": {
-        "station_id": "R3",
+        "station_id": "KR3",
         "station_uid": "KRTC-R3",
         "name_zh": "小港",
         "name_en": "Siaogang",
@@ -319,7 +319,7 @@
     {
       "type": "Feature",
       "properties": {
-        "station_id": "R4",
+        "station_id": "KR4",
         "station_uid": "KRTC-R4",
         "name_zh": "高雄國際機場",
         "name_en": "Kaohsiung International Airport",
@@ -340,7 +340,7 @@
     {
       "type": "Feature",
       "properties": {
-        "station_id": "R4A",
+        "station_id": "KR4A",
         "station_uid": "KRTC-R4A",
         "name_zh": "草衙",
         "name_en": "Caoya",
@@ -361,7 +361,7 @@
     {
       "type": "Feature",
       "properties": {
-        "station_id": "R5",
+        "station_id": "KR5",
         "station_uid": "KRTC-R5",
         "name_zh": "前鎮高中",
         "name_en": "Cianjhen Senior High School",
@@ -382,7 +382,7 @@
     {
       "type": "Feature",
       "properties": {
-        "station_id": "R6",
+        "station_id": "KR6",
         "station_uid": "KRTC-R6",
         "name_zh": "凱旋",
         "name_en": "Kaisyuan",
@@ -403,7 +403,7 @@
     {
       "type": "Feature",
       "properties": {
-        "station_id": "R7",
+        "station_id": "KR7",
         "station_uid": "KRTC-R7",
         "name_zh": "獅甲",
         "name_en": "Shihjia",
@@ -424,7 +424,7 @@
     {
       "type": "Feature",
       "properties": {
-        "station_id": "R8",
+        "station_id": "KR8",
         "station_uid": "KRTC-R8",
         "name_zh": "三多商圈",
         "name_en": "Sanduo Shopping District",
@@ -445,7 +445,7 @@
     {
       "type": "Feature",
       "properties": {
-        "station_id": "R9",
+        "station_id": "KR9",
         "station_uid": "KRTC-R9",
         "name_zh": "中央公園",
         "name_en": "Central Park",
@@ -466,7 +466,7 @@
     {
       "type": "Feature",
       "properties": {
-        "station_id": "R10",
+        "station_id": "KR10",
         "station_uid": "KRTC-R10",
         "name_zh": "美麗島",
         "name_en": "Formosa Boulevard",
@@ -487,7 +487,7 @@
     {
       "type": "Feature",
       "properties": {
-        "station_id": "R11",
+        "station_id": "KR11",
         "station_uid": "KRTC-R11",
         "name_zh": "高雄車站",
         "name_en": "Kaohsiung Main Station",
@@ -508,7 +508,7 @@
     {
       "type": "Feature",
       "properties": {
-        "station_id": "R12",
+        "station_id": "KR12",
         "station_uid": "KRTC-R12",
         "name_zh": "後驛",
         "name_en": "Houyi",
@@ -529,7 +529,7 @@
     {
       "type": "Feature",
       "properties": {
-        "station_id": "R13",
+        "station_id": "KR13",
         "station_uid": "KRTC-R13",
         "name_zh": "凹子底",
         "name_en": "Aozihdi",
@@ -550,7 +550,7 @@
     {
       "type": "Feature",
       "properties": {
-        "station_id": "R14",
+        "station_id": "KR14",
         "station_uid": "KRTC-R14",
         "name_zh": "巨蛋",
         "name_en": "Kaohsiung Arena",
@@ -571,7 +571,7 @@
     {
       "type": "Feature",
       "properties": {
-        "station_id": "R15",
+        "station_id": "KR15",
         "station_uid": "KRTC-R15",
         "name_zh": "生態園區",
         "name_en": "Ecological District",
@@ -592,7 +592,7 @@
     {
       "type": "Feature",
       "properties": {
-        "station_id": "R16",
+        "station_id": "KR16",
         "station_uid": "KRTC-R16",
         "name_zh": "左營",
         "name_en": "Zuoying",
@@ -613,7 +613,7 @@
     {
       "type": "Feature",
       "properties": {
-        "station_id": "R17",
+        "station_id": "KR17",
         "station_uid": "KRTC-R17",
         "name_zh": "世運",
         "name_en": "World Game",
@@ -634,7 +634,7 @@
     {
       "type": "Feature",
       "properties": {
-        "station_id": "R18",
+        "station_id": "KR18",
         "station_uid": "KRTC-R18",
         "name_zh": "油廠國小",
         "name_en": "Oil Refinery Elementary School",
@@ -655,7 +655,7 @@
     {
       "type": "Feature",
       "properties": {
-        "station_id": "R19",
+        "station_id": "KR19",
         "station_uid": "KRTC-R19",
         "name_zh": "楠梓科技園區",
         "name_en": "Nanzih Technology Industrial Park",
@@ -676,7 +676,7 @@
     {
       "type": "Feature",
       "properties": {
-        "station_id": "R20",
+        "station_id": "KR20",
         "station_uid": "KRTC-R20",
         "name_zh": "後勁",
         "name_en": "Houjing",
@@ -697,7 +697,7 @@
     {
       "type": "Feature",
       "properties": {
-        "station_id": "R21",
+        "station_id": "KR21",
         "station_uid": "KRTC-R21",
         "name_zh": "都會公園",
         "name_en": "Metropolitan Park",
@@ -718,7 +718,7 @@
     {
       "type": "Feature",
       "properties": {
-        "station_id": "R22",
+        "station_id": "KR22",
         "station_uid": "KRTC-R22",
         "name_zh": "青埔",
         "name_en": "Cingpu",
@@ -739,7 +739,7 @@
     {
       "type": "Feature",
       "properties": {
-        "station_id": "R22A",
+        "station_id": "KR22A",
         "station_uid": "KRTC-R22A",
         "name_zh": "橋頭糖廠",
         "name_en": "Ciaotou Sugar Refinery",
@@ -760,7 +760,7 @@
     {
       "type": "Feature",
       "properties": {
-        "station_id": "R23",
+        "station_id": "KR23",
         "station_uid": "KRTC-R23",
         "name_zh": "橋頭火車站",
         "name_en": "Ciaotou Station",
@@ -781,7 +781,7 @@
     {
       "type": "Feature",
       "properties": {
-        "station_id": "R24",
+        "station_id": "KR24",
         "station_uid": "KRTC-R24",
         "name_zh": "岡山高醫",
         "name_en": "Kaohsiung Medical University Gangshan Hospital",
@@ -802,7 +802,7 @@
     {
       "type": "Feature",
       "properties": {
-        "station_id": "RK1",
+        "station_id": "KRK1",
         "station_uid": "KRTC-RK1",
         "name_zh": "岡山車站",
         "name_en": "Gangshan Station",

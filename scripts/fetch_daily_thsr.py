@@ -232,7 +232,7 @@ def main():
     )
     parser.add_argument(
         '--range', type=int, metavar='DAYS',
-        help='下載從今天起 N 天的時刻表'
+        help='下載從今天起往前 N 天的時刻表（含今天）'
     )
     args = parser.parse_args()
 
@@ -241,7 +241,8 @@ def main():
     if args.range:
         today = datetime.now()
         for i in range(args.range):
-            dates.append((today + timedelta(days=i)).strftime('%Y-%m-%d'))
+            dates.append((today - timedelta(days=i)).strftime('%Y-%m-%d'))
+        dates.sort()  # 從最早到最晚
     elif args.date:
         dates = args.date
     else:

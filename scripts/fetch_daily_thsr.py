@@ -260,8 +260,28 @@ def main():
         except Exception as e:
             print(f"  錯誤: {e}")
 
+    # 產生 index.json（掃描 daily/ 目錄所有已下載的日期）
+    update_index()
+
     print(f"\n=== 完成 ===")
     print(f"成功: {len(results)}/{len(dates)}")
+
+
+def update_index():
+    """掃描 daily/ 目錄，產生 index.json 供前端讀取可用日期"""
+    if not OUTPUT_DIR.exists():
+        return
+
+    dates = sorted([
+        f.stem for f in OUTPUT_DIR.glob("*.json")
+        if f.stem != "index" and len(f.stem) == 10  # YYYY-MM-DD
+    ])
+
+    index_path = OUTPUT_DIR / "index.json"
+    with open(index_path, 'w', encoding='utf-8') as f:
+        json.dump({"dates": dates}, f, ensure_ascii=False)
+
+    print(f"\n  index.json: {len(dates)} 個日期 ({dates[0]} ~ {dates[-1]})")
 
 
 if __name__ == '__main__':

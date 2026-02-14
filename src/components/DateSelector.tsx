@@ -13,6 +13,7 @@ interface DateSelectorProps {
   scheduleDate: string | null; // 實際載入的日期
   scheduleLoading: boolean;
   trainCount: number;
+  availableDates: string[]; // 已下載的日期清單 (sorted)
   themeColors: ThemeColors;
   visualTheme?: VisualTheme;
   isMobile?: boolean;
@@ -27,6 +28,7 @@ export function DateSelector({
   scheduleDate,
   scheduleLoading,
   trainCount,
+  availableDates,
   themeColors,
   visualTheme = 'dark',
   isMobile = false,
@@ -38,6 +40,14 @@ export function DateSelector({
 
   const today = new Date().toISOString().split('T')[0];
 
+  // 日期範圍
+  const minDate = availableDates.length > 0 ? availableDates[0] : today;
+  const maxDate = availableDates.length > 0 ? availableDates[availableDates.length - 1] : today;
+
+  // 判斷是否能前後移動
+  const canGoPrev = selectedDate ? selectedDate > minDate : true;
+  const canGoNext = selectedDate ? selectedDate < maxDate : true;
+
   const shiftDate = (days: number) => {
     if (!selectedDate) {
       onDateChange(today);
@@ -45,7 +55,10 @@ export function DateSelector({
     }
     const d = new Date(selectedDate + 'T00:00:00');
     d.setDate(d.getDate() + days);
-    onDateChange(d.toISOString().split('T')[0]);
+    const newDate = d.toISOString().split('T')[0];
+    // 限制在可用範圍內
+    if (newDate < minDate || newDate > maxDate) return;
+    onDateChange(newDate);
   };
 
   const formatDate = (dateStr: string) => {
@@ -70,11 +83,14 @@ export function DateSelector({
     lineHeight: '18px',
   });
 
-  const navButtonStyle: React.CSSProperties = {
+  const navButtonStyle = (enabled: boolean): React.CSSProperties => ({
     ...buttonStyle(),
     padding: '3px 6px',
     fontSize: 10,
-  };
+    opacity: enabled ? 1 : 0,
+    pointerEvents: enabled ? 'auto' : 'none',
+    transition: 'opacity 0.2s, background 0.15s',
+  });
 
   return (
     <div
@@ -121,18 +137,20 @@ export function DateSelector({
 
         <div style={{ width: 1, height: 14, background: themeColors.panelBorder, margin: '0 2px' }} />
 
-        <button onClick={() => shiftDate(-1)} style={navButtonStyle}>◀</button>
+        <button onClick={() => shiftDate(-1)} style={navButtonStyle(canGoPrev)}>◀</button>
 
         <button onClick={() => onDateChange(today)} style={buttonStyle(selectedDate === today)}>
           今天
         </button>
 
-        <button onClick={() => shiftDate(1)} style={navButtonStyle}>▶</button>
+        <button onClick={() => shiftDate(1)} style={navButtonStyle(canGoNext)}>▶</button>
 
         {!isMobile && (
           <input
             type="date"
             value={selectedDate || ''}
+            min={minDate}
+            max={maxDate}
             onChange={(e) => onDateChange(e.target.value || undefined)}
             style={{
               padding: '2px 4px',

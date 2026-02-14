@@ -29,6 +29,7 @@ export interface ThsrDataState {
   error: string | null;
   scheduleDate: string | null; // 目前載入的時刻表日期（null = 固定時刻表）
   scheduleTrainCount: number; // 目前載入的班次數
+  availableDates: string[]; // 已下載的每日時刻表日期清單
 }
 
 /**
@@ -74,8 +75,9 @@ export function useThsrData(selectedDate?: string): ThsrDataState {
   const [error, setError] = useState<string | null>(null);
   const [scheduleDate, setScheduleDate] = useState<string | null>(null);
   const [scheduleTrainCount, setScheduleTrainCount] = useState(0);
+  const [availableDates, setAvailableDates] = useState<string[]>([]);
 
-  // 初始載入：軌道、車站、車站進度、預設時刻表
+  // 初始載入：軌道、車站、車站進度、預設時刻表、可用日期清單
   useEffect(() => {
     async function loadData() {
       try {
@@ -124,6 +126,17 @@ export function useThsrData(selectedDate?: string): ThsrDataState {
         setSchedules(scheduleMap);
         setScheduleTrainCount(trainCount);
         setScheduleDate(null);
+
+        // 載入可用日期清單
+        try {
+          const indexRes = await fetch('/data/thsr/schedules/daily/index.json');
+          if (indexRes.ok) {
+            const indexData = await indexRes.json();
+            setAvailableDates(indexData.dates || []);
+          }
+        } catch {
+          // index.json 不存在沒關係，日期選擇器會沒有限制
+        }
 
         setLoading(false);
       } catch (err) {
@@ -192,6 +205,6 @@ export function useThsrData(selectedDate?: string): ThsrDataState {
   return {
     tracks, stations, schedules, trackMap, stationProgress,
     loading, scheduleLoading, error,
-    scheduleDate, scheduleTrainCount,
+    scheduleDate, scheduleTrainCount, availableDates,
   };
 }

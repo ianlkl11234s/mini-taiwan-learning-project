@@ -79,6 +79,7 @@ function App() {
     error: _thsrError,
     scheduleDate: thsrScheduleDate,
     scheduleTrainCount: thsrTrainCount,
+    availableDates: thsrAvailableDates,
   } = useThsrData(selectedScheduleDate);
   void _thsrError; // 錯誤不阻止顯示
 
@@ -3187,13 +3188,14 @@ function App() {
 
       {/* 日期選擇器 - 左上角，標題下方 */}
       {!isMobile && (
-        <div style={{ position: 'absolute', top: 75, left: 20, zIndex: 10 }}>
+        <div style={{ position: 'absolute', top: 90, left: 20, zIndex: 10 }}>
           <DateSelector
             selectedDate={selectedScheduleDate}
             onDateChange={setSelectedScheduleDate}
             scheduleDate={thsrScheduleDate}
             scheduleLoading={thsrScheduleLoading}
             trainCount={thsrTrainCount}
+            availableDates={thsrAvailableDates}
             themeColors={themeColors}
             visualTheme={visualTheme}
           />
@@ -3205,7 +3207,7 @@ function App() {
       <div
         style={{
           position: 'absolute',
-          top: 140,
+          top: 155,
           left: 20,
           zIndex: 10,
           background: themeColors.panelBg,

@@ -3185,12 +3185,27 @@ function App() {
         </div>
       )}
 
+      {/* 日期選擇器 - 左上角，標題下方 */}
+      {!isMobile && (
+        <div style={{ position: 'absolute', top: 75, left: 20, zIndex: 10 }}>
+          <DateSelector
+            selectedDate={selectedScheduleDate}
+            onDateChange={setSelectedScheduleDate}
+            scheduleDate={thsrScheduleDate}
+            scheduleLoading={thsrScheduleLoading}
+            trainCount={thsrTrainCount}
+            themeColors={themeColors}
+            visualTheme={visualTheme}
+          />
+        </div>
+      )}
+
       {/* 圖例 - 簡化版，始終顯示所有路線（手機版隱藏）*/}
       {!isMobile && (
       <div
         style={{
           position: 'absolute',
-          top: 90,
+          top: 140,
           left: 20,
           zIndex: 10,
           background: themeColors.panelBg,
@@ -3563,17 +3578,6 @@ function App() {
           isMobile={isMobile}
         />
       )}
-
-      {/* 日期選擇器 */}
-      <DateSelector
-        selectedDate={selectedScheduleDate}
-        onDateChange={setSelectedScheduleDate}
-        scheduleDate={thsrScheduleDate}
-        scheduleLoading={thsrScheduleLoading}
-        trainCount={thsrTrainCount}
-        visualTheme={visualTheme}
-        isMobile={isMobile}
-      />
 
       {/* 時間控制 */}
       {timeEngineRef.current && (

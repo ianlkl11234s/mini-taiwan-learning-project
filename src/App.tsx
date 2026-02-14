@@ -63,6 +63,9 @@ function App() {
   // MRT 資料載入
   const { tracks, stations, schedules, trackMap, stationProgress, loading, error } = useData();
 
+  // 每日時刻表日期選擇（undefined = 固定時刻表）
+  const [selectedScheduleDate, setSelectedScheduleDate] = useState<string | undefined>(undefined);
+
   // THSR 資料載入
   const {
     tracks: thsrTracks,
@@ -71,8 +74,11 @@ function App() {
     trackMap: thsrTrackMap,
     stationProgress: thsrStationProgress,
     loading: thsrLoading,
+    scheduleLoading: thsrScheduleLoading,
     error: _thsrError,
-  } = useThsrData();
+    scheduleDate: thsrScheduleDate,
+    scheduleTrainCount: thsrTrainCount,
+  } = useThsrData(selectedScheduleDate);
   void _thsrError; // 錯誤不阻止顯示
 
   // KRTC 資料載入

@@ -34,6 +34,7 @@ import { KLRT_TRACK_COLORS, KLRT_TRAIN_COLORS, getKlrtLineId, getKlrtDirection }
 import { TMRT_TRACK_COLORS, TMRT_TRAIN_COLORS, getTmrtLineId, getTmrtDirection } from './constants/tmrtInfo';
 import { getTraTrainColor, TRA_PRIMARY_COLOR } from './constants/traInfo';
 import { CitySelector, type CityId, CITIES } from './components/CitySelector';
+import { DateSelector } from './components/DateSelector';
 
 // 光線預設類型（用於 standard 樣式）
 type LightPreset = 'dawn' | 'day' | 'dusk' | 'night';
@@ -3562,6 +3563,17 @@ function App() {
           isMobile={isMobile}
         />
       )}
+
+      {/* 日期選擇器 */}
+      <DateSelector
+        selectedDate={selectedScheduleDate}
+        onDateChange={setSelectedScheduleDate}
+        scheduleDate={thsrScheduleDate}
+        scheduleLoading={thsrScheduleLoading}
+        trainCount={thsrTrainCount}
+        visualTheme={visualTheme}
+        isMobile={isMobile}
+      />
 
       {/* 時間控制 */}
       {timeEngineRef.current && (

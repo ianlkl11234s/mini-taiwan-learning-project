@@ -232,17 +232,16 @@ def main():
     )
     parser.add_argument(
         '--range', type=int, metavar='DAYS',
-        help='下載從今天起往前 N 天的時刻表（含今天）'
+        help='下載從今天起未來 N 天的時刻表（含今天）。TDX 不提供過去的每日時刻表。'
     )
     args = parser.parse_args()
 
-    # 決定日期清單
+    # 決定日期清單（TDX 只提供今天及未來的 DailyTimetable）
     dates = []
     if args.range:
         today = datetime.now()
         for i in range(args.range):
-            dates.append((today - timedelta(days=i)).strftime('%Y-%m-%d'))
-        dates.sort()  # 從最早到最晚
+            dates.append((today + timedelta(days=i)).strftime('%Y-%m-%d'))
     elif args.date:
         dates = args.date
     else:

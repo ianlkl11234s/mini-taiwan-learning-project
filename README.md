@@ -24,7 +24,8 @@
 - **即時列車模擬** - 根據真實時刻表模擬列車運行
 - **多城市切換** - 支援台北 (TPE)、台中 (TXG)、高雄 (KHH)、花蓮 (HUN)、台東 (TTT) 五城市快速切換
 - **Mapbox 地圖視覺化** - 使用 Mapbox GL JS 呈現精美地圖
-- **完整路網支援** - 支援台北捷運、台中捷運、高雄捷運、高雄輕軌、台灣高鐵、台鐵 (928 班)
+- **完整路網支援** - 支援台北捷運、台中捷運、高雄捷運、高雄輕軌、台灣高鐵、台鐵 (992 班)
+- **每日時刻表切換** - 高鐵支援每日時刻表，可切換不同日期查看實際班次
 - **2D / 3D 模式切換** - 支援平面與立體視角，3D 模式下列車以方塊呈現
 - **列車跟隨模式** - 點擊列車可開啟跟隨，自動追蹤列車位置
 - **日夜主題切換** - 支援 Auto（隨時間自動切換）、Dawn、Day、Dusk、Night、Dark 六種主題
@@ -69,7 +70,7 @@
 
 | 路線 | 代碼 | 車站數 | 營運模式 |
 |------|------|--------|----------|
-| 🟧 台灣高鐵 | THSR | 12 站 | 南港 ↔ 左營 |
+| 🟧 台灣高鐵 | THSR | 12 站 | 南港 ↔ 左營（支援每日時刻表切換） |
 
 ### 台鐵 (TRA)
 
@@ -88,7 +89,7 @@
 | 🚃 集集線 | JJ | 二水 ↔ 車埕 | 支線 |
 | 🚃 成追線 | CZ | 成功 ↔ 追分 | 支線 |
 
-> 台鐵總計 928 班列車（含區間車、自強號、普悠瑪、太魯閣等各車種）
+> 台鐵總計 992 班列車（含區間車、自強號、普悠瑪、太魯閣等各車種）
 
 ## 技術架構
 
@@ -131,6 +132,7 @@
 | useTmrtData | `src/hooks/useTmrtData.ts` | 台中捷運資料載入 |
 | useTraData | `src/hooks/useTraData.ts` | 台鐵資料載入 |
 | CitySelector | `src/components/CitySelector.tsx` | 城市快速切換 |
+| DateSelector | `src/components/DateSelector.tsx` | 高鐵每日時刻表日期選擇 |
 | LineFilter | `src/components/LineFilter.tsx` | 路線篩選 |
 | TrainInfoPanel | `src/components/TrainInfoPanel.tsx` | 列車跟隨資訊面板 |
 
@@ -212,6 +214,8 @@ mini-taiwan/
 │   ├── thsr/                     # 高鐵資料
 │   │   ├── tracks/
 │   │   ├── schedules/
+│   │   │   ├── thsr_schedules.json  # 固定（定期）時刻表
+│   │   │   └── daily/               # 每日時刻表（TDX DailyTimetable）
 │   │   ├── stations/
 │   │   └── station_progress.json
 │   ├── krtc/                     # 高雄捷運資料
@@ -243,6 +247,7 @@ mini-taiwan/
 │   ├── tdx_klrt/                 # 高雄輕軌原始資料
 │   └── ...
 ├── scripts/                      # 資料處理腳本
+│   ├── fetch_daily_thsr.py       # 下載高鐵每日時刻表
 │   ├── fetch_*.py                # 取得各系統 TDX 資料
 │   ├── build_*.py                # 建立各系統軌道/時刻表
 │   └── tra/                      # 台鐵專用腳本
@@ -386,6 +391,15 @@ VITE_MAPBOX_TOKEN=your_mapbox_token_here
 | 時刻表資料 | Eric Yu 開源專案 + TDX API |
 
 ## 開發歷程
+
+### 2026-02-15
+- ✨ 新增高鐵每日時刻表切換功能
+  - 新增 `DateSelector` 日期選擇器，支援定期/今天/前後日切換
+  - 新增 `fetch_daily_thsr.py` 腳本，從 TDX DailyTimetable API 下載每日時刻表
+  - `useThsrData` 支援日期切換，只重載時刻表不重載軌道/車站
+  - 預載 30 天時刻表資料，邊界日期自動隱藏導航按鈕
+  - 無該日期資料時自動 fallback 至固定時刻表
+- 🔧 台鐵班次更新至 992 班（原 928 班）
 
 ### 2026-02-03
 - 🔧 修正台中捷運 (TMRT) 站點 ID 與台北捷運綠線衝突問題

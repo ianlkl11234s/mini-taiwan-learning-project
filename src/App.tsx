@@ -128,8 +128,12 @@ function App() {
     schedules: traSchedules,
     stationProgress: traStationProgress,
     loading: traLoading,
+    scheduleLoading: traScheduleLoading,
     error: _traError,
-  } = useTraData();
+    scheduleDate: traScheduleDate,
+    scheduleTrainCount: traTrainCount,
+    availableDates: traAvailableDates,
+  } = useTraData(selectedScheduleDate);
   void _traError; void _traTrackMap; // 錯誤不阻止顯示
 
   // 合併所有系統的載入狀態
@@ -3192,10 +3196,10 @@ function App() {
           <DateSelector
             selectedDate={selectedScheduleDate}
             onDateChange={setSelectedScheduleDate}
-            scheduleDate={thsrScheduleDate}
-            scheduleLoading={thsrScheduleLoading}
-            trainCount={thsrTrainCount}
-            availableDates={thsrAvailableDates}
+            scheduleDate={thsrScheduleDate ?? traScheduleDate}
+            scheduleLoading={thsrScheduleLoading || traScheduleLoading}
+            trainCount={thsrTrainCount + traTrainCount}
+            availableDates={[...new Set([...thsrAvailableDates, ...traAvailableDates])].sort()}
             themeColors={themeColors}
             visualTheme={visualTheme}
           />

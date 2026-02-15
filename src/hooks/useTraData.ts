@@ -7,6 +7,8 @@
  * - O-D 軌道 (tracks_od) - 用於列車位置計算
  * - 真實時刻表 (schedules_real/master_schedule.json)
  * - 車站進度 (od_station_progress)
+ *
+ * 支援每日時刻表切換（selectedDate 參數）
  */
 
 import { useState, useEffect } from 'react';
@@ -216,10 +218,42 @@ export interface TraDataState {
   stationProgress: TraStationProgressMap;
   // 狀態
   loading: boolean;
+  scheduleLoading: boolean;
   error: string | null;
+  // 每日時刻表
+  scheduleDate: string | null;
+  scheduleTrainCount: number;
+  availableDates: string[];
 }
 
-export function useTraData(): TraDataState {
+/**
+ * 將 master_schedule 格式的 JSON 轉為 schedules Map
+ */
+function parseTraSchedule(data: { schedules?: TraDeparture[] }): {
+  scheduleMap: Map<string, TraSchedule>;
+  trainCount: number;
+} {
+  const scheduleMap = new Map<string, TraSchedule>();
+  const schedulesList: TraDeparture[] = data.schedules || [];
+
+  const byOd = new Map<string, TraDeparture[]>();
+  for (const s of schedulesList) {
+    const trackId = s.od_track_id;
+    if (!byOd.has(trackId)) byOd.set(trackId, []);
+    byOd.get(trackId)!.push(s);
+  }
+
+  for (const [trackId, departures] of byOd) {
+    scheduleMap.set(trackId, {
+      track_id: trackId,
+      departures,
+    });
+  }
+
+  return { scheduleMap, trainCount: schedulesList.length };
+}
+
+export function useTraData(selectedDate?: string): TraDataState {
   // 顯示用資料
   const [tracks, setTracks] = useState<TrackCollection | null>(null);
   const [stations, setStations] = useState<StationCollection | null>(null);
@@ -230,8 +264,14 @@ export function useTraData(): TraDataState {
   const [stationProgress, setStationProgress] = useState<TraStationProgressMap>({});
   // 狀態
   const [loading, setLoading] = useState(true);
+  const [scheduleLoading, setScheduleLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  // 每日時刻表
+  const [scheduleDate, setScheduleDate] = useState<string | null>(null);
+  const [scheduleTrainCount, setScheduleTrainCount] = useState(0);
+  const [availableDates, setAvailableDates] = useState<string[]>([]);
 
+  // 初始載入：軌道、車站、車站進度、預設時刻表、可用日期清單
   useEffect(() => {
     async function loadData() {
       try {
@@ -286,38 +326,20 @@ export function useTraData(): TraDataState {
           console.warn('無法載入車站資料:', e);
         }
 
-        // === 載入真實時刻表 ===
-        const scheduleMap = new Map<string, TraSchedule>();
-        const odTrackIdsFromSchedule = new Set<string>();
-
+        // === 載入真實時刻表（預設 master_schedule） ===
         try {
           const masterRes = await fetch('/data/tra/schedules_real/master_schedule.json');
           if (masterRes.ok) {
             const masterData = await masterRes.json();
-            const schedules: TraDeparture[] = masterData.schedules || [];
-
-            // 按 od_track_id 分組
-            const byOd = new Map<string, TraDeparture[]>();
-            for (const s of schedules) {
-              const trackId = s.od_track_id;
-              odTrackIdsFromSchedule.add(trackId);
-              if (!byOd.has(trackId)) byOd.set(trackId, []);
-              byOd.get(trackId)!.push(s);
-            }
-
-            // 轉換為 TraSchedule 格式
-            for (const [trackId, departures] of byOd) {
-              scheduleMap.set(trackId, {
-                track_id: trackId,
-                departures,
-              });
-            }
-            console.log(`載入真實時刻表: ${schedules.length} 班, ${scheduleMap.size} 條軌道`);
+            const { scheduleMap, trainCount } = parseTraSchedule(masterData);
+            setSchedules(scheduleMap);
+            setScheduleTrainCount(trainCount);
+            setScheduleDate(null);
+            console.log(`載入真實時刻表: ${trainCount} 班, ${scheduleMap.size} 條軌道`);
           }
         } catch (e) {
           console.warn('無法載入真實時刻表:', e);
         }
-        setSchedules(scheduleMap);
 
         // === 載入 O-D 軌道 (用於列車位置計算) ===
         // 使用 bundle 檔案一次載入所有軌道（優化：263 個請求 → 1 個請求）
@@ -353,6 +375,17 @@ export function useTraData(): TraDataState {
           console.warn('無法載入車站進度:', e);
         }
 
+        // === 載入可用日期清單 ===
+        try {
+          const indexRes = await fetch('/data/tra/schedules_real/daily/index.json');
+          if (indexRes.ok) {
+            const indexData = await indexRes.json();
+            setAvailableDates(indexData.dates || []);
+          }
+        } catch {
+          // index.json 不存在沒關係
+        }
+
         setLoading(false);
       } catch (err) {
         setError(err instanceof Error ? err.message : 'Unknown error');
@@ -363,6 +396,64 @@ export function useTraData(): TraDataState {
     loadData();
   }, []);
 
+  // 日期切換：只重載時刻表
+  useEffect(() => {
+    // 初始載入時跳過（由上方 useEffect 處理）
+    if (loading) return;
+
+    async function loadDailySchedule() {
+      if (!selectedDate) {
+        // 切回固定時刻表
+        setScheduleLoading(true);
+        try {
+          const masterRes = await fetch('/data/tra/schedules_real/master_schedule.json');
+          if (masterRes.ok) {
+            const masterData = await masterRes.json();
+            const { scheduleMap, trainCount } = parseTraSchedule(masterData);
+            setSchedules(scheduleMap);
+            setScheduleTrainCount(trainCount);
+            setScheduleDate(null);
+          }
+        } catch (err) {
+          setError(err instanceof Error ? err.message : 'Unknown error');
+        }
+        setScheduleLoading(false);
+        return;
+      }
+
+      // 載入指定日期時刻表
+      setScheduleLoading(true);
+      try {
+        const dailyRes = await fetch(`/data/tra/schedules_real/daily/${selectedDate}.json`);
+        if (!dailyRes.ok) throw new Error('not found');
+        const dailyData = await dailyRes.json();
+        const { scheduleMap, trainCount } = parseTraSchedule(dailyData);
+        setSchedules(scheduleMap);
+        setScheduleTrainCount(trainCount);
+        setScheduleDate(selectedDate);
+        setError(null);
+      } catch {
+        // 該日期時刻表不存在，fallback 到固定時刻表
+        console.warn(`TRA daily schedule for ${selectedDate} not found, using default`);
+        try {
+          const masterRes = await fetch('/data/tra/schedules_real/master_schedule.json');
+          if (masterRes.ok) {
+            const masterData = await masterRes.json();
+            const { scheduleMap, trainCount } = parseTraSchedule(masterData);
+            setSchedules(scheduleMap);
+            setScheduleTrainCount(trainCount);
+            setScheduleDate(null);
+          }
+        } catch (err) {
+          setError(err instanceof Error ? err.message : 'Unknown error');
+        }
+      }
+      setScheduleLoading(false);
+    }
+
+    loadDailySchedule();
+  }, [selectedDate, loading]);
+
   return {
     tracks,
     stations,
@@ -371,6 +462,10 @@ export function useTraData(): TraDataState {
     schedules,
     stationProgress,
     loading,
+    scheduleLoading,
     error,
+    scheduleDate,
+    scheduleTrainCount,
+    availableDates,
   };
 }

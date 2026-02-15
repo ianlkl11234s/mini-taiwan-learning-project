@@ -8,7 +8,7 @@ interface ThemeColors {
 }
 
 interface DateSelectorProps {
-  selectedDate: string | undefined; // undefined = 固定時刻表
+  selectedDate: string | undefined; // undefined = 定期時刻表
   onDateChange: (date: string | undefined) => void;
   scheduleDate: string | null; // 實際載入的日期
   scheduleLoading: boolean;
@@ -20,7 +20,10 @@ interface DateSelectorProps {
 }
 
 /**
- * 日期選擇器 — 左上角面板，風格與圖例一致
+ * 日期選擇器 — 定期/每日模式切換 + 日期導航
+ *
+ * 定期模式：使用固定時刻表，日期控制 disabled
+ * 每日模式：使用當日時刻表，可用 ◀ ▶ 切換日期
  */
 export function DateSelector({
   selectedDate,
@@ -34,29 +37,29 @@ export function DateSelector({
   isMobile = false,
 }: DateSelectorProps) {
   const isDark = visualTheme === 'dark';
-
   const buttonBg = isDark ? 'rgba(255,255,255,0.1)' : 'rgba(0,0,0,0.08)';
   const activeBg = '#d90023';
 
-  const today = new Date().toISOString().split('T')[0];
+  // 使用本地時間格式化日期（避免 UTC 時區偏移問題）
+  const toLocalDateStr = (d: Date) =>
+    `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+
+  const today = toLocalDateStr(new Date());
+  const isDailyMode = selectedDate !== undefined;
 
   // 日期範圍
   const minDate = availableDates.length > 0 ? availableDates[0] : today;
   const maxDate = availableDates.length > 0 ? availableDates[availableDates.length - 1] : today;
 
-  // 判斷是否能前後移動
-  const canGoPrev = selectedDate ? selectedDate > minDate : true;
-  const canGoNext = selectedDate ? selectedDate < maxDate : true;
+  // 箭頭可用性（每日模式 + 未到邊界）
+  const canGoPrev = isDailyMode && !!selectedDate && selectedDate > minDate;
+  const canGoNext = isDailyMode && !!selectedDate && selectedDate < maxDate;
 
   const shiftDate = (days: number) => {
-    if (!selectedDate) {
-      onDateChange(today);
-      return;
-    }
+    if (!selectedDate) return;
     const d = new Date(selectedDate + 'T00:00:00');
     d.setDate(d.getDate() + days);
-    const newDate = d.toISOString().split('T')[0];
-    // 限制在可用範圍內
+    const newDate = toLocalDateStr(d);
     if (newDate < minDate || newDate > maxDate) return;
     onDateChange(newDate);
   };
@@ -70,8 +73,24 @@ export function DateSelector({
     return `${month}/${day} (${weekday})`;
   };
 
-  const buttonStyle = (active = false): React.CSSProperties => ({
-    padding: '3px 8px',
+  // 中間標籤：今日 or 日期
+  const centerLabel = (() => {
+    if (!isDailyMode) return '今日'; // 定期模式顯示但 disabled
+    if (selectedDate === today) return '今日';
+    return formatDate(selectedDate!);
+  })();
+
+  // 第一行狀態文字
+  const statusText = (() => {
+    if (scheduleLoading) return '載入中...';
+    if (scheduleDate) return `${formatDate(scheduleDate)} / ${trainCount} 班`;
+    return `定期 / ${trainCount} 班`;
+  })();
+
+  // --- Styles ---
+
+  const modeButtonStyle = (active: boolean): React.CSSProperties => ({
+    padding: '3px 10px',
     borderRadius: 4,
     border: 'none',
     background: active ? activeBg : buttonBg,
@@ -81,16 +100,25 @@ export function DateSelector({
     transition: 'background 0.15s',
     fontFamily: 'system-ui, -apple-system, sans-serif',
     lineHeight: '18px',
+    fontWeight: active ? 600 : 400,
   });
 
   const navButtonStyle = (enabled: boolean): React.CSSProperties => ({
-    ...buttonStyle(),
     padding: '3px 6px',
+    borderRadius: 4,
+    border: 'none',
+    background: buttonBg,
+    color: themeColors.panelText,
     fontSize: 10,
-    opacity: enabled ? 1 : 0,
+    cursor: enabled ? 'pointer' : 'default',
+    opacity: enabled ? 1 : 0.3,
     pointerEvents: enabled ? 'auto' : 'none',
     transition: 'opacity 0.2s, background 0.15s',
+    fontFamily: 'system-ui, -apple-system, sans-serif',
+    lineHeight: '18px',
   });
+
+  const dateControlOpacity = isDailyMode ? 1 : 0.3;
 
   return (
     <div
@@ -116,42 +144,64 @@ export function DateSelector({
       }}>
         <span style={{ fontWeight: 600, color: themeColors.panelTextSecondary }}>時刻表</span>
         <span style={{ color: themeColors.panelTextSecondary, fontSize: 10 }}>
-          {scheduleLoading
-            ? '載入中...'
-            : scheduleDate
-              ? `${formatDate(scheduleDate)} / ${trainCount} 班`
-              : `定期 / ${trainCount} 班`
-          }
+          {statusText}
         </span>
       </div>
 
-      {/* 第二行：按鈕列 */}
+      {/* 第二行：模式切換 + 日期導航 */}
       <div style={{
         display: 'flex',
         alignItems: 'center',
         gap: 3,
       }}>
-        <button onClick={() => onDateChange(undefined)} style={buttonStyle(!selectedDate)}>
+        {/* 模式按鈕 */}
+        <button onClick={() => onDateChange(undefined)} style={modeButtonStyle(!isDailyMode)}>
           定期
         </button>
-
-        <div style={{ width: 1, height: 14, background: themeColors.panelBorder, margin: '0 2px' }} />
-
-        <button onClick={() => shiftDate(-1)} style={navButtonStyle(canGoPrev)}>◀</button>
-
-        <button onClick={() => onDateChange(today)} style={buttonStyle(selectedDate === today)}>
-          今天
+        <button onClick={() => onDateChange(selectedDate || today)} style={modeButtonStyle(isDailyMode)}>
+          每日
         </button>
 
-        <button onClick={() => shiftDate(1)} style={navButtonStyle(canGoNext)}>▶</button>
+        <div style={{ width: 1, height: 14, background: themeColors.panelBorder, margin: '0 4px' }} />
 
+        {/* 日期導航：◀ [日期] ▶ */}
+        <div style={{
+          display: 'flex',
+          alignItems: 'center',
+          gap: 3,
+          opacity: dateControlOpacity,
+          transition: 'opacity 0.2s',
+        }}>
+          <button onClick={() => shiftDate(-1)} style={navButtonStyle(canGoPrev)}>
+            ◀
+          </button>
+
+          <span style={{
+            padding: '3px 8px',
+            fontSize: 11,
+            fontFamily: 'system-ui, -apple-system, sans-serif',
+            minWidth: 56,
+            textAlign: 'center',
+            color: themeColors.panelText,
+            userSelect: 'none',
+          }}>
+            {centerLabel}
+          </span>
+
+          <button onClick={() => shiftDate(1)} style={navButtonStyle(canGoNext)}>
+            ▶
+          </button>
+        </div>
+
+        {/* 日期選擇器 */}
         {!isMobile && (
           <input
             type="date"
             value={selectedDate || ''}
             min={minDate}
             max={maxDate}
-            onChange={(e) => onDateChange(e.target.value || undefined)}
+            disabled={!isDailyMode}
+            onChange={(e) => onDateChange(e.target.value || today)}
             style={{
               padding: '2px 4px',
               borderRadius: 4,
@@ -161,7 +211,9 @@ export function DateSelector({
               fontSize: 11,
               fontFamily: 'system-ui',
               width: 115,
-              cursor: 'pointer',
+              cursor: isDailyMode ? 'pointer' : 'default',
+              opacity: dateControlOpacity,
+              transition: 'opacity 0.2s',
             }}
           />
         )}

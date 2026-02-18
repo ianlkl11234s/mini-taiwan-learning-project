@@ -69,3 +69,9 @@ public/data/tra/od_complete_analysis.json
 # TRA 時刻表轉換中間檔案
 public/data/tra/data/
 public/data/tra/schedules_real/by_od/
+
+# 每日時刻表（下載產生，不追蹤）
+public/data/thsr/schedules/daily/
+public/data/tra/schedules_real/daily/
+data-thsr/
+data-tra-daily/

@@ -324,6 +324,16 @@ function getTrackIdFromOdTrackId(odTrackId: string): string {
     if (odTrackId === 'YL-SA-SL-1') {
       return 'YL-SA-BD-1';
     }
+    // 樹林↔蘇澳新 合併軌道：YL-SL-SX-0 / YL-SX-SL-1 → 使用 YL golden track
+    if (odTrackId === 'YL-SL-SX-0') {
+      return 'YL-BD-SA-0';
+    }
+    if (odTrackId === 'YL-SX-SL-1') {
+      return 'YL-SA-BD-1';
+    }
+    // 區段軌道：YL-BD-SX / YL-SX-BD → 對應 golden track
+    if (odTrackId.startsWith('YL-BD-SX')) return 'YL-BD-SA-0';
+    if (odTrackId.startsWith('YL-SX-BD')) return 'YL-SA-BD-1';
     // 區段軌道：YL-BD-SA-0 / YL-SA-BD-1 → 直接對應 golden track
     if (odTrackId.startsWith('YL-BD-SA') || odTrackId.startsWith('YL-SA-BD')) {
       return odTrackId;

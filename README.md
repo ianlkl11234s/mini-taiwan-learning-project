@@ -2,7 +2,7 @@
 
 台灣交通運輸模擬 - 在地圖上視覺化呈現列車運行狀態
 
-![React](https://img.shields.io/badge/React-19-blue) ![TypeScript](https://img.shields.io/badge/TypeScript-5.9-blue) ![Mapbox](https://img.shields.io/badge/Mapbox%20GL-3.17-orange)
+![React](https://img.shields.io/badge/React-19.2-blue) ![TypeScript](https://img.shields.io/badge/TypeScript-5.9-blue) ![Mapbox](https://img.shields.io/badge/Mapbox%20GL-3.17-orange) ![Three.js](https://img.shields.io/badge/Three.js-0.182-green) ![Vite](https://img.shields.io/badge/Vite-7.2-purple)
 
 ## 致謝與資料來源
 
@@ -24,7 +24,7 @@
 - **即時列車模擬** - 根據真實時刻表模擬列車運行
 - **多城市切換** - 支援台北 (TPE)、台中 (TXG)、高雄 (KHH)、花蓮 (HUN)、台東 (TTT) 五城市快速切換
 - **Mapbox 地圖視覺化** - 使用 Mapbox GL JS 呈現精美地圖
-- **完整路網支援** - 支援台北捷運、台中捷運、高雄捷運、高雄輕軌、台灣高鐵、台鐵 (928 班)
+- **完整路網支援** - 支援台北捷運、台中捷運、高雄捷運、高雄輕軌、台灣高鐵、台鐵 (992 班)
 - **2D / 3D 模式切換** - 支援平面與立體視角，3D 模式下列車以方塊呈現
 - **列車跟隨模式** - 點擊列車可開啟跟隨，自動追蹤列車位置
 - **日夜主題切換** - 支援 Auto（隨時間自動切換）、Dawn、Day、Dusk、Night、Dark 六種主題
@@ -76,19 +76,21 @@
 | 路線 | 代碼 | 說明 | 班次 |
 |------|------|------|------|
 | 🚃 西部幹線 | WL | 基隆 ↔ 高雄（含山線/海線） | 主要幹線 |
-| 🚃 宜蘭線 | YL | 八堵 ↔ 蘇澳新 | 環島東部 |
+| 🚃 宜蘭線 | YL | 八堵 ↔ 蘇澳（含蘇澳支線） | 環島東部 |
 | 🚃 北迴線 | BH | 蘇澳新 ↔ 花蓮 | 環島東部 |
 | 🚃 臺東線 | TL | 花蓮 ↔ 臺東 | 環島東部 |
 | 🚃 南迴線 | SK | 臺東 ↔ 高雄（枋寮） | 環島南部 |
 | 🚃 屏東線 | PT | 高雄 ↔ 枋寮 | 南部支線 |
-| 🚃 平溪線 | PX | 三貂嶺 ↔ 菁桐 | 64 班 |
+| 🚃 平溪線 | PX | 三貂嶺 ↔ 菁桐 | 支線 |
 | 🚃 內灣線 | NW | 竹中 ↔ 內灣 | 支線 |
 | 🚃 六家線 | LJ | 竹中 ↔ 六家 | 支線 |
 | 🚃 沙崙線 | SH | 臺南 ↔ 沙崙 | 支線 |
 | 🚃 集集線 | JJ | 二水 ↔ 車埕 | 支線 |
 | 🚃 成追線 | CZ | 成功 ↔ 追分 | 支線 |
+| 🚃 深澳線 | SA | 瑞芳 ↔ 八斗子 | 支線 |
+| 🚃 基隆支線 | KL | 八堵 ↔ 基隆 | 支線 |
 
-> 台鐵總計 928 班列車（含區間車、自強號、普悠瑪、太魯閣等各車種）
+> 台鐵總計 992 班列車（含區間車、自強號、普悠瑪、太魯閣等各車種），覆蓋 17 條路線、180 條 O-D 專屬軌道
 
 ## 技術架構
 
@@ -175,26 +177,33 @@ mini-taiwan/
 │   │   ├── LineFilter.tsx        # 路線篩選
 │   │   ├── TimeControl.tsx       # 時間控制面板
 │   │   ├── ThemeToggle.tsx       # 主題切換
-│   │   └── TrainInfoPanel.tsx    # 列車資訊面板
+│   │   ├── TrainInfoPanel.tsx    # 列車資訊面板
+│   │   ├── TrainHistogram.tsx    # 列車數量直方圖
+│   │   └── MobileMapStyleSelector.tsx  # 行動裝置地圖樣式選擇
 │   ├── engines/                  # 核心引擎
 │   │   ├── TimeEngine.ts         # 時間模擬引擎
 │   │   ├── TrainEngine.ts        # 台北捷運列車引擎
 │   │   ├── ThsrTrainEngine.ts    # 高鐵列車引擎
 │   │   ├── KrtcTrainEngine.ts    # 高雄捷運列車引擎
 │   │   ├── KlrtTrainEngine.ts    # 高雄輕軌列車引擎
-│   │   └── TmrtTrainEngine.ts    # 台中捷運列車引擎
+│   │   ├── TmrtTrainEngine.ts    # 台中捷運列車引擎
+│   │   └── TraTrainEngine.ts     # 台鐵列車引擎
 │   ├── layers/                   # 3D 圖層
 │   │   ├── Train3DLayer.ts       # 台北捷運 3D 圖層
+│   │   ├── TrainSymbolLayer.ts   # 列車符號圖層
 │   │   ├── Thsr3DLayer.ts        # 高鐵 3D 圖層
 │   │   ├── Krtc3DLayer.ts        # 高雄捷運 3D 圖層
 │   │   ├── Klrt3DLayer.ts        # 高雄輕軌 3D 圖層
-│   │   └── Tmrt3DLayer.ts        # 台中捷運 3D 圖層
+│   │   ├── Tmrt3DLayer.ts        # 台中捷運 3D 圖層
+│   │   └── Tra3DLayer.ts         # 台鐵 3D 圖層
 │   ├── hooks/                    # React Hooks
 │   │   ├── useData.ts            # 台北捷運資料載入
 │   │   ├── useThsrData.ts        # 高鐵資料載入
 │   │   ├── useKrtcData.ts        # 高雄捷運資料載入
 │   │   ├── useKlrtData.ts        # 高雄輕軌資料載入
-│   │   └── useTmrtData.ts        # 台中捷運資料載入
+│   │   ├── useTmrtData.ts        # 台中捷運資料載入
+│   │   ├── useTraData.ts         # 台鐵資料載入
+│   │   └── useAllTrains.ts       # 全系統列車整合
 │   ├── constants/                # 常數定義
 │   │   ├── lineInfo.ts           # 台北捷運路線資訊
 │   │   ├── thsrInfo.ts           # 高鐵路線資訊
@@ -379,13 +388,22 @@ VITE_MAPBOX_TOKEN=your_mapbox_token_here
 
 | 層級 | 技術 |
 |------|------|
-| 前端 | React 19 + TypeScript + Vite |
-| 地圖 | Mapbox GL JS |
-| 3D 渲染 | Three.js |
+| 前端 | React 19.2 + TypeScript 5.9 + Vite 7.2 |
+| 地圖 | Mapbox GL JS 3.17 |
+| 3D 渲染 | Three.js 0.182 |
 | 軌道資料 | TDX 運輸資料流通服務 |
 | 時刻表資料 | Eric Yu 開源專案 + TDX API |
 
 ## 開發歷程
+
+### 2026-02-28
+- 🔧 新增蘇澳支線軌道（手繪 36 點 + 精修合併）
+  - 蘇澳站從北迴線上移至正確的支線位置
+  - 新增 YL-BD-SX / YL-SL-SX 截斷軌道（供通過蘇澳新的列車使用）
+  - 修正 15 班蘇澳相關列車的 OD 軌道指派
+  - 更新 stations_snapped.geojson 蘇澳站座標
+- 🔧 移除彰化三角環迴路，修正 112 條 OD 軌道
+- 🔧 重新計算全部 206 條軌道的 station_progress
 
 ### 2026-02-03
 - 🔧 修正台中捷運 (TMRT) 站點 ID 與台北捷運綠線衝突問題
@@ -413,7 +431,7 @@ VITE_MAPBOX_TOKEN=your_mapbox_token_here
 - 🔧 修正 station_progress normalization 造成的 5-6km 位置偏差
 
 ### 2026-01-27
-- ✨ 台鐵真實時刻表 928 班列車上線
+- ✨ 台鐵真實時刻表上線（初期 928 班，後更新至 992 班）
 - ✨ 新增 6 條特殊軌道，覆蓋率提升至 99.8%
 
 ### 2026-01-24

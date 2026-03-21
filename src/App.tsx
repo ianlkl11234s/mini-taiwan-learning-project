@@ -34,6 +34,7 @@ import { KLRT_TRACK_COLORS, KLRT_TRAIN_COLORS, getKlrtLineId, getKlrtDirection }
 import { TMRT_TRACK_COLORS, TMRT_TRAIN_COLORS, getTmrtLineId, getTmrtDirection } from './constants/tmrtInfo';
 import { getTraTrainColor, TRA_PRIMARY_COLOR } from './constants/traInfo';
 import { CitySelector, type CityId, CITIES } from './components/CitySelector';
+import { DateSelector } from './components/DateSelector';
 
 // 光線預設類型（用於 standard 樣式）
 type LightPreset = 'dawn' | 'day' | 'dusk' | 'night';
@@ -63,6 +64,9 @@ function App() {
   // MRT 資料載入
   const { tracks, stations, schedules, trackMap, stationProgress, loading, error } = useData();
 
+  // 每日時刻表日期選擇（undefined = 固定時刻表）
+  const [selectedScheduleDate, setSelectedScheduleDate] = useState<string | undefined>(undefined);
+
   // THSR 資料載入
   const {
     tracks: thsrTracks,
@@ -71,8 +75,12 @@ function App() {
     trackMap: thsrTrackMap,
     stationProgress: thsrStationProgress,
     loading: thsrLoading,
+    scheduleLoading: thsrScheduleLoading,
     error: _thsrError,
-  } = useThsrData();
+    scheduleDate: thsrScheduleDate,
+    scheduleTrainCount: thsrTrainCount,
+    availableDates: thsrAvailableDates,
+  } = useThsrData(selectedScheduleDate);
   void _thsrError; // 錯誤不阻止顯示
 
   // KRTC 資料載入
@@ -120,8 +128,12 @@ function App() {
     schedules: traSchedules,
     stationProgress: traStationProgress,
     loading: traLoading,
+    scheduleLoading: traScheduleLoading,
     error: _traError,
-  } = useTraData();
+    scheduleDate: traScheduleDate,
+    scheduleTrainCount: traTrainCount,
+    availableDates: traAvailableDates,
+  } = useTraData(selectedScheduleDate);
   void _traError; void _traTrackMap; // 錯誤不阻止顯示
 
   // 合併所有系統的載入狀態
@@ -3178,12 +3190,28 @@ function App() {
         </div>
       )}
 
+      {/* 日期選擇器 - 左上角，標題下方 */}
+      {!isMobile && (
+        <div style={{ position: 'absolute', top: 90, left: 20, zIndex: 10 }}>
+          <DateSelector
+            selectedDate={selectedScheduleDate}
+            onDateChange={setSelectedScheduleDate}
+            scheduleDate={thsrScheduleDate ?? traScheduleDate}
+            scheduleLoading={thsrScheduleLoading || traScheduleLoading}
+            trainCount={thsrTrainCount + traTrainCount}
+            availableDates={[...new Set([...thsrAvailableDates, ...traAvailableDates])].sort()}
+            themeColors={themeColors}
+            visualTheme={visualTheme}
+          />
+        </div>
+      )}
+
       {/* 圖例 - 簡化版，始終顯示所有路線（手機版隱藏）*/}
       {!isMobile && (
       <div
         style={{
           position: 'absolute',
-          top: 90,
+          top: 155,
           left: 20,
           zIndex: 10,
           background: themeColors.panelBg,

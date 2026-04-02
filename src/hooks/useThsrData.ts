@@ -3,11 +3,62 @@ import type { TrackCollection, StationCollection, Track } from '../types/track';
 import type { TrackSchedule } from '../types/schedule';
 
 /**
- * GIS Platform API URL (優先) — 從 Supabase 取時刻表
+ * Supabase 直連 — 從 reference.daily_schedules 取時刻表
  * S3 Base URL (備援) — fallback 到 S3 靜態檔案
  */
-const GIS_API_URL = import.meta.env.VITE_GIS_API_URL || '';
+const SUPABASE_URL = import.meta.env.VITE_SUPABASE_URL || '';
+const SUPABASE_ANON_KEY = import.meta.env.VITE_SUPABASE_ANON_KEY || '';
 const DAILY_SCHEDULE_BASE_URL = import.meta.env.VITE_DAILY_SCHEDULE_BASE_URL || '';
+
+/**
+ * 從 Supabase 查詢 daily_schedules
+ */
+async function fetchSupabaseSchedule(system: string, date: string): Promise<unknown | null> {
+  if (!SUPABASE_URL || !SUPABASE_ANON_KEY) return null;
+  // 優先查 _daily，失敗則查 _fixed
+  for (const suffix of ['_daily', '_fixed']) {
+    const params = new URLSearchParams({
+      system: `eq.${system}${suffix}`,
+      select: 'data',
+      ...(suffix === '_daily' ? { schedule_date: `eq.${date}` } : {}),
+    });
+    const res = await fetch(`${SUPABASE_URL}/rest/v1/daily_schedules?${params}`, {
+      headers: {
+        apikey: SUPABASE_ANON_KEY,
+        'Accept-Profile': 'reference',
+      },
+    });
+    if (res.ok) {
+      const rows = await res.json();
+      if (rows.length > 0) return rows[0].data;
+    }
+  }
+  return null;
+}
+
+/**
+ * 從 Supabase 查詢可用日期清單
+ */
+async function fetchSupabaseDates(system: string, days: number = 30): Promise<string[]> {
+  if (!SUPABASE_URL || !SUPABASE_ANON_KEY) return [];
+  const params = new URLSearchParams({
+    system: `eq.${system}_daily`,
+    select: 'schedule_date',
+    order: 'schedule_date.desc',
+    limit: String(days),
+  });
+  const res = await fetch(`${SUPABASE_URL}/rest/v1/daily_schedules?${params}`, {
+    headers: {
+      apikey: SUPABASE_ANON_KEY,
+      'Accept-Profile': 'reference',
+    },
+  });
+  if (res.ok) {
+    const rows = await res.json();
+    return rows.map((r: { schedule_date: string }) => r.schedule_date);
+  }
+  return [];
+}
 
 /**
  * 高鐵軌道 ID 列表
@@ -40,16 +91,12 @@ export interface ThsrDataState {
 }
 
 /**
- * 載入時刻表 JSON 並轉為 Map
+ * 從 data 物件解析 THSR 時刻表
  */
-async function loadScheduleFromUrl(url: string): Promise<{
+function parseThsrSchedule(data: Record<string, TrackSchedule>): {
   scheduleMap: Map<string, TrackSchedule>;
   trainCount: number;
-}> {
-  const res = await fetch(url);
-  if (!res.ok) throw new Error(`Failed to load schedule: ${url}`);
-  const data = await res.json();
-
+} {
   const scheduleMap = new Map<string, TrackSchedule>();
   let trainCount = 0;
   for (const trackId of THSR_TRACK_IDS) {
@@ -59,6 +106,19 @@ async function loadScheduleFromUrl(url: string): Promise<{
     }
   }
   return { scheduleMap, trainCount };
+}
+
+/**
+ * 從 URL 載入時刻表 JSON 並轉為 Map
+ */
+async function loadScheduleFromUrl(url: string): Promise<{
+  scheduleMap: Map<string, TrackSchedule>;
+  trainCount: number;
+}> {
+  const res = await fetch(url);
+  if (!res.ok) throw new Error(`Failed to load schedule: ${url}`);
+  const data = await res.json();
+  return parseThsrSchedule(data);
 }
 
 /**
@@ -134,16 +194,9 @@ export function useThsrData(selectedDate?: string): ThsrDataState {
         setScheduleTrainCount(trainCount);
         setScheduleDate(null);
 
-        // 載入可用日期清單 (優先 GIS API → S3 → 本地)
+        // 載入可用日期清單 (優先 Supabase → S3 → 本地)
         try {
-          let indexDates: string[] = [];
-          if (GIS_API_URL) {
-            const res = await fetch(`${GIS_API_URL}/api/schedules/dates?system=thsr&days=30`);
-            if (res.ok) {
-              const data = await res.json();
-              indexDates = data.dates || [];
-            }
-          }
+          let indexDates = await fetchSupabaseDates('thsr', 30);
           if (!indexDates.length) {
             const fallbackUrl = DAILY_SCHEDULE_BASE_URL
               ? `${DAILY_SCHEDULE_BASE_URL}/thsr/index.json`
@@ -192,18 +245,26 @@ export function useThsrData(selectedDate?: string): ThsrDataState {
         return;
       }
 
-      // 載入指定日期時刻表 (優先 GIS API → S3 → 本地)
+      // 載入指定日期時刻表 (優先 Supabase → S3 → 本地)
       setScheduleLoading(true);
       try {
-        let dailyUrl: string;
-        if (GIS_API_URL) {
-          dailyUrl = `${GIS_API_URL}/api/schedules?system=thsr&date=${selectedDate}`;
-        } else if (DAILY_SCHEDULE_BASE_URL) {
-          dailyUrl = `${DAILY_SCHEDULE_BASE_URL}/thsr/daily/${selectedDate}.json`;
+        // 先嘗試 Supabase
+        const supaData = await fetchSupabaseSchedule('thsr', selectedDate);
+        let scheduleMap: Map<string, TrackSchedule>;
+        let trainCount: number;
+        if (supaData && typeof supaData === 'object') {
+          const result = parseThsrSchedule(supaData as Record<string, TrackSchedule>);
+          scheduleMap = result.scheduleMap;
+          trainCount = result.trainCount;
         } else {
-          dailyUrl = `/data/thsr/schedules/daily/${selectedDate}.json`;
+          // Fallback 到 S3 或本地
+          const dailyUrl = DAILY_SCHEDULE_BASE_URL
+            ? `${DAILY_SCHEDULE_BASE_URL}/thsr/daily/${selectedDate}.json`
+            : `/data/thsr/schedules/daily/${selectedDate}.json`;
+          const result = await loadScheduleFromUrl(dailyUrl);
+          scheduleMap = result.scheduleMap;
+          trainCount = result.trainCount;
         }
-        const { scheduleMap, trainCount } = await loadScheduleFromUrl(dailyUrl);
         setSchedules(scheduleMap);
         setScheduleTrainCount(trainCount);
         setScheduleDate(selectedDate);

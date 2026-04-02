@@ -16,11 +16,51 @@ import type { TrackCollection, StationCollection, Track } from '../types/track';
 import type { TraTrack, TraSchedule, TraDeparture, TraStationProgressMap } from '../engines/TraTrainEngine';
 
 /**
- * GIS Platform API URL (優先) — 從 Supabase 取時刻表
+ * Supabase 直連 — 從 reference.daily_schedules 取時刻表
  * S3 Base URL (備援) — fallback 到 S3 靜態檔案
  */
-const GIS_API_URL = import.meta.env.VITE_GIS_API_URL || '';
+const SUPABASE_URL = import.meta.env.VITE_SUPABASE_URL || '';
+const SUPABASE_ANON_KEY = import.meta.env.VITE_SUPABASE_ANON_KEY || '';
 const DAILY_SCHEDULE_BASE_URL = import.meta.env.VITE_DAILY_SCHEDULE_BASE_URL || '';
+
+/** 從 Supabase 查詢 daily_schedules */
+async function fetchSupabaseSchedule(system: string, date: string): Promise<unknown | null> {
+  if (!SUPABASE_URL || !SUPABASE_ANON_KEY) return null;
+  for (const suffix of ['_daily', '_fixed']) {
+    const params = new URLSearchParams({
+      system: `eq.${system}${suffix}`,
+      select: 'data',
+      ...(suffix === '_daily' ? { schedule_date: `eq.${date}` } : {}),
+    });
+    const res = await fetch(`${SUPABASE_URL}/rest/v1/daily_schedules?${params}`, {
+      headers: { apikey: SUPABASE_ANON_KEY, 'Accept-Profile': 'reference' },
+    });
+    if (res.ok) {
+      const rows = await res.json();
+      if (rows.length > 0) return rows[0].data;
+    }
+  }
+  return null;
+}
+
+/** 從 Supabase 查詢可用日期清單 */
+async function fetchSupabaseDates(system: string, days: number = 30): Promise<string[]> {
+  if (!SUPABASE_URL || !SUPABASE_ANON_KEY) return [];
+  const params = new URLSearchParams({
+    system: `eq.${system}_daily`,
+    select: 'schedule_date',
+    order: 'schedule_date.desc',
+    limit: String(days),
+  });
+  const res = await fetch(`${SUPABASE_URL}/rest/v1/daily_schedules?${params}`, {
+    headers: { apikey: SUPABASE_ANON_KEY, 'Accept-Profile': 'reference' },
+  });
+  if (res.ok) {
+    const rows = await res.json();
+    return rows.map((r: { schedule_date: string }) => r.schedule_date);
+  }
+  return [];
+}
 
 /**
  * 台鐵軌道 ID 列表 (用於顯示軌道)
@@ -382,16 +422,9 @@ export function useTraData(selectedDate?: string): TraDataState {
           console.warn('無法載入車站進度:', e);
         }
 
-        // === 載入可用日期清單 (優先 GIS API → S3 → 本地) ===
+        // === 載入可用日期清單 (優先 Supabase → S3 → 本地) ===
         try {
-          let indexDates: string[] = [];
-          if (GIS_API_URL) {
-            const res = await fetch(`${GIS_API_URL}/api/schedules/dates?system=tra&days=30`);
-            if (res.ok) {
-              const data = await res.json();
-              indexDates = data.dates || [];
-            }
-          }
+          let indexDates = await fetchSupabaseDates('tra', 30);
           if (!indexDates.length) {
             const fallbackUrl = DAILY_SCHEDULE_BASE_URL
               ? `${DAILY_SCHEDULE_BASE_URL}/tra/index.json`
@@ -442,21 +475,29 @@ export function useTraData(selectedDate?: string): TraDataState {
         return;
       }
 
-      // 載入指定日期時刻表 (優先 GIS API → S3 → 本地)
+      // 載入指定日期時刻表 (優先 Supabase → S3 → 本地)
       setScheduleLoading(true);
       try {
-        let dailyUrl: string;
-        if (GIS_API_URL) {
-          dailyUrl = `${GIS_API_URL}/api/schedules?system=tra&date=${selectedDate}`;
-        } else if (DAILY_SCHEDULE_BASE_URL) {
-          dailyUrl = `${DAILY_SCHEDULE_BASE_URL}/tra/daily/${selectedDate}.json`;
+        let scheduleMap: Map<string, TraSchedule>;
+        let trainCount: number;
+        // 先嘗試 Supabase
+        const supaData = await fetchSupabaseSchedule('tra', selectedDate);
+        if (supaData && typeof supaData === 'object') {
+          const result = parseTraSchedule(supaData as { schedules?: TraDeparture[] });
+          scheduleMap = result.scheduleMap;
+          trainCount = result.trainCount;
         } else {
-          dailyUrl = `/data/tra/schedules_real/daily/${selectedDate}.json`;
+          // Fallback 到 S3 或本地
+          const dailyUrl = DAILY_SCHEDULE_BASE_URL
+            ? `${DAILY_SCHEDULE_BASE_URL}/tra/daily/${selectedDate}.json`
+            : `/data/tra/schedules_real/daily/${selectedDate}.json`;
+          const dailyRes = await fetch(dailyUrl);
+          if (!dailyRes.ok) throw new Error('not found');
+          const dailyData = await dailyRes.json();
+          const result = parseTraSchedule(dailyData);
+          scheduleMap = result.scheduleMap;
+          trainCount = result.trainCount;
         }
-        const dailyRes = await fetch(dailyUrl);
-        if (!dailyRes.ok) throw new Error('not found');
-        const dailyData = await dailyRes.json();
-        const { scheduleMap, trainCount } = parseTraSchedule(dailyData);
         setSchedules(scheduleMap);
         setScheduleTrainCount(trainCount);
         setScheduleDate(selectedDate);

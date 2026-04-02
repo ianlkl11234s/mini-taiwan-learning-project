@@ -16,6 +16,13 @@ import type { TrackCollection, StationCollection, Track } from '../types/track';
 import type { TraTrack, TraSchedule, TraDeparture, TraStationProgressMap } from '../engines/TraTrainEngine';
 
 /**
+ * GIS Platform API URL (優先) — 從 Supabase 取時刻表
+ * S3 Base URL (備援) — fallback 到 S3 靜態檔案
+ */
+const GIS_API_URL = import.meta.env.VITE_GIS_API_URL || '';
+const DAILY_SCHEDULE_BASE_URL = import.meta.env.VITE_DAILY_SCHEDULE_BASE_URL || '';
+
+/**
  * 台鐵軌道 ID 列表 (用於顯示軌道)
  *
  * === 漸進式實作中 ===
@@ -375,15 +382,29 @@ export function useTraData(selectedDate?: string): TraDataState {
           console.warn('無法載入車站進度:', e);
         }
 
-        // === 載入可用日期清單 ===
+        // === 載入可用日期清單 (優先 GIS API → S3 → 本地) ===
         try {
-          const indexRes = await fetch('/data/tra/schedules_real/daily/index.json');
-          if (indexRes.ok) {
-            const indexData = await indexRes.json();
-            setAvailableDates(indexData.dates || []);
+          let indexDates: string[] = [];
+          if (GIS_API_URL) {
+            const res = await fetch(`${GIS_API_URL}/api/schedules/dates?system=tra&days=30`);
+            if (res.ok) {
+              const data = await res.json();
+              indexDates = data.dates || [];
+            }
           }
+          if (!indexDates.length) {
+            const fallbackUrl = DAILY_SCHEDULE_BASE_URL
+              ? `${DAILY_SCHEDULE_BASE_URL}/tra/index.json`
+              : '/data/tra/schedules_real/daily/index.json';
+            const res = await fetch(fallbackUrl);
+            if (res.ok) {
+              const data = await res.json();
+              indexDates = data.dates || [];
+            }
+          }
+          setAvailableDates(indexDates);
         } catch {
-          // index.json 不存在沒關係
+          // 日期清單不存在沒關係
         }
 
         setLoading(false);
@@ -421,10 +442,18 @@ export function useTraData(selectedDate?: string): TraDataState {
         return;
       }
 
-      // 載入指定日期時刻表
+      // 載入指定日期時刻表 (優先 GIS API → S3 → 本地)
       setScheduleLoading(true);
       try {
-        const dailyRes = await fetch(`/data/tra/schedules_real/daily/${selectedDate}.json`);
+        let dailyUrl: string;
+        if (GIS_API_URL) {
+          dailyUrl = `${GIS_API_URL}/api/schedules?system=tra&date=${selectedDate}`;
+        } else if (DAILY_SCHEDULE_BASE_URL) {
+          dailyUrl = `${DAILY_SCHEDULE_BASE_URL}/tra/daily/${selectedDate}.json`;
+        } else {
+          dailyUrl = `/data/tra/schedules_real/daily/${selectedDate}.json`;
+        }
+        const dailyRes = await fetch(dailyUrl);
         if (!dailyRes.ok) throw new Error('not found');
         const dailyData = await dailyRes.json();
         const { scheduleMap, trainCount } = parseTraSchedule(dailyData);

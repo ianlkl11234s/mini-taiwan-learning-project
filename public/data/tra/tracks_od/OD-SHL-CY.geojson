@@ -9,7 +9,7 @@
           "SH-SL-TN",
           "BB-CZ-KL-0"
         ],
-        "point_count": 1323,
+        "point_count": 1324,
         "generated_by": "build_crossline_tracks.py"
       },
       "geometry": {
@@ -1118,6 +1118,10 @@
           [
             120.21285586621373,
             22.996287822036926
+          ],
+          [
+            120.212901,
+            22.996819
           ],
           [
             120.21318170119906,

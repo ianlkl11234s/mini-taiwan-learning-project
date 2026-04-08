@@ -439,6 +439,17 @@ function getTrackIdFromOdTrackId(odTrackId: string): string {
     return 'CZ-0';
   }
 
+  // PXSA 平溪線↔深澳線跨線直通車
+  if (lineId === 'PXSA') {
+    if (odTrackId === 'PXSA-JT-BD-0' || odTrackId === 'PXSA-JT-BTU-0') {
+      return 'PX-1';  // 菁桐→三貂嶺方向
+    }
+    if (odTrackId === 'PXSA-BD-JT-1' || odTrackId === 'PXSA-BTU-JT-1') {
+      return 'PX-0';  // 三貂嶺→菁桐方向
+    }
+    return 'PX-0';
+  }
+
   // PX 平溪線 (三貂嶺↔菁桐)
   if (lineId === 'PX') {
     if (odTrackId === 'PX-SD-JT') {

@@ -65,7 +65,10 @@ function App() {
   const { tracks, stations, schedules, trackMap, stationProgress, loading, error } = useData();
 
   // 每日時刻表日期選擇（undefined = 固定時刻表）
-  const [selectedScheduleDate, setSelectedScheduleDate] = useState<string | undefined>(undefined);
+  const [selectedScheduleDate, setSelectedScheduleDate] = useState<string | undefined>(() => {
+    const d = new Date();
+    return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+  });
 
   // THSR 資料載入
   const {

@@ -355,6 +355,51 @@ def main():
     ], 'OD-大甲-ML', all_progress)
     save_track('OD-大甲-ML', coords, progress, ['BB-ZN-ZY-C-1', 'CZ-ZF-CG', 'BB-ZY-ZN-M-0'], all_progress)
 
+    # ============================================================
+    # 14. PXSA-JT-BD-0: 菁桐→八斗子 (平溪線+宜蘭線片段+深澳線)
+    #     覆蓋每日 ~10 班跨線直通車
+    # ============================================================
+    print("\n[14] PXSA-JT-BD-0: 菁桐→八斗子 (PX+YL+SA)")
+    coords, progress = build_crossline_track([
+        {'source_track': 'PX-JT-SD', 'origin': '7336', 'dest': '7330'},    # 平溪線: 菁桐→三貂嶺
+        {'source_track': 'YL-SA-BD-1', 'origin': '7330', 'dest': '7360'},  # 宜蘭線: 三貂嶺→瑞芳
+        {'source_track': 'SA-RF-BD-0', 'origin': '7360', 'dest': '7362'},  # 深澳線: 瑞芳→八斗子
+    ], 'PXSA-JT-BD-0', all_progress)
+    save_track('PXSA-JT-BD-0', coords, progress, ['PX-JT-SD', 'YL-SA-BD-1', 'SA-RF-BD-0'], all_progress)
+
+    # ============================================================
+    # 15. PXSA-BD-JT-1: 八斗子→菁桐 (深澳線+宜蘭線片段+平溪線)
+    # ============================================================
+    print("\n[15] PXSA-BD-JT-1: 八斗子→菁桐 (SA+YL+PX)")
+    coords, progress = build_crossline_track([
+        {'source_track': 'SA-BD-RF-1', 'origin': '7362', 'dest': '7360'},  # 深澳線: 八斗子→瑞芳
+        {'source_track': 'YL-BD-SA-0', 'origin': '7360', 'dest': '7330'},  # 宜蘭線: 瑞芳→三貂嶺
+        {'source_track': 'PX-SD-JT', 'origin': '7330', 'dest': '7336'},    # 平溪線: 三貂嶺→菁桐
+    ], 'PXSA-BD-JT-1', all_progress)
+    save_track('PXSA-BD-JT-1', coords, progress, ['SA-BD-RF-1', 'YL-BD-SA-0', 'PX-SD-JT'], all_progress)
+
+    # ============================================================
+    # 16. PXSA-JT-BTU-0: 菁桐→八堵 (平溪線+宜蘭線片段)
+    #     覆蓋每日 ~6 班 (含瑞芳起迄的 fuzzy match)
+    # ============================================================
+    print("\n[16] PXSA-JT-BTU-0: 菁桐→八堵 (PX+YL)")
+    coords, progress = build_crossline_track([
+        {'source_track': 'PX-JT-SD', 'origin': '7336', 'dest': '7330'},    # 平溪線: 菁桐→三貂嶺
+        {'source_track': 'YL-SA-BD-1', 'origin': '7330', 'dest': '0920'},  # 宜蘭線: 三貂嶺→八堵
+    ], 'PXSA-JT-BTU-0', all_progress)
+    save_track('PXSA-JT-BTU-0', coords, progress, ['PX-JT-SD', 'YL-SA-BD-1'], all_progress)
+
+    # ============================================================
+    # 17. PXSA-BTU-JT-1: 八堵→菁桐 (宜蘭線片段+平溪線)
+    #     覆蓋每日 ~7 班 (含瑞芳/十分起迄的 fuzzy match)
+    # ============================================================
+    print("\n[17] PXSA-BTU-JT-1: 八堵→菁桐 (YL+PX)")
+    coords, progress = build_crossline_track([
+        {'source_track': 'YL-BD-SA-0', 'origin': '0920', 'dest': '7330'},  # 宜蘭線: 八堵→三貂嶺
+        {'source_track': 'PX-SD-JT', 'origin': '7330', 'dest': '7336'},    # 平溪線: 三貂嶺→菁桐
+    ], 'PXSA-BTU-JT-1', all_progress)
+    save_track('PXSA-BTU-JT-1', coords, progress, ['YL-BD-SA-0', 'PX-SD-JT'], all_progress)
+
     # 儲存 station_progress
     save_progress(all_progress)
     print("\n✓ 所有跨線軌道建立完成")

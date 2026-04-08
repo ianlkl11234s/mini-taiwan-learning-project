@@ -77,3 +77,10 @@ public/data/tra/schedules_real/daily/
 # TDX 原始下載（中間檔案）
 data-thsr/
 data-tra-daily/
+
+# Claude Code 內部儲存（不 commit）
+.claude/projects/
+.claude/worktrees/
+.claude/todos/
+.claude/settings.local.json
+.claude/.cache/

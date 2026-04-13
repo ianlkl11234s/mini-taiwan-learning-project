@@ -158,6 +158,13 @@ export class Weather3DLayer implements mapboxgl.CustomLayerInterface {
   private readonly _matrixL = new THREE.Matrix4();
   private readonly _scaleVector = new THREE.Vector3();
 
+  // 可視範圍的世界座標邊界（公尺，相對 MODEL_ORIGIN）
+  // 粒子在此範圍內生成與回收，確保覆蓋整個畫面
+  private _visibleBounds = {
+    minX: -RAIN_AREA / 2, maxX: RAIN_AREA / 2,
+    minY: -RAIN_AREA / 2, maxY: RAIN_AREA / 2,
+  };
+
   // ============================
   // 公開 API
   // ============================
@@ -202,6 +209,7 @@ export class Weather3DLayer implements mapboxgl.CustomLayerInterface {
     this.renderer.autoClear = false;
 
     this.lastRenderTime = performance.now();
+    this.updateVisibleBounds(); // 先計算可視範圍，供 rebuildParticles 使用
     this.rebuildParticles();
 
     // 開發用 debug（可移除）
@@ -219,8 +227,8 @@ export class Weather3DLayer implements mapboxgl.CustomLayerInterface {
     const dt = Math.min((now - this.lastRenderTime) / 1000, 0.1); // 限制最大 dt，避免切頁回來粒子飛走
     this.lastRenderTime = now;
 
-    // 讓雨區跟隨地圖中心
-    this.updateRainCenter();
+    // 更新可視範圍（粒子回收/重生用）
+    this.updateVisibleBounds();
 
     // 更新粒子位置
     if (this.config.type !== 'clear') {
@@ -366,9 +374,10 @@ export class Weather3DLayer implements mapboxgl.CustomLayerInterface {
     const i3 = index * 3;
     const i2 = index * 2;
 
-    // 底部頂點（雨滴位置）
-    const x = (Math.random() - 0.5) * RAIN_AREA;
-    const y = (Math.random() - 0.5) * RAIN_AREA;
+    // 底部頂點（世界座標，公尺）
+    const b = this._visibleBounds;
+    const x = b.minX + Math.random() * (b.maxX - b.minX);
+    const y = b.minY + Math.random() * (b.maxY - b.minY);
     const z = randomHeight ? Math.random() * RAIN_HEIGHT : RAIN_HEIGHT * (0.9 + Math.random() * 0.1);
 
     // 速度：水平風 + 垂直下墜 + 隨機擾動
@@ -413,8 +422,9 @@ export class Weather3DLayer implements mapboxgl.CustomLayerInterface {
     if (!this.snowPositions || !this.velocities) return;
 
     const i3 = index * 3;
-    this.snowPositions[i3] = (Math.random() - 0.5) * RAIN_AREA;
-    this.snowPositions[i3 + 1] = (Math.random() - 0.5) * RAIN_AREA;
+    const b = this._visibleBounds;
+    this.snowPositions[i3] = b.minX + Math.random() * (b.maxX - b.minX);
+    this.snowPositions[i3 + 1] = b.minY + Math.random() * (b.maxY - b.minY);
     this.snowPositions[i3 + 2] = randomHeight ? Math.random() * RAIN_HEIGHT : RAIN_HEIGHT * (0.9 + Math.random() * 0.1);
 
     // 雪花飄動：較大水平擾動 + 緩慢下墜
@@ -458,10 +468,11 @@ export class Weather3DLayer implements mapboxgl.CustomLayerInterface {
         this.initRainParticle(i, preset, windX, windY, false);
       }
 
-      // 超出水平範圍 → 重生
+      // 超出可視範圍 → 重生
       const x = this.linePositions[i6];
       const y = this.linePositions[i6 + 1];
-      if (Math.abs(x) > RAIN_AREA / 2 || Math.abs(y) > RAIN_AREA / 2) {
+      const b = this._visibleBounds;
+      if (x < b.minX || x > b.maxX || y < b.minY || y > b.maxY) {
         this.initRainParticle(i, preset, windX, windY, false);
       }
     }
@@ -495,7 +506,8 @@ export class Weather3DLayer implements mapboxgl.CustomLayerInterface {
 
       const x = this.snowPositions[i3];
       const y = this.snowPositions[i3 + 1];
-      if (Math.abs(x) > RAIN_AREA / 2 || Math.abs(y) > RAIN_AREA / 2) {
+      const b = this._visibleBounds;
+      if (x < b.minX || x > b.maxX || y < b.minY || y > b.maxY) {
         this.initSnowParticle(i, preset, windX, windY, false);
       }
     }
@@ -504,30 +516,28 @@ export class Weather3DLayer implements mapboxgl.CustomLayerInterface {
     posAttr.needsUpdate = true;
   }
 
-  /** 讓雨區中心跟隨地圖可視範圍，並動態縮放覆蓋整個畫面 */
-  private updateRainCenter(): void {
+  /**
+   * 計算目前地圖可視範圍的世界座標邊界。
+   * 粒子在此範圍內生成，超出則回收重生。
+   * Mesh 固定在原點不動 → 粒子座標即世界座標 → 跟隨模式下雨自然留在原地。
+   */
+  private updateVisibleBounds(): void {
     if (!this.map) return;
 
-    const center = this.map.getCenter();
-    const centerMeters = this.lngLatToMeters(center.lng, center.lat);
-
-    // 計算可視範圍，動態縮放粒子系統以覆蓋整個畫面
     const bounds = this.map.getBounds();
     const sw = this.lngLatToMeters(bounds.getWest(), bounds.getSouth());
     const ne = this.lngLatToMeters(bounds.getEast(), bounds.getNorth());
-    const visibleWidth = Math.abs(ne.x - sw.x);
-    const visibleHeight = Math.abs(ne.y - sw.y);
-    const maxVisible = Math.max(visibleWidth, visibleHeight) * 1.4; // 40% 額外邊距
-    const scale = Math.max(1, maxVisible / RAIN_AREA);
 
-    if (this.rainMesh) {
-      this.rainMesh.position.set(centerMeters.x, centerMeters.y, 0);
-      this.rainMesh.scale.set(scale, scale, 1); // XY 縮放覆蓋畫面，Z 不變保持雨高度
-    }
-    if (this.snowMesh) {
-      this.snowMesh.position.set(centerMeters.x, centerMeters.y, 0);
-      this.snowMesh.scale.set(scale, scale, 1);
-    }
+    // 含 40% 邊距，讓畫面邊緣不會看到粒子突然出現
+    const marginX = Math.abs(ne.x - sw.x) * 0.2;
+    const marginY = Math.abs(ne.y - sw.y) * 0.2;
+
+    this._visibleBounds = {
+      minX: Math.min(sw.x, ne.x) - marginX,
+      maxX: Math.max(sw.x, ne.x) + marginX,
+      minY: Math.min(sw.y, ne.y) - marginY,
+      maxY: Math.max(sw.y, ne.y) + marginY,
+    };
   }
 
   // ============================

@@ -23,8 +23,11 @@ import { Krtc3DLayer } from './layers/Krtc3DLayer';
 import { Klrt3DLayer } from './layers/Klrt3DLayer';
 import { Tmrt3DLayer } from './layers/Tmrt3DLayer';
 import { Tra3DLayer } from './layers/Tra3DLayer';
+import { Weather3DLayer } from './layers/Weather3DLayer';
 import { TrainSymbolLayer } from './layers/TrainSymbolLayer';
 import { useAllTrains } from './hooks/useAllTrains';
+import { useWeatherData } from './hooks/useWeatherData';
+import { WeatherSelector } from './components/WeatherSelector';
 import { ThemeToggle, type MapTheme, type VisualTheme, getVisualTheme } from './components/ThemeToggle';
 import { MobileMapStyleSelector } from './components/MobileMapStyleSelector';
 import { TRACK_COLORS, getTrainColor, getLineIdFromTrackId } from './constants/lineInfo';
@@ -203,6 +206,7 @@ function App() {
   const klrt3DLayerRef = useRef<Klrt3DLayer | null>(null);
   const tmrt3DLayerRef = useRef<Tmrt3DLayer | null>(null);
   const tra3DLayerRef = useRef<Tra3DLayer | null>(null);
+  const weather3DLayerRef = useRef<Weather3DLayer | null>(null);
 
   // WebGL Circle Layer（取代 DOM Markers，階段 1 基礎設施）
   const trainSymbolLayerRef = useRef<TrainSymbolLayer | null>(null);
@@ -219,6 +223,17 @@ function App() {
 
   // 視覺主題（用於面板顏色）
   const [visualTheme, setVisualTheme] = useState<VisualTheme>('dark');
+
+  // 天氣模擬
+  const [mapCenter, setMapCenter] = useState<{ lng: number; lat: number }>({ lng: 121.52, lat: 25.02 });
+  const {
+    weather: weatherConfig,
+    weatherSource,
+    loading: weatherLoading,
+    setManualWeather,
+    manualType: weatherManualType,
+    hasApiKey: weatherHasApiKey,
+  } = useWeatherData(mapCenter);
 
   // 當前小時（用於自動模式判斷）
   const [currentHour, setCurrentHour] = useState(6);
@@ -1753,6 +1768,46 @@ function App() {
     if (!tra3DLayerRef.current || !use3DMode) return;
     tra3DLayerRef.current.setSelectedTrainId(selectedTrainId);
   }, [selectedTrainId, use3DMode]);
+
+  // === 天氣 3D 圖層 ===
+  // 初始化天氣圖層
+  useEffect(() => {
+    if (!map.current || !mapLoaded || !use3DMode) return;
+
+    const layer = new Weather3DLayer();
+    weather3DLayerRef.current = layer;
+    map.current.addLayer(layer);
+
+    // 初始化天氣設定
+    layer.setWeather(weatherConfig);
+
+    return () => {
+      if (map.current && map.current.getLayer('weather-3d-layer')) {
+        map.current.removeLayer('weather-3d-layer');
+      }
+      weather3DLayerRef.current = null;
+    };
+  }, [mapLoaded, use3DMode, styleVersion]);
+
+  // 更新天氣圖層天氣設定
+  useEffect(() => {
+    if (!weather3DLayerRef.current || !use3DMode) return;
+    weather3DLayerRef.current.setWeather(weatherConfig);
+  }, [weatherConfig, use3DMode]);
+
+  // 更新 mapCenter（地圖移動時）
+  useEffect(() => {
+    if (!map.current || !mapLoaded) return;
+    const m = map.current;
+
+    const handleMoveEnd = () => {
+      const center = m.getCenter();
+      setMapCenter({ lng: center.lng, lat: center.lat });
+    };
+
+    m.on('moveend', handleMoveEnd);
+    return () => { m.off('moveend', handleMoveEnd); };
+  }, [mapLoaded]);
 
   // === WebGL Circle Layer（TrainSymbolLayer）===
   // 初始化 TrainSymbolLayer
@@ -3426,6 +3481,18 @@ function App() {
           >
             {use3DMode ? '3D' : '2D'}
           </button>
+          {/* 天氣模擬選擇器（僅 3D 模式） */}
+          {use3DMode && (
+            <WeatherSelector
+              currentType={weatherConfig.type}
+              manualType={weatherManualType}
+              weatherSource={weatherSource}
+              hasApiKey={weatherHasApiKey}
+              loading={weatherLoading}
+              onSelect={setManualWeather}
+              visualTheme={visualTheme}
+            />
+          )}
           {/* 說明/公告按鈕 */}
           <button
             onClick={() => setShowInfoModal(true)}

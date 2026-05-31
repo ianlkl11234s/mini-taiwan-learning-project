@@ -11,8 +11,10 @@ export type TrainStatus = 'waiting' | 'running' | 'stopped' | 'arrived';
 
 /** TrainFeature 的 properties 結構 */
 export interface TrainFeatureProperties {
-  /** 列車唯一識別碼 */
+  /** 班次識別碼（不同軌道可能重複） */
   trainId: string;
+  /** 地圖列車唯一識別碼：trackId::trainId */
+  trainUid: string;
   /** 軌道 ID */
   trackId: string;
   /** 所屬運輸系統 */

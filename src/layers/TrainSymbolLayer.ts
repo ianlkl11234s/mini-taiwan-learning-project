@@ -45,13 +45,13 @@ function createRoundedSquareIcon(size: number, radius: number): ImageData {
 
 export interface TrainSymbolLayerOptions {
   map: MapboxMap;
-  onTrainClick?: (trainId: string, system: string) => void;
+  onTrainClick?: (trainUid: string, system: string) => void;
   onReady?: () => void;  // 初始化完成後的回調
 }
 
 export class TrainSymbolLayer {
   private map: MapboxMap;
-  private onTrainClickCallback: ((trainId: string, system: string) => void) | null = null;
+  private onTrainClickCallback: ((trainUid: string, system: string) => void) | null = null;
   private onReadyCallback: (() => void) | null = null;
   private selectedTrainId: string | null = null;
   private currentFeatures: TrainFeature[] = [];
@@ -308,16 +308,16 @@ export class TrainSymbolLayer {
   /**
    * 設定選中的列車 ID
    */
-  setSelectedTrainId(trainId: string | null): void {
-    if (this.selectedTrainId === trainId) return;
-    this.selectedTrainId = trainId;
+  setSelectedTrainId(trainUid: string | null): void {
+    if (this.selectedTrainId === trainUid) return;
+    this.selectedTrainId = trainUid;
 
     // 更新 features 的 isSelected 屬性並重新渲染
     const updatedFeatures = this.currentFeatures.map(f => ({
       ...f,
       properties: {
         ...f.properties,
-        isSelected: f.properties.trainId === trainId,
+        isSelected: f.properties.trainUid === trainUid,
       },
     }));
 
@@ -378,12 +378,29 @@ export class TrainSymbolLayer {
     if (!this.onTrainClickCallback) return;
     if (!e.features || e.features.length === 0) return;
 
-    const feature = e.features[0];
-    const trainId = feature.properties?.trainId;
-    const system = feature.properties?.system;
+    let closestFeature = e.features[0];
+    let minDistSq = Infinity;
 
-    if (trainId && system) {
-      this.onTrainClickCallback(trainId, system);
+    for (const feature of e.features) {
+      if (feature.geometry?.type !== 'Point') continue;
+
+      const coordinates = feature.geometry.coordinates as [number, number];
+      const point = this.map.project(coordinates);
+      const dx = point.x - e.point.x;
+      const dy = point.y - e.point.y;
+      const distSq = dx * dx + dy * dy;
+
+      if (distSq < minDistSq) {
+        minDistSq = distSq;
+        closestFeature = feature;
+      }
+    }
+
+    const trainUid = closestFeature.properties?.trainUid;
+    const system = closestFeature.properties?.system;
+
+    if (trainUid && system) {
+      this.onTrainClickCallback(trainUid, system);
     }
   };
 
@@ -404,7 +421,7 @@ export class TrainSymbolLayer {
   /**
    * 設定點擊回調
    */
-  onTrainClick(callback: (trainId: string, system: string) => void): void {
+  onTrainClick(callback: (trainUid: string, system: string) => void): void {
     this.onTrainClickCallback = callback;
   }
 

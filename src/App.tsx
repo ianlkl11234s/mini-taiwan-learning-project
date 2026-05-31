@@ -52,6 +52,9 @@ const MAP_STYLES = {
 
 type MapStyleKey = keyof typeof MAP_STYLES;
 
+const getTrainUid = (train: { trackId: string; trainId: string }): string =>
+  `${train.trackId}::${train.trainId}`;
+
 // 根據小時取得光線預設
 const getPresetForHour = (hour: number): LightPreset => {
   if (hour >= 5 && hour < 7) return 'dawn';    // 05:00 - 06:59
@@ -239,7 +242,7 @@ function App() {
   const [currentHour, setCurrentHour] = useState(6);
 
   // 列車選擇狀態
-  const [selectedTrainId, setSelectedTrainId] = useState<string | null>(null);
+  const [selectedTrainUid, setSelectedTrainUid] = useState<string | null>(null);
   const [isFollowing, setIsFollowing] = useState(false);
   const [interactionVersion, setInteractionVersion] = useState(0); // 用於觸發 effect 重新執行
   const isUserInteracting = useRef(false); // 追蹤使用者是否正在操作地圖
@@ -459,7 +462,7 @@ function App() {
     filteredKlrtTrains,
     filteredTmrtTrains,
     filteredTraTrains,
-    selectedTrainId,
+    selectedTrainUid,
   });
 
   // 建立車站座標索引（用於 3D 圖層停站定位）
@@ -528,51 +531,51 @@ function App() {
     const map = new Map<string, Train | ThsrTrain | KrtcTrain | KlrtTrain | TmrtTrain | TraTrain>();
     // 加入所有系統的列車
     for (const train of filteredTrains) {
-      map.set(train.trainId, train);
+      map.set(getTrainUid(train), train);
     }
     for (const train of filteredThsrTrains) {
-      map.set(train.trainId, train);
+      map.set(getTrainUid(train), train);
     }
     for (const train of filteredKrtcTrains) {
-      map.set(train.trainId, train);
+      map.set(getTrainUid(train), train);
     }
     for (const train of filteredKlrtTrains) {
-      map.set(train.trainId, train);
+      map.set(getTrainUid(train), train);
     }
     for (const train of filteredTmrtTrains) {
-      map.set(train.trainId, train);
+      map.set(getTrainUid(train), train);
     }
     for (const train of filteredTraTrains) {
-      map.set(train.trainId, train);
+      map.set(getTrainUid(train), train);
     }
     return map;
   }, [filteredTrains, filteredThsrTrains, filteredKrtcTrains, filteredKlrtTrains, filteredTmrtTrains, filteredTraTrains]);
 
   // 取得選中的列車資料（效能優化：使用 Map O(1) 查找）
   const selectedTrain = useMemo(() => {
-    if (!selectedTrainId) return null;
-    return trainMap.get(selectedTrainId) ?? null;
-  }, [selectedTrainId, trainMap]);
+    if (!selectedTrainUid) return null;
+    return trainMap.get(selectedTrainUid) ?? null;
+  }, [selectedTrainUid, trainMap]);
 
 
   // 選擇列車
-  const handleSelectTrain = useCallback((trainId: string) => {
-    setSelectedTrainId(trainId);
+  const handleSelectTrain = useCallback((trainUid: string) => {
+    setSelectedTrainUid(trainUid);
     setIsFollowing(true); // 選中時自動開啟跟隨
   }, []);
 
   // 取消選擇
   const handleDeselectTrain = useCallback(() => {
-    setSelectedTrainId(null);
+    setSelectedTrainUid(null);
     setIsFollowing(false);
   }, []);
 
   // 當選中的列車消失時，自動取消選擇
   useEffect(() => {
-    if (selectedTrainId && !selectedTrain) {
+    if (selectedTrainUid && !selectedTrain) {
       handleDeselectTrain();
     }
-  }, [selectedTrainId, selectedTrain, handleDeselectTrain]);
+  }, [selectedTrainUid, selectedTrain, handleDeselectTrain]);
 
   // 視線跟隨：當 isFollowing 且有選中列車時，地圖中心跟隨列車
   useEffect(() => {
@@ -1526,8 +1529,8 @@ function App() {
   // 更新 3D 圖層選中狀態
   useEffect(() => {
     if (!train3DLayerRef.current || !use3DMode) return;
-    train3DLayerRef.current.setSelectedTrainId(selectedTrainId);
-  }, [selectedTrainId, use3DMode]);
+    train3DLayerRef.current.setSelectedTrainId(selectedTrainUid);
+  }, [selectedTrainUid, use3DMode]);
 
   // 建立高鐵車站座標索引
   const thsrStationCoordinates = useMemo(() => {
@@ -1574,8 +1577,8 @@ function App() {
   // 更新高鐵 3D 圖層選中狀態
   useEffect(() => {
     if (!thsr3DLayerRef.current || !use3DMode) return;
-    thsr3DLayerRef.current.setSelectedTrainId(selectedTrainId);
-  }, [selectedTrainId, use3DMode]);
+    thsr3DLayerRef.current.setSelectedTrainId(selectedTrainUid);
+  }, [selectedTrainUid, use3DMode]);
 
   // 建立高雄捷運車站座標索引
   const krtcStationCoordinates = useMemo(() => {
@@ -1621,8 +1624,8 @@ function App() {
   // 更新高雄捷運 3D 圖層選中狀態
   useEffect(() => {
     if (!krtc3DLayerRef.current || !use3DMode) return;
-    krtc3DLayerRef.current.setSelectedTrainId(selectedTrainId);
-  }, [selectedTrainId, use3DMode]);
+    krtc3DLayerRef.current.setSelectedTrainId(selectedTrainUid);
+  }, [selectedTrainUid, use3DMode]);
 
   // 建立高雄輕軌車站座標索引
   const klrtStationCoordinates = useMemo(() => {
@@ -1669,8 +1672,8 @@ function App() {
   // 更新高雄輕軌 3D 圖層選中狀態
   useEffect(() => {
     if (!klrt3DLayerRef.current || !use3DMode) return;
-    klrt3DLayerRef.current.setSelectedTrainId(selectedTrainId);
-  }, [selectedTrainId, use3DMode]);
+    klrt3DLayerRef.current.setSelectedTrainId(selectedTrainUid);
+  }, [selectedTrainUid, use3DMode]);
 
   // 建立台中捷運車站座標索引
   const tmrtStationCoordinates = useMemo(() => {
@@ -1716,8 +1719,8 @@ function App() {
   // 更新台中捷運 3D 圖層選中狀態
   useEffect(() => {
     if (!tmrt3DLayerRef.current || !use3DMode) return;
-    tmrt3DLayerRef.current.setSelectedTrainId(selectedTrainId);
-  }, [selectedTrainId, use3DMode]);
+    tmrt3DLayerRef.current.setSelectedTrainId(selectedTrainUid);
+  }, [selectedTrainUid, use3DMode]);
 
   // === TRA 台鐵 3D 圖層 ===
   // 建立台鐵車站座標索引
@@ -1766,8 +1769,8 @@ function App() {
   // 更新台鐵 3D 圖層選中狀態
   useEffect(() => {
     if (!tra3DLayerRef.current || !use3DMode) return;
-    tra3DLayerRef.current.setSelectedTrainId(selectedTrainId);
-  }, [selectedTrainId, use3DMode]);
+    tra3DLayerRef.current.setSelectedTrainId(selectedTrainUid);
+  }, [selectedTrainUid, use3DMode]);
 
   // === 天氣 3D 圖層 ===
   // 初始化天氣圖層
@@ -2269,19 +2272,20 @@ function App() {
       return;
     }
 
-    const activeTrainIds = new Set(filteredTrains.map((t) => t.trainId));
-    for (const [trainId, marker] of trainMarkers.current) {
-      if (!activeTrainIds.has(trainId)) {
+    const activeTrainUids = new Set(filteredTrains.map(getTrainUid));
+    for (const [trainUid, marker] of trainMarkers.current) {
+      if (!activeTrainUids.has(trainUid)) {
         marker.remove();
-        trainMarkers.current.delete(trainId);
+        trainMarkers.current.delete(trainUid);
       }
     }
 
     for (const train of filteredTrains) {
-      let marker = trainMarkers.current.get(train.trainId);
+      const trainUid = getTrainUid(train);
+      let marker = trainMarkers.current.get(trainUid);
       const isStopped = train.status === 'stopped';
       const isColliding = train.isColliding;
-      const isSelected = train.trainId === selectedTrainId;
+      const isSelected = trainUid === selectedTrainUid;
       const baseColor = getTrainColor(train.trackId);  // 依路線和方向區分顏色
       // 碰撞時使用警示色
       const displayColor = isColliding ? '#ffcc00' : baseColor;
@@ -2289,14 +2293,14 @@ function App() {
       if (!marker) {
         const el = document.createElement('div');
         el.className = 'train-marker';
-        el.dataset.trainId = train.trainId;
+        el.dataset.trainUid = trainUid;
 
         // 點擊事件：選取列車
         el.addEventListener('click', (e) => {
           e.stopPropagation();
-          const trainId = el.dataset.trainId;
-          if (trainId) {
-            handleSelectTrain(trainId);
+          const trainUid = el.dataset.trainUid;
+          if (trainUid) {
+            handleSelectTrain(trainUid);
           }
         });
 
@@ -2307,7 +2311,7 @@ function App() {
           .setLngLat(train.position)
           .addTo(map.current!);
 
-        trainMarkers.current.set(train.trainId, marker);
+        trainMarkers.current.set(trainUid, marker);
       }
 
       // 更新位置
@@ -2374,7 +2378,7 @@ function App() {
         }
       }
     }
-  }, [mapLoaded, filteredTrains, use3DMode, useSymbolLayer, handleSelectTrain, selectedTrainId]);
+  }, [mapLoaded, filteredTrains, use3DMode, useSymbolLayer, handleSelectTrain, selectedTrainUid]);
 
   // 更新高鐵列車標記（2D 模式時使用）
   // 注意：高鐵使用 DOM Markers 保持長方形外觀，即使其他系統使用 WebGL Circle Layer
@@ -2390,32 +2394,33 @@ function App() {
       return;
     }
 
-    const activeTrainIds = new Set(filteredThsrTrains.map((t) => t.trainId));
-    for (const [trainId, marker] of thsrTrainMarkers.current) {
-      if (!activeTrainIds.has(trainId)) {
+    const activeTrainUids = new Set(filteredThsrTrains.map(getTrainUid));
+    for (const [trainUid, marker] of thsrTrainMarkers.current) {
+      if (!activeTrainUids.has(trainUid)) {
         marker.remove();
-        thsrTrainMarkers.current.delete(trainId);
+        thsrTrainMarkers.current.delete(trainUid);
       }
     }
 
     for (const train of filteredThsrTrains) {
-      let marker = thsrTrainMarkers.current.get(train.trainId);
+      const trainUid = getTrainUid(train);
+      let marker = thsrTrainMarkers.current.get(trainUid);
       const isStopped = train.status === 'stopped';
-      const isSelected = train.trainId === selectedTrainId;
+      const isSelected = trainUid === selectedTrainUid;
       const direction = getThsrDirection(train.trackId);
       const baseColor = THSR_TRAIN_COLORS[`THSR_${direction}`] || THSR_TRACK_COLOR;
 
       if (!marker) {
         const el = document.createElement('div');
         el.className = 'thsr-train-marker';
-        el.dataset.trainId = train.trainId;
+        el.dataset.trainUid = trainUid;
 
         // 點擊事件：選取列車
         el.addEventListener('click', (e) => {
           e.stopPropagation();
-          const trainId = el.dataset.trainId;
-          if (trainId) {
-            handleSelectTrain(trainId);
+          const trainUid = el.dataset.trainUid;
+          if (trainUid) {
+            handleSelectTrain(trainUid);
           }
         });
 
@@ -2426,7 +2431,7 @@ function App() {
           .setLngLat(train.position)
           .addTo(map.current!);
 
-        thsrTrainMarkers.current.set(train.trainId, marker);
+        thsrTrainMarkers.current.set(trainUid, marker);
       }
 
       // 更新位置
@@ -2479,7 +2484,7 @@ function App() {
         }
       }
     }
-  }, [mapLoaded, filteredThsrTrains, use3DMode, handleSelectTrain, selectedTrainId]);
+  }, [mapLoaded, filteredThsrTrains, use3DMode, handleSelectTrain, selectedTrainUid]);
 
   // 更新高雄捷運列車標記（2D 模式時使用）
   useEffect(() => {
@@ -2494,18 +2499,19 @@ function App() {
       return;
     }
 
-    const activeTrainIds = new Set(filteredKrtcTrains.map((t) => t.trainId));
-    for (const [trainId, marker] of krtcTrainMarkers.current) {
-      if (!activeTrainIds.has(trainId)) {
+    const activeTrainUids = new Set(filteredKrtcTrains.map(getTrainUid));
+    for (const [trainUid, marker] of krtcTrainMarkers.current) {
+      if (!activeTrainUids.has(trainUid)) {
         marker.remove();
-        krtcTrainMarkers.current.delete(trainId);
+        krtcTrainMarkers.current.delete(trainUid);
       }
     }
 
     for (const train of filteredKrtcTrains) {
-      let marker = krtcTrainMarkers.current.get(train.trainId);
+      const trainUid = getTrainUid(train);
+      let marker = krtcTrainMarkers.current.get(trainUid);
       const isStopped = train.status === 'stopped';
-      const isSelected = train.trainId === selectedTrainId;
+      const isSelected = trainUid === selectedTrainUid;
       const lineId = getKrtcLineId(train.trackId);
       const direction = getKrtcDirection(train.trackId);
       const baseColor = KRTC_TRAIN_COLORS[`${lineId}_${direction}`] || KRTC_TRACK_COLORS[lineId] || '#f8981d';
@@ -2513,14 +2519,14 @@ function App() {
       if (!marker) {
         const el = document.createElement('div');
         el.className = 'krtc-train-marker';
-        el.dataset.trainId = train.trainId;
+        el.dataset.trainUid = trainUid;
 
         // 點擊事件：選取列車
         el.addEventListener('click', (e) => {
           e.stopPropagation();
-          const trainId = el.dataset.trainId;
-          if (trainId) {
-            handleSelectTrain(trainId);
+          const trainUid = el.dataset.trainUid;
+          if (trainUid) {
+            handleSelectTrain(trainUid);
           }
         });
 
@@ -2531,7 +2537,7 @@ function App() {
           .setLngLat(train.position)
           .addTo(map.current!);
 
-        krtcTrainMarkers.current.set(train.trainId, marker);
+        krtcTrainMarkers.current.set(trainUid, marker);
       }
 
       // 更新位置
@@ -2584,7 +2590,7 @@ function App() {
         }
       }
     }
-  }, [mapLoaded, filteredKrtcTrains, use3DMode, useSymbolLayer, handleSelectTrain, selectedTrainId]);
+  }, [mapLoaded, filteredKrtcTrains, use3DMode, useSymbolLayer, handleSelectTrain, selectedTrainUid]);
 
   // 更新高雄輕軌列車標記（2D 模式時使用）
   useEffect(() => {
@@ -2599,18 +2605,19 @@ function App() {
       return;
     }
 
-    const activeTrainIds = new Set(filteredKlrtTrains.map((t) => t.trainId));
-    for (const [trainId, marker] of klrtTrainMarkers.current) {
-      if (!activeTrainIds.has(trainId)) {
+    const activeTrainUids = new Set(filteredKlrtTrains.map(getTrainUid));
+    for (const [trainUid, marker] of klrtTrainMarkers.current) {
+      if (!activeTrainUids.has(trainUid)) {
         marker.remove();
-        klrtTrainMarkers.current.delete(trainId);
+        klrtTrainMarkers.current.delete(trainUid);
       }
     }
 
     for (const train of filteredKlrtTrains) {
-      let marker = klrtTrainMarkers.current.get(train.trainId);
+      const trainUid = getTrainUid(train);
+      let marker = klrtTrainMarkers.current.get(trainUid);
       const isStopped = train.status === 'stopped';
-      const isSelected = train.trainId === selectedTrainId;
+      const isSelected = trainUid === selectedTrainUid;
       const lineId = getKlrtLineId(train.trackId);
       const direction = getKlrtDirection(train.trackId);
       const baseColor = KLRT_TRAIN_COLORS[`${lineId}_${direction}`] || KLRT_TRACK_COLORS[lineId] || '#99cc00';
@@ -2618,14 +2625,14 @@ function App() {
       if (!marker) {
         const el = document.createElement('div');
         el.className = 'klrt-train-marker';
-        el.dataset.trainId = train.trainId;
+        el.dataset.trainUid = trainUid;
 
         // 點擊事件：選取列車
         el.addEventListener('click', (e) => {
           e.stopPropagation();
-          const trainId = el.dataset.trainId;
-          if (trainId) {
-            handleSelectTrain(trainId);
+          const trainUid = el.dataset.trainUid;
+          if (trainUid) {
+            handleSelectTrain(trainUid);
           }
         });
 
@@ -2636,7 +2643,7 @@ function App() {
           .setLngLat(train.position)
           .addTo(map.current!);
 
-        klrtTrainMarkers.current.set(train.trainId, marker);
+        klrtTrainMarkers.current.set(trainUid, marker);
       }
 
       // 更新位置
@@ -2689,7 +2696,7 @@ function App() {
         }
       }
     }
-  }, [mapLoaded, filteredKlrtTrains, use3DMode, useSymbolLayer, handleSelectTrain, selectedTrainId]);
+  }, [mapLoaded, filteredKlrtTrains, use3DMode, useSymbolLayer, handleSelectTrain, selectedTrainUid]);
 
   // 更新台中捷運列車標記（2D 模式時使用）
   useEffect(() => {
@@ -2704,18 +2711,19 @@ function App() {
       return;
     }
 
-    const activeTrainIds = new Set(filteredTmrtTrains.map((t) => t.trainId));
-    for (const [trainId, marker] of tmrtTrainMarkers.current) {
-      if (!activeTrainIds.has(trainId)) {
+    const activeTrainUids = new Set(filteredTmrtTrains.map(getTrainUid));
+    for (const [trainUid, marker] of tmrtTrainMarkers.current) {
+      if (!activeTrainUids.has(trainUid)) {
         marker.remove();
-        tmrtTrainMarkers.current.delete(trainId);
+        tmrtTrainMarkers.current.delete(trainUid);
       }
     }
 
     for (const train of filteredTmrtTrains) {
-      let marker = tmrtTrainMarkers.current.get(train.trainId);
+      const trainUid = getTrainUid(train);
+      let marker = tmrtTrainMarkers.current.get(trainUid);
       const isStopped = train.status === 'stopped';
-      const isSelected = train.trainId === selectedTrainId;
+      const isSelected = trainUid === selectedTrainUid;
       const lineId = getTmrtLineId(train.trackId);
       const direction = getTmrtDirection(train.trackId);
       const baseColor = TMRT_TRAIN_COLORS[`${lineId}_${direction}`] || TMRT_TRACK_COLORS[lineId] || '#0cab2c';
@@ -2723,14 +2731,14 @@ function App() {
       if (!marker) {
         const el = document.createElement('div');
         el.className = 'tmrt-train-marker';
-        el.dataset.trainId = train.trainId;
+        el.dataset.trainUid = trainUid;
 
         // 點擊事件：選取列車
         el.addEventListener('click', (e) => {
           e.stopPropagation();
-          const trainId = el.dataset.trainId;
-          if (trainId) {
-            handleSelectTrain(trainId);
+          const trainUid = el.dataset.trainUid;
+          if (trainUid) {
+            handleSelectTrain(trainUid);
           }
         });
 
@@ -2741,7 +2749,7 @@ function App() {
           .setLngLat(train.position)
           .addTo(map.current!);
 
-        tmrtTrainMarkers.current.set(train.trainId, marker);
+        tmrtTrainMarkers.current.set(trainUid, marker);
       }
 
       // 更新位置
@@ -2794,7 +2802,7 @@ function App() {
         }
       }
     }
-  }, [mapLoaded, filteredTmrtTrains, use3DMode, useSymbolLayer, handleSelectTrain, selectedTrainId]);
+  }, [mapLoaded, filteredTmrtTrains, use3DMode, useSymbolLayer, handleSelectTrain, selectedTrainUid]);
 
   // 更新台鐵列車標記（2D 模式時使用 DOM Markers，類似高鐵的圓角正方形）
   useEffect(() => {
@@ -2809,31 +2817,32 @@ function App() {
       return;
     }
 
-    const activeTrainIds = new Set(filteredTraTrains.map((t) => t.trainId));
-    for (const [trainId, marker] of traTrainMarkers.current) {
-      if (!activeTrainIds.has(trainId)) {
+    const activeTrainUids = new Set(filteredTraTrains.map(getTrainUid));
+    for (const [trainUid, marker] of traTrainMarkers.current) {
+      if (!activeTrainUids.has(trainUid)) {
         marker.remove();
-        traTrainMarkers.current.delete(trainId);
+        traTrainMarkers.current.delete(trainUid);
       }
     }
 
     for (const train of filteredTraTrains) {
-      let marker = traTrainMarkers.current.get(train.trainId);
+      const trainUid = getTrainUid(train);
+      let marker = traTrainMarkers.current.get(trainUid);
       const isStopped = train.status === 'stopped';
-      const isSelected = train.trainId === selectedTrainId;
+      const isSelected = trainUid === selectedTrainUid;
       const baseColor = getTraTrainColor(train.trackId);
 
       if (!marker) {
         const el = document.createElement('div');
         el.className = 'tra-train-marker';
-        el.dataset.trainId = train.trainId;
+        el.dataset.trainUid = trainUid;
 
         // 點擊事件：選取列車
         el.addEventListener('click', (e) => {
           e.stopPropagation();
-          const trainId = el.dataset.trainId;
-          if (trainId) {
-            handleSelectTrain(trainId);
+          const trainUid = el.dataset.trainUid;
+          if (trainUid) {
+            handleSelectTrain(trainUid);
           }
         });
 
@@ -2844,7 +2853,7 @@ function App() {
           .setLngLat(train.position)
           .addTo(map.current!);
 
-        traTrainMarkers.current.set(train.trainId, marker);
+        traTrainMarkers.current.set(trainUid, marker);
       }
 
       // 更新位置
@@ -2897,7 +2906,7 @@ function App() {
         }
       }
     }
-  }, [mapLoaded, filteredTraTrains, use3DMode, handleSelectTrain, selectedTrainId]);
+  }, [mapLoaded, filteredTraTrains, use3DMode, handleSelectTrain, selectedTrainUid]);
 
   // 控制處理器
   const handleTogglePlay = useCallback(() => {

@@ -57,7 +57,7 @@ export class Train3DLayer implements mapboxgl.CustomLayerInterface {
   private selectedTrainId: string | null = null;
 
   // 選中回呼函數
-  private onSelectCallback: ((trainId: string) => void) | null = null;
+  private onSelectCallback: ((trainUid: string) => void) | null = null;
 
   // 選中邊框材質
   private outlineMaterial: THREE.LineBasicMaterial | null = null;
@@ -81,13 +81,13 @@ export class Train3DLayer implements mapboxgl.CustomLayerInterface {
   }
 
   // 設定選中回呼
-  setOnSelect(callback: (trainId: string) => void): void {
+  setOnSelect(callback: (trainUid: string) => void): void {
     this.onSelectCallback = callback;
   }
 
   // 設定選中的列車
-  setSelectedTrainId(trainId: string | null): void {
-    this.selectedTrainId = trainId;
+  setSelectedTrainId(trainUid: string | null): void {
+    this.selectedTrainId = trainUid;
   }
 
   setTracks(tracks: Map<string, Track>): void {
@@ -177,7 +177,7 @@ export class Train3DLayer implements mapboxgl.CustomLayerInterface {
       }
 
       if (closestTrain) {
-        this.onSelectCallback(closestTrain.trainId);
+        this.onSelectCallback(`${closestTrain.trackId}::${closestTrain.trainId}`);
       }
     };
 
@@ -283,7 +283,7 @@ export class Train3DLayer implements mapboxgl.CustomLayerInterface {
       }
 
       // 處理選中狀態的邊框
-      const isSelected = train.trainId === this.selectedTrainId;
+      const isSelected = `${train.trackId}::${train.trainId}` === this.selectedTrainId;
       let outline = group.getObjectByName('outline') as THREE.LineSegments | undefined;
 
       if (isSelected && !outline && this.outlineGeometry && this.outlineMaterial) {

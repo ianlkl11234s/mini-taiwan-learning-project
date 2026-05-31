@@ -49,7 +49,7 @@ export interface AllTrainsInput {
   filteredKlrtTrains: KlrtTrain[];
   filteredTmrtTrains: TmrtTrain[];
   filteredTraTrains: TraTrain[];
-  selectedTrainId: string | null;
+  selectedTrainUid: string | null;
 }
 
 /**
@@ -63,7 +63,7 @@ export function useAllTrains(input: AllTrainsInput): TrainFeature[] {
     filteredKlrtTrains,
     filteredTmrtTrains,
     filteredTraTrains,
-    selectedTrainId,
+    selectedTrainUid,
   } = input;
 
   return useMemo(() => {
@@ -77,7 +77,7 @@ export function useAllTrains(input: AllTrainsInput): TrainFeature[] {
       const color = isColliding ? '#ffcc00' : getTrainColor(train.trackId);
 
       features.push(
-        createFeature(train, 'trtc', selectedTrainId, {
+        createFeature(train, 'trtc', selectedTrainUid, {
           lineId,
           direction,
           color,
@@ -97,7 +97,7 @@ export function useAllTrains(input: AllTrainsInput): TrainFeature[] {
       const color = getKrtcTrainColor(train.trackId);
 
       features.push(
-        createFeature(train, 'krtc', selectedTrainId, {
+        createFeature(train, 'krtc', selectedTrainUid, {
           lineId,
           direction,
           color,
@@ -113,7 +113,7 @@ export function useAllTrains(input: AllTrainsInput): TrainFeature[] {
       const color = getKlrtTrainColor(train.trackId);
 
       features.push(
-        createFeature(train, 'klrt', selectedTrainId, {
+        createFeature(train, 'klrt', selectedTrainUid, {
           lineId,
           direction,
           color,
@@ -129,7 +129,7 @@ export function useAllTrains(input: AllTrainsInput): TrainFeature[] {
       const color = getTmrtTrainColor(train.trackId);
 
       features.push(
-        createFeature(train, 'tmrt', selectedTrainId, {
+        createFeature(train, 'tmrt', selectedTrainUid, {
           lineId,
           direction,
           color,
@@ -150,8 +150,12 @@ export function useAllTrains(input: AllTrainsInput): TrainFeature[] {
     filteredKlrtTrains,
     filteredTmrtTrains,
     filteredTraTrains,
-    selectedTrainId,
+    selectedTrainUid,
   ]);
+}
+
+function getTrainUid(train: BaseTrain): string {
+  return `${train.trackId}::${train.trainId}`;
 }
 
 /**
@@ -160,7 +164,7 @@ export function useAllTrains(input: AllTrainsInput): TrainFeature[] {
 function createFeature(
   train: BaseTrain,
   system: TransportSystem,
-  selectedTrainId: string | null,
+  selectedTrainUid: string | null,
   extra: {
     lineId: string;
     direction: number;
@@ -168,16 +172,18 @@ function createFeature(
     isColliding: boolean;
   }
 ): TrainFeature {
+  const trainUid = getTrainUid(train);
   return {
     type: 'Feature',
     properties: {
       trainId: train.trainId,
+      trainUid,
       trackId: train.trackId,
       system,
       lineId: extra.lineId,
       direction: extra.direction,
       status: normalizeStatus(train.status),
-      isSelected: train.trainId === selectedTrainId,
+      isSelected: trainUid === selectedTrainUid,
       isColliding: extra.isColliding,
       color: extra.color,
     },

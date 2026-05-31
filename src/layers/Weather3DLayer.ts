@@ -531,6 +531,7 @@ export class Weather3DLayer implements mapboxgl.CustomLayerInterface {
     this._viewCenter = this.lngLatToMeters(center.lng, center.lat);
 
     const bounds = this.map.getBounds();
+    if (!bounds) return;
     const sw = this.lngLatToMeters(bounds.getWest(), bounds.getSouth());
     const ne = this.lngLatToMeters(bounds.getEast(), bounds.getNorth());
 

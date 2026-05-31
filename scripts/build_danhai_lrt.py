@@ -511,7 +511,7 @@ def create_track_geojson(track_id: str, coords: List[List[float]], direction: in
 
 def parse_station_timetable(timetable_data: List[Dict], station_order: List[str],
                             default_times: List[int], direction: int,
-                            dwell_time: int = 25) -> Tuple[List[Dict], int]:
+                            route_num: int, dwell_time: int = 25) -> Tuple[List[Dict], int]:
     """
     解析時刻表資料，使用預設行駛時間
 
@@ -547,7 +547,9 @@ def parse_station_timetable(timetable_data: List[Dict], station_order: List[str]
     # 建立發車資料
     departures = []
     for idx, dep_time in enumerate(departures_raw):
-        train_id = f"{LINE_ID}-{1 if direction == 0 else 2}-{direction}-{idx+1:03d}"
+        # train_id 必須以實際路線編號為前綴（不可用 direction 推導，
+        # 否則綠山線方向1與藍海線方向0的車號會與另一線衝突）
+        train_id = f"{LINE_ID}-{route_num}-{direction}-{idx+1:03d}"
 
         # 計算每站的到達/離站時間（秒數，從發車開始計算）
         stations_info = []
@@ -759,7 +761,7 @@ def main():
     if green_station_ids:
         # V-1-0: 紅樹林 → 崁頂 (Direction 0)
         departures_0, travel_time_0 = parse_station_timetable(
-            timetable_data, green_station_ids, green_travel_times, 0
+            timetable_data, green_station_ids, green_travel_times, 0, route_num=1
         )
         schedule_0 = {
             "track_id": "V-1-0",
@@ -782,7 +784,7 @@ def main():
         reversed_green = list(reversed(green_station_ids))
         reversed_times_green = list(reversed(green_travel_times))
         departures_1, travel_time_1 = parse_station_timetable(
-            timetable_data, reversed_green, reversed_times_green, 1
+            timetable_data, reversed_green, reversed_times_green, 1, route_num=1
         )
         schedule_1 = {
             "track_id": "V-1-1",
@@ -808,7 +810,7 @@ def main():
     if blue_station_ids:
         # V-2-0: 紅樹林 → 淡水漁人碼頭 (Direction 0)
         departures_0, travel_time_0 = parse_station_timetable(
-            timetable_data, blue_station_ids, blue_travel_times, 0
+            timetable_data, blue_station_ids, blue_travel_times, 0, route_num=2
         )
         schedule_0 = {
             "track_id": "V-2-0",
@@ -831,7 +833,7 @@ def main():
         reversed_blue = list(reversed(blue_station_ids))
         reversed_times_blue = list(reversed(blue_travel_times))
         departures_1, travel_time_1 = parse_station_timetable(
-            timetable_data, reversed_blue, reversed_times_blue, 1  # Direction 1: V26 → V01
+            timetable_data, reversed_blue, reversed_times_blue, 1, route_num=2  # Direction 1: V26 → V01
         )
         schedule_1 = {
             "track_id": "V-2-1",

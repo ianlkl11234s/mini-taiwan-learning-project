@@ -560,7 +560,9 @@ export class TrainEngine {
           nextArrivalTime,
         };
 
-        this.activeTrains.set(train.trainId, train);
+        // 使用 trackId + trainId 複合鍵，避免不同軌道 train_id 重複時互相覆蓋
+        // （例：淡海輕軌 V-1-0 與 V-2-0 的 train_id 皆為 V-1-0-xxx）
+        this.activeTrains.set(`${trackId}::${train.trainId}`, train);
       }
     }
 

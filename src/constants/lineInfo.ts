@@ -14,6 +14,7 @@ export const LINE_NAMES: Record<string, string> = {
   V: '淡海輕軌',
   A: '桃園機場捷運',
   Y: '環狀線',
+  LB: '三鶯線',
   MK: '貓空纜車',
 };
 
@@ -55,6 +56,10 @@ export const DIRECTION_NAMES: Record<string, Record<string, string>> = {
     '0': '往新北產業園區',
     '1': '往大坪林',
   },
+  LB: {
+    '0': '往鶯桃福德',
+    '1': '往頂埔',
+  },
   MK: {
     '0': '往貓空',
     '1': '往動物園',
@@ -72,6 +77,7 @@ export const LINE_COLORS: Record<string, string> = {
   V: '#a4ce4e',
   A: '#8246af',
   Y: '#fedb00',
+  LB: '#6DB7D0',  // 三鶯線水藍
   MK: '#06b8e6',  // 貓空纜車藍
 };
 
@@ -87,6 +93,7 @@ export const TRACK_COLORS: Record<string, string> = {
   K: '#8cc540',   // 安坑輕軌（草綠色）
   A: '#8246af',   // 機場捷運（紫色）
   Y: '#fedb00',   // 環狀線（黃色）
+  LB: '#6DB7D0',  // 三鶯線（水藍色）
   MK: '#06b8e6',  // 貓空纜車（藍色）
 };
 
@@ -119,6 +126,9 @@ export const TRAIN_COLORS: Record<string, string> = {
   // 環狀線
   Y_0: '#fedb00',   // 去程（往新北產業園區）- 黃色
   Y_1: '#ffe566',   // 回程（往大坪林）- 淡黃色
+  // 三鶯線
+  LB_0: '#6DB7D0',  // 往鶯桃福德（direction 0）- 水藍色
+  LB_1: '#a4d5e3',  // 往頂埔（direction 1）- 淡水藍
   // 貓空纜車
   MK_0: '#06b8e6',  // 往貓空（direction 0）- 淡藍色
   MK_1: '#7dd4f0',  // 往動物園（direction 1）- 更淡藍色
@@ -135,6 +145,7 @@ export const LINE_COLORS_3D: Record<string, number> = {
   V: 0xa4ce4e,   // 淡海輕軌
   A: 0x8246af,   // 機場捷運
   Y: 0xfedb00,   // 環狀線
+  LB: 0x6DB7D0,  // 三鶯線
   MK: 0x06b8e6,  // 貓空纜車
 };
 
@@ -144,6 +155,7 @@ export const LINE_COLORS_3D: Record<string, number> = {
  */
 export function getLineIdFromTrackId(trackId: string): string {
   if (trackId.startsWith('MK')) return 'MK';
+  if (trackId.startsWith('LB')) return 'LB';
   if (trackId.startsWith('K')) return 'K';
   if (trackId.startsWith('V')) return 'V';
   if (trackId.startsWith('BR')) return 'BR';

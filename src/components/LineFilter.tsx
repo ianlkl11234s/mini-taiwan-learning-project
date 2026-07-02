@@ -12,6 +12,7 @@ const MRT_LINES = {
   A: { color: '#8246af', label: 'A', name: '機場捷運' },
   K: { color: '#8cc540', label: 'K', name: '安坑輕軌' },
   V: { color: '#a4ce4e', label: 'V', name: '淡海輕軌' },
+  LB: { color: '#6DB7D0', label: 'LB', name: '三鶯線' },
 };
 
 // Cable 路線配置

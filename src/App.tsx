@@ -249,7 +249,7 @@ function App() {
 
   // 路線篩選狀態（MRT 線路）- 預設顯示台北捷運全部路線
   const [visibleLines, setVisibleLines] = useState<Set<string>>(
-    new Set(['R', 'BL', 'G', 'O', 'BR', 'Y', 'A', 'K', 'V'])
+    new Set(['R', 'BL', 'G', 'O', 'BR', 'Y', 'A', 'K', 'V', 'LB'])
   );
 
   // 貓空纜車三段式狀態：full | tracks-only | hidden - 預設僅軌道
@@ -289,7 +289,7 @@ function App() {
 
   // 切換全部 MRT 路線可見性
   const handleToggleAllMrt = useCallback((visible: boolean) => {
-    const mrtLines = ['R', 'O', 'Y', 'G', 'BL', 'BR', 'A', 'K', 'V'];
+    const mrtLines = ['R', 'O', 'Y', 'G', 'BL', 'BR', 'A', 'K', 'V', 'LB'];
     setVisibleLines(prev => {
       const next = new Set(prev);
       if (visible) {
@@ -737,6 +737,7 @@ function App() {
           ['==', ['get', 'line_id'], 'O'], TRACK_COLORS.O,
           ['==', ['get', 'line_id'], 'A'], TRACK_COLORS.A,      // 機場捷運
           ['==', ['get', 'line_id'], 'Y'], TRACK_COLORS.Y,      // 環狀線
+          ['==', ['get', 'line_id'], 'LB'], TRACK_COLORS.LB,    // 三鶯線
           TRACK_COLORS.R
         ],
         'line-width': 4,
@@ -752,6 +753,7 @@ function App() {
           ['==', ['slice', ['get', 'track_id'], 0, 2], 'O-'], 0.8,   // 所有 O 線軌道可見 (含首班車)
           ['==', ['slice', ['get', 'track_id'], 0, 2], 'A-'], 0.8,   // 所有 A 線軌道可見 (機場捷運)
           ['==', ['slice', ['get', 'track_id'], 0, 2], 'Y-'], 0.8,   // 所有 Y 線軌道可見 (環狀線)
+          ['==', ['slice', ['get', 'track_id'], 0, 3], 'LB-'], 0.8,  // 所有 LB 線軌道可見 (三鶯線)
           0.0 // 其他軌道透明
         ],
         // 發光強度：讓軌道在夜間模式也保持明亮
@@ -1894,6 +1896,10 @@ function App() {
         ['==', ['slice', ['get', 'track_id'], 0, 2], 'Y-'],
         visibleLines.has('Y')
       ], 0.8,
+      ['all',
+        ['==', ['slice', ['get', 'track_id'], 0, 3], 'LB-'],
+        visibleLines.has('LB')
+      ], 0.8,
       0.0
     ]);
 
@@ -1940,6 +1946,7 @@ function App() {
           ['==', ['slice', ['get', 'station_id'], 0, 1], 'O'], TRACK_COLORS.O,
           ['==', ['slice', ['get', 'station_id'], 0, 1], 'A'], TRACK_COLORS.A,  // 機場捷運
           ['==', ['slice', ['get', 'station_id'], 0, 1], 'Y'], TRACK_COLORS.Y,  // 環狀線
+          ['==', ['slice', ['get', 'station_id'], 0, 2], 'LB'], TRACK_COLORS.LB, // 三鶯線
           TRACK_COLORS.R
         ],
         'circle-stroke-width': 1.8,
@@ -2013,6 +2020,10 @@ function App() {
       ['all',
         ['==', ['slice', ['get', 'station_id'], 0, 1], 'Y'],
         visibleLines.has('Y')
+      ], 1,
+      ['all',
+        ['==', ['slice', ['get', 'station_id'], 0, 2], 'LB'],
+        visibleLines.has('LB')
       ], 1,
       ['all',
         ['==', ['slice', ['get', 'station_id'], 0, 2], 'MK'],

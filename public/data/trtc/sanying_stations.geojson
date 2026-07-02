@@ -1,0 +1,221 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "LB01",
+        "name_zh": "頂埔",
+        "name_en": "Dingpu",
+        "line_id": "LB",
+        "system_id": "trtc",
+        "color": "#6DB7D0"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.41893662992257,
+          24.95929495561727
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "LB02",
+        "name_zh": "媽祖田",
+        "name_en": "Mazutian",
+        "line_id": "LB",
+        "system_id": "trtc",
+        "color": "#6DB7D0"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.4123415,
+          24.9537391
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "LB03",
+        "name_zh": "長壽山",
+        "name_en": "Changshoushan",
+        "line_id": "LB",
+        "system_id": "trtc",
+        "color": "#6DB7D0"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.402135,
+          24.9439093
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "LB04",
+        "name_zh": "橫溪",
+        "name_en": "Hengxi",
+        "line_id": "LB",
+        "system_id": "trtc",
+        "color": "#6DB7D0"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.3908053,
+          24.9372905
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "LB05",
+        "name_zh": "龍埔",
+        "name_en": "Longpu",
+        "line_id": "LB",
+        "system_id": "trtc",
+        "color": "#6DB7D0"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.3846684,
+          24.9398869
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "LB06",
+        "name_zh": "",
+        "name_en": "",
+        "line_id": "LB",
+        "system_id": "trtc",
+        "color": "#6DB7D0"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.3760662,
+          24.9393229
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "LB07",
+        "name_zh": "臺北大學",
+        "name_en": "National Taipei University",
+        "line_id": "LB",
+        "system_id": "trtc",
+        "color": "#6DB7D0"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.3671583,
+          24.9390069
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "LB08",
+        "name_zh": "鶯歌車站",
+        "name_en": "Yingge Station",
+        "line_id": "LB",
+        "system_id": "trtc",
+        "color": "#6DB7D0"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.3562708,
+          24.9531564
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "LB09",
+        "name_zh": "陶瓷老街",
+        "name_en": "Ceramics Old Street",
+        "line_id": "LB",
+        "system_id": "trtc",
+        "color": "#6DB7D0"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.3494928,
+          24.9526088
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "LB10",
+        "name_zh": "國華",
+        "name_en": "Guohua",
+        "line_id": "LB",
+        "system_id": "trtc",
+        "color": "#6DB7D0"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.3423174,
+          24.9549488
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "LB11",
+        "name_zh": "永吉公園",
+        "name_en": "Yongji Park",
+        "line_id": "LB",
+        "system_id": "trtc",
+        "color": "#6DB7D0"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.3341699,
+          24.9612975
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "station_id": "LB12",
+        "name_zh": "鶯桃福德",
+        "name_en": "Yingtao Fude",
+        "line_id": "LB",
+        "system_id": "trtc",
+        "color": "#6DB7D0"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.32987788312332,
+          24.966757426494667
+        ]
+      }
+    }
+  ]
+}

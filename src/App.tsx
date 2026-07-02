@@ -1329,12 +1329,11 @@ function App() {
     console.log(`載入 ${traTracks.features?.length || 0} 條顯示軌道到地圖`);
   }, [mapLoaded, traTracks, styleVersion]);
 
-  // TRA 與 THSR 共用 station_id 的車站（同一位置有 THSR 標籤，不重複顯示 TRA 標籤）
-  // THSR station_ids: 0990, 1000, 1010, 1020, 1030, 1035, 1040, 1043, 1047, 1050, 1060, 1070
-  const THSR_STATION_IDS = [
-    '0990', '1000', '1010', '1020', '1030', '1035',
-    '1040', '1043', '1047', '1050', '1060', '1070'
-  ];
+  // 與 THSR「實際同一位置」的 TRA 車站 station_id（同點已有 THSR 標籤，不重複畫 TRA 標籤）
+  // 注意：TRA 與 THSR 是兩套獨立編號但數字範圍重疊，不能用 THSR 的 id 反過來比對 TRA，
+  // 否則會誤刪同號但不同地點的 TRA 站（如 TRA 1070=鶯歌 ≠ THSR 1070=左營）。
+  // 這裡列的是經座標確認真正共站的 TRA id：1000 臺北、1020 板橋。
+  const THSR_STATION_IDS = ['1000', '1020'];
 
   // 重要車站（縮小時仍顯示標籤）
   const MAJOR_STATION_IDS = [

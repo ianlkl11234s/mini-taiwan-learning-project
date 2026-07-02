@@ -106,6 +106,12 @@ def haversine_m(p1: Tuple[float, float], p2: Tuple[float, float]) -> float:
     return 2 * R * math.asin(math.sqrt(a))
 
 
+def _euclid(p1: Tuple[float, float], p2: Tuple[float, float]) -> float:
+    # 歐幾里得距離（lng/lat 平面）— 與前端 TrainEngine 一致，用於 station progress。
+    import math
+    return math.hypot(p2[0] - p1[0], p2[1] - p1[1])
+
+
 def build_multilinestring(ways: List[dict]) -> List[List[List[float]]]:
     """把 14 條 way 的 geometry ([{lat,lon},...]) 轉成 MultiLineString 座標 [[lon,lat],...]。"""
     segments = []
@@ -245,10 +251,6 @@ def project_station_progress(
     if reverse:
         trimmed.reverse()
 
-    # progress：index 均分，避免 chain 中 crossover 造成 arc 錯位
-    n = len(stations)
-    progress = {stations[i]["station_id"]: (i / (n - 1) if n > 1 else 0.0) for i in range(n)}
-
     # station coord：snap 到 trimmed 最近 vertex，讓圓圈落在畫出的軌道上
     snapped_coords: dict = {}
     for s in stations:
@@ -259,6 +261,27 @@ def project_station_progress(
             if d < bd:
                 bd, bi = d, i
         snapped_coords[s["station_id"]] = [trimmed[bi][0], trimmed[bi][1]]
+
+    # progress：站點投影到 trimmed chain 的 arc-length 比例（歐幾里得），
+    # 讓 TrainEngine 停站時 interpolateOnLineString(progress) 精準落在站圓圈上。
+    # 站點已 snap 到 chain vertex，投影零誤差且單調遞增。
+    seglens = [_euclid(trimmed[i], trimmed[i + 1]) for i in range(len(trimmed) - 1)]
+    total = sum(seglens) or 1.0
+    progress = {}
+    for s in stations:
+        pt = snapped_coords[s["station_id"]]
+        best_along, best_d, acc = 0.0, float("inf"), 0.0
+        for i in range(len(trimmed) - 1):
+            a, b = trimmed[i], trimmed[i + 1]
+            dx, dy = b[0] - a[0], b[1] - a[1]
+            l2 = dx * dx + dy * dy
+            t = 0.0 if l2 == 0 else max(0.0, min(1.0, ((pt[0] - a[0]) * dx + (pt[1] - a[1]) * dy) / l2))
+            proj = (a[0] + t * dx, a[1] + t * dy)
+            d = _euclid(pt, proj)
+            if d < best_d:
+                best_d, best_along = d, acc + t * seglens[i]
+            acc += seglens[i]
+        progress[s["station_id"]] = round(best_along / total, 6)
 
     return progress, [list(p) for p in trimmed], snapped_coords
 

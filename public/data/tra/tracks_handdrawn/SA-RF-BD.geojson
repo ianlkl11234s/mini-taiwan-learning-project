@@ -1,0 +1,59 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "瑞芳站 7360",
+        "station_id": "7360",
+        "marker-color": "#ff0000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [121.806254, 25.109005]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "海科館站 7361",
+        "station_id": "7361",
+        "marker-color": "#ffff00"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [121.799922, 25.137468]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "八斗子站 7362",
+        "station_id": "7362",
+        "marker-color": "#00ff00"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [121.802871, 25.135307]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "track_id": "SA-RF-BD-0",
+        "name": "深澳線 瑞芳→海科館→八斗子 (手繪)",
+        "stroke": "#00aaff",
+        "stroke-width": 3,
+        "direction": "瑞芳→八斗子"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [121.806254, 25.109005],
+          [121.799922, 25.137468],
+          [121.802871, 25.135307]
+        ]
+      }
+    }
+  ]
+}

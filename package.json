@@ -4,6 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "r2:upload": "wrangler r2 object put site-assets/mini-taiwan-learning-project/data/tra/tracks_od/tracks_od_bundle.json --file public/data/tra/tracks_od/tracks_od_bundle.json --remote --content-type application/json",
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
@@ -29,6 +30,7 @@
     "globals": "^16.5.0",
     "typescript": "~5.9.3",
     "typescript-eslint": "^8.46.4",
-    "vite": "^7.2.4"
+    "vite": "^7.2.4",
+    "wrangler": "4.148.0"
   }
 }

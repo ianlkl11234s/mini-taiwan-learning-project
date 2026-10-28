@@ -1,17 +1,10 @@
-# Zeabur 快取設定
-# 參考: https://zeabur.com/docs/en-US/guides/static
+# 靜態資產快取設定（Cloudflare Workers 靜態資產的 _headers 格式）
+# 註：原 Zeabur nginx 容器其實沒有套用這份檔案，搬到 Cloudflare 後才會生效。
+# 原本對 tracks_od_bundle.json／master_schedule.json／od_station_progress.json 設了 1 年 immutable，
+# 但檔名沒有 hash、資料更新後舊訪客會一直拿到舊檔；且 Cloudflare 多條規則同時命中時 header 會合併，
+# 所以拿掉，統一走下面 /data/* 的 1 天快取。
 
-# TRA 大型資料檔案 - 長期快取 (1年)
-/data/tra/tracks_od/tracks_od_bundle.json
-  Cache-Control: public, max-age=31536000, immutable
-
-/data/tra/schedules_real/master_schedule.json
-  Cache-Control: public, max-age=31536000, immutable
-
-/data/tra/tracks_od/od_station_progress.json
-  Cache-Control: public, max-age=31536000, immutable
-
-# 其他系統資料 - 中期快取 (1天，允許背景更新)
+# 系統資料 - 中期快取 (1天，允許背景更新)
 /data/*
   Cache-Control: public, max-age=86400, stale-while-revalidate=604800
 

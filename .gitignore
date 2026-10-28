@@ -84,3 +84,6 @@ data-tra-daily/
 .claude/todos/
 .claude/settings.local.json
 .claude/.cache/
+
+# Cloudflare Wrangler
+.wrangler/

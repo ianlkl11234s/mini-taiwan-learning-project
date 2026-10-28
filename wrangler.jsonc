@@ -1,0 +1,21 @@
+// Cloudflare Workers 部署設定（取代 Zeabur 的 nginx 容器；Zeabur 2026-12 停運）
+// dist/ 走 Workers 靜態資產；超過 25MiB 的大檔由 worker/index.ts 從 R2（site-assets）提供
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "mini-taiwan-learning-project",
+  "compatibility_date": "2026-10-01",
+  "main": "worker/index.ts",
+  "assets": {
+    "binding": "ASSETS",
+    "directory": "./dist",
+    // 對應原 nginx 的 try_files $uri $uri/ /index.html（SPA fallback）
+    // 差異：瀏覽器導覽請求才回 index.html；fetch 不存在的資料檔回 404（原本回 200＋index.html）
+    "not_found_handling": "single-page-application",
+    "html_handling": "auto-trailing-slash",
+    // 只有超過 25MiB 的大檔先經 Worker 從 R2 提供；其餘仍直接回靜態資產
+    "run_worker_first": ["/data/tra/tracks_od/tracks_od_bundle.json"]
+  },
+  // 大檔放 R2 bucket site-assets（key：<站名>/<網站路徑>），上傳見 package.json 的 r2:upload
+  "r2_buckets": [{ "binding": "BIG", "bucket_name": "site-assets" }],
+  "observability": { "enabled": true }
+}

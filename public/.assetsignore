@@ -1,0 +1,3 @@
+# wrangler 部署時略過的檔案：Workers 靜態資產單檔上限 25MiB（約 41.6MiB）
+# 改由 worker/index.ts 從 R2 bucket site-assets 提供（key mini-taiwan-learning-project/data/tra/tracks_od/tracks_od_bundle.json；上傳 npm run r2:upload）
+data/tra/tracks_od/tracks_od_bundle.json

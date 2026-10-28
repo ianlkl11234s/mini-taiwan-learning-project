@@ -1,7 +1,7 @@
 # main 有新 commit 就 build 並部署到 Cloudflare Workers（取代 Zeabur）
 # 需要 repo secrets：CLOUDFLARE_API_TOKEN（Edit Cloudflare Workers 權限）、VITE_MAPBOX_TOKEN、
 #   VITE_SUPABASE_URL、VITE_SUPABASE_ANON_KEY（台鐵／高鐵每日時刻表）
-# 注意：tracks_od_bundle.json 超過 25MiB，由 public/.assetsignore 略過，需另外放 R2
+# 注意：tracks_od_bundle.json 超過 25MiB，由 public/.assetsignore 略過，改由 R2 提供（Deploy 前會先上傳）
 name: Deploy
 
 on:
@@ -42,6 +42,14 @@ jobs:
           VITE_MAPBOX_TOKEN: ${{ secrets.VITE_MAPBOX_TOKEN }}
           VITE_SUPABASE_URL: ${{ secrets.VITE_SUPABASE_URL }}
           VITE_SUPABASE_ANON_KEY: ${{ secrets.VITE_SUPABASE_ANON_KEY }}
+
+      - name: Upload big file to R2
+        # 大檔超過 Workers 靜態資產 25MiB 上限，放 R2 bucket site-assets，由 worker/index.ts 提供；每次部署都傳，保持與 main 同步
+        # 需要 CLOUDFLARE_API_TOKEN 具 R2 寫入權限（Workers R2 Storage: Edit）
+        run: npx wrangler r2 object put site-assets/mini-taiwan-learning-project/data/tra/tracks_od/tracks_od_bundle.json --file public/data/tra/tracks_od/tracks_od_bundle.json --remote --content-type application/json
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: d104f32eafd7b294ba1f74b731ffd1e0
 
       - name: Deploy
         run: npx wrangler deploy

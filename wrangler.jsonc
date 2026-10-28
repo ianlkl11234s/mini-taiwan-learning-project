@@ -1,0 +1,15 @@
+// Cloudflare Workers 部署設定（取代 Zeabur 的 nginx 容器；Zeabur 2026-12 停運）
+// 純靜態站：dist/ 走 Workers 靜態資產，不需要 Worker 程式
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "mini-taiwan-learning-project",
+  "compatibility_date": "2026-10-01",
+  "assets": {
+    "directory": "./dist",
+    // 對應原 nginx 的 try_files $uri $uri/ /index.html（SPA fallback）
+    // 差異：瀏覽器導覽請求才回 index.html；fetch 不存在的資料檔回 404（原本回 200＋index.html）
+    "not_found_handling": "single-page-application",
+    "html_handling": "auto-trailing-slash"
+  },
+  "observability": { "enabled": true }
+}

@@ -1,0 +1,50 @@
+# main 有新 commit 就 build 並部署到 Cloudflare Workers（取代 Zeabur）
+# 需要 repo secrets：CLOUDFLARE_API_TOKEN（Edit Cloudflare Workers 權限）、VITE_MAPBOX_TOKEN、
+#   VITE_SUPABASE_URL、VITE_SUPABASE_ANON_KEY（台鐵／高鐵每日時刻表）
+# 注意：tracks_od_bundle.json 超過 25MiB，由 public/.assetsignore 略過，需另外放 R2
+name: Deploy
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+# 連續 push 時只保留最新一次，避免舊版本晚完成蓋掉新版本
+concurrency:
+  group: deploy-production
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      - run: npm ci --no-audit --no-fund
+
+      - name: Build
+        # 變數沒設時 build 仍會成功、但地圖或時刻表出不來，所以直接擋下
+        run: |
+          test -n "$VITE_MAPBOX_TOKEN" || { echo "::error::缺 secret VITE_MAPBOX_TOKEN"; exit 1; }
+          test -n "$VITE_SUPABASE_URL" || { echo "::error::缺 secret VITE_SUPABASE_URL"; exit 1; }
+          test -n "$VITE_SUPABASE_ANON_KEY" || { echo "::error::缺 secret VITE_SUPABASE_ANON_KEY"; exit 1; }
+          npm run build
+        env:
+          VITE_MAPBOX_TOKEN: ${{ secrets.VITE_MAPBOX_TOKEN }}
+          VITE_SUPABASE_URL: ${{ secrets.VITE_SUPABASE_URL }}
+          VITE_SUPABASE_ANON_KEY: ${{ secrets.VITE_SUPABASE_ANON_KEY }}
+
+      - name: Deploy
+        run: npx wrangler deploy
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: d104f32eafd7b294ba1f74b731ffd1e0
